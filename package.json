@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/arielivandiaz/lagunite.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "Ariel Ivan Diaz",
   "license": "MIT",
   "bugs": {
