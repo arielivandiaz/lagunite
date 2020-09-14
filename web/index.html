@@ -21,6 +21,8 @@
         gtag('config', 'UA-177961488-2');
     </script>
     <style>
+        @import url("https://use.typekit.net/ztk4pwi.css");
+
         * {
             margin: 0;
             padding: 0;
@@ -46,6 +48,8 @@
 
         header {
             text-align: center;
+            font-family: 'muli', sans-serif;
+            font-weight: 700;
         }
 
         header img {
@@ -59,8 +63,23 @@
 
         <img src="img/lagunite.png">
         <h3></h3>
-        <span></span>
+        <span id="version"></span>
 
     </header>
+    <script>
+        fetch('https://raw.githubusercontent.com/arielivandiaz/lagunite/master/version/version.json').then(function(response) {
+                if (response.ok) {
+                    response.json().then(data => {
+                        document.getElementById("version").textContent = "v." + data.version + "." + data.rev + " - 2020";
+                    });
+
+                } else {
+                    console.log('Respuesta de red OK pero respuesta HTTP no OK');
+                }
+            })
+            .catch(function(error) {
+                console.log('Hubo un problema con la petición Fetch:' + error.message);
+            });
+    </script>
 
 </body></html>
