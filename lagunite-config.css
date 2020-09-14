@@ -1,0 +1,23 @@
+/*************** VARIABLES ***************/
+
+:root {
+    --text_color: #333;
+    --border: 2px solid #2476FF;
+    --main_color: #2476FF;
+    --main_color_light: #5E9AFF;
+    --main_color_dark: #0965FF;
+    --main_color_alt: #FFF;
+    --almost_black: #333;
+    --almost_white: #fcfcfc;
+    --background_gradient: linear-gradient(0deg, rgba(36, 118, 255, 1) 0%, rgba(94, 154, 255, 1) 100%);
+    --background_gradient_2: linear-gradient(0deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%);
+    --text_color: #333;
+    --text_color_alt: #eee;
+    --radius_min: 6px;
+    --radius_max: 25px;
+    --font_headers: 'muli', sans-serif;
+    --font_text:  'PT Sans', sans-serif;
+
+}
+
+
