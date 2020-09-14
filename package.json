@@ -1,0 +1,19 @@
+{
+  "name": "lagunite",
+  "version": "0.0.2",
+  "description": "Lagunite front-end kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielivandiaz/lagunite.git"
+  },
+  "author": "Ariel Ivan Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arielivandiaz/lagunite/issues"
+  },
+  "homepage": "https://github.com/arielivandiaz/lagunite#readme"
+}
