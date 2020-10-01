@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177961488-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177961488-2');
+    </script>
+    <link type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
+
+    <style>
+        main {
+            max-width: 800px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main section {
+            border: var(--border);
+            border-radius: 50px;
+
+
+
+        }
+
+        header {
+            margin: 30px 00;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <a href="/">
+        <img src="web/img/lagunite.png">
+            </a>
+        <h3>Layouts</h3>
+    </header>
+    <main>
+        <h3>Section "row"</h3>
+        <section class="row  vh50">
+
+            <div class=" col bg-1 w30 ">
+                div "col w30"
+            </div>
+        </section>
+        <div class="separator-h-m"></div>
+        <h3>Section "row"</h3>
+        <section class="row  vh50">
+            <div class=" col bg-2 w30 ">
+                div "col w30"
+            </div>
+
+            <div class=" col bg-1 w20 ">
+                div "col w20"
+            </div>
+        </section>
+        <div class="separator-h-m"></div>
+        <h3>Section "col"</h3>
+        <section class="col  vh50">
+            <div class=" row bg-2 h15 ">
+                div "row h15"
+            </div>
+            <div class=" row bg-1 h50 ">
+                div "row h50"
+            </div>
+        </section>
+        <div class="separator-h-m"></div>
+        <h3>Section "col"</h3>
+        <section class="col  vh50">
+            <div class=" row bg-2 h15 ">
+                div "row h15"
+            </div>
+            <div class=" row bg-1 h50 ">
+                <span style="float: left;">
+                div "row h50"
+                    </span>
+                <div class=" col bg-3 w30 ">
+                    div "col w30"
+                </div>
+                <div class=" col bg-6 w20 ">
+                    div "col w20"
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="row  vh20">
+        <a href="https://github.com/arielivandiaz/lagunite">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
+        </a>
+    </footer>
+
+</body></html>

@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 
@@ -88,7 +89,7 @@ h3,
 h4,
 h5 {
 
- font-family: var(--font_headers)
+    font-family: 'muli', sans-serif;
 }
 
 h1 {
@@ -105,41 +106,48 @@ a:enabled {
 }
 
 button {
-    font-size: 80%;
     box-shadow: none;
-    border-radius: var(--radius_min);
+    border-radius: 10px;
     border: 2px solid var(--main_color);
+    background: var(--main_color);
     cursor: pointer;
-    font-size: 110%;
     font-family: 'muli', sans-serif;
     letter-spacing: 1px;
-
-}
-
-
-.btn {
-    background: var(--main_color);
-    color: #fff;
-    border-radius: 10px;
     margin: 1vh 1vw;
+    color: #fff;
     padding: 10px 1vw;
 }
 
-.btn.alt {
+
+
+button.alt {
     background: var(--main_color_alt);
     color: var(--main_color)
 }
 
-.btn.std {
-    min-width: 100px;
+button.std {
+    min-width: 150px;
 }
 
-.btn.fit {
-    padding: 5px 1vw;
+button.fit {
+    padding: 5px 8px;
 }
 
 
-.btn:hover {
+button.big {
+    font-size: 180%;
+    padding: 15px 3vw;
+
+}
+
+
+button.big.std {
+    min-width: 250px;
+}
+
+button.big.fit {}
+
+button:hover {
     box-shadow: 0 0px 5px 1px var(--main_color);
 }
 
@@ -198,7 +206,7 @@ button {
 
 /***************************************/
 section {
-    display: block;  
+    display: block;
     white-space: nowrap;
 
 }
@@ -210,22 +218,43 @@ section p {
 }
 
 
+
 /***************************************/
 
 .col {
-    display: inline-block;
-    margin: 0;
-    padding: 0;      
-    
+
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
 }
+
+
+
+.row {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*******************************************************/
 
 .centered {
     display: flex;
     height: 100%;
-    width: 100%;    
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
+
 /*******************************************************/
 
 
@@ -315,6 +344,66 @@ select:focus {
 
 /***************************************/
 
+
+pre {
+    font-size: 15px;
+}
+
+
+/************** RADIO GROUP **************/
+.radio-group {
+    margin: 25px 0;
+}
+
+.radio-group input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+
+
+}
+
+
+.radio-group label {
+    cursor: pointer;
+
+}
+
+.radio-group label {
+
+
+    text-align: center;
+    padding: 4px 12px;
+
+    background: none;
+    color: var(--main_color);
+    border-color: var(--main_color);
+    border-style: solid;
+    border-width: 2px 2px 2px 0;
+    margin-right: -5px;
+
+
+}
+
+
+.radio-group input:checked + label {
+    background-color: var(--main_color);
+    color: var(--text_color_alt);
+    box-shadow: 0 0px 5px 0px var(--main_color);
+}
+
+.radio-group label:first-of-type {
+    border-radius: 30px 0 0 30px;
+    border-width: 2px;
+}
+
+.radio-group label:last-of-type {
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 30px 30px 0;
+}
 
 /*************** CHECKBOX **************/
 
@@ -507,6 +596,10 @@ table {
 
 }
 
+caption {
+    margin: 15px 0;
+}
+
 table,
 th,
 td {
@@ -681,10 +774,10 @@ td {
 /*************** LOGO ***************/
 img {
     max-width: 80vw;
-max-height: 30vh;
+    max-height: 30vh;
 }
 
-    
+
 
 /***************************************/
 
@@ -884,6 +977,105 @@ aside button .tooltiptext {
 aside button:hover .tooltiptext {
     visibility: visible;
 
+
+}
+
+
+/************** AVATARS *****************/
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+.avatar.big {
+    width: 200px;
+}
+
+.avatar.small {
+    width: 50px;
+}
+
+.avatar.micro {
+    width: 30px;
+}
+
+
+/************** CHIPS *****************/
+
+
+
+.chip {
+    border: 1px solid var(--main_color);
+    border-radius: 30px;
+    display: flex;
+    color: var(--main_color);
+    padding: 3px 3px;
+    margin: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.chip * {
+    margin: 0 5px;
+}
+
+/********/
+
+.chip.vertical {
+
+        flex-direction: column;
+    min-width: 0px;
+    height:    fit-content;
+
+}
+
+.chip.vertical * {
+
+    margin: 0;
+
+}
+
+/********/
+.chip.expandable .content {
+    overflow: hidden;
+    margin: 0;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.chip.expandable:hover .content {
+
+  
+    width: auto;
+    transition: all 0.2s ease-in-out;
+    transform: scaleX(1);
+
+}
+
+/********/
+
+
+
+.chip.vertical.expandable .content {
+    overflow: hidden;    
+    margin: 0;
+    height: 0;        
+    transition: all 0.5s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.chip.vertical.expandable:hover .content {
+
+
+    height: auto;
+    transition: all 0.2s ease-in-out;
+    transform: scaleY(1);
 
 }
 
