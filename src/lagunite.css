@@ -987,6 +987,10 @@ aside button:hover .tooltiptext {
     width: 100px;
 }
 
+.avatar.alt {
+    border-radius: 35%;
+
+}
 
 .avatar.big {
     width: 200px;
