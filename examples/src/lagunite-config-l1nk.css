@@ -1,0 +1,54 @@
+/*************** VARIABLES ***************/
+
+:root {
+    
+    --text_color: #333;
+    --text_color_alt: #FFF;
+    
+    
+    
+    --border: 2px solid #FF8542;
+    
+    
+    --main_color: #FF8542;
+    --main_color_alt: #FFF;
+    --main_color_light: #ff9644;
+    --main_color_dark: #fb4f65;
+
+    --almost_black: #333;
+    --almost_white: #FCFCFC;
+    
+    --color_success: #98FF98;
+    --color_error: #FF6961;
+    --color_warning: #EC7C26;
+        
+    --background_body: #EEE;
+    
+    --background_1: #FF8542;
+    --background_gradient_1: linear-gradient(0deg, #fb4f65 0%, #ff9644 100%);
+    --background_2: #fb4f65;
+    --background_gradient_2:  linear-gradient(0deg, #ff9644 0%, #fb4f65 100%);
+    --background_3: #0965FF;
+    --background_gradient_3: linear-gradient(0deg, #0965FF 0%, #FF8542 100%);
+    
+    
+    
+    --background_gradient: linear-gradient(0deg, #FF8542 0%, rgba(94, 154, 255, 1) 100%);
+    --background_gradient_2: linear-gradient(0deg, rgba(94, 154, 255, 1) 0%, #FF8542 100%);
+    
+    --radius: 6px;
+    --radius_out: 36px;
+    --radius_in: 30px;
+    
+    --radius_s:  3px;    
+    --radius_l: 25px; 
+    
+    
+    --font_headers: 'muli', sans-serif;
+    --font_text:  'PT Sans', sans-serif;
+    
+    
+
+}
+
+

@@ -5,15 +5,15 @@
     margin: 0;
     padding: 0;
     outline: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 
 
 body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    background: var(--background_body)
 }
 
 
@@ -35,9 +35,7 @@ a,
 a:visited,
 a:active,
 a:enabled {
-
     text-decoration: none;
-
 }
 
 ul {
@@ -65,22 +63,16 @@ nav {
 
 html,
 body {
-
     overflow-x: hidden;
-
     color: var(--text_color);
     font-family: var(--font_text);
-
 }
-
 
 
 body {
     width: 100%;
     height: 100%;
-
     text-align: center;
-
 }
 
 h1,
@@ -88,8 +80,7 @@ h2,
 h3,
 h4,
 h5 {
-
-    font-family: 'muli', sans-serif;
+    font-family: var(--font_headers);
 }
 
 h1 {
@@ -102,7 +93,6 @@ a:active,
 a:enabled {
     color: #000;
     text-decoration: none;
-
 }
 
 button {
@@ -111,11 +101,16 @@ button {
     border: 2px solid var(--main_color);
     background: var(--main_color);
     cursor: pointer;
-    font-family: 'muli', sans-serif;
+    font-family: var(--font_headers);
     letter-spacing: 1px;
     margin: 1vh 1vw;
     color: #fff;
     padding: 10px 1vw;
+    min-width: 38px;
+    text-align: center;
+
+
+
 }
 
 
@@ -151,6 +146,19 @@ button:hover {
     box-shadow: 0 0px 5px 1px var(--main_color);
 }
 
+/**********************************/
+
+.btn-group {}
+
+.btn-group button {
+
+    background: none;
+    border: none;
+    color: var(--text_color);
+}
+
+/*********************************/
+
 
 .actions {
     display: block;
@@ -161,11 +169,14 @@ button:hover {
 
 
 .nav {
-
     font-size: 80%;
     padding: 7px 25px 3px 25px;
     z-index: 20;
     background: var(--main_color)
+}
+
+.nav.alt {
+    background: none;
 }
 
 .nav img {
@@ -173,7 +184,7 @@ button:hover {
     max-width: 25vw;
 }
 
-.navContainer {
+.nav .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -181,9 +192,8 @@ button:hover {
 
 }
 
-.navContainer a {
+.nav .container a {
     padding: 010px;
-
 }
 
 
@@ -286,7 +296,7 @@ select {
     border: none;
     color: var(--text_color);
     border: var(--border);
-    border-radius: var(--radius_min);
+    border-radius: var(--radius);
     text-align: center;
     cursor: pointer;
 
@@ -302,14 +312,9 @@ textarea:hover,
 textarea:focus,
 select:hover,
 select:focus {
-
-
     box-shadow: 0 0 7px 1px var(--main_color);
-
     color: var(--main_color);
     font-weight: 600;
-
-
 }
 
 
@@ -500,7 +505,7 @@ select {
     outline: 0;
     box-shadow: none;
     border: 2px solid var(--text_color);
-    border-radius: var(--radius_min);
+    border-radius: var(--radius);
     background: rgba(0, 0, 0, 0.7);
     background-image: none;
     min-width: 220px;
@@ -519,7 +524,7 @@ select {
     position: relative;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.7);
-    border-radius: var(--radius_min);
+    border-radius: var(--radius);
     margin: 0 20px;
     box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.12);
     min-width: 220px;
@@ -630,41 +635,41 @@ td {
 
 .bg-1 {
     /* Background main color */
-    background: var(--main_color);
-    color: var(--main_color_alt);
+    background: var(--main_color) !important;
+    color: var(--main_color_alt) !important;
 }
 
 .bg-2 {
-    background: var(--main_color_light);
-    color: var(--main_color_alt);
+    background: var(--main_color_light) !important;
+    color: var(--main_color_alt) !important;
 }
 
 .bg-3 {
-    background: var(--main_color_dark);
-    color: var(--main_color_alt);
+    background: var(--main_color_dark) !important;
+    color: var(--main_color_alt) !important;
 }
 
 
 .bg-4 {
-    background: var(--main_color_alt);
-    color: var(--main_color);
+    background: var(--main_color_alt) !important;
+    color: var(--main_color) !important;
 }
 
 .bg-5 {
-    background: var(--main_color_alt);
-    color: var(--main_color);
+    background: var(--main_color_alt) !important;
+    color: var(--main_color) !important;
 }
 
 
 .bg-6 {
-    background: var(--almost_black);
-    color: var(--almost_white);
+    background: var(--almost_black) !important;
+    color: var(--almost_white) !important;
 }
 
 
 .bg-7 {
-    background: var(--almost_white);
-    color: var(--almost_black);
+    background: var(--almost_white) !important;
+    color: var(--almost_black) !important;
 }
 
 
@@ -1004,6 +1009,118 @@ aside button:hover .tooltiptext {
     width: 30px;
 }
 
+/************** GRADIENT BORDER ***********/
+
+
+/************** FIGURES ****************/
+
+
+.square,
+.rounded,
+.circle,
+.tear,
+.square-s,
+.rounded-s,
+.circle-s,
+.tear-s,
+.square-l,
+.rounded-l,
+.circle-l,
+.tear-l {
+
+    background: var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color_alt);
+}
+
+
+.square-s,
+.rounded-s,
+.circle-s,
+.tear-s {
+    width: 25px;
+    height: 25px;
+}
+
+.square,
+.rounded,
+.circle,
+.tear {
+    width: 50px;
+    height: 50px;
+}
+
+.square-l,
+.rounded-l,
+.circle-l,
+.tear-l {
+    width: 75px;
+    height: 75px;
+}
+
+.rounded-s {
+    border-radius: 10px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.rounded-l {
+    border-radius: 30px;
+}
+
+.circle,.circle-s,.circle-l {
+    border-radius: 50%;
+}
+
+.tear, .tear-s, .tear-l {
+    border-radius: 50% 0 50% 50%;
+}
+
+.square,.square-s,.square-l {
+    border-radius: 5px;
+}
+
+
+.triangle,
+.triangle-s,
+.triangle-l {
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color_alt);
+    border-radius: 5px;
+}
+
+.triangle {
+
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 46px solid var(--main_color);
+
+}
+
+.triangle-s {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid var(--main_color);
+}
+
+.triangle-l {
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 88px solid var(--main_color);
+}
+
+
+
+
+
 
 /************** CHIPS *****************/
 
@@ -1030,9 +1147,9 @@ aside button:hover .tooltiptext {
 
 .chip.vertical {
 
-        flex-direction: column;
+    flex-direction: column;
     min-width: 0px;
-    height:    fit-content;
+    height: fit-content;
 
 }
 
@@ -1054,7 +1171,7 @@ aside button:hover .tooltiptext {
 
 .chip.expandable:hover .content {
 
-  
+
     width: auto;
     transition: all 0.2s ease-in-out;
     transform: scaleX(1);
@@ -1066,9 +1183,9 @@ aside button:hover .tooltiptext {
 
 
 .chip.vertical.expandable .content {
-    overflow: hidden;    
+    overflow: hidden;
     margin: 0;
-    height: 0;        
+    height: 0;
     transition: all 0.5s ease-in-out;
     transform-origin: top;
     transform: scaleY(0);
@@ -1084,7 +1201,21 @@ aside button:hover .tooltiptext {
 }
 
 
-/*************** FULL WIDTH  ***************/
+/*************** ACTIONS ***************/
+
+/* Put your action here */
+/* For example width */
+.onclick {
+    width: 100px;
+}
+
+.onclick:active {
+    transition: width .35s ease-in-out;
+    width: 300px;
+}
+
+
+
 
 
 /*************** SCREENS ***************/

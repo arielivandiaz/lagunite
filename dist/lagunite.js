@@ -1,17 +1,1 @@
-    function show(id) {
-        document.getElementById(id).classList.remove("hidden");
-    }
-
-    function hidde(id) {
-        document.getElementById(id).classList.add("hidden");
-    }
-
-    function toggle(id) {
-        document.getElementById(id).classList.toggle("hidden");
-    }
-
-
-    function toggleItems(id1, id2) {
-        toggle(id1);
-        toggle(id2)
-    }
+function show(e){document.getElementById(e).classList.remove("hidden")}function hidde(e){document.getElementById(e).classList.add("hidden")}function toggle(e){document.getElementById(e).classList.toggle("hidden")}function toggleItems(e,t){toggle(e),toggle(t)}
