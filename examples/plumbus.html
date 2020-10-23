@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177961488-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177961488-2');
+    </script>
+    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+    <style>
+        body {
+            overflow: hidden;
+            max-height: 100vh;
+
+        }
+
+        .title {
+            max-width: 70vw;
+            max-height: 70px;
+        }
+
+        .plumbus-img {
+            max-height: 50vh;
+        }
+
+        .buy-plumbus {
+            max-height: 150px;
+            max-width: 50vw;
+            margin: 15px 4vw;
+        }
+
+        .buy-plumbus:hover {
+            transform: scale(1.2)
+        }
+
+        .arrow {
+            max-height: 80px;
+            max-width: 8vw;
+        }
+
+        .arrow.alt {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        .footer-fixed span,
+            {
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-fixed h5 {
+            display: inline-block;
+        }
+
+        .footer-fixed span img,
+        .nav-fixed img {
+            max-height: 15px;
+            margin-left: 10px;
+
+        }
+
+        .nav-fixed {
+            background: #F14977;
+            color: #fff;
+            font-weight: 700;
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="nav-fixed">
+        El código de este ejemplo esta disponible en
+        <a href="">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 50px">
+        </a>
+    </div>
+
+    <main>
+        <section class="col vh100">
+            <div class=" row   ">
+                <img src="img/plumbus.png" class="title">
+            </div>
+            <div class=" row  ">
+                <img src="img/F.png" class="plumbus-img" id="plumbus1">
+                <img src="img/D.png" class="plumbus-img hidden" id="plumbus2" >
+
+
+                <div class=" col  vw40  " style="">
+                    <h3>Estas por comprar un PLUMBUS</h3>
+                    <p>Lalo Landa</p>
+
+                    <button>
+                        Mercado Pago</button>
+                    <p class="font-s">
+                        Este pago no se procesara, el sitio solo es una prueba del checkout pro de MercadoPago asdasda asdas Este pago no se procesara, el sitio solo es una prueba del checkout pro de MercadoPago asdasda asdas
+                    </p>
+
+
+
+                </div>
+
+            </div>
+            <div class=" row ">
+                <img src="img/arrow.png" class="arrow alt">
+                <img src="img/arrow.png" class="arrow alt">
+                <img src="img/arrow.png" class="arrow alt">
+                <img src="img/btn.png" class="buy-plumbus">
+                <img src="img/arrow.png" class="arrow">
+                <img src="img/arrow.png" class="arrow">
+                <img src="img/arrow.png" class="arrow">
+            </div>
+
+        </section>
+    </main>
+    <div class="footer-fixed bg-7">
+        <div>
+            demo web - mercadopago checkout -
+            <a href="">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 40px">
+            </a>
+        </div>
+        <span>
+
+            <h5>DESING WITH </h5>
+            <a href="http://lagunite.com/">
+                <img src="../web/img/lagunite_mini.png">
+            </a>
+        </span>
+
+    </div>
+    <script src="../src/lagunite.js"></script>
+    <script>
+        window.setInterval(
+            function(){toggleItems('plumbus1','plumbus2')}, 1000);
+
+    </script>
+
+
+</body></html>
