@@ -21,8 +21,8 @@
 
         gtag('config', 'UA-177961488-2');
     </script>
-    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
-    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+    <link type="text/css" rel="stylesheet" href="../../src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="../../src/lagunite.css" />
     <style>
         body {
             overflow: hidden;
@@ -37,6 +37,7 @@
 
         .plumbus-img {
             max-height: 50vh;
+            max-width: 30vw;
         }
 
         .buy-plumbus {
@@ -65,7 +66,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center;
+
         }
 
         .footer-fixed h5 {
@@ -77,13 +78,13 @@
             max-height: 15px;
             margin-left: 10px;
 
+
         }
 
         .nav-fixed {
             background: #F14977;
             color: #fff;
             font-weight: 700;
-
         }
     </style>
 
@@ -101,36 +102,50 @@
     <main>
         <section class="col vh100">
             <div class=" row   ">
-                <img src="img/plumbus.png" class="title">
+                <img src="../img/plumbus.png" class="title">
             </div>
             <div class=" row  ">
-                <img src="img/F.png" class="plumbus-img" id="plumbus1">
-                <img src="img/D.png" class="plumbus-img hidden" id="plumbus2" >
+                <img src="../img/F.png" class="plumbus-img" id="plumbus1">
+                <img src="../img/D.png" class="plumbus-img hidden" id="plumbus2">
 
 
-                <div class=" col  vw40  " style="">
-                    <h3>Estas por comprar un PLUMBUS</h3>
-                    <p>Lalo Landa</p>
+                <div class=" col  vw40  hidden" id="checkout">
+                    <div class="separator-h-m"></div>
+                    <h3>Lalo Landa, estas por comprar un PLUMBUS por</h3>
+                    <div class="separator-h-s"></div>
+                    <div class="hg-inline">
+                        <h2>$ 99</h2>.<h4>99</h4>
+                    </div>
+                    <div class="separator-h-m"></div>
+                    <form action="checkout" method="post">
+                        <input type="number" name="id" value="1234" hidden>
+                        <input type="text" name="title" value="Plumbus" hidden>
+                        <input type="text" name="currency_id" value="ARS" hidden>
+                        <input type="text" name="picture_url" value="http://lagunite.com/examples/img/plumbus.png" hidden>
+                        <input type="text" name="description" value="Plumbus, everyone has one" hidden>
+                        <input type="text" name="category_id" value="Tech" hidden>
+                        <input type="number" name="quantity" value="1" hidden>
+                        <input type="number" name="unit_price" value="99.99" hidden>
 
-                    <button>
-                        Mercado Pago</button>
-                    <p class="font-s">
+                        <button class="btn" type="submit">
+                            Mercado Pago</button>
+                    </form>
+
+                    <p class="font-xs">
                         Este pago no se procesara, el sitio solo es una prueba del checkout pro de MercadoPago asdasda asdas Este pago no se procesara, el sitio solo es una prueba del checkout pro de MercadoPago asdasda asdas
                     </p>
-
-
-
                 </div>
-
             </div>
             <div class=" row ">
-                <img src="img/arrow.png" class="arrow alt">
-                <img src="img/arrow.png" class="arrow alt">
-                <img src="img/arrow.png" class="arrow alt">
-                <img src="img/btn.png" class="buy-plumbus">
-                <img src="img/arrow.png" class="arrow">
-                <img src="img/arrow.png" class="arrow">
-                <img src="img/arrow.png" class="arrow">
+                <img src="../img/arrow.png" class="arrow alt">
+                <img src="../img/arrow.png" class="arrow alt">
+                <img src="../img/arrow.png" class="arrow alt">
+                <button class="no-bg" onclick="show('checkout')">
+                    <img src="../img/btn.png" class="buy-plumbus">
+                </button>
+                <img src="../img/arrow.png" class="arrow">
+                <img src="../img/arrow.png" class="arrow">
+                <img src="../img/arrow.png" class="arrow">
             </div>
 
         </section>
@@ -146,16 +161,21 @@
 
             <h5>DESING WITH </h5>
             <a href="http://lagunite.com/">
-                <img src="../web/img/lagunite_mini.png">
+                <img src="../../web/img/lagunite_mini.png">
             </a>
         </span>
 
     </div>
-    <script src="../src/lagunite.js"></script>
+    <script src="../../src/lagunite.js"></script>
     <script>
         window.setInterval(
-            function(){toggleItems('plumbus1','plumbus2')}, 1000);
+            function() {
+                toggleItems('plumbus1', 'plumbus2')
+            }, 2000);
 
+        function checkout() {
+
+        }
     </script>
 
 
