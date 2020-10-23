@@ -42,9 +42,6 @@ ul {
     list-style: none;
 }
 
-.hidden {
-    display: none;
-}
 
 nav {
     position: absolute;
@@ -94,6 +91,16 @@ a:enabled {
     color: #000;
     text-decoration: none;
 }
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 0 15px;
+
+}
+
+
 
 button {
     box-shadow: none;
@@ -240,6 +247,7 @@ section p {
     align-content: center;
     justify-content: center;
 
+
 }
 
 
@@ -251,6 +259,7 @@ section p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -627,6 +636,21 @@ td {
     padding: 10px 0;
 }
 
+
+.hoverable tr:hover {
+    cursor: pointer;
+    background: var(--main_color_light);
+}
+
+.hoverable td:hover {
+    background: var(--main_color);
+    color: var(--text_color_alt);
+    font-weight: 900;
+
+}
+
+
+
 /***************************************/
 
 
@@ -777,10 +801,6 @@ td {
 
 
 /*************** LOGO ***************/
-img {
-    max-width: 80vw;
-    max-height: 30vh;
-}
 
 
 
@@ -858,6 +878,30 @@ img {
     padding: 2 5px 0;
 }
 
+
+/**************** FIXED ******************/
+.nav-fixed {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-fixed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 1.5rem;
+
+
+}
+
 /***************************************/
 .boxes {
     position: relative;
@@ -905,6 +949,20 @@ img {
 
 }
 
+
+/************** FONTS ****************************/
+.font-xs {
+    font-size: 50%;
+    
+}
+
+.font-s {
+        font-size: 70%;
+}
+
+.font-l {
+            font-size: 120%;
+}
 
 /**************  SCROLLBAR ***********************/
 
@@ -1072,15 +1130,21 @@ aside button:hover .tooltiptext {
     border-radius: 30px;
 }
 
-.circle,.circle-s,.circle-l {
+.circle,
+.circle-s,
+.circle-l {
     border-radius: 50%;
 }
 
-.tear, .tear-s, .tear-l {
+.tear,
+.tear-s,
+.tear-l {
     border-radius: 50% 0 50% 50%;
 }
 
-.square,.square-s,.square-l {
+.square,
+.square-s,
+.square-l {
     border-radius: 5px;
 }
 
@@ -2122,4 +2186,8 @@ aside button:hover .tooltiptext {
 
 .w100 {
     min-width: 100%
+}
+
+.hidden {
+    display: none;
 }

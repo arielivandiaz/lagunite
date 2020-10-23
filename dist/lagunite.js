@@ -1,1 +1,1 @@
-function show(e){document.getElementById(e).classList.remove("hidden")}function hidde(e){document.getElementById(e).classList.add("hidden")}function toggle(e){document.getElementById(e).classList.toggle("hidden")}function toggleItems(e,t){toggle(e),toggle(t)}
+function show(e){document.getElementById(e).classList.remove("hidden")}function hidde(e){document.getElementById(e).classList.add("hidden")}function toggle(e){document.getElementById(e).classList.toggle("hidden")}function toggleItems(e,t){console.log("toggle"),toggle(e),toggle(t)}
