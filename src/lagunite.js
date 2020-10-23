@@ -12,7 +12,7 @@
 
 
     function toggleItems(id1, id2) {
-        console.log("toggle");
+        
         toggle(id1);
         toggle(id2);
 

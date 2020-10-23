@@ -78,6 +78,10 @@ h3,
 h4,
 h5 {
     font-family: var(--font_headers);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+
 }
 
 h1 {
@@ -102,7 +106,7 @@ p {
 
 
 
-button {
+.btn {
     box-shadow: none;
     border-radius: 10px;
     border: 2px solid var(--main_color);
@@ -121,47 +125,40 @@ button {
 }
 
 
+.btn.no-bg {
+    background: none;
+    border: none;
+}
 
-button.alt {
+.btn.alt {
     background: var(--main_color_alt);
     color: var(--main_color)
 }
 
-button.std {
+.btn.std {
     min-width: 150px;
 }
 
-button.fit {
+.btn.fit {
     padding: 5px 8px;
 }
 
 
-button.big {
+.btn.big {
     font-size: 180%;
     padding: 15px 3vw;
 
 }
 
 
-button.big.std {
+.btn.big.std {
     min-width: 250px;
 }
 
-button.big.fit {}
+.btn.big.fit {}
 
-button:hover {
+.btn:hover {
     box-shadow: 0 0px 5px 1px var(--main_color);
-}
-
-/**********************************/
-
-.btn-group {}
-
-.btn-group button {
-
-    background: none;
-    border: none;
-    color: var(--text_color);
 }
 
 /*********************************/
@@ -173,6 +170,41 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+
+/************ HGROUPS ***************/
+
+.hg-inline,
+.hg-inline h1,
+.hg-inline h2,
+.hg-inline h3,
+.hg-inline h4,
+.hg-inline h5 {
+    display: inline-block;
+}
+
+
+
+
+/*************** MAIN ***************/
+.main {
+
+    width: 86vw;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10vh 5vw;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+
+
+}
+
+/************** NAV ******************/
+
 
 
 .nav {
@@ -204,22 +236,6 @@ button:hover {
 }
 
 
-/*************** MAIN ***************/
-.main {
-
-    width: 86vw;
-    background: rgba(255, 255, 255, 0.95);
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 25px;
-    padding: 10vh 5vw;
-    margin-top: 8vh;
-    margin-bottom: 3vh;
-
-
-}
 
 /***************************************/
 section {
@@ -361,6 +377,23 @@ select:focus {
 
 pre {
     font-size: 15px;
+}
+
+
+/*******************SEPARATORS *****************/
+.separator-h-s {
+    height: 15px;
+    content: ''
+}
+
+.separator-h-m {
+    height: 25px;
+    content: ''
+}
+
+.separator-h-l {
+    height: 50px;
+    content: ''
 }
 
 
@@ -953,15 +986,15 @@ td {
 /************** FONTS ****************************/
 .font-xs {
     font-size: 50%;
-    
+
 }
 
 .font-s {
-        font-size: 70%;
+    font-size: 70%;
 }
 
 .font-l {
-            font-size: 120%;
+    font-size: 120%;
 }
 
 /**************  SCROLLBAR ***********************/
