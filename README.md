@@ -32,3 +32,11 @@ bower install https://github.com/arielivandiaz/lagunite.git
 ```sh
 npm install lagunite --prefix ./public
 ```
+
+# Getting started with Lagunite
+
+- [Include Lagunite in your Project]
+- [Config]
+- [Layouts](##Layouts)
+- Buttons
+- Tables
