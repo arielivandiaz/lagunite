@@ -15,7 +15,9 @@
     "url": "https://github.com/arielivandiaz/lagunite/issues"
   },
   "homepage": "https://github.com/arielivandiaz/lagunite#readme",
-  "dependencies": {},
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
