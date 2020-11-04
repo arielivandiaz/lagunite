@@ -12,9 +12,28 @@
 
 
     function toggleItems(id1, id2) {
-        
         toggle(id1);
         toggle(id2);
+    }
 
-        
+    //Hidde after animation
+    function noneAfter(e, t) {
+        setTimeout(function () {
+            e.classList.add("hidden");
+        }, t);
+    }
+
+    function showMenu() {
+        var m = document.getElementById("menuBurger");
+        m.classList.remove("scale-out-tr");
+        m.classList.add("scale-in-tr");
+        m.classList.remove("hidden");
+    }
+
+    function hideMenu() {
+        var m = document.getElementById("menuBurger");
+        m.classList.remove("scale-in-tr");
+        m.classList.add("scale-out-tr");
+        noneAfter(m, 300);
+
     }

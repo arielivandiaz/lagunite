@@ -33,6 +33,28 @@ bower install https://github.com/arielivandiaz/lagunite.git
 npm install lagunite --prefix ./public
 ```
 
+## Todo:
+
+.w30 {
+    min-width: 30%;
+    width: 30%
+}
+
+.w30 img {
+    max-width: 100%
+}
+
+
+.padd-s {
+    padding: 5px;
+}
+.padd-h-s {
+    padding: 0 5px;
+}
+.padd-h-l {
+    padding: 0 50px;
+}
+
 # Getting started with Lagunite
 
 - [Include Lagunite in your Project]
