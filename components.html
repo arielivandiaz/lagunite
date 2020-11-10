@@ -19,122 +19,290 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-177961488-2');
-
     </script>
     <link type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
     <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
 </head>
 
 <body>
-    <section>
-        <table>
-            <caption>
-                <h1>Buttons </h1>
-            </caption>
-            <tr>
-                <th>
-                    <pre>class=</pre>
-                </th>
-                <th>
-                    <pre>"btn "</pre>
-                </th>
-                <th>
-                    <pre>"btn alt"</pre>
-                </th>
-                <th>
-                    <pre>"btn std"</pre>
-                </th>
-                <th>
-                    <pre>"btn fit"</pre>
-                </th>
-                <th>
-                    <pre>"btn big"</pre>
-                </th>
-            </tr>
-            <tr>
+    <div class="modal-fullscreen hidden" id="modal">
+        <button onclick="hidde('modal')" class="bg-1">
+            <h1>X</h1>
+        </button>
+    </div>
 
-                <td></td>
-                <td><button class="btn ">Button</button></td>
-                <td><button class="btn alt">Button</button></td>
-                <td><button class="btn std">Button</button></td>
-                <td><button class="btn fit">Button</button></td>
-                <td><button class="btn big">Button</button></td>
+    <main class="maxw9 centered">
+        <section>
+            <table>
+                <caption>
+                    <h1>Buttons </h1>
+                </caption>
+                <tr>
+                    <th>
+                        <pre>class=</pre>
+                    </th>
+                    <th>
+                        <pre>"btn "</pre>
+                    </th>
+                    <th>
+                        <pre>"btn alt"</pre>
+                    </th>
+                    <th>
+                        <pre>"btn std"</pre>
+                    </th>
+                    <th>
+                        <pre>"btn fit"</pre>
+                    </th>
+                    <th>
+                        <pre>"btn big"</pre>
+                    </th>
+                </tr>
+                <tr>
 
-
-
-
-            </tr>
-        </table>
-
-
-
-        <table>
-            <caption>
-                <h1>Buttons Combinations</h1>
-            </caption>
-            <tr>
-                <th>
-                    <pre>class=</pre>
-                </th>
+                    <td></td>
+                    <td><button class="btn ">Button</button></td>
+                    <td><button class="btn alt">Button</button></td>
+                    <td><button class="btn std">Button</button></td>
+                    <td><button class="btn fit">Button</button></td>
+                    <td><button class="btn big">Button</button></td>
 
 
-                <th>
-                    <pre>"btn std"</pre>
-                </th>
-                <th>
-                    <pre>"btn fit"</pre>
-                </th>
-                <th>
-                    <pre>"btn big"</pre>
-                </th>
-            </tr>
 
-            <tr>
-                <th>
-                    <pre>"alt"</pre>
-                </th>
-                <td><button class="btn alt std">Button</button></td>
-                <td><button class="btn alt fit">Button</button></td>
-                <td><button class="btn alt big">Button</button></td>
-            </tr>
-            <tr>
-                <th>
-                    <pre>"btn std"</pre>
-                </th>
-                <td>*</td>
-                <td><button class="btn std fit">Button</button></td>
-                <td><button class="btn std big">Button</button></td>
-            </tr>
 
-        </table>
+                </tr>
+            </table>
 
-    </section>
 
-    <section>
 
-        <h2>Radio Buttons as "radio-group"</h2>
+            <table>
+                <caption>
+                    <h1>Buttons Combinations</h1>
+                </caption>
+                <tr>
+                    <th>
+                        <pre>class=</pre>
+                    </th>
 
-        <div class="radio-group">
-            <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
-            <label for="radio-group-1A">One</label>
-            <input type="radio" name="radio-group-example" id="radio-group-1B" value="two" />
-            <label for="radio-group-1B">Two</label>
-            <input type="radio" name="radio-group-example" id="radio-group-1C" value="three" />
-            <label for="radio-group-1C">Three</label>
-        </div>
 
-        <div class="radio-group">
-            <input type="radio" name="radio-group-example2" id="radio-group-2A" value="one" checked />
-            <label for="radio-group-2A">One</label>
-            <input type="radio" name="radio-group-example2" id="radio-group-2B" value="two" />
-            <label for="radio-group-2B">Two</label>
-            <input type="radio" name="radio-group-example2" id="radio-group-2C" value="three" />
-            <label for="radio-group-2C">Three</label>
-            <input type="radio" name="radio-group-example2" id="radio-group-2D" value="four" />
-            <label for="radio-group-2D">Four</label>
-            <input type="radio" name="radio-group-example2" id="radio-group-2E" value="three" />
-            <label for="radio-group-2E">Five</label>
-        </div>
+                    <th>
+                        <pre>"btn std"</pre>
+                    </th>
+                    <th>
+                        <pre>"btn fit"</pre>
+                    </th>
+                    <th>
+                        <pre>"btn big"</pre>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <pre>"alt"</pre>
+                    </th>
+                    <td><button class="btn alt std">Button</button></td>
+                    <td><button class="btn alt fit">Button</button></td>
+                    <td><button class="btn alt big">Button</button></td>
+                </tr>
+                <tr>
+                    <th>
+                        <pre>"btn std"</pre>
+                    </th>
+                    <td>*</td>
+                    <td><button class="btn std fit">Button</button></td>
+                    <td><button class="btn std big">Button</button></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Radio Buttons as "radio-group"</h2>
+
+            <div class="radio-group">
+                <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
+                <label for="radio-group-1A">One</label>
+                <input type="radio" name="radio-group-example" id="radio-group-1B" value="two" />
+                <label for="radio-group-1B">Two</label>
+                <input type="radio" name="radio-group-example" id="radio-group-1C" value="three" />
+                <label for="radio-group-1C">Three</label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" name="radio-group-example2" id="radio-group-2A" value="one" checked />
+                <label for="radio-group-2A">One</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2B" value="two" />
+                <label for="radio-group-2B">Two</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2C" value="three" />
+                <label for="radio-group-2C">Three</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2D" value="four" />
+                <label for="radio-group-2D">Four</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2E" value="three" />
+                <label for="radio-group-2E">Five</label>
+            </div>
+
+
+
+
+            <section>
+
+                <table>
+                    <caption>
+                        <h1>Avatars</h1>
+                    </caption>
+                    <tr>
+                        <th>
+                            <pre>class=</pre>
+                        </th>
+
+
+
+                        <th>
+                            <pre>"avatar"</pre>
+                        </th>
+                        <th>
+                            <pre>"avatar big"</pre>
+                        </th>
+                        <th>
+                            <pre>"avatar small"</pre>
+                        </th>
+                        <th>
+                            <pre>"avatar micro"</pre>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><img class="avatar" src="img/avatar2.jpg"></td>
+                        <td><img class="avatar big" src="img/avatar3.jpg"></td>
+                        <td><img class="avatar small" src="img/avatar4.jpg"></td>
+                        <td><img class="avatar micro" src="img/avatar5.jpg"></td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <pre>"alt "</pre>
+                        </th>
+                        <td><img class="avatar alt" src="img/avatar2.jpg"></td>
+                        <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
+                        <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
+                        <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
+
+                    </tr>
+                </table>
+
+
+
+
+
+
+            </section>
+
+        </section>
+
+
+
+        <section>
+
+            <table>
+                <caption>
+                    <h1>Chips</h1>
+                </caption>
+                <tr>
+                    <th>
+                        <pre>class=</pre>
+                    </th>
+
+
+                    <th>
+                        <pre>"chip"</pre>
+                    </th>
+                    <th>
+                        <pre>"chip vertical"</pre>
+                    </th>
+
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td>
+                        <div class="chip  ">
+                            <img class="avatar micro" src="img/avatar4.jpg">
+                            <span>Lagunite</span>
+                            <h2>Veteran</h2>
+                        </div>
+
+                        <div class="chip  ">
+                            <div class="header">
+                                <img class="avatar micro" src="img/avatar4.jpg">
+                            </div>
+                            <div class="content">
+                                <span>Lagunite</span>
+                                <h2>Veteran</h2>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="chip vertical ">
+                            <img class="avatar micro" src="img/avatar4.jpg">
+                            <span>28</span>
+                            <h2>15</h2>
+                        </div>
+                        <div class="chip vertical ">
+
+                            <img class="avatar micro" src="img/avatar4.jpg">
+
+                            <div class="content">
+                                <span>28</span>
+                                <h2>15</h2>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <pre>"expandable "</pre>
+                    </th>
+                    <td>
+                        <div class="chip  expandable">
+
+                            <img class="avatar micro" src="img/avatar4.jpg">
+
+                            <div class="content">
+                                <span>Lagunite</span>
+                                <h2>Veteran</h2>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="chip vertical expandable">
+                            <div class="">
+                                <img class="avatar micro" src="img/avatar4.jpg">
+                            </div>
+                            <div class="content">
+                                <span>28</span>
+                                <h2>15</h2>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </section>
+
+        <section>
+            <h1>Cards</h1>
+            <div class="card">
+                <span>asdasd</span>asd
+                asd
+                <button></button>
+            </div>
+        </section>
 
 
 
@@ -143,7 +311,7 @@
 
             <table>
                 <caption>
-                    <h1>Avatars</h1>
+                    <h1>Figures</h1>
                 </caption>
                 <tr>
                     <th>
@@ -151,354 +319,302 @@
                     </th>
 
 
+                    <th>
+                        <pre>"square"</pre>
+                    </th>
+                    <th>
+                        <pre>"rounded"</pre>
+                    </th>
+                    <th>
+                        <pre>"circle"</pre>
+                    </th>
+                    <th>
+                        <pre>"triangle"</pre>
+                    </th>
+                    <th>
+                        <pre>"tear"</pre>
+                    </th>
 
-                    <th>
-                        <pre>"avatar"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar big"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar small"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar micro"</pre>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><img class="avatar" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar big" src="img/avatar3.jpg"></td>
-                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
 
                 </tr>
 
                 <tr>
                     <th>
-                        <pre>"alt "</pre>
+                        <pre>"small"</pre>
                     </th>
-                    <td><img class="avatar alt" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
-                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
-
+                    <td>
+                        <div class="square-s">L</div>
+                    </td>
+                    <td>
+                        <div class="rounded-s">L</div>
+                    </td>
+                    <td>
+                        <div class="circle-s">L</div>
+                    </td>
+                    <td>
+                        <div class="triangle-s"></div>
+                    </td>
+                    <td>
+                        <div class="tear-s">L</div>
+                    </td>
                 </tr>
+                <tr>
+                    <th>
+                        <pre>"small"</pre>
+                    </th>
+                    <td>
+                        <div class="square">L</div>
+                    </td>
+                    <td>
+                        <div class="rounded">L</div>
+                    </td>
+                    <td>
+                        <div class="circle">L</div>
+                    </td>
+                    <td>
+                        <div class="triangle"></div>
+                    </td>
+                    <td>
+                        <div class="tear">L</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <pre>"small"</pre>
+                    </th>
+                    <td>
+                        <div class="square-l">L</div>
+                    </td>
+                    <td>
+                        <div class="rounded-l">L</div>
+                    </td>
+                    <td>
+                        <div class="circle-l">L</div>
+                    </td>
+                    <td>
+                        <div class="triangle-l"></div>
+                    </td>
+                    <td>
+                        <div class="tear-l">L</div>
+                    </td>
+                </tr>
+
             </table>
 
 
+        </section>
+        <section>
 
+            <h1>Tables</h1>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+
+                </tr>
+                <tr>
+                    <th>John Doe</th>
+                    <td>213</td>
+                    <td>34</td>
+                    <td>125</td>
+                    <td>64</td>
+                    <td>235</td>
+                </tr>
+                <tr>
+                    <th>Crystal Smith </th>
+                    <td>56</td>
+                    <td>89</td>
+                    <td>90</td>
+                    <td>75</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <th>Carl Fenix</th>
+                    <td>45</td>
+                    <td>87</td>
+                    <td>34</td>
+                    <td>68</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>Megan Davis</th>
+                    <td>202</td>
+                    <td>198</td>
+                    <td>174</td>
+                    <td>215</td>
+                    <td>164</td>
+                </tr>
+
+
+            </table>
+            <table class="hoverable">
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+
+                </tr>
+                <tr>
+                    <th>John Doe</th>
+                    <td>213</td>
+                    <td>34</td>
+                    <td>125</td>
+                    <td>64</td>
+                    <td>235</td>
+                </tr>
+                <tr>
+                    <th>Crystal Smith </th>
+                    <td>56</td>
+                    <td>89</td>
+                    <td>90</td>
+                    <td>75</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <th>Carl Fenix</th>
+                    <td>45</td>
+                    <td>87</td>
+                    <td>34</td>
+                    <td>68</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>Megan Davis</th>
+                    <td>202</td>
+                    <td>198</td>
+                    <td>174</td>
+                    <td>215</td>
+                    <td>164</td>
+                </tr>
+
+
+            </table>
+        </section>
+
+        <section>
+            <h1>Modals</h1>
+            <button class="btn" onclick="show('modal')">open</button>
 
 
 
         </section>
 
-    </section>
+        <section>
+            <table>
+                <caption>
+                    <h1>Shadows </h1>
+                </caption>
+                <tr>
+                    <th>class=</th>
+                    <th>
+                    </th>
+                    <th>
+                    </th>
+                    <th>
 
+                    </th>
 
+                </tr>
+                <tr>
+                    <th>
+                        <pre>"shadow-1"</pre>
+                    </th>
 
-    <section>
-
-        <table>
-            <caption>
-                <h1>Chips</h1>
-            </caption>
-            <tr>
-                <th>
-                    <pre>class=</pre>
-                </th>
-
-
-                <th>
-                    <pre>"chip"</pre>
-                </th>
-                <th>
-                    <pre>"chip vertical"</pre>
-                </th>
-
-            </tr>
-
-            <tr>
-                <th></th>
-                <td>
-                    <div class="chip  ">
-                        <img class="avatar micro" src="img/avatar4.jpg">
-                        <span>Lagunite</span>
-                        <h2>Veteran</h2>
-                    </div>
-
-                    <div class="chip  ">
-                        <div class="header">
-                            <img class="avatar micro" src="img/avatar4.jpg">
+                    <td>
+                        <div class="card   shadow-1">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                        <div class="content">
-                            <span>Lagunite</span>
-                            <h2>Veteran</h2>
+                    </td>
+                    <td>
+                        <div class="card bg-6 shadow-1">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                    </div>
-
-                </td>
-                <td>
-                    <div class="chip vertical ">
-                        <img class="avatar micro" src="img/avatar4.jpg">
-                        <span>28</span>
-                        <h2>15</h2>
-                    </div>
-                    <div class="chip vertical ">
-
-                        <img class="avatar micro" src="img/avatar4.jpg">
-
-                        <div class="content">
-                            <span>28</span>
-                            <h2>15</h2>
+                    </td>
+                    <td>
+                        <div class="card bg-4 shadow-1">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <pre>"shadow-2"</pre>
+                    </th>
 
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <pre>"expandable "</pre>
-                </th>
-                <td>
-                    <div class="chip  expandable">
-
-                        <img class="avatar micro" src="img/avatar4.jpg">
-
-                        <div class="content">
-                            <span>Lagunite</span>
-                            <h2>Veteran</h2>
+                    <td>
+                        <div class="card   shadow-2">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="chip vertical expandable">
-                        <div class="">
-                            <img class="avatar micro" src="img/avatar4.jpg">
+                    </td>
+                    <td>
+                        <div class="card bg-6 shadow-2">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                        <div class="content">
-                            <span>28</span>
-                            <h2>15</h2>
+                    </td>
+                    <td>
+                        <div class="card bg-4 shadow-2">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
                         </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
+                    </td>
+                </tr>
+                <tr class="bg-1">
+                    <th>
+                        <pre>"shadow-3"</pre>
+                    </th>
 
-
-    </section>
-
-    <section>
-        <h1>Cards</h1>
-        <div class="card">
-        </div>
-    </section>
-
-    <section>
-
-        <div class="btn-group">
-            <button>asd</button>
-            <button>asd</button>
-            <button>asd</button>
-        </div>
-    </section>
-
-
-    <section>
-
-        <table>
-            <caption>
-                <h1>Figures</h1>
-            </caption>
-            <tr>
-                <th>
-                    <pre>class=</pre>
-                </th>
-
-
-                <th>
-                    <pre>"square"</pre>
-                </th>
-                <th>
-                    <pre>"rounded"</pre>
-                </th>
-                <th>
-                    <pre>"circle"</pre>
-                </th>
-                <th>
-                    <pre>"triangle"</pre>
-                </th>
-                <th>
-                    <pre>"tear"</pre>
-                </th>
-
-
-            </tr>
-
-            <tr>
-                <th>
-                    <pre>"small"</pre>
-                </th>
-                <td>
-                    <div class="square-s">L</div>
-                </td>
-                <td>
-                    <div class="rounded-s">L</div>
-                </td>
-                <td>
-                    <div class="circle-s">L</div>
-                </td>
-                <td>
-                    <div class="triangle-s"></div>
-                </td>
-                <td>
-                    <div class="tear-s">L</div>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <pre>"small"</pre>
-                </th>
-                <td>
-                    <div class="square">L</div>
-                </td>
-                <td>
-                    <div class="rounded">L</div>
-                </td>
-                <td>
-                    <div class="circle">L</div>
-                </td>
-                <td>
-                    <div class="triangle"></div>
-                </td>
-                <td>
-                    <div class="tear">L</div>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <pre>"small"</pre>
-                </th>
-                <td>
-                    <div class="square-l">L</div>
-                </td>
-                <td>
-                    <div class="rounded-l">L</div>
-                </td>
-                <td>
-                    <div class="circle-l">L</div>
-                </td>
-                <td>
-                    <div class="triangle-l"></div>
-                </td>
-                <td>
-                    <div class="tear-l">L</div>
-                </td>
-            </tr>
-
-        </table>
-
-
-    </section>
-    <section>
-
-        <h1>Tables</h1>
-
-        <table>
-            <tr>
-                <th></th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-
-            </tr>
-            <tr>
-                <th>John Doe</th>
-                <td>213</td>
-                <td>34</td>
-                <td>125</td>
-                <td>64</td>
-                <td>235</td>
-            </tr>
-            <tr>
-                <th>Crystal Smith </th>
-                <td>56</td>
-                <td>89</td>
-                <td>90</td>
-                <td>75</td>
-                <td>101</td>
-            </tr>
-            <tr>
-                <th>Carl Fenix</th>
-                <td>45</td>
-                <td>87</td>
-                <td>34</td>
-                <td>68</td>
-                <td>35</td>
-            </tr>
-                    <tr>
-                <th>Megan Davis</th>
-                <td>202</td>
-                <td>198</td>
-                <td>174</td>
-                <td>215</td>
-                <td>164</td>
-            </tr>
-
-
-        </table>
-          <table class="hoverable">
-            <tr>
-                <th></th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-
-            </tr>
-            <tr>
-                <th>John Doe</th>
-                <td>213</td>
-                <td>34</td>
-                <td>125</td>
-                <td>64</td>
-                <td>235</td>
-            </tr>
-            <tr>
-                <th>Crystal Smith </th>
-                <td>56</td>
-                <td>89</td>
-                <td>90</td>
-                <td>75</td>
-                <td>101</td>
-            </tr>
-            <tr>
-                <th>Carl Fenix</th>
-                <td>45</td>
-                <td>87</td>
-                <td>34</td>
-                <td>68</td>
-                <td>35</td>
-            </tr>
-                    <tr>
-                <th>Megan Davis</th>
-                <td>202</td>
-                <td>198</td>
-                <td>174</td>
-                <td>215</td>
-                <td>164</td>
-            </tr>
-
-
-        </table>
-    </section>
-
-
-
-</body>
-
-</html>
+                    <td>
+                        <div class="card   shadow-3">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card bg-6 shadow-3">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card bg-4 shadow-3">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="src/lagunite.js"></script>
+</body></html>

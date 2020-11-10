@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://use.typekit.net/ztk4pwi.css");
 /*************** VARIABLES ***************/
 
 :root {
@@ -11,9 +13,11 @@
 
 
     --main_color: #2476FF;
+    --main_color_rgb: 36,118,255;
     --main_color_alt: #FFF;
     --main_color_light: #5E9AFF;
     --main_color_dark: #0965FF;
+
 
     --almost_black: #333;
     --almost_white: #FCFCFC;
@@ -36,18 +40,25 @@
 
 
 
-    --size_xs : 5px;
-    --size_s : 10px;
-    --size_m : 25px;
-    --size_l : 50px;
-    --size_xl : 75px;
+    --size_xs: 5px;
+    --size_s: 10px;
+    --size_m: 25px;
+    --size_l: 50px;
+    --size_xl: 75px;
     
-    --max_width_1 : 50px;
-    --max_width_2 : 100px;
-    --max_width_3 : 150px;
-    --max_width_4 : 300px;
-    --max_width_5 : 400px;
-    --max_width_6 : 500px;
+    
+    
+
+    --max_width_1: 50px;
+    --max_width_2: 100px;
+    --max_width_3: 150px;
+    --max_width_4: 300px;
+    --max_width_5: 400px;
+    --max_width_6: 500px;
+    --max_width_7: 600px;
+    --max_width_8: 800px;
+    --max_width_9: 1000px;
+    --max_width_10: 1300px;
 
 
     --radius: 6px;
