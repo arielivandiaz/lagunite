@@ -1,0 +1,1176 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
+
+    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+
+
+
+</head>
+
+
+<body class="scrollable">
+    <div class="loading hidden" id="spinner">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+        <h2>
+            Loading...
+        </h2>
+    </div>
+
+    <div class="separator-h-s"></div>
+    <section class="col-row vh25  ">
+        <div class="w40 xh20 ">
+            <img src="../web/img/lagunite.png">
+            <div class="separator-h-s"></div>
+            <h2>Frontend Framework</h2>
+            <h3>Code made for be edited</h3>
+            <span id="version">v23.8</span>
+            <div class="row">
+                <button class="btn std"> Github </button>
+                <button class="btn std"> Documentation </button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="col  vw80 centered padd-v  sa">
+        <table>
+            <caption>
+                <h1>Min/Max Width/Height (vw)</h1>
+                <span class="font-s">10-15-20-25-..... -100</span>
+            </caption>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ta-l">min-width: 10vw</td>
+                <td class="bg-1">#102</td>
+                <td>xminvw10 </td>
+                <td>dminvw10 </td>
+                <td>minvw10 </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">max-width: 10vw</td>
+                <td class="bg-1">#103</td>
+                <td>xmaxvw10 </td>
+                <td>dmaxvw10 </td>
+                <td>maxvw10 </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">min-height: 10vh</td>
+                <td class="bg-1">#104</td>
+                <td>xminvh10 </td>
+                <td>dminvh10 </td>
+                <td>minvh10 </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">max-height: 10vh</td>
+                <td class="bg-1">#105</td>
+                <td>xmaxvh10 </td>
+                <td>dmaxvh10 </td>
+                <td>maxvh10 </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+
+        </table>
+
+        <table>
+            <caption>
+                <h1>Min/Max Width/Height (Breakpoint)</h1>
+                <span class="font-s">1-2-3-4-...-12</span>
+                <br>
+                <span class="font-s">min cases : fit-content</span>
+
+
+            </caption>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ta-l">min-width: calc(X*var(--break_width))</td>
+                <td class="bg-1">#106</td>
+                <td>xminw1 </td>
+                <td>dminw1 </td>
+                <td>minw1 </td>
+                <td class="bg-1">0.20</td>
+            </tr>
+            <tr>
+                <td class="ta-l">max-width: calc(X*var(--break_width))</td>
+                <td class="bg-1">#107</td>
+                <td>xmaxw1 </td>
+                <td>dmaxw1 </td>
+                <td>maxw1 </td>
+                <td class="bg-1">0.20</td>
+            </tr>
+            <tr>
+                <td class="ta-l">min-height: calc(X*var(--break_height))</td>
+                <td class="bg-1">#108</td>
+                <td>xminh1 </td>
+                <td>dminh1 </td>
+                <td>minh1 </td>
+                <td class="bg-1">0.20</td>
+            </tr>
+            <tr>
+                <td class="ta-l">max-height: calc(X*var(--break_height))</td>
+                <td class="bg-1">#109</td>
+                <td>xmaxh1 </td>
+                <td>dmaxh1 </td>
+                <td>maxh1 </td>
+                <td class="bg-1">0.20</td>
+            </tr>
+        </table>
+
+
+
+        <table>
+            <caption>
+                <h1>Aling - Justify</h1>
+            </caption>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    Declared
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ta-l">align-items: center</td>
+                <td class="bg-1">#120</td>
+                <td>xai-c </td>
+                <td>dai-c </td>
+                <td>ai-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-items: flex-end</td>
+                <td class="bg-1">#120</td>
+                <td>xai-fe </td>
+                <td>dai-fe </td>
+                <td>ai-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-items: flex-start</td>
+                <td class="bg-1">#120</td>
+                <td>xai-fs </td>
+                <td>dai-fs </td>
+                <td>ai-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-items: stretch</td>
+                <td class="bg-1">#120</td>
+                <td>xai-s </td>
+                <td>dai-s </td>
+                <td>ai-s </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-self: center</td>
+                <td class="bg-1">#121</td>
+                <td>xas-c </td>
+                <td>das-c </td>
+                <td>as-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-self: flex-end</td>
+                <td class="bg-1">#121</td>
+                <td>xas-fe </td>
+                <td>das-fe </td>
+                <td>as-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-self: flex-start</td>
+                <td class="bg-1">#121</td>
+                <td>xas-fs </td>
+                <td>das-fs </td>
+                <td>as-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-self: stretch</td>
+                <td class="bg-1">#121</td>
+                <td>xas-s </td>
+                <td>das-s </td>
+                <td>as-s </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: center</td>
+                <td class="bg-1">#122</td>
+                <td>xac-c </td>
+                <td>dac-c </td>
+                <td>ac-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: flex-end</td>
+                <td class="bg-1">#122</td>
+                <td>xac-fe </td>
+                <td>dac-fe </td>
+                <td>ac-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: flex-start</td>
+                <td class="bg-1">#122</td>
+                <td>xac-fs </td>
+                <td>dac-fs </td>
+                <td>ac-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: stretch</td>
+                <td class="bg-1">#122</td>
+                <td>xac-s </td>
+                <td>dac-s </td>
+                <td>ac-s </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: space-around</td>
+                <td class="bg-1">#122</td>
+                <td>xac-sa </td>
+                <td>dac-sa </td>
+                <td>ac-sa </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">align-content: space-between</td>
+                <td class="bg-1">#122</td>
+                <td>xac-sb </td>
+                <td>dac-sb </td>
+                <td>ac-sb </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: stretch</td>
+                <td class="bg-1">#123</td>
+                <td>xji-s </td>
+                <td>dji-s </td>
+                <td>ji-s </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: self-end</td>
+                <td class="bg-1">#123</td>
+                <td>xji-se </td>
+                <td>dji-se </td>
+                <td>ji-se </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: self-start</td>
+                <td class="bg-1">#123</td>
+                <td>xji-ss </td>
+                <td>dji-ss </td>
+                <td>ji-ss </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: flex-end</td>
+                <td class="bg-1">#123</td>
+                <td>xji-fe </td>
+                <td>dji-fe </td>
+                <td>ji-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: flex-start</td>
+                <td class="bg-1">#123</td>
+                <td>xji-fs </td>
+                <td>dji-fs </td>
+                <td>ji-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-items: center</td>
+                <td class="bg-1">#123</td>
+                <td>xji-c </td>
+                <td>dji-c </td>
+                <td>ji-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: stretch</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-s </td>
+                <td>djs-s </td>
+                <td>js-s </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: self-end</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-se </td>
+                <td>djs-se </td>
+                <td>js-se </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: self-start</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-ss </td>
+                <td>djs-ss </td>
+                <td>js-ss </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: flex-end</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-fe </td>
+                <td>djs-fe </td>
+                <td>js-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: flex-start</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-fs </td>
+                <td>djs-fs </td>
+                <td>js-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> justify-self: center</td>
+                <td class="bg-1">#124</td>
+                <td>xjs-c </td>
+                <td>djs-c </td>
+                <td>js-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">justify-content: center</td>
+                <td class="bg-1">#125</td>
+                <td>xjc-c </td>
+                <td>djc-c </td>
+                <td>jc-c </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">justify-content: flex-end</td>
+                <td class="bg-1">#125</td>
+                <td>xjc-fe </td>
+                <td>djc-fe </td>
+                <td>jc-fe </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">justify-content: flex-start</td>
+                <td class="bg-1">#125</td>
+                <td>xjc-fs </td>
+                <td>djc-fs </td>
+                <td>jc-fs </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">justify-content: space-around</td>
+                <td class="bg-1">#125</td>
+                <td>xjc-sa </td>
+                <td>djc-sa </td>
+                <td>jc-sa </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+            <tr>
+                <td class="ta-l">justify-content: space-between</td>
+                <td class="bg-1">#125</td>
+                <td>xjc-sb </td>
+                <td>djc-sb </td>
+                <td>jc-sb </td>
+                <td class="bg-1">0.19</td>
+            </tr>
+
+
+
+        </table>
+
+        <table>
+            <caption>
+                <h1>Padding</h1>
+
+            </caption>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ta-l">padding: var(--size_xs)</td>
+                <td class="bg-1">#130</td>
+                <td>xpadd-xs </td>
+                <td>dpadd-xs </td>
+                <td>padd-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding: var(--size_s)</td>
+                <td class="bg-1">#130</td>
+                <td>xpadd-s </td>
+                <td>dpadd-s </td>
+                <td>padd-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding: var(--size_m)</td>
+                <td class="bg-1">#130</td>
+                <td>xpadd </td>
+                <td>dpadd </td>
+                <td>padd </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding: var(--size_l)</td>
+                <td class="bg-1">#130</td>
+                <td>xpadd-l </td>
+                <td>dpadd-l </td>
+                <td>padd-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding: var(--size_xl)</td>
+                <td class="bg-1">#130</td>
+                <td>xpadd-xl </td>
+                <td>dpadd-xl </td>
+                <td>padd-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="ta-l"> padding-left: var(--size_xs)<br>
+                    padding-right: var(--size_xs)</td>
+                <td class="bg-1">#131</td>
+                <td>xpadd-h-xs </td>
+                <td>dpadd-h-xs </td>
+                <td>padd-h-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> padding-left: var(--size_s)<br>
+                    padding-right: var(--size_s)</td>
+                <td class="bg-1">#131</td>
+                <td>xpadd-h-s </td>
+                <td>dpadd-h-s </td>
+                <td>padd-h-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-left: var(--size_m)<br>
+                    padding-right: var(--size_m)</td>
+                <td class="bg-1">#131</td>
+                <td>xpadd-h </td>
+                <td>dpadd-h </td>
+                <td>padd-h </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> padding-left: var(--size_l)<br>
+                    padding-right: var(--size_l)</td>
+                <td class="bg-1">#131</td>
+                <td>xpadd-h-l </td>
+                <td>dpadd-h-l </td>
+                <td>padd-h-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l"> padding-left: var(--size_xl)<br>
+                    padding-right: var(--size_xl)</td>
+                <td class="bg-1">#131</td>
+                <td>xpadd-h-xl </td>
+                <td>dpadd-h-xl </td>
+                <td>padd-h-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l"> padding-top: var(--size_xs)<br>
+                    padding-bottom: var(--size_xs)</td>
+                <td class="bg-1">#132</td>
+                <td>xpadd-v-xs </td>
+                <td>dpadd-v-xs </td>
+                <td>padd-v-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td class="ta-l"> padding-top: var(--size_s)<br>
+                    padding-bottom: var(--size_s)</td>
+                <td class="bg-1">#132</td>
+                <td>xpadd-v-s </td>
+                <td>dpadd-v-s </td>
+                <td>padd-v-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td class="ta-l"> padding-top: var(--size_m)<br>
+                    padding-bottom: var(--size_m)</td>
+                <td class="bg-1">#132</td>
+                <td>xpadd-v </td>
+                <td>dpadd-v </td>
+                <td>padd-v </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td class="ta-l"> padding-top: var(--size_l)<br>
+                    padding-bottom: var(--size_l)</td>
+                <td class="bg-1">#132</td>
+                <td>xpadd-v-l </td>
+                <td>dpadd-v-l </td>
+                <td> padd-v-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td class="ta-l"> padding-top: var(--size_xl)<br>
+                    padding-bottom: var(--size_xl)</td>
+                <td class="bg-1">#132</td>
+                <td>xpadd-v-xl </td>
+                <td>dpadd-v-xl </td>
+                <td>padd-v-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="ta-l">padding-left: var(--size_xs)</td>
+                <td class="bg-1">#133</td>
+                <td>xpadd-lf-xs </td>
+                <td>dpadd-lf-xs </td>
+                <td>padd-lf-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-left: var(--size_s)</td>
+                <td class="bg-1">#133</td>
+                <td>xpadd-lf-s </td>
+                <td>dpadd-lf-s </td>
+                <td> padd-lf-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-left: var(--size_m)</td>
+                <td class="bg-1">#133</td>
+                <td>xpadd-lf </td>
+                <td>dpadd-lf </td>
+                <td>padd-lf </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-left: var(--size_l)</td>
+                <td class="bg-1">#133</td>
+                <td>xpadd-lf-l </td>
+                <td>dpadd-lf-l </td>
+                <td> padd-lf-l</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-left: var(--size_xl)</td>
+                <td class="bg-1">#133</td>
+                <td>xpadd-lf-xl </td>
+                <td>dpadd-lf-xl </td>
+                <td>padd-lf-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="ta-l">padding-right: var(--size_xs)</td>
+                <td class="bg-1">#134</td>
+                <td>xpadd-r-xs </td>
+                <td>dpadd-r-xs </td>
+                <td>padd-r-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-right: var(--size_s)</td>
+                <td class="bg-1">#134</td>
+                <td>xpadd-r-s </td>
+                <td>dpadd-r-s </td>
+                <td>padd-r-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-right: var(--size_m)</td>
+                <td class="bg-1">#134</td>
+                <td>xpadd-r </td>
+                <td>dpadd-r </td>
+                <td>padd-r </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-right: var(--size_l)</td>
+                <td class="bg-1">#134</td>
+                <td>xpadd-r-l </td>
+                <td>dpadd-r-l </td>
+                <td>padd-r-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-right: var(--size_xl)</td>
+                <td class="bg-1">#134</td>
+                <td>xpadd-r-xl </td>
+                <td>dpadd-r-xl </td>
+                <td>padd-r-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="ta-l">padding-top: var(--size_xs)</td>
+                <td class="bg-1">#135</td>
+                <td>xpadd-t-xs </td>
+                <td>dpadd-t-xs </td>
+                <td>padd-t-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-top: var(--size_s)</td>
+                <td class="bg-1">#135</td>
+                <td>xpadd-t-s </td>
+                <td>dpadd-t-s </td>
+                <td>padd-t-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-top: var(--size_n)</td>
+                <td class="bg-1">#135</td>
+                <td>xpadd-t </td>
+                <td>dpadd-t </td>
+                <td> padd-t</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-top: var(--size_l)</td>
+                <td class="bg-1">#135</td>
+                <td>xpadd-t-l </td>
+                <td>dpadd-t-l </td>
+                <td>padd-t-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-top: var(--size_xl)</td>
+                <td class="bg-1">#135</td>
+                <td>xpadd-t-xl </td>
+                <td>dpadd-t-xl </td>
+                <td> padd-t-xl</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="ta-l">padding-bottom: var(--size_xs)</td>
+                <td class="bg-1">#136</td>
+                <td>xpadd-b-xs </td>
+                <td>dpadd-b-xs </td>
+                <td> padd-b-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-bottom: var(--size_s)</td>
+                <td class="bg-1">#136</td>
+                <td>xpadd-b-s </td>
+                <td>dpadd-b-s </td>
+                <td>padd-b-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-bottom: var(--size_m)</td>
+                <td class="bg-1">#136</td>
+                <td>xpadd-b </td>
+                <td>dpadd-b </td>
+                <td>padd-b </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-bottom: var(--size_l)</td>
+                <td class="bg-1">#136</td>
+                <td>xpadd-b-l </td>
+                <td>dpadd-b-l </td>
+                <td>padd-b-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">padding-bottom: var(--size_xl)</td>
+                <td class="bg-1">#136</td>
+                <td>xpadd-b-xl </td>
+                <td>dpadd-b-xl </td>
+                <td>padd-b-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+
+
+
+        </table>
+
+        <table>
+            <caption>
+                <h1>Margin</h1>
+
+            </caption>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <td class="ta-l">margin: var(--size_xs)</td>
+                <td class="bg-1">#140</td>
+                <td>xmarg-xs </td>
+                <td>dmarg-xs </td>
+                <td>marg-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin: var(--size_s)</td>
+                <td class="bg-1">#140</td>
+                <td>xmarg-s </td>
+                <td>dmarg-s </td>
+                <td>marg-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin: var(--size_m)</td>
+                <td class="bg-1">#140</td>
+                <td>xmarg </td>
+                <td>dmarg </td>
+                <td>marg </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin: var(--size_l)</td>
+                <td class="bg-1">#140</td>
+                <td>xmarg-l </td>
+                <td>dmarg-l </td>
+                <td>marg-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin: var(--size_xl)</td>
+                <td class="bg-1">#140</td>
+                <td>xmarg-xl </td>
+                <td>dmarg-xl </td>
+                <td>marg-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_xs)<br>
+                    margin-right: var(--size_xs)</td>
+                <td class="bg-1">#141</td>
+                <td>xmarg-h-xs </td>
+                <td>dmarg-h-xs </td>
+                <td> marg-h-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_s)<br>
+                    margin-right: var(--size_s)</td>
+                <td class="bg-1">#141</td>
+                <td>xmarg-h-s </td>
+                <td>dmarg-h-s </td>
+                <td>marg-h-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_m)<br>
+                    margin-right: var(--size_m)</td>
+                <td class="bg-1">#141</td>
+                <td>xmarg-h </td>
+                <td>dmarg-h </td>
+                <td>marg-h </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_l)<br>
+                    margin-right: var(--size_l)</td>
+                <td class="bg-1">#141</td>
+                <td>xmarg-h-l </td>
+                <td>dmarg-h-l </td>
+                <td>marg-h-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_xl)<br>
+                    margin-right: var(--size_xl)
+                </td>
+                <td class="bg-1">#141</td>
+                <td>xmarg-h-xl </td>
+                <td>dmarg-h-xl </td>
+                <td>marg-h-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_xs)<br>
+                    margin-bottom: var(--size_xs)</td>
+                <td class="bg-1">#142</td>
+                <td>xmarg-v-xs </td>
+                <td>dmarg-v-xs </td>
+                <td> marg-v-xs</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_s)<br>
+                    margin-bottom: var(--size_s)</td>
+                <td class="bg-1">#142</td>
+                <td>xmarg-v-s </td>
+                <td>dmarg-v-s </td>
+                <td> marg-v-s</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_m)<br>
+                    margin-bottom: var(--size_m)</td>
+                <td class="bg-1">#142</td>
+                <td>xmarg-v </td>
+                <td>dmarg-v </td>
+                <td>marg-v </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_l)<br>
+                    margin-bottom: var(--size_l)</td>
+                <td class="bg-1">#142</td>
+                <td>xmarg-v-l </td>
+                <td>dmarg-v-l </td>
+                <td>marg-v-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_xl)<br>
+                    margin-bottom: var(--size_xl)
+                </td>
+                <td class="bg-1">#142</td>
+                <td>xmarg-v-xl </td>
+                <td>dmarg-v-xl </td>
+                <td>marg-v-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_xs)</td>
+                <td class="bg-1">#143</td>
+                <td>xmarg-lf-xs </td>
+                <td>dmarg-lf-xs </td>
+                <td>marg-lf-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_s)</td>
+                <td class="bg-1">#143</td>
+                <td>xmarg-lf-s </td>
+                <td>dmarg-lf-s </td>
+                <td>marg-lf-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_m)</td>
+                <td class="bg-1">#143</td>
+                <td>xmarg-lf </td>
+                <td>dmarg-lf </td>
+                <td> marg-lf</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_l)</td>
+                <td class="bg-1">#143</td>
+                <td>xmarg-lf-l </td>
+                <td>dmarg-lf-l </td>
+                <td>marg-lf-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-left: var(--size_xl)</td>
+                <td class="bg-1">#143</td>
+                <td>xmarg-lf-xl </td>
+                <td>dmarg-lf-xl </td>
+                <td>marg-lf-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-right: var(--size_xs)</td>
+                <td class="bg-1">#144</td>
+                <td>xmarg-r-xs </td>
+                <td>dmarg-r-xs </td>
+                <td> marg-r-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-right: var(--size_s)</td>
+                <td class="bg-1">#144</td>
+                <td>xmarg-r-s </td>
+                <td>dmarg-r-s </td>
+                <td> marg-r-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-right: var(--size_m)</td>
+                <td class="bg-1">#144</td>
+                <td>xmarg-r </td>
+                <td>dmarg-r </td>
+                <td>marg-r </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-right: var(--size_l)</td>
+                <td class="bg-1">#144</td>
+                <td>xmarg-r-l </td>
+                <td>dmarg-r-l </td>
+                <td>marg-r-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-right: var(--size_xl)</td>
+                <td class="bg-1">#144</td>
+                <td>xmarg-r-xl </td>
+                <td>dmarg-r-xl </td>
+                <td>marg-r-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_xs)</td>
+                <td class="bg-1">#145</td>
+                <td>xmarg-t-xs </td>
+                <td>dmarg-t-xs </td>
+                <td> marg-t-xs </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_s)</td>
+                <td class="bg-1">#145</td>
+                <td>xmarg-t-s </td>
+                <td>dmarg-t-s </td>
+                <td> marg-t-s </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_m)</td>
+                <td class="bg-1">#145</td>
+                <td>xmarg-t </td>
+                <td>dmarg-t </td>
+                <td>marg-t </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_l)</td>
+                <td class="bg-1">#145</td>
+                <td>xmarg-t-l </td>
+                <td>dmarg-t-l </td>
+                <td>marg-t-l </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-top: var(--size_xl)</td>
+                <td class="bg-1">#145</td>
+                <td>xmarg-t-xl </td>
+                <td>dmarg-t-xl </td>
+                <td> marg-t-xl </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-bottom: var(--size_xs)</td>
+                <td class="bg-1">#146</td>
+                <td>xmarg-b-xs  </td>
+                <td>dmarg-b-xs  </td>
+                <td>marg-b-xs  </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-bottom: var(--size_s)</td>
+                <td class="bg-1">#146</td>
+                <td>xmarg-b-s  </td>
+                <td>dmarg-b-s  </td>
+                <td>marg-b-s  </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-bottom: var(--size_m)</td>
+                <td class="bg-1">#146</td>
+                <td>xmarg-b  </td>
+                <td>dmarg-b  </td>
+                <td>marg-b  </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-bottom: var(--size_l)</td>
+                <td class="bg-1">#146</td>
+                <td>xmarg-b-l  </td>
+                <td>dmarg-b-l  </td>
+                <td>marg-b-l  </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td class="ta-l">margin-bottom: var(--size_xl)</td>
+                <td class="bg-1">#146</td>
+                <td>xmarg-b-xl  </td>
+                <td>dmarg-b-xl  </td>
+                <td>marg-b-xl  </td>
+                <td class="bg-1">0.17</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+
+
+
+    <script src="../src/lagunite.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            hidde('spinner')
+        });
+    </script>
+
+
+</body></html>
