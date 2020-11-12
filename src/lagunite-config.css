@@ -47,18 +47,10 @@
     --size_xl: 75px;
     
     
-    
+    --break_width : 50px;
+    --break_height : 30px;
 
-    --max_width_1: 50px;
-    --max_width_2: 100px;
-    --max_width_3: 150px;
-    --max_width_4: 300px;
-    --max_width_5: 400px;
-    --max_width_6: 500px;
-    --max_width_7: 600px;
-    --max_width_8: 800px;
-    --max_width_9: 1000px;
-    --max_width_10: 1300px;
+
 
 
     --radius: 6px;

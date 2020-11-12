@@ -25,13 +25,6 @@
     <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
 
     <style>
-        main {
-            max-width: 800px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
         main section {
             border: var(--border);
             border-radius: 50px;
@@ -55,10 +48,11 @@
 <body>
     <header>
         <a href="/">
-        <img src="web/img/lagunite.png">
-            </a>
+            <img src="web/img/lagunite.png">
+        </a>
         <h3>Layouts</h3>
     </header>
+
     <main>
         <h3>Section "row"</h3>
         <section class="row  vh50">
@@ -96,8 +90,8 @@
             </div>
             <div class=" row bg-1 h50 ">
                 <span style="float: left;">
-                div "row h50"
-                    </span>
+                    div "row h50"
+                </span>
                 <div class=" col bg-3 w30 ">
                     div "col w30"
                 </div>
@@ -106,33 +100,174 @@
                 </div>
             </div>
         </section>
-          <div class="separator-h-m"></div>
-            <section class="row  centered  bg-2">
-        <div class="w10 col rel bg-4 marg padd rounded">
-            <div class="centered ">
-                Aling</div>
-            <div class=" circle float-tr ">
+        <div class="separator-h-m"></div>
+        <section class="row  centered  bg-2">
+            <div class="w10 col rel bg-4 marg padd rounded">
+                <div class="centered ">
+                    Aling</div>
+                <div class=" circle float-tr ">
+                </div>
             </div>
-        </div>
-        <div class="w10 col rel bg-4 marg padd rounded">
-            <div class="centered ">
-                Aling</div>
-            <div class=" circle float-tr ">
+            <div class="w10 col rel bg-4 marg padd rounded">
+                <div class="centered ">
+                    Aling</div>
+                <div class=" circle float-tr ">
+                </div>
             </div>
-        </div>
-        <div class="w10 col rel bg-4 marg padd rounded">
-            <div class="centered ">
-                Aling</div>
-            <div class=" circle float-tr ">
+            <div class="w10 col rel bg-4 marg padd rounded">
+                <div class="centered ">
+                    Aling</div>
+                <div class=" circle float-tr ">
+                </div>
             </div>
-        </div>
-        <div class="w10 col rel bg-4 marg padd rounded">
-            <div class="centered ">
-                Aling</div>
-            <div class=" circle float-br ">
+            <div class="w10 col rel bg-4 marg padd rounded">
+                <div class="centered ">
+                    Aling</div>
+                <div class=" circle float-br ">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <div class="separator-h-m"></div>
+        <h3>min max example</h3>
+        <section class="col  centered padd-lf">
+            <div class="bg-1 minw2 ta-l">
+                <pre>"minw1"</pre>
+                <p>
+                    Lorem
+                </p>
+            </div>
+            <div class="bg-2 minw2 ta-l">
+                <pre>"minw1"</pre>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="bg-3 minw2 maxw5 ta-l">
+                <pre>"minw1 maxw5"</pre>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+
+
+        </section>
+
+        <div class="separator-h-m"></div>
+        <h3>min max width</h3>
+        <section class="col  centered padd-lf">
+            <div class="bg-1 minw1">
+                <pre>.minw1 { min-width: break_width; } </pre>
+            </div>
+            <div class="bg-2 minw2 ta-l">
+                <pre>.minw2 { min-width: 2*break_width; } </pre>
+            </div>
+            <div class="bg-1 minw3 ta-l">
+                <pre>.minw3 { min-width: 3*break_width; } </pre>
+            </div>
+            <div class="bg-2 minw4 maxw8 ta-l">
+                <pre>.minw4 { min-width: 4*break_width; } </pre>
+            </div>
+            <div class="bg-1 minw5 ta-l">
+                <pre>.minw5 { min-width: 5*break_width; } </pre>
+            </div>
+            <div class="bg-2 minw6 ta-l">
+                <pre>.minw6 { min-width: 6*break_width; } </pre>
+            </div>
+            <div class="bg-1 minw7 ta-l">
+                <pre>.minw7 { min-width: 8*break_width; } </pre>
+            </div>
+            <div class="bg-2 minw8 ta-l">
+                <pre>.minw8 { min-width: 10*break_width; } </pre>
+            </div>
+            <div class="bg-1 minw9 ta-l">
+                <pre>.minw9 { min-width: 12*break_width; } </pre>
+            </div>
+            <div class="bg-2 minw10 ta-l">
+                <pre>.minw10 { min-width: 18*break_width; } </pre>
+            </div>
+            <div class="bg-1 minw11 ta-l">
+                <pre>.minw11 { min-width: 24*break_width; } </pre>
+            </div>
+            <div class="bg-2 minw12 ta-l">
+                <pre>.minw12 { min-width: 32*break_width; } </pre>
+            </div>
+
+
+
+            <div class="bg-1 maxw1">
+                <pre>.maxw1 { max-width: break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw2 ta-l">
+                <pre>.maxw2 { max-width: 2*break_width; } </pre>
+            </div>
+            <div class="bg-1 maxw3 ta-l">
+                <pre>.maxw3 { max-width: 3*break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw4 ta-l">
+                <pre>.maxw4 { max-width: 4*break_width; } </pre>
+            </div>
+            <div class="bg-1 maxw5 ta-l">
+                <pre>.maxw5 { max-width: 5*break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw6 ta-l">
+                <pre>.maxw6 { max-width: 6*break_width; } </pre>
+            </div>
+            <div class="bg-1 maxw7 ta-l">
+                <pre>.maxw7 { max-width: 8*break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw8 ta-l">
+                <pre>.maxw8 { max-width: 10*break_width; } </pre>
+            </div>
+            <div class="bg-1 maxw9 ta-l">
+                <pre>.maxw9 { max-width: 12*break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw10 ta-l">
+                <pre>.maxw10 { max-width: 18*break_width; } </pre>
+            </div>
+            <div class="bg-1 maxw11 ta-l">
+                <pre>.maxw11 { max-width: 24*break_width; } </pre>
+            </div>
+            <div class="bg-2 maxw12 ta-l">
+                <pre>.maxw12 { max-width: 32*break_width; } </pre>
+            </div>
+
+
+        </section>
+        <section class="row  centered padd-lf ai-fs">
+                <div class="bg-1 minh1">
+                <pre>.minh1</pre>
+            </div>
+            <div class="bg-2 minh2 ta-l">
+                <pre>.minh2</pre>
+            </div>
+            <div class="bg-1 minh3 ta-l">
+                <pre>.minh3</pre>
+            </div>
+            <div class="bg-2 minh4 ta-l">
+                <pre>.minh4</pre>
+            </div>
+            <div class="bg-1 minh5 ta-l">
+                <pre>.minh5</pre>
+            </div>
+            <div class="bg-2 minh6 ta-l">
+                <pre>.minh6</pre>
+            </div>
+            <div class="bg-1 minh7 ta-l">
+                <pre>.minh7</pre>
+            </div>
+            <div class="bg-2 minh8 ta-l">
+                <pre>.minh8</pre>
+            </div>
+            <div class="bg-1 minh9 ta-l">
+                <pre>.minh9</pre>
+            </div>
+            <div class="bg-2 minh10 ta-l">
+                <pre>.minh10</pre>
+            </div>
+        </section>
+
+
     </main>
     <footer class="row  vh20">
         <a href="https://github.com/arielivandiaz/lagunite">

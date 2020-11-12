@@ -19,13 +19,14 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-177961488-2');
-
     </script>
-    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
-    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+    <link type="text/css" rel="stylesheet" href="src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="src/lagunite.css" />
     <style>
         .coffeeCup {
-            cursor: pointer
+            cursor: pointer;
+            max-width: 15vw;
+            
         }
 
         .coffeeCup:hover {
@@ -60,8 +61,13 @@
                 transform: translateX(-3px) rotate(-1.2deg)
             }
         }
-
     </style>
+    <script src="../src/lagunite.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            hidde('spinner')
+        });
+    </script>
 </head>
 
 <body class="scrollable">
@@ -78,7 +84,7 @@
     </div>
 
     <section class="col-row vh100  ">
-        <div class="w40 xh20 ">
+        <div class="w40  ">
             <img src="../web/img/lagunite.png" class="maxw7 xmaxvw70">
             <div class="separator-h-s"></div>
             <h2>Frontend Framework</h2>
@@ -92,7 +98,8 @@
                 </a>
             </div>
         </div>
-        <div class="w30 col xh20 ">
+        <div class="w40 xw100 padd  xmaxvw70 as-c ">
+            <img src="web/img/Image0.png">
 
 
         </div>
@@ -101,37 +108,41 @@
         <h1>Optimized for Coders</h1>
         <p class="ta-c  ">
             Created to generate solid and fast structures with less code. Written to be edited and improved.</p>
-        <div class="row w80 maxw8 centered ai-">
-            <div class="col w20   card" style="">
-                <img src="web/img/cardMobile.png" class="w70 maxw2 centered  padd-v-xs">
-                <h4>Mobile First</h4>
-                <p class="font-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <div class="row w80 xw90 maxw8 centered ai-">
+            <div class="row">
+                <div class="col w20  xw30 card" >
+                    <img src="web/img/cardMobile.png" class="w70 maxw2 centered  padd-v-xs">
+                    <h4>Mobile First</h4>
+                    <p class="font-s x-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="col w20  xw30 card ">
+                    <img src="web/img/cardCode.png" class="w70 maxw2 centered  padd-v-xs">
+                    <h4>Easy to Code</h4>
+                    <p class="font-s x-hidden">Code documented with examples and designed with best practices </p>
+                </div>
             </div>
-            <div class="col w20 card">
-                <img src="web/img/cardCode.png" class="w70 maxw2 centered  padd-v-xs">
-                <h4>Easy to Code</h4>
-                <p class="font-s">Code documented with examples and designed with best practices </p>
-            </div>
-            <div class="col w20 card">
-                <img src="web/img/cardCSS.png" class="w70 maxw2 centered padd-v-xs">
-                <h4>Modern CSS</h4>
-                <p class="font-s">Based on columns and rows in flexbox and content with % proportions. </p>
-            </div>
-            <div class="col w20 card">
-                <img src="web/img/cardProto.png" class="w70 maxw2 centered  padd-v-xs">
-                <h4>Fast Prototyping </h4>
-                <p class="font-s">Start your project without installing anything.</p>
+            <div class="row">
+                <div class="col w20 xw30 card">
+                    <img src="web/img/cardCSS.png" class="w70 maxw2 centered padd-v-xs">
+                    <h4>Modern CSS</h4>
+                    <p class="font-s x-hidden">Based on columns and rows in flexbox and content with % proportions. </p>
+                </div>
+                <div class="col w20  xw30 card">
+                    <img src="web/img/cardProto.png" class="w70 maxw2 centered  padd-v-xs">
+                    <h4>Fast Prototype</h4>
+                    <p class="font-s x-hidden">Start your project without installing anything.</p>
+                </div>
             </div>
 
         </div>
     </section>
     <div class="separator-h vh10"></div>
 
-    <section class="row maxw9 xmaxvw65 centered  padd-l">
-        <div class="w50">
+    <section class="col-row maxw9 xmaxvw65 centered  padd-l">
+        <div class="w40 xw100">
             <img src="web/img/Image1.png">
         </div>
-        <div class="w40  col padd ">
+        <div class="w40 xw100  col  ">
             <h1>Performance limitless</h1>
             <ul>
                 <li>
@@ -147,7 +158,7 @@
     </section>
 
     <div class="separator-h vh10"></div>
-    <section class="row maxw9 xmaxvw65 centered vw100 padd-l ">
+    <section class="col-row maxw9 xmaxvw65 centered vw100 padd-l ">
 
         <div class="w50 col  ">
 
@@ -194,7 +205,7 @@
 
 
         </div>
-        <div class="w30">
+        <div class="w30 padd">
             <img src="web/img/Image2.png">
         </div>
     </section>
@@ -203,7 +214,7 @@
     <section class="col">
         <h1>Help us with a Coffee</h1>
         <div>
-            <img src="web/img/paypal.png" class="maxw3">
+            <img src="web/img/paypal.png" class="maxw3 xmaxvw30">
         </div>
         <div class="w100 row">
             <div class="col">
@@ -212,23 +223,20 @@
 
             </div>
             <div class=" row padd ai-fe">
-                <a class="col  ai-c" href="">
+                <a class="col  ai-c" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3G86ER9KQPCFJ">
                     <img src="../web/img/coffee.png" class="coffeeCup">
                     <button class="btn">$1.00</button>
                 </a>
-                <a class="col  ai-c" href="">
+                <a class="col  ai-c" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V59QHB5A2DW4U">
                     <img src="../web/img/largeCoffee.png" class="coffeeCup">
-                    <h3>$2</h3>
-                    <button class="btn">$2.00</button>
+                    <button class="btn">$2.50</button>
                 </a>
-                <a class="col  ai-c" href="">
+                <a class="col  ai-c" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F74QUSF38HW9G">
                     <img src="../web/img/superCoffee.png" class="coffeeCup">
-
-                    <button class="btn">#3.00</button>
+                    <button class="btn">#5.00</button>
                 </a>
 
             </div>
-
         </div>
 
     </section>
@@ -257,16 +265,7 @@
             .catch(function(error) {
                 console.log('Hubo un problema con la petición Fetch:' + error.message);
             });
-
-    </script>
-    <script src="../src/lagunite.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            hidde('spinner')
-        });
-
     </script>
 
-</body>
 
-</html>
+</body></html>
