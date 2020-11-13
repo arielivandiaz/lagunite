@@ -30,6 +30,14 @@
             <h1>X</h1>
         </button>
     </div>
+    <div class="modal-fullscreen alt hidden" id="alert">
+        <div class="col vw70 vh30 bg-4 rounded shadow-1">
+            <h1>A modal alert</h1>
+        <button onclick="hidde('alert')" class="bg-1 btn ">
+            <h1>Close</h1>
+        </button>
+            </div>
+    </div>
 
     <main class="maxw9 centered">
         <section>
@@ -501,7 +509,8 @@
 
         <section>
             <h1>Modals</h1>
-            <button class="btn" onclick="show('modal')">open</button>
+            <button class="btn" onclick="show('modal')">open fullscreen</button>
+            <button class="btn" onclick="show('alert')">open alert</button>
 
 
 
