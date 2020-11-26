@@ -12,11 +12,11 @@
     <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
 
 
-
 </head>
 
 
 <body class="scrollable">
+
     <div class="loading hidden" id="spinner">
         <div class="sk-chase">
             <div class="sk-chase-dot"></div>
@@ -47,6 +47,635 @@
     </section>
 
     <section class="col  vw80 centered padd-v  sa">
+        <table>
+            <caption>
+                <h1>Col/Row structure</h1>
+                <span class="font-s">Flex Centered </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="col"</th>
+                <td class="bg-1">#10</td>
+                <td>Flex Column</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="row"</th>
+                <td class="bg-1">#10</td>
+                <td>Flex Row</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="row-col"</th>
+                <td class="bg-1">#11</td>
+                <td>Row in mobile and Col in Desktop</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="row-colr"</th>
+                <td class="bg-1">#11</td>
+                <td>Row in mobile and reverse Col in Desktop</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="col-row"</th>
+                <td class="bg-1">#11</td>
+                <td>Col in mobile and reverse Row in Desktop</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="col-rowr"</th>
+                <td class="bg-1">#11</td>
+                <td>Col in mobile and reverse Row in Desktop</td>
+                <td class="bg-1">0.11</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                <h1>Absolute and Floating Positioning</h1>
+                <span class="font-s">* use in a parent with "rel" class </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="rel"</th>
+                <td class="bg-1">#15</td>
+                <td> position: relative;</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="centered"</th>
+                <td class="bg-1">#16</td>
+                <td> centered copntent with margin auto</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="float-r"</th>
+                <td class="bg-1">#17</td>
+                <td> float: right;</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="float-l"</th>
+                <td class="bg-1">#17</td>
+                <td> float: left;</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-tr"</th>
+                <td class="bg-1">#18</td>
+                <td>align top right (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-tl"</th>
+                <td class="bg-1">#18</td>
+                <td>align top left (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+            <tr>
+                <th class="ta-l">*class="float-tc"</th>
+                <td class="bg-1">#18</td>
+                <td>align top center (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-br"</th>
+                <td class="bg-1">#18</td>
+                <td>align bottom right (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-bl"</th>
+                <td class="bg-1">#18</td>
+                <td>align bottom left (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-bc"</th>
+                <td class="bg-1">#18</td>
+                <td>align bottom center (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-cr"</th>
+                <td class="bg-1">#18</td>
+                <td>align center right (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+            <tr>
+                <th class="ta-l">*class="float-cl"</th>
+                <td class="bg-1">#18</td>
+                <td>align center left (*)</td>
+                <td class="bg-1">0.17</td>
+            </tr>
+
+
+
+        </table>
+
+
+        <table>
+            <caption>
+                <h1>Hidden Content</h1>
+                <span class="font-s">1-100%</span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Desktop
+                </th>
+                <th>
+                    Dual
+                </th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="hidden"</th>
+                <td class="bg-1">#20</td>
+                <td>display: none; </td>
+                <td>display: none; </td>
+                <td>display: none; </td>
+                <td class="bg-1">0.12</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="dhidden"</th>
+                <td class="bg-1">#20</td>
+                <td class="bg-2">display: block; </td>
+                <td>display: none; </td>
+                <td>- </td>
+                <td class="bg-1">0.12</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="xhidden"</th>
+                <td class="bg-1">#20</td>
+                <td>display: none; </td>
+                <td class="bg-2">display: block; </td>
+                <td>- </td>
+                <td class="bg-1">0.12</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                <h1>Text and Fonts</h1>
+                <span class="font-s"> </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="ta-c"</th>
+                <td class="bg-1">#30</td>
+                <td>text-align: center;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="ta-l"</th>
+                <td class="bg-1">#30</td>
+                <td>text-align: left;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="ta-r"</th>
+                <td class="bg-1">#30</td>
+                <td>text-align: right;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="ta-cl"</th>
+                <td class="bg-1">#30</td>
+                <td>ta-c on mobile &amp; ta-l on desktop</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="ta-cr"</th>
+                <td class="bg-1">#30</td>
+                <td>ta-c on mobile &amp; ta-r on desktop</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="font-xs"</th>
+                <td class="bg-1">#32</td>
+                <td>font-size: 70%;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="font-s"</th>
+                <td class="bg-1">#32</td>
+                <td>font-size: 85%;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="font-l"</th>
+                <td class="bg-1">#32</td>
+                <td>font-size: 115%;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="font-xl"</th>
+                <td class="bg-1">#32</td>
+                <td>font-size: 130%;</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="hg-inline"</th>
+                <td class="bg-1">#34</td>
+                <td>header group displayed inline-block</td>
+                <td class="bg-1">0.13</td>
+            </tr>
+
+        </table>
+        <table>
+            <caption>
+                <h1>Buttons</h1>
+                <span class="font-s"> </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="btn"</th>
+                <td class="bg-1">#40</td>
+                <td>A common button</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn no-bg"</th>
+                <td class="bg-1">#40</td>
+                <td>Button without background and border</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn alt"</th>
+                <td class="bg-1">#40</td>
+                <td>Button with altenative colors</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn std"</th>
+                <td class="bg-1">#40</td>
+                <td>Button with a standard min-width</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn fit"</th>
+                <td class="bg-1">#40</td>
+                <td>A smaller button possible for content</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn big"</th>
+                <td class="bg-1">#40</td>
+                <td>A bigger font and padding</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="btn big std"</th>
+                <td class="bg-1">#40</td>
+                <td>A bigger button with a bigger min-width</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                <h1>Content schemas</h1>
+                <span class="font-s"> </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="card"</th>
+                <td class="bg-1">#00</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="chip"</th>
+                <td class="bg-1">#00</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bordered"</th>
+                <td class="bg-1">#00</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+                   <tr>
+                <th class="ta-l">class="hoverable"</th>
+                <td class="bg-1">#00</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+                     <tr>
+                <th class="ta-l">class="onclick"</th>
+                <td class="bg-1">#00</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+        </table>
+
+        <table>
+            <caption>
+                <h1>Style Schemas</h1>
+                <span class="font-s"> </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="bg-1"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--main_color)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bg-2"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--main_color_light)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bg-3"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--main_color_dark)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="bg-4"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--main_color_alt)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+
+            <tr>
+                <th class="ta-l">class="bg-5"</th>
+                <td class="bg-1">#50</td>
+                <td>TBD</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bg-6"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--almost_black)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bg-7"</th>
+                <td class="bg-1">#50</td>
+                <td>background: var(--almost_white)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bgg-1"</th>
+                <td class="bg-1">#51</td>
+                <td>background: var(--background_gradient)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="bgg-2"</th>
+                <td class="bg-1">#51</td>
+                <td>background: var(--background_gradient_2)</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="shadow-1"</th>
+                <td class="bg-1">#52</td>
+                <td>Black shadow</td>
+                <td class="bg-1">0.28</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="shadow-2"</th>
+                <td class="bg-1">#52</td>
+                <td>Main Color shadow</td>
+                <td class="bg-1">0.28</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="shadow-3"</th>
+                <td class="bg-1">#52</td>
+                <td>White shadow</td>
+                <td class="bg-1">0.28</td>
+            </tr>
+
+
+
+
+
+        </table>
+
+
+        <table>
+            <caption>
+                <h1>Figures</h1>
+                <span class="font-s"> </span>
+            </caption>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    id
+                </th>
+                <th>
+                    Description</th>
+                <th>
+                    Version
+                </th>
+            </tr>
+            <tr>
+                <th class="ta-l">class="square-s"</th>
+                <td class="bg-1">#70</td>
+                <td>A 25px*25px square</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="square"</th>
+                <td class="bg-1">#70</td>
+                <td>A 50px*50px square</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="square-l"</th>
+                <td class="bg-1">#70</td>
+                <td>A 75px*75px square</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="circle-s"</th>
+                <td class="bg-1">#70</td>
+                <td>A 25px diameter circle</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="circle"</th>
+                <td class="bg-1">#70</td>
+                <td>A 50px diameter circle</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="circle-l"</th>
+                <td class="bg-1">#70</td>
+                <td>A 75px diameter circle</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="tear-s"</th>
+                <td class="bg-1">#70</td>
+                <td>A 25px tear</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="tear"</th>
+                <td class="bg-1">#70</td>
+                <td>A 50px tear</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="tear-l"</th>
+                <td class="bg-1">#70</td>
+                <td>A 75px tear</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="rounded-s"</th>
+                <td class="bg-1">#70</td>
+                <td>A 25px*25px square with 30px border radius</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="rounded"</th>
+                <td class="bg-1">#70</td>
+                <td>A 50px*50px square with 30px border radius</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+            <tr>
+                <th class="ta-l">class="rounded-l"</th>
+                <td class="bg-1">#70</td>
+                <td>A 75px*75px square with 30px border radius</td>
+                <td class="bg-1">0.08</td>
+            </tr>
+        </table>
+
         <table>
             <caption>
                 <h1>Width/Height (vw/vh)</h1>
@@ -1384,14 +2013,10 @@
                 <td class="bg-1">0.26</td>
             </tr>
 
-
         </table>
 
 
     </section>
-
-
-
 
 
 

@@ -254,8 +254,7 @@
 
 
 
-    <script>
-        fetch('https://raw.githubusercontent.com/arielivandiaz/lagunite/master/version/version.json').then(function(response) {
+    <script>        fetch('https://raw.githubusercontent.com/arielivandiaz/lagunite/master/version/version.json').then(function(response) {
                 if (response.ok) {
                     response.json().then(data => {
                         document.getElementById("version").textContent = "v." + data.version + "." + data.rev + " - 2020";

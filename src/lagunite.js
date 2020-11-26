@@ -1,5 +1,6 @@
     function show(id) {
-        document.getElementById(id).classList.remove("hidden");
+        if (document.getElementById(id).classList.contains("hidden"))
+            document.getElementById(id).classList.remove("hidden");
     }
 
     function hidde(id) {
@@ -15,6 +16,8 @@
         toggle(id1);
         toggle(id2);
     }
+
+
 
     //Hidde after animation
     function noneAfter(e, t) {
