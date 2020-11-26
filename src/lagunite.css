@@ -90,22 +90,31 @@ a:enabled {
     text-decoration: none;
 }
 
+section {
+    display: block;
+    white-space: nowrap;
+
+}
+
+section p {
+    text-align: left;
+    margin: 10px 0;
+
+}
+
 p {
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
     padding: 0 15px;
-
-
 }
 
 
 /**************** WEB LAYOUT ***********************/
 
 
-
-
-
+/* @Nomenclature : OK */
+/* @ID: #10 */
 .col {
 
 
@@ -119,7 +128,6 @@ p {
 
 
 }
-
 
 
 .row {
@@ -157,52 +165,34 @@ p {
 
 }
 
-section {
-    display: block;
-    white-space: nowrap;
 
-}
-
-section p {
-    text-align: left;
-    margin: 10px 0;
-
-}
 
 
 
 /***************************************/
 
+/* @Nomenclature : OK */
+/* @ID: #10 */
 .col {
-
-
     height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-
-
-
-
 }
 
-
-
 .row {
-
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-
 }
 
 /************* MOBILE/DESKTOP ***********/
-
+/* @Nomenclature : OK */
+/* @ID: #11 */
 .row-col,
 .row-colr {
     width: 100%;
@@ -228,6 +218,8 @@ section p {
 
 /************** BUTTONS ***************/
 
+/* @Nomenclature : OK */
+/* @ID: #40 */
 .btn {
     box-shadow: none;
     border-radius: 10px;
@@ -242,10 +234,6 @@ section p {
     padding: 10px 1vw 7px 1vw;
     min-width: var(--size_xl);
     width: min-content;
-
-
-
-
 }
 
 
@@ -290,6 +278,8 @@ section p {
 
 /*************** TEXT AND FONTS ***********/
 
+/* @Nomenclature : OK */
+/* @ID: #30 */
 .ta-c {
     text-align: center;
 }
@@ -303,6 +293,34 @@ section p {
 }
 
 
+.ta-cl,
+.ta-cr {
+    text-align: center;
+}
+
+.ta-r {
+    text-align: right;
+}
+
+
+
+@media only screen and (min-width : 768px) {
+
+
+    .ta-cl {
+        text-align: left;
+    }
+
+    .ta-cr {
+        text-align: right;
+    }
+
+
+}
+
+
+/* @Nomenclature : OK */
+/* @ID: #32 */
 .font-xs {
     font-size: 70%;
 }
@@ -311,8 +329,18 @@ section p {
     font-size: 85%;
 }
 
-/************ HGROUPS ***************/
+.font-l {
+    font-size: 115%;
+}
 
+.font-xl {
+    font-size: 130%;
+}
+
+
+/************ HGROUPS ***************/
+/* @Nomenclature : OK */
+/* @ID: #34 */
 .hg-inline,
 .hg-inline h1,
 .hg-inline h2,
@@ -321,6 +349,7 @@ section p {
 .hg-inline h5 {
     display: inline-block;
 }
+
 
 
 
@@ -1137,11 +1166,7 @@ section p {
 
 
 
-.centered {
-    left: 0;
-    right: 0;
-    margin: auto;
-}
+
 
 /************* JUSTIFY ITEMS ************/
 /* @Nomenclature : OK */
@@ -1617,11 +1642,22 @@ section p {
 
 
 /********************** FLOAT CONTENT ****************************/
-
+/* @Nomenclature : OK */
+/* @ID: #15 */
 .rel {
     position: relative;
 }
 
+/* @Nomenclature : OK */
+/* @ID: #16 */
+.centered {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* @Nomenclature : OK */
+/* @ID: #17 */
 .float-r {
     float: right;
 }
@@ -1630,16 +1666,10 @@ section p {
     float: left;
 }
 
-.float-c {
-    display: flex;
-    align-self: center;
-    justify-items: center;
-    align-content: center;
-    vertical-align: middle;
-    height: 100%;
-}
 
 
+/* @Nomenclature : OK */
+/* @ID: #18 */
 .float-tr {
     position: absolute;
     top: 0;
@@ -1652,11 +1682,16 @@ section p {
     left: 0;
 }
 
-.float-bl {
+
+.float-tc {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    right: 0;
     left: 0;
+    margin: auto;
+
 }
+
 
 .float-br {
     position: absolute;
@@ -1664,37 +1699,30 @@ section p {
     right: 0;
 }
 
-.float-bc {
+
+.float-bl {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
     left: 0;
-    margin: auto;
-
-
-
 }
 
-.float-tc {
+
+.float-bc {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
-
-
 }
+
+
 
 .float-cl {
     position: absolute;
-    top: 0;
     bottom: 0;
-
+    top: 0;
+    left: 0;
     margin: auto;
-
-
-
-
 }
 
 .float-cr {
@@ -1703,7 +1731,6 @@ section p {
     top: 0;
     right: 0;
     margin: auto;
-
 
 }
 
@@ -1907,6 +1934,11 @@ section p {
 
 }
 
+/************** HOVERABLE ***************/
+
+.hoverable:hover {
+    transform: scale(1.2);
+}
 
 
 
@@ -1948,12 +1980,12 @@ td {
 }
 
 
-.hoverable tr:hover {
+table.hoverable tr:hover {
     cursor: pointer;
     background: var(--main_color_light);
 }
 
-.hoverable td:hover {
+table.hoverable td:hover {
     background: var(--main_color);
     color: var(--text_color_alt);
     font-weight: 900;
@@ -1961,11 +1993,18 @@ td {
 }
 
 /*************** BORDERS *************/
+
+
+
+
 .bordered {}
 
 
 
 /*************** CARDS *************/
+
+/* @Nomenclature : OK */
+/* @ID: #41 */
 .card {
 
     background: var(--background_1);
@@ -1977,10 +2016,8 @@ td {
     min-width: 50px;
     min-height: 50px;
     width: fit-content;
-
     font-weight: 500;
     margin: 10px;
-
 
 }
 
@@ -2042,7 +2079,8 @@ td {
 
 /************** FIGURES ****************/
 
-
+/* @Nomenclature : OK */
+/* @ID: #70 */
 .square,
 .rounded,
 .circle,
@@ -2131,7 +2169,6 @@ td {
 }
 
 .triangle {
-
     border-left: 28px solid transparent;
     border-right: 28px solid transparent;
     border-bottom: 46px solid var(--main_color);
@@ -2191,61 +2228,6 @@ td {
     margin: 0;
 
 }
-
-/********/
-.chip.expandable .content {
-    overflow: hidden;
-    margin: 0;
-    width: 0;
-    transition: all 0.5s ease-in-out;
-    transform-origin: left;
-    transform: scaleX(0);
-}
-
-.chip.expandable:hover .content {
-
-
-    width: auto;
-    transition: all 0.2s ease-in-out;
-    transform: scaleX(1);
-
-}
-
-/********/
-
-
-
-.chip.vertical.expandable .content {
-    overflow: hidden;
-    margin: 0;
-    height: 0;
-    transition: all 0.5s ease-in-out;
-    transform-origin: top;
-    transform: scaleY(0);
-}
-
-.chip.vertical.expandable:hover .content {
-
-
-    height: auto;
-    transition: all 0.2s ease-in-out;
-    transform: scaleY(1);
-
-}
-
-/**************** SHADOWS ***************/
-.shadow-1 {
-    box-shadow: 10px 10px 53px -20px rgba(0, 0, 0, 0.75);
-}
-
-.shadow-2 {
-    box-shadow: 0px 9px 21px -7px rgba(var(--main_color_rgb), 1);
-}
-
-.shadow-3 {
-    box-shadow: 0px 6px 31px -8px rgba(255, 255, 255, 0.75);
-}
-
 
 
 
@@ -3234,6 +3216,9 @@ td {
 
 
 /*************** INPUT ***************/
+
+
+
 input,
 textarea,
 select {
@@ -3244,11 +3229,13 @@ select {
     border-radius: var(--radius);
     text-align: center;
     cursor: pointer;
-
-    line-height: 1.5;
+    line-height: 2;
     margin: 5px;
+    width: 180px;
 
 }
+
+
 
 
 input:hover,
@@ -3285,12 +3272,40 @@ select:focus {
     justify-content: center;
     align-items: center;
 
+
+
 }
 
 .inputContainer span {
-    min-width: 100px;
-    margin-right: 10px;
+    max-width: 120px;
+    margin: 10px 10px 10px 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+
 }
+
+
+@media only screen and (min-width : 768px) {
+
+    input,
+    textarea,
+    select {
+
+        min-width: 280px;
+
+    }
+
+    .inputContainer span {
+        max-width: 300px;
+        margin-right: 10px;
+    }
+
+
+
+}
+
+
 
 /***************************************/
 
@@ -3359,18 +3374,28 @@ pre {
 /*************** CHECKBOX **************/
 
 
-.checkbox {
-    display: block;
+
+/*** CHECKBOX  ***/
+
+/* Customize the label (the checkbox-container) */
+.checkboxContainer {
     position: relative;
-    padding-left: 45px;
+    display: block;
+
+
+    
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-    text-align: left;
-    line-height: 1.8;
+    margin: 10px;
+    padding: 5px 25px;
 
 }
 
-.checkbox input {
+/* Hide the browser's default checkbox */
+input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -3379,31 +3404,31 @@ pre {
 
 }
 
+/* Create a custom checkbox */
 .checkmark {
     position: absolute;
     top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border: 2px solid #2476FF;
+    
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    background-color: var(main_color_light);
     border-radius: 10px;
-
+    border: 2px solid var(--main_color);
+    cursor: pointer;
 
 }
 
-.checkmark:hover {
-    box-shadow: 0 0 7px 1px var(--main_color);
-}
-
-.checkbox:hover input ~ .checkmark {
-    background-color: #eee;
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    box-shadow: 0 0 8px 1px var(--main_color);
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkbox input:checked ~ .checkmark {
-    background-color: #2476FF;
-    box-shadow: 0 0 7px 1px #2476FF;
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--main_color);
+    box-shadow: 0 0 8px 1px var(--main_color);
+    border-radius: 6px;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -3414,16 +3439,17 @@ pre {
 }
 
 /* Show the checkmark when checked */
-.checkbox input:checked ~ .checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
-.checkbox .checkmark:after {
-    left: 8px;
-    top: 0px;
-    width: 7px;
-    height: 15px;
+.checkbox-container .checkmark:after {
+
+    left: 12px;
+    top: -10px;
+    width: 12px;
+    height: 28px;
     border: solid white;
     border-width: 0 3px 5px 0;
     -webkit-transform: rotate(45deg);
@@ -3431,54 +3457,127 @@ pre {
     transform: rotate(45deg);
 }
 
-.checkboxContainer {
 
-    margin: 1vh;
 
-    padding: 1vh 1vw;
+/*************** TOGGLE BTN ************************/
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
+
+.tgl {
+    display: none;
 }
 
-/*************** SELECT ***************/
+.tgl,
+.tgl:after,
+.tgl:before,
+.tgl *,
+.tgl *:after,
+.tgl *:before,
+.tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+
+.tgl::-moz-selection,
+.tgl:after::-moz-selection,
+.tgl:before::-moz-selection,
+.tgl *::-moz-selection,
+.tgl *:after::-moz-selection,
+.tgl *:before::-moz-selection,
+.tgl + .tgl-btn::-moz-selection {
+    background: none;
+}
+
+.tgl::selection,
+.tgl:after::selection,
+.tgl:before::selection,
+.tgl *::selection,
+.tgl *:after::selection,
+.tgl *:before::selection,
+.tgl + .tgl-btn::selection {
+    background: none;
+}
+
+.tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tgl + .tgl-btn:after,
+.tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.tgl + .tgl-btn:after {
+    left: 0;
+}
+
+.tgl + .tgl-btn:before {
+    display: none;
+}
+
+.tgl:checked + .tgl-btn:after {
+    left: 50%;
+}
+
+.tgl-light + .tgl-btn {
+    background: #ccc;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all .4s ease;
+}
+
+.tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all .2s ease;
+}
+
+.tgl-light:checked + .tgl-btn {
+    background: var(--main_color);
+    box-shadow: 0 0 10px 3px var(--main_color);
+}
+
+
+
+/************** / TOGGLE BTN ***********************/
+
 /*************** SELECT ***************/
 select {
-
     appearance: none;
     outline: 0;
     box-shadow: none;
-    border: 2px solid var(--text_color);
-    border-radius: var(--radius);
-    background: rgba(0, 0, 0, 0.7);
-    background-image: none;
     min-width: 220px;
     height: 100%;
     margin: 0;
     padding: 6px 12px;
-    color: #fff;
+    color: var(--text_color);
+    font-weight: 700;
     cursor: pointer;
     background: none;
-
 }
 
 /* Custom Select */
 .select {
-
     position: relative;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(var(--main_color_rgb), 0.2);
     border-radius: var(--radius);
-    margin: 0 20px;
+    margin: 10px 20px;
     box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.12);
     min-width: 220px;
     width: 220px;
-
-
-    margin: 0 auto;
-
 }
 
 
@@ -3494,9 +3593,9 @@ select::-ms-expand {
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background: none;
-    color: var(--text_color);
+    color: var(--text_color_alt);
     pointer-events: none;
     background: var(--main_color);
 }
@@ -3516,12 +3615,12 @@ select option {
     margin: 40px;
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
-
 }
 
 .noselect {
     user-select: none;
-    opacity: 0.5;
+    color: var(--main_color);
+
 }
 
 
@@ -3541,7 +3640,8 @@ select option {
 
 /**************** COMMON BACKGROUNDS *********************/
 
-
+/* @Nomenclature : OK */
+/* @ID: #50 */
 .bg-1 {
     /* Background main color */
     background: var(--main_color) !important;
@@ -3582,6 +3682,9 @@ select option {
 }
 
 
+
+/* @Nomenclature : OK */
+/* @ID: #51 */
 .bgg-1 {
     background: var(--background_gradient);
     color: var(--main_color_alt);
@@ -3591,6 +3694,23 @@ select option {
     background: var(--background_gradient_2);
     color: var(--main_color_alt);
 }
+
+/**************** SHADOWS ***************/
+/* @Nomenclature : OK */
+/* @ID: #52 */
+.shadow-1 {
+    box-shadow: 10px 10px 53px -20px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-2 {
+    box-shadow: 0px 9px 21px -7px rgba(var(--main_color_rgb), 1);
+}
+
+.shadow-3 {
+    box-shadow: 0px 6px 31px -8px rgba(255, 255, 255, 0.75);
+}
+
+
 
 
 /***************************************/
@@ -3717,7 +3837,6 @@ select option {
     top: 10px;
 
     border: 2px solid var(--main_color);
-    ;
     padding: 10px 15px;
     margin: 10px;
 
@@ -4655,6 +4774,8 @@ aside button:hover .tooltiptext {
 
 @media only screen and (min-width : 768px) {
 
+    /* @Nomenclature : OK */
+    /* @ID: #11 */
     .row-col {
         height: 100%;
         display: flex;
@@ -7440,7 +7561,9 @@ aside button:hover .tooltiptext {
 
 }
 
-
+/******************** HIDDEN CONTENT ************************/
+/* @Nomenclature : OK */
+/* @ID: #20 */
 @media only screen and (min-width : 281px) and (max-width : 767px) {
     .dhidden {
         display: block;
@@ -7458,6 +7581,7 @@ aside button:hover .tooltiptext {
     }
 
     .xhidden {
+
         display: block;
     }
 

@@ -33,10 +33,10 @@
     <div class="modal-fullscreen alt hidden" id="alert">
         <div class="col vw70 vh30 bg-4 rounded shadow-1">
             <h1>A modal alert</h1>
-        <button onclick="hidde('alert')" class="bg-1 btn ">
-            <h1>Close</h1>
-        </button>
-            </div>
+            <button onclick="hidde('alert')" class="bg-1 btn ">
+                <h1>Close</h1>
+            </button>
+        </div>
     </div>
 
     <main class="maxw9 centered">
@@ -151,62 +151,110 @@
             </div>
 
 
+        </section>
+        <section>
+            <h2>Form Items</h2>
+            <div class="inputContainer">
+                <span>Input Text with text</span>
+                <input class="text">
+            </div>
+            <div class="inputContainer">
+
+                <input type="text" placeholder="Input Text with placeholder">
+            </div>
+
+            <input type="number" placeholder="asd">
+            <div class="inputContainer">
+                <span>Country</span>
+                <div class="select">
+                    <select>
+                        <option>Argentina</option>
+                        <option>Uruguay</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputContainer">
+                <div class="select">
+                    <select>
+                        <option class="noselect" disabled selected>Country</option>
+                        <option>Argentina</option>
+                        <option>Uruguay</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputContainer">
+                <span> Acepto los terminos y condiciones </span>
+                <div class="labeled">
+                    <input class="tgl tgl-light" id="arg_citizen" type="checkbox" checked onchange="foreign()" />
+                    <label class="tgl-btn" for="arg_citizen"></label>
+                </div>
+            </div>
+    
+
+            <div class="checkboxContainer">
+                <label class="checkbox-container">Acepto los terminos y condiciones del servicio
+                    <input type="checkbox" name="" value="" id="checkbox_1">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+        </section>
 
 
-            <section>
+        <section>
 
-                <table>
-                    <caption>
-                        <h1>Avatars</h1>
-                    </caption>
-                    <tr>
-                        <th>
-                            <pre>class=</pre>
-                        </th>
-
-
-
-                        <th>
-                            <pre>"avatar"</pre>
-                        </th>
-                        <th>
-                            <pre>"avatar big"</pre>
-                        </th>
-                        <th>
-                            <pre>"avatar small"</pre>
-                        </th>
-                        <th>
-                            <pre>"avatar micro"</pre>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <td></td>
-                        <td><img class="avatar" src="img/avatar2.jpg"></td>
-                        <td><img class="avatar big" src="img/avatar3.jpg"></td>
-                        <td><img class="avatar small" src="img/avatar4.jpg"></td>
-                        <td><img class="avatar micro" src="img/avatar5.jpg"></td>
-
-                    </tr>
-
-                    <tr>
-                        <th>
-                            <pre>"alt "</pre>
-                        </th>
-                        <td><img class="avatar alt" src="img/avatar2.jpg"></td>
-                        <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
-                        <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
-                        <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
-
-                    </tr>
-                </table>
+            <table>
+                <caption>
+                    <h1>Avatars</h1>
+                </caption>
+                <tr>
+                    <th>
+                        <pre>class=</pre>
+                    </th>
 
 
+
+                    <th>
+                        <pre>"avatar"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar big"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar small"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar micro"</pre>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img class="avatar" src="img/avatar2.jpg"></td>
+                    <td><img class="avatar big" src="img/avatar3.jpg"></td>
+                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
+                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
+
+                </tr>
+
+                <tr>
+                    <th>
+                        <pre>"alt "</pre>
+                    </th>
+                    <td><img class="avatar alt" src="img/avatar2.jpg"></td>
+                    <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
+                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
+                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
+
+                </tr>
+            </table>
 
 
 
 
-            </section>
+
+
 
         </section>
 
@@ -271,33 +319,6 @@
 
                     </td>
                 </tr>
-                <tr>
-                    <th>
-                        <pre>"expandable "</pre>
-                    </th>
-                    <td>
-                        <div class="chip  expandable">
-
-                            <img class="avatar micro" src="img/avatar4.jpg">
-
-                            <div class="content">
-                                <span>Lagunite</span>
-                                <h2>Veteran</h2>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="chip vertical expandable">
-                            <div class="">
-                                <img class="avatar micro" src="img/avatar4.jpg">
-                            </div>
-                            <div class="content">
-                                <span>28</span>
-                                <h2>15</h2>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
             </table>
 
 
@@ -348,7 +369,7 @@
 
                 <tr>
                     <th>
-                        <pre>"small"</pre>
+                        <pre>"-s"</pre>
                     </th>
                     <td>
                         <div class="square-s">L</div>
@@ -368,7 +389,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <pre>"small"</pre>
+                        <pre>""</pre>
                     </th>
                     <td>
                         <div class="square">L</div>
@@ -388,7 +409,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <pre>"small"</pre>
+                        <pre>"-l"</pre>
                     </th>
                     <td>
                         <div class="square-l">L</div>
