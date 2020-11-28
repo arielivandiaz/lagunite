@@ -3305,9 +3305,47 @@ select:focus {
 
 }
 
+/***************** INPUT FILE *****************/
 
+.btn-file {
+    box-shadow: none;
+    border-radius: 8px;
+    border: 2px solid 75px;
+    background: var(--main_color);
+    cursor: pointer;
+    font-family: var(--font_headers);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 1vh 1vw;
+    color: #fff;
+    padding: 10px 1.2vw 7px 1.2vw;
+    min-width: var(--size_xl);
+    width: min-content;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-file span {
+    display: block;
+    color: #777;
+}
 
 /***************************************/
+
+
 
 
 pre {
@@ -3383,7 +3421,7 @@ pre {
     display: block;
 
 
-    
+
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -3408,7 +3446,7 @@ input[type="checkbox"] {
 .checkmark {
     position: absolute;
     top: 0;
-    
+
     height: 30px;
     width: 30px;
     margin-left: 30px;
