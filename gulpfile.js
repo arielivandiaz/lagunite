@@ -17,12 +17,12 @@ var file_path = 'version/version.json';
 
 var pathsCSS = {
     source: './src/*.css',
-    destination: './public/dist'
+    destination: './dist'
 };
 
 var pathsJS = {
     source: './src/*.js',
-    destination: './public/dist'
+    destination: './dist'
 };
 
 var pathsHTML = {
@@ -58,9 +58,6 @@ let getVersion = async () => {
 
 gulp.task('css', () => {
     return gulp.src(pathsCSS.source)
-        .pipe(purgecss({
-            content: ['*.html']
-        }))
         .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(minify())
