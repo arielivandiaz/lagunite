@@ -2,9 +2,6 @@
     "name": "@arielivandiaz/lagunite",
     "version": "0.0.3",
     "description": "Lagunite front-end kit",
-    "files": [
-    "dist"
-  ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/arielivandiaz/lagunite.git"
