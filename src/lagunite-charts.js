@@ -1,7 +1,6 @@
-function setNewBarchart(container,items) {
+function setNewBarchart(container, items) {
 
-
-        items.forEach(item => {
+    items.forEach( function(item)  {
         var e_bar_content = document.createElement("div");
         e_bar_content.classList.add("bar-content");
 
@@ -34,16 +33,16 @@ function setNewBarchart(container,items) {
         e_bar_footer.appendChild(e_bar_footer_content);
 
         e_bar_content.appendChild(e_bar);
-        e_bar_content.appendChild(e_bar_footer);     
+        e_bar_content.appendChild(e_bar_footer);
         container.appendChild(e_bar_content);
 
     });
-    
+
 }
 
 
 function newChart(data, container) {
-    
+
     var e_chart = document.createElement("div");
     e_chart.classList.add("chart");
 
@@ -53,10 +52,10 @@ function newChart(data, container) {
 
     var chartStyle = data.style;
     if (chartStyle)
-        chart.classList.add(chartStyle);    
-        
-    if (chartType == 'barchart' ) 
-        setNewBarchart(e_chartType,data.data);
+        chart.classList.add(chartStyle);
+
+    if (chartType == 'barchart')
+        setNewBarchart(e_chartType, data.data);
 
     e_chart.appendChild(e_chartType);
     container.appendChild(e_chart);
