@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+avar gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const cleanCSS = require("gulp-clean-css");
