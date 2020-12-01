@@ -113,34 +113,29 @@ p {
 /**************** WEB LAYOUT ***********************/
 
 
+
+/***************************************/
+
 /* @Nomenclature : OK */
 /* @ID: #10 */
 .col {
-
-
-    height: 100%;
+    
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-
-
-
-
 }
 
-
 .row {
-
-    width: 100%;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-
 }
+
+
 
 /************* MOBILE/DESKTOP ***********/
 
@@ -168,27 +163,6 @@ p {
 
 
 
-
-/***************************************/
-
-/* @Nomenclature : OK */
-/* @ID: #10 */
-.col {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 /************* MOBILE/DESKTOP ***********/
 /* @Nomenclature : OK */
@@ -230,7 +204,7 @@ p {
     font-weight: 900;
     letter-spacing: 1px;
     margin: 1vh 1vw;
-    color: #fff;
+    color: #fff !important; 
     padding: 10px 1vw 7px 1vw;
     min-width: var(--size_xl);
     width: min-content;
@@ -2012,7 +1986,7 @@ table.hoverable td:hover {
     border-radius: var(--radius_l);
     max-width: var(--max_width_4);
     color: var(--text_color_alt);
-    padding: var(--size_s);
+
     min-width: 50px;
     min-height: 50px;
     width: fit-content;
@@ -3271,9 +3245,7 @@ select:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
-
+    flex-wrap: wrap
 }
 
 .inputContainer span {
