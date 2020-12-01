@@ -79,7 +79,6 @@ gulp.task('html', () => {
                 'css': 'dist/bundle.css?v=' + v,
                 'js': 'dist/scripts.js?v=' + v
             }))
-
             .pipe(htmlmin({ collapseWhitespace: true }))
             .pipe(gulp.dest(pathsHTML.destination));
 
