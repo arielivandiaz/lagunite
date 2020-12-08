@@ -4,6 +4,7 @@ node version/updateVersion.js
 version=$(cat package.json | jq '.version')
 message="v"${version}
 echo ${message}
+
 git status 
 git add -A
 git commit -m ${message}

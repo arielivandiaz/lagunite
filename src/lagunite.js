@@ -40,3 +40,26 @@
         noneAfter(m, 300);
 
     }
+
+    function carrousel(id) {
+        var c = document.getElementById('carrousel').children;
+        var id = 0;
+        for (var i = 0; i < c.length; i++) {
+            if (c[i].classList.contains('img-in')) {
+                c[i].classList.remove('img-in');
+                c[i].classList.add('img-out');
+                id = i;
+            }
+        }
+        id += 1;
+        if (id == c.length) id = 0;
+        c[id].classList.remove('img-out');
+        c[id].classList.add('img-in');
+        }
+
+        function initCarrousel(id) {
+            const interval = setInterval(function () {
+                carrousel(id);
+            }, 1500);
+
+        }
