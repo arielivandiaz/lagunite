@@ -202,14 +202,14 @@
             <div class="inputContainer">
                 <label class="btn-file">
                     Subir Archivo
-                    <input type="file" name="fileUpload" accept=".jpg" multiple="multiple">
+                    <input type="file" name="fileUpload" >
                 </label>
                 <span>No se eligio archivo</span>
             </div>
 
             <span>Multiple Inputs with crap</span>
             <div class="inputContainer">
-                
+
                 <input type="text" placeholder="Input Text with placeholder">
                 <input type="text" placeholder="Input Text with placeholder">
                 <input type="text" placeholder="Input Text with placeholder">
@@ -220,6 +220,14 @@
 
         </section>
 
+        <section>
+            <div class="carrousel vw100  " id="carrousel">
+                <img src="img/avatar2.jpg" class="img-out">
+                <img src="img/avatar1.jpg" class="img-out">
+                <img src="img/avatar3.jpg" class="img-out">
+
+            </div>
+        </section>
 
         <section>
 
@@ -666,4 +674,7 @@
         </section>
     </main>
     <script src="src/lagunite.js"></script>
+    <script>
+            initCarrousel('carrousel');      
+    </script>
 </body></html>
