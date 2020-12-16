@@ -55,11 +55,11 @@
         if (id == c.length) id = 0;
         c[id].classList.remove('img-out');
         c[id].classList.add('img-in');
-        }
+    }
 
-        function initCarrousel(id) {
-            const interval = setInterval(function () {
-                carrousel(id);
-            }, 1500);
+    function initCarrousel(id) {
+        const interval = setInterval(function () {
+            carrousel(id);
+        }, 1500);
 
-        }
+    }

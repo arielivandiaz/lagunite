@@ -10,6 +10,14 @@
 **v 0.33**     
 - **carousel** implementation
 - *"checkbouxContainer"* margin-right fixed
+- added colors of text  at ID #33
+- added points figures ID #71
+- added *"pointer"* class
+
+
     
 
 
+
+Todo:
+check float-c ? centered? 
