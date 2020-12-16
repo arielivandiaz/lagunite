@@ -1,0 +1,396 @@
+
+<!doctype html>
+<html data-brackets-id='3329'>
+
+<head data-brackets-id='3330'>
+    <title data-brackets-id='3331'>Lagunite</title>
+    <!-- META -->
+    <meta data-brackets-id='3332' charset="utf-8">
+    <meta data-brackets-id='3333' name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link data-brackets-id='3334' rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script data-brackets-id='3335' async src="https://www.googletagmanager.com/gtag/js?id=UA-177961488-2"></script>
+    <script data-brackets-id='3336'>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177961488-2');
+    </script>
+    <link data-brackets-id='3337' type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
+    <link data-brackets-id='3338' type="text/css" rel="stylesheet" href="./src/lagunite.css" />
+
+
+
+    <style data-brackets-id='3339'>
+        header {
+            margin: 30px 00;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+    </style>
+
+
+</head>
+
+
+<body data-brackets-id='3340'>
+    <header data-brackets-id='3341'>
+        <a data-brackets-id='3342' href="/">
+
+            <img data-brackets-id='3343' src="web/img/lagunite.png">
+        </a>
+        <h3 data-brackets-id='3344'>Images Galleries</h3>
+    </header>
+
+    <main data-brackets-id='3345'>
+
+
+        <section data-brackets-id='3346'>
+            <div data-brackets-id='3347' class="carrousel vh50 vw80 centered" id="carrousel">
+            </div>
+        </section>
+        <section data-brackets-id='3348'>
+            <div data-brackets-id='3349' class="carrousel vh50 vw80 centered" id="carrousel2">
+            </div>
+        </section>
+        <section data-brackets-id='3350'>
+            <div data-brackets-id='3351' class="carrousel vh50 vw80 centered" id="carrousel3">
+            </div>
+        </section>
+
+        <section data-brackets-id='3352'>
+            <div data-brackets-id='3353' class="carrousel vh50 vw80 centered" id="carrousel4">
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+    <footer data-brackets-id='3354' class="row  vh20">
+        <a data-brackets-id='3355' href="https://github.com/arielivandiaz/lagunite">
+            <img data-brackets-id='3356' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
+        </a>
+    </footer>
+
+    <div id="carrouselModal" class="modal-fullscreen alt rel">
+        <div class="imageModal" style="background-image: url(&quot;../img/pexels-photo-3861958.jpeg&quot;);"><button class="btn float-bc font-xl">
+                <h1>X</h1>
+            </button></div>
+    </div>
+
+    <script data-brackets-id='3357'>
+        class Carrousel {
+
+            constructor(op) {
+                this.id = op.id;
+                this.time = ((op.time) ? op.time : 1500);
+                this.imgsLen = op.imgs.length;
+                this.arrows = ((op.arrows) ? op.arrows : false);
+                this.points = ((op.points) ? op.points : false);
+                this.classIn = ((op.classIn) ? op.classIn : 'img-in');
+                this.classOut = ((op.classOut) ? op.classOut : 'img-out');
+                this.modal = ((op.modal) ? op.modal : false);
+                this.moved = false;
+                var self = this;
+
+                var c = document.getElementById(this.id);
+                if (this.arrows) {
+                    var arrow_l = document.createElement("div");
+                    var arrow_r = document.createElement("div");
+                    arrow_l.classList.add('arrow-l');
+                    arrow_r.classList.add('arrow-r');
+
+                    arrow_l.addEventListener("click",
+                        function() {
+                            clearInterval(self.interval);
+                            self.moveReverse();
+                            self.start();
+                        }, false);
+
+                    arrow_r.addEventListener("click",
+                        function() {
+                            clearInterval(self.interval);
+                            self.move();
+                            self.start();
+                        }, false);
+
+                    c.appendChild(arrow_l);
+                    c.appendChild(arrow_r);
+
+                }
+
+                //Set images
+                for (var i = 0; i < this.imgsLen; i++) {
+                    var img = document.createElement("div");
+                    if (i == 0) {
+                        img.classList.add(this.classIn);
+                    } else {
+                        img.classList.add('hidden');
+                    }
+                    img.classList.add('image');
+                    if (this.modal) img.classList.add('pointer');
+                    img.style.backgroundImage = "url('../" + op.imgs[i] + "')";
+                    c.appendChild(img);
+                }
+
+                //Set modal
+                if (this.modal) {
+                    var imgB = this.getImages();
+                    for (var i = 0; i < imgB.length; i++) {
+                        imgB[i].addEventListener("click",
+                            function() {
+                                console.log(this);
+                                var modal = document.createElement("div");
+                                modal.id = 'carrouselModal';
+                                modal.classList.add('modal-fullscreen');
+                                modal.classList.add('alt');
+                                modal.classList.add('rel');
+                                var imgDiv = document.createElement("div");
+                                imgDiv.classList.add('imageModal');
+                                imgDiv.style.backgroundImage = this.style.backgroundImage;
+                                var btnModal = document.createElement("button");
+                                btnModal.classList.add('btn');
+                                btnModal.classList.add('float-bc');
+                                btnModal.classList.add('font-xl');
+                                btnModal.innerHTML = '<h1>X</h1>';
+                                //btnModal.addEventListener
+                                modal.appendChild(imgDiv);
+                                imgDiv.appendChild(btnModal);
+                                document.body.appendChild(modal);
+                            }, false);
+
+                    }
+
+                }
+
+                //Set points
+                if (this.points) {
+                    var points = document.createElement("div");
+                    points.classList.add('carrousel-points');
+                    for (var i = 0; i < this.imgsLen; i++) {
+
+                        var point = document.createElement("div");
+                        point.classList.add('point');
+                        point.classList.add('pointer');
+                        point.classList.add('marg-xs');
+                        point.id = "point_" + i;
+                        points.appendChild(point);
+                    }
+
+                    c.appendChild(points);
+
+                    //https://stackoverflow.com/questions/36946159/adding-addeventlistener-in-loop-only-works-for-last-button
+                    var points_iter = points.children;
+
+                    for (let i = 0; i < points_iter.length; i++) {
+                        points_iter[i].addEventListener("click",
+                            function() {
+                                self.activePoint(self, i)
+                            }, false);
+                    }
+                }
+                if (this.points)
+                    this.markPoint(0);
+
+
+            }
+
+
+            getImages() {
+                var c = document.getElementById(this.id).children;
+                var imgs = [];
+                for (var i = 0; i < c.length; i++) {
+                    if (c[i].classList.contains('image')) {
+                        imgs.push(c[i]);
+                    }
+                }
+
+                return imgs;
+
+            }
+
+            markPoint(index) {
+                var points = document.getElementById(this.id).getElementsByClassName('carrousel-points')[0].children;
+
+                for (var i = 0; i < points.length; i++) {
+                    if (points[i].classList.contains('active')) {
+                        points[i].classList.remove('active');
+                    }
+                    if (i == index) points[i].classList.add('active');
+                }
+
+            }
+
+            activePoint(self, activate) {
+
+
+                var id = this.id.slice(6);
+
+
+
+
+                var c = self.getImages();
+                var active = 0;
+                for (var i = 0; i < c.length; i++) {
+                    if (c[i].classList.contains(this.classIn)) {
+                        c[i].classList.remove(this.classIn);
+                        c[i].classList.add(this.classOut);
+                        active = i;
+                    }
+                }
+
+                c[activate].classList.remove(this.classOut);
+                if (c[activate].classList.contains('hidden')) {
+                    c[activate].classList.remove('hidden');
+                }
+                c[activate].classList.add(this.classIn);
+                if (this.points)
+                    self.markPoint(activate);
+                clearInterval(this.interval);
+                this.start();
+
+
+            }
+
+            moveReverse() {
+
+                var c = this.getImages();
+                var active = 0;
+                for (var i = 0; i < c.length; i++) {
+                    if (c[i].classList.contains(this.classIn)) {
+                        c[i].classList.remove(this.classIn);
+                        c[i].classList.add(this.classOut);
+                        active = i;
+                    }
+                }
+                active -= 1;
+                if (active < 0) {
+                    active = (c.length - 1);
+                }
+                c[active].classList.remove(this.classOut);
+                if (c[active].classList.contains('hidden')) {
+                    c[active].classList.remove('hidden');
+                }
+                c[active].classList.add(this.classIn);
+                if (this.points)
+                    this.markPoint(active);
+            }
+
+            move() {
+
+                var c = this.getImages();
+                var active = 0;
+                for (var i = 0; i < c.length; i++) {
+                    if (c[i].classList.contains(this.classIn)) {
+                        c[i].classList.remove(this.classIn);
+                        c[i].classList.add(this.classOut);
+                        active = i;
+                    }
+                }
+                active += 1;
+                if (active == c.length) {
+                    active = 0;
+                }
+                c[active].classList.remove(this.classOut);
+                if (c[active].classList.contains('hidden')) {
+                    c[active].classList.remove('hidden');
+                }
+                c[active].classList.add(this.classIn);
+                if (this.points)
+                    this.markPoint(active);
+            }
+
+
+            start() {
+                var self = this;
+                this.interval = setInterval(function() {
+                    self.move();
+                }, this.time);
+            }
+
+        }
+
+
+
+
+        var gallery_1 = new Carrousel({
+            id: 'carrousel',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ]
+        });
+        gallery_1.start();
+        var gallery_2 = new Carrousel({
+            id: 'carrousel2',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ],
+            points: true,
+            time: 3000
+        });
+        gallery_2.start();
+        var gallery_3 = new Carrousel({
+            id: 'carrousel3',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ],
+            arrows: true,
+            points: true,
+            time: 1000
+        });
+        gallery_3.start();
+
+        var gallery_4 = new Carrousel({
+            id: 'carrousel4',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ],
+            arrows: true,
+            points: true,
+            classIn: 'img-in',
+            classOut: 'img-out',
+            modal: true,
+            time: 2500
+        });
+        gallery_4.start();
+
+
+        /*
+        var gallery_4 = new Carrousel({
+            id: 'carrousel3',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ],
+            arrows: true,
+            points: true,
+            classIn: 'img-in',
+            classOut: 'img-out',
+            modal: true,
+            
+            time: 2500
+        });*/
+    </script>
+
+</body></html>

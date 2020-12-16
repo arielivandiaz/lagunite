@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="../web/img/lagunite_iso_mini.png">
+
+
+    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+
+
+
+    <style>
+        header {
+            margin: 30px 00;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <a href="/">
+            <img src="../web/img/lagunite.png">
+        </a>
+        <h3>Images Carrousel</h3>
+    </header>
+
+    <main>
+        <!--
+        <section>
+            <div class="carrousel vh50 vw80 centered" id="carrousel">
+            </div>
+        </section>
+
+        <div data-brackets-id="3735" class="carrousel vh50 vw80 centered" id="carrousel">
+            <div class="arrow-l"></div>
+            <div class="arrow-r">
+                <div class="arrow-image"></div>
+            </div>
+            <div class="image pointer img-in" style="background-image: url(&quot;../img/pexels-photo-1181243.jpeg&quot;);"></div>
+            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-3861958.jpeg&quot;);"></div>
+            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-4050296.jpeg&quot;);"></div>
+            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-5668868.jpeg&quot;);"></div>
+            <div class="carrousel-points">
+                <div class="point pointer marg-xs active" id="point_0"></div>
+                <div class="point pointer marg-xs" id="point_1"></div>
+                <div class="point pointer marg-xs" id="point_2"></div>
+                <div class="point pointer marg-xs" id="point_3"></div>
+            </div>
+        </div>
+
+-->
+    </main>
+    <div class="arrow-image">asdasdasdasdasd</div>
+    <div class="vh15 vw50 minh5  centered">
+        <div class="arrow-image"></div>
+    </div>
+    <footer class="row  vh20">
+        <a href="https://github.com/arielivandiaz/lagunite">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
+        </a>
+    </footer>
+    <script type="text/javascript" src="carrousel.js"></script>
+    <script>
+        var gallery_1 = new Carrousel({
+            id: 'carrousel',
+            imgs: ['img/pexels-photo-1181243.jpeg',
+                'img/pexels-photo-3861958.jpeg',
+                'img/pexels-photo-4050296.jpeg',
+                'img/pexels-photo-5668868.jpeg'
+            ],
+            arrows: true, //default: false
+            points: true, //default: false
+            classIn: 'img-in', //default: img-in
+            classOut: 'img-out', //default: img-out
+            modal: true, //default: false
+            time: 2500 //default: 1
+        });
+        gallery_1.start();
+    </script>
+
+</body></html>
