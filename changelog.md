@@ -15,7 +15,9 @@
 - added *"pointer"* class
 
 
-    
+**v 0.34**   
+- changed *"separator-v "* to *"separator-h"* 
+- fixed width overflow on Samsung browser
 
 
 
