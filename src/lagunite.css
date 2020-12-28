@@ -48,6 +48,9 @@ img {
     max-width: 100%;
 }
 
+header {
+    margin: 5vh 0 3vh 0;
+}
 
 /************** COMMONS ***************/
 
@@ -124,6 +127,14 @@ p {
 
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.colr {
+
+    display: flex;
+    flex-direction: column-reverse;
     align-content: center;
     justify-content: center;
 }
@@ -366,7 +377,7 @@ p {
     left: 0;
     right: 0;
     margin: auto;
-    width: 100vw;        
+    width: 100%;
     max-width: 100vw;
     background: var(--main_color);
     font-size: 80%;
@@ -394,8 +405,8 @@ p {
 .nav .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 7px 14px;
+    width: 100%;
 
 }
 
@@ -455,6 +466,11 @@ p {
 /************************ PADDING *************************/
 /* @Nomenclature : OK */
 /* @ID: #130 */
+.padd-0 {
+    padding: 0 !important;
+}
+
+
 .padd-xs {
     padding: var(--size_xs);
 }
@@ -631,6 +647,10 @@ p {
 
     /* Padding Horizontal */
     /* @ID: #130x */
+    .xpadd-0 {
+        padding: 0 !important;
+    }
+
     .xpadd-xs {
         padding: var(--size_xs);
     }
@@ -808,6 +828,10 @@ p {
 
     /* Padding Horizontal */
     /* @ID: #130d */
+    .dpadd-0 {
+        padding: 0 !important;
+    }
+
     .dpadd-xs {
         padding: var(--size_xs);
     }
@@ -985,6 +1009,10 @@ p {
 
 /* @Nomenclature : OK */
 /* @ID: #140 */
+.marg-0 {
+    margin: 0 !important;
+}
+
 .marg-xs {
     margin: var(--size_xs);
 }
@@ -1160,9 +1188,44 @@ p {
 
 
 
-@media only screen and (min-width : 281px) and (max-width : 767px) {}
+@media only screen and (min-width : 281px) and (max-width : 767px) {
 
-@media only screen and (min-width : 768px) {}
+    .xmarg-0 {
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (min-width : 768px) {
+    .dmarg-0 {
+        margin: 0 !important;
+    }
+
+}
+
+
+/************* BORDER RADIUS ************/
+/* @Nomenclature : OK */
+/* @ID: #TBD */
+.border-r-xs {
+    border-radius: var(--size_xs)
+}
+
+.border-r-s {
+    border-radius: var(--size_s)
+}
+
+.border-r {
+    border-radius: var(--size_m)
+}
+
+.border-r-l {
+    border-radius: var(--size_l)
+}
+
+.border-r-xl {
+    border-radius: var(--size_xl)
+}
 
 
 
@@ -1979,20 +2042,20 @@ tr:hover {
 }
 
 
-td {
-    padding: 10px 0;
-}
 
 
-table.hoverable tr:hover {
+
+table.hoverable-table tr:hover {
     cursor: pointer;
     background: var(--main_color_light);
+
 }
 
-table.hoverable td:hover {
+table.hoverable-table td:hover {
     background: var(--main_color);
     color: var(--text_color_alt);
     font-weight: 900;
+
 
 }
 
@@ -2001,9 +2064,14 @@ table.hoverable td:hover {
 
 
 
-.bordered {}
+.bordered {
+    border: 3px solid var(--main_color)
+}
 
+.null {
+    content: '';
 
+}
 
 /*************** CARDS *************/
 
@@ -2228,9 +2296,9 @@ table.hoverable td:hover {
     background-image: url(../img/SVG/arrow.svg);
     background-size: cover;
     color: #ccc;
-      display: block;
-  content: ' ';
-    
+    display: block;
+    content: ' ';
+
 }
 
 
@@ -2260,7 +2328,7 @@ table.hoverable td:hover {
 
 }
 
- .imageModal {
+.imageModal {
     display: block;
     position: absolute;
     width: 100%;
@@ -2300,8 +2368,8 @@ table.hoverable td:hover {
 
 .carrousel .arrow-r {
     right: 0;
-    background: rgb(0,0,0);
-background: linear-gradient(270deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .carrousel-points {
@@ -3479,9 +3547,7 @@ select {
 input:hover,
 input:focus,
 textarea:hover,
-textarea:focus,
-select:hover,
-select:focus {
+textarea:focus {
     box-shadow: 0 0 7px 1px var(--main_color);
     color: var(--main_color);
     font-weight: 600;
@@ -3904,6 +3970,83 @@ select option {
 
 /***************************************/
 
+
+/************** PANEL ******************************/
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {}
+
+@media only screen and (min-width : 768px) {
+
+
+    .aside {
+        background: #E83026;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        bottom: 50px;
+        padding: 15px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .aside div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside button {
+        padding: 5px;
+    }
+
+    .aside img {
+        max-width: 30px;
+    }
+
+
+    .aside button .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background: var(--main_color);
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 10px;
+        left: 120%;
+       
+        position: absolute;
+        z-index: 1;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .aside button:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .panel {
+        margin: 0 30px 0 100px;
+        position: absolute;
+        bottom: 50px;
+        top: 50px;
+        right: 0;
+        left: 0;
+        padding: 20px 0 0 0;
+
+
+    }
+
+    .panel section {
+        max-height: 100%;
+    }
+
+}
+
+
+
+
 /**************** COMMON BACKGROUNDS *********************/
 
 /* @Nomenclature : OK */
@@ -3952,7 +4095,7 @@ select option {
 /* @Nomenclature : OK */
 /* @ID: #51 */
 .bgg-1 {
-    background: var(--background_gradient);
+    background: var(--background_gradient_1);
     color: var(--main_color_alt);
 }
 
@@ -3961,11 +4104,22 @@ select option {
     color: var(--main_color_alt);
 }
 
+.bgg-3 {
+    background: var(--background_gradient_3);
+    color: var(--main_color_alt);
+}
+
+.bgg-4 {
+    background: var(--background_gradient_4);
+    color: var(--main_color_alt);
+}
+
+
 /**************** SHADOWS ***************/
 /* @Nomenclature : OK */
 /* @ID: #52 */
 .shadow-1 {
-    box-shadow: 10px 10px 53px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 53px -20px rgba(0, 0, 0, 0.4);
 }
 
 .shadow-2 {
@@ -3975,6 +4129,7 @@ select option {
 .shadow-3 {
     box-shadow: 0px 6px 31px -8px rgba(255, 255, 255, 0.75);
 }
+
 
 
 
@@ -4148,78 +4303,42 @@ select option {
 
 }
 
-.scrollbar::-webkit-scrollbar-track {
+.scrollable::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 
 }
 
-.scrollbar::-webkit-scrollbar {
+.scrollable::-webkit-scrollbar {
     width: 6px;
-
-    background-color: #F5F5F5;
 }
 
-.scrollbar::-webkit-scrollbar-thumb {
-    background-color: #000000;
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: var(--main_color)
+}
+
+/************ SCROLLBAR ON BORDER RADIOS *****************/
+.border-r-xs.scrollable::-webkit-scrollbar-track {
+    margin: var(--size_xs) 0;
+}
+
+.border-r-s.scrollable::-webkit-scrollbar-track {
+    margin: var(--size_s) 0;
+}
+
+.border-r.scrollable::-webkit-scrollbar-track {
+    margin: var(--size_m) 0;
+}
+
+.border-r-l.scrollable::-webkit-scrollbar-track {
+    margin: var(--size_l) 0;
+}
+
+.border-r-xl.scrollable::-webkit-scrollbar-track {
+    margin: var(--size_xl) 0;
 }
 
 /************** / SCROLLBAR ***********************/
-
-
-/************** PANEL ******************************/
-
-aside {
-    background: #E83026;
-
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    padding: 10px;
-    border-radius: 15px;
-    bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-aside div {
-    display: flex;
-    flex-direction: column;
-}
-
-aside button {
-    padding: 5px;
-}
-
-aside img {
-    max-width: 30px;
-}
-
-
-aside button .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background: #E83026;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 10px;
-    left: 150%;
-    top: 10px;
-    position: absolute;
-    z-index: 1;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-}
-
-aside button:hover .tooltiptext {
-    visibility: visible;
-
-
-}
-
 
 
 /************** GRADIENT BORDER ***********/

@@ -18,8 +18,20 @@
 **v 0.34**   
 - changed *"separator-v "* to *"separator-h"* 
 - fixed width overflow on Samsung browser
+- added *"null"* for content = ''
+- added *"marg-0"* and *"padd-0"*
+- Panel layout
+
 
 
 
 Todo:
-check float-c ? centered? 
+marg @media
+scrolable-x
+
+InsertAfter Script :
+ 
+ function insertAfter( referenceNode, newNode )
+{
+    referenceNode.parentNode.insertBefore( newNode, referenceNode.nextSibling );
+}

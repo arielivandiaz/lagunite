@@ -1,0 +1,74 @@
+.noselect-datepicker {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.datepicker {
+    min-width: 300px;
+    min-height: 150px;
+    width: fit-content;
+    position: absolute;
+    background: #fff;
+    border-radius: 16px;
+    border: 3px solid var(--main_color);
+    padding: 5px 10px;
+    box-shadow: 0 0 10px 0 #ccc;
+    z-index: 55;
+    font-family: var(--font_text);
+    margin: auto;
+}
+
+
+.datepicker .disabled {
+    color: #CFCFCF;
+}
+
+.datepicker table {
+    border-collapse: collapse;
+}
+
+
+.datepicker .day td,
+.datepicker .day th {
+    width: calc(300px / 7 - 2px);
+    height: calc(300px / 8 - 2px);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.datepicker .month td,
+.datepicker .month th {
+    width: calc(300px / 4 - 2px);
+    height: calc(300px / 4 - 2px);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+.datepicker td:not(.disabled):hover {
+    background-color: var(--main_color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.datepicker .pointer {
+    cursor: pointer;
+}
+
+.datepicker .today {
+    border-radius: 5px;
+    border: 1px solid var(--main_color);
+
+
+}
