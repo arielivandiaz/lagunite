@@ -9,9 +9,10 @@ const purgecss = require('gulp-purgecss');
 var htmlmin = require('gulp-htmlmin');
 var htmlreplace = require('gulp-html-replace');
 const imagemin = require('gulp-imagemin');
+const headerComment = require('gulp-header-comment');
 
 var fs = require('fs');
-var file_path = 'version/version.json';
+var file_path = 'package.json';
 
 
 
@@ -37,40 +38,48 @@ var pathsImgs = {
 
 
 
-let getVersion = async () => {
+let getVersion = () => {
     return new Promise((resolve, reject) => {
         fs.readFile(file_path, 'utf8', function readFileCallback(err, data) {
             if (err) {
                 console.log(err);
                 reject(err);
             } else {
-                obj = JSON.parse(data);
-                obj.rev += 1;
-                json = JSON.stringify(obj);
-                fs.writeFile(file_path, json, 'utf8', () => {
-                    console.log("Updated version: " + obj.version + "." + obj.rev);
-                    resolve(obj.version + "." + obj.rev);
-                });
+                var obj = JSON.parse(data);
+                resolve(obj.version);
             }
         });
     });
 }
 
 gulp.task('css', () => {
-    return gulp.src(pathsCSS.source)
-        .pipe(autoprefixer())
-        .pipe(cleanCSS())
-        .pipe(minify())
-        .pipe(gulp.dest(pathsCSS.destination));
+    getVersion().then((v) => {
+        return gulp.src(pathsCSS.source)
+            .pipe(autoprefixer())
+            .pipe(cleanCSS())
+            .pipe(minify())
+            .pipe(headerComment('Lagunite v' + v + '\n\r Visit lagunite.com'))
+            .pipe(gulp.dest(pathsCSS.destination));
+        done();
+    }).catch((reject) => {
+        console.log("File Read Failed");
+        console.log(reject);
+    });
 });
 
 
 gulp.task('js', () => {
-    return gulp.src(pathsJS.source)
-        .pipe(uglify())
-        .pipe(gulp.dest(pathsJS.destination));
+    getVersion().then((v) => {
+        return gulp.src(pathsJS.source)
+            .pipe(uglify())
+            .pipe(headerComment('Lagunite v' + v + '\n\r Visit lagunite.com'))
+            .pipe(gulp.dest(pathsJS.destination));
+        done();
+    }).catch((reject) => {
+        console.log("File Read Failed");
+        console.log(reject);
+    });
 });
-
 
 gulp.task('html', () => {
     getVersion().then((v) => {
@@ -79,7 +88,9 @@ gulp.task('html', () => {
                 'css': 'dist/bundle.css?v=' + v,
                 'js': 'dist/scripts.js?v=' + v
             }))
-            .pipe(htmlmin({ collapseWhitespace: true }))
+            .pipe(htmlmin({
+                collapseWhitespace: true
+            }))
             .pipe(gulp.dest(pathsHTML.destination));
 
     }).catch((reject) => {
@@ -94,4 +105,3 @@ gulp.task('img', () => {
         .pipe(imagemin())
         .pipe(gulp.dest(pathsImgs.destination));
 });
-
