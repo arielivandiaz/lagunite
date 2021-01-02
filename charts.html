@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link type="text/css" rel="stylesheet" href="src/lagunite.css" />
+    <link type="text/css" rel="stylesheet" href="src/lagunite-charts.css" />
+    <script>
+        var data = {
+            chart: "barchart",
+            style: "",
+            data: [{
+                    value: 10,
+                    label: "Enero"
+                },
+                {
+                    value: 25,
+                    label: "Febrero"
+                },
+                {
+                    value: 40,
+                    label: "Marzo"
+                },
+                {
+                    value: 30,
+                    label: "Abril"
+                },
+                {
+                    value: 50,
+                    label: "Mayo"
+                },
+                {
+                    value: 80,
+                    label: "Junio"
+                },
+                {
+                    value: 100,
+                    label: "Julio"
+                },
+                {
+                    value: 94,
+                    label: "Agosto"
+                },
+                {
+                    value: 36,
+                    label: "Septiembre"
+                },
+                {
+                    value: 45,
+                    label: "Octubre"
+                },
+                {
+                    value: 1,
+                    label: "Noviembre"
+                },
+                {
+                    value: 5,
+                    label: "Diciembre"
+                }
+
+            ]
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="web/img/lagunite_mini.png">
+        </div>
+        <div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Bar Chart
+        </h1>
+    </header>
+    <div class="main">
+        <div class="chart-parent" id="insertChartHere">
+        </div>
+
+    </div>
+    <footer>
+        Sponsored by
+    </footer>
+    <script src="src/lagunite-charts.js"></script>
+    <script>
+        x = document.getElementById("insertChartHere");
+        newChart(data, x);
+    </script>
+</body></html>

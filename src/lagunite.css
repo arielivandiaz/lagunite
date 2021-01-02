@@ -262,6 +262,9 @@ p {
 }
 
 
+.btn.alt:hover {
+    box-shadow: 0 0px 5px 1px var(--main_color_alt);
+}
 
 /*************** TEXT AND FONTS ***********/
 
@@ -3991,6 +3994,15 @@ select option {
         justify-content: space-between;
     }
 
+    .aside.alt {
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+
+    }
+
     .aside div {
         display: flex;
         flex-direction: column;
@@ -4015,7 +4027,7 @@ select option {
         border-radius: 6px;
         padding: 5px 10px;
         left: 120%;
-       
+
         position: absolute;
         z-index: 1;
         font-family: 'Montserrat', sans-serif;

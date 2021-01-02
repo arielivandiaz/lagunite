@@ -158,8 +158,10 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    top: -5px;
+    top: 10px;
     color: var(--main_color) !important;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 

@@ -29,7 +29,7 @@ function setNewBarchart(container, items) {
 
         var e_bar_footer_content = document.createElement("div");
         e_bar_footer_content.classList.add("bar-footer-content");
-        e_bar_footer_content.innerHTML = "<h1>" + item.value + "</h1>";
+        e_bar_footer_content.innerHTML = "<span>" + item.value + "</span>";
         e_bar_footer.appendChild(e_bar_footer_content);
 
         e_bar_content.appendChild(e_bar);

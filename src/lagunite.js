@@ -58,7 +58,7 @@
     }
 
     function initCarrousel(id) {
-        const interval = setInterval(function () {
+        var interval = setInterval(function () {
             carrousel(id);
         }, 1500);
 
