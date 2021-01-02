@@ -1,5 +1,5 @@
 **v 0.35**   
-- asd
+- Cleaned Repo
 
 
 **v 0.34**   
@@ -33,10 +33,7 @@
 Todo:
 marg @media
 scrolable-x
-
-InsertAfter Script :
+fix hoverable table
+check panel aside alt in other resolutions
+Add panel mobile version
  
- function insertAfter( referenceNode, newNode )
-{
-    referenceNode.parentNode.insertBefore( newNode, referenceNode.nextSibling );
-}

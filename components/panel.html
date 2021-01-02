@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+
+
+<head>
+
+    <title>Plataforma de Clases Virtuales</title>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="../src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="../src/lagunite.css" />
+
+
+
+</head>
+
+<body>
+
+    <div class="nav alt ">
+        <div class="container   jc-fe ai-c">
+            <div class="marg-r">
+                <a href="http://localhost:7247/classroom" class="btn ">
+                    Ver clases
+                </a>
+            </div>
+            <a href="">
+                Lagunite           </a>           
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <aside class="aside alt bgg-4">
+        <div>
+            <a href="">
+                <img src="../img/iconbw.png"></a>
+        </div>
+        <div>
+            <button onclick="showSection('users')">
+                <img src="../img/iconUsrs.png">
+                <span class="tooltiptext">Usuarios</span>
+            </button>
+            <button onclick="showSection('class')">
+                <img src="../img/iconGym.png">
+                <span class="tooltiptext">Clases</span>
+
+            </button>
+            <button onclick="showSection('payments')">
+                <img src="../img/iconPlay.png">
+                <span class="tooltiptext">Abonos</span>
+            </button>
+            <button onclick="showSection('gallery')">
+                <img src="../img/iconGallery.png">
+                <span class="tooltiptext">Imagenes</span>
+            </button>
+            <button onclick="showSection('customHtml')">
+                <img src="../img/iconCheck.png">
+                <span class="tooltiptext">Custom HTML</span>
+            </button>
+            <button onclick="showSection('logs')">
+                <img src="../img/iconLogs.png">
+                <span class="tooltiptext">Logs</span>
+            </button>
+        </div>
+        <div>
+            <a href="http://localhost:7247/logout">
+                <button>
+                    <img src="../img/iconPoweroff.png">
+                    <span class="tooltiptext">Salir</span>
+                </button>
+            </a>
+        </div>
+    </aside>
+    <div class="panel">
+        <section class="col">
+            <div class="row  jc-sb padd-h ">
+                <h1>USUARIOS</h1>
+                <button class="btn" onclick="showModal('newUser')">NUEVO</button>
+            </div>
+            <div class="row jc-sa padd marg-s shadow-1 bg-7 border-r">
+                <div class="">
+                    <h5>Cantidad de Usuarios</h5>
+                    <h2>419</h2>
+                </div>
+                <div class="">
+                    <h5>Cantidad de Usuarios</h5>
+                    <h2>419</h2>
+                </div>
+                <div class="">
+                    <h5>Cantidad de Usuarios</h5>
+                    <h2>419</h2>
+                </div>
+
+            </div>
+            <div class="scrollable  padd-s marg-s shadow-1 1 bg-7 border-r">
+                
+                <table id="table " class="hoverable-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>User</th>
+                        <th>Date</th>
+                        <!--
+                        <th>Pais</th>-->
+                        <th>Actionss</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+    </footer>
+</body></html>

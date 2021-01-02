@@ -4034,6 +4034,13 @@ select option {
         text-transform: uppercase;
     }
 
+
+    .aside.alt button .tooltiptext {
+
+        padding: 5px 10px;
+        margin: -30px 0 0 0;
+    }
+
     .aside button:hover .tooltiptext {
         visibility: visible;
     }
