@@ -22,9 +22,19 @@
     </script>
     <link type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
     <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+        .minilayout {
+            width: 250px;
+            height: 250px;
+            border: var(--border);
+            border-radius: 40px;
+            font-size: 80%;
+
+        }
+    </style>
 </head>
 
-<body>
+<body class="scrollable">
     <div class="modal-fullscreen hidden" id="modal">
         <button onclick="hidde('modal')" class="bg-1">
             <h1>X</h1>
@@ -39,121 +49,347 @@
         </div>
     </div>
 
-    <main class="maxw9 centered">
+    <main class="maxw10 centered">
         <section>
+            <div>
+                <h2 class="color">Heading</h2>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3 </h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+            </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4 class="color">Heading Inline</h4>
+            <div class="hg-inline">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3 </h3>
+            </div>
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Paragraph</h2>
+            <p>Lorem ipsum dolor sit <a href="">Lagunite</a>, consectetur adipiscing elit. Aliquam porta dui et eros placerat placerat. Vivamus euismod pretium nisi. Nullam eleifend lorem in imperdiet varius. Sed ipsum tellus, sodales quis magna porttitor, hendrerit finibus dolor. Aenean ex justo, efficitur et pellentesque at, facilisis a mi. Nam mattis dolor dui, vitae sollicitudin leo pharetra ut. </p>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4 class="color">Font Styles</h4>
+            <ul class="ta-l">
+                <li class="font-xs">Sample text with <i>class="font-xs"</i></li>
+                <li class="font-s">Sample text with <i>class="font-s"</i></li>
+                <li class="font-l">Sample text with <i>class="font-l"</i></li>
+                <li class="font-xl">Sample text with <i>class="font-xl"</i>
+            </ul>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <ul class="ta-l">
+                <li class="color">Sample text with <i>class="color"</i></li>
+                <li class="color-ligth">Sample text with <i>class="color-ligth"</i></li>
+                <li class="color-dark">Sample text with <i>class="color-dark"</i></li>
+                <li class="color-success">Sample text with <i>class="color-success"</i></li>
+                <li class="color-error">Sample text with <i>class="color-error"</i></li>
+                <li class="color-warning">Sample text with <i>class="color-warning"</i></li>
+            </ul>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4 class="color">Text Aling</h4>
+            <div class="row">
+                <div class="w33">
+                    <p class="ta-l">
+                        Paragraph with <i>class="ta-l"</i> - text align left
+                    </p>
+                </div>
+                <div class="w33">
+                    <p class="ta-c">
+                        Paragraph with <i>class="ta-c"</i> - text align center
+                    </p>
+                </div>
+                <div class="w33">
+                    <p class="ta-r">
+                        Paragraph with <i>class="ta-r"</i> - text align right
+                    </p>
+                </div>
+            </div>
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <div class="row">
+                <div class="w50">
+                    <p class="ta-cl">
+                        Paragraph with <i>class="ta-cl"</i> - text align left on Desktop and text align center con Mobile
+                    </p>
+                </div>
+                <div class="w50">
+                    <p class="ta-cr">
+                        Paragraph with <i>class="ta-cr"</i> - text align right on Desktop and text align center con Mobile
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Layout Distribution</h2>
+            <div class="row  centered">
+                <div class="marg-s">
+                    <h3>Section "row"</h3>
+                    <section class="row   minilayout">
+                        <div class=" col bg-1 w40  h100">
+                            col w30 h100
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h3>Section "row"</h3>
+                    <section class="row   minilayout">
+                        <div class=" col bg-2 w30 h100 ">
+                            col w30 h100
+                        </div>
+                        <div class=" col bg-1 w50 h100 ">
+                            col w50 h100
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="separator-v-m"></div>
+            <div class="row">
+                <div class="marg-s">
+                    <h3>Section "col"</h3>
+                    <section class="col   minilayout">
+                        <div class=" row bg-2 h15 ">
+                            row h15
+                        </div>
+                        <div class=" row bg-1 h50 ">
+                            row h50
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h3>Section "col"</h3>
+                    <section class="col  minilayout">
+                        <div class=" row bg-2 h15 ">
+                            row h15
+                        </div>
+
+                        <div class=" row rel bg-1 h50 ">
+                            <span style="position: absolute; top: 0;">
+                                row h50
+                            </span>
+                            <div class=" col bg-3 w50 h100">
+                                col w50
+                            </div>
+                            <div class=" col bg-6 w30 h100">
+                                col w30
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="marg-s">
+                    <h3>Section "row row"</h3>
+                    <section class="row  minilayout">
+                        <div class=" row rel bg-2 w40 h80 ">
+                            <span style="position: absolute; top: 0;">
+                                row w40
+                            </span>
+                            <div class="bg-3 w50 h50">
+                                w50
+                            </div>
+                            <div class="  bg-6 w30 h50">
+                                w30
+                            </div>
+                        </div>
+                        <div class=" row rel bg-1 w60 h80 ">
+                            <span style="position: absolute; top: 0;">
+                                row w60
+                            </span>
+                            <div class=" col bg-3 w50 h50">
+                                col w50
+                            </div>
+                            <div class=" rel col bg-6 w30 h50">
+                                <span style="position: absolute; top: 0;">
+                                    col w30 </span>
+                                <div class=" bg-2 h40">
+                                    h40
+                                </div>
+                                <div class=" bg-1 h30">
+                                    h30
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h3>Section "col col"</h3>
+                    <section class="col   minilayout">
+                        <div class="col  bg-2 centered h80 w80">
+                            col centered h30 w80
+                            <div class="bg-3 h50">
+                                h50
+                            </div>
+                            <div class="bg-4 w50 centered h30">
+                                w50 centered h30
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="separator-v-m"></div>
+            <h3>Section "rel"</h3>
+            <section class="row  centered w90 bg-2 padd-v-s radius-l">
+                <div class="marg-s ">
+                    <span> rel </span>
+                    <div class="minw3  rel bg-4  minh4 rounded">
+                        <div class=" circle  ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s ">
+                    <span> rel -> float-tl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-tl </div>
+                        <div class=" circle float-tl ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s ">
+                    <span> rel -> float-tl </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-tr</div>
+                        <div class=" circle float-tr ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s ">
+                    <span> rel -> float-bl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-bl </div>
+                        <div class=" circle float-bl ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s ">
+                    <span> rel -> float-br </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-br </div>
+                        <div class=" circle float-br ">
+                        </div>
+                    </div>
+                </div>
+                <div class=" marg-s ">
+                    <span> rel -> float-cr </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-cr </div>
+                        <div class=" circle float-cr ">
+                        </div>
+                    </div>
+                </div>
+                <div class=" marg-s ">
+                    <span> rel -> float-cl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-cl </div>
+                        <div class=" circle float-cl ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="separator-v-m"></div>
+            <h3>min max example</h3>
+
+            <section class="col  centered padd-lf w90">
+                <div class="bg-1 minw3 ta-l">
+                    <pre>"minw3"</pre>
+                    <p> Lorem.</p>
+
+                </div>
+                <div class="bg-2 minw2 ta-l">
+                    <pre>"minw2"</pre>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+                <div class="bg-3 minw2 maxw5 ta-l">
+                    <pre>"minw1 maxw5"</pre>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+
+
+            </section>
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Buttons</h2>
             <table>
-                <caption>
-                    <h1>Buttons </h1>
-                </caption>
+
                 <tr>
                     <th>
-                        <pre>class=</pre>
-                    </th>
-                    <th>
-                        <pre>"btn "</pre>
+                        <pre>"btn"</pre>
                     </th>
                     <th>
                         <pre>"btn alt"</pre>
                     </th>
-                    <th>
-                        <pre>"btn std"</pre>
-                    </th>
-                    <th>
-                        <pre>"btn fit"</pre>
-                    </th>
-                    <th>
-                        <pre>"btn big"</pre>
-                    </th>
                 </tr>
                 <tr>
-
-                    <td></td>
-                    <td><button class="btn ">Button</button></td>
+                    <td><button class="btn">Button</button></td>
                     <td><button class="btn alt">Button</button></td>
-                    <td><button class="btn std">Button</button></td>
-                    <td><button class="btn fit">Button</button></td>
-                    <td><button class="btn big">Button</button></td>
-
-
-
-
                 </tr>
-            </table>
-
-
-
-            <table>
-                <caption>
-                    <h1>Buttons Combinations</h1>
-                </caption>
                 <tr>
-                    <th>
-                        <pre>class=</pre>
-                    </th>
-
-
                     <th>
                         <pre>"btn std"</pre>
                     </th>
                     <th>
+                        <pre>"btn alt std"</pre>
+                    </th>
+                </tr>
+                <tr>
+                    <td><button class="btn std">Button</button></td>
+                    <td><button class="btn alt std">Button</button></td>
+                </tr>
+                <tr>
+                    <th>
                         <pre>"btn fit"</pre>
                     </th>
                     <th>
-                        <pre>"btn big"</pre>
+                        <pre>"btn alt fit"</pre>
                     </th>
                 </tr>
-
+                <tr>
+                    <td><button class="btn fit">Button</button></td>
+                    <td><button class="btn alt fit">Button</button></td>
+                </tr>
                 <tr>
                     <th>
-                        <pre>"alt"</pre>
+                        <pre>"btn big"</pre>
                     </th>
-                    <td><button class="btn alt std">Button</button></td>
-                    <td><button class="btn alt fit">Button</button></td>
+                    <th>
+                        <pre>"btn alt big"</pre>
+                    </th>
+                </tr>
+                <tr>
+                    <td><button class="btn big">Button</button></td>
                     <td><button class="btn alt big">Button</button></td>
                 </tr>
                 <tr>
                     <th>
-                        <pre>"btn std"</pre>
+                        <pre>"btn std big"</pre>
                     </th>
-                    <td>*</td>
-                    <td><button class="btn std fit">Button</button></td>
-                    <td><button class="btn std big">Button</button></td>
+                    <th>
+                        <pre>"btn alt std big"</pre>
+                    </th>
                 </tr>
-
+                <tr>
+                    <td><button class="btn std big">Button</button></td>
+                    <td><button class="btn alt std big">Button</button></td>
+                </tr>
             </table>
 
-        </section>
 
-        <section>
-
-            <h2>Radio Buttons as "radio-group"</h2>
-
-            <div class="radio-group">
-                <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
-                <label for="radio-group-1A">One</label>
-                <input type="radio" name="radio-group-example" id="radio-group-1B" value="two" />
-                <label for="radio-group-1B">Two</label>
-                <input type="radio" name="radio-group-example" id="radio-group-1C" value="three" />
-                <label for="radio-group-1C">Three</label>
-            </div>
-
-            <div class="radio-group">
-                <input type="radio" name="radio-group-example2" id="radio-group-2A" value="one" checked />
-                <label for="radio-group-2A">One</label>
-                <input type="radio" name="radio-group-example2" id="radio-group-2B" value="two" />
-                <label for="radio-group-2B">Two</label>
-                <input type="radio" name="radio-group-example2" id="radio-group-2C" value="three" />
-                <label for="radio-group-2C">Three</label>
-                <input type="radio" name="radio-group-example2" id="radio-group-2D" value="four" />
-                <label for="radio-group-2D">Four</label>
-                <input type="radio" name="radio-group-example2" id="radio-group-2E" value="three" />
-                <label for="radio-group-2E">Five</label>
-            </div>
-
-
-        </section>
-        <section>
-            <h2>Form Items</h2>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Form</h2>
             <div class="inputContainer">
                 <span>Input Text with text</span>
                 <input class="text">
@@ -163,12 +399,12 @@
                 <input type="text" placeholder="Input Text with placeholder">
             </div>
 
-            <input type="number" placeholder="asd">
+            <input type="number" placeholder="Number Input">
             <div class="inputContainer">
-                <span>Country</span>
+                <span>Select Input</span>
                 <div class="select">
                     <select>
-                        <option>Argentina</option>
+                        <option>Argentine</option>
                         <option>Uruguay</option>
                     </select>
                 </div>
@@ -183,26 +419,11 @@
                 </div>
             </div>
 
-            <div class="inputContainer">
-                <span> Acepto los terminos y condiciones </span>
-                <div class="labeled">
-                    <input class="tgl tgl-light" id="arg_citizen" type="checkbox" checked onchange="foreign()" />
-                    <label class="tgl-btn" for="arg_citizen"></label>
-                </div>
-            </div>
-
-
-            <div class="checkboxContainer">
-                <label class="checkbox-container">Acepto los terminos y condiciones del servicio
-                    <input type="checkbox" name="" value="" id="checkbox_1">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
 
             <div class="inputContainer">
                 <label class="btn-file">
-                    Subir Archivo
-                    <input type="file" name="fileUpload" >
+                    Upload File
+                    <input type="file" name="fileUpload">
                 </label>
                 <span>No se eligio archivo</span>
             </div>
@@ -214,32 +435,64 @@
                 <input type="text" placeholder="Input Text with placeholder">
                 <input type="text" placeholder="Input Text with placeholder">
             </div>
-
-
-
-        </section>
-
-        <section>
-            <div class="carrousel vw100  " id="carrousel">
-                <img src="img/avatar2.jpg" class="img-out">
-                <img src="img/avatar1.jpg" class="img-out">
-                <img src="img/avatar3.jpg" class="img-out">
-
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Checkbox ass toggle button</h4>
+            <div class="inputContainer">
+                <span> Acepto los terminos y condiciones </span>
+                <div class="labeled">
+                    <input class="tgl" id="arg_citizen" type="checkbox" checked onchange="foreign()" />
+                    <label class="tgl-btn" for="arg_citizen"></label>
+                </div>
             </div>
-        </section>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Checkbox</h4>
+            <div class="checkboxContainer">
+                <label class="checkbox-container">Acepto los terminos y condiciones del servicio
+                    <input type="checkbox" name="" value="" id="checkbox_1">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Radio Buttons as "radio-group" </h4>
+            <div class="radio-group">
+                <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
+                <label for="radio-group-1A">One</label>
+                <input type="radio" name="radio-group-example" id="radio-group-1B" value="two" />
+                <label for="radio-group-1B">Two</label>
+                <input type="radio" name="radio-group-example" id="radio-group-1C" value="three" />
+                <label for="radio-group-1C">Three</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" name="radio-group-example2" id="radio-group-2A" value="one" checked />
+                <label for="radio-group-2A">One</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2B" value="two" />
+                <label for="radio-group-2B">Two</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2C" value="three" />
+                <label for="radio-group-2C">Three</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2D" value="four" />
+                <label for="radio-group-2D">Four</label>
+                <input type="radio" name="radio-group-example2" id="radio-group-2E" value="three" />
+                <label for="radio-group-2E">Five</label>
+            </div>
 
-        <section>
 
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Avatars</h2>
             <table>
-                <caption>
-                    <h1>Avatars</h1>
-                </caption>
+
                 <tr>
                     <th>
                         <pre>class=</pre>
                     </th>
 
-
+                    <th>
+                        <pre>"avatar micro"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar small"</pre>
+                    </th>
 
                     <th>
                         <pre>"avatar"</pre>
@@ -247,20 +500,17 @@
                     <th>
                         <pre>"avatar big"</pre>
                     </th>
-                    <th>
-                        <pre>"avatar small"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar micro"</pre>
-                    </th>
+
                 </tr>
 
                 <tr>
                     <td></td>
+                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
+                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
                     <td><img class="avatar" src="img/avatar2.jpg"></td>
                     <td><img class="avatar big" src="img/avatar3.jpg"></td>
-                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
+
+
 
                 </tr>
 
@@ -268,10 +518,12 @@
                     <th>
                         <pre>"alt "</pre>
                     </th>
+                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
+                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
                     <td><img class="avatar alt" src="img/avatar2.jpg"></td>
                     <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
-                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
+
+
 
                 </tr>
             </table>
@@ -281,93 +533,100 @@
 
 
 
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Chips</h2>
+            <div class="separator-v"></div><!-- SEP -->
+            <div class="row">
+                <div class="col">
+                    <div class="chip  ">
+                        <img class="avatar micro" src="img/avatar4.jpg">
+                        <span>Lagunite</span>
+                        <h2>Veteran</h2>
+                    </div>
 
-        </section>
+                    <div class="chip  ">
+                        <div class="header">
+                            <img class="avatar small" src="img/avatar4.jpg">
+                        </div>
+                        <div class="content">
+                            <span>Lagunite</span>
+                            <h2>Veteran</h2>
+                        </div>
+                    </div>
 
-
-
-        <section>
+                </div>
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">"chip vertical"</h4>
+            <div class="row">
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar5.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar2.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar4.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar3.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+            </div>
 
             <table>
-                <caption>
-                    <h1>Chips</h1>
-                </caption>
+
                 <tr>
-                    <th>
-                        <pre>class=</pre>
-                    </th>
-
-
                     <th>
                         <pre>"chip"</pre>
                     </th>
                     <th>
                         <pre>"chip vertical"</pre>
                     </th>
-
                 </tr>
 
                 <tr>
-                    <th></th>
-                    <td>
-                        <div class="chip  ">
-                            <img class="avatar micro" src="img/avatar4.jpg">
-                            <span>Lagunite</span>
-                            <h2>Veteran</h2>
-                        </div>
+                    <td class="">
 
-                        <div class="chip  ">
-                            <div class="header">
-                                <img class="avatar micro" src="img/avatar4.jpg">
-                            </div>
-                            <div class="content">
-                                <span>Lagunite</span>
-                                <h2>Veteran</h2>
-                            </div>
-                        </div>
 
                     </td>
-                    <td>
-                        <div class="chip vertical ">
-                            <img class="avatar micro" src="img/avatar4.jpg">
-                            <span>28</span>
-                            <h2>15</h2>
-                        </div>
-                        <div class="chip vertical ">
+                    <td class="">
 
-                            <img class="avatar micro" src="img/avatar4.jpg">
 
-                            <div class="content">
-                                <span>28</span>
-                                <h2>15</h2>
-                            </div>
-                        </div>
 
                     </td>
                 </tr>
             </table>
 
 
-        </section>
+            <h2 class="color">Cards</h2>
+            <div class="row">
+                <div class="card bgg-4">
+                    <h1 class="padd-v">Dont forget </h1>
+                    <p>asd Lome Ipsi deterem adasdmadsnasdn</p>
+                    <div class="bg-6">
+                        Made with Lagunite</div>
+                </div>
 
-        <section>
-            <h1>Cards</h1>
-            <div class="card">
-                <span>asdasd</span>asd
-                asd
-                <button></button>
+                <div class="card alt bgg-4">
+                    <h1 class="padd-v"> Dont forget </h1>
+
+                    <p>asd Lome Ipsi deterem adasdmadsnasdn</p>
+                    <div class="">
+                        Made with Lagunite</div>
+                </div>
             </div>
-        </section>
-
-
-
-
-        <section>
-
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Figures</h2>
             <table>
-                <caption>
-                    <h1>Figures</h1>
-                </caption>
+
                 <tr>
                     <th>
                         <pre>class=</pre>
@@ -426,8 +685,8 @@
                     <td>
                         <div class="circle">L</div>
                     </td>
-                    <td>
-                        <div class="triangle"></div>
+                    <td class="">
+                        <div class="triangle "></div>
                     </td>
                     <td>
                         <div class="tear">L</div>
@@ -457,10 +716,8 @@
             </table>
 
 
-        </section>
-        <section>
-
-            <h1>Tables</h1>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Tables</h2>
 
             <table>
                 <tr>
@@ -507,7 +764,9 @@
 
 
             </table>
-            <table class="hoverable">
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4 class="color">"hoverable-table"</h4>
+            <table class="hoverable-table">
                 <tr>
                     <th></th>
                     <th>Monday</th>
@@ -552,26 +811,65 @@
 
 
             </table>
-        </section>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4 class="color">"bordered-table"</h4>
+            <table class="bordered-table">
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
 
-        <section>
-            <h1>Modals</h1>
+                </tr>
+                <tr>
+                    <th>John Doe</th>
+                    <td>213</td>
+                    <td>34</td>
+                    <td>125</td>
+                    <td>64</td>
+                    <td>235</td>
+                </tr>
+                <tr>
+                    <th>Crystal Smith </th>
+                    <td>56</td>
+                    <td>89</td>
+                    <td>90</td>
+                    <td>75</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <th>Carl Fenix</th>
+                    <td>45</td>
+                    <td>87</td>
+                    <td>34</td>
+                    <td>68</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>Megan Davis</th>
+                    <td>202</td>
+                    <td>198</td>
+                    <td>174</td>
+                    <td>215</td>
+                    <td>164</td>
+                </tr>
+
+
+            </table>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Modals</h2>
             <button class="btn" onclick="show('modal')">open fullscreen</button>
             <button class="btn" onclick="show('alert')">open alert</button>
 
-
-
-        </section>
-
-        <section>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Shadows</h2>
             <table>
-                <caption>
-                    <h1>Shadows </h1>
-                </caption>
+
                 <tr>
-                    <th>class=</th>
-                    <th>
-                    </th>
+
+
                     <th>
                     </th>
                     <th>
@@ -585,7 +883,7 @@
                     </th>
 
                     <td>
-                        <div class="card   shadow-1">
+                        <div class="card alt padd-xs    shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -593,7 +891,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card bg-6 shadow-1">
+                        <div class="card alt padd-xs  bg-6 shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -601,7 +899,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card bg-4 shadow-1">
+                        <div class="card alt padd-xs  bg-4 shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -609,13 +907,23 @@
                         </div>
                     </td>
                 </tr>
+
                 <tr>
                     <th>
                         <pre>"shadow-2"</pre>
                     </th>
 
                     <td>
-                        <div class="card   shadow-2">
+                        <div class="card alt padd-xs    shadow-2">
+                            <h3>A Card</h3>
+                            <p>
+                                With shadow effect
+                            </p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="card alt padd-xs  bg-6 shadow-2">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -623,15 +931,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card bg-6 shadow-2">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card bg-4 shadow-2">
+                        <div class="card alt padd-xs  bg-4 shadow-2">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -639,13 +939,14 @@
                         </div>
                     </td>
                 </tr>
+
                 <tr class="bg-6">
                     <th>
                         <pre>"shadow-3"</pre>
                     </th>
 
                     <td>
-                        <div class="card   shadow-3">
+                        <div class="card alt padd-xs  shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -653,7 +954,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card bg-6 shadow-3">
+                        <div class="card alt padd-xs  bg-6 shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -661,7 +962,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card bg-4 shadow-3">
+                        <div class="card alt padd-xs  bg-4 shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -670,10 +971,11 @@
                     </td>
                 </tr>
             </table>
+            <div class="separator-v-l"></div><!-- SEP -->
         </section>
     </main>
     <script src="src/lagunite.js"></script>
     <script>
-            initCarrousel('carrousel');      
+        initCarrousel('carrousel');
     </script>
 </body></html>
