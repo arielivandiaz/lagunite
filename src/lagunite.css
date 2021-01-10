@@ -91,8 +91,9 @@ a,
 a:visited,
 a:active,
 a:enabled {
-    color: #000;
+    color: var(--main_color);
     text-decoration: none;
+    font-weight: 700;
 }
 
 section {
@@ -231,7 +232,7 @@ p {
 
 .btn.alt {
     background: var(--main_color_alt);
-    color: var(--main_color)
+    color: var(--main_color) !important;
 }
 
 .btn.std {
@@ -2034,6 +2035,25 @@ td {
     /* border: 1px solid #fff; */
 }
 
+table.bordered-table,
+table.bordered-table th,
+table.bordered-table td {
+    border: 1px solid var(--main_color);
+}
+
+table.bordered-table.alt,
+table.bordered-table.alt th,
+table.bordered-table.alt td {
+    border: 1px solid var(--main_color_alt);
+}
+
+
+tr * ,td * {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 th {
     padding: 4px 0;
     cursor: pointer;
@@ -2071,6 +2091,30 @@ table.hoverable-table td:hover {
     border: 3px solid var(--main_color)
 }
 
+.bordered.alt {
+    border: 3px solid var(--main_alt)
+}
+
+.radius {
+    border-radius: var(--radius);
+}
+
+.radius-s {
+    border-radius: var(--radius_s);
+}
+
+.radius-l {
+    border-radius: var(--radius_l);
+}
+
+.radius-x {
+    border-radius: var(--radius_xl);
+}
+
+.radius-f {
+    border-radius: 50%;
+}
+
 .null {
     content: '';
 
@@ -2081,14 +2125,12 @@ table.hoverable-table td:hover {
 /* @Nomenclature : OK */
 /* @ID: #41 */
 .card {
-
+    display: inline-block;
     background: var(--background_1);
     background: var(--background_gradient_1);
-    border-radius: var(--radius_l);
     max-width: var(--max_width_4);
     color: var(--text_color_alt);
-
-    min-width: 50px;
+    min-width: 60px;
     min-height: 50px;
     width: fit-content;
     font-weight: 500;
@@ -2096,6 +2138,9 @@ table.hoverable-table td:hover {
 
 }
 
+.card.alt {
+    border-radius: var(--radius_l);
+}
 
 /*************** CARDS  OLD ****
 .cards {
@@ -2236,12 +2281,13 @@ table.hoverable-table td:hover {
 .triangle-l {
     width: 0;
     height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--text_color_alt);
     border-radius: 5px;
+    
 }
+
+
+
 
 .triangle {
     border-left: 28px solid transparent;
@@ -2509,6 +2555,7 @@ table.hoverable-table td:hover {
     border: 1px solid var(--main_color);
     border-radius: 30px;
     display: flex;
+    
     color: var(--main_color);
     padding: 3px 3px;
     margin: 5px;
@@ -2516,9 +2563,11 @@ table.hoverable-table td:hover {
     justify-content: space-between;
     align-items: center;
     width: fit-content;
+    
+
 }
 
-.chip * {
+.chip:not(.vertical) * {
     margin: 0 5px;
 }
 
@@ -2529,12 +2578,6 @@ table.hoverable-table td:hover {
     flex-direction: column;
     min-width: 0px;
     height: fit-content;
-
-}
-
-.chip.vertical * {
-
-    margin: 0;
 
 }
 
@@ -3547,8 +3590,10 @@ select {
 
 
 
-input:hover,
-input:focus,
+input:not([type='radio']):hover,
+input:not([type='radio']):focus,
+.select:hover,
+.select:focus,
 textarea:hover,
 textarea:focus {
     box-shadow: 0 0 7px 1px var(--main_color);
@@ -3578,7 +3623,9 @@ textarea:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin: 10px 5px;
+
 }
 
 .inputContainer span {
@@ -3866,20 +3913,20 @@ input[type="checkbox"] {
     left: 50%;
 }
 
-.tgl-light + .tgl-btn {
+.tgl + .tgl-btn {
     background: #ccc;
     border-radius: 2em;
     padding: 2px;
     transition: all .4s ease;
 }
 
-.tgl-light + .tgl-btn:after {
+.tgl + .tgl-btn:after {
     border-radius: 50%;
     background: #fff;
     transition: all .2s ease;
 }
 
-.tgl-light:checked + .tgl-btn {
+.tgl:checked + .tgl-btn {
     background: var(--main_color);
     box-shadow: 0 0 10px 3px var(--main_color);
 }
@@ -4146,7 +4193,7 @@ select option {
 }
 
 .shadow-3 {
-    box-shadow: 0px 6px 31px -8px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 6px 21px -8px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -4550,12 +4597,12 @@ select option {
 }
 
 .minw10 {
-    min-width: calc(var(--break_width)*18);
+    min-width: calc(var(--break_width)*16);
     width: fit-content;
 }
 
 .minw11 {
-    min-width: calc(var(--break_width)*24);
+    min-width: calc(var(--break_width)*20);
     width: fit-content;
 }
 
@@ -4603,11 +4650,11 @@ select option {
 }
 
 .maxw10 {
-    max-width: calc(var(--break_width)*18);
+    max-width: calc(var(--break_width)*16);
 }
 
 .maxw11 {
-    max-width: calc(var(--break_width)*24);
+    max-width: calc(var(--break_width)*20);
 }
 
 .maxw12 {
