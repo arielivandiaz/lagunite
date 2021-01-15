@@ -1,5 +1,5 @@
 /**
- * Lagunite v
+ * Lagunite v0.0.34
  * Visit lagunite.com
  */
 
