@@ -5,7 +5,7 @@
 
 <head>
 
-    <title>Plataforma de Clases Virtuales</title>
+    <title>Lagunite Panel</title>
 
     <!-- META -->
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="nav alt ">
+    <div class="nav alt">
         <div class="container   jc-fe ai-c">
             <div class="marg-r">
                 <a href="http://localhost:7247/classroom" class="btn ">
@@ -28,7 +28,7 @@
                 </a>
             </div>
             <a href="">
-                Lagunite           </a>           
+                Lagunite </a>
         </div>
     </div>
 
@@ -80,13 +80,35 @@
             </a>
         </div>
     </aside>
+
+    <div class="xaside">
+        <button onclick="showSection('users')">
+            <img src="../img/iconHome.png">
+            <span class="">Home</span>
+        </button>
+        <button class="main" onclick="showSection('class')">
+            <img src="../img/iconPlay.png">
+
+        </button>
+
+        <button onclick="showSection('gallery')">
+            <img src="../img/burger.png">
+            <span class="">Menu</span>
+        </button>
+    </div>
+
+
+
+
+
+
     <div class="panel">
         <section class="col">
-            <div class="row  jc-sb padd-h ">
-                <h1>USUARIOS</h1>
+            <div class="row  jc-sb dpadd-h xmarg-s">
+                <h2>USUARIOS</h2>
                 <button class="btn" onclick="showModal('newUser')">NUEVO</button>
             </div>
-            <div class="row jc-sa padd marg-s shadow-1 bg-7 border-r">
+            <div class="row jc-sa dpadd xpadd-s dmarg-s shadow-1 bg-7 border-r xfont-s">
                 <div class="">
                     <h5>Cantidad de Usuarios</h5>
                     <h2>419</h2>
@@ -100,18 +122,414 @@
                     <h2>419</h2>
                 </div>
 
-            </div>
-            <div class="scrollable  padd-s marg-s shadow-1 1 bg-7 border-r">
-                
+            </div>   
+            <div class="scrollable  dpadd-s  dmarg-s xmarg-s  shadow-1  bg-7 border-r">
+
                 <table id="table " class="hoverable-table">
-                    <tr>
-                        <th>Name</th>
-                        <th>User</th>
-                        <th>Date</th>
-                        <!--
+                    <tbody>
+                        <tr>
+                            <th>L1nk</th>
+                            <th>URL</th>
+                            <th>Visits</th>
+                            <th>Actions</th>
+                            <!--
                         <th>Pais</th>-->
-                        <th>Actionss</th>
-                    </tr>
+                        </tr>
+
+
+
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="">
+                            <td>
+                                axRe4l
+                            </td>
+                            <td>
+                                http://localhost:2778/
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    17" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <tr id="">
+                            <td>
+                                gjgaFJ
+                            </td>
+                            <td>
+                                http://localhost/phpmyadmin/sql.php?server=1&amp;db=test&amp;table=test_table&amp;pos=0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                <form method="POST" action="destroy">
+                                    <input name="id" value="    18" hidden="">
+                                    <button class="btn fit" type="submit">
+                                        DELETE
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+
+                    </tbody>
                 </table>
             </div>
         </section>
