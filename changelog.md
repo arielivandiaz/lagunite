@@ -1,3 +1,9 @@
+**v 0.36**
+- Added  btn with figures shapes ex: *"btn circle-l floar-br"*
+- added *"panel noaside"*
+- Panel mobile 1st version 
+
+
 **v 0.35**   
 - Cleaned Repo
 
@@ -31,9 +37,7 @@
 
 
 Todo:
-marg @media
-scrolable-x
 fix hoverable table
 check panel aside alt in other resolutions
-Add panel mobile version
+
  
