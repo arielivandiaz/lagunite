@@ -1,65 +1,90 @@
-    function show(id) {
-        if (document.getElementById(id).classList.contains("hidden"))
-            document.getElementById(id).classList.remove("hidden");
-    }
+/* show(id)-> Remove "hidden" class to the element by id */
+function show(id) {
+    var x = document.getElementById(id);
+    if (x.classList.contains("hidden"))
+        x.classList.remove("hidden");
+}
+/* hidde(id)-> Add "hidden" class to the element by id */
+function hidde(id) {
+    document.getElementById(id).classList.add("hidden");
+}
+/* toggle(id)-> Toggle "hidden" class to the element by id */
+function toggle(id) {
+    document.getElementById(id).classList.toggle("hidden");
+}
 
-    function hidde(id) {
-        document.getElementById(id).classList.add("hidden");
-    }
+/* hiddeAfter(element,time )-> Add "hidden" class to the element by id 
+*  after t (ms)
+*/
+function hiddeAfter(e, t) {
+    setTimeout(function () {
+        e.classList.add("hidden");
+    }, t);
+}
 
-    function toggle(id) {
-        document.getElementById(id).classList.toggle("hidden");
-    }
+/* addClass(id,c)-> Add class "c" to the element by id */
+function addClass(id,c) {
+    var x = document.getElementById(id);
+    if (!x.classList.contains(c))
+        x.classList.add(c);
+}
+/* removeClass(id,c)-> Remove class "c" to the element by id */
+function removeClass(id,c) {
+    var x = document.getElementById(id);
+    if (x.classList.contains(c))
+        x.classList.remove(c);
+}
+/* toggleClass(id,c)-> Toggle class "c" to the element by id */
+function toggleClass(id,c) {
+    var x = document.getElementById(id);
+    if (x.classList.contains(c))
+        x.classList.toggle(c);
+}
+
+/* updateInput(id,val)-> Update value of the element by id */
+function updateInput(id,val) {
+    document.getElementById(id).value = val;
+}
 
 
-    function toggleItems(id1, id2) {
-        toggle(id1);
-        toggle(id2);
-    }
+
+/* Aside Menu   */
+function showMenu() {
+    var m = document.getElementById("menuBurger");
+    m.classList.remove("scale-out-tr");
+    m.classList.add("scale-in-tr");
+    m.classList.remove("hidden");
+}
+
+function hideMenu() {
+    var m = document.getElementById("menuBurger");
+    m.classList.remove("scale-in-tr");
+    m.classList.add("scale-out-tr");
+    hiddeAfter(m, 300);
+}
 
 
-
-    //Hidde after animation
-    function noneAfter(e, t) {
-        setTimeout(function () {
-            e.classList.add("hidden");
-        }, t);
-    }
-
-    function showMenu() {
-        var m = document.getElementById("menuBurger");
-        m.classList.remove("scale-out-tr");
-        m.classList.add("scale-in-tr");
-        m.classList.remove("hidden");
-    }
-
-    function hideMenu() {
-        var m = document.getElementById("menuBurger");
-        m.classList.remove("scale-in-tr");
-        m.classList.add("scale-out-tr");
-        noneAfter(m, 300);
-
-    }
-
-    function carrousel(id) {
-        var c = document.getElementById('carrousel').children;
-        var id = 0;
-        for (var i = 0; i < c.length; i++) {
-            if (c[i].classList.contains('img-in')) {
-                c[i].classList.remove('img-in');
-                c[i].classList.add('img-out');
-                id = i;
-            }
+/* Images carrousel */
+function carrousel(id) {
+    var c = document.getElementById('carrousel').children;
+    var id = 0;
+    for (var i = 0; i < c.length; i++) {
+        if (c[i].classList.contains('img-in')) {
+            c[i].classList.remove('img-in');
+            c[i].classList.add('img-out');
+            id = i;
         }
-        id += 1;
-        if (id == c.length) id = 0;
-        c[id].classList.remove('img-out');
-        c[id].classList.add('img-in');
     }
+    id += 1;
+    if (id == c.length) id = 0;
+    c[id].classList.remove('img-out');
+    c[id].classList.add('img-in');
+}
 
-    function initCarrousel(id) {
-        var interval = setInterval(function () {
-            carrousel(id);
-        }, 1500);
+function initCarrousel(id) {
+    var interval = setInterval(function () {
+        carrousel(id);
+    }, 1500);
 
-    }
+}
+
