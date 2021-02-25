@@ -1,7 +1,15 @@
+**v 0.37**
+- Added progress bar element
+- Added animations classes
+- lagunite.js reformat
+
+
 **v 0.36**
 - Added  btn with figures shapes ex: *"btn circle-l floar-br"*
 - added *"panel noaside"*
 - Panel mobile 1st version 
+- Added *"radio-btns"*
+- Added *"radio-divs"*
 
 
 **v 0.35**   
@@ -37,7 +45,13 @@
 
 
 Todo:
-fix hoverable table
+fix hoverable table ?
 check panel aside alt in other resolutions
+range input fix
+dark mode
+
+
+
+
 
  

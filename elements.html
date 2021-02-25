@@ -50,6 +50,8 @@
     </div>
 
     <main class="maxw10 centered">
+
+        <div class="separator-v-l"></div><!-- SEP -->
         <section>
             <div>
                 <h2 class="color">Heading</h2>
@@ -427,6 +429,11 @@
                 </label>
                 <span>No se eligio archivo</span>
             </div>
+            <div class="inputContainer">
+                <span>Color:</span>
+                <input type="color" name="fileUpload">
+
+            </div>
 
             <span>Multiple Inputs in a container </span>
             <div class="inputContainer">
@@ -453,6 +460,12 @@
                 </label>
             </div>
             <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Range Input</h4>
+            <div class="inputContainer">
+                <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+                <input type="text" class="" id="textInput" value="">
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
             <h4 class="color">Radio Buttons as "radio-group" </h4>
             <div class="radio-group">
                 <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
@@ -474,7 +487,32 @@
                 <input type="radio" name="radio-group-example2" id="radio-group-2E" value="three" />
                 <label for="radio-group-2E">Five</label>
             </div>
-
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Radio Buttons as "radio-btns" </h4>
+            <div class="radio-btns">
+                <input type="radio" name="radio-btns-example" id="radio-btns-1A" value="one" checked />
+                <label for="radio-btns-1A">One</label>
+                <input type="radio" name="radio-btns-example" id="radio-btns-1B" value="two" />
+                <label for="radio-btns-1B">Two</label>
+                <input type="radio" name="radio-btns-example" id="radio-btns-1C" value="three" />
+                <label for="radio-btns-1C">Three</label>
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">Radio Buttons as "radio-divs" </h4>
+            <div class="radio-divs">
+                <input type="radio" name="radio-divs-example" id="radio-divs-1A" value="one" checked />
+                <label for="radio-divs-1A">
+                    <div class="tear">A</div>
+                </label>
+                <input type="radio" name="radio-divs-example" id="radio-divs-1B" value="two" />
+                <label for="radio-divs-1B">
+                    <div class="rounded">B</div>
+                </label>
+                <input type="radio" name="radio-divs-example" id="radio-divs-1C" value="three" />
+                <label for="radio-divs-1C">
+                    <div class="circle">C</div>
+                </label>
+            </div>
 
 
 
@@ -973,6 +1011,45 @@
             </table>
             <div class="separator-v-l"></div><!-- SEP -->
         </section>
+        <h2 class="color">Progress Bar</h2>
+
+        <div class="col centered maxw8">
+
+            <div class="  progress-bar  ">
+                <div class="w20"></div>
+            </div>
+            <div class="  progress-bar alt  ">
+                <div class="w40"></div>
+            </div>
+            <div class="  progress-bar  ">
+                <div class="w60"></div>
+            </div>
+            <div class="  progress-bar alt  ">
+                <div class="w80"></div>
+            </div>
+            <div class="separator-v-m"></div>
+
+            <div class="progress-container">
+                <h4>Occupation </h4>
+                <div class="  progress-bar   ">
+                    <div class="w50"></div>
+                </div>
+                <span>50%</span>
+            </div>
+            <div class="progress-container">
+
+                <h4>Occupation </h4>
+
+                <div class="  progress-bar alt  ">
+                    <div class="w70"></div>
+                </div>
+
+                <span>70%</span>
+
+
+            </div>
+        </div>
+        <div class="separator-v-l"></div><!-- SEP -->
     </main>
     <script src="src/lagunite.js"></script>
     <script>
