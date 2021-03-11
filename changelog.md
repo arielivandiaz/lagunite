@@ -2,6 +2,7 @@
 - Added progress bar element
 - Added animations classes
 - lagunite.js reformat
+- Added class *"inputLine"* work in progress
 
 
 **v 0.36**

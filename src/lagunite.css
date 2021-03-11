@@ -4139,6 +4139,8 @@ table.hoverable-table td:hover {
 
 
 
+
+
 input,
 textarea,
 select {
@@ -4268,6 +4270,37 @@ input[type="color"] {
     display: block;
     color: #777;
 
+}
+
+
+/************** INPUT LINE **************/
+.inputLine {
+    position: relative;
+}
+.inputLine input {
+    border-radius: 0;
+     border-width: 0 0 2px 0;
+    text-align: left;
+    padding: 0 10px 0 30px ;
+    width: 150px;
+         
+    
+}
+.inputLine span {
+    font-size: 60%;
+    position: absolute;
+    top: -5px;
+}
+.inputLine .icon {
+    margin-right: -30px;
+}
+.inputLine input:hover,
+.inputLine input:focus {
+    
+     border-width: 0 0 3px 0;
+     box-shadow: 0 0 0px 0px var(--main_color);
+         
+    
 }
 
 /***************************************/
