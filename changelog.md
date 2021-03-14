@@ -3,6 +3,8 @@
 - Added animations classes
 - lagunite.js reformat
 - Added class *"inputLine"* work in progress
+Choee
+- Many !important added
 
 
 **v 0.36**
