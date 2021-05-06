@@ -5,6 +5,8 @@
 - Added class *"inputLine"* work in progress
 Choee
 - Many !important added
+- disappearing
+- .wmc width min content
 
 
 **v 0.36**

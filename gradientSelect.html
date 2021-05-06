@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177961488-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177961488-2');
+    </script>
+    <link type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
+    <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
+
+    <style>
+        main section {
+            border: var(--border);
+            border-radius: 40px;
+        }
+
+        header {
+            margin: 30px 00;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+    </style>
+
+</head>
+
+
+<body class="row ">
+    
+    <header>
+        <a href="/">
+            <img src="web/img/lagunite.png">
+        </a>
+        <h3>Layouts</h3>
+    </header>
+
+    <div class="col-row jc-sa   w100">
+        <div class="col ">
+            <div class=" centered border-r-s vw30 minh4 col " id="gradient">
+
+                <h1>Gradient</h1>
+                <span>Selector by Laguntine</span>
+
+
+
+            </div>
+            <div class="marg-t-xl">
+                <pre id="code">
+            </pre>
+            </div>
+        </div>
+        <div class="col">
+        <div class="row">
+                     <div>
+                <button class="btn">Background</button>
+                         <button class="btn alt">Shadow</button>
+            </div>
+            
+            </div>
+        <div class="bordered border-r col padd ">
+   
+        <div class="col   ai-c minw5">
+
+            <div class="bordered border-r bg-4 minw5">
+                <div class="row">
+                    <button class="btn" id="incColor1">+ Brillo</button>
+                    <button class="btn" id="decColor1">- Brillo</button>
+                </div>
+                <div class="inputContainer">
+                    <input type="color" id="color">
+                    <button class="btn" id="reset">Reset</button>
+                </div>
+                <div class="row">
+                    <button class="btn" id="incColor2">+ Brillo</button>
+                    <button class="btn" id="decColor2">- Brillo</button>
+                </div>
+            </div>
+            <div class="separator-v-s"></div>
+            <div class="col bordered border-r-s padd bg-4 minw5 ">
+                <div class="row jc-sb w100">
+                    <span>Background</span>
+                    <input type="color" id="background" value="#ffffff">
+                </div>
+                <div class="row  jc-sb w100">
+                    <span>text</span>
+                    <input type="color" id="text" value="#ffffff">
+                </div>
+            </div>
+            <div class="separator-v-s"></div>
+            <div class="col bordered border-r-s padd bg-4 minw5 ">
+                <div class="rangeContainer">
+                    <span>Color 1 </span>
+                    <input type="range" name="rangeInput" min="0" max="100" value="0" id="percent1bar">
+                    <input type="number" class="maxw1" value="0" id="percent1text">
+                </div>
+                <div class="rangeContainer">
+                    <span>Color 2 </span>
+                    <input type="range" name="rangeInput" min="0" max="100" value="100" id="percent2bar">
+                    <input type="number" class="maxw1" value="100" id="percent2text">
+                </div>
+            </div>
+        </div>
+</div>
+
+</div>
+    </div>
+    <footer class="row  vh15">
+        <a href="https://github.com/arielivandiaz/lagunite">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
+        </a>
+    </footer>
+    
+    <script src="src/lagunite.js"></script>
+    <script>
+        var color_1 = "#0965FF",
+            color_2 = "#0965FF",
+            color = "#0965FF";
+        var background = "#EEE",
+            text_color = "#FFF";
+        var p1 = 0,
+            p2 = 100;
+        var gradient = document.getElementById('gradient');
+
+        var code = '';
+
+        function increase_brightness(hex, percent) {
+            hex = hex.replace(/^\s*#|\s*$/g, '');
+
+            if (hex.length == 3) {
+                hex = hex.replace(/(.)/g, '$1$1');
+            }
+
+            var r = parseInt(hex.substr(0, 2), 16),
+                g = parseInt(hex.substr(2, 2), 16),
+                b = parseInt(hex.substr(4, 2), 16);
+
+            return '#' +
+                ((0 | (1 << 8) + r + (256 - r) * percent / 100).toString(16)).substr(1) +
+                ((0 | (1 << 8) + g + (256 - g) * percent / 100).toString(16)).substr(1) +
+                ((0 | (1 << 8) + b + (256 - b) * percent / 100).toString(16)).substr(1);
+        }
+
+        function decrease_brightness(hex, percent) {
+            hex = hex.replace(/^\s*#|\s*$/g, '');
+
+            if (hex.length == 3) {
+                hex = hex.replace(/(.)/g, '$1$1');
+            }
+
+            var r = parseInt(hex.substr(0, 2), 16),
+                g = parseInt(hex.substr(2, 2), 16),
+                b = parseInt(hex.substr(4, 2), 16);
+
+
+            return '#' +
+                ((0 | (1 << 8) + r * (100 - percent) / 100).toString(16)).substr(1) +
+                ((0 | (1 << 8) + g * (100 - percent) / 100).toString(16)).substr(1) +
+                ((0 | (1 << 8) + b * (100 - percent) / 100).toString(16)).substr(1);
+        }
+
+
+        function updateGradient() {
+            code = "linear-gradient(0deg, " + color_1 + " " + p1 + "%,  " + color_2 + " " + p2 + "%)";
+            document.getElementById('gradient').style.background = code;
+            document.getElementById('code').textContent = code;
+        }
+
+
+
+        updateGradient();
+
+
+        addEvent('color', 'change', function() {
+            var element = document.getElementById('color');
+            console.log(element.value);
+            color = element.value;
+            color_1 = element.value;
+            color_2 = element.value;
+            updateGradient();
+        });
+
+        addEvent('percent1bar', 'change', function() {
+            p1 = document.getElementById('percent1bar').value;
+            document.getElementById('percent1text').value = p1;
+            updateGradient();
+
+        });
+
+        addEvent('percent2bar', 'change', function() {
+            p2 = document.getElementById('percent2bar').value;
+            document.getElementById('percent2text').value = p2;
+            updateGradient();
+        });
+
+
+        addEvent('background', 'change', function() {
+            document.body.style.background = document.getElementById('background').value;
+        });
+
+        addEvent('text', 'change', function() {
+            gradient.style.color = document.getElementById('text').value;
+        });
+
+
+
+        addEventClick('incColor1', function() {
+            color_2 = increase_brightness(color_2, 2.5);
+            updateGradient();
+        });
+        addEventClick('decColor1', function() {
+            color_2 = decrease_brightness(color_2, 2.5);
+            updateGradient();
+        });
+
+        addEventClick('incColor2', function() {
+            color_1 = increase_brightness(color_1, 2.5);
+            updateGradient();
+        });
+        addEventClick('decColor2', function() {
+            color_1 = decrease_brightness(color_1, 2.5);
+            updateGradient();
+        });
+
+
+        addEventClick('reset', function() {
+
+            color_1 = color;
+            color_2 = color;
+            updateGradient();
+        });
+    </script>
+</body></html>

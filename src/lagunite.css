@@ -19,7 +19,7 @@ body {
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background: var(--background_body)
+    background: var(--background_body);    
 }
 
 button {
@@ -202,6 +202,10 @@ p {
 }
 
 
+/************** width min content *******************/
+.wmc {
+    width: min-content;
+}
 
 
 /************** BUTTONS ***************/
@@ -210,7 +214,6 @@ p {
 /* @ID: #40 */
 .btn {
     box-shadow: none;
-
     border: 2px solid 75px;
     background: var(--main_color);
     cursor: pointer;
@@ -221,7 +224,7 @@ p {
     color: #fff !important;
     padding: 10px 1vw 7px 1vw;
     min-width: var(--size_xl);
-    width: min-content;
+    
     border-radius: 5px;
     font-size: 80%;
 }
@@ -1688,77 +1691,77 @@ p {
 /* @Nomenclature : OK */
 /* @ID: #123 */
 .ji-s {
-    justify-items: stretch
+    justify-items: stretch !important;
 }
 
 .ji-se {
-    justify-items: self-end;
+    justify-items: self-end !important;
 }
 
 .ji-ss {
-    justify-items: self-start;
+    justify-items: self-start !important;
 }
 
 .ji-fe {
-    justify-items: flex-end;
+    justify-items: flex-end !important;
 }
 
 .ji-fs {
-    justify-items: flex-start
+    justify-items: flex-start !important;
 }
 
 .ji-c {
-    justify-items: center;
+    justify-items: center !important;
 }
 
 /************* JUSTIFY SELF ************/
 /* @Nomenclature : OK */
 /* @ID: #124 */
 .js-sb {
-    justify-self: stretch
+    justify-self: stretch !important;
 }
 
 .js-se {
-    justify-self: self-end;
+    justify-self: self-end !important;
 }
 
 .js-ss {
-    justify-self: self-start;
+    justify-self: self-start !important;
 }
 
 .js-fe {
-    justify-self: flex-end;
+    justify-self: flex-end !important;
 }
 
 .js-fs {
-    justify-self: flex-start
+    justify-self: flex-start !important;
 }
 
 .js-c {
-    justify-self: center;
+    justify-self: center !important;
 }
 
 /************* JUSTIFY CONTENT ************/
 /* @Nomenclature : OK */
 /* @ID: #125 */
 .jc-c {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .jc-fe {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
 }
 
 .jc-fs {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
 }
 
 .jc-sa {
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 
 .jc-sb {
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 
 
@@ -1768,77 +1771,77 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #123x */
     .xji-s {
-        justify-items: stretch
+        justify-items: stretch !important;
     }
 
     .xji-se {
-        justify-items: self-end;
+        justify-items: self-end !important;
     }
 
     .xji-ss {
-        justify-items: self-start;
+        justify-items: self-start !important;
     }
 
     .xji-fe {
-        justify-items: flex-end;
+        justify-items: flex-end !important;
     }
 
     .xji-fs {
-        justify-items: flex-start
+        justify-items: flex-start !important;
     }
 
     .xji-c {
-        justify-items: center;
+        justify-items: center !important;
     }
 
     /************* JUSTIFY SELF ************/
     /* @Nomenclature : OK */
     /* @ID: #124x */
     .xjs-sb {
-        justify-self: stretch
+        justify-self: stretch !important;
     }
 
     .xjs-se {
-        justify-self: self-end;
+        justify-self: self-end !important;
     }
 
     .xjs-ss {
-        justify-self: self-start;
+        justify-self: self-start !important;
     }
 
     .xjs-fe {
-        justify-self: flex-end;
+        justify-self: flex-end !important;
     }
 
     .xjs-fs {
-        justify-self: flex-start
+        justify-self: flex-start !important;
     }
 
     .xjs-c {
-        justify-self: center;
+        justify-self: center !important;
     }
 
     /************* JUSTIFY CONTENT ************/
     /* @Nomenclature : OK */
     /* @ID: #125x */
     .xjc-c {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .xjc-fe {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
     }
 
     .xjc-fs {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
 
     .xjc-sa {
-        justify-content: space-around;
+        justify-content: space-around !important;
     }
 
     .xjc-sb {
-        justify-content: space-between;
+        justify-content: space-between !important;
     }
 }
 
@@ -1848,77 +1851,77 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #123d */
     .dji-s {
-        justify-items: stretch
+        justify-items: stretch !important;
     }
 
     .dji-se {
-        justify-items: self-end;
+        justify-items: self-end !important;
     }
 
     .dji-ss {
-        justify-items: self-start;
+        justify-items: self-start !important;
     }
 
     .dji-fe {
-        justify-items: flex-end;
+        justify-items: flex-end !important;
     }
 
     .dji-fs {
-        justify-items: flex-start
+        justify-items: flex-start !important;
     }
 
     .dji-c {
-        justify-items: center;
+        justify-items: center !important;
     }
 
     /************* JUSTIFY SELF ************/
     /* @Nomenclature : OK */
     /* @ID: #124d */
     .djs-sb {
-        justify-self: stretch
+        justify-self: stretch !important;
     }
 
     .djs-se {
-        justify-self: self-end;
+        justify-self: self-end !important;
     }
 
     .djs-ss {
-        justify-self: self-start;
+        justify-self: self-start !important;
     }
 
     .djs-fe {
-        justify-self: flex-end;
+        justify-self: flex-end !important;
     }
 
     .djs-fs {
-        justify-self: flex-start
+        justify-self: flex-start !important;
     }
 
     .djs-c {
-        justify-self: center;
+        justify-self: center !important;
     }
 
     /************* JUSTIFY CONTENT ************/
     /* @Nomenclature : OK */
     /* @ID: #125d */
     .djc-c {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .djc-fe {
-        justify-content: flex-end;
+        justify-content: flex-end !important;
     }
 
     .djc-fs {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
 
     .djc-sa {
-        justify-content: space-around;
+        justify-content: space-around !important;
     }
 
     .djc-sb {
-        justify-content: space-between;
+        justify-content: space-between !important;
     }
 }
 
@@ -1955,19 +1958,19 @@ p {
 /* @Nomenclature : OK */
 /* @ID: #121 */
 .as-c {
-    align-self: center;
+    align-self: center !important;
 }
 
 .as-fs {
-    align-self: flex-end;
+    align-self: flex-end !important;
 }
 
 .as-fe {
-    align-self: flex-start;
+    align-self: flex-start !important;
 }
 
 .as-s {
-    align-self: stretch;
+    align-self: stretch !important;
 }
 
 
@@ -1975,27 +1978,27 @@ p {
 /* @Nomenclature : OK */
 /* @ID: #122 */
 .ac-c {
-    align-content: center;
+    align-content: center !important;
 }
 
 .ac-fs {
-    align-content: flex-end;
+    align-content: flex-end !important;
 }
 
 .ac-fe {
-    align-content: flex-start;
+    align-content: flex-start !important;
 }
 
 .ac-s {
-    align-content: stretch;
+    align-content: stretch !important;
 }
 
 .ac-sa {
-    align-content: space-around;
+    align-content: space-around !important;
 }
 
 .ac-sb {
-    align-content: space-between;
+    align-content: space-between !important;
 }
 
 
@@ -2009,19 +2012,19 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #120x */
     .xai-c {
-        align-items: center;
+        align-items: center !important;
     }
 
     .xai-fe {
-        align-items: flex-end;
+        align-items: flex-end !important;
     }
 
     .xai-fs {
-        align-items: flex-start
+        align-items: flex-start !important;
     }
 
     .xai-s {
-        align-items: stretch
+        align-items: stretch !important;
     }
 
 
@@ -2030,19 +2033,19 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #121x */
     .xas-c {
-        align-self: center;
+        align-self: center !important;
     }
 
     .xas-fs {
-        align-self: flex-end;
+        align-self: flex-end !important;
     }
 
     .xas-fe {
-        align-self: flex-start;
+        align-self: flex-start !important;
     }
 
     .xas-s {
-        align-self: stretch;
+        align-self: stretch !important;
     }
 
 
@@ -2050,27 +2053,27 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #122x */
     .xac-c {
-        align-content: center;
+        align-content: center !important;
     }
 
     .xac-fs {
-        align-content: flex-end;
+        align-content: flex-end !important;
     }
 
     .xac-fe {
-        align-content: flex-start;
+        align-content: flex-start !important;
     }
 
     .xac-s {
-        align-content: stretch;
+        align-content: stretch !important;
     }
 
     .xac-sa {
-        align-content: space-around;
+        align-content: space-around !important;
     }
 
     .xac-sb {
-        align-content: space-between;
+        align-content: space-between !important;
     }
 
 
@@ -2085,19 +2088,19 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #120d */
     .dai-c {
-        align-items: center;
+        align-items: center !important;
     }
 
     .dai-fe {
-        align-items: flex-end;
+        align-items: flex-end !important;
     }
 
     .dai-fs {
-        align-items: flex-start
+        align-items: flex-start !important;
     }
 
     .dai-s {
-        align-items: stretch
+        align-items: stretch !important;
     }
 
 
@@ -2106,19 +2109,19 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #121d */
     .das-c {
-        align-self: center;
+        align-self: center !important;
     }
 
     .das-fs {
-        align-self: flex-end;
+        align-self: flex-end !important;
     }
 
     .das-fe {
-        align-self: flex-start;
+        align-self: flex-start !important;
     }
 
     .das-s {
-        align-self: stretch;
+        align-self: stretch !important;
     }
 
 
@@ -2126,27 +2129,27 @@ p {
     /* @Nomenclature : OK */
     /* @ID: #122d */
     .dac-c {
-        align-content: center;
+        align-content: center !important;
     }
 
     .dac-fs {
-        align-content: flex-end;
+        align-content: flex-end !important;
     }
 
     .dac-fe {
-        align-content: flex-start;
+        align-content: flex-start !important;
     }
 
     .dac-s {
-        align-content: stretch;
+        align-content: stretch !important;
     }
 
     .dac-sa {
-        align-content: space-around;
+        align-content: space-around !important;
     }
 
     .dac-sb {
-        align-content: space-between;
+        align-content: space-between !important;
     }
 
 }
@@ -2585,6 +2588,8 @@ table.hoverable-table td:hover {
 
 }
 
+
+
 /*************** CARDS *************/
 
 /* @Nomenclature : OK */
@@ -2660,6 +2665,33 @@ table.hoverable-table td:hover {
 .avatar.micro {
     width: 30px;
 }
+
+/*************** DROPDOWN *************/
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 3ox;
+    z-index: 1;
+}
+
+.dropdown-content div:hover {
+    background: var(--main_color);
+    color: var(--text_color_alt);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 
 /************** FIGURES ****************/
@@ -4193,6 +4225,21 @@ textarea:focus {
 input[type='range']:hover {
     box-shadow: none;
 }
+.rangeContainer {
+    display: flex;  
+    justify-content: center;       
+    align-items: center;
+}
+
+.rangeContainer  input[type="number"] {
+    min-width: 0 !important;    
+
+    text-align: center;
+    
+}
+
+    
+}
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -4276,14 +4323,14 @@ input[type="color"] {
         background-color: #0000dd;
     }
 
-      .vsrange input[type='range']::-webkit-slider-runnable-track {
+    .vsrange input[type='range']::-webkit-slider-runnable-track {
         height: 15px;
         -webkit-appearance: none;
         color: #dd0000;
         margin-top: -6px;
     }
 
-      .vsrange input[type='range']::-webkit-slider-thumb {
+    .vsrange input[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
         border: 1px solid #000000;
         height: 50px;
@@ -4301,38 +4348,39 @@ input[type="color"] {
     }
 }
 
-  .vsrange input[type="range"]::-moz-range-progress {
+.vsrange input[type="range"]::-moz-range-progress {
     width: 100%
 }
 
 /** FF*/
 
-  .vsrange input[type="range"]::-moz-range-progress {
+.vsrange input[type="range"]::-moz-range-progress {
     background-color: #dd0000;
 }
 
-  .vsrange input[type="range"]::-moz-range-track {
+.vsrange input[type="range"]::-moz-range-track {
     background-color: #0000dd;
 }
 
 /* IE*/
 
-  .vsrange input[type="range"]::-ms-fill-lower {
+.vsrange input[type="range"]::-ms-fill-lower {
     background-color: #dd0000;
 }
 
-  .vsrange input[type="range"]::-ms-fill-upper {
+.vsrange input[type="range"]::-ms-fill-upper {
     background-color: #0000dd;
 }
 
 .vsrange input[type="number"] {
     min-width: 0;
-  width: 100%;
+    width: 100%;
     text-align: center;
     padding-left: 15px;
     font-size: 150%;
 
 }
+
 /***************** INPUT FILE *****************/
 
 .btn-file {
@@ -4913,7 +4961,7 @@ select option {
     .aside.alt button .tooltiptext {
 
         padding: 5px 10px;
-        margin: -30px 0 0 0;
+        margin: 0;
     }
 
     .aside button:hover .tooltiptext {
@@ -5169,7 +5217,36 @@ select option {
 }
 
 
+/**************** DISAPPEARED **************/
 
+.modal {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    margin: auto;
+
+
+}
+
+.disappearing {    
+        animation: disappearing 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) 2s both;
+}
+
+@keyframes disappearing {
+    0% {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.4);
+        filter: blur(4px);
+        opacity: 0;
+
+    }
+}
 
 
 
@@ -6167,7 +6244,7 @@ select option {
 }
 
 
-
+/*************** NAV ***************/
 
 
 
@@ -6197,6 +6274,9 @@ select option {
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
 
     }
 
@@ -6204,6 +6284,8 @@ select option {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
 
     }
@@ -6212,6 +6294,9 @@ select option {
         height: 100%;
         display: flex;
         flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
 
     }
 
@@ -6219,6 +6304,8 @@ select option {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
 
 
     }
