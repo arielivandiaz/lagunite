@@ -49,6 +49,12 @@
         </div>
     </div>
 
+    <div class="modal row hidden" id="disappearing">
+        <div class=" vw70 vh30 bg-2  maxw6 maxh3 rounded shadow-1">
+            <h3>A disappearing message</h3>
+        </div>
+    </div>
+
     <main class="maxw10 centered padd-h-s">
 
         <div class="separator-v-l"></div><!-- SEP -->
@@ -469,9 +475,9 @@
             </div>
             <div class="separator-v"></div><!-- SEP -->
             <h4 class="color">Range Input</h4>
-            <div class="inputContainer">
+            <div class="rangeContainer">
                 <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-                <input type="text" class="" id="textInput" value="">
+                <input type="number" class="" id="textInput" value="">
             </div>
             <div class="separator-v"></div><!-- SEP -->
             <h4 class="color">Radio Buttons as "radio-group" </h4>
@@ -521,7 +527,19 @@
                     <div class="circle">C</div>
                 </label>
             </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Dropdown</h2>
 
+            <div class="dropdown">
+                <span>Mouse over me</span>
+                <div class="dropdown-content">
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                </div>
+            </div>
 
 
             <div class="separator-v-l"></div><!-- SEP -->
@@ -908,7 +926,8 @@
             <h2 class="color">Modals</h2>
             <button class="btn" onclick="show('modal')">open fullscreen</button>
             <button class="btn" onclick="show('alert')">open alert</button>
-
+        <button class="btn" onclick="disappearing('disappearing')">open disappearing</button>
+            
             <div class="separator-v-l"></div><!-- SEP -->
             <h2 class="color">Shadows</h2>
             <table>

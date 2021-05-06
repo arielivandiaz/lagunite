@@ -7,6 +7,7 @@
     --text_color: #333;
     --text_color_alt: #FFF;
 
+    
 
 
     --border: 2px solid #2476FF;
@@ -63,5 +64,7 @@
 
     --font_headers: 'muli', sans-serif;
     --font_text: 'PT Sans', sans-serif;
+    
+    
 
 }

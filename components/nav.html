@@ -27,46 +27,40 @@
 
 
 <body>
+    <div class="nav hidden" id="nav1">
+        <div class="container   jc-sb ai-c">
+            <div>
+                <h1>
+                    nav
+                </h1>
+            </div>
+            <div>
+                <button class="btn" id="">SignIn </button>
+                <button class="btn" id="">SignUp</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="marg-t-xl"></div>
+
     <header>
         <a href="/">
             <img src="../web/img/lagunite.png">
         </a>
-        <h3>Images Carrousel</h3>
+        <h3>Nav bars Examples</h3>
     </header>
-
-    <div>
-        asdasd
-    </div>
-    <div class="separator-h"></div>
-        <div>
-        asdasd
-    </div>
-    <main>
-        <!--
-        <section>
-            <div class="carrousel vh50 vw80 centered" id="carrousel">
-            </div>
-        </section>
-
-        <div data-brackets-id="3735" class="carrousel vh50 vw80 centered" id="carrousel">
-            <div class="arrow-l"></div>
-            <div class="arrow-r">
-                <div class="arrow-image"></div>
-            </div>
-            <div class="image pointer img-in" style="background-image: url(&quot;../img/pexels-photo-1181243.jpeg&quot;);"></div>
-            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-3861958.jpeg&quot;);"></div>
-            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-4050296.jpeg&quot;);"></div>
-            <div class="image pointer img-out" style="background-image: url(&quot;../img/pexels-photo-5668868.jpeg&quot;);"></div>
-            <div class="carrousel-points">
-                <div class="point pointer marg-xs active" id="point_0"></div>
-                <div class="point pointer marg-xs" id="point_1"></div>
-                <div class="point pointer marg-xs" id="point_2"></div>
-                <div class="point pointer marg-xs" id="point_3"></div>
-            </div>
+    <div class="row">
+        <div class="col ">
+            <button class="btn">nav</button>
+            <button class="btn">nav alt</button>
+            <button class="btn">nav fixed</button>
+            
         </div>
 
--->
-    </main>
+    </div>
+    <div class="separator-h"></div>
+
+
 
 
     <footer class="row  vh20">
@@ -74,23 +68,5 @@
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
         </a>
     </footer>
-    <script type="text/javascript" src="carrousel.js"></script>
-    <script>
-        var gallery_1 = new Carrousel({
-            id: 'carrousel',
-            imgs: ['img/pexels-photo-1181243.jpeg',
-                'img/pexels-photo-3861958.jpeg',
-                'img/pexels-photo-4050296.jpeg',
-                'img/pexels-photo-5668868.jpeg'
-            ],
-            arrows: true, //default: false
-            points: true, //default: false
-            classIn: 'img-in', //default: img-in
-            classOut: 'img-out', //default: img-out
-            modal: true, //default: false
-            time: 2500 //default: 1
-        });
-        gallery_1.start();
-    </script>
 
 </body></html>

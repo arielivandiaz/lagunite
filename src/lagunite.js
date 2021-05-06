@@ -43,6 +43,7 @@ function toggleClass(id,c) {
 
 /* updateInput(id,val)-> Update value of the element by id */
 function updateInput(id,val) {
+    console.log(id,val);
     document.getElementById(id).value = val;
 }
 
@@ -63,6 +64,14 @@ function hideMenu() {
     hiddeAfter(m, 300);
 }
 
+
+/* Disappearing Modal */ 
+function disappearing(id) {
+    var m = document.getElementById(id);
+    show('disappearing');
+    addClass(id,'disappearing');
+    hiddeAfter(m, 3000);
+}
 
 /* Images carrousel */
 function carrousel(id) {
@@ -86,5 +95,27 @@ function initCarrousel(id) {
         carrousel(id);
     }, 1500);
 
+}
+
+
+
+function addEvent(id, evnt, funct) {
+        var element = document.getElementById(id);
+    if (element.attachEvent)
+        return element.attachEvent('on' + evnt, funct);
+    else
+        return element.addEventListener(evnt, funct, false);
+}
+
+
+function addEventClick(id, funct) {
+    var element = document.getElementById(id);
+
+    if (typeof(element) != 'undefined' && element != null)
+        if (element.attachEvent)
+            return element.attachEvent('onclick', funct);
+        else
+            return element.addEventListener('click', funct, false);
+    else return;
 }
 
