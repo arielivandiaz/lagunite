@@ -55,8 +55,17 @@ check panel aside alt in other resolutions
 range input fix
 dark mode
 
+remove .box boxes
+
+font color
+component menu
+ display: inline; prevent line break at h1
+ 
+shadow lef,rigth, top, etc tipo menui
 
 
 
+.shadow-2 {
+    box-shadow: 0px 9px 21px -7px var(--main_color));
 
  

@@ -43,7 +43,7 @@
 
 
 <body class="row ">
-    
+
     <header>
         <a href="/">
             <img src="web/img/lagunite.png">
@@ -64,69 +64,113 @@
             <div class="marg-t-xl">
                 <pre id="code">
             </pre>
+                <pre id="code_2">
+            </pre>
             </div>
         </div>
         <div class="col">
-        <div class="row">
-                     <div>
-                <button class="btn">Background</button>
-                         <button class="btn alt">Shadow</button>
-            </div>
-            
-            </div>
-        <div class="bordered border-r col padd ">
-   
-        <div class="col   ai-c minw5">
-
-            <div class="bordered border-r bg-4 minw5">
-                <div class="row">
-                    <button class="btn" id="incColor1">+ Brillo</button>
-                    <button class="btn" id="decColor1">- Brillo</button>
+            <div class="row">
+                <div>
+                    <button class="btn">Background</button>
+                    <button class="btn alt">Shadow</button>
                 </div>
+
+            </div>
+            <div class="bordered border-r col padd ">
+
                 <div class="inputContainer">
-                    <input type="color" id="color">
-                    <button class="btn" id="reset">Reset</button>
+                    <span> Box-Shadow </span>
+                    <div class="labeled">
+                        <input class="tgl" id="shadow_on" type="checkbox" />
+                        <label class="tgl-btn" for="shadow_on"></label>
+                    </div>
                 </div>
-                <div class="row">
-                    <button class="btn" id="incColor2">+ Brillo</button>
-                    <button class="btn" id="decColor2">- Brillo</button>
+                <div class="col centered minw5 ">
+                    <div class="row jc-sb w100">
+                        <span>Color</span>
+                        <input type="color" id="shadow_color" value="#333">
+                    </div>
                 </div>
-            </div>
-            <div class="separator-v-s"></div>
-            <div class="col bordered border-r-s padd bg-4 minw5 ">
-                <div class="row jc-sb w100">
-                    <span>Background</span>
-                    <input type="color" id="background" value="#ffffff">
+                <div class="rangeContainer jc-sa">
+                    <div></div>
+                    <span>Horizontal </span>
+                    <div></div>
+                    <input type="range" name="rangeInput" min="-150" max="150" value="0" id="shadow_h">
+                    <input type="number" class="maxw1" value="0" id="shadow_h_n">
                 </div>
-                <div class="row  jc-sb w100">
-                    <span>text</span>
-                    <input type="color" id="text" value="#ffffff">
+                <div class="rangeContainer jc-sa">
+                    <span>Vertical </span>
+                    <input type="range" name="rangeInput" min="-150" max="150" value="10" id="shadow_v">
+                    <input type="number" class="maxw1" value="0" id="shadow_v_n">
                 </div>
-            </div>
-            <div class="separator-v-s"></div>
-            <div class="col bordered border-r-s padd bg-4 minw5 ">
-                <div class="rangeContainer">
-                    <span>Color 1 </span>
-                    <input type="range" name="rangeInput" min="0" max="100" value="0" id="percent1bar">
-                    <input type="number" class="maxw1" value="0" id="percent1text">
+                <div class="rangeContainer jc-sa">
+                    <span>Blur </span>
+                    <input type="range" name="rangeInput" min="0" max="150" value="50" id="shadow_blur">
+                    <input type="number" class="maxw1" value="0" id="shadow_blur_n">
                 </div>
-                <div class="rangeContainer">
-                    <span>Color 2 </span>
-                    <input type="range" name="rangeInput" min="0" max="100" value="100" id="percent2bar">
-                    <input type="number" class="maxw1" value="100" id="percent2text">
+                <div class="rangeContainer jc-sa">
+                    <span>Spread </span>
+                    <input type="range" name="rangeInput" min="-100" max="100" value="-25" id="shadow_spread">
+                    <input type="number" class="maxw1" value="0" id="shadow_spread_n">
                 </div>
-            </div>
-        </div>
-</div>
 
-</div>
+
+                <div class="col   ai-c minw5">
+                </div>
+            </div>
+            <div class="bordered border-r col padd ">
+
+                <div class="col   ai-c minw5">
+
+                    <div class="bordered border-r  minw5">
+                        <div class="row">
+                            <button class="btn" id="incColor1">+ Brillo</button>
+                            <button class="btn" id="decColor1">- Brillo</button>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="color" id="color">
+                            <button class="btn" id="reset">Reset</button>
+                        </div>
+                        <div class="row">
+                            <button class="btn" id="incColor2">+ Brillo</button>
+                            <button class="btn" id="decColor2">- Brillo</button>
+                        </div>
+                    </div>
+                    <div class="separator-v-s"></div>
+                    <div class="col bordered border-r-s padd  minw5 ">
+                        <div class="row jc-sb w100">
+                            <span>Background</span>
+                            <input type="color" id="background" value="#eeeeee">
+                        </div>
+                        <div class="row  jc-sb w100">
+                            <span>text</span>
+                            <input type="color" id="text" value="#ffffff">
+                        </div>
+                    </div>
+                    <div class="separator-v-s"></div>
+                    <div class="col bordered border-r-s padd  minw5 ">
+                        <div class="rangeContainer">
+                            <span>Color 1 </span>
+                            <input type="range" name="rangeInput" min="0" max="100" value="0" id="percent1bar">
+                            <input type="number" class="maxw1" value="0" min="0" max="100" id="percent1text">
+                        </div>
+                        <div class="rangeContainer">
+                            <span>Color 2 </span>
+                            <input type="range" name="rangeInput" min="0" max="100" value="100" id="percent2bar">
+                            <input type="number" class="maxw1" value="100" min="0" max="100" id="percent2text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <footer class="row  vh15">
         <a href="https://github.com/arielivandiaz/lagunite">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" style="width: 100px">
         </a>
     </footer>
-    
+
     <script src="src/lagunite.js"></script>
     <script>
         var color_1 = "#0965FF",
@@ -134,11 +178,13 @@
             color = "#0965FF";
         var background = "#EEE",
             text_color = "#FFF";
+
         var p1 = 0,
             p2 = 100;
         var gradient = document.getElementById('gradient');
 
         var code = '';
+        var box_shadow = '';
 
         function increase_brightness(hex, percent) {
             hex = hex.replace(/^\s*#|\s*$/g, '');
@@ -183,8 +229,42 @@
         }
 
 
+        function updateShadow() {
+
+            if (document.getElementById("shadow_on").checked) {
+                var shadow_h = document.getElementById('shadow_h').value;
+                var shadow_v = document.getElementById('shadow_v').value;
+                var shadow_blur = document.getElementById('shadow_blur').value;
+                var shadow_spread = document.getElementById('shadow_spread').value;
+                var shadow_color = document.getElementById('shadow_color').value;
+
+                document.getElementById('shadow_h_n').value = shadow_h;
+                document.getElementById('shadow_v_n').value = shadow_v;
+                document.getElementById('shadow_blur_n').value = shadow_blur;
+                document.getElementById('shadow_spread_n').value = shadow_spread;
+
+
+
+
+                box_shadow = shadow_h + "px " + shadow_v + "px " + shadow_blur + "px " + shadow_spread + "px " + shadow_color;
+                document.getElementById('code_2').textContent = box_shadow;
+            } else {
+                console.log("asdas");
+                box_shadow = " none";
+                document.getElementById('code_2').textContent = '';
+
+            }
+
+            document.getElementById('gradient').style.boxShadow = box_shadow;
+
+
+        };
+
+
 
         updateGradient();
+                document.body.style.background = document.getElementById('background').value;
+                   gradient.style.color = document.getElementById('text').value;
 
 
         addEvent('color', 'change', function() {
@@ -209,14 +289,70 @@
             updateGradient();
         });
 
+        addEvent('percent1text', 'change', function() {
+            document.getElementById('percent1bar').value = document.getElementById('percent1text').value;
+            p1 = document.getElementById('percent1bar').value;
+            updateGradient();
+        });
+
+        addEvent('percent2text', 'change', function() {
+            document.getElementById('percent2bar').value = document.getElementById('percent2text').value;
+            p2 = document.getElementById('percent2bar').value;
+            updateGradient();
+        });
+
 
         addEvent('background', 'change', function() {
             document.body.style.background = document.getElementById('background').value;
+                   
         });
 
         addEvent('text', 'change', function() {
             gradient.style.color = document.getElementById('text').value;
         });
+
+        addEvent('shadow_h', 'change', function() {
+            updateShadow()
+        });
+
+        addEvent('shadow_v', 'change', function() {
+            updateShadow()
+        });
+
+        addEvent('shadow_blur', 'change', function() {
+            updateShadow()
+        });
+
+        addEvent('shadow_spread', 'change', function() {
+            updateShadow()
+        });
+
+
+
+
+
+
+
+        addEvent('shadow_h_n', 'change', function() {
+            document.getElementById('shadow_h').value = document.getElementById('shadow_h_n').value;
+            updateShadow()
+        });
+
+        addEvent('shadow_v_n', 'change', function() {
+            document.getElementById('shadow_v').value = document.getElementById('shadow_v_n').value;
+            updateShadow()
+        });
+
+        addEvent('shadow_blur_n', 'change', function() {
+            document.getElementById('shadow_blur').value = document.getElementById('shadow_blur_n').value;
+            updateShadow()
+        });
+
+        addEvent('shadow_spread_n', 'change', function() {
+            document.getElementById('shadow_spread').value = document.getElementById('shadow_spread_n').value;
+            updateShadow()
+        });
+
 
 
 
@@ -244,6 +380,13 @@
             color_1 = color;
             color_2 = color;
             updateGradient();
+        });
+
+        addEvent('shadow_on', 'change', function() {
+            updateShadow()
+
+
+
         });
     </script>
 </body></html>
