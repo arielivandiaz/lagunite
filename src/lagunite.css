@@ -2527,6 +2527,11 @@ table.bordered-table.alt td {
     border: 1px solid var(--main_color_alt);
 }
 
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+    table {
+        font-size: 70%;
+    }
+}
 
 tr *,
 td * {
@@ -2940,6 +2945,8 @@ table.hoverable-table td:hover {
 
 /************** NAV ******************/
 
+
+
 @media only screen and (min-width : 281px) and (max-width : 767px) {
 
     .nav {
@@ -3037,6 +3044,29 @@ table.hoverable-table td:hover {
 
 
 }
+
+
+@media only screen and (min-width : 768px) {
+
+
+    .nav {
+        display: flex;
+
+    }
+
+    .nav .container {
+        width: 100vw;
+
+    }
+
+
+    .nav-burger {
+        display: none;
+    }
+
+
+}
+
 
 
 
@@ -4139,7 +4169,17 @@ select option {
     height: min-content;
 }
 
+.wfc {
+    width: fit-content;
+}
 
+.hfc {
+    height: fit-content;
+}
+
+
+
+    
 
 /****************** WIDTH BREAKPOINT *******************/
 /* @Nomenclature: OK */
@@ -8914,46 +8954,6 @@ select option {
 
 
 /*************** SCREENS ***************/
-
-@media only screen and (min-width : 281px) and (max-width : 767px) {
-    table {
-        font-size: 70%;
-    }
-
-
-    .x-centered {
-        text-align: center;
-        justify-content: center;
-    }
-
-
-
-
-}
-
-@media only screen and (min-width : 768px) {
-
-
-    .nav {
-        display: flex;
-
-    }
-
-    .nav .container {
-        width: 100vw;
-
-    }
-
-
-    .nav-burger {
-        display: none;
-    }
-
-    .social-float {
-        right: 10px;
-    }
-
-}
 
 
 

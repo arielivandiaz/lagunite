@@ -55,10 +55,11 @@
         </div>
     </div>
 
-    <main class="maxw10 centered padd-h-s">
+    <main class="">
 
         <div class="separator-v-l"></div><!-- SEP -->
-        <section>
+
+        <section class="maxw10 centered padd-h-s">
             <div>
                 <h2 class="color">Heading</h2>
                 <h1>Heading 1</h1>
@@ -152,7 +153,7 @@
                     </th>
                 </tr>
                 <tr>
-                    <td class="bg-1  padd-s">"bg-1" 
+                    <td class="bg-1  padd-s">"bg-1"
                     </td>
                     <td>main_color</td>
                     <td>text_color_alt</td>
@@ -202,7 +203,7 @@
                     <td>color_error</td>
                     <td>text_color_alt</td>
                 </tr>
-       <tr>
+                <tr>
                     <td class="bg-9  padd-s">"bg-9"
                     </td>
                     <td>color_warning</td>
@@ -218,48 +219,48 @@
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
-                       <tr>
+                <tr>
                     <td class="bgg-2  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
 
-                       <tr>
+                <tr>
                     <td class="bgg-3  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
 
-                       <tr>
+                <tr>
                     <td class="bgg-4  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
-                       <tr>
+                <tr>
                     <td class="bgg-5  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
 
-                       <tr>
+                <tr>
                     <td class="bgg-6  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
 
-                       <tr>
+                <tr>
                     <td class="bgg-7  padd-s">asdasd
                     </td>
                     <td>main_color</td>
                     <td>Main</td>
                 </tr>
 
-                       <tr>
+                <tr>
                     <td class="bgg-8  padd-s">asdasd
                     </td>
                     <td>main_color</td>
@@ -618,8 +619,8 @@
             <div class="separator-v"></div><!-- SEP -->
             <h4 class="color">Range Input</h4>
             <div class="rangeContainer">
-                <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-                <input type="number" class="" id="textInput" value="">
+                <input type="range" name="rangeInput" min="0" max="100" onchange="updateText('rangeText',this.value);" value=23>
+                <span id="rangeText">23</span>
             </div>
             <div class="separator-v"></div><!-- SEP -->
             <h4 class="color">Radio Buttons as "radio-group" </h4>
@@ -669,166 +670,7 @@
                     <div class="circle">C</div>
                 </label>
             </div>
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Dropdown</h2>
 
-            <div class="dropdown">
-                <span>Mouse over me</span>
-                <div class="dropdown-content">
-                    <div>Paco</div>
-                    <div>Paco</div>
-                    <div>Paco</div>
-                    <div>Paco</div>
-                    <div>Paco</div>
-                </div>
-            </div>
-
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Avatars</h2>
-            <table>
-
-                <tr>
-                    <th>
-                        <pre>class=</pre>
-                    </th>
-
-                    <th>
-                        <pre>"avatar micro"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar small"</pre>
-                    </th>
-
-                    <th>
-                        <pre>"avatar"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar big"</pre>
-                    </th>
-
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
-                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar big" src="img/avatar3.jpg"></td>
-
-
-
-                </tr>
-
-                <tr>
-                    <th>
-                        <pre>"alt "</pre>
-                    </th>
-                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
-                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar alt" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
-
-
-
-                </tr>
-            </table>
-
-
-
-
-
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Chips</h2>
-            <div class="separator-v"></div><!-- SEP -->
-            <div class="row">
-                <div class="col">
-                    <div class="chip  ">
-                        <img class="avatar micro" src="img/avatar4.jpg">
-                        <span>Lagunite</span>
-                        <h2>Veteran</h2>
-                    </div>
-
-                    <div class="chip  ">
-                        <div class="header">
-                            <img class="avatar small" src="img/avatar4.jpg">
-                        </div>
-                        <div class="content">
-                            <span>Lagunite</span>
-                            <h2>Veteran</h2>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">"chip vertical"</h4>
-            <div class="row">
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar5.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar2.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar4.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar3.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-            </div>
-
-            <table>
-
-                <tr>
-                    <th>
-                        <pre>"chip"</pre>
-                    </th>
-                    <th>
-                        <pre>"chip vertical"</pre>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td class="">
-
-
-                    </td>
-                    <td class="">
-
-
-
-                    </td>
-                </tr>
-            </table>
-
-
-            <h2 class="color">Cards</h2>
-            <div class="row">
-                <div class="card bgg-4">
-                    <h1 class="padd-v">Dont forget </h1>
-                    <p>asd Lome Ipsi deterem adasdmadsnasdn</p>
-                    <div class="bg-6">
-                        Made with Lagunite</div>
-                </div>
-
-                <div class="card alt bgg-4">
-                    <h1 class="padd-v"> Dont forget </h1>
-
-                    <p>asd Lome Ipsi deterem adasdmadsnasdn</p>
-                    <div class="">
-                        Made with Lagunite</div>
-                </div>
-            </div>
             <div class="separator-v-l"></div><!-- SEP -->
             <h2 class="color">Figures</h2>
             <table>
@@ -1064,6 +906,151 @@
 
 
             </table>
+
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Dropdown</h2>
+
+            <div class="dropdown">
+                <span>Mouse over me</span>
+                <div class="dropdown-content">
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                    <div>Paco</div>
+                </div>
+            </div>
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Avatars</h2>
+            <table>
+
+                <tr>
+                    <th>
+                        <pre>class=</pre>
+                    </th>
+
+                    <th>
+                        <pre>"avatar micro"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar small"</pre>
+                    </th>
+
+                    <th>
+                        <pre>"avatar"</pre>
+                    </th>
+                    <th>
+                        <pre>"avatar big"</pre>
+                    </th>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
+                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
+                    <td><img class="avatar" src="img/avatar2.jpg"></td>
+                    <td><img class="avatar big" src="img/avatar3.jpg"></td>
+
+
+
+                </tr>
+
+                <tr>
+                    <th>
+                        <pre>"alt "</pre>
+                    </th>
+                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
+                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
+                    <td><img class="avatar alt" src="img/avatar2.jpg"></td>
+                    <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
+
+
+
+                </tr>
+            </table>
+
+
+
+
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h2 class="color">Chips</h2>
+            <div class="separator-v"></div><!-- SEP -->
+            <div class="row">
+                <div class="col">
+                    <div class="chip  ">
+                        <img class="avatar micro" src="img/avatar4.jpg">
+                        <span>Lagunite</span>
+                        <h2>Veteran</h2>
+                    </div>
+
+                    <div class="chip  ">
+                        <div class="header">
+                            <img class="avatar small" src="img/avatar4.jpg">
+                        </div>
+                        <div class="content">
+                            <span>Lagunite</span>
+                            <h2>Veteran</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4 class="color">"chip vertical"</h4>
+            <div class="row">
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar5.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar2.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar4.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+                <div class="chip vertical  ">
+                    <img class="avatar micro" src="img/avatar3.jpg">
+                    <span>28</span>
+                    <h2>15</h2>
+                </div>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>
+                        <pre>"chip"</pre>
+                    </th>
+                    <th>
+                        <pre>"chip vertical"</pre>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td class="">
+
+
+                    </td>
+                    <td class="">
+
+
+
+                    </td>
+                </tr>
+            </table>
+
             <div class="separator-v-l"></div><!-- SEP -->
             <h2 class="color">Modals</h2>
             <button class="btn" onclick="show('modal')">open fullscreen</button>
@@ -1090,7 +1077,7 @@
                     </th>
 
                     <td>
-                        <div class="card alt padd-xs    shadow-1">
+                        <div class="bg-1 border-r col wfc wm padd    shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1098,7 +1085,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card alt padd-xs  bg-6 shadow-1">
+                        <div class="bg-6 border-r col wfc wm padd  shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1106,7 +1093,7 @@
                         </div>
                     </td>
                     <td>
-                        <div class="card alt padd-xs  bg-4 shadow-1">
+               <div class="bg-4 border-r col wfc wm padd shadow-1">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1120,8 +1107,8 @@
                         <pre>"shadow-2"</pre>
                     </th>
 
-                    <td>
-                        <div class="card alt padd-xs    shadow-2">
+                    <td class="padd-v">
+                  <div class="bg-1 border-r col wfc wm padd  shadow-2">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1129,16 +1116,16 @@
                         </div>
                     </td>
 
-                    <td>
-                        <div class="card alt padd-xs  bg-6 shadow-2">
+                    <td class="padd-v">
+                        <div class="bg-6 border-r col wfc wm padd shadow-2">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
                             </p>
                         </div>
                     </td>
-                    <td>
-                        <div class="card alt padd-xs  bg-4 shadow-2">
+                    <td class="padd-v">
+                        <div class="bg-4 border-r col wfc wm padd shadow-2">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1147,29 +1134,29 @@
                     </td>
                 </tr>
 
-                <tr class="bg-6">
+                <tr class="bg-6 ">
                     <th>
                         <pre>"shadow-3"</pre>
                     </th>
 
-                    <td>
-                        <div class="card alt padd-xs  shadow-3">
+                    <td class="padd-v">
+                  <div class="bg-1 border-r col wfc wm padd shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
                             </p>
                         </div>
                     </td>
-                    <td>
-                        <div class="card alt padd-xs  bg-6 shadow-3">
+                    <td class="padd-v">
+                        <div class="bg-6 border-r col wfc wm padd shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
                             </p>
                         </div>
                     </td>
-                    <td>
-                        <div class="card alt padd-xs  bg-4 shadow-3">
+                    <td class="padd-v">
+                        <div class="bg-4 border-r col wfc wm padd shadow-3">
                             <h3>A Card</h3>
                             <p>
                                 With shadow effect
@@ -1179,49 +1166,50 @@
                 </tr>
             </table>
             <div class="separator-v-l"></div><!-- SEP -->
-        </section>
-        <h2 class="color">Progress Bar</h2>
+            <h2 class="color">Progress Bar</h2>
 
-        <div class="col centered maxw8">
+            <div class="col centered maxw8">
 
-            <div class="  progress-bar  ">
-                <div class="w20"></div>
-            </div>
-            <div class="  progress-bar alt  ">
-                <div class="w40"></div>
-            </div>
-            <div class="  progress-bar  ">
-                <div class="w60"></div>
-            </div>
-            <div class="  progress-bar alt  ">
-                <div class="w80"></div>
-            </div>
-            <div class="separator-v-m"></div>
-
-            <div class="progress-container">
-                <h4>Occupation </h4>
-                <div class="  progress-bar   ">
-                    <div class="w50"></div>
+                <div class="  progress-bar  ">
+                    <div class="w20"></div>
                 </div>
-                <span>50%</span>
-            </div>
-            <div class="progress-container">
-
-                <h4>Occupation </h4>
-
                 <div class="  progress-bar alt  ">
-                    <div class="w70"></div>
+                    <div class="w40"></div>
                 </div>
+                <div class="  progress-bar  ">
+                    <div class="w60"></div>
+                </div>
+                <div class="  progress-bar alt  ">
+                    <div class="w80"></div>
+                </div>
+                <div class="separator-v-m"></div>
 
-                <span>70%</span>
+                <div class="progress-container">
+                    <h4>Occupation </h4>
+                    <div class="  progress-bar   ">
+                        <div class="w50"></div>
+                    </div>
+                    <span>50%</span>
+                </div>
+                <div class="progress-container">
+
+                    <h4>Occupation </h4>
+
+                    <div class="  progress-bar alt  ">
+                        <div class="w70"></div>
+                    </div>
+
+                    <span>70%</span>
 
 
+                </div>
             </div>
-        </div>
-        <div class="separator-v-l"></div><!-- SEP -->
+            <div class="separator-v-l"></div><!-- SEP -->
+        </section>
+
     </main>
     <script src="src/lagunite.js"></script>
     <script>
-        initCarrousel('carrousel');
+        //initCarrousel('carrousel');
     </script>
 </body></html>

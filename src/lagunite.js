@@ -43,10 +43,13 @@ function toggleClass(id,c) {
 
 /* updateInput(id,val)-> Update value of the element by id */
 function updateInput(id,val) {
-    console.log(id,val);
     document.getElementById(id).value = val;
 }
 
+
+function updateText(id,text) {
+    document.getElementById(id).textContent = text;
+}
 
 
 /* Aside Menu   */
