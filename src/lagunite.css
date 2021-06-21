@@ -95,15 +95,19 @@ h5 {
 
 }
 
-h1 {
-    font-size: 200%;
+@media only screen and (min-width : 768px) {
+
+    h1 {
+        font-size: 200%;
+    }
+
 }
 
 a,
 a:visited,
 a:active,
 a:enabled {
-    color: var(--main_color);
+    color: var(--main_color) !important;
     text-decoration: none;
     font-weight: 700;
 }
@@ -260,42 +264,63 @@ hgroup h5 {
 
 /**************** TEXT COLORS ***********************/
 
+
 /* @ID: #33 */
-.color {
+.color,
+a.color:visited,
+a.color:active {
     color: var(--text_color)
 }
 
-.color-alt {
+.color-alt,
+a.color-alt:visited,
+a.color-alt:active {
     color: var(--text_color_alt)
 }
 
-.color-main {
+.color-main,
+a.color-main:visited,
+a.color-main:active {
     color: var(--main_color)
 }
 
-.color-main-alt {
+.color-main-alt,
+a.color-main-alt:visited,
+a.color-main-alt:active {
     color: var(--main_color_alt)
 }
 
-.color-ligth {
+.color-ligth,
+a.color-ligth:visited,
+a.color-ligth:active {
     color: var(--main_color_light)
 }
 
-.color-dark {
+.color-dark,
+a.color-dark:visited,
+a.color-dark:active {
     color: var(--main_color_dark)
 }
 
-.color-success {
+.color-success,
+a.color-success:visited,
+a.color-success:active {
     color: var(--color_success)
 }
 
-.color-error {
+.color-error,
+a.color-error:visited,
+a.color-error:active {
     color: var(--color_error)
 }
 
-.color-warning {
+.color-warning,
+a.color-warning:visited,
+a.color-warning:active {
     color: var(--color_warning)
 }
+
+
 
 /**************** COMMON BACKGROUNDS *********************/
 
@@ -430,6 +455,7 @@ hgroup h5 {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -440,6 +466,7 @@ hgroup h5 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .
@@ -465,6 +492,10 @@ hgroup h5 {
     text-align: center;
 }
 
+/* @ID: #12 */
+.f-nowrap {
+    flex-wrap: nowrap;
+}
 
 @media only screen and (min-width : 768px) {
 
@@ -516,59 +547,7 @@ hgroup h5 {
 
 
 
-/************* JUSTIFY ITEMS ************/
 
-/* @ID: #123 */
-.ji-s {
-    justify-items: stretch !important;
-}
-
-.ji-se {
-    justify-items: self-end !important;
-}
-
-.ji-ss {
-    justify-items: self-start !important;
-}
-
-.ji-fe {
-    justify-items: flex-end !important;
-}
-
-.ji-fs {
-    justify-items: flex-start !important;
-}
-
-.ji-c {
-    justify-items: center !important;
-}
-
-/************* JUSTIFY SELF ************/
-
-/* @ID: #124 */
-.js-sb {
-    justify-self: stretch !important;
-}
-
-.js-se {
-    justify-self: self-end !important;
-}
-
-.js-ss {
-    justify-self: self-start !important;
-}
-
-.js-fe {
-    justify-self: flex-end !important;
-}
-
-.js-fs {
-    justify-self: flex-start !important;
-}
-
-.js-c {
-    justify-self: center !important;
-}
 
 /************* JUSTIFY CONTENT ************/
 
@@ -593,62 +572,15 @@ hgroup h5 {
     justify-content: space-between !important;
 }
 
+.jc-se {
+    justify-content: space-evenly !important;
+}
+
 
 @media only screen and (min-width : 281px) and (max-width : 767px) {
 
-    /************* JUSTIFY ITEMS ************/
 
-    /* @ID: #123x */
-    .xji-s {
-        justify-items: stretch !important;
-    }
 
-    .xji-se {
-        justify-items: self-end !important;
-    }
-
-    .xji-ss {
-        justify-items: self-start !important;
-    }
-
-    .xji-fe {
-        justify-items: flex-end !important;
-    }
-
-    .xji-fs {
-        justify-items: flex-start !important;
-    }
-
-    .xji-c {
-        justify-items: center !important;
-    }
-
-    /************* JUSTIFY SELF ************/
-
-    /* @ID: #124x */
-    .xjs-sb {
-        justify-self: stretch !important;
-    }
-
-    .xjs-se {
-        justify-self: self-end !important;
-    }
-
-    .xjs-ss {
-        justify-self: self-start !important;
-    }
-
-    .xjs-fe {
-        justify-self: flex-end !important;
-    }
-
-    .xjs-fs {
-        justify-self: flex-start !important;
-    }
-
-    .xjs-c {
-        justify-self: center !important;
-    }
 
     /************* JUSTIFY CONTENT ************/
 
@@ -672,63 +604,18 @@ hgroup h5 {
     .xjc-sb {
         justify-content: space-between !important;
     }
+
+    .xjc-se {
+        justify-content: space-evenly !important;
+    }
+
 }
 
 @media only screen and (min-width : 768px) {
 
-    /************* JUSTIFY ITEMS ************/
 
-    /* @ID: #123d */
-    .dji-s {
-        justify-items: stretch !important;
-    }
 
-    .dji-se {
-        justify-items: self-end !important;
-    }
 
-    .dji-ss {
-        justify-items: self-start !important;
-    }
-
-    .dji-fe {
-        justify-items: flex-end !important;
-    }
-
-    .dji-fs {
-        justify-items: flex-start !important;
-    }
-
-    .dji-c {
-        justify-items: center !important;
-    }
-
-    /************* JUSTIFY SELF ************/
-
-    /* @ID: #124d */
-    .djs-sb {
-        justify-self: stretch !important;
-    }
-
-    .djs-se {
-        justify-self: self-end !important;
-    }
-
-    .djs-ss {
-        justify-self: self-start !important;
-    }
-
-    .djs-fe {
-        justify-self: flex-end !important;
-    }
-
-    .djs-fs {
-        justify-self: flex-start !important;
-    }
-
-    .djs-c {
-        justify-self: center !important;
-    }
 
     /************* JUSTIFY CONTENT ************/
 
@@ -752,6 +639,11 @@ hgroup h5 {
     .djc-sb {
         justify-content: space-between !important;
     }
+
+    .djc-se {
+        justify-content: space-evenly !important;
+    }
+
 }
 
 /************* ALIGN ITEMS ************/
@@ -975,13 +867,62 @@ hgroup h5 {
 
 }
 
-
 /********************** FLOAT CONTENT ****************************/
 
 /* @ID: #15 */
 .rel {
     position: relative;
 }
+
+.abs {
+    position: absolute;
+}
+
+
+/********************** Absolute Positioning  ****************************/
+/* @ID: #13 */
+.pa-full {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.pa-h {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.pa-v {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+
+.pa-r {
+    position: absolute;
+    right: 0;
+}
+
+.pa-l {
+    position: absolute;
+    left: 0;
+}
+
+.pa-t {
+    position: absolute;
+    top: 0;
+}
+
+.pa-b {
+    position: absolute;
+    bottom: 0;
+}
+
+
 
 
 /* @ID: #19 */
@@ -1079,6 +1020,7 @@ hgroup h5 {
     margin: auto;
 
 }
+
 
 
 
@@ -3083,7 +3025,7 @@ table.hoverable-table td:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 3ox;
+    padding: 3px;
     z-index: 1;
 }
 
@@ -4179,10 +4121,33 @@ select option {
 
 
 
-    
+/**************** Z-INDEX  ***********************/
+
+/* @ID: #20 */
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z10 {
+    z-index: 10;
+}
+
+.z15 {
+    z-index: 15;
+}
+
+.z20 {
+    z-index: 20;
+}
+
+
 
 /****************** WIDTH BREAKPOINT *******************/
-/* @Nomenclature: OK */
+
 /* @ID: #106 */
 .minw1 {
     min-width: var(--break_width);
@@ -4245,7 +4210,7 @@ select option {
     width: fit-content;
 }
 
-/* @Nomenclature: OK */
+
 /* @ID: #107 */
 .maxw1 {
     max-width: var(--break_width);
@@ -4302,7 +4267,7 @@ select option {
 
 @media only screen and (min-width : 281px) and (max-width : 767px) {
 
-    /* @Nomenclature: OK */
+
     /* @ID: #106x */
     .xminw1 {
         min-width: var(--break_width);
@@ -4364,7 +4329,7 @@ select option {
         width: fit-content;
     }
 
-    /* @Nomenclature: OK */
+
     /* @ID: #107x */
     .xmaxw1 {
         max-width: var(--break_width);
@@ -4418,7 +4383,7 @@ select option {
 
 @media only screen and (min-width : 768px) {
 
-    /* @Nomenclature: OK */
+
     /* @ID: #106d */
     .dminw1 {
         min-width: var(--break_width);
@@ -4480,7 +4445,7 @@ select option {
         width: fit-content;
     }
 
-    /* @Nomenclature: OK */
+
     /* @ID: #107d */
     .dmaxw1 {
         max-width: var(--break_width);
@@ -4536,7 +4501,7 @@ select option {
 
 
 /****************** HEIGHT BREAKPOINT *******************/
-/* @Nomenclature: OK */
+
 /* @ID: #108 */
 .minh1 {
     min-height: var(--break_height);
@@ -4588,7 +4553,7 @@ select option {
     height: fit-content;
 }
 
-/* @Nomenclature: OK */
+
 /* @ID: #109 */
 .maxh1 {
     max-height: var(--break_height);
@@ -4635,10 +4600,12 @@ select option {
 
 
 
+
+
 @media only screen and (min-width : 281px) and (max-width : 767px) {
 
     /****************** HEIGHT BREAKPOINT *******************/
-    /* @Nomenclature: OK */
+
     /* @ID: #108x */
     .xminh1 {
         min-height: var(--break_height);
@@ -4690,7 +4657,7 @@ select option {
         height: fit-content;
     }
 
-    /* @Nomenclature: OK */
+
     /* @ID: #109x */
     .xmaxh1 {
         max-height: var(--break_height);
@@ -4741,7 +4708,7 @@ select option {
 @media only screen and (min-width : 768px) {
 
     /****************** HEIGHT BREAKPOINT *******************/
-    /* @Nomenclature: OK */
+
     /* @ID: #108d */
     .dminh1 {
         min-height: var(--break_height);
@@ -4793,7 +4760,7 @@ select option {
         height: fit-content;
     }
 
-    /* @Nomenclature: OK */
+
     /* @ID: #109d */
     .dmaxh1 {
         max-height: var(--break_height);
@@ -4840,7 +4807,7 @@ select option {
 
 
 /*************** MIN WIDTH ********************/
-/* @Nomenclature: OK */
+
 /* @ID: #102 */
 .minvw10 {
     min-width: 10vw;
@@ -4921,7 +4888,7 @@ select option {
 
 
 /*************** MAX WIDTH ********************/
-/* @Nomenclature: OK */
+
 /* @ID: #103 */
 .maxvw10 {
     max-width: 10vw;
@@ -5001,7 +4968,7 @@ select option {
 
 
 /*************** MIN HEIGHT ********************/
-/* @Nomenclature: OK */
+
 /* @ID: #104 */
 .minvh10 {
     min-height: 10vh;
@@ -5082,7 +5049,7 @@ select option {
 
 
 /*************** MAX HEIGHT ********************/
-/* @Nomenclature: OK */
+
 /* @ID: #105 */
 .maxvh10 {
     max-height: 10vh;
@@ -5165,7 +5132,7 @@ select option {
 @media only screen and (min-width : 281px) and (max-width : 767px) {
 
     /*************** MIN WIDTH ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #102x */
     .xminvw10 {
         min-width: 10vw;
@@ -5246,7 +5213,7 @@ select option {
 
 
     /*************** MAX WIDTH ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #103x */
     .xmaxvw10 {
         max-width: 10vw;
@@ -5326,7 +5293,7 @@ select option {
 
 
     /*************** MIN HEIGHT ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #104x */
     .xminvh10 {
         min-height: 10vh;
@@ -5407,7 +5374,7 @@ select option {
 
 
     /*************** MAX HEIGHT ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #105x */
     .xmaxvh10 {
         max-height: 10vh;
@@ -5492,7 +5459,7 @@ select option {
 
 
     /*************** MIN WIDTH ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #102d */
     .dminvw10 {
         min-width: 10vw;
@@ -5573,7 +5540,7 @@ select option {
 
 
     /*************** MAX WIDTH ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #103d */
     .dmaxvw10 {
         max-width: 10vw;
@@ -5653,7 +5620,7 @@ select option {
 
 
     /*************** MIN HEIGHT ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #104d */
     .dminvh10 {
         min-height: 10vh;
@@ -5734,7 +5701,7 @@ select option {
 
 
     /*************** MAX HEIGHT ********************/
-    /* @Nomenclature: OK */
+
     /* @ID: #105d */
     .dmaxvh10 {
         max-height: 10vh;
@@ -8538,12 +8505,117 @@ select option {
     }
 }
 
+
+/* @ID: #110 */
+.maxh25 {
+    max-height: 25%
+}
+
+.maxh50 {
+    max-height: 25%
+}
+
+.maxh75 {
+    max-height: 25%
+}
+
+.maxh100 {
+    max-height: 100%
+}
+
+.maxw25 {
+    max-width: 25%
+}
+
+.maxw50 {
+    max-width: 25%
+}
+
+.maxw75 {
+    max-width: 25%
+}
+
+.maxw100 {
+    max-width: 100%
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    .xmaxh25 {
+        max-height: 25%
+    }
+
+    .xmaxh50 {
+        max-height: 25%
+    }
+
+    .xmaxh75 {
+        max-height: 25%
+    }
+
+    .xmaxh100 {
+        max-height: 100%
+    }
+
+    .xmaxw25 {
+        max-width: 25%
+    }
+
+    .xmaxw50 {
+        max-width: 25%
+    }
+
+    .xmaxw75 {
+        max-width: 25%
+    }
+
+    .xmaxw100 {
+        max-width: 100%
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    .dmaxh25 {
+        max-height: 25%
+    }
+
+    .dmaxh50 {
+        max-height: 25%
+    }
+
+    .dmaxh75 {
+        max-height: 25%
+    }
+
+    .dmaxh100 {
+        max-height: 100%
+    }
+
+    .dmaxw25 {
+        max-width: 25%
+    }
+
+    .dmaxw50 {
+        max-width: 25%
+    }
+
+    .dmaxw75 {
+        max-width: 25%
+    }
+
+    .dmaxw100 {
+        max-width: 100%
+    }
+}
+
+
 /****************************************************************************************************/
 /****************************************** HIDDEN  *************************************************/
 /****************************************************************************************************/
 
 
-/* @ID: #20 */
+/* @ID: #25 */
 @media only screen and (min-width : 281px) and (max-width : 767px) {
     .dhidden {
         display: block;
@@ -8619,7 +8691,7 @@ select option {
 /***************************************/
 
 
-/************** PANEL ******************************/
+/************** PANEL ********************
 
 @media only screen and (min-width : 281px) and (max-width : 767px) {
     .aside {
@@ -8954,10 +9026,3 @@ select option {
 
 
 /*************** SCREENS ***************/
-
-
-
-
-
-
-

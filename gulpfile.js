@@ -32,7 +32,7 @@ var pathsHTML = {
 };
 
 var pathsImgs = {
-    source: './img/*',
+    source: './img/**/*',
     destination: './public/img'
 };
 
