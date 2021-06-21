@@ -19,7 +19,7 @@ function toggle(id) {
 function hiddeAfter(e, t) {
     setTimeout(function () {
         e.classList.add("hidden");
-    }, t);
+    }, t,e);
 }
 
 /* addClass(id,c)-> Add class "c" to the element by id */
@@ -76,6 +76,7 @@ function disappearing(id) {
     hiddeAfter(m, 3000);
 }
 
+
 /* Images carrousel */
 function carrousel(id) {
     var c = document.getElementById('carrousel').children;
@@ -121,4 +122,16 @@ function addEventClick(id, funct) {
             return element.addEventListener('click', funct, false);
     else return;
 }
+
+function addEventClickElement(element, funct) {
+
+
+    if (typeof (element) != 'undefined' && element != null)
+        if (element.attachEvent)
+            return element.attachEvent('onclick', funct);
+        else
+            return element.addEventListener('click', funct, false);
+    else return;
+}
+
 
