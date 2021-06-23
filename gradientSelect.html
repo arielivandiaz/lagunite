@@ -51,7 +51,7 @@
         <h3>Layouts</h3>
     </header>
 
-    <div class="col-row jc-sa   w100">
+    <div class="col-row jc-sa minvh100  w100">
         <div class="col ">
             <div class=" centered border-r-s vw30 minh4 col " id="gradient">
 
@@ -68,15 +68,15 @@
             </pre>
             </div>
         </div>
-        <div class="col">
+        <div class="col  ">
             <div class="row">
                 <div>
-                    <button class="btn">Background</button>
-                    <button class="btn alt">Shadow</button>
+                    <button class="btn" id="backgroundPanelBtn">Background</button>
+                    <button class="btn alt" id="shadowPanelBtn">Shadow</button>
                 </div>
 
             </div>
-            <div class="bordered border-r col padd ">
+            <div class="bordered border-r col padd bg-4   hidden" id="shadowPanel">
 
                 <div class="inputContainer">
                     <span> Box-Shadow </span>
@@ -118,7 +118,7 @@
                 <div class="col   ai-c minw5">
                 </div>
             </div>
-            <div class="bordered border-r col padd ">
+            <div class="bordered border-r col padd bg-4  " id="backgroundPanel">
 
                 <div class="col   ai-c minw5">
 
@@ -263,8 +263,8 @@
 
 
         updateGradient();
-                document.body.style.background = document.getElementById('background').value;
-                   gradient.style.color = document.getElementById('text').value;
+        document.body.style.background = document.getElementById('background').value;
+        gradient.style.color = document.getElementById('text').value;
 
 
         addEvent('color', 'change', function() {
@@ -304,7 +304,7 @@
 
         addEvent('background', 'change', function() {
             document.body.style.background = document.getElementById('background').value;
-                   
+
         });
 
         addEvent('text', 'change', function() {
@@ -384,9 +384,23 @@
 
         addEvent('shadow_on', 'change', function() {
             updateShadow()
+        });
 
+        addEventClick('backgroundPanelBtn', function() {
+            toggle('backgroundPanel');
+            toggle('shadowPanel');
+            toggleClass('backgroundPanelBtn','alt');
+            toggleClass('shadowPanelBtn','alt');
 
 
         });
+        addEventClick('shadowPanelBtn', function() {
+            toggle('backgroundPanel');
+            toggle('shadowPanel');
+            toggleClass('backgroundPanelBtn','alt');
+            toggleClass('shadowPanelBtn','alt');
+
+        });
     </script>
+
 </body></html>

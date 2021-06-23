@@ -14,40 +14,39 @@ function toggle(id) {
 }
 
 /* hiddeAfter(element,time )-> Add "hidden" class to the element by id 
-*  after t (ms)
-*/
+ *  after t (ms)
+ */
 function hiddeAfter(e, t) {
     setTimeout(function () {
         e.classList.add("hidden");
-    }, t,e);
+    }, t, e);
 }
 
 /* addClass(id,c)-> Add class "c" to the element by id */
-function addClass(id,c) {
+function addClass(id, c) {
     var x = document.getElementById(id);
     if (!x.classList.contains(c))
         x.classList.add(c);
 }
 /* removeClass(id,c)-> Remove class "c" to the element by id */
-function removeClass(id,c) {
+function removeClass(id, c) {
     var x = document.getElementById(id);
     if (x.classList.contains(c))
         x.classList.remove(c);
 }
 /* toggleClass(id,c)-> Toggle class "c" to the element by id */
-function toggleClass(id,c) {
+function toggleClass(id, c) {
     var x = document.getElementById(id);
-    if (x.classList.contains(c))
-        x.classList.toggle(c);
+    x.classList.toggle(c);
 }
 
 /* updateInput(id,val)-> Update value of the element by id */
-function updateInput(id,val) {
+function updateInput(id, val) {
     document.getElementById(id).value = val;
 }
 
 
-function updateText(id,text) {
+function updateText(id, text) {
     document.getElementById(id).textContent = text;
 }
 
@@ -68,11 +67,11 @@ function hideMenu() {
 }
 
 
-/* Disappearing Modal */ 
+/* Disappearing Modal */
 function disappearing(id) {
     var m = document.getElementById(id);
     show('disappearing');
-    addClass(id,'disappearing');
+    addClass(id, 'disappearing');
     hiddeAfter(m, 3000);
 }
 
@@ -104,7 +103,7 @@ function initCarrousel(id) {
 
 
 function addEvent(id, evnt, funct) {
-        var element = document.getElementById(id);
+    var element = document.getElementById(id);
     if (element.attachEvent)
         return element.attachEvent('on' + evnt, funct);
     else
@@ -115,7 +114,7 @@ function addEvent(id, evnt, funct) {
 function addEventClick(id, funct) {
     var element = document.getElementById(id);
 
-    if (typeof(element) != 'undefined' && element != null)
+    if (typeof (element) != 'undefined' && element != null)
         if (element.attachEvent)
             return element.attachEvent('onclick', funct);
         else
@@ -133,5 +132,3 @@ function addEventClickElement(element, funct) {
             return element.addEventListener('click', funct, false);
     else return;
 }
-
-
