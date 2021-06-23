@@ -469,7 +469,7 @@ a.color-warning:active {
 
 }
 
-.
+
 
 /* @ID: #11 */
 .row-col,
@@ -495,6 +495,10 @@ a.color-warning:active {
 /* @ID: #12 */
 .f-nowrap {
     flex-wrap: nowrap;
+}
+
+.flex1 {
+    flex: 1
 }
 
 @media only screen and (min-width : 768px) {
@@ -2347,12 +2351,12 @@ a.color-warning:active {
     font-weight: 900;
     letter-spacing: 1px;
     margin: 1vh 1vw;
-    color: #fff !important;
+    color: #fff ;
     padding: 10px 1vw 7px 1vw;
     min-width: var(--size_xl);
-
     border-radius: 5px;
     font-size: 80%;
+    line-height: 1;
 }
 
 
@@ -2385,6 +2389,7 @@ a.color-warning:active {
 .btn.alt {
     background: var(--main_color_alt);
     color: var(--main_color) !important;
+    border: 2px solid var(--main_color)
 }
 
 .btn.std {
@@ -2394,6 +2399,8 @@ a.color-warning:active {
 .btn.fit {
     min-width: 0px;
     width: fit-content;
+    padding: 10px 10px 6px 10px;
+
 }
 
 
@@ -2431,11 +2438,10 @@ a.color-warning:active {
 
 
 /*************** TABLE ***************/
-table {
+.table {
     border-collapse: collapse;
     margin: 10px 0;
     width: 100%;
-
 }
 
 caption {
@@ -3029,9 +3035,13 @@ table.hoverable-table td:hover {
     z-index: 1;
 }
 
-.dropdown-content div:hover {
+.dropdown-content a {
+    font-weight: 500;
+}
+.dropdown-content div:hover,
+.dropdown-content a:hover {
     background: var(--main_color);
-    color: var(--text_color_alt);
+    color: var(--text_color_alt) !important;
 }
 
 .dropdown:hover .dropdown-content {
