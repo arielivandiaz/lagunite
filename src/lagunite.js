@@ -70,7 +70,7 @@ function hideMenu() {
 /* Disappearing Modal */
 function disappearing(id) {
     var m = document.getElementById(id);
-    show('disappearing');
+    show(id);
     addClass(id, 'disappearing');
     hiddeAfter(m, 3000);
 }

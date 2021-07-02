@@ -2351,7 +2351,7 @@ a.color-warning:active {
     font-weight: 900;
     letter-spacing: 1px;
     margin: 1vh 1vw;
-    color: #fff ;
+    color: #fff;
     padding: 10px 1vw 7px 1vw;
     min-width: var(--size_xl);
     border-radius: 5px;
@@ -2855,6 +2855,83 @@ table.hoverable-table td:hover {
     width: 30px;
 }
 
+/************** TOOLTIP *****************/
+
+/*
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background: var(--main_color);
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    left: 120%;
+    position: absolute;
+    z-index: 1;
+
+    text-transform: uppercase;
+}
+
+
+.tooltiptext {
+
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.tooltiptext {
+    visibility: visible;
+}
+
+*/
+.tooltiptext {
+
+    visibility: hidden;
+    min-width: 70px;
+    background: var(--background_gradient_1);
+    position: relative;
+    color: var(--text_color_alt);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+
+
+button:hover .tooltiptext.bottom {
+    visibility: visible;
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button:hover .tooltiptext.top {
+    visibility: visible;
+    bottom: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button:hover .tooltiptext.left {
+    visibility: visible;
+    bottom:  -50%;    
+    left:  110%;
+   
+
+}
+button:hover .tooltiptext.right {
+    visibility: visible;
+    bottom:  -50%;   
+    right:  110%;
+
+
+
+}
+
+
 
 /*************** PROGRESS BAR ***************/
 .progress-container {
@@ -3038,6 +3115,7 @@ table.hoverable-table td:hover {
 .dropdown-content a {
     font-weight: 500;
 }
+
 .dropdown-content div:hover,
 .dropdown-content a:hover {
     background: var(--main_color);
