@@ -4,20 +4,19 @@
 
 :root {
 
-    --text_color: #333;
+     
+    --background_body: #EEE;
+    
+    
+    --text_color: #333;    /* Main Text Color */
     --text_color_alt: #FFF;
 
-
-
-    --border: 2px solid #2476FF;
-
-
     --main_color: #2476FF;
-    --main_color_rgb: 36,118,255;
     --main_color_alt: #FFF;
+    --main_color_rgb: 36, 118, 255;
+
     --main_color_light: #5E9AFF;
     --main_color_dark: #0965FF;
-
 
     --almost_black: #333;
     --almost_white: #FCFCFC;
@@ -26,18 +25,21 @@
     --color_error: #FF6961;
     --color_warning: #EC7C26;
 
-    --background_body: #EEE;
-
     --background_1: #2476FF;
-    --background_gradient_1: linear-gradient(0deg, #2476FF 0%, #5E9AFF 100%);
     --background_2: #5E9AFF;
-    --background_gradient_2: linear-gradient(0deg, #FFF 0%, #5E9AFF 100%);
     --background_3: #0965FF;
+
+    --background_gradient_1: linear-gradient(0deg, #2476FF 0%, #5E9AFF 100%);
+    --background_gradient_2: linear-gradient(0deg, #FFF 0%, #5E9AFF 100%);
     --background_gradient_3: linear-gradient(0deg, #0965FF 0%, #2476FF 100%);
+    --background_gradient_4: linear-gradient(180deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 50%, rgba(0, 90, 238, 1) 100%);
+    --backgound_gradient_5: radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%);
+    --backgound_gradient_6: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%);
+    --backgound_gradient_7: repeating-linear-gradient(45deg, #2476FF, #5E9AFF 20px, #fff 20px, #ccc 32px);
+    --backgound_gradient_8: repeating-linear-gradient(45deg, #5E9AFF, #0965FF 20px, #000 20px, #444 32px);
 
-    --backgound_gradient_4: radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%);
-    --backgound_gradient_5: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%);
-
+    
+    --border: 2px solid #2476FF;
 
 
     --size_xs: 5px;
@@ -45,24 +47,31 @@
     --size_m: 25px;
     --size_l: 50px;
     --size_xl: 75px;
-    
-    
-    --break_width : 50px;
-    --break_height : 30px;
 
 
+    --break_width: 50px;
+    --break_height: 30px;
 
-
-    --radius: 6px;
-    --radius_out: 36px;
-    --radius_in: 30px;
 
     --radius_s: 3px;
+    --radius: 6px;
     --radius_l: 25px;
+    --radius_xl: 36px;
 
 
-    --font_headers: 'muli', sans-serif;
     --font_text: 'PT Sans', sans-serif;
+    --font_headers: 'muli', sans-serif;
+
+
+    --font_size: 15px;
+    /* Size base for HTML/BODY */
+
+    --font_size_1: 10px;
+    --font_size_2: 20px;
+    --font_size_3: 30px;
+
+
+
 
 
 
