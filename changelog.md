@@ -1,3 +1,10 @@
+**v 0.50**
+- Important changes
+- New package
+- Repo refactor
+
+
+
 **v 0.37**
 - Added progress bar element
 - Added animations classes

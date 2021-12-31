@@ -3,6 +3,7 @@ var autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const cleanCSS = require("gulp-clean-css");
 var uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 var concatJS = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 const purgecss = require('gulp-purgecss');
@@ -52,7 +53,7 @@ let getVersion = () => {
     });
 }
 
-gulp.task('css', () => {
+gulp.task('css', async () => {
     getVersion().then((v) => {
         return gulp.src(pathsCSS.source)
             .pipe(autoprefixer())
@@ -68,9 +69,12 @@ gulp.task('css', () => {
 });
 
 
-gulp.task('js', () => {
+gulp.task('js', async () => {
     getVersion().then((v) => {
         return gulp.src(pathsJS.source)
+            .pipe(babel({
+                presets: ['@babel/env']
+            }))
             .pipe(uglify())
             .pipe(headerComment('Lagunite v' + v + '\n\r Visit lagunite.com'))
             .pipe(gulp.dest(pathsJS.destination));
@@ -81,7 +85,7 @@ gulp.task('js', () => {
     });
 });
 
-gulp.task('html', () => {
+gulp.task('html', async () => {
     getVersion().then((v) => {
         return gulp.src(pathsHTML.source)
             .pipe(htmlreplace({
@@ -100,7 +104,7 @@ gulp.task('html', () => {
 });
 
 
-gulp.task('img', () => {
+gulp.task('img', async () => {
     return gulp.src(pathsImgs.source)
         .pipe(imagemin())
         .pipe(gulp.dest(pathsImgs.destination));

@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url("https://use.typekit.net/ztk4pwi.css");
+/* Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
 /*************** VARIABLES ***************/
 
 :root {
 
-     
+
     --background_body: #EEE;
-    
-    
-    --text_color: #333;    /* Main Text Color */
+
+
+    --text_color: #333;
+    /* Main text color, almost black */
     --text_color_alt: #FFF;
+    /* Secondary text color, almost black */
 
     --main_color: #2476FF;
     --main_color_alt: #FFF;
@@ -21,30 +26,26 @@
     --almost_black: #333;
     --almost_white: #FCFCFC;
 
-    --color_success: #98FF98;
-    --color_error: #FF6961;
-    --color_warning: #EC7C26;
+    --color_success: #009112;
+    --color_warning: #FF9017;
+    --color_error: #FA3434;
 
-    --background_1: #2476FF;
-    --background_2: #5E9AFF;
-    --background_3: #0965FF;
 
     --background_gradient_1: linear-gradient(0deg, #2476FF 0%, #5E9AFF 100%);
     --background_gradient_2: linear-gradient(0deg, #FFF 0%, #5E9AFF 100%);
     --background_gradient_3: linear-gradient(0deg, #0965FF 0%, #2476FF 100%);
     --background_gradient_4: linear-gradient(180deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 50%, rgba(0, 90, 238, 1) 100%);
-    --backgound_gradient_5: radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%);
-    --backgound_gradient_6: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%);
-    --backgound_gradient_7: repeating-linear-gradient(45deg, #2476FF, #5E9AFF 20px, #fff 20px, #ccc 32px);
-    --backgound_gradient_8: repeating-linear-gradient(45deg, #5E9AFF, #0965FF 20px, #000 20px, #444 32px);
+    --background_gradient_5: radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%);
+    --background_gradient_6: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%);
+    --background_gradient_7: repeating-linear-gradient(45deg, #2476FF, #5E9AFF 20px, #fff 20px, #ccc 32px);
+    --background_gradient_8: repeating-linear-gradient(45deg, #5E9AFF, #0965FF 20px, #000 20px, #444 32px);
 
-    
-    --border: 2px solid #2476FF;
 
+    --font_size: 15px;
 
     --size_xs: 5px;
     --size_s: 10px;
-    --size_m: 25px;
+    --size: 25px;
     --size_l: 50px;
     --size_xl: 75px;
 
@@ -53,26 +54,16 @@
     --break_height: 30px;
 
 
-    --radius_s: 3px;
+    --radius_s: 4px;
     --radius: 6px;
-    --radius_l: 25px;
+    --radius_l: 15px;
     --radius_xl: 36px;
 
 
-    --font_text: 'PT Sans', sans-serif;
-    --font_headers: 'muli', sans-serif;
+    --font_text: 'Zen Kaku Gothic Antique', sans-serif;
+    --font_headers: 'PT Sans', sans-serif;
 
 
-    --font_size: 15px;
-    /* Size base for HTML/BODY */
-
-    --font_size_1: 10px;
-    --font_size_2: 20px;
-    --font_size_3: 30px;
-
-
-
-
-
+    --border: 2px solid #2476FF;
 
 }

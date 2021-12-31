@@ -8,20 +8,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177961488-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-177961488-2');
-    </script>
     <link type="text/css" rel="stylesheet" href="./src/lagunite-config.css" />
     <link type="text/css" rel="stylesheet" href="./src/lagunite.css" />
+    <link type="text/css" rel="stylesheet" href="./web/fontawesome/all.min.css">
     <style>
         .minilayout {
             width: 250px;
@@ -35,6 +25,7 @@
 </head>
 
 <body class="scrollable">
+
     <div class="modal-fullscreen hidden" id="modal">
         <button onclick="hidde('modal')" class="bg-1">
             <h1>X</h1>
@@ -57,11 +48,195 @@
 
     <main class="">
 
-        <div class="separator-v-l"></div><!-- SEP -->
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
 
-        <section class="maxw10 centered padd-h-s">
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionVariables">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Variables</span>
+
+                <hr>
+            </div>
+            <p>Variables declared in lagunite-config.css file:</p>
+
+            <div class="col-row jc-sa">
+                <div class=" wfc col ai-fs f-gap-xs marg-lf-l ">
+                    <div class="row jc-sb"><span> --font_text:&nbsp;&nbsp;</span><span> 'Zen Kaku Gothic Antique'; &nbsp;</span>
+                    </div>
+                    <div class="row jc-sb"><span> --font_headers:&nbsp;&nbsp;</span><span class="font-h"> 'PT Sans'; &nbsp;</span>
+
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div class="col-row jc-sa">
+
+                <div class=" wfc col ai-fs f-gap-xs marg-lf-l ">
+
+
+                    <br>
+
+                    <div class="row jc-sb"><span>--background_body: #EEE; &nbsp;</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #333"></div>
+                    </div>
+
+                    <div class="row jc-sb "><span>--text_color: #333; &nbsp;</span>
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #333"></div>
+                    </div>
+
+
+                    <div class="row jc-sb">--text_color_alt: #FFF; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #FFF"></div>
+                    </div>
+
+                    <div class="row jc-sb">--main_color: #2476FF; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #2476FF"></div>
+                    </div>
+
+                    <div class="row jc-sb">--main_color_alt: #FFF; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #FFF"></div>
+                    </div>
+
+                    <div class="row jc-sb">--main_color_light: #5E9AFF; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #5E9AFF"></div>
+                    </div>
+
+                    <div class="row jc-sb">--main_color_dark: #0965FF; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #0965FF"></div>
+                    </div>
+
+                    <div class="row jc-sb">--almost_black: #333; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #333"></div>
+                    </div>
+
+                    <div class="row jc-sb">--almost_white: #FCFCFC; &nbsp;
+                        <div style="width: 20px; height: 20px; border: 2px solid #000; border-radius: 5px; background: #FCFCFC"></div>
+                    </div>
+
+
+                </div>
+                <div class=" wfc col ai-fs f-gap-xs marg-lf-l ">
+
+                    <div class="row jc-sb">
+                        <span>--font_size: 15px; &nbsp;</span>
+                        <div style="width: 15px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+
+                    <br>
+
+                    <div class="row jc-sb">
+                        <span>--size_xs: 5px; &nbsp;</span>
+                        <div style="width: 5px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--size_s: 10px; &nbsp;</span>
+                        <div style="width: 10px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--size_m: 25px; &nbsp;</span>
+                        <div style="width: 25px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--size_l: 50px; &nbsp;</span>
+                        <div style="width: 50px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--size_xl: 75px; &nbsp;</span>
+                        <div style="width: 75px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <br>
+                    <div class="row jc-sb">
+                        <span>--radius_s: 4px; &nbsp;</span>
+                        <div style="width: 4px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--radius: 6px; &nbsp;</span>
+                        <div style="width: 6px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--radius_l: 15px; &nbsp;</span>
+                        <div style="width: 15px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                    <div class="row jc-sb">
+                        <span>--radius_xl: 36px; &nbsp;</span>
+                        <div style="width: 36px; height: 20px;  border-radius: 5px; background: #333"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-row jc-sa">
+                <div class=" wfc col  ai-fs f-gap-xs marg-lf-l ">
+                    <div class="row jc-sb"><span> --border: 2px solid #2476FF; &nbsp;</span>
+                    </div>
+                    <br>
+
+
+                    <div class="row jc-sb"><span>--background_gradient_1:</span>
+                        <div class="row">
+                            <span class="font-xs"> linear-gradient(0deg, #2476FF 0%, #5E9AFF 100%); &nbsp;</span>
+                            <div class="bgg-1" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_2:</span>
+                        <div class="row">
+                            <span class="font-xs"> linear-gradient(0deg, #FFF 0%, #5E9AFF 100%); &nbsp;</span>
+                            <div class="bgg-2" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_3:</span>
+                        <div class="row">
+                            <span class="font-xs"> linear-gradient(0deg, #0965FF 0%, #2476FF 100%); &nbsp;</span>
+                            <div class="bgg-3" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_4:</span>
+                        <div class="row">
+                            <span class="font-xs"> linear-gradient(180deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 50%, rgba(0, 90, 238, 1)
+                                100%); &nbsp;</span>
+                            <div class="bgg-4" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_5:</span>
+                        <div class="row">
+                            <span class="font-xs"> radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%); &nbsp;</span>
+                            <div class="bgg-5" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_6:</span>
+                        <div class="row">
+                            <span class="font-xs"> radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%); &nbsp;</span>
+                            <div class="bgg-6" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_7:</span>
+                        <div class="row">
+                            <span class="font-xs"> repeating-linear-gradient(45deg, #2476FF, #5E9AFF 20px, #fff 20px, #ccc 32px); &nbsp;</span>
+                            <div class="bgg-7" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="row jc-sb"><span>--background_gradient_8:</span>
+                        <div class="row">
+                            <span class="font-xs"> repeating-linear-gradient(45deg, #5E9AFF, #0965FF 20px, #000 20px, #444 32px); &nbsp;</span>
+                            <div class="bgg-8" style="width: 20px; height: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionText">
+
             <div>
-                <h2 class="color">Heading</h2>
+                <div class="ta-l color-main">
+                    <span class="font-l">Text</span>
+                    <hr>
+                </div>
                 <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3 </h3>
@@ -69,40 +244,60 @@
                 <h5>Heading 5</h5>
             </div>
             <div class="separator-v-l"></div><!-- SEP -->
-            <h4 class="color">Heading Inline</h4>
+            <div class="color-main ta-c ">
+                <span class="font-l">Heading Inline</span>
+
+            </div>
             <hgroup>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3 </h3>
+                <h1>H1</h1>
+                <h2>H2</h2>
+                <h3>H3</h3>
+                <h4>H4</h4>
+                <h5>H5</h5>
             </hgroup>
 
             <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Paragraph</h2>
-            <p>Lorem ipsum dolor sit <a href="">Lagunite</a>, consectetur adipiscing elit. Aliquam porta dui et eros placerat placerat. Vivamus euismod pretium nisi. Nullam eleifend lorem in imperdiet varius. Sed ipsum tellus, sodales quis magna porttitor, hendrerit finibus dolor. Aenean ex justo, efficitur et pellentesque at, facilisis a mi. Nam mattis dolor dui, vitae sollicitudin leo pharetra ut. </p>
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h4 class="color">Font Styles</h4>
-            <ul class="ta-l">
-                <li class="font-xs">Sample text with <i>class="font-xs"</i></li>
-                <li class="font-s">Sample text with <i>class="font-s"</i></li>
-                <li class="font-l">Sample text with <i>class="font-l"</i></li>
-                <li class="font-xl">Sample text with <i>class="font-xl"</i></li>
-                <li><br></li>
-                <li class="font-size-1">Sample text with <i>class="font-size-1"</i></li>
-                <li class="font-size-2">Sample text with <i>class="font-size-2"</i></li>
-                <li class="font-size-3">Sample text with <i>class="font-size-3"</i></li>
+            <h3>Paragraph</h3>
 
-            </ul>
-            <div class="separator-v-l"></div><!-- SEP -->
+
+            <p>This is how a paragraph looks in Lagunite with the different HTML tags.This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+                This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+                This is <u>underlined</u> and this is code: <code>sh build.sh -dev</code>.
+                Finally, this is a <a href="#">link</a>.</p>
+
+
+            <pre><code>for (int i = 0; i &lt; 5; i++) {
+        // Example of code
+        console.log(i);
+} </code></pre>
+
+            <h3>Blockquote</h3>
+            <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+
+
+            <h3>Font Styles</h3>
             <ul class="ta-l">
-                <li class="color">Sample text with <i>class="color"</i></li>
-                <li class="color-ligth">Sample text with <i>class="color-ligth"</i></li>
-                <li class="color-dark">Sample text with <i>class="color-dark"</i></li>
-                <li class="color-success">Sample text with <i>class="color-success"</i></li>
-                <li class="color-error">Sample text with <i>class="color-error"</i></li>
-                <li class="color-warning">Sample text with <i>class="color-warning"</i></li>
+                <li class="font-text">class="font-text"</li>
+                <li class="font-h">class="font-h"</li>
+                <li class="bold">class="bold"</li>
+                <li class="italic">class="italic"</li>
             </ul>
+            <div class="separator-v"></div>
+            <ul class="ta-l">
+                <li class="font-xs">class="font-xs"</li>
+                <li class="font-s">class="font-s"</li>
+                <li class="font-l">class="font-l"</li>
+                <li class="font-xl">class="font-xl"</li>
+                <li class="font-xxl">class="font-xxl"</li>
+                <li class="font-250">class="font-250"</li>
+                <li class="font-300">class="font-300"</li>
+                <li class="font-400">class="font-400"</li>
+                <li class="font-500">class="font-500"</li>
+            </ul>
+
             <div class="separator-v-l"></div><!-- SEP -->
-            <h4 class="color">Text Aling</h4>
+            <h4>Text Aling</h4>
+
             <div class="row">
                 <div class="w33">
                     <p class="ta-l">
@@ -125,328 +320,250 @@
             <div class="row">
                 <div class="w50">
                     <p class="ta-cl">
-                        Paragraph with <i>class="ta-cl"</i> - text align left on Desktop and text align center con Mobile
+                        Paragraph with <i>class="ta-cl"</i> - text align left on Desktop and text align center on Mobile
                     </p>
                 </div>
                 <div class="w50">
                     <p class="ta-cr">
-                        Paragraph with <i>class="ta-cr"</i> - text align right on Desktop and text align center con Mobile
+                        Paragraph with <i>class="ta-cr"</i> - text align right on Desktop and text align center on Mobile
                     </p>
                 </div>
             </div>
 
 
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Colors &amp; Backgrounds</h2>
-
-            <table class="table">
-
-                <tr>
-                    <th>
-                        bg
-                    </th>
-                    <th>
-                        bg color
-                    </th>
-                    <th>
-                        text color
-                    </th>
-                </tr>
-                <tr>
-                    <td class="bg-1  padd-s">"bg-1"
-                    </td>
-                    <td>main_color</td>
-                    <td>text_color_alt</td>
-                </tr>
-                <tr>
-                    <td class="bg-2  padd-s">"bg-2"
-                    </td>
-                    <td>main_color_light</td>
-                    <td>text_color_alt</td>
-                </tr>
-                <tr>
-                    <td class="bg-3  padd-s">"bg-3"
-                    </td>
-                    <td>main_color_dark</td>
-                    <td>text_color_alt</td>
-                </tr>
-                <tr>
-                    <td class="bg-4  padd-s">"bg-4"
-                    </td>
-                    <td>main_color_alt</td>
-                    <td>main_color</td>
-                </tr>
-                <tr>
-                    <td class="bg-5  padd-s">"bg-5"
-                    </td>
-                    <td>almost_white</td>
-                    <td>almost_black</td>
-                </tr>
-
-                <tr>
-                    <td class="bg-6  padd-s">"bg-6"
-                    </td>
-                    <td>almost_black</td>
-                    <td>almost_white</td>
-                </tr>
-
-                <tr>
-                    <td class="bg-7  padd-s">"bg-7"
-                    </td>
-                    <td>color_success</td>
-                    <td>almost_black</td>
-                </tr>
-
-                <tr>
-                    <td class="bg-8  padd-s">"bg-8"
-                    </td>
-                    <td>color_error</td>
-                    <td>text_color_alt</td>
-                </tr>
-                <tr>
-                    <td class="bg-9  padd-s">"bg-9"
-                    </td>
-                    <td>color_warning</td>
-                    <td>text_color_alt</td>
-                </tr>
-
-                <tr>
-
-                </tr>
-                <tr>
-                    <td class="bgg-1  padd-s">bgg-1
-                    </td>
-                    <td>main_color</td>
-                    <td>Main</td>
-                </tr>
-                <tr>
-                    <td class="bgg-2  padd-s">bgg-2
-                    </td>
-                    <td>main_color</td>
-                    <td>Main</td>
-                </tr>
-
-                <tr>
-                    <td class="bgg-3  padd-s">bgg-3
-                    </td>
-                    <td>main_color</td>
-                    <td>Main</td>
-                </tr>
-
-                <tr>
-                    <td class="bgg-4  padd-s">bgg-4
-                    </td>
-                    <td>main_color</td>
-                    <td>Main</td>
-                </tr>
 
 
+        </section>
 
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
 
-            </table>
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionColors">
 
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Layout Distribution</h2>
-            <div class="row  centered">
-                <div class="marg-s">
-                    <h3>Section "row"</h3>
-                    <section class="row   minilayout">
-                        <div class=" col bg-1 w40  h100">
-                            col w30 h100
-                        </div>
-                    </section>
-                </div>
-                <div class="marg-s">
-                    <h3>Section "row"</h3>
-                    <section class="row   minilayout">
-                        <div class=" col bg-2 w30 h100 ">
-                            col w30 h100
-                        </div>
-                        <div class=" col bg-1 w50 h100 ">
-                            col w50 h100
-                        </div>
-                    </section>
-                </div>
+            <div class="ta-l color-main">
+                <span class="font-l">Colors</span>
+                <hr>
             </div>
-            <div class="separator-v-m"></div>
-            <div class="row">
-                <div class="marg-s">
-                    <h3>Section "col"</h3>
-                    <section class="col   minilayout">
-                        <div class=" row bg-2 h15 ">
-                            row h15
-                        </div>
-                        <div class=" row bg-1 h50 ">
-                            row h50
-                        </div>
-                    </section>
-                </div>
-                <div class="marg-s">
-                    <h3>Section "col"</h3>
-                    <section class="col  minilayout">
-                        <div class=" row bg-2 h15 ">
-                            row h15
-                        </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h3>Text Colors</h3>
 
-                        <div class=" row rel bg-1 h50 ">
-                            <span style="position: absolute; top: 0;">
-                                row h50
-                            </span>
-                            <div class=" col bg-3 w50 h100">
-                                col w50
-                            </div>
-                            <div class=" col bg-6 w30 h100">
-                                col w30
-                            </div>
-                        </div>
-                    </section>
+            <div class="col center marg-t wfc">
+                <div class="row ai-fe jc-sb">
+                    <h5 class="color">class="color" &nbsp;</h5> <i> color: var(--text_color)</i>
                 </div>
-            </div>
-            <div class="row">
-                <div class="marg-s">
-                    <h3>Section "row row"</h3>
-                    <section class="row  minilayout">
-                        <div class=" row rel bg-2 w40 h80 ">
-                            <span style="position: absolute; top: 0;">
-                                row w40
-                            </span>
-                            <div class="bg-3 w50 h50">
-                                w50
-                            </div>
-                            <div class="  bg-6 w30 h50">
-                                w30
-                            </div>
-                        </div>
-                        <div class=" row rel bg-1 w60 h80 ">
-                            <span style="position: absolute; top: 0;">
-                                row w60
-                            </span>
-                            <div class=" col bg-3 w50 h50">
-                                col w50
-                            </div>
-                            <div class=" rel col bg-6 w30 h50">
-                                <span style="position: absolute; top: 0;">
-                                    col w30 </span>
-                                <div class=" bg-2 h40">
-                                    h40
-                                </div>
-                                <div class=" bg-1 h30">
-                                    h30
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-alt">class="color-alt"&nbsp; </h5> <i> color: var(--text_color_alt)</i>
                 </div>
-                <div class="marg-s">
-                    <h3>Section "col col"</h3>
-                    <section class="col   minilayout">
-                        <div class="col  bg-2 centered h80 w80">
-                            col centered h30 w80
-                            <div class="bg-3 h50">
-                                h50
-                            </div>
-                            <div class="bg-4 w50 centered h30">
-                                w50 centered h30
-                            </div>
-                        </div>
-
-                    </section>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-main">class="color-main"&nbsp; </h5> <i> color: var(--main_color)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-main-alt">class="color-main-alt"&nbsp; </h5> <i> color: var(--main_color_alt)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-light">class="color-light"&nbsp; </h5> <i> color: var(--main_color_light)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-dark">class="color-dark"&nbsp; </h5> <i> color: var(--main_color_dark)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-success">class="color-success"&nbsp; </h5> <i> color: var(--color_success)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-warning">class="color-warning"&nbsp; </h5> <i> color: var(--color_warning)</i>
+                </div>
+                <div class="row ai-fe  jc-sb">
+                    <h5 class="color-error">class="color-error"&nbsp; </h5> <i> color: var(--color_error)</i>
                 </div>
             </div>
 
-            <div class="separator-v-m"></div>
-            <h3>Section "rel"</h3>
-            <section class="row  centered w90 bg-2 padd-v-s radius-l">
-                <div class="marg-s ">
-                    <span> rel </span>
-                    <div class="minw3  rel bg-4  minh4 rounded">
-                        <div class=" circle  ">
-                        </div>
-                    </div>
-                </div>
-                <div class="marg-s ">
-                    <span> rel -> float-tl </span>
-                    <div class="minw3  rel bg-4   minh4  rounded">
-                        <div class=" ">
-                            float-tl </div>
-                        <div class=" circle float-tl ">
-                        </div>
-                    </div>
-                </div>
-                <div class="marg-s ">
-                    <span> rel -> float-tl </span>
-                    <div class="minw3  rel bg-4  minh4  rounded">
-                        <div class=" ">
-                            float-tr</div>
-                        <div class=" circle float-tr ">
-                        </div>
-                    </div>
-                </div>
-                <div class="marg-s ">
-                    <span> rel -> float-bl </span>
-                    <div class="minw3  rel bg-4   minh4  rounded">
-                        <div class=" ">
-                            float-bl </div>
-                        <div class=" circle float-bl ">
-                        </div>
-                    </div>
-                </div>
-                <div class="marg-s ">
-                    <span> rel -> float-br </span>
-                    <div class="minw3  rel bg-4  minh4  rounded">
-                        <div class=" ">
-                            float-br </div>
-                        <div class=" circle float-br ">
-                        </div>
-                    </div>
-                </div>
-                <div class=" marg-s ">
-                    <span> rel -> float-cr </span>
-                    <div class="minw3  rel bg-4  minh4  rounded">
-                        <div class=" ">
-                            float-cr </div>
-                        <div class=" circle float-cr ">
-                        </div>
-                    </div>
-                </div>
-                <div class=" marg-s ">
-                    <span> rel -> float-cl </span>
-                    <div class="minw3  rel bg-4   minh4  rounded">
-                        <div class=" ">
-                            float-cl </div>
-                        <div class=" circle float-cl ">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="separator-v-m"></div>
-            <h3>min max example</h3>
-
-            <section class="col  centered padd-lf w90">
-                <div class="bg-1 minw3 ta-l">
-                    <pre>"minw3"</pre>
-                    <p> Lorem.</p>
-
-                </div>
-                <div class="bg-2 minw2 ta-l">
-                    <pre>"minw2"</pre>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                </div>
-                <div class="bg-3 minw2 maxw5 ta-l">
-                    <pre>"minw1 maxw5"</pre>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-
-
-
-            </section>
-
             <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Buttons</h2>
+            <h3>Background</h3>
+            <div class="col-row jc-sa f-gap">
+                <div class="padd-xs col bg-1 minw4  ta-l">
+                    <h5>bg-1</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> main_color</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-2 minw4 ta-l">
+                    <h5>bg-2</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> main_color_light</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-3 minw4  ta-l">
+                    <h5>bg-3</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> main_color_dark</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-4 minw4 ta-l">
+                    <h5>bg-4</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> main_color_alt</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> main_color</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-5 minw4  ta-l">
+                    <h5>bg-5</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> almost_white</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> almost_black</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-6 minw4  ta-l">
+                    <h5>bg-6</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> almost_black</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> almost_white</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-success minw4 ta-l">
+                    <h5>bg-success</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> #98FF98</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> #009112</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-warning minw4  ta-l">
+                    <h5>bg-warning</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> #FFEAD5</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> #FF9017</b>
+                    </div>
+                </div>
+
+                <div class="padd-xs col bg-error minw4  ta-l">
+                    <h5>bg-error</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> #FDD0D0</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> #FA3434 </b>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="separator-v"></div><!-- SEP -->
+            <h4>Gradients</h4>
+            <div class="col-row jc-sa f-gap">
+                <div class="padd-xs col bgg-1 minw4 ta-l">
+                    <h5>bgg-1</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-2 minw4 ta-l">
+                    <h5>bgg-2</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_2</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-3 minw4 ta-l">
+                    <h5>bgg-3</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-4 minw4 ta-l">
+                    <h5>bgg-4</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-5 minw4 ta-l">
+                    <h5>bgg-5</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> #text_color_alt</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-6 minw4 ta-l">
+                    <h5>bgg-6</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-7 minw4 ta-l">
+                    <h5>bgg-6</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+                <div class="padd-xs col bgg-8 minw4 ta-l">
+                    <h5>bgg-6</h5>
+                    <div class="row jc-sb">
+                        <i>background:</i> <b> background_gradient_1</b>
+                    </div>
+                    <div class="row jc-sb">
+                        <i>text:</i> <b> text_color_alt</b>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionButtons">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Buttons</span>
+                <hr>
+            </div>
+            <div class="separator-v-l"></div><!-- SEP -->
             <table class="table">
 
                 <tr>
@@ -509,21 +626,34 @@
                     <td><button class="btn std big">Button</button></td>
                     <td><button class="btn alt std big">Button</button></td>
                 </tr>
+
             </table>
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
 
 
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Form</h2>
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionIcons">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Inputs</span>
+                <hr>
+            </div>
             <div class="inputContainer">
-                <span>Input Text with text</span>
-                <input class="text">
+                <span>Input Text with label</span>
+                <input type="text">
             </div>
-            <div class="inputLine">
-                <span>Instagram User</span>
-                <i class="icon">@</i>
-                <input class="text" placeholder="instagram">
-            </div>
+            <div class="row jc-c">
+                <span class="marg">Input Text with icon</span>
+                <div class="inputLine">
+                    <span>Instagram User</span>
+                    <i class="icon">@</i>
+                    <input class="text" placeholder="instagram">
+                </div>
 
+            </div>
 
 
             <div class="inputContainer">
@@ -553,11 +683,11 @@
 
 
             <div class="inputContainer">
-                <label class="btn-file">
+                <label class="fileBtn">
                     Upload File
                     <input type="file" name="fileUpload">
                 </label>
-                <span>No se eligio archivo</span>
+                <span>Not file yet</span>
             </div>
             <div class="inputContainer">
                 <span>Color:</span>
@@ -573,31 +703,39 @@
                 <input type="text" placeholder="Input Text with placeholder">
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Checkbox ass toggle button</h4>
+            <h4>Checkbox ass toggle button</h4>
             <div class="inputContainer">
                 <span> Acepto los terminos y condiciones </span>
-                <div class="labeled">
-                    <input class="tgl" id="arg_citizen" type="checkbox" checked onchange="foreign()" />
-                    <label class="tgl-btn" for="arg_citizen"></label>
+                <input class="toggle" id="arg_citizen" type="checkbox" checked />
+                <label class="toggleBtn" for="arg_citizen"></label>
+            </div>
+
+            <div class="separator-v"></div><!-- SEP -->
+            <h4>Checkbox ass toggle button</h4>
+            <div class="inputContainer">
+                <span> Acepto los terminos y condiciones </span>
+                <div class="">
+                    <input class="" id="arg_citizen" type="checkbox" checked onchange="foreign()" />
+                    <label class="" for="arg_citizen"></label>
                 </div>
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Checkbox</h4>
+            <h5>Checkbox</h5>
             <div class="checkboxContainer">
-                <label class="checkbox-container">Acepto los terminos y condiciones del servicio
+                <label class="checkbox">Acepto los terminos y condiciones del servicio
                     <input type="checkbox" name="" value="" id="checkbox_1">
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Range Input</h4>
+            <h5>Range Input</h5>
             <div class="rangeContainer">
                 <input type="range" name="rangeInput" min="0" max="100" onchange="updateText('rangeText',this.value);" value=23>
                 <span id="rangeText">23</span>
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Radio Buttons as "radio-group" </h4>
-            <div class="radio-group">
+            <h5>Radio Buttons as "radio-group" </h5>
+            <div class="radioGroup">
                 <input type="radio" name="radio-group-example" id="radio-group-1A" value="one" checked />
                 <label for="radio-group-1A">One</label>
                 <input type="radio" name="radio-group-example" id="radio-group-1B" value="two" />
@@ -605,7 +743,7 @@
                 <input type="radio" name="radio-group-example" id="radio-group-1C" value="three" />
                 <label for="radio-group-1C">Three</label>
             </div>
-            <div class="radio-group">
+            <div class="radioGroup">
                 <input type="radio" name="radio-group-example2" id="radio-group-2A" value="one" checked />
                 <label for="radio-group-2A">One</label>
                 <input type="radio" name="radio-group-example2" id="radio-group-2B" value="two" />
@@ -618,8 +756,8 @@
                 <label for="radio-group-2E">Five</label>
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Radio Buttons as "radio-btns" </h4>
-            <div class="radio-btns">
+            <h5>Radio Buttons as "radio-btns" </h5>
+            <div class="radioBtns">
                 <input type="radio" name="radio-btns-example" id="radio-btns-1A" value="one" checked />
                 <label for="radio-btns-1A">One</label>
                 <input type="radio" name="radio-btns-example" id="radio-btns-1B" value="two" />
@@ -628,8 +766,8 @@
                 <label for="radio-btns-1C">Three</label>
             </div>
             <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">Radio Buttons as "radio-divs" </h4>
-            <div class="radio-divs">
+            <h5>Radio Buttons as "radio-divs" </h5>
+            <div class="radioDivs">
                 <input type="radio" name="radio-divs-example" id="radio-divs-1A" value="one" checked />
                 <label for="radio-divs-1A">
                     <div class="tear">A</div>
@@ -644,8 +782,470 @@
                 </label>
             </div>
 
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionIcons">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Icons with FontAwesome</span>
+                <hr>
+            </div>
             <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Figures</h2>
+
+            <div class="row jc-sa ai-fe marg-t-s w100  ai-c">
+                <div class="col">
+                    <i class="icon fas fa-rocket"></i>
+                    <span>icon fas fa-rocket</span>
+                </div>
+                <div class="col">
+                    <i class="icon-l fas fa-rocket"></i>
+                    <span>icon-l fas fa-rocket</span>
+                </div>
+                <div class="col">
+                    <i class="icon-xl fas fa-rocket"></i>
+                    <span>icon-xl fas fa-rocket</span>
+                </div>
+                <div class="col">
+                    <i class="icon-xxl fas fa-rocket"></i>
+                    <span>icon-xxl fas fa-rocket</span>
+                </div>
+            </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <div class="row jc-sa ai-fe marg-t-s w100">
+                <div class="col">
+                    <i class="icon-l color-main fas fa-rocket"></i>
+                    <span>icon-l color-main </span>
+                </div>
+                <div class="col ">
+                    <button class="btn">
+                        <i class="icon-l  fas fa-rocket"></i>
+                    </button>
+
+                    <span>btn > icon-l</span>
+                </div>
+                <div class="col  ai-c">
+                    <div class="circle">
+                        <i class="icon-l   fas fa-rocket"></i>
+                    </div>
+                    <span>circle > icon-l </span>
+                </div>
+
+            </div>
+
+
+            <div class="separator-v-l"></div><!-- SEP -->
+            <div class="row jc-sa marg-t-s w100">
+
+                <div class="col  ai-c">
+                    <button class="btn alt fit"> <i class="icon fas fa-rocket"></i>Button</button>
+                    <span>btn alt + icon</span>
+                </div>
+                <div class="col  ai-c">
+                    <button class="btn fit">Button <i class="icon fas fa-rocket"></i></button>
+                    <span>btn + icon</span>
+                </div>
+
+            </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <div class="col-row jc-sa">
+                <div class="col">
+                    <div class="bg-2 row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Info</h5>
+                            <span>An info message </span>
+                        </div>
+                    </div>
+                    <div class="bg-success row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Success</h5>
+                            <span>Completed successfully.</span>
+                        </div>
+                    </div>
+                    <div class="bg-warning row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Warning</h5>
+                            <span>A warning message.</span>
+                        </div>
+                    </div>
+                    <div class="bg-error  row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-times-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Error</h5>
+                            <span>An error ocurred.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col  ai-fe">
+                    <div class="bg-2 row border border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Info</h5>
+                            <span>An info message </span>
+                        </div>
+                    </div>
+                    <div class="bg-success border row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Success</h5>
+                            <span>Completed successfully.</span>
+                        </div>
+                    </div>
+                    <div class="bg-warning border row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-check-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Warning</h5>
+                            <span>A warning message.</span>
+                        </div>
+                    </div>
+                    <div class="bg-error  border row border-r padd-s wfc rel marg-s">
+                        <i class="fas fa-sign-out-alt float-tr marg-s"></i>
+                        <i class="icon-xl fas fa-times-circle"></i>
+                        <div class="ta-l padd-lf-s padd-rg-l">
+                            <h5>Error</h5>
+                            <span>An error ocurred.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionBorders">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Borders</span>
+                <hr>
+            </div>
+            <div class="separator-v-l"></div><!-- SEP -->
+
+            <div class="col">
+                <div class="row jc-sa  w100">
+                    <div class="col">
+                        <div class="minw2 padd-s bordered">&nbsp;
+                        </div>
+                        <span>bordered</span>
+                        <span class="font-xs">default border</span>
+                    </div>
+
+                </div>
+
+                <div class="row jc-sa marg-t-s w100">
+                    <div class="col">
+                        <div class="minw2 padd-s border-s">&nbsp;
+                        </div>
+                        <span>border-s</span>
+                        <span class="font-xs">border solid 1px</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw2 padd-s border">&nbsp;
+                        </div>
+                        <span>border</span>
+                        <span class="font-xs">border solid 2px</span>
+                    </div>
+
+                    <div class="col">
+                        <div class="minw2 padd-s border-l">&nbsp;
+                        </div>
+                        <span>border-l</span>
+                        <span class="font-xs">border solid 4px</span>
+                    </div>
+                </div>
+                <div class="row jc-sa marg-t-s w100">
+                    <div class="col">
+                        <div class="minw2 padd-s border-dashed">&nbsp;
+                        </div>
+                        <span>border-dashed</span>
+                        <span class="font-xs">border dashed 2px</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw2 padd-s border-dotted">&nbsp;
+                        </div>
+                        <span>border-dotted</span>
+                        <span class="font-xs">border dotted 2px</span>
+                    </div>
+                </div>
+                <div class="row jc-sa marg-t-s w100">
+
+                    <div class="col">
+                        <div class="minw2 padd-s border-inset">&nbsp;
+                        </div>
+                        <span>border-inset</span>
+                        <span class="font-xs">border inset 3px</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw2 padd-s border-outset">&nbsp;
+                        </div>
+                        <span>border-outset</span>
+                        <span class="font-xs">border outset 3px</span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row jc-sa marg-t w100">
+                    <div class="col">
+                        <div class="minw1 padd-s border-lf">&nbsp;
+                        </div>
+                        <span>border-lf</span>
+                        <span class="font-xs">border left</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 padd-s border-t">&nbsp;
+                        </div>
+                        <span>border-t</span>
+                        <span class="font-xs">border top</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 padd-s border-b">&nbsp;
+                        </div>
+                        <span>border-b</span>
+                        <span class="font-xs">border bottom</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 padd-s border-rg">&nbsp;
+                        </div>
+                        <span>border-rg</span>
+                        <span class="font-xs">border right</span>
+                    </div>
+                </div>
+
+                <div class="row jc-sa marg-t w100">
+
+                    <div class="col ">
+                        <div class="minw1 bg-1 center padd-s   border-r-s">&nbsp;
+                        </div>
+                        <span>border-r-s</span>
+                        <span class="font-xs">border radius small</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 bg-1 center padd-s border-r">&nbsp;
+                        </div>
+                        <span>border-r</span>
+                        <span class="font-xs">border radius</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 bg-1 center padd-s border-r-l">&nbsp;
+                        </div>
+                        <span>border-r-l</span>
+                        <span class="font-xs">border radius large</span>
+                    </div>
+                    <div class="col">
+                        <div class="minw1 bg-1 center padd-s border-r-xl">&nbsp;
+                        </div>
+                        <span>border-r-xl</span>
+                        <span class="font-xs">border radius xl</span>
+                    </div>
+                </div>
+
+                <div class="row jc-sa marg-t w100">
+
+                    <div class="col ai-c">
+                        <img class="avatar  border-circle-s marg-v-xs" src="img/avatar4.jpg">
+                        <span>avatar border-circle</span>
+                    </div>
+                    <div class="col ai-c">
+                        <img class="avatar  border-circle marg-v-xs" src="img/avatar4.jpg">
+                        <span>avatar border-circle</span>
+                    </div>
+                    <div class="col ai-c">
+                        <img class="avatar  border-circle-l marg-v-xs" src="img/avatar4.jpg">
+                        <span>avatar border-circle-l</span>
+                    </div>
+                    <div class="col ai-c">
+                        <img class="avatar  border-circle-xl marg-v-xs" src="img/avatar4.jpg">
+                        <span>avatar border-circle-xl</span>
+                    </div>
+                </div>
+
+
+                <div class="row jc-sa marg-t w100">
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-main-alt">&nbsp;
+                        </div>
+                        <span> color-main-alt</span>
+                    </div>
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-light">&nbsp;
+                        </div>
+                        <span> color-loght</span>
+                    </div>
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-dark">&nbsp;
+                        </div>
+                        <span> color-dark</span>
+                    </div>
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-success">&nbsp;
+                        </div>
+                        <span> color-success</span>
+                    </div>
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-warning">&nbsp;
+                        </div>
+                        <span> color-warning</span>
+                    </div>
+                    <div class="col ai-c">
+                        <div class="minw1 padd-s border color-error">&nbsp;
+                        </div>
+                        <span> color-error</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s  marg-v-l" id="sectionLines">
+
+
+            <div class="ta-l color-main">
+                <span class="font-l">Lines </span>
+                <hr>
+            </div>
+
+            <div class="w80 marg-t ta-l center">
+
+                <div class="marg-lf marg-t">
+                    <div class="ta-l">
+                        <span>&lt;hr&gt;</span>
+                    </div>
+                    <hr class="">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-xl&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-xl">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-xxl&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-xxl">
+                </div>
+                <div class="separator-v"></div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-alt&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-alt">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-main&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-main">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-main-alt&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-main-alt">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-light&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-light">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-dark&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-dark">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-success&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-success">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-warning&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-warning">
+                </div>
+                <div class="marg-lf">
+                    <div class="ta-l">
+                        <span>&lt;hr class=&quot;hr-l color-error&quot;&gt;</span>
+                    </div>
+                    <hr class="hr-l color-error">
+                </div>
+            </div>
+            <div class="separator-v-l"></div>
+            <div class="row jc-sa">
+                <div class="col ai-c">
+                    <span>"line-v"</span>
+                    <div class="minh5  line-v"></div>
+                </div>
+                <div class="col ai-c">
+                    <span>"line-v-l"</span>
+                    <div class="minh5  line-v-l"></div>
+                </div>
+                <div class="col ai-c">
+                    <span>"line-v-xl"</span>
+                    <div class="minh5  line-v-xl"></div>
+                </div>
+                <div class="col ai-c">
+                    <span>"line-v-xxl"</span>
+                    <div class="minh5  line-v-xxl "></div>
+                </div>
+            </div>
+            <div class="marg-s">
+                <span class="font-i font-s">Use minh5 or set a custom height</span>
+            </div>
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s  marg-v-l" id="sectionFigures">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Figures</span>
+                <hr>
+            </div>
+
             <table class="table">
 
                 <tr>
@@ -737,19 +1337,33 @@
             </table>
 
 
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionTables">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Tables</span>
+                <hr>
+            </div>
+
             <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Tables</h2>
 
+            <h4>"table"</h4>
             <table class="table">
-                <tr>
-                    <th></th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
 
-                </tr>
+                    </tr>
+                </thead>
                 <tr>
                     <th>John Doe</th>
                     <td>213</td>
@@ -784,9 +1398,70 @@
                 </tr>
 
 
+
             </table>
             <div class="separator-v-l"></div><!-- SEP -->
-            <h4 class="color">"hoverable-table"</h4>
+            <h4>"colored"</h4>
+            <table class="table colored">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>John Doe</th>
+                        <td>213</td>
+                        <td>34</td>
+                        <td>125</td>
+                        <td>64</td>
+                        <td>235</td>
+                    </tr>
+                    <tr>
+                        <th>Crystal Smith </th>
+                        <td>56</td>
+                        <td>89</td>
+                        <td>90</td>
+                        <td>75</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <th>Carl Fenix</th>
+                        <td>45</td>
+                        <td>87</td>
+                        <td>34</td>
+                        <td>68</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <th>Megan Davis</th>
+                        <td>202</td>
+                        <td>198</td>
+                        <td>174</td>
+                        <td>215</td>
+                        <td>164</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th> </th>
+                        <td>516</td>
+                        <td>408</td>
+                        <td>423</td>
+                        <td>422</td>
+                        <td>535</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+            <div class="separator-v-l"></div><!-- SEP -->
+            <h4>"hoverable-table"</h4>
             <table class="table hoverable-table">
                 <tr>
                     <th></th>
@@ -833,7 +1508,7 @@
 
             </table>
             <div class="separator-v-l"></div><!-- SEP -->
-            <h4 class="color">"bordered-table"</h4>
+            <h4>"bordered-table"</h4>
             <table class="table bordered-table">
                 <tr>
                     <th></th>
@@ -879,342 +1554,308 @@
 
 
             </table>
-
-
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Dropdown</h2>
-
-            <div class="dropdown">
-                <span>Mouse over me</span>
-                <div class="dropdown-content">
-                    <div>Lagunite #1</div>
-                    <div>Lagunite #2</div>
-                    <div>Lagunite #3</div>
-                    <div>Lagunite #4</div>
-                    <div>Lagunite #5</div>
-                </div>
-            </div>
-
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Avatars</h2>
-            <table class="table">
-
-                <tr>
-                    <th>
-                        <pre>class=</pre>
-                    </th>
-
-                    <th>
-                        <pre>"avatar micro"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar small"</pre>
-                    </th>
-
-                    <th>
-                        <pre>"avatar"</pre>
-                    </th>
-                    <th>
-                        <pre>"avatar big"</pre>
-                    </th>
-
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><img class="avatar micro" src="img/avatar5.jpg"></td>
-                    <td><img class="avatar small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar big" src="img/avatar3.jpg"></td>
-
-
-
-                </tr>
-
-                <tr>
-                    <th>
-                        <pre>"alt "</pre>
-                    </th>
-                    <td><img class="avatar alt micro" src="img/avatar5.jpg"></td>
-                    <td><img class="avatar alt small" src="img/avatar4.jpg"></td>
-                    <td><img class="avatar alt" src="img/avatar2.jpg"></td>
-                    <td><img class="avatar alt big" src="img/avatar3.jpg"></td>
-
-
-
-                </tr>
-            </table>
-
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Tooltips</h2>
-
-            <div class="row">
-
-
-                <div class="padd">
-                    <button class="rel">
-                        <b class="font-l color-main">
-                            HOVER TO SHOW</b>
-                        <span class="tooltiptext bottom">tooltiptext bottom</span>
-                    </button>
-                </div>
-                <div class="padd">
-                    <button class="rel">
-                        <b class="font-l color-main">
-                            HOVER TO SHOW</b>
-                        <span class="tooltiptext top">tooltiptext top</span>
-                    </button>
-                </div>
-
-                <div class="padd">
-                    <button class="rel">
-                        <b class="font-l color-main">
-                            HOVER TO SHOW</b>
-                        <span class="tooltiptext right">tooltiptext right</span>
-                    </button>
-                </div>
-                                <div class="padd">
-                    <button class="rel">
-                        <b class="font-l color-main">
-                            HOVER TO SHOW</b>
-                        <span class="tooltiptext left">tooltiptext left</span>
-                    </button>
-                </div>
-
-
-            </div>
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Chips</h2>
-            <div class="separator-v"></div><!-- SEP -->
-            <div class="row">
-                <div class="col">
-                    <div class="chip  ">
-                        <img class="avatar micro" src="img/avatar4.jpg">
-                        <span>Lagunite</span>
-                        <h2>Veteran</h2>
-                    </div>
-
-                    <div class="chip  ">
-                        <div class="header">
-                            <img class="avatar small" src="img/avatar4.jpg">
-                        </div>
-                        <div class="content">
-                            <span>Lagunite</span>
-                            <h2>Veteran</h2>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="separator-v"></div><!-- SEP -->
-            <h4 class="color">"chip vertical"</h4>
-            <div class="row">
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar5.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar2.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar4.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-                <div class="chip vertical  ">
-                    <img class="avatar micro" src="img/avatar3.jpg">
-                    <span>28</span>
-                    <h2>15</h2>
-                </div>
-            </div>
-
-            <table class="table">
-
-                <tr>
-                    <th>
-                        <pre>"chip"</pre>
-                    </th>
-                    <th>
-                        <pre>"chip vertical"</pre>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td class="">
-
-
-                    </td>
-                    <td class="">
-
-
-
-                    </td>
-                </tr>
-            </table>
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Modals</h2>
-            <button class="btn" onclick="show('modal')">open fullscreen</button>
-            <button class="btn" onclick="show('alert')">open alert</button>
-            <button class="btn" onclick="disappearing('disappearing')">open disappearing</button>
-
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Shadows</h2>
-            <table class="table">
-
-                <tr>
-
-
-                    <th>
-                    </th>
-                    <th>
-
-                    </th>
-
-                </tr>
-                <tr>
-                    <th>
-                        <pre>"shadow-1"</pre>
-                    </th>
-
-                    <td>
-                        <div class="bg-1 border-r col wfc wm padd    shadow-1">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="bg-6 border-r col wfc wm padd  shadow-1">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="bg-4 border-r col wfc wm padd shadow-1">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>
-                        <pre>"shadow-2"</pre>
-                    </th>
-
-                    <td class="padd-v">
-                        <div class="bg-1 border-r col wfc wm padd  shadow-2">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-
-                    <td class="padd-v">
-                        <div class="bg-6 border-r col wfc wm padd shadow-2">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td class="padd-v">
-                        <div class="bg-4 border-r col wfc wm padd shadow-2">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="bg-6 ">
-                    <th>
-                        <pre>"shadow-3"</pre>
-                    </th>
-
-                    <td class="padd-v">
-                        <div class="bg-1 border-r col wfc wm padd shadow-3">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td class="padd-v">
-                        <div class="bg-6 border-r col wfc wm padd shadow-3">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                    <td class="padd-v">
-                        <div class="bg-4 border-r col wfc wm padd shadow-3">
-                            <h3>A Card</h3>
-                            <p>
-                                With shadow effect
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <div class="separator-v-l"></div><!-- SEP -->
-            <h2 class="color">Progress Bar</h2>
-
-            <div class="col centered  maxw8">
-
-                <div class="  progress-bar minw5 ">
-                    <div class="w20"></div>
-                </div>
-                <div class="  progress-bar alt minw5 ">
-                    <div class="w40"></div>
-                </div>
-                <div class="  progress-bar minw5 ">
-                    <div class="w60"></div>
-                </div>
-                <div class="  progress-bar alt minw5  ">
-                    <div class="w80"></div>
-                </div>
-                <div class="separator-v-m"></div>
-
-                <div class="progress-container minw5">
-                    <h4>Occupation </h4>
-                    <div class="  progress-bar   ">
-                        <div class="w50"></div>
-                    </div>
-                    <span>50%</span>
-                </div>
-                <div class="progress-container minw5">
-
-                    <h4>Occupation </h4>
-
-                    <div class="  progress-bar alt  ">
-                        <div class="w70"></div>
-                    </div>
-
-                    <span>70%</span>
-
-
-                </div>
-            </div>
-            <div class="separator-v-l"></div><!-- SEP -->
         </section>
 
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionLayout">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Lists</span>
+                <hr>
+            </div>
+
+
+
+            <div class="row marg-v jc-sa">
+                <div class="col">
+                    <h5>&lt;ul&gt;</h5>
+                    <ul class=" ">
+                        <li>Derick Kramer</li>
+                        <li>Keely Watts</li>
+                        <li>Grayson Best</li>
+                        <li>Brayan Best</li>
+                        <li>Fatima Ashley</li>
+                        <li>Enrique Rowe</li>
+                        <li>Cesar Boyer</li>
+                        <li>Luca Best</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>&lt;ol&gt;</h5>
+                    <ol class="">
+                        <li>Derick Kramer</li>
+                        <li>Keely Watts</li>
+                        <li>Grayson Best</li>
+                        <li>Brayan Best</li>
+                        <li>Fatima Ashley</li>
+                        <li>Enrique Rowe</li>
+                        <li>Cesar Boyer</li>
+                        <li>Luca Best</li>
+                    </ol>
+                </div>
+                <div class="col">
+                    <h5>&lt;ul class="bordered"&gt;</h5>
+                    <ul class="bordered ">
+                        <li>Derick Kramer</li>
+                        <li>Keely Watts</li>
+                        <li>Grayson Best</li>
+                        <li>Brayan Best</li>
+                        <li>Fatima Ashley</li>
+                        <li>Enrique Rowe</li>
+                        <li>Cesar Boyer</li>
+                        <li>Luca Best</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>&lt;ol class="alt"&gt;</h5>
+                    <ol class="alt">
+                        <li>Derick Kramer</li>
+                        <li>Keely Watts</li>
+                        <li>Grayson Best</li>
+                        <li>Brayan Best</li>
+                        <li>Fatima Ashley</li>
+                        <li>Enrique Rowe</li>
+                        <li>Cesar Boyer</li>
+                        <li>Luca Best</li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="separator-v"></div>
+        <!---------------------------------------------------->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionLayout">
+
+            <div class="ta-l color-main">
+                <span class="font-l">Layout</span>
+                <hr>
+            </div>
+
+
+            <div class="row  jc-c">
+                <div class="marg-s">
+                    <h5>Section "row"</h5>
+                    <section class="row  jc-c  minilayout">
+                        <div class=" col bg-1 w40  h100">
+                            col w30 h100
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h5>Section "row"</h5>
+                    <section class="row jc-c  minilayout">
+                        <div class=" col bg-2 w30 h100 ">
+                            col w30 h100
+                        </div>
+                        <div class=" col bg-1 w50 h100 ">
+                            col w50 h100
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="separator-v-m"></div>
+            <div class="row jc-c">
+                <div class="marg-s">
+                    <h5>Section "col"</h5>
+                    <section class="col jc-c   minilayout">
+                        <div class=" row bg-2 h15 ">
+                            row h15
+                        </div>
+                        <div class=" row bg-1 h50 ">
+                            row h50
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h5>Section "col"</h5>
+                    <section class="col jc-c  minilayout">
+                        <div class=" row bg-2 h15 ">
+                            row h15
+                        </div>
+
+                        <div class=" row rel bg-1 h50 ">
+                            <span style="position: absolute; top: 0;">
+                                row h50
+                            </span>
+                            <div class=" col bg-3 w50 h100">
+                                col w50
+                            </div>
+                            <div class=" col bg-6 w30 h100">
+                                col w30
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row jc-c">
+                <div class="marg-s">
+                    <h5>Section "row row"</h5>
+                    <section class="row jc-c ai-c minilayout">
+                        <div class=" row jc-c ai-c rel bg-2 w40 h80 ">
+                            <span style="position: absolute; top: 0;">
+                                row w40
+                            </span>
+                            <div class="bg-3 w50 h50">
+                                w50
+                            </div>
+                            <div class="  bg-6 w30 h50">
+                                w30
+                            </div>
+                        </div>
+                        <div class=" row ai-c jc-c rel bg-1 w60 h80 ">
+                            <span style="position: absolute; top: 0;">
+                                row w60
+                            </span>
+                            <div class=" col bg-3 w50 h50">
+                                col w50
+                            </div>
+                            <div class=" rel col ai-c jc-c bg-6 w30 h50">
+                                <span style="position: absolute; top: 0;">
+                                    col w30 </span>
+                                <div class=" bg-2 h40">
+                                    h40
+                                </div>
+                                <div class=" bg-1 h30">
+                                    h30
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h5>Section "col col"</h5>
+                    <section class="col   minilayout">
+                        <div class="col  bg-2 centered h80 w80">
+                            col centered h30 w80
+                            <div class="bg-3 h50">
+                                h50
+                            </div>
+                            <div class="bg-4 w50 centered h30">
+                                w50 centered h30
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="row  jc-c">
+                <div class="marg-s">
+                    <h5>Section "row"</h5>
+                    <section class="row   minilayout">
+                        <div class=" col bg-1 w30 center  h30">
+                            col w30 h30 center
+                        </div>
+                    </section>
+                </div>
+                <div class="marg-s">
+                    <h5>Section "row"</h5>
+                    <section class="row jc-c  minilayout">
+
+                        <div class=" col bg-1 w30 centered  h30">
+                            col w30 h30 centered
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="separator-v-m"></div>
+            <h5>Section "rel"</h5>
+            <section class="row  centered w90 bg-2 padd-v-s radius-l">
+
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-tl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-tl </div>
+                        <div class=" circle float-tl ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-tc </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-bc </div>
+                        <div class=" circle float-tc ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-tl </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-tr</div>
+                        <div class=" circle float-tr ">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" marg-s col w30 ai-c">
+                    <span> rel -> float-cl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-cl </div>
+                        <div class=" circle float-cl ">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="marg-s col w30 ai-c">
+                    <span> rel </span>
+                    <div class="minw3  rel bg-4  minh4 rounded">
+                        <div class=" circle  ">
+                        </div>
+                    </div>
+                </div>
+                <div class=" marg-s col w30 ai-c">
+                    <span> rel -> float-cr </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-cr </div>
+                        <div class=" circle float-cr ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-bl </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-bl </div>
+                        <div class=" circle float-bl ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-bc </span>
+                    <div class="minw3  rel bg-4   minh4  rounded">
+                        <div class=" ">
+                            float-bc </div>
+                        <div class=" circle float-bc ">
+                        </div>
+                    </div>
+                </div>
+                <div class="marg-s col w30 ai-c">
+                    <span> rel -> float-br </span>
+                    <div class="minw3  rel bg-4  minh4  rounded">
+                        <div class=" ">
+                            float-br </div>
+                        <div class=" circle float-br ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
     </main>
+
     <script src="src/lagunite.js"></script>
     <script>
         //initCarrousel('carrousel');

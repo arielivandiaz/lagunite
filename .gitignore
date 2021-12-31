@@ -1,3 +1,7 @@
+~$Libro1.xlsx
+*.xlsx
+src/toEvaluate.css
+
 *.npmrc
 # Logs
 logs
