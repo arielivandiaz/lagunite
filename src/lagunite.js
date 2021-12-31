@@ -16,7 +16,8 @@ function toggle(id) {
 /* hiddeAfter(element,time )-> Add "hidden" class to the element by id 
  *  after t (ms)
  */
-function hiddeAfter(e, t) {
+function  hiddeAfter  (id, t) {
+    var e = document.getElementById(id);
     setTimeout(function () {
         e.classList.add("hidden");
     }, t, e);
@@ -102,12 +103,12 @@ function initCarrousel(id) {
 
 
 
-function addEvent(id, evnt, funct) {
-    var element = document.getElementById(id);
+function addEvent(element, evnt, funct) {
     if (element.attachEvent)
         return element.attachEvent('on' + evnt, funct);
-    else
+    else if (element.addEventListener) {
         return element.addEventListener(evnt, funct, false);
+    } else element["on" + evnt] = funct;
 }
 
 
@@ -122,13 +123,97 @@ function addEventClick(id, funct) {
     else return;
 }
 
-function addEventClickElement(element, funct) {
 
+function addEventChange(id, funct) {
+    var element = document.getElementById(id);
 
     if (typeof (element) != 'undefined' && element != null)
         if (element.attachEvent)
-            return element.attachEvent('onclick', funct);
+            return element.attachEvent('onchange', funct);
         else
-            return element.addEventListener('click', funct, false);
+            return element.addEventListener('change', funct, false);
     else return;
+}
+
+
+
+function getValue(id) {
+    var element = document.getElementById(id);
+    if (element)
+        return element.value;
+    else
+        return null;
+}
+
+
+function setValue(id, value) {
+    var element = document.getElementById(id);
+    if (element) {
+        element.value = value;
+        return true;
+    } else
+        return false;
+}
+
+function setText(id, value) {
+    var element = document.getElementById(id);
+    if (element) {
+        element.textContent = value;
+        return true;
+    } else
+        return false;
+}
+
+//Usage :  document.getElementById("xTable").appendChild(createTableFromObj(
+function createTableFromObj(obj) {
+
+    var table = document.createElement('table');
+    table.classList.add("table");
+    var tableHead = document.createElement('thead');
+    var tableHeadRow = document.createElement('tr');
+    let keys = Object.keys(obj);
+    console.log(keys.length);
+    for (var j = 0; j < keys.length; j++) {
+        let th = document.createElement('th');
+        th.appendChild(document.createTextNode(keys[j]));
+
+        tableHeadRow.appendChild(th);
+    }
+    tableHead.appendChild(tableHeadRow);
+
+    var tableBody = document.createElement('tbody');
+
+    for (var i = 0; i < obj[keys[0]].length; i++) {
+        let tr = document.createElement('tr');
+
+        for (var j = 0; j < keys.length; j++) {
+            let td = document.createElement('td');
+            td.appendChild(document.createTextNode(obj[keys[j]][i]));
+            tr.appendChild(td);
+        }
+        tableBody.appendChild(tr);
+    }
+    table.appendChild(tableHead);
+    table.appendChild(tableBody);
+    return table;
+}
+
+
+function removeAllChildNodes(id) {
+
+    var element = document.getElementById(id);
+    if (element) {
+        while (element.firstChild) {
+            element.removeChild(element.firstChild);
+        }
+        return true;
+    } else
+        return false;
+}
+
+
+function delay(t) {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve('') }, t);
+    })
 }
