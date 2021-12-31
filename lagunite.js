@@ -1,17 +1,6 @@
-    function show(id) {
-        document.getElementById(id).classList.remove("hidden");
-    }
+/**
+ * Lagunite v0.50.0
+ * Visit lagunite.com
+ */
 
-    function hidde(id) {
-        document.getElementById(id).classList.add("hidden");
-    }
-
-    function toggle(id) {
-        document.getElementById(id).classList.toggle("hidden");
-    }
-
-
-    function toggleItems(id1, id2) {
-        toggle(id1);
-        toggle(id2)
-    }
+"use strict";function show(e){var t=document.getElementById(e);t.classList.contains("hidden")&&t.classList.remove("hidden")}function hidde(e){document.getElementById(e).classList.add("hidden")}function toggle(e){document.getElementById(e).classList.toggle("hidden")}function hiddeAfter(e,t){var n=document.getElementById(e);setTimeout(function(){n.classList.add("hidden")},t,n)}function addClass(e,t){var n=document.getElementById(e);n.classList.contains(t)||n.classList.add(t)}function removeClass(e,t){var n=document.getElementById(e);n.classList.contains(t)&&n.classList.remove(t)}function toggleClass(e,t){document.getElementById(e).classList.toggle(t)}function updateInput(e,t){document.getElementById(e).value=t}function updateText(e,t){document.getElementById(e).textContent=t}function showMenu(){var e=document.getElementById("menuBurger");e.classList.remove("scale-out-tr"),e.classList.add("scale-in-tr"),e.classList.remove("hidden")}function hideMenu(){var e=document.getElementById("menuBurger");e.classList.remove("scale-in-tr"),e.classList.add("scale-out-tr"),hiddeAfter(e,300)}function disappearing(e){var t=document.getElementById(e);show(e),addClass(e,"disappearing"),hiddeAfter(t,3e3)}function carrousel(e){for(var t=document.getElementById("carrousel").children,n=(e=0,0);n<t.length;n++)t[n].classList.contains("img-in")&&(t[n].classList.remove("img-in"),t[n].classList.add("img-out"),e=n);(e+=1)==t.length&&(e=0),t[e].classList.remove("img-out"),t[e].classList.add("img-in")}function initCarrousel(e){setInterval(function(){carrousel(e)},1500)}function addEvent(e,t,n){return e.attachEvent?e.attachEvent("on"+t,n):e.addEventListener?e.addEventListener(t,n,!1):void(e["on"+t]=n)}function addEventClick(e,t){var n=document.getElementById(e);return void 0!==n&&null!=n?n.attachEvent?n.attachEvent("onclick",t):n.addEventListener("click",t,!1):void 0}function addEventChange(e,t){var n=document.getElementById(e);return void 0!==n&&null!=n?n.attachEvent?n.attachEvent("onchange",t):n.addEventListener("change",t,!1):void 0}function getValue(e){var t=document.getElementById(e);return t?t.value:null}function setValue(e,t){var n=document.getElementById(e);return!!n&&(n.value=t,!0)}function setText(e,t){var n=document.getElementById(e);return!!n&&(n.textContent=t,!0)}function createTableFromObj(e){var t=document.createElement("table");t.classList.add("table");var n=document.createElement("thead"),d=document.createElement("tr"),a=Object.keys(e);console.log(a.length);for(var c=0;c<a.length;c++){var i=document.createElement("th");i.appendChild(document.createTextNode(a[c])),d.appendChild(i)}n.appendChild(d);for(var o=document.createElement("tbody"),l=0;l<e[a[0]].length;l++){var s=document.createElement("tr");for(c=0;c<a.length;c++){var r=document.createElement("td");r.appendChild(document.createTextNode(e[a[c]][l])),s.appendChild(r)}o.appendChild(s)}return t.appendChild(n),t.appendChild(o),t}function removeAllChildNodes(e){var t=document.getElementById(e);if(t){for(;t.firstChild;)t.removeChild(t.firstChild);return!0}return!1}function delay(t){return new Promise(function(e){setTimeout(function(){e("")},t)})}
