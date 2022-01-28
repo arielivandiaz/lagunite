@@ -18,6 +18,8 @@
             border: var(--border);
             border-radius: 8px;
             padding: 5px;
+            width: 250px;
+            min-height: 150px;
         }
 
         header {
@@ -26,6 +28,19 @@
 
         header img {
             max-width: 250px;
+        }
+
+        section.col {
+
+            justify-content: unset;
+            align-items: unset;
+        }
+
+
+        section.row {
+
+            align-items: unset;
+            justify-content: unset;
         }
     </style>
 
@@ -78,13 +93,24 @@
 
 
         </table>
+
+
+
+
+        <div>
+
+            *By default the classes <span class="italic"> row &amp; col</span> use <span class="italic"> justify-content: center;
+                align-items: center;</span> but here they are set to <span class="italic">unset</span> to illustrate this example of using flex.
+
+
+        </div>
         <div class="vh10"> </div>
         <h1>Justify Content</h1>
-        <h3>"col justify-content (using align items center)"</h3>
+        <h3>"col justify-content "</h3>
         <div class="row  maxw11 center jc-c">
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-fs"</h3>
-                <section class="col  vh20  jc-fs ai-c  ">
+                <section class="col  vh20  jc-fs  ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -94,9 +120,9 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-fe"</h3>
-                <section class="col  vh20  jc-fe ai-c  ">
+                <section class="col  vh20  jc-fe   ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -106,9 +132,9 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-c"</h3>
-                <section class="col  vh20  jc-c ai-c  ">
+                <section class="col  vh20  jc-c   ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -119,9 +145,9 @@
                 </section>
             </div>
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-sb"</h3>
-                <section class="col  vh20  jc-sb ai-c  ">
+                <section class="col  vh20  jc-sb   ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -131,9 +157,9 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-sa"</h3>
-                <section class="col  vh20 jc-sa ai-c ">
+                <section class="col  vh20 jc-sa  ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -144,9 +170,9 @@
                 </section>
             </div>
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-se"</h3>
-                <section class="col  vh20  jc-se ai-c  ">
+                <section class="col  vh20  jc-se   ">
                     <div class="padd-s w20 bgg-1 border-r">
                     </div>
                     <div class="padd-s w50 marg-v-xs bgg-1 border-r">
@@ -161,36 +187,37 @@
 
         <h3>"row justify-content "</h3>
         <div class="row maxw11 center jc-c">
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-fs"</h3>
                 <section class="row  vh10  jc-fs  ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-start
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
+
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-fe"</h3>
                 <section class="row  vh10  jc-fe  ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-end
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-c"</h3>
                 <section class="row  vh10  jc-c  ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         center
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
@@ -198,24 +225,24 @@
                 </section>
             </div>
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-sb"</h3>
                 <section class="row  vh10  jc-sb  ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         space-between
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-sa"</h3>
                 <section class="row  vh10 jc-sa ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         space-around
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
@@ -223,12 +250,12 @@
                 </section>
             </div>
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"jc-se"</h3>
                 <section class="row  vh10  jc-se  ">
                     <div class="padd-s w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         space-evenly
                     </div>
                     <div class="padd-s w5 bgg-1 border-r">
@@ -236,11 +263,11 @@
                 </section>
             </div>
         </div>
-<div class="vh10"> </div>
+        <div class="vh10"> </div>
         <h1>Aling Items</h1>
         <h3>"col align items "</h3>
         <div class="row  ac-c">
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-fs"</h3>
                 <section class="col  vh20  ai-fs   ">
                     <div class="padd-s w20 bgg-1 border-r">
@@ -252,7 +279,7 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-c"</h3>
                 <section class="col  vh20  ai-c ">
                     <div class="padd-s w20 bgg-1 border-r">
@@ -264,7 +291,7 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-fe"</h3>
                 <section class="col  vh20  ai-fe ">
                     <div class="padd-s w20 bgg-1 border-r">
@@ -276,12 +303,12 @@
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-s"</h3>
                 <section class="col  vh20  ai-s ">
                     <div class="padd-s  bgg-1 border-r">
                     </div>
-                    <div class="padd-s  w50 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s   marg-v-xs bgg-1 border-r">
                         stretch
                     </div>
                     <div class="padd-s   bgg-1 border-r">
@@ -293,48 +320,49 @@
 
         <h3>"row align items "</h3>
         <div class="row  ac-sa">
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-fs"</h3>
                 <section class="row  vh20  ai-fs   ">
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-start
                     </div>
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
+
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-c"</h3>
                 <section class="row  vh20  ai-c ">
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         center
                     </div>
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-fe"</h3>
                 <section class="row  vh20  ai-fe ">
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-end
                     </div>
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ai-s"</h3>
                 <section class="row  vh20  ai-s ">
                     <div class="padd-s w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s  marg-h-xs bgg-1 border-r">
                         stretch
                     </div>
                     <div class="padd-s w10 bgg-1 border-r">
@@ -342,154 +370,147 @@
                 </section>
             </div>
         </div>
-<div class="vh10"> </div>
+        <div class="vh10"> </div>
         <h1>Aling Content</h1>
-        <h3>"row align items (works with multiple lines)"</h3>
+        <h3>"row align items (use with multiple lines)"</h3>
 
         <div class="row maxw11 center ac-sa">
-            <div class="xminw3 dminw5 dmarg xmarg-s ">
+            <div class=" dmarg xmarg-s ">
                 <h3>"ac-fs"</h3>
-                <section class="row  vh20  ac-fs  ">
-                    <div class="padd-s w10 bgg-1 border-r">
+                <section class="row  vh20 maxw5 ac-fs  ">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w15 bgg-1 border-r">
-                    </div>
-
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-start
                     </div>
-
-                    <div class="padd-s w15 bgg-1 border-r">
+                    <div class="padd-s w20 bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
                 </section>
             </div>
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-c"</h3>
                 <section class="row  vh20  ac-c  ">
-                    <div class="padd-s w10 bgg-1 border-r">
+                   <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w15 bgg-1 border-r">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         center
                     </div>
 
-                    <div class="padd-s w15 bgg-1 border-r">
+                 <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
 
 
 
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-fe"</h3>
                 <section class="row  vh20  ac-fe  ">
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w15 bgg-1 border-r">
-                    </div>
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                 <div class="padd-s w20 marg-h-xs bgg-1 border-r">
+                    </div>
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
+                    </div>
+                    
+
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         flex-end
                     </div>
 
-                    <div class="padd-s w15 bgg-1 border-r">
+             <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
 
 
 
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-s"</h3>
-                <section class="row  vh20  ac-s  ">
-                    <div class="padd-s w10 bgg-1 border-r">
+                <section class="row  vh20 maxw5 ac-s  ">
+                           <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w15 bgg-1 border-r">
-                    </div>
+                    
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         stretch
                     </div>
-
-                    <div class="padd-s w15 bgg-1 border-r">
+           <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-
-
 
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-sa"</h3>
-                <section class="row  vh20  ac-sa  ">
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w15 bgg-1 border-r">
-                    </div>
+                <section class="row  vh20 maxw5  ac-sa  ">
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+
+           <div class="padd-s w20 marg-h-xs bgg-1 border-r">
+                    </div>
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
+                    </div>
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         space-around
                     </div>
 
-                    <div class="padd-s w15 bgg-1 border-r">
+           <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
+
+
+
+
 
 
 
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-sb"</h3>
-                <section class="row  vh20  ac-sb  ">
-                    <div class="padd-s w10 bgg-1 border-r">
+                <section class="row  vh20  ac-sb   ">
+                    <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s w15 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s w30 marg-h-xs bgg-1 border-r">
                         space-between
                     </div>
 
-                    <div class="padd-s w15 bgg-1 border-r">
+                        <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
-                    <div class="padd-s w10 bgg-1 border-r">
+                               <div class="padd-s w20 marg-h-xs bgg-1 border-r">
                     </div>
+
+
 
 
 
@@ -497,10 +518,10 @@
             </div>
         </div>
         <div class="vh10"></div>
-        <h3>"col align items (works with multiple lines)"</h3>
+        <h3>"col align items (use with multiple lines)"</h3>
         <div class="row maxw11 center ac-sa">
 
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-fs"</h3>
                 <section class="col  vh20  ac-fs  ">
 
@@ -520,20 +541,14 @@
                     </div>
                     <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
+           
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-c"</h3>
                 <section class="col  vh20  ac-c  ">
 
+              
                     <div class="padd-s w30 marg-v-xs bgg-1 border-r">
                         center
                     </div>
@@ -542,29 +557,27 @@
                     </div>
                     <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                            <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
                     <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                            <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
                     <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    </div>        <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
+           
+        
+       
+         
+       
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-fe"</h3>
                 <section class="col  vh20  ac-fe  ">
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                  <div class="padd-s w30 marg-v-xs bgg-1 border-r">
                         flex-end
                     </div>
 
@@ -580,107 +593,81 @@
                     </div>
                     <div class="padd-s marg-xs w10 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
-                <h3>"ac-s (ai-c)"</h3>
-                <section class="col  vh20  ac-s ai-c ">
+            <div class=" dmarg xmarg-s">
+                <h3>"ac-s"</h3>
+                <section class="col  vh20  ac-s  ">
 
-                    <div class="padd-s w30 marg-v-xs bgg-1 border-r">
+                    <div class="padd-s  marg-v-xs bgg-1 border-r">
                         stretch
                     </div>
 
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs  bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs  bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs  bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                           <div class="padd-s marg-xs  bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                           <div class="padd-s marg-xs  bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-
+            
+           
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-sa"</h3>
                 <section class="col  vh20  ac-sa  ">
 
+                 
                     <div class="padd-s w30 marg-v-xs bgg-1 border-r">
                         space-around
                     </div>
 
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                           <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                   
+                           <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
+                   
+                   
 
                 </section>
             </div>
-            <div class="xminw3 dminw5 dmarg xmarg-s">
+            <div class=" dmarg xmarg-s">
                 <h3>"ac-sa"</h3>
                 <section class="col  vh20  ac-sb  ">
 
+            
+                   
                     <div class="padd-s w30 marg-v-xs bgg-1 border-r">
                         space-between
                     </div>
 
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                  <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                    <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                          <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
+                          <div class="padd-s marg-xs w5 bgg-1 border-r">
                     </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-                    <div class="padd-s marg-xs w10 bgg-1 border-r">
-                    </div>
-
+                    
+                   
                 </section>
             </div>
         </div>
@@ -690,18 +677,18 @@
         <h1>"align self "</h1>
 
         <h3>"align self in a row "</h3>
-        <div class="row  minw10  center minh5 bordered border-r padd-s ">
-            <div class="padd-s as-fs w10 bgg-1 border-r">
+        <div class="row maxvw90  dminw8   center minh5 bordered border-r padd-s f-nowrap">
+            <div class="padd-s as-fs w20 bgg-1 border-r">
                 flex-start
             </div>
 
-            <div class="padd-s as-c w10 bgg-1 border-r">
+            <div class="padd-s as-c w20 bgg-1 border-r">
                 center
             </div>
-            <div class="padd-s as-fe w10 bgg-1 border-r">
+            <div class="padd-s as-fe w20 bgg-1 border-r">
                 flex-end
             </div>
-            <div class="padd-s as-s w10 bgg-1 border-r">
+            <div class="padd-s as-s w20 bgg-1 border-r">
                 stretch
             </div>
         </div>
@@ -709,15 +696,15 @@
         <div class="vh10"></div>
         <h3>"align self in a col "</h3>
         <h4>use "f-nowrap</h4>
-        <div class="col  minw10  center minh5 bordered border-r padd-s f-nowrap">
-            <div class="padd-s as-fs w10 bgg-1 border-r">
+        <div class="col  maxvw90 dminw8  center minh5 bordered border-r padd-s f-nowrap">
+            <div class="padd-s as-fs w20 bgg-1 border-r">
                 flex-start
             </div>
 
-            <div class="padd-s as-c w10 bgg-1 border-r">
+            <div class="padd-s as-c w20 bgg-1 border-r">
                 center
             </div>
-            <div class="padd-s as-fe w10 bgg-1 border-r">
+            <div class="padd-s as-fe w20 bgg-1 border-r">
                 flex-end
             </div>
             <div class="padd-s as-s  bgg-1 border-r">
@@ -734,18 +721,16 @@
                 <h3>Same width childrens</h3>
                 <h4>"row" with "flex1" childrens</h4>
                 <section class="row  vh20  js-fe  ">
-                    <div class=" padd-s  bgg-1 border-r flex1" >
+                    <div class=" padd-s  marg-h-xs  bgg-1 border-r flex1">
                     </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
-                    </div>
+               
 
-                    <div class=" padd-s  marg-v-xs bgg-1 border-r flex1">
+                    <div class=" padd-s  marg-h-xs bgg-1 border-r flex1">
                         flex : 1
                     </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
+                    <div class=" padd-s  marg-h-xs  bgg-1 border-r flex1">
                     </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
-                    </div>
+       
 
                 </section>
             </div>
@@ -754,18 +739,16 @@
                 <h3>Same width childrens</h3>
                 <h4>"col" with "flex1" childrens</h4>
                 <section class="col  vh20  js-c  ">
-                    <div class=" padd-s  bgg-1 border-r flex1">
-                    </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
+            
+                    <div class=" padd-s   marg-v-xs  bgg-1 border-r flex1">
                     </div>
 
                     <div class=" padd-s  marg-v-xs bgg-1 border-r flex1">
                         flex : 1
                     </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
+                    <div class=" padd-s   marg-v-xs  bgg-1  border-r flex1">
                     </div>
-                    <div class=" padd-s  bgg-1 border-r flex1">
-                    </div>
+             
 
 
                 </section>
