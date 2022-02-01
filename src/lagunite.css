@@ -659,7 +659,7 @@ a.color-warning:active {
 /*** Shadows ***/
 .shadow,
 .shadow-1 {
-    box-shadow: 10px 10px 53px -20px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 25px -15px rgba(0, 0, 0, 0.9);
 }
 
 .shadow-2 {
@@ -2290,7 +2290,7 @@ table.hoverable-table td:hover {
 
 
 
-/* @ID: #115 */
+/* @ID: #110 */
 /* Position */
 .rel {
     position: relative;
@@ -2300,7 +2300,7 @@ table.hoverable-table td:hover {
     position: absolute;
 }
 
-/* @ID: #116 */
+/* @ID: #111 */
 /* Absolute and Floating Positioning */
 .pa-full {
     position: absolute;
@@ -2365,6 +2365,78 @@ table.hoverable-table td:hover {
 
 .pa-br {
     position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+/* @ID:  #112 */
+/* Fixed Positioning */
+.pf-full {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.pf-h {
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.pf-v {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+   
+}
+
+
+.pf-rg {
+    position: fixed;
+    right: 0;
+}
+
+.pf-lf {
+    position: fixed;
+    left: 0;
+}
+
+.pf-t {
+    position: fixed;
+    top: 0;
+}
+
+.pf-b {
+    position: fixed;
+    bottom: 0;
+}
+
+
+.pf-tl {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pf-tr {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.pf-bl {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.pf-br {
+    position: fixed;
     bottom: 0;
     right: 0;
 
@@ -10115,9 +10187,8 @@ table.hoverable-table td:hover {
 /* @ID: #toid */
 /* Display None */
 @media only screen and (min-width : 281px) and (max-width : 767px) {
-    .dhidden {
-        display: block;
-    }
+
+    
 
     .xhidden {
         display: none !important;
@@ -10130,10 +10201,7 @@ table.hoverable-table td:hover {
         display: none !important;
     }
 
-    .xhidden {
 
-        display: block;
-    }
 
 }
 
