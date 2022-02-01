@@ -26,16 +26,25 @@
 
 <body class="scrollable">
 
-    <div class="modal-fullscreen hidden" id="modal">
-        <button onclick="hidde('modal')" class="bg-1">
-            <h1>X</h1>
+    <div class="modal hidden" id="modal">
+        <button onclick="hidde('modal')" class="circle-l pa-tr marg z10">
+            <h2>X</h2>
         </button>
+        <div class="row jc-sa pa-c bg-4 padd border-r-l maxvw80 shadow marg">
+            <div class="">
+                <h1>!</h1>
+            </div>
+            <div class=" ta-lf maxvw60">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem odio, ullamcorper tristique neque vitae, rhoncus luctus neque. Pellentesque eget elit iaculis nisl scelerisque cursus et eu lectus. Cras sit amet nulla lorem. Nunc in suscipit ipsum. Proin imperdiet tempor neque euismod faucibus. Ut auctor eleifend lectus varius elementum. Nullam at dolor neque. Fusce ornare tortor eu pharetra aliquam. Vestibulum efficitur nibh vitae dui tempor mollis. Vivamus mauris nisl, efficitur at sollicitudin quis, finibus at magna. Nunc nec eros commodo, placerat felis sit amet, ornare urna. Duis molestie suscipit est, ac tempus arcu fermentum ut. Etiam faucibus sodales posuere.
+            </div>
+
+        </div>
     </div>
-    <div class="modal-fullscreen alt hidden" id="alert">
-        <div class="col vw70 vh30 bg-4 rounded shadow-1">
-            <h1>A modal alert</h1>
+    <div class="modal-fullscreen  hidden" id="alert">
+        <div class="col dvw40 xvw90 vh30 bg-4 rounded shadow-1">
+            <h2>A modal alert</h2>
             <button onclick="hidde('alert')" class="btn">
-                <h1>Close</h1>
+                <h3>Close</h3>
             </button>
         </div>
     </div>
@@ -784,6 +793,15 @@
 
         </section>
 
+
+        <div class="separator-v-l"></div><!-- SEP -->
+
+        <section class="maxw10 centered padd-h-s marg-v-l" id="sectionIcons">
+            <h2>Modals</h2>
+            <button class="btn" onclick="show('modal')">open alert</button>
+            <button class="btn" onclick="show('alert')">open fullscreen</button>
+            <button class="btn" onclick="disappearing('disappearing')">open disappearing</button>
+        </section>
         <div class="separator-v"></div>
         <!---------------------------------------------------->
 
