@@ -1,5 +1,3 @@
-rm -r -f public
+rm -r -f dist
 gulp css
 gulp js
-# gulp img
-# gulp html
