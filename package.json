@@ -1,6 +1,6 @@
 {
     "name": "@arielivandiaz/lagunite",
-    "version": "0.50.1",
+    "version": "0.50.2",
     "description": "Lagunite frontend kit",
     "repository": {
         "type": "git",
@@ -15,5 +15,4 @@
         "registry": "https://registry.npmjs.org"
     },
     "homepage": "https://lagunite.com/"
-
 }
