@@ -4,18 +4,10 @@ const minify = require('gulp-minify');
 const cleanCSS = require("gulp-clean-css");
 var uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
-var concatJS = require('gulp-concat');
-var concatCss = require('gulp-concat-css');
-const purgecss = require('gulp-purgecss');
-var htmlmin = require('gulp-htmlmin');
-var htmlreplace = require('gulp-html-replace');
-const imagemin = require('gulp-imagemin');
 const headerComment = require('gulp-header-comment');
 
 var fs = require('fs');
 var file_path = 'package.json';
-
-
 
 var pathsCSS = {
     source: './src/*.css',
@@ -26,18 +18,6 @@ var pathsJS = {
     source: './src/*.js',
     destination: './dist'
 };
-
-var pathsHTML = {
-    source: '*.html',
-    destination: './public'
-};
-
-var pathsImgs = {
-    source: './img/**/*',
-    destination: './public/img'
-};
-
-
 
 let getVersion = () => {
     return new Promise((resolve, reject) => {
@@ -68,7 +48,6 @@ gulp.task('css', async () => {
     });
 });
 
-
 gulp.task('js', async () => {
     getVersion().then((v) => {
         return gulp.src(pathsJS.source)
@@ -83,29 +62,4 @@ gulp.task('js', async () => {
         console.log("File Read Failed");
         console.log(reject);
     });
-});
-
-gulp.task('html', async () => {
-    getVersion().then((v) => {
-        return gulp.src(pathsHTML.source)
-            .pipe(htmlreplace({
-                'css': 'dist/bundle.css?v=' + v,
-                'js': 'dist/scripts.js?v=' + v
-            }))
-            .pipe(htmlmin({
-                collapseWhitespace: true
-            }))
-            .pipe(gulp.dest(pathsHTML.destination));
-
-    }).catch((reject) => {
-        console.log("File Read Failed");
-        console.log(reject);
-    });
-});
-
-
-gulp.task('img', async () => {
-    return gulp.src(pathsImgs.source)
-        .pipe(imagemin())
-        .pipe(gulp.dest(pathsImgs.destination));
 });
