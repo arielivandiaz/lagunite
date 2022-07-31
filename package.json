@@ -1,1 +1,18 @@
-{"name":"@arielivandiaz/lagunite","version":"0.50.6","description":"Lagunite frontend kit","repository":{"type":"git","url":"git+https://github.com/arielivandiaz/lagunite.git"},"author":"Ariel Ivan Diaz","license":"MIT","bugs":{"url":"https://github.com/arielivandiaz/lagunite/issues"},"publishConfig":{"registry":"https://registry.npmjs.org"},"homepage":"https://lagunite.com/"}
+{
+    "name": "lagunite",
+    "version": "0.50.6",
+    "description": "Lagunite frontend kit",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arielivandiaz/lagunite.git"
+    },
+    "author": "Ariel Ivan Diaz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/arielivandiaz/lagunite/issues"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "homepage": "https://lagunite.com/"
+}
