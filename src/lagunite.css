@@ -10890,7 +10890,7 @@ input[type="color"] {
 
 /* @ID: #351 */
 /* Input Container */
-.inputContainer {
+.input-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10899,7 +10899,7 @@ input[type="color"] {
     margin: 10px 5px;
 }
 
-.inputContainer span {
+.input-container span {
     max-width: 120px;
     margin: 10px 10px 10px 0;
     overflow-wrap: break-word;
@@ -10908,7 +10908,7 @@ input[type="color"] {
 }
 
 @media only screen and (min-width : 768px) {
-    .inputContainer span {
+    .input-container span {
         max-width: 300px;
         margin-right: 10px;
     }
@@ -11208,7 +11208,7 @@ input[type="checkbox"] {
 
 /* @ID: #356 */
 /* Radio Group */
-.radioGroup {
+.radio-group {
     border-color: var(--primary_color);
     border-style: solid;
     width: fit-content;
@@ -11222,7 +11222,7 @@ input[type="checkbox"] {
     padding: 3px 0px;
 }
 
-.radioGroup input {
+.radio-group input {
     position: absolute !important;
     clip-path: rect(0, 0, 0, 0);
     height: 0px;
@@ -11231,18 +11231,18 @@ input[type="checkbox"] {
     overflow: hidden;
 }
 
-.radioGroup label {
+.radio-group label {
     cursor: pointer;
 }
 
-.radioGroup label {
+.radio-group label {
     text-align: center;
     padding: 5px 12px;
     background: none;
     color: var(--primary_color);
 }
 
-.radioGroup input:checked + label {
+.radio-group input:checked + label {
     background-color: var(--primary_color);
     background: var(--primary_background);
     color: var(--text_color_alt);
@@ -11253,11 +11253,11 @@ input[type="checkbox"] {
 
 /* @ID: #357 */
 /* Radio Buttons */
-.radioBtns {
+.radio-btns {
     margin: 25px 0;
 }
 
-.radioBtns input {
+.radio-btns input {
     position: absolute !important;
     clip-path: rect(0, 0, 0, 0);
     height: 1px;
@@ -11266,7 +11266,7 @@ input[type="checkbox"] {
     overflow: hidden;
 }
 
-.radioBtns label {
+.radio-btns label {
     cursor: pointer;
     text-align: center;
     padding: 5px 12px;
@@ -11279,7 +11279,7 @@ input[type="checkbox"] {
     margin: 0 5px;
 }
 
-.radioBtns input:checked + label {
+.radio-btns input:checked + label {
     background: var(--primary_background);
     border: none;
     padding: 7px 15px;
@@ -11287,17 +11287,17 @@ input[type="checkbox"] {
     box-shadow: 0 0px 5px 0px var(--primary_color);
 }
 
-.radioBtns label:hover {
+.radio-btns label:hover {
     box-shadow: 0 0px 15px 0px var(--primary_color);
 }
 
 /* @ID: #358 */
 /* Radio Divs */
-.radioDivs {
+.radio-divs {
     margin: 25px 0;
 }
 
-.radioDivs input {
+.radio-divs input {
     position: absolute !important;
     clip-path: rect(0, 0, 0, 0);
     height: 1px;
@@ -11306,7 +11306,7 @@ input[type="checkbox"] {
     overflow: hidden;
 }
 
-.radioDivs label {
+.radio-divs label {
     cursor: pointer;
     text-align: center;
     background: none;
@@ -11315,17 +11315,17 @@ input[type="checkbox"] {
     display: inline-block;
 }
 
-.radioDivs label div {
+.radio-divs label div {
     background: var(--primary_background);
 }
 
 
 
-.radioDivs label:hover div {
+.radio-divs label:hover div {
     box-shadow: 0 0px 15px 0px var(--primary_color);
 }
 
-.radioDivs input:checked + label div {
+.radio-divs input:checked + label div {
     box-shadow: 0 0px 15px 0px var(--primary_color);
     transform: scale(1.3);
 }
@@ -11333,7 +11333,7 @@ input[type="checkbox"] {
 
 /* @ID: #359 */
 /* Update File Button */
-.fileBtn {
+.file-btn {
     box-shadow: none;
     border-radius: 8px;
     border: 2px solid 75px;
@@ -11349,11 +11349,11 @@ input[type="checkbox"] {
     width: min-content;
 }
 
-.fileBtn input[type="file"] {
+.file-btn input[type="file"] {
     display: none;
 }
 
-.fileBtn span {
+.file-btn span {
     display: block;
     color: #777;
 }
@@ -11365,13 +11365,13 @@ input[type='range']:hover {
 }
 
 
-.rangeContainer {
+.range-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rangeContainer input[type="number"] {
+.range-container input[type="number"] {
     min-width: 0 !important;
     text-align: center;
 }
