@@ -1,11 +1,11 @@
 /* show(id)-> Remove "hidden" class to the element by id */
-function show(id) {
+export const show = (id) => {
     var x = document.getElementById(id);
     if (x.classList.contains("hidden"))
         x.classList.remove("hidden");
 }
 /* hidde(id)-> Add "hidden" class to the element by id */
-function hidde(id) {
+export const hidde = (id) => {
     document.getElementById(id).classList.add("hidden");
 }
 /* toggle(id)-> Toggle "hidden" class to the element by id */
