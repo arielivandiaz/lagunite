@@ -1,11 +1,15 @@
 const path = require("path");
+const webpack = require("webpack");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const pkg = require("./package.json");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
   target: "web",
-  entry: {
-    index: "./src/lagunite.js",
-  },
+  entry: "./src/lagunite.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "lagunite.js",
@@ -22,11 +26,31 @@ const config = {
       cleanStaleWebpackAssets: false,
       cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, "./dist")],
     }),
+    new webpack.BannerPlugin({
+      banner: `@ Name: ${pkg.name}
+@ Version: ${pkg.version}
+@ Author: ${pkg.author}
+@ Desc: ${pkg.description} `,
+    }),
+    new webpack.LoaderOptionsPlugin({
+        options: {
+          postcss: [
+            autoprefixer(),
+          ]
+        }
+      })
   ],
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false,
+      }),
+    ],
+  },
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: [
           {
@@ -35,10 +59,11 @@ const config = {
               presets: ["@babel/preset-env"],
             },
           },
-          {
-            loader: "ts-loader",
-          },
         ],
+      },
+      {
+        test: /\.css$/, 
+        use: ['style-loader', 'css-loader', 'postcss-loader'] 
       },
     ],
   },
