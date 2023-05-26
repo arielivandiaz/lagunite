@@ -35,6 +35,7 @@
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.4",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "cssnano": "^6.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.0",
