@@ -49,8 +49,7 @@ const config = {
         minimizerOptions: {
           preset: [
             'default',
-            {
-            
+            {          
             },
           ],
         },

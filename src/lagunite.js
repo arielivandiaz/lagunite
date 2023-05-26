@@ -31,8 +31,7 @@ export const toggle = (i) => {
   if (e.classList.contains("hidden")) e.classList.toggle("hidden");
 };
 
-/* hiddeAfter(element,time )-> Add "hidden" class to the element after t (ms)
- */
+/* hiddeAfter(element,time )-> Add "hidden" class to the element after t (ms) */
 export const hiddeAfter = (i, t) => {
   const e = getElement(i);
   setTimeout(
