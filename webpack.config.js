@@ -1,15 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
 const pkg = require("./package.json");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
 const config = {
   target: "web",
-  entry: "./src/lagunite.js",
+  entry:  ['./src/lagunite-config.css', './src/lagunite.css', "./src/lagunite.js"],
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "lagunite.js",
@@ -38,13 +38,26 @@ const config = {
             autoprefixer(),
           ]
         }
-      })
+      }),
+      new MiniCssExtractPlugin({
+        filename: 'lagunite.css',
+      }),
   ],
   optimization: {
     minimizer: [
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            'default',
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
       new TerserPlugin({
         extractComments: false,
-      }),
+      })
     ],
   },
   module: {
@@ -62,14 +75,14 @@ const config = {
         ],
       },
       {
-        test: /\.css$/, 
-        use: ['style-loader', 'css-loader', 'postcss-loader'] 
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
     ],
   },
   resolve: {
-    extensions: [".js"],
   },
+  stats: 'minimal', // Opcional, muestra estadísticas de construcción más limpias en la consola
 };
 
 module.exports = (env, argv) => {
