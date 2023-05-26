@@ -50,7 +50,7 @@ const config = {
           preset: [
             'default',
             {
-              discardComments: { removeAll: true },
+            
             },
           ],
         },
