@@ -1,1 +1,46 @@
-{"name":"@arielivandiaz/lagunite","version":"0.60.7","description":"Lagunite frontend kit","repository":{"type":"git","url":"git+https://github.com/arielivandiaz/lagunite.git"},"author":"Ariel Ivan Diaz","license":"MIT","bugs":{"url":"https://github.com/arielivandiaz/lagunite/issues"},"publishConfig":{"registry":"https://npm.pkg.github.com"},"homepage":"https://github.com/arielivandiaz/lagunite#readme"}
+{
+  "name": "lagunite",
+  "version": "0.60.7",
+  "description": "Lagunite web kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielivandiaz/lagunite.git"
+  },
+  "author": "Ariel Ivan Diaz",
+  "keywords": [
+    "lagunite",
+    "frontend framework",
+    "css",
+    "modern css"
+  ],
+  "license": "MIT",
+  "main": "./dist/lagunite.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "bugs": {
+    "url": "https://github.com/arielivandiaz/lagunite/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "homepage": "https://github.com/arielivandiaz/lagunite#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.4",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.84.1",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.1.1"
+  }
+}
