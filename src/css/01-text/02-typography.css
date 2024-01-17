@@ -1,0 +1,112 @@
+
+/********************** Text Format ********************************************/
+
+/* @ID: #020 */
+/* Text Transform */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* @ID: #021 */
+/* Letter Spaccing **/
+.letter-spacing-xs {
+    letter-spacing: -0.1rem;
+}
+
+.letter-spacing-s {
+    letter-spacing: -0.05rem;
+}
+
+.letter-spacing {
+    letter-spacing: 0.05rem;
+}
+
+.letter-spacing-l {
+    letter-spacing: 0.1em;
+}
+
+.letter-spacing-xl {
+    letter-spacing: 0.2em;
+}
+
+.letter-spacing-xxl {
+    letter-spacing: 0.4rem;
+}
+
+/* @ID: #022 */
+/* Line Height **/
+.lh-xs {
+    line-height: 0.85
+}
+
+.lh-s {
+    line-height: 0.95
+}
+
+.lh {
+    line-height: 1.5
+}
+
+.lh-l {
+    line-height: 1.7
+}
+
+.lh-xl {
+    line-height: 2
+}
+
+.lh-xxl {
+    line-height: 2.5
+}
+
+/********************** Text Align ********************************************/
+
+/* @ID: #030 */
+/* Text Align **/
+.ta-c {
+    text-align: center;
+}
+
+.ta-lf {
+    text-align: left;
+}
+
+.ta-rg {
+    text-align: right;
+
+}
+
+.ta-j {
+    text-align: justify;
+}
+
+.ta-j {
+    text-align: justify-all;
+}
+
+.ta-cl,
+.ta-cr {
+    text-align: center;
+}
+
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #030x */
+    /* Text Align **/
+    .ta-cl {
+        text-align: left;
+    }
+
+    .ta-cr {
+        text-align: right;
+    }
+}

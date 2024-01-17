@@ -1,0 +1,311 @@
+
+/********************** Figures ********************************************/
+
+/* @ID: #070 */
+/* Lines hr */
+.hr-l {
+    border-width: 5px 0 0 0;
+}
+
+.hr-xl {
+    border-width: 10px 0 0 0;
+}
+
+.hr-xxl {
+    border-width: 25px 0 0 0;
+}
+
+
+hr.color {
+    border-color: var(--text_color)
+}
+
+hr.color-alt {
+    border-color: var(--text_color_alt)
+}
+
+hr.color-main {
+    border-color: var(--primary_color)
+}
+
+hr.color-main-alt {
+    border-color: var(--primary_color_alt)
+}
+
+hr.color-light {
+    border-color: var(--primary_color_light)
+}
+
+hr.color-dark {
+    border-color: var(--primary_color_dark)
+}
+
+hr.color-success {
+    border-color: var(--color_success)
+}
+
+hr.color-warning {
+    border-color: var(--color_warning)
+}
+
+hr.color-error {
+    border-color: var(--color_error)
+}
+
+/* @ID: #071 */
+/* Lines V */
+.line-v,
+.line-v-l,
+.line-v-xl,
+.line-v-xxl {
+    border-style: solid;
+    height: 100%;
+    border-color: var(--primary_color);
+}
+
+.line-v {
+    border-width: 0 0 0 2px;
+}
+
+.line-v-l {
+    border-width: 0 0 0 5px;
+}
+
+.line-v-xl {
+    border-width: 0 0 0 10px;
+}
+
+.line-v-xxl {
+    border-width: 0 0 0 25px;
+}
+
+
+.line-v.color {
+    border-color: var(--text_color)
+}
+
+.line-v.color-alt {
+    border-color: var(--text_color_alt)
+}
+
+.line-v.color-main {
+    border-color: var(--primary_color)
+}
+
+.line-v.color-main-alt {
+    border-color: var(--primary_color_alt)
+}
+
+.line-v.color-light {
+    border-color: var(--primary_color_light)
+}
+
+.line-v.color-dark {
+    border-color: var(--primary_color_dark)
+}
+
+.line-v.color-success {
+    border-color: var(--color_success)
+}
+
+.line-v.color-warning {
+    border-color: var(--color_warning)
+}
+
+.line-v.color-error {
+    border-color: var(--color_error)
+}
+
+/* @ID: #072 */
+/* Primitives Figures */
+.square,
+.rounded,
+.drounded,
+.xrounded,
+.circle,
+.tear,
+.square-s,
+.rounded-s,
+.drounded-s,
+.xrounded-s,
+.circle-s,
+.tear-s,
+.square-l,
+.rounded-l,
+.drounded-l,
+.xrounded-l,
+.circle-l,
+.tear-l {
+    background: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color_alt);
+}
+
+.square-s,
+.rounded-s,
+.circle-s,
+.tear-s {
+    width: 25px;
+    height: 25px;
+}
+
+.square,
+.rounded,
+.circle,
+.tear {
+    width: 50px;
+    height: 50px;
+}
+
+.square-l,
+.rounded-l,
+.circle-l,
+.tear-l {
+    width: 75px;
+    height: 75px;
+}
+
+.rounded-s {
+    border-radius: 5px;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.rounded-l {
+    border-radius: 20px;
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    .drounded-s .drounded,
+    .drounded-l {
+        border-radius: none;
+    }
+
+
+    .xrounded-s {
+        border-radius: 10px;
+    }
+
+    .xrounded {
+        border-radius: 20px;
+    }
+
+    .xrounded-l {
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    .xrounded-s .xrounded,
+    .xrounded-l {
+        border-radius: none;
+    }
+
+    .drounded-s {
+        border-radius: 10px;
+    }
+
+    .drounded {
+        border-radius: 20px;
+    }
+
+    .drounded-l {
+        border-radius: 30px;
+    }
+}
+
+.circle,
+.circle-s,
+.circle-l {
+    border-radius: 50%;
+}
+
+.tear,
+.tear-s,
+.tear-l {
+    border-radius: 50% 0 50% 50%;
+}
+
+.square,
+.square-s,
+.square-l {
+    border-radius: 5px;
+}
+
+.triangle,
+.triangle-s,
+.triangle-l {
+    width: 0;
+    height: 0;
+    color: var(--text_color_alt);
+    border-radius: 5px;
+}
+
+.triangle {
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-bottom: 46px solid var(--primary_color);
+}
+
+.triangle-s {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid var(--primary_color);
+}
+
+.triangle-l {
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 88px solid var(--primary_color);
+}
+
+/* @ID: #073 */
+/* Point figure */
+.point-s {
+    border-radius: 5px;
+    height: 5px;
+    width: 5px;
+    background: var(--primary_color);
+}
+
+.point {
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    background: var(--primary_color);
+}
+
+.point-l {
+    border-radius: 15px;
+    height: 15px;
+    width: 15px;
+    background: var(--primary_color);
+}
+
+/* @ID: #075 */
+/* Blob Figure */
+.blob-1 {
+    border-radius: 30% 70% 30% 70%;
+}
+
+.blob-2 {
+    border-radius: 50% 20% 50% 20%;
+}
+
+.blob-3 {
+    border-radius: 60% 40% 40% 60%/50% 40% 65% 55%;
+}
+
+.blob-4 {
+    border-radius: 33% 33% 33% 93%
+}
+
+.blob-5 {
+    border-radius: 80%;
+}

@@ -1,0 +1,104 @@
+
+/* @ID: #050 */
+/* Backgrounds **/
+.bg-1 {
+    background: var(--primary_color) !important;
+    color: var(--text_color_alt) !important;
+}
+
+.bg-2 {
+    background: var(--primary_color_light) !important;
+    color: var(--text_color_alt) !important;
+}
+
+.bg-3 {
+    background: var(--primary_color_dark) !important;
+    color: var(--text_color_alt) !important;
+}
+
+.bg-4 {
+    background: var(--primary_color_alt) !important;
+    color: var(--primary_color) !important;
+}
+
+.bg-5 {
+    background: var(--almost_white) !important;
+    color: var(--almost_black) !important;
+}
+
+.bg-6 {
+    background: var(--almost_black) !important;
+    color: var(--almost_white) !important;
+}
+
+.bg-success {
+    background: #98FF98 !important;
+    color: var(--color_success) !important;
+}
+
+.bg-warning {
+    background: #FFEAD5 !important;
+    color: var(--color_warning) !important;
+}
+
+.bg-error {
+    background: #FDD0D0 !important;
+    color: var(--color_error) !important;
+}
+
+.bg-success.border {
+    border-color: var(--color_success) !important;
+}
+
+.bg-warning.border {
+    border-color: var(--color_warning) !important;
+}
+
+.bg-error.border {
+    border-color: var(--color_error) !important;
+}
+
+/* @ID: #051 */
+/* Backgrounds Gradients */
+.bgg-1 {
+    background: var(--background_gradient_1);
+    color: var(--text_color_alt);
+}
+
+.bgg-2 {
+    background: var(--background_gradient_2);
+    color: var(--text_color);
+
+}
+
+.bgg-3 {
+    background: var(--background_gradient_3);
+    color: var(--text_color_alt);
+}
+
+.bgg-4 {
+    background: var(--background_gradient_4);
+    color: var(--text_color_alt);
+}
+
+.bgg-5 {
+    background: var(--background_gradient_5);
+    color: var(--text_color_alt);
+}
+
+.bgg-6 {
+    background: var(--background_gradient_6);
+    color: var(--text_color);
+}
+
+.bgg-7 {
+    background: var(--background_gradient_7);
+    color: var(--text_color_alt);
+}
+
+.bgg-8 {
+    background: var(--background_gradient_8);
+    color: var(--text_color_alt);
+}
+
+

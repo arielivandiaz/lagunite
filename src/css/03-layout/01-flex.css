@@ -1,0 +1,500 @@
+/* @ID: #100 */
+/**** Flex Direction ****/
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row-col,
+.row-colr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.col-row,
+.col-rowr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.xcolr {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.xrowr {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.dcolr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.drowr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #100x */
+    /**** Flex Direction ****/
+    .row-col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-colr {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .col-row {
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .col-rowr {
+        flex-direction: row-reverse;
+        align-content: center;
+    }
+
+    .xcolr {
+
+        flex-direction: column;
+
+    }
+
+    .xrowr {
+
+        flex-direction: row;
+
+    }
+
+    .dcolr {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .drowr {
+
+        flex-direction: row-reverse;
+
+    }
+}
+
+/* @ID: #102 */
+/**** Flex Options  ****/
+.f-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+/* @ID: #105 */
+/**** Flex Gap  ****/
+.f-gap-xs>div,
+.f-gap->div>div {
+    margin: 2px
+}
+
+.f-gap-s>div,
+.f-gap-s>div>div {
+    margin: 5px
+}
+
+.f-gap>div,
+.f-gap>div>div {
+    margin: 10px
+}
+
+.f-gap-l>div,
+.f-gap-l>div>div {
+    margin: 20px
+}
+
+.f-gap-xl>div,
+.f-gap-xl>div>div {
+    margin: 30px
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #105x */
+    /**** Flex Gap  ****/
+    .xf-gap-xs>div,
+    .xf-gap-xs>div>div {
+        margin: 2px
+    }
+
+    .xf-gap-s>div,
+    .xf-gap-s>div>div {
+        margin: 5px
+    }
+
+    .xf-gap>div,
+    .xf-gap>div>div {
+        margin: 10px
+    }
+
+    .xf-gap-l>div,
+    .xf-gap-l>div>div {
+        margin: 20px
+    }
+
+    .xf-gap-xl>div,
+    .xf-gap-xl>div>div {
+        margin: 30px
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #105d */
+    /**** Flex Gap  ****/
+    .df-gap-xs>div,
+    .df-gap-xs>div>div {
+        margin: 2px
+    }
+
+    .df-gap-s>div,
+    .df-gap-s>div>div {
+        margin: 5px
+    }
+
+    .df-gap>div,
+    .df-gap>div>div {
+        margin: 10px
+    }
+
+    .df-gap-l>div,
+    .df-gap-l>div>div {
+        margin: 20px
+    }
+
+    .df-gap-xl>div,
+    .df-gap-xl>div>div {
+        margin: 30px
+    }
+}
+
+
+/********************** Flex Align ********************************************/
+
+/* @ID: #120 */
+/* Aling Items */
+.ai-c {
+    align-items: center !important;
+}
+
+.ai-fe {
+    align-items: flex-end !important;
+}
+
+.ai-fs {
+    align-items: flex-start !important;
+}
+
+.ai-s {
+    align-items: stretch !important;
+}
+
+/* @ID: #121 */
+/* Aling Self */
+.as-c {
+    align-self: center !important;
+}
+
+.as-fs {
+    align-self: flex-end !important;
+}
+
+.as-fe {
+    align-self: flex-start !important;
+}
+
+.as-s {
+    align-self: stretch !important;
+}
+
+/* @ID: #122 */
+/* Aling Content */
+.ac-c {
+    align-content: center !important;
+}
+
+.ac-fs {
+    align-content: flex-end !important;
+}
+
+.ac-fe {
+    align-content: flex-start !important;
+}
+
+.ac-s {
+    align-content: stretch !important;
+}
+
+.ac-sa {
+    align-content: space-around !important;
+}
+
+.ac-sb {
+    align-content: space-between !important;
+}
+
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #120x */
+    /* Aling Items */
+    .xai-c {
+        align-items: center !important;
+    }
+
+    .xai-fe {
+        align-items: flex-end !important;
+    }
+
+    .xai-fs {
+        align-items: flex-start !important;
+    }
+
+    .xai-s {
+        align-items: stretch !important;
+    }
+
+    /* @ID: #121x */
+    /* Aling Self */
+    .xas-c {
+        align-self: center !important;
+    }
+
+    .xas-fs {
+        align-self: flex-end !important;
+    }
+
+    .xas-fe {
+        align-self: flex-start !important;
+    }
+
+    .xas-s {
+        align-self: stretch !important;
+    }
+
+    /* @ID: #122x */
+    /* Aling Content */
+    .xac-c {
+        align-content: center !important;
+    }
+
+    .xac-fs {
+        align-content: flex-end !important;
+    }
+
+    .xac-fe {
+        align-content: flex-start !important;
+    }
+
+    .xac-s {
+        align-content: stretch !important;
+    }
+
+    .xac-sa {
+        align-content: space-around !important;
+    }
+
+    .xac-sb {
+        align-content: space-between !important;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #120d */
+    /* Aling Items */
+    .dai-c {
+        align-items: center !important;
+    }
+
+    .dai-fe {
+        align-items: flex-end !important;
+    }
+
+    .dai-fs {
+        align-items: flex-start !important;
+    }
+
+    .dai-s {
+        align-items: stretch !important;
+    }
+
+    /* @ID: #121d */
+    /* Aling Self */
+    .das-c {
+        align-self: center !important;
+    }
+
+    .das-fs {
+        align-self: flex-end !important;
+    }
+
+    .das-fe {
+        align-self: flex-start !important;
+    }
+
+    .das-s {
+        align-self: stretch !important;
+    }
+
+    /* @ID: #122d */
+    /* Aling Content */
+    .dac-c {
+        align-content: center !important;
+    }
+
+    .dac-fs {
+        align-content: flex-end !important;
+    }
+
+    .dac-fe {
+        align-content: flex-start !important;
+    }
+
+    .dac-s {
+        align-content: stretch !important;
+    }
+
+    .dac-sa {
+        align-content: space-around !important;
+    }
+
+    .dac-sb {
+        align-content: space-between !important;
+    }
+}
+
+/********************** Flex Justify ********************************************/
+
+/* @ID: #125 */
+/* Justify Content */
+.jc-c {
+    justify-content: center !important;
+}
+
+.jc-fe {
+    justify-content: flex-end !important;
+}
+
+.jc-fs {
+    justify-content: flex-start !important;
+}
+
+.jc-sa {
+    justify-content: space-around !important;
+}
+
+.jc-sb {
+    justify-content: space-between !important;
+}
+
+.jc-se {
+    justify-content: space-evenly !important;
+}
+
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #125x */
+    /* Justify Content */
+    .xjc-c {
+        justify-content: center !important;
+    }
+
+    .xjc-fe {
+        justify-content: flex-end !important;
+    }
+
+    .xjc-fs {
+        justify-content: flex-start !important;
+    }
+
+    .xjc-sa {
+        justify-content: space-around !important;
+    }
+
+    .xjc-sb {
+        justify-content: space-between !important;
+    }
+
+    .xjc-se {
+        justify-content: space-evenly !important;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #125d */
+    /* Justify Content */
+    .djc-c {
+        justify-content: center !important;
+    }
+
+    .djc-fe {
+        justify-content: flex-end !important;
+    }
+
+    .djc-fs {
+        justify-content: flex-start !important;
+    }
+
+    .djc-sa {
+        justify-content: space-around !important;
+    }
+
+    .djc-sb {
+        justify-content: space-between !important;
+    }
+
+    .djc-se {
+        justify-content: space-evenly !important;
+    }
+}

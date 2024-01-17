@@ -1,0 +1,110 @@
+/* @ID: #040 */
+/**** Text Color ****/
+.color-text {
+    color: var(--text_color)
+}
+
+.color-text-alt {
+    color: var(--text_color_alt)
+}
+
+.color-main {
+    color: var(--primary_color)
+}
+
+.color-main-alt {
+    color: var(--primary_color_alt)
+}
+
+.color-light {
+    color: var(--primary_color_light)
+}
+
+.color-dark {
+    color: var(--primary_color_dark)
+}
+
+.color-success {
+    color: var(--color_success)
+}
+
+.color-error {
+    color: var(--color_error)
+}
+
+.color-warning {
+    color: var(--color_warning)
+}
+
+.color-aw {
+    color: var(--almost_white);
+}
+
+.color-ab {
+    color: var(--almost_black);
+}
+
+night.color-aw {
+    color: var(--almost_black);
+}
+
+night.color-ab {
+    color: var(--almost_white);
+}
+
+
+/* @ID: #041 */
+/**** A tag Color ****/
+a.color-text,
+a.color-text :visited,
+a.color-text :active {
+    color: var(--text_color) !important
+}
+
+a.color-text-alt,
+a.color-text-alt:visited,
+a.color-text-alt:active {
+    color: var(--text_color_alt) !important
+}
+
+a.color-main,
+a.color-main:visited,
+a.color-main:active {
+    color: var(--primary_color) !important
+}
+
+a.color-main-alt,
+a.color-main-alt:visited,
+a.color-main-alt:active {
+    color: var(--primary_color_alt) !important
+}
+
+a.color-light,
+a.color-light:visited,
+a.color-light:active {
+    color: var(--primary_color_light) !important
+}
+
+a.color-dark,
+a.color-dark:visited,
+a.color-dark:active {
+    color: var(--primary_color_dark) !important
+}
+
+a.color-success,
+a.color-success:visited,
+a.color-success:active {
+    color: var(--color_success) !important
+}
+
+a.color-error,
+a.color-error:visited,
+a.color-error:active {
+    color: var(--color_error) !important
+}
+
+a.color-warning,
+a.color-warning:visited,
+a.color-warning:active {
+    color: var(--color_warning) !important
+}
