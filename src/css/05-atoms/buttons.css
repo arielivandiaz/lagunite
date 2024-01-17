@@ -1,0 +1,94 @@
+
+/* @ID: #310 */
+/* Buttons **/
+.btn {
+    box-shadow: none;
+    background-color: var(--primary_color);
+    background: var(--primary_background);
+    cursor: pointer;
+    font-family: var(--font_headers);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 1vh 1vw;
+    color: #fff;
+    padding: 0.6vh 2vw;
+    min-width: var(--size_xl);
+    border-radius: 5px;
+    font-size: 80%;
+    line-height: 1;
+}
+
+
+
+.btn.alt {
+    background: none;
+    color: var(--primary_color) !important;
+    border: 2px solid var(--primary_color)
+}
+
+.btn.secondary {
+    background-color: var(--secondary_color);
+    background: var(--secondary_background);
+    color: var(--text_color_alt) !important;
+}
+
+.btn.secondary.alt {
+    background: none;
+    border: 2px solid var(--secondary_color);
+    color: var(--text_color) !important;
+}
+
+.night .btn.secondary {
+    background-color: var(--almost_white);
+    background: var(--tertiary_background);
+    color: var(--text_color) !important;
+}
+
+.night .btn.secondary.alt {
+    background: none;
+    border: 2px solid var(--almost_white);
+    color: var(--text_color_alt) !important;
+}
+
+
+.btn.std {
+    min-width: 140px;
+}
+
+.btn.fit {
+    min-width: 0px;
+    width: fit-content;
+    padding: 10px 10px 6px 10px;
+}
+
+.btn.big {
+    font-size: 180%;
+    padding: 15px 3vw;
+}
+
+.btn.big.std {
+    min-width: 250px;
+}
+
+.btn:hover {
+    box-shadow: var(--primary_color) 0px 10px 20px -5px;
+}
+
+.btn.secondary:hover {
+    box-shadow: var(--secondary_color) 0px 10px 20px -5px;
+}
+
+@media only screen and (min-width : 768px) {
+
+    .btn {
+        border-radius: 10px;
+        font-size: 100%;
+    }
+}
+
+.btn .icon,
+.btn .icon-l,
+.btn .icon-xl,
+.btn .icon-xxl {
+    padding: 0;
+}

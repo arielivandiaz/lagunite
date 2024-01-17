@@ -1,0 +1,485 @@
+
+/********************** Positioning ********************************************/
+
+/* @ID: #110 */
+/* Position */
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+/* @ID: #111 */
+/* Absolute and Floating Positioning */
+.pa-full {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.pa-h {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.pa-v {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+.pa-rg {
+    position: absolute;
+    right: 0;
+}
+
+.pa-lf {
+    position: absolute;
+    left: 0;
+}
+
+.pa-t {
+    position: absolute;
+    top: 0;
+}
+
+.pa-b {
+    position: absolute;
+    bottom: 0;
+}
+
+.pa-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pa-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.pa-bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pa-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+    .xpa-full {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .xpa-h {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .xpa-v {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+    }
+
+
+    .xpa-rg {
+        position: absolute;
+        right: 0;
+
+    }
+
+    .xpa-lf {
+        position: absolute;
+        left: 0;
+    }
+
+    .xpa-t {
+        position: absolute;
+        top: 0;
+    }
+
+    .xpa-b {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .xpa-tl {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .xpa-tr {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    .xpa-bl {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .xpa-br {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    .dpa-full {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .dpa-h {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .dpa-v {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+    }
+
+
+    .dpa-rg {
+        position: absolute;
+        right: 0;
+
+    }
+
+    .dpa-lf {
+        position: absolute;
+        left: 0;
+    }
+
+    .dpa-t {
+        position: absolute;
+        top: 0;
+    }
+
+    .dpa-b {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .dpa-tl {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .dpa-tr {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    .dpa-bl {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .dpa-br {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
+/* @ID:  #112 */
+/* Fixed Positioning */
+.pf-full {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.pf-h {
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.pf-v {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+
+}
+
+
+.pf-rg {
+    position: fixed;
+    right: 0;
+}
+
+.pf-lf {
+    position: fixed;
+    left: 0;
+}
+
+.pf-t {
+    position: fixed;
+    top: 0;
+}
+
+.pf-b {
+    position: fixed;
+    bottom: 0;
+}
+
+
+.pf-tl {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pf-tr {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.pf-bl {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.pf-br {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* @ID: #113*/
+/** Z Index **/
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z10 {
+    z-index: 10;
+}
+
+.z15 {
+    z-index: 15;
+}
+
+.z20 {
+    z-index: 20;
+}
+
+/* @ID: #115 */
+/* Centered Horizontally */
+.centered {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* @ID: #116 */
+/* Centered Fully  */
+.center {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* @ID: #117 */
+/* Floating Positioning */
+.float-r,
+.float-rg {
+    float: right;
+}
+
+.float-l,
+.float-lf {
+    float: left;
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #117x */
+    /* Floating Positioning */
+    .xfloat-r,
+    .xfloat-rg {
+        float: right;
+    }
+
+    .xfloat-l,
+    .xfloat-lf {
+        float: left;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+
+    /* @ID: #117d */
+    /* Floating Positioning */
+    .dfloat-r,
+    .dfloat-rg {
+        float: right;
+    }
+
+    .dfloat-l,
+    .dfloat-lf {
+        float: left;
+    }
+}
+
+/* @ID: #118 */
+/* Floating Positioning in .rel Container */
+.float-tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.float-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.float-tc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.float-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.float-bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.float-bc {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.float-c {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.float-cl {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.float-cr {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #115x */
+    /* Centered Horizontally */
+    .xcentered {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /* @ID: #116x */
+    /* Centered Fully  */
+    .xcenter {
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #115x */
+    /* Centered Horizontally */
+    .dcentered {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /* @ID: #116x */
+    /* Centered Fully  */
+    .dcenter {
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

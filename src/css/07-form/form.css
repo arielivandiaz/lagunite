@@ -1,0 +1,587 @@
+
+/********************** Form Elements ******************************************/
+
+
+/* @ID: #350 */
+/* Inputs */
+input,
+textarea {
+    background: none;
+    border: none;
+    color: var(--text_color);
+    border: var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+    cursor: pointer;
+    line-height: 2;
+    margin: 5px;
+    width: 150px;
+}
+
+.night input,
+.night textarea {
+    color: var(--text_color_alt);
+}
+
+
+
+@media only screen and (min-width : 768px) {
+
+    input,
+    textarea,
+    select {
+        min-width: 180px;
+    }
+}
+
+input[type='text']:hover,
+input[type='text']:focus,
+input[type='number']:hover,
+input[type='number']:focus,
+input[type='email']:hover,
+input[type='email']:focus,
+.select:hover,
+.select:focus,
+textarea:hover,
+textarea:focus {
+    box-shadow: 0 0 7px 1px var(--primary_color);
+    color: var(--primary_color);
+    font-weight: 600;
+}
+
+.inputLine.alt input[type='text']:hover,
+.inputLine.alt input[type='text']:focus,
+.inputLine.alt input[type='number']:hover,
+.inputLine.alt input[type='number']:focus,
+.inputLine.alt input[type='email']:hover,
+.inputLine.alt input[type='email']:focus {
+    box-shadow: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text_color);
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--text_color);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--text_color);
+}
+
+.night ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text_color_alt);
+    opacity: 0.5;
+}
+
+.night :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--text_color_alt);
+}
+
+.night ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--text_color_alt);
+}
+
+
+input[type="color"] {
+    padding: 0;
+    height: 35px;
+    min-width: 50px;
+    width: 50px;
+}
+
+/* @ID: #351 */
+/* Input Container */
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+}
+
+.input-container span {
+    max-width: 120px;
+    margin: 10px 10px 10px 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+@media only screen and (min-width : 768px) {
+    .input-container span {
+        max-width: 300px;
+        margin-right: 10px;
+    }
+}
+
+/* @ID: #352 */
+/* Input Line */
+.inputLine {
+    position: relative;
+    margin: 20px 10px;
+}
+
+.inputLine input {
+    border-radius: 0;
+    border-width: 0 0 2px 0;
+    text-align: left;
+    padding: 0 10px 0 30px;
+    min-width: 120px;
+}
+
+.inputLine span {
+    font-size: 60%;
+    position: absolute;
+    top: -5px;
+}
+
+.inputLine .icon {
+    margin-right: -30px;
+}
+
+/* @ID: #353 */
+/* Select Input */
+select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    min-width: 220px;
+    height: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    color: var(--text_color);
+    font-weight: 700;
+    cursor: pointer;
+    background: none;
+    color: var(--text_color);
+    border: var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    line-height: 1;
+    min-width: 100px;
+    margin-right: 15px;
+}
+
+.night select {
+
+    color: var(--text_color_alt);
+
+}
+
+.select {
+    position: relative;
+    overflow: hidden;
+    background: rgba(var(--primary_color_rgb), 0.2);
+    border-radius: var(--radius);
+    margin: 10px 20px;
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.12);
+}
+
+
+.select.alt {
+    background: none;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3px 5px;
+    background: none;
+    color: var(--text_color_alt);
+    pointer-events: none;
+    background: var(--primary_color);
+}
+
+/* Transition */
+.select:hover::after {
+    color: #fff;
+}
+
+.select::after {
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+select option {
+    background: #333;
+    color: #fff;
+}
+
+.alt select option {
+    background: #fff;
+    color: #333;
+}
+
+option.noselect {
+    user-select: none;
+    color: #333
+}
+
+.alt .noselect {
+    user-select: none;
+    color: #fff;
+}
+
+/* @ID: #354 */
+/* Checkbox  */
+.checkboxContainer {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 8px 30px 10px 10px;
+    padding: 5px 25px;
+}
+
+/* Hide the browser's default checkbox */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    margin-left: 25px;
+    border-radius: 8px;
+    border: 3px solid var(--primary_color);
+    cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+    box-shadow: 0 0 8px 1px var(--primary_color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: var(--primary_color);
+    box-shadow: 0 0 8px 1px var(--primary_color);
+    border-radius: 6px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 8px;
+    top: -10px;
+    width: 10px;
+    height: 28px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* @ID: #355 */
+/* Toggle Button */
+.toggle {
+    display: none;
+}
+
+.toggle,
+.toggle:after,
+.toggle:before,
+.toggle *,
+.toggle *:after,
+.toggle *:before,
+.toggle + .toggle-btn {
+    box-sizing: border-box;
+}
+
+.toggle::-moz-selection,
+.toggle:after::-moz-selection,
+.toggle:before::-moz-selection,
+.toggle *::-moz-selection,
+.toggle *:after::-moz-selection,
+.toggle *:before::-moz-selection,
+.toggle + .toggle-btn::-moz-selection {
+    background: none;
+}
+
+.toggle::selection,
+.toggle:after::selection,
+.toggle:before::selection,
+.toggle *::selection,
+.toggle *:after::selection,
+.toggle *:before::selection,
+.toggle + .toggle-btn::selection {
+    background: none;
+}
+
+
+.toggle + .toggle-btn {
+    outline: 0;
+    display: block;
+    width: 32px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.toggle + .toggle-btn.small {
+    width: 25px;
+    height: 15px;
+}
+
+
+.toggle + .toggle-btn.big {
+    width: 48px;
+    height: 26px;
+}
+
+
+
+.toggle + .toggle-btn:after,
+.toggle + .toggle-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.toggle + .toggle-btn:after {
+    left: 0;
+}
+
+.toggle + .toggle-btn:before {
+    display: none;
+}
+
+.toggle:checked + .toggle-btn:after {
+    left: 50%;
+}
+
+.toggle + .toggle-btn {
+    background: #ccc;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all .4s ease;
+}
+
+.toggle + .toggle-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all .2s ease;
+}
+
+.toggle:checked + .toggle-btn {
+    background: var(--primary_color);
+    box-shadow: 0 0 10px 3px var(--primary_color);
+}
+
+/* @ID: #356 */
+/* Radio Group */
+.radio-group {
+    border-color: var(--primary_color);
+    border-style: solid;
+    width: fit-content;
+    border-width: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 3px 0px;
+}
+
+.radio-group input {
+    position: absolute !important;
+    clip-path: rect(0, 0, 0, 0);
+    height: 0px;
+    width: 0px;
+    border: 0;
+    overflow: hidden;
+}
+
+.radio-group label {
+    cursor: pointer;
+}
+
+.radio-group label {
+    text-align: center;
+    padding: 5px 12px;
+    background: none;
+    color: var(--primary_color);
+}
+
+.radio-group input:checked + label {
+    background-color: var(--primary_color);
+    background: var(--primary_background);
+    color: var(--text_color_alt);
+    box-shadow: 0 0px 5px 0px var(--primary_color);
+    border-radius: 15px;
+    padding: 8px 15px;
+}
+
+/* @ID: #357 */
+/* Radio Buttons */
+.radio-btns {
+    margin: 25px 0;
+}
+
+.radio-btns input {
+    position: absolute !important;
+    clip-path: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.radio-btns label {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 12px;
+    background: none;
+    color: var(--primary_color);
+    border-color: var(--primary_color);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    margin: 0 5px;
+}
+
+.radio-btns input:checked + label {
+    background: var(--primary_background);
+    border: none;
+    padding: 7px 15px;
+    color: var(--text_color_alt);
+    box-shadow: 0 0px 5px 0px var(--primary_color);
+}
+
+.radio-btns label:hover {
+    box-shadow: 0 0px 15px 0px var(--primary_color);
+}
+
+/* @ID: #358 */
+/* Radio Divs */
+.radio-divs {
+    margin: 25px 0;
+}
+
+.radio-divs input {
+    position: absolute !important;
+    clip-path: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.radio-divs label {
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    color: var(--primary_color);
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.radio-divs label div {
+    background: var(--primary_background);
+}
+
+
+
+.radio-divs label:hover div {
+    box-shadow: 0 0px 15px 0px var(--primary_color);
+}
+
+.radio-divs input:checked + label div {
+    box-shadow: 0 0px 15px 0px var(--primary_color);
+    transform: scale(1.3);
+}
+
+
+/* @ID: #359 */
+/* Update File Button */
+.file-btn {
+    box-shadow: none;
+    border-radius: 8px;
+    border: 2px solid 75px;
+    background: var(--primary_color);
+    cursor: pointer;
+    font-family: var(--font_headers);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 1vh 1vw;
+    color: #fff;
+    padding: 10px 1.2vw 7px 1.2vw;
+    min-width: var(--size_xl);
+    width: min-content;
+}
+
+.file-btn input[type="file"] {
+    display: none;
+}
+
+.file-btn span {
+    display: block;
+    color: #777;
+}
+
+/* @ID: #360 */
+/* Input Range */
+input[type='range']:hover {
+    box-shadow: none;
+}
+
+
+.range-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-container input[type="number"] {
+    min-width: 0 !important;
+    text-align: center;
+}

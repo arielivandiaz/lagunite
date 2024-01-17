@@ -1,0 +1,233 @@
+/********************** Fonts **************************************************/
+
+/* @ID: #010 */
+/*** Heading ***/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font_headers);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+h1 {
+    font-size: clamp(3rem, 6vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+h5 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+@media only screen and (min-width : 768px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+}
+
+/* @ID: #011 */
+/* Font Transform */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* @ID: #012 */
+/* Font Family */
+.font-text {
+    font-family: var(--font_text);
+}
+
+.font-h,
+.font-headers {
+    font-family: var(--font_headers);
+}
+
+/* @ID: #013 */
+/* Font Size */
+.font-xs {
+    font-size: 70% !important;
+}
+
+.font-s {
+    font-size: 85% !important;
+}
+
+.font-l {
+    font-size: 115% !important;
+}
+
+.font-xl {
+    font-size: 130% !important;
+}
+
+.font-xxl {
+    font-size: 200% !important;
+}
+
+.font-250 {
+    font-size: 250% !important;
+}
+
+.font-300 {
+    font-size: 300% !important;
+}
+
+.font-400 {
+    font-size: 400% !important;
+}
+
+.font-500 {
+    font-size: 500% !important;
+}
+
+@media only screen and (min-width : 281px) and (max-width : 767px) {
+
+    /* @ID: #013x */
+    .xfont-xs {
+        font-size: 70%;
+    }
+
+    .xfont-s {
+        font-size: 85%;
+    }
+
+    .xfont-l {
+        font-size: 115%;
+    }
+
+    .xfont-xl {
+        font-size: 130%;
+    }
+
+    .xfont-xxl {
+        font-size: 200% !important;
+    }
+
+    .xfont-250 {
+        font-size: 250% !important;
+    }
+
+    .xfont-300 {
+        font-size: 300% !important;
+    }
+
+    .xfont-400 {
+        font-size: 400% !important;
+    }
+
+    .xfont-500 {
+        font-size: 500% !important;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    /* @ID: #013d */
+    .dfont-xs {
+        font-size: 70%;
+    }
+
+    .dfont-s {
+        font-size: 85%;
+    }
+
+    .dfont-l {
+        font-size: 115%;
+    }
+
+    .dfont-xl {
+        font-size: 130%;
+    }
+
+    .dfont-xxl {
+        font-size: 200% !important;
+    }
+
+    .dfont-250 {
+        font-size: 250% !important;
+    }
+
+    .dfont-300 {
+        font-size: 300% !important;
+    }
+
+    .dfont-400 {
+        font-size: 400% !important;
+    }
+
+    .dfont-500 {
+        font-size: 500% !important;
+    }
+}
+
+/* @ID: #014 */
+/* Font Fluid **/
+.font-fluid-xs {
+    font-size: clamp(0.5rem, 1vh, 0.75rem);
+}
+
+.font-fluid-s {
+    font-size: clamp(0.75rem, 1.5vh, 1rem);
+}
+
+.font-fluid {
+    font-size: clamp(1rem, 2vh, 1.5rem);
+}
+
+.font-fluid-l {
+    font-size: clamp(1.25rem, 3vh, 1.5rem);
+}
+
+.font-fluid-xl {
+    font-size: clamp(1.5rem, 5vh, 2rem);
+}
+
+/* @ID: #015 */
+/* Font Weight **/
+.font-weight-1 {
+    font-weight: lighter;
+    font-weight: 500 !important;
+}
+
+.font-weight-2 {
+    font-weight: 700 !important;
+}
+
+.font-weight-3 {
+    font-weight: 900 !important;
+}
