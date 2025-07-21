@@ -1,0 +1,99 @@
+/*
+  |--------------------------------------------------------------------------
+  | 2. SEMANTIC THEME
+  |--------------------------------------------------------------------------
+  | These variables give meaning to the raw palette values. This is what
+  | should be used throughout the library and overridden for theming.
+  */
+
+:root {
+  /*== Color Assignments ==*/
+  --color-primary: #2476ff;
+  --color-primary-light: #5e9aff;
+  --color-primary-dark: #0965ff;
+
+  --color-secondary: #747474;
+  --color-secondary-light: #333;
+  --color-secondary-dark: #292929;
+
+  --color-tertiary: #f97316;
+  --color-tertiary-light: #ffa261;
+  --color-tertiary-dark: #c95300;
+
+  --color-almost-black: #333;
+  --color-almost-white: #fcfcfc;
+
+  --color-success: #009112;
+  --color-warning: #ff9017;
+  --color-danger: #fa3434;
+
+  /*== Text Colors ==*/
+  --color-text-base: #333;
+  --color-text-alt: #fff;
+
+  /*== Background Colors ==*/
+  --color-bg: #eee;
+  --color-bg-alt: #222;
+
+  --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
+  --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);
+  --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);
+
+  --color-bg-base: var(--white);
+  --color-bg-muted: var(--gray-50);
+  --color-bg-surface: var(--gray-100);
+
+  --color-border: var(--gray-200);
+  --color-border-hover: var(--gray-300);
+
+  --color-background: #eee;
+  --color-background-alt: #222;
+
+  /*== Gradients ==*/
+  --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
+  --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);
+  --bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
+  --bg-gradient-4: linear-gradient(
+    180deg,
+    rgba(94, 154, 255, 1) 0%,
+    rgba(36, 118, 255, 1) 50%,
+    rgba(0, 90, 238, 1) 100%
+  );
+  --background-gradient-5: radial-gradient(
+    circle,
+    rgba(94, 154, 255, 1) 0%,
+    rgba(36, 118, 255, 1) 100%
+  );
+  --bg-gradient-6: radial-gradient(
+    circle,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(193, 216, 255, 1) 100%
+  );
+  --bg-gradient-7: repeating-linear-gradient(
+    45deg,
+    #2476ff,
+    #5e9aff 20px,
+    #fff 20px,
+    #ccc 32px
+  );
+  --background-gradient-8: repeating-linear-gradient(
+    45deg,
+    #5e9aff,
+    #0965ff 20px,
+    #000 20px,
+    #444 32px
+  );
+
+  /*== Borders ==*/
+  --border: 2px solid #2476ff;
+  --border-light: 2px solid #5e9aff;
+  --border-dark: 2px solid #0965ff;
+
+  /*== Shadows (Composable) ==*/
+  --shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);
+  --shadow-md:
+    0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+  --shadow-lg:
+    0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1);
+  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05);
+}
