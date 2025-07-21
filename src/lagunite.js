@@ -1,3 +1,9 @@
+// src/main.js
+
+// 1. Importar todo el CSS para que Vite lo compile
+import './lagunite.css';
+
+
 export const getElement = (identifier) => {
   if (typeof identifier == "string") {
     if (identifier[0] === "#")

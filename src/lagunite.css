@@ -1,0 +1,5 @@
+/* src/main.css */
+@import './css/00-core/00-config.css';
+@import './css/00-core/01-root.css';
+@import './css/01-text/01-fonts.css';
+/* ...etc ... */

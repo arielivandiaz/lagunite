@@ -1,0 +1,21 @@
+/* ESTE ARCHIVO ES AUTO-GENERADO. NO EDITAR MANUALMENTE. */
+/* Para cambios, modifica los archivos en /src/css y ejecuta `npm run dev` o `npm run build`. */
+
+@import './css/00-core/00-config.css';
+@import './css/00-core/01-root.css';
+@import './css/01-text/01-fonts.css';
+@import './css/01-text/02-typography.css';
+@import './css/02-colors/01-text.css';
+@import './css/02-colors/02-background.css';
+@import './css/03-layout/01-flex.css';
+@import './css/03-layout/02-grid.css';
+@import './css/03-layout/03-positioning.css';
+@import './css/03-layout/04-margin.css';
+@import './css/03-layout/05-padding.css';
+@import './css/03-layout/10-size.css';
+@import './css/04-decorators/borders.css';
+@import './css/04-decorators/decorators.css';
+@import './css/05-atoms/buttons.css';
+@import './css/07-form/form.css';
+@import './css/10-misc/display.css';
+@import './css/10-misc/figures.css';
