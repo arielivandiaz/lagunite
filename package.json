@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.0.NaN",
+  "version": "2.0.2",
   "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
@@ -20,6 +20,7 @@
     "predev": "node scripts/generate-imports.js",
     "dev": "vite",
     "prebuild": "node scripts/generate-imports.js",
+    "build:dev": "set NODE_ENV=development && vite build --mode development",
     "build": "vite build",
     "preview": "vite preview",
     "lint:css": "stylelint \"src/**/*.css\"",

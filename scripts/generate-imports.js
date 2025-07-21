@@ -3,7 +3,7 @@ import path from 'path';
 
 // Define source and destination paths
 const cssDir = path.resolve(process.cwd(), 'src/css');
-const outputFile = path.resolve(process.cwd(), 'src/main.css');
+const outputFile = path.resolve(process.cwd(), 'src/lagunite.css');
 
 console.log('🚀 Generating CSS entry file...');
 
@@ -35,7 +35,7 @@ try {
   // Write the content to src/main.css
   fs.writeFileSync(outputFile, fileContent);
 
-  console.log(`✅ src/main.css generated successfully with ${importStatements.length} imports.`);
+  console.log(`✅ src/lagunite.css generated successfully with ${importStatements.length} imports.`);
 
 } catch (error) {
   console.error('❌ Error generating CSS file:', error);
