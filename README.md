@@ -2,51 +2,51 @@
 
 [![NPM Version](https://img.shields.io/npm/v/lagunite?style=flat-square)](https://www.npmjs.com/package/lagunite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/arielivandiaz/lagunite/main.yml?branch=main&style=flat-square)](https://github.com/arielivandiaz/lagunite/actions)
 
-**Una librería CSS moderna, enfocada en utilidades, diseñada para la velocidad, consistencia y una experiencia de desarrollo de primera.**
 
-¿Harto de pelear con frameworks CSS pesados y vuelteros? Lagunite 2.0 es un borrón y cuenta nueva, reconstruido desde cero con las mejores prácticas del desarrollo web actual. Te da un set de herramientas sólido, con variables de diseño y clases de utilidad, para que construyas interfaces personalizadas y profesionales sin dramas.
+**A modern, utility-focused CSS library designed for speed, consistency, and a stellar developer experience.**
 
----
-
-### ## ¿Por qué Lagunite?
-
-La filosofía de Lagunite es simple pero potente: darte bases sólidas y no meterse en tu camino.
-
-* **💡 Moderno y Liviano:** Potenciado por herramientas modernas (Vite y PostCSS). Sin código viejo ni cosas innecesarias. Solo CSS limpio y performante que aprovecha al máximo el poder de la web.
-
-* **🎨 Un Sistema de Diseño de Verdad:** No te damos solo componentes, te damos un sistema. Toda la librería se basa en *design tokens* claros y consistentes: una paleta de colores HSL completísima, una escala de espaciado predecible y un sistema de tipografía flexible, todo definido con Custom Properties de CSS.
-
-* **🚀 Enfocado en Utilidades:** Construí más rápido y de forma más consistente. Lagunite te va a dar un set completo de clases de utilidad para que apliques el sistema de diseño directamente en tu HTML, ideal para prototipar a toda velocidad.
-
-* **🎛️ Ultra Personalizable:** Cambiar la apariencia de tu proyecto nunca fue tan fácil. ¿Querés modificar el color primario o el radio de los bordes? Simplemente cambiás una variable CSS. El poder de los colores HSL hace que crear nuevas paletas y estados sea una pavada.
-
-* **♿ Accesibilidad como Prioridad:** Hecho desde el vamos con unidades `rem` para espaciados y tipografía. Esto garantiza que tus interfaces respeten las preferencias del usuario y sean accesibles para todos.
-
-* **⚙️ La Mejor Experiencia para el Dev:** Nos importa tu laburo. Un proceso de build rápido, variables bien nombradas y clases lógicas significan que vas a pasar menos tiempo peleando con las herramientas y más tiempo creando.
+Tired of fighting with bloated, opinionated CSS frameworks? Lagunite 2.0 is a fresh start, rebuilt from the ground up with the best practices of modern web development. It provides a robust set of design tokens and low-level utility classes that let you build beautiful, custom interfaces without breaking a sweat.
 
 ---
 
-### ## Estado del Proyecto
+### ## Why Lagunite?
 
-**🚀 En Pleno Desarrollo:** Lagunite 2.0 está siendo reescrito por completo. Estamos definiendo el sistema de diseño y el proceso de build. ¡Estate atento a las novedades!
+Lagunite is built on a simple yet powerful philosophy: provide solid foundations and get out of your way.
+
+* **💡 Modern & Lightweight:** Powered by a modern toolchain (Vite & PostCSS). No legacy code, no unnecessary bloat. Just clean, performant CSS that leverages the power of the platform.
+
+* **🎨 A True Design System:** We don't just give you components; we give you a system. The entire library is based on a clear and consistent set of design tokens—a rich HSL color palette, a predictable spacing scale, and a flexible typography system—all defined with CSS Custom Properties.
+
+* **🚀 Utility-Focused:** Build faster and more consistently. Lagunite will provide a comprehensive set of utility classes, allowing you to apply the design system directly in your HTML for rapid development and prototyping.
+
+* **🎛️ Radically Customizable:** Theming has never been easier. Want to change the primary color or the border radius across your entire project? Just change one CSS variable. The power of HSL colors makes creating new palettes and states trivial.
+
+* **♿ Accessibility First:** Built from the ground up with `rem` units for spacing and typography, ensuring your interfaces respect user preferences and are accessible to everyone.
+
+* **⚙️ Great DX:** We care about your experience as a developer. A fast, modern build process and a logical, well-documented set of variables and classes mean you'll spend less time fighting your tools and more time creating.
 
 ---
 
-### ## Cómo Empezar
+### ## Project Status
 
-> Nota: La librería todavía no está disponible en npm, pero el proceso de instalación será el siguiente:
+**🚀 In Active Development:** Lagunite 2.0 is currently undergoing a full architectural rewrite. The core design system and build process are being defined. Stay tuned!
 
-1.  **Instalar Lagunite:**
+---
+
+### ## Getting Started
+
+> Note: The library is not yet available on npm, but the installation process will be as follows:
+
+1.  **Install Lagunite:**
     ```bash
     npm install lagunite@next
     ```
 
-2.  **Importar el CSS:**
-    Importá el archivo CSS principal en el punto de entrada de tu proyecto.
+2.  **Import the CSS:**
+    Import the main CSS file into your project's entry point.
     ```javascript
     import 'lagunite/dist/lagunite.css';
     ```
 
-¡Y listo! Ya podés empezar a construir.
+And you're ready to start building!

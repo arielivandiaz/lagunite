@@ -1,13 +1,8 @@
 dev/
-autocommit.sh
-version/
+web/
 package-lock.json
-
-~$Libro1.xlsx
-*.xlsx
-src/toEvaluate.css
-
 *.npmrc
+
 # Logs
 logs
 *.log
@@ -109,3 +104,5 @@ typings/
 
 # TernJS port file
 .tern-port
+\"\"  
+\"web/\" 

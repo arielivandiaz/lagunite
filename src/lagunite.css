@@ -1,5 +1,24 @@
-/* src/main.css */
-@import './css/00-core/00-config.css';
-@import './css/00-core/01-root.css';
+/* THIS FILE IS AUTO-GENERATED. DO NOT EDIT MANUALLY. */
+/* For changes, modify files in /src/css and run `npm run dev` or `npm run build`. */
+
+@import './css/00-config/01-pallete.css';
+@import './css/00-config/02-typography.css';
+@import './css/00-config/03-theme.css';
+@import './css/00-config/04-measures.css';
+@import './css/00-config/10-base.css';
 @import './css/01-text/01-fonts.css';
-/* ...etc ... */
+@import './css/01-text/02-typography.css';
+@import './css/02-colors/01-text.css';
+@import './css/02-colors/02-background.css';
+@import './css/03-layout/01-flex.css';
+@import './css/03-layout/02-grid.css';
+@import './css/03-layout/03-positioning.css';
+@import './css/03-layout/04-margin.css';
+@import './css/03-layout/05-padding.css';
+@import './css/03-layout/10-size.css';
+@import './css/04-decorators/borders.css';
+@import './css/04-decorators/decorators.css';
+@import './css/05-atoms/buttons.css';
+@import './css/07-form/form.css';
+@import './css/10-misc/display.css';
+@import './css/10-misc/figures.css';
