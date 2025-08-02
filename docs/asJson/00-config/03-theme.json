@@ -1,0 +1,78 @@
+{
+    "folder": "00-config",
+    "file": "03-theme.css",
+    "content": [
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0003",
+            "name": "--color-primary",
+            "value": "#2476ff",
+            "description": "Color primario del tema"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0003",
+            "name": "--color-primary-light",
+            "value": "#5e9aff",
+            "description": "Variante clara del color primario"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0003",
+            "name": "--color-primary-dark",
+            "value": "#0965ff",
+            "description": "Variante oscura del color primario"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0003",
+            "name": "--color-secondary",
+            "value": "#747474",
+            "description": "Color secundario del tema"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#0003",
+            "name": "--bg-primary",
+            "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)",
+            "description": "Gradiente primario"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#0003",
+            "name": "--bg-secondary",
+            "value": "linear-gradient(0deg, #292929 0%, #747474 100%)",
+            "description": "Gradiente secundario"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#0003",
+            "name": "--border",
+            "value": "2px solid #2476ff",
+            "description": "Borde estándar"
+        },
+        {
+            "type": "var",
+            "subtype": "shadow",
+            "id": "#0003",
+            "name": "--shadow-sm",
+            "value": "0 1px 2px 0 hsla(0, 0%, 0%, 0.05)",
+            "description": "Sombra pequeña"
+        },
+        {
+            "type": "var",
+            "subtype": "shadow",
+            "id": "#0003",
+            "name": "--shadow-md",
+            "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1)",
+            "description": "Sombra mediana"
+        }
+    ]
+}

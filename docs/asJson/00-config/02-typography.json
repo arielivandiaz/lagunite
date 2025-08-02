@@ -1,0 +1,139 @@
+{
+    "folder": "00-config",
+    "file": "02-typography.css",
+    "content": [
+        {
+            "type": "var",
+            "subtype": "font-family",
+            "id": "#0002",
+            "name": "--font-sans",
+            "value": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+        },
+        {
+            "type": "var",
+            "subtype": "font-family",
+            "id": "#0002",
+            "name": "--font-mono",
+            "value": "\"JetBrains Mono\", \"Fira Code\", monospace"
+        },
+        {
+            "type": "var",
+            "subtype": "font-family",
+            "id": "#0002",
+            "name": "--font_text",
+            "value": "\"Zen Kaku Gothic Antique\", sans-serif"
+        },
+        {
+            "type": "var",
+            "subtype": "font-family",
+            "id": "#0002",
+            "name": "--font_headers",
+            "value": "\"PT Sans\", sans-serif"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-xs",
+            "value": "0.75rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-sm",
+            "value": "0.875rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-base",
+            "value": "1rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-lg",
+            "value": "1.125rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-xl",
+            "value": "1.25rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-2xl",
+            "value": "1.5rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-size",
+            "id": "#0002",
+            "name": "--font-size-3xl",
+            "value": "2rem"
+        },
+        {
+            "type": "var",
+            "subtype": "font-weight",
+            "id": "#0002",
+            "name": "--font-weight-light",
+            "value": "300"
+        },
+        {
+            "type": "var",
+            "subtype": "font-weight",
+            "id": "#0002",
+            "name": "--font-weight-normal",
+            "value": "400"
+        },
+        {
+            "type": "var",
+            "subtype": "font-weight",
+            "id": "#0002",
+            "name": "--font-weight-medium",
+            "value": "500"
+        },
+        {
+            "type": "var",
+            "subtype": "font-weight",
+            "id": "#0002",
+            "name": "--font-weight-bold",
+            "value": "700"
+        },
+        {
+            "type": "var",
+            "subtype": "line-height",
+            "id": "#0002",
+            "name": "--line-height-none",
+            "value": "1"
+        },
+        {
+            "type": "var",
+            "subtype": "line-height",
+            "id": "#0002",
+            "name": "--line-height-tight",
+            "value": "1.25"
+        },
+        {
+            "type": "var",
+            "subtype": "line-height",
+            "id": "#0002",
+            "name": "--line-height-normal",
+            "value": "1.5"
+        },
+        {
+            "type": "var",
+            "subtype": "line-height",
+            "id": "#0002",
+            "name": "--line-height-loose",
+            "value": "2"
+        }
+    ]
+}

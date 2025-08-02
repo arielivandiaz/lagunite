@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lagunite</title>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" type="image/png" href="web/img/lagunite_iso_mini.png" />
+    <link type="text/css" rel="stylesheet" href="../dist/lagunite.css" />
+        <style>
+      body {
+        font-family: "Lagunite", sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header img {
+        max-width: 100px;
+      }
+
+      h3 {
+        margin-top: 10px;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .results {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        align-items: flex-start;
+        gap: 20px;
+        
+      }
+
+      .search-box {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid var(--color-border);
+        margin-bottom: 20px;
+      }
+
+      .result-item {
+        background-color: var(--color-card-bg);
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        text-align: left;
+        border: 1px solid var(--color-border);
+        max-width: 200px;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <header>
+      <a href="/">
+        <img src="./img/lagunite.png" class="maxw5" />
+      </a>
+      <h3>Nomenclature</h3>
+    </header>
+
+          <input
+        type="text"
+        id="searchInput"
+        placeholder="Search..."
+        class="search-box"
+      />
+    <main>
+
+      <div id="results" class="results">
+        <div class="result-item">
+          <b>#0003</b>
+          <br />
+          <hgroup>
+            <i>00&nbsp;</i>
+            <h3>File</h3>
+          </hgroup>
+          <p>Name</p>
+
+          <p>value</p>
+          <p>Description</p>
+        </div>
+                <div class="result-item">
+          <b>#0003</b>
+          <br />
+          <hgroup>
+            <i>00&nbsp;</i>
+            <h3>File</h3>
+          </hgroup>
+          <p>Name</p>
+
+          <p>value</p>
+          <p>Description</p>
+        </div>
+                <div class="result-item">
+          <b>#0003</b>
+          <br />
+          <hgroup>
+            <i>00&nbsp;</i>
+            <h3>File</h3>
+          </hgroup>
+          <p>Name</p>
+
+          <p>value</p>
+          <p>Description</p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Fetch and search docs.json
+      async function searchDocs(query) {
+        const resultsContainer = document.getElementById("results");
+        resultsContainer.innerHTML = ""; // Clear previous results
+
+        try {
+          const response = await fetch("./docs.json");
+          const docs = await response.json();
+
+          // Filter results based on the query
+          const results = [];
+          for (const key in docs) {
+            if (Object.hasOwnProperty.call(docs, key)) {
+              if (docs[key].content && docs[key].content.length > 0) {
+                for (const content of docs[key].content) {
+                  const contentString = JSON.stringify(content);
+
+                  if (contentString.toLowerCase().includes(query)) {
+                    results.push({
+                      folder: docs[key].folder,
+                      file: docs[key].file,
+                      content: content,
+                    });
+                  }
+                }
+              } else {
+                console.log("No content found for key:", key);
+              }
+            }
+          }
+
+          // Display results
+          if (results.length > 0) {
+            results.forEach((result) => {
+              console.log("Result:", result);
+              const resultDiv = document.createElement("div");
+              resultDiv.className = "result-item";
+
+              // Populate the result-item structure
+              const id = result.content.id || "";
+              const folder = result.folder || "";
+              const file = result.file || "";
+              const name = result.content?.name || "";
+              const value = result.content?.value || "";
+              const description = result.content?.description || "";
+
+              resultDiv.innerHTML = `
+            <b>${id}</b>
+            <br />
+            <hgroup>
+              <i>${folder}&nbsp;</i>
+              <h3>${file}</h3>
+            </hgroup>
+            <p>${name}</p>
+            <p>${value}</p>
+            <p>${description}</p>
+          `;
+
+              resultsContainer.appendChild(resultDiv);
+            });
+          } else {
+            resultsContainer.textContent = "No results found.";
+          }
+        } catch (error) {
+          console.error("Error fetching docs.json:", error);
+          resultsContainer.textContent = "Error loading search results.";
+        }
+      }
+
+      // Add event listener to the search input
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", (event) => {
+          const query = event.target.value;
+          if (query.length > 2) {
+            // Start searching after 3 characters
+            searchDocs(query.toLowerCase());
+          } else {
+            document.getElementById("results").innerHTML = ""; // Clear results
+          }
+        });
+    </script>
+  </body>
+</html>

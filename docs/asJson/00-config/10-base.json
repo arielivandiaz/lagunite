@@ -1,0 +1,38 @@
+{
+    "folder": "00-config",
+    "file": "10-base.css",
+    "content": [
+        {
+            "type": "selector",
+            "subtype": "base",
+            "id": "#0010",
+            "name": "html",
+            "value": "font-size: 16px",
+            "description": "Tamaño base de fuente para el documento"
+        },
+        {
+            "type": "selector",
+            "subtype": "base",
+            "id": "#0010",
+            "name": "body",
+            "value": "font-family: var(--font-sans)",
+            "description": "Fuente base para el documento"
+        },
+        {
+            "type": "selector",
+            "subtype": "reset",
+            "id": "#0010",
+            "name": "*",
+            "value": "margin: 0; padding: 0; box-sizing: border-box",
+            "description": "Reset básico de estilos"
+        },
+        {
+            "type": "selector",
+            "subtype": "base",
+            "id": "#0010",
+            "name": "a",
+            "value": "color: inherit; text-decoration: none",
+            "description": "Estilo base para enlaces"
+        }
+    ]
+}
