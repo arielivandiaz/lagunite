@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| Raw Color Palette
+| Raw Color Palette @ID: #0001
 |--------------------------------------------------------------------------
 |
 | This file contains the raw color options for the design system.
@@ -9,7 +9,7 @@
 |
 */
 
-:root {
+:root {  
   /*== Neutral Palette (Gray) ==*/
   --gray-0: hsl(210, 20%, 98%);
   --gray-50: hsl(210, 20%, 95%);

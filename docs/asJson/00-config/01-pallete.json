@@ -1,0 +1,41 @@
+{
+    "folder": "00-config",
+    "file": "01-pallete.css",
+    "content": [
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0001",
+            "name": "--gray-XXX",
+            "value": "hsl(XXX, XX%, XX%)"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0001",
+            "name": "--blue-XXX",
+            "value": "hsl(XXX, XX%, XX%)"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0001",
+            "name": "--green-XX",
+            "value": "hsl(XXX, XX%, XX%)"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0001",
+            "name": "--yellow-XXX",
+            "value": "hsl(XXX, XX%, XX%)"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#0001",
+            "name": "--red-XXX",
+            "value": "hsl(XXX, XX%, XX%)"
+        }
+    ]
+}
