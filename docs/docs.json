@@ -6,35 +6,35 @@
       {
         "type": "var",
         "subtype": "color",
-        "id": "#0002",
+        "id": "#0001",
         "name": "--gray-XXX",
         "value": "hsl(XXX, XX%, XX%)"
       },
       {
         "type": "var",
         "subtype": "color",
-        "id": "#0002",
+        "id": "#0001",
         "name": "--blue-XXX",
         "value": "hsl(XXX, XX%, XX%)"
       },
       {
         "type": "var",
         "subtype": "color",
-        "id": "#0002",
+        "id": "#0001",
         "name": "--green-XX",
         "value": "hsl(XXX, XX%, XX%)"
       },
       {
         "type": "var",
         "subtype": "color",
-        "id": "#0002",
+        "id": "#0001",
         "name": "--yellow-XXX",
         "value": "hsl(XXX, XX%, XX%)"
       },
       {
         "type": "var",
         "subtype": "color",
-        "id": "#0002",
+        "id": "#0001",
         "name": "--red-XXX",
         "value": "hsl(XXX, XX%, XX%)"
       }
@@ -47,135 +47,935 @@
       {
         "type": "var",
         "subtype": "font-family",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-sans",
         "value": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
       },
       {
         "type": "var",
         "subtype": "font-family",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-mono",
         "value": "\"JetBrains Mono\", \"Fira Code\", monospace"
       },
       {
         "type": "var",
         "subtype": "font-family",
-        "id": "#0003",
-        "name": "--font_text",
+        "id": "#0002",
+        "name": "--font-text",
         "value": "\"Zen Kaku Gothic Antique\", sans-serif"
       },
       {
         "type": "var",
         "subtype": "font-family",
-        "id": "#0003",
-        "name": "--font_headers",
+        "id": "#0002",
+        "name": "--font-headers",
         "value": "\"PT Sans\", sans-serif"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-xs",
         "value": "0.75rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-sm",
         "value": "0.875rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-base",
         "value": "1rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-lg",
         "value": "1.125rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-xl",
         "value": "1.25rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-2xl",
         "value": "1.5rem"
       },
       {
         "type": "var",
         "subtype": "font-size",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-size-3xl",
         "value": "2rem"
       },
       {
         "type": "var",
         "subtype": "font-weight",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-weight-light",
         "value": "300"
       },
       {
         "type": "var",
         "subtype": "font-weight",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-weight-normal",
         "value": "400"
       },
       {
         "type": "var",
         "subtype": "font-weight",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-weight-medium",
         "value": "500"
       },
       {
         "type": "var",
         "subtype": "font-weight",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--font-weight-bold",
         "value": "700"
       },
       {
         "type": "var",
         "subtype": "line-height",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--line-height-none",
         "value": "1"
       },
       {
         "type": "var",
         "subtype": "line-height",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--line-height-tight",
         "value": "1.25"
       },
       {
         "type": "var",
         "subtype": "line-height",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--line-height-normal",
         "value": "1.5"
       },
       {
         "type": "var",
         "subtype": "line-height",
-        "id": "#0003",
+        "id": "#0002",
         "name": "--line-height-loose",
         "value": "2"
+      }
+    ]
+  },
+  {
+    "folder": "00-config",
+    "file": "03-theme.css",
+    "content": [
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-primary",
+        "value": "#2476ff",
+        "description": "Primary theme color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-primary-light",
+        "value": "#5e9aff",
+        "description": "Light variant of primary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-primary-dark",
+        "value": "#0965ff",
+        "description": "Dark variant of primary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-secondary",
+        "value": "#747474",
+        "description": "Secondary theme color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-secondary-light",
+        "value": "#333",
+        "description": "Light variant of secondary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-secondary-dark",
+        "value": "#292929",
+        "description": "Dark variant of secondary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-tertiary",
+        "value": "#f97316",
+        "description": "Tertiary theme color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-tertiary-light",
+        "value": "#ffa261",
+        "description": "Light variant of tertiary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-tertiary-dark",
+        "value": "#c95300",
+        "description": "Dark variant of tertiary color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-almost-black",
+        "value": "#333",
+        "description": "Almost black color for dark themes"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-almost-white",
+        "value": "#fcfcfc",
+        "description": "Almost white color for light themes"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-success",
+        "value": "#009112",
+        "description": "Success state color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-warning",
+        "value": "#ff9017",
+        "description": "Warning state color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-danger",
+        "value": "#fa3434",
+        "description": "Danger state color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-text-base",
+        "value": "#333",
+        "description": "Base text color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-text-alt",
+        "value": "#fff",
+        "description": "Alternative text color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-bg",
+        "value": "#eee",
+        "description": "Base background color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-bg-alt",
+        "value": "#222",
+        "description": "Alternative background color"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-bg-base",
+        "value": "var(--white)",
+        "description": "Base background color using white variable"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-bg-muted",
+        "value": "var(--gray-50)",
+        "description": "Muted background color using gray-50 variable"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-bg-surface",
+        "value": "var(--gray-100)",
+        "description": "Surface background color using gray-100 variable"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-border",
+        "value": "var(--gray-200)",
+        "description": "Border color using gray-200 variable"
+      },
+      {
+        "type": "var",
+        "subtype": "color",
+        "id": "#0003",
+        "name": "--color-border-hover",
+        "value": "var(--gray-300)",
+        "description": "Border hover color using gray-300 variable"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-primary",
+        "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)",
+        "description": "Primary gradient background"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-secondary",
+        "value": "linear-gradient(0deg, #292929 0%, #747474 100%)",
+        "description": "Secondary gradient background"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-tertiary",
+        "value": "linear-gradient(0deg, #bbb 0%, #fff 100%)",
+        "description": "Tertiary gradient background"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-1",
+        "value": "linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)",
+        "description": "First decorative gradient"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-2",
+        "value": "linear-gradient(0deg, #fff 0%, #5e9aff 100%)",
+        "description": "Second decorative gradient"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-3",
+        "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)",
+        "description": "Third decorative gradient"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-4",
+        "value": "linear-gradient(180deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 50%, rgba(0, 90, 238, 1) 100%)",
+        "description": "Fourth decorative gradient"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--background-gradient-5",
+        "value": "radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%)",
+        "description": "Fifth decorative gradient (radial)"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-6",
+        "value": "radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%)",
+        "description": "Sixth decorative gradient (radial)"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--bg-gradient-7",
+        "value": "repeating-linear-gradient(45deg, #2476ff, #5e9aff 20px, #fff 20px, #ccc 32px)",
+        "description": "Seventh decorative gradient (repeating)"
+      },
+      {
+        "type": "var",
+        "subtype": "gradient",
+        "id": "#0003",
+        "name": "--background-gradient-8",
+        "value": "repeating-linear-gradient(45deg, #5e9aff, #0965ff 20px, #000 20px, #444 32px)",
+        "description": "Eighth decorative gradient (repeating)"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border",
+        "value": "2px solid #2476ff",
+        "description": "Standard border"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-light",
+        "value": "2px solid #5e9aff",
+        "description": "Light border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-dark",
+        "value": "2px solid #0965ff",
+        "description": "Dark border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-sm",
+        "value": "1px solid #2476ff",
+        "description": "Small border"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-sm-light",
+        "value": "1px solid #5e9aff",
+        "description": "Small light border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-sm-dark",
+        "value": "1px solid #0965ff",
+        "description": "Small dark border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-lg",
+        "value": "4px solid #2476ff",
+        "description": "Large border"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-lg-light",
+        "value": "4px solid #5e9aff",
+        "description": "Large light border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0003",
+        "name": "--border-lg-dark",
+        "value": "4px solid #0965ff",
+        "description": "Large dark border variant"
+      },
+      {
+        "type": "var",
+        "subtype": "shadow",
+        "id": "#0003",
+        "name": "--shadow-sm",
+        "value": "0 1px 2px 0 hsla(0, 0%, 0%, 0.05)",
+        "description": "Small shadow"
+      },
+      {
+        "type": "var",
+        "subtype": "shadow",
+        "id": "#0003",
+        "name": "--shadow-md",
+        "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1)",
+        "description": "Medium shadow"
+      },
+      {
+        "type": "var",
+        "subtype": "shadow",
+        "id": "#0003",
+        "name": "--shadow-lg",
+        "value": "0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1)",
+        "description": "Large shadow"
+      },
+      {
+        "type": "var",
+        "subtype": "shadow",
+        "id": "#0003",
+        "name": "--shadow-inner",
+        "value": "inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)",
+        "description": "Inner shadow"
+      }
+    ]
+  },
+  {
+    "folder": "00-config",
+    "file": "04-measures.css",
+    "content": [
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-px",
+        "value": "1px",
+        "description": "1 pixel spacing"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-1",
+        "value": "0.25rem",
+        "description": "Spacing size (4px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-2",
+        "value": "0.5rem",
+        "description": "Spacing size (8px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-3",
+        "value": "0.75rem",
+        "description": "Spacing size (12px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-4",
+        "value": "1rem",
+        "description": "Spacing size (16px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-5",
+        "value": "1.25rem",
+        "description": "Spacing size (20px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-6",
+        "value": "1.5rem",
+        "description": "Spacing size (24px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-8",
+        "value": "2rem",
+        "description": "Spacing size (32px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-10",
+        "value": "2.5rem",
+        "description": "Spacing size (40px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-12",
+        "value": "3rem",
+        "description": "Spacing size (48px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-16",
+        "value": "4rem",
+        "description": "Spacing size (64px)"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-x",
+        "value": "var(--space-12)",
+        "description": "Horizontal default spacing"
+      },
+      {
+        "type": "var",
+        "subtype": "spacing",
+        "id": "#0004",
+        "name": "--space-y",
+        "value": "var(--space-8)",
+        "description": "Vertical default spacing"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0004",
+        "name": "--border-width-sm",
+        "value": "1px",
+        "description": "Small border width"
+      },
+      {
+        "type": "var",
+        "subtype": "border",
+        "id": "#0004",
+        "name": "--border-width-md",
+        "value": "2px",
+        "description": "Medium border width"
+      },
+      {
+        "type": "var",
+        "subtype": "radius",
+        "id": "#0004",
+        "name": "--radius-sm",
+        "value": "0.25rem",
+        "description": "Small border radius"
+      },
+      {
+        "type": "var",
+        "subtype": "radius",
+        "id": "#0004",
+        "name": "--radius-md",
+        "value": "0.5rem",
+        "description": "Medium border radius"
+      },
+      {
+        "type": "var",
+        "subtype": "radius",
+        "id": "#0004",
+        "name": "--radius-lg",
+        "value": "1rem",
+        "description": "Large border radius"
+      },
+      {
+        "type": "var",
+        "subtype": "radius",
+        "id": "#0004",
+        "name": "--radius-full",
+        "value": "9999px",
+        "description": "Full circular border radius"
+      },
+      {
+        "type": "var",
+        "subtype": "breakpoint",
+        "id": "#0004",
+        "name": "--breakpoint-sm",
+        "value": "640px",
+        "description": "Small breakpoint"
+      },
+      {
+        "type": "var",
+        "subtype": "breakpoint",
+        "id": "#0004",
+        "name": "--breakpoint-md",
+        "value": "768px",
+        "description": "Medium breakpoint"
+      },
+      {
+        "type": "var",
+        "subtype": "breakpoint",
+        "id": "#0004",
+        "name": "--breakpoint-lg",
+        "value": "1024px",
+        "description": "Large breakpoint"
+      },
+      {
+        "type": "var",
+        "subtype": "breakpoint",
+        "id": "#0004",
+        "name": "--breakpoint-xl",
+        "value": "1440px",
+        "description": "Extra large breakpoint"
+      }
+    ]
+  },
+  {
+    "folder": "00-config",
+    "file": "10-base.css",
+    "content": [
+      {
+        "type": "selector",
+        "subtype": "html",
+        "id": "#0010",
+        "name": "html",
+        "value": "font-size: 16px",
+        "description": "Base font size for the document"
+      },
+      {
+        "type": "selector",
+        "subtype": "html",
+        "id": "#0010",
+        "name": "body",
+        "value": "font-family: var(--font-sans)",
+        "description": "Base font family for the document"
+      },
+      {
+        "type": "selector",
+        "subtype": "reset",
+        "id": "#0010",
+        "name": "*",
+        "value": "margin: 0; padding: 0; box-sizing: border-box",
+        "description": "Basic style reset"
+      },
+      {
+        "type": "selector",
+        "subtype": "base",
+        "id": "#0010",
+        "name": "a",
+        "value": "color: inherit; text-decoration: none",
+        "description": "Base style for links"
+      }
+    ]
+  },
+  {
+    "folder": "01-text",
+    "file": "01-fonts.css",
+    "content": [
+      {
+        "type": "selector",
+        "subtype": "html",
+        "id": "#0010",
+        "name": "body",
+        "value": "font-family: var(--font-sans)",
+        "description": "Base font family for the document"
+      },
+      {
+        "type": "selector",
+        "subtype": "html",
+        "id": "#0010-001",
+        "name": "headers",
+        "value": "font-family, overflow-wrap, word-wrap, white-space",
+        "description": "Base heading styles for h1 to h5"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-011",
+        "name": "bold",
+        "value": "font-weight: bold",
+        "description": "Applies bold font weight"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-011",
+        "name": "italic",
+        "value": "font-style: italic",
+        "description": "Applies italic style"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-012",
+        "name": "font-text",
+        "value": "font-family: var(--font_text)",
+        "description": "Font family for body text"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-012",
+        "name": "font-headers",
+        "value": "font-family: var(--font_headers)",
+        "description": "Font family for headers"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-xs",
+        "value": "font-size: 70%",
+        "description": "Extra small font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-s",
+        "value": "font-size: 85%",
+        "description": "Small font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-l",
+        "value": "font-size: 115%",
+        "description": "Large font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-xl",
+        "value": "font-size: 130%",
+        "description": "Extra large font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-xxl",
+        "value": "font-size: 200%",
+        "description": "2x extra large font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-250",
+        "value": "font-size: 250%",
+        "description": "250% font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-300",
+        "value": "font-size: 300%",
+        "description": "300% font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-400",
+        "value": "font-size: 400%",
+        "description": "400% font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-013",
+        "name": "font-500",
+        "value": "font-size: 500%",
+        "description": "500% font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-014",
+        "name": "font-fluid",
+        "value": "font-size: clamp(1rem, 2vh, 1.5rem)",
+        "description": "Responsive fluid font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-014",
+        "name": "font-fluid-xs",
+        "value": "font-size: clamp(0.5rem, 1vh, 0.75rem)",
+        "description": "Fluid extra small font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-014",
+        "name": "font-fluid-s",
+        "value": "font-size: clamp(0.75rem, 1.5vh, 1rem)",
+        "description": "Fluid small font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-014",
+        "name": "font-fluid-l",
+        "value": "font-size: clamp(1.25rem, 3vh, 1.5rem)",
+        "description": "Fluid large font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-014",
+        "name": "font-fluid-xl",
+        "value": "font-size: clamp(1.5rem, 5vh, 2rem)",
+        "description": "Fluid extra large font size"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-015",
+        "name": "font-weight-1",
+        "value": "font-weight: 500",
+        "description": "Medium font weight (lighter override)"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-015",
+        "name": "font-weight-2",
+        "value": "font-weight: 700",
+        "description": "Bold font weight"
+      },
+      {
+        "type": "selector",
+        "subtype": "class",
+        "id": "#0010-015",
+        "name": "font-weight-3",
+        "value": "font-weight: 900",
+        "description": "Extra bold font weight"
       }
     ]
   }

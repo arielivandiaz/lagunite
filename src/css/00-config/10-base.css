@@ -1,4 +1,14 @@
-/* @ID: #001 */
+/*
+|--------------------------------------------------------------------------
+| Reset Styles @ID: #0010
+|--------------------------------------------------------------------------
+|
+| This file contains the reset styles for the design system.
+| These styles are applied globally to ensure a consistent baseline.
+|
+*/
+
+/* @ID: #00-10-001 */
 /*** RESET  ***/
 * {
     margin: 0;
@@ -9,9 +19,29 @@
 
 /* @ID: #002 */
 /*** Media Query Example  ***/
-@media only screen and (min-width : 281px) and (max-width : 767px) {}
+@media (max-width: 639px) {} /* xs */
+@media (min-width: 640px) {} /* sm */
+@media (min-width: 1024px) {} /* md */
+@media (min-width: 1200px) {} /* lg */
 
-@media only screen and (min-width : 768px) {}
+/* Example of responsive class
+/* @media (min-width: 768px) {
+  .md\:card {
+    border: 2px solid #3b82f6; 
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:card {
+    border: 2px solid #10b981;
+  }
+} 
+  
+<div class="card md:card lg:card">
+  Contenido de la tarjeta responsiva
+</div>
+*/
+
 
 /* @ID: #0003 */
 /*** Static ***/

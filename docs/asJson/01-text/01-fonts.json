@@ -1,0 +1,182 @@
+{
+    "folder": "01-text",
+    "file": "01-fonts.css",
+    "content": [   
+        {
+            "type": "selector",
+            "subtype": "html",
+            "id": "#01-01-001",
+            "name": "headers",
+            "value": "font-family, overflow-wrap, word-wrap, white-space",
+            "description": "Base heading styles for h1 to h5"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-011",
+            "name": "bold",
+            "value": "font-weight: bold",
+            "description": "Applies bold font weight"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-011",
+            "name": "italic",
+            "value": "font-style: italic",
+            "description": "Applies italic style"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-012",
+            "name": "font-text",
+            "value": "font-family: var(--font_text)",
+            "description": "Font family for body text"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-012",
+            "name": "font-headers",
+            "value": "font-family: var(--font_headers)",
+            "description": "Font family for headers"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-xs",
+            "value": "font-size: 70%",
+            "description": "Extra small font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-s",
+            "value": "font-size: 85%",
+            "description": "Small font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-l",
+            "value": "font-size: 115%",
+            "description": "Large font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-xl",
+            "value": "font-size: 130%",
+            "description": "Extra large font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-xxl",
+            "value": "font-size: 200%",
+            "description": "2x extra large font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-250",
+            "value": "font-size: 250%",
+            "description": "250% font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-300",
+            "value": "font-size: 300%",
+            "description": "300% font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-400",
+            "value": "font-size: 400%",
+            "description": "400% font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-013",
+            "name": "font-500",
+            "value": "font-size: 500%",
+            "description": "500% font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-014",
+            "name": "font-fluid",
+            "value": "font-size: clamp(1rem, 2vh, 1.5rem)",
+            "description": "Responsive fluid font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-014",
+            "name": "font-fluid-xs",
+            "value": "font-size: clamp(0.5rem, 1vh, 0.75rem)",
+            "description": "Fluid extra small font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-014",
+            "name": "font-fluid-s",
+            "value": "font-size: clamp(0.75rem, 1.5vh, 1rem)",
+            "description": "Fluid small font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-014",
+            "name": "font-fluid-l",
+            "value": "font-size: clamp(1.25rem, 3vh, 1.5rem)",
+            "description": "Fluid large font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-014",
+            "name": "font-fluid-xl",
+            "value": "font-size: clamp(1.5rem, 5vh, 2rem)",
+            "description": "Fluid extra large font size"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-015",
+            "name": "font-weight-1",
+            "value": "font-weight: 500",
+            "description": "Medium font weight (lighter override)"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-015",
+            "name": "font-weight-2",
+            "value": "font-weight: 700",
+            "description": "Bold font weight"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-015",
+            "name": "font-weight-3",
+            "value": "font-weight: 900",
+            "description": "Extra bold font weight"
+        }
+    ]
+}

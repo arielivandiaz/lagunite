@@ -1,112 +1,164 @@
-
 /********************** Text Format ********************************************/
 
-/* @ID: #020 */
+/* @ID: #01-02-01 */
 /* Text Transform */
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .lowercase {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
-/* @ID: #021 */
+/* @ID: #01-02-02 */
 /* Letter Spaccing **/
 .letter-spacing-xs {
-    letter-spacing: -0.1rem;
+  letter-spacing: -0.1rem;
 }
 
 .letter-spacing-s {
-    letter-spacing: -0.05rem;
+  letter-spacing: -0.05rem;
 }
 
 .letter-spacing {
-    letter-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
 }
 
 .letter-spacing-l {
-    letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 }
 
 .letter-spacing-xl {
-    letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
 }
 
 .letter-spacing-xxl {
-    letter-spacing: 0.4rem;
+  letter-spacing: 0.4rem;
 }
 
-/* @ID: #022 */
+/* @ID: #01-02-03 */
 /* Line Height **/
 .lh-xs {
-    line-height: 0.85
+  line-height: 0.85;
 }
 
 .lh-s {
-    line-height: 0.95
+  line-height: 0.95;
 }
 
 .lh {
-    line-height: 1.5
+  line-height: 1.5;
 }
 
 .lh-l {
-    line-height: 1.7
+  line-height: 1.7;
 }
 
 .lh-xl {
-    line-height: 2
+  line-height: 2;
 }
 
 .lh-xxl {
-    line-height: 2.5
+  line-height: 2.5;
 }
 
 /********************** Text Align ********************************************/
 
-/* @ID: #030 */
+/* @ID: #01-02-04 */
 /* Text Align **/
 .ta-c {
-    text-align: center;
+  text-align: center;
 }
 
 .ta-lf {
-    text-align: left;
+  text-align: left;
 }
 
 .ta-rg {
-    text-align: right;
-
+  text-align: right;
 }
 
 .ta-j {
-    text-align: justify;
+  text-align: justify;
 }
 
-.ta-j {
-    text-align: justify-all;
+.ta-ja {
+  text-align: justify-all;
 }
 
-.ta-cl,
-.ta-cr {
+@media (max-width: 639px) {
+  /* @ID: #01-02-030sm */
+  /* Text Align **/
+  .xs\:ta-c {
     text-align: center;
+  }
+
+  .xs\:ta-lf {
+    text-align: left;
+  }
+
+  .xs\:ta-rg {
+    text-align: right;
+  } 
+
+  .xs\:ta-j {
+    text-align: justify;
+  }
+
+  .xs\:ta-ja {
+    text-align: justify-all;
+  }
 }
 
+@media (min-width: 640px) {
+    /* @ID: #01-02-030sm */
+  /* Text Align **/
+  .sm\:ta-c {
+    text-align: center;
+  }
 
-@media only screen and (min-width : 768px) {
+  .sm\:ta-lf {
+    text-align: left;
+  }
 
-    /* @ID: #030x */
-    /* Text Align **/
-    .ta-cl {
-        text-align: left;
-    }
+  .sm\:ta-rg {
+    text-align: right;
+  }
 
-    .ta-cr {
-        text-align: right;
-    }
+  .sm\:ta-j {
+    text-align: justify;
+  }
+
+  .sm\:ta-ja {
+    text-align: justify-all;
+  }
 }
+
+@media (min-width: 1024px) {
+  /* @ID: #01-02-030md */
+  /* Text Align **/
+  .md\:ta-c {
+    text-align: center;
+  }
+
+  .md\:ta-lf {
+    text-align: left;
+  }
+
+  .md\:ta-rg {
+    text-align: right;
+  }
+
+  .md\:ta-j {
+    text-align: justify;
+  }
+
+  .md\:ta-ja {
+    text-align: justify-all;
+  }
+}
+

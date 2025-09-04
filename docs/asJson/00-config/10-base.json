@@ -4,19 +4,19 @@
     "content": [
         {
             "type": "selector",
-            "subtype": "base",
+            "subtype": "html",
             "id": "#0010",
             "name": "html",
             "value": "font-size: 16px",
-            "description": "Tamaño base de fuente para el documento"
+            "description": "Base font size for the document"
         },
         {
             "type": "selector",
-            "subtype": "base",
+            "subtype": "html",
             "id": "#0010",
             "name": "body",
             "value": "font-family: var(--font-sans)",
-            "description": "Fuente base para el documento"
+            "description": "Base font family for the document"
         },
         {
             "type": "selector",
@@ -24,7 +24,7 @@
             "id": "#0010",
             "name": "*",
             "value": "margin: 0; padding: 0; box-sizing: border-box",
-            "description": "Reset básico de estilos"
+            "description": "Basic style reset"
         },
         {
             "type": "selector",
@@ -32,7 +32,7 @@
             "id": "#0010",
             "name": "a",
             "value": "color: inherit; text-decoration: none",
-            "description": "Estilo base para enlaces"
+            "description": "Base style for links"
         }
     ]
 }
