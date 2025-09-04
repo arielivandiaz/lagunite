@@ -75,7 +75,7 @@
 
     <header>
       <a href="/">
-        <img src="./img/lagunite.png" class="maxw5" />
+        <!-- <img src="./img/lagunite.png" class="maxw5" /> -->
       </a>
       <h3>Nomenclature</h3>
     </header>
@@ -129,87 +129,138 @@
     </main>
 
     <script>
-      // Fetch and search docs.json
-      async function searchDocs(query) {
-        const resultsContainer = document.getElementById("results");
-        resultsContainer.innerHTML = ""; // Clear previous results
+      // Load docs.json once, render all items, then filter in-memory (show/hide)
+      (function () {
+        const resultsContainer = document.getElementById('results');
+        const searchInput = document.getElementById('searchInput');
+        let docsData = null;
 
-        try {
-          const response = await fetch("./docs.json");
-          const docs = await response.json();
+        // persistent 'no results' message element (kept outside items)
+        const noResultsEl = document.createElement('div');
+        noResultsEl.id = 'no-results-msg';
+        noResultsEl.textContent = 'No results found.';
+        noResultsEl.style.display = 'none';
+        noResultsEl.style.padding = '10px';
 
-          // Filter results based on the query
-          const results = [];
-          for (const key in docs) {
-            if (Object.hasOwnProperty.call(docs, key)) {
-              if (docs[key].content && docs[key].content.length > 0) {
-                for (const content of docs[key].content) {
-                  const contentString = JSON.stringify(content);
+        // ensure the noResults element is after the results container
+        resultsContainer.parentNode.insertBefore(noResultsEl, resultsContainer.nextSibling);
 
-                  if (contentString.toLowerCase().includes(query)) {
-                    results.push({
-                      folder: docs[key].folder,
-                      file: docs[key].file,
-                      content: content,
-                    });
-                  }
-                }
-              } else {
-                console.log("No content found for key:", key);
-              }
+        async function loadDocsOnce() {
+          resultsContainer.innerHTML = '<div>Loading...</div>';
+
+          const candidates = ['./docs.json', 'docs.json', '../docs/docs.json', '../docs.json', './data/docs.json'];
+          let response = null;
+          let lastError = null;
+          let usedUrl = null;
+
+          for (const url of candidates) {
+            try {
+              console.log('Attempting fetch for', url);
+              response = await fetch(url);
+              usedUrl = url;
+              console.log('Fetch', url, 'status=', response.status, 'ok=', response.ok);
+              if (response.ok) break;
+              lastError = new Error('HTTP ' + response.status + ' from ' + url);
+            } catch (err) {
+              lastError = err;
+              console.warn('Fetch failed for', url, err && err.message ? err.message : err);
             }
           }
 
-          // Display results
-          if (results.length > 0) {
-            results.forEach((result) => {
-              console.log("Result:", result);
-              const resultDiv = document.createElement("div");
-              resultDiv.className = "result-item";
+          if (!response || !response.ok) {
+            console.error('Could not load docs.json from candidates:', lastError);
+            resultsContainer.textContent = 'Error loading search results. See console for details.';
+            return;
+          }
 
-              // Populate the result-item structure
-              const id = result.content.id || "";
-              const folder = result.folder || "";
-              const file = result.file || "";
-              const name = result.content?.name || "";
-              const value = result.content?.value || "";
-              const description = result.content?.description || "";
+          try {
+            docsData = await response.json();
+            console.log('Docs loaded from', usedUrl, docsData);
+            renderAll(docsData);
+          } catch (err) {
+            console.error('Error parsing docs.json from', usedUrl, err);
+            resultsContainer.textContent = 'Error parsing docs.json. See console.';
+          }
+        }
 
-              resultDiv.innerHTML = `
-            <b>${id}</b>
-            <br />
-            <hgroup>
-              <i>${folder}&nbsp;</i>
-              <h3>${file}</h3>
-            </hgroup>
-            <p>${name}</p>
-            <p>${value}</p>
-            <p>${description}</p>
-          `;
+        function renderAll(docs) {
+          resultsContainer.innerHTML = ''; // clear placeholder/static examples
+          let total = 0;
 
-              resultsContainer.appendChild(resultDiv);
+          for (const key in docs) {
+            if (!Object.prototype.hasOwnProperty.call(docs, key)) continue;
+            const entry = docs[key];
+            if (!entry || !entry.content) continue;
+
+            for (const content of entry.content) {
+              const div = document.createElement('div');
+              div.className = 'result-item';
+
+              const id = content?.id || '';
+              const folder = entry?.folder || '';
+              const file = entry?.file || '';
+              const name = content?.name || '';
+              const value = content?.value || '';
+              const description = content?.description || '';
+
+              const searchable = (JSON.stringify(content) + ' ' + file + ' ' + folder).toLowerCase();
+              div.setAttribute('data-search', searchable);
+
+              div.innerHTML = `
+                <b>${id}</b>
+                <br />
+                <hgroup>
+                  <i>${folder}&nbsp;</i>
+                  <h3>${file}</h3>
+                </hgroup>
+                <p>${name}</p>
+                <p>${value}</p>
+                <p>${description}</p>
+              `;
+
+              resultsContainer.appendChild(div);
+              total++;
+            }
+          }
+
+          noResultsEl.style.display = total === 0 ? 'block' : 'none';
+        }
+
+        function filterInMemory(query) {
+          const items = resultsContainer.querySelectorAll('.result-item');
+          const q = (query || '').trim().toLowerCase();
+          let visible = 0;
+
+          if (!q || q.length < 3) {
+            // show all
+            items.forEach((it) => {
+              it.style.display = 'block';
+              visible++;
             });
           } else {
-            resultsContainer.textContent = "No results found.";
+            items.forEach((it) => {
+              const hay = it.getAttribute('data-search') || '';
+              if (hay.includes(q)) {
+                it.style.display = 'block';
+                visible++;
+              } else {
+                it.style.display = 'none';
+              }
+            });
           }
-        } catch (error) {
-          console.error("Error fetching docs.json:", error);
-          resultsContainer.textContent = "Error loading search results.";
-        }
-      }
 
-      // Add event listener to the search input
-      document
-        .getElementById("searchInput")
-        .addEventListener("input", (event) => {
-          const query = event.target.value;
-          if (query.length > 2) {
-            // Start searching after 3 characters
-            searchDocs(query.toLowerCase());
-          } else {
-            document.getElementById("results").innerHTML = ""; // Clear results
-          }
+          noResultsEl.style.display = visible === 0 ? 'block' : 'none';
+        }
+
+        // Wire input: never re-fetch; just filter rendered items
+        searchInput.addEventListener('input', (ev) => {
+          const q = (ev.target.value || '').trim();
+          filterInMemory(q);
         });
+
+        // load once on script run
+        loadDocsOnce();
+      })();
     </script>
   </body>
 </html>

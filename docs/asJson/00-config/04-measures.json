@@ -5,50 +5,186 @@
         {
             "type": "var",
             "subtype": "spacing",
-            "id": "#0004",
-            "name": "--spacing-xs",
+            "id": "#00-04-001",
+            "name": "--space-px",
+            "value": "1px",
+            "description": "1 pixel spacing"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-1",
             "value": "0.25rem",
-            "description": "Espaciado extra pequeño (4px)"
+            "description": "Spacing size (4px)"
         },
         {
             "type": "var",
             "subtype": "spacing",
-            "id": "#0004",
-            "name": "--spacing-sm",
+            "id": "#00-04-001",
+            "name": "--space-2",
             "value": "0.5rem",
-            "description": "Espaciado pequeño (8px)"
+            "description": "Spacing size (8px)"
         },
         {
             "type": "var",
             "subtype": "spacing",
-            "id": "#0004",
-            "name": "--spacing-md",
+            "id": "#00-04-001",
+            "name": "--space-3",
+            "value": "0.75rem",
+            "description": "Spacing size (12px)"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-4",
             "value": "1rem",
-            "description": "Espaciado mediano (16px)"
+            "description": "Spacing size (16px)"
         },
         {
             "type": "var",
-            "subtype": "size",
-            "id": "#0004",
-            "name": "--size-xs",
-            "value": "20rem",
-            "description": "Tamaño extra pequeño (320px)"
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-5",
+            "value": "1.25rem",
+            "description": "Spacing size (20px)"
         },
         {
             "type": "var",
-            "subtype": "size",
-            "id": "#0004",
-            "name": "--size-sm",
-            "value": "30rem",
-            "description": "Tamaño pequeño (480px)"
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-6",
+            "value": "1.5rem",
+            "description": "Spacing size (24px)"
         },
         {
             "type": "var",
-            "subtype": "size",
-            "id": "#0004",
-            "name": "--size-md",
-            "value": "40rem",
-            "description": "Tamaño mediano (640px)"
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-8",
+            "value": "2rem",
+            "description": "Spacing size (32px)"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-10",
+            "value": "2.5rem",
+            "description": "Spacing size (40px)"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-12",
+            "value": "3rem",
+            "description": "Spacing size (48px)"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-16",
+            "value": "4rem",
+            "description": "Spacing size (64px)"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-x",
+            "value": "var(--space-12)",
+            "description": "Horizontal default spacing"
+        },
+        {
+            "type": "var",
+            "subtype": "spacing",
+            "id": "#00-04-001",
+            "name": "--space-y",
+            "value": "var(--space-8)",
+            "description": "Vertical default spacing"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-04-001",
+            "name": "--border-width-sm",
+            "value": "1px",
+            "description": "Small border width"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-04-001",
+            "name": "--border-width-md",
+            "value": "2px",
+            "description": "Medium border width"
+        },
+        {
+            "type": "var",
+            "subtype": "radius",
+            "id": "#00-04-001",
+            "name": "--radius-sm",
+            "value": "0.25rem",
+            "description": "Small border radius"
+        },
+        {
+            "type": "var",
+            "subtype": "radius",
+            "id": "#00-04-001",
+            "name": "--radius-md",
+            "value": "0.5rem",
+            "description": "Medium border radius"
+        },
+        {
+            "type": "var",
+            "subtype": "radius",
+            "id": "#00-04-001",
+            "name": "--radius-lg",
+            "value": "1rem",
+            "description": "Large border radius"
+        },
+        {
+            "type": "var",
+            "subtype": "radius",
+            "id": "#00-04-001",
+            "name": "--radius-full",
+            "value": "9999px",
+            "description": "Full circular border radius"
+        },
+        {
+            "type": "var",
+            "subtype": "breakpoint",
+            "id": "#00-04-001",
+            "name": "--breakpoint-sm",
+            "value": "640px",
+            "description": "Small breakpoint"
+        },
+        {
+            "type": "var",
+            "subtype": "breakpoint",
+            "id": "#00-04-001",
+            "name": "--breakpoint-md",
+            "value": "768px",
+            "description": "Medium breakpoint"
+        },
+        {
+            "type": "var",
+            "subtype": "breakpoint",
+            "id": "#00-04-001",
+            "name": "--breakpoint-lg",
+            "value": "1024px",
+            "description": "Large breakpoint"
+        },
+        {
+            "type": "var",
+            "subtype": "breakpoint",
+            "id": "#00-04-001",
+            "name": "--breakpoint-xl",
+            "value": "1440px",
+            "description": "Extra large breakpoint"
         }
     ]
 }

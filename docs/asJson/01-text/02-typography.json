@@ -1,0 +1,86 @@
+{
+    "folder": "01-text",
+    "file": "01-fonts.css",
+    "content": [
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-020",
+            "name": "uppercase",
+            "value": "text-transform: uppercase",
+            "description": "Transforms text to uppercase"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-021",
+            "name": "lowercase",
+            "value": "text-transform: lowercase",
+            "description": "Transforms text to lowercase"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-020",
+            "name": "capitalize",
+            "value": "text-transform: capitalize",
+            "description": "Capitalizes the first letter of each word"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-021",
+            "name": ".letter-spacing-XX",
+            "value": "letter-spacing: X.XXem",
+            "description": "Adjusts letter spacing; replace XX with desired value"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-022",
+            "name": ".lh-XX",
+            "value": "line-height: X.XX",
+            "description": "Adjusts line height; replace XX with desired value"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-030",
+            "name": ".ta-c",
+            "value": "text-align: center",
+            "description": "Centers text"
+        },      
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-030",
+            "name": ".ta-l",
+            "value": "text-align: left",
+            "description": "Aligns text to the left"
+        },
+          {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-030",
+            "name": ".ta-rg",
+            "value": "text-align: right",
+            "description": "Aligns text to the right"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-030",
+            "name": ".ta-j",
+            "value": "text-align: justify",
+            "description": "Justifies text"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#0010-030",
+            "name": ".ta-ja",
+            "value": "text-align: justify-all",
+            "description": "Justifies text including the last line"
+        }
+    ]
+}

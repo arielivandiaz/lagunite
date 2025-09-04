@@ -1,6 +1,6 @@
 /*
   |--------------------------------------------------------------------------
-  | Semantic theme variables @ID: #0003
+  | Semantic theme variables @ID: #00-03-01
   |--------------------------------------------------------------------------
   |
   | These variables give meaning to the raw palette values. This is what
@@ -47,8 +47,6 @@
   --color-border: var(--gray-200);
   --color-border-hover: var(--gray-300);
 
-  --color-background: #eee;
-  --color-background-alt: #222;
 
   /*== Gradients ==*/
   --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
@@ -89,6 +87,14 @@
   --border: 2px solid #2476ff;
   --border-light: 2px solid #5e9aff;
   --border-dark: 2px solid #0965ff;
+
+  --border-sm: 1px solid #2476ff;
+  --border-sm-light: 1px solid #5e9aff;
+  --border-sm-dark: 1px solid #0965ff;
+
+  --border-lg: 4px solid #2476ff;
+  --border-lg-light: 4px solid #5e9aff;
+  --border-lg-dark: 4px solid #0965ff;
 
   /*== Shadows (Composable) ==*/
   --shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);

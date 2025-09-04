@@ -5,35 +5,35 @@
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0001",
+            "id": "#00-01-001",
             "name": "--gray-XXX",
             "value": "hsl(XXX, XX%, XX%)"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0001",
+            "id": "#00-01-001",
             "name": "--blue-XXX",
             "value": "hsl(XXX, XX%, XX%)"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0001",
+            "id": "#00-01-001",
             "name": "--green-XX",
             "value": "hsl(XXX, XX%, XX%)"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0001",
+            "id": "#00-01-001",
             "name": "--yellow-XXX",
             "value": "hsl(XXX, XX%, XX%)"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0001",
+            "id": "#00-01-001",
             "name": "--red-XXX",
             "value": "hsl(XXX, XX%, XX%)"
         }

@@ -5,74 +5,379 @@
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--color-primary",
             "value": "#2476ff",
-            "description": "Color primario del tema"
+            "description": "Primary theme color"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--color-primary-light",
             "value": "#5e9aff",
-            "description": "Variante clara del color primario"
+            "description": "Light variant of primary color"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--color-primary-dark",
             "value": "#0965ff",
-            "description": "Variante oscura del color primario"
+            "description": "Dark variant of primary color"
         },
         {
             "type": "var",
             "subtype": "color",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--color-secondary",
             "value": "#747474",
-            "description": "Color secundario del tema"
+            "description": "Secondary theme color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-secondary-light",
+            "value": "#333",
+            "description": "Light variant of secondary color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-secondary-dark",
+            "value": "#292929",
+            "description": "Dark variant of secondary color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-tertiary",
+            "value": "#f97316",
+            "description": "Tertiary theme color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-tertiary-light",
+            "value": "#ffa261",
+            "description": "Light variant of tertiary color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-tertiary-dark",
+            "value": "#c95300",
+            "description": "Dark variant of tertiary color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-almost-black",
+            "value": "#333",
+            "description": "Almost black color for dark themes"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-almost-white",
+            "value": "#fcfcfc",
+            "description": "Almost white color for light themes"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-success",
+            "value": "#009112",
+            "description": "Success state color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-warning",
+            "value": "#ff9017",
+            "description": "Warning state color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-danger",
+            "value": "#fa3434",
+            "description": "Danger state color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-text-base",
+            "value": "#333",
+            "description": "Base text color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-text-alt",
+            "value": "#fff",
+            "description": "Alternative text color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-bg",
+            "value": "#eee",
+            "description": "Base background color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-bg-alt",
+            "value": "#222",
+            "description": "Alternative background color"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-bg-base",
+            "value": "var(--white)",
+            "description": "Base background color using white variable"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-bg-muted",
+            "value": "var(--gray-50)",
+            "description": "Muted background color using gray-50 variable"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-bg-surface",
+            "value": "var(--gray-100)",
+            "description": "Surface background color using gray-100 variable"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-border",
+            "value": "var(--gray-200)",
+            "description": "Border color using gray-200 variable"
+        },
+        {
+            "type": "var",
+            "subtype": "color",
+            "id": "#00-03-001",
+            "name": "--color-border-hover",
+            "value": "var(--gray-300)",
+            "description": "Border hover color using gray-300 variable"
         },
         {
             "type": "var",
             "subtype": "gradient",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--bg-primary",
             "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)",
-            "description": "Gradiente primario"
+            "description": "Primary gradient background"
         },
         {
             "type": "var",
             "subtype": "gradient",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--bg-secondary",
             "value": "linear-gradient(0deg, #292929 0%, #747474 100%)",
-            "description": "Gradiente secundario"
+            "description": "Secondary gradient background"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-tertiary",
+            "value": "linear-gradient(0deg, #bbb 0%, #fff 100%)",
+            "description": "Tertiary gradient background"
+        },
+        
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-1",
+            "value": "linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)",
+            "description": "First decorative gradient"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-2",
+            "value": "linear-gradient(0deg, #fff 0%, #5e9aff 100%)",
+            "description": "Second decorative gradient"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-3",
+            "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)",
+            "description": "Third decorative gradient"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-4",
+            "value": "linear-gradient(180deg, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 50%, rgba(0, 90, 238, 1) 100%)",
+            "description": "Fourth decorative gradient"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--background-gradient-5",
+            "value": "radial-gradient(circle, rgba(94, 154, 255, 1) 0%, rgba(36, 118, 255, 1) 100%)",
+            "description": "Fifth decorative gradient (radial)"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-6",
+            "value": "radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(193, 216, 255, 1) 100%)",
+            "description": "Sixth decorative gradient (radial)"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--bg-gradient-7",
+            "value": "repeating-linear-gradient(45deg, #2476ff, #5e9aff 20px, #fff 20px, #ccc 32px)",
+            "description": "Seventh decorative gradient (repeating)"
+        },
+        {
+            "type": "var",
+            "subtype": "gradient",
+            "id": "#00-03-001",
+            "name": "--background-gradient-8",
+            "value": "repeating-linear-gradient(45deg, #5e9aff, #0965ff 20px, #000 20px, #444 32px)",
+            "description": "Eighth decorative gradient (repeating)"
         },
         {
             "type": "var",
             "subtype": "border",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--border",
             "value": "2px solid #2476ff",
-            "description": "Borde estándar"
+            "description": "Standard border"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-light",
+            "value": "2px solid #5e9aff",
+            "description": "Light border variant"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-dark",
+            "value": "2px solid #0965ff",
+            "description": "Dark border variant"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-sm",
+            "value": "1px solid #2476ff",
+            "description": "Small border"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-sm-light",
+            "value": "1px solid #5e9aff",
+            "description": "Small light border variant"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-sm-dark",
+            "value": "1px solid #0965ff",
+            "description": "Small dark border variant"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-lg",
+            "value": "4px solid #2476ff",
+            "description": "Large border"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-lg-light",
+            "value": "4px solid #5e9aff",
+            "description": "Large light border variant"
+        },
+        {
+            "type": "var",
+            "subtype": "border",
+            "id": "#00-03-001",
+            "name": "--border-lg-dark",
+            "value": "4px solid #0965ff",
+            "description": "Large dark border variant"
         },
         {
             "type": "var",
             "subtype": "shadow",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--shadow-sm",
             "value": "0 1px 2px 0 hsla(0, 0%, 0%, 0.05)",
-            "description": "Sombra pequeña"
+            "description": "Small shadow"
         },
         {
             "type": "var",
             "subtype": "shadow",
-            "id": "#0003",
+            "id": "#00-03-001",
             "name": "--shadow-md",
             "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1)",
-            "description": "Sombra mediana"
+            "description": "Medium shadow"
+        },
+        {
+            "type": "var",
+            "subtype": "shadow",
+            "id": "#00-03-001",
+            "name": "--shadow-lg",
+            "value": "0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1)",
+            "description": "Large shadow"
+        },
+        {
+            "type": "var",
+            "subtype": "shadow",
+            "id": "#00-03-001",
+            "name": "--shadow-inner",
+            "value": "inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)",
+            "description": "Inner shadow"
         }
     ]
 }
