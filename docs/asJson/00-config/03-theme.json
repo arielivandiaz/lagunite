@@ -150,30 +150,6 @@
             "type": "var",
             "subtype": "color",
             "id": "#00-03-001",
-            "name": "--color-bg-base",
-            "value": "var(--white)",
-            "description": "Base background color using white variable"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-03-001",
-            "name": "--color-bg-muted",
-            "value": "var(--gray-50)",
-            "description": "Muted background color using gray-50 variable"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-03-001",
-            "name": "--color-bg-surface",
-            "value": "var(--gray-100)",
-            "description": "Surface background color using gray-100 variable"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-03-001",
             "name": "--color-border",
             "value": "var(--gray-200)",
             "description": "Border color using gray-200 variable"

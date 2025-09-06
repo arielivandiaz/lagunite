@@ -1,0 +1,13 @@
+
+
+.bg-success.border {
+  border-color: var(--color-success) !important;
+}
+
+.bg-warning.border {
+  border-color: var(--color-warning) !important;
+}
+
+.bg-error.border {
+  border-color: var(--color-error) !important;
+}
