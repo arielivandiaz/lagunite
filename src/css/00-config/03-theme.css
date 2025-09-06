@@ -25,8 +25,11 @@
   --color-almost-white: #fcfcfc;
 
   --color-success: #009112;
+  --color-success-light: #98FF98;
   --color-warning: #ff9017;
-  --color-danger: #fa3434;
+  --color-warning-light: #FFEAD5;
+  --color-error: #fa3434;
+  --color-error-light: #FDD0D0;
 
   /*== Text Colors ==*/
   --color-text-base: #333;
