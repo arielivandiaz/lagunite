@@ -111,7 +111,7 @@
         "type": "var",
         "subtype": "font-size",
         "id": "#0002",
-        "name": "--font-size-2xl",
+        "name": "--font-size-xxl",
         "value": "1.5rem"
       },
       {
@@ -326,30 +326,6 @@
         "name": "--color-bg-alt",
         "value": "#222",
         "description": "Alternative background color"
-      },
-      {
-        "type": "var",
-        "subtype": "color",
-        "id": "#0003",
-        "name": "--color-bg-base",
-        "value": "var(--white)",
-        "description": "Base background color using white variable"
-      },
-      {
-        "type": "var",
-        "subtype": "color",
-        "id": "#0003",
-        "name": "--color-bg-muted",
-        "value": "var(--gray-50)",
-        "description": "Muted background color using gray-50 variable"
-      },
-      {
-        "type": "var",
-        "subtype": "color",
-        "id": "#0003",
-        "name": "--color-bg-surface",
-        "value": "var(--gray-100)",
-        "description": "Surface background color using gray-100 variable"
       },
       {
         "type": "var",

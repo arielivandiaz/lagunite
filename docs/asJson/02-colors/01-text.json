@@ -1,0 +1,174 @@
+{
+    "folder": "01-colors",
+    "file": "01-text.css",
+    "content": [
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-01",
+            "name": "color-text",
+            "value": "color: var(--color-text-base);",
+            "description": "Sets the text color to the base text color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-01",
+            "name": "color-text-alt",
+            "value": "color: var(--color-text-alt);",
+            "description": "Sets the text color to the alternative text color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-02",
+            "name": "color-primary",
+            "value": "  color: var(--color-primary);",
+            "description": "Sets the text color to the primary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-02",
+            "name": "color-primary-light",
+            "value": "  color: var(--color-primary-light);",
+            "description": "Sets the text color to the primary light color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-02",
+            "name": "color-primary-dark",
+            "value": "  color: var(--color-primary-dark);",
+            "description": "Sets the text color to the primary dark color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-03",
+            "name": "color-secondary",
+            "value": "  color: var(--color-secondary);",
+            "description": "Sets the text color to the secondary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-03",
+            "name": "color-secondary-light",
+            "value": "  color: var(--color-secondary-light);",
+            "description": "Sets the text color to the secondary light color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-03",
+            "name": "color-secondary-dark",
+            "value": "  color: var(--color-secondary-dark);",
+            "description": "Sets the text color to the secondary dark color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-04",
+            "name": "color-tertiary",
+            "value": "  color: var(--color-tertiary);",
+            "description": "Sets the text color to the tertiary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-04",
+            "name": "color-tertiary-light",
+            "value": "  color: var(--color-tertiary-light);",
+            "description": "Sets the text color to the tertiary light color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-04",
+            "name": "color-tertiary-dark",
+            "value": "  color: var(--color-tertiary-dark);",
+            "description": "Sets the text color to the tertiary dark color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-05",
+            "name": "color-almost-black",
+            "value": "color: var(--color-almost-black);",
+            "description": "Sets the text color to almost black"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-05",
+            "name": "color-almost-white",
+            "value": "color: var(--color-almost-white);",
+            "description": "Sets the text color to almost white"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-06",
+            "name": "color-success",
+            "value": "color: var(--color-success);",
+            "description": "Sets the text color to the success color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-06",
+            "name": "color-warning",
+            "value": "color: var(--color-warning);",
+            "description": "Sets the text color to the warning color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-06",
+            "name": "color-error",
+            "value": "color: var(--color-error);",
+            "description": "Sets the text color to the error color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-50",
+            "name": "color-gray-XX",
+            "value": "color: var(--color-gray-XX);",
+            "description": "Sets the text color to the gray-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-50",
+            "name": "color-blue-XX",
+            "value": "color: var(--color-blue-XX);",
+            "description": "Sets the text color to the blue-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-50",
+            "name": "color-green-XX",
+            "value": "color: var(--color-green-XX);",
+            "description": "Sets the text color to the green-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-50",
+            "name": "color-yellow-XX",
+            "value": "color: var(--color-yellow-XX);",
+            "description": "Sets the text color to the yellow-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-01-50",
+            "name": "color-red-XX",
+            "value": "color: var(--color-red-XX);",
+            "description": "Sets the text color to the red-XX color"
+        }
+    ]
+}
