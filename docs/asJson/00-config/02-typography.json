@@ -69,7 +69,7 @@
             "type": "var",
             "subtype": "font-size",
             "id": "#00-02-001",
-            "name": "--font-size-2xl",
+            "name": "--font-size-xxl",
             "value": "1.5rem"
         },
         {

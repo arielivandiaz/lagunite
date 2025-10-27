@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagunite Grid Utilities Demo</title>
+    <link rel="stylesheet" href="dist/lagunite.css">
+    <style>
+        body {
+            font-family: var(--font-text);
+            background: var(--color-bg);
+            color: var(--color-text-base);
+            padding: var(--space-6);
+            line-height: 1.6;
+        }
+
+        .demo-section {
+            margin-bottom: var(--space-12);
+            padding: var(--space-6);
+            background: var(--color-bg-alt);
+            border-radius: var(--radius-lg);
+        }
+
+        .demo-item {
+            background: var(--color-primary);
+            color: var(--color-text-alt);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            text-align: center;
+            font-weight: var(--font-weight-medium);
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-item:nth-child(even) {
+            background: var(--color-secondary);
+        }
+
+        .demo-item:nth-child(3n) {
+            background: var(--color-tertiary);
+        }
+
+        .demo-item.special {
+            background: var(--color-success);
+        }
+
+        .demo-item.highlight {
+            background: var(--color-warning);
+            color: var(--color-text-base);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-headers);
+            margin-bottom: var(--space-4);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--color-primary);
+            margin-bottom: var(--space-8);
+        }
+
+        h2 {
+            color: var(--color-secondary);
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: var(--space-2);
+        }
+
+        .code-label {
+            font-family: var(--font-mono);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-2);
+            padding: var(--space-1) var(--space-2);
+            background: var(--color-bg);
+            border-radius: var(--radius-sm);
+            display: inline-block;
+        }
+
+        .responsive-note {
+            background: var(--color-warning);
+            color: var(--color-text-base);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+            font-size: var(--font-size-sm);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lagunite Grid Utilities Demo</h1>
+
+    <!-- Basic Grid Containers -->
+    <div class="demo-section">
+        <h2>1. Basic Grid Containers</h2>
+        
+        <h3>Basic Grid (.grid)</h3>
+        <div class="code-label">.grid</div>
+        <div class="grid">
+            <div class="demo-item">Item 1</div>
+            <div class="demo-item">Item 2</div>
+            <div class="demo-item">Item 3</div>
+        </div>
+
+        <h3>Auto-fit Grid (.grid-auto)</h3>
+        <div class="code-label">.grid-auto</div>
+        <div class="grid-auto">
+            <div class="demo-item">Auto 1</div>
+            <div class="demo-item">Auto 2</div>
+            <div class="demo-item">Auto 3</div>
+            <div class="demo-item">Auto 4</div>
+        </div>
+    </div>
+
+    <!-- Grid Columns -->
+    <div class="demo-section">
+        <h2>2. Grid Columns</h2>
+        
+        <h3>2 Columns (.grid-cols-2)</h3>
+        <div class="code-label">.grid-cols-2 .g-gap</div>
+        <div class="grid-cols-2 g-gap">
+            <div class="demo-item">Col 1</div>
+            <div class="demo-item">Col 2</div>
+            <div class="demo-item">Col 3</div>
+            <div class="demo-item">Col 4</div>
+        </div>
+
+        <h3>3 Columns (.grid-cols-3)</h3>
+        <div class="code-label">.grid-cols-3 .g-gap-l</div>
+        <div class="grid-cols-3 g-gap-l">
+            <div class="demo-item">1</div>
+            <div class="demo-item">2</div>
+            <div class="demo-item">3</div>
+            <div class="demo-item">4</div>
+            <div class="demo-item">5</div>
+            <div class="demo-item">6</div>
+        </div>
+
+        <h3>4 Columns (.grid-cols-4)</h3>
+        <div class="code-label">.grid-cols-4 .g-gap-s</div>
+        <div class="grid-cols-4 g-gap-s">
+            <div class="demo-item">A</div>
+            <div class="demo-item">B</div>
+            <div class="demo-item">C</div>
+            <div class="demo-item">D</div>
+        </div>
+    </div>
+
+    <!-- Column Spans -->
+    <div class="demo-section">
+        <h2>3. Column Spans</h2>
+        
+        <h3>Mixed Spans in 4-Column Grid</h3>
+        <div class="code-label">.grid-cols-4 .g-gap</div>
+        <div class="grid-cols-4 g-gap">
+            <div class="demo-item col-span-2 special">Span 2 Columns</div>
+            <div class="demo-item">Single</div>
+            <div class="demo-item">Single</div>
+            <div class="demo-item col-span-3 highlight">Span 3 Columns</div>
+            <div class="demo-item">Last</div>
+        </div>
+
+        <h3>Full Width Span</h3>
+        <div class="code-label">.grid-cols-3 .col-span-full</div>
+        <div class="grid-cols-3 g-gap">
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item col-span-full special">Full Width Span</div>
+        </div>
+    </div>
+
+    <!-- Row Spans -->
+    <div class="demo-section">
+        <h2>4. Row Spans</h2>
+        
+        <h3>Mixed Row Spans</h3>
+        <div class="code-label">.grid-cols-3 .grid-rows-3 .g-gap</div>
+        <div class="grid-cols-3 grid-rows-3 g-gap">
+            <div class="demo-item row-span-2 special">Row Span 2</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item row-span-3 highlight">Row Span 3</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+        </div>
+    </div>
+
+    <!-- Grid Alignment -->
+    <div class="demo-section">
+        <h2>5. Grid Alignment</h2>
+        
+        <h3>Place Items Center</h3>
+        <div class="code-label">.grid-cols-3 .pi-center .g-gap-xl</div>
+        <div class="grid-cols-3 pi-center g-gap-xl" style="min-height: 200px;">
+            <div class="demo-item">Centered</div>
+            <div class="demo-item">Centered</div>
+            <div class="demo-item">Centered</div>
+        </div>
+
+        <h3>Mixed Self Alignment</h3>
+        <div class="code-label">.grid-cols-3 .g-gap</div>
+        <div class="grid-cols-3 g-gap" style="min-height: 150px;">
+            <div class="demo-item js-start">Start</div>
+            <div class="demo-item js-center">Center</div>
+            <div class="demo-item js-end">End</div>
+        </div>
+    </div>
+
+    <!-- Gap Variations -->
+    <div class="demo-section">
+        <h2>6. Gap Variations</h2>
+        
+        <h3>No Gap (.g-gap-0)</h3>
+        <div class="code-label">.grid-cols-4 .g-gap-0</div>
+        <div class="grid-cols-4 g-gap-0">
+            <div class="demo-item">No</div>
+            <div class="demo-item">Gap</div>
+            <div class="demo-item">Between</div>
+            <div class="demo-item">Items</div>
+        </div>
+
+        <h3>Extra Large Gap (.g-gap-xl)</h3>
+        <div class="code-label">.grid-cols-3 .g-gap-xl</div>
+        <div class="grid-cols-3 g-gap-xl">
+            <div class="demo-item">Large</div>
+            <div class="demo-item">Gap</div>
+            <div class="demo-item">Spacing</div>
+        </div>
+
+        <h3>Different Column/Row Gaps</h3>
+        <div class="code-label">.grid-cols-3 .g-col-gap-xl .g-row-gap-xs</div>
+        <div class="grid-cols-3 g-col-gap-xl g-row-gap-xs">
+            <div class="demo-item">Wide columns</div>
+            <div class="demo-item">Tight rows</div>
+            <div class="demo-item">Mixed gaps</div>
+            <div class="demo-item">Wide columns</div>
+            <div class="demo-item">Tight rows</div>
+            <div class="demo-item">Mixed gaps</div>
+        </div>
+    </div>
+
+    <!-- Responsive Grids -->
+    <div class="demo-section">
+        <h2>7. Responsive Grids</h2>
+        
+        <div class="responsive-note">
+            <strong>📱 Responsive Demo:</strong> Resize your browser window to see the grid change from mobile (1 column) to desktop (3 columns).
+        </div>
+
+        <h3>Mobile/Desktop Responsive</h3>
+        <div class="code-label">.xgrid-cols-1 .dgrid-cols-3 .g-gap</div>
+        <div class="xgrid-cols-1 dgrid-cols-3 g-gap">
+            <div class="demo-item">Responsive 1</div>
+            <div class="demo-item">Responsive 2</div>
+            <div class="demo-item">Responsive 3</div>
+            <div class="demo-item">Responsive 4</div>
+            <div class="demo-item">Responsive 5</div>
+            <div class="demo-item">Responsive 6</div>
+        </div>
+
+        <h3>Responsive Spans</h3>
+        <div class="code-label">.xgrid-cols-1 .dgrid-cols-4 .xcol-span-full .dcol-span-2</div>
+        <div class="xgrid-cols-1 dgrid-cols-4 g-gap">
+            <div class="demo-item xcol-span-full dcol-span-2 special">Mobile: Full, Desktop: Span 2</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+            <div class="demo-item">Normal</div>
+        </div>
+    </div>
+
+    <!-- Complex Layout Example -->
+    <div class="demo-section">
+        <h2>8. Complex Layout Example</h2>
+        
+        <h3>Dashboard-Style Layout</h3>
+        <div class="code-label">.grid-cols-4 .grid-rows-3 .g-gap</div>
+        <div class="grid-cols-4 grid-rows-3 g-gap" style="min-height: 300px;">
+            <div class="demo-item col-span-4 special">Header (Full Width)</div>
+            <div class="demo-item row-span-2">Sidebar</div>
+            <div class="demo-item col-span-2">Main Content</div>
+            <div class="demo-item">Widget</div>
+            <div class="demo-item col-span-2">Content Area</div>
+            <div class="demo-item">Ad Space</div>
+            <div class="demo-item col-span-4 highlight">Footer (Full Width)</div>
+        </div>
+    </div>
+
+    <!-- Auto Flow Examples -->
+    <div class="demo-section">
+        <h2>9. Grid Auto Flow</h2>
+        
+        <h3>Row Flow (Default)</h3>
+        <div class="code-label">.grid-cols-3 .grid-flow-row .g-gap</div>
+        <div class="grid-cols-3 grid-flow-row g-gap">
+            <div class="demo-item">1</div>
+            <div class="demo-item col-span-2">2 (span 2)</div>
+            <div class="demo-item">3</div>
+            <div class="demo-item">4</div>
+            <div class="demo-item">5</div>
+        </div>
+
+        <h3>Column Flow</h3>
+        <div class="code-label">.grid-rows-3 .grid-flow-col .g-gap</div>
+        <div class="grid-rows-3 grid-flow-col g-gap" style="height: 200px;">
+            <div class="demo-item">1</div>
+            <div class="demo-item">2</div>
+            <div class="demo-item">3</div>
+            <div class="demo-item">4</div>
+            <div class="demo-item">5</div>
+            <div class="demo-item">6</div>
+        </div>
+    </div>
+
+    <!-- Card Grid Example -->
+    <div class="demo-section">
+        <h2>10. Real-World Example: Card Grid</h2>
+        
+        <h3>Responsive Card Layout</h3>
+        <div class="code-label">.grid-auto .g-gap-l</div>
+        <div class="grid-auto g-gap-l">
+            <div class="demo-item" style="min-height: 120px;">
+                <div>
+                    <h4 style="margin: 0 0 8px 0;">Card Title 1</h4>
+                    <p style="margin: 0; font-size: 14px; opacity: 0.8;">Card description content</p>
+                </div>
+            </div>
+            <div class="demo-item" style="min-height: 120px;">
+                <div>
+                    <h4 style="margin: 0 0 8px 0;">Card Title 2</h4>
+                    <p style="margin: 0; font-size: 14px; opacity: 0.8;">Card description content</p>
+                </div>
+            </div>
+            <div class="demo-item" style="min-height: 120px;">
+                <div>
+                    <h4 style="margin: 0 0 8px 0;">Card Title 3</h4>
+                    <p style="margin: 0; font-size: 14px; opacity: 0.8;">Card description content</p>
+                </div>
+            </div>
+            <div class="demo-item" style="min-height: 120px;">
+                <div>
+                    <h4 style="margin: 0 0 8px 0;">Card Title 4</h4>
+                    <p style="margin: 0; font-size: 14px; opacity: 0.8;">Card description content</p>
+                </div>
+            </div>
+            <div class="demo-item" style="min-height: 120px;">
+                <div>
+                    <h4 style="margin: 0 0 8px 0;">Card Title 5</h4>
+                    <p style="margin: 0; font-size: 14px; opacity: 0.8;">Card description content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: var(--space-12); padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
+        <p style="color: var(--color-text-muted);">
+            <strong>Lagunite Grid Utilities Demo</strong> - Resize your browser to see responsive behavior
+        </p>
+    </footer>
+</body>
+</html>

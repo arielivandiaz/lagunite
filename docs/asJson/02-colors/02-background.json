@@ -1,0 +1,258 @@
+{
+    "folder": "01-colors",
+    "file": "02-background.css",
+    "content": [
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-01",
+            "name": "bg",
+            "value": "background: var(--color-bg); color: var(--color-text-base);",
+            "description": "Sets the background color to the base background color and text color to the base text color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-01",
+            "name": "bg-alt",
+            "value": "background: var(--color-bg-alt); color: var(--color-text-alt);",
+            "description": "Sets the background color to the alternative background color and text color to the alternative text color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-02",
+            "name": "bg-1",
+            "value": "background: var(--bg-primary); color: var(--color-text-base);",
+            "description": "Sets the background color to the primary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-02",
+            "name": "bg-2",
+            "value": "background: var(--bg-secondary); color: var(--color-text-alt);",
+            "description": "Sets the background color to the secondary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-02",
+            "name": "bg-3",
+            "value": "background: var(--bg-tertiary); color: var(--color-text-alt);",
+            "description": "Sets the background color to the tertiary color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-03",
+            "name": "bg-black",
+            "value": "background: #000; color: var(--color-text-alt);",
+            "description": "Sets the background color to the black color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-03",
+            "name": "bg-ablack",
+            "value": "background:  var(--color-almost-black); color: var(--color-text-alt);",
+            "description": "Sets the background color to the almost black color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-03",
+            "name": "bg-white",
+            "value": "background: #000; color: var(--color-text);",
+            "description": "Sets the background color to the white color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-03",
+            "name": "bg-awhite",
+            "value": "background:  var(--color-almost-white); color: var(--color-text);",
+            "description": "Sets the background color to the almost white color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-01",
+            "value": "background: var(--color-primary); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-02",
+            "value": "background: var(--color-primary-light); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-03",
+            "value": "background: var(--color-primary-dark); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-04",
+            "value": "background: var(--color-secondary); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-05",
+            "value": "background: var(--color-secondary-light); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-06",
+            "value": "background: var(--color-secondary-dark); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-07",
+            "value": "background: var(--color-tertiary); color: var(--color-text);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-08",
+            "value": "background: var(--color-tertiary-light); color: var(--color-text-alt);  "
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-04",
+            "name": "bg-09",
+            "value": "background: var(--color-tertiary-dark); color: var(--color-text);  "
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-05",
+            "name": "bg-success",
+            "value": "background: var(--color-success-light); color: var(--color-success);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-05",
+            "name": "bg-warning",
+            "value": "background: var(--color-warning-light); color: var(--color-warning);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-05",
+            "name": "bg-error",
+            "value": "background: var(--color-error-light); color: var(--color-error);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-1",
+            "value": "background: var(--bg-gradient-1); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-2",
+            "value": "background: var(--bg-gradient-2); color: var(--color-text-base);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-3",
+            "value": "background: var(--bg-gradient-3); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-4",
+            "value": "background: var(--bg-gradient-4); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-5",
+            "value": "background: var(--bg-gradient-5); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-6",
+            "value": "background: var(--bg-gradient-6); color: var(--color-text-base);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-7",
+            "value": "background: var(--bg-gradient-7); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-06",
+            "name": "bgg-8",
+            "value": "background: var(--bg-gradient-8); color: var(--color-text-alt);"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-50",
+            "name": "bg-gray-XX",
+            "value": "background: var(--color-gray-XX);",
+            "description": "Sets the background color to the gray-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-50",
+            "name": "bg-blue-XX",
+            "value": "background: var(--color-blue-XX);",
+            "description": "Sets the background color to the blue-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-50",
+            "name": "bg-green-XX",
+            "value": "background: var(--color-green-XX);",
+            "description": "Sets the background color to the green-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-50",
+            "name": "bg-yellow-XX",
+            "value": "background: var(--color-yellow-XX);",
+            "description": "Sets the background color to the yellow-XX color"
+        },
+        {
+            "type": "selector",
+            "subtype": "class",
+            "id": "#02-02-50",
+            "name": "bg-red-XX",
+            "value": "background: var(--color-red-XX);",
+            "description": "Sets the background color to the red-XX color"
+        }
+    ]
+} 
