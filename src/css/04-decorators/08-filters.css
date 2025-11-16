@@ -1,0 +1,81 @@
+/* @ID: #04-08-XX */
+/*** Blur Utilities ***/
+.blur-none { filter: blur(0); }
+.blur-s { filter: blur(4px); }
+.blur { filter: blur(8px); }
+.blur-l { filter: blur(16px); }
+.blur-xl { filter: blur(32px); }
+
+/*** Brightness Utilities ***/
+.brightness-0 { filter: brightness(0); }
+.brightness-50 { filter: brightness(0.5); }
+.brightness-100 { filter: brightness(1); }
+.brightness-150 { filter: brightness(1.5); }
+
+/*** Contrast Utilities ***/
+.contrast-0 { filter: contrast(0); }
+.contrast-50 { filter: contrast(0.5); }
+.contrast-100 { filter: contrast(1); }
+.contrast-150 { filter: contrast(1.5); }
+
+/*** Grayscale Utilities ***/
+.grayscale-0 { filter: grayscale(0); }
+.grayscale { filter: grayscale(1); }
+.grayscale-100 { filter: grayscale(1); }
+
+/*** Saturate Utilities ***/
+.saturate-0 { filter: saturate(0); }
+.saturate-100 { filter: saturate(1); }
+.saturate-150 { filter: saturate(1.5); }
+
+@media (max-width: 639px) {
+  .xblur-none { filter: blur(0); }
+  .xblur-s { filter: blur(4px); }
+  .xblur { filter: blur(8px); }
+  .xblur-l { filter: blur(16px); }
+  .xblur-xl { filter: blur(32px); }
+
+  .xbrightness-0 { filter: brightness(0); }
+  .xbrightness-50 { filter: brightness(0.5); }
+  .xbrightness-100 { filter: brightness(1); }
+  .xbrightness-150 { filter: brightness(1.5); }
+
+  .xcontrast-0 { filter: contrast(0); }
+  .xcontrast-50 { filter: contrast(0.5); }
+  .xcontrast-100 { filter: contrast(1); }
+  .xcontrast-150 { filter: contrast(1.5); }
+
+  .xgrayscale-0 { filter: grayscale(0); }
+  .xgrayscale { filter: grayscale(1); }
+  .xgrayscale-100 { filter: grayscale(1); }
+
+  .xsaturate-0 { filter: saturate(0); }
+  .xsaturate-100 { filter: saturate(1); }
+  .xsaturate-150 { filter: saturate(1.5); }
+}
+
+@media (min-width: 640px) {
+  .dblur-none { filter: blur(0); }
+  .dblur-s { filter: blur(4px); }
+  .dblur { filter: blur(8px); }
+  .dblur-l { filter: blur(16px); }
+  .dblur-xl { filter: blur(32px); }
+
+  .dbrightness-0 { filter: brightness(0); }
+  .dbrightness-50 { filter: brightness(0.5); }
+  .dbrightness-100 { filter: brightness(1); }
+  .dbrightness-150 { filter: brightness(1.5); }
+
+  .dcontrast-0 { filter: contrast(0); }
+  .dcontrast-50 { filter: contrast(0.5); }
+  .dcontrast-100 { filter: contrast(1); }
+  .dcontrast-150 { filter: contrast(1.5); }
+
+  .dgrayscale-0 { filter: grayscale(0); }
+  .dgrayscale { filter: grayscale(1); }
+  .dgrayscale-100 { filter: grayscale(1); }
+
+  .dsaturate-0 { filter: saturate(0); }
+  .dsaturate-100 { filter: saturate(1); }
+  .dsaturate-150 { filter: saturate(1.5); }
+}
