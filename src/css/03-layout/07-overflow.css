@@ -1,0 +1,116 @@
+/* @ID: #03-07-XX */
+/*** Overflow Utilities ***/
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll { overflow: scroll; }
+
+.overflow-x-auto { overflow-x: auto; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-x-visible { overflow-x: visible; }
+.overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-y-auto { overflow-y: auto; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-y-visible { overflow-y: visible; }
+.overflow-y-scroll { overflow-y: scroll; }
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .xoverflow-auto { overflow: auto; }
+  .xoverflow-hidden { overflow: hidden; }
+  .xoverflow-visible { overflow: visible; }
+  .xoverflow-scroll { overflow: scroll; }
+
+  .xoverflow-x-auto { overflow-x: auto; }
+  .xoverflow-x-hidden { overflow-x: hidden; }
+  .xoverflow-x-visible { overflow-x: visible; }
+  .xoverflow-x-scroll { overflow-x: scroll; }
+
+  .xoverflow-y-auto { overflow-y: auto; }
+  .xoverflow-y-hidden { overflow-y: hidden; }
+  .xoverflow-y-visible { overflow-y: visible; }
+  .xoverflow-y-scroll { overflow-y: scroll; }
+
+  .xscrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .xscrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .xscrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+  }
+
+  .xscrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .xscrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .doverflow-auto { overflow: auto; }
+  .doverflow-hidden { overflow: hidden; }
+  .doverflow-visible { overflow: visible; }
+  .doverflow-scroll { overflow: scroll; }
+
+  .doverflow-x-auto { overflow-x: auto; }
+  .doverflow-x-hidden { overflow-x: hidden; }
+  .doverflow-x-visible { overflow-x: visible; }
+  .doverflow-x-scroll { overflow-x: scroll; }
+
+  .doverflow-y-auto { overflow-y: auto; }
+  .doverflow-y-hidden { overflow-y: hidden; }
+  .doverflow-y-visible { overflow-y: visible; }
+  .doverflow-y-scroll { overflow-y: scroll; }
+
+  .dscrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .dscrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .dscrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+  }
+
+  .dscrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .dscrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}

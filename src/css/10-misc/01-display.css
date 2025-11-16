@@ -1,0 +1,41 @@
+/* @ID: #10-01-XX */
+/*** Display Utilities ***/
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+.d-none { display: none; }
+
+.visibility-visible { visibility: visible; }
+.visibility-invisible { visibility: hidden; }
+.visibility-collapse { visibility: collapse; }
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+.collapse { visibility: collapse; }
+
+@media (max-width: 639px) {
+  .xd-block { display: block; }
+  .xd-inline { display: inline; }
+  .xd-inline-block { display: inline-block; }
+  .xd-flex { display: flex; }
+  .xd-grid { display: grid; }
+  .xd-none { display: none; }
+
+  .xd-visible { visibility: visible; }
+  .xd-invisible { visibility: hidden; }
+  .xd-collapse { visibility: collapse; }
+}
+
+@media (min-width: 640px) {
+  .dd-block { display: block; }
+  .dd-inline { display: inline; }
+  .dd-inline-block { display: inline-block; }
+  .dd-flex { display: flex; }
+  .dd-grid { display: grid; }
+  .dd-none { display: none; }
+
+  .dd-visible { visibility: visible; }
+  .dd-invisible { visibility: hidden; }
+  .dd-collapse { visibility: collapse; }
+}

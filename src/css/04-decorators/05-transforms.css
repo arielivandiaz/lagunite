@@ -1,0 +1,74 @@
+/* @ID: #04-05-XX */
+/*** Scale Utilities ***/
+.scale-0 { transform: scale(0); }
+.scale-50 { transform: scale(0.5); }
+.scale-75 { transform: scale(0.75); }
+.scale-100 { transform: scale(1); }
+.scale-125 { transform: scale(1.25); }
+.scale-150 { transform: scale(1.5); }
+
+/*** Rotate Utilities ***/
+.rotate-0 { transform: rotate(0deg); }
+.rotate-45 { transform: rotate(45deg); }
+.rotate-90 { transform: rotate(90deg); }
+.rotate-180 { transform: rotate(180deg); }
+.rotate-270 { transform: rotate(270deg); }
+
+/*** Translate Utilities ***/
+.translate-x-0 { transform: translateX(0); }
+.translate-x-full { transform: translateX(100%); }
+.translate-y-0 { transform: translateY(0); }
+.translate-y-full { transform: translateY(100%); }
+
+/*** Transform origin ***/
+.origin-center { transform-origin: center; }
+.origin-top { transform-origin: top; }
+.origin-bottom { transform-origin: bottom; }
+
+@media (max-width: 639px) {
+  .xscale-0 { transform: scale(0); }
+  .xscale-50 { transform: scale(0.5); }
+  .xscale-75 { transform: scale(0.75); }
+  .xscale-100 { transform: scale(1); }
+  .xscale-125 { transform: scale(1.25); }
+  .xscale-150 { transform: scale(1.5); }
+
+  .xrotate-0 { transform: rotate(0deg); }
+  .xrotate-45 { transform: rotate(45deg); }
+  .xrotate-90 { transform: rotate(90deg); }
+  .xrotate-180 { transform: rotate(180deg); }
+  .xrotate-270 { transform: rotate(270deg); }
+
+  .xtranslate-x-0 { transform: translateX(0); }
+  .xtranslate-x-full { transform: translateX(100%); }
+  .xtranslate-y-0 { transform: translateY(0); }
+  .xtranslate-y-full { transform: translateY(100%); }
+
+  .xorigin-center { transform-origin: center; }
+  .xorigin-top { transform-origin: top; }
+  .xorigin-bottom { transform-origin: bottom; }
+}
+
+@media (min-width: 640px) {
+  .dscale-0 { transform: scale(0); }
+  .dscale-50 { transform: scale(0.5); }
+  .dscale-75 { transform: scale(0.75); }
+  .dscale-100 { transform: scale(1); }
+  .dscale-125 { transform: scale(1.25); }
+  .dscale-150 { transform: scale(1.5); }
+
+  .drotate-0 { transform: rotate(0deg); }
+  .drotate-45 { transform: rotate(45deg); }
+  .drotate-90 { transform: rotate(90deg); }
+  .drotate-180 { transform: rotate(180deg); }
+  .drotate-270 { transform: rotate(270deg); }
+
+  .dtranslate-x-0 { transform: translateX(0); }
+  .dtranslate-x-full { transform: translateX(100%); }
+  .dtranslate-y-0 { transform: translateY(0); }
+  .dtranslate-y-full { transform: translateY(100%); }
+
+  .dorigin-center { transform-origin: center; }
+  .dorigin-top { transform-origin: top; }
+  .dorigin-bottom { transform-origin: bottom; }
+}
