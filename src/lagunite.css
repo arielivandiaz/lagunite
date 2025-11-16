@@ -17,9 +17,14 @@
 @import './css/03-layout/04-margin.css';
 @import './css/03-layout/05-padding.css';
 @import './css/03-layout/10-size.css';
-@import './css/04-decorators/borders.css';
+@import './css/04-decorators/02-shadows.css';
+@import './css/04-decorators/03-opacity.css';
+@import './css/04-decorators/05-transforms.css';
+@import './css/04-decorators/06-transitions.css';
+@import './css/04-decorators/04-border.css';
 @import './css/04-decorators/decorators.css';
 @import './css/05-atoms/buttons.css';
 @import './css/07-form/form.css';
+@import './css/10-misc/01-display.css';
 @import './css/10-misc/display.css';
 @import './css/10-misc/figures.css';
