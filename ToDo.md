@@ -79,29 +79,29 @@
 - [x] Update ID system: `#04-06-XX`
 
 #### 1.1.8 Animation Utilities
-- [ ] Create `src/css/04-decorators/07-animations.css`
-- [ ] Keyframes: spin, pulse, bounce, fade-in, fade-out, slide-in, slide-out
-- [ ] Animation classes: `.animate-spin`, `.animate-pulse`, `.animate-bounce`
-- [ ] Animation duration: `.animate-duration-1s`, `.animate-duration-2s`
-- [ ] Animation iteration: `.animate-once`, `.animate-infinite`
-- [ ] Update ID system: `#04-07-XX`
+- [x] Create `src/css/04-decorators/07-animations.css`
+- [x] Keyframes: spin, pulse, bounce, fade-in, fade-out, slide-in, slide-out
+- [x] Animation classes: `.animate-spin`, `.animate-pulse`, `.animate-bounce`
+- [x] Animation duration: `.animate-duration-1s`, `.animate-duration-2s`
+- [x] Animation iteration: `.animate-once`, `.animate-infinite`
+- [x] Update ID system: `#04-07-XX`
 
 #### 1.1.9 Filter Utilities
-- [ ] Create `src/css/04-decorators/08-filters.css`
-- [ ] Blur: `.blur-none`, `.blur-s`, `.blur`, `.blur-l`, `.blur-xl`
-- [ ] Brightness: `.brightness-0`, `.brightness-50`, `.brightness-100`, `.brightness-150`
-- [ ] Contrast: `.contrast-0`, `.contrast-50`, `.contrast-100`, `.contrast-150`
-- [ ] Grayscale: `.grayscale-0`, `.grayscale`, `.grayscale-100`
-- [ ] Saturate: `.saturate-0`, `.saturate-100`, `.saturate-150`
-- [ ] Responsive variants
-- [ ] Update ID system: `#04-08-XX`
+- [x] Create `src/css/04-decorators/08-filters.css`
+- [x] Blur: `.blur-none`, `.blur-s`, `.blur`, `.blur-l`, `.blur-xl`
+- [x] Brightness: `.brightness-0`, `.brightness-50`, `.brightness-100`, `.brightness-150`
+- [x] Contrast: `.contrast-0`, `.contrast-50`, `.contrast-100`, `.contrast-150`
+- [x] Grayscale: `.grayscale-0`, `.grayscale`, `.grayscale-100`
+- [x] Saturate: `.saturate-0`, `.saturate-100`, `.saturate-150`
+- [x] Responsive variants
+- [x] Update ID system: `#04-08-XX`
 
 #### 1.1.10 Cursor Utilities
-- [ ] Create `src/css/10-misc/02-cursor.css`
-- [ ] Cursor types: `.cursor-auto`, `.cursor-pointer`, `.cursor-not-allowed`, `.cursor-text`, `.cursor-move`
-- [ ] Pointer events: `.pointer-events-none`, `.pointer-events-auto`
-- [ ] User select: `.select-none`, `.select-text`, `.select-all`
-- [ ] Update ID system: `#10-02-XX`
+- [x] Create `src/css/10-misc/02-cursor.css`
+- [x] Cursor types: `.cursor-auto`, `.cursor-pointer`, `.cursor-not-allowed`, `.cursor-text`, `.cursor-move`
+- [x] Pointer events: `.pointer-events-none`, `.pointer-events-auto`
+- [x] User select: `.select-none`, `.select-text`, `.select-all`
+- [x] Update ID system: `#10-02-XX`
 
 ### 1.2 Component Library (Priority: HIGH)
 

@@ -1,0 +1,37 @@
+/* @ID: #10-02-XX */
+.cursor-auto { cursor: auto; }
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-text { cursor: text; }
+.cursor-move { cursor: move; }
+.pointer-events-none { pointer-events: none; }
+.pointer-events-auto { pointer-events: auto; }
+.select-none { user-select: none; }
+.select-text { user-select: text; }
+.select-all { user-select: all; }
+
+@media (max-width: 639px) {
+  .xcursor-auto { cursor: auto; }
+  .xcursor-pointer { cursor: pointer; }
+  .xcursor-not-allowed { cursor: not-allowed; }
+  .xcursor-text { cursor: text; }
+  .xcursor-move { cursor: move; }
+  .xpointer-events-none { pointer-events: none; }
+  .xpointer-events-auto { pointer-events: auto; }
+  .xselect-none { user-select: none; }
+  .xselect-text { user-select: text; }
+  .xselect-all { user-select: all; }
+}
+
+@media (min-width: 640px) {
+  .dcursor-auto { cursor: auto; }
+  .dcursor-pointer { cursor: pointer; }
+  .dcursor-not-allowed { cursor: not-allowed; }
+  .dcursor-text { cursor: text; }
+  .dcursor-move { cursor: move; }
+  .dpointer-events-none { pointer-events: none; }
+  .dpointer-events-auto { pointer-events: auto; }
+  .dselect-none { user-select: none; }
+  .dselect-text { user-select: text; }
+  .dselect-all { user-select: all; }
+}
