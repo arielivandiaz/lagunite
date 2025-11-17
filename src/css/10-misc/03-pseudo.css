@@ -1,0 +1,191 @@
+/* @ID: #10-03-XX */
+/*** Content Utilities ***/
+.content-none { content: none; }
+.content-empty { content: ''; }
+
+/*** Before/After Display Helpers ***/
+.before-block::before { content: ''; display: block; }
+.before-inline::before { content: ''; display: inline; }
+.before-inline-block::before { content: ''; display: inline-block; }
+.before-table::before { content: ''; display: table; }
+
+.after-block::after { content: ''; display: block; }
+.after-inline::after { content: ''; display: inline; }
+.after-inline-block::after { content: ''; display: inline-block; }
+.after-table::after { content: ''; display: table; }
+
+/*** Before/After Absolute Positioning Shortcuts ***/
+.before-absolute::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.after-absolute::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*** Before/After Centered Overlay ***/
+.before-overlay::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.after-overlay::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*** Clearfix Utility ***/
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*** Before/After Content from Attribute ***/
+.before-content::before { content: attr(data-before); }
+.after-content::after { content: attr(data-after); }
+
+/*** Empty State Helpers ***/
+.empty-block::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.empty-inline::before {
+  content: '';
+  display: inline-block;
+}
+
+@media (max-width: 639px) {
+  .xcontent-none { content: none; }
+  .xcontent-empty { content: ''; }
+
+  .xbefore-block::before { content: ''; display: block; }
+  .xbefore-inline::before { content: ''; display: inline; }
+  .xbefore-inline-block::before { content: ''; display: inline-block; }
+  .xbefore-table::before { content: ''; display: table; }
+
+  .xafter-block::after { content: ''; display: block; }
+  .xafter-inline::after { content: ''; display: inline; }
+  .xafter-inline-block::after { content: ''; display: inline-block; }
+  .xafter-table::after { content: ''; display: table; }
+
+  .xbefore-absolute::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .xafter-absolute::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .xbefore-overlay::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .xafter-overlay::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .xclearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .xbefore-content::before { content: attr(data-before); }
+  .xafter-content::after { content: attr(data-after); }
+}
+
+@media (min-width: 640px) {
+  .dcontent-none { content: none; }
+  .dcontent-empty { content: ''; }
+
+  .dbefore-block::before { content: ''; display: block; }
+  .dbefore-inline::before { content: ''; display: inline; }
+  .dbefore-inline-block::before { content: ''; display: inline-block; }
+  .dbefore-table::before { content: ''; display: table; }
+
+  .dafter-block::after { content: ''; display: block; }
+  .dafter-inline::after { content: ''; display: inline; }
+  .dafter-inline-block::after { content: ''; display: inline-block; }
+  .dafter-table::after { content: ''; display: table; }
+
+  .dbefore-absolute::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dafter-absolute::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dbefore-overlay::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dafter-overlay::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dclearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .dbefore-content::before { content: attr(data-before); }
+  .dafter-content::after { content: attr(data-after); }
+}
