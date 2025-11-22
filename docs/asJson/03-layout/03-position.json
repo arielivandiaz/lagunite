@@ -1,0 +1,1492 @@
+{
+  "folder": "03-layout",
+  "file": "03-position.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 110,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pos-static",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pos-static { position: static; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pos-relative",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pos-relative { position: relative; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pos-absolute",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pos-absolute { position: absolute; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pos-fixed",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pos-fixed { position: fixed; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pos-sticky",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pos-sticky { position: sticky; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".top-0 { top: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".right-0 { right: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".bottom-0 { bottom: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".left-0 { left: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".top-auto { top: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".right-auto { right: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".bottom-auto { bottom: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".left-auto { left: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-full",
+      "id": null,
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".top-full { top: 100%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-full",
+      "id": null,
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".right-full { right: 100%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-full",
+      "id": null,
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".bottom-full { bottom: 100%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-full",
+      "id": null,
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".left-full { left: 100%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-1\\/2",
+      "id": null,
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".top-1\\/2 { top: 50%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-1\\/2",
+      "id": null,
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".right-1\\/2 { right: 50%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-1\\/2",
+      "id": null,
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".bottom-1\\/2 { bottom: 50%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-1\\/2",
+      "id": null,
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".left-1\\/2 { left: 50%; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-0 { z-index: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-10",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-10 { z-index: 10; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-20",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-20 { z-index: 20; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-30",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-30 { z-index: 30; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-40",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-40 { z-index: 40; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-50",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-50 { z-index: 50; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z-auto { z-index: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".abs",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-full",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-h",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-v",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-rg",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-lf",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-t",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-b",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-tl",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-tr",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-bl",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-br",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".abs,\r\n.pa-full,\r\n.pa-h,\r\n.pa-v,\r\n.pa-rg,\r\n.pa-lf,\r\n.pa-t,\r\n.pa-b,\r\n.pa-tl,\r\n.pa-tr,\r\n.pa-bl,\r\n.pa-br {\r\n  position: absolute;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-full",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top",
+        "right",
+        "left"
+      ],
+      "cssRule": ".pa-full {\r\n  bottom: 0;\r\n  top: 0;\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-h",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "right",
+        "left"
+      ],
+      "cssRule": ".pa-h {\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-v",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top"
+      ],
+      "cssRule": ".pa-v {\r\n  bottom: 0;\r\n  top: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-rg",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".pa-rg {\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-lf",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".pa-lf {\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-t",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".pa-t {\r\n  top: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-b",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".pa-b {\r\n  bottom: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-tl",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "top",
+        "left"
+      ],
+      "cssRule": ".pa-tl {\r\n  top: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-tr",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "top",
+        "right"
+      ],
+      "cssRule": ".pa-tr {\r\n  top: 0;\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-bl",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "bottom",
+        "left"
+      ],
+      "cssRule": ".pa-bl {\r\n  bottom: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pa-br",
+      "id": "#03-03-01",
+      "category": null,
+      "properties": [
+        "bottom",
+        "right"
+      ],
+      "cssRule": ".pa-br {\r\n  bottom: 0;\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rel",
+      "id": "#03-03-02",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".rel {\r\n  position: relative;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-full",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-h",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-v",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-rg",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-lf",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-t",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-b",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-tl",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-tr",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-bl",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-br",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": ".pf,\r\n.pf-full,\r\n.pf-h,\r\n.pf-v,\r\n.pf-rg,\r\n.pf-lf,\r\n.pf-t,\r\n.pf-b,\r\n.pf-tl,\r\n.pf-tr,\r\n.pf-bl,\r\n.pf-br {\r\n  position: fixed;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-full",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top",
+        "right",
+        "left"
+      ],
+      "cssRule": ".pf-full {\r\n  bottom: 0;\r\n  top: 0;\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-h",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "right",
+        "left"
+      ],
+      "cssRule": ".pf-h {\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-v",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top"
+      ],
+      "cssRule": ".pf-v {\r\n  bottom: 0;\r\n  top: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-rg",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": ".pf-rg {\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-lf",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": ".pf-lf {\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-t",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": ".pf-t {\r\n  top: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-b",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": ".pf-b {\r\n  bottom: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-tl",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "top",
+        "left"
+      ],
+      "cssRule": ".pf-tl {\r\n  top: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-tr",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "top",
+        "right"
+      ],
+      "cssRule": ".pf-tr {\r\n  top: 0;\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-bl",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "bottom",
+        "left"
+      ],
+      "cssRule": ".pf-bl {\r\n  bottom: 0;\r\n  left: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pf-br",
+      "id": "#03-03-03",
+      "category": null,
+      "properties": [
+        "bottom",
+        "right"
+      ],
+      "cssRule": ".pf-br {\r\n  bottom: 0;\r\n  right: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".center-h",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "left",
+        "right",
+        "margin"
+      ],
+      "cssRule": ".center-h {\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".center-v",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "top",
+        "bottom",
+        "margin"
+      ],
+      "cssRule": ".center-v {\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".center",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "left",
+        "right",
+        "margin",
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".center {\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  margin-top: 0;\r\n  margin-bottom: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".abs-center",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "top",
+        "left",
+        "transform"
+      ],
+      "cssRule": ".abs-center {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-r",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "float"
+      ],
+      "cssRule": ".float-r,\r\n.float-rg {\r\n  float: right;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-rg",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "float"
+      ],
+      "cssRule": ".float-r,\r\n.float-rg {\r\n  float: right;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-l",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "float"
+      ],
+      "cssRule": ".float-l,\r\n.float-lf {\r\n  float: left;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-lf",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "float"
+      ],
+      "cssRule": ".float-l,\r\n.float-lf {\r\n  float: left;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tr",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tc",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-br",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-bl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-bc",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-c",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-cl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-cr",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": ".float-tr,\r\n.float-tl,\r\n.float-tc,\r\n.float-br,\r\n.float-bl,\r\n.float-bc,\r\n.float-c,\r\n.float-cl,\r\n.float-cr {\r\n  position: absolute;\r\n  margin: auto;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tr",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "top",
+        "right"
+      ],
+      "cssRule": ".float-tr {\r\n  top: 0;\r\n  right: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "top",
+        "left"
+      ],
+      "cssRule": ".float-tl {\r\n  top: 0;\r\n  left: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-tc",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "top",
+        "right",
+        "left"
+      ],
+      "cssRule": ".float-tc {\r\n  top: 0;\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-br",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "right"
+      ],
+      "cssRule": ".float-br {\r\n  bottom: 0;\r\n  right: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-bl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "left"
+      ],
+      "cssRule": ".float-bl {\r\n  bottom: 0;\r\n  left: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-bc",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "right",
+        "left"
+      ],
+      "cssRule": ".float-bc {\r\n  bottom: 0;\r\n  right: 0;\r\n  left: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-c",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top",
+        "left",
+        "right"
+      ],
+      "cssRule": ".float-c {\r\n  bottom: 0;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-cl",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top",
+        "left"
+      ],
+      "cssRule": ".float-cl {\r\n  bottom: 0;\r\n  top: 0;\r\n  left: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".float-cr",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "bottom",
+        "top",
+        "right"
+      ],
+      "cssRule": ".float-cr {\r\n  bottom: 0;\r\n  top: 0;\r\n  right: 0;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z0",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z0 {\r\n  z-index: 0;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z1",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z1 {\r\n  z-index: 1;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z2",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z2 {\r\n  z-index: 2;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z3",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z3 {\r\n  z-index: 3;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z4",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z4 {\r\n  z-index: 4;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z5",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z5 {\r\n  z-index: 5;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z10",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z10 {\r\n  z-index: 10;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z15",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z15 {\r\n  z-index: 15;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".z20",
+      "id": "#03-03-XX",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": ".z20 {\r\n  z-index: 20;\r\n}",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

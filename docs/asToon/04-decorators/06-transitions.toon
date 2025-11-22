@@ -1,0 +1,159 @@
+folder: 04-decorators
+file: 06-transitions.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 17
+content[17]:
+  - type: selector
+    selectorType: class
+    selector: .transition-all
+    id: null
+    category: null
+    properties[1]: transition-property
+    cssRule: ".transition-all { transition-property: all; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .transition-colors
+    id: null
+    category: null
+    properties[1]: transition-property
+    cssRule: ".transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .transition-opacity
+    id: null
+    category: null
+    properties[1]: transition-property
+    cssRule: ".transition-opacity { transition-property: opacity; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .transition-transform
+    id: null
+    category: null
+    properties[1]: transition-property
+    cssRule: ".transition-transform { transition-property: transform; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-75
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-75 { transition-duration: 75ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-100
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-100 { transition-duration: 100ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-150
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-150 { transition-duration: 150ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-200
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-200 { transition-duration: 200ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-300
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-300 { transition-duration: 300ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .duration-500
+    id: null
+    category: null
+    properties[1]: transition-duration
+    cssRule: ".duration-500 { transition-duration: 500ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ease-linear
+    id: null
+    category: null
+    properties[1]: transition-timing-function
+    cssRule: ".ease-linear { transition-timing-function: linear; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ease-in
+    id: null
+    category: null
+    properties[1]: transition-timing-function
+    cssRule: ".ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ease-out
+    id: null
+    category: null
+    properties[1]: transition-timing-function
+    cssRule: ".ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ease-in-out
+    id: null
+    category: null
+    properties[1]: transition-timing-function
+    cssRule: ".ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .delay-75
+    id: null
+    category: null
+    properties[1]: transition-delay
+    cssRule: ".delay-75 { transition-delay: 75ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .delay-100
+    id: null
+    category: null
+    properties[1]: transition-delay
+    cssRule: ".delay-100 { transition-delay: 100ms; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .delay-150
+    id: null
+    category: null
+    properties[1]: transition-delay
+    cssRule: ".delay-150 { transition-delay: 150ms; }"
+    responsive: true
+    description: ""

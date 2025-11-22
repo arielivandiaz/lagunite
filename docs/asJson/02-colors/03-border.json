@@ -1,0 +1,48 @@
+{
+  "folder": "02-colors",
+  "file": "03-border.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": false,
+  "totalSelectors": 3,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-success.border",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": ".bg-success.border {\r\n  border-color: var(--color-success) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-warning.border",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": ".bg-warning.border {\r\n  border-color: var(--color-warning) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-error.border",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": ".bg-error.border {\r\n  border-color: var(--color-error) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+folder: 10-misc
+file: 01-display.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 12
+content[12]:
+  - type: selector
+    selectorType: class
+    selector: .d-block
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-block { display: block; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .d-inline
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-inline { display: inline; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .d-inline-block
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-inline-block { display: inline-block; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .d-flex
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-flex { display: flex; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .d-grid
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-grid { display: grid; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .d-none
+    id: null
+    category: null
+    properties[1]: display
+    cssRule: ".d-none { display: none; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .visibility-visible
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".visibility-visible { visibility: visible; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .visibility-invisible
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".visibility-invisible { visibility: hidden; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .visibility-collapse
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".visibility-collapse { visibility: collapse; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .visible
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".visible { visibility: visible; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .invisible
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".invisible { visibility: hidden; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .collapse
+    id: null
+    category: null
+    properties[1]: visibility
+    cssRule: ".collapse { visibility: collapse; }"
+    responsive: false
+    description: ""

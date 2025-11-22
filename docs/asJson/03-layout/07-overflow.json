@@ -1,0 +1,232 @@
+{
+  "folder": "03-layout",
+  "file": "07-overflow.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 17,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow"
+      ],
+      "cssRule": ".overflow-auto { overflow: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-hidden",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow"
+      ],
+      "cssRule": ".overflow-hidden { overflow: hidden; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow"
+      ],
+      "cssRule": ".overflow-visible { overflow: visible; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-scroll",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow"
+      ],
+      "cssRule": ".overflow-scroll { overflow: scroll; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-x-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-x"
+      ],
+      "cssRule": ".overflow-x-auto { overflow-x: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-x-hidden",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-x"
+      ],
+      "cssRule": ".overflow-x-hidden { overflow-x: hidden; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-x-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-x"
+      ],
+      "cssRule": ".overflow-x-visible { overflow-x: visible; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-x-scroll",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-x"
+      ],
+      "cssRule": ".overflow-x-scroll { overflow-x: scroll; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-y-auto",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-y"
+      ],
+      "cssRule": ".overflow-y-auto { overflow-y: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-y-hidden",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-y"
+      ],
+      "cssRule": ".overflow-y-hidden { overflow-y: hidden; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-y-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-y"
+      ],
+      "cssRule": ".overflow-y-visible { overflow-y: visible; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".overflow-y-scroll",
+      "id": null,
+      "category": null,
+      "properties": [
+        "overflow-y"
+      ],
+      "cssRule": ".overflow-y-scroll { overflow-y: scroll; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scrollbar-thin",
+      "id": null,
+      "category": null,
+      "properties": [
+        "scrollbar-width"
+      ],
+      "cssRule": ".scrollbar-thin {\r\n  scrollbar-width: thin;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scrollbar-thin::-webkit-scrollbar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": ".scrollbar-thin::-webkit-scrollbar {\r\n  width: 6px;\r\n  height: 6px;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scrollbar-thin::-webkit-scrollbar-thumb",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": ".scrollbar-thin::-webkit-scrollbar-thumb {\r\n  border-radius: 999px;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scrollbar-none",
+      "id": null,
+      "category": null,
+      "properties": [
+        "scrollbar-width",
+        "-ms-overflow-style"
+      ],
+      "cssRule": ".scrollbar-none {\r\n  scrollbar-width: none;\r\n  -ms-overflow-style: none;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scrollbar-none::-webkit-scrollbar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": ".scrollbar-none::-webkit-scrollbar {\r\n  display: none;\r\n}",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

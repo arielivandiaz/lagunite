@@ -1,0 +1,330 @@
+folder: 03-layout
+file: 05-padding.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 36
+content[36]:
+  - type: selector
+    selectorType: class
+    selector: .padd-0
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd-0 {\r\n    padding: 0 !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-xs
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd-xs {\r\n    padding: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-s
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd-s {\r\n    padding: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd {\r\n    padding: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-l
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd-l {\r\n    padding: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-xl
+    id: #03-05-XX
+    category: null
+    properties[1]: padding
+    cssRule: ".padd-xl {\r\n    padding: var(--space-16);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-h-xs
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-left,padding-right
+    cssRule: ".padd-h-xs {\r\n    padding-left: var(--space-1);\r\n    padding-right: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-h-s
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-left,padding-right
+    cssRule: ".padd-h-s {\r\n    padding-left: var(--space-3);\r\n    padding-right: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-h
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-left,padding-right
+    cssRule: ".padd-h {\r\n    padding-left: var(--space-6);\r\n    padding-right: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-h-l
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-left,padding-right
+    cssRule: ".padd-h-l {\r\n    padding-left: var(--space-12);\r\n    padding-right: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-h-xl
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-left,padding-right
+    cssRule: ".padd-h-xl {\r\n    padding-left: var(--space-16);\r\n    padding-right: var(--space-16);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-v-xs
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-top,padding-bottom
+    cssRule: ".padd-v-xs {\r\n    padding-top: var(--space-1);\r\n    padding-bottom: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-v-s
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-top,padding-bottom
+    cssRule: ".padd-v-s {\r\n    padding-top: var(--space-3);\r\n    padding-bottom: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-v
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-top,padding-bottom
+    cssRule: ".padd-v {\r\n    padding-top: var(--space-6);\r\n    padding-bottom: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-v-l
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-top,padding-bottom
+    cssRule: ".padd-v-l {\r\n    padding-top: var(--space-12);\r\n    padding-bottom: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-v-xl
+    id: #03-05-XX
+    category: null
+    properties[2]: padding-top,padding-bottom
+    cssRule: ".padd-v-xl {\r\n    padding-top: var(--space-16);\r\n    padding-bottom: var(--space-16);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-lf-xs
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-left
+    cssRule: ".padd-lf-xs {\r\n    padding-left: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-lf-s
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-left
+    cssRule: ".padd-lf-s {\r\n    padding-left: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-lf
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-left
+    cssRule: ".padd-lf {\r\n    padding-left: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-lf-l
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-left
+    cssRule: ".padd-lf-l {\r\n    padding-left: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-lf-xl
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-left
+    cssRule: ".padd-lf-xl {\r\n    padding-left: var(--space-16);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-rg-xs
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-right
+    cssRule: ".padd-rg-xs {\r\n    padding-right: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-rg-s
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-right
+    cssRule: ".padd-rg-s {\r\n    padding-right: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-rg
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-right
+    cssRule: ".padd-rg {\r\n    padding-right: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-rg-l
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-right
+    cssRule: ".padd-rg-l {\r\n    padding-right: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-rg-xl
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-right
+    cssRule: ".padd-rg-xl {\r\n    padding-right: var(--space-16);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-t-xs
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-top
+    cssRule: ".padd-t-xs {\r\n    padding-top: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-t-s
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-top
+    cssRule: ".padd-t-s {\r\n    padding-top: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-t
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-top
+    cssRule: ".padd-t {\r\n    padding-top: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-t-l
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-top
+    cssRule: ".padd-t-l {\r\n    padding-top: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-t-xl
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-top
+    cssRule: ".padd-t-xl {\r\n    padding-top: var(--space-16);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-b-xs
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-bottom
+    cssRule: ".padd-b-xs {\r\n    padding-bottom: var(--space-1);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-b-s
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-bottom
+    cssRule: ".padd-b-s {\r\n    padding-bottom: var(--space-3);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-b
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-bottom
+    cssRule: ".padd-b {\r\n    padding-bottom: var(--space-6);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-b-l
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-bottom
+    cssRule: ".padd-b-l {\r\n    padding-bottom: var(--space-12);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .padd-b-xl
+    id: #03-05-XX
+    category: null
+    properties[1]: padding-bottom
+    cssRule: ".padd-b-xl {\r\n    padding-bottom: var(--space-16);\r\n}"
+    responsive: true
+    description: ""

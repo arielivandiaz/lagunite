@@ -1,190 +1,138 @@
 {
-    "folder": "00-config",
-    "file": "04-measures.css",
-    "content": [
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-px",
-            "value": "1px",
-            "description": "1 pixel spacing"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-1",
-            "value": "0.25rem",
-            "description": "Spacing size (4px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-2",
-            "value": "0.5rem",
-            "description": "Spacing size (8px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-3",
-            "value": "0.75rem",
-            "description": "Spacing size (12px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-4",
-            "value": "1rem",
-            "description": "Spacing size (16px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-5",
-            "value": "1.25rem",
-            "description": "Spacing size (20px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-6",
-            "value": "1.5rem",
-            "description": "Spacing size (24px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-8",
-            "value": "2rem",
-            "description": "Spacing size (32px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-10",
-            "value": "2.5rem",
-            "description": "Spacing size (40px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-12",
-            "value": "3rem",
-            "description": "Spacing size (48px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-16",
-            "value": "4rem",
-            "description": "Spacing size (64px)"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-x",
-            "value": "var(--space-12)",
-            "description": "Horizontal default spacing"
-        },
-        {
-            "type": "var",
-            "subtype": "spacing",
-            "id": "#00-04-001",
-            "name": "--space-y",
-            "value": "var(--space-8)",
-            "description": "Vertical default spacing"
-        },
-        {
-            "type": "var",
-            "subtype": "border",
-            "id": "#00-04-001",
-            "name": "--border-width-sm",
-            "value": "1px",
-            "description": "Small border width"
-        },
-        {
-            "type": "var",
-            "subtype": "border",
-            "id": "#00-04-001",
-            "name": "--border-width-md",
-            "value": "2px",
-            "description": "Medium border width"
-        },
-        {
-            "type": "var",
-            "subtype": "radius",
-            "id": "#00-04-001",
-            "name": "--radius-sm",
-            "value": "0.25rem",
-            "description": "Small border radius"
-        },
-        {
-            "type": "var",
-            "subtype": "radius",
-            "id": "#00-04-001",
-            "name": "--radius-md",
-            "value": "0.5rem",
-            "description": "Medium border radius"
-        },
-        {
-            "type": "var",
-            "subtype": "radius",
-            "id": "#00-04-001",
-            "name": "--radius-lg",
-            "value": "1rem",
-            "description": "Large border radius"
-        },
-        {
-            "type": "var",
-            "subtype": "radius",
-            "id": "#00-04-001",
-            "name": "--radius-full",
-            "value": "9999px",
-            "description": "Full circular border radius"
-        },
-        {
-            "type": "var",
-            "subtype": "breakpoint",
-            "id": "#00-04-001",
-            "name": "--breakpoint-sm",
-            "value": "640px",
-            "description": "Small breakpoint"
-        },
-        {
-            "type": "var",
-            "subtype": "breakpoint",
-            "id": "#00-04-001",
-            "name": "--breakpoint-md",
-            "value": "768px",
-            "description": "Medium breakpoint"
-        },
-        {
-            "type": "var",
-            "subtype": "breakpoint",
-            "id": "#00-04-001",
-            "name": "--breakpoint-lg",
-            "value": "1024px",
-            "description": "Large breakpoint"
-        },
-        {
-            "type": "var",
-            "subtype": "breakpoint",
-            "id": "#00-04-001",
-            "name": "--breakpoint-xl",
-            "value": "1440px",
-            "description": "Extra large breakpoint"
-        }
-    ]
+  "folder": "00-config",
+  "file": "04-measures.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": false,
+  "totalSelectors": 1,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":root",
+      "id": "#00-04-01",
+      "category": null,
+      "properties": [
+        "--space-px",
+        "--space-1",
+        "--space-2",
+        "--space-3",
+        "--space-4",
+        "--space-5",
+        "--space-6",
+        "--space-8",
+        "--space-10",
+        "--space-12",
+        "--space-16",
+        "--space-x",
+        "--space-y",
+        "--border-width-sm",
+        "--border-width-md",
+        "--radius-sm",
+        "--radius-md",
+        "--radius-lg",
+        "--radius-full",
+        "--breakpoint-sm",
+        "--breakpoint-md",
+        "--breakpoint-lg",
+        "--breakpoint-xl"
+      ],
+      "cssRule": ":root {\r\n\r\n  /*== Sizes ==*/\r\n  --space-px: 1px;\r\n  --space-1: 0.25rem; /* 4px */\r\n  --space-2: 0.5rem; /* 8px */\r\n  --space-3: 0.75rem; /* 12px */\r\n  --space-4: 1rem; /* 16px */\r\n  --space-5: 1.25rem; /* 20px */\r\n  --space-6: 1.5rem; /* 24px */\r\n  --space-8: 2rem; /* 32px */\r\n  --space-10: 2.5rem; /* 40px */\r\n  --space-12: 3rem; /* 48px */\r\n  --space-16: 4rem; /* 64px */\r\n\r\n  --space-x: var(--space-12); /* Horizontal default spacing */\r\n  --space-y: var(--space-8); /* Vertical default spacing */\r\n\r\n  /*== Borders & Radii ==*/\r\n  --border-width-sm: 1px;\r\n  --border-width-md: 2px;\r\n\r\n  --radius-sm: 0.25rem;\r\n  --radius-md: 0.5rem;\r\n  --radius-lg: 1rem;\r\n  --radius-full: 9999px;\r\n\r\n  /*== Breakpoints (Single Source of Truth) ==*/\r\n  /* Note: CSS Custom Properties cannot be used directly in media query definitions. */\r\n  /* These are for documentation and potential use in JS or preprocessors. */\r\n  --breakpoint-sm: 640px;\r\n  --breakpoint-md: 768px;\r\n  --breakpoint-lg: 1024px;\r\n  --breakpoint-xl: 1440px;\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--space-px",
+      "value": "1px"
+    },
+    {
+      "property": "--space-1",
+      "value": "0.25rem"
+    },
+    {
+      "property": "--space-2",
+      "value": "0.5rem"
+    },
+    {
+      "property": "--space-3",
+      "value": "0.75rem"
+    },
+    {
+      "property": "--space-4",
+      "value": "1rem"
+    },
+    {
+      "property": "--space-5",
+      "value": "1.25rem"
+    },
+    {
+      "property": "--space-6",
+      "value": "1.5rem"
+    },
+    {
+      "property": "--space-8",
+      "value": "2rem"
+    },
+    {
+      "property": "--space-10",
+      "value": "2.5rem"
+    },
+    {
+      "property": "--space-12",
+      "value": "3rem"
+    },
+    {
+      "property": "--space-16",
+      "value": "4rem"
+    },
+    {
+      "property": "--space-x",
+      "value": "var(--space-12)"
+    },
+    {
+      "property": "--space-y",
+      "value": "var(--space-8)"
+    },
+    {
+      "property": "--border-width-sm",
+      "value": "1px"
+    },
+    {
+      "property": "--border-width-md",
+      "value": "2px"
+    },
+    {
+      "property": "--radius-sm",
+      "value": "0.25rem"
+    },
+    {
+      "property": "--radius-md",
+      "value": "0.5rem"
+    },
+    {
+      "property": "--radius-lg",
+      "value": "1rem"
+    },
+    {
+      "property": "--radius-full",
+      "value": "9999px"
+    },
+    {
+      "property": "--breakpoint-sm",
+      "value": "640px"
+    },
+    {
+      "property": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "property": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "property": "--breakpoint-xl",
+      "value": "1440px"
+    }
+  ]
 }

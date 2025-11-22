@@ -1,0 +1,501 @@
+folder: 03-layout
+file: 01-flex.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 55
+content[55]:
+  - type: selector
+    selectorType: class
+    selector: .col
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .colr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rowr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row-col
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row-colr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .col-row
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .col-rowr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .col
+    id: #03-01-01
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".col {\r\n  flex-direction: column;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .colr
+    id: #03-01-01
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".colr {\r\n  flex-direction: column-reverse;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row
+    id: #03-01-01
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".row {\r\n  flex-direction: row;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rowr
+    id: #03-01-01
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".rowr {\r\n  flex-direction: row-reverse;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row-col
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".row-col,\r\n.row-colr {\r\n  flex-direction: row;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .row-colr
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".row-col,\r\n.row-colr {\r\n  flex-direction: row;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rowr-col
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".rowr-col,\r\n.rowr-colr {\r\n  flex-direction: row-reverse;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rowr-colr
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".rowr-col,\r\n.rowr-colr {\r\n  flex-direction: row-reverse;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .col-row
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".col-row,\r\n.col-rowr {\r\n  flex-direction: column;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .col-rowr
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".col-row,\r\n.col-rowr {\r\n  flex-direction: column;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .colr-row
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".colr-row,\r\n.colr-rowr {\r\n  flex-direction: column-reverse;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .colr-rowr
+    id: #03-01-03
+    category: null
+    properties[1]: flex-direction
+    cssRule: ".colr-row,\r\n.colr-rowr {\r\n  flex-direction: column-reverse;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-nowrap
+    id: #03-01-04
+    category: null
+    properties[1]: flex-wrap
+    cssRule: ".f-nowrap {\r\n  flex-wrap: nowrap;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .flex1
+    id: #03-01-04
+    category: null
+    properties[1]: flex
+    cssRule: ".flex1 {\r\n  flex: 1;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-xs > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-xs > div,\r\n.f-gap- > div > div {\r\n  margin: 2px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap- > div > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-xs > div,\r\n.f-gap- > div > div {\r\n  margin: 2px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-s > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-s > div,\r\n.f-gap-s > div > div {\r\n  margin: 5px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-s > div > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-s > div,\r\n.f-gap-s > div > div {\r\n  margin: 5px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap > div,\r\n.f-gap > div > div {\r\n  margin: 10px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap > div > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap > div,\r\n.f-gap > div > div {\r\n  margin: 10px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-l > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-l > div,\r\n.f-gap-l > div > div {\r\n  margin: 20px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-l > div > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-l > div,\r\n.f-gap-l > div > div {\r\n  margin: 20px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-xl > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-xl > div,\r\n.f-gap-xl > div > div {\r\n  margin: 30px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .f-gap-xl > div > div
+    id: #03-01-05
+    category: null
+    properties[1]: margin
+    cssRule: ".f-gap-xl > div,\r\n.f-gap-xl > div > div {\r\n  margin: 30px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ai-c
+    id: #03-01-XX
+    category: null
+    properties[1]: align-items
+    cssRule: ".ai-c {\r\n  align-items: center !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ai-fe
+    id: #03-01-XX
+    category: null
+    properties[1]: align-items
+    cssRule: ".ai-fe {\r\n  align-items: flex-end !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ai-fs
+    id: #03-01-XX
+    category: null
+    properties[1]: align-items
+    cssRule: ".ai-fs {\r\n  align-items: flex-start !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ai-s
+    id: #03-01-XX
+    category: null
+    properties[1]: align-items
+    cssRule: ".ai-s {\r\n  align-items: stretch !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .as-c
+    id: #03-01-XX
+    category: null
+    properties[1]: align-self
+    cssRule: ".as-c {\r\n  align-self: center !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .as-fs
+    id: #03-01-XX
+    category: null
+    properties[1]: align-self
+    cssRule: ".as-fs {\r\n  align-self: flex-end !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .as-fe
+    id: #03-01-XX
+    category: null
+    properties[1]: align-self
+    cssRule: ".as-fe {\r\n  align-self: flex-start !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .as-s
+    id: #03-01-XX
+    category: null
+    properties[1]: align-self
+    cssRule: ".as-s {\r\n  align-self: stretch !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-c
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-c {\r\n  align-content: center !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-fs
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-fs {\r\n  align-content: flex-end !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-fe
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-fe {\r\n  align-content: flex-start !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-s
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-s {\r\n  align-content: stretch !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-sa
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-sa {\r\n  align-content: space-around !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ac-sb
+    id: #03-01-XX
+    category: null
+    properties[1]: align-content
+    cssRule: ".ac-sb {\r\n  align-content: space-between !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-c
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-c {\r\n  justify-content: center !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-fe
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-fe {\r\n  justify-content: flex-end !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-fs
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-fs {\r\n  justify-content: flex-start !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-sa
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-sa {\r\n  justify-content: space-around !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-sb
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-sb {\r\n  justify-content: space-between !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .jc-se
+    id: #03-01-XX
+    category: null
+    properties[1]: justify-content
+    cssRule: ".jc-se {\r\n  justify-content: space-evenly !important;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .flex-center
+    id: #03-01-XX
+    category: null
+    properties[3]: display,align-items,justify-content
+    cssRule: ".flex-center {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .flex-center-h
+    id: #03-01-XX
+    category: null
+    properties[2]: display,justify-content
+    cssRule: ".flex-center-h {\r\n  display: flex;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .flex-center-v
+    id: #03-01-XX
+    category: null
+    properties[2]: display,align-items
+    cssRule: ".flex-center-v {\r\n  display: flex;\r\n  align-items: center;\r\n}"
+    responsive: true
+    description: ""

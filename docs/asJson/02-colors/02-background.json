@@ -1,258 +1,1130 @@
 {
-    "folder": "01-colors",
-    "file": "02-background.css",
-    "content": [
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-01",
-            "name": "bg",
-            "value": "background: var(--color-bg); color: var(--color-text-base);",
-            "description": "Sets the background color to the base background color and text color to the base text color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-01",
-            "name": "bg-alt",
-            "value": "background: var(--color-bg-alt); color: var(--color-text-alt);",
-            "description": "Sets the background color to the alternative background color and text color to the alternative text color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-02",
-            "name": "bg-1",
-            "value": "background: var(--bg-primary); color: var(--color-text-base);",
-            "description": "Sets the background color to the primary color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-02",
-            "name": "bg-2",
-            "value": "background: var(--bg-secondary); color: var(--color-text-alt);",
-            "description": "Sets the background color to the secondary color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-02",
-            "name": "bg-3",
-            "value": "background: var(--bg-tertiary); color: var(--color-text-alt);",
-            "description": "Sets the background color to the tertiary color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-03",
-            "name": "bg-black",
-            "value": "background: #000; color: var(--color-text-alt);",
-            "description": "Sets the background color to the black color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-03",
-            "name": "bg-ablack",
-            "value": "background:  var(--color-almost-black); color: var(--color-text-alt);",
-            "description": "Sets the background color to the almost black color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-03",
-            "name": "bg-white",
-            "value": "background: #000; color: var(--color-text);",
-            "description": "Sets the background color to the white color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-03",
-            "name": "bg-awhite",
-            "value": "background:  var(--color-almost-white); color: var(--color-text);",
-            "description": "Sets the background color to the almost white color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-01",
-            "value": "background: var(--color-primary); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-02",
-            "value": "background: var(--color-primary-light); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-03",
-            "value": "background: var(--color-primary-dark); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-04",
-            "value": "background: var(--color-secondary); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-05",
-            "value": "background: var(--color-secondary-light); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-06",
-            "value": "background: var(--color-secondary-dark); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-07",
-            "value": "background: var(--color-tertiary); color: var(--color-text);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-08",
-            "value": "background: var(--color-tertiary-light); color: var(--color-text-alt);  "
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-04",
-            "name": "bg-09",
-            "value": "background: var(--color-tertiary-dark); color: var(--color-text);  "
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-05",
-            "name": "bg-success",
-            "value": "background: var(--color-success-light); color: var(--color-success);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-05",
-            "name": "bg-warning",
-            "value": "background: var(--color-warning-light); color: var(--color-warning);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-05",
-            "name": "bg-error",
-            "value": "background: var(--color-error-light); color: var(--color-error);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-1",
-            "value": "background: var(--bg-gradient-1); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-2",
-            "value": "background: var(--bg-gradient-2); color: var(--color-text-base);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-3",
-            "value": "background: var(--bg-gradient-3); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-4",
-            "value": "background: var(--bg-gradient-4); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-5",
-            "value": "background: var(--bg-gradient-5); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-6",
-            "value": "background: var(--bg-gradient-6); color: var(--color-text-base);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-7",
-            "value": "background: var(--bg-gradient-7); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-06",
-            "name": "bgg-8",
-            "value": "background: var(--bg-gradient-8); color: var(--color-text-alt);"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-50",
-            "name": "bg-gray-XX",
-            "value": "background: var(--color-gray-XX);",
-            "description": "Sets the background color to the gray-XX color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-50",
-            "name": "bg-blue-XX",
-            "value": "background: var(--color-blue-XX);",
-            "description": "Sets the background color to the blue-XX color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-50",
-            "name": "bg-green-XX",
-            "value": "background: var(--color-green-XX);",
-            "description": "Sets the background color to the green-XX color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-50",
-            "name": "bg-yellow-XX",
-            "value": "background: var(--color-yellow-XX);",
-            "description": "Sets the background color to the yellow-XX color"
-        },
-        {
-            "type": "selector",
-            "subtype": "class",
-            "id": "#02-02-50",
-            "name": "bg-red-XX",
-            "value": "background: var(--color-red-XX);",
-            "description": "Sets the background color to the red-XX color"
-        }
-    ]
-} 
+  "folder": "02-colors",
+  "file": "02-background.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": false,
+  "totalSelectors": 84,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg",
+      "id": "#02-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg {\r\n  background: var(--color-bg) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-alt",
+      "id": "#02-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-alt {\r\n  background: var(--color-bg-alt) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-1",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-1 {\r\n  background: var(--bg-primary) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-2",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-2 {\r\n  background: var(--bg-secondary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-3",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-3 {\r\n  background: var(--bg-tertiary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-black",
+      "id": "#02-02-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-black {\r\n  background: #000 !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-ablack",
+      "id": "#02-02-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-ablack {\r\n  background: var(--color-almost-black) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-white",
+      "id": "#02-02-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-white {\r\n  background: #fff !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-awhite",
+      "id": "#02-02-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-awhite {\r\n  background: var(--color-almost-white) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-01",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-01 {\r\n  background: var(--color-primary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-02",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-02 {\r\n  background: var(--color-primary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-03",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-03 {\r\n  background: var(--color-primary-dark) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-04",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-04 {\r\n  background: var(--color-secondary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-05",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-05 {\r\n  background: var(--color-secondary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-06",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-06 {\r\n  background: var(--color-secondary-dark) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-07",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-07 {\r\n  background: var(--color-tertiary) !important;\r\n  color: var(--color-text) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-08",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-08 {\r\n  background: var(--color-tertiary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-09",
+      "id": "#02-02-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-09 {\r\n  background: var(--color-tertiary-dark) !important;\r\n  color: var(--color-text) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-success",
+      "id": "#02-02-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-success {\r\n  background: var(--color-success-light) !important;\r\n  color: var(--color-success) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-warning",
+      "id": "#02-02-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-warning {\r\n  background: var(--color-warning-light) !important;\r\n  color: var(--color-warning) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-error",
+      "id": "#02-02-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bg-error {\r\n  background: var(--color-error-light) !important;\r\n  color: var(--color-error) !important;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-1",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-1 {\r\n  background: var(--bg-gradient-1);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-2",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-2 {\r\n  background: var(--bg-gradient-2);\r\n  color: var(--color-text-base);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-3",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-3 {\r\n  background: var(--bg-gradient-3);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-4",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-4 {\r\n  background: var(--bg-gradient-4);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-5",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-5 {\r\n  background: var(--bg-gradient-5);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-6",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-6 {\r\n  background: var(--bg-gradient-6);\r\n  color: var(--color-text-base);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-7",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-7 {\r\n  background: var(--bg-gradient-7);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bgg-8",
+      "id": "#02-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": ".bgg-8 {\r\n  background: var(--bg-gradient-8);\r\n  color: var(--color-text-alt);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-50",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-50 {\r\n  background: var(--gray-50);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-100",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-100 {\r\n  background: var(--gray-100);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-200",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-200 {\r\n  background: var(--gray-200);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-300",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-300 {\r\n  background: var(--gray-300);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-400",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-400 {\r\n  background: var(--gray-400);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-500",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-500 {\r\n  background: var(--gray-500);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-600",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-600 {\r\n  background: var(--gray-600);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-700",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-700 {\r\n  background: var(--gray-700);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-800",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-800 {\r\n  background: var(--gray-800);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-900",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-900 {\r\n  background: var(--gray-900);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-gray-950",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-gray-950 {\r\n  background: var(--gray-950);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-50",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-50 {\r\n  background: var(--blue-50);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-100",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-100 {\r\n  background: var(--blue-100);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-200",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-200 {\r\n  background: var(--blue-200);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-300",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-300 {\r\n  background: var(--blue-300);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-400",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-400 {\r\n  background: var(--blue-400);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-500",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-500 {\r\n  background: var(--blue-500);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-600",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-600 {\r\n  background: var(--blue-600);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-700",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-700 {\r\n  background: var(--blue-700);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-800",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-800 {\r\n  background: var(--blue-800);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-900",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-900 {\r\n  background: var(--blue-900);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-blue-950",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-blue-950 {\r\n  background: var(--blue-950);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-50",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-50 {\r\n  background: var(--green-50);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-100",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-100 {\r\n  background: var(--green-100);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-200",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-200 {\r\n  background: var(--green-200);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-300",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-300 {\r\n  background: var(--green-300);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-400",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-400 {\r\n  background: var(--green-400);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-500",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-500 {\r\n  background: var(--green-500);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-600",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-600 {\r\n  background: var(--green-600);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-700",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-700 {\r\n  background: var(--green-700);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-800",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-800 {\r\n  background: var(--green-800);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-900",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-900 {\r\n  background: var(--green-900);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-green-950",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-green-950 {\r\n  background: var(--green-950);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-50",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-50 {\r\n  background: var(--yellow-50);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-100",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-100 {\r\n  background: var(--yellow-100);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-200",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-200 {\r\n  background: var(--yellow-200);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-300",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-300 {\r\n  background: var(--yellow-300);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-400",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-400 {\r\n  background: var(--yellow-400);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-500",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-500 {\r\n  background: var(--yellow-500);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-600",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-600 {\r\n  background: var(--yellow-600);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-700",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-700 {\r\n  background: var(--yellow-700);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-800",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-800 {\r\n  background: var(--yellow-800);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-900",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-900 {\r\n  background: var(--yellow-900);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-yellow-950",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-yellow-950 {\r\n  background: var(--yellow-950);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-50",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-50 {\r\n  background: var(--red-50);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-100",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-100 {\r\n  background: var(--red-100);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-200",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-200 {\r\n  background: var(--red-200);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-300",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-300 {\r\n  background: var(--red-300);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-400",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-400 {\r\n  background: var(--red-400);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-500",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-500 {\r\n  background: var(--red-500);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-600",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-600 {\r\n  background: var(--red-600);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-700",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-700 {\r\n  background: var(--red-700);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-800",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-800 {\r\n  background: var(--red-800);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-900",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-900 {\r\n  background: var(--red-900);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-red-950",
+      "id": "#02-02-50",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": ".bg-red-950 {\r\n  background: var(--red-950);\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ]
+}

@@ -1,41 +1,298 @@
 {
-    "folder": "00-config",
-    "file": "01-pallete.css",
-    "content": [
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-01-001",
-            "name": "--gray-XXX",
-            "value": "hsl(XXX, XX%, XX%)"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-01-001",
-            "name": "--blue-XXX",
-            "value": "hsl(XXX, XX%, XX%)"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-01-001",
-            "name": "--green-XX",
-            "value": "hsl(XXX, XX%, XX%)"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-01-001",
-            "name": "--yellow-XXX",
-            "value": "hsl(XXX, XX%, XX%)"
-        },
-        {
-            "type": "var",
-            "subtype": "color",
-            "id": "#00-01-001",
-            "name": "--red-XXX",
-            "value": "hsl(XXX, XX%, XX%)"
-        }
-    ]
+  "folder": "00-config",
+  "file": "01-pallete.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": false,
+  "totalSelectors": 1,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":root",
+      "id": "#00-01-01",
+      "category": null,
+      "properties": [
+        "--gray-50",
+        "--gray-100",
+        "--gray-200",
+        "--gray-300",
+        "--gray-400",
+        "--gray-500",
+        "--gray-600",
+        "--gray-700",
+        "--gray-800",
+        "--gray-900",
+        "--gray-950",
+        "--blue-50",
+        "--blue-100",
+        "--blue-200",
+        "--blue-300",
+        "--blue-400",
+        "--blue-500",
+        "--blue-600",
+        "--blue-700",
+        "--blue-800",
+        "--blue-900",
+        "--blue-950",
+        "--green-50",
+        "--green-100",
+        "--green-200",
+        "--green-300",
+        "--green-400",
+        "--green-500",
+        "--green-600",
+        "--green-700",
+        "--green-800",
+        "--green-900",
+        "--green-950",
+        "--yellow-50",
+        "--yellow-100",
+        "--yellow-200",
+        "--yellow-300",
+        "--yellow-400",
+        "--yellow-500",
+        "--yellow-600",
+        "--yellow-700",
+        "--yellow-800",
+        "--yellow-900",
+        "--yellow-950",
+        "--red-50",
+        "--red-100",
+        "--red-200",
+        "--red-300",
+        "--red-400",
+        "--red-500",
+        "--red-600",
+        "--red-700",
+        "--red-800",
+        "--red-900",
+        "--red-950"
+      ],
+      "cssRule": ":root {  \r\n  /*== Neutral Palette (Gray) ==*/\r\n  --gray-50: hsl(210, 20%, 95%);\r\n  --gray-100: hsl(210, 18%, 89%);\r\n  --gray-200: hsl(210, 15%, 82%);\r\n  --gray-300: hsl(210, 13%, 70%);\r\n  --gray-400: hsl(210, 11%, 60%);\r\n  --gray-500: hsl(210, 9%, 50%);\r\n  --gray-600: hsl(210, 10%, 40%);\r\n  --gray-700: hsl(210, 12%, 30%);\r\n  --gray-800: hsl(210, 15%, 20%);\r\n  --gray-900: hsl(210, 20%, 10%);\r\n  --gray-950: hsl(210, 25%, 5%);\r\n\r\n  /*== Primary Palette (Blue) ==*/\r\n  --blue-50: hsl(210, 90%, 96%);\r\n  --blue-100: hsl(210, 90%, 90%);\r\n  --blue-200: hsl(210, 90%, 80%);\r\n  --blue-300: hsl(210, 90%, 70%);\r\n  --blue-400: hsl(210, 90%, 60%);\r\n  --blue-500: hsl(210, 90%, 50%);\r\n  --blue-600: hsl(210, 85%, 40%);\r\n  --blue-700: hsl(210, 80%, 30%);\r\n  --blue-800: hsl(210, 80%, 25%);\r\n  --blue-900: hsl(210, 85%, 20%);\r\n  --blue-950: hsl(210, 90%, 15%);\r\n\r\n  /*== Accent Palette: Green (Success) ==*/\r\n  --green-50: hsl(140, 65%, 96%);\r\n  --green-100: hsl(140, 65%, 90%);\r\n  --green-200: hsl(140, 60%, 80%);\r\n  --green-300: hsl(140, 60%, 70%);\r\n  --green-400: hsl(140, 60%, 60%);\r\n  --green-500: hsl(140, 60%, 45%);\r\n  --green-600: hsl(140, 70%, 35%);\r\n  --green-700: hsl(140, 75%, 28%);\r\n  --green-800: hsl(140, 75%, 20%);\r\n  --green-900: hsl(140, 80%, 15%);\r\n  --green-950: hsl(140, 85%, 10%);\r\n\r\n  /*== Accent Palette: Yellow (Warning) ==*/\r\n  --yellow-50: hsl(45, 95%, 96%);\r\n  --yellow-100: hsl(45, 95%, 90%);\r\n  --yellow-200: hsl(45, 90%, 80%);\r\n  --yellow-300: hsl(45, 90%, 70%);\r\n  --yellow-400: hsl(45, 90%, 60%);\r\n  --yellow-500: hsl(45, 90%, 50%);\r\n  --yellow-600: hsl(42, 85%, 45%);\r\n  --yellow-700: hsl(40, 80%, 38%);\r\n  --yellow-800: hsl(38, 75%, 30%);\r\n  --yellow-900: hsl(36, 70%, 22%);\r\n  --yellow-950: hsl(35, 65%, 15%);\r\n\r\n  /*== Accent Palette: Red (Danger) ==*/\r\n  --red-50: hsl(0, 85%, 96%);\r\n  --red-100: hsl(0, 85%, 90%);\r\n  --red-200: hsl(0, 80%, 80%);\r\n  --red-300: hsl(0, 80%, 70%);\r\n  --red-400: hsl(0, 80%, 60%);\r\n  --red-500: hsl(0, 75%, 50%);\r\n  --red-600: hsl(0, 70%, 42%);\r\n  --red-700: hsl(0, 75%, 35%);\r\n  --red-800: hsl(0, 75%, 28%);\r\n  --red-900: hsl(0, 80%, 20%);\r\n  --red-950: hsl(0, 85%, 15%);\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--gray-50",
+      "value": "hsl(210, 20%, 95%)"
+    },
+    {
+      "property": "--gray-100",
+      "value": "hsl(210, 18%, 89%)"
+    },
+    {
+      "property": "--gray-200",
+      "value": "hsl(210, 15%, 82%)"
+    },
+    {
+      "property": "--gray-300",
+      "value": "hsl(210, 13%, 70%)"
+    },
+    {
+      "property": "--gray-400",
+      "value": "hsl(210, 11%, 60%)"
+    },
+    {
+      "property": "--gray-500",
+      "value": "hsl(210, 9%, 50%)"
+    },
+    {
+      "property": "--gray-600",
+      "value": "hsl(210, 10%, 40%)"
+    },
+    {
+      "property": "--gray-700",
+      "value": "hsl(210, 12%, 30%)"
+    },
+    {
+      "property": "--gray-800",
+      "value": "hsl(210, 15%, 20%)"
+    },
+    {
+      "property": "--gray-900",
+      "value": "hsl(210, 20%, 10%)"
+    },
+    {
+      "property": "--gray-950",
+      "value": "hsl(210, 25%, 5%)"
+    },
+    {
+      "property": "--blue-50",
+      "value": "hsl(210, 90%, 96%)"
+    },
+    {
+      "property": "--blue-100",
+      "value": "hsl(210, 90%, 90%)"
+    },
+    {
+      "property": "--blue-200",
+      "value": "hsl(210, 90%, 80%)"
+    },
+    {
+      "property": "--blue-300",
+      "value": "hsl(210, 90%, 70%)"
+    },
+    {
+      "property": "--blue-400",
+      "value": "hsl(210, 90%, 60%)"
+    },
+    {
+      "property": "--blue-500",
+      "value": "hsl(210, 90%, 50%)"
+    },
+    {
+      "property": "--blue-600",
+      "value": "hsl(210, 85%, 40%)"
+    },
+    {
+      "property": "--blue-700",
+      "value": "hsl(210, 80%, 30%)"
+    },
+    {
+      "property": "--blue-800",
+      "value": "hsl(210, 80%, 25%)"
+    },
+    {
+      "property": "--blue-900",
+      "value": "hsl(210, 85%, 20%)"
+    },
+    {
+      "property": "--blue-950",
+      "value": "hsl(210, 90%, 15%)"
+    },
+    {
+      "property": "--green-50",
+      "value": "hsl(140, 65%, 96%)"
+    },
+    {
+      "property": "--green-100",
+      "value": "hsl(140, 65%, 90%)"
+    },
+    {
+      "property": "--green-200",
+      "value": "hsl(140, 60%, 80%)"
+    },
+    {
+      "property": "--green-300",
+      "value": "hsl(140, 60%, 70%)"
+    },
+    {
+      "property": "--green-400",
+      "value": "hsl(140, 60%, 60%)"
+    },
+    {
+      "property": "--green-500",
+      "value": "hsl(140, 60%, 45%)"
+    },
+    {
+      "property": "--green-600",
+      "value": "hsl(140, 70%, 35%)"
+    },
+    {
+      "property": "--green-700",
+      "value": "hsl(140, 75%, 28%)"
+    },
+    {
+      "property": "--green-800",
+      "value": "hsl(140, 75%, 20%)"
+    },
+    {
+      "property": "--green-900",
+      "value": "hsl(140, 80%, 15%)"
+    },
+    {
+      "property": "--green-950",
+      "value": "hsl(140, 85%, 10%)"
+    },
+    {
+      "property": "--yellow-50",
+      "value": "hsl(45, 95%, 96%)"
+    },
+    {
+      "property": "--yellow-100",
+      "value": "hsl(45, 95%, 90%)"
+    },
+    {
+      "property": "--yellow-200",
+      "value": "hsl(45, 90%, 80%)"
+    },
+    {
+      "property": "--yellow-300",
+      "value": "hsl(45, 90%, 70%)"
+    },
+    {
+      "property": "--yellow-400",
+      "value": "hsl(45, 90%, 60%)"
+    },
+    {
+      "property": "--yellow-500",
+      "value": "hsl(45, 90%, 50%)"
+    },
+    {
+      "property": "--yellow-600",
+      "value": "hsl(42, 85%, 45%)"
+    },
+    {
+      "property": "--yellow-700",
+      "value": "hsl(40, 80%, 38%)"
+    },
+    {
+      "property": "--yellow-800",
+      "value": "hsl(38, 75%, 30%)"
+    },
+    {
+      "property": "--yellow-900",
+      "value": "hsl(36, 70%, 22%)"
+    },
+    {
+      "property": "--yellow-950",
+      "value": "hsl(35, 65%, 15%)"
+    },
+    {
+      "property": "--red-50",
+      "value": "hsl(0, 85%, 96%)"
+    },
+    {
+      "property": "--red-100",
+      "value": "hsl(0, 85%, 90%)"
+    },
+    {
+      "property": "--red-200",
+      "value": "hsl(0, 80%, 80%)"
+    },
+    {
+      "property": "--red-300",
+      "value": "hsl(0, 80%, 70%)"
+    },
+    {
+      "property": "--red-400",
+      "value": "hsl(0, 80%, 60%)"
+    },
+    {
+      "property": "--red-500",
+      "value": "hsl(0, 75%, 50%)"
+    },
+    {
+      "property": "--red-600",
+      "value": "hsl(0, 70%, 42%)"
+    },
+    {
+      "property": "--red-700",
+      "value": "hsl(0, 75%, 35%)"
+    },
+    {
+      "property": "--red-800",
+      "value": "hsl(0, 75%, 28%)"
+    },
+    {
+      "property": "--red-900",
+      "value": "hsl(0, 80%, 20%)"
+    },
+    {
+      "property": "--red-950",
+      "value": "hsl(0, 85%, 15%)"
+    }
+  ]
 }

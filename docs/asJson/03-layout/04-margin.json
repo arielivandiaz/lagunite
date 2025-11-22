@@ -1,0 +1,487 @@
+{
+  "folder": "03-layout",
+  "file": "04-margin.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 36,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-0",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg-0 {\r\n    margin: 0 !important;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg-xs {\r\n    margin: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg-s {\r\n    margin: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg {\r\n    margin: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg-l {\r\n    margin: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": ".marg-xl {\r\n    margin: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-h-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".marg-h-xs {\r\n    margin-left: var(--space-1);\r\n    margin-right: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-h-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".marg-h-s {\r\n    margin-left: var(--space-3);\r\n    margin-right: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-h",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".marg-h {\r\n    margin-left: var(--space-6);\r\n    margin-right: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-h-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".marg-h-l {\r\n    margin-left: var(--space-12);\r\n    margin-right: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-h-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".marg-h-xl {\r\n    margin-left: var(--space-16);\r\n    margin-right: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-v-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-v-xs {\r\n    margin-top: var(--space-1);\r\n    margin-bottom: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-v-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-v-s {\r\n    margin-top: var(--space-3);\r\n    margin-bottom: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-v",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-v {\r\n    margin-top: var(--space-6);\r\n    margin-bottom: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-v-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-v-l {\r\n    margin-top: var(--space-12);\r\n    margin-bottom: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-v-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-v-xl {\r\n    margin-top: var(--space-16);\r\n    margin-bottom: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-lf-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": ".marg-lf-xs {\r\n    margin-left: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-lf-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": ".marg-lf-s {\r\n    margin-left: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-lf",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": ".marg-lf {\r\n    margin-left: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-lf-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": ".marg-lf-l {\r\n    margin-left: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-lf-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": ".marg-lf-xl {\r\n    margin-left: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-rg-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": ".marg-rg-xs {\r\n    margin-right: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-rg-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": ".marg-rg-s {\r\n    margin-right: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-rg",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": ".marg-rg\r\n {\r\n    margin-right: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-rg-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": ".marg-rg-l {\r\n    margin-right: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-rg-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": ".marg-rg-xl {\r\n    margin-right: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-t-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": ".marg-t-xs {\r\n    margin-top: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-t-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": ".marg-t-s {\r\n    margin-top: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-t",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": ".marg-t {\r\n    margin-top: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-t-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": ".marg-t-l {\r\n    margin-top: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-t-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": ".marg-t-xl {\r\n    margin-top: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-b-xs",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-b-xs {\r\n    margin-bottom: var(--space-1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-b-s",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-b-s {\r\n    margin-bottom: var(--space-3);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-b",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-b {\r\n    margin-bottom: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-b-l",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-b-l {\r\n    margin-bottom: var(--space-12);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-b-xl",
+      "id": "#03-04-XX",
+      "category": null,
+      "properties": [
+        "margin-bottom"
+      ],
+      "cssRule": ".marg-b-xl {\r\n    margin-bottom: var(--space-16);\r\n}",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

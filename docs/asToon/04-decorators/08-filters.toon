@@ -1,0 +1,177 @@
+folder: 04-decorators
+file: 08-filters.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 19
+content[19]:
+  - type: selector
+    selectorType: class
+    selector: .blur-none
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".blur-none { filter: blur(0); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blur-s
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".blur-s { filter: blur(4px); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blur
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".blur { filter: blur(8px); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blur-l
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".blur-l { filter: blur(16px); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blur-xl
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".blur-xl { filter: blur(32px); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .brightness-0
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".brightness-0 { filter: brightness(0); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .brightness-50
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".brightness-50 { filter: brightness(0.5); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .brightness-100
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".brightness-100 { filter: brightness(1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .brightness-150
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".brightness-150 { filter: brightness(1.5); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .contrast-0
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".contrast-0 { filter: contrast(0); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .contrast-50
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".contrast-50 { filter: contrast(0.5); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .contrast-100
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".contrast-100 { filter: contrast(1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .contrast-150
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".contrast-150 { filter: contrast(1.5); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .grayscale-0
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".grayscale-0 { filter: grayscale(0); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .grayscale
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".grayscale { filter: grayscale(1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .grayscale-100
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".grayscale-100 { filter: grayscale(1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .saturate-0
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".saturate-0 { filter: saturate(0); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .saturate-100
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".saturate-100 { filter: saturate(1); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .saturate-150
+    id: null
+    category: null
+    properties[1]: filter
+    cssRule: ".saturate-150 { filter: saturate(1.5); }"
+    responsive: true
+    description: ""

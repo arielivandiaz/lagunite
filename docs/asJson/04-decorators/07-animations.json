@@ -1,0 +1,324 @@
+{
+  "folder": "04-decorators",
+  "file": "07-animations.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 23,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "0%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "0% { transform: rotate(0deg); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "100%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "100% { transform: rotate(360deg); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "0%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "0%,\r\n  100% { transform: scale(1); opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "100%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "0%,\r\n  100% { transform: scale(1); opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "50%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "50% { transform: scale(1.05); opacity: 0.7; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "0%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "0%,\r\n  100% { transform: translateY(0); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "100%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "0%,\r\n  100% { transform: translateY(0); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "50%",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "50% { transform: translateY(-25%); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "from { opacity: 0; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "to { opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "from { opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "to { opacity: 0; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "from { transform: translateY(2rem); opacity: 0; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "to { transform: translateY(0); opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "from { transform: translateY(0); opacity: 1; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "opacity"
+      ],
+      "cssRule": "to { transform: translateY(2rem); opacity: 0; }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-spin",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-name",
+        "animation-duration",
+        "animation-iteration-count",
+        "animation-timing-function"
+      ],
+      "cssRule": ".animate-spin {\r\n  animation-name: spin;\r\n  animation-duration: 1s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: linear;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-pulse",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-name",
+        "animation-duration",
+        "animation-iteration-count",
+        "animation-timing-function"
+      ],
+      "cssRule": ".animate-pulse {\r\n  animation-name: pulse;\r\n  animation-duration: 1.5s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-bounce",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-name",
+        "animation-duration",
+        "animation-iteration-count",
+        "animation-timing-function"
+      ],
+      "cssRule": ".animate-bounce {\r\n  animation-name: bounce;\r\n  animation-duration: 1s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: ease-in-out;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-duration-1s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-duration"
+      ],
+      "cssRule": ".animate-duration-1s { animation-duration: 1s; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-duration-2s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-duration"
+      ],
+      "cssRule": ".animate-duration-2s { animation-duration: 2s; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-once",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-iteration-count"
+      ],
+      "cssRule": ".animate-once { animation-iteration-count: 1; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".animate-infinite",
+      "id": null,
+      "category": null,
+      "properties": [
+        "animation-iteration-count"
+      ],
+      "cssRule": ".animate-infinite { animation-iteration-count: infinite; }",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

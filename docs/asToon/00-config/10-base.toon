@@ -1,0 +1,411 @@
+folder: 00-config
+file: 10-base.css
+lastUpdated: 2025-11-22
+hasResponsive: false
+totalSelectors: 45
+content[45]:
+  - type: selector
+    selectorType: complex
+    selector: *
+    id: null
+    category: null
+    properties[4]: margin,padding,outline,"-webkit-tap-highlight-color"
+    cssRule: "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    outline: none;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: html
+    id: null
+    category: null
+    properties[5]: width,max-width,min-height,overflow-x,background
+    cssRule: "html,\r\nbody {\r\n    width: 100vw;\r\n    max-width: 100vw;\r\n    min-height: 100vh;\r\n    overflow-x: hidden;\r\n    background: var(--background_body);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: body
+    id: null
+    category: null
+    properties[5]: width,max-width,min-height,overflow-x,background
+    cssRule: "html,\r\nbody {\r\n    width: 100vw;\r\n    max-width: 100vw;\r\n    min-height: 100vh;\r\n    overflow-x: hidden;\r\n    background: var(--background_body);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: button
+    id: null
+    category: null
+    properties[3]: border,background,cursor
+    cssRule: "button {\r\n    border: none;\r\n    background: none;\r\n    cursor: pointer;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: a
+    id: null
+    category: null
+    properties[1]: cursor
+    cssRule: "a {\r\n    cursor: pointer;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: a
+    id: null
+    category: null
+    properties[1]: text-decoration
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    text-decoration: none;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "a:visited"
+    id: null
+    category: null
+    properties[1]: text-decoration
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    text-decoration: none;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "a:active"
+    id: null
+    category: null
+    properties[1]: text-decoration
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    text-decoration: none;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "a:enabled"
+    id: null
+    category: null
+    properties[1]: text-decoration
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    text-decoration: none;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: ul
+    id: null
+    category: null
+    properties[2]: list-style,text-align
+    cssRule: "ul {\r\n    list-style: none;\r\n    text-align: left;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: ol
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: "ol {\r\n    text-align: left;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: img
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "img {\r\n    max-width: 100%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: header
+    id: null
+    category: null
+    properties[1]: margin
+    cssRule: "header {\r\n    margin: 5vh 0 3vh 0;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: html
+    id: null
+    category: Tags
+    properties[4]: max-width,overflow-x,font-family,font-size
+    cssRule: "html,\r\nbody {\r\n    max-width: 100vw;\r\n    overflow-x: hidden;\r\n    font-family: var(--font_text);\r\n    font-size: var(--font_size);\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: body
+    id: null
+    category: Tags
+    properties[4]: max-width,overflow-x,font-family,font-size
+    cssRule: "html,\r\nbody {\r\n    max-width: 100vw;\r\n    overflow-x: hidden;\r\n    font-family: var(--font_text);\r\n    font-size: var(--font_size);\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: body
+    id: null
+    category: Tags
+    properties[3]: width,height,text-align
+    cssRule: "body {\r\n    width: 100%;\r\n    height: 100%;\r\n    text-align: center;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: body
+    id: null
+    category: Tags
+    properties[2]: background,color
+    cssRule: "body {\r\n    background: var(--background_body);\r\n    color: var(--text_color);\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: body.night
+    id: null
+    category: Tags
+    properties[2]: background,color
+    cssRule: "body.night {\r\n    background: var(--background_body_alt);\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: a
+    id: null
+    category: Tags
+    properties[3]: color,text-decoration,font-weight
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    color: var(--primary_color) !important;\r\n    text-decoration: none;\r\n    font-weight: 700;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: pseudo
+    selector: "a:visited"
+    id: null
+    category: Tags
+    properties[3]: color,text-decoration,font-weight
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    color: var(--primary_color) !important;\r\n    text-decoration: none;\r\n    font-weight: 700;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: pseudo
+    selector: "a:active"
+    id: null
+    category: Tags
+    properties[3]: color,text-decoration,font-weight
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    color: var(--primary_color) !important;\r\n    text-decoration: none;\r\n    font-weight: 700;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: pseudo
+    selector: "a:enabled"
+    id: null
+    category: Tags
+    properties[3]: color,text-decoration,font-weight
+    cssRule: "a,\r\na:visited,\r\na:active,\r\na:enabled {\r\n    color: var(--primary_color) !important;\r\n    text-decoration: none;\r\n    font-weight: 700;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: p
+    id: null
+    category: Tags
+    properties[6]: margin,text-align,overflow-wrap,word-wrap,white-space,padding
+    cssRule: "p {\r\n    margin: 10px 0;\r\n    text-align: left;\r\n    overflow-wrap: break-word;\r\n    word-wrap: break-word;\r\n    white-space: normal;\r\n    padding: 0 15px;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: hr
+    id: null
+    category: Tags
+    properties[5]: display,height,border,border-top,padding
+    cssRule: "hr {\r\n    display: block;\r\n    height: 1px;\r\n    border: 0;\r\n    border-top: 1px solid var(--primary_color);\r\n\r\n    padding: 0;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: sub
+    id: null
+    category: Tags
+    properties[3]: font-size,position,top
+    cssRule: "sub {\r\n    font-size: 80%;\r\n    position: relative;\r\n    top: 0.1rem;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: sup
+    id: null
+    category: Tags
+    properties[3]: font-size,position,top
+    cssRule: "sup {\r\n    font-size: 80%;\r\n    position: relative;\r\n    top: -0.1rem;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: blockquote
+    id: null
+    category: Tags
+    properties[5]: border-left,font-style,text-align,margin,padding
+    cssRule: "blockquote {\r\n    border-left: solid 4px var(--primary_color);\r\n    font-style: italic;\r\n    text-align: left;\r\n    margin: 0 0 2rem 0;\r\n    padding: 0.8rem 0.5rem 0.8rem 1.5rem;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: code
+    id: null
+    category: Tags
+    properties[6]: border-radius,background,font-family,font-size,margin,padding
+    cssRule: "code {\r\n    border-radius: 4px;\r\n    background: #ddd;\r\n    font-family: monospace;\r\n    font-size: 80%;\r\n    margin: 0 0.3rem;\r\n    padding: 0.2rem 0.6rem;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: pre
+    id: null
+    category: Tags
+    properties[4]: "-webkit-overflow-scrolling",font-family,font-size,margin
+    cssRule: "pre {\r\n    -webkit-overflow-scrolling: touch;\r\n    font-family: monospace;\r\n    font-size: 0.9em;\r\n    margin: 0 0 2rem 0;\r\n\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: pre code
+    id: null
+    category: Tags
+    properties[5]: text-align,display,line-height,padding,margin
+    cssRule: "pre code {\r\n    text-align: left;\r\n    display: block;\r\n    line-height: 1.75;\r\n    padding: 0.3rem 0.5rem 0.3rem 1rem;\r\n    margin: 0 25px;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: class
+    selector: .night code
+    id: null
+    category: Tags
+    properties[2]: background,color
+    cssRule: ".night code {\r\n    background: #000;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: hgroup
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: hgroup h1
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: hgroup h2
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: hgroup h3
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: hgroup h4
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: hgroup h5
+    id: null
+    category: Tags
+    properties[1]: display
+    cssRule: "hgroup,\r\nhgroup h1,\r\nhgroup h2,\r\nhgroup h3,\r\nhgroup h4,\r\nhgroup h5 {\r\n    display: inline-block;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: ul li
+    id: null
+    category: Tags
+    properties[1]: padding
+    cssRule: "ul li,\r\nol li {\r\n    padding: 2px 1.5vw 2px 0.5vw;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: ol li
+    id: null
+    category: Tags
+    properties[1]: padding
+    cssRule: "ul li,\r\nol li {\r\n    padding: 2px 1.5vw 2px 0.5vw;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: tr *
+    id: null
+    category: Tags
+    properties[3]: left,right,margin
+    cssRule: "tr *,\r\ntd * {\r\n    left: 0;\r\n    right: 0;\r\n    margin: auto;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: complex
+    selector: td *
+    id: null
+    category: Tags
+    properties[3]: left,right,margin
+    cssRule: "tr *,\r\ntd * {\r\n    left: 0;\r\n    right: 0;\r\n    margin: auto;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: th
+    id: null
+    category: Tags
+    properties[3]: overflow-wrap,word-wrap,white-space
+    cssRule: "th,\r\ntd {\r\n    overflow-wrap: break-word;\r\n    word-wrap: break-word;\r\n    white-space: normal;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: td
+    id: null
+    category: Tags
+    properties[3]: overflow-wrap,word-wrap,white-space
+    cssRule: "th,\r\ntd {\r\n    overflow-wrap: break-word;\r\n    word-wrap: break-word;\r\n    white-space: normal;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: th
+    id: null
+    category: Tags
+    properties[1]: padding
+    cssRule: "th {\r\n    padding: 4px 0;\r\n}"
+    responsive: false
+    description: Tags
+  - type: selector
+    selectorType: element
+    selector: caption
+    id: null
+    category: Tags
+    properties[1]: margin
+    cssRule: "caption {\r\n    margin: 15px 0;\r\n}"
+    responsive: false
+    description: Tags
