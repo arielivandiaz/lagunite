@@ -1,0 +1,186 @@
+folder: 01-text
+file: 02-typography.css
+lastUpdated: 2025-11-22
+hasResponsive: false
+totalSelectors: 20
+content[20]:
+  - type: selector
+    selectorType: class
+    selector: .uppercase
+    id: null
+    category: null
+    properties[1]: text-transform
+    cssRule: ".uppercase {\r\n  text-transform: uppercase;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lowercase
+    id: null
+    category: null
+    properties[1]: text-transform
+    cssRule: ".lowercase {\r\n  text-transform: lowercase;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .capitalize
+    id: null
+    category: null
+    properties[1]: text-transform
+    cssRule: ".capitalize {\r\n  text-transform: capitalize;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing-xs
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing-xs {\r\n  letter-spacing: -0.1rem;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing-s
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing-s {\r\n  letter-spacing: -0.05rem;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing {\r\n  letter-spacing: 0.05rem;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing-l
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing-l {\r\n  letter-spacing: 0.1em;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing-xl
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing-xl {\r\n  letter-spacing: 0.2em;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .letter-spacing-xxl
+    id: null
+    category: null
+    properties[1]: letter-spacing
+    cssRule: ".letter-spacing-xxl {\r\n  letter-spacing: 0.4rem;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh-xs
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh-xs {\r\n  line-height: 0.85;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh-s
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh-s {\r\n  line-height: 0.95;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh {\r\n  line-height: 1.5;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh-l
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh-l {\r\n  line-height: 1.7;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh-xl
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh-xl {\r\n  line-height: 2;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .lh-xxl
+    id: null
+    category: null
+    properties[1]: line-height
+    cssRule: ".lh-xxl {\r\n  line-height: 2.5;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ta-c
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: ".ta-c {\r\n  text-align: center;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ta-lf
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: ".ta-lf {\r\n  text-align: left;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ta-rg
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: ".ta-rg {\r\n  text-align: right;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ta-j
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: ".ta-j {\r\n  text-align: justify;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .ta-ja
+    id: null
+    category: null
+    properties[1]: text-align
+    cssRule: ".ta-ja {\r\n  text-align: justify-all;\r\n}"
+    responsive: false
+    description: ""

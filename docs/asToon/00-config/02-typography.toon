@@ -1,0 +1,35 @@
+folder: 00-config
+file: 02-typography.css
+lastUpdated: 2025-11-22
+hasResponsive: false
+totalSelectors: 1
+content[1]:
+  - type: selector
+    selectorType: pseudo
+    selector: ":root"
+    id: null
+    category: null
+    properties[19]: "--font-sans","--font-mono","--font-text","--font-headers","--font-size-xs","--font-size-sm","--font-size-base","--font-size-lg","--font-size-xl","--font-size-xxl","--font-size-3xl","--font-weight-light","--font-weight-normal","--font-weight-medium","--font-weight-bold","--line-height-none","--line-height-tight","--line-height-normal","--line-height-loose"
+    cssRule: ":root {\r\n  --font-sans:\r\n    \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif;\r\n  --font-mono: \"JetBrains Mono\", \"Fira Code\", monospace;\r\n\r\n  --font-text: \"Zen Kaku Gothic Antique\", sans-serif;\r\n  --font-headers: \"PT Sans\", sans-serif;\r\n\r\n  --font-size-xs: 0.75rem; /* 12px */\r\n  --font-size-sm: 0.875rem; /* 14px */\r\n  --font-size-base: 1rem; /* 16px */\r\n  --font-size-lg: 1.125rem; /* 18px */\r\n  --font-size-xl: 1.25rem; /* 20px */\r\n  --font-size-xxl: 1.5rem; /* 24px */\r\n  --font-size-3xl: 2rem; /* 32px */\r\n\r\n  --font-weight-light: 300;\r\n  --font-weight-normal: 400;\r\n  --font-weight-medium: 500;\r\n  --font-weight-bold: 700;\r\n\r\n  --line-height-none: 1;\r\n  --line-height-tight: 1.25;\r\n  --line-height-normal: 1.5;\r\n  --line-height-loose: 2;\r\n}"
+    responsive: false
+    description: ""
+customProperties[19]{property,value}:
+  "--font-sans","\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+  "--font-mono","\"JetBrains Mono\", \"Fira Code\", monospace"
+  "--font-text","\"Zen Kaku Gothic Antique\", sans-serif"
+  "--font-headers","\"PT Sans\", sans-serif"
+  "--font-size-xs",0.75rem
+  "--font-size-sm",0.875rem
+  "--font-size-base",1rem
+  "--font-size-lg",1.125rem
+  "--font-size-xl",1.25rem
+  "--font-size-xxl",1.5rem
+  "--font-size-3xl",2rem
+  "--font-weight-light","300"
+  "--font-weight-normal","400"
+  "--font-weight-medium","500"
+  "--font-weight-bold","700"
+  "--line-height-none","1"
+  "--line-height-tight","1.25"
+  "--line-height-normal","1.5"
+  "--line-height-loose","2"

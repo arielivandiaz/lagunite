@@ -2,6 +2,7 @@ dev/
 web/
 package-lock.json
 *.npmrc
+ToDoAriel.md
 
 # Logs
 logs

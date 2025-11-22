@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { encode } from '@toon-format/toon';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -51,6 +52,15 @@ function mergeJsonFiles() {
     console.log(`\n✓ docs.json file created with ${mergedData.length} merged files`);
   } catch (error) {
     console.error('✗ Error writing docs.json:', error.message);
+  }
+
+  // Write the merged data to docs.toon
+  try {
+    const toonOutputFile = path.join(__dirname, '..', 'docs', 'docs.toon');
+    fs.writeFileSync(toonOutputFile, encode(mergedData));
+    console.log(`✓ docs.toon file created (Toon format)`);
+  } catch (error) {
+    console.error('✗ Error writing docs.toon:', error.message);
   }
 }
 

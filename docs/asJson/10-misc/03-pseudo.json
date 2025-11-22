@@ -1,0 +1,288 @@
+{
+  "folder": "10-misc",
+  "file": "03-pseudo.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 19,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".content-none",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content"
+      ],
+      "cssRule": ".content-none { content: none; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".content-empty",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content"
+      ],
+      "cssRule": ".content-empty { content: ''; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-block::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".before-block::before { content: ''; display: block; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-inline::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".before-inline::before { content: ''; display: inline; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-inline-block::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".before-inline-block::before { content: ''; display: inline-block; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-table::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".before-table::before { content: ''; display: table; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-block::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".after-block::after { content: ''; display: block; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-inline::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".after-inline::after { content: ''; display: inline; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-inline-block::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".after-inline-block::after { content: ''; display: inline-block; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-table::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".after-table::after { content: ''; display: table; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-absolute::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "left",
+        "width",
+        "height"
+      ],
+      "cssRule": ".before-absolute::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-absolute::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "left",
+        "width",
+        "height"
+      ],
+      "cssRule": ".after-absolute::after {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-overlay::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "left",
+        "transform"
+      ],
+      "cssRule": ".before-overlay::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-overlay::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "left",
+        "transform"
+      ],
+      "cssRule": ".after-overlay::after {\r\n  content: '';\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".clearfix::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display",
+        "clear"
+      ],
+      "cssRule": ".clearfix::after {\r\n  content: '';\r\n  display: table;\r\n  clear: both;\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".before-content::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content"
+      ],
+      "cssRule": ".before-content::before { content: attr(data-before); }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".after-content::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content"
+      ],
+      "cssRule": ".after-content::after { content: attr(data-after); }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-block::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display",
+        "width",
+        "height"
+      ],
+      "cssRule": ".empty-block::before {\r\n  content: '';\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-inline::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "display"
+      ],
+      "cssRule": ".empty-inline::before {\r\n  content: '';\r\n  display: inline-block;\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ]
+}

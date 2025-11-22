@@ -1,0 +1,139 @@
+{
+  "folder": "10-misc",
+  "file": "02-cursor.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 10,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".cursor-auto",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": ".cursor-auto { cursor: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".cursor-pointer",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": ".cursor-pointer { cursor: pointer; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".cursor-not-allowed",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": ".cursor-not-allowed { cursor: not-allowed; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".cursor-text",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": ".cursor-text { cursor: text; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".cursor-move",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": ".cursor-move { cursor: move; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pointer-events-none",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "pointer-events"
+      ],
+      "cssRule": ".pointer-events-none { pointer-events: none; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".pointer-events-auto",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "pointer-events"
+      ],
+      "cssRule": ".pointer-events-auto { pointer-events: auto; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-none",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "user-select"
+      ],
+      "cssRule": ".select-none { user-select: none; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-text",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "user-select"
+      ],
+      "cssRule": ".select-text { user-select: text; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-all",
+      "id": "#10-02-XX",
+      "category": null,
+      "properties": [
+        "user-select"
+      ],
+      "cssRule": ".select-all { user-select: all; }",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

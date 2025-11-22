@@ -1,0 +1,771 @@
+folder: 10-misc
+file: figures.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 85
+content[85]:
+  - type: selector
+    selectorType: class
+    selector: .hr-l
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".hr-l {\r\n    border-width: 5px 0 0 0;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .hr-xl
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".hr-xl {\r\n    border-width: 10px 0 0 0;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .hr-xxl
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".hr-xxl {\r\n    border-width: 25px 0 0 0;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color {\r\n    border-color: var(--text_color)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-alt
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-alt {\r\n    border-color: var(--text_color_alt)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-main
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-main {\r\n    border-color: var(--primary_color)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-main-alt
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-main-alt {\r\n    border-color: var(--primary_color_alt)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-light
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-light {\r\n    border-color: var(--primary_color_light)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-dark
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-dark {\r\n    border-color: var(--primary_color_dark)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-success
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-success {\r\n    border-color: var(--color_success)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-warning
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-warning {\r\n    border-color: var(--color_warning)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: hr.color-error
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: "hr.color-error {\r\n    border-color: var(--color_error)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v
+    id: null
+    category: null
+    properties[3]: border-style,height,border-color
+    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-l
+    id: null
+    category: null
+    properties[3]: border-style,height,border-color
+    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-xl
+    id: null
+    category: null
+    properties[3]: border-style,height,border-color
+    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-xxl
+    id: null
+    category: null
+    properties[3]: border-style,height,border-color
+    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".line-v {\r\n    border-width: 0 0 0 2px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-l
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".line-v-l {\r\n    border-width: 0 0 0 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-xl
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".line-v-xl {\r\n    border-width: 0 0 0 10px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v-xxl
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".line-v-xxl {\r\n    border-width: 0 0 0 25px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color {\r\n    border-color: var(--text_color)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-alt
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-alt {\r\n    border-color: var(--text_color_alt)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-main
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-main {\r\n    border-color: var(--primary_color)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-main-alt
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-main-alt {\r\n    border-color: var(--primary_color_alt)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-light
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-light {\r\n    border-color: var(--primary_color_light)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-dark
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-dark {\r\n    border-color: var(--primary_color_dark)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-success
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-success {\r\n    border-color: var(--color_success)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-warning
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-warning {\r\n    border-color: var(--color_warning)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .line-v.color-error
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".line-v.color-error {\r\n    border-color: var(--color_error)\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .drounded
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .xrounded
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .drounded-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .xrounded-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-s
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .drounded-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .xrounded-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-l
+    id: null
+    category: null
+    properties[5]: background,display,justify-content,align-items,color
+    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-s
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-s
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-s
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-s
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-l
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-l
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-l
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-l
+    id: null
+    category: null
+    properties[2]: width,height
+    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-s
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".rounded-s {\r\n    border-radius: 5px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".rounded {\r\n    border-radius: 15px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .rounded-l
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".rounded-l {\r\n    border-radius: 20px;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-s
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .circle-l
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-s
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .tear-l
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-s
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .square-l
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle
+    id: null
+    category: null
+    properties[4]: width,height,color,border-radius
+    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle-s
+    id: null
+    category: null
+    properties[4]: width,height,color,border-radius
+    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle-l
+    id: null
+    category: null
+    properties[4]: width,height,color,border-radius
+    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle
+    id: null
+    category: null
+    properties[3]: border-left,border-right,border-bottom
+    cssRule: ".triangle {\r\n    border-left: 28px solid transparent;\r\n    border-right: 28px solid transparent;\r\n    border-bottom: 46px solid var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle-s
+    id: null
+    category: null
+    properties[3]: border-left,border-right,border-bottom
+    cssRule: ".triangle-s {\r\n    border-left: 15px solid transparent;\r\n    border-right: 15px solid transparent;\r\n    border-bottom: 20px solid var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .triangle-l
+    id: null
+    category: null
+    properties[3]: border-left,border-right,border-bottom
+    cssRule: ".triangle-l {\r\n    border-left: 52px solid transparent;\r\n    border-right: 52px solid transparent;\r\n    border-bottom: 88px solid var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .point-s
+    id: null
+    category: null
+    properties[4]: border-radius,height,width,background
+    cssRule: ".point-s {\r\n    border-radius: 5px;\r\n    height: 5px;\r\n    width: 5px;\r\n    background: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .point
+    id: null
+    category: null
+    properties[4]: border-radius,height,width,background
+    cssRule: ".point {\r\n    border-radius: 10px;\r\n    height: 10px;\r\n    width: 10px;\r\n    background: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .point-l
+    id: null
+    category: null
+    properties[4]: border-radius,height,width,background
+    cssRule: ".point-l {\r\n    border-radius: 15px;\r\n    height: 15px;\r\n    width: 15px;\r\n    background: var(--primary_color);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blob-1
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".blob-1 {\r\n    border-radius: 30% 70% 30% 70%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blob-2
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".blob-2 {\r\n    border-radius: 50% 20% 50% 20%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blob-3
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".blob-3 {\r\n    border-radius: 60% 40% 40% 60%/50% 40% 65% 55%;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blob-4
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".blob-4 {\r\n    border-radius: 33% 33% 33% 93%\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .blob-5
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".blob-5 {\r\n    border-radius: 80%;\r\n}"
+    responsive: false
+    description: ""

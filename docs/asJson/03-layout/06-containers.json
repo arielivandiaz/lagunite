@@ -1,0 +1,612 @@
+{
+  "folder": "03-layout",
+  "file": "06-containers.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 42,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "margin-left",
+        "margin-right",
+        "padding-left",
+        "padding-right"
+      ],
+      "cssRule": ".container { \r\n  width: 100%;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  padding-left: var(--space-4);\r\n  padding-right: var(--space-4);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-xs",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-xs { \r\n  max-width: 480px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-s { \r\n  max-width: 640px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-m",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-m { \r\n  max-width: 768px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-l",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-l { \r\n  max-width: 1024px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-xl",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-xl { \r\n  max-width: 1280px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-2xl",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-2xl { \r\n  max-width: 1536px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-fluid",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "padding-left",
+        "padding-right"
+      ],
+      "cssRule": ".container-fluid {\r\n  width: 100%;\r\n  padding-left: var(--space-4);\r\n  padding-right: var(--space-4);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-prose",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right",
+        "padding-left",
+        "padding-right"
+      ],
+      "cssRule": ".container-prose { \r\n  max-width: 65ch; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n  padding-left: var(--space-4);\r\n  padding-right: var(--space-4);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-card",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-card { \r\n  max-width: 400px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-sidebar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-sidebar { \r\n  max-width: 320px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-modal",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-modal { \r\n  max-width: 600px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-hero",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right",
+        "padding-left",
+        "padding-right"
+      ],
+      "cssRule": ".container-hero { \r\n  max-width: 1200px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n  padding-left: var(--space-6);\r\n  padding-right: var(--space-6);\r\n}",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-narrow",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-narrow { \r\n  max-width: 540px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-wide",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin-left",
+        "margin-right"
+      ],
+      "cssRule": ".container-wide { \r\n  max-width: 1440px; \r\n  margin-left: auto; \r\n  margin-right: auto; \r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-contain",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-fit"
+      ],
+      "cssRule": ".object-contain { object-fit: contain; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-cover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-fit"
+      ],
+      "cssRule": ".object-cover { object-fit: cover; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-fill",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-fit"
+      ],
+      "cssRule": ".object-fill { object-fit: fill; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-none",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-fit"
+      ],
+      "cssRule": ".object-none { object-fit: none; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-scale-down",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-fit"
+      ],
+      "cssRule": ".object-scale-down { object-fit: scale-down; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-center",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-center { object-position: center; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-top",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-top { object-position: top; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-bottom",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-bottom { object-position: bottom; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-left",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-left { object-position: left; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-right",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-right { object-position: right; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-left-top",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-left-top { object-position: left top; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-left-bottom",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-left-bottom { object-position: left bottom; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-right-top",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-right-top { object-position: right top; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".object-right-bottom",
+      "id": null,
+      "category": null,
+      "properties": [
+        "object-position"
+      ],
+      "cssRule": ".object-right-bottom { object-position: right bottom; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".constrain-xs",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": ".constrain-xs { max-width: var(--space-32); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".constrain-s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": ".constrain-s { max-width: var(--space-40); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".constrain-m",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": ".constrain-m { max-width: var(--space-48); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".constrain-l",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": ".constrain-l { max-width: var(--space-56); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".constrain-xl",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": ".constrain-xl { max-width: var(--space-64); }",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".section-container",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "margin-left",
+        "margin-right",
+        "padding"
+      ],
+      "cssRule": ".section-container {\r\n  width: 100%;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  padding: var(--space-12) var(--space-4);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".section-container-s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "padding"
+      ],
+      "cssRule": ".section-container-s {\r\n  max-width: 768px;\r\n  padding: var(--space-8) var(--space-4);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".section-container-l",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "padding"
+      ],
+      "cssRule": ".section-container-l {\r\n  max-width: 1200px;\r\n  padding: var(--space-16) var(--space-6);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-card-center",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin",
+        "text-align"
+      ],
+      "cssRule": ".container-card-center {\r\n  max-width: 400px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-prose-justify",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin",
+        "text-align"
+      ],
+      "cssRule": ".container-prose-justify {\r\n  max-width: 65ch;\r\n  margin: 0 auto;\r\n  text-align: justify;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-hero-center",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin",
+        "text-align",
+        "padding"
+      ],
+      "cssRule": ".container-hero-center {\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  padding: var(--space-16) var(--space-6);\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-debug",
+      "id": null,
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": ".container-debug {\r\n  outline: 2px dashed var(--color-primary);\r\n  outline-offset: -2px;\r\n}",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".container-debug::before",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "left",
+        "background",
+        "color",
+        "font-size",
+        "padding",
+        "font-family"
+      ],
+      "cssRule": ".container-debug::before {\r\n  content: \"Container\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  background: var(--color-primary);\r\n  color: var(--color-text-alt);  \r\n  font-size: var(--font-size-xs);\r\n  padding: var(--space-1) var(--space-2);\r\n  font-family: var(--font-mono);\r\n}",
+      "responsive": false,
+      "description": ""
+    }
+  ]
+}

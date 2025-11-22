@@ -1,0 +1,330 @@
+folder: 01-text
+file: 01-fonts.css
+lastUpdated: 2025-11-22
+hasResponsive: false
+totalSelectors: 36
+content[36]:
+  - type: selector
+    selectorType: element
+    selector: h1
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h2
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h3
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h4
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h5
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h6
+    id: null
+    category: null
+    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
+    cssRule: "h1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: var(--font-headers);\r\n  font-weight: var(--font-weight-bold); /* Added default bold for headers */\r\n  line-height: var(--line-height-tight);\r\n  overflow-wrap: break-word;\r\n  word-wrap: break-word;\r\n  white-space: normal;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h1
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h1 {\r\n  font-size: clamp(2.5rem, 5vw, 5rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h2
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h2 {\r\n  font-size: clamp(2rem, 4vw, 3rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h3
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h3 {\r\n  font-size: clamp(1.5rem, 3vw, 2rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h4
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h4 {\r\n  font-size: clamp(1.2rem, 2.5vw, 1.5rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h5
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h5 {\r\n  font-size: clamp(1rem, 2vw, 1.2rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: element
+    selector: h6
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: "h6 {\r\n  font-size: var(--font-size-base);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .bold
+    id: null
+    category: null
+    properties[1]: font-weight
+    cssRule: ".bold {\r\n  font-weight: bold;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .italic
+    id: null
+    category: null
+    properties[1]: font-style
+    cssRule: ".italic {\r\n  font-style: italic;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-text
+    id: null
+    category: null
+    properties[1]: font-family
+    cssRule: ".font-text {\r\n  font-family: var(--font-text);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-headers
+    id: null
+    category: null
+    properties[1]: font-family
+    cssRule: ".font-headers {\r\n  font-family: var(--font-headers);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-sans
+    id: null
+    category: null
+    properties[1]: font-family
+    cssRule: ".font-sans {\r\n  font-family: var(--font-sans);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-mono
+    id: null
+    category: null
+    properties[1]: font-family
+    cssRule: ".font-mono {\r\n  font-family: var(--font-mono);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-xs
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-xs {\r\n  font-size: 70% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-s
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-s {\r\n  font-size: 85% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-lg
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-lg {\r\n  font-size: 115% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-xl
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-xl {\r\n  font-size: 130% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-xxl
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-xxl {\r\n  font-size: 200% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-250
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-250 {\r\n  font-size: 250% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-300
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-300 {\r\n  font-size: 300% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-400
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-400 {\r\n  font-size: 400% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-500
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-500 {\r\n  font-size: 500% !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-fluid-xs
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-fluid-xs {\r\n  font-size: clamp(0.5rem, 1vh, 0.75rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-fluid-s
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-fluid-s {\r\n  font-size: clamp(0.75rem, 1.5vh, 1rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-fluid
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-fluid {\r\n  font-size: clamp(1rem, 2vh, 1.5rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-fluid-l
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-fluid-l {\r\n  font-size: clamp(1.25rem, 3vh, 1.5rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-fluid-xl
+    id: null
+    category: null
+    properties[1]: font-size
+    cssRule: ".font-fluid-xl {\r\n  font-size: clamp(1.5rem, 5vh, 2rem);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-weight-0
+    id: null
+    category: null
+    properties[2]: font-weight,font-weight
+    cssRule: ".font-weight-0 {\r\n  font-weight: lighter;\r\n  font-weight: var(--font-weight-light) !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-weight-1
+    id: null
+    category: null
+    properties[1]: font-weight
+    cssRule: ".font-weight-1 {\r\n  font-weight: var(--font-weight-normal) !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-weight-2
+    id: null
+    category: null
+    properties[1]: font-weight
+    cssRule: ".font-weight-2 {\r\n  font-weight: var(--font-weight-medium) !important;\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .font-weight-3
+    id: null
+    category: null
+    properties[1]: font-weight
+    cssRule: ".font-weight-3 {\r\n  font-weight: var(--font-weight-bold) !important;\r\n}"
+    responsive: false
+    description: ""

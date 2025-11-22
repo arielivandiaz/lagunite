@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
@@ -25,9 +25,12 @@
     "preview": "vite preview",
     "lint:css": "stylelint \"src/**/*.css\"",
     "format": "prettier --write \"src/**/*.{js,css,md} *.js\"",
-    "merge-docs": "node scripts/merge-docs.js"
+    "merge-docs": "node scripts/merge-docs.js",
+    "docs:generate": "node scripts/generate-css-docs.js",
+    "docs:watch": "nodemon --watch src/css --ext css --exec npm run docs:generate"
   },
   "devDependencies": {
+    "@toon-format/toon": "^1.3.0",
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.1",
     "postcss": "^8.4.38",

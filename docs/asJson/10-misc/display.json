@@ -1,0 +1,61 @@
+{
+  "folder": "10-misc",
+  "file": "display.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 4,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".display-i",
+      "id": null,
+      "category": "Display",
+      "properties": [
+        "display"
+      ],
+      "cssRule": ".display-i {\r\n    display: inline;\r\n}",
+      "responsive": true,
+      "description": "Display"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".display-ib",
+      "id": null,
+      "category": "Display",
+      "properties": [
+        "display"
+      ],
+      "cssRule": ".display-ib {\r\n    display: inline-block;\r\n}",
+      "responsive": true,
+      "description": "Display"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".display-f",
+      "id": null,
+      "category": "Display",
+      "properties": [
+        "display"
+      ],
+      "cssRule": ".display-f {\r\n    display: flex;\r\n}",
+      "responsive": true,
+      "description": "Display"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hidden",
+      "id": null,
+      "category": "Display",
+      "properties": [
+        "display"
+      ],
+      "cssRule": ".hidden {\r\n    display: none !important;\r\n}",
+      "responsive": true,
+      "description": "Display"
+    }
+  ]
+}

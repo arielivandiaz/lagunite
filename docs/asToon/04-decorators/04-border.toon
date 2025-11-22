@@ -1,0 +1,780 @@
+folder: 04-decorators
+file: 04-border.css
+lastUpdated: 2025-11-22
+hasResponsive: true
+totalSelectors: 86
+content[86]:
+  - type: selector
+    selectorType: class
+    selector: .border-w-0
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".border-w-0 { border-width: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-w-1
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".border-w-1 { border-width: var(--border-width-sm); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-w-2
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".border-w-2 { border-width: var(--border-width-md); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-w-4
+    id: null
+    category: null
+    properties[1]: border-width
+    cssRule: ".border-w-4 { border-width: calc(var(--border-width-md) * 2); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-solid
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-solid { border-style: solid; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-dashed
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-dashed { border-style: dashed; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-dotted
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-dotted { border-style: dotted; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-double
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-double { border-style: double; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-none
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-none { border-style: none; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-inset
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-inset { border-style: inset; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-outset
+    id: null
+    category: null
+    properties[1]: border-style
+    cssRule: ".border-outset { border-style: outset; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-primary
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-primary { border-color: var(--color-primary); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-primary-light
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-primary-light { border-color: var(--color-primary-light); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-primary-dark
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-primary-dark { border-color: var(--color-primary-dark); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-secondary
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-secondary { border-color: var(--color-secondary); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-success
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-success { border-color: var(--color-success); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-warning
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-warning { border-color: var(--color-warning); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-error
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-error { border-color: var(--color-error); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-black
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-black { border-color: var(--color-almost-black); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-white
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-white { border-color: var(--color-almost-white); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-color-transparent
+    id: null
+    category: null
+    properties[1]: border-color
+    cssRule: ".border-color-transparent { border-color: transparent; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-t
+    id: null
+    category: null
+    properties[1]: border-top
+    cssRule: ".border-t { border-top: var(--border); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-b
+    id: null
+    category: null
+    properties[1]: border-bottom
+    cssRule: ".border-b { border-bottom: var(--border); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-lf
+    id: null
+    category: null
+    properties[1]: border-left
+    cssRule: ".border-lf { border-left: var(--border); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-rg
+    id: null
+    category: null
+    properties[1]: border-right
+    cssRule: ".border-rg { border-right: var(--border); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-t-w-0
+    id: null
+    category: null
+    properties[1]: border-top-width
+    cssRule: ".border-t-w-0 { border-top-width: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-t-w-1
+    id: null
+    category: null
+    properties[1]: border-top-width
+    cssRule: ".border-t-w-1 { border-top-width: var(--border-width-sm); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-t-w-2
+    id: null
+    category: null
+    properties[1]: border-top-width
+    cssRule: ".border-t-w-2 { border-top-width: var(--border-width-md); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-t-w-4
+    id: null
+    category: null
+    properties[1]: border-top-width
+    cssRule: ".border-t-w-4 { border-top-width: calc(var(--border-width-md) * 2); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-b-w-0
+    id: null
+    category: null
+    properties[1]: border-bottom-width
+    cssRule: ".border-b-w-0 { border-bottom-width: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-b-w-1
+    id: null
+    category: null
+    properties[1]: border-bottom-width
+    cssRule: ".border-b-w-1 { border-bottom-width: var(--border-width-sm); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-b-w-2
+    id: null
+    category: null
+    properties[1]: border-bottom-width
+    cssRule: ".border-b-w-2 { border-bottom-width: var(--border-width-md); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-b-w-4
+    id: null
+    category: null
+    properties[1]: border-bottom-width
+    cssRule: ".border-b-w-4 { border-bottom-width: calc(var(--border-width-md) * 2); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-lf-w-0
+    id: null
+    category: null
+    properties[1]: border-left-width
+    cssRule: ".border-lf-w-0 { border-left-width: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-lf-w-1
+    id: null
+    category: null
+    properties[1]: border-left-width
+    cssRule: ".border-lf-w-1 { border-left-width: var(--border-width-sm); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-lf-w-2
+    id: null
+    category: null
+    properties[1]: border-left-width
+    cssRule: ".border-lf-w-2 { border-left-width: var(--border-width-md); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-lf-w-4
+    id: null
+    category: null
+    properties[1]: border-left-width
+    cssRule: ".border-lf-w-4 { border-left-width: calc(var(--border-width-md) * 2); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-rg-w-0
+    id: null
+    category: null
+    properties[1]: border-right-width
+    cssRule: ".border-rg-w-0 { border-right-width: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-rg-w-1
+    id: null
+    category: null
+    properties[1]: border-right-width
+    cssRule: ".border-rg-w-1 { border-right-width: var(--border-width-sm); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-rg-w-2
+    id: null
+    category: null
+    properties[1]: border-right-width
+    cssRule: ".border-rg-w-2 { border-right-width: var(--border-width-md); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-rg-w-4
+    id: null
+    category: null
+    properties[1]: border-right-width
+    cssRule: ".border-rg-w-4 { border-right-width: calc(var(--border-width-md) * 2); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-0
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-0 { border-radius: 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-s
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-s { border-radius: var(--radius-sm); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r { border-radius: var(--radius-md); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-l
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-l { border-radius: var(--radius-lg); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-xl
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-xl { border-radius: var(--radius-lg); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".border-r-s.scrollable::-webkit-scrollbar-track"
+    id: null
+    category: null
+    properties[1]: margin
+    cssRule: ".border-r-s.scrollable::-webkit-scrollbar-track { margin: var(--space-3) 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".border-r.scrollable::-webkit-scrollbar-track"
+    id: null
+    category: null
+    properties[1]: margin
+    cssRule: ".border-r.scrollable::-webkit-scrollbar-track { margin: var(--space-4) 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".border-r-l.scrollable::-webkit-scrollbar-track"
+    id: null
+    category: null
+    properties[1]: margin
+    cssRule: ".border-r-l.scrollable::-webkit-scrollbar-track { margin: var(--space-5) 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".border-r-xl.scrollable::-webkit-scrollbar-track"
+    id: null
+    category: null
+    properties[1]: margin
+    cssRule: ".border-r-xl.scrollable::-webkit-scrollbar-track { margin: var(--space-6) 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-full
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-full { border-radius: var(--radius-full); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-r-circle
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-r-circle { border-radius: 50%; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-s
+    id: null
+    category: null
+    properties[5]: border,border-radius,display,align-items,justify-content
+    cssRule: ".border-circle-s,\r\n.border-circle,\r\n.border-circle-l,\r\n.border-circle-xl {\r\n  border: var(--border-width-sm) solid transparent;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle
+    id: null
+    category: null
+    properties[5]: border,border-radius,display,align-items,justify-content
+    cssRule: ".border-circle-s,\r\n.border-circle,\r\n.border-circle-l,\r\n.border-circle-xl {\r\n  border: var(--border-width-sm) solid transparent;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-l
+    id: null
+    category: null
+    properties[5]: border,border-radius,display,align-items,justify-content
+    cssRule: ".border-circle-s,\r\n.border-circle,\r\n.border-circle-l,\r\n.border-circle-xl {\r\n  border: var(--border-width-sm) solid transparent;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-xl
+    id: null
+    category: null
+    properties[5]: border,border-radius,display,align-items,justify-content
+    cssRule: ".border-circle-s,\r\n.border-circle,\r\n.border-circle-l,\r\n.border-circle-xl {\r\n  border: var(--border-width-sm) solid transparent;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-s
+    id: null
+    category: null
+    properties[2]: box-shadow,color
+    cssRule: ".border-circle-s {\r\n  box-shadow: 0 0 0 1px var(--color-primary);\r\n  color: var(--color-primary);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle
+    id: null
+    category: null
+    properties[2]: box-shadow,color
+    cssRule: ".border-circle {\r\n  box-shadow: 0 0 0 3px var(--color-primary);\r\n  color: var(--color-primary);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-l
+    id: null
+    category: null
+    properties[2]: box-shadow,color
+    cssRule: ".border-circle-l {\r\n  box-shadow: 0 0 0 5px var(--color-primary);\r\n  color: var(--color-primary);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle-xl
+    id: null
+    category: null
+    properties[2]: box-shadow,color
+    cssRule: ".border-circle-xl {\r\n  box-shadow: 0 0 0 10px var(--color-primary);\r\n  color: var(--color-primary);\r\n}"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-primary
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-primary { color: var(--color-primary); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-success
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-success { color: var(--color-success); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-warning
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-warning { color: var(--color-warning); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-error
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-error { color: var(--color-error); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-black
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-black { color: var(--color-almost-black); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-circle.color-white
+    id: null
+    category: null
+    properties[1]: color
+    cssRule: ".border-circle.color-white { color: var(--color-almost-white); }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-t-1
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-t-1 { border-radius: 25% 25% 0 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-t-2
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-t-2 { border-radius: 50% 50% 0 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-t-3
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-t-3 { border-radius: 75% 75% 0 0 / 50% 50% 0 0; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-t-4
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-t-4 { border-radius: 100% 100% 0 0 / 10% 90% 0 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-b-1
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-b-1 { border-radius: 0 0 25% 25%; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-b-2
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-b-2 { border-radius: 0 0 50% 50%; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-b-3
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-b-3 { border-radius: 0 0 75% 75% / 0 0 50% 50%; }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-b-4
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-b-4 { border-radius: 0 0 100% 100% / 0 0 10% 90%; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-lf-1
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-lf-1 { border-radius: 25% 0 0 25%; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-lf-2
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-lf-2 { border-radius: 50% 0 0 50%; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-lf-3
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-lf-3 { border-radius: 75% 0 0 75% / 50% 0 0 50%; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-lf-4
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-lf-4 { border-radius: 100% 0 0 100% / 10% 0 0 90%; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-rg-1
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-rg-1 { border-radius: 0 25% 25% 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-rg-2
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-rg-2 { border-radius: 0 50% 50% 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-rg-3
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-rg-3 { border-radius: 0 75% 75% 0 / 0 50% 50% 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-blob-rg-4
+    id: null
+    category: null
+    properties[1]: border-radius
+    cssRule: ".border-blob-rg-4 { border-radius: 0 100% 100% 0 / 0 10% 90% 0; }"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border
+    id: null
+    category: null
+    properties[1]: border
+    cssRule: ".border { border: var(--border); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-s
+    id: null
+    category: null
+    properties[1]: border
+    cssRule: ".border-s { border: var(--border-sm); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .border-l
+    id: null
+    category: null
+    properties[1]: border
+    cssRule: ".border-l { border: var(--border-lg); }"
+    responsive: true
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .bordered
+    id: null
+    category: null
+    properties[2]: border,border-radius
+    cssRule: ".bordered {\r\n  border: var(--border); \r\n  border-radius: var(--radius-md);\r\n}"
+    responsive: false
+    description: ""

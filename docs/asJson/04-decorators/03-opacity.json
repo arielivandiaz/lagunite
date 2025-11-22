@@ -1,0 +1,87 @@
+{
+  "folder": "04-decorators",
+  "file": "03-opacity.css",
+  "lastUpdated": "2025-11-22",
+  "hasResponsive": true,
+  "totalSelectors": 6,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-0",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".opacity-0 { opacity: 0; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-25",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".opacity-25 { opacity: 0.25; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-50",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".opacity-50 { opacity: 0.5; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-75",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".opacity-75 { opacity: 0.75; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-100",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".opacity-100 { opacity: 1; }",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hover-opacity-75:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": ".hover-opacity-75:hover { opacity: 0.75; }",
+      "responsive": true,
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+folder: 02-colors
+file: 01-text.css
+lastUpdated: 2025-11-22
+hasResponsive: false
+totalSelectors: 71
+content[71]:
+  - type: selector
+    selectorType: class
+    selector: .color-text
+    id: #02-01-01
+    category: null
+    properties[1]: color
+    cssRule: ".color-text {\r\n  color: var(--color-text-base);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-text-alt
+    id: #02-01-01
+    category: null
+    properties[1]: color
+    cssRule: ".color-text-alt {\r\n  color: var(--color-text-alt);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-primary
+    id: #02-01-02
+    category: null
+    properties[1]: color
+    cssRule: ".color-primary {\r\n  color: var(--color-primary);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-primary-light
+    id: #02-01-02
+    category: null
+    properties[1]: color
+    cssRule: ".color-primary-light {\r\n  color: var(--color-primary-light);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-primary-dark
+    id: #02-01-02
+    category: null
+    properties[1]: color
+    cssRule: ".color-primary-dark {\r\n  color: var(--color-primary-dark);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-secondary
+    id: #02-01-03
+    category: null
+    properties[1]: color
+    cssRule: ".color-secondary {\r\n  color: var(--color-secondary);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-secondary-light
+    id: #02-01-03
+    category: null
+    properties[1]: color
+    cssRule: ".color-secondary-light {\r\n  color: var(--color-secondary-light);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-secondary-dark
+    id: #02-01-03
+    category: null
+    properties[1]: color
+    cssRule: ".color-secondary-dark {\r\n  color: var(--color-secondary-dark);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-tertiary
+    id: #02-01-04
+    category: null
+    properties[1]: color
+    cssRule: ".color-tertiary {\r\n  color: var(--color-tertiary);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-tertiary-light
+    id: #02-01-04
+    category: null
+    properties[1]: color
+    cssRule: ".color-tertiary-light {\r\n  color: var(--color-tertiary-light);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-tertiary-dark
+    id: #02-01-04
+    category: null
+    properties[1]: color
+    cssRule: ".color-tertiary-dark {\r\n  color: var(--color-tertiary-dark);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-almost-black
+    id: #02-01-05
+    category: null
+    properties[1]: color
+    cssRule: ".color-almost-black {\r\n  color: var(--color-almost-black);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-almost-white
+    id: #02-01-05
+    category: null
+    properties[1]: color
+    cssRule: ".color-almost-white {\r\n  color: var(--color-almost-white);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-success
+    id: #02-01-06
+    category: null
+    properties[1]: color
+    cssRule: ".color-success {\r\n  color: var(--color-success);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-warning
+    id: #02-01-06
+    category: null
+    properties[1]: color
+    cssRule: ".color-warning {\r\n  color: var(--color-warning);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-error
+    id: #02-01-06
+    category: null
+    properties[1]: color
+    cssRule: ".color-error {\r\n  color: var(--color-error);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-50
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-50 {\r\n  color: var(--gray-50);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-100
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-100 {\r\n  color: var(--gray-100);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-200
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-200 {\r\n  color: var(--gray-200);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-300
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-300 {\r\n  color: var(--gray-300);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-400
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-400 {\r\n  color: var(--gray-400);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-500
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-500 {\r\n  color: var(--gray-500);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-600
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-600 {\r\n  color: var(--gray-600);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-700
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-700 {\r\n  color: var(--gray-700);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-800
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-800 {\r\n  color: var(--gray-800);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-900
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-900 {\r\n  color: var(--gray-900);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-gray-950
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-gray-950 {\r\n  color: var(--gray-950);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-50
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-50 {\r\n  color: var(--blue-50);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-100
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-100 {\r\n  color: var(--blue-100);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-200
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-200 {\r\n  color: var(--blue-200);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-300
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-300 {\r\n  color: var(--blue-300);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-400
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-400 {\r\n  color: var(--blue-400);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-500
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-500 {\r\n  color: var(--blue-500);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-600
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-600 {\r\n  color: var(--blue-600);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-700
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-700 {\r\n  color: var(--blue-700);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-800
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-800 {\r\n  color: var(--blue-800);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-900
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-900 {\r\n  color: var(--blue-900);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-blue-950
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-blue-950 {\r\n  color: var(--blue-950);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-50
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-50 {\r\n  color: var(--green-50);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-100
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-100 {\r\n  color: var(--green-100);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-200
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-200 {\r\n  color: var(--green-200);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-300
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-300 {\r\n  color: var(--green-300);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-400
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-400 {\r\n  color: var(--green-400);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-500
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-500 {\r\n  color: var(--green-500);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-600
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-600 {\r\n  color: var(--green-600);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-700
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-700 {\r\n  color: var(--green-700);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-800
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-800 {\r\n  color: var(--green-800);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-900
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-900 {\r\n  color: var(--green-900);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-green-950
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-green-950 {\r\n  color: var(--green-950);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-50
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-50 {\r\n  color: var(--yellow-50);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-100
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-100 {\r\n  color: var(--yellow-100);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-200
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-200 {\r\n  color: var(--yellow-200);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-300
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-300 {\r\n  color: var(--yellow-300);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-400
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-400 {\r\n  color: var(--yellow-400);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-500
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-500 {\r\n  color: var(--yellow-500);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-600
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-600 {\r\n  color: var(--yellow-600);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-700
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-700 {\r\n  color: var(--yellow-700);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-800
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-800 {\r\n  color: var(--yellow-800);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-900
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-900 {\r\n  color: var(--yellow-900);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-yellow-950
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-yellow-950 {\r\n  color: var(--yellow-950);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-50
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-50 {\r\n  color: var(--red-50);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-100
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-100 {\r\n  color: var(--red-100);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-200
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-200 {\r\n  color: var(--red-200);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-300
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-300 {\r\n  color: var(--red-300);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-400
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-400 {\r\n  color: var(--red-400);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-500
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-500 {\r\n  color: var(--red-500);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-600
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-600 {\r\n  color: var(--red-600);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-700
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-700 {\r\n  color: var(--red-700);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-800
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-800 {\r\n  color: var(--red-800);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-900
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-900 {\r\n  color: var(--red-900);\r\n}"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-red-950
+    id: #02-01-50
+    category: null
+    properties[1]: color
+    cssRule: ".color-red-950 {\r\n  color: var(--red-950);\r\n}"
+    responsive: false
+    description: ""
