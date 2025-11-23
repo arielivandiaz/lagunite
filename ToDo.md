@@ -105,7 +105,10 @@
 
 ### 1.2 Component Library (Priority: HIGH)
 
-#### 1.2.1 Button Components
+## 📂 Layer 05: Atoms (Átomos)
+Elementos indivisibles. La base de la interfaz.
+
+### 1.2.1 Button Components
 - [ ] Create `src/css/05-atoms/01-buttons.css` (refactor existing)
 - [ ] Base button: `.btn`
 - [ ] Sizes: `.btn-xs`, `.btn-s`, `.btn`, `.btn-l`, `.btn-xl`
@@ -114,95 +117,162 @@
 - [ ] Ghost: `.btn-ghost`
 - [ ] States: `.btn-disabled`, `.btn-loading`
 - [ ] Icon buttons: `.btn-icon`, `.btn-icon-s`, `.btn-icon-l`
-- [ ] Button groups: `.btn-group`, `.btn-group-vertical`
 - [ ] Update ID system: `#05-01-XX`
 - [ ] Create demo page: `web/buttons.html`
 
-#### 1.2.2 Card Components
-- [ ] Create `src/css/05-atoms/02-cards.css`
-- [ ] Base card: `.card`
-- [ ] Card parts: `.card-header`, `.card-body`, `.card-footer`
-- [ ] Card image: `.card-img`, `.card-img-top`
-- [ ] Variants: `.card-elevated`, `.card-outlined`, `.card-flat`
-- [ ] Hover effects: `.card-hover-lift`, `.card-hover-shadow`
-- [ ] Update ID system: `#05-02-XX`
-- [ ] Create demo page: `web/cards.html`
+### 1.2.2 Input & Control Atoms (Refactored from Form)
+- [x] Create `src/css/05-atoms/02-inputs.css`
+- [x] Base Input: `.input`
+- [x] Sizes: `.input-s`, `.input`, `.input-l`
+- [x] Textarea: `.textarea` (resizable modifiers)
+- [x] Select: `.select` (custom chevron styling)
+- [x] Checkbox: `.checkbox`, `.checkbox-s`, `.checkbox-l`
+- [x] Radio: `.radio`, `.radio-s`, `.radio-l`
+- [x] Toggle/Switch: `.switch` (Modern toggle atom) (Nuevo Sugerido)
+- [x] Range Slider: `.range`
+- [x] Update ID system: `#05-02-XX`
+- [x] Create demo page: `web/demo/05/02-inputs.html`
 
-#### 1.2.3 Form Components
-- [ ] Refactor `src/css/07-form/form.css`
-- [ ] Input: `.input`, `.input-s`, `.input-l`
-- [ ] Textarea: `.textarea`
-- [ ] Select: `.select`, `.select-s`, `.select-l`
-- [ ] Checkbox: `.checkbox`, `.checkbox-s`, `.checkbox-l`
-- [ ] Radio: `.radio`, `.radio-s`, `.radio-l`
-- [ ] Form group: `.form-group`, `.form-label`, `.form-help`
-- [ ] Validation states: `.input-success`, `.input-error`, `.input-warning`
-- [ ] Disabled state: `.input-disabled`
-- [ ] Update ID system: `#07-01-XX`
+### 1.2.3 Badge & Tag Components
+- [x] Create `src/css/05-atoms/03-badges.css`
+- [x] Base badge: `.badge`
+- [x] Sizes: `.badge-xs`, `.badge-s`, `.badge-l`
+- [x] Variants: `.badge-primary`, `.badge-success`, `.badge-warning`, `.badge-error`
+- [x] Outlined: `.badge-outline`
+- [x] Pill: `.badge-pill`
+- [x] Dot indicator: `.badge-dot`
+- [x] Update ID system: `#05-03-XX`
+- [x] Create demo page: `web/demo/05/03-badges.html`
+
+### 1.2.4 Avatar Components (Nuevo Sugerido)
+Esencial para perfiles de usuario.
+- [x] Create `src/css/05-atoms/04-avatars.css`
+- [x] Base avatar: `.avatar` (container for img)
+- [x] Shapes: `.avatar-circle`, `.avatar-square`, `.avatar-rounded`
+- [x] Sizes: `.avatar-xs`, `.avatar-s`, `.avatar-m`, `.avatar-l`, `.avatar-xl`
+- [x] Groups: `.avatar-group` (stacking effect)
+- [x] Update ID system: `#05-04-XX`
+- [x] Status indicators: `.avatar-status`, `.avatar-status-online/busy/away/offline`
+- [x] Initials support: `.avatar-initials` with color variants
+- [x] Placeholders: `.avatar-placeholder`
+- [x] Ring borders: `.avatar-ring` with color variants
+- [x] Avatar stacks: `.avatar-stack` with counter
+- [x] Create demo page: `web/demo/05/04-avatars.html`
+
+## 📂 Layer 06: Molecules (Moléculas)
+Grupos de átomos que funcionan como una unidad simple.
+
+### 1.2.5 Form Molecules (Groups)
+- [ ] Create `src/css/06-molecules/01-form-groups.css`
+- [ ] Form Group Container: `.form-group` (controls spacing)
+- [ ] Form Label: `.form-label` (with required asterisk support)
+- [ ] Form Helper/Error: `.form-help`, `.form-error-msg`
+- [ ] Input Group: `.input-group` (Input + Button attached, or Icon inside Input)
+- [ ] Validation Wrappers: `.has-error`, `.has-success`
+- [ ] Update ID system: `#06-01-XX`
 - [ ] Create demo page: `web/forms.html`
 
-#### 1.2.4 Alert Components
-- [ ] Create `src/css/05-atoms/03-alerts.css`
+### 1.2.6 Alert Molecules
+Se movió aquí porque suele contener texto (átomo) + botón de cerrar (átomo) + icono (átomo).
+- [ ] Create `src/css/06-molecules/02-alerts.css`
 - [ ] Base alert: `.alert`
 - [ ] Variants: `.alert-info`, `.alert-success`, `.alert-warning`, `.alert-error`
-- [ ] Dismissible: `.alert-dismissible`, `.alert-close`
-- [ ] With icon: `.alert-with-icon`
-- [ ] Update ID system: `#05-03-XX`
+- [ ] Dismissible: `.alert-dismissible`, `.alert-close` (uses icon btn)
+- [ ] Toast variant: `.toast` (fixed position notification)
+- [ ] Update ID system: `#06-02-XX`
 - [ ] Create demo page: `web/alerts.html`
 
-#### 1.2.5 Badge Components
-- [ ] Create `src/css/05-atoms/04-badges.css`
-- [ ] Base badge: `.badge`
-- [ ] Sizes: `.badge-xs`, `.badge-s`, `.badge-l`
-- [ ] Variants: `.badge-primary`, `.badge-success`, `.badge-warning`, `.badge-error`
-- [ ] Outlined: `.badge-outline`
-- [ ] Pill: `.badge-pill`
-- [ ] Dot indicator: `.badge-dot`
-- [ ] Update ID system: `#05-04-XX`
-
-#### 1.2.6 Modal Components
-- [ ] Create `src/css/06-molecules/01-modal.css`
-- [ ] Modal overlay: `.modal-overlay`
-- [ ] Modal container: `.modal`, `.modal-s`, `.modal-m`, `.modal-l`, `.modal-xl`
-- [ ] Modal parts: `.modal-header`, `.modal-body`, `.modal-footer`
-- [ ] Modal close: `.modal-close`
-- [ ] Modal animations: `.modal-fade`, `.modal-slide`
-- [ ] Update ID system: `#06-01-XX`
-- [ ] Create demo page: `web/modals.html`
-
-#### 1.2.7 Dropdown Components
-- [ ] Create `src/css/06-molecules/02-dropdown.css`
-- [ ] Dropdown trigger: `.dropdown-trigger`
+### 1.2.7 Dropdown Molecules
+- [ ] Create `src/css/06-molecules/03-dropdown.css`
+- [ ] Dropdown container: `.dropdown`
+- [ ] Dropdown trigger: `.dropdown-trigger` (wraps a btn)
 - [ ] Dropdown menu: `.dropdown-menu`
 - [ ] Dropdown item: `.dropdown-item`
 - [ ] Dropdown divider: `.dropdown-divider`
 - [ ] Positions: `.dropdown-top`, `.dropdown-bottom`, `.dropdown-left`, `.dropdown-right`
-- [ ] Update ID system: `#06-02-XX`
-
-#### 1.2.8 Tooltip Components
-- [ ] Create `src/css/06-molecules/03-tooltip.css`
-- [ ] Tooltip base: `.tooltip`
-- [ ] Positions: `.tooltip-top`, `.tooltip-bottom`, `.tooltip-left`, `.tooltip-right`
-- [ ] Variants: `.tooltip-primary`, `.tooltip-dark`, `.tooltip-light`
-- [ ] Arrow: `.tooltip-arrow`
 - [ ] Update ID system: `#06-03-XX`
 
-#### 1.2.9 Navigation Components
-- [ ] Create `src/css/06-molecules/04-navbar.css`
-- [ ] Navbar: `.navbar`, `.navbar-fixed`, `.navbar-sticky`
-- [ ] Navbar brand: `.navbar-brand`
-- [ ] Navbar nav: `.navbar-nav`, `.navbar-item`, `.navbar-link`
-- [ ] Navbar toggle: `.navbar-toggle`
+### 1.2.8 Tooltip Molecules
+- [ ] Create `src/css/06-molecules/04-tooltip.css`
+- [ ] Tooltip base: `.tooltip` (data-tip attribute)
+- [ ] Positions: `.tooltip-top`, `.tooltip-bottom`, `.tooltip-left`, `.tooltip-right`
+- [ ] Variants: `.tooltip-primary`, `.tooltip-dark`
 - [ ] Update ID system: `#06-04-XX`
-- [ ] Create demo page: `web/navbar.html`
 
-#### 1.2.10 Breadcrumb Components
+### 1.2.9 Breadcrumb Molecules
 - [ ] Create `src/css/06-molecules/05-breadcrumb.css`
-- [ ] Breadcrumb: `.breadcrumb`
+- [ ] Breadcrumb list: `.breadcrumb`
 - [ ] Breadcrumb item: `.breadcrumb-item`
 - [ ] Active state: `.breadcrumb-item-active`
-- [ ] Separators: customizable via CSS var
+- [ ] Separators: handled via CSS pseudo-elements
 - [ ] Update ID system: `#06-05-XX`
+
+## 📂 Layer 07: Compounds (Compuestos)
+Bloques complejos reutilizables. Aquí viven tus Tarjetas y Modales.
+
+### 1.2.10 Card Compounds
+- [ ] Create `src/css/07-compounds/01-cards.css`
+- [ ] Base card: `.card`
+- [ ] Card Layouts: `.card-row` (horizontal), `.card-col` (vertical default)
+- [ ] Card parts: `.card-header`, `.card-body`, `.card-footer`
+- [ ] Card image: `.card-img`, `.card-img-overlay`
+- [ ] Variants: `.card-elevated`, `.card-bordered`, `.card-flat`
+- [ ] Interactive: `.card-hover-lift`
+- [ ] Update ID system: `#07-01-XX`
+- [ ] Create demo page: `web/cards.html`
+
+### 1.2.11 Modal Compounds
+- [ ] Create `src/css/07-compounds/02-modals.css`
+- [ ] Modal overlay: `.modal-overlay` (backdrop)
+- [ ] Modal container: `.modal-box`
+- [ ] Sizes: `.modal-s`, `.modal-m`, `.modal-l`, `.modal-fullscreen`
+- [ ] Modal parts: `.modal-header`, `.modal-body`, `.modal-actions` (footer)
+- [ ] Animations: `.modal-zoom-in`, `.modal-fade-up`
+- [ ] Update ID system: `#07-02-XX`
+- [ ] Create demo page: `web/modals.html`
+
+### 1.2.12 Media Object Compounds (Nuevo Sugerido)
+Clásico patrón de imagen a un lado + texto al otro (comentarios, tweets).
+- [ ] Create `src/css/07-compounds/03-media.css`
+- [ ] Container: `.media`
+- [ ] Figure: `.media-figure` (holds avatar/img)
+- [ ] Body: `.media-body` (content)
+- [ ] Update ID system: `#07-03-XX`
+
+### 1.2.13 Accordion Compounds (Nuevo Sugerido)
+Útil para FAQs o menús colapsables.
+- [ ] Create `src/css/07-compounds/04-accordion.css`
+- [ ] Container: `.accordion`
+- [ ] Item: `.accordion-item`
+- [ ] Trigger: `.accordion-header`
+- [ ] Content: `.accordion-content`
+- [ ] Update ID system: `#07-04-XX`
+
+## 📂 Layer 08: Organisms (Organismos)
+Secciones estructurales completas de la página.
+
+### 1.2.14 Navigation Organisms
+- [ ] Create `src/css/08-organisms/01-navbar.css`
+- [ ] Navbar container: `.navbar`
+- [ ] Variants: `.navbar-fixed`, `.navbar-sticky`, `.navbar-glass` (blur effect)
+- [ ] Parts: `.navbar-brand`, `.navbar-start`, `.navbar-end`, `.navbar-center`
+- [ ] Mobile: `.navbar-burger`, `.navbar-menu` (responsive drawer)
+- [ ] Update ID system: `#08-01-XX`
+- [ ] Create demo page: `web/navbar.html`
+
+### 1.2.15 Sidebar Organisms (Nuevo Sugerido)
+Esencial para dashboards o apps complejas.
+- [ ] Create `src/css/08-organisms/02-sidebar.css`
+- [ ] Container: `.sidebar`
+- [ ] Parts: `.sidebar-header`, `.sidebar-content`, `.sidebar-footer`
+- [ ] Menu: `.sidebar-menu`, `.sidebar-item`, `.sidebar-link-active`
+- [ ] Update ID system: `#08-02-XX`
+
+### 1.2.16 Footer Organisms (Nuevo Sugerido)
+- [ ] Create `src/css/08-organisms/03-footer.css`
+- [ ] Container: `.footer`
+- [ ] Layout: `.footer-content` (grid/flex columns)
+- [ ] Update ID system: `#08-03-XX`
 
 ### 1.3 Documentation System (Priority: HIGH)
 

@@ -106,13 +106,14 @@ body {
 }
 
 body {
-    background: var(--background_body);
-    color: var(--text_color);
+    background: var(--color-bg);
+    color: var(--color-text-base);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.night {
-    background: var(--background_body_alt);
-    color: var(--text_color_alt);
+    background: var(--color-bg);
+    color: var(--color-text-base);
 }
 
 a,

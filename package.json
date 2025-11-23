@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
