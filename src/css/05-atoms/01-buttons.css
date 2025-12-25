@@ -1,348 +1,398 @@
-
 /* @ID: #05-01-01 */
-/*** Button Base Styles ***/
-
+/* Button Base Styles */
 .btn {
-    /* Layout */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-2);
-    
-    /* Sizing */
-    padding: var(--space-3) var(--space-6);
-    min-height: 2.5rem;
-    
-    /* Typography */
-    font-family: var(--font-headers);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-none);
-    letter-spacing: 0.025em;
-    text-align: center;
-    
-    /* Appearance */
-    background: var(--bg-primary);
-    color: var(--color-text-alt);
-    border: none;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    
-    /* Interaction */
-    cursor: pointer;
-    transition: all 0.2s ease;
-    user-select: none;
-    white-space: nowrap;
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 1vw;
+
+  /* Sizing */
+  padding: var(--space-3) var(--space-6);
+  min-width: var(--space-16);
+
+  /* Typography */
+  font-family: var(--font-headers);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+  text-align: center;
+
+  /* Appearance */
+  background: var(--bg-primary);
+  color: var(--color-text-alt);
+  border: none;
+  border-radius: var(--radius-md);
+
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+.night .btn {
+  color: var(--color-text);
+}
+.btn.alt {
+  background: none;
+  color: var(--color-primary) !important;
+  border: var(--border);
+  min-width: var(--space-16); /* Quitar la compensación incorrecta */
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px); /* Restar grosor del borde */
+}
+
+.btn.secondary {
+  background: var(--color-secondary);
+  color: var(--color-text-alt) !important;
+}
+.btn.secondary.alt {
+  background: none;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary) !important;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
+}
+
+.btn.tertiary {
+  background: var(--color-tertiary);
+  color: var(--color-text-alt) !important;
+}
+.btn.tertiary.alt {
+  background: none;
+  border: 2px solid var(--color-tertiary);
+  color: var(--color-tertiary) !important;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
+}
+
+.btn.success {
+  background: var(--color-success-light);
+  color: var(--color-success) !important;
+}
+.btn.success.alt {
+  background: none;
+  border: 2px solid var(--color-success);
+  color: var(--color-success) !important;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
+}
+
+.btn.warning {
+  background: var(--color-warning-light);
+  color: var(--color-warning) !important;
+}
+.btn.warning.alt {
+  background: none;
+  border: 2px solid var(--color-warning);
+  color: var(--color-warning) !important;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
+}
+
+.btn.error {
+  background: var(--color-error-light);
+  color: var(--color-error) !important;
+}
+.btn.error.alt {
+  background: none;
+  border: 2px solid var(--color-error);
+  color: var(--color-error) !important;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
 }
 
 /* @ID: #05-01-02 */
-/*** Button States ***/
-
-.btn:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
+/* Button Icons */
+.btn.icon {
+  padding: var(--space-1);
+  min-width: 2.5rem;
+  width: 2.5rem;
+  aspect-ratio: 1;
+}
+.btn.icon-s {
+  padding: calc(var(--space-1) * 0.5);
+  min-width: 2rem;
+  width: 2rem;
+  aspect-ratio: 1;
+}
+.btn.icon-l {
+  padding: var(--space-2);
+  min-width: 3rem;
+  width: 3rem;
+  aspect-ratio: 1;
+  font-size: var(--font-size0x-l);
+}
+.btn .icon-lf {
+  display: inline-flex;
+  margin-right: var(--space-2);
+}
+.btn .icon-rg {
+  display: inline-flex;
+  margin-left: var(--space-2);
 }
 
-.btn:active {
-    transform: translateY(0);
-    box-shadow: var(--shadow-sm);
-}
-
-.btn:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
-.btn:disabled,
-.btn-disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
-}
 
 /* @ID: #05-01-03 */
-/*** Button Sizes ***/
-
-.btn-xs {
-    padding: var(--space-1) var(--space-3);
-    min-height: 1.75rem;
-    font-size: var(--font-size-xs);
+/* Button Sizes */
+.btn.fit {
+  min-width: 0px;
+  width: fit-content;
+  padding: var(--space-3);
 }
 
-.btn-s {
-    padding: var(--space-2) var(--space-4);
-    min-height: 2rem;
-    font-size: var(--font-size-sm);
+.btn.size-xs {
+  padding: var(--space-1) var(--space-3);
+  min-height: 1.75rem;
+  font-size: var(--font-size-xs);
 }
 
-.btn-l {
-    padding: var(--space-4) var(--space-8);
-    min-height: 3rem;
-    font-size: var(--font-size-lg);
+.btn.size-s {
+  padding: var(--space-2) var(--space-4);
+  min-height: 2rem;
+  font-size: var(--font-size-s);
 }
 
-.btn-xl {
-    padding: var(--space-5) var(--space-10);
-    min-height: 3.5rem;
-    font-size: var(--font-size-xl);
+.btn.size-l {
+  padding: var(--space-3) var(--space-8);
+  min-height: 3rem;
+  font-size: var(--font-size-l);
+}
+
+.btn.size-xl {
+  padding: var(--space-3) var(--space-12);
+  min-height: 3.5rem;
+  font-size: var(--font-size-xl);
 }
 
 /* @ID: #05-01-04 */
-/*** Button Variants - Primary ***/
-
-.btn-primary {
-    background: var(--bg-primary);
-    color: var(--color-text-alt);
+/* Button Sizes Standard */
+.btn.size-xs.std {
+  min-width: var(--space-16);
 }
-
-.btn-primary:hover {
-    filter: brightness(1.1);
+.btn.size-s.std {
+  min-width: var(--space-20);
+}
+.btn.std {
+  min-width: var(--space-24);
+}
+.btn.size-l.std {
+  min-width: var(--space-32);
+}
+.btn.size-xl.std {
+  min-width: calc(var(--space-32) * 1.5);
 }
 
 /* @ID: #05-01-05 */
-/*** Button Variants - Secondary ***/
-
-.btn-secondary {
-    background: var(--bg-secondary);
-    color: var(--color-text-alt);
+/* Button Ghost Variant */
+.btn.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-primary);
+}
+.btn.ghost:hover {
+  color: var(--color-text-alt);
+  background: var(--color-primary);
 }
 
-.btn-secondary:hover {
-    filter: brightness(1.2);
+.btn.secondary.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-secondary) !important;
+}
+.btn.secondary.ghost:hover {
+  color: var(--color-text-alt) !important;
+  background: var(--color-secondary) !important;
 }
 
-.night .btn-secondary {
-    background: var(--bg-tertiary);
-    color: var(--color-text-base);
+.btn.tertiary.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-tertiary) !important;
 }
+.btn.tertiary.ghost:hover {
+  color: var(--color-text-alt) !important;
+  background: var(--color-tertiary) !important;
+}
+
+.btn.success.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-success) !important;
+}
+.btn.success.ghost:hover {
+  color: var(--color-text-alt) !important;
+  background: var(--color-success) !important;
+}
+
+.btn.warning.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-warning) !important;
+}
+.btn.warning.ghost:hover {
+  color: var(--color-text-alt) !important;
+  background: var(--color-warning) !important;
+}
+
+.btn.error.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-error) !important;
+}
+.btn.error.ghost:hover {
+  color: var(--color-text-alt) !important;
+  background: var(--color-error) !important;
+}
+
+.btn.alt.ghost,
+.btn.secondary.alt.ghost,
+.btn.tertiary.alt.ghost,
+.btn.success.alt.ghos,
+.btn.warning.alt.ghost,
+.btn.error.alt.ghost {
+  border: 2px solid transparent;
+  padding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px);
+}
+
+.btn.alt.ghost:hover,
+.btn.secondary.alt.ghost:hover,
+.btn.tertiary.alt.ghost:hover,
+.btn.success.alt.ghost:hover,
+.btn.warning.alt.ghost:hover,
+.btn.error.alt.ghost:hover {
+  background: transparent !important;
+}
+
+.btn.alt.ghost:hover {
+  border-color: var(--color-primary);
+}
+.btn.secondary.alt.ghost:hover {
+  color: var(--color-secondary) !important;
+  border-color: var(--color-secondary);
+}
+.btn.tertiary.alt.ghost:hover {
+  color: var(--color-tertiary) !important;
+  border-color: var(--color-tertiary);
+}
+.btn.success.alt.ghost:hover {
+  color: var(--color-success) !important;
+  border-color: var(--color-success);
+}
+.btn.warning.alt.ghost:hover {
+  color: var(--color-warning) !important;
+  border-color: var(--color-warning);
+}
+.btn.error.alt.ghost:hover {
+  color: var(--color-error) !important;
+  border-color: var(--color-error);
+}
+
 
 /* @ID: #05-01-06 */
-/*** Button Variants - Semantic Colors ***/
-
-.btn-success {
-    background: linear-gradient(0deg, var(--green-700) 0%, var(--green-500) 100%);
-    color: var(--color-text-alt);
+/* Button States */
+.btn:hover {
+  box-shadow: var(--color-primary) 0px 6px 12px -3px;
+}
+.btn.secondary:hover {
+  box-shadow: var(--color-secondary) 0px 6px 12px -3px;
+}
+.btn.tertiary:hover {
+  box-shadow: var(--color-tertiary) 0px 6px 12px -3px;
+}
+.btn.success:hover {
+  box-shadow: var(--color-success) 0px 6px 12px -3px;
+}
+.btn.warning:hover {
+  box-shadow: var(--color-warning) 0px 6px 12px -3px;
+}
+.btn.error:hover {
+  box-shadow: var(--color-error) 0px 6px 12px -3px;
 }
 
-.btn-success:hover {
-    filter: brightness(1.1);
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
-.btn-warning {
-    background: linear-gradient(0deg, var(--yellow-700) 0%, var(--yellow-500) 100%);
-    color: var(--color-text-base);
+.btn.pressed,
+.btn.selected {
+  background: var(--color-primary-dark);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.btn-warning:hover {
-    filter: brightness(1.1);
+.btn.secondary.pressed {
+  background: var(--color-secondary-dark);
+}
+.btn.tertiary.pressed {
+  background: var(--color-tertiary-dark);
 }
 
-.btn-error {
-    background: linear-gradient(0deg, var(--red-700) 0%, var(--red-500) 100%);
-    color: var(--color-text-alt);
+.btn.pulse {
+  animation: pulse 2s infinite;
 }
 
-.btn-error:hover {
-    filter: brightness(1.1);
-}
 
-/* @ID: #05-01-07 */
-/*** Button Outlined Variants ***/
-
-.btn-outline-primary {
-    background: transparent;
-    color: var(--color-primary);
-    border: var(--border-width-md) solid var(--color-primary);
-    box-shadow: none;
-}
-
-.btn-outline-primary:hover {
-    background: var(--color-primary);
-    color: var(--color-text-alt);
-}
-
-.btn-outline-secondary {
-    background: transparent;
-    color: var(--color-secondary);
-    border: var(--border-width-md) solid var(--color-secondary);
-    box-shadow: none;
-}
-
-.btn-outline-secondary:hover {
-    background: var(--color-secondary);
-    color: var(--color-text-alt);
-}
-
-.btn-outline-success {
-    background: transparent;
-    color: var(--green-600);
-    border: var(--border-width-md) solid var(--green-600);
-    box-shadow: none;
-}
-
-.btn-outline-success:hover {
-    background: var(--green-600);
-    color: var(--color-text-alt);
-}
-
-.btn-outline-warning {
-    background: transparent;
-    color: var(--yellow-700);
-    border: var(--border-width-md) solid var(--yellow-700);
-    box-shadow: none;
-}
-
-.btn-outline-warning:hover {
-    background: var(--yellow-700);
-    color: var(--color-text-base);
-}
-
-.btn-outline-error {
-    background: transparent;
-    color: var(--red-600);
-    border: var(--border-width-md) solid var(--red-600);
-    box-shadow: none;
-}
-
-.btn-outline-error:hover {
-    background: var(--red-600);
-    color: var(--color-text-alt);
-}
-
-/* @ID: #05-01-08 */
-/*** Button Ghost Variant ***/
-
-.btn-ghost {
-    background: transparent;
-    color: var(--color-primary);
-    box-shadow: none;
-}
-
-.btn-ghost:hover {
-    background: var(--gray-100);
-}
-
-.night .btn-ghost:hover {
-    background: var(--gray-800);
-}
-
-/* @ID: #05-01-09 */
-/*** Button Icon Variants ***/
-
-.btn-icon {
-    padding: var(--space-3);
-    min-width: 2.5rem;
-    width: 2.5rem;
-    aspect-ratio: 1;
-}
-
-.btn-icon-s {
-    padding: var(--space-2);
-    min-width: 2rem;
-    width: 2rem;
-    aspect-ratio: 1;
-}
-
-.btn-icon-l {
-    padding: var(--space-4);
-    min-width: 3rem;
-    width: 3rem;
-    aspect-ratio: 1;
-}
-
-/* @ID: #05-01-10 */
-/*** Button Loading State ***/
-
-.btn-loading {
-    position: relative;
-    color: transparent;
-    pointer-events: none;
-}
-
-.btn-loading::after {
-    content: "";
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    top: 50%;
-    left: 50%;
-    margin-left: -0.5rem;
-    margin-top: -0.5rem;
-    border: 2px solid transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
-    animation: btn-spin 0.6s linear infinite;
-}
-
-@keyframes btn-spin {
-    to { transform: rotate(360deg); }
-}
 
 /* @ID: #05-01-11 */
-/*** Button Groups ***/
-
+/* Button Groups */
 .btn-group {
-    display: inline-flex;
-    gap: 0;
+  display: inline-flex;
+  gap: 0;
 }
 
 .btn-group .btn {
-    border-radius: 0;
-    margin: 0;
+  border-radius: 0;
+  margin: 0;
 }
 
 .btn-group .btn:first-child {
-    border-top-left-radius: var(--radius-md);
-    border-bottom-left-radius: var(--radius-md);
+  border-top-left-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
 }
 
 .btn-group .btn:last-child {
-    border-top-right-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
 }
 
 .btn-group .btn:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-group-vertical {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 0;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .btn-group-vertical .btn {
-    border-radius: 0;
-    margin: 0;
-    width: 100%;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .btn-group-vertical .btn:first-child {
-    border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md);
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
 }
 
 .btn-group-vertical .btn:last-child {
-    border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
 }
 
 .btn-group-vertical .btn:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* @ID: #05-01-12 */
-/*** Responsive Adjustments ***/
-
+/* Responsive Adjustments */
 @media (max-width: 640px) {
-    .btn {
-        padding: var(--space-2) var(--space-4);
-        font-size: var(--font-size-sm);
-    }
-    
-    .btn-l,
-    .btn-xl {
-        padding: var(--space-3) var(--space-6);
-        font-size: var(--font-size-base);
-    }
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-s);
+  }
+
+  .btn-l,
+  .btn-xl {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+  }
 }

@@ -1,9 +1,9 @@
 /* @ID: #04-02-XX */
 /*** Box Shadows ***/
 .shadow-none { box-shadow: none; }
-.shadow-s { box-shadow: var(--shadow-sm); }
+.shadow-s { box-shadow: var(--shadow-s); }
 .shadow { box-shadow: var(--shadow-md); }
-.shadow-l { box-shadow: var(--shadow-lg); }
+.shadow-l { box-shadow: var(--shadow-l); }
 .shadow-xl {
   box-shadow:
     0 20px 25px -5px hsla(0, 0%, 0%, 0.2),
@@ -26,9 +26,9 @@
 
 @media (max-width: 639px) {
   .xshadow-none { box-shadow: none; }
-  .xshadow-s { box-shadow: var(--shadow-sm); }
+  .xshadow-s { box-shadow: var(--shadow-s); }
   .xshadow { box-shadow: var(--shadow-md); }
-  .xshadow-l { box-shadow: var(--shadow-lg); }
+  .xshadow-l { box-shadow: var(--shadow-l); }
   .xshadow-xl {
     box-shadow:
       0 20px 25px -5px hsla(0, 0%, 0%, 0.2),
@@ -50,9 +50,9 @@
 
 @media (min-width: 640px) {
   .dshadow-none { box-shadow: none; }
-  .dshadow-s { box-shadow: var(--shadow-sm); }
+  .dshadow-s { box-shadow: var(--shadow-s); }
   .dshadow { box-shadow: var(--shadow-md); }
-  .dshadow-l { box-shadow: var(--shadow-lg); }
+  .dshadow-l { box-shadow: var(--shadow-l); }
   .dshadow-xl {
     box-shadow:
       0 20px 25px -5px hsla(0, 0%, 0%, 0.2),

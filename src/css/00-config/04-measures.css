@@ -18,24 +18,20 @@
   --space-10: 2.5rem; /* 40px */
   --space-12: 3rem; /* 48px */
   --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
 
-  --space-x: var(--space-12); /* Horizontal default spacing */
-  --space-y: var(--space-8); /* Vertical default spacing */
-
-  /*== Borders & Radii ==*/
-  --border-width-sm: 1px;
-  --border-width-md: 2px;
-
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
+  --radius-s: 0.25rem;
+  --radius-md: 0.5rem; 
+  --radius-l: 1rem;
   --radius-full: 9999px;
 
   /*== Breakpoints (Single Source of Truth) ==*/
   /* Note: CSS Custom Properties cannot be used directly in media query definitions. */
   /* These are for documentation and potential use in JS or preprocessors. */
-  --breakpoint-sm: 640px;
+  --breakpoint-s: 640px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
+  --breakpoint-l: 1024px;
   --breakpoint-xl: 1440px;
 }

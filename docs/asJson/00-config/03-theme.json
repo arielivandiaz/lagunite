@@ -1,9 +1,9 @@
 {
   "folder": "00-config",
   "file": "03-theme.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": false,
-  "totalSelectors": 1,
+  "totalSelectors": 5,
   "content": [
     {
       "type": "selector",
@@ -15,20 +15,26 @@
         "--color-primary",
         "--color-primary-light",
         "--color-primary-dark",
+        "--color-primary-rgb",
         "--color-secondary",
         "--color-secondary-light",
         "--color-secondary-dark",
+        "--color-secondary-rgb",
         "--color-tertiary",
         "--color-tertiary-light",
         "--color-tertiary-dark",
+        "--color-tertiary-rgb",
         "--color-almost-black",
         "--color-almost-white",
         "--color-success",
         "--color-success-light",
+        "--color-success-rgb",
         "--color-warning",
         "--color-warning-light",
+        "--color-warning-rgb",
         "--color-error",
         "--color-error-light",
+        "--color-error-rgb",
         "--color-text-base",
         "--color-text-alt",
         "--color-bg",
@@ -42,27 +48,85 @@
         "--bg-gradient-2",
         "--bg-gradient-3",
         "--bg-gradient-4",
-        "--background-gradient-5",
+        "--bg-gradient-5",
         "--bg-gradient-6",
         "--bg-gradient-7",
-        "--background-gradient-8",
+        "--bg-gradient-8",
         "--border",
         "--border-light",
         "--border-dark",
-        "--border-sm",
-        "--border-sm-light",
-        "--border-sm-dark",
-        "--border-lg",
-        "--border-lg-light",
-        "--border-lg-dark",
-        "--shadow-sm",
+        "--shadow-s",
         "--shadow-md",
-        "--shadow-lg",
+        "--shadow-l",
         "--shadow-inner"
       ],
-      "cssRule": ":root {\r\n  /*== Color Assignments ==*/\r\n  --color-primary: #2476ff;\r\n  --color-primary-light: #5e9aff;\r\n  --color-primary-dark: #0965ff;\r\n\r\n  --color-secondary: #747474;\r\n  --color-secondary-light: #333;\r\n  --color-secondary-dark: #292929;\r\n\r\n  --color-tertiary: #f97316;\r\n  --color-tertiary-light: #ffa261;\r\n  --color-tertiary-dark: #c95300;\r\n\r\n  --color-almost-black: #333;\r\n  --color-almost-white: #fcfcfc;\r\n\r\n  --color-success: #009112;\r\n  --color-success-light: #98FF98;\r\n  --color-warning: #ff9017;\r\n  --color-warning-light: #FFEAD5;\r\n  --color-error: #fa3434;\r\n  --color-error-light: #FDD0D0;\r\n\r\n  /*== Text Colors ==*/\r\n  --color-text-base: #333;\r\n  --color-text-alt: #fff;\r\n\r\n  /*== Background Colors ==*/\r\n  --color-bg: #eee;\r\n  --color-bg-alt: #222;\r\n\r\n  --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);\r\n  --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);\r\n  --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);\r\n\r\n  --color-border: var(--gray-200);\r\n  --color-border-hover: var(--gray-300);\r\n\r\n\r\n  /*== Gradients ==*/\r\n  --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);\r\n  --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);\r\n  --bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);\r\n  --bg-gradient-4: linear-gradient(\r\n    180deg,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 50%,\r\n    rgba(0, 90, 238, 1) 100%\r\n  );\r\n  --background-gradient-5: radial-gradient(\r\n    circle,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 100%\r\n  );\r\n  --bg-gradient-6: radial-gradient(\r\n    circle,\r\n    rgba(238, 238, 238, 1) 0%,\r\n    rgba(193, 216, 255, 1) 100%\r\n  );\r\n  --bg-gradient-7: repeating-linear-gradient(\r\n    45deg,\r\n    #2476ff,\r\n    #5e9aff 20px,\r\n    #fff 20px,\r\n    #ccc 32px\r\n  );\r\n  --background-gradient-8: repeating-linear-gradient(\r\n    45deg,\r\n    #5e9aff,\r\n    #0965ff 20px,\r\n    #000 20px,\r\n    #444 32px\r\n  );\r\n\r\n  /*== Borders ==*/\r\n  --border: 2px solid #2476ff;\r\n  --border-light: 2px solid #5e9aff;\r\n  --border-dark: 2px solid #0965ff;\r\n\r\n  --border-sm: 1px solid #2476ff;\r\n  --border-sm-light: 1px solid #5e9aff;\r\n  --border-sm-dark: 1px solid #0965ff;\r\n\r\n  --border-lg: 4px solid #2476ff;\r\n  --border-lg-light: 4px solid #5e9aff;\r\n  --border-lg-dark: 4px solid #0965ff;\r\n\r\n  /*== Shadows (Composable) ==*/\r\n  --shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);\r\n  --shadow-md:\r\n    0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);\r\n  --shadow-lg:\r\n    0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1);\r\n  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05);\r\n}",
+      "cssRule": "/*== Color Assignments ==*/\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/*== Text Colors ==*/\n--color-text-base: #333\n--color-text-alt: #fff\n/*== Background Colors ==*/\n--color-bg: #eee\n--color-bg-alt: #222\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/*== Gradients ==*/\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\r\n    180deg,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 50%,\r\n    rgba(0, 90, 238, 1) 100%\r\n  )\n--bg-gradient-5: radial-gradient(\r\n    circle,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 100%\r\n  )\n--bg-gradient-6: radial-gradient(\r\n    circle,\r\n    rgba(238, 238, 238, 1) 0%,\r\n    rgba(193, 216, 255, 1) 100%\r\n  )\n--bg-gradient-7: repeating-linear-gradient(\r\n    45deg,\r\n    #2476ff,\r\n    #5e9aff 20px,\r\n    #fff 20px,\r\n    #ccc 32px\r\n  )\n--bg-gradient-8: repeating-linear-gradient(\r\n    45deg,\r\n    #5e9aff,\r\n    #0965ff 20px,\r\n    #000 20px,\r\n    #444 32px\r\n  )\n/*== Borders ==*/\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/*== Shadows ==*/\n--shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05)\n/* Subtle */\n--shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1)\n/* Medium */\n--shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1)\n/* Large */\n--shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)\n/* Inner */",
       "responsive": false,
-      "description": ""
+      "description": "|--------------------------------------------------------------------------\r\n  | Semantic theme variables @ID: #00-03-01\r\n  |--------------------------------------------------------------------------\r\n  |\r\n  | These variables give meaning to the raw palette values. This is what\r\n  | should be used throughout the library and overridden for theming."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night",
+      "id": "#00-03-02",
+      "category": null,
+      "properties": [
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-text-base",
+        "--color-text-alt",
+        "--color-border",
+        "--color-border-hover"
+      ],
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*== Text Colors ==*/\n--color-text-base: #fff\n--color-text-alt: #333\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)",
+      "responsive": false,
+      "description": "** Dark Theme (Night Mode) **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night *",
+      "id": "#00-03-02",
+      "category": null,
+      "properties": [
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-text-base",
+        "--color-text-alt",
+        "--color-border",
+        "--color-border-hover"
+      ],
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*== Text Colors ==*/\n--color-text-base: #fff\n--color-text-alt: #333\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)",
+      "responsive": false,
+      "description": "** Dark Theme (Night Mode) **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".theme-light",
+      "id": "#00-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-bg)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "** Theme Toggle Classes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".theme-dark",
+      "id": "#00-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "** Theme Toggle Classes **"
     }
   ],
   "customProperties": [
@@ -79,6 +143,10 @@
       "value": "#0965ff"
     },
     {
+      "property": "--color-primary-rgb",
+      "value": "36, 118, 255"
+    },
+    {
       "property": "--color-secondary",
       "value": "#747474"
     },
@@ -91,6 +159,10 @@
       "value": "#292929"
     },
     {
+      "property": "--color-secondary-rgb",
+      "value": "116, 116, 116"
+    },
+    {
       "property": "--color-tertiary",
       "value": "#f97316"
     },
@@ -101,6 +173,10 @@
     {
       "property": "--color-tertiary-dark",
       "value": "#c95300"
+    },
+    {
+      "property": "--color-tertiary-rgb",
+      "value": "249, 115, 22"
     },
     {
       "property": "--color-almost-black",
@@ -116,7 +192,11 @@
     },
     {
       "property": "--color-success-light",
-      "value": "#98FF98"
+      "value": "#98ff98"
+    },
+    {
+      "property": "--color-success-rgb",
+      "value": "0, 145, 18"
     },
     {
       "property": "--color-warning",
@@ -124,7 +204,11 @@
     },
     {
       "property": "--color-warning-light",
-      "value": "#FFEAD5"
+      "value": "#ffead5"
+    },
+    {
+      "property": "--color-warning-rgb",
+      "value": "255, 144, 23"
     },
     {
       "property": "--color-error",
@@ -132,7 +216,11 @@
     },
     {
       "property": "--color-error-light",
-      "value": "#FDD0D0"
+      "value": "#fdd0d0"
+    },
+    {
+      "property": "--color-error-rgb",
+      "value": "250, 52, 52"
     },
     {
       "property": "--color-text-base",
@@ -187,7 +275,7 @@
       "value": "linear-gradient(\r\n    180deg,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 50%,\r\n    rgba(0, 90, 238, 1) 100%\r\n  )"
     },
     {
-      "property": "--background-gradient-5",
+      "property": "--bg-gradient-5",
       "value": "radial-gradient(\r\n    circle,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 100%\r\n  )"
     },
     {
@@ -199,7 +287,7 @@
       "value": "repeating-linear-gradient(\r\n    45deg,\r\n    #2476ff,\r\n    #5e9aff 20px,\r\n    #fff 20px,\r\n    #ccc 32px\r\n  )"
     },
     {
-      "property": "--background-gradient-8",
+      "property": "--bg-gradient-8",
       "value": "repeating-linear-gradient(\r\n    45deg,\r\n    #5e9aff,\r\n    #0965ff 20px,\r\n    #000 20px,\r\n    #444 32px\r\n  )"
     },
     {
@@ -215,44 +303,44 @@
       "value": "2px solid #0965ff"
     },
     {
-      "property": "--border-sm",
-      "value": "1px solid #2476ff"
-    },
-    {
-      "property": "--border-sm-light",
-      "value": "1px solid #5e9aff"
-    },
-    {
-      "property": "--border-sm-dark",
-      "value": "1px solid #0965ff"
-    },
-    {
-      "property": "--border-lg",
-      "value": "4px solid #2476ff"
-    },
-    {
-      "property": "--border-lg-light",
-      "value": "4px solid #5e9aff"
-    },
-    {
-      "property": "--border-lg-dark",
-      "value": "4px solid #0965ff"
-    },
-    {
-      "property": "--shadow-sm",
+      "property": "--shadow-s",
       "value": "0 1px 2px 0 hsla(0, 0%, 0%, 0.05)"
     },
     {
       "property": "--shadow-md",
-      "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1)"
+      "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1)"
     },
     {
-      "property": "--shadow-lg",
-      "value": "0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1)"
+      "property": "--shadow-l",
+      "value": "0 10px 15px -3px hsla(0, 0%, 0%, 0.1)"
     },
     {
       "property": "--shadow-inner",
       "value": "inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)"
+    },
+    {
+      "property": "--color-bg",
+      "value": "#1a1a1a"
+    },
+    {
+      "property": "--color-bg-alt",
+      "value": "#f5f5f5"
+    },
+    {
+      "property": "--color-text-base",
+      "value": "#fff"
+    },
+    {
+      "property": "--color-text-alt",
+      "value": "#333"
+    },
+    {
+      "property": "--color-border",
+      "value": "var(--gray-700)"
+    },
+    {
+      "property": "--color-border-hover",
+      "value": "var(--gray-600)"
     }
   ]
 }

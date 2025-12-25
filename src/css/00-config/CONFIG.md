@@ -88,9 +88,9 @@ Each color family follows this scale:
 ### Font Sizes (Scale)
 ```css
 --font-size-xs: 0.75rem;    /* 12px - Extra small */
---font-size-sm: 0.875rem;   /* 14px - Small */
+--font-size-s: 0.875rem;   /* 14px - Small */
 --font-size-base: 1rem;     /* 16px - Base/default */
---font-size-lg: 1.125rem;   /* 18px - Large */
+--font-size-l: 1.125rem;   /* 18px - Large */
 --font-size-xl: 1.25rem;    /* 20px - Extra large */
 --font-size-xxl: 1.5rem;    /* 24px - 2x large */
 --font-size-3xl: 2rem;      /* 32px - 3x large */
@@ -129,9 +129,9 @@ Each color family follows this scale:
 
 ### Border Radius
 ```css
---radius-sm: 0.25rem;      /* Small - 4px */
+--radius-s: 0.25rem;      /* Small - 4px */
 --radius-md: 0.5rem;       /* Medium - 8px */
---radius-lg: 1rem;         /* Large - 16px */
+--radius-l: 1rem;         /* Large - 16px */
 --radius-full: 9999px;     /* Full/pill shape */
 ```
 
@@ -139,9 +139,9 @@ Each color family follows this scale:
 
 ### Breakpoint Values
 ```css
---breakpoint-sm: 640px;    /* Small devices */
+--breakpoint-s: 640px;    /* Small devices */
 --breakpoint-md: 768px;    /* Medium devices */
---breakpoint-lg: 1024px;   /* Large devices */
+--breakpoint-l: 1024px;   /* Large devices */
 --breakpoint-xl: 1440px;   /* Extra large devices */
 ```
 
@@ -156,9 +156,9 @@ Each color family follows this scale:
 
 ## Shadows
 ```css
---shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);     /* Subtle */
+--shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);     /* Subtle */
 --shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1);   /* Medium */
---shadow-lg: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1); /* Large */
+--shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1); /* Large */
 --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05); /* Inner */
 ```
 
@@ -196,9 +196,9 @@ body.night {
 | Prefix | Meaning | Example |
 |--------|---------|---------|
 | `xs` | Extra Small | `--font-size-xs` (12px) |
-| `sm` | Small | `--radius-sm` (4px) |
+| `sm` | Small | `--radius-s` (4px) |
 | `md` | Medium | `--shadow-md` |
-| `lg` | Large | `--font-size-lg` (18px) |
+| `lg` | Large | `--font-size-l` (18px) |
 | `xl` | Extra Large | `--font-size-xl` (20px) |
 | `xxl`, `3xl` | 2x, 3x Large | `--font-size-xxl` (24px) |
 | `50-950` | Color Scale | `--gray-50` (lightest) to `--gray-950` (darkest) |
@@ -221,7 +221,7 @@ body.night {
     background: var(--color-bg);
     color: var(--color-text-base);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-s);
     font-size: var(--font-size-base);
     font-family: var(--font-text);
 }
@@ -230,6 +230,6 @@ body.night {
 @media (min-width: 768px) {
     .card {
         padding: var(--space-8);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-l);
     }
 }

@@ -295,23 +295,23 @@ The `03-layout` folder contains utility classes for controlling layout, position
 ```css
 /* Left */
 .marg-lf-xs            /* margin-left: var(--space-1) */
-.marg-lf-s             /* margin-left: var(--space-3) */
+.marg-lf-s            /* margin-left: var(--space-3) */
 .marg-lf               /* margin-left: var(--space-6) */
-.marg-lf-l             /* margin-left: var(--space-12) */
+.marg-lf-l            /* margin-left: var(--space-12) */
 .marg-lf-xl            /* margin-left: var(--space-16) */
 
 /* Right */
 .marg-rg-xs            /* margin-right: var(--space-1) */
-.marg-rg-s             /* margin-right: var(--space-3) */
+.marg-rg-s            /* margin-right: var(--space-3) */
 .marg-rg               /* margin-right: var(--space-6) */
-.marg-rg-l             /* margin-right: var(--space-12) */
+.marg-rg-l            /* margin-right: var(--space-12) */
 .marg-rg-xl            /* margin-right: var(--space-16) */
 
 /* Top */
 .marg-t-xs             /* margin-top: var(--space-1) */
-.marg-t-s              /* margin-top: var(--space-3) */
+.marg-t-s             /* margin-top: var(--space-3) */
 .marg-t                /* margin-top: var(--space-6) */
-.marg-t-l              /* margin-top: var(--space-12) */
+.marg-t-l             /* margin-top: var(--space-12) */
 .marg-t-xl             /* margin-top: var(--space-16) */
 
 /* Bottom */
@@ -397,7 +397,7 @@ The `03-layout` folder contains utility classes for controlling layout, position
 .container-m           /* max-width: 768px */
 .container-l           /* max-width: 1024px */
 .container-xl          /* max-width: 1280px */
-.container-2xl         /* max-width: 1536px */
+.container-xxl         /* max-width: 1536px */
 ```
 
 ### Specialized Containers
@@ -522,7 +522,7 @@ The `03-layout` folder contains utility classes for controlling layout, position
 .w-m                   /* width: var(--space-20) (80px) */
 .w-l                   /* width: var(--space-24) (96px) */
 .w-xl                  /* width: var(--space-32) (128px) */
-.w-2xl                 /* width: 192px */
+.w-xxl                 /* width: 192px */
 .w-3xl                 /* width: 256px */
 
 /* Height follows same pattern */
@@ -585,7 +585,7 @@ The `03-layout` folder contains utility classes for controlling layout, position
 .max-w-m               /* max-width: 448px */
 .max-w-l               /* max-width: 512px */
 .max-w-xl              /* max-width: 576px */
-.max-w-2xl             /* max-width: 672px */
+.max-w-xxl             /* max-width: 672px */
 .max-w-3xl             /* max-width: 768px */
 .max-w-4xl             /* max-width: 896px */
 .max-w-5xl             /* max-width: 1024px */
@@ -600,7 +600,7 @@ The `03-layout` folder contains utility classes for controlling layout, position
 .max-w-screen-m        /* max-width: 768px */
 .max-w-screen-l        /* max-width: 1024px */
 .max-w-screen-xl       /* max-width: 1280px */
-.max-w-screen-2xl      /* max-width: 1536px */
+.max-w-screen-xxl      /* max-width: 1536px */
 ```
 
 ### Min Height

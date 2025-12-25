@@ -11,18 +11,48 @@
 
 /* @ID: #02-02-02 */
 .bg-1 {
-  background: var(--bg-primary) !important;
-  color: var(--color-text-base) !important;
+  background: var(--color-primary) !important;
+  color: var(--color-text-alt) !important;
 }
 
 .bg-2 {
-  background: var(--bg-secondary) !important;
+  background: var(--color-primary-light) !important;
   color: var(--color-text-alt) !important;
 }
 
 .bg-3 {
-  background: var(--bg-tertiary) !important;
+  background: var(--color-primary-dark) !important;
   color: var(--color-text-alt) !important;
+}
+
+.bg-4 {
+  background: var(--color-secondary) !important;
+  color: var(--color-text-alt) !important;
+}
+
+.bg-5 {
+  background: var(--color-secondary-light) !important;
+  color: var(--color-text-alt) !important;
+}
+
+.bg-6 {
+  background: var(--color-secondary-dark) !important;
+  color: var(--color-text-alt) !important;
+}
+
+.bg-7 {
+  background: var(--color-tertiary) !important;
+  color: var(--color-text) !important;
+}
+
+.bg-8 {
+  background: var(--color-tertiary-light) !important;
+  color: var(--color-text-alt) !important;
+}
+
+.bg-9 {
+  background: var(--color-tertiary-dark) !important;
+  color: var(--color-text) !important;
 }
 
 /* @ID: #02-02-03 */
@@ -44,52 +74,6 @@
 .bg-awhite {
   background: var(--color-almost-white) !important;
   color: var(--color-text-base) !important;
-}
-
-/* @ID: #02-02-04 */
-.bg-01 {
-  background: var(--color-primary) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-02 {
-  background: var(--color-primary-light) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-03 {
-  background: var(--color-primary-dark) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-04 {
-  background: var(--color-secondary) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-05 {
-  background: var(--color-secondary-light) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-06 {
-  background: var(--color-secondary-dark) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-07 {
-  background: var(--color-tertiary) !important;
-  color: var(--color-text) !important;
-}
-
-.bg-08 {
-  background: var(--color-tertiary-light) !important;
-  color: var(--color-text-alt) !important;
-}
-
-.bg-09 {
-  background: var(--color-tertiary-dark) !important;
-  color: var(--color-text) !important;
 }
 
 /* @ID: #02-02-05 */

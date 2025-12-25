@@ -90,7 +90,7 @@
 .will-change-transform { will-change: transform; }
 
 /*** Scroll Behavior ***/
-.scroll-smooth { scroll-behavior: smooth; }
+.scroll-sooth { scroll-behavior: smooth; }
 .scroll-auto { scroll-behavior: auto; }
 
 /*** Scroll Snap Type ***/
@@ -171,7 +171,7 @@
   .xtouch-pan-y { touch-action: pan-y; }
   .xtouch-manipulation { touch-action: manipulation; }
 
-  .xscroll-smooth { scroll-behavior: smooth; }
+  .xscroll-sooth { scroll-behavior: smooth; }
   .xscroll-auto { scroll-behavior: auto; }
 
   .xsnap-none { scroll-snap-type: none; }
@@ -237,7 +237,7 @@
   .dtouch-pan-y { touch-action: pan-y; }
   .dtouch-manipulation { touch-action: manipulation; }
 
-  .dscroll-smooth { scroll-behavior: smooth; }
+  .dscroll-sooth { scroll-behavior: smooth; }
   .dscroll-auto { scroll-behavior: auto; }
 
   .dsnap-none { scroll-snap-type: none; }

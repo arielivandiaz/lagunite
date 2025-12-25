@@ -1,771 +1,780 @@
 folder: 10-misc
 file: figures.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
-totalSelectors: 85
-content[85]:
+totalSelectors: 86
+content[86]:
   - type: selector
-    selectorType: class
-    selector: .hr-l
-    id: null
+    selectorType: complex
+    selector: hr.size-s
+    id: #05-05-01
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-primary-light)"
+    responsive: false
+    description: Horizontal Line Sizes
+  - type: selector
+    selectorType: complex
+    selector: hr.size-l
+    id: #05-05-01
     category: null
     properties[1]: border-width
-    cssRule: ".hr-l {\r\n    border-width: 5px 0 0 0;\r\n}"
+    cssRule: "border-width: 5px 0 0 0"
     responsive: false
-    description: ""
+    description: Horizontal Line Sizes
   - type: selector
-    selectorType: class
-    selector: .hr-xl
-    id: null
+    selectorType: complex
+    selector: hr.size-xl
+    id: #05-05-01
     category: null
     properties[1]: border-width
-    cssRule: ".hr-xl {\r\n    border-width: 10px 0 0 0;\r\n}"
+    cssRule: "border-width: 10px 0 0 0"
     responsive: false
-    description: ""
+    description: Horizontal Line Sizes
   - type: selector
-    selectorType: class
-    selector: .hr-xxl
-    id: null
+    selectorType: complex
+    selector: hr.size-xxl
+    id: #05-05-01
     category: null
     properties[1]: border-width
-    cssRule: ".hr-xxl {\r\n    border-width: 25px 0 0 0;\r\n}"
+    cssRule: "border-width: 25px 0 0 0"
     responsive: false
-    description: ""
+    description: Horizontal Line Sizes
   - type: selector
     selectorType: complex
     selector: hr.color
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color {\r\n    border-color: var(--text_color)\r\n}"
+    cssRule: "border-color: var(--text_color)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-alt
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-alt {\r\n    border-color: var(--text_color_alt)\r\n}"
+    cssRule: "border-color: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-main
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-main {\r\n    border-color: var(--primary_color)\r\n}"
+    cssRule: "border-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-main-alt
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-main-alt {\r\n    border-color: var(--primary_color_alt)\r\n}"
+    cssRule: "border-color: var(--primary_color_alt)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-light
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-light {\r\n    border-color: var(--primary_color_light)\r\n}"
+    cssRule: "border-color: var(--primary_color_light)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-dark
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-dark {\r\n    border-color: var(--primary_color_dark)\r\n}"
+    cssRule: "border-color: var(--primary_color_dark)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-success
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-success {\r\n    border-color: var(--color_success)\r\n}"
+    cssRule: "border-color: var(--color_success)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-warning
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-warning {\r\n    border-color: var(--color_warning)\r\n}"
+    cssRule: "border-color: var(--color_warning)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: complex
     selector: hr.color-error
-    id: null
+    id: #05-05-01
     category: null
     properties[1]: border-color
-    cssRule: "hr.color-error {\r\n    border-color: var(--color_error)\r\n}"
+    cssRule: "border-color: var(--color_error)"
     responsive: false
-    description: ""
+    description: Horizontal Line Colors
   - type: selector
     selectorType: class
     selector: .line-v
-    id: null
+    id: #071
     category: null
     properties[3]: border-style,height,border-color
-    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    cssRule: "border-style: solid\nheight: 100%\nborder-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-l
-    id: null
+    id: #071
     category: null
     properties[3]: border-style,height,border-color
-    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    cssRule: "border-style: solid\nheight: 100%\nborder-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-xl
-    id: null
+    id: #071
     category: null
     properties[3]: border-style,height,border-color
-    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    cssRule: "border-style: solid\nheight: 100%\nborder-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-xxl
-    id: null
+    id: #071
     category: null
     properties[3]: border-style,height,border-color
-    cssRule: ".line-v,\r\n.line-v-l,\r\n.line-v-xl,\r\n.line-v-xxl {\r\n    border-style: solid;\r\n    height: 100%;\r\n    border-color: var(--primary_color);\r\n}"
+    cssRule: "border-style: solid\nheight: 100%\nborder-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v
-    id: null
+    id: #071
     category: null
     properties[1]: border-width
-    cssRule: ".line-v {\r\n    border-width: 0 0 0 2px;\r\n}"
+    cssRule: "border-width: 0 0 0 2px"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-l
-    id: null
+    id: #071
     category: null
     properties[1]: border-width
-    cssRule: ".line-v-l {\r\n    border-width: 0 0 0 5px;\r\n}"
+    cssRule: "border-width: 0 0 0 5px"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-xl
-    id: null
+    id: #071
     category: null
     properties[1]: border-width
-    cssRule: ".line-v-xl {\r\n    border-width: 0 0 0 10px;\r\n}"
+    cssRule: "border-width: 0 0 0 10px"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v-xxl
-    id: null
+    id: #071
     category: null
     properties[1]: border-width
-    cssRule: ".line-v-xxl {\r\n    border-width: 0 0 0 25px;\r\n}"
+    cssRule: "border-width: 0 0 0 25px"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color {\r\n    border-color: var(--text_color)\r\n}"
+    cssRule: "border-color: var(--text_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-alt
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-alt {\r\n    border-color: var(--text_color_alt)\r\n}"
+    cssRule: "border-color: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-main
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-main {\r\n    border-color: var(--primary_color)\r\n}"
+    cssRule: "border-color: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-main-alt
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-main-alt {\r\n    border-color: var(--primary_color_alt)\r\n}"
+    cssRule: "border-color: var(--primary_color_alt)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-light
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-light {\r\n    border-color: var(--primary_color_light)\r\n}"
+    cssRule: "border-color: var(--primary_color_light)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-dark
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-dark {\r\n    border-color: var(--primary_color_dark)\r\n}"
+    cssRule: "border-color: var(--primary_color_dark)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-success
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-success {\r\n    border-color: var(--color_success)\r\n}"
+    cssRule: "border-color: var(--color_success)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-warning
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-warning {\r\n    border-color: var(--color_warning)\r\n}"
+    cssRule: "border-color: var(--color_warning)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .line-v.color-error
-    id: null
+    id: #071
     category: null
     properties[1]: border-color
-    cssRule: ".line-v.color-error {\r\n    border-color: var(--color_error)\r\n}"
+    cssRule: "border-color: var(--color_error)"
     responsive: false
-    description: ""
+    description: Lines V
   - type: selector
     selectorType: class
     selector: .square
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .drounded
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .xrounded
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .drounded-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .xrounded-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-s
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .drounded-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .xrounded-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-l
-    id: null
+    id: #072
     category: null
     properties[5]: background,display,justify-content,align-items,color
-    cssRule: ".square,\r\n.rounded,\r\n.drounded,\r\n.xrounded,\r\n.circle,\r\n.tear,\r\n.square-s,\r\n.rounded-s,\r\n.drounded-s,\r\n.xrounded-s,\r\n.circle-s,\r\n.tear-s,\r\n.square-l,\r\n.rounded-l,\r\n.drounded-l,\r\n.xrounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    background: var(--primary_color);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: var(--text_color_alt);\r\n}"
+    cssRule: "background: var(--primary_color)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--text_color_alt)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-s
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    cssRule: "width: 25px\nheight: 25px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-s
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    cssRule: "width: 25px\nheight: 25px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-s
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    cssRule: "width: 25px\nheight: 25px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-s
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-s,\r\n.rounded-s,\r\n.circle-s,\r\n.tear-s {\r\n    width: 25px;\r\n    height: 25px;\r\n}"
+    cssRule: "width: 25px\nheight: 25px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    cssRule: "width: 50px\nheight: 50px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    cssRule: "width: 50px\nheight: 50px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    cssRule: "width: 50px\nheight: 50px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square,\r\n.rounded,\r\n.circle,\r\n.tear {\r\n    width: 50px;\r\n    height: 50px;\r\n}"
+    cssRule: "width: 50px\nheight: 50px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-l
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    cssRule: "width: 75px\nheight: 75px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-l
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    cssRule: "width: 75px\nheight: 75px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-l
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    cssRule: "width: 75px\nheight: 75px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-l
-    id: null
+    id: #072
     category: null
     properties[2]: width,height
-    cssRule: ".square-l,\r\n.rounded-l,\r\n.circle-l,\r\n.tear-l {\r\n    width: 75px;\r\n    height: 75px;\r\n}"
+    cssRule: "width: 75px\nheight: 75px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-s
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".rounded-s {\r\n    border-radius: 5px;\r\n}"
+    cssRule: "border-radius: 5px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".rounded {\r\n    border-radius: 15px;\r\n}"
+    cssRule: "border-radius: 15px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .rounded-l
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".rounded-l {\r\n    border-radius: 20px;\r\n}"
+    cssRule: "border-radius: 20px"
     responsive: true
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    cssRule: "border-radius: 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-s
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    cssRule: "border-radius: 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .circle-l
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".circle,\r\n.circle-s,\r\n.circle-l {\r\n    border-radius: 50%;\r\n}"
+    cssRule: "border-radius: 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    cssRule: "border-radius: 50% 0 50% 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-s
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    cssRule: "border-radius: 50% 0 50% 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .tear-l
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".tear,\r\n.tear-s,\r\n.tear-l {\r\n    border-radius: 50% 0 50% 50%;\r\n}"
+    cssRule: "border-radius: 50% 0 50% 50%"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    cssRule: "border-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-s
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    cssRule: "border-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .square-l
-    id: null
+    id: #072
     category: null
     properties[1]: border-radius
-    cssRule: ".square,\r\n.square-s,\r\n.square-l {\r\n    border-radius: 5px;\r\n}"
+    cssRule: "border-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle
-    id: null
+    id: #072
     category: null
     properties[4]: width,height,color,border-radius
-    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    cssRule: "width: 0\nheight: 0\ncolor: var(--text_color_alt)\nborder-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle-s
-    id: null
+    id: #072
     category: null
     properties[4]: width,height,color,border-radius
-    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    cssRule: "width: 0\nheight: 0\ncolor: var(--text_color_alt)\nborder-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle-l
-    id: null
+    id: #072
     category: null
     properties[4]: width,height,color,border-radius
-    cssRule: ".triangle,\r\n.triangle-s,\r\n.triangle-l {\r\n    width: 0;\r\n    height: 0;\r\n    color: var(--text_color_alt);\r\n    border-radius: 5px;\r\n}"
+    cssRule: "width: 0\nheight: 0\ncolor: var(--text_color_alt)\nborder-radius: 5px"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle
-    id: null
+    id: #072
     category: null
     properties[3]: border-left,border-right,border-bottom
-    cssRule: ".triangle {\r\n    border-left: 28px solid transparent;\r\n    border-right: 28px solid transparent;\r\n    border-bottom: 46px solid var(--primary_color);\r\n}"
+    cssRule: "border-left: 28px solid transparent\nborder-right: 28px solid transparent\nborder-bottom: 46px solid var(--primary_color)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle-s
-    id: null
+    id: #072
     category: null
     properties[3]: border-left,border-right,border-bottom
-    cssRule: ".triangle-s {\r\n    border-left: 15px solid transparent;\r\n    border-right: 15px solid transparent;\r\n    border-bottom: 20px solid var(--primary_color);\r\n}"
+    cssRule: "border-left: 15px solid transparent\nborder-right: 15px solid transparent\nborder-bottom: 20px solid var(--primary_color)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .triangle-l
-    id: null
+    id: #072
     category: null
     properties[3]: border-left,border-right,border-bottom
-    cssRule: ".triangle-l {\r\n    border-left: 52px solid transparent;\r\n    border-right: 52px solid transparent;\r\n    border-bottom: 88px solid var(--primary_color);\r\n}"
+    cssRule: "border-left: 52px solid transparent\nborder-right: 52px solid transparent\nborder-bottom: 88px solid var(--primary_color)"
     responsive: false
-    description: ""
+    description: Primitives Figures
   - type: selector
     selectorType: class
     selector: .point-s
-    id: null
+    id: #073
     category: null
     properties[4]: border-radius,height,width,background
-    cssRule: ".point-s {\r\n    border-radius: 5px;\r\n    height: 5px;\r\n    width: 5px;\r\n    background: var(--primary_color);\r\n}"
+    cssRule: "border-radius: 5px\nheight: 5px\nwidth: 5px\nbackground: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Point figure
   - type: selector
     selectorType: class
     selector: .point
-    id: null
+    id: #073
     category: null
     properties[4]: border-radius,height,width,background
-    cssRule: ".point {\r\n    border-radius: 10px;\r\n    height: 10px;\r\n    width: 10px;\r\n    background: var(--primary_color);\r\n}"
+    cssRule: "border-radius: 10px\nheight: 10px\nwidth: 10px\nbackground: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Point figure
   - type: selector
     selectorType: class
     selector: .point-l
-    id: null
+    id: #073
     category: null
     properties[4]: border-radius,height,width,background
-    cssRule: ".point-l {\r\n    border-radius: 15px;\r\n    height: 15px;\r\n    width: 15px;\r\n    background: var(--primary_color);\r\n}"
+    cssRule: "border-radius: 15px\nheight: 15px\nwidth: 15px\nbackground: var(--primary_color)"
     responsive: false
-    description: ""
+    description: Point figure
   - type: selector
     selectorType: class
     selector: .blob-1
-    id: null
+    id: #075
     category: null
     properties[1]: border-radius
-    cssRule: ".blob-1 {\r\n    border-radius: 30% 70% 30% 70%;\r\n}"
+    cssRule: "border-radius: 30% 70% 30% 70%"
     responsive: false
-    description: ""
+    description: Blob Figure
   - type: selector
     selectorType: class
     selector: .blob-2
-    id: null
+    id: #075
     category: null
     properties[1]: border-radius
-    cssRule: ".blob-2 {\r\n    border-radius: 50% 20% 50% 20%;\r\n}"
+    cssRule: "border-radius: 50% 20% 50% 20%"
     responsive: false
-    description: ""
+    description: Blob Figure
   - type: selector
     selectorType: class
     selector: .blob-3
-    id: null
+    id: #075
     category: null
     properties[1]: border-radius
-    cssRule: ".blob-3 {\r\n    border-radius: 60% 40% 40% 60%/50% 40% 65% 55%;\r\n}"
+    cssRule: "border-radius: 60% 40% 40% 60%/50% 40% 65% 55%"
     responsive: false
-    description: ""
+    description: Blob Figure
   - type: selector
     selectorType: class
     selector: .blob-4
-    id: null
+    id: #075
     category: null
     properties[1]: border-radius
-    cssRule: ".blob-4 {\r\n    border-radius: 33% 33% 33% 93%\r\n}"
+    cssRule: "border-radius: 33% 33% 33% 93%"
     responsive: false
-    description: ""
+    description: Blob Figure
   - type: selector
     selectorType: class
     selector: .blob-5
-    id: null
+    id: #075
     category: null
     properties[1]: border-radius
-    cssRule: ".blob-5 {\r\n    border-radius: 80%;\r\n}"
+    cssRule: "border-radius: 80%"
     responsive: false
-    description: ""
+    description: Blob Figure

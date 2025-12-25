@@ -1,16 +1,16 @@
 folder: 04-decorators
 file: 07-animations.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
-totalSelectors: 23
-content[23]:
+totalSelectors: 27
+content[27]:
   - type: selector
     selectorType: complex
     selector: 0%
     id: null
     category: null
     properties[1]: transform
-    cssRule: "0% { transform: rotate(0deg); }"
+    cssRule: "transform: rotate(0deg)"
     responsive: false
     description: ""
   - type: selector
@@ -19,7 +19,7 @@ content[23]:
     id: null
     category: null
     properties[1]: transform
-    cssRule: "100% { transform: rotate(360deg); }"
+    cssRule: "transform: rotate(360deg)"
     responsive: false
     description: ""
   - type: selector
@@ -28,7 +28,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "0%,\r\n  100% { transform: scale(1); opacity: 1; }"
+    cssRule: "transform: scale(1)\nopacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -37,7 +37,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "0%,\r\n  100% { transform: scale(1); opacity: 1; }"
+    cssRule: "transform: scale(1)\nopacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -46,7 +46,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "50% { transform: scale(1.05); opacity: 0.7; }"
+    cssRule: "transform: scale(1.05)\nopacity: 0.7"
     responsive: false
     description: ""
   - type: selector
@@ -55,7 +55,7 @@ content[23]:
     id: null
     category: null
     properties[1]: transform
-    cssRule: "0%,\r\n  100% { transform: translateY(0); }"
+    cssRule: "transform: translateY(0)"
     responsive: false
     description: ""
   - type: selector
@@ -64,7 +64,7 @@ content[23]:
     id: null
     category: null
     properties[1]: transform
-    cssRule: "0%,\r\n  100% { transform: translateY(0); }"
+    cssRule: "transform: translateY(0)"
     responsive: false
     description: ""
   - type: selector
@@ -73,7 +73,7 @@ content[23]:
     id: null
     category: null
     properties[1]: transform
-    cssRule: "50% { transform: translateY(-25%); }"
+    cssRule: "transform: translateY(-25%)"
     responsive: false
     description: ""
   - type: selector
@@ -82,7 +82,7 @@ content[23]:
     id: null
     category: null
     properties[1]: opacity
-    cssRule: "from { opacity: 0; }"
+    cssRule: "opacity: 0"
     responsive: false
     description: ""
   - type: selector
@@ -91,7 +91,7 @@ content[23]:
     id: null
     category: null
     properties[1]: opacity
-    cssRule: "to { opacity: 1; }"
+    cssRule: "opacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -100,7 +100,7 @@ content[23]:
     id: null
     category: null
     properties[1]: opacity
-    cssRule: "from { opacity: 1; }"
+    cssRule: "opacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -109,7 +109,7 @@ content[23]:
     id: null
     category: null
     properties[1]: opacity
-    cssRule: "to { opacity: 0; }"
+    cssRule: "opacity: 0"
     responsive: false
     description: ""
   - type: selector
@@ -118,7 +118,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "from { transform: translateY(2rem); opacity: 0; }"
+    cssRule: "transform: translateY(2rem)\nopacity: 0"
     responsive: false
     description: ""
   - type: selector
@@ -127,7 +127,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "to { transform: translateY(0); opacity: 1; }"
+    cssRule: "transform: translateY(0)\nopacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -136,7 +136,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "from { transform: translateY(0); opacity: 1; }"
+    cssRule: "transform: translateY(0)\nopacity: 1"
     responsive: false
     description: ""
   - type: selector
@@ -145,7 +145,7 @@ content[23]:
     id: null
     category: null
     properties[2]: transform,opacity
-    cssRule: "to { transform: translateY(2rem); opacity: 0; }"
+    cssRule: "transform: translateY(2rem)\nopacity: 0"
     responsive: false
     description: ""
   - type: selector
@@ -154,60 +154,96 @@ content[23]:
     id: null
     category: null
     properties[4]: animation-name,animation-duration,animation-iteration-count,animation-timing-function
-    cssRule: ".animate-spin {\r\n  animation-name: spin;\r\n  animation-duration: 1s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: linear;\r\n}"
+    cssRule: "animation-name: spin\nanimation-duration: 1s\nanimation-iteration-count: infinite\nanimation-timing-function: linear"
     responsive: true
-    description: ""
+    description: ** Animation Utilities **
   - type: selector
     selectorType: class
     selector: .animate-pulse
     id: null
     category: null
     properties[4]: animation-name,animation-duration,animation-iteration-count,animation-timing-function
-    cssRule: ".animate-pulse {\r\n  animation-name: pulse;\r\n  animation-duration: 1.5s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\r\n}"
+    cssRule: "animation-name: pulse\nanimation-duration: 1.5s\nanimation-iteration-count: infinite\nanimation-timing-function: cubic-bezier(0.4, 0, 0.6, 1)"
     responsive: true
-    description: ""
+    description: ** Animation Utilities **
   - type: selector
     selectorType: class
     selector: .animate-bounce
     id: null
     category: null
     properties[4]: animation-name,animation-duration,animation-iteration-count,animation-timing-function
-    cssRule: ".animate-bounce {\r\n  animation-name: bounce;\r\n  animation-duration: 1s;\r\n  animation-iteration-count: infinite;\r\n  animation-timing-function: ease-in-out;\r\n}"
+    cssRule: "animation-name: bounce\nanimation-duration: 1s\nanimation-iteration-count: infinite\nanimation-timing-function: ease-in-out"
     responsive: true
-    description: ""
+    description: ** Animation Utilities **
+  - type: selector
+    selectorType: class
+    selector: .animate-fade-in
+    id: null
+    category: null
+    properties[3]: animation-name,animation-duration,animation-timing-function
+    cssRule: "animation-name: fade-in\nanimation-duration: 0.5s\nanimation-timing-function: ease-out"
+    responsive: true
+    description: ** Animation Utilities **
+  - type: selector
+    selectorType: class
+    selector: .animate-fade-out
+    id: null
+    category: null
+    properties[3]: animation-name,animation-duration,animation-timing-function
+    cssRule: "animation-name: fade-out\nanimation-duration: 0.5s\nanimation-timing-function: ease-in"
+    responsive: true
+    description: ** Animation Utilities **
+  - type: selector
+    selectorType: class
+    selector: .animate-slide-in
+    id: null
+    category: null
+    properties[3]: animation-name,animation-duration,animation-timing-function
+    cssRule: "animation-name: slide-in\nanimation-duration: 0.5s\nanimation-timing-function: ease-out"
+    responsive: true
+    description: ** Animation Utilities **
+  - type: selector
+    selectorType: class
+    selector: .animate-slide-out
+    id: null
+    category: null
+    properties[3]: animation-name,animation-duration,animation-timing-function
+    cssRule: "animation-name: slide-out\nanimation-duration: 0.5s\nanimation-timing-function: ease-in"
+    responsive: true
+    description: ** Animation Utilities **
   - type: selector
     selectorType: class
     selector: .animate-duration-1s
     id: null
     category: null
     properties[1]: animation-duration
-    cssRule: ".animate-duration-1s { animation-duration: 1s; }"
+    cssRule: "animation-duration: 1s"
     responsive: true
-    description: ""
+    description: ** Animation Duration Helpers **
   - type: selector
     selectorType: class
     selector: .animate-duration-2s
     id: null
     category: null
     properties[1]: animation-duration
-    cssRule: ".animate-duration-2s { animation-duration: 2s; }"
+    cssRule: "animation-duration: 2s"
     responsive: true
-    description: ""
+    description: ** Animation Duration Helpers **
   - type: selector
     selectorType: class
     selector: .animate-once
     id: null
     category: null
     properties[1]: animation-iteration-count
-    cssRule: ".animate-once { animation-iteration-count: 1; }"
+    cssRule: "animation-iteration-count: 1"
     responsive: true
-    description: ""
+    description: ** Animation Iteration Helpers **
   - type: selector
     selectorType: class
     selector: .animate-infinite
     id: null
     category: null
     properties[1]: animation-iteration-count
-    cssRule: ".animate-infinite { animation-iteration-count: infinite; }"
+    cssRule: "animation-iteration-count: infinite"
     responsive: true
-    description: ""
+    description: ** Animation Iteration Helpers **

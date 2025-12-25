@@ -93,72 +93,47 @@
 @media (max-width: 639px) {
   /* @ID: #01-02-030sm */
   /* Text Align **/
-  .xs\:ta-c {
+  .xta-c {
     text-align: center;
   }
 
-  .xs\:ta-lf {
+  .xta-lf {
     text-align: left;
   }
 
-  .xs\:ta-rg {
+  .xta-rg {
     text-align: right;
-  } 
+  }
 
-  .xs\:ta-j {
+  .xta-j {
     text-align: justify;
   }
 
-  .xs\:ta-ja {
+  .xta-ja {
     text-align: justify-all;
   }
 }
 
 @media (min-width: 640px) {
-    /* @ID: #01-02-030sm */
+  /* @ID: #01-02-030sm */
   /* Text Align **/
-  .sm\:ta-c {
+  .dta-c {
     text-align: center;
   }
 
-  .sm\:ta-lf {
+  .dta-lf {
     text-align: left;
   }
 
-  .sm\:ta-rg {
+  .dta-rg {
     text-align: right;
   }
 
-  .sm\:ta-j {
+  .dta-j {
     text-align: justify;
   }
 
-  .sm\:ta-ja {
+  .dta-ja {
     text-align: justify-all;
   }
 }
-
-@media (min-width: 1024px) {
-  /* @ID: #01-02-030md */
-  /* Text Align **/
-  .md\:ta-c {
-    text-align: center;
-  }
-
-  .md\:ta-lf {
-    text-align: left;
-  }
-
-  .md\:ta-rg {
-    text-align: right;
-  }
-
-  .md\:ta-j {
-    text-align: justify;
-  }
-
-  .md\:ta-ja {
-    text-align: justify-all;
-  }
-}
-

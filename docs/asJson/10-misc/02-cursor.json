@@ -1,7 +1,7 @@
 {
   "folder": "10-misc",
   "file": "02-cursor.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 10,
   "content": [
@@ -14,7 +14,7 @@
       "properties": [
         "cursor"
       ],
-      "cssRule": ".cursor-auto { cursor: auto; }",
+      "cssRule": "cursor: auto",
       "responsive": true,
       "description": ""
     },
@@ -27,7 +27,7 @@
       "properties": [
         "cursor"
       ],
-      "cssRule": ".cursor-pointer { cursor: pointer; }",
+      "cssRule": "cursor: pointer",
       "responsive": true,
       "description": ""
     },
@@ -40,7 +40,7 @@
       "properties": [
         "cursor"
       ],
-      "cssRule": ".cursor-not-allowed { cursor: not-allowed; }",
+      "cssRule": "cursor: not-allowed",
       "responsive": true,
       "description": ""
     },
@@ -53,7 +53,7 @@
       "properties": [
         "cursor"
       ],
-      "cssRule": ".cursor-text { cursor: text; }",
+      "cssRule": "cursor: text",
       "responsive": true,
       "description": ""
     },
@@ -66,7 +66,7 @@
       "properties": [
         "cursor"
       ],
-      "cssRule": ".cursor-move { cursor: move; }",
+      "cssRule": "cursor: move",
       "responsive": true,
       "description": ""
     },
@@ -79,7 +79,7 @@
       "properties": [
         "pointer-events"
       ],
-      "cssRule": ".pointer-events-none { pointer-events: none; }",
+      "cssRule": "pointer-events: none",
       "responsive": true,
       "description": ""
     },
@@ -92,7 +92,7 @@
       "properties": [
         "pointer-events"
       ],
-      "cssRule": ".pointer-events-auto { pointer-events: auto; }",
+      "cssRule": "pointer-events: auto",
       "responsive": true,
       "description": ""
     },
@@ -105,7 +105,7 @@
       "properties": [
         "user-select"
       ],
-      "cssRule": ".select-none { user-select: none; }",
+      "cssRule": "user-select: none",
       "responsive": true,
       "description": ""
     },
@@ -118,7 +118,7 @@
       "properties": [
         "user-select"
       ],
-      "cssRule": ".select-text { user-select: text; }",
+      "cssRule": "user-select: text",
       "responsive": true,
       "description": ""
     },
@@ -131,7 +131,7 @@
       "properties": [
         "user-select"
       ],
-      "cssRule": ".select-all { user-select: all; }",
+      "cssRule": "user-select: all",
       "responsive": true,
       "description": ""
     }

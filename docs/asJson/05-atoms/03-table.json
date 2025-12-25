@@ -1,0 +1,1538 @@
+{
+  "folder": "05-atoms",
+  "file": "03-table.css",
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": false,
+  "totalSelectors": 112,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "table",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "border-collapse",
+        "margin",
+        "width",
+        "font-family",
+        "font-size",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-collapse: collapse\nmargin: 10px 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "border-collapse",
+        "margin",
+        "width",
+        "font-family",
+        "font-size",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-collapse: collapse\nmargin: 10px 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "font-family",
+        "font-weight",
+        "font-size",
+        "padding"
+      ],
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nfont-size: 0.9em\npadding: var(--space-3) var(--space-4)",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table td",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-3) var(--space-4)",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table thead",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: 2px solid var(--color-border)",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tfoot",
+      "id": "#05-03-01",
+      "category": null,
+      "properties": [
+        "border-top",
+        "font-weight"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-border)\nfont-weight: var(--font-weight-medium)",
+      "responsive": false,
+      "description": "Table Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-s th",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-2) var(--space-3)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-s td",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-2) var(--space-3)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-l th",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-4) var(--space-6)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-l td",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-4) var(--space-6)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-xl th",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-5) var(--space-8)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.size-xl td",
+      "id": "#05-03-02",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-5) var(--space-8)",
+      "responsive": false,
+      "description": "Table Sizing"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.main thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-bottom",
+        "border-color"
+      ],
+      "cssRule": "border-bottom: solid 2px\nborder-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.main tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top",
+        "border-color"
+      ],
+      "cssRule": "border-top: solid 2px\nborder-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.main tbody tr:nth-child(2n + 1)",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(var(--color-primary-rgb), 0.1)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.primary thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)\nborder-bottom: 2px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.primary tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.primary.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-primary)\nborder-bottom: 2px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.secondary thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-secondary)\ncolor: var(--color-text-alt)\nborder-bottom: 2px solid var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.secondary tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.secondary.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-secondary)\nborder-bottom: 2px solid var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.tertiary thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-tertiary)\ncolor: var(--color-text-alt)\nborder-bottom: 2px solid var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.tertiary tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.tertiary.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-tertiary)\nborder-bottom: 2px solid var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.success thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-success)\ncolor: var(--color-text-alt)\nborder-bottom: 2px solid var(--color-success)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.success tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-success)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.success.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-success)\nborder-bottom: 2px solid var(--color-success)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.warning thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-warning)\ncolor: var(--color-text-base)\nborder-bottom: 2px solid var(--color-warning)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.warning tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-warning)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.warning.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-warning)\nborder-bottom: 2px solid var(--color-warning)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.error thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: var(--color-error)\ncolor: var(--color-text-alt)\nborder-bottom: 2px solid var(--color-error)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.error tfoot",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "border-top"
+      ],
+      "cssRule": "border-top: 2px solid var(--color-error)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.error.alt thead",
+      "id": "#05-03-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-bottom"
+      ],
+      "cssRule": "background: transparent\ncolor: var(--color-error)\nborder-bottom: 2px solid var(--color-error)",
+      "responsive": false,
+      "description": "Table Color Variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.4)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.primary tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.2)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.secondary tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(var(--color-secondary-rgb, 128, 90, 213), 0.2)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.tertiary tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(var(--color-tertiary-rgb, 255, 107, 107), 0.2)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.success tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(140, 160, 115, 0.1)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.warning tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(255, 193, 7, 0.1)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.striped.error tbody tr:nth-child(odd)",
+      "id": "#05-03-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: rgba(244, 67, 54, 0.1)",
+      "responsive": false,
+      "description": "Table Striped (Zebra)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border"
+      ],
+      "cssRule": "border: 1px solid var(--color-border)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border"
+      ],
+      "cssRule": "border: 1px solid var(--color-border)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border"
+      ],
+      "cssRule": "border: 1px solid var(--color-border)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.primary",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.primary td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.primary th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.secondary",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.secondary td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.secondary th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.tertiary",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.tertiary td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.tertiary th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.success",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.success td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.success th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.warning",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.warning td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.warning th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.error",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.error td",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.bordered.error th",
+      "id": "#05-03-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "Table Bordered"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover tbody tr",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "transition",
+        "cursor"
+      ],
+      "cssRule": "transition:\r\n    background-color 0.2s ease,\r\n    transform 0.1s ease\ncursor: pointer",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-primary)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.primary tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-primary)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.secondary tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.tertiary tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.success tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-success)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.warning tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-warning)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover.error tbody tr:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-error)",
+      "responsive": false,
+      "description": "Table hover"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell td",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "transition",
+        "cursor"
+      ],
+      "cssRule": "transition: all 0.2s ease\ncursor: pointer",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "font-weight",
+        "transform"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-weight: 900\ntransform: scale(1.02)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell.secondary td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-secondary)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell.tertiary td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-tertiary)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell.success td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-success)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell.warning td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-warning)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.hover-cell.error td:hover",
+      "id": "#05-03-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-error)",
+      "responsive": false,
+      "description": "hover cells"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "border",
+        "border-radius",
+        "overflow",
+        "box-shadow"
+      ],
+      "cssRule": "border: 2px solid var(--color-border)\nborder-radius: var(--radius-lg)\noverflow: hidden\nbox-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card.secondary thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card.tertiary thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card.success thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-success)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card.warning thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-warning)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.card.error thead",
+      "id": "#05-03-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-error)",
+      "responsive": false,
+      "description": "Table Card Style"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: 1px solid var(--color-border)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided tbody tr:last-child",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: none",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.primary tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.secondary tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.tertiary tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.success tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-success)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.warning tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided.error tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-error)",
+      "responsive": false,
+      "description": "Table Row Dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided-thick tbody tr",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: 2px solid var(--color-border)",
+      "responsive": false,
+      "description": "Thick dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table.divided-thick tbody tr:last-child",
+      "id": "#05-03-08",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: none",
+      "responsive": false,
+      "description": "Thick dividers"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.valign-top",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: top",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table td.valign-top",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: top",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.valign-middle",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: middle",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table td.valign-middle",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: middle",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.valign-bottom",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: bottom",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table td.valign-bottom",
+      "id": "#05-03-09",
+      "category": null,
+      "properties": [
+        "vertical-align"
+      ],
+      "cssRule": "vertical-align: bottom",
+      "responsive": false,
+      "description": "Table Alignment Utilities"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table-responsive",
+      "id": "#05-03-10",
+      "category": null,
+      "properties": [
+        "overflow-x",
+        "-webkit-overflow-scrolling",
+        "margin"
+      ],
+      "cssRule": "overflow-x: auto\n-webkit-overflow-scrolling: touch\nmargin: 10px 0",
+      "responsive": false,
+      "description": "Table Responsive"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table-responsive .table",
+      "id": "#05-03-10",
+      "category": null,
+      "properties": [
+        "margin",
+        "min-width"
+      ],
+      "cssRule": "margin: 0\nmin-width: 600px",
+      "responsive": false,
+      "description": "Table Responsive"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.selected",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "background",
+        "font-weight"
+      ],
+      "cssRule": "background: var(--color-primary)\nfont-weight: var(--font-weight-medium)",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.disabled",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "opacity",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\npointer-events: none",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.highlighted",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-medium)",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.success-row",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-success)",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.warning-row",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-warning)",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table tbody tr.error-row",
+      "id": "#05-03-12",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-error)",
+      "responsive": false,
+      "description": "Table Row States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.sortable",
+      "id": "#05-03-13",
+      "category": null,
+      "properties": [
+        "cursor",
+        "user-select",
+        "position",
+        "padding-right"
+      ],
+      "cssRule": "cursor: pointer\nuser-select: none\nposition: relative\npadding-right: var(--space-6)",
+      "responsive": false,
+      "description": "Table Sorting Indicators"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.sortable:hover",
+      "id": "#05-03-13",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1)",
+      "responsive": false,
+      "description": "Table Sorting Indicators"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.sortable::after",
+      "id": "#05-03-13",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "right",
+        "opacity",
+        "font-size"
+      ],
+      "cssRule": "content: \"⇅\"\nposition: absolute\nright: var(--space-2)\nopacity: 0.3\nfont-size: 0.8em",
+      "responsive": false,
+      "description": "Table Sorting Indicators"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.sortable.sort-asc::after",
+      "id": "#05-03-13",
+      "category": null,
+      "properties": [
+        "content",
+        "opacity",
+        "color"
+      ],
+      "cssRule": "content: \"↑\"\nopacity: 1\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Sorting Indicators"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".table th.sortable.sort-desc::after",
+      "id": "#05-03-13",
+      "category": null,
+      "properties": [
+        "content",
+        "opacity",
+        "color"
+      ],
+      "cssRule": "content: \"↓\"\nopacity: 1\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "Table Sorting Indicators"
+    }
+  ]
+}

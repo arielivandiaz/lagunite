@@ -62,7 +62,7 @@
   margin-right: auto; 
 }
 
-.container-2xl { 
+.container-xxl { 
   max-width: 1536px; 
   margin-left: auto; 
   margin-right: auto; 
@@ -107,7 +107,7 @@
     margin-right: auto; 
   }
 
-  .dcontainer-2xl { 
+  .dcontainer-xxl { 
     max-width: 1536px; 
     margin-left: auto; 
     margin-right: auto; 

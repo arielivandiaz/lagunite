@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "05-padding.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 36,
   "content": [
@@ -14,7 +14,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd-0 {\r\n    padding: 0 !important;\r\n}",
+      "cssRule": "padding: 0 !important",
       "responsive": true,
       "description": ""
     },
@@ -27,7 +27,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd-xs {\r\n    padding: var(--space-1);\r\n}",
+      "cssRule": "padding: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -40,7 +40,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd-s {\r\n    padding: var(--space-3);\r\n}",
+      "cssRule": "padding: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -53,7 +53,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd {\r\n    padding: var(--space-6);\r\n}",
+      "cssRule": "padding: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -66,7 +66,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd-l {\r\n    padding: var(--space-12);\r\n}",
+      "cssRule": "padding: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -79,7 +79,7 @@
       "properties": [
         "padding"
       ],
-      "cssRule": ".padd-xl {\r\n    padding: var(--space-16);\r\n}",
+      "cssRule": "padding: var(--space-16)",
       "responsive": true,
       "description": ""
     },
@@ -93,7 +93,7 @@
         "padding-left",
         "padding-right"
       ],
-      "cssRule": ".padd-h-xs {\r\n    padding-left: var(--space-1);\r\n    padding-right: var(--space-1);\r\n}",
+      "cssRule": "padding-left: var(--space-1)\npadding-right: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -107,7 +107,7 @@
         "padding-left",
         "padding-right"
       ],
-      "cssRule": ".padd-h-s {\r\n    padding-left: var(--space-3);\r\n    padding-right: var(--space-3);\r\n}",
+      "cssRule": "padding-left: var(--space-3)\npadding-right: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -121,7 +121,7 @@
         "padding-left",
         "padding-right"
       ],
-      "cssRule": ".padd-h {\r\n    padding-left: var(--space-6);\r\n    padding-right: var(--space-6);\r\n}",
+      "cssRule": "padding-left: var(--space-6)\npadding-right: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -135,7 +135,7 @@
         "padding-left",
         "padding-right"
       ],
-      "cssRule": ".padd-h-l {\r\n    padding-left: var(--space-12);\r\n    padding-right: var(--space-12);\r\n}",
+      "cssRule": "padding-left: var(--space-12)\npadding-right: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -149,7 +149,7 @@
         "padding-left",
         "padding-right"
       ],
-      "cssRule": ".padd-h-xl {\r\n    padding-left: var(--space-16);\r\n    padding-right: var(--space-16);\r\n}",
+      "cssRule": "padding-left: var(--space-16)\npadding-right: var(--space-16)",
       "responsive": true,
       "description": ""
     },
@@ -163,7 +163,7 @@
         "padding-top",
         "padding-bottom"
       ],
-      "cssRule": ".padd-v-xs {\r\n    padding-top: var(--space-1);\r\n    padding-bottom: var(--space-1);\r\n}",
+      "cssRule": "padding-top: var(--space-1)\npadding-bottom: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -177,7 +177,7 @@
         "padding-top",
         "padding-bottom"
       ],
-      "cssRule": ".padd-v-s {\r\n    padding-top: var(--space-3);\r\n    padding-bottom: var(--space-3);\r\n}",
+      "cssRule": "padding-top: var(--space-3)\npadding-bottom: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -191,7 +191,7 @@
         "padding-top",
         "padding-bottom"
       ],
-      "cssRule": ".padd-v {\r\n    padding-top: var(--space-6);\r\n    padding-bottom: var(--space-6);\r\n}",
+      "cssRule": "padding-top: var(--space-6)\npadding-bottom: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -205,7 +205,7 @@
         "padding-top",
         "padding-bottom"
       ],
-      "cssRule": ".padd-v-l {\r\n    padding-top: var(--space-12);\r\n    padding-bottom: var(--space-12);\r\n}",
+      "cssRule": "padding-top: var(--space-12)\npadding-bottom: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -219,7 +219,7 @@
         "padding-top",
         "padding-bottom"
       ],
-      "cssRule": ".padd-v-xl {\r\n    padding-top: var(--space-16);\r\n    padding-bottom: var(--space-16);\r\n}",
+      "cssRule": "padding-top: var(--space-16)\npadding-bottom: var(--space-16)",
       "responsive": true,
       "description": ""
     },
@@ -232,7 +232,7 @@
       "properties": [
         "padding-left"
       ],
-      "cssRule": ".padd-lf-xs {\r\n    padding-left: var(--space-1);\r\n}",
+      "cssRule": "padding-left: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -245,7 +245,7 @@
       "properties": [
         "padding-left"
       ],
-      "cssRule": ".padd-lf-s {\r\n    padding-left: var(--space-3);\r\n}",
+      "cssRule": "padding-left: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -258,7 +258,7 @@
       "properties": [
         "padding-left"
       ],
-      "cssRule": ".padd-lf {\r\n    padding-left: var(--space-6);\r\n}",
+      "cssRule": "padding-left: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -271,7 +271,7 @@
       "properties": [
         "padding-left"
       ],
-      "cssRule": ".padd-lf-l {\r\n    padding-left: var(--space-12);\r\n}",
+      "cssRule": "padding-left: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -284,7 +284,7 @@
       "properties": [
         "padding-left"
       ],
-      "cssRule": ".padd-lf-xl {\r\n    padding-left: var(--space-16);\r\n}",
+      "cssRule": "padding-left: var(--space-16)",
       "responsive": false,
       "description": ""
     },
@@ -297,7 +297,7 @@
       "properties": [
         "padding-right"
       ],
-      "cssRule": ".padd-rg-xs {\r\n    padding-right: var(--space-1);\r\n}",
+      "cssRule": "padding-right: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -310,7 +310,7 @@
       "properties": [
         "padding-right"
       ],
-      "cssRule": ".padd-rg-s {\r\n    padding-right: var(--space-3);\r\n}",
+      "cssRule": "padding-right: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -323,7 +323,7 @@
       "properties": [
         "padding-right"
       ],
-      "cssRule": ".padd-rg {\r\n    padding-right: var(--space-6);\r\n}",
+      "cssRule": "padding-right: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -336,7 +336,7 @@
       "properties": [
         "padding-right"
       ],
-      "cssRule": ".padd-rg-l {\r\n    padding-right: var(--space-12);\r\n}",
+      "cssRule": "padding-right: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -349,7 +349,7 @@
       "properties": [
         "padding-right"
       ],
-      "cssRule": ".padd-rg-xl {\r\n    padding-right: var(--space-16);\r\n}",
+      "cssRule": "padding-right: var(--space-16)",
       "responsive": true,
       "description": ""
     },
@@ -362,7 +362,7 @@
       "properties": [
         "padding-top"
       ],
-      "cssRule": ".padd-t-xs {\r\n    padding-top: var(--space-1);\r\n}",
+      "cssRule": "padding-top: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -375,7 +375,7 @@
       "properties": [
         "padding-top"
       ],
-      "cssRule": ".padd-t-s {\r\n    padding-top: var(--space-3);\r\n}",
+      "cssRule": "padding-top: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -388,7 +388,7 @@
       "properties": [
         "padding-top"
       ],
-      "cssRule": ".padd-t {\r\n    padding-top: var(--space-6);\r\n}",
+      "cssRule": "padding-top: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -401,7 +401,7 @@
       "properties": [
         "padding-top"
       ],
-      "cssRule": ".padd-t-l {\r\n    padding-top: var(--space-12);\r\n}",
+      "cssRule": "padding-top: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -414,7 +414,7 @@
       "properties": [
         "padding-top"
       ],
-      "cssRule": ".padd-t-xl {\r\n    padding-top: var(--space-16);\r\n}",
+      "cssRule": "padding-top: var(--space-16)",
       "responsive": true,
       "description": ""
     },
@@ -427,7 +427,7 @@
       "properties": [
         "padding-bottom"
       ],
-      "cssRule": ".padd-b-xs {\r\n    padding-bottom: var(--space-1);\r\n}",
+      "cssRule": "padding-bottom: var(--space-1)",
       "responsive": true,
       "description": ""
     },
@@ -440,7 +440,7 @@
       "properties": [
         "padding-bottom"
       ],
-      "cssRule": ".padd-b-s {\r\n    padding-bottom: var(--space-3);\r\n}",
+      "cssRule": "padding-bottom: var(--space-3)",
       "responsive": true,
       "description": ""
     },
@@ -453,7 +453,7 @@
       "properties": [
         "padding-bottom"
       ],
-      "cssRule": ".padd-b {\r\n    padding-bottom: var(--space-6);\r\n}",
+      "cssRule": "padding-bottom: var(--space-6)",
       "responsive": true,
       "description": ""
     },
@@ -466,7 +466,7 @@
       "properties": [
         "padding-bottom"
       ],
-      "cssRule": ".padd-b-l {\r\n    padding-bottom: var(--space-12);\r\n}",
+      "cssRule": "padding-bottom: var(--space-12)",
       "responsive": true,
       "description": ""
     },
@@ -479,7 +479,7 @@
       "properties": [
         "padding-bottom"
       ],
-      "cssRule": ".padd-b-xl {\r\n    padding-bottom: var(--space-16);\r\n}",
+      "cssRule": "padding-bottom: var(--space-16)",
       "responsive": true,
       "description": ""
     }

@@ -61,7 +61,7 @@ h6: var(--font-size-base)       /* 16px fixed */
 ```css
 .font-xs            /* 70% of current size */
 .font-s             /* 85% of current size */
-.font-lg            /* 115% of current size */
+.font-l           /* 115% of current size */
 .font-xl            /* 130% of current size */
 .font-xxl           /* 200% of current size */
 ```

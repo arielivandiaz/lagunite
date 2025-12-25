@@ -1,0 +1,60 @@
+folder: 05-atoms
+file: 04-lists.css
+lastUpdated: 2025-12-14
+hasResponsive: false
+totalSelectors: 6
+content[6]:
+  - type: selector
+    selectorType: pseudo
+    selector: "ul.alt li:nth-child(2n)"
+    id: #05-04-01
+    category: null
+    properties[1]: background-color
+    cssRule: "background-color: rgba(36, 118, 255, 0.1)"
+    responsive: false
+    description: Lists Base Styles
+  - type: selector
+    selectorType: pseudo
+    selector: "ol.alt li:nth-child(2n)"
+    id: #05-04-01
+    category: null
+    properties[1]: background-color
+    cssRule: "background-color: rgba(36, 118, 255, 0.1)"
+    responsive: false
+    description: Lists Base Styles
+  - type: selector
+    selectorType: complex
+    selector: ul.bordered
+    id: #05-04-01
+    category: null
+    properties[1]: border
+    cssRule: "border: none"
+    responsive: false
+    description: Lists Base Styles
+  - type: selector
+    selectorType: complex
+    selector: ol.bordered
+    id: #05-04-01
+    category: null
+    properties[1]: border
+    cssRule: "border: none"
+    responsive: false
+    description: Lists Base Styles
+  - type: selector
+    selectorType: pseudo
+    selector: "ol.bordered li:not(:last-child)"
+    id: #05-04-01
+    category: null
+    properties[1]: border-bottom
+    cssRule: "border-bottom: 1px solid var(--color-primary)"
+    responsive: false
+    description: Lists Base Styles
+  - type: selector
+    selectorType: pseudo
+    selector: "ul.bordered li:not(:last-child)"
+    id: #05-04-01
+    category: null
+    properties[1]: border-bottom
+    cssRule: "border-bottom: 1px solid var(--color-primary)"
+    responsive: false
+    description: Lists Base Styles
