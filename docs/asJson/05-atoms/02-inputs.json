@@ -1,0 +1,2619 @@
+{
+  "folder": "05-atoms",
+  "file": "02-inputs.css",
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": false,
+  "totalSelectors": 167,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"text\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"number\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"email\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"password\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"search\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"tel\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"url\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-6) var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"text\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"number\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"email\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"password\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"search\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"tel\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night input[type=\"url\"]",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night textarea",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Input Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "text-align",
+        "cursor",
+        "line-height",
+        "margin",
+        "min-width",
+        "padding",
+        "font-family",
+        "font-size",
+        "transition",
+        "outline"
+      ],
+      "cssRule": "background: none\nborder: var(--border)\nborder-radius: var(--radius-md)\ncolor: var(--color-text-base)\ntext-align: center\ncursor: pointer\nline-height: 2\nmargin: 5px\nmin-width: 150px\npadding: var(--space-2) var(--space-3)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ntransition: all 0.2s ease\noutline: none",
+      "responsive": false,
+      "description": "Utility classes for manual application"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .input",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Utility classes for manual application"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "::placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color",
+        "opacity"
+      ],
+      "cssRule": "color: var(--color-text-base)\nopacity: 0.5",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":-ms-input-placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-base)",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "::-ms-input-placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-base)",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night ::placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color",
+        "opacity"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nopacity: 0.5",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night :-ms-input-placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night ::-ms-input-placeholder",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Placeholder styling"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"text\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"text\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"number\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"number\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"email\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"email\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"password\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"password\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"search\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"search\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"tel\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"tel\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"url\"]:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"url\"]:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "textarea:hover",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "textarea:focus",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input:disabled",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-disabled",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input:disabled",
+      "id": "#05-02-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Input States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "position",
+        "margin"
+      ],
+      "cssRule": "position: relative\nmargin: 20px 10px",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine input",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "border-width",
+        "text-align",
+        "padding",
+        "min-width"
+      ],
+      "cssRule": "border-radius: 0\nborder-width: 0 0 2px 0\ntext-align: left\npadding: 0 10px 0 30px\nmin-width: 120px",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine span",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "font-size",
+        "position",
+        "top"
+      ],
+      "cssRule": "font-size: 60%\nposition: absolute\ntop: -5px",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine .icon",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "margin-right"
+      ],
+      "cssRule": "margin-right: -30px",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"text\"]:hover",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"text\"]:focus",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"number\"]:hover",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"number\"]:focus",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"email\"]:hover",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".inputLine.alt input[type=\"email\"]:focus",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Input Line Variant (bottom border only)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"color\"]",
+      "id": "#05-02-04",
+      "category": null,
+      "properties": [
+        "padding",
+        "height",
+        "min-width",
+        "width",
+        "cursor"
+      ],
+      "cssRule": "padding: 0\nheight: 35px\nmin-width: 50px\nwidth: 50px\ncursor: pointer",
+      "responsive": false,
+      "description": "Color Input"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"color\"]:hover",
+      "id": "#05-02-04",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Color Input"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".textarea",
+      "id": "#05-02-05",
+      "category": null,
+      "properties": [
+        "display",
+        "width",
+        "min-height",
+        "resize"
+      ],
+      "cssRule": "display: block\nwidth: 100%\nmin-height: 6rem\nresize: vertical",
+      "responsive": false,
+      "description": "Textarea Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".textarea-no-resize",
+      "id": "#05-02-05",
+      "category": null,
+      "properties": [
+        "resize"
+      ],
+      "cssRule": "resize: none",
+      "responsive": false,
+      "description": "Textarea Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".textarea-resize-horizontal",
+      "id": "#05-02-05",
+      "category": null,
+      "properties": [
+        "resize"
+      ],
+      "cssRule": "resize: horizontal",
+      "responsive": false,
+      "description": "Textarea Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".textarea-resize-both",
+      "id": "#05-02-05",
+      "category": null,
+      "properties": [
+        "resize"
+      ],
+      "cssRule": "resize: both",
+      "responsive": false,
+      "description": "Textarea Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "appearance",
+        "outline",
+        "box-shadow",
+        "min-width",
+        "height",
+        "margin",
+        "padding",
+        "color",
+        "font-weight",
+        "cursor",
+        "background",
+        "border",
+        "border-radius",
+        "line-height",
+        "min-width",
+        "margin-right",
+        "transition"
+      ],
+      "cssRule": "appearance: none\noutline: 0\nbox-shadow: none\nmin-width: 220px\nheight: 100%\nmargin: 0\npadding: 6px 12px\ncolor: var(--color-text-base)\nfont-weight: 700\ncursor: pointer\nbackground: none\nborder: var(--border)\nborder-radius: var(--radius-md)\nline-height: 1\nmin-width: 100px\nmargin-right: 15px\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "appearance",
+        "outline",
+        "box-shadow",
+        "min-width",
+        "height",
+        "margin",
+        "padding",
+        "color",
+        "font-weight",
+        "cursor",
+        "background",
+        "border",
+        "border-radius",
+        "line-height",
+        "min-width",
+        "margin-right",
+        "transition"
+      ],
+      "cssRule": "appearance: none\noutline: 0\nbox-shadow: none\nmin-width: 220px\nheight: 100%\nmargin: 0\npadding: 6px 12px\ncolor: var(--color-text-base)\nfont-weight: 700\ncursor: pointer\nbackground: none\nborder: var(--border)\nborder-radius: var(--radius-md)\nline-height: 1\nmin-width: 100px\nmargin-right: 15px\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night select",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .select",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "select:hover",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "select:focus",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select:hover",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select:focus",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "color",
+        "font-weight"
+      ],
+      "cssRule": "box-shadow: 0 0 7px 1px var(--color-primary)\ncolor: var(--color-primary)\nfont-weight: 600",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-container",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "position",
+        "overflow",
+        "background",
+        "border-radius",
+        "margin",
+        "box-shadow"
+      ],
+      "cssRule": "position: relative\noverflow: hidden\nbackground: rgba(var(--color-primary-rgb), 0.2)\nborder-radius: var(--radius-md)\nmargin: 10px 20px\nbox-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.12)",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-container.alt",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "select::-ms-expand",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "Select Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-container::after",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "padding",
+        "background",
+        "color",
+        "pointer-events",
+        "transition"
+      ],
+      "cssRule": "content: \"\\25BC\"\nposition: absolute\ntop: 0\nright: 0\nbottom: 0\npadding: 3px 5px\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\npointer-events: none\ntransition: 0.5s all ease",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".select-container:hover::after",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "select option",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: #333\ncolor: #fff",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".alt select option",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: #fff\ncolor: #333",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "option.noselect",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "user-select",
+        "color"
+      ],
+      "cssRule": "user-select: none\ncolor: #333",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".alt .noselect",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "user-select",
+        "color"
+      ],
+      "cssRule": "user-select: none\ncolor: #fff",
+      "responsive": false,
+      "description": "Arrow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkboxContainer",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "cursor",
+        "user-select",
+        "margin",
+        "padding"
+      ],
+      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 30px 10px 10px\npadding: 5px 25px",
+      "responsive": false,
+      "description": "Checkbox Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "cursor",
+        "user-select",
+        "margin",
+        "padding"
+      ],
+      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 30px 10px 10px\npadding: 5px 25px",
+      "responsive": false,
+      "description": "Checkbox Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"checkbox\"]",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "position",
+        "opacity",
+        "cursor",
+        "height",
+        "width"
+      ],
+      "cssRule": "position: absolute\nopacity: 0\ncursor: pointer\nheight: 0\nwidth: 0",
+      "responsive": false,
+      "description": "Hide the browser's default checkbox"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "position",
+        "top",
+        "height",
+        "width",
+        "margin-left",
+        "border-radius",
+        "border",
+        "cursor"
+      ],
+      "cssRule": "position: absolute\ntop: 0\nheight: 25px\nwidth: 25px\nmargin-left: 25px\nborder-radius: 8px\nborder: 3px solid var(--color-primary)\ncursor: pointer",
+      "responsive": false,
+      "description": "Create a custom checkbox"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox:hover input ~ .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 8px 1px var(--color-primary)",
+      "responsive": false,
+      "description": "On mouse-over, add a shadow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkboxContainer:hover input ~ .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 8px 1px var(--color-primary)",
+      "responsive": false,
+      "description": "On mouse-over, add a shadow"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox input:checked ~ .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "background-color",
+        "box-shadow",
+        "border-radius"
+      ],
+      "cssRule": "background-color: var(--color-primary)\nbox-shadow: 0 0 8px 1px var(--color-primary)\nborder-radius: 6px",
+      "responsive": false,
+      "description": "When the checkbox is checked, add primary background"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkboxContainer input:checked ~ .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "background-color",
+        "box-shadow",
+        "border-radius"
+      ],
+      "cssRule": "background-color: var(--color-primary)\nbox-shadow: 0 0 8px 1px var(--color-primary)\nborder-radius: 6px",
+      "responsive": false,
+      "description": "When the checkbox is checked, add primary background"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "display"
+      ],
+      "cssRule": "content: \"\"\nposition: absolute\ndisplay: none",
+      "responsive": false,
+      "description": "Create the checkmark/indicator (hidden when not checked)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox input:checked ~ .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: block",
+      "responsive": false,
+      "description": "Show the checkmark when checked"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkboxContainer input:checked ~ .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: block",
+      "responsive": false,
+      "description": "Show the checkmark when checked"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "border",
+        "border-width",
+        "transform"
+      ],
+      "cssRule": "left: 8px\ntop: -10px\nwidth: 10px\nheight: 28px\nborder: solid white\nborder-width: 0 5px 5px 0\ntransform: rotate(45deg)",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkboxContainer .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "border",
+        "border-width",
+        "transform"
+      ],
+      "cssRule": "left: 8px\ntop: -10px\nwidth: 10px\nheight: 28px\nborder: solid white\nborder-width: 0 5px 5px 0\ntransform: rotate(45deg)",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox-s .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "height",
+        "width",
+        "margin-left"
+      ],
+      "cssRule": "height: 20px\nwidth: 20px\nmargin-left: 20px",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox-s .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "left",
+        "top",
+        "width",
+        "height"
+      ],
+      "cssRule": "left: 6px\ntop: -8px\nwidth: 8px\nheight: 22px",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox-l .checkmark",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "height",
+        "width",
+        "margin-left"
+      ],
+      "cssRule": "height: 30px\nwidth: 30px\nmargin-left: 30px",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".checkbox-l .checkmark:after",
+      "id": "#05-02-07",
+      "category": null,
+      "properties": [
+        "left",
+        "top",
+        "width",
+        "height"
+      ],
+      "cssRule": "left: 10px\ntop: -12px\nwidth: 12px\nheight: 34px",
+      "responsive": false,
+      "description": "Style the checkmark/indicator"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "box-sizing"
+      ],
+      "cssRule": "box-sizing: border-box",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:after::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:before::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:after::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:before::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn::-moz-selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:after::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:before::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:after::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle *:before::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn::selection",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "outline",
+        "display",
+        "width",
+        "height",
+        "position",
+        "cursor",
+        "user-select"
+      ],
+      "cssRule": "outline: 0\ndisplay: block\nwidth: 32px\nheight: 18px\nposition: relative\ncursor: pointer\nuser-select: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn.size-s",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 25px\nheight: 15px",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn.size-l",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 48px\nheight: 26px",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "content",
+        "width",
+        "height"
+      ],
+      "cssRule": "position: relative\ndisplay: block\ncontent: \"\"\nwidth: 50%\nheight: 100%",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn:before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "content",
+        "width",
+        "height"
+      ],
+      "cssRule": "position: relative\ndisplay: block\ncontent: \"\"\nwidth: 50%\nheight: 100%",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 0",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn:before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:checked + .toggle-btn:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 50%",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background",
+        "border-radius",
+        "padding",
+        "transition"
+      ],
+      "cssRule": "background: #ccc\nborder-radius: 2em\npadding: 2px\ntransition: all 0.4s ease",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle + .toggle-btn:after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "background",
+        "transition"
+      ],
+      "cssRule": "border-radius: 50%\nbackground: #fff\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".toggle:checked + .toggle-btn",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary)\nbox-shadow: 0 0 10px 3px var(--color-primary)",
+      "responsive": false,
+      "description": "Toggle Button (Switch) Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "position",
+        "cursor",
+        "user-select"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\nposition: relative\ncursor: pointer\nuser-select: none",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch input[type=\"checkbox\"]",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "position",
+        "opacity",
+        "width",
+        "height"
+      ],
+      "cssRule": "position: absolute\nopacity: 0\nwidth: 0\nheight: 0",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch input[type=\"checkbox\"] + span::before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "content",
+        "display",
+        "width",
+        "height",
+        "margin-right",
+        "border-radius",
+        "background",
+        "transition",
+        "flex-shrink",
+        "position",
+        "padding"
+      ],
+      "cssRule": "content: \"\"\ndisplay: inline-block\nwidth: 32px\nheight: 18px\nmargin-right: var(--space-2)\nborder-radius: 2em\nbackground: #ccc\ntransition: all 0.4s ease\nflex-shrink: 0\nposition: relative\npadding: 2px",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch input[type=\"checkbox\"] + span::after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "left",
+        "top",
+        "transform",
+        "width",
+        "height",
+        "border-radius",
+        "background",
+        "transition"
+      ],
+      "cssRule": "content: \"\"\nposition: absolute\nleft: 2px\ntop: 50%\ntransform: translateY(-50%)\nwidth: 14px\nheight: 14px\nborder-radius: 50%\nbackground: #fff\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch input[type=\"checkbox\"]:checked + span::before",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary)\nbox-shadow: 0 0 10px 3px var(--color-primary)",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".switch input[type=\"checkbox\"]:checked + span::after",
+      "id": "#05-02-08",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 18px",
+      "responsive": false,
+      "description": "Switch class alias for consistency"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-group",
+      "id": "#05-02-09",
+      "category": null,
+      "properties": [
+        "border-color",
+        "border-style",
+        "width",
+        "border-width",
+        "left",
+        "right",
+        "margin",
+        "margin-top",
+        "margin-bottom",
+        "border-radius",
+        "padding"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nborder-style: solid\nwidth: fit-content\nborder-width: 2px\nleft: 0\nright: 0\nmargin: auto\nmargin-top: 10px\nmargin-bottom: 10px\nborder-radius: 30px\npadding: 3px 0px",
+      "responsive": false,
+      "description": "Radio Group Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-group input",
+      "id": "#05-02-09",
+      "category": null,
+      "properties": [
+        "position",
+        "clip-path",
+        "height",
+        "width",
+        "border",
+        "overflow"
+      ],
+      "cssRule": "position: absolute !important\nclip-path: rect(0, 0, 0, 0)\nheight: 0px\nwidth: 0px\nborder: 0\noverflow: hidden",
+      "responsive": false,
+      "description": "Radio Group Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-group label",
+      "id": "#05-02-09",
+      "category": null,
+      "properties": [
+        "cursor",
+        "text-align",
+        "padding",
+        "background",
+        "color"
+      ],
+      "cssRule": "cursor: pointer\ntext-align: center\npadding: 5px 12px\nbackground: none\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "Radio Group Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-group input:checked + label",
+      "id": "#05-02-09",
+      "category": null,
+      "properties": [
+        "background-color",
+        "background",
+        "color",
+        "box-shadow",
+        "border-radius",
+        "padding"
+      ],
+      "cssRule": "background-color: var(--color-primary)\nbackground: var(--bg-primary)\ncolor: var(--color-text-alt)\nbox-shadow: 0 0px 5px 0px var(--color-primary)\nborder-radius: 15px\npadding: 8px 15px",
+      "responsive": false,
+      "description": "Radio Group Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-btns",
+      "id": "#05-02-10",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": "margin: 25px 0",
+      "responsive": false,
+      "description": "Radio Buttons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-btns input",
+      "id": "#05-02-10",
+      "category": null,
+      "properties": [
+        "position",
+        "clip-path",
+        "height",
+        "width",
+        "border",
+        "overflow"
+      ],
+      "cssRule": "position: absolute !important\nclip-path: rect(0, 0, 0, 0)\nheight: 1px\nwidth: 1px\nborder: 0\noverflow: hidden",
+      "responsive": false,
+      "description": "Radio Buttons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-btns label",
+      "id": "#05-02-10",
+      "category": null,
+      "properties": [
+        "cursor",
+        "text-align",
+        "padding",
+        "background",
+        "color",
+        "border-color",
+        "border-style",
+        "border-width",
+        "border-radius",
+        "margin"
+      ],
+      "cssRule": "cursor: pointer\ntext-align: center\npadding: 5px 12px\nbackground: none\ncolor: var(--color-primary)\nborder-color: var(--color-primary)\nborder-style: solid\nborder-width: 2px\nborder-radius: 15px\nmargin: 0 5px",
+      "responsive": false,
+      "description": "Radio Buttons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-btns input:checked + label",
+      "id": "#05-02-10",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "padding",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--bg-primary)\nborder: none\npadding: 7px 15px\ncolor: var(--color-text-alt)\nbox-shadow: 0 0px 5px 0px var(--color-primary)",
+      "responsive": false,
+      "description": "Radio Buttons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-btns label:hover",
+      "id": "#05-02-10",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0px 15px 0px var(--color-primary)",
+      "responsive": false,
+      "description": "Radio Buttons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": "margin: 25px 0",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs input",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "position",
+        "clip-path",
+        "height",
+        "width",
+        "border",
+        "overflow"
+      ],
+      "cssRule": "position: absolute !important\nclip-path: rect(0, 0, 0, 0)\nheight: 1px\nwidth: 1px\nborder: 0\noverflow: hidden",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs label",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "cursor",
+        "text-align",
+        "background",
+        "color",
+        "margin",
+        "display"
+      ],
+      "cssRule": "cursor: pointer\ntext-align: center\nbackground: none\ncolor: var(--color-primary)\nmargin: 0 15px\ndisplay: inline-block",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs label div",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--bg-primary)",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs label:hover div",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0px 15px 0px var(--color-primary)",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".radio-divs input:checked + label div",
+      "id": "#05-02-11",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "transform",
+        "margin"
+      ],
+      "cssRule": "box-shadow: 0 0px 15px 0px var(--color-primary)\ntransform: scale(1.2)\nmargin: 10px 0",
+      "responsive": false,
+      "description": "Radio Divs"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "input[type=\"range\"]:hover",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: none",
+      "responsive": false,
+      "description": "Range Slider Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "display",
+        "width",
+        "height",
+        "background",
+        "cursor",
+        "appearance"
+      ],
+      "cssRule": "display: block\nwidth: 100%\nheight: 0.5rem\nbackground: transparent\ncursor: pointer\nappearance: none",
+      "responsive": false,
+      "description": "Range Slider Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range::-webkit-slider-runnable-track",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "background",
+        "border-radius",
+        "transition"
+      ],
+      "cssRule": "width: 100%\nheight: 0.5rem\nbackground: var(--gray-200)\nborder-radius: var(--radius-full)\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Track"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range::-moz-range-track",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "background",
+        "border-radius",
+        "transition"
+      ],
+      "cssRule": "width: 100%\nheight: 0.5rem\nbackground: var(--gray-200)\nborder-radius: var(--radius-full)\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Track"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range::-webkit-slider-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "appearance",
+        "width",
+        "height",
+        "border-radius",
+        "background",
+        "border",
+        "box-shadow",
+        "cursor",
+        "margin-top",
+        "transition"
+      ],
+      "cssRule": "appearance: none\nwidth: 1.25rem\nheight: 1.25rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 2px solid var(--color-bg)\nbox-shadow: var(--shadow-md)\ncursor: pointer\nmargin-top: -0.375rem\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Thumb"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range::-moz-range-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-radius",
+        "background",
+        "border",
+        "box-shadow",
+        "cursor",
+        "transition"
+      ],
+      "cssRule": "width: 1.25rem\nheight: 1.25rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 2px solid var(--color-bg)\nbox-shadow: var(--shadow-md)\ncursor: pointer\ntransition: all 0.2s ease",
+      "responsive": false,
+      "description": "Thumb"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range:hover::-webkit-slider-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: scale(1.1)",
+      "responsive": false,
+      "description": "Hover state"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range:hover::-moz-range-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: scale(1.1)",
+      "responsive": false,
+      "description": "Hover state"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range:focus",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "outline"
+      ],
+      "cssRule": "outline: none",
+      "responsive": false,
+      "description": "Focus state"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range:focus::-webkit-slider-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\r\n    var(--shadow-md),\r\n    0 0 0 3px hsla(210, 90%, 50%, 0.1)",
+      "responsive": false,
+      "description": "Focus state"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range:focus::-moz-range-thumb",
+      "id": "#05-02-12",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\r\n    var(--shadow-md),\r\n    0 0 0 3px hsla(210, 90%, 50%, 0.1)",
+      "responsive": false,
+      "description": "Focus state"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".file-btn",
+      "id": "#05-02-13",
+      "category": null,
+      "properties": [
+        "box-shadow",
+        "border-radius",
+        "border",
+        "background",
+        "cursor",
+        "font-family",
+        "font-weight",
+        "letter-spacing",
+        "margin",
+        "color",
+        "padding",
+        "min-width",
+        "width"
+      ],
+      "cssRule": "box-shadow: none\nborder-radius: 8px\nborder: 2px solid transparent\nbackground: var(--color-primary)\ncursor: pointer\nfont-family: var(--font-headers)\nfont-weight: 900\nletter-spacing: 1px\nmargin: 1vh 1vw\ncolor: #fff\npadding: 10px 1.2vw 7px 1.2vw\nmin-width: var(--space-32)\nwidth: min-content",
+      "responsive": false,
+      "description": "File Input Button"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".file-btn input[type=\"file\"]",
+      "id": "#05-02-13",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "File Input Button"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".file-btn span",
+      "id": "#05-02-13",
+      "category": null,
+      "properties": [
+        "display",
+        "color"
+      ],
+      "cssRule": "display: block\ncolor: #777",
+      "responsive": false,
+      "description": "File Input Button"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-container",
+      "id": "#05-02-14",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "justify-content",
+        "align-items",
+        "flex-wrap",
+        "margin"
+      ],
+      "cssRule": "display: flex\nflex-direction: row\njustify-content: center\nalign-items: center\nflex-wrap: wrap\nmargin: 10px 5px",
+      "responsive": false,
+      "description": "Input Container"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-container span",
+      "id": "#05-02-14",
+      "category": null,
+      "properties": [
+        "max-width",
+        "margin",
+        "overflow-wrap",
+        "word-wrap",
+        "white-space"
+      ],
+      "cssRule": "max-width: 120px\nmargin: 10px 10px 10px 0\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "responsive": false,
+      "description": "Input Container"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range-container",
+      "id": "#05-02-15",
+      "category": null,
+      "properties": [
+        "display",
+        "justify-content",
+        "align-items"
+      ],
+      "cssRule": "display: flex\njustify-content: center\nalign-items: center",
+      "responsive": false,
+      "description": "Range Container"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".range-container input[type=\"number\"]",
+      "id": "#05-02-15",
+      "category": null,
+      "properties": [
+        "min-width",
+        "text-align"
+      ],
+      "cssRule": "min-width: 0 !important\ntext-align: center",
+      "responsive": false,
+      "description": "Range Container"
+    }
+  ]
+}

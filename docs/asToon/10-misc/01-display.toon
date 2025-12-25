@@ -1,114 +1,114 @@
 folder: 10-misc
 file: 01-display.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
 totalSelectors: 12
 content[12]:
   - type: selector
     selectorType: class
     selector: .d-block
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-block { display: block; }"
+    cssRule: "display: block"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .d-inline
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-inline { display: inline; }"
+    cssRule: "display: inline"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .d-inline-block
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-inline-block { display: inline-block; }"
+    cssRule: "display: inline-block"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .d-flex
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-flex { display: flex; }"
+    cssRule: "display: flex"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .d-grid
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-grid { display: grid; }"
+    cssRule: "display: grid"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .d-none
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: display
-    cssRule: ".d-none { display: none; }"
+    cssRule: "display: none"
     responsive: true
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .visibility-visible
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".visibility-visible { visibility: visible; }"
+    cssRule: "visibility: visible"
     responsive: false
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .visibility-invisible
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".visibility-invisible { visibility: hidden; }"
+    cssRule: "visibility: hidden"
     responsive: false
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .visibility-collapse
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".visibility-collapse { visibility: collapse; }"
+    cssRule: "visibility: collapse"
     responsive: false
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .visible
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".visible { visibility: visible; }"
+    cssRule: "visibility: visible"
     responsive: false
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .invisible
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".invisible { visibility: hidden; }"
+    cssRule: "visibility: hidden"
     responsive: false
-    description: ""
+    description: ** Display Utilities **
   - type: selector
     selectorType: class
     selector: .collapse
-    id: null
+    id: #10-01-XX
     category: null
     properties[1]: visibility
-    cssRule: ".collapse { visibility: collapse; }"
+    cssRule: "visibility: collapse"
     responsive: false
-    description: ""
+    description: ** Display Utilities **

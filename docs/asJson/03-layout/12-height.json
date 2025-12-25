@@ -1,0 +1,1095 @@
+{
+  "folder": "03-layout",
+  "file": "12-height.css",
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": true,
+  "totalSelectors": 82,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp10",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 10%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp15",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 15%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp20",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 20%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp25",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 25%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp30",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 30%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp35",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 35%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp40",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 40%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp45",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 45%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp50",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 50%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp55",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 55%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp60",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 60%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp65",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 65%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp70",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 70%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp75",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 75%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp80",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 80%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp85",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 85%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp90",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 90%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp95",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 95%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhp100",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 100%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp10",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 10%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp15",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 15%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp20",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 20%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp25",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 25%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp30",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 30%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp35",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 35%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp40",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 40%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp45",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 45%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp50",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 50%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp55",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 55%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp60",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 60%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp65",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 65%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp70",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 70%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp75",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 75%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp80",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 80%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp85",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 85%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp90",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 90%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp95",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 95%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhp100",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: 100%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp5",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 5%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp10",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 10%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp15",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 15%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp20",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 20%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp25",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 25%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp30",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 30%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp35",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 35%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp40",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 40%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp45",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 45%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp50",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 50%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp55",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 55%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp60",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 60%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp65",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 65%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp70",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 70%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp75",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 75%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp80",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 80%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp85",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 85%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp90",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 90%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp95",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 95%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp100",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 100%",
+      "responsive": true,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp-1\\/3",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 33.333333%",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp-2\\/3",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 66.666667%",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp-1\\/6",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 16.666667%",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hp-5\\/6",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: 83.333333%",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh5",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 5vh\nheight: 5dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh10",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 10vh\nheight: 10dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh15",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 15vh\nheight: 15dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh20",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 20vh\nheight: 20dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh25",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 25vh\nheight: 25dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh30",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 30vh\nheight: 30dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh35",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 35vh\nheight: 35dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh40",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 40vh\nheight: 40dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh45",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 45vh\nheight: 45dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh50",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 50vh\nheight: 50dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh55",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 55vh\nheight: 55dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh60",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 60vh\nheight: 60dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh65",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 65vh\nheight: 65dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh70",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 70vh\nheight: 70dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh75",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 75vh\nheight: 75dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh80",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 80vh\nheight: 80dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh85",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 85vh\nheight: 85dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh90",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 90vh\nheight: 90dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh95",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 95vh\nheight: 95dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".vh100",
+      "id": "#03-12-XX",
+      "category": null,
+      "properties": [
+        "height",
+        "height"
+      ],
+      "cssRule": "height: 100vh\nheight: 100dvh",
+      "responsive": true,
+      "description": "** Height Fractions **"
+    }
+  ]
+}

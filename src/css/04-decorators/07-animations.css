@@ -59,6 +59,30 @@
   animation-timing-function: ease-in-out;
 }
 
+.animate-fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.animate-fade-out {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.animate-slide-in {
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.animate-slide-out {
+  animation-name: slide-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
 /*** Animation Duration Helpers ***/
 .animate-duration-1s { animation-duration: 1s; }
 .animate-duration-2s { animation-duration: 2s; }
@@ -89,6 +113,30 @@
     animation-timing-function: ease-in-out;
   }
 
+  .xanimate-fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .xanimate-fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
+  .xanimate-slide-in {
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .xanimate-slide-out {
+    animation-name: slide-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
   .xanimate-duration-1s { animation-duration: 1s; }
   .xanimate-duration-2s { animation-duration: 2s; }
 
@@ -116,6 +164,30 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+  }
+
+  .danimate-fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .danimate-fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
+  .danimate-slide-in {
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .danimate-slide-out {
+    animation-name: slide-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
   }
 
   .danimate-duration-1s { animation-duration: 1s; }

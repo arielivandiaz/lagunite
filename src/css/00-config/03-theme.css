@@ -12,24 +12,32 @@
   --color-primary: #2476ff;
   --color-primary-light: #5e9aff;
   --color-primary-dark: #0965ff;
+  --color-primary-rgb: 36, 118, 255;
 
   --color-secondary: #747474;
   --color-secondary-light: #333;
   --color-secondary-dark: #292929;
+  --color-secondary-rgb: 116, 116, 116;
+
+
 
   --color-tertiary: #f97316;
   --color-tertiary-light: #ffa261;
   --color-tertiary-dark: #c95300;
+  --color-tertiary-rgb: 249, 115, 22;
 
   --color-almost-black: #333;
   --color-almost-white: #fcfcfc;
 
   --color-success: #009112;
-  --color-success-light: #98FF98;
+  --color-success-light: #98ff98;
+  --color-success-rgb: 0, 145, 18;
   --color-warning: #ff9017;
-  --color-warning-light: #FFEAD5;
+  --color-warning-light: #ffead5;
+  --color-warning-rgb: 255, 144, 23;
   --color-error: #fa3434;
-  --color-error-light: #FDD0D0;
+  --color-error-light: #fdd0d0;
+  --color-error-rgb: 250, 52, 52;
 
   /*== Text Colors ==*/
   --color-text-base: #333;
@@ -46,7 +54,6 @@
   --color-border: var(--gray-200);
   --color-border-hover: var(--gray-300);
 
-
   /*== Gradients ==*/
   --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
   --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);
@@ -57,7 +64,7 @@
     rgba(36, 118, 255, 1) 50%,
     rgba(0, 90, 238, 1) 100%
   );
-  --background-gradient-5: radial-gradient(
+  --bg-gradient-5: radial-gradient(
     circle,
     rgba(94, 154, 255, 1) 0%,
     rgba(36, 118, 255, 1) 100%
@@ -74,7 +81,7 @@
     #fff 20px,
     #ccc 32px
   );
-  --background-gradient-8: repeating-linear-gradient(
+  --bg-gradient-8: repeating-linear-gradient(
     45deg,
     #5e9aff,
     #0965ff 20px,
@@ -87,21 +94,11 @@
   --border-light: 2px solid #5e9aff;
   --border-dark: 2px solid #0965ff;
 
-  --border-sm: 1px solid #2476ff;
-  --border-sm-light: 1px solid #5e9aff;
-  --border-sm-dark: 1px solid #0965ff;
-
-  --border-lg: 4px solid #2476ff;
-  --border-lg-light: 4px solid #5e9aff;
-  --border-lg-dark: 4px solid #0965ff;
-
-  /*== Shadows (Composable) ==*/
-  --shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);
-  --shadow-md:
-    0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
-  --shadow-lg:
-    0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1);
-  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05);
+  /*== Shadows ==*/
+  --shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05); /* Subtle */
+  --shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1); /* Medium */
+  --shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1); /* Large */
+  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05); /* Inner */
 }
 
 /* @ID: #00-03-02 */
@@ -111,25 +108,14 @@
   /*== Background Colors ==*/
   --color-bg: #1a1a1a;
   --color-bg-alt: #f5f5f5;
-  --color-bg-subtle: #2d2d2d;
-  --color-bg-hover: #3a3a3a;
 
   /*== Text Colors ==*/
-  --color-text-base: #e5e5e5;
-  --color-text-alt: #1a1a1a;
-  --color-text-muted: #a0a0a0;
+  --color-text-base: #fff;
+  --color-text-alt: #333;
 
   /*== Border Colors ==*/
   --color-border: var(--gray-700);
   --color-border-hover: var(--gray-600);
-
-  /*== Shadows (darker for dark mode) ==*/
-  --shadow-sm: 0 1px 2px 0 hsla(0, 0%, 0%, 0.3);
-  --shadow-md:
-    0 4px 6px -1px hsla(0, 0%, 0%, 0.5), 0 2px 4px -2px hsla(0, 0%, 0%, 0.4);
-  --shadow-lg:
-    0 10px 15px -3px hsla(0, 0%, 0%, 0.6), 0 4px 6px -4px hsla(0, 0%, 0%, 0.5);
-  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.3);
 }
 
 /* @ID: #00-03-03 */

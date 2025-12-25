@@ -1,42 +1,42 @@
 folder: 10-misc
 file: display.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
 totalSelectors: 4
 content[4]:
   - type: selector
     selectorType: class
     selector: .display-i
-    id: null
+    id: #090
     category: Display
     properties[1]: display
-    cssRule: ".display-i {\r\n    display: inline;\r\n}"
+    cssRule: "display: inline"
     responsive: true
     description: Display
   - type: selector
     selectorType: class
     selector: .display-ib
-    id: null
+    id: #090
     category: Display
     properties[1]: display
-    cssRule: ".display-ib {\r\n    display: inline-block;\r\n}"
+    cssRule: "display: inline-block"
     responsive: true
     description: Display
   - type: selector
     selectorType: class
     selector: .display-f
-    id: null
+    id: #090
     category: Display
     properties[1]: display
-    cssRule: ".display-f {\r\n    display: flex;\r\n}"
+    cssRule: "display: flex"
     responsive: true
     description: Display
   - type: selector
     selectorType: class
     selector: .hidden
-    id: null
+    id: #090
     category: Display
     properties[1]: display
-    cssRule: ".hidden {\r\n    display: none !important;\r\n}"
+    cssRule: "display: none !important"
     responsive: true
     description: Display

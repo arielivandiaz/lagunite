@@ -152,20 +152,6 @@ Media queries are grouped with their base styles—not scattered at the end of f
 
 ### **Complete Utility System**
 - ✅ Typography & Text utilities
-- ✅ Color system (text & backgrounds)
-- ✅ Layout utilities (Flexbox & Grid)
-- ✅ Spacing (margins & padding)
-- ✅ Sizing utilities (width & height)
-- ✅ Container utilities
-- ✅ Border utilities (atomic & shortcuts)
-- ⏳ Shadows & Effects (coming soon)
-- ⏳ Animations & Transitions (coming soon)
-
-### **Robust Design System**
-- Semantic color tokens with HSL palette
-- Consistent spacing scale
-- Flexible typography system
-- Border radius & width tokens
 - Responsive breakpoints
 
 ---

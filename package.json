@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
@@ -21,13 +21,15 @@
     "dev": "vite",
     "prebuild": "node scripts/generate-imports.js",
     "build:dev": "set NODE_ENV=development && vite build --mode development",
-    "build": "vite build",
+    "build": "npm run increment-build && vite build",
     "preview": "vite preview",
     "lint:css": "stylelint \"src/**/*.css\"",
     "format": "prettier --write \"src/**/*.{js,css,md} *.js\"",
-    "merge-docs": "node scripts/merge-docs.js",
+    "docs": "npm run docs:generate && npm run docs:merge",
     "docs:generate": "node scripts/generate-css-docs.js",
-    "docs:watch": "nodemon --watch src/css --ext css --exec npm run docs:generate"
+    "docs:merge": "node scripts/merge-docs.js",
+    "docs:watch": "nodemon --watch src/css --ext css --exec npm run docs:generate",
+    "increment-build": "node scripts/increment-dev-compile-count.js"
   },
   "devDependencies": {
     "@toon-format/toon": "^1.3.0",

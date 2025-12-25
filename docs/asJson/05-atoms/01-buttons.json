@@ -1,0 +1,1171 @@
+{
+  "folder": "05-atoms",
+  "file": "01-buttons.css",
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": false,
+  "totalSelectors": 81,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "margin",
+        "padding",
+        "min-width",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "text-align",
+        "background",
+        "color",
+        "border",
+        "border-radius",
+        "cursor",
+        "transition",
+        "user-select",
+        "white-space"
+      ],
+      "cssRule": "/* Layout */\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nmargin: 1vh 1vw\n/* Sizing */\npadding: var(--space-3) var(--space-6)\nmin-width: var(--space-16)\n/* Typography */\nfont-family: var(--font-headers)\nfont-size: var(--font-size-base)\nfont-weight: var(--font-weight-medium)\nline-height: 1.25\ntext-align: center\n/* Appearance */\nbackground: var(--bg-primary)\ncolor: var(--color-text-alt)\nborder: none\nborder-radius: var(--radius-md)\n/* Interaction */\ncursor: pointer\ntransition: all 0.2s ease\nuser-select: none\nwhite-space: nowrap",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .btn",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border",
+        "min-width",
+        "padding"
+      ],
+      "cssRule": "background: none\ncolor: var(--color-primary) !important\nborder: var(--border)\nmin-width: var(--space-16)\n/* Quitar la compensación incorrecta */\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)\n/* Restar grosor del borde */",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-secondary)\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "color",
+        "padding"
+      ],
+      "cssRule": "background: none\nborder: 2px solid var(--color-secondary)\ncolor: var(--color-secondary) !important\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-tertiary)\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "color",
+        "padding"
+      ],
+      "cssRule": "background: none\nborder: 2px solid var(--color-tertiary)\ncolor: var(--color-tertiary) !important\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-success-light)\ncolor: var(--color-success) !important",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "color",
+        "padding"
+      ],
+      "cssRule": "background: none\nborder: 2px solid var(--color-success)\ncolor: var(--color-success) !important\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-warning-light)\ncolor: var(--color-warning) !important",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "color",
+        "padding"
+      ],
+      "cssRule": "background: none\nborder: 2px solid var(--color-warning)\ncolor: var(--color-warning) !important\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-error-light)\ncolor: var(--color-error) !important",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.alt",
+      "id": "#05-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "color",
+        "padding"
+      ],
+      "cssRule": "background: none\nborder: 2px solid var(--color-error)\ncolor: var(--color-error) !important\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Base Styles"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.icon",
+      "id": "#05-01-02",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-width",
+        "width",
+        "aspect-ratio"
+      ],
+      "cssRule": "padding: var(--space-1)\nmin-width: 2.5rem\nwidth: 2.5rem\naspect-ratio: 1",
+      "responsive": false,
+      "description": "Button Icons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.icon-s",
+      "id": "#05-01-02",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-width",
+        "width",
+        "aspect-ratio"
+      ],
+      "cssRule": "padding: calc(var(--space-1) * 0.5)\nmin-width: 2rem\nwidth: 2rem\naspect-ratio: 1",
+      "responsive": false,
+      "description": "Button Icons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.icon-l",
+      "id": "#05-01-02",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-width",
+        "width",
+        "aspect-ratio",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-2)\nmin-width: 3rem\nwidth: 3rem\naspect-ratio: 1\nfont-size: var(--font-size0x-l)",
+      "responsive": false,
+      "description": "Button Icons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn .icon-lf",
+      "id": "#05-01-02",
+      "category": null,
+      "properties": [
+        "display",
+        "margin-right"
+      ],
+      "cssRule": "display: inline-flex\nmargin-right: var(--space-2)",
+      "responsive": false,
+      "description": "Button Icons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn .icon-rg",
+      "id": "#05-01-02",
+      "category": null,
+      "properties": [
+        "display",
+        "margin-left"
+      ],
+      "cssRule": "display: inline-flex\nmargin-left: var(--space-2)",
+      "responsive": false,
+      "description": "Button Icons"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.fit",
+      "id": "#05-01-03",
+      "category": null,
+      "properties": [
+        "min-width",
+        "width",
+        "padding"
+      ],
+      "cssRule": "min-width: 0px\nwidth: fit-content\npadding: var(--space-3)",
+      "responsive": false,
+      "description": "Button Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-xs",
+      "id": "#05-01-03",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-height",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-1) var(--space-3)\nmin-height: 1.75rem\nfont-size: var(--font-size-xs)",
+      "responsive": false,
+      "description": "Button Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-s",
+      "id": "#05-01-03",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-height",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-2) var(--space-4)\nmin-height: 2rem\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "Button Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-l",
+      "id": "#05-01-03",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-height",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-3) var(--space-8)\nmin-height: 3rem\nfont-size: var(--font-size-l)",
+      "responsive": false,
+      "description": "Button Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-xl",
+      "id": "#05-01-03",
+      "category": null,
+      "properties": [
+        "padding",
+        "min-height",
+        "font-size"
+      ],
+      "cssRule": "padding: var(--space-3) var(--space-12)\nmin-height: 3.5rem\nfont-size: var(--font-size-xl)",
+      "responsive": false,
+      "description": "Button Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-xs.std",
+      "id": "#05-01-04",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: var(--space-16)",
+      "responsive": false,
+      "description": "Button Sizes Standard"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-s.std",
+      "id": "#05-01-04",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: var(--space-20)",
+      "responsive": false,
+      "description": "Button Sizes Standard"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.std",
+      "id": "#05-01-04",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: var(--space-24)",
+      "responsive": false,
+      "description": "Button Sizes Standard"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-l.std",
+      "id": "#05-01-04",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: var(--space-32)",
+      "responsive": false,
+      "description": "Button Sizes Standard"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.size-xl.std",
+      "id": "#05-01-04",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: calc(var(--space-32) * 1.5)",
+      "responsive": false,
+      "description": "Button Sizes Standard"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nbackground: var(--color-primary)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-secondary) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt) !important\nbackground: var(--color-secondary) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-tertiary) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt) !important\nbackground: var(--color-tertiary) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-success) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt) !important\nbackground: var(--color-success) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-warning) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt) !important\nbackground: var(--color-warning) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow",
+        "color"
+      ],
+      "cssRule": "background: transparent\nbox-shadow: none\ncolor: var(--color-error) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-text-alt) !important\nbackground: var(--color-error) !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.alt.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.alt.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.alt.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.alt.ghos",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.alt.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.alt.ghost",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid transparent\npadding: calc(var(--space-3) - 2px) calc(var(--space-6) - 2px)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent !important",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-secondary) !important\nborder-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-tertiary) !important\nborder-color: var(--color-tertiary)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-success) !important\nborder-color: var(--color-success)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-warning) !important\nborder-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error.alt.ghost:hover",
+      "id": "#05-01-05",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-error) !important\nborder-color: var(--color-error)",
+      "responsive": false,
+      "description": "Button Ghost Variant"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-primary) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-secondary) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-tertiary) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.success:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-success) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.warning:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-warning) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.error:hover",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--color-error) 0px 6px 12px -3px",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn:disabled",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.disabled",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.pressed",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgba(0,0,0,0.2)",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.selected",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgba(0,0,0,0.2)",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.secondary.pressed",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-secondary-dark)",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.tertiary.pressed",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-tertiary-dark)",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn.pulse",
+      "id": "#05-01-06",
+      "category": null,
+      "properties": [
+        "animation"
+      ],
+      "cssRule": "animation: pulse 2s infinite",
+      "responsive": false,
+      "description": "Button States"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "display",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\ngap: 0",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group .btn",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "margin"
+      ],
+      "cssRule": "border-radius: 0\nmargin: 0",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group .btn:first-child",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: var(--radius-md)\nborder-bottom-left-radius: var(--radius-md)",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group .btn:last-child",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: var(--radius-md)\nborder-bottom-right-radius: var(--radius-md)",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group .btn:not(:last-child)",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-right"
+      ],
+      "cssRule": "border-right: 1px solid rgba(255, 255, 255, 0.2)",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group-vertical",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\nflex-direction: column\ngap: 0",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group-vertical .btn",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "margin",
+        "width"
+      ],
+      "cssRule": "border-radius: 0\nmargin: 0\nwidth: 100%",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group-vertical .btn:first-child",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-top-right-radius"
+      ],
+      "cssRule": "border-top-left-radius: var(--radius-md)\nborder-top-right-radius: var(--radius-md)",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group-vertical .btn:last-child",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-bottom-left-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-bottom-left-radius: var(--radius-md)\nborder-bottom-right-radius: var(--radius-md)",
+      "responsive": false,
+      "description": "Button Groups"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".btn-group-vertical .btn:not(:last-child)",
+      "id": "#05-01-11",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: 1px solid rgba(255, 255, 255, 0.2)",
+      "responsive": false,
+      "description": "Button Groups"
+    }
+  ]
+}

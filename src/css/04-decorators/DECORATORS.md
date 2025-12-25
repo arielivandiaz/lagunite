@@ -151,7 +151,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 
 ### Scroll Behavior
 ```css
-.scroll-smooth         /* scroll-behavior: smooth */
+.scroll-sooth         /* scroll-behavior: smooth */
 .scroll-auto           /* scroll-behavior: auto */
 ```
 
@@ -188,9 +188,9 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ### Box Shadows
 ```css
 .shadow-none           /* box-shadow: none */
-.shadow-s              /* box-shadow: var(--shadow-sm) */
+.shadow-s              /* box-shadow: var(--shadow-s) */
 .shadow                /* box-shadow: var(--shadow-md) */
-.shadow-l              /* box-shadow: var(--shadow-lg) */
+.shadow-l              /* box-shadow: var(--shadow-l) */
 .shadow-xl             /* box-shadow: 20-25px blur (extra large) */
 .shadow-inner          /* box-shadow: var(--shadow-inner) (inset) */
 ```
@@ -229,7 +229,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ### Border Widths
 ```css
 .border-w-0            /* border-width: 0 */
-.border-w-1            /* border-width: var(--border-width-sm) */
+.border-w-1            /* border-width: var(--border-width-s) */
 .border-w-2            /* border-width: var(--border-width-md) */
 .border-w-4            /* border-width: calc(var(--border-width-md) * 2) */
 ```
@@ -269,7 +269,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 
 /* Side Border Widths */
 .border-t-w-0          /* border-top-width: 0 */
-.border-t-w-1          /* border-top-width: var(--border-width-sm) */
+.border-t-w-1          /* border-top-width: var(--border-width-s) */
 .border-t-w-2          /* border-top-width: var(--border-width-md) */
 .border-t-w-4          /* border-top-width: calc(var(--border-width-md) * 2) */
 
@@ -279,10 +279,10 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ### Border Radius
 ```css
 .border-r-0            /* border-radius: 0 */
-.border-r-s            /* border-radius: var(--radius-sm) */
+.border-r-s            /* border-radius: var(--radius-s) */
 .border-r              /* border-radius: var(--radius-md) */
-.border-r-l            /* border-radius: var(--radius-lg) */
-.border-r-xl           /* border-radius: var(--radius-lg) */
+.border-r-l            /* border-radius: var(--radius-l) */
+.border-r-xl           /* border-radius: var(--radius-l) */
 .border-r-full         /* border-radius: var(--radius-full) (pill shape) */
 .border-r-circle       /* border-radius: 50% (perfect circle) */
 ```
@@ -331,8 +331,8 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ### Border Shortcuts
 ```css
 .border                /* border: var(--border) */
-.border-s              /* border: var(--border-sm) */
-.border-l              /* border: var(--border-lg) */
+.border-s              /* border: var(--border-s) */
+.border-l              /* border: var(--border-l) */
 .bordered              /* Standard border with color */
 ```
 
@@ -519,7 +519,7 @@ All decorator utilities include responsive variants using the `.x` prefix for mo
 
 ### Smooth Scroll Carousel
 ```html
-<div class="snap-x scroll-smooth overflow-x-auto">
+<div class="snap-x scroll-sooth overflow-x-auto">
   <div class="snap-center">Item 1</div>
   <div class="snap-center">Item 2</div>
   <div class="snap-center">Item 3</div>

@@ -110,19 +110,19 @@ Each color family includes the full scale from lightest (50) to darkest (950):
 ### Numbered Brand Backgrounds
 ```css
 /* Primary variations */
-.bg-01                  /* Primary color background */
-.bg-02                  /* Primary light background */
-.bg-03                  /* Primary dark background */
+.bg-1                  /* Primary color background */
+.bg-2                  /* Primary light background */
+.bg-3                  /* Primary dark background */
 
 /* Secondary variations */
-.bg-04                  /* Secondary color background */
-.bg-05                  /* Secondary light background */
-.bg-06                  /* Secondary dark background */
+.bg-4                  /* Secondary color background */
+.bg-5                  /* Secondary light background */
+.bg-6                  /* Secondary dark background */
 
 /* Tertiary variations */
-.bg-07                  /* Tertiary color background */
-.bg-08                  /* Tertiary light background */
-.bg-09                  /* Tertiary dark background */
+.bg-7                  /* Tertiary color background */
+.bg-8                  /* Tertiary light background */
+.bg-9                  /* Tertiary dark background */
 ```
 
 ### State Backgrounds
@@ -204,8 +204,8 @@ These utilities automatically match border colors to their corresponding backgro
 <div class="bg-alt">Alternative background</div>
 
 <!-- Brand backgrounds -->
-<button class="bg-01">Primary button</button>
-<button class="bg-04">Secondary button</button>
+<button class="bg-1">Primary button</button>
+<button class="bg-4">Secondary button</button>
 
 <!-- State backgrounds -->
 <div class="bg-success">Success notification</div>

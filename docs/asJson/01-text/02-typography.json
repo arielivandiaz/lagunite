@@ -1,269 +1,269 @@
 {
   "folder": "01-text",
   "file": "02-typography.css",
-  "lastUpdated": "2025-11-22",
-  "hasResponsive": false,
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": true,
   "totalSelectors": 20,
   "content": [
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".uppercase",
-      "id": null,
+      "id": "#01-02-01",
       "category": null,
       "properties": [
         "text-transform"
       ],
-      "cssRule": ".uppercase {\r\n  text-transform: uppercase;\r\n}",
+      "cssRule": "text-transform: uppercase",
       "responsive": false,
-      "description": ""
+      "description": "Text Transform"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lowercase",
-      "id": null,
+      "id": "#01-02-01",
       "category": null,
       "properties": [
         "text-transform"
       ],
-      "cssRule": ".lowercase {\r\n  text-transform: lowercase;\r\n}",
+      "cssRule": "text-transform: lowercase",
       "responsive": false,
-      "description": ""
+      "description": "Text Transform"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".capitalize",
-      "id": null,
+      "id": "#01-02-01",
       "category": null,
       "properties": [
         "text-transform"
       ],
-      "cssRule": ".capitalize {\r\n  text-transform: capitalize;\r\n}",
+      "cssRule": "text-transform: capitalize",
       "responsive": false,
-      "description": ""
+      "description": "Text Transform"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing-xs",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing-xs {\r\n  letter-spacing: -0.1rem;\r\n}",
+      "cssRule": "letter-spacing: -0.1rem",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing-s",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing-s {\r\n  letter-spacing: -0.05rem;\r\n}",
+      "cssRule": "letter-spacing: -0.05rem",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing {\r\n  letter-spacing: 0.05rem;\r\n}",
+      "cssRule": "letter-spacing: 0.05rem",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing-l",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing-l {\r\n  letter-spacing: 0.1em;\r\n}",
+      "cssRule": "letter-spacing: 0.1em",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing-xl",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing-xl {\r\n  letter-spacing: 0.2em;\r\n}",
+      "cssRule": "letter-spacing: 0.2em",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".letter-spacing-xxl",
-      "id": null,
+      "id": "#01-02-02",
       "category": null,
       "properties": [
         "letter-spacing"
       ],
-      "cssRule": ".letter-spacing-xxl {\r\n  letter-spacing: 0.4rem;\r\n}",
+      "cssRule": "letter-spacing: 0.4rem",
       "responsive": false,
-      "description": ""
+      "description": "Letter Spaccing *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh-xs",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh-xs {\r\n  line-height: 0.85;\r\n}",
+      "cssRule": "line-height: 0.85",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh-s",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh-s {\r\n  line-height: 0.95;\r\n}",
+      "cssRule": "line-height: 0.95",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh {\r\n  line-height: 1.5;\r\n}",
+      "cssRule": "line-height: 1.5",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh-l",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh-l {\r\n  line-height: 1.7;\r\n}",
+      "cssRule": "line-height: 1.7",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh-xl",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh-xl {\r\n  line-height: 2;\r\n}",
+      "cssRule": "line-height: 2",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".lh-xxl",
-      "id": null,
+      "id": "#01-02-03",
       "category": null,
       "properties": [
         "line-height"
       ],
-      "cssRule": ".lh-xxl {\r\n  line-height: 2.5;\r\n}",
+      "cssRule": "line-height: 2.5",
       "responsive": false,
-      "description": ""
+      "description": "Line Height *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ta-c",
-      "id": null,
+      "id": "#01-02-04",
       "category": null,
       "properties": [
         "text-align"
       ],
-      "cssRule": ".ta-c {\r\n  text-align: center;\r\n}",
-      "responsive": false,
-      "description": ""
+      "cssRule": "text-align: center",
+      "responsive": true,
+      "description": "Text Align *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ta-lf",
-      "id": null,
+      "id": "#01-02-04",
       "category": null,
       "properties": [
         "text-align"
       ],
-      "cssRule": ".ta-lf {\r\n  text-align: left;\r\n}",
-      "responsive": false,
-      "description": ""
+      "cssRule": "text-align: left",
+      "responsive": true,
+      "description": "Text Align *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ta-rg",
-      "id": null,
+      "id": "#01-02-04",
       "category": null,
       "properties": [
         "text-align"
       ],
-      "cssRule": ".ta-rg {\r\n  text-align: right;\r\n}",
-      "responsive": false,
-      "description": ""
+      "cssRule": "text-align: right",
+      "responsive": true,
+      "description": "Text Align *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ta-j",
-      "id": null,
+      "id": "#01-02-04",
       "category": null,
       "properties": [
         "text-align"
       ],
-      "cssRule": ".ta-j {\r\n  text-align: justify;\r\n}",
-      "responsive": false,
-      "description": ""
+      "cssRule": "text-align: justify",
+      "responsive": true,
+      "description": "Text Align *"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ta-ja",
-      "id": null,
+      "id": "#01-02-04",
       "category": null,
       "properties": [
         "text-align"
       ],
-      "cssRule": ".ta-ja {\r\n  text-align: justify-all;\r\n}",
-      "responsive": false,
-      "description": ""
+      "cssRule": "text-align: justify-all",
+      "responsive": true,
+      "description": "Text Align *"
     }
   ]
 }

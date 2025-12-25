@@ -1,60 +1,60 @@
 folder: 04-decorators
 file: 03-opacity.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
 totalSelectors: 6
 content[6]:
   - type: selector
     selectorType: class
     selector: .opacity-0
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".opacity-0 { opacity: 0; }"
+    cssRule: "opacity: 0"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **
   - type: selector
     selectorType: class
     selector: .opacity-25
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".opacity-25 { opacity: 0.25; }"
+    cssRule: "opacity: 0.25"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **
   - type: selector
     selectorType: class
     selector: .opacity-50
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".opacity-50 { opacity: 0.5; }"
+    cssRule: "opacity: 0.5"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **
   - type: selector
     selectorType: class
     selector: .opacity-75
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".opacity-75 { opacity: 0.75; }"
+    cssRule: "opacity: 0.75"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **
   - type: selector
     selectorType: class
     selector: .opacity-100
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".opacity-100 { opacity: 1; }"
+    cssRule: "opacity: 1"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **
   - type: selector
     selectorType: class
     selector: ".hover-opacity-75:hover"
-    id: null
+    id: #04-03-XX
     category: null
     properties[1]: opacity
-    cssRule: ".hover-opacity-75:hover { opacity: 0.75; }"
+    cssRule: "opacity: 0.75"
     responsive: true
-    description: ""
+    description: ** Opacity Utilities **

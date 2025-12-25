@@ -20,9 +20,9 @@
   --font-headers: "PT Sans", sans-serif;
 
   --font-size-xs: 0.75rem; /* 12px */
-  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-s: 0.875rem; /* 14px */
   --font-size-base: 1rem; /* 16px */
-  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-l: 1.125rem; /* 18px */
   --font-size-xl: 1.25rem; /* 20px */
   --font-size-xxl: 1.5rem; /* 24px */
   --font-size-3xl: 2rem; /* 32px */
@@ -31,9 +31,4 @@
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-
-  --line-height-none: 1;
-  --line-height-tight: 1.25;
-  --line-height-normal: 1.5;
-  --line-height-loose: 2;
 }

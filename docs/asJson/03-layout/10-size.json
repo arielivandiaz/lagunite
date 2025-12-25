@@ -1,2622 +1,2485 @@
 {
   "folder": "03-layout",
   "file": "10-size.css",
-  "lastUpdated": "2025-11-22",
-  "hasResponsive": true,
-  "totalSelectors": 201,
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": false,
+  "totalSelectors": 190,
   "content": [
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".w-auto",
-      "id": null,
+      "id": "#03-10-01",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-auto { width: auto; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-min",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-min { width: min-content; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-max",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-max { width: max-content; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-fit",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-fit { width: fit-content; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "width: auto",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-auto",
-      "id": null,
+      "id": "#03-10-01",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-auto { height: auto; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "height: auto",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".wmc",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: min-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".w-min",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: min-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hmc",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: min-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-min",
-      "id": null,
+      "id": "#03-10-01",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-min { height: min-content; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "height: min-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".w-max",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: max-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-max",
-      "id": null,
+      "id": "#03-10-01",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-max { height: max-content; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "height: max-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".wfc",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".wfit",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".w-fit",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hfc",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hfit",
+      "id": "#03-10-01",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-fit",
-      "id": null,
+      "id": "#03-10-01",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fit { height: fit-content; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "height: fit-content",
+      "responsive": false,
+      "description": "Auto, Min, Max, Fit Content Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".w-full",
-      "id": null,
+      "id": "#03-10-02",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-full { width: 100%; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "width: 100%",
+      "responsive": false,
+      "description": "Full & Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-full",
-      "id": null,
+      "id": "#03-10-02",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-full { height: 100%; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "height: 100%",
+      "responsive": false,
+      "description": "Full & Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".w-screen",
-      "id": null,
+      "id": "#03-10-02",
       "category": null,
       "properties": [
+        "width",
         "width"
       ],
-      "cssRule": ".w-screen { width: 100vw; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "width: 100vw\nwidth: 100dvw",
+      "responsive": false,
+      "description": "Full & Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".h-screen",
-      "id": null,
+      "id": "#03-10-02",
       "category": null,
       "properties": [
+        "height",
         "height"
       ],
-      "cssRule": ".h-screen { height: 100vh; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-xs",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-xs { width: var(--space-12); }",
+      "cssRule": "height: 100vh\nheight: 100dvh",
       "responsive": false,
-      "description": ""
+      "description": "Full & Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-s",
-      "id": null,
+      "selector": ".w-half-screen",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
+        "width",
         "width"
       ],
-      "cssRule": ".w-s { width: var(--space-16); }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-m",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-m { width: var(--space-20); }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-l",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-l { width: var(--space-24); }",
+      "cssRule": "width: 50vw\nwidth: 50dvw",
       "responsive": false,
-      "description": ""
+      "description": "Half & Quarter Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-xl",
-      "id": null,
+      "selector": ".h-half-screen",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "width"
+        "height",
+        "height"
       ],
-      "cssRule": ".w-xl { width: var(--space-32); }",
+      "cssRule": "height: 50vh\nheight: 50dvh",
       "responsive": false,
-      "description": ""
+      "description": "Half & Quarter Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-2xl",
-      "id": null,
+      "selector": ".w-quarter-screen",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
+        "width",
         "width"
       ],
-      "cssRule": ".w-2xl { width: calc(var(--space-32) * 1.5); }",
+      "cssRule": "width: 25vw\nwidth: 25dvw",
       "responsive": false,
-      "description": ""
+      "description": "Half & Quarter Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-3xl",
-      "id": null,
+      "selector": ".h-quarter-screen",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "width"
+        "height",
+        "height"
       ],
-      "cssRule": ".w-3xl { width: calc(var(--space-32) * 2); }",
+      "cssRule": "height: 25vh\nheight: 25dvh",
       "responsive": false,
-      "description": ""
+      "description": "Half & Quarter Screen Sizes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-xs",
-      "id": null,
+      "selector": ".w1",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "height"
+        "width"
       ],
-      "cssRule": ".h-xs { height: var(--space-12); }",
+      "cssRule": "width: var(--space-12)",
       "responsive": false,
-      "description": ""
+      "description": "Semantic Sizes (using design system variables)"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-s",
-      "id": null,
+      "selector": ".w2",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "height"
+        "width"
       ],
-      "cssRule": ".h-s { height: var(--space-16); }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-m",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-m { height: var(--space-20); }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-l",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-l { height: var(--space-24); }",
+      "cssRule": "width: var(--space-16)",
       "responsive": false,
-      "description": ""
+      "description": "48px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-xl",
-      "id": null,
+      "selector": ".w3",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "height"
+        "width"
       ],
-      "cssRule": ".h-xl { height: var(--space-32); }",
+      "cssRule": "width: var(--space-20)",
       "responsive": false,
-      "description": ""
+      "description": "64px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-2xl",
-      "id": null,
+      "selector": ".w4",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "height"
+        "width"
       ],
-      "cssRule": ".h-2xl { height: calc(var(--space-32) * 1.5); }",
+      "cssRule": "width: var(--space-24)",
       "responsive": false,
-      "description": ""
+      "description": "80px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-3xl",
-      "id": null,
+      "selector": ".w5",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
-        "height"
+        "width"
       ],
-      "cssRule": ".h-3xl { height: calc(var(--space-32) * 2); }",
+      "cssRule": "width: var(--space-32)",
       "responsive": false,
-      "description": ""
+      "description": "96px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-1\\/2",
-      "id": null,
+      "selector": ".w6",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-1\\/2 { width: 50%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-1\\/3",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-1\\/3 { width: 33.333333%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-2\\/3",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-2\\/3 { width: 66.666667%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-1\\/4",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-1\\/4 { width: 25%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-3\\/4",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-3\\/4 { width: 75%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-1\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-1\\/5 { width: 20%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-2\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-2\\/5 { width: 40%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-3\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-3\\/5 { width: 60%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-4\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-4\\/5 { width: 80%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-1\\/6",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-1\\/6 { width: 16.666667%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-5\\/6",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-5\\/6 { width: 83.333333%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-1\\/12",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-1\\/12 { width: 8.333333%; }",
+      "cssRule": "width: calc(var(--space-32) * 1.5)",
       "responsive": false,
-      "description": ""
+      "description": "128px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-5\\/12",
-      "id": null,
+      "selector": ".w7",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-5\\/12 { width: 41.666667%; }",
+      "cssRule": "width: calc(var(--space-32) * 2)",
       "responsive": false,
-      "description": ""
+      "description": "192px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-7\\/12",
-      "id": null,
+      "selector": ".w8",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-7\\/12 { width: 58.333333%; }",
+      "cssRule": "width: calc(var(--space-32) * 3.5)",
       "responsive": false,
-      "description": ""
+      "description": "256px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-11\\/12",
-      "id": null,
+      "selector": ".w9",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-11\\/12 { width: 91.666667%; }",
+      "cssRule": "width: calc(var(--space-32) * 4)",
       "responsive": false,
-      "description": ""
+      "description": "448px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-0",
-      "id": null,
+      "selector": ".w10",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-0 { width: 0%; }",
+      "cssRule": "width: calc(var(--space-32) * 5)",
       "responsive": false,
-      "description": ""
+      "description": "512px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-5",
-      "id": null,
+      "selector": ".w11",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-5 { width: 5%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-10",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-10 { width: 10%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-15",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-15 { width: 15%; }",
+      "cssRule": "width: calc(var(--space-32) * 6)",
       "responsive": false,
-      "description": ""
+      "description": "640px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-20",
-      "id": null,
+      "selector": ".w12",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-20 { width: 20%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-25",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-25 { width: 25%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-30",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-30 { width: 30%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-35",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-35 { width: 35%; }",
+      "cssRule": "width: calc(var(--space-32) * 8)",
       "responsive": false,
-      "description": ""
+      "description": "768px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-40",
-      "id": null,
+      "selector": ".w13",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-40 { width: 40%; }",
-      "responsive": true,
-      "description": ""
+      "cssRule": "width: calc(var(--space-32) * 10)",
+      "responsive": false,
+      "description": "1024px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-45",
-      "id": null,
+      "selector": ".w14",
+      "id": "#03-10-03",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-45 { width: 45%; }",
+      "cssRule": "width: calc(var(--space-32) * 12)",
       "responsive": false,
-      "description": ""
+      "description": "1280px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-50",
-      "id": null,
+      "selector": ".h1",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
-        "width"
+        "height"
       ],
-      "cssRule": ".w-50 { width: 50%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-55",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-55 { width: 55%; }",
+      "cssRule": "height: var(--space-5)",
       "responsive": false,
-      "description": ""
+      "description": "1536px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-60",
-      "id": null,
+      "selector": ".h2",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
-        "width"
+        "height"
       ],
-      "cssRule": ".w-60 { width: 60%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-65",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-65 { width: 65%; }",
+      "cssRule": "height: var(--space-8)",
       "responsive": false,
-      "description": ""
+      "description": "20px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-70",
-      "id": null,
+      "selector": ".h3",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
-        "width"
+        "height"
       ],
-      "cssRule": ".w-70 { width: 70%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-75",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-75 { width: 75%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-80",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-80 { width: 80%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-85",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-85 { width: 85%; }",
+      "cssRule": "height: var(--space-10)",
       "responsive": false,
-      "description": ""
+      "description": "32px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-90",
-      "id": null,
+      "selector": ".h4",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
-        "width"
+        "height"
       ],
-      "cssRule": ".w-90 { width: 90%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-95",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-95 { width: 95%; }",
+      "cssRule": "height: var(--space-16)",
       "responsive": false,
-      "description": ""
+      "description": "40px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-100",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-100 { width: 100%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-1\\/2",
-      "id": null,
+      "selector": ".h5",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-1\\/2 { height: 50%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-1\\/3",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-1\\/3 { height: 33.333333%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-2\\/3",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-2\\/3 { height: 66.666667%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-1\\/4",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-1\\/4 { height: 25%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-3\\/4",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-3\\/4 { height: 75%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-1\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-1\\/5 { height: 20%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-2\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-2\\/5 { height: 40%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-3\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-3\\/5 { height: 60%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-4\\/5",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-4\\/5 { height: 80%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-1\\/6",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-1\\/6 { height: 16.666667%; }",
+      "cssRule": "height: var(--space-32)",
       "responsive": false,
-      "description": ""
+      "description": "64px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-5\\/6",
-      "id": null,
+      "selector": ".h6",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-5\\/6 { height: 83.333333%; }",
+      "cssRule": "height: calc(var(--space-32) * 1.5)",
       "responsive": false,
-      "description": ""
+      "description": "128px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-0",
-      "id": null,
+      "selector": ".h7",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-0 { height: 0%; }",
+      "cssRule": "height: calc(var(--space-32) * 2)",
       "responsive": false,
-      "description": ""
+      "description": "192px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-5",
-      "id": null,
+      "selector": ".h8",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-5 { height: 5%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-10",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-10 { height: 10%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-15",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-15 { height: 15%; }",
+      "cssRule": "height: calc(var(--space-32) * 3)",
       "responsive": false,
-      "description": ""
+      "description": "256px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-20",
-      "id": null,
+      "selector": ".h9",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-20 { height: 20%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-25",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-25 { height: 25%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-30",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-30 { height: 30%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-35",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-35 { height: 35%; }",
+      "cssRule": "height: calc(var(--space-32) * 4)",
       "responsive": false,
-      "description": ""
+      "description": "384px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-40",
-      "id": null,
+      "selector": ".h10",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-40 { height: 40%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-45",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-45 { height: 45%; }",
+      "cssRule": "height: calc(var(--space-32) * 5)",
       "responsive": false,
-      "description": ""
+      "description": "512px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-50",
-      "id": null,
+      "selector": ".h11",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-50 { height: 50%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-55",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-55 { height: 55%; }",
+      "cssRule": "height: calc(var(--space-32) * 6)",
       "responsive": false,
-      "description": ""
+      "description": "640px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-60",
-      "id": null,
+      "selector": ".h12",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-60 { height: 60%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-65",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-65 { height: 65%; }",
+      "cssRule": "height: calc(var(--space-32) * 8)",
       "responsive": false,
-      "description": ""
+      "description": "768px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-70",
-      "id": null,
+      "selector": ".h13",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-70 { height: 70%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-75",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-75 { height: 75%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-80",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-80 { height: 80%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-85",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-85 { height: 85%; }",
+      "cssRule": "height: calc(var(--space-32) * 10)",
       "responsive": false,
-      "description": ""
+      "description": "1024px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-90",
-      "id": null,
+      "selector": ".h14",
+      "id": "#03-10-04",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-90 { height: 90%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-95",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-95 { height: 95%; }",
+      "cssRule": "height: calc(var(--space-32) * 12)",
       "responsive": false,
-      "description": ""
+      "description": "1280px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-100",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-100 { height: 100%; }",
-      "responsive": true,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".min-w-0",
-      "id": null,
+      "selector": ".min-w1",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
         "min-width"
       ],
-      "cssRule": ".min-w-0 { min-width: 0; }",
+      "cssRule": "min-width: var(--space-12)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-w-full",
-      "id": null,
+      "selector": ".min-w2",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
         "min-width"
       ],
-      "cssRule": ".min-w-full { min-width: 100%; }",
+      "cssRule": "min-width: var(--space-16)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-w-min",
-      "id": null,
+      "selector": ".min-w3",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
         "min-width"
       ],
-      "cssRule": ".min-w-min { min-width: min-content; }",
+      "cssRule": "min-width: var(--space-20)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-w-max",
-      "id": null,
+      "selector": ".min-w4",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
         "min-width"
       ],
-      "cssRule": ".min-w-max { min-width: max-content; }",
+      "cssRule": "min-width: var(--space-24)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-w-fit",
-      "id": null,
+      "selector": ".min-w5",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
         "min-width"
       ],
-      "cssRule": ".min-w-fit { min-width: fit-content; }",
+      "cssRule": "min-width: var(--space-32)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-0",
-      "id": null,
+      "selector": ".min-w6",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-0 { max-width: 0; }",
+      "cssRule": "min-width: calc(var(--space-32) * 1.5)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-xs",
-      "id": null,
+      "selector": ".min-w7",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-xs { max-width: 320px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 2)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-s",
-      "id": null,
+      "selector": ".min-w8",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-s { max-width: 384px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 3.5)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-m",
-      "id": null,
+      "selector": ".min-w9",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-m { max-width: 448px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 4)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-l",
-      "id": null,
+      "selector": ".min-w10",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-l { max-width: 512px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 5)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-xl",
-      "id": null,
+      "selector": ".min-w11",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-xl { max-width: 576px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 6)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-2xl",
-      "id": null,
+      "selector": ".min-w12",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-2xl { max-width: 672px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 8)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-3xl",
-      "id": null,
+      "selector": ".min-w13",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-3xl { max-width: 768px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 10)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-4xl",
-      "id": null,
+      "selector": ".min-w14",
+      "id": "#03-10-05",
       "category": null,
       "properties": [
-        "max-width"
+        "min-width"
       ],
-      "cssRule": ".max-w-4xl { max-width: 896px; }",
+      "cssRule": "min-width: calc(var(--space-32) * 12)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-w-5xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-5xl { max-width: 1024px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-6xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-6xl { max-width: 1152px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-7xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-7xl { max-width: 1280px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-full",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-full { max-width: 100%; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-min",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-min { max-width: min-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-max",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-max { max-width: max-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-fit",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-fit { max-width: fit-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-prose",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-prose { max-width: 65ch; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-screen-s",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-screen-s { max-width: 640px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-screen-m",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-screen-m { max-width: 768px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-screen-l",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-screen-l { max-width: 1024px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-screen-xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-screen-xl { max-width: 1280px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-w-screen-2xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-width"
-      ],
-      "cssRule": ".max-w-screen-2xl { max-width: 1536px; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".min-h-0",
-      "id": null,
+      "selector": ".min-h1",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-0 { min-height: 0; }",
+      "cssRule": "min-height: var(--space-5)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-h-full",
-      "id": null,
+      "selector": ".min-h2",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-full { min-height: 100%; }",
+      "cssRule": "min-height: var(--space-8)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-h-screen",
-      "id": null,
+      "selector": ".min-h3",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-screen { min-height: 100vh; }",
+      "cssRule": "min-height: var(--space-10)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-h-min",
-      "id": null,
+      "selector": ".min-h4",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-min { min-height: min-content; }",
+      "cssRule": "min-height: var(--space-16)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-h-max",
-      "id": null,
+      "selector": ".min-h5",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-max { min-height: max-content; }",
+      "cssRule": "min-height: var(--space-32)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".min-h-fit",
-      "id": null,
+      "selector": ".min-h6",
+      "id": "#03-10-06",
       "category": null,
       "properties": [
         "min-height"
       ],
-      "cssRule": ".min-h-fit { min-height: fit-content; }",
+      "cssRule": "min-height: calc(var(--space-32) * 1.5)",
       "responsive": false,
-      "description": ""
+      "description": "** Min-width/Min-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-0",
-      "id": null,
+      "selector": ".min-h7",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 2)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h8",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 3)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h9",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 4)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h10",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 5)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h11",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 6)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h12",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 8)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h13",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 10)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".min-h14",
+      "id": "#03-10-06",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: calc(var(--space-32) * 12)",
+      "responsive": false,
+      "description": "** Min-width/Min-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w1",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: var(--space-12)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w2",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: var(--space-16)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w3",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: var(--space-20)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w4",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: var(--space-24)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w5",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: var(--space-32)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w6",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 1.5)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w7",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 2)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w8",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 3.5)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w9",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 4)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w10",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 5)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w11",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 6)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w12",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 8)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w13",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 10)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-w14",
+      "id": "#03-10-07",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: calc(var(--space-32) * 12)",
+      "responsive": false,
+      "description": "** Max-width/Max-height Semantic Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".max-h1",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-0 { max-height: 0; }",
+      "cssRule": "max-height: var(--space-5)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-px",
-      "id": null,
+      "selector": ".max-h2",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-px { max-height: 1px; }",
+      "cssRule": "max-height: var(--space-8)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-0\\.5",
-      "id": null,
+      "selector": ".max-h3",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-0\\.5 { max-height: 0.125rem; }",
+      "cssRule": "max-height: var(--space-10)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-1",
-      "id": null,
+      "selector": ".max-h4",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-1 { max-height: 0.25rem; }",
+      "cssRule": "max-height: var(--space-16)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-1\\.5",
-      "id": null,
+      "selector": ".max-h5",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-1\\.5 { max-height: 0.375rem; }",
+      "cssRule": "max-height: var(--space-32)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-2",
-      "id": null,
+      "selector": ".max-h6",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-2 { max-height: 0.5rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 1.5)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-2\\.5",
-      "id": null,
+      "selector": ".max-h7",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-2\\.5 { max-height: 0.625rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 2)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-3",
-      "id": null,
+      "selector": ".max-h8",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-3 { max-height: 0.75rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 3)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-3\\.5",
-      "id": null,
+      "selector": ".max-h9",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-3\\.5 { max-height: 0.875rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 4)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-4",
-      "id": null,
+      "selector": ".max-h10",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-4 { max-height: 1rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 5)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-5",
-      "id": null,
+      "selector": ".max-h11",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-5 { max-height: 1.25rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 6)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-6",
-      "id": null,
+      "selector": ".max-h12",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-6 { max-height: 1.5rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 8)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-7",
-      "id": null,
+      "selector": ".max-h13",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-7 { max-height: 1.75rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 10)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-8",
-      "id": null,
+      "selector": ".max-h14",
+      "id": "#03-10-08",
       "category": null,
       "properties": [
         "max-height"
       ],
-      "cssRule": ".max-h-8 { max-height: 2rem; }",
+      "cssRule": "max-height: calc(var(--space-32) * 12)",
       "responsive": false,
-      "description": ""
+      "description": "** Max-width/Max-height Semantic Sizes **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".max-h-9",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-9 { max-height: 2.25rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-10",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-10 { max-height: 2.5rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-11",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-11 { max-height: 2.75rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-12",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-12 { max-height: 3rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-14",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-14 { max-height: 3.5rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-16",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-16 { max-height: 4rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-20",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-20 { max-height: 5rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-24",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-24 { max-height: 6rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-28",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-28 { max-height: 7rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-32",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-32 { max-height: 8rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-36",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-36 { max-height: 9rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-40",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-40 { max-height: 10rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-44",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-44 { max-height: 11rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-48",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-48 { max-height: 12rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-52",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-52 { max-height: 13rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-56",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-56 { max-height: 14rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-60",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-60 { max-height: 15rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-64",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-64 { max-height: 16rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-72",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-72 { max-height: 18rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-80",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-80 { max-height: 20rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-96",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-96 { max-height: 24rem; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-full",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-full { max-height: 100%; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-screen",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-screen { max-height: 100vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-min",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-min { max-height: min-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-max",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-max { max-height: max-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".max-h-fit",
-      "id": null,
-      "category": null,
-      "properties": [
-        "max-height"
-      ],
-      "cssRule": ".max-h-fit { max-height: fit-content; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-vw-10",
-      "id": null,
+      "selector": ".wf1",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-10 { width: 10vw; }",
+      "cssRule": "width: clamp(var(--space-12), 5vw, var(--space-16))",
       "responsive": false,
-      "description": ""
+      "description": "** Fluid/Responsive Sizing **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-20",
-      "id": null,
+      "selector": ".wf2",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-20 { width: 20vw; }",
+      "cssRule": "width: clamp(var(--space-16), 8vw, var(--space-20))",
       "responsive": false,
-      "description": ""
+      "description": "48px → 5vw → 64px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-25",
-      "id": null,
+      "selector": ".wf3",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-25 { width: 25vw; }",
+      "cssRule": "width: clamp(var(--space-20), 10vw, var(--space-24))",
       "responsive": false,
-      "description": ""
+      "description": "64px → 8vw → 80px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-30",
-      "id": null,
+      "selector": ".wf4",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-30 { width: 30vw; }",
+      "cssRule": "width: clamp(var(--space-24), 12vw, var(--space-32))",
       "responsive": false,
-      "description": ""
+      "description": "80px → 10vw → 96px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-40",
-      "id": null,
+      "selector": ".wf5",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-40 { width: 40vw; }",
+      "cssRule": "width: clamp(var(--space-32), 15vw, calc(var(--space-32) * 1.5))",
       "responsive": false,
-      "description": ""
+      "description": "96px → 12vw → 128px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-50",
-      "id": null,
+      "selector": ".wf6",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-50 { width: 50vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 1.5), 20vw, calc(var(--space-32) * 2))",
       "responsive": false,
-      "description": ""
+      "description": "128px → 15vw → 192px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-60",
-      "id": null,
+      "selector": ".wf7",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-60 { width: 60vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 2), 25vw, calc(var(--space-32) * 3.5))",
       "responsive": false,
-      "description": ""
+      "description": "192px → 20vw → 256px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-70",
-      "id": null,
+      "selector": ".wf8",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-70 { width: 70vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 3.5), 35vw, calc(var(--space-32) * 4))",
       "responsive": false,
-      "description": ""
+      "description": "256px → 25vw → 448px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-75",
-      "id": null,
+      "selector": ".wf9",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-75 { width: 75vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 4), 40vw, calc(var(--space-32) * 5))",
       "responsive": false,
-      "description": ""
+      "description": "448px → 35vw → 512px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-80",
-      "id": null,
+      "selector": ".wf10",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-80 { width: 80vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 5), 50vw, calc(var(--space-32) * 6))",
       "responsive": false,
-      "description": ""
+      "description": "512px → 40vw → 640px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-90",
-      "id": null,
+      "selector": ".wf11",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-90 { width: 90vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 6), 60vw, calc(var(--space-32) * 8))",
       "responsive": false,
-      "description": ""
+      "description": "640px → 50vw → 768px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-vw-100",
-      "id": null,
+      "selector": ".wf12",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-vw-100 { width: 100vw; }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 8), 75vw, calc(var(--space-32) * 10))",
       "responsive": false,
-      "description": ""
+      "description": "768px → 60vw → 1024px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-vh-10",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-10 { height: 10vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-20",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-20 { height: 20vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-25",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-25 { height: 25vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-30",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-30 { height: 30vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-40",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-40 { height: 40vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-50",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-50 { height: 50vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-60",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-60 { height: 60vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-70",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-70 { height: 70vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-75",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-75 { height: 75vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-80",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-80 { height: 80vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-90",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-90 { height: 90vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-vh-100",
-      "id": null,
-      "category": null,
-      "properties": [
-        "height"
-      ],
-      "cssRule": ".h-vh-100 { height: 100vh; }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-fluid-xs",
-      "id": null,
+      "selector": ".wf13",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-fluid-xs { width: clamp(8rem, 20vw, 16rem); }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 10), 85vw, calc(var(--space-32) * 12))",
       "responsive": false,
-      "description": ""
+      "description": "1024px → 75vw → 1280px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-fluid-s",
-      "id": null,
+      "selector": ".wf14",
+      "id": "#03-10-10",
       "category": null,
       "properties": [
         "width"
       ],
-      "cssRule": ".w-fluid-s { width: clamp(12rem, 30vw, 24rem); }",
+      "cssRule": "width: clamp(calc(var(--space-32) * 12), 95vw, calc(var(--space-32) * 15))",
       "responsive": false,
-      "description": ""
+      "description": "1280px → 85vw → 1536px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".w-fluid-m",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-fluid-m { width: clamp(16rem, 40vw, 32rem); }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-fluid-l",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-fluid-l { width: clamp(20rem, 50vw, 40rem); }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".w-fluid-xl",
-      "id": null,
-      "category": null,
-      "properties": [
-        "width"
-      ],
-      "cssRule": ".w-fluid-xl { width: clamp(24rem, 60vw, 48rem); }",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".h-fluid-xs",
-      "id": null,
+      "selector": ".hf1",
+      "id": "#03-10-11",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fluid-xs { height: clamp(4rem, 15vh, 8rem); }",
+      "cssRule": "height: clamp(var(--space-5), 5vh, var(--space-8))",
       "responsive": false,
-      "description": ""
+      "description": "1536px → 95vw → 1920px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-fluid-s",
-      "id": null,
+      "selector": ".hf2",
+      "id": "#03-10-11",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fluid-s { height: clamp(6rem, 20vh, 12rem); }",
+      "cssRule": "height: clamp(var(--space-8), 8vh, var(--space-10))",
       "responsive": false,
-      "description": ""
+      "description": "20px → 5vh → 32px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-fluid-m",
-      "id": null,
+      "selector": ".hf3",
+      "id": "#03-10-11",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fluid-m { height: clamp(8rem, 25vh, 16rem); }",
+      "cssRule": "height: clamp(var(--space-10), 10vh, var(--space-16))",
       "responsive": false,
-      "description": ""
+      "description": "32px → 8vh → 40px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-fluid-l",
-      "id": null,
+      "selector": ".hf4",
+      "id": "#03-10-11",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fluid-l { height: clamp(12rem, 30vh, 24rem); }",
+      "cssRule": "height: clamp(var(--space-16), 12vh, var(--space-32))",
       "responsive": false,
-      "description": ""
+      "description": "40px → 10vh → 64px"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".h-fluid-xl",
-      "id": null,
+      "selector": ".hf5",
+      "id": "#03-10-11",
       "category": null,
       "properties": [
         "height"
       ],
-      "cssRule": ".h-fluid-xl { height: clamp(16rem, 40vh, 32rem); }",
+      "cssRule": "height: clamp(var(--space-32), 15vh, calc(var(--space-32) * 1.5))",
       "responsive": false,
-      "description": ""
+      "description": "64px → 12vh → 128px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf6",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 1.5), 20vh, calc(var(--space-32) * 2))",
+      "responsive": false,
+      "description": "128px → 15vh → 192px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf7",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 2), 25vh, calc(var(--space-32) * 3))",
+      "responsive": false,
+      "description": "192px → 20vh → 256px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf8",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 3), 35vh, calc(var(--space-32) * 4))",
+      "responsive": false,
+      "description": "256px → 25vh → 384px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf9",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 4), 40vh, calc(var(--space-32) * 5))",
+      "responsive": false,
+      "description": "384px → 35vh → 512px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf10",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 5), 50vh, calc(var(--space-32) * 6))",
+      "responsive": false,
+      "description": "512px → 40vh → 640px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf11",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 6), 60vh, calc(var(--space-32) * 8))",
+      "responsive": false,
+      "description": "640px → 50vh → 768px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf12",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 8), 75vh, calc(var(--space-32) * 10))",
+      "responsive": false,
+      "description": "768px → 60vh → 1024px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf13",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 10), 85vh, calc(var(--space-32) * 12))",
+      "responsive": false,
+      "description": "1024px → 75vh → 1280px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hf14",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "height"
+      ],
+      "cssRule": "height: clamp(calc(var(--space-32) * 12), 95vh, calc(var(--space-32) * 15))",
+      "responsive": false,
+      "description": "1280px → 85vh → 1536px"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf1",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(var(--space-12), 5vw, var(--space-16))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf2",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(var(--space-16), 8vw, var(--space-20))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf3",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(var(--space-20), 10vw, var(--space-24))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf4",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(var(--space-24), 12vw, var(--space-32))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf5",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(var(--space-32), 15vw, calc(var(--space-32) * 1.5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf6",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(\r\n    calc(var(--space-32) * 1.5),\r\n    20vw,\r\n    calc(var(--space-32) * 2)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf7",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(\r\n    calc(var(--space-32) * 2),\r\n    25vw,\r\n    calc(var(--space-32) * 3.5)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf8",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(\r\n    calc(var(--space-32) * 3.5),\r\n    35vw,\r\n    calc(var(--space-32) * 4)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf9",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(calc(var(--space-32) * 4), 40vw, calc(var(--space-32) * 5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf10",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(calc(var(--space-32) * 5), 50vw, calc(var(--space-32) * 6))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf11",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(calc(var(--space-32) * 6), 60vw, calc(var(--space-32) * 8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf12",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(calc(var(--space-32) * 8), 75vw, calc(var(--space-32) * 10))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf13",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(\r\n    calc(var(--space-32) * 10),\r\n    85vw,\r\n    calc(var(--space-32) * 12)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minwf14",
+      "id": "#03-10-11",
+      "category": null,
+      "properties": [
+        "min-width"
+      ],
+      "cssRule": "min-width: clamp(\r\n    calc(var(--space-32) * 12),\r\n    95vw,\r\n    calc(var(--space-32) * 15)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf1",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(var(--space-5), 5vh, var(--space-8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf2",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(var(--space-8), 8vh, var(--space-10))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf3",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(var(--space-10), 10vh, var(--space-16))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf4",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(var(--space-16), 12vh, var(--space-32))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf5",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(var(--space-32), 15vh, calc(var(--space-32) * 1.5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf6",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(\r\n    calc(var(--space-32) * 1.5),\r\n    20vh,\r\n    calc(var(--space-32) * 2)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf7",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(calc(var(--space-32) * 2), 25vh, calc(var(--space-32) * 3))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf8",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(calc(var(--space-32) * 3), 35vh, calc(var(--space-32) * 4))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf9",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(calc(var(--space-32) * 4), 40vh, calc(var(--space-32) * 5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf10",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(calc(var(--space-32) * 5), 50vh, calc(var(--space-32) * 6))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf11",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(calc(var(--space-32) * 6), 60vh, calc(var(--space-32) * 8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf12",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(\r\n    calc(var(--space-32) * 8),\r\n    75vh,\r\n    calc(var(--space-32) * 10)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf13",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(\r\n    calc(var(--space-32) * 10),\r\n    85vh,\r\n    calc(var(--space-32) * 12)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".minhf14",
+      "id": "#03-10-12",
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: clamp(\r\n    calc(var(--space-32) * 12),\r\n    95vh,\r\n    calc(var(--space-32) * 15)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Min-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf1",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(var(--space-12), 5vw, var(--space-16))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf2",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(var(--space-16), 8vw, var(--space-20))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf3",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(var(--space-20), 10vw, var(--space-24))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf4",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(var(--space-24), 12vw, var(--space-32))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf5",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(var(--space-32), 15vw, calc(var(--space-32) * 1.5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf6",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(\r\n    calc(var(--space-32) * 1.5),\r\n    20vw,\r\n    calc(var(--space-32) * 2)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf7",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(\r\n    calc(var(--space-32) * 2),\r\n    25vw,\r\n    calc(var(--space-32) * 3.5)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf8",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(\r\n    calc(var(--space-32) * 3.5),\r\n    35vw,\r\n    calc(var(--space-32) * 4)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf9",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(calc(var(--space-32) * 4), 40vw, calc(var(--space-32) * 5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf10",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(calc(var(--space-32) * 5), 50vw, calc(var(--space-32) * 6))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf11",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(calc(var(--space-32) * 6), 60vw, calc(var(--space-32) * 8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf12",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(calc(var(--space-32) * 8), 75vw, calc(var(--space-32) * 10))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf13",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(\r\n    calc(var(--space-32) * 10),\r\n    85vw,\r\n    calc(var(--space-32) * 12)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxwf14",
+      "id": "#03-10-13",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: clamp(\r\n    calc(var(--space-32) * 12),\r\n    95vw,\r\n    calc(var(--space-32) * 15)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Width Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf1",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(var(--space-5), 5vh, var(--space-8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf2",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(var(--space-8), 8vh, var(--space-10))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf3",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(var(--space-10), 10vh, var(--space-16))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf4",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(var(--space-16), 12vh, var(--space-32))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf5",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(var(--space-32), 15vh, calc(var(--space-32) * 1.5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf6",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(\r\n    calc(var(--space-32) * 1.5),\r\n    20vh,\r\n    calc(var(--space-32) * 2)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf7",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(calc(var(--space-32) * 2), 25vh, calc(var(--space-32) * 3))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf8",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(calc(var(--space-32) * 3), 35vh, calc(var(--space-32) * 4))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf9",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(calc(var(--space-32) * 4), 40vh, calc(var(--space-32) * 5))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf10",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(calc(var(--space-32) * 5), 50vh, calc(var(--space-32) * 6))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf11",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(calc(var(--space-32) * 6), 60vh, calc(var(--space-32) * 8))",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf12",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(\r\n    calc(var(--space-32) * 8),\r\n    75vh,\r\n    calc(var(--space-32) * 10)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf13",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(\r\n    calc(var(--space-32) * 10),\r\n    85vh,\r\n    calc(var(--space-32) * 12)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".maxhf14",
+      "id": "#03-10-14",
+      "category": null,
+      "properties": [
+        "max-height"
+      ],
+      "cssRule": "max-height: clamp(\r\n    calc(var(--space-32) * 12),\r\n    95vh,\r\n    calc(var(--space-32) * 15)\r\n  )",
+      "responsive": false,
+      "description": "** Fluid/Responsive Max-Height Sizing **"
     }
   ]
 }

@@ -1,6 +1,6 @@
 folder: 02-colors
 file: 03-border.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: false
 totalSelectors: 3
 content[3]:
@@ -10,7 +10,7 @@ content[3]:
     id: null
     category: null
     properties[1]: border-color
-    cssRule: ".bg-success.border {\r\n  border-color: var(--color-success) !important;\r\n}"
+    cssRule: "border-color: var(--color-success) !important"
     responsive: false
     description: ""
   - type: selector
@@ -19,7 +19,7 @@ content[3]:
     id: null
     category: null
     properties[1]: border-color
-    cssRule: ".bg-warning.border {\r\n  border-color: var(--color-warning) !important;\r\n}"
+    cssRule: "border-color: var(--color-warning) !important"
     responsive: false
     description: ""
   - type: selector
@@ -28,6 +28,6 @@ content[3]:
     id: null
     category: null
     properties[1]: border-color
-    cssRule: ".bg-error.border {\r\n  border-color: var(--color-error) !important;\r\n}"
+    cssRule: "border-color: var(--color-error) !important"
     responsive: false
     description: ""

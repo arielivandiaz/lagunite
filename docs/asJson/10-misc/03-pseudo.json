@@ -1,7 +1,7 @@
 {
   "folder": "10-misc",
   "file": "03-pseudo.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 19,
   "content": [
@@ -9,145 +9,145 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".content-none",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".content-none { content: none; }",
+      "cssRule": "content: none",
       "responsive": true,
-      "description": ""
+      "description": "** Content Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".content-empty",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".content-empty { content: ''; }",
+      "cssRule": "content: ''",
       "responsive": true,
-      "description": ""
+      "description": "** Content Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-block::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".before-block::before { content: ''; display: block; }",
+      "cssRule": "content: ''\ndisplay: block",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-inline::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".before-inline::before { content: ''; display: inline; }",
+      "cssRule": "content: ''\ndisplay: inline",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-inline-block::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".before-inline-block::before { content: ''; display: inline-block; }",
+      "cssRule": "content: ''\ndisplay: inline-block",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-table::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".before-table::before { content: ''; display: table; }",
+      "cssRule": "content: ''\ndisplay: table",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-block::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".after-block::after { content: ''; display: block; }",
+      "cssRule": "content: ''\ndisplay: block",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-inline::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".after-inline::after { content: ''; display: inline; }",
+      "cssRule": "content: ''\ndisplay: inline",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-inline-block::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".after-inline-block::after { content: ''; display: inline-block; }",
+      "cssRule": "content: ''\ndisplay: inline-block",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-table::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".after-table::after { content: ''; display: table; }",
+      "cssRule": "content: ''\ndisplay: table",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Display Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-absolute::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
@@ -157,15 +157,15 @@
         "width",
         "height"
       ],
-      "cssRule": ".before-absolute::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "cssRule": "content: ''\nposition: absolute\ntop: 0\nleft: 0\nwidth: 100%\nheight: 100%",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Absolute Positioning Shortcuts **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-absolute::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
@@ -175,15 +175,15 @@
         "width",
         "height"
       ],
-      "cssRule": ".after-absolute::after {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "cssRule": "content: ''\nposition: absolute\ntop: 0\nleft: 0\nwidth: 100%\nheight: 100%",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Absolute Positioning Shortcuts **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-overlay::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
@@ -192,15 +192,15 @@
         "left",
         "transform"
       ],
-      "cssRule": ".before-overlay::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}",
+      "cssRule": "content: ''\nposition: absolute\ntop: 50%\nleft: 50%\ntransform: translate(-50%, -50%)",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Centered Overlay **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-overlay::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
@@ -209,56 +209,56 @@
         "left",
         "transform"
       ],
-      "cssRule": ".after-overlay::after {\r\n  content: '';\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}",
+      "cssRule": "content: ''\nposition: absolute\ntop: 50%\nleft: 50%\ntransform: translate(-50%, -50%)",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Centered Overlay **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".clearfix::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display",
         "clear"
       ],
-      "cssRule": ".clearfix::after {\r\n  content: '';\r\n  display: table;\r\n  clear: both;\r\n}",
+      "cssRule": "content: ''\ndisplay: table\nclear: both",
       "responsive": true,
-      "description": ""
+      "description": "** Clearfix Utility **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".before-content::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".before-content::before { content: attr(data-before); }",
+      "cssRule": "content: attr(data-before)",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Content from Attribute **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".after-content::after",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".after-content::after { content: attr(data-after); }",
+      "cssRule": "content: attr(data-after)",
       "responsive": true,
-      "description": ""
+      "description": "** Before/After Content from Attribute **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".empty-block::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
@@ -266,23 +266,23 @@
         "width",
         "height"
       ],
-      "cssRule": ".empty-block::before {\r\n  content: '';\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n}",
+      "cssRule": "content: ''\ndisplay: block\nwidth: 100%\nheight: 100%",
       "responsive": false,
-      "description": ""
+      "description": "** Empty State Helpers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".empty-inline::before",
-      "id": null,
+      "id": "#10-03-XX",
       "category": null,
       "properties": [
         "content",
         "display"
       ],
-      "cssRule": ".empty-inline::before {\r\n  content: '';\r\n  display: inline-block;\r\n}",
+      "cssRule": "content: ''\ndisplay: inline-block",
       "responsive": false,
-      "description": ""
+      "description": "** Empty State Helpers **"
     }
   ]
 }

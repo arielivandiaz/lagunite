@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "01-flex.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 55,
   "content": [
@@ -17,7 +17,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": true,
       "description": ""
     },
@@ -33,7 +33,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": true,
       "description": ""
     },
@@ -49,7 +49,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": true,
       "description": ""
     },
@@ -65,7 +65,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": true,
       "description": ""
     },
@@ -81,7 +81,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": false,
       "description": ""
     },
@@ -97,7 +97,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": false,
       "description": ""
     },
@@ -113,7 +113,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": false,
       "description": ""
     },
@@ -129,7 +129,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": ".col,\r\n.colr,\r\n.row,\r\n.rowr,\r\n.row-col,\r\n.row-colr,\r\n.col-row,\r\n.col-rowr {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
       "responsive": false,
       "description": ""
     },
@@ -142,7 +142,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".col {\r\n  flex-direction: column;\r\n}",
+      "cssRule": "flex-direction: column",
       "responsive": true,
       "description": ""
     },
@@ -155,7 +155,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".colr {\r\n  flex-direction: column-reverse;\r\n}",
+      "cssRule": "flex-direction: column-reverse",
       "responsive": true,
       "description": ""
     },
@@ -168,7 +168,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".row {\r\n  flex-direction: row;\r\n}",
+      "cssRule": "flex-direction: row",
       "responsive": true,
       "description": ""
     },
@@ -181,7 +181,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".rowr {\r\n  flex-direction: row-reverse;\r\n}",
+      "cssRule": "flex-direction: row-reverse",
       "responsive": true,
       "description": ""
     },
@@ -194,7 +194,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".row-col,\r\n.row-colr {\r\n  flex-direction: row;\r\n}",
+      "cssRule": "flex-direction: row",
       "responsive": false,
       "description": ""
     },
@@ -207,7 +207,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".row-col,\r\n.row-colr {\r\n  flex-direction: row;\r\n}",
+      "cssRule": "flex-direction: row",
       "responsive": false,
       "description": ""
     },
@@ -220,7 +220,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".rowr-col,\r\n.rowr-colr {\r\n  flex-direction: row-reverse;\r\n}",
+      "cssRule": "flex-direction: row-reverse",
       "responsive": false,
       "description": ""
     },
@@ -233,7 +233,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".rowr-col,\r\n.rowr-colr {\r\n  flex-direction: row-reverse;\r\n}",
+      "cssRule": "flex-direction: row-reverse",
       "responsive": false,
       "description": ""
     },
@@ -246,7 +246,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".col-row,\r\n.col-rowr {\r\n  flex-direction: column;\r\n}",
+      "cssRule": "flex-direction: column",
       "responsive": false,
       "description": ""
     },
@@ -259,7 +259,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".col-row,\r\n.col-rowr {\r\n  flex-direction: column;\r\n}",
+      "cssRule": "flex-direction: column",
       "responsive": false,
       "description": ""
     },
@@ -272,7 +272,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".colr-row,\r\n.colr-rowr {\r\n  flex-direction: column-reverse;\r\n}",
+      "cssRule": "flex-direction: column-reverse",
       "responsive": false,
       "description": ""
     },
@@ -285,7 +285,7 @@
       "properties": [
         "flex-direction"
       ],
-      "cssRule": ".colr-row,\r\n.colr-rowr {\r\n  flex-direction: column-reverse;\r\n}",
+      "cssRule": "flex-direction: column-reverse",
       "responsive": false,
       "description": ""
     },
@@ -298,7 +298,7 @@
       "properties": [
         "flex-wrap"
       ],
-      "cssRule": ".f-nowrap {\r\n  flex-wrap: nowrap;\r\n}",
+      "cssRule": "flex-wrap: nowrap",
       "responsive": false,
       "description": ""
     },
@@ -311,7 +311,7 @@
       "properties": [
         "flex"
       ],
-      "cssRule": ".flex1 {\r\n  flex: 1;\r\n}",
+      "cssRule": "flex: 1",
       "responsive": false,
       "description": ""
     },
@@ -324,7 +324,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-xs > div,\r\n.f-gap- > div > div {\r\n  margin: 2px;\r\n}",
+      "cssRule": "margin: 2px",
       "responsive": true,
       "description": ""
     },
@@ -337,7 +337,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-xs > div,\r\n.f-gap- > div > div {\r\n  margin: 2px;\r\n}",
+      "cssRule": "margin: 2px",
       "responsive": false,
       "description": ""
     },
@@ -350,7 +350,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-s > div,\r\n.f-gap-s > div > div {\r\n  margin: 5px;\r\n}",
+      "cssRule": "margin: 5px",
       "responsive": true,
       "description": ""
     },
@@ -363,7 +363,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-s > div,\r\n.f-gap-s > div > div {\r\n  margin: 5px;\r\n}",
+      "cssRule": "margin: 5px",
       "responsive": true,
       "description": ""
     },
@@ -376,7 +376,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap > div,\r\n.f-gap > div > div {\r\n  margin: 10px;\r\n}",
+      "cssRule": "margin: 10px",
       "responsive": true,
       "description": ""
     },
@@ -389,7 +389,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap > div,\r\n.f-gap > div > div {\r\n  margin: 10px;\r\n}",
+      "cssRule": "margin: 10px",
       "responsive": true,
       "description": ""
     },
@@ -402,7 +402,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-l > div,\r\n.f-gap-l > div > div {\r\n  margin: 20px;\r\n}",
+      "cssRule": "margin: 20px",
       "responsive": true,
       "description": ""
     },
@@ -415,7 +415,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-l > div,\r\n.f-gap-l > div > div {\r\n  margin: 20px;\r\n}",
+      "cssRule": "margin: 20px",
       "responsive": true,
       "description": ""
     },
@@ -428,7 +428,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-xl > div,\r\n.f-gap-xl > div > div {\r\n  margin: 30px;\r\n}",
+      "cssRule": "margin: 30px",
       "responsive": true,
       "description": ""
     },
@@ -441,7 +441,7 @@
       "properties": [
         "margin"
       ],
-      "cssRule": ".f-gap-xl > div,\r\n.f-gap-xl > div > div {\r\n  margin: 30px;\r\n}",
+      "cssRule": "margin: 30px",
       "responsive": true,
       "description": ""
     },
@@ -454,7 +454,7 @@
       "properties": [
         "align-items"
       ],
-      "cssRule": ".ai-c {\r\n  align-items: center !important;\r\n}",
+      "cssRule": "align-items: center !important",
       "responsive": true,
       "description": ""
     },
@@ -467,7 +467,7 @@
       "properties": [
         "align-items"
       ],
-      "cssRule": ".ai-fe {\r\n  align-items: flex-end !important;\r\n}",
+      "cssRule": "align-items: flex-end !important",
       "responsive": true,
       "description": ""
     },
@@ -480,7 +480,7 @@
       "properties": [
         "align-items"
       ],
-      "cssRule": ".ai-fs {\r\n  align-items: flex-start !important;\r\n}",
+      "cssRule": "align-items: flex-start !important",
       "responsive": true,
       "description": ""
     },
@@ -493,7 +493,7 @@
       "properties": [
         "align-items"
       ],
-      "cssRule": ".ai-s {\r\n  align-items: stretch !important;\r\n}",
+      "cssRule": "align-items: stretch !important",
       "responsive": true,
       "description": ""
     },
@@ -506,7 +506,7 @@
       "properties": [
         "align-self"
       ],
-      "cssRule": ".as-c {\r\n  align-self: center !important;\r\n}",
+      "cssRule": "align-self: center !important",
       "responsive": true,
       "description": ""
     },
@@ -519,7 +519,7 @@
       "properties": [
         "align-self"
       ],
-      "cssRule": ".as-fs {\r\n  align-self: flex-end !important;\r\n}",
+      "cssRule": "align-self: flex-end !important",
       "responsive": true,
       "description": ""
     },
@@ -532,7 +532,7 @@
       "properties": [
         "align-self"
       ],
-      "cssRule": ".as-fe {\r\n  align-self: flex-start !important;\r\n}",
+      "cssRule": "align-self: flex-start !important",
       "responsive": true,
       "description": ""
     },
@@ -545,7 +545,7 @@
       "properties": [
         "align-self"
       ],
-      "cssRule": ".as-s {\r\n  align-self: stretch !important;\r\n}",
+      "cssRule": "align-self: stretch !important",
       "responsive": true,
       "description": ""
     },
@@ -558,7 +558,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-c {\r\n  align-content: center !important;\r\n}",
+      "cssRule": "align-content: center !important",
       "responsive": true,
       "description": ""
     },
@@ -571,7 +571,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-fs {\r\n  align-content: flex-end !important;\r\n}",
+      "cssRule": "align-content: flex-end !important",
       "responsive": true,
       "description": ""
     },
@@ -584,7 +584,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-fe {\r\n  align-content: flex-start !important;\r\n}",
+      "cssRule": "align-content: flex-start !important",
       "responsive": true,
       "description": ""
     },
@@ -597,7 +597,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-s {\r\n  align-content: stretch !important;\r\n}",
+      "cssRule": "align-content: stretch !important",
       "responsive": true,
       "description": ""
     },
@@ -610,7 +610,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-sa {\r\n  align-content: space-around !important;\r\n}",
+      "cssRule": "align-content: space-around !important",
       "responsive": true,
       "description": ""
     },
@@ -623,7 +623,7 @@
       "properties": [
         "align-content"
       ],
-      "cssRule": ".ac-sb {\r\n  align-content: space-between !important;\r\n}",
+      "cssRule": "align-content: space-between !important",
       "responsive": true,
       "description": ""
     },
@@ -636,7 +636,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-c {\r\n  justify-content: center !important;\r\n}",
+      "cssRule": "justify-content: center !important",
       "responsive": true,
       "description": ""
     },
@@ -649,7 +649,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-fe {\r\n  justify-content: flex-end !important;\r\n}",
+      "cssRule": "justify-content: flex-end !important",
       "responsive": true,
       "description": ""
     },
@@ -662,7 +662,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-fs {\r\n  justify-content: flex-start !important;\r\n}",
+      "cssRule": "justify-content: flex-start !important",
       "responsive": true,
       "description": ""
     },
@@ -675,7 +675,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-sa {\r\n  justify-content: space-around !important;\r\n}",
+      "cssRule": "justify-content: space-around !important",
       "responsive": true,
       "description": ""
     },
@@ -688,7 +688,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-sb {\r\n  justify-content: space-between !important;\r\n}",
+      "cssRule": "justify-content: space-between !important",
       "responsive": true,
       "description": ""
     },
@@ -701,7 +701,7 @@
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-se {\r\n  justify-content: space-evenly !important;\r\n}",
+      "cssRule": "justify-content: space-evenly !important",
       "responsive": true,
       "description": ""
     },
@@ -716,7 +716,7 @@
         "align-items",
         "justify-content"
       ],
-      "cssRule": ".flex-center {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}",
+      "cssRule": "display: flex\nalign-items: center\njustify-content: center",
       "responsive": true,
       "description": ""
     },
@@ -730,7 +730,7 @@
         "display",
         "justify-content"
       ],
-      "cssRule": ".flex-center-h {\r\n  display: flex;\r\n  justify-content: center;\r\n}",
+      "cssRule": "display: flex\njustify-content: center",
       "responsive": true,
       "description": ""
     },
@@ -744,7 +744,7 @@
         "display",
         "align-items"
       ],
-      "cssRule": ".flex-center-v {\r\n  display: flex;\r\n  align-items: center;\r\n}",
+      "cssRule": "display: flex\nalign-items: center",
       "responsive": true,
       "description": ""
     }

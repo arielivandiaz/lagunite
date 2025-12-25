@@ -1,0 +1,1033 @@
+{
+  "folder": "05-atoms",
+  "file": "100-avatars.css",
+  "lastUpdated": "2025-12-14",
+  "hasResponsive": false,
+  "totalSelectors": 72,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "border-radius",
+        "overflow",
+        "background-color",
+        "color",
+        "font-weight",
+        "font-size",
+        "line-height",
+        "flex-shrink",
+        "user-select"
+      ],
+      "cssRule": "position: relative\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\n/* 2.5rem / 40px default */\nheight: var(--space-10)\nborder-radius: 50%\n/* Circle by default */\noverflow: hidden\nbackground-color: var(--color-neutral-200)\ncolor: var(--color-neutral-700)\nfont-weight: var(--font-weight-medium)\nfont-size: var(--font-size-base)\nline-height: 1\nflex-shrink: 0\nuser-select: none",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-01 - Avatar Base\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar img",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "object-fit",
+        "display"
+      ],
+      "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover\ndisplay: block",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-01 - Avatar Base\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color",
+        "color"
+      ],
+      "cssRule": "background-color: var(--color-neutral-700)\ncolor: var(--color-neutral-200)",
+      "responsive": false,
+      "description": "Night mode"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-xs",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-6)\n/* 1.5rem / 24px */\nheight: var(--space-6)\nfont-size: var(--font-size-xs)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-02 - Avatar Sizes\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-8)\n/* 2rem / 32px */\nheight: var(--space-8)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-02 - Avatar Sizes\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-l",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-12)\n/* 3rem / 48px */\nheight: var(--space-12)\nfont-size: var(--font-size-l)",
+      "responsive": false,
+      "description": ".avatar is default size (40px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-xl",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-16)\n/* 4rem / 64px */\nheight: var(--space-16)\nfont-size: var(--font-size-xl)",
+      "responsive": false,
+      "description": ".avatar is default size (40px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-circle",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 50%",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-03 - Avatar Shapes\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-rounded",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-l)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-03 - Avatar Shapes\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-square",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-03 - Avatar Shapes\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position"
+      ],
+      "cssRule": "position: relative",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-04 - Avatar Status Indicators\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "bottom",
+        "right",
+        "width",
+        "height",
+        "min-width",
+        "min-height",
+        "border-radius",
+        "border",
+        "background-color"
+      ],
+      "cssRule": "content: ''\nposition: absolute\nbottom: 0\nright: 0\nwidth: 25%\nheight: 25%\nmin-width: 8px\nmin-height: 8px\nborder-radius: 50%\nborder: 2px solid var(--color-surface)\nbackground-color: var(--color-neutral-400)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-04 - Avatar Status Indicators\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-status::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-surface-night)",
+      "responsive": false,
+      "description": "Night mode border"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status-online::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--color-success)",
+      "responsive": false,
+      "description": "Status variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status-busy::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--color-error)",
+      "responsive": false,
+      "description": "Status variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status-away::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--color-warning)",
+      "responsive": false,
+      "description": "Status variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-status-offline::after",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--color-neutral-400)",
+      "responsive": false,
+      "description": "Status variants"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-placeholder",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-neutral-300) 0%,\r\n\t\tvar(--color-neutral-200) 100%\r\n\t)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-05 - Avatar Placeholders\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-placeholder",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-neutral-600) 0%,\r\n\t\tvar(--color-neutral-700) 100%\r\n\t)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-05 - Avatar Placeholders\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-placeholder svg",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "opacity"
+      ],
+      "cssRule": "width: 50%\nheight: 50%\nopacity: 0.5",
+      "responsive": false,
+      "description": "Icon placeholder (requires icon inside)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-placeholder i",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "opacity"
+      ],
+      "cssRule": "width: 50%\nheight: 50%\nopacity: 0.5",
+      "responsive": false,
+      "description": "Icon placeholder (requires icon inside)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "font-weight",
+        "text-transform"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-primary) 0%,\r\n\t\tvar(--color-primary-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)\nfont-weight: var(--font-weight-semibold)\ntext-transform: uppercase",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-06 - Avatar with Initials\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials-secondary",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-secondary) 0%,\r\n\t\tvar(--color-secondary-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)",
+      "responsive": false,
+      "description": "Color variants for initials"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials-success",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-success) 0%,\r\n\t\tvar(--color-success-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)",
+      "responsive": false,
+      "description": "Color variants for initials"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials-info",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-info) 0%,\r\n\t\tvar(--color-info-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)",
+      "responsive": false,
+      "description": "Color variants for initials"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials-warning",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-warning) 0%,\r\n\t\tvar(--color-warning-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)",
+      "responsive": false,
+      "description": "Color variants for initials"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-initials-error",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-error) 0%,\r\n\t\tvar(--color-error-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)",
+      "responsive": false,
+      "description": "Color variants for initials"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "flex-direction"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\nflex-direction: row-reverse\n/* Reverses order for stacking */",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-07 - Avatar Groups\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left",
+        "border",
+        "transition"
+      ],
+      "cssRule": "margin-left: calc(var(--space-2) * -1)\n/* -0.5rem overlap */\nborder: 2px solid var(--color-surface)\ntransition: transform var(--transition-duration-150) var(--transition-timing-ease-out)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-07 - Avatar Groups\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-group .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-surface-night)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-07 - Avatar Groups\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group .avatar:first-child",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: 0",
+      "responsive": false,
+      "description": "First avatar (visually last due to reverse) has no margin"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group .avatar:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "z-index"
+      ],
+      "cssRule": "transform: translateY(-2px)\nz-index: 10",
+      "responsive": false,
+      "description": "Hover effect - lift avatar"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "flex-direction"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\nflex-direction: row-reverse",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-08 - Avatar Stack\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left",
+        "border",
+        "box-shadow"
+      ],
+      "cssRule": "margin-left: calc(var(--space-4) * -1)\n/* -1rem overlap - more than group */\nborder: 3px solid var(--color-surface)\nbox-shadow: var(--shadow-s)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-08 - Avatar Stack\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-stack .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-surface-night)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-08 - Avatar Stack\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack .avatar:first-child",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: 0",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-08 - Avatar Stack\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack .avatar:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "z-index"
+      ],
+      "cssRule": "transform: scale(1.1)\nz-index: 10",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-08 - Avatar Stack\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "margin-left",
+        "border-radius",
+        "border",
+        "background-color",
+        "color",
+        "font-size",
+        "font-weight",
+        "flex-shrink",
+        "cursor",
+        "transition"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nmargin-left: calc(var(--space-4) * -1)\nborder-radius: 50%\nborder: 3px solid var(--color-surface)\nbackground-color: var(--color-neutral-300)\ncolor: var(--color-neutral-700)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-semibold)\nflex-shrink: 0\ncursor: pointer\ntransition: all var(--transition-duration-150) var(--transition-timing-ease-out)",
+      "responsive": false,
+      "description": "Counter for remaining avatars"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color",
+        "background-color",
+        "color"
+      ],
+      "cssRule": "border-color: var(--color-surface-night)\nbackground-color: var(--color-neutral-700)\ncolor: var(--color-neutral-200)",
+      "responsive": false,
+      "description": "Counter for remaining avatars"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "background-color",
+        "z-index"
+      ],
+      "cssRule": "transform: scale(1.1)\nbackground-color: var(--color-neutral-400)\nz-index: 10",
+      "responsive": false,
+      "description": "Counter for remaining avatars"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .avatar-stack-counter:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--color-neutral-600)",
+      "responsive": false,
+      "description": "Counter for remaining avatars"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-xs .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 1px",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xs .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 1px",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-xs .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-1) * -1)",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xs .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left",
+        "border-width"
+      ],
+      "cssRule": "margin-left: calc(var(--space-2) * -1)\nborder-width: 2px",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xs .avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left",
+        "border-width"
+      ],
+      "cssRule": "margin-left: calc(var(--space-2) * -1)\nborder-width: 2px",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter-xs",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-6)\nheight: var(--space-6)\nfont-size: var(--font-size-xs)",
+      "responsive": false,
+      "description": "Extra small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-s .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 2px",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-s .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 2px",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-s .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-1-5) * -1)",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-s .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-3) * -1)",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-s .avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-3) * -1)",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter-s",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-8)\nheight: var(--space-8)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "Small group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-l .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 3px",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-l .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 3px",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-l .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-3) * -1)",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-l .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-5) * -1)",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-l .avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-5) * -1)",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter-l",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-12)\nheight: var(--space-12)\nfont-size: var(--font-size-l)",
+      "responsive": false,
+      "description": "Large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-xl .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 4px",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xl .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 4px",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-group-xl .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-4) * -1)",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xl .avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-6) * -1)",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-xl .avatar-stack-counter",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(var(--space-6) * -1)",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-stack-counter-xl",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: var(--space-16)\nheight: var(--space-16)\nfont-size: var(--font-size-xl)",
+      "responsive": false,
+      "description": "Extra large group"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border",
+        "padding"
+      ],
+      "cssRule": "border: 2px solid var(--color-primary)\npadding: 2px",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-secondary",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-secondary)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-success",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-info",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-info)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-warning",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-warning)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-error",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "============================================\r\n   #05-04-10 - Avatar Ring\r\n   ============================================"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".avatar-ring-thick",
+      "id": null,
+      "category": null,
+      "properties": [
+        "border-width",
+        "padding"
+      ],
+      "cssRule": "border-width: 3px\npadding: 3px",
+      "responsive": false,
+      "description": "Thick ring variants"
+    }
+  ]
+}

@@ -33,13 +33,34 @@ const FOLDER_MAP = {
 };
 
 /**
- * Extract @ID comment from CSS node
+ * Extract metadata comments stacked before a rule (ID + description)
+ * Walks backward through consecutive comments to find:
+ *  - ID: comment starting with @ID: #...
+ *  - description: first non-ID, non-category (*** ... ***) comment
  */
-function extractID(node) {
-  if (!node.prev() || node.prev().type !== 'comment') return null;
-  const comment = node.prev().text.trim();
-  const match = comment.match(/@ID:\s*(#[\w-]+)/);
-  return match ? match[1] : null;
+function extractMeta(node) {
+  let cursor = node.prev();
+  let id = null;
+  let description = null;
+
+  while (cursor && cursor.type === 'comment') {
+    const text = cursor.text.trim();
+
+    if (!id) {
+      const match = text.match(/@ID:\s*(#[\w-]+)/);
+      if (match) {
+        id = match[1];
+      }
+    }
+
+    if (!description && !text.startsWith('@ID:') && !/^\*{3}/.test(text)) {
+      description = text;
+    }
+
+    cursor = cursor.prev();
+  }
+
+  return { id, description };
 }
 
 /**
@@ -101,7 +122,8 @@ async function parseCSSFile(filePath, cssContent) {
   const root = postcss.parse(cssContent);
   
   const entries = [];
-  let currentID = null;
+  let lastID = null;
+  let lastDescription = null;
   let currentCategory = null;
 
   root.walkRules(rule => {
@@ -110,11 +132,12 @@ async function parseCSSFile(filePath, cssContent) {
       return;
     }
 
-    // Extract ID and category from comments
-    const ruleID = extractID(rule);
+    // Extract ID, description, and category from stacked comments
+    const { id: ruleID, description: ruleDescription } = extractMeta(rule);
     const ruleCategory = extractCategory(rule);
+    const effectiveID = ruleID ?? lastID;
     
-    if (ruleID) currentID = ruleID;
+    if (ruleID) lastID = ruleID;
     if (ruleCategory) currentCategory = ruleCategory;
 
     // Process each selector in the rule
@@ -127,19 +150,26 @@ async function parseCSSFile(filePath, cssContent) {
         properties.push(decl.prop);
       });
 
-      // Build CSS rule string
-      const cssRule = rule.toString().trim();
+      // Build CSS declarations body only (content inside braces)
+      const cssRule = (rule.nodes || [])
+        .map(node => node.toString().trim())
+        .filter(Boolean)
+        .join('\n');
+
+      // Use the last non-empty description if not defined
+      const effectiveDescription = ruleDescription ?? lastDescription ?? currentCategory ?? '';
+      if (ruleDescription) lastDescription = ruleDescription;
 
       entries.push({
         type: 'selector',
         selectorType: getSelectorType(selector),
         selector: selector,
-        id: currentID,
+        id: effectiveID,
         category: currentCategory,
         properties: properties,
         cssRule: cssRule,
         responsive: hasResponsiveVariants(cssContent, selector),
-        description: currentCategory || ''
+        description: effectiveDescription
       });
     });
   });
@@ -225,10 +255,56 @@ async function processCSSDirectory(dirPath, outputDir) {
 }
 
 /**
+ * Clean old documentation files
+ */
+function cleanOldDocs() {
+  console.log('🧹 Cleaning old documentation files...\n');
+  
+  // Clean JSON docs
+  if (fs.existsSync(DOCS_DIR)) {
+    const folders = fs.readdirSync(DOCS_DIR, { withFileTypes: true });
+    folders.forEach(folder => {
+      if (folder.isDirectory()) {
+        const folderPath = path.join(DOCS_DIR, folder.name);
+        const files = fs.readdirSync(folderPath);
+        files.forEach(file => {
+          if (file.endsWith('.json')) {
+            fs.unlinkSync(path.join(folderPath, file));
+            console.log(`  ✓ Removed: ${folder.name}/${file}`);
+          }
+        });
+      }
+    });
+  }
+  
+  // Clean Toon docs
+  if (fs.existsSync(DOCS_TOON_DIR)) {
+    const folders = fs.readdirSync(DOCS_TOON_DIR, { withFileTypes: true });
+    folders.forEach(folder => {
+      if (folder.isDirectory()) {
+        const folderPath = path.join(DOCS_TOON_DIR, folder.name);
+        const files = fs.readdirSync(folderPath);
+        files.forEach(file => {
+          if (file.endsWith('.toon')) {
+            fs.unlinkSync(path.join(folderPath, file));
+            console.log(`  ✓ Removed: ${folder.name}/${file}`);
+          }
+        });
+      }
+    });
+  }
+  
+  console.log('');
+}
+
+/**
  * Main execution
  */
 async function main() {
   console.log('🚀 Lagunite CSS Documentation Generator\n');
+  
+  // Clean old documentation files
+  cleanOldDocs();
   
   // Ensure output directories exist
   if (!fs.existsSync(DOCS_DIR)) {

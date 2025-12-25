@@ -1,0 +1,16 @@
+/* @ID: #05-04-01 */
+/* Lists Base Styles */
+ul.alt li:nth-child(2n),
+ol.alt li:nth-child(2n) {
+  background-color: rgba(36, 118, 255, 0.1);
+}
+
+ul.bordered,
+ol.bordered {
+  border: none;
+}
+
+ol.bordered li:not(:last-child),
+ul.bordered li:not(:last-child) {
+  border-bottom: 1px solid var(--color-primary);
+}

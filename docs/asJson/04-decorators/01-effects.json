@@ -1,7 +1,7 @@
 {
   "folder": "04-decorators",
   "file": "01-effects.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 79,
   "content": [
@@ -9,1028 +9,1028 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".content-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".content-none { content: none; }",
+      "cssRule": "content: none",
       "responsive": true,
-      "description": ""
+      "description": "** Content Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".content-empty",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "content"
       ],
-      "cssRule": ".content-empty { content: ''; }",
+      "cssRule": "content: ''",
       "responsive": true,
-      "description": ""
+      "description": "** Content Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".appearance-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "appearance"
       ],
-      "cssRule": ".appearance-none { appearance: none; }",
+      "cssRule": "appearance: none",
       "responsive": true,
-      "description": ""
+      "description": "** Appearance **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".appearance-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "appearance"
       ],
-      "cssRule": ".appearance-auto { appearance: auto; }",
+      "cssRule": "appearance: auto",
       "responsive": true,
-      "description": ""
+      "description": "** Appearance **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".resize-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "resize"
       ],
-      "cssRule": ".resize-none { resize: none; }",
+      "cssRule": "resize: none",
       "responsive": true,
-      "description": ""
+      "description": "** Resize **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".resize",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "resize"
       ],
-      "cssRule": ".resize { resize: both; }",
+      "cssRule": "resize: both",
       "responsive": true,
-      "description": ""
+      "description": "** Resize **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".resize-x",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "resize"
       ],
-      "cssRule": ".resize-x { resize: horizontal; }",
+      "cssRule": "resize: horizontal",
       "responsive": true,
-      "description": ""
+      "description": "** Resize **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".resize-y",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "resize"
       ],
-      "cssRule": ".resize-y { resize: vertical; }",
+      "cssRule": "resize: vertical",
       "responsive": true,
-      "description": ""
+      "description": "** Resize **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-contain",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-fit"
       ],
-      "cssRule": ".object-contain { object-fit: contain; }",
+      "cssRule": "object-fit: contain",
       "responsive": true,
-      "description": ""
+      "description": "** Object Fit **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-cover",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-fit"
       ],
-      "cssRule": ".object-cover { object-fit: cover; }",
+      "cssRule": "object-fit: cover",
       "responsive": true,
-      "description": ""
+      "description": "** Object Fit **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-fill",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-fit"
       ],
-      "cssRule": ".object-fill { object-fit: fill; }",
+      "cssRule": "object-fit: fill",
       "responsive": true,
-      "description": ""
+      "description": "** Object Fit **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-fit"
       ],
-      "cssRule": ".object-none { object-fit: none; }",
+      "cssRule": "object-fit: none",
       "responsive": true,
-      "description": ""
+      "description": "** Object Fit **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-scale-down",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-fit"
       ],
-      "cssRule": ".object-scale-down { object-fit: scale-down; }",
+      "cssRule": "object-fit: scale-down",
       "responsive": true,
-      "description": ""
+      "description": "** Object Fit **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-center",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-position"
       ],
-      "cssRule": ".object-center { object-position: center; }",
+      "cssRule": "object-position: center",
       "responsive": true,
-      "description": ""
+      "description": "** Object Position **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-top",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-position"
       ],
-      "cssRule": ".object-top { object-position: top; }",
+      "cssRule": "object-position: top",
       "responsive": true,
-      "description": ""
+      "description": "** Object Position **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-bottom",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-position"
       ],
-      "cssRule": ".object-bottom { object-position: bottom; }",
+      "cssRule": "object-position: bottom",
       "responsive": true,
-      "description": ""
+      "description": "** Object Position **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-left",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-position"
       ],
-      "cssRule": ".object-left { object-position: left; }",
+      "cssRule": "object-position: left",
       "responsive": true,
-      "description": ""
+      "description": "** Object Position **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".object-right",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "object-position"
       ],
-      "cssRule": ".object-right { object-position: right; }",
+      "cssRule": "object-position: right",
       "responsive": true,
-      "description": ""
+      "description": "** Object Position **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-normal",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-normal { mix-blend-mode: normal; }",
+      "cssRule": "mix-blend-mode: normal",
       "responsive": true,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-multiply",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-multiply { mix-blend-mode: multiply; }",
+      "cssRule": "mix-blend-mode: multiply",
       "responsive": true,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-screen",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-screen { mix-blend-mode: screen; }",
+      "cssRule": "mix-blend-mode: screen",
       "responsive": true,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-overlay",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-overlay { mix-blend-mode: overlay; }",
+      "cssRule": "mix-blend-mode: overlay",
       "responsive": true,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-darken",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-darken { mix-blend-mode: darken; }",
+      "cssRule": "mix-blend-mode: darken",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-lighten",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-lighten { mix-blend-mode: lighten; }",
+      "cssRule": "mix-blend-mode: lighten",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-color-dodge",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-color-dodge { mix-blend-mode: color-dodge; }",
+      "cssRule": "mix-blend-mode: color-dodge",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-color-burn",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-color-burn { mix-blend-mode: color-burn; }",
+      "cssRule": "mix-blend-mode: color-burn",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-hard-light",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-hard-light { mix-blend-mode: hard-light; }",
+      "cssRule": "mix-blend-mode: hard-light",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-soft-light",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-soft-light { mix-blend-mode: soft-light; }",
+      "cssRule": "mix-blend-mode: soft-light",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-difference",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-difference { mix-blend-mode: difference; }",
+      "cssRule": "mix-blend-mode: difference",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".mix-blend-exclusion",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "mix-blend-mode"
       ],
-      "cssRule": ".mix-blend-exclusion { mix-blend-mode: exclusion; }",
+      "cssRule": "mix-blend-mode: exclusion",
       "responsive": false,
-      "description": ""
+      "description": "** Mix Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-normal",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-normal { background-blend-mode: normal; }",
+      "cssRule": "background-blend-mode: normal",
       "responsive": true,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-multiply",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-multiply { background-blend-mode: multiply; }",
+      "cssRule": "background-blend-mode: multiply",
       "responsive": true,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-screen",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-screen { background-blend-mode: screen; }",
+      "cssRule": "background-blend-mode: screen",
       "responsive": true,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-overlay",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-overlay { background-blend-mode: overlay; }",
+      "cssRule": "background-blend-mode: overlay",
       "responsive": false,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-darken",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-darken { background-blend-mode: darken; }",
+      "cssRule": "background-blend-mode: darken",
       "responsive": false,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blend-lighten",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "background-blend-mode"
       ],
-      "cssRule": ".bg-blend-lighten { background-blend-mode: lighten; }",
+      "cssRule": "background-blend-mode: lighten",
       "responsive": false,
-      "description": ""
+      "description": "** Background Blend Mode **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".isolate",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "isolation"
       ],
-      "cssRule": ".isolate { isolation: isolate; }",
+      "cssRule": "isolation: isolate",
       "responsive": true,
-      "description": ""
+      "description": "** Isolation **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".isolation-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "isolation"
       ],
-      "cssRule": ".isolation-auto { isolation: auto; }",
+      "cssRule": "isolation: auto",
       "responsive": true,
-      "description": ""
+      "description": "** Isolation **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".backdrop-blur-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "backdrop-filter"
       ],
-      "cssRule": ".backdrop-blur-none { backdrop-filter: blur(0); }",
+      "cssRule": "backdrop-filter: blur(0)",
       "responsive": true,
-      "description": ""
+      "description": "** Backdrop Filter **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".backdrop-blur-s",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "backdrop-filter"
       ],
-      "cssRule": ".backdrop-blur-s { backdrop-filter: blur(4px); }",
+      "cssRule": "backdrop-filter: blur(4px)",
       "responsive": true,
-      "description": ""
+      "description": "** Backdrop Filter **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".backdrop-blur",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "backdrop-filter"
       ],
-      "cssRule": ".backdrop-blur { backdrop-filter: blur(8px); }",
+      "cssRule": "backdrop-filter: blur(8px)",
       "responsive": true,
-      "description": ""
+      "description": "** Backdrop Filter **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".backdrop-blur-l",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "backdrop-filter"
       ],
-      "cssRule": ".backdrop-blur-l { backdrop-filter: blur(16px); }",
+      "cssRule": "backdrop-filter: blur(16px)",
       "responsive": true,
-      "description": ""
+      "description": "** Backdrop Filter **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".backdrop-blur-xl",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "backdrop-filter"
       ],
-      "cssRule": ".backdrop-blur-xl { backdrop-filter: blur(32px); }",
+      "cssRule": "backdrop-filter: blur(32px)",
       "responsive": true,
-      "description": ""
+      "description": "** Backdrop Filter **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".box-decoration-clone",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "box-decoration-break"
       ],
-      "cssRule": ".box-decoration-clone { box-decoration-break: clone; }",
+      "cssRule": "box-decoration-break: clone",
       "responsive": false,
-      "description": ""
+      "description": "** Box Decoration Break **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".box-decoration-slice",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "box-decoration-break"
       ],
-      "cssRule": ".box-decoration-slice { box-decoration-break: slice; }",
+      "cssRule": "box-decoration-break: slice",
       "responsive": false,
-      "description": ""
+      "description": "** Box Decoration Break **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".break-inside-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "break-inside"
       ],
-      "cssRule": ".break-inside-auto { break-inside: auto; }",
+      "cssRule": "break-inside: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Break Inside **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".break-inside-avoid",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "break-inside"
       ],
-      "cssRule": ".break-inside-avoid { break-inside: avoid; }",
+      "cssRule": "break-inside: avoid",
       "responsive": false,
-      "description": ""
+      "description": "** Break Inside **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".break-inside-avoid-page",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "break-inside"
       ],
-      "cssRule": ".break-inside-avoid-page { break-inside: avoid-page; }",
+      "cssRule": "break-inside: avoid-page",
       "responsive": false,
-      "description": ""
+      "description": "** Break Inside **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".break-inside-avoid-column",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "break-inside"
       ],
-      "cssRule": ".break-inside-avoid-column { break-inside: avoid-column; }",
+      "cssRule": "break-inside: avoid-column",
       "responsive": false,
-      "description": ""
+      "description": "** Break Inside **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".hoverable-s:hover",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "transform"
       ],
-      "cssRule": ".hoverable-s:hover { transform: scale(1.1); }",
+      "cssRule": "transform: scale(1.1)",
       "responsive": true,
-      "description": ""
+      "description": "** Hoverable (from decorators.css) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".hoverable:hover",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "transform"
       ],
-      "cssRule": ".hoverable:hover { transform: scale(1.2); }",
+      "cssRule": "transform: scale(1.2)",
       "responsive": true,
-      "description": ""
+      "description": "** Hoverable (from decorators.css) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".hoverable-l:hover",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "transform"
       ],
-      "cssRule": ".hoverable-l:hover { transform: scale(1.5); }",
+      "cssRule": "transform: scale(1.5)",
       "responsive": true,
-      "description": ""
+      "description": "** Hoverable (from decorators.css) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".hoverable-xl:hover",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "transform"
       ],
-      "cssRule": ".hoverable-xl:hover { transform: scale(1.8); }",
+      "cssRule": "transform: scale(1.8)",
       "responsive": true,
-      "description": ""
+      "description": "** Hoverable (from decorators.css) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".touch-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "touch-action"
       ],
-      "cssRule": ".touch-auto { touch-action: auto; }",
+      "cssRule": "touch-action: auto",
       "responsive": true,
-      "description": ""
+      "description": "** Touch Action **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".touch-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "touch-action"
       ],
-      "cssRule": ".touch-none { touch-action: none; }",
+      "cssRule": "touch-action: none",
       "responsive": true,
-      "description": ""
+      "description": "** Touch Action **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".touch-pan-x",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "touch-action"
       ],
-      "cssRule": ".touch-pan-x { touch-action: pan-x; }",
+      "cssRule": "touch-action: pan-x",
       "responsive": true,
-      "description": ""
+      "description": "** Touch Action **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".touch-pan-y",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "touch-action"
       ],
-      "cssRule": ".touch-pan-y { touch-action: pan-y; }",
+      "cssRule": "touch-action: pan-y",
       "responsive": true,
-      "description": ""
+      "description": "** Touch Action **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".touch-manipulation",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "touch-action"
       ],
-      "cssRule": ".touch-manipulation { touch-action: manipulation; }",
+      "cssRule": "touch-action: manipulation",
       "responsive": true,
-      "description": ""
+      "description": "** Touch Action **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".will-change-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "will-change"
       ],
-      "cssRule": ".will-change-auto { will-change: auto; }",
+      "cssRule": "will-change: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Will Change **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".will-change-scroll",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "will-change"
       ],
-      "cssRule": ".will-change-scroll { will-change: scroll-position; }",
+      "cssRule": "will-change: scroll-position",
       "responsive": false,
-      "description": ""
+      "description": "** Will Change **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".will-change-contents",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "will-change"
       ],
-      "cssRule": ".will-change-contents { will-change: contents; }",
+      "cssRule": "will-change: contents",
       "responsive": false,
-      "description": ""
+      "description": "** Will Change **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".will-change-transform",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "will-change"
       ],
-      "cssRule": ".will-change-transform { will-change: transform; }",
+      "cssRule": "will-change: transform",
       "responsive": false,
-      "description": ""
+      "description": "** Will Change **"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".scroll-smooth",
-      "id": null,
+      "selector": ".scroll-sooth",
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-behavior"
       ],
-      "cssRule": ".scroll-smooth { scroll-behavior: smooth; }",
+      "cssRule": "scroll-behavior: smooth",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Behavior **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scroll-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-behavior"
       ],
-      "cssRule": ".scroll-auto { scroll-behavior: auto; }",
+      "cssRule": "scroll-behavior: auto",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Behavior **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-none",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-type"
       ],
-      "cssRule": ".snap-none { scroll-snap-type: none; }",
+      "cssRule": "scroll-snap-type: none",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-x",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-type"
       ],
-      "cssRule": ".snap-x { scroll-snap-type: x var(--snap-strictness, mandatory); }",
+      "cssRule": "scroll-snap-type: x var(--snap-strictness, mandatory)",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-y",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-type"
       ],
-      "cssRule": ".snap-y { scroll-snap-type: y var(--snap-strictness, mandatory); }",
+      "cssRule": "scroll-snap-type: y var(--snap-strictness, mandatory)",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-both",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-type"
       ],
-      "cssRule": ".snap-both { scroll-snap-type: both var(--snap-strictness, mandatory); }",
+      "cssRule": "scroll-snap-type: both var(--snap-strictness, mandatory)",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-mandatory",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "--snap-strictness"
       ],
-      "cssRule": ".snap-mandatory { --snap-strictness: mandatory; }",
+      "cssRule": "--snap-strictness: mandatory",
       "responsive": false,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-proximity",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "--snap-strictness"
       ],
-      "cssRule": ".snap-proximity { --snap-strictness: proximity; }",
+      "cssRule": "--snap-strictness: proximity",
       "responsive": false,
-      "description": ""
+      "description": "** Scroll Snap Type **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-start",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-align"
       ],
-      "cssRule": ".snap-start { scroll-snap-align: start; }",
+      "cssRule": "scroll-snap-align: start",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Align **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-end",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-align"
       ],
-      "cssRule": ".snap-end { scroll-snap-align: end; }",
+      "cssRule": "scroll-snap-align: end",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Align **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-center",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-align"
       ],
-      "cssRule": ".snap-center { scroll-snap-align: center; }",
+      "cssRule": "scroll-snap-align: center",
       "responsive": true,
-      "description": ""
+      "description": "** Scroll Snap Align **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-normal",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-stop"
       ],
-      "cssRule": ".snap-normal { scroll-snap-stop: normal; }",
+      "cssRule": "scroll-snap-stop: normal",
       "responsive": false,
-      "description": ""
+      "description": "** Scroll Snap Stop **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".snap-always",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "scroll-snap-stop"
       ],
-      "cssRule": ".snap-always { scroll-snap-stop: always; }",
+      "cssRule": "scroll-snap-stop: always",
       "responsive": false,
-      "description": ""
+      "description": "** Scroll Snap Stop **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".caret-transparent",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "caret-color"
       ],
-      "cssRule": ".caret-transparent { caret-color: transparent; }",
+      "cssRule": "caret-color: transparent",
       "responsive": false,
-      "description": ""
+      "description": "** Caret Color **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".caret-current",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "caret-color"
       ],
-      "cssRule": ".caret-current { caret-color: currentColor; }",
+      "cssRule": "caret-color: currentColor",
       "responsive": false,
-      "description": ""
+      "description": "** Caret Color **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".accent-auto",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "accent-color"
       ],
-      "cssRule": ".accent-auto { accent-color: auto; }",
+      "cssRule": "accent-color: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Accent Color **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".accent-current",
-      "id": null,
+      "id": "#04-01-XX",
       "category": null,
       "properties": [
         "accent-color"
       ],
-      "cssRule": ".accent-current { accent-color: currentColor; }",
+      "cssRule": "accent-color: currentColor",
       "responsive": false,
-      "description": ""
+      "description": "** Accent Color **"
     }
   ],
   "customProperties": [

@@ -1,6 +1,6 @@
 folder: 03-layout
 file: 04-margin.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
 totalSelectors: 36
 content[36]:
@@ -10,7 +10,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg-0 {\r\n    margin: 0 !important;\r\n}"
+    cssRule: "margin: 0 !important"
     responsive: true
     description: ""
   - type: selector
@@ -19,7 +19,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg-xs {\r\n    margin: var(--space-1);\r\n}"
+    cssRule: "margin: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -28,7 +28,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg-s {\r\n    margin: var(--space-3);\r\n}"
+    cssRule: "margin: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -37,7 +37,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg {\r\n    margin: var(--space-6);\r\n}"
+    cssRule: "margin: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -46,7 +46,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg-l {\r\n    margin: var(--space-12);\r\n}"
+    cssRule: "margin: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -55,7 +55,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin
-    cssRule: ".marg-xl {\r\n    margin: var(--space-16);\r\n}"
+    cssRule: "margin: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -64,7 +64,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-left,margin-right
-    cssRule: ".marg-h-xs {\r\n    margin-left: var(--space-1);\r\n    margin-right: var(--space-1);\r\n}"
+    cssRule: "margin-left: var(--space-1)\nmargin-right: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -73,7 +73,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-left,margin-right
-    cssRule: ".marg-h-s {\r\n    margin-left: var(--space-3);\r\n    margin-right: var(--space-3);\r\n}"
+    cssRule: "margin-left: var(--space-3)\nmargin-right: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -82,7 +82,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-left,margin-right
-    cssRule: ".marg-h {\r\n    margin-left: var(--space-6);\r\n    margin-right: var(--space-6);\r\n}"
+    cssRule: "margin-left: var(--space-6)\nmargin-right: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -91,7 +91,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-left,margin-right
-    cssRule: ".marg-h-l {\r\n    margin-left: var(--space-12);\r\n    margin-right: var(--space-12);\r\n}"
+    cssRule: "margin-left: var(--space-12)\nmargin-right: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -100,7 +100,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-left,margin-right
-    cssRule: ".marg-h-xl {\r\n    margin-left: var(--space-16);\r\n    margin-right: var(--space-16);\r\n}"
+    cssRule: "margin-left: var(--space-16)\nmargin-right: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -109,7 +109,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-top,margin-bottom
-    cssRule: ".marg-v-xs {\r\n    margin-top: var(--space-1);\r\n    margin-bottom: var(--space-1);\r\n}"
+    cssRule: "margin-top: var(--space-1)\nmargin-bottom: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -118,7 +118,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-top,margin-bottom
-    cssRule: ".marg-v-s {\r\n    margin-top: var(--space-3);\r\n    margin-bottom: var(--space-3);\r\n}"
+    cssRule: "margin-top: var(--space-3)\nmargin-bottom: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -127,7 +127,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-top,margin-bottom
-    cssRule: ".marg-v {\r\n    margin-top: var(--space-6);\r\n    margin-bottom: var(--space-6);\r\n}"
+    cssRule: "margin-top: var(--space-6)\nmargin-bottom: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -136,7 +136,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-top,margin-bottom
-    cssRule: ".marg-v-l {\r\n    margin-top: var(--space-12);\r\n    margin-bottom: var(--space-12);\r\n}"
+    cssRule: "margin-top: var(--space-12)\nmargin-bottom: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -145,7 +145,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[2]: margin-top,margin-bottom
-    cssRule: ".marg-v-xl {\r\n    margin-top: var(--space-16);\r\n    margin-bottom: var(--space-16);\r\n}"
+    cssRule: "margin-top: var(--space-16)\nmargin-bottom: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -154,7 +154,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-left
-    cssRule: ".marg-lf-xs {\r\n    margin-left: var(--space-1);\r\n}"
+    cssRule: "margin-left: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -163,7 +163,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-left
-    cssRule: ".marg-lf-s {\r\n    margin-left: var(--space-3);\r\n}"
+    cssRule: "margin-left: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -172,7 +172,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-left
-    cssRule: ".marg-lf {\r\n    margin-left: var(--space-6);\r\n}"
+    cssRule: "margin-left: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -181,7 +181,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-left
-    cssRule: ".marg-lf-l {\r\n    margin-left: var(--space-12);\r\n}"
+    cssRule: "margin-left: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -190,7 +190,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-left
-    cssRule: ".marg-lf-xl {\r\n    margin-left: var(--space-16);\r\n}"
+    cssRule: "margin-left: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -199,7 +199,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-right
-    cssRule: ".marg-rg-xs {\r\n    margin-right: var(--space-1);\r\n}"
+    cssRule: "margin-right: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -208,7 +208,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-right
-    cssRule: ".marg-rg-s {\r\n    margin-right: var(--space-3);\r\n}"
+    cssRule: "margin-right: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -217,7 +217,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-right
-    cssRule: ".marg-rg\r\n {\r\n    margin-right: var(--space-6);\r\n}"
+    cssRule: "margin-right: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -226,7 +226,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-right
-    cssRule: ".marg-rg-l {\r\n    margin-right: var(--space-12);\r\n}"
+    cssRule: "margin-right: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -235,7 +235,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-right
-    cssRule: ".marg-rg-xl {\r\n    margin-right: var(--space-16);\r\n}"
+    cssRule: "margin-right: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -244,7 +244,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-top
-    cssRule: ".marg-t-xs {\r\n    margin-top: var(--space-1);\r\n}"
+    cssRule: "margin-top: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -253,7 +253,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-top
-    cssRule: ".marg-t-s {\r\n    margin-top: var(--space-3);\r\n}"
+    cssRule: "margin-top: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -262,7 +262,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-top
-    cssRule: ".marg-t {\r\n    margin-top: var(--space-6);\r\n}"
+    cssRule: "margin-top: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -271,7 +271,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-top
-    cssRule: ".marg-t-l {\r\n    margin-top: var(--space-12);\r\n}"
+    cssRule: "margin-top: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -280,7 +280,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-top
-    cssRule: ".marg-t-xl {\r\n    margin-top: var(--space-16);\r\n}"
+    cssRule: "margin-top: var(--space-16)"
     responsive: true
     description: ""
   - type: selector
@@ -289,7 +289,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-bottom
-    cssRule: ".marg-b-xs {\r\n    margin-bottom: var(--space-1);\r\n}"
+    cssRule: "margin-bottom: var(--space-1)"
     responsive: true
     description: ""
   - type: selector
@@ -298,7 +298,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-bottom
-    cssRule: ".marg-b-s {\r\n    margin-bottom: var(--space-3);\r\n}"
+    cssRule: "margin-bottom: var(--space-3)"
     responsive: true
     description: ""
   - type: selector
@@ -307,7 +307,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-bottom
-    cssRule: ".marg-b {\r\n    margin-bottom: var(--space-6);\r\n}"
+    cssRule: "margin-bottom: var(--space-6)"
     responsive: true
     description: ""
   - type: selector
@@ -316,7 +316,7 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-bottom
-    cssRule: ".marg-b-l {\r\n    margin-bottom: var(--space-12);\r\n}"
+    cssRule: "margin-bottom: var(--space-12)"
     responsive: true
     description: ""
   - type: selector
@@ -325,6 +325,6 @@ content[36]:
     id: #03-04-XX
     category: null
     properties[1]: margin-bottom
-    cssRule: ".marg-b-xl {\r\n    margin-bottom: var(--space-16);\r\n}"
+    cssRule: "margin-bottom: var(--space-16)"
     responsive: true
     description: ""

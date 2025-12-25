@@ -1,7 +1,7 @@
 {
   "folder": "02-colors",
   "file": "01-text.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": false,
   "totalSelectors": 71,
   "content": [
@@ -14,7 +14,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-text {\r\n  color: var(--color-text-base);\r\n}",
+      "cssRule": "color: var(--color-text-base)",
       "responsive": false,
       "description": ""
     },
@@ -27,7 +27,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-text-alt {\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "color: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -40,7 +40,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-primary {\r\n  color: var(--color-primary);\r\n}",
+      "cssRule": "color: var(--color-primary)",
       "responsive": false,
       "description": ""
     },
@@ -53,7 +53,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-primary-light {\r\n  color: var(--color-primary-light);\r\n}",
+      "cssRule": "color: var(--color-primary-light)",
       "responsive": false,
       "description": ""
     },
@@ -66,7 +66,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-primary-dark {\r\n  color: var(--color-primary-dark);\r\n}",
+      "cssRule": "color: var(--color-primary-dark)",
       "responsive": false,
       "description": ""
     },
@@ -79,7 +79,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-secondary {\r\n  color: var(--color-secondary);\r\n}",
+      "cssRule": "color: var(--color-secondary)",
       "responsive": false,
       "description": ""
     },
@@ -92,7 +92,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-secondary-light {\r\n  color: var(--color-secondary-light);\r\n}",
+      "cssRule": "color: var(--color-secondary-light)",
       "responsive": false,
       "description": ""
     },
@@ -105,7 +105,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-secondary-dark {\r\n  color: var(--color-secondary-dark);\r\n}",
+      "cssRule": "color: var(--color-secondary-dark)",
       "responsive": false,
       "description": ""
     },
@@ -118,7 +118,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-tertiary {\r\n  color: var(--color-tertiary);\r\n}",
+      "cssRule": "color: var(--color-tertiary)",
       "responsive": false,
       "description": ""
     },
@@ -131,7 +131,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-tertiary-light {\r\n  color: var(--color-tertiary-light);\r\n}",
+      "cssRule": "color: var(--color-tertiary-light)",
       "responsive": false,
       "description": ""
     },
@@ -144,7 +144,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-tertiary-dark {\r\n  color: var(--color-tertiary-dark);\r\n}",
+      "cssRule": "color: var(--color-tertiary-dark)",
       "responsive": false,
       "description": ""
     },
@@ -157,7 +157,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-almost-black {\r\n  color: var(--color-almost-black);\r\n}",
+      "cssRule": "color: var(--color-almost-black)",
       "responsive": false,
       "description": ""
     },
@@ -170,7 +170,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-almost-white {\r\n  color: var(--color-almost-white);\r\n}",
+      "cssRule": "color: var(--color-almost-white)",
       "responsive": false,
       "description": ""
     },
@@ -183,7 +183,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-success {\r\n  color: var(--color-success);\r\n}",
+      "cssRule": "color: var(--color-success)",
       "responsive": false,
       "description": ""
     },
@@ -196,7 +196,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-warning {\r\n  color: var(--color-warning);\r\n}",
+      "cssRule": "color: var(--color-warning)",
       "responsive": false,
       "description": ""
     },
@@ -209,7 +209,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-error {\r\n  color: var(--color-error);\r\n}",
+      "cssRule": "color: var(--color-error)",
       "responsive": false,
       "description": ""
     },
@@ -222,7 +222,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-50 {\r\n  color: var(--gray-50);\r\n}",
+      "cssRule": "color: var(--gray-50)",
       "responsive": false,
       "description": ""
     },
@@ -235,7 +235,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-100 {\r\n  color: var(--gray-100);\r\n}",
+      "cssRule": "color: var(--gray-100)",
       "responsive": false,
       "description": ""
     },
@@ -248,7 +248,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-200 {\r\n  color: var(--gray-200);\r\n}",
+      "cssRule": "color: var(--gray-200)",
       "responsive": false,
       "description": ""
     },
@@ -261,7 +261,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-300 {\r\n  color: var(--gray-300);\r\n}",
+      "cssRule": "color: var(--gray-300)",
       "responsive": false,
       "description": ""
     },
@@ -274,7 +274,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-400 {\r\n  color: var(--gray-400);\r\n}",
+      "cssRule": "color: var(--gray-400)",
       "responsive": false,
       "description": ""
     },
@@ -287,7 +287,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-500 {\r\n  color: var(--gray-500);\r\n}",
+      "cssRule": "color: var(--gray-500)",
       "responsive": false,
       "description": ""
     },
@@ -300,7 +300,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-600 {\r\n  color: var(--gray-600);\r\n}",
+      "cssRule": "color: var(--gray-600)",
       "responsive": false,
       "description": ""
     },
@@ -313,7 +313,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-700 {\r\n  color: var(--gray-700);\r\n}",
+      "cssRule": "color: var(--gray-700)",
       "responsive": false,
       "description": ""
     },
@@ -326,7 +326,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-800 {\r\n  color: var(--gray-800);\r\n}",
+      "cssRule": "color: var(--gray-800)",
       "responsive": false,
       "description": ""
     },
@@ -339,7 +339,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-900 {\r\n  color: var(--gray-900);\r\n}",
+      "cssRule": "color: var(--gray-900)",
       "responsive": false,
       "description": ""
     },
@@ -352,7 +352,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-gray-950 {\r\n  color: var(--gray-950);\r\n}",
+      "cssRule": "color: var(--gray-950)",
       "responsive": false,
       "description": ""
     },
@@ -365,7 +365,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-50 {\r\n  color: var(--blue-50);\r\n}",
+      "cssRule": "color: var(--blue-50)",
       "responsive": false,
       "description": ""
     },
@@ -378,7 +378,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-100 {\r\n  color: var(--blue-100);\r\n}",
+      "cssRule": "color: var(--blue-100)",
       "responsive": false,
       "description": ""
     },
@@ -391,7 +391,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-200 {\r\n  color: var(--blue-200);\r\n}",
+      "cssRule": "color: var(--blue-200)",
       "responsive": false,
       "description": ""
     },
@@ -404,7 +404,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-300 {\r\n  color: var(--blue-300);\r\n}",
+      "cssRule": "color: var(--blue-300)",
       "responsive": false,
       "description": ""
     },
@@ -417,7 +417,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-400 {\r\n  color: var(--blue-400);\r\n}",
+      "cssRule": "color: var(--blue-400)",
       "responsive": false,
       "description": ""
     },
@@ -430,7 +430,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-500 {\r\n  color: var(--blue-500);\r\n}",
+      "cssRule": "color: var(--blue-500)",
       "responsive": false,
       "description": ""
     },
@@ -443,7 +443,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-600 {\r\n  color: var(--blue-600);\r\n}",
+      "cssRule": "color: var(--blue-600)",
       "responsive": false,
       "description": ""
     },
@@ -456,7 +456,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-700 {\r\n  color: var(--blue-700);\r\n}",
+      "cssRule": "color: var(--blue-700)",
       "responsive": false,
       "description": ""
     },
@@ -469,7 +469,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-800 {\r\n  color: var(--blue-800);\r\n}",
+      "cssRule": "color: var(--blue-800)",
       "responsive": false,
       "description": ""
     },
@@ -482,7 +482,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-900 {\r\n  color: var(--blue-900);\r\n}",
+      "cssRule": "color: var(--blue-900)",
       "responsive": false,
       "description": ""
     },
@@ -495,7 +495,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-blue-950 {\r\n  color: var(--blue-950);\r\n}",
+      "cssRule": "color: var(--blue-950)",
       "responsive": false,
       "description": ""
     },
@@ -508,7 +508,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-50 {\r\n  color: var(--green-50);\r\n}",
+      "cssRule": "color: var(--green-50)",
       "responsive": false,
       "description": ""
     },
@@ -521,7 +521,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-100 {\r\n  color: var(--green-100);\r\n}",
+      "cssRule": "color: var(--green-100)",
       "responsive": false,
       "description": ""
     },
@@ -534,7 +534,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-200 {\r\n  color: var(--green-200);\r\n}",
+      "cssRule": "color: var(--green-200)",
       "responsive": false,
       "description": ""
     },
@@ -547,7 +547,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-300 {\r\n  color: var(--green-300);\r\n}",
+      "cssRule": "color: var(--green-300)",
       "responsive": false,
       "description": ""
     },
@@ -560,7 +560,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-400 {\r\n  color: var(--green-400);\r\n}",
+      "cssRule": "color: var(--green-400)",
       "responsive": false,
       "description": ""
     },
@@ -573,7 +573,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-500 {\r\n  color: var(--green-500);\r\n}",
+      "cssRule": "color: var(--green-500)",
       "responsive": false,
       "description": ""
     },
@@ -586,7 +586,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-600 {\r\n  color: var(--green-600);\r\n}",
+      "cssRule": "color: var(--green-600)",
       "responsive": false,
       "description": ""
     },
@@ -599,7 +599,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-700 {\r\n  color: var(--green-700);\r\n}",
+      "cssRule": "color: var(--green-700)",
       "responsive": false,
       "description": ""
     },
@@ -612,7 +612,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-800 {\r\n  color: var(--green-800);\r\n}",
+      "cssRule": "color: var(--green-800)",
       "responsive": false,
       "description": ""
     },
@@ -625,7 +625,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-900 {\r\n  color: var(--green-900);\r\n}",
+      "cssRule": "color: var(--green-900)",
       "responsive": false,
       "description": ""
     },
@@ -638,7 +638,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-green-950 {\r\n  color: var(--green-950);\r\n}",
+      "cssRule": "color: var(--green-950)",
       "responsive": false,
       "description": ""
     },
@@ -651,7 +651,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-50 {\r\n  color: var(--yellow-50);\r\n}",
+      "cssRule": "color: var(--yellow-50)",
       "responsive": false,
       "description": ""
     },
@@ -664,7 +664,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-100 {\r\n  color: var(--yellow-100);\r\n}",
+      "cssRule": "color: var(--yellow-100)",
       "responsive": false,
       "description": ""
     },
@@ -677,7 +677,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-200 {\r\n  color: var(--yellow-200);\r\n}",
+      "cssRule": "color: var(--yellow-200)",
       "responsive": false,
       "description": ""
     },
@@ -690,7 +690,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-300 {\r\n  color: var(--yellow-300);\r\n}",
+      "cssRule": "color: var(--yellow-300)",
       "responsive": false,
       "description": ""
     },
@@ -703,7 +703,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-400 {\r\n  color: var(--yellow-400);\r\n}",
+      "cssRule": "color: var(--yellow-400)",
       "responsive": false,
       "description": ""
     },
@@ -716,7 +716,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-500 {\r\n  color: var(--yellow-500);\r\n}",
+      "cssRule": "color: var(--yellow-500)",
       "responsive": false,
       "description": ""
     },
@@ -729,7 +729,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-600 {\r\n  color: var(--yellow-600);\r\n}",
+      "cssRule": "color: var(--yellow-600)",
       "responsive": false,
       "description": ""
     },
@@ -742,7 +742,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-700 {\r\n  color: var(--yellow-700);\r\n}",
+      "cssRule": "color: var(--yellow-700)",
       "responsive": false,
       "description": ""
     },
@@ -755,7 +755,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-800 {\r\n  color: var(--yellow-800);\r\n}",
+      "cssRule": "color: var(--yellow-800)",
       "responsive": false,
       "description": ""
     },
@@ -768,7 +768,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-900 {\r\n  color: var(--yellow-900);\r\n}",
+      "cssRule": "color: var(--yellow-900)",
       "responsive": false,
       "description": ""
     },
@@ -781,7 +781,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-yellow-950 {\r\n  color: var(--yellow-950);\r\n}",
+      "cssRule": "color: var(--yellow-950)",
       "responsive": false,
       "description": ""
     },
@@ -794,7 +794,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-50 {\r\n  color: var(--red-50);\r\n}",
+      "cssRule": "color: var(--red-50)",
       "responsive": false,
       "description": ""
     },
@@ -807,7 +807,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-100 {\r\n  color: var(--red-100);\r\n}",
+      "cssRule": "color: var(--red-100)",
       "responsive": false,
       "description": ""
     },
@@ -820,7 +820,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-200 {\r\n  color: var(--red-200);\r\n}",
+      "cssRule": "color: var(--red-200)",
       "responsive": false,
       "description": ""
     },
@@ -833,7 +833,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-300 {\r\n  color: var(--red-300);\r\n}",
+      "cssRule": "color: var(--red-300)",
       "responsive": false,
       "description": ""
     },
@@ -846,7 +846,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-400 {\r\n  color: var(--red-400);\r\n}",
+      "cssRule": "color: var(--red-400)",
       "responsive": false,
       "description": ""
     },
@@ -859,7 +859,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-500 {\r\n  color: var(--red-500);\r\n}",
+      "cssRule": "color: var(--red-500)",
       "responsive": false,
       "description": ""
     },
@@ -872,7 +872,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-600 {\r\n  color: var(--red-600);\r\n}",
+      "cssRule": "color: var(--red-600)",
       "responsive": false,
       "description": ""
     },
@@ -885,7 +885,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-700 {\r\n  color: var(--red-700);\r\n}",
+      "cssRule": "color: var(--red-700)",
       "responsive": false,
       "description": ""
     },
@@ -898,7 +898,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-800 {\r\n  color: var(--red-800);\r\n}",
+      "cssRule": "color: var(--red-800)",
       "responsive": false,
       "description": ""
     },
@@ -911,7 +911,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-900 {\r\n  color: var(--red-900);\r\n}",
+      "cssRule": "color: var(--red-900)",
       "responsive": false,
       "description": ""
     },
@@ -924,7 +924,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": ".color-red-950 {\r\n  color: var(--red-950);\r\n}",
+      "cssRule": "color: var(--red-950)",
       "responsive": false,
       "description": ""
     }

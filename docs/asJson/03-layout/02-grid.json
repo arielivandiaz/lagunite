@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "02-grid.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 140,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid",
-      "id": null,
+      "id": "#03-02-01",
       "category": null,
       "properties": [
         "display",
@@ -17,15 +17,15 @@
         "grid-gap",
         "place-items"
       ],
-      "cssRule": ".grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: var(--space-4);\r\n  place-items: center;\r\n}",
+      "cssRule": "display: grid\ngrid-template-columns: 1fr\ngrid-gap: var(--space-4)\nplace-items: center",
       "responsive": true,
-      "description": ""
+      "description": "** Basic Grid Containers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-auto",
-      "id": null,
+      "id": "#03-02-01",
       "category": null,
       "properties": [
         "display",
@@ -33,15 +33,15 @@
         "grid-gap",
         "place-items"
       ],
-      "cssRule": ".grid-auto {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\r\n  grid-gap: var(--space-4);\r\n  place-items: center;\r\n}",
+      "cssRule": "display: grid\ngrid-template-columns: repeat(auto-fit, minmax(250px, 1fr))\ngrid-gap: var(--space-4)\nplace-items: center",
       "responsive": true,
-      "description": ""
+      "description": "** Basic Grid Containers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-auto-fill",
-      "id": null,
+      "id": "#03-02-01",
       "category": null,
       "properties": [
         "display",
@@ -49,1791 +49,1791 @@
         "grid-gap",
         "place-items"
       ],
-      "cssRule": ".grid-auto-fill {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\r\n  grid-gap: var(--space-4);\r\n  place-items: center;\r\n}",
+      "cssRule": "display: grid\ngrid-template-columns: repeat(auto-fill, minmax(250px, 1fr))\ngrid-gap: var(--space-4)\nplace-items: center",
       "responsive": false,
-      "description": ""
+      "description": "** Basic Grid Containers **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-1",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-1 { grid-template-columns: repeat(1, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(1, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-2",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-2 { grid-template-columns: repeat(2, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(2, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-3",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-3 { grid-template-columns: repeat(3, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(3, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-4",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-4 { grid-template-columns: repeat(4, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(4, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-5",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-5 { grid-template-columns: repeat(5, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(5, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-6",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-6 { grid-template-columns: repeat(6, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(6, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-7",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-7 { grid-template-columns: repeat(7, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(7, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-8",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-8 { grid-template-columns: repeat(8, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(8, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-9",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-9 { grid-template-columns: repeat(9, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(9, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-10",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-10 { grid-template-columns: repeat(10, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(10, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-11",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-11 { grid-template-columns: repeat(11, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(11, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-cols-12",
-      "id": null,
+      "id": "#03-02-02",
       "category": null,
       "properties": [
         "grid-template-columns"
       ],
-      "cssRule": ".grid-cols-12 { grid-template-columns: repeat(12, 1fr); }",
+      "cssRule": "grid-template-columns: repeat(12, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Columns - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-1",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-1 { grid-template-rows: repeat(1, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(1, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-2",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-2 { grid-template-rows: repeat(2, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(2, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-3",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-3 { grid-template-rows: repeat(3, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(3, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-4",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-4 { grid-template-rows: repeat(4, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(4, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-5",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-5 { grid-template-rows: repeat(5, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(5, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-rows-6",
-      "id": null,
+      "id": "#03-02-03",
       "category": null,
       "properties": [
         "grid-template-rows"
       ],
-      "cssRule": ".grid-rows-6 { grid-template-rows: repeat(6, 1fr); }",
+      "cssRule": "grid-template-rows: repeat(6, 1fr)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Rows - Base **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-0",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-0 { grid-gap: 0; }",
+      "cssRule": "grid-gap: 0",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-xs",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-xs { grid-gap: var(--space-1); }",
+      "cssRule": "grid-gap: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-s",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-s { grid-gap: var(--space-2); }",
+      "cssRule": "grid-gap: var(--space-2)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap { grid-gap: var(--space-4); }",
+      "cssRule": "grid-gap: var(--space-4)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-l",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-l { grid-gap: var(--space-6); }",
+      "cssRule": "grid-gap: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-xl",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-xl { grid-gap: var(--space-8); }",
+      "cssRule": "grid-gap: var(--space-8)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-gap-xxl",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "grid-gap"
       ],
-      "cssRule": ".g-gap-xxl { grid-gap: var(--space-12); }",
+      "cssRule": "grid-gap: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "** Grid Gap Utilities **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap-0",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap-0 { column-gap: 0; }",
+      "cssRule": "column-gap: 0",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap-xs",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap-xs { column-gap: var(--space-1); }",
+      "cssRule": "column-gap: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap-s",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap-s { column-gap: var(--space-2); }",
+      "cssRule": "column-gap: var(--space-2)",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap { column-gap: var(--space-4); }",
+      "cssRule": "column-gap: var(--space-4)",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap-l",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap-l { column-gap: var(--space-6); }",
+      "cssRule": "column-gap: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-col-gap-xl",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "column-gap"
       ],
-      "cssRule": ".g-col-gap-xl { column-gap: var(--space-8); }",
+      "cssRule": "column-gap: var(--space-8)",
       "responsive": true,
-      "description": ""
+      "description": "Column Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap-0",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap-0 { row-gap: 0; }",
+      "cssRule": "row-gap: 0",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap-xs",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap-xs { row-gap: var(--space-1); }",
+      "cssRule": "row-gap: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap-s",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap-s { row-gap: var(--space-2); }",
+      "cssRule": "row-gap: var(--space-2)",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap { row-gap: var(--space-4); }",
+      "cssRule": "row-gap: var(--space-4)",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap-l",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap-l { row-gap: var(--space-6); }",
+      "cssRule": "row-gap: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".g-row-gap-xl",
-      "id": null,
+      "id": "#03-02-06",
       "category": null,
       "properties": [
         "row-gap"
       ],
-      "cssRule": ".g-row-gap-xl { row-gap: var(--space-8); }",
+      "cssRule": "row-gap: var(--space-8)",
       "responsive": true,
-      "description": ""
+      "description": "Row Gap"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-1",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-1 { grid-column: span 1; }",
+      "cssRule": "grid-column: span 1",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-2",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-2 { grid-column: span 2; }",
+      "cssRule": "grid-column: span 2",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-3",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-3 { grid-column: span 3; }",
+      "cssRule": "grid-column: span 3",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-4",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-4 { grid-column: span 4; }",
+      "cssRule": "grid-column: span 4",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-5",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-5 { grid-column: span 5; }",
+      "cssRule": "grid-column: span 5",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-6",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-6 { grid-column: span 6; }",
+      "cssRule": "grid-column: span 6",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-7",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-7 { grid-column: span 7; }",
+      "cssRule": "grid-column: span 7",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-8",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-8 { grid-column: span 8; }",
+      "cssRule": "grid-column: span 8",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-9",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-9 { grid-column: span 9; }",
+      "cssRule": "grid-column: span 9",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-10",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-10 { grid-column: span 10; }",
+      "cssRule": "grid-column: span 10",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-11",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-11 { grid-column: span 11; }",
+      "cssRule": "grid-column: span 11",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-12",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-12 { grid-column: span 12; }",
+      "cssRule": "grid-column: span 12",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-span-full",
-      "id": null,
+      "id": "#03-02-09",
       "category": null,
       "properties": [
         "grid-column"
       ],
-      "cssRule": ".col-span-full { grid-column: 1 / -1; }",
+      "cssRule": "grid-column: 1 / -1",
       "responsive": true,
-      "description": ""
+      "description": "** Column Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-1",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-1 { grid-row: span 1; }",
+      "cssRule": "grid-row: span 1",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-2",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-2 { grid-row: span 2; }",
+      "cssRule": "grid-row: span 2",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-3",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-3 { grid-row: span 3; }",
+      "cssRule": "grid-row: span 3",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-4",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-4 { grid-row: span 4; }",
+      "cssRule": "grid-row: span 4",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-5",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-5 { grid-row: span 5; }",
+      "cssRule": "grid-row: span 5",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-6",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-6 { grid-row: span 6; }",
+      "cssRule": "grid-row: span 6",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-span-full",
-      "id": null,
+      "id": "#03-02-10",
       "category": null,
       "properties": [
         "grid-row"
       ],
-      "cssRule": ".row-span-full { grid-row: 1 / -1; }",
+      "cssRule": "grid-row: 1 / -1",
       "responsive": true,
-      "description": ""
+      "description": "** Row Span **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-1",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-1 { grid-column-start: 1; }",
+      "cssRule": "grid-column-start: 1",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-2",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-2 { grid-column-start: 2; }",
+      "cssRule": "grid-column-start: 2",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-3",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-3 { grid-column-start: 3; }",
+      "cssRule": "grid-column-start: 3",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-4",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-4 { grid-column-start: 4; }",
+      "cssRule": "grid-column-start: 4",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-5",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-5 { grid-column-start: 5; }",
+      "cssRule": "grid-column-start: 5",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-6",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-6 { grid-column-start: 6; }",
+      "cssRule": "grid-column-start: 6",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-start-auto",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-start"
       ],
-      "cssRule": ".col-start-auto { grid-column-start: auto; }",
+      "cssRule": "grid-column-start: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-1",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-1 { grid-column-end: 1; }",
+      "cssRule": "grid-column-end: 1",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-2",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-2 { grid-column-end: 2; }",
+      "cssRule": "grid-column-end: 2",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-3",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-3 { grid-column-end: 3; }",
+      "cssRule": "grid-column-end: 3",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-4",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-4 { grid-column-end: 4; }",
+      "cssRule": "grid-column-end: 4",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-5",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-5 { grid-column-end: 5; }",
+      "cssRule": "grid-column-end: 5",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-6",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-6 { grid-column-end: 6; }",
+      "cssRule": "grid-column-end: 6",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-7",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-7 { grid-column-end: 7; }",
+      "cssRule": "grid-column-end: 7",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".col-end-auto",
-      "id": null,
+      "id": "#03-02-11",
       "category": null,
       "properties": [
         "grid-column-end"
       ],
-      "cssRule": ".col-end-auto { grid-column-end: auto; }",
+      "cssRule": "grid-column-end: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Column Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-1",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-1 { grid-row-start: 1; }",
+      "cssRule": "grid-row-start: 1",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-2",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-2 { grid-row-start: 2; }",
+      "cssRule": "grid-row-start: 2",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-3",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-3 { grid-row-start: 3; }",
+      "cssRule": "grid-row-start: 3",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-4",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-4 { grid-row-start: 4; }",
+      "cssRule": "grid-row-start: 4",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-5",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-5 { grid-row-start: 5; }",
+      "cssRule": "grid-row-start: 5",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-6",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-6 { grid-row-start: 6; }",
+      "cssRule": "grid-row-start: 6",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-start-auto",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-start"
       ],
-      "cssRule": ".row-start-auto { grid-row-start: auto; }",
+      "cssRule": "grid-row-start: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-1",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-1 { grid-row-end: 1; }",
+      "cssRule": "grid-row-end: 1",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-2",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-2 { grid-row-end: 2; }",
+      "cssRule": "grid-row-end: 2",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-3",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-3 { grid-row-end: 3; }",
+      "cssRule": "grid-row-end: 3",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-4",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-4 { grid-row-end: 4; }",
+      "cssRule": "grid-row-end: 4",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-5",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-5 { grid-row-end: 5; }",
+      "cssRule": "grid-row-end: 5",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-6",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-6 { grid-row-end: 6; }",
+      "cssRule": "grid-row-end: 6",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-7",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-7 { grid-row-end: 7; }",
+      "cssRule": "grid-row-end: 7",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".row-end-auto",
-      "id": null,
+      "id": "#03-02-12",
       "category": null,
       "properties": [
         "grid-row-end"
       ],
-      "cssRule": ".row-end-auto { grid-row-end: auto; }",
+      "cssRule": "grid-row-end: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Row Start/End **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ji-center",
-      "id": null,
+      "id": "#03-02-15",
       "category": null,
       "properties": [
         "justify-items"
       ],
-      "cssRule": ".ji-center { justify-items: center !important; }",
+      "cssRule": "justify-items: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ji-start",
-      "id": null,
+      "id": "#03-02-15",
       "category": null,
       "properties": [
         "justify-items"
       ],
-      "cssRule": ".ji-start { justify-items: start !important; }",
+      "cssRule": "justify-items: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ji-end",
-      "id": null,
+      "id": "#03-02-15",
       "category": null,
       "properties": [
         "justify-items"
       ],
-      "cssRule": ".ji-end { justify-items: end !important; }",
+      "cssRule": "justify-items: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ji-stretch",
-      "id": null,
+      "id": "#03-02-15",
       "category": null,
       "properties": [
         "justify-items"
       ],
-      "cssRule": ".ji-stretch { justify-items: stretch !important; }",
+      "cssRule": "justify-items: stretch !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gi-center",
-      "id": null,
+      "id": "#03-02-16",
       "category": null,
       "properties": [
         "align-items"
       ],
-      "cssRule": ".gi-center { align-items: center !important; }",
+      "cssRule": "align-items: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gi-start",
-      "id": null,
+      "id": "#03-02-16",
       "category": null,
       "properties": [
         "align-items"
       ],
-      "cssRule": ".gi-start { align-items: start !important; }",
+      "cssRule": "align-items: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gi-end",
-      "id": null,
+      "id": "#03-02-16",
       "category": null,
       "properties": [
         "align-items"
       ],
-      "cssRule": ".gi-end { align-items: end !important; }",
+      "cssRule": "align-items: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gi-stretch",
-      "id": null,
+      "id": "#03-02-16",
       "category": null,
       "properties": [
         "align-items"
       ],
-      "cssRule": ".gi-stretch { align-items: stretch !important; }",
+      "cssRule": "align-items: stretch !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Items **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pi-center",
-      "id": null,
+      "id": "#03-02-17",
       "category": null,
       "properties": [
         "place-items"
       ],
-      "cssRule": ".pi-center { place-items: center !important; }",
+      "cssRule": "place-items: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Place Items (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pi-start",
-      "id": null,
+      "id": "#03-02-17",
       "category": null,
       "properties": [
         "place-items"
       ],
-      "cssRule": ".pi-start { place-items: start !important; }",
+      "cssRule": "place-items: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Place Items (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pi-end",
-      "id": null,
+      "id": "#03-02-17",
       "category": null,
       "properties": [
         "place-items"
       ],
-      "cssRule": ".pi-end { place-items: end !important; }",
+      "cssRule": "place-items: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Place Items (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pi-stretch",
-      "id": null,
+      "id": "#03-02-17",
       "category": null,
       "properties": [
         "place-items"
       ],
-      "cssRule": ".pi-stretch { place-items: stretch !important; }",
+      "cssRule": "place-items: stretch !important",
       "responsive": true,
-      "description": ""
+      "description": "** Place Items (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".js-center",
-      "id": null,
+      "id": "#03-02-18",
       "category": null,
       "properties": [
         "justify-self"
       ],
-      "cssRule": ".js-center { justify-self: center !important; }",
+      "cssRule": "justify-self: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".js-start",
-      "id": null,
+      "id": "#03-02-18",
       "category": null,
       "properties": [
         "justify-self"
       ],
-      "cssRule": ".js-start { justify-self: start !important; }",
+      "cssRule": "justify-self: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".js-end",
-      "id": null,
+      "id": "#03-02-18",
       "category": null,
       "properties": [
         "justify-self"
       ],
-      "cssRule": ".js-end { justify-self: end !important; }",
+      "cssRule": "justify-self: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".js-stretch",
-      "id": null,
+      "id": "#03-02-18",
       "category": null,
       "properties": [
         "justify-self"
       ],
-      "cssRule": ".js-stretch { justify-self: stretch !important; }",
+      "cssRule": "justify-self: stretch !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gs-center",
-      "id": null,
+      "id": "#03-02-19",
       "category": null,
       "properties": [
         "align-self"
       ],
-      "cssRule": ".gs-center { align-self: center !important; }",
+      "cssRule": "align-self: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gs-start",
-      "id": null,
+      "id": "#03-02-19",
       "category": null,
       "properties": [
         "align-self"
       ],
-      "cssRule": ".gs-start { align-self: start !important; }",
+      "cssRule": "align-self: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gs-end",
-      "id": null,
+      "id": "#03-02-19",
       "category": null,
       "properties": [
         "align-self"
       ],
-      "cssRule": ".gs-end { align-self: end !important; }",
+      "cssRule": "align-self: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gs-stretch",
-      "id": null,
+      "id": "#03-02-19",
       "category": null,
       "properties": [
         "align-self"
       ],
-      "cssRule": ".gs-stretch { align-self: stretch !important; }",
+      "cssRule": "align-self: stretch !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Self **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ps-center",
-      "id": null,
+      "id": "#03-02-20",
       "category": null,
       "properties": [
         "place-self"
       ],
-      "cssRule": ".ps-center { place-self: center !important; }",
+      "cssRule": "place-self: center !important",
       "responsive": false,
-      "description": ""
+      "description": "** Place Self (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ps-start",
-      "id": null,
+      "id": "#03-02-20",
       "category": null,
       "properties": [
         "place-self"
       ],
-      "cssRule": ".ps-start { place-self: start !important; }",
+      "cssRule": "place-self: start !important",
       "responsive": false,
-      "description": ""
+      "description": "** Place Self (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ps-end",
-      "id": null,
+      "id": "#03-02-20",
       "category": null,
       "properties": [
         "place-self"
       ],
-      "cssRule": ".ps-end { place-self: end !important; }",
+      "cssRule": "place-self: end !important",
       "responsive": false,
-      "description": ""
+      "description": "** Place Self (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ps-stretch",
-      "id": null,
+      "id": "#03-02-20",
       "category": null,
       "properties": [
         "place-self"
       ],
-      "cssRule": ".ps-stretch { place-self: stretch !important; }",
+      "cssRule": "place-self: stretch !important",
       "responsive": false,
-      "description": ""
+      "description": "** Place Self (shorthand) **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-center",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-center { justify-content: center !important; }",
+      "cssRule": "justify-content: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-start",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-start { justify-content: start !important; }",
+      "cssRule": "justify-content: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-end",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-end { justify-content: end !important; }",
+      "cssRule": "justify-content: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-between",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-between { justify-content: space-between !important; }",
+      "cssRule": "justify-content: space-between !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-around",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-around { justify-content: space-around !important; }",
+      "cssRule": "justify-content: space-around !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".jc-evenly",
-      "id": null,
+      "id": "#03-02-21",
       "category": null,
       "properties": [
         "justify-content"
       ],
-      "cssRule": ".jc-evenly { justify-content: space-evenly !important; }",
+      "cssRule": "justify-content: space-evenly !important",
       "responsive": true,
-      "description": ""
+      "description": "** Justify Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-center",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-center { align-content: center !important; }",
+      "cssRule": "align-content: center !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-start",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-start { align-content: start !important; }",
+      "cssRule": "align-content: start !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-end",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-end { align-content: end !important; }",
+      "cssRule": "align-content: end !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-between",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-between { align-content: space-between !important; }",
+      "cssRule": "align-content: space-between !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-around",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-around { align-content: space-around !important; }",
+      "cssRule": "align-content: space-around !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".gc-evenly",
-      "id": null,
+      "id": "#03-02-22",
       "category": null,
       "properties": [
         "align-content"
       ],
-      "cssRule": ".gc-evenly { align-content: space-evenly !important; }",
+      "cssRule": "align-content: space-evenly !important",
       "responsive": true,
-      "description": ""
+      "description": "** Align Content **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-flow-row",
-      "id": null,
+      "id": "#03-02-25",
       "category": null,
       "properties": [
         "grid-auto-flow"
       ],
-      "cssRule": ".grid-flow-row { grid-auto-flow: row; }",
+      "cssRule": "grid-auto-flow: row",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Flow **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-flow-col",
-      "id": null,
+      "id": "#03-02-25",
       "category": null,
       "properties": [
         "grid-auto-flow"
       ],
-      "cssRule": ".grid-flow-col { grid-auto-flow: column; }",
+      "cssRule": "grid-auto-flow: column",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Flow **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-flow-dense",
-      "id": null,
+      "id": "#03-02-25",
       "category": null,
       "properties": [
         "grid-auto-flow"
       ],
-      "cssRule": ".grid-flow-dense { grid-auto-flow: dense; }",
+      "cssRule": "grid-auto-flow: dense",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Flow **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-flow-row-dense",
-      "id": null,
+      "id": "#03-02-25",
       "category": null,
       "properties": [
         "grid-auto-flow"
       ],
-      "cssRule": ".grid-flow-row-dense { grid-auto-flow: row dense; }",
+      "cssRule": "grid-auto-flow: row dense",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Flow **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-flow-col-dense",
-      "id": null,
+      "id": "#03-02-25",
       "category": null,
       "properties": [
         "grid-auto-flow"
       ],
-      "cssRule": ".grid-flow-col-dense { grid-auto-flow: column dense; }",
+      "cssRule": "grid-auto-flow: column dense",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Flow **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-cols-auto",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-columns"
       ],
-      "cssRule": ".auto-cols-auto { grid-auto-columns: auto; }",
+      "cssRule": "grid-auto-columns: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-cols-min",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-columns"
       ],
-      "cssRule": ".auto-cols-min { grid-auto-columns: min-content; }",
+      "cssRule": "grid-auto-columns: min-content",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-cols-max",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-columns"
       ],
-      "cssRule": ".auto-cols-max { grid-auto-columns: max-content; }",
+      "cssRule": "grid-auto-columns: max-content",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-cols-fr",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-columns"
       ],
-      "cssRule": ".auto-cols-fr { grid-auto-columns: minmax(0, 1fr); }",
+      "cssRule": "grid-auto-columns: minmax(0, 1fr)",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-rows-auto",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-rows"
       ],
-      "cssRule": ".auto-rows-auto { grid-auto-rows: auto; }",
+      "cssRule": "grid-auto-rows: auto",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-rows-min",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-rows"
       ],
-      "cssRule": ".auto-rows-min { grid-auto-rows: min-content; }",
+      "cssRule": "grid-auto-rows: min-content",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-rows-max",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-rows"
       ],
-      "cssRule": ".auto-rows-max { grid-auto-rows: max-content; }",
+      "cssRule": "grid-auto-rows: max-content",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".auto-rows-fr",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "grid-auto-rows"
       ],
-      "cssRule": ".auto-rows-fr { grid-auto-rows: minmax(0, 1fr); }",
+      "cssRule": "grid-auto-rows: minmax(0, 1fr)",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".grid-center",
-      "id": null,
+      "id": "#03-02-26",
       "category": null,
       "properties": [
         "display",
         "place-items"
       ],
-      "cssRule": ".grid-center { display: grid; place-items: center; }",
+      "cssRule": "display: grid\nplace-items: center",
       "responsive": false,
-      "description": ""
+      "description": "** Auto Columns/Rows **"
     }
   ]
 }

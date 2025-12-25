@@ -87,23 +87,27 @@ h6 {
 /* @ID: #01-01-04 */
 /* Font Size */
 .font-xs {
-  font-size: 70% !important;
+  font-size: var(--font-size-xs) !important;
 }
 
 .font-s {
-  font-size: 85% !important;
+  font-size: var(--font-size-s) !important;
 }
 
-.font-lg {
-  font-size: 115% !important;
+.font-l {
+  font-size: var(--font-size-l) !important;
 }
 
 .font-xl {
-  font-size: 130% !important;
+  font-size: var(--font-size-xl) !important;
 }
 
 .font-xxl {
-  font-size: 200% !important;
+  font-size: var(--font-size-xxl) !important;
+}
+
+.font-3xl {
+  font-size: var(--font-size-3xl) !important;
 }
 
 .font-250 {
@@ -121,8 +125,6 @@ h6 {
 .font-500 {
   font-size: 500% !important;
 }
-
-
 
 /* @ID: #01-01-010 */
 /* Font Fluid **/

@@ -244,7 +244,7 @@
     margin-left: var(--space-1);
 }
 
-.marg-lf-s {
+.marg-lf-s{
     margin-left: var(--space-3);
 }
 
@@ -252,7 +252,7 @@
     margin-left: var(--space-6);
 }
 
-.marg-lf-l {
+.marg-lf-l{
     margin-left: var(--space-12);
 }
 
@@ -265,7 +265,7 @@
         margin-left: var(--space-1);
     }
 
-    .xmarg-lf-s {
+    .xmarg-lf-s{
         margin-left: var(--space-3);
     }
 
@@ -273,7 +273,7 @@
         margin-left: var(--space-6);
     }
 
-    .xmarg-lf-l {
+    .xmarg-lf-l{
         margin-left: var(--space-12);
     }
 
@@ -287,7 +287,7 @@
         margin-left: var(--space-1);
     }
 
-    .dmarg-lf-s {
+    .dmarg-lf-s{
         margin-left: var(--space-3);
     }
 
@@ -295,7 +295,7 @@
         margin-left: var(--space-6);
     }
 
-    .dmarg-lf-l {
+    .dmarg-lf-l{
         margin-left: var(--space-12);
     }
 
@@ -309,7 +309,7 @@
     margin-right: var(--space-1);
 }
 
-.marg-rg-s {
+.marg-rg-s{
     margin-right: var(--space-3);
 }
 
@@ -318,7 +318,7 @@
     margin-right: var(--space-6);
 }
 
-.marg-rg-l {
+.marg-rg-l{
     margin-right: var(--space-12);
 }
 
@@ -331,7 +331,7 @@
         margin-right: var(--space-1);
     }
 
-    .xmarg-rg-s {
+    .xmarg-rg-s{
         margin-right: var(--space-3);
     }
 
@@ -339,7 +339,7 @@
         margin-right: var(--space-6);
     }
 
-    .xmarg-rg-l {
+    .xmarg-rg-l{
         margin-right: var(--space-12);
     }
 
@@ -353,7 +353,7 @@
         margin-right: var(--space-1);
     }
 
-    .dmarg-rg-s {
+    .dmarg-rg-s{
         margin-right: var(--space-3);
     }
 
@@ -361,7 +361,7 @@
         margin-right: var(--space-6);
     }
 
-    .dmarg-rg-l {
+    .dmarg-rg-l{
         margin-right: var(--space-12);
     }
 

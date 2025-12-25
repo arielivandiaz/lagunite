@@ -1,7 +1,7 @@
 {
   "folder": "04-decorators",
   "file": "06-transitions.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": true,
   "totalSelectors": 17,
   "content": [
@@ -9,222 +9,222 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".transition-all",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-property"
       ],
-      "cssRule": ".transition-all { transition-property: all; }",
+      "cssRule": "transition-property: all",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Properties **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".transition-colors",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-property"
       ],
-      "cssRule": ".transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }",
+      "cssRule": "transition-property: color, background-color, border-color, text-decoration-color, fill, stroke",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Properties **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".transition-opacity",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-property"
       ],
-      "cssRule": ".transition-opacity { transition-property: opacity; }",
+      "cssRule": "transition-property: opacity",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Properties **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".transition-transform",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-property"
       ],
-      "cssRule": ".transition-transform { transition-property: transform; }",
+      "cssRule": "transition-property: transform",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Properties **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-75",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-75 { transition-duration: 75ms; }",
+      "cssRule": "transition-duration: 75ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-100",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-100 { transition-duration: 100ms; }",
+      "cssRule": "transition-duration: 100ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-150",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-150 { transition-duration: 150ms; }",
+      "cssRule": "transition-duration: 150ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-200",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-200 { transition-duration: 200ms; }",
+      "cssRule": "transition-duration: 200ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-300",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-300 { transition-duration: 300ms; }",
+      "cssRule": "transition-duration: 300ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".duration-500",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-duration"
       ],
-      "cssRule": ".duration-500 { transition-duration: 500ms; }",
+      "cssRule": "transition-duration: 500ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Durations **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ease-linear",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-timing-function"
       ],
-      "cssRule": ".ease-linear { transition-timing-function: linear; }",
+      "cssRule": "transition-timing-function: linear",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Timing Functions **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ease-in",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-timing-function"
       ],
-      "cssRule": ".ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }",
+      "cssRule": "transition-timing-function: cubic-bezier(0.4, 0, 1, 1)",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Timing Functions **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ease-out",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-timing-function"
       ],
-      "cssRule": ".ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }",
+      "cssRule": "transition-timing-function: cubic-bezier(0, 0, 0.2, 1)",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Timing Functions **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".ease-in-out",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-timing-function"
       ],
-      "cssRule": ".ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }",
+      "cssRule": "transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Timing Functions **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".delay-75",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-delay"
       ],
-      "cssRule": ".delay-75 { transition-delay: 75ms; }",
+      "cssRule": "transition-delay: 75ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Delays **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".delay-100",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-delay"
       ],
-      "cssRule": ".delay-100 { transition-delay: 100ms; }",
+      "cssRule": "transition-delay: 100ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Delays **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".delay-150",
-      "id": null,
+      "id": "#04-06-XX",
       "category": null,
       "properties": [
         "transition-delay"
       ],
-      "cssRule": ".delay-150 { transition-delay: 150ms; }",
+      "cssRule": "transition-delay: 150ms",
       "responsive": true,
-      "description": ""
+      "description": "** Transition Delays **"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "folder": "02-colors",
   "file": "02-background.css",
-  "lastUpdated": "2025-11-22",
+  "lastUpdated": "2025-12-14",
   "hasResponsive": false,
-  "totalSelectors": 84,
+  "totalSelectors": 81,
   "content": [
     {
       "type": "selector",
@@ -15,7 +15,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg {\r\n  background: var(--color-bg) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "cssRule": "background: var(--color-bg) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
       "description": ""
     },
@@ -29,7 +29,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-alt {\r\n  background: var(--color-bg-alt) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "cssRule": "background: var(--color-bg-alt) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
       "description": ""
     },
@@ -43,7 +43,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-1 {\r\n  background: var(--bg-primary) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "cssRule": "background: var(--color-primary) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
       "description": ""
     },
@@ -57,7 +57,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-2 {\r\n  background: var(--bg-secondary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "cssRule": "background: var(--color-primary-light) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
       "description": ""
     },
@@ -71,7 +71,91 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-3 {\r\n  background: var(--bg-tertiary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "cssRule": "background: var(--color-primary-dark) !important\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-4",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-secondary) !important\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-5",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-secondary-light) !important\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-6",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-secondary-dark) !important\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-7",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-tertiary) !important\ncolor: var(--color-text) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-8",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-tertiary-light) !important\ncolor: var(--color-text-alt) !important",
+      "responsive": false,
+      "description": ""
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-9",
+      "id": "#02-02-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text) !important",
       "responsive": false,
       "description": ""
     },
@@ -85,7 +169,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-black {\r\n  background: #000 !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "cssRule": "background: #000 !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
       "description": ""
     },
@@ -99,7 +183,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-ablack {\r\n  background: var(--color-almost-black) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
+      "cssRule": "background: var(--color-almost-black) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
       "description": ""
     },
@@ -113,7 +197,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-white {\r\n  background: #fff !important;\r\n  color: var(--color-text-base) !important;\r\n}",
+      "cssRule": "background: #fff !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
       "description": ""
     },
@@ -127,133 +211,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-awhite {\r\n  background: var(--color-almost-white) !important;\r\n  color: var(--color-text-base) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-01",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-01 {\r\n  background: var(--color-primary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-02",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-02 {\r\n  background: var(--color-primary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-03",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-03 {\r\n  background: var(--color-primary-dark) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-04",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-04 {\r\n  background: var(--color-secondary) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-05",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-05 {\r\n  background: var(--color-secondary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-06",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-06 {\r\n  background: var(--color-secondary-dark) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-07",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-07 {\r\n  background: var(--color-tertiary) !important;\r\n  color: var(--color-text) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-08",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-08 {\r\n  background: var(--color-tertiary-light) !important;\r\n  color: var(--color-text-alt) !important;\r\n}",
-      "responsive": false,
-      "description": ""
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bg-09",
-      "id": "#02-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": ".bg-09 {\r\n  background: var(--color-tertiary-dark) !important;\r\n  color: var(--color-text) !important;\r\n}",
+      "cssRule": "background: var(--color-almost-white) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
       "description": ""
     },
@@ -267,7 +225,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-success {\r\n  background: var(--color-success-light) !important;\r\n  color: var(--color-success) !important;\r\n}",
+      "cssRule": "background: var(--color-success-light) !important\ncolor: var(--color-success) !important",
       "responsive": false,
       "description": ""
     },
@@ -281,7 +239,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-warning {\r\n  background: var(--color-warning-light) !important;\r\n  color: var(--color-warning) !important;\r\n}",
+      "cssRule": "background: var(--color-warning-light) !important\ncolor: var(--color-warning) !important",
       "responsive": false,
       "description": ""
     },
@@ -295,7 +253,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bg-error {\r\n  background: var(--color-error-light) !important;\r\n  color: var(--color-error) !important;\r\n}",
+      "cssRule": "background: var(--color-error-light) !important\ncolor: var(--color-error) !important",
       "responsive": false,
       "description": ""
     },
@@ -309,7 +267,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-1 {\r\n  background: var(--bg-gradient-1);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-1)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -323,7 +281,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-2 {\r\n  background: var(--bg-gradient-2);\r\n  color: var(--color-text-base);\r\n}",
+      "cssRule": "background: var(--bg-gradient-2)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": ""
     },
@@ -337,7 +295,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-3 {\r\n  background: var(--bg-gradient-3);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-3)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -351,7 +309,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-4 {\r\n  background: var(--bg-gradient-4);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-4)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -365,7 +323,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-5 {\r\n  background: var(--bg-gradient-5);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-5)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -379,7 +337,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-6 {\r\n  background: var(--bg-gradient-6);\r\n  color: var(--color-text-base);\r\n}",
+      "cssRule": "background: var(--bg-gradient-6)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": ""
     },
@@ -393,7 +351,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-7 {\r\n  background: var(--bg-gradient-7);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-7)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -407,7 +365,7 @@
         "background",
         "color"
       ],
-      "cssRule": ".bgg-8 {\r\n  background: var(--bg-gradient-8);\r\n  color: var(--color-text-alt);\r\n}",
+      "cssRule": "background: var(--bg-gradient-8)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": ""
     },
@@ -420,7 +378,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-50 {\r\n  background: var(--gray-50);\r\n}",
+      "cssRule": "background: var(--gray-50)",
       "responsive": false,
       "description": ""
     },
@@ -433,7 +391,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-100 {\r\n  background: var(--gray-100);\r\n}",
+      "cssRule": "background: var(--gray-100)",
       "responsive": false,
       "description": ""
     },
@@ -446,7 +404,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-200 {\r\n  background: var(--gray-200);\r\n}",
+      "cssRule": "background: var(--gray-200)",
       "responsive": false,
       "description": ""
     },
@@ -459,7 +417,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-300 {\r\n  background: var(--gray-300);\r\n}",
+      "cssRule": "background: var(--gray-300)",
       "responsive": false,
       "description": ""
     },
@@ -472,7 +430,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-400 {\r\n  background: var(--gray-400);\r\n}",
+      "cssRule": "background: var(--gray-400)",
       "responsive": false,
       "description": ""
     },
@@ -485,7 +443,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-500 {\r\n  background: var(--gray-500);\r\n}",
+      "cssRule": "background: var(--gray-500)",
       "responsive": false,
       "description": ""
     },
@@ -498,7 +456,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-600 {\r\n  background: var(--gray-600);\r\n}",
+      "cssRule": "background: var(--gray-600)",
       "responsive": false,
       "description": ""
     },
@@ -511,7 +469,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-700 {\r\n  background: var(--gray-700);\r\n}",
+      "cssRule": "background: var(--gray-700)",
       "responsive": false,
       "description": ""
     },
@@ -524,7 +482,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-800 {\r\n  background: var(--gray-800);\r\n}",
+      "cssRule": "background: var(--gray-800)",
       "responsive": false,
       "description": ""
     },
@@ -537,7 +495,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-900 {\r\n  background: var(--gray-900);\r\n}",
+      "cssRule": "background: var(--gray-900)",
       "responsive": false,
       "description": ""
     },
@@ -550,7 +508,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-gray-950 {\r\n  background: var(--gray-950);\r\n}",
+      "cssRule": "background: var(--gray-950)",
       "responsive": false,
       "description": ""
     },
@@ -563,7 +521,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-50 {\r\n  background: var(--blue-50);\r\n}",
+      "cssRule": "background: var(--blue-50)",
       "responsive": false,
       "description": ""
     },
@@ -576,7 +534,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-100 {\r\n  background: var(--blue-100);\r\n}",
+      "cssRule": "background: var(--blue-100)",
       "responsive": false,
       "description": ""
     },
@@ -589,7 +547,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-200 {\r\n  background: var(--blue-200);\r\n}",
+      "cssRule": "background: var(--blue-200)",
       "responsive": false,
       "description": ""
     },
@@ -602,7 +560,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-300 {\r\n  background: var(--blue-300);\r\n}",
+      "cssRule": "background: var(--blue-300)",
       "responsive": false,
       "description": ""
     },
@@ -615,7 +573,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-400 {\r\n  background: var(--blue-400);\r\n}",
+      "cssRule": "background: var(--blue-400)",
       "responsive": false,
       "description": ""
     },
@@ -628,7 +586,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-500 {\r\n  background: var(--blue-500);\r\n}",
+      "cssRule": "background: var(--blue-500)",
       "responsive": false,
       "description": ""
     },
@@ -641,7 +599,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-600 {\r\n  background: var(--blue-600);\r\n}",
+      "cssRule": "background: var(--blue-600)",
       "responsive": false,
       "description": ""
     },
@@ -654,7 +612,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-700 {\r\n  background: var(--blue-700);\r\n}",
+      "cssRule": "background: var(--blue-700)",
       "responsive": false,
       "description": ""
     },
@@ -667,7 +625,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-800 {\r\n  background: var(--blue-800);\r\n}",
+      "cssRule": "background: var(--blue-800)",
       "responsive": false,
       "description": ""
     },
@@ -680,7 +638,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-900 {\r\n  background: var(--blue-900);\r\n}",
+      "cssRule": "background: var(--blue-900)",
       "responsive": false,
       "description": ""
     },
@@ -693,7 +651,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-blue-950 {\r\n  background: var(--blue-950);\r\n}",
+      "cssRule": "background: var(--blue-950)",
       "responsive": false,
       "description": ""
     },
@@ -706,7 +664,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-50 {\r\n  background: var(--green-50);\r\n}",
+      "cssRule": "background: var(--green-50)",
       "responsive": false,
       "description": ""
     },
@@ -719,7 +677,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-100 {\r\n  background: var(--green-100);\r\n}",
+      "cssRule": "background: var(--green-100)",
       "responsive": false,
       "description": ""
     },
@@ -732,7 +690,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-200 {\r\n  background: var(--green-200);\r\n}",
+      "cssRule": "background: var(--green-200)",
       "responsive": false,
       "description": ""
     },
@@ -745,7 +703,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-300 {\r\n  background: var(--green-300);\r\n}",
+      "cssRule": "background: var(--green-300)",
       "responsive": false,
       "description": ""
     },
@@ -758,7 +716,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-400 {\r\n  background: var(--green-400);\r\n}",
+      "cssRule": "background: var(--green-400)",
       "responsive": false,
       "description": ""
     },
@@ -771,7 +729,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-500 {\r\n  background: var(--green-500);\r\n}",
+      "cssRule": "background: var(--green-500)",
       "responsive": false,
       "description": ""
     },
@@ -784,7 +742,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-600 {\r\n  background: var(--green-600);\r\n}",
+      "cssRule": "background: var(--green-600)",
       "responsive": false,
       "description": ""
     },
@@ -797,7 +755,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-700 {\r\n  background: var(--green-700);\r\n}",
+      "cssRule": "background: var(--green-700)",
       "responsive": false,
       "description": ""
     },
@@ -810,7 +768,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-800 {\r\n  background: var(--green-800);\r\n}",
+      "cssRule": "background: var(--green-800)",
       "responsive": false,
       "description": ""
     },
@@ -823,7 +781,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-900 {\r\n  background: var(--green-900);\r\n}",
+      "cssRule": "background: var(--green-900)",
       "responsive": false,
       "description": ""
     },
@@ -836,7 +794,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-green-950 {\r\n  background: var(--green-950);\r\n}",
+      "cssRule": "background: var(--green-950)",
       "responsive": false,
       "description": ""
     },
@@ -849,7 +807,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-50 {\r\n  background: var(--yellow-50);\r\n}",
+      "cssRule": "background: var(--yellow-50)",
       "responsive": false,
       "description": ""
     },
@@ -862,7 +820,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-100 {\r\n  background: var(--yellow-100);\r\n}",
+      "cssRule": "background: var(--yellow-100)",
       "responsive": false,
       "description": ""
     },
@@ -875,7 +833,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-200 {\r\n  background: var(--yellow-200);\r\n}",
+      "cssRule": "background: var(--yellow-200)",
       "responsive": false,
       "description": ""
     },
@@ -888,7 +846,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-300 {\r\n  background: var(--yellow-300);\r\n}",
+      "cssRule": "background: var(--yellow-300)",
       "responsive": false,
       "description": ""
     },
@@ -901,7 +859,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-400 {\r\n  background: var(--yellow-400);\r\n}",
+      "cssRule": "background: var(--yellow-400)",
       "responsive": false,
       "description": ""
     },
@@ -914,7 +872,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-500 {\r\n  background: var(--yellow-500);\r\n}",
+      "cssRule": "background: var(--yellow-500)",
       "responsive": false,
       "description": ""
     },
@@ -927,7 +885,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-600 {\r\n  background: var(--yellow-600);\r\n}",
+      "cssRule": "background: var(--yellow-600)",
       "responsive": false,
       "description": ""
     },
@@ -940,7 +898,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-700 {\r\n  background: var(--yellow-700);\r\n}",
+      "cssRule": "background: var(--yellow-700)",
       "responsive": false,
       "description": ""
     },
@@ -953,7 +911,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-800 {\r\n  background: var(--yellow-800);\r\n}",
+      "cssRule": "background: var(--yellow-800)",
       "responsive": false,
       "description": ""
     },
@@ -966,7 +924,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-900 {\r\n  background: var(--yellow-900);\r\n}",
+      "cssRule": "background: var(--yellow-900)",
       "responsive": false,
       "description": ""
     },
@@ -979,7 +937,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-yellow-950 {\r\n  background: var(--yellow-950);\r\n}",
+      "cssRule": "background: var(--yellow-950)",
       "responsive": false,
       "description": ""
     },
@@ -992,7 +950,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-50 {\r\n  background: var(--red-50);\r\n}",
+      "cssRule": "background: var(--red-50)",
       "responsive": false,
       "description": ""
     },
@@ -1005,7 +963,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-100 {\r\n  background: var(--red-100);\r\n}",
+      "cssRule": "background: var(--red-100)",
       "responsive": false,
       "description": ""
     },
@@ -1018,7 +976,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-200 {\r\n  background: var(--red-200);\r\n}",
+      "cssRule": "background: var(--red-200)",
       "responsive": false,
       "description": ""
     },
@@ -1031,7 +989,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-300 {\r\n  background: var(--red-300);\r\n}",
+      "cssRule": "background: var(--red-300)",
       "responsive": false,
       "description": ""
     },
@@ -1044,7 +1002,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-400 {\r\n  background: var(--red-400);\r\n}",
+      "cssRule": "background: var(--red-400)",
       "responsive": false,
       "description": ""
     },
@@ -1057,7 +1015,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-500 {\r\n  background: var(--red-500);\r\n}",
+      "cssRule": "background: var(--red-500)",
       "responsive": false,
       "description": ""
     },
@@ -1070,7 +1028,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-600 {\r\n  background: var(--red-600);\r\n}",
+      "cssRule": "background: var(--red-600)",
       "responsive": false,
       "description": ""
     },
@@ -1083,7 +1041,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-700 {\r\n  background: var(--red-700);\r\n}",
+      "cssRule": "background: var(--red-700)",
       "responsive": false,
       "description": ""
     },
@@ -1096,7 +1054,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-800 {\r\n  background: var(--red-800);\r\n}",
+      "cssRule": "background: var(--red-800)",
       "responsive": false,
       "description": ""
     },
@@ -1109,7 +1067,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-900 {\r\n  background: var(--red-900);\r\n}",
+      "cssRule": "background: var(--red-900)",
       "responsive": false,
       "description": ""
     },
@@ -1122,7 +1080,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": ".bg-red-950 {\r\n  background: var(--red-950);\r\n}",
+      "cssRule": "background: var(--red-950)",
       "responsive": false,
       "description": ""
     }

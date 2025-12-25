@@ -103,6 +103,12 @@
 - [x] User select: `.select-none`, `.select-text`, `.select-all`
 - [x] Update ID system: `#10-02-XX`
 
+#### 1.1.11 Naming & Consistency
+- [ ] Publish a concise naming charter: order classes base → `x` → `d`; prefer semantic utilities over inline styles; never invent classes. Link it from `docs/PROMPT_GUIDE.md` and main docs.
+- [ ] Audit utilities for homogeneity (dash usage, singular/plural, abbreviations) and document approved patterns in a glossary.
+- [ ] Add “How to read a class name” examples to the cheat sheet (decode `.xgrid-cols-2`, `.marg-h-s`, `.minwp50`).
+- [ ] Create a Tailwind → Lagunite mapping table for top 50 classes (flex/grid/spacing/sizing/typography) to standardize migrations.
+
 ### 1.2 Component Library (Priority: HIGH)
 
 ## 📂 Layer 05: Atoms (Átomos)
@@ -310,6 +316,9 @@ Esencial para dashboards o apps complejas.
 - [ ] Add dark/light mode toggle
 - [ ] Create responsive mobile menu
 - [ ] Add search autocomplete
+- [ ] Integrate `docs/PROMPT_GUIDE.md` and `docs/CHEATSHEET.md` into the docs site with clear entry points for humans and AI assistants.
+- [ ] Add usage recipes per utility family (flex, grid, spacing, sizing, typography) with 1–2 canonical snippets each.
+- [ ] Add a “Common mistakes” section (responsive order, invented classes, inline widths) to improve readability and consistency.
 
 #### 1.3.3 Demo Pages
 - [ ] Create comprehensive demo pages in `web/` folder

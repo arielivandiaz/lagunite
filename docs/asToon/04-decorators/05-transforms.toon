@@ -1,168 +1,168 @@
 folder: 04-decorators
 file: 05-transforms.css
-lastUpdated: 2025-11-22
+lastUpdated: 2025-12-14
 hasResponsive: true
 totalSelectors: 18
 content[18]:
   - type: selector
     selectorType: class
     selector: .scale-0
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-0 { transform: scale(0); }"
+    cssRule: "transform: scale(0)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .scale-50
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-50 { transform: scale(0.5); }"
+    cssRule: "transform: scale(0.5)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .scale-75
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-75 { transform: scale(0.75); }"
+    cssRule: "transform: scale(0.75)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .scale-100
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-100 { transform: scale(1); }"
+    cssRule: "transform: scale(1)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .scale-125
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-125 { transform: scale(1.25); }"
+    cssRule: "transform: scale(1.25)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .scale-150
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".scale-150 { transform: scale(1.5); }"
+    cssRule: "transform: scale(1.5)"
     responsive: true
-    description: ""
+    description: ** Scale Utilities **
   - type: selector
     selectorType: class
     selector: .rotate-0
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".rotate-0 { transform: rotate(0deg); }"
+    cssRule: "transform: rotate(0deg)"
     responsive: true
-    description: ""
+    description: ** Rotate Utilities **
   - type: selector
     selectorType: class
     selector: .rotate-45
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".rotate-45 { transform: rotate(45deg); }"
+    cssRule: "transform: rotate(45deg)"
     responsive: true
-    description: ""
+    description: ** Rotate Utilities **
   - type: selector
     selectorType: class
     selector: .rotate-90
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".rotate-90 { transform: rotate(90deg); }"
+    cssRule: "transform: rotate(90deg)"
     responsive: true
-    description: ""
+    description: ** Rotate Utilities **
   - type: selector
     selectorType: class
     selector: .rotate-180
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".rotate-180 { transform: rotate(180deg); }"
+    cssRule: "transform: rotate(180deg)"
     responsive: true
-    description: ""
+    description: ** Rotate Utilities **
   - type: selector
     selectorType: class
     selector: .rotate-270
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".rotate-270 { transform: rotate(270deg); }"
+    cssRule: "transform: rotate(270deg)"
     responsive: true
-    description: ""
+    description: ** Rotate Utilities **
   - type: selector
     selectorType: class
     selector: .translate-x-0
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".translate-x-0 { transform: translateX(0); }"
+    cssRule: "transform: translateX(0)"
     responsive: true
-    description: ""
+    description: ** Translate Utilities **
   - type: selector
     selectorType: class
     selector: .translate-x-full
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".translate-x-full { transform: translateX(100%); }"
+    cssRule: "transform: translateX(100%)"
     responsive: true
-    description: ""
+    description: ** Translate Utilities **
   - type: selector
     selectorType: class
     selector: .translate-y-0
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".translate-y-0 { transform: translateY(0); }"
+    cssRule: "transform: translateY(0)"
     responsive: true
-    description: ""
+    description: ** Translate Utilities **
   - type: selector
     selectorType: class
     selector: .translate-y-full
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform
-    cssRule: ".translate-y-full { transform: translateY(100%); }"
+    cssRule: "transform: translateY(100%)"
     responsive: true
-    description: ""
+    description: ** Translate Utilities **
   - type: selector
     selectorType: class
     selector: .origin-center
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform-origin
-    cssRule: ".origin-center { transform-origin: center; }"
+    cssRule: "transform-origin: center"
     responsive: true
-    description: ""
+    description: ** Transform origin **
   - type: selector
     selectorType: class
     selector: .origin-top
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform-origin
-    cssRule: ".origin-top { transform-origin: top; }"
+    cssRule: "transform-origin: top"
     responsive: true
-    description: ""
+    description: ** Transform origin **
   - type: selector
     selectorType: class
     selector: .origin-bottom
-    id: null
+    id: #04-05-XX
     category: null
     properties[1]: transform-origin
-    cssRule: ".origin-bottom { transform-origin: bottom; }"
+    cssRule: "transform-origin: bottom"
     responsive: true
-    description: ""
+    description: ** Transform origin **

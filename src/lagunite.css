@@ -19,6 +19,8 @@
 @import './css/03-layout/06-containers.css';
 @import './css/03-layout/07-overflow.css';
 @import './css/03-layout/10-size.css';
+@import './css/03-layout/11-width.css';
+@import './css/03-layout/12-height.css';
 @import './css/04-decorators/01-effects.css';
 @import './css/04-decorators/02-shadows.css';
 @import './css/04-decorators/03-opacity.css';
@@ -29,9 +31,11 @@
 @import './css/04-decorators/08-filters.css';
 @import './css/05-atoms/01-buttons.css';
 @import './css/05-atoms/02-inputs.css';
-@import './css/05-atoms/03-badges.css';
-@import './css/05-atoms/04-avatars.css';
-@import './css/07-form/form.css';
+@import './css/05-atoms/03-table.css';
+@import './css/05-atoms/04-lists.css';
+@import './css/05-atoms/05-figures.css';
+@import './css/05-atoms/100-avatars.css';
+@import './css/05-atoms/100-badges.css';
 @import './css/10-misc/01-display.css';
 @import './css/10-misc/02-cursor.css';
 @import './css/10-misc/03-pseudo.css';
