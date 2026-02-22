@@ -108,11 +108,20 @@
 .border-color-success {
   border-color: var(--color-success) !important;
 }
+.border-color-success-alt {
+  border-color: var(--color-success-light) !important;
+}
 .border-color-warning {
   border-color: var(--color-warning) !important;
 }
+.border-color-warning-alt {
+  border-color: var(--color-warning-light) !important;
+}
 .border-color-error {
   border-color: var(--color-error) !important;
+}
+.border-color-error-alt {
+  border-color: var(--color-error-light) !important;
 }
 .border-color-black {
   border-color: var(--color-almost-black) !important;
@@ -124,32 +133,6 @@
   border-color: transparent;
 }
 
-@media (max-width: 639px) {
-  .xborder-color-primary {
-    border-color: var(--color-primary);
-  }
-  .xborder-color-white {
-    border-color: var(--color-almost-white);
-  }
-  .xborder-color-transparent {
-    border-color: transparent;
-  }
-}
-
-@media (min-width: 640px) {
-  .dborder-color-primary {
-    border-color: var(--color-primary);
-  }
-  .dborder-color-success {
-    border-color: var(--color-success);
-  }
-  .dborder-color-error {
-    border-color: var(--color-error);
-  }
-  .dborder-color-transparent {
-    border-color: transparent;
-  }
-}
 
 /* @ID: #04-04-04 */
 /*** Border Sides (Atomic) ***/
