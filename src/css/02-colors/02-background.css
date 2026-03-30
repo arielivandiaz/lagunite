@@ -92,6 +92,11 @@
   color: var(--color-error) !important;
 }
 
+.bgg-success{
+  background: linear-gradient(to right, var(--color-success-light), var(--color-success));
+  color: var(--color-text-alt);
+}
+
 /* @ID: #02-02-06 */
 .bgg-1 {
   background: var(--bg-gradient-1);
@@ -132,6 +137,144 @@
   background: var(--bg-gradient-8);
   color: var(--color-text-alt);
 }
+
+
+.bgg-lf-1{
+  background: linear-gradient(to left, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-lf-2{
+  background: linear-gradient(to left, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-lf-3{
+  background: linear-gradient(to left, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-lf-4{
+  background: linear-gradient(to left, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-rg-1{
+  background: linear-gradient(to right, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-rg-2{
+  background: linear-gradient(to right, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-rg-3{ 
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-rg-4{
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-t-1{
+  background: linear-gradient(to top, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-t-2{
+  background: linear-gradient(to top, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-t-3{
+  background: linear-gradient(to top, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-t-4{
+  background: linear-gradient(to top, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-b-1{
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-b-2{
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-b-3{
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-b-4{
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-tl-1{
+  background: linear-gradient(to top left, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-tl-2{
+  background: linear-gradient(to top left, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-tl-3{
+  background: linear-gradient(to top left, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-tl-4{
+  background: linear-gradient(to top left, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-tr-1{
+  background: linear-gradient(to top right, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-tr-2{
+  background: linear-gradient(to top right, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-tr-3{
+  background: linear-gradient(to top right, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-tr-4{
+  background: linear-gradient(to top right, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-bl-1{
+  background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-bl-2{
+  background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-bl-3{
+  background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-bl-4{
+  background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
+.bgg-br-1{
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-black));
+  color: var(--color-text-alt);
+}
+.bgg-br-2{
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-white));
+  color: var(--color-text-alt);
+}
+.bgg-br-3{
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-alt);
+}
+.bgg-br-4{
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-alt);
+}
+
 
 /* @ID: #02-02-50 */
 .bg-gray-50 {

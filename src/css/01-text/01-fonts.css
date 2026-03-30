@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-headers);
-  font-weight: var(--font-weight-bold); /* Added default bold for headers */
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -68,8 +68,6 @@ h6 {
 }
 
 /* @ID: #01-01-03 */
-/* Font Family */
-
 /* Font Family */
 .font-text {
   font-family: var(--font-text);

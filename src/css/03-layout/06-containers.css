@@ -254,41 +254,6 @@
   .dobject-scale-down { object-fit: scale-down; }
 }
 
-/* @ID: #03-06-12 */
-/*** Object Position Utilities ***/
-.object-center { object-position: center; }
-.object-top { object-position: top; }
-.object-bottom { object-position: bottom; }
-.object-left { object-position: left; }
-.object-right { object-position: right; }
-.object-left-top { object-position: left top; }
-.object-left-bottom { object-position: left bottom; }
-.object-right-top { object-position: right top; }
-.object-right-bottom { object-position: right bottom; }
-
-@media (max-width: 639px) {
-  .xobject-center { object-position: center; }
-  .xobject-top { object-position: top; }
-  .xobject-bottom { object-position: bottom; }
-  .xobject-left { object-position: left; }
-  .xobject-right { object-position: right; }
-  .xobject-left-top { object-position: left top; }
-  .xobject-left-bottom { object-position: left bottom; }
-  .xobject-right-top { object-position: right top; }
-  .xobject-right-bottom { object-position: right bottom; }
-}
-
-@media (min-width: 640px) {
-  .dobject-center { object-position: center; }
-  .dobject-top { object-position: top; }
-  .dobject-bottom { object-position: bottom; }
-  .dobject-left { object-position: left; }
-  .dobject-right { object-position: right; }
-  .dobject-left-top { object-position: left top; }
-  .dobject-left-bottom { object-position: left bottom; }
-  .dobject-right-top { object-position: right top; }
-  .dobject-right-bottom { object-position: right bottom; }
-}
 
 /* @ID: #03-06-13 */
 /*** Constrained Containers ***/
@@ -356,3 +321,4 @@
   padding: var(--space-1) var(--space-2);
   font-family: var(--font-mono);
 }
+

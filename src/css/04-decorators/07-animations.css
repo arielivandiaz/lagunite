@@ -1,198 +1,200 @@
-/* @ID: #04-07-XX */
+/* ==========================================================================
+   04-decorators / 07-animations.css
+   Keyframe definitions, animation utility classes, and helpers.
+   ========================================================================== */
+
+/* @ID: #04-07-01 */
 /*** Keyframes ***/
 @keyframes spin {
-  0% { transform: rotate(0deg); }
+  0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
 @keyframes pulse {
-  0%,
-  100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.7; }
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.05); opacity: 0.7; }
 }
 
 @keyframes bounce {
-  0%,
-  100% { transform: translateY(0); }
-  50% { transform: translateY(-25%); }
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-25%); }
 }
 
 @keyframes fade-in {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes fade-out {
   from { opacity: 1; }
-  to { opacity: 0; }
+  to   { opacity: 0; }
 }
 
-@keyframes slide-in {
+@keyframes slide-in-up {
   from { transform: translateY(2rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes slide-out {
+@keyframes slide-in-down {
+  from { transform: translateY(-2rem); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-out-up {
   from { transform: translateY(0); opacity: 1; }
-  to { transform: translateY(2rem); opacity: 0; }
+  to   { transform: translateY(-2rem); opacity: 0; }
 }
 
+@keyframes slide-out-down {
+  from { transform: translateY(0); opacity: 1; }
+  to   { transform: translateY(2rem); opacity: 0; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-4px); }
+  40%      { transform: translateX(4px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
+}
+
+/* @ID: #04-07-02 */
 /*** Animation Utilities ***/
+.animate-none { animation: none; }
+
 .animate-spin {
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: spin 1s linear infinite;
 }
 
 .animate-pulse {
-  animation-name: pulse;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .animate-bounce {
-  animation-name: bounce;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: bounce 1s ease-in-out infinite;
 }
 
 .animate-fade-in {
-  animation-name: fade-in;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+  animation: fade-in 0.5s ease-out;
 }
 
 .animate-fade-out {
-  animation-name: fade-out;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
+  animation: fade-out 0.5s ease-in;
 }
 
 .animate-slide-in {
-  animation-name: slide-in;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+  animation: slide-in-up 0.5s ease-out;
+}
+
+.animate-slide-in-down {
+  animation: slide-in-down 0.5s ease-out;
 }
 
 .animate-slide-out {
-  animation-name: slide-out;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
+  animation: slide-out-down 0.5s ease-in;
 }
 
-/*** Animation Duration Helpers ***/
-.animate-duration-1s { animation-duration: 1s; }
-.animate-duration-2s { animation-duration: 2s; }
+.animate-slide-out-up {
+  animation: slide-out-up 0.5s ease-in;
+}
 
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* @ID: #04-07-03 */
+/*** Animation Duration Helpers ***/
+.animate-duration-75   { animation-duration: 75ms; }
+.animate-duration-100  { animation-duration: 100ms; }
+.animate-duration-150  { animation-duration: 150ms; }
+.animate-duration-200  { animation-duration: 200ms; }
+.animate-duration-300  { animation-duration: 300ms; }
+.animate-duration-500  { animation-duration: 500ms; }
+.animate-duration-700  { animation-duration: 700ms; }
+.animate-duration-1000 { animation-duration: 1000ms; }
+.animate-duration-2000 { animation-duration: 2000ms; }
+
+/* @ID: #04-07-04 */
+/*** Animation Delay Helpers ***/
+.animate-delay-75  { animation-delay: 75ms; }
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-150 { animation-delay: 150ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+/* @ID: #04-07-05 */
 /*** Animation Iteration Helpers ***/
-.animate-once { animation-iteration-count: 1; }
+.animate-once     { animation-iteration-count: 1; }
 .animate-infinite { animation-iteration-count: infinite; }
 
+/* @ID: #04-07-06 */
+/*** Animation Fill Mode Helpers ***/
+.animate-fill-none      { animation-fill-mode: none; }
+.animate-fill-forwards  { animation-fill-mode: forwards; }
+.animate-fill-backwards { animation-fill-mode: backwards; }
+.animate-fill-both      { animation-fill-mode: both; }
+
+/* @ID: #04-07-07 */
+/*** Animation Direction Helpers ***/
+.animate-normal    { animation-direction: normal; }
+.animate-reverse   { animation-direction: reverse; }
+.animate-alternate { animation-direction: alternate; }
+
+/* @ID: #04-07-08 */
+/*** Accessibility: respect prefers-reduced-motion ***/
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin,
+  .animate-pulse,
+  .animate-bounce,
+  .animate-fade-in,
+  .animate-fade-out,
+  .animate-slide-in,
+  .animate-slide-in-down,
+  .animate-slide-out,
+  .animate-slide-out-up,
+  .animate-shake {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* @ID: #04-07-09 */
+/*** Responsive: mobile (max-width: 639px) ***/
 @media (max-width: 639px) {
-  .xanimate-spin {
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+  .xanimate-none { animation: none; }
+  .xanimate-spin   { animation: spin 1s linear infinite; }
+  .xanimate-pulse  { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  .xanimate-bounce { animation: bounce 1s ease-in-out infinite; }
 
-  .xanimate-pulse {
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-  }
+  .xanimate-fade-in       { animation: fade-in 0.5s ease-out; }
+  .xanimate-fade-out      { animation: fade-out 0.5s ease-in; }
+  .xanimate-slide-in      { animation: slide-in-up 0.5s ease-out; }
+  .xanimate-slide-in-down { animation: slide-in-down 0.5s ease-out; }
+  .xanimate-slide-out     { animation: slide-out-down 0.5s ease-in; }
+  .xanimate-slide-out-up  { animation: slide-out-up 0.5s ease-in; }
+  .xanimate-shake         { animation: shake 0.4s ease-in-out; }
 
-  .xanimate-bounce {
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-
-  .xanimate-fade-in {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-  }
-
-  .xanimate-fade-out {
-    animation-name: fade-out;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-  }
-
-  .xanimate-slide-in {
-    animation-name: slide-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-  }
-
-  .xanimate-slide-out {
-    animation-name: slide-out;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-  }
-
-  .xanimate-duration-1s { animation-duration: 1s; }
-  .xanimate-duration-2s { animation-duration: 2s; }
-
-  .xanimate-once { animation-iteration-count: 1; }
+  .xanimate-once     { animation-iteration-count: 1; }
   .xanimate-infinite { animation-iteration-count: infinite; }
 }
 
+/* @ID: #04-07-10 */
+/*** Responsive: desktop (min-width: 640px) ***/
 @media (min-width: 640px) {
-  .danimate-spin {
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+  .danimate-none { animation: none; }
+  .danimate-spin   { animation: spin 1s linear infinite; }
+  .danimate-pulse  { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  .danimate-bounce { animation: bounce 1s ease-in-out infinite; }
 
-  .danimate-pulse {
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-  }
+  .danimate-fade-in       { animation: fade-in 0.5s ease-out; }
+  .danimate-fade-out      { animation: fade-out 0.5s ease-in; }
+  .danimate-slide-in      { animation: slide-in-up 0.5s ease-out; }
+  .danimate-slide-in-down { animation: slide-in-down 0.5s ease-out; }
+  .danimate-slide-out     { animation: slide-out-down 0.5s ease-in; }
+  .danimate-slide-out-up  { animation: slide-out-up 0.5s ease-in; }
+  .danimate-shake         { animation: shake 0.4s ease-in-out; }
 
-  .danimate-bounce {
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-
-  .danimate-fade-in {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-  }
-
-  .danimate-fade-out {
-    animation-name: fade-out;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-  }
-
-  .danimate-slide-in {
-    animation-name: slide-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-  }
-
-  .danimate-slide-out {
-    animation-name: slide-out;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-  }
-
-  .danimate-duration-1s { animation-duration: 1s; }
-  .danimate-duration-2s { animation-duration: 2s; }
-
-  .danimate-once { animation-iteration-count: 1; }
+  .danimate-once     { animation-iteration-count: 1; }
   .danimate-infinite { animation-iteration-count: infinite; }
 }

@@ -7,125 +7,192 @@
   | should be used throughout the library and overridden for theming.
   */
 
-:root {
-  /*== Color Assignments ==*/
-  --color-primary: #2476ff;
-  --color-primary-light: #5e9aff;
-  --color-primary-dark: #0965ff;
-  --color-primary-rgb: 36, 118, 255;
+  :root {
+    /*== Color Assignments ==*/
+    --color-primary: #2476ff;
+    --color-primary-light: #5e9aff;
+    --color-primary-dark: #0965ff;
+    --color-primary-rgb: 36, 118, 255;
+  
+    --color-secondary: #747474;
+    --color-secondary-light: #333;
+    --color-secondary-dark: #292929;
+    --color-secondary-rgb: 116, 116, 116;
+  
+    --color-tertiary: #f97316;
+    --color-tertiary-light: #ffa261;
+    --color-tertiary-dark: #c95300;
+    --color-tertiary-rgb: 249, 115, 22;
+  
+    --color-almost-black: #333;
+    --color-almost-white: #fcfcfc;
+  
+    --color-success: #009112;
+    --color-success-light: #98ff98;
+    --color-success-rgb: 0, 145, 18;
+    --color-warning: #ff9017;
+    --color-warning-light: #ffead5;
+    --color-warning-rgb: 255, 144, 23;
+    --color-error: #fa3434;
+    --color-error-light: #fdd0d0;
+    --color-error-rgb: 250, 52, 52;
+  
+    /*== Text Colors ==*/
+    --color-text-base: #333;
+    --color-text-alt: #fff;
+  
+    /*== Background Colors ==*/
+    --color-bg: #eee;
+    --color-bg-alt: #222;
+  
+    --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
+    --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);
+    --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);
+  
+    --color-border: var(--gray-200);
+    --color-border-hover: var(--gray-300);
 
-  --color-secondary: #747474;
-  --color-secondary-light: #333;
-  --color-secondary-dark: #292929;
-  --color-secondary-rgb: 116, 116, 116;
+    /*== Inputs (semantic aliases for form controls) ==*/
+    --input-text: var(--color-text-base);
+    --input-bg: var(--color-bg);
+    --input-border: var(--gray-300);
+    --input-placeholder: var(--gray-400);
 
+    /* Chevron for native <select> (data URI; stroke matches gray-600) */
+    --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    /* Chevron on primary strip (.select-container.alt) */
+    --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    --select-chevron-zone: 2.75rem;
+  
+    /*== Gradients ==*/
+    --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
+    --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);
+    --bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
+    --bg-gradient-4: linear-gradient(
+      180deg,
+      rgba(94, 154, 255, 1) 0%,
+      rgba(36, 118, 255, 1) 50%,
+      rgba(0, 90, 238, 1) 100%
+    );
+    --bg-gradient-5: radial-gradient(
+      circle,
+      rgba(94, 154, 255, 1) 0%,
+      rgba(36, 118, 255, 1) 100%
+    );
+    --bg-gradient-6: radial-gradient(
+      circle,
+      rgba(238, 238, 238, 1) 0%,
+      rgba(193, 216, 255, 1) 100%
+    );
+    --bg-gradient-7: repeating-linear-gradient(
+      45deg,
+      #2476ff,
+      #5e9aff 20px,
+      #fff 20px,
+      #ccc 32px
+    );
+    --bg-gradient-8: repeating-linear-gradient(
+      45deg,
+      #5e9aff,
+      #0965ff 20px,
+      #000 20px,
+      #444 32px
+    );
+  
+    /*== Borders ==*/
+    --border-width-s: 1px;
+    --border-width-md: 2px;
+    --border: 2px solid #2476ff;
+    --border-light: 2px solid #5e9aff;
+    --border-dark: 2px solid #0965ff;
+  
+    /*== Shadows ==*/
+    --shadow-s:
+      0 1px 2px rgba(0, 0, 0, 0.06),
+      0 0 0 1px rgba(0, 0, 0, 0.02); /* Subtle */
+    --shadow-m:
+      0 8px 16px -10px rgba(0, 0, 0, 0.18),
+      0 3px 8px -4px rgba(0, 0, 0, 0.12),
+      0 0 0 1px rgba(0, 0, 0, 0.03); /* Medium */
+    --shadow-l:
+      0 18px 40px -26px rgba(0, 0, 0, 0.30),
+      0 10px 18px -14px rgba(0, 0, 0, 0.18),
+      0 0 0 1px rgba(0, 0, 0, 0.04); /* Large */
+    --shadow-xl:
+      0 34px 70px -46px rgba(0, 0, 0, 0.45),
+      0 18px 30px -22px rgba(0, 0, 0, 0.25),
+      0 0 0 1px rgba(0, 0, 0, 0.05); /* Extra Large */
+    --shadow-inner:
+      inset 0 1px 2px rgba(0, 0, 0, 0.14),
+      inset 0 0 0 1px rgba(0, 0, 0, 0.06); /* Inner */
+  }
+  
+  /* @ID: #00-03-02 */
+  /*** Dark Theme (Night Mode) ***/
+  .night,
+  .night * {
+    /*== Background Colors ==*/
+    --color-bg: #1a1a1a;
+    --color-bg-alt: #f5f5f5;
 
+    /*== Inputs ==*/
+    --input-text: var(--color-text-alt);
+    --input-bg: var(--gray-800);
+    --input-border: var(--gray-600);
+    --input-placeholder: var(--gray-500);
 
-  --color-tertiary: #f97316;
-  --color-tertiary-light: #ffa261;
-  --color-tertiary-dark: #c95300;
-  --color-tertiary-rgb: 249, 115, 22;
+    --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
 
-  --color-almost-black: #333;
-  --color-almost-white: #fcfcfc;
-
-  --color-success: #009112;
-  --color-success-light: #98ff98;
-  --color-success-rgb: 0, 145, 18;
-  --color-warning: #ff9017;
-  --color-warning-light: #ffead5;
-  --color-warning-rgb: 255, 144, 23;
-  --color-error: #fa3434;
-  --color-error-light: #fdd0d0;
-  --color-error-rgb: 250, 52, 52;
-
-  /*== Text Colors ==*/
-  --color-text-base: #333;
-  --color-text-alt: #fff;
-
-  /*== Background Colors ==*/
-  --color-bg: #eee;
-  --color-bg-alt: #222;
-
-  --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
-  --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);
-  --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);
-
-  --color-border: var(--gray-200);
-  --color-border-hover: var(--gray-300);
-
-  /*== Gradients ==*/
-  --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
-  --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);
-  --bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
-  --bg-gradient-4: linear-gradient(
-    180deg,
-    rgba(94, 154, 255, 1) 0%,
-    rgba(36, 118, 255, 1) 50%,
-    rgba(0, 90, 238, 1) 100%
-  );
-  --bg-gradient-5: radial-gradient(
-    circle,
-    rgba(94, 154, 255, 1) 0%,
-    rgba(36, 118, 255, 1) 100%
-  );
-  --bg-gradient-6: radial-gradient(
-    circle,
-    rgba(238, 238, 238, 1) 0%,
-    rgba(193, 216, 255, 1) 100%
-  );
-  --bg-gradient-7: repeating-linear-gradient(
-    45deg,
-    #2476ff,
-    #5e9aff 20px,
-    #fff 20px,
-    #ccc 32px
-  );
-  --bg-gradient-8: repeating-linear-gradient(
-    45deg,
-    #5e9aff,
-    #0965ff 20px,
-    #000 20px,
-    #444 32px
-  );
-
-  /*== Borders ==*/
-  --border: 2px solid #2476ff;
-  --border-light: 2px solid #5e9aff;
-  --border-dark: 2px solid #0965ff;
-
-  /*== Shadows ==*/
-  --shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05); /* Subtle */
-  --shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1); /* Medium */
-  --shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1); /* Large */
-  --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05); /* Inner */
-}
-
-/* @ID: #00-03-02 */
-/*** Dark Theme (Night Mode) ***/
-.night,
-.night * {
-  /*== Background Colors ==*/
-  --color-bg: #1a1a1a;
-  --color-bg-alt: #f5f5f5;
-
-  /*== Text Colors ==*/
-  --color-text-base: #fff;
-  --color-text-alt: #333;
-
-  /*== Border Colors ==*/
-  --color-border: var(--gray-700);
-  --color-border-hover: var(--gray-600);
-}
-
-/* @ID: #00-03-03 */
-/*** Theme Toggle Classes ***/
-.theme-light {
-  background: var(--color-bg);
-  color: var(--color-text-base);
-}
-
-.theme-dark {
-  background: var(--color-bg-alt);
-  color: var(--color-text-alt);
-}
+    /*== Border Colors ==*/
+    --color-border: var(--gray-700);
+    --color-border-hover: var(--gray-600);
+  
+    /*== Shadows ==*/
+    --shadow-s:
+      0 1px 2px rgba(255, 255, 255, 0.18),
+      0 0 0 1px rgba(255, 255, 255, 0.10);
+    --shadow-m:
+      0 6px 16px rgba(255, 255, 255, 0.18),
+      0 0 0 1px rgba(255, 255, 255, 0.16);
+    --shadow-l:
+      0 14px 32px rgba(255, 255, 255, 0.22),
+      0 0 0 1px rgba(255, 255, 255, 0.18);
+    --shadow-xl:
+      0 26px 64px rgba(255, 255, 255, 0.26),
+      0 0 0 1px rgba(255, 255, 255, 0.2);
+    --shadow-inner:
+      inset 0 1px 2px rgba(255, 255, 255, 0.25),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  }
+  
+  /* @ID: #00-03-03 */
+  /*** Theme Toggle Classes ***/
+  .theme-light {
+    background: var(--color-bg);
+    color: var(--color-text-base);
+  }
+  
+  .theme-night {
+    background: var(--color-bg-alt);
+    color: var(--color-text-alt);
+    --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    /* Invertir sombras cuando se usa sólo a nivel de componente */
+    --shadow-s:
+      0 1px 2px rgba(255, 255, 255, 0.18),
+      0 0 0 1px rgba(255, 255, 255, 0.10);
+    --shadow-m:
+      0 6px 16px rgba(255, 255, 255, 0.18),
+      0 0 0 1px rgba(255, 255, 255, 0.16);
+    --shadow-l:
+      0 14px 32px rgba(255, 255, 255, 0.22),
+      0 0 0 1px rgba(255, 255, 255, 0.18);
+    --shadow-xl:
+      0 26px 64px rgba(255, 255, 255, 0.26),
+      0 0 0 1px rgba(255, 255, 255, 0.2);
+    --shadow-inner:
+      inset 0 1px 2px rgba(255, 255, 255, 0.25),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  }
+  

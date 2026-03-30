@@ -189,7 +189,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ```css
 .shadow-none           /* box-shadow: none */
 .shadow-s              /* box-shadow: var(--shadow-s) */
-.shadow                /* box-shadow: var(--shadow-md) */
+.shadow                /* box-shadow: var(--shadow-m) */
 .shadow-l              /* box-shadow: var(--shadow-l) */
 .shadow-xl             /* box-shadow: 20-25px blur (extra large) */
 .shadow-inner          /* box-shadow: var(--shadow-inner) (inset) */
@@ -280,7 +280,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 ```css
 .border-r-0            /* border-radius: 0 */
 .border-r-s            /* border-radius: var(--radius-s) */
-.border-r              /* border-radius: var(--radius-md) */
+.border-r              /* border-radius: var(--radius-m) */
 .border-r-l            /* border-radius: var(--radius-l) */
 .border-r-xl           /* border-radius: var(--radius-l) */
 .border-r-full         /* border-radius: var(--radius-full) (pill shape) */

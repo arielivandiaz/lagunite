@@ -1,5 +1,5 @@
 /* @ID: #04-04-01 */
-/*** Border Widths (Atomic) ***/
+/*** Border Widths ***/
 .border-w-0 {
   border-width: 0;
 }
@@ -41,7 +41,7 @@
 }
 
 /* @ID: #04-04-02 */
-/*** Border Styles (Atomic) ***/
+/*** Border Styles ***/
 .border-solid {
   border-style: solid;
 }
@@ -92,7 +92,7 @@
 }
 
 /* @ID: #04-04-03 */
-/*** Border Colors (Atomic) ***/
+/*** Border Colors ***/
 .border-color-primary {
   border-color: var(--color-primary) !important;
 }
@@ -258,7 +258,7 @@
   border-radius: var(--radius-s);
 }
 .border-r {
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-m);
 }
 .border-r-l {
   border-radius: var(--radius-l);
@@ -288,7 +288,7 @@
     border-radius: var(--radius-s);
   }
   .xborder-r {
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-m);
   }
   .xborder-r-l {
     border-radius: var(--radius-l);
@@ -303,7 +303,7 @@
     border-radius: var(--radius-s);
   }
   .dborder-r {
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-m);
   }
   .dborder-r-l {
     border-radius: var(--radius-l);
@@ -514,7 +514,7 @@
 
 .bordered {
   border: var(--border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-m);
 }
 
 @media (max-width: 639px) {

@@ -22,7 +22,7 @@
   background: var(--bg-primary);
   color: var(--color-text-alt);
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-m);
 
   /* Interaction */
   cursor: pointer;
@@ -115,7 +115,7 @@
   min-width: 3rem;
   width: 3rem;
   aspect-ratio: 1;
-  font-size: var(--font-size0x-l);
+  font-size: var(--font-size-l);
 }
 .btn .icon-lf {
   display: inline-flex;
@@ -242,7 +242,7 @@
 .btn.alt.ghost,
 .btn.secondary.alt.ghost,
 .btn.tertiary.alt.ghost,
-.btn.success.alt.ghos,
+.btn.success.alt.ghost,
 .btn.warning.alt.ghost,
 .btn.error.alt.ghost {
   border: 2px solid transparent;
@@ -343,13 +343,13 @@
 }
 
 .btn-group .btn:first-child {
-  border-top-left-radius: var(--radius-md);
-  border-bottom-left-radius: var(--radius-md);
+  border-top-left-radius: var(--radius-m);
+  border-bottom-left-radius: var(--radius-m);
 }
 
 .btn-group .btn:last-child {
-  border-top-right-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
 }
 
 .btn-group .btn:not(:last-child) {
@@ -369,13 +369,13 @@
 }
 
 .btn-group-vertical .btn:first-child {
-  border-top-left-radius: var(--radius-md);
-  border-top-right-radius: var(--radius-md);
+  border-top-left-radius: var(--radius-m);
+  border-top-right-radius: var(--radius-m);
 }
 
 .btn-group-vertical .btn:last-child {
-  border-bottom-left-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
 }
 
 .btn-group-vertical .btn:not(:last-child) {
