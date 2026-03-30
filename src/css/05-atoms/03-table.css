@@ -440,7 +440,7 @@ table,
     display: block;
     margin-bottom: var(--space-4);
     border: 2px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-m);
   }
 
   .table.stack-mobile td {

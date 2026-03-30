@@ -130,7 +130,7 @@ Each color family follows this scale:
 ### Border Radius
 ```css
 --radius-s: 0.25rem;      /* Small - 4px */
---radius-md: 0.5rem;       /* Medium - 8px */
+--radius-m: 0.5rem;       /* Medium - 8px */
 --radius-l: 1rem;         /* Large - 16px */
 --radius-full: 9999px;     /* Full/pill shape */
 ```
@@ -157,7 +157,7 @@ Each color family follows this scale:
 ## Shadows
 ```css
 --shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05);     /* Subtle */
---shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1);   /* Medium */
+--shadow-m: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1);   /* Medium */
 --shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1); /* Large */
 --shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05); /* Inner */
 ```
@@ -197,7 +197,7 @@ body.night {
 |--------|---------|---------|
 | `xs` | Extra Small | `--font-size-xs` (12px) |
 | `sm` | Small | `--radius-s` (4px) |
-| `md` | Medium | `--shadow-md` |
+| `md` | Medium | `--shadow-m` |
 | `lg` | Large | `--font-size-l` (18px) |
 | `xl` | Extra Large | `--font-size-xl` (20px) |
 | `xxl`, `3xl` | 2x, 3x Large | `--font-size-xxl` (24px) |
@@ -220,7 +220,7 @@ body.night {
     margin-bottom: var(--space-4);
     background: var(--color-bg);
     color: var(--color-text-base);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow-s);
     font-size: var(--font-size-base);
     font-family: var(--font-text);

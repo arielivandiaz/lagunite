@@ -1,26 +1,67 @@
-/* @ID: #04-03-XX */
-/*** Opacity Utilities ***/
-.opacity-0 { opacity: 0; }
-.opacity-25 { opacity: 0.25; }
-.opacity-50 { opacity: 0.5; }
-.opacity-75 { opacity: 0.75; }
-.opacity-100 { opacity: 1; }
-.hover-opacity-75:hover { opacity: 0.75; }
+/* ==========================================================================
+   04-decorators / 03-opacity.css
+   Opacity utilities with responsive variants (x = mobile, d = desktop).
+   ========================================================================== */
 
+/* @ID: #04-03-01 */
+/*** Opacity Utilities ***/
+.opacity-0   { opacity: 0; }
+.opacity-5   { opacity: 0.05; }
+.opacity-10  { opacity: 0.1; }
+.opacity-20  { opacity: 0.2; }
+.opacity-25  { opacity: 0.25; }
+.opacity-30  { opacity: 0.3; }
+.opacity-40  { opacity: 0.4; }
+.opacity-50  { opacity: 0.5; }
+.opacity-60  { opacity: 0.6; }
+.opacity-70  { opacity: 0.7; }
+.opacity-75  { opacity: 0.75; }
+.opacity-80  { opacity: 0.8; }
+.opacity-90  { opacity: 0.9; }
+.opacity-100 { opacity: 1; }
+
+/* @ID: #04-03-02 */
+/*** Hover Opacity ***/
+.hover-opacity-0:hover   { opacity: 0; }
+.hover-opacity-25:hover  { opacity: 0.25; }
+.hover-opacity-50:hover  { opacity: 0.5; }
+.hover-opacity-75:hover  { opacity: 0.75; }
+.hover-opacity-100:hover { opacity: 1; }
+
+/* @ID: #04-03-03 */
+/*** Responsive: mobile (max-width: 639px) ***/
 @media (max-width: 639px) {
-  .xopacity-0 { opacity: 0; }
-  .xopacity-25 { opacity: 0.25; }
-  .xopacity-50 { opacity: 0.5; }
-  .xopacity-75 { opacity: 0.75; }
+  .xopacity-0   { opacity: 0; }
+  .xopacity-5   { opacity: 0.05; }
+  .xopacity-10  { opacity: 0.1; }
+  .xopacity-20  { opacity: 0.2; }
+  .xopacity-25  { opacity: 0.25; }
+  .xopacity-30  { opacity: 0.3; }
+  .xopacity-40  { opacity: 0.4; }
+  .xopacity-50  { opacity: 0.5; }
+  .xopacity-60  { opacity: 0.6; }
+  .xopacity-70  { opacity: 0.7; }
+  .xopacity-75  { opacity: 0.75; }
+  .xopacity-80  { opacity: 0.8; }
+  .xopacity-90  { opacity: 0.9; }
   .xopacity-100 { opacity: 1; }
-  .xhover-opacity-75:hover { opacity: 0.75; }
 }
 
+/* @ID: #04-03-04 */
+/*** Responsive: desktop (min-width: 640px) ***/
 @media (min-width: 640px) {
-  .dopacity-0 { opacity: 0; }
-  .dopacity-25 { opacity: 0.25; }
-  .dopacity-50 { opacity: 0.5; }
-  .dopacity-75 { opacity: 0.75; }
+  .dopacity-0   { opacity: 0; }
+  .dopacity-5   { opacity: 0.05; }
+  .dopacity-10  { opacity: 0.1; }
+  .dopacity-20  { opacity: 0.2; }
+  .dopacity-25  { opacity: 0.25; }
+  .dopacity-30  { opacity: 0.3; }
+  .dopacity-40  { opacity: 0.4; }
+  .dopacity-50  { opacity: 0.5; }
+  .dopacity-60  { opacity: 0.6; }
+  .dopacity-70  { opacity: 0.7; }
+  .dopacity-75  { opacity: 0.75; }
+  .dopacity-80  { opacity: 0.8; }
+  .dopacity-90  { opacity: 0.9; }
   .dopacity-100 { opacity: 1; }
-  .dhover-opacity-75:hover { opacity: 0.75; }
 }

@@ -1,47 +1,71 @@
+/* ==========================================================================
+   05-atoms / 02-inputs.css
+   Form controls: text inputs, textarea, select, checkbox, switch, radio,
+   range slider, file upload, floating label, and layout helpers.
+   All values reference design tokens from 00-config (theme, measures, typography).
+   ========================================================================== */
+
 /* @ID: #05-02-01 */
-/* Input Base Styles */
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-textarea {
+/* ── Text inputs & textarea (boxed / default) ───────────────────────────── */
+
+:is(
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  textarea,
+  .input
+) {
   display: block;
   width: 100%;
-  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-3);
-
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-sans);
   font-size: var(--font-size-base);
   line-height: 1.5;
   color: var(--input-text);
-
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-primary);
-  border-radius: var(--radius-md);
-
-  transition: all 0.2s ease-in-out;
-
+  background-color: var(--input-bg);
+  border: var(--border-width-s) solid var(--input-border);
+  border-radius: var(--radius-m);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   appearance: none;
   outline: none;
-  cursor: pointer;
+  cursor: text;
+  box-sizing: border-box;
 }
 
 ::placeholder {
-  color: var(--color-primary-light);
+  color: var(--input-placeholder);
   font-size: var(--font-size-base);
   opacity: 1;
 }
 
-.input:focus {
+:is(
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  textarea,
+  .input
+):focus {
   border-color: var(--color-primary);
-  box-shadow:
-    0 0 0 2px #fff,
-    0 0 0 4px var(--color-primary);
-}
-
-.input:hover:not(:focus) {
-  border-color: #cbd5e1;
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  outline: none;
 }
 
 :is(
@@ -52,135 +76,368 @@ textarea {
   input[type="search"],
   input[type="tel"],
   input[type="url"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
   textarea,
   .input
-):is(:hover, :focus) {
-  box-shadow: 0 0 7px 1px var(--color-primary);
-  color: var(--color-primary);
+):hover:not(:focus):not(:disabled) {
+  border-color: var(--color-border-hover);
+}
+
+:is(
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  textarea,
+  .input
+):disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: var(--gray-200);
+}
+
+/* @ID: #05-02-06 */
+/* ── Select ─────────────────────────────────────────────────────────────── */
+
+select,
+.select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--input-text);
+  background-color: var(--input-bg);
+  background-image: var(--select-chevron);
+  background-repeat: no-repeat;
+  background-position: right var(--space-3) center;
+  background-size: 1.125rem;
+  border: var(--border-width-s) solid var(--input-border);
+  border-radius: var(--radius-m);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  accent-color: var(--color-primary);
+}
+
+select:hover:not(:focus):not(:disabled),
+.select:hover:not(:focus):not(:disabled) {
+  border-color: var(--color-border-hover);
+}
+
+select:focus,
+.select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  outline: none;
+}
+
+select:disabled,
+.select:disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: var(--gray-200);
+}
+
+select option,
+.select option {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.45;
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+select option:hover,
+.select option:hover {
+  background-color: var(--color-primary);
+  background-image: var(--bg-gradient-1);
+  color: var(--color-text-alt);
+}
+
+select option:checked,
+.select option:checked {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
   font-weight: var(--font-weight-medium);
 }
 
-:is(
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="url"],
-  textarea,
-  .input
-):is(:disabled) {
-  background-color: #f1f5f9;
-  cursor: not-allowed;
-  opacity: 0.7;
+select option:disabled,
+.select option:disabled {
+  color: var(--gray-400);
+  background-color: var(--gray-50);
 }
 
-/**************************************************************************************************/
+select optgroup,
+.select optgroup {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-secondary);
+  padding: var(--space-2) var(--space-3) var(--space-1);
+  background-color: var(--input-bg);
+}
 
-/* Contenedor relativo para posicionar el label */
+select[size],
+select[multiple] {
+  padding: var(--space-2);
+  height: auto;
+  min-height: 6rem;
+  background-image: none;
+  cursor: default;
+}
+
+select[size] option,
+select[multiple] option {
+  padding: var(--space-2) var(--space-3);
+  margin: 2px 0;
+  border-radius: var(--radius-s);
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin: var(--space-2) 0;
+}
+
+.select-container.alt select:not([size]):not([multiple]),
+.select-container.alt .select:not([size]):not([multiple]) {
+  background-color: var(--gray-50);
+  border-color: var(--gray-300);
+  background-image: var(--select-chevron-on-primary), linear-gradient(
+    to right,
+    transparent 0,
+    transparent calc(100% - var(--select-chevron-zone)),
+    var(--color-primary) calc(100% - var(--select-chevron-zone))
+  );
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right calc(var(--select-chevron-zone) * 0.5 - 0.5625rem) center,
+    center;
+  background-size: 1.125rem, 100% 100%;
+}
+
+.night select option:hover,
+.night .select option:hover,
+.theme-night select option:hover,
+.theme-night .select option:hover {
+  background-color: var(--color-primary);
+  background-image: var(--bg-gradient-1);
+  color: var(--color-text-alt);
+}
+
+/* @ID: #05-02-02 */
+/* ── Floating label ─────────────────────────────────────────────────────── */
+
 .input-line {
   position: relative;
   width: 100%;
-  max-width: 350px; /* Opcional: ancho máximo */
 }
 
-/* El Input en sí */
+.input-line.input-line-max {
+  max-width: 22rem;
+}
+
 .input-field {
   width: 100%;
+  font-family: var(--font-sans);
   font-size: var(--font-size-base);
-  color: var(--text-main);
-  background-color: var(--bg-input);
-  border: 1px solid var(--color-primary);
-  border-radius: var(--radius-md);
+  color: var(--input-text);
+  background-color: var(--input-bg);
+  border: var(--border-width-s) solid var(--input-border);
+  border-radius: var(--radius-m);
   outline: none;
-  padding: var(--space-5) var(--space-6) var(--space-px) var(--space-3) !important;
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-
-  /* Importante para evitar estilos nativos feos */
+  padding: var(--space-5) var(--space-4) var(--space-2) var(--space-3);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   appearance: none;
+  box-sizing: border-box;
 }
 
-/* Estado Focus (Cuando el usuario hace clic) */
 .input-field:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 7px 1px var(--color-primary);
-  color: var(--color-primary);
-  font-weight: var(--font-weight-medium);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  outline: none;
 }
 
-/* El Label (Etiqueta) */
+.input-field:disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: var(--gray-200);
+}
+
 .input-label {
   position: absolute;
   top: 50%;
   left: var(--space-3);
   transform: translateY(-50%);
-  color: var(--color-primary-light);
+  color: var(--input-placeholder);
+  font-family: var(--font-sans);
   font-size: var(--font-size-base);
-  pointer-events: none; /* Permite hacer clic "a través" del label */
-  transition: all 0.4s ease;
+  pointer-events: none;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
   padding: 0 var(--space-1);
 }
 
-/* LA MAGIA: Mover el label cuando hay focus o texto */
 .input-field:focus ~ .input-label,
 .input-field:not(:placeholder-shown) ~ .input-label {
-  top: 8px;
-  left: var(--space-3);
+  top: var(--space-2);
   font-size: var(--font-size-xs);
   color: var(--color-primary);
-  font-weight: var(--font-weight-medium);
 }
 
-/* Validación opcional: Color rojo si es inválido */
-.input:invalid:not(:placeholder-shown),
-.input-field:invalid:not(:placeholder-shown) {
+/* @ID: #05-02-03 */
+/* ── Input underline (modern single-line) ───────────────────────────────── */
+
+.input-underline,
+input.input-underline,
+textarea.input-underline {
+  display: block;
+  width: 100%;
+  padding: var(--space-3) 0 var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--input-text);
+  background: transparent;
+  border: none;
+  border-bottom: var(--border-width-md) solid var(--input-border);
+  border-radius: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  outline: none;
+  cursor: text;
+  box-sizing: border-box;
+}
+
+.input-underline::placeholder { color: var(--input-placeholder); }
+
+.input-underline:focus {
+  border-bottom-color: var(--color-primary);
+  box-shadow: 0 2px 0 0 var(--color-primary);
+  outline: none;
+}
+
+.input-underline:hover:not(:focus):not(:disabled) {
+  border-bottom-color: var(--color-border-hover);
+}
+
+.input-underline:disabled {
+  border-bottom-color: var(--gray-200);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* @ID: #05-02-04 */
+/* ── Input minimal (borderless, subtle bg) ──────────────────────────────── */
+
+.input-minimal,
+input.input-minimal,
+textarea.input-minimal {
+  display: block;
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--input-text);
+  background-color: var(--gray-50);
+  border: none;
+  border-radius: var(--radius-m);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  appearance: none;
+  outline: none;
+  cursor: text;
+  box-sizing: border-box;
+}
+
+.input-minimal::placeholder { color: var(--input-placeholder); }
+
+.input-minimal:focus {
+  background-color: var(--input-bg);
+  box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 0.25);
+  outline: none;
+}
+
+.input-minimal:hover:not(:focus):not(:disabled) {
+  background-color: var(--gray-100);
+}
+
+.input-minimal:disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* @ID: #05-02-05 */
+/* ── Validation states (:invalid / :valid) ──────────────────────────────── */
+
+:is(.input, .input-field, .input-underline, .input-minimal):invalid:not(:placeholder-shown) {
   border-color: var(--color-error);
   box-shadow: none;
 }
 
-.input:invalid:not(:placeholder-shown):is(:hover, :focus),
-.input-field:invalid:not(:placeholder-shown):is(:hover, :focus) {
-  box-shadow: 0 0 5px 1px var(--color-error);
+.input-underline:invalid:not(:placeholder-shown) {
+  border-bottom-color: var(--color-error);
+}
+
+:is(.input, .input-field, .input-underline, .input-minimal):invalid:not(:placeholder-shown):focus {
+  box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25);
 }
 
 .input-field:invalid:not(:placeholder-shown) ~ .input-label {
   color: var(--color-error);
 }
 
-.input:valid:not(:placeholder-shown),
-.input-field:valid:not(:placeholder-shown) {
+:is(.input, .input-field, .input-underline, .input-minimal):valid:not(:placeholder-shown) {
   border-color: var(--color-success);
   box-shadow: none;
 }
 
-.input:valid:not(:placeholder-shown):is(:hover, :focus),
-.input-field:valid:not(:placeholder-shown):is(:hover, :focus) {
-  box-shadow: 0 0 5px 1px var(--color-success);
+.input-underline:valid:not(:placeholder-shown) {
+  border-bottom-color: var(--color-success);
 }
 
 .input-field:valid:not(:placeholder-shown) ~ .input-label {
   color: var(--color-success);
 }
 
-/**************************************************************************************************/
-
 /* @ID: #05-02-07 */
-/* Checkbox Styles */
+/* ── Checkbox ───────────────────────────────────────────────────────────── */
+
 .checkboxContainer,
 .checkbox {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
-  margin: 8px 30px 10px 10px;
-  padding: 5px 25px;
+  margin: 8px 10px 10px 10px;
+  padding: 5px 10px 5px 40px;
 }
 
-/* Hide the browser's default checkbox */
-input[type="checkbox"] {
+.checkbox input[type="checkbox"],
+.checkboxContainer input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -188,25 +445,23 @@ input[type="checkbox"] {
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
   height: 25px;
   width: 25px;
-  margin-left: 25px;
   border-radius: 8px;
   border: 3px solid var(--color-primary);
   cursor: pointer;
 }
 
-/* On mouse-over, add a shadow */
 .checkbox:hover input ~ .checkmark,
 .checkboxContainer:hover input ~ .checkmark {
   box-shadow: 0 0 8px 1px var(--color-primary);
 }
 
-/* When the checkbox is checked, add primary background */
 .checkbox input:checked ~ .checkmark,
 .checkboxContainer input:checked ~ .checkmark {
   background-color: var(--color-primary);
@@ -214,20 +469,17 @@ input[type="checkbox"] {
   border-radius: 6px;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .checkbox input:checked ~ .checkmark:after,
 .checkboxContainer input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .checkbox .checkmark:after,
 .checkboxContainer .checkmark:after {
   left: 8px;
@@ -242,7 +494,10 @@ input[type="checkbox"] {
 .checkbox-s .checkmark {
   height: 20px;
   width: 20px;
-  margin-left: 20px;
+}
+
+.checkbox-s {
+  padding-left: 35px;
 }
 
 .checkbox-s .checkmark:after {
@@ -255,7 +510,10 @@ input[type="checkbox"] {
 .checkbox-l .checkmark {
   height: 30px;
   width: 30px;
-  margin-left: 30px;
+}
+
+.checkbox-l {
+  padding-left: 48px;
 }
 
 .checkbox-l .checkmark:after {
@@ -266,293 +524,271 @@ input[type="checkbox"] {
 }
 
 /* @ID: #05-02-08 */
-/* Toggle Button (Switch) Styles */
+/* ── Toggle ─────────────────────────────────────────────────────────────── */
+/*
+   <input type="checkbox" class="toggle" id="t1" />
+   <label for="t1" class="toggle-btn"></label>
+
+   Sizes: .size-s, (default), .size-l
+*/
 
 .toggle {
-  display: none;
-}
-
-.toggle,
-.toggle:after,
-.toggle:before,
-.toggle *,
-.toggle *:after,
-.toggle *:before,
-.toggle + .toggle-btn {
-  box-sizing: border-box;
-}
-
-.toggle::-moz-selection,
-.toggle:after::-moz-selection,
-.toggle:before::-moz-selection,
-.toggle *::-moz-selection,
-.toggle *:after::-moz-selection,
-.toggle *:before::-moz-selection,
-.toggle + .toggle-btn::-moz-selection,
-.toggle::selection,
-.toggle:after::selection,
-.toggle:before::selection,
-.toggle *::selection,
-.toggle *:after::selection,
-.toggle *:before::selection,
-.toggle + .toggle-btn::selection {
-  background: none;
-}
-
-.toggle + .toggle-btn {
-  outline: 0;
-  display: block;
-  width: 32px;
-  height: 18px;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
-.toggle + .toggle-btn.size-s {
-  width: 25px;
-  height: 15px;
-}
-
-.toggle + .toggle-btn.size-l {
-  width: 48px;
-  height: 26px;
-}
-
-.toggle + .toggle-btn:after,
-.toggle + .toggle-btn:before {
-  position: relative;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-}
-
-.toggle + .toggle-btn:after {
-  left: 0;
-}
-
-.toggle + .toggle-btn:before {
-  display: none;
-}
-
-.toggle:checked + .toggle-btn:after {
-  left: 50%;
-}
-
-.toggle + .toggle-btn {
-  background: #ccc;
-  border-radius: 2em;
-  padding: 2px;
-  transition: all 0.4s ease;
-}
-
-.toggle + .toggle-btn:after {
-  border-radius: 50%;
-  background: #fff;
-  transition: all 0.2s ease;
-}
-
-.toggle:checked + .toggle-btn {
-  background: var(--color-primary);
-  box-shadow: 0 0 10px 3px var(--color-primary);
-}
-
-/* Switch class alias for consistency */
-.switch {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
-.switch input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
+  pointer-events: none;
 }
 
-.switch input[type="checkbox"] + span::before {
-  content: "";
+.toggle + .toggle-btn {
+  outline: 0;
   display: inline-block;
-  width: 32px;
-  height: 18px;
-  margin-right: var(--space-2);
-  border-radius: 2em;
-  background: #ccc;
-  transition: all 0.4s ease;
-  flex-shrink: 0;
+  width: 2.75rem;
+  height: 1.5rem;
   position: relative;
-  padding: 2px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--gray-300);
+  border-radius: var(--radius-full);
+  transition: background-color 0.2s ease;
+  vertical-align: middle;
 }
 
-.switch input[type="checkbox"] + span::after {
+.toggle + .toggle-btn:after {
   content: "";
   position: absolute;
-  left: 2px;
   top: 50%;
+  left: 0.125rem;
   transform: translateY(-50%);
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #fff;
-  transition: all 0.2s ease;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: var(--radius-full);
+  background: var(--color-almost-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: left 0.2s ease;
 }
 
-.switch input[type="checkbox"]:checked + span::before {
+.toggle + .toggle-btn:before {
+  display: none;
+}
+
+.toggle:checked + .toggle-btn {
   background: var(--color-primary);
-  box-shadow: 0 0 10px 3px var(--color-primary);
 }
 
-.switch input[type="checkbox"]:checked + span::after {
-  left: 18px;
+.toggle:checked + .toggle-btn:after {
+  left: calc(100% - 1.25rem - 0.125rem);
+}
+
+.toggle:focus-visible + .toggle-btn {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+}
+
+/* Small */
+.toggle + .toggle-btn.size-s {
+  width: 2.25rem;
+  height: 1.25rem;
+}
+
+.toggle + .toggle-btn.size-s:after {
+  width: 1rem;
+  height: 1rem;
+}
+
+.toggle:checked + .toggle-btn.size-s:after {
+  left: calc(100% - 1rem - 0.125rem);
+}
+
+/* Large */
+.toggle + .toggle-btn.size-l {
+  width: 3.5rem;
+  height: 1.875rem;
+}
+
+.toggle + .toggle-btn.size-l:after {
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.toggle:checked + .toggle-btn.size-l:after {
+  left: calc(100% - 1.625rem - 0.125rem);
 }
 
 /* @ID: #05-02-09 */
-/* Radio Group Styles */
+/* ── Radio group (pill bar) ─────────────────────────────────────────────── */
+/*
+   <div class="radio-group">
+     <input type="radio" name="g" id="r1" />
+     <label for="r1">Option</label>
+   </div>
+*/
+
 .radio-group {
-  border-color: var(--color-primary);
-  border-style: solid;
-  width: fit-content;
-  border-width: 2px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  padding: 3px 0px;
+  display: inline-flex;
+  align-items: center;
+  border: var(--border-width-md) solid var(--color-primary);
+  border-radius: var(--radius-full);
+  padding: var(--space-1);
+  gap: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
 }
 
 .radio-group input {
-  position: absolute !important;
-  clip-path: rect(0, 0, 0, 0);
-  height: 0px;
-  width: 0px;
-  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .radio-group label {
   cursor: pointer;
   text-align: center;
-  padding: 5px 12px;
-  background: none;
+  padding: var(--space-1) var(--space-4);
   color: var(--color-primary);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.radio-group label:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.08);
 }
 
 .radio-group input:checked + label {
-  background-color: var(--color-primary);
   background: var(--bg-primary);
   color: var(--color-text-alt);
-  box-shadow: 0 0px 5px 0px var(--color-primary);
-  border-radius: 15px;
-  padding: 8px 15px;
+}
+
+.radio-group input:focus-visible + label {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
 }
 
 /* @ID: #05-02-10 */
-/* Radio Buttons */
+/* ── Radio buttons (pill-shaped, separate) ──────────────────────────────── */
 
 .radio-btns {
-  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  font-family: var(--font-sans);
 }
 
 .radio-btns input {
-  position: absolute !important;
-  clip-path: rect(0, 0, 0, 0);
-  height: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
   width: 1px;
-  border: 0;
+  height: 1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .radio-btns label {
   cursor: pointer;
   text-align: center;
-  padding: 5px 12px;
-  background: none;
+  padding: var(--space-2) var(--space-4);
   color: var(--color-primary);
-  border-color: var(--color-primary);
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  margin: 0 5px;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  border: var(--border-width-md) solid var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.radio-btns label:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.08);
 }
 
 .radio-btns input:checked + label {
   background: var(--bg-primary);
-  border: none;
-  padding: 7px 15px;
+  border-color: transparent;
   color: var(--color-text-alt);
-  box-shadow: 0 0px 5px 0px var(--color-primary);
 }
 
-.radio-btns label:hover {
-  box-shadow: 0 0px 15px 0px var(--color-primary);
+.radio-btns input:focus-visible + label {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
 }
 
 /* @ID: #05-02-11 */
-/* Radio Divs */
+/* ── Radio divs (visual cards as radio options) ─────────────────────────── */
+
 .radio-divs {
-  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
 }
 
 .radio-divs input {
-  position: absolute !important;
-  clip-path: rect(0, 0, 0, 0);
-  height: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
   width: 1px;
-  border: 0;
+  height: 1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .radio-divs label {
   cursor: pointer;
   text-align: center;
-  background: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
   color: var(--color-primary);
-  margin: 0 15px;
-  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-s);
+  transition: transform 0.2s ease;
 }
 
 .radio-divs label div {
   background: var(--bg-primary);
+  border-radius: var(--radius-m);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .radio-divs label:hover div {
-  box-shadow: 0 0px 15px 0px var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .radio-divs input:checked + label div {
-  box-shadow: 0 0px 15px 0px var(--color-primary);
-  transform: scale(1.2);
-  margin: 10px 0;
+  box-shadow: 0 0 0 3px var(--color-primary);
+  transform: scale(1.08);
+}
+
+.radio-divs input:focus-visible + label div {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.4);
 }
 
 /* @ID: #05-02-12 */
-/* Range Slider Styles */
-input[type="range"]:hover {
+/* ── Range slider ───────────────────────────────────────────────────────── */
+
+input[type="range"] {
   box-shadow: none;
+  border: none;
+  background: transparent;
 }
 
 .range {
   display: block;
   width: 100%;
-  height: 0.5rem;
+  height: 0.75rem;
   background: transparent;
   cursor: pointer;
   appearance: none;
+  padding: var(--space-1) 0;
 }
 
-/* Track */
 .range::-webkit-slider-runnable-track {
   width: 100%;
   height: 0.5rem;
   background: var(--gray-200);
   border-radius: var(--radius-full);
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .range::-moz-range-track {
@@ -560,90 +796,141 @@ input[type="range"]:hover {
   height: 0.5rem;
   background: var(--gray-200);
   border-radius: var(--radius-full);
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
 }
 
-/* Thumb */
 .range::-webkit-slider-thumb {
   appearance: none;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: var(--radius-full);
   background: var(--color-primary);
-  border: 2px solid var(--color-bg);
-  box-shadow: var(--shadow-md);
-  cursor: pointer;
-  margin-top: -0.375rem;
-  transition: all 0.2s ease;
+  border: 3px solid var(--input-bg);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+  cursor: grab;
+  margin-top: -0.5rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .range::-moz-range-thumb {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: var(--radius-full);
   background: var(--color-primary);
-  border: 2px solid var(--color-bg);
-  box-shadow: var(--shadow-md);
-  cursor: pointer;
-  transition: all 0.2s ease;
+  border: 3px solid var(--input-bg);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+  cursor: grab;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-/* Hover state */
+.range:active::-webkit-slider-thumb { cursor: grabbing; }
+.range:active::-moz-range-thumb { cursor: grabbing; }
+
+.range:hover::-webkit-slider-runnable-track { background: var(--gray-300); }
+.range:hover::-moz-range-track { background: var(--gray-300); }
+
 .range:hover::-webkit-slider-thumb {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .range:hover::-moz-range-thumb {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
-/* Focus state */
-.range:focus {
-  outline: none;
-}
+.range:focus { outline: none; }
 
 .range:focus::-webkit-slider-thumb {
   box-shadow:
-    var(--shadow-md),
-    0 0 0 3px hsla(210, 90%, 50%, 0.1);
+    0 2px 6px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 0 0 4px rgba(var(--color-primary-rgb), 0.25);
 }
 
 .range:focus::-moz-range-thumb {
   box-shadow:
-    var(--shadow-md),
-    0 0 0 3px hsla(210, 90%, 50%, 0.1);
+    0 2px 6px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 0 0 4px rgba(var(--color-primary-rgb), 0.25);
 }
 
+.range.range-lg { height: 1rem; }
+.range.range-lg::-webkit-slider-runnable-track { height: 0.5rem; }
+.range.range-lg::-moz-range-track { height: 0.5rem; }
+.range.range-lg::-webkit-slider-thumb { width: 1.75rem; height: 1.75rem; margin-top: -0.625rem; }
+.range.range-lg::-moz-range-thumb { width: 1.75rem; height: 1.75rem; }
+
 /* @ID: #05-02-13 */
-/* File Input Button */
+/* ── File input ─────────────────────────────────────────────────────────── */
+
+.file-input-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
 
 .file-btn {
-  box-shadow: none;
-  border-radius: 8px;
-  border: 2px solid transparent;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-alt);
   background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-m);
   cursor: pointer;
-  font-family: var(--font-headers);
-  font-weight: 900;
-  letter-spacing: 1px;
-  margin: 1vh 1vw;
-  color: #fff;
-  padding: 10px 1.2vw 7px 1.2vw;
-  min-width: var(--space-32);
-  width: min-content;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.file-btn:hover {
+  background: var(--color-primary-dark);
+}
+
+.file-btn:focus-within {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.35);
+  outline: none;
 }
 
 .file-btn input[type="file"] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
-.file-btn span {
+.file-btn label,
+.file-btn [data-file-label] {
+  cursor: pointer;
+  margin: 0;
+}
+
+.file-btn-filename {
   display: block;
-  color: #777;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+  max-width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* @ID: #05-02-14 */
-/* Input Container */
+/* ── Layout helpers (input-container, range-container) ──────────────────── */
 
 .input-container {
   display: flex;
@@ -651,54 +938,74 @@ input[type="range"]:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px 5px;
+  margin: var(--space-2) var(--space-1);
 }
 
 .input-container span {
-  max-width: 120px;
-  margin: 10px 10px 10px 0;
+  max-width: 8rem;
+  margin: var(--space-2) var(--space-2) var(--space-2) 0;
   overflow-wrap: break-word;
-  word-wrap: break-word;
   white-space: normal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .input-container span {
-    max-width: 300px;
-    margin-right: 10px;
+    max-width: 18rem;
+    margin-right: var(--space-3);
   }
 }
-
-/* @ID: #05-02-15 */
-/* Range Container */
 
 .range-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--space-3);
 }
 
 .range-container input[type="number"] {
   min-width: 0 !important;
+  width: 3.5rem;
+  padding: var(--space-1) var(--space-2);
   text-align: center;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  background-color: var(--input-bg);
+  border: var(--border-width-s) solid var(--color-primary);
+  border-radius: var(--radius-m);
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.range-container input[type="number"]::-webkit-inner-spin-button,
+.range-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-container input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
 }
 
 /* @ID: #05-02-16 */
-/* Responsive Adjustments */
+/* ── Responsive ─────────────────────────────────────────────────────────── */
 
-@media (max-width: 640px) {
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="url"],
-  .input,
-  textarea,
-  .textarea,
-  select,
-  .select {
+@media (max-width: 639px) {
+  :is(
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    .input,
+    textarea,
+    select,
+    .select
+  ) {
     font-size: var(--font-size-s);
   }
 }

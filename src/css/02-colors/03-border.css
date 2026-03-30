@@ -1,13 +1,257 @@
+/* @ID: #02-03-01 */
+/*** Border colors: semantic (primary, secondary, tertiary) ***/
+.border-color-primary {
+  border-color: var(--color-primary) !important;
+}
+.border-color-primary-light {
+  border-color: var(--color-primary-light) !important;
+}
+.border-color-primary-dark {
+  border-color: var(--color-primary-dark) !important;
+}
 
+.border-color-secondary {
+  border-color: var(--color-secondary) !important;
+}
+.border-color-secondary-light {
+  border-color: var(--color-secondary-light) !important;
+}
+.border-color-secondary-dark {
+  border-color: var(--color-secondary-dark) !important;
+}
 
+.border-color-tertiary {
+  border-color: var(--color-tertiary) !important;
+}
+.border-color-tertiary-light {
+  border-color: var(--color-tertiary-light) !important;
+}
+.border-color-tertiary-dark {
+  border-color: var(--color-tertiary-dark) !important;
+}
+
+/* @ID: #02-03-02 */
+/*** Border colors: black / white ***/
+.border-color-black {
+  border-color: #000 !important;
+}
+.border-color-ablack {
+  border-color: var(--color-almost-black) !important;
+}
+.border-color-white {
+  border-color: #fff !important;
+}
+.border-color-awhite {
+  border-color: var(--color-almost-white) !important;
+}
+.border-color-transparent {
+  border-color: transparent !important;
+}
+
+/* @ID: #02-03-03 */
+/*** Border colors: semantic (success, warning, error) ***/
+.border-color-success {
+  border-color: var(--color-success) !important;
+}
+.border-color-success-light {
+  border-color: var(--color-success-light) !important;
+}
+.border-color-warning {
+  border-color: var(--color-warning) !important;
+}
+.border-color-warning-light {
+  border-color: var(--color-warning-light) !important;
+}
+.border-color-error {
+  border-color: var(--color-error) !important;
+}
+.border-color-error-light {
+  border-color: var(--color-error-light) !important;
+}
+
+/* Combinatory: when using .border with .bg-success etc. */
 .bg-success.border {
   border-color: var(--color-success) !important;
 }
-
 .bg-warning.border {
   border-color: var(--color-warning) !important;
 }
-
 .bg-error.border {
   border-color: var(--color-error) !important;
+}
+
+/* @ID: #02-03-50 */
+/*** Border colors: gray scale ***/
+.border-color-gray-50 {
+  border-color: var(--gray-50) !important;
+}
+.border-color-gray-100 {
+  border-color: var(--gray-100) !important;
+}
+.border-color-gray-200 {
+  border-color: var(--gray-200) !important;
+}
+.border-color-gray-300 {
+  border-color: var(--gray-300) !important;
+}
+.border-color-gray-400 {
+  border-color: var(--gray-400) !important;
+}
+.border-color-gray-500 {
+  border-color: var(--gray-500) !important;
+}
+.border-color-gray-600 {
+  border-color: var(--gray-600) !important;
+}
+.border-color-gray-700 {
+  border-color: var(--gray-700) !important;
+}
+.border-color-gray-800 {
+  border-color: var(--gray-800) !important;
+}
+.border-color-gray-900 {
+  border-color: var(--gray-900) !important;
+}
+.border-color-gray-950 {
+  border-color: var(--gray-950) !important;
+}
+
+/*** Border colors: blue scale ***/
+.border-color-blue-50 {
+  border-color: var(--blue-50) !important;
+}
+.border-color-blue-100 {
+  border-color: var(--blue-100) !important;
+}
+.border-color-blue-200 {
+  border-color: var(--blue-200) !important;
+}
+.border-color-blue-300 {
+  border-color: var(--blue-300) !important;
+}
+.border-color-blue-400 {
+  border-color: var(--blue-400) !important;
+}
+.border-color-blue-500 {
+  border-color: var(--blue-500) !important;
+}
+.border-color-blue-600 {
+  border-color: var(--blue-600) !important;
+}
+.border-color-blue-700 {
+  border-color: var(--blue-700) !important;
+}
+.border-color-blue-800 {
+  border-color: var(--blue-800) !important;
+}
+.border-color-blue-900 {
+  border-color: var(--blue-900) !important;
+}
+.border-color-blue-950 {
+  border-color: var(--blue-950) !important;
+}
+
+/*** Border colors: green scale ***/
+.border-color-green-50 {
+  border-color: var(--green-50) !important;
+}
+.border-color-green-100 {
+  border-color: var(--green-100) !important;
+}
+.border-color-green-200 {
+  border-color: var(--green-200) !important;
+}
+.border-color-green-300 {
+  border-color: var(--green-300) !important;
+}
+.border-color-green-400 {
+  border-color: var(--green-400) !important;
+}
+.border-color-green-500 {
+  border-color: var(--green-500) !important;
+}
+.border-color-green-600 {
+  border-color: var(--green-600) !important;
+}
+.border-color-green-700 {
+  border-color: var(--green-700) !important;
+}
+.border-color-green-800 {
+  border-color: var(--green-800) !important;
+}
+.border-color-green-900 {
+  border-color: var(--green-900) !important;
+}
+.border-color-green-950 {
+  border-color: var(--green-950) !important;
+}
+
+/*** Border colors: yellow scale ***/
+.border-color-yellow-50 {
+  border-color: var(--yellow-50) !important;
+}
+.border-color-yellow-100 {
+  border-color: var(--yellow-100) !important;
+}
+.border-color-yellow-200 {
+  border-color: var(--yellow-200) !important;
+}
+.border-color-yellow-300 {
+  border-color: var(--yellow-300) !important;
+}
+.border-color-yellow-400 {
+  border-color: var(--yellow-400) !important;
+}
+.border-color-yellow-500 {
+  border-color: var(--yellow-500) !important;
+}
+.border-color-yellow-600 {
+  border-color: var(--yellow-600) !important;
+}
+.border-color-yellow-700 {
+  border-color: var(--yellow-700) !important;
+}
+.border-color-yellow-800 {
+  border-color: var(--yellow-800) !important;
+}
+.border-color-yellow-900 {
+  border-color: var(--yellow-900) !important;
+}
+.border-color-yellow-950 {
+  border-color: var(--yellow-950) !important;
+}
+
+/*** Border colors: red scale ***/
+.border-color-red-50 {
+  border-color: var(--red-50) !important;
+}
+.border-color-red-100 {
+  border-color: var(--red-100) !important;
+}
+.border-color-red-200 {
+  border-color: var(--red-200) !important;
+}
+.border-color-red-300 {
+  border-color: var(--red-300) !important;
+}
+.border-color-red-400 {
+  border-color: var(--red-400) !important;
+}
+.border-color-red-500 {
+  border-color: var(--red-500) !important;
+}
+.border-color-red-600 {
+  border-color: var(--red-600) !important;
+}
+.border-color-red-700 {
+  border-color: var(--red-700) !important;
+}
+.border-color-red-800 {
+  border-color: var(--red-800) !important;
+}
+.border-color-red-900 {
+  border-color: var(--red-900) !important;
+}
+.border-color-red-950 {
+  border-color: var(--red-950) !important;
 }
