@@ -1,41 +1,60 @@
-/* @ID: #10-01-XX */
-/*** Display Utilities ***/
-.d-block { display: block; }
-.d-inline { display: inline; }
-.d-inline-block { display: inline-block; }
-.d-flex { display: flex; }
-.d-grid { display: grid; }
-.d-none { display: none; }
+/* ==========================================================================
+   10-misc / 01-display.css
+   Display and visibility utilities.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+   ========================================================================== */
 
-.visibility-visible { visibility: visible; }
-.visibility-invisible { visibility: hidden; }
-.visibility-collapse { visibility: collapse; }
-.visible { visibility: visible; }
+/* @ID: #10-01-01 */
+/* ── Display ────────────────────────────────────────────────────────────── */
+
+.d-block        { display: block; }
+.d-inline       { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex         { display: flex; }
+.d-inline-flex  { display: inline-flex; }
+.d-grid         { display: grid; }
+.d-none         { display: none; }
+.d-contents     { display: contents; }
+
+/* @ID: #10-01-02 */
+/* ── Visibility ─────────────────────────────────────────────────────────── */
+
+.visible   { visibility: visible; }
 .invisible { visibility: hidden; }
-.collapse { visibility: collapse; }
+.collapse  { visibility: collapse; }
+
+/* @ID: #10-01-03 */
+/* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
 @media (max-width: 639px) {
-  .xd-block { display: block; }
-  .xd-inline { display: inline; }
+  .xd-block        { display: block; }
+  .xd-inline       { display: inline; }
   .xd-inline-block { display: inline-block; }
-  .xd-flex { display: flex; }
-  .xd-grid { display: grid; }
-  .xd-none { display: none; }
+  .xd-flex         { display: flex; }
+  .xd-inline-flex  { display: inline-flex; }
+  .xd-grid         { display: grid; }
+  .xd-none         { display: none; }
+  .xd-contents     { display: contents; }
 
-  .xd-visible { visibility: visible; }
-  .xd-invisible { visibility: hidden; }
-  .xd-collapse { visibility: collapse; }
+  .xvisible   { visibility: visible; }
+  .xinvisible { visibility: hidden; }
+  .xcollapse  { visibility: collapse; }
 }
 
-@media (min-width: 640px) {
-  .dd-block { display: block; }
-  .dd-inline { display: inline; }
-  .dd-inline-block { display: inline-block; }
-  .dd-flex { display: flex; }
-  .dd-grid { display: grid; }
-  .dd-none { display: none; }
+/* @ID: #10-01-04 */
+/* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-  .dd-visible { visibility: visible; }
-  .dd-invisible { visibility: hidden; }
-  .dd-collapse { visibility: collapse; }
+@media (min-width: 640px) {
+  .dd-block        { display: block; }
+  .dd-inline       { display: inline; }
+  .dd-inline-block { display: inline-block; }
+  .dd-flex         { display: flex; }
+  .dd-inline-flex  { display: inline-flex; }
+  .dd-grid         { display: grid; }
+  .dd-none         { display: none; }
+  .dd-contents     { display: contents; }
+
+  .dvisible   { visibility: visible; }
+  .dinvisible { visibility: hidden; }
+  .dcollapse  { visibility: collapse; }
 }

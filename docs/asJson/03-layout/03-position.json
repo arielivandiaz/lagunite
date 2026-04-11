@@ -1,535 +1,236 @@
 {
   "folder": "03-layout",
   "file": "03-position.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
-  "totalSelectors": 135,
+  "totalSelectors": 128,
   "content": [
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pos-static",
-      "id": null,
+      "id": "#03-03-01",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: static",
       "responsive": true,
-      "description": "** Position Types **"
+      "description": "── Position types ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pos-relative",
-      "id": null,
+      "id": "#03-03-01",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: relative",
       "responsive": true,
-      "description": "** Position Types **"
+      "description": "── Position types ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pos-absolute",
-      "id": null,
+      "id": "#03-03-01",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Position Types **"
+      "description": "── Position types ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pos-fixed",
-      "id": null,
+      "id": "#03-03-01",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Position Types **"
+      "description": "── Position types ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pos-sticky",
-      "id": null,
+      "id": "#03-03-01",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: sticky",
       "responsive": true,
-      "description": "** Position Types **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".top-0",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "top"
-      ],
-      "cssRule": "top: 0",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".right-0",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "right"
-      ],
-      "cssRule": "right: 0",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bottom-0",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "bottom"
-      ],
-      "cssRule": "bottom: 0",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".left-0",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "left"
-      ],
-      "cssRule": "left: 0",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".top-auto",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "top"
-      ],
-      "cssRule": "top: auto",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".right-auto",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "right"
-      ],
-      "cssRule": "right: auto",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bottom-auto",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "bottom"
-      ],
-      "cssRule": "bottom: auto",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".left-auto",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "left"
-      ],
-      "cssRule": "left: auto",
-      "responsive": true,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".top-full",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "top"
-      ],
-      "cssRule": "top: 100%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".right-full",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "right"
-      ],
-      "cssRule": "right: 100%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bottom-full",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "bottom"
-      ],
-      "cssRule": "bottom: 100%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".left-full",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "left"
-      ],
-      "cssRule": "left: 100%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".top-1\\/2",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "top"
-      ],
-      "cssRule": "top: 50%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".right-1\\/2",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "right"
-      ],
-      "cssRule": "right: 50%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".bottom-1\\/2",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "bottom"
-      ],
-      "cssRule": "bottom: 50%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".left-1\\/2",
-      "id": "#03-07-02",
-      "category": null,
-      "properties": [
-        "left"
-      ],
-      "cssRule": "left: 50%",
-      "responsive": false,
-      "description": "** Inset Utilities **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-0",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 0",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-10",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 10",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-20",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 20",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-30",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 30",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-40",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 40",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-50",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: 50",
-      "responsive": true,
-      "description": "** Z-index Stack **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".z-auto",
-      "id": "#03-07-03",
-      "category": null,
-      "properties": [
-        "z-index"
-      ],
-      "cssRule": "z-index: auto",
-      "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Position types ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".abs",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-full",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-h",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-v",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-rg",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-lf",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-t",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-b",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-tl",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-tr",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-bl",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-br",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: absolute",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-full",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "bottom",
@@ -539,13 +240,13 @@
       ],
       "cssRule": "bottom: 0\ntop: 0\nright: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-h",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "right",
@@ -553,13 +254,13 @@
       ],
       "cssRule": "right: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-v",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "bottom",
@@ -567,65 +268,65 @@
       ],
       "cssRule": "bottom: 0\ntop: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-rg",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "right"
       ],
       "cssRule": "right: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-lf",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "left"
       ],
       "cssRule": "left: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-t",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "top"
       ],
       "cssRule": "top: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-b",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "bottom"
       ],
       "cssRule": "bottom: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-tl",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "top",
@@ -633,13 +334,13 @@
       ],
       "cssRule": "top: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-tr",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "top",
@@ -647,13 +348,13 @@
       ],
       "cssRule": "top: 0\nright: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-bl",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "bottom",
@@ -661,13 +362,13 @@
       ],
       "cssRule": "bottom: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pa-br",
-      "id": "#03-03-01",
+      "id": "#03-03-02",
       "category": null,
       "properties": [
         "bottom",
@@ -675,182 +376,182 @@
       ],
       "cssRule": "bottom: 0\nright: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".rel",
-      "id": "#03-03-02",
+      "id": "#03-03-03",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: relative",
       "responsive": false,
-      "description": "** Z-index Stack **"
+      "description": "── Relative shortcut ──────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-full",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-h",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-v",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-rg",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-lf",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-t",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-b",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-tl",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-tr",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-bl",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-br",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "position"
       ],
       "cssRule": "position: fixed",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-full",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "bottom",
@@ -860,13 +561,13 @@
       ],
       "cssRule": "bottom: 0\ntop: 0\nright: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-h",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "right",
@@ -874,13 +575,13 @@
       ],
       "cssRule": "right: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-v",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "bottom",
@@ -888,65 +589,65 @@
       ],
       "cssRule": "bottom: 0\ntop: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-rg",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "right"
       ],
       "cssRule": "right: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-lf",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "left"
       ],
       "cssRule": "left: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-t",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "top"
       ],
       "cssRule": "top: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-b",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "bottom"
       ],
       "cssRule": "bottom: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-tl",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "top",
@@ -954,13 +655,13 @@
       ],
       "cssRule": "top: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-tr",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "top",
@@ -968,13 +669,13 @@
       ],
       "cssRule": "top: 0\nright: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-bl",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "bottom",
@@ -982,13 +683,13 @@
       ],
       "cssRule": "bottom: 0\nleft: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".pf-br",
-      "id": "#03-03-03",
+      "id": "#03-03-04",
       "category": null,
       "properties": [
         "bottom",
@@ -996,13 +697,13 @@
       ],
       "cssRule": "bottom: 0\nright: 0",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".center-h",
-      "id": "#03-03-XX",
+      "id": "#03-03-05",
       "category": null,
       "properties": [
         "left",
@@ -1011,13 +712,13 @@
       ],
       "cssRule": "left: 0\nright: 0\nmargin: auto",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Centering utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".center-v",
-      "id": "#03-03-XX",
+      "id": "#03-03-05",
       "category": null,
       "properties": [
         "top",
@@ -1026,30 +727,29 @@
       ],
       "cssRule": "top: 0\nbottom: 0\nmargin: auto",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Centering utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".center",
-      "id": "#03-03-XX",
+      "id": "#03-03-05",
       "category": null,
       "properties": [
         "left",
         "right",
-        "margin",
-        "margin-top",
-        "margin-bottom"
+        "margin-left",
+        "margin-right"
       ],
-      "cssRule": "left: 0\nright: 0\nmargin: auto\nmargin-top: 0\nmargin-bottom: 0",
+      "cssRule": "left: 0\nright: 0\nmargin-left: auto\nmargin-right: auto",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Centering utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".abs-center",
-      "id": "#03-03-XX",
+      "id": "#03-03-05",
       "category": null,
       "properties": [
         "position",
@@ -1059,65 +759,65 @@
       ],
       "cssRule": "position: absolute\ntop: 50%\nleft: 50%\ntransform: translate(-50%, -50%)",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Centering utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-r",
-      "id": "#03-03-XX",
+      "id": "#03-03-06",
       "category": null,
       "properties": [
         "float"
       ],
       "cssRule": "float: right",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Float utilities ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-rg",
-      "id": "#03-03-XX",
+      "id": "#03-03-06",
       "category": null,
       "properties": [
         "float"
       ],
       "cssRule": "float: right",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Float utilities ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-l",
-      "id": "#03-03-XX",
+      "id": "#03-03-06",
       "category": null,
       "properties": [
         "float"
       ],
       "cssRule": "float: left",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Float utilities ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-lf",
-      "id": "#03-03-XX",
+      "id": "#03-03-06",
       "category": null,
       "properties": [
         "float"
       ],
       "cssRule": "float: left",
       "responsive": true,
-      "description": "** Z-index Stack **"
+      "description": "── Float utilities ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tr",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1125,13 +825,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1139,13 +839,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tc",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1153,13 +853,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-br",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1167,13 +867,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-bl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1181,13 +881,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-bc",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1195,13 +895,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-c",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1209,13 +909,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-cl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1223,13 +923,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-cr",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "position",
@@ -1237,13 +937,13 @@
       ],
       "cssRule": "position: absolute\nmargin: auto",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tr",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "top",
@@ -1251,13 +951,13 @@
       ],
       "cssRule": "top: 0\nright: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "top",
@@ -1265,13 +965,13 @@
       ],
       "cssRule": "top: 0\nleft: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-tc",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "top",
@@ -1280,13 +980,13 @@
       ],
       "cssRule": "top: 0\nright: 0\nleft: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-br",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1294,13 +994,13 @@
       ],
       "cssRule": "bottom: 0\nright: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-bl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1308,13 +1008,13 @@
       ],
       "cssRule": "bottom: 0\nleft: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-bc",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1323,13 +1023,13 @@
       ],
       "cssRule": "bottom: 0\nright: 0\nleft: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-c",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1339,13 +1039,13 @@
       ],
       "cssRule": "bottom: 0\ntop: 0\nleft: 0\nright: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-cl",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1354,13 +1054,13 @@
       ],
       "cssRule": "bottom: 0\ntop: 0\nleft: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".float-cr",
-      "id": "#03-03-XX",
+      "id": "#03-03-07",
       "category": null,
       "properties": [
         "bottom",
@@ -1369,130 +1069,338 @@
       ],
       "cssRule": "bottom: 0\ntop: 0\nright: 0",
       "responsive": false,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Float positioning in .rel container ──────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z0",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 0",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z1",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 1",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z2",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 2",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z3",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 3",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z4",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 4",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z5",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 5",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z10",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 10",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z15",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 15",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".z20",
-      "id": "#03-03-XX",
+      "id": "#03-03-08",
       "category": null,
       "properties": [
         "z-index"
       ],
       "cssRule": "z-index: 20",
       "responsive": true,
-      "description": "Floating Positioning in .rel Container"
+      "description": "── Z-index (.z0-.z20) ───────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-0",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": "top: 0",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-0",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": "right: 0",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-0",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": "bottom: 0",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-0",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 0",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-auto",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": "top: auto",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-auto",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": "right: auto",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-auto",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": "bottom: auto",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-auto",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: auto",
+      "responsive": true,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-full",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": "top: 100%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-full",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": "right: 100%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-full",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": "bottom: 100%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-full",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 100%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".top-1\\/2",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": "top: 50%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".right-1\\/2",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "right"
+      ],
+      "cssRule": "right: 50%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bottom-1\\/2",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "bottom"
+      ],
+      "cssRule": "bottom: 50%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".left-1\\/2",
+      "id": "#03-03-09",
+      "category": null,
+      "properties": [
+        "left"
+      ],
+      "cssRule": "left: 50%",
+      "responsive": false,
+      "description": "── Inset utilities ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1500,13 +1408,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-xs",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1514,13 +1422,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-s",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1528,13 +1436,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-m",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1542,13 +1450,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1556,13 +1464,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-l",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1570,13 +1478,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-xl",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1584,13 +1492,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-xs",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1598,13 +1506,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-s",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1612,13 +1520,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-m",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1626,13 +1534,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1640,13 +1548,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-l",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1654,13 +1562,13 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-xl",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "display",
@@ -1668,163 +1576,163 @@
       ],
       "cssRule": "display: block\ncontent: \"\"",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-xs",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-1)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-s",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-3)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-m",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-6)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-6)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-l",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-12)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-v-xl",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: var(--space-16)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-xs",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-1)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-s",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-3)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-m",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-6)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-6)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-l",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-12)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".separator-h-xl",
-      "id": "#03-03-XX",
+      "id": "#03-03-10",
       "category": null,
       "properties": [
         "width"
       ],
       "cssRule": "width: var(--space-16)",
       "responsive": true,
-      "description": "ToDo Check"
+      "description": "── Separators ────────────────────────────────────────────────────────────"
     }
   ]
 }

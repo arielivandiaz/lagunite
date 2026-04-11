@@ -1,0 +1,67 @@
+/* ==========
+   06-molecules / 05-breadcrumb.css
+   Breadcrumb trail with slash, arrow, and dot separators.
+   ========== */
+
+/* @ID: #06-05-01 */
+
+/* ── Breadcrumb list & items ────────────────────────────────────────────── */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: var(--space-2) 0;
+  margin: 0;
+  list-style: none;
+  font-size: var(--font-size-s);
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0 var(--space-2);
+  color: var(--gray-400);
+  content: "/";
+}
+
+.breadcrumb-item a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: text-decoration 0.15s ease;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--gray-500);
+}
+
+/* @ID: #06-05-02 */
+
+/* ── Separator variants ─────────────────────────────────────────────────── */
+
+.breadcrumb-arrow .breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+.breadcrumb-dot .breadcrumb-item + .breadcrumb-item::before {
+  content: "·";
+}
+
+/* @ID: #06-05-03 */
+
+/* ── Night mode ─────────────────────────────────────────────────────────── */
+
+.night .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--gray-500);
+}
+
+.night .breadcrumb-item.active {
+  color: var(--gray-400);
+}

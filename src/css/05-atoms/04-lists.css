@@ -1,8 +1,17 @@
+/* ==========================================================================
+   05-atoms / 04-lists.css
+   List utilities: zebra and bordered lists, list-style, inline lists, item
+   spacing, marker types and positions.
+   Tokens: --space-*, --color-primary, --color-primary-rgb, --color-border.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+   ========================================================================== */
+
 /* @ID: #05-04-01 */
-/* Lists Base Styles */
+/* ── Base: alternate rows & bordered lists ──────────────────────────────── */
+
 ul.alt li:nth-child(2n),
 ol.alt li:nth-child(2n) {
-  background-color: rgba(36, 118, 255, 0.1);
+  background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1);
 }
 
 ul.bordered,
@@ -13,4 +22,100 @@ ol.bordered {
 ol.bordered li:not(:last-child),
 ul.bordered li:not(:last-child) {
   border-bottom: 1px solid var(--color-primary);
+}
+
+/* @ID: #05-04-02 */
+/* ── List layout ───────────────────────────────────────────────────────── */
+
+.list-none {
+  list-style: none;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-inline > li {
+  display: inline;
+}
+
+.list-spaced > li + li {
+  margin-top: var(--space-3);
+}
+
+/* @ID: #05-04-03 */
+/* ── Unordered marker types ─────────────────────────────────────────────── */
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-circle {
+  list-style-type: circle;
+}
+
+.list-square {
+  list-style-type: square;
+}
+
+/* @ID: #05-04-04 */
+/* ── Ordered marker types & marker position ─────────────────────────────── */
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+
+.list-roman {
+  list-style-type: lower-roman;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+/* @ID: #05-04-05 */
+/* ── Responsive: mobile (max-width: 639px) ────────────────────────────── */
+
+@media (max-width: 639px) {
+  .xlist-none {
+    list-style: none;
+  }
+
+  .xlist-inline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .xlist-inline > li {
+    display: inline;
+  }
+}
+
+/* ── Responsive: desktop (min-width: 640px) ───────────────────────────── */
+
+@media (min-width: 640px) {
+  .dlist-none {
+    list-style: none;
+  }
+
+  .dlist-inline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .dlist-inline > li {
+    display: inline;
+  }
 }

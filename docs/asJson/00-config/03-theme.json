@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "03-theme.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": false,
   "totalSelectors": 5,
   "content": [
@@ -44,6 +44,13 @@
         "--bg-tertiary",
         "--color-border",
         "--color-border-hover",
+        "--input-text",
+        "--input-bg",
+        "--input-border",
+        "--input-placeholder",
+        "--select-chevron",
+        "--select-chevron-on-primary",
+        "--select-chevron-zone",
         "--bg-gradient-1",
         "--bg-gradient-2",
         "--bg-gradient-3",
@@ -52,17 +59,20 @@
         "--bg-gradient-6",
         "--bg-gradient-7",
         "--bg-gradient-8",
+        "--border-width-s",
+        "--border-width-md",
         "--border",
         "--border-light",
         "--border-dark",
         "--shadow-s",
-        "--shadow-md",
+        "--shadow-m",
         "--shadow-l",
+        "--shadow-xl",
         "--shadow-inner"
       ],
-      "cssRule": "/*== Color Assignments ==*/\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/*== Text Colors ==*/\n--color-text-base: #333\n--color-text-alt: #fff\n/*== Background Colors ==*/\n--color-bg: #eee\n--color-bg-alt: #222\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/*== Gradients ==*/\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\r\n    180deg,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 50%,\r\n    rgba(0, 90, 238, 1) 100%\r\n  )\n--bg-gradient-5: radial-gradient(\r\n    circle,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 100%\r\n  )\n--bg-gradient-6: radial-gradient(\r\n    circle,\r\n    rgba(238, 238, 238, 1) 0%,\r\n    rgba(193, 216, 255, 1) 100%\r\n  )\n--bg-gradient-7: repeating-linear-gradient(\r\n    45deg,\r\n    #2476ff,\r\n    #5e9aff 20px,\r\n    #fff 20px,\r\n    #ccc 32px\r\n  )\n--bg-gradient-8: repeating-linear-gradient(\r\n    45deg,\r\n    #5e9aff,\r\n    #0965ff 20px,\r\n    #000 20px,\r\n    #444 32px\r\n  )\n/*== Borders ==*/\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/*== Shadows ==*/\n--shadow-s: 0 1px 2px 0 hsla(0, 0%, 0%, 0.05)\n/* Subtle */\n--shadow-md: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1)\n/* Medium */\n--shadow-l: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1)\n/* Large */\n--shadow-inner: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)\n/* Inner */",
+      "cssRule": "/*== Color Assignments ==*/\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/*== Text Colors ==*/\n--color-text-base: #333\n--color-text-alt: #fff\n/*== Background Colors ==*/\n--color-bg: #eee\n--color-bg-alt: #222\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/*== Inputs (semantic aliases for form controls) ==*/\n--input-text: var(--color-text-base)\n--input-bg: var(--color-bg)\n--input-border: var(--gray-300)\n--input-placeholder: var(--gray-400)\n/* Chevron for native <select> (data URI; stroke matches gray-600) */\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Chevron on primary strip (.select-container.alt) */\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-zone: 2.75rem\n/*== Gradients ==*/\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\n      180deg,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 50%,\n      rgba(0, 90, 238, 1) 100%\n    )\n--bg-gradient-5: radial-gradient(\n      circle,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 100%\n    )\n--bg-gradient-6: radial-gradient(\n      circle,\n      rgba(238, 238, 238, 1) 0%,\n      rgba(193, 216, 255, 1) 100%\n    )\n--bg-gradient-7: repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )\n--bg-gradient-8: repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )\n/*== Borders ==*/\n--border-width-s: 1px\n--border-width-md: 2px\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(0, 0, 0, 0.06),\n      0 0 0 1px rgba(0, 0, 0, 0.02)\n/* Subtle */\n--shadow-m:\n      0 8px 16px -10px rgba(0, 0, 0, 0.18),\n      0 3px 8px -4px rgba(0, 0, 0, 0.12),\n      0 0 0 1px rgba(0, 0, 0, 0.03)\n/* Medium */\n--shadow-l:\n      0 18px 40px -26px rgba(0, 0, 0, 0.30),\n      0 10px 18px -14px rgba(0, 0, 0, 0.18),\n      0 0 0 1px rgba(0, 0, 0, 0.04)\n/* Large */\n--shadow-xl:\n      0 34px 70px -46px rgba(0, 0, 0, 0.45),\n      0 18px 30px -22px rgba(0, 0, 0, 0.25),\n      0 0 0 1px rgba(0, 0, 0, 0.05)\n/* Extra Large */\n--shadow-inner:\n      inset 0 1px 2px rgba(0, 0, 0, 0.14),\n      inset 0 0 0 1px rgba(0, 0, 0, 0.06)\n/* Inner */",
       "responsive": false,
-      "description": "|--------------------------------------------------------------------------\r\n  | Semantic theme variables @ID: #00-03-01\r\n  |--------------------------------------------------------------------------\r\n  |\r\n  | These variables give meaning to the raw palette values. This is what\r\n  | should be used throughout the library and overridden for theming."
+      "description": "|--------------------------------------------------------------------------\n  | Semantic theme variables @ID: #00-03-01\n  |--------------------------------------------------------------------------\n  |\n  | These variables give meaning to the raw palette values. This is what\n  | should be used throughout the library and overridden for theming."
     },
     {
       "type": "selector",
@@ -74,11 +84,21 @@
         "--color-bg",
         "--color-bg-alt",
         "--color-text-base",
-        "--color-text-alt",
+        "--input-text",
+        "--input-bg",
+        "--input-border",
+        "--input-placeholder",
+        "--select-chevron",
+        "--select-chevron-on-primary",
         "--color-border",
-        "--color-border-hover"
+        "--color-border-hover",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner"
       ],
-      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*== Text Colors ==*/\n--color-text-base: #fff\n--color-text-alt: #333\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)",
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
       "responsive": false,
       "description": "** Dark Theme (Night Mode) **"
     },
@@ -92,11 +112,21 @@
         "--color-bg",
         "--color-bg-alt",
         "--color-text-base",
-        "--color-text-alt",
+        "--input-text",
+        "--input-bg",
+        "--input-border",
+        "--input-placeholder",
+        "--select-chevron",
+        "--select-chevron-on-primary",
         "--color-border",
-        "--color-border-hover"
+        "--color-border-hover",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner"
       ],
-      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*== Text Colors ==*/\n--color-text-base: #fff\n--color-text-alt: #333\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)",
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
       "responsive": false,
       "description": "** Dark Theme (Night Mode) **"
     },
@@ -117,14 +147,21 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".theme-dark",
+      "selector": ".theme-night",
       "id": "#00-03-03",
       "category": null,
       "properties": [
         "background",
-        "color"
+        "color",
+        "--select-chevron",
+        "--select-chevron-on-primary",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner"
       ],
-      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)",
+      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Invertir sombras cuando se usa sólo a nivel de componente */\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
       "responsive": false,
       "description": "** Theme Toggle Classes **"
     }
@@ -259,6 +296,34 @@
       "value": "var(--gray-300)"
     },
     {
+      "property": "--input-text",
+      "value": "var(--color-text-base)"
+    },
+    {
+      "property": "--input-bg",
+      "value": "var(--color-bg)"
+    },
+    {
+      "property": "--input-border",
+      "value": "var(--gray-300)"
+    },
+    {
+      "property": "--input-placeholder",
+      "value": "var(--gray-400)"
+    },
+    {
+      "property": "--select-chevron",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+    },
+    {
+      "property": "--select-chevron-on-primary",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+    },
+    {
+      "property": "--select-chevron-zone",
+      "value": "2.75rem"
+    },
+    {
       "property": "--bg-gradient-1",
       "value": "linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)"
     },
@@ -272,23 +337,31 @@
     },
     {
       "property": "--bg-gradient-4",
-      "value": "linear-gradient(\r\n    180deg,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 50%,\r\n    rgba(0, 90, 238, 1) 100%\r\n  )"
+      "value": "linear-gradient(\n      180deg,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 50%,\n      rgba(0, 90, 238, 1) 100%\n    )"
     },
     {
       "property": "--bg-gradient-5",
-      "value": "radial-gradient(\r\n    circle,\r\n    rgba(94, 154, 255, 1) 0%,\r\n    rgba(36, 118, 255, 1) 100%\r\n  )"
+      "value": "radial-gradient(\n      circle,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 100%\n    )"
     },
     {
       "property": "--bg-gradient-6",
-      "value": "radial-gradient(\r\n    circle,\r\n    rgba(238, 238, 238, 1) 0%,\r\n    rgba(193, 216, 255, 1) 100%\r\n  )"
+      "value": "radial-gradient(\n      circle,\n      rgba(238, 238, 238, 1) 0%,\n      rgba(193, 216, 255, 1) 100%\n    )"
     },
     {
       "property": "--bg-gradient-7",
-      "value": "repeating-linear-gradient(\r\n    45deg,\r\n    #2476ff,\r\n    #5e9aff 20px,\r\n    #fff 20px,\r\n    #ccc 32px\r\n  )"
+      "value": "repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )"
     },
     {
       "property": "--bg-gradient-8",
-      "value": "repeating-linear-gradient(\r\n    45deg,\r\n    #5e9aff,\r\n    #0965ff 20px,\r\n    #000 20px,\r\n    #444 32px\r\n  )"
+      "value": "repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )"
+    },
+    {
+      "property": "--border-width-s",
+      "value": "1px"
+    },
+    {
+      "property": "--border-width-md",
+      "value": "2px"
     },
     {
       "property": "--border",
@@ -304,19 +377,23 @@
     },
     {
       "property": "--shadow-s",
-      "value": "0 1px 2px 0 hsla(0, 0%, 0%, 0.05)"
+      "value": "0 1px 2px rgba(0, 0, 0, 0.06),\n      0 0 0 1px rgba(0, 0, 0, 0.02)"
     },
     {
-      "property": "--shadow-md",
-      "value": "0 4px 6px -1px hsla(0, 0%, 0%, 0.1)"
+      "property": "--shadow-m",
+      "value": "0 8px 16px -10px rgba(0, 0, 0, 0.18),\n      0 3px 8px -4px rgba(0, 0, 0, 0.12),\n      0 0 0 1px rgba(0, 0, 0, 0.03)"
     },
     {
       "property": "--shadow-l",
-      "value": "0 10px 15px -3px hsla(0, 0%, 0%, 0.1)"
+      "value": "0 18px 40px -26px rgba(0, 0, 0, 0.30),\n      0 10px 18px -14px rgba(0, 0, 0, 0.18),\n      0 0 0 1px rgba(0, 0, 0, 0.04)"
+    },
+    {
+      "property": "--shadow-xl",
+      "value": "0 34px 70px -46px rgba(0, 0, 0, 0.45),\n      0 18px 30px -22px rgba(0, 0, 0, 0.25),\n      0 0 0 1px rgba(0, 0, 0, 0.05)"
     },
     {
       "property": "--shadow-inner",
-      "value": "inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.05)"
+      "value": "inset 0 1px 2px rgba(0, 0, 0, 0.14),\n      inset 0 0 0 1px rgba(0, 0, 0, 0.06)"
     },
     {
       "property": "--color-bg",
@@ -328,11 +405,31 @@
     },
     {
       "property": "--color-text-base",
-      "value": "#fff"
+      "value": "#e8eaed"
     },
     {
-      "property": "--color-text-alt",
-      "value": "#333"
+      "property": "--input-text",
+      "value": "var(--color-text-alt)"
+    },
+    {
+      "property": "--input-bg",
+      "value": "var(--gray-800)"
+    },
+    {
+      "property": "--input-border",
+      "value": "var(--gray-600)"
+    },
+    {
+      "property": "--input-placeholder",
+      "value": "var(--gray-500)"
+    },
+    {
+      "property": "--select-chevron",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+    },
+    {
+      "property": "--select-chevron-on-primary",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
     },
     {
       "property": "--color-border",
@@ -341,6 +438,54 @@
     {
       "property": "--color-border-hover",
       "value": "var(--gray-600)"
+    },
+    {
+      "property": "--shadow-s",
+      "value": "0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)"
+    },
+    {
+      "property": "--shadow-m",
+      "value": "0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)"
+    },
+    {
+      "property": "--shadow-l",
+      "value": "0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)"
+    },
+    {
+      "property": "--shadow-xl",
+      "value": "0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "property": "--shadow-inner",
+      "value": "inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)"
+    },
+    {
+      "property": "--select-chevron",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+    },
+    {
+      "property": "--select-chevron-on-primary",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+    },
+    {
+      "property": "--shadow-s",
+      "value": "0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)"
+    },
+    {
+      "property": "--shadow-m",
+      "value": "0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)"
+    },
+    {
+      "property": "--shadow-l",
+      "value": "0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)"
+    },
+    {
+      "property": "--shadow-xl",
+      "value": "0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "property": "--shadow-inner",
+      "value": "inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)"
     }
   ]
 }

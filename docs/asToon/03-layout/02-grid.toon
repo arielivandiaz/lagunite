@@ -1,36 +1,45 @@
 folder: 03-layout
 file: 02-grid.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 140
-content[140]:
+totalSelectors: 101
+content[101]:
   - type: selector
     selectorType: class
     selector: .grid
     id: #03-02-01
     category: null
-    properties[4]: display,grid-template-columns,grid-gap,place-items
-    cssRule: "display: grid\ngrid-template-columns: 1fr\ngrid-gap: var(--space-4)\nplace-items: center"
+    properties[3]: display,grid-template-columns,gap
+    cssRule: "display: grid\ngrid-template-columns: 1fr\ngap: var(--space-4)"
     responsive: true
-    description: ** Basic Grid Containers **
+    description: ── Grid containers ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-auto
     id: #03-02-01
     category: null
-    properties[4]: display,grid-template-columns,grid-gap,place-items
-    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fit, minmax(250px, 1fr))\ngrid-gap: var(--space-4)\nplace-items: center"
+    properties[3]: display,grid-template-columns,gap
+    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fit, minmax(250px, 1fr))\ngap: var(--space-4)"
     responsive: true
-    description: ** Basic Grid Containers **
+    description: ── Grid containers ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-auto-fill
     id: #03-02-01
     category: null
-    properties[4]: display,grid-template-columns,grid-gap,place-items
-    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fill, minmax(250px, 1fr))\ngrid-gap: var(--space-4)\nplace-items: center"
+    properties[3]: display,grid-template-columns,gap
+    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fill, minmax(250px, 1fr))\ngap: var(--space-4)"
     responsive: false
-    description: ** Basic Grid Containers **
+    description: ── Grid containers ──────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .grid-center
+    id: #03-02-01
+    category: null
+    properties[2]: display,place-items
+    cssRule: "display: grid\nplace-items: center"
+    responsive: false
+    description: ── Grid containers ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-1
@@ -39,7 +48,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(1, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-2
@@ -48,7 +57,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(2, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-3
@@ -57,7 +66,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(3, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-4
@@ -66,7 +75,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(4, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-5
@@ -75,7 +84,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(5, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-6
@@ -84,7 +93,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(6, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-7
@@ -93,7 +102,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(7, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-8
@@ -102,7 +111,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(8, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-9
@@ -111,7 +120,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(9, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-10
@@ -120,7 +129,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(10, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-11
@@ -129,7 +138,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(11, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-cols-12
@@ -138,7 +147,7 @@ content[140]:
     properties[1]: grid-template-columns
     cssRule: "grid-template-columns: repeat(12, 1fr)"
     responsive: true
-    description: ** Grid Columns - Base **
+    description: ── Grid columns ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-1
@@ -147,7 +156,7 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(1, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-2
@@ -156,7 +165,7 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(2, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-3
@@ -165,7 +174,7 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(3, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-4
@@ -174,7 +183,7 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(4, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-5
@@ -183,7 +192,7 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(5, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-rows-6
@@ -192,1075 +201,715 @@ content[140]:
     properties[1]: grid-template-rows
     cssRule: "grid-template-rows: repeat(6, 1fr)"
     responsive: true
-    description: ** Grid Rows - Base **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-0
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: 0"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-xs
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-1)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-s
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-2)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-4)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-l
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-6)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-xl
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-8)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-gap-xxl
-    id: #03-02-06
-    category: null
-    properties[1]: grid-gap
-    cssRule: "grid-gap: var(--space-12)"
-    responsive: true
-    description: ** Grid Gap Utilities **
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap-0
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: 0"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap-xs
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: var(--space-1)"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap-s
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: var(--space-2)"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: var(--space-4)"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap-l
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: var(--space-6)"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-col-gap-xl
-    id: #03-02-06
-    category: null
-    properties[1]: column-gap
-    cssRule: "column-gap: var(--space-8)"
-    responsive: true
-    description: Column Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap-0
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: 0"
-    responsive: true
-    description: Row Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap-xs
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: var(--space-1)"
-    responsive: true
-    description: Row Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap-s
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: var(--space-2)"
-    responsive: true
-    description: Row Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: var(--space-4)"
-    responsive: true
-    description: Row Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap-l
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: var(--space-6)"
-    responsive: true
-    description: Row Gap
-  - type: selector
-    selectorType: class
-    selector: .g-row-gap-xl
-    id: #03-02-06
-    category: null
-    properties[1]: row-gap
-    cssRule: "row-gap: var(--space-8)"
-    responsive: true
-    description: Row Gap
+    description: ── Grid rows ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-1
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 1"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-2
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 2"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-3
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 3"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-4
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 4"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-5
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 5"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-6
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 6"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-7
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 7"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-8
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 8"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-9
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 9"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-10
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 10"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-11
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 11"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-12
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: span 12"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-span-full
-    id: #03-02-09
+    id: #03-02-06
     category: null
     properties[1]: grid-column
     cssRule: "grid-column: 1 / -1"
     responsive: true
-    description: ** Column Span **
+    description: ── Column span ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-1
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 1"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-2
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 2"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-3
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 3"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-4
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 4"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-5
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 5"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-6
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: span 6"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-span-full
-    id: #03-02-10
+    id: #03-02-07
     category: null
     properties[1]: grid-row
     cssRule: "grid-row: 1 / -1"
     responsive: true
-    description: ** Row Span **
+    description: ── Row span ─────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-1
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 1"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-2
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 2"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-3
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 3"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-4
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 4"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-5
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 5"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-6
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: 6"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-start-auto
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-start
     cssRule: "grid-column-start: auto"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-1
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 1"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-2
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 2"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-3
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 3"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-4
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 4"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-5
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 5"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-6
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 6"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-7
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: 7"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .col-end-auto
-    id: #03-02-11
+    id: #03-02-08
     category: null
     properties[1]: grid-column-end
     cssRule: "grid-column-end: auto"
     responsive: false
-    description: ** Column Start/End **
+    description: ── Column start / end ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-1
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 1"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-2
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 2"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-3
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 3"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-4
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 4"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-5
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 5"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-6
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: 6"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-start-auto
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-start
     cssRule: "grid-row-start: auto"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-1
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 1"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-2
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 2"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-3
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 3"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-4
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 4"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-5
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 5"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-6
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 6"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-7
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: 7"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .row-end-auto
-    id: #03-02-12
+    id: #03-02-09
     category: null
     properties[1]: grid-row-end
     cssRule: "grid-row-end: auto"
     responsive: false
-    description: ** Row Start/End **
+    description: ── Row start / end ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .ji-center
-    id: #03-02-15
+    selector: .ji-c
+    id: #03-02-12
     category: null
     properties[1]: justify-items
     cssRule: "justify-items: center !important"
     responsive: true
-    description: ** Justify Items **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .ji-start
-    id: #03-02-15
+    selector: .ji-s
+    id: #03-02-12
     category: null
     properties[1]: justify-items
     cssRule: "justify-items: start !important"
     responsive: true
-    description: ** Justify Items **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .ji-end
-    id: #03-02-15
+    selector: .ji-e
+    id: #03-02-12
     category: null
     properties[1]: justify-items
     cssRule: "justify-items: end !important"
     responsive: true
-    description: ** Justify Items **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .ji-stretch
-    id: #03-02-15
+    selector: .ji-str
+    id: #03-02-12
     category: null
     properties[1]: justify-items
     cssRule: "justify-items: stretch !important"
     responsive: true
-    description: ** Justify Items **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .gi-center
-    id: #03-02-16
-    category: null
-    properties[1]: align-items
-    cssRule: "align-items: center !important"
-    responsive: true
-    description: ** Align Items **
-  - type: selector
-    selectorType: class
-    selector: .gi-start
-    id: #03-02-16
-    category: null
-    properties[1]: align-items
-    cssRule: "align-items: start !important"
-    responsive: true
-    description: ** Align Items **
-  - type: selector
-    selectorType: class
-    selector: .gi-end
-    id: #03-02-16
-    category: null
-    properties[1]: align-items
-    cssRule: "align-items: end !important"
-    responsive: true
-    description: ** Align Items **
-  - type: selector
-    selectorType: class
-    selector: .gi-stretch
-    id: #03-02-16
-    category: null
-    properties[1]: align-items
-    cssRule: "align-items: stretch !important"
-    responsive: true
-    description: ** Align Items **
-  - type: selector
-    selectorType: class
-    selector: .pi-center
-    id: #03-02-17
+    selector: .pi-c
+    id: #03-02-12
     category: null
     properties[1]: place-items
     cssRule: "place-items: center !important"
     responsive: true
-    description: ** Place Items (shorthand) **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .pi-start
-    id: #03-02-17
+    selector: .pi-s
+    id: #03-02-12
     category: null
     properties[1]: place-items
     cssRule: "place-items: start !important"
     responsive: true
-    description: ** Place Items (shorthand) **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .pi-end
-    id: #03-02-17
+    selector: .pi-e
+    id: #03-02-12
     category: null
     properties[1]: place-items
     cssRule: "place-items: end !important"
     responsive: true
-    description: ** Place Items (shorthand) **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .pi-stretch
-    id: #03-02-17
+    selector: .pi-str
+    id: #03-02-12
     category: null
     properties[1]: place-items
     cssRule: "place-items: stretch !important"
     responsive: true
-    description: ** Place Items (shorthand) **
+    description: "For shared properties (justify-content, align-items, align-content, align-self)\r\n   use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too."
   - type: selector
     selectorType: class
-    selector: .js-center
-    id: #03-02-18
+    selector: .js-c
+    id: #03-02-13
     category: null
     properties[1]: justify-self
     cssRule: "justify-self: center !important"
     responsive: true
-    description: ** Justify Self **
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .js-start
-    id: #03-02-18
+    selector: .js-s
+    id: #03-02-13
     category: null
     properties[1]: justify-self
     cssRule: "justify-self: start !important"
     responsive: true
-    description: ** Justify Self **
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .js-end
-    id: #03-02-18
+    selector: .js-e
+    id: #03-02-13
     category: null
     properties[1]: justify-self
     cssRule: "justify-self: end !important"
     responsive: true
-    description: ** Justify Self **
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .js-stretch
-    id: #03-02-18
+    selector: .js-str
+    id: #03-02-13
     category: null
     properties[1]: justify-self
     cssRule: "justify-self: stretch !important"
     responsive: true
-    description: ** Justify Self **
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .gs-center
-    id: #03-02-19
-    category: null
-    properties[1]: align-self
-    cssRule: "align-self: center !important"
-    responsive: true
-    description: ** Align Self **
-  - type: selector
-    selectorType: class
-    selector: .gs-start
-    id: #03-02-19
-    category: null
-    properties[1]: align-self
-    cssRule: "align-self: start !important"
-    responsive: true
-    description: ** Align Self **
-  - type: selector
-    selectorType: class
-    selector: .gs-end
-    id: #03-02-19
-    category: null
-    properties[1]: align-self
-    cssRule: "align-self: end !important"
-    responsive: true
-    description: ** Align Self **
-  - type: selector
-    selectorType: class
-    selector: .gs-stretch
-    id: #03-02-19
-    category: null
-    properties[1]: align-self
-    cssRule: "align-self: stretch !important"
-    responsive: true
-    description: ** Align Self **
-  - type: selector
-    selectorType: class
-    selector: .ps-center
-    id: #03-02-20
+    selector: .ps-c
+    id: #03-02-13
     category: null
     properties[1]: place-self
     cssRule: "place-self: center !important"
-    responsive: false
-    description: ** Place Self (shorthand) **
+    responsive: true
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .ps-start
-    id: #03-02-20
+    selector: .ps-s
+    id: #03-02-13
     category: null
     properties[1]: place-self
     cssRule: "place-self: start !important"
-    responsive: false
-    description: ** Place Self (shorthand) **
+    responsive: true
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .ps-end
-    id: #03-02-20
+    selector: .ps-e
+    id: #03-02-13
     category: null
     properties[1]: place-self
     cssRule: "place-self: end !important"
-    responsive: false
-    description: ** Place Self (shorthand) **
+    responsive: true
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
-    selector: .ps-stretch
-    id: #03-02-20
+    selector: .ps-str
+    id: #03-02-13
     category: null
     properties[1]: place-self
     cssRule: "place-self: stretch !important"
-    responsive: false
-    description: ** Place Self (shorthand) **
-  - type: selector
-    selectorType: class
-    selector: .jc-center
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: center !important"
     responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .jc-start
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: start !important"
-    responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .jc-end
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: end !important"
-    responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .jc-between
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: space-between !important"
-    responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .jc-around
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: space-around !important"
-    responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .jc-evenly
-    id: #03-02-21
-    category: null
-    properties[1]: justify-content
-    cssRule: "justify-content: space-evenly !important"
-    responsive: true
-    description: ** Justify Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-center
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: center !important"
-    responsive: true
-    description: ** Align Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-start
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: start !important"
-    responsive: true
-    description: ** Align Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-end
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: end !important"
-    responsive: true
-    description: ** Align Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-between
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: space-between !important"
-    responsive: true
-    description: ** Align Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-around
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: space-around !important"
-    responsive: true
-    description: ** Align Content **
-  - type: selector
-    selectorType: class
-    selector: .gc-evenly
-    id: #03-02-22
-    category: null
-    properties[1]: align-content
-    cssRule: "align-content: space-evenly !important"
-    responsive: true
-    description: ** Align Content **
+    description: "── Grid-specific alignment (justify-self, place-self) ───────────────────"
   - type: selector
     selectorType: class
     selector: .grid-flow-row
-    id: #03-02-25
+    id: #03-02-16
     category: null
     properties[1]: grid-auto-flow
     cssRule: "grid-auto-flow: row"
     responsive: false
-    description: ** Auto Flow **
+    description: ── Auto flow ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-flow-col
-    id: #03-02-25
+    id: #03-02-16
     category: null
     properties[1]: grid-auto-flow
     cssRule: "grid-auto-flow: column"
     responsive: false
-    description: ** Auto Flow **
+    description: ── Auto flow ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-flow-dense
-    id: #03-02-25
+    id: #03-02-16
     category: null
     properties[1]: grid-auto-flow
     cssRule: "grid-auto-flow: dense"
     responsive: false
-    description: ** Auto Flow **
+    description: ── Auto flow ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-flow-row-dense
-    id: #03-02-25
+    id: #03-02-16
     category: null
     properties[1]: grid-auto-flow
     cssRule: "grid-auto-flow: row dense"
     responsive: false
-    description: ** Auto Flow **
+    description: ── Auto flow ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .grid-flow-col-dense
-    id: #03-02-25
+    id: #03-02-16
     category: null
     properties[1]: grid-auto-flow
     cssRule: "grid-auto-flow: column dense"
     responsive: false
-    description: ** Auto Flow **
+    description: ── Auto flow ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-cols-auto
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-columns
     cssRule: "grid-auto-columns: auto"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-cols-min
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-columns
     cssRule: "grid-auto-columns: min-content"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-cols-max
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-columns
     cssRule: "grid-auto-columns: max-content"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-cols-fr
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-columns
     cssRule: "grid-auto-columns: minmax(0, 1fr)"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-rows-auto
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-rows
     cssRule: "grid-auto-rows: auto"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-rows-min
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-rows
     cssRule: "grid-auto-rows: min-content"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-rows-max
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-rows
     cssRule: "grid-auto-rows: max-content"
     responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .auto-rows-fr
-    id: #03-02-26
+    id: #03-02-17
     category: null
     properties[1]: grid-auto-rows
     cssRule: "grid-auto-rows: minmax(0, 1fr)"
     responsive: false
-    description: ** Auto Columns/Rows **
-  - type: selector
-    selectorType: class
-    selector: .grid-center
-    id: #03-02-26
-    category: null
-    properties[2]: display,place-items
-    cssRule: "display: grid\nplace-items: center"
-    responsive: false
-    description: ** Auto Columns/Rows **
+    description: ── Auto columns / rows ──────────────────────────────────────────────────

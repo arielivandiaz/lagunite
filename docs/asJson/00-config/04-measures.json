@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "04-measures.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": false,
   "totalSelectors": 1,
   "content": [
@@ -27,15 +27,16 @@
         "--space-24",
         "--space-32",
         "--radius-s",
-        "--radius-md",
+        "--radius-m",
         "--radius-l",
+        "--radius-xl",
         "--radius-full",
         "--breakpoint-s",
         "--breakpoint-md",
         "--breakpoint-l",
         "--breakpoint-xl"
       ],
-      "cssRule": "/*== Sizes ==*/\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n--radius-s: 0.25rem\n--radius-md: 0.5rem\n--radius-l: 1rem\n--radius-full: 9999px\n/*== Breakpoints (Single Source of Truth) ==*/\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px",
+      "cssRule": "/*== Sizes ==*/\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n--radius-s: 0.25rem\n/* 4px  */\n--radius-m: 0.5rem\n/* 8px  */\n--radius-l: 1rem\n/* 16px */\n--radius-xl: 1.5rem\n/* 24px */\n--radius-full: 9999px\n/*== Breakpoints (Single Source of Truth) ==*/\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px",
       "responsive": false,
       "description": "|--------------------------------------------------------------------------\r\n| Measurement System Tokens @ID: #00-04-01\r\n|--------------------------------------------------------------------------"
     }
@@ -102,12 +103,16 @@
       "value": "0.25rem"
     },
     {
-      "property": "--radius-md",
+      "property": "--radius-m",
       "value": "0.5rem"
     },
     {
       "property": "--radius-l",
       "value": "1rem"
+    },
+    {
+      "property": "--radius-xl",
+      "value": "1.5rem"
     },
     {
       "property": "--radius-full",

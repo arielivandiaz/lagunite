@@ -1,0 +1,436 @@
+/* 05-atoms: avatars */
+/* @ID: #05-07-01 */
+.avatar {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--space-10); /* 2.5rem / 40px default */
+	height: var(--space-10);
+	border-radius: 50%; /* Circle by default */
+	overflow: hidden;
+	background-color: var(--color-neutral-200);
+	color: var(--color-neutral-700);
+	font-weight: var(--font-weight-medium);
+	font-size: var(--font-size-base);
+	line-height: 1;
+	flex-shrink: 0;
+	user-select: none;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Night mode */
+.night .avatar {
+	background-color: var(--color-neutral-700);
+	color: var(--color-neutral-200);
+}
+
+/* @ID: #05-07-02 */
+.avatar-xs {
+	width: var(--space-6); /* 1.5rem / 24px */
+	height: var(--space-6);
+	font-size: var(--font-size-xs);
+}
+
+.avatar-s {
+	width: var(--space-8); /* 2rem / 32px */
+	height: var(--space-8);
+	font-size: var(--font-size-s);
+}
+
+/* .avatar is default size (40px) */
+
+.avatar-l {
+	width: var(--space-12); /* 3rem / 48px */
+	height: var(--space-12);
+	font-size: var(--font-size-l);
+}
+
+.avatar-xl {
+	width: var(--space-16); /* 4rem / 64px */
+	height: var(--space-16);
+	font-size: var(--font-size-xl);
+}
+
+/* @ID: #05-07-03 */
+.avatar-circle {
+	border-radius: 50%;
+}
+
+.avatar-rounded {
+	border-radius: var(--radius-l);
+}
+
+.avatar-square {
+	border-radius: var(--radius-s);
+}
+
+/* @ID: #05-07-04 */
+.avatar-status {
+	position: relative;
+}
+
+.avatar-status::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 25%;
+	height: 25%;
+	min-width: 8px;
+	min-height: 8px;
+	border-radius: 50%;
+	border: 2px solid var(--color-surface);
+	background-color: var(--color-neutral-400);
+}
+
+/* Night mode border */
+.night .avatar-status::after {
+	border-color: var(--color-surface-night);
+}
+
+/* Status variants */
+.avatar-status-online::after {
+	background-color: var(--color-success);
+}
+
+.avatar-status-busy::after {
+	background-color: var(--color-error);
+}
+
+.avatar-status-away::after {
+	background-color: var(--color-warning);
+}
+
+.avatar-status-offline::after {
+	background-color: var(--color-neutral-400);
+}
+
+/* @ID: #05-07-05 */
+.avatar-placeholder {
+	background: linear-gradient(
+		135deg,
+		var(--color-neutral-300) 0%,
+		var(--color-neutral-200) 100%
+	);
+}
+
+.night .avatar-placeholder {
+	background: linear-gradient(
+		135deg,
+		var(--color-neutral-600) 0%,
+		var(--color-neutral-700) 100%
+	);
+}
+
+/* Icon placeholder (requires icon inside) */
+.avatar-placeholder svg,
+.avatar-placeholder i {
+	width: 50%;
+	height: 50%;
+	opacity: 0.5;
+}
+
+/* @ID: #05-07-06 */
+.avatar-initials {
+	background: linear-gradient(
+		135deg,
+		var(--color-primary) 0%,
+		var(--color-primary-dark) 100%
+	);
+	color: var(--color-text-inverse);
+	font-weight: var(--font-weight-semibold);
+	text-transform: uppercase;
+}
+
+/* Color variants for initials */
+.avatar-initials-secondary {
+	background: linear-gradient(
+		135deg,
+		var(--color-secondary) 0%,
+		var(--color-secondary-dark) 100%
+	);
+	color: var(--color-text-inverse);
+}
+
+.avatar-initials-success {
+	background: linear-gradient(
+		135deg,
+		var(--color-success) 0%,
+		var(--color-success-dark) 100%
+	);
+	color: var(--color-text-inverse);
+}
+
+.avatar-initials-info {
+	background: linear-gradient(
+		135deg,
+		var(--color-info) 0%,
+		var(--color-info-dark) 100%
+	);
+	color: var(--color-text-inverse);
+}
+
+.avatar-initials-warning {
+	background: linear-gradient(
+		135deg,
+		var(--color-warning) 0%,
+		var(--color-warning-dark) 100%
+	);
+	color: var(--color-text-inverse);
+}
+
+.avatar-initials-error {
+	background: linear-gradient(
+		135deg,
+		var(--color-error) 0%,
+		var(--color-error-dark) 100%
+	);
+	color: var(--color-text-inverse);
+}
+
+/* @ID: #05-07-07 */
+.avatar-group {
+	display: inline-flex;
+	align-items: center;
+	flex-direction: row-reverse; /* Reverses order for stacking */
+}
+
+.avatar-group .avatar {
+	margin-left: calc(var(--space-2) * -1); /* -0.5rem overlap */
+	border: 2px solid var(--color-surface);
+	transition: transform var(--transition-duration-150) var(--transition-timing-ease-out);
+}
+
+.night .avatar-group .avatar {
+	border-color: var(--color-surface-night);
+}
+
+/* First avatar (visually last due to reverse) has no margin */
+.avatar-group .avatar:first-child {
+	margin-left: 0;
+}
+
+/* Hover effect - lift avatar */
+.avatar-group .avatar:hover {
+	transform: translateY(-2px);
+	z-index: 10;
+}
+
+/* @ID: #05-07-08 */
+.avatar-stack {
+	display: inline-flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.avatar-stack .avatar {
+	margin-left: calc(var(--space-4) * -1); /* -1rem overlap - more than group */
+	border: 3px solid var(--color-surface);
+	box-shadow: var(--shadow-s);
+}
+
+.night .avatar-stack .avatar {
+	border-color: var(--color-surface-night);
+}
+
+.avatar-stack .avatar:first-child {
+	margin-left: 0;
+}
+
+.avatar-stack .avatar:hover {
+	transform: scale(1.1);
+	z-index: 10;
+}
+
+/* Counter for remaining avatars */
+.avatar-stack-counter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--space-10);
+	height: var(--space-10);
+	margin-left: calc(var(--space-4) * -1);
+	border-radius: 50%;
+	border: 3px solid var(--color-surface);
+	background-color: var(--color-neutral-300);
+	color: var(--color-neutral-700);
+	font-size: var(--font-size-s);
+	font-weight: var(--font-weight-semibold);
+	flex-shrink: 0;
+	cursor: pointer;
+	transition: all var(--transition-duration-150) var(--transition-timing-ease-out);
+}
+
+.night .avatar-stack-counter {
+	border-color: var(--color-surface-night);
+	background-color: var(--color-neutral-700);
+	color: var(--color-neutral-200);
+}
+
+.avatar-stack-counter:hover {
+	transform: scale(1.1);
+	background-color: var(--color-neutral-400);
+	z-index: 10;
+}
+
+.night .avatar-stack-counter:hover {
+	background-color: var(--color-neutral-600);
+}
+
+/* @ID: #05-07-09 */
+/* Extra small group */
+.avatar-group-xs .avatar,
+.avatar-stack-xs .avatar {
+	border-width: 1px;
+}
+
+.avatar-group-xs .avatar {
+	margin-left: calc(var(--space-1) * -1);
+}
+
+.avatar-stack-xs .avatar,
+.avatar-stack-xs .avatar-stack-counter {
+	margin-left: calc(var(--space-2) * -1);
+	border-width: 2px;
+}
+
+.avatar-stack-counter-xs {
+	width: var(--space-6);
+	height: var(--space-6);
+	font-size: var(--font-size-xs);
+}
+
+/* Small group */
+.avatar-group-s .avatar,
+.avatar-stack-s .avatar {
+	border-width: 2px;
+}
+
+.avatar-group-s .avatar {
+	margin-left: calc(var(--space-1-5) * -1);
+}
+
+.avatar-stack-s .avatar,
+.avatar-stack-s .avatar-stack-counter {
+	margin-left: calc(var(--space-3) * -1);
+}
+
+.avatar-stack-counter-s {
+	width: var(--space-8);
+	height: var(--space-8);
+	font-size: var(--font-size-s);
+}
+
+/* Large group */
+.avatar-group-l .avatar,
+.avatar-stack-l .avatar {
+	border-width: 3px;
+}
+
+.avatar-group-l .avatar {
+	margin-left: calc(var(--space-3) * -1);
+}
+
+.avatar-stack-l .avatar,
+.avatar-stack-l .avatar-stack-counter {
+	margin-left: calc(var(--space-5) * -1);
+}
+
+.avatar-stack-counter-l {
+	width: var(--space-12);
+	height: var(--space-12);
+	font-size: var(--font-size-l);
+}
+
+/* Extra large group */
+.avatar-group-xl .avatar,
+.avatar-stack-xl .avatar {
+	border-width: 4px;
+}
+
+.avatar-group-xl .avatar {
+	margin-left: calc(var(--space-4) * -1);
+}
+
+.avatar-stack-xl .avatar,
+.avatar-stack-xl .avatar-stack-counter {
+	margin-left: calc(var(--space-6) * -1);
+}
+
+.avatar-stack-counter-xl {
+	width: var(--space-16);
+	height: var(--space-16);
+	font-size: var(--font-size-xl);
+}
+
+/* @ID: #05-07-10 */
+.avatar-ring {
+	border: 2px solid var(--color-primary);
+	padding: 2px;
+}
+
+.avatar-ring-secondary {
+	border-color: var(--color-secondary);
+}
+
+.avatar-ring-success {
+	border-color: var(--color-success);
+}
+
+.avatar-ring-info {
+	border-color: var(--color-info);
+}
+
+.avatar-ring-warning {
+	border-color: var(--color-warning);
+}
+
+.avatar-ring-error {
+	border-color: var(--color-error);
+}
+
+/* Thick ring variants */
+.avatar-ring-thick {
+	border-width: 3px;
+	padding: 3px;
+}
+
+/* @ID: #05-07-11 */
+@media (max-width: 639px) {
+	/* Reduce avatar sizes on mobile for groups */
+	.avatar-group .avatar,
+	.avatar-stack .avatar {
+		width: var(--space-8);
+		height: var(--space-8);
+	}
+
+	.avatar-group .avatar {
+		margin-left: calc(var(--space-1-5) * -1);
+	}
+
+	.avatar-stack .avatar {
+		margin-left: calc(var(--space-3) * -1);
+		border-width: 2px;
+	}
+
+	.avatar-stack-counter {
+		width: var(--space-8);
+		height: var(--space-8);
+		margin-left: calc(var(--space-3) * -1);
+		font-size: var(--font-size-xs);
+		border-width: 2px;
+	}
+
+	/* Reduce status indicator size */
+	.avatar-status::after {
+		min-width: 6px;
+		min-height: 6px;
+	}
+}

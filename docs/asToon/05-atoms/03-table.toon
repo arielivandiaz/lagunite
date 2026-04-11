@@ -1,6 +1,6 @@
 folder: 05-atoms
 file: 03-table.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: false
 totalSelectors: 112
 content[112]:
@@ -10,7 +10,7 @@ content[112]:
     id: #05-03-01
     category: null
     properties[7]: border-collapse,margin,width,font-family,font-size,color,background
-    cssRule: "border-collapse: collapse\nmargin: 10px 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
+    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -19,7 +19,7 @@ content[112]:
     id: #05-03-01
     category: null
     properties[7]: border-collapse,margin,width,font-family,font-size,color,background
-    cssRule: "border-collapse: collapse\nmargin: 10px 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
+    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -343,7 +343,7 @@ content[112]:
     id: #05-03-04
     category: null
     properties[1]: background-color
-    cssRule: "background-color: rgba(140, 160, 115, 0.1)"
+    cssRule: "background-color: rgba(var(--color-success-rgb, 140, 160, 115), 0.1)"
     responsive: false
     description: Table Striped (Zebra)
   - type: selector
@@ -352,7 +352,7 @@ content[112]:
     id: #05-03-04
     category: null
     properties[1]: background-color
-    cssRule: "background-color: rgba(255, 193, 7, 0.1)"
+    cssRule: "background-color: rgba(var(--color-warning-rgb, 255, 193, 7), 0.1)"
     responsive: false
     description: Table Striped (Zebra)
   - type: selector
@@ -361,7 +361,7 @@ content[112]:
     id: #05-03-04
     category: null
     properties[1]: background-color
-    cssRule: "background-color: rgba(244, 67, 54, 0.1)"
+    cssRule: "background-color: rgba(var(--color-error-rgb, 244, 67, 54), 0.1)"
     responsive: false
     description: Table Striped (Zebra)
   - type: selector
@@ -640,7 +640,7 @@ content[112]:
     id: #05-03-06
     category: null
     properties[4]: background,color,font-weight,transform
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-weight: 900\ntransform: scale(1.02)"
+    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-bold)\ntransform: scale(1.02)"
     responsive: false
     description: hover cells
   - type: selector
@@ -694,7 +694,7 @@ content[112]:
     id: #05-03-07
     category: null
     properties[4]: border,border-radius,overflow,box-shadow
-    cssRule: "border: 2px solid var(--color-border)\nborder-radius: var(--radius-lg)\noverflow: hidden\nbox-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
+    cssRule: "border: 2px solid var(--color-border)\nborder-radius: var(--radius-l)\noverflow: hidden\nbox-shadow: var(--shadow-s)"
     responsive: false
     description: Table Card Style
   - type: selector
@@ -901,7 +901,7 @@ content[112]:
     id: #05-03-10
     category: null
     properties[3]: overflow-x,"-webkit-overflow-scrolling",margin
-    cssRule: "overflow-x: auto\n-webkit-overflow-scrolling: touch\nmargin: 10px 0"
+    cssRule: "overflow-x: auto\n-webkit-overflow-scrolling: touch\nmargin: var(--space-3) 0"
     responsive: false
     description: Table Responsive
   - type: selector
@@ -910,13 +910,13 @@ content[112]:
     id: #05-03-10
     category: null
     properties[2]: margin,min-width
-    cssRule: "margin: 0\nmin-width: 600px"
+    cssRule: "margin: 0\nmin-width: 37.5rem"
     responsive: false
     description: Table Responsive
   - type: selector
     selectorType: class
     selector: .table tbody tr.selected
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[2]: background,font-weight
     cssRule: "background: var(--color-primary)\nfont-weight: var(--font-weight-medium)"
@@ -925,7 +925,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table tbody tr.disabled
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[2]: opacity,pointer-events
     cssRule: "opacity: 0.5\npointer-events: none"
@@ -934,7 +934,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table tbody tr.highlighted
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[3]: background,color,font-weight
     cssRule: "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-medium)"
@@ -943,7 +943,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table tbody tr.success-row
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[1]: background
     cssRule: "background: var(--color-success)"
@@ -952,7 +952,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table tbody tr.warning-row
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[1]: background
     cssRule: "background: var(--color-warning)"
@@ -961,7 +961,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table tbody tr.error-row
-    id: #05-03-12
+    id: #05-03-11
     category: null
     properties[1]: background
     cssRule: "background: var(--color-error)"
@@ -970,7 +970,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: .table th.sortable
-    id: #05-03-13
+    id: #05-03-12
     category: null
     properties[4]: cursor,user-select,position,padding-right
     cssRule: "cursor: pointer\nuser-select: none\nposition: relative\npadding-right: var(--space-6)"
@@ -979,7 +979,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable:hover"
-    id: #05-03-13
+    id: #05-03-12
     category: null
     properties[1]: background
     cssRule: "background: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1)"
@@ -988,7 +988,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable::after"
-    id: #05-03-13
+    id: #05-03-12
     category: null
     properties[5]: content,position,right,opacity,font-size
     cssRule: "content: \"⇅\"\nposition: absolute\nright: var(--space-2)\nopacity: 0.3\nfont-size: 0.8em"
@@ -997,7 +997,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable.sort-asc::after"
-    id: #05-03-13
+    id: #05-03-12
     category: null
     properties[3]: content,opacity,color
     cssRule: "content: \"↑\"\nopacity: 1\ncolor: var(--color-primary)"
@@ -1006,7 +1006,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable.sort-desc::after"
-    id: #05-03-13
+    id: #05-03-12
     category: null
     properties[3]: content,opacity,color
     cssRule: "content: \"↓\"\nopacity: 1\ncolor: var(--color-primary)"

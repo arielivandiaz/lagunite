@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite — Lista de tareas moderna</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        min-height: 100dvh;
+      }
+
+      /* Chevron rotation on disclosure open */
+      details.todo-sub > summary .todo-chev {
+        display: inline-block;
+        transition: transform 0.25s ease;
+      }
+      details.todo-sub[open] > summary .todo-chev {
+        transform: rotate(90deg);
+      }
+
+      /* Main task row: full width, left-aligned */
+      label.todo-item.checkbox {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+      }
+
+      /* Subtasks: align with card left edge, extra space check → text */
+      .todo-sub-inner {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+      }
+      .todo-sub-inner label.checkbox.checkbox-s {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: var(--space-3);
+      }
+      .todo-sub-inner label.checkbox.checkbox-s .checkmark {
+        left: var(--space-3);
+      }
+
+      /* Checked task: strikethrough + fade */
+      .todo-item input[type="checkbox"]:checked ~ .todo-body .todo-title {
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+      .todo-item input[type="checkbox"]:checked ~ .todo-body .todo-desc {
+        opacity: 0.4;
+      }
+
+      /* Progress bar */
+      .progress-track {
+        height: 6px;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .progress-fill {
+        height: 100%;
+        border-radius: 999px;
+        transition: width 0.3s ease;
+      }
+
+      /* Night: subtask panel contrast */
+      .night .todo-sub {
+        background: var(--gray-800) !important;
+        border-color: var(--gray-600) !important;
+      }
+      .night .todo-sub > summary {
+        background: var(--gray-900) !important;
+      }
+      .night .todo-sub-hint {
+        color: var(--gray-300) !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg color-text">
+    <div class="container-m padd-h-m padd-v-l wp100">
+
+      <!-- ─── Hero ─────────────────────────────────────────────────── -->
+      <header class="bgg-1 border-r-xl padd-l marg-b-l shadow-l">
+        <div class="col ai-fs gap-m">
+          <div class="col ai-fs gap-xs">
+            <p class="font-xs font-weight-2 uppercase letter-spacing-l color-text-alt opacity-70 marg-0">
+              Panel de productividad
+            </p>
+            <h1 class="font-3xl font-bold color-text-alt marg-0 lh-xs">
+              Mis tareas
+            </h1>
+          </div>
+          <p class="font-s lh color-text-alt opacity-80 marg-0">
+            Marca avances, despliega sub-tareas y mantén el foco del día.
+          </p>
+          <div class="col gap-xs wp100" style="max-width: 320px">
+            <div class="row jc-sb ai-c">
+              <span class="font-xs font-weight-2 color-text-alt opacity-80">Progreso</span>
+              <span class="font-xs font-weight-3 color-text-alt">1 / 4</span>
+            </div>
+            <div class="progress-track bg-white opacity-30">
+              <div class="progress-fill bg-white" style="width: 25%"></div>
+            </div>
+          </div>
+          <div class="row gap-s ai-c">
+            <span class="badge badge-pill bg-white color-primary font-weight-3">4 tareas</span>
+            <span class="badge badge-pill badge-outline color-text-alt">Hoy</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ─── Toolbar ──────────────────────────────────────────────── -->
+      <div class="row jc-sb ai-c gap-m marg-b-m flex-wrap">
+        <div class="row gap-xs ai-c">
+          <button type="button" class="btn std size-s">Todas</button>
+          <button type="button" class="btn secondary std size-s">Activas</button>
+          <button type="button" class="btn secondary std size-s">Hechas</button>
+        </div>
+        <div class="row gap-m ai-c flex-wrap">
+          <div class="row gap-xs ai-c">
+            <span class="font-xs font-weight-2 color-text opacity-60">Oscuro</span>
+            <input id="theme-night" type="checkbox" class="toggle" aria-label="Activar modo oscuro" />
+            <label for="theme-night" class="toggle-btn size-s"></label>
+          </div>
+          <button type="button" class="btn tertiary std size-s">+ Nueva tarea</button>
+        </div>
+      </div>
+
+      <!-- ─── Task list (equal width cards) ────────────────────────── -->
+      <main class="wp100">
+        <ul class="list-none padd-0 marg-0 col gap-s wp100">
+
+          <!-- ── Task 1 ── -->
+          <li class="wp100">
+            <div class="card card-hover pos-relative padd-m wp100">
+              <span class="badge badge-s badge-primary pos-absolute top-0 right-0 z2 marg-m">Diseño</span>
+
+              <label class="checkbox marg-0 todo-item padd-rg-l">
+                <input type="checkbox" aria-label="Diseñar tokens de color" />
+                <span class="checkmark"></span>
+                <div class="todo-body col ai-fs gap-xs" style="padding-left: 8px">
+                  <span class="todo-title font-l font-weight-3 lh-s">Diseñar tokens de color</span>
+                  <span class="todo-desc font-s lh color-text opacity-70">
+                    Revisar contraste AA en tema claro y oscuro.
+                  </span>
+                </div>
+              </label>
+
+              <details class="todo-sub marg-t-m marg-0 padd-0 bg-gray-50 border border-color-gray-200 border-r-l overflow-hidden">
+                <summary class="padd-s padd-h-m row jc-sb ai-c cursor-pointer list-none ta-lf">
+                  <span class="todo-sub-hint row gap-xs ai-c font-xs font-weight-2 color-gray-600">
+                    <span class="todo-chev color-primary font-l" aria-hidden="true">&#8250;</span>
+                    Sub-tareas
+                  </span>
+                  <span class="badge badge-xs badge-secondary-light">0 / 3</span>
+                </summary>
+                <div class="todo-sub-inner col ai-fs gap-xs padd-m padd-t-s ta-lf">
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Auditar paleta semántica
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Documentar en README
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Sincronizar skills de IA
+                  </label>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- ── Task 2 ── -->
+          <li class="wp100">
+            <div class="card card-hover pos-relative padd-m wp100">
+              <span class="badge badge-s badge-success-light pos-absolute top-0 right-0 z2 marg-m">Build</span>
+
+              <label class="checkbox marg-0 todo-item padd-rg-l">
+                <input type="checkbox" checked aria-label="Publicar paquete npm" />
+                <span class="checkmark"></span>
+                <div class="todo-body col ai-fs gap-xs" style="padding-left: 8px">
+                  <span class="todo-title font-l font-weight-3 lh-s">Publicar paquete npm</span>
+                  <span class="todo-desc font-s lh color-text opacity-70">
+                    Pipeline y etiqueta de versión listos.
+                  </span>
+                </div>
+              </label>
+
+              <details class="todo-sub marg-t-m marg-0 padd-0 bg-gray-50 border border-color-gray-200 border-r-l overflow-hidden">
+                <summary class="padd-s padd-h-m row jc-sb ai-c cursor-pointer list-none ta-lf">
+                  <span class="todo-sub-hint row gap-xs ai-c font-xs font-weight-2 color-gray-600">
+                    <span class="todo-chev color-primary font-l" aria-hidden="true">&#8250;</span>
+                    Sub-tareas
+                  </span>
+                  <span class="badge badge-xs badge-success-light">2 / 2</span>
+                </summary>
+                <div class="todo-sub-inner col ai-fs gap-xs padd-m padd-t-s ta-lf">
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    CI verde
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" checked />
+                    <span class="checkmark"></span>
+                    Changelog actualizado
+                  </label>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- ── Task 3 ── -->
+          <li class="wp100">
+            <div class="card card-hover pos-relative padd-m wp100">
+              <span class="badge badge-s badge-warning-light pos-absolute top-0 right-0 z2 marg-m">UX</span>
+
+              <label class="checkbox marg-0 todo-item padd-rg-l">
+                <input type="checkbox" aria-label="Demo interactiva" />
+                <span class="checkmark"></span>
+                <div class="todo-body col ai-fs gap-xs" style="padding-left: 8px">
+                  <span class="todo-title font-l font-weight-3 lh-s">Demo interactiva</span>
+                  <span class="todo-desc font-s lh color-text opacity-70">
+                    HTML de referencia con componentes compuestos.
+                  </span>
+                </div>
+              </label>
+
+              <details class="todo-sub marg-t-m marg-0 padd-0 bg-gray-50 border border-color-gray-200 border-r-l overflow-hidden">
+                <summary class="padd-s padd-h-m row jc-sb ai-c cursor-pointer list-none ta-lf">
+                  <span class="todo-sub-hint row gap-xs ai-c font-xs font-weight-2 color-gray-600">
+                    <span class="todo-chev color-primary font-l" aria-hidden="true">&#8250;</span>
+                    Sub-tareas
+                  </span>
+                  <span class="badge badge-xs badge-warning">0 / 4</span>
+                </summary>
+                <div class="todo-sub-inner col ai-fs gap-xs padd-m padd-t-s ta-lf">
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Navbar + sidebar
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Formulario con alertas
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Grid de tarjetas
+                  </label>
+                  <label class="checkbox checkbox-s marg-0">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Modo noche
+                  </label>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <!-- ── Task 4 ── -->
+          <li class="wp100">
+            <div class="card card-hover pos-relative padd-m wp100">
+              <span class="badge badge-s badge-outline pos-absolute top-0 right-0 z2 marg-m">Rápido</span>
+
+              <label class="checkbox marg-0 todo-item padd-rg-l">
+                <input type="checkbox" aria-label="Responder correo de soporte" />
+                <span class="checkmark"></span>
+                <div class="todo-body col ai-fs gap-xs" style="padding-left: 8px">
+                  <span class="todo-title font-l font-weight-3 lh-s">Responder correo de soporte</span>
+                  <span class="todo-desc font-s lh color-text opacity-70">
+                    Sin checklist: una sola acción.
+                  </span>
+                </div>
+              </label>
+            </div>
+          </li>
+
+        </ul>
+      </main>
+
+      <footer class="marg-t-xl padd-b-m ta-c">
+        <p class="font-xs color-text opacity-50 marg-0">
+          Hecho con Lagunite — layout, color, tipografía y átomos
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var KEY = "lagunite-demo-todo-night";
+        var input = document.getElementById("theme-night");
+        if (!input) return;
+        function apply(on) {
+          document.body.classList.toggle("night", on);
+          input.checked = on;
+          try {
+            localStorage.setItem(KEY, on ? "1" : "0");
+          } catch (e) {}
+        }
+        var stored = null;
+        try {
+          stored = localStorage.getItem(KEY);
+        } catch (e) {}
+        apply(stored === "1");
+        input.addEventListener("change", function () {
+          apply(input.checked);
+        });
+      })();
+    </script>
+  </body>
+</html>

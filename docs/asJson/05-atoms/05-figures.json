@@ -1,8 +1,639 @@
 {
   "folder": "05-atoms",
   "file": "05-figures.css",
-  "lastUpdated": "2025-12-14",
-  "hasResponsive": false,
-  "totalSelectors": 0,
-  "content": []
+  "lastUpdated": "2026-04-11",
+  "hasResponsive": true,
+  "totalSelectors": 44,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hr.size-s",
+      "id": "#05-05-01",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary-light)",
+      "responsive": false,
+      "description": "Horizontal Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hr.size-l",
+      "id": "#05-05-01",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: var(--space-1) 0 0 0",
+      "responsive": false,
+      "description": "Horizontal Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hr.size-xl",
+      "id": "#05-05-01",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: var(--space-2) 0 0 0",
+      "responsive": false,
+      "description": "Horizontal Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hr.size-xxl",
+      "id": "#05-05-01",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: var(--space-5) 0 0 0",
+      "responsive": false,
+      "description": "Horizontal Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".line-v",
+      "id": "#05-05-02",
+      "category": null,
+      "properties": [
+        "border-style",
+        "height",
+        "border-color",
+        "border-width"
+      ],
+      "cssRule": "border-style: solid\nheight: 100%\nborder-color: var(--color-primary)\nborder-width: 0 0 0 2px",
+      "responsive": false,
+      "description": "Vertical Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".line-v.size-s",
+      "id": "#05-05-02",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 0 0 0 var(--space-px)",
+      "responsive": false,
+      "description": "Vertical Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".line-v.size-l",
+      "id": "#05-05-02",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 0 0 0 var(--space-1)",
+      "responsive": false,
+      "description": "Vertical Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".line-v.size-xl",
+      "id": "#05-05-02",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 0 0 0 var(--space-2)",
+      "responsive": false,
+      "description": "Vertical Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".line-v.size-xxl",
+      "id": "#05-05-02",
+      "category": null,
+      "properties": [
+        "border-width"
+      ],
+      "cssRule": "border-width: 0 0 0 var(--space-5)",
+      "responsive": false,
+      "description": "Vertical Line Sizes"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".square",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": true,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".drounded",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".xrounded",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".circle",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tear",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "background",
+        "display",
+        "justify-content",
+        "align-items",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ndisplay: flex\njustify-content: center\nalign-items: center\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".square.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 25px\nheight: 25px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 25px\nheight: 25px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".circle.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 25px\nheight: 25px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tear.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 25px\nheight: 25px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".square",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 50px\nheight: 50px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 50px\nheight: 50px",
+      "responsive": true,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".circle",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 50px\nheight: 50px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tear",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 50px\nheight: 50px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".square.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 75px\nheight: 75px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 75px\nheight: 75px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".circle.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 75px\nheight: 75px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tear.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 75px\nheight: 75px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 5px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 15px",
+      "responsive": true,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".rounded.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 20px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".circle",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 50%",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tear",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 50% 0 50% 50%",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".square",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 5px",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".triangle",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "color",
+        "border-radius",
+        "border-left",
+        "border-right",
+        "border-bottom"
+      ],
+      "cssRule": "width: 0\nheight: 0\ncolor: var(--color-text-alt)\nborder-radius: 5px\nborder-left: 28px solid transparent\nborder-right: 28px solid transparent\nborder-bottom: 46px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".triangle.size-s",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-left",
+        "border-right",
+        "border-bottom"
+      ],
+      "cssRule": "border-left: 15px solid transparent\nborder-right: 15px solid transparent\nborder-bottom: 20px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".triangle.size-l",
+      "id": "#05-05-03",
+      "category": null,
+      "properties": [
+        "border-left",
+        "border-right",
+        "border-bottom"
+      ],
+      "cssRule": "border-left: 52px solid transparent\nborder-right: 52px solid transparent\nborder-bottom: 88px solid var(--color-primary)",
+      "responsive": false,
+      "description": "Primitives Figures"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".point.size-s",
+      "id": "#05-05-04",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "height",
+        "width",
+        "background"
+      ],
+      "cssRule": "border-radius: 5px\nheight: 5px\nwidth: 5px\nbackground: var(--color-primary)",
+      "responsive": false,
+      "description": "Point figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".point",
+      "id": "#05-05-04",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "height",
+        "width",
+        "background"
+      ],
+      "cssRule": "border-radius: 10px\nheight: 10px\nwidth: 10px\nbackground: var(--color-primary)",
+      "responsive": false,
+      "description": "Point figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".point.size-l",
+      "id": "#05-05-04",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "height",
+        "width",
+        "background"
+      ],
+      "cssRule": "border-radius: 15px\nheight: 15px\nwidth: 15px\nbackground: var(--color-primary)",
+      "responsive": false,
+      "description": "Point figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".blob-1",
+      "id": "#05-05-05",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 30% 70% 30% 70%",
+      "responsive": false,
+      "description": "Blob Figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".blob-2",
+      "id": "#05-05-05",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 50% 20% 50% 20%",
+      "responsive": false,
+      "description": "Blob Figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".blob-3",
+      "id": "#05-05-05",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 60% 40% 40% 60%/50% 40% 65% 55%",
+      "responsive": false,
+      "description": "Blob Figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".blob-4",
+      "id": "#05-05-05",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 33% 33% 33% 93%",
+      "responsive": false,
+      "description": "Blob Figure"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".blob-5",
+      "id": "#05-05-05",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 80%",
+      "responsive": false,
+      "description": "Blob Figure"
+    }
+  ]
 }

@@ -1,15 +1,15 @@
 {
   "folder": "04-decorators",
   "file": "03-opacity.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
-  "totalSelectors": 6,
+  "totalSelectors": 19,
   "content": [
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".opacity-0",
-      "id": "#04-03-XX",
+      "id": "#04-03-01",
       "category": null,
       "properties": [
         "opacity"
@@ -21,8 +21,47 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".opacity-5",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.05",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-10",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.1",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-20",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.2",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".opacity-25",
-      "id": "#04-03-XX",
+      "id": "#04-03-01",
       "category": null,
       "properties": [
         "opacity"
@@ -34,8 +73,34 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".opacity-30",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.3",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-40",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.4",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".opacity-50",
-      "id": "#04-03-XX",
+      "id": "#04-03-01",
       "category": null,
       "properties": [
         "opacity"
@@ -47,8 +112,34 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".opacity-60",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.6",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-70",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.7",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".opacity-75",
-      "id": "#04-03-XX",
+      "id": "#04-03-01",
       "category": null,
       "properties": [
         "opacity"
@@ -60,8 +151,34 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".opacity-80",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.8",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".opacity-90",
+      "id": "#04-03-01",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.9",
+      "responsive": true,
+      "description": "** Opacity Utilities **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".opacity-100",
-      "id": "#04-03-XX",
+      "id": "#04-03-01",
       "category": null,
       "properties": [
         "opacity"
@@ -73,15 +190,67 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".hover-opacity-0:hover",
+      "id": "#04-03-02",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0",
+      "responsive": false,
+      "description": "** Hover Opacity **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hover-opacity-25:hover",
+      "id": "#04-03-02",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.25",
+      "responsive": false,
+      "description": "** Hover Opacity **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hover-opacity-50:hover",
+      "id": "#04-03-02",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0.5",
+      "responsive": false,
+      "description": "** Hover Opacity **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".hover-opacity-75:hover",
-      "id": "#04-03-XX",
+      "id": "#04-03-02",
       "category": null,
       "properties": [
         "opacity"
       ],
       "cssRule": "opacity: 0.75",
-      "responsive": true,
-      "description": "** Opacity Utilities **"
+      "responsive": false,
+      "description": "** Hover Opacity **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".hover-opacity-100:hover",
+      "id": "#04-03-02",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 1",
+      "responsive": false,
+      "description": "** Hover Opacity **"
     }
   ]
 }

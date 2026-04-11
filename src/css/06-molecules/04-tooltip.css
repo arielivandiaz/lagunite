@@ -1,0 +1,66 @@
+/* ==========
+   06-molecules / 04-tooltip.css
+   CSS-only tooltips via [data-tooltip] and placement modifier classes.
+   ========== */
+
+/* @ID: #06-04-01 */
+
+/* ── Tooltip anchor + bubble ─────────────────────────────────────────────── */
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + var(--space-2));
+  left: 50%;
+  z-index: 200;
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-xs);
+  line-height: 1.35;
+  color: var(--color-almost-white);
+  white-space: nowrap;
+  pointer-events: none;
+  background: var(--color-almost-black);
+  border-radius: var(--radius-s);
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+/* @ID: #06-04-02 */
+
+/* ── Placement variants ─────────────────────────────────────────────────── */
+
+[data-tooltip].tooltip-bottom::after {
+  top: calc(100% + var(--space-2));
+  bottom: auto;
+  transform: translateX(-50%);
+}
+
+[data-tooltip].tooltip-left::after {
+  inset: 50% calc(100% + var(--space-2)) auto auto;
+  transform: translateY(-50%);
+}
+
+[data-tooltip].tooltip-right::after {
+  top: 50%;
+  bottom: auto;
+  left: calc(100% + var(--space-2));
+  transform: translateY(-50%);
+}
+
+/* @ID: #06-04-03 */
+
+/* ── Night mode (invert bubble) ─────────────────────────────────────────── */
+
+.night [data-tooltip]::after {
+  color: var(--color-almost-black);
+  background: var(--color-almost-white);
+}

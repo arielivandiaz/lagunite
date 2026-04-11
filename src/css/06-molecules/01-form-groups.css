@@ -1,0 +1,244 @@
+/* ==========
+   06-molecules / 01-form-groups.css
+   Form field wrappers, labels, help/error text, input groups, and rows.
+   Uses tokens from 00-config. Responsive: x = mobile, d = desktop.
+   ========== */
+
+/* @ID: #06-01-01 */
+
+/* ── Form group, label, help, error ─────────────────────────────────────── */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.form-label {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-s);
+  color: var(--color-text-base);
+}
+
+.form-help {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+}
+
+.form-error-msg {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+}
+
+/* @ID: #06-01-02 */
+
+/* ── Validation states (inputs inside .form-group) ──────────────────────── */
+
+.form-group.has-error
+  :is(
+    .input,
+    textarea,
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"]
+  ) {
+  border-color: var(--color-error);
+}
+
+.form-group.has-error
+  :is(
+    .input,
+    textarea,
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"]
+  ):focus {
+  box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2);
+}
+
+.form-group.has-success
+  :is(
+    .input,
+    textarea,
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"]
+  ) {
+  border-color: var(--color-success);
+}
+
+.form-group.has-success
+  :is(
+    .input,
+    textarea,
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"]
+  ):focus {
+  box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2);
+}
+
+/* @ID: #06-01-03 */
+
+/* ── Input group (control + addons) ───────────────────────────────────────── */
+
+.input-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group > :is(.input, textarea, select, input) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.input-group > * + * {
+  margin-left: calc(-1 * var(--border-width-s));
+}
+
+.input-group > * {
+  position: relative;
+  z-index: 0;
+}
+
+.input-group > *:focus,
+.input-group > *:focus-within {
+  z-index: 2;
+}
+
+.input-group-prepend,
+.input-group-append {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text-base);
+  background: var(--color-border);
+  border: var(--border-width-s) solid var(--input-border);
+}
+
+.input-group > :is(.input, textarea, select, input):only-child {
+  border-radius: var(--radius-m);
+}
+
+.input-group > .input-group-prepend:first-child {
+  border-radius: var(--radius-m) 0 0 var(--radius-m);
+}
+
+.input-group > .input-group-append:last-child {
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+
+.input-group > .input-group-prepend:first-child + :is(.input, textarea, select, input) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .input-group-prepend:first-child
+  + :is(.input, textarea, select, input):last-child:not(.input-group-append) {
+  border-top-right-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+}
+
+.input-group
+  > :is(.input, textarea, select, input):not(:first-child, .input-group-prepend, .input-group-append) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group
+  > :is(.input, textarea, select, input):has(+ .input-group-append) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* @ID: #06-01-04 */
+
+/* ── Horizontal form row ─────────────────────────────────────────────────── */
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+@media (width <= 639px) {
+  .xform-row {
+    flex-direction: column;
+  }
+}
+
+@media (width >= 640px) {
+  .dform-row {
+    flex-direction: row;
+  }
+}
+
+/* @ID: #06-01-05 */
+
+/* ── Night mode: labels & help ─────────────────────────────────────────── */
+
+.night .form-label {
+  color: var(--color-text-alt);
+}
+
+.night .form-help {
+  color: var(--gray-400);
+}
+
+/* @ID: #06-01-06 */
+
+/* ── Night mode: input group addons ─────────────────────────────────────── */
+
+.night .input-group .input-group-prepend,
+.night .input-group .input-group-append {
+  color: var(--color-text-alt);
+  background: var(--gray-700);
+  border-color: var(--input-border);
+}

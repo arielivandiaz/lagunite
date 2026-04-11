@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "07-overflow.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
   "totalSelectors": 17,
   "content": [
@@ -9,176 +9,176 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-auto",
-      "id": "#03-07-XX",
+      "id": "#03-07-01",
       "category": null,
       "properties": [
         "overflow"
       ],
       "cssRule": "overflow: auto",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-hidden",
-      "id": "#03-07-XX",
+      "id": "#03-07-01",
       "category": null,
       "properties": [
         "overflow"
       ],
       "cssRule": "overflow: hidden",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-visible",
-      "id": "#03-07-XX",
+      "id": "#03-07-01",
       "category": null,
       "properties": [
         "overflow"
       ],
       "cssRule": "overflow: visible",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-scroll",
-      "id": "#03-07-XX",
+      "id": "#03-07-01",
       "category": null,
       "properties": [
         "overflow"
       ],
       "cssRule": "overflow: scroll",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-x-auto",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-x"
       ],
       "cssRule": "overflow-x: auto",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-x-hidden",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-x"
       ],
       "cssRule": "overflow-x: hidden",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-x-visible",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-x"
       ],
       "cssRule": "overflow-x: visible",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-x-scroll",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-x"
       ],
       "cssRule": "overflow-x: scroll",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-y-auto",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-y"
       ],
       "cssRule": "overflow-y: auto",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-y-hidden",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-y"
       ],
       "cssRule": "overflow-y: hidden",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-y-visible",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-y"
       ],
       "cssRule": "overflow-y: visible",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".overflow-y-scroll",
-      "id": "#03-07-XX",
+      "id": "#03-07-02",
       "category": null,
       "properties": [
         "overflow-y"
       ],
       "cssRule": "overflow-y: scroll",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Overflow directional (x, y) ────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scrollbar-thin",
-      "id": "#03-07-XX",
+      "id": "#03-07-03",
       "category": null,
       "properties": [
         "scrollbar-width"
       ],
       "cssRule": "scrollbar-width: thin",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Scrollbar utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scrollbar-thin::-webkit-scrollbar",
-      "id": "#03-07-XX",
+      "id": "#03-07-03",
       "category": null,
       "properties": [
         "width",
@@ -186,26 +186,27 @@
       ],
       "cssRule": "width: 6px\nheight: 6px",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Scrollbar utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scrollbar-thin::-webkit-scrollbar-thumb",
-      "id": "#03-07-XX",
+      "id": "#03-07-03",
       "category": null,
       "properties": [
-        "border-radius"
+        "border-radius",
+        "background"
       ],
-      "cssRule": "border-radius: 999px",
+      "cssRule": "border-radius: 999px\nbackground: var(--gray-400)",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Scrollbar utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scrollbar-none",
-      "id": "#03-07-XX",
+      "id": "#03-07-03",
       "category": null,
       "properties": [
         "scrollbar-width",
@@ -213,20 +214,20 @@
       ],
       "cssRule": "scrollbar-width: none\n-ms-overflow-style: none",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Scrollbar utilities ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".scrollbar-none::-webkit-scrollbar",
-      "id": "#03-07-XX",
+      "id": "#03-07-03",
       "category": null,
       "properties": [
         "display"
       ],
       "cssRule": "display: none",
       "responsive": true,
-      "description": "** Overflow Utilities **"
+      "description": "── Scrollbar utilities ───────────────────────────────────────────────────"
     }
   ]
 }

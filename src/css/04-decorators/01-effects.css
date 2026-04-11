@@ -1,263 +1,245 @@
-/* @ID: #04-01-XX */
-/*** Content Utilities ***/
-.content-none { content: none; }
-.content-empty { content: ''; }
+/* ==========================================================================
+   04-decorators / 01-effects.css
+   Miscellaneous visual effect utilities: appearance, resize, blend modes,
+   isolation, backdrop blur, hoverable, touch, scroll behavior, scroll snap,
+   caret/accent color.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
 
-/*** Appearance ***/
+   Note: object-fit/position live in 06-containers.css.
+         content-none/empty live in 10-misc/03-pseudo.css.
+   ========================================================================== */
+
+/* @ID: #04-01-01 */
+/* ── Appearance ─────────────────────────────────────────────────────────── */
+
 .appearance-none { appearance: none; }
 .appearance-auto { appearance: auto; }
 
-/*** Resize ***/
+/* @ID: #04-01-02 */
+/* ── Resize ─────────────────────────────────────────────────────────────── */
+
 .resize-none { resize: none; }
-.resize { resize: both; }
-.resize-x { resize: horizontal; }
-.resize-y { resize: vertical; }
+.resize      { resize: both; }
+.resize-x    { resize: horizontal; }
+.resize-y    { resize: vertical; }
 
-/*** Object Fit ***/
-.object-contain { object-fit: contain; }
-.object-cover { object-fit: cover; }
-.object-fill { object-fit: fill; }
-.object-none { object-fit: none; }
-.object-scale-down { object-fit: scale-down; }
+/* @ID: #04-01-03 */
+/* ── Mix blend mode ─────────────────────────────────────────────────────── */
 
-/*** Object Position ***/
-.object-center { object-position: center; }
-.object-top { object-position: top; }
-.object-bottom { object-position: bottom; }
-.object-left { object-position: left; }
-.object-right { object-position: right; }
-.object-left-top { object-position: left top; }
-.object-left-bottom { object-position: left bottom; }
-.object-right-top { object-position: right top; }
-.object-right-bottom { object-position: right bottom; }
-
-/*** Mix Blend Mode ***/
-.mix-blend-normal { mix-blend-mode: normal; }
-.mix-blend-multiply { mix-blend-mode: multiply; }
-.mix-blend-screen { mix-blend-mode: screen; }
-.mix-blend-overlay { mix-blend-mode: overlay; }
-.mix-blend-darken { mix-blend-mode: darken; }
-.mix-blend-lighten { mix-blend-mode: lighten; }
+.mix-blend-normal      { mix-blend-mode: normal; }
+.mix-blend-multiply    { mix-blend-mode: multiply; }
+.mix-blend-screen      { mix-blend-mode: screen; }
+.mix-blend-overlay     { mix-blend-mode: overlay; }
+.mix-blend-darken      { mix-blend-mode: darken; }
+.mix-blend-lighten     { mix-blend-mode: lighten; }
 .mix-blend-color-dodge { mix-blend-mode: color-dodge; }
-.mix-blend-color-burn { mix-blend-mode: color-burn; }
-.mix-blend-hard-light { mix-blend-mode: hard-light; }
-.mix-blend-soft-light { mix-blend-mode: soft-light; }
-.mix-blend-difference { mix-blend-mode: difference; }
-.mix-blend-exclusion { mix-blend-mode: exclusion; }
+.mix-blend-color-burn  { mix-blend-mode: color-burn; }
+.mix-blend-hard-light  { mix-blend-mode: hard-light; }
+.mix-blend-soft-light  { mix-blend-mode: soft-light; }
+.mix-blend-difference  { mix-blend-mode: difference; }
+.mix-blend-exclusion   { mix-blend-mode: exclusion; }
 
-/*** Background Blend Mode ***/
-.bg-blend-normal { background-blend-mode: normal; }
+/* @ID: #04-01-04 */
+/* ── Background blend mode ──────────────────────────────────────────────── */
+
+.bg-blend-normal   { background-blend-mode: normal; }
 .bg-blend-multiply { background-blend-mode: multiply; }
-.bg-blend-screen { background-blend-mode: screen; }
-.bg-blend-overlay { background-blend-mode: overlay; }
-.bg-blend-darken { background-blend-mode: darken; }
-.bg-blend-lighten { background-blend-mode: lighten; }
+.bg-blend-screen   { background-blend-mode: screen; }
+.bg-blend-overlay  { background-blend-mode: overlay; }
+.bg-blend-darken   { background-blend-mode: darken; }
+.bg-blend-lighten  { background-blend-mode: lighten; }
 
-/*** Isolation ***/
-.isolate { isolation: isolate; }
+/* @ID: #04-01-05 */
+/* ── Isolation ──────────────────────────────────────────────────────────── */
+
+.isolate        { isolation: isolate; }
 .isolation-auto { isolation: auto; }
 
-/*** Backdrop Filter ***/
-.backdrop-blur-none { backdrop-filter: blur(0); }
-.backdrop-blur-s { backdrop-filter: blur(4px); }
-.backdrop-blur { backdrop-filter: blur(8px); }
-.backdrop-blur-l { backdrop-filter: blur(16px); }
-.backdrop-blur-xl { backdrop-filter: blur(32px); }
+/* @ID: #04-01-06 */
+/* ── Backdrop blur ──────────────────────────────────────────────────────── */
 
-/*** Box Decoration Break ***/
+.backdrop-blur-none { backdrop-filter: blur(0); }
+.backdrop-blur-s    { backdrop-filter: blur(4px); }
+.backdrop-blur      { backdrop-filter: blur(8px); }
+.backdrop-blur-l    { backdrop-filter: blur(16px); }
+.backdrop-blur-xl   { backdrop-filter: blur(32px); }
+
+/* @ID: #04-01-07 */
+/* ── Box decoration break ───────────────────────────────────────────────── */
+
 .box-decoration-clone { box-decoration-break: clone; }
 .box-decoration-slice { box-decoration-break: slice; }
 
-/*** Break Inside ***/
-.break-inside-auto { break-inside: auto; }
-.break-inside-avoid { break-inside: avoid; }
-.break-inside-avoid-page { break-inside: avoid-page; }
+/* @ID: #04-01-08 */
+/* ── Break inside ───────────────────────────────────────────────────────── */
+
+.break-inside-auto         { break-inside: auto; }
+.break-inside-avoid        { break-inside: avoid; }
+.break-inside-avoid-page   { break-inside: avoid-page; }
 .break-inside-avoid-column { break-inside: avoid-column; }
 
-/*** Hoverable (from decorators.css) ***/
-.hoverable-s:hover { transform: scale(1.1); }
-.hoverable:hover { transform: scale(1.2); }
-.hoverable-l:hover { transform: scale(1.5); }
+/* @ID: #04-01-09 */
+/* ── Hoverable ──────────────────────────────────────────────────────────── */
+
+.hoverable-s:hover  { transform: scale(1.1); }
+.hoverable:hover    { transform: scale(1.2); }
+.hoverable-l:hover  { transform: scale(1.5); }
 .hoverable-xl:hover { transform: scale(1.8); }
 
-/*** Touch Action ***/
-.touch-auto { touch-action: auto; }
-.touch-none { touch-action: none; }
-.touch-pan-x { touch-action: pan-x; }
-.touch-pan-y { touch-action: pan-y; }
+/* @ID: #04-01-10 */
+/* ── Touch action ───────────────────────────────────────────────────────── */
+
+.touch-auto         { touch-action: auto; }
+.touch-none         { touch-action: none; }
+.touch-pan-x        { touch-action: pan-x; }
+.touch-pan-y        { touch-action: pan-y; }
 .touch-manipulation { touch-action: manipulation; }
 
-/*** Will Change ***/
-.will-change-auto { will-change: auto; }
-.will-change-scroll { will-change: scroll-position; }
-.will-change-contents { will-change: contents; }
+/* @ID: #04-01-11 */
+/* ── Will change ────────────────────────────────────────────────────────── */
+
+.will-change-auto      { will-change: auto; }
+.will-change-scroll    { will-change: scroll-position; }
+.will-change-contents  { will-change: contents; }
 .will-change-transform { will-change: transform; }
 
-/*** Scroll Behavior ***/
-.scroll-sooth { scroll-behavior: smooth; }
-.scroll-auto { scroll-behavior: auto; }
+/* @ID: #04-01-12 */
+/* ── Scroll behavior ────────────────────────────────────────────────────── */
 
-/*** Scroll Snap Type ***/
-.snap-none { scroll-snap-type: none; }
-.snap-x { scroll-snap-type: x var(--snap-strictness, mandatory); }
-.snap-y { scroll-snap-type: y var(--snap-strictness, mandatory); }
-.snap-both { scroll-snap-type: both var(--snap-strictness, mandatory); }
+.scroll-smooth { scroll-behavior: smooth; }
+.scroll-auto   { scroll-behavior: auto; }
+
+/* @ID: #04-01-13 */
+/* ── Scroll snap ────────────────────────────────────────────────────────── */
+
+.snap-none  { scroll-snap-type: none; }
+.snap-x     { scroll-snap-type: x var(--snap-strictness, mandatory); }
+.snap-y     { scroll-snap-type: y var(--snap-strictness, mandatory); }
+.snap-both  { scroll-snap-type: both var(--snap-strictness, mandatory); }
+
 .snap-mandatory { --snap-strictness: mandatory; }
 .snap-proximity { --snap-strictness: proximity; }
 
-/*** Scroll Snap Align ***/
-.snap-start { scroll-snap-align: start; }
-.snap-end { scroll-snap-align: end; }
+.snap-start  { scroll-snap-align: start; }
+.snap-end    { scroll-snap-align: end; }
 .snap-center { scroll-snap-align: center; }
 
-/*** Scroll Snap Stop ***/
 .snap-normal { scroll-snap-stop: normal; }
 .snap-always { scroll-snap-stop: always; }
 
-/*** Caret Color ***/
-.caret-transparent { caret-color: transparent; }
-.caret-current { caret-color: currentColor; }
+/* @ID: #04-01-14 */
+/* ── Caret / accent color ───────────────────────────────────────────────── */
 
-/*** Accent Color ***/
-.accent-auto { accent-color: auto; }
+.caret-transparent { caret-color: transparent; }
+.caret-current     { caret-color: currentColor; }
+
+.accent-auto    { accent-color: auto; }
 .accent-current { accent-color: currentColor; }
 
-@media (max-width: 639px) {
-  .xcontent-none { content: none; }
-  .xcontent-empty { content: ''; }
+/* @ID: #04-01-15 */
+/* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
+@media (max-width: 639px) {
   .xappearance-none { appearance: none; }
   .xappearance-auto { appearance: auto; }
 
   .xresize-none { resize: none; }
-  .xresize { resize: both; }
-  .xresize-x { resize: horizontal; }
-  .xresize-y { resize: vertical; }
+  .xresize      { resize: both; }
+  .xresize-x    { resize: horizontal; }
+  .xresize-y    { resize: vertical; }
 
-  .xobject-contain { object-fit: contain; }
-  .xobject-cover { object-fit: cover; }
-  .xobject-fill { object-fit: fill; }
-  .xobject-none { object-fit: none; }
-  .xobject-scale-down { object-fit: scale-down; }
-
-  .xobject-center { object-position: center; }
-  .xobject-top { object-position: top; }
-  .xobject-bottom { object-position: bottom; }
-  .xobject-left { object-position: left; }
-  .xobject-right { object-position: right; }
-  .xobject-left-top { object-position: left top; }
-  .xobject-left-bottom { object-position: left bottom; }
-  .xobject-right-top { object-position: right top; }
-  .xobject-right-bottom { object-position: right bottom; }
-
-  .xmix-blend-normal { mix-blend-mode: normal; }
+  .xmix-blend-normal   { mix-blend-mode: normal; }
   .xmix-blend-multiply { mix-blend-mode: multiply; }
-  .xmix-blend-screen { mix-blend-mode: screen; }
-  .xmix-blend-overlay { mix-blend-mode: overlay; }
+  .xmix-blend-screen   { mix-blend-mode: screen; }
+  .xmix-blend-overlay  { mix-blend-mode: overlay; }
 
-  .xbg-blend-normal { background-blend-mode: normal; }
+  .xbg-blend-normal   { background-blend-mode: normal; }
   .xbg-blend-multiply { background-blend-mode: multiply; }
-  .xbg-blend-screen { background-blend-mode: screen; }
+  .xbg-blend-screen   { background-blend-mode: screen; }
 
-  .xisolate { isolation: isolate; }
+  .xisolate        { isolation: isolate; }
   .xisolation-auto { isolation: auto; }
 
   .xbackdrop-blur-none { backdrop-filter: blur(0); }
-  .xbackdrop-blur-s { backdrop-filter: blur(4px); }
-  .xbackdrop-blur { backdrop-filter: blur(8px); }
-  .xbackdrop-blur-l { backdrop-filter: blur(16px); }
-  .xbackdrop-blur-xl { backdrop-filter: blur(32px); }
+  .xbackdrop-blur-s    { backdrop-filter: blur(4px); }
+  .xbackdrop-blur      { backdrop-filter: blur(8px); }
+  .xbackdrop-blur-l    { backdrop-filter: blur(16px); }
+  .xbackdrop-blur-xl   { backdrop-filter: blur(32px); }
 
-  .xhoverable-s:hover { transform: scale(1.1); }
-  .xhoverable:hover { transform: scale(1.2); }
-  .xhoverable-l:hover { transform: scale(1.5); }
+  .xhoverable-s:hover  { transform: scale(1.1); }
+  .xhoverable:hover    { transform: scale(1.2); }
+  .xhoverable-l:hover  { transform: scale(1.5); }
   .xhoverable-xl:hover { transform: scale(1.8); }
 
-  .xtouch-auto { touch-action: auto; }
-  .xtouch-none { touch-action: none; }
-  .xtouch-pan-x { touch-action: pan-x; }
-  .xtouch-pan-y { touch-action: pan-y; }
+  .xtouch-auto         { touch-action: auto; }
+  .xtouch-none         { touch-action: none; }
+  .xtouch-pan-x        { touch-action: pan-x; }
+  .xtouch-pan-y        { touch-action: pan-y; }
   .xtouch-manipulation { touch-action: manipulation; }
 
-  .xscroll-sooth { scroll-behavior: smooth; }
-  .xscroll-auto { scroll-behavior: auto; }
+  .xscroll-smooth { scroll-behavior: smooth; }
+  .xscroll-auto   { scroll-behavior: auto; }
 
   .xsnap-none { scroll-snap-type: none; }
-  .xsnap-x { scroll-snap-type: x var(--snap-strictness, mandatory); }
-  .xsnap-y { scroll-snap-type: y var(--snap-strictness, mandatory); }
+  .xsnap-x    { scroll-snap-type: x var(--snap-strictness, mandatory); }
+  .xsnap-y    { scroll-snap-type: y var(--snap-strictness, mandatory); }
   .xsnap-both { scroll-snap-type: both var(--snap-strictness, mandatory); }
 
-  .xsnap-start { scroll-snap-align: start; }
-  .xsnap-end { scroll-snap-align: end; }
+  .xsnap-start  { scroll-snap-align: start; }
+  .xsnap-end    { scroll-snap-align: end; }
   .xsnap-center { scroll-snap-align: center; }
 }
 
-@media (min-width: 640px) {
-  .dcontent-none { content: none; }
-  .dcontent-empty { content: ''; }
+/* @ID: #04-01-16 */
+/* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
+@media (min-width: 640px) {
   .dappearance-none { appearance: none; }
   .dappearance-auto { appearance: auto; }
 
   .dresize-none { resize: none; }
-  .dresize { resize: both; }
-  .dresize-x { resize: horizontal; }
-  .dresize-y { resize: vertical; }
+  .dresize      { resize: both; }
+  .dresize-x    { resize: horizontal; }
+  .dresize-y    { resize: vertical; }
 
-  .dobject-contain { object-fit: contain; }
-  .dobject-cover { object-fit: cover; }
-  .dobject-fill { object-fit: fill; }
-  .dobject-none { object-fit: none; }
-  .dobject-scale-down { object-fit: scale-down; }
-
-  .dobject-center { object-position: center; }
-  .dobject-top { object-position: top; }
-  .dobject-bottom { object-position: bottom; }
-  .dobject-left { object-position: left; }
-  .dobject-right { object-position: right; }
-  .dobject-left-top { object-position: left top; }
-  .dobject-left-bottom { object-position: left bottom; }
-  .dobject-right-top { object-position: right top; }
-  .dobject-right-bottom { object-position: right bottom; }
-
-  .dmix-blend-normal { mix-blend-mode: normal; }
+  .dmix-blend-normal   { mix-blend-mode: normal; }
   .dmix-blend-multiply { mix-blend-mode: multiply; }
-  .dmix-blend-screen { mix-blend-mode: screen; }
-  .dmix-blend-overlay { mix-blend-mode: overlay; }
+  .dmix-blend-screen   { mix-blend-mode: screen; }
+  .dmix-blend-overlay  { mix-blend-mode: overlay; }
 
-  .dbg-blend-normal { background-blend-mode: normal; }
+  .dbg-blend-normal   { background-blend-mode: normal; }
   .dbg-blend-multiply { background-blend-mode: multiply; }
-  .dbg-blend-screen { background-blend-mode: screen; }
+  .dbg-blend-screen   { background-blend-mode: screen; }
 
-  .disolate { isolation: isolate; }
+  .disolate        { isolation: isolate; }
   .disolation-auto { isolation: auto; }
 
   .dbackdrop-blur-none { backdrop-filter: blur(0); }
-  .dbackdrop-blur-s { backdrop-filter: blur(4px); }
-  .dbackdrop-blur { backdrop-filter: blur(8px); }
-  .dbackdrop-blur-l { backdrop-filter: blur(16px); }
-  .dbackdrop-blur-xl { backdrop-filter: blur(32px); }
+  .dbackdrop-blur-s    { backdrop-filter: blur(4px); }
+  .dbackdrop-blur      { backdrop-filter: blur(8px); }
+  .dbackdrop-blur-l    { backdrop-filter: blur(16px); }
+  .dbackdrop-blur-xl   { backdrop-filter: blur(32px); }
 
-  .dhoverable-s:hover { transform: scale(1.1); }
-  .dhoverable:hover { transform: scale(1.2); }
-  .dhoverable-l:hover { transform: scale(1.5); }
+  .dhoverable-s:hover  { transform: scale(1.1); }
+  .dhoverable:hover    { transform: scale(1.2); }
+  .dhoverable-l:hover  { transform: scale(1.5); }
   .dhoverable-xl:hover { transform: scale(1.8); }
 
-  .dtouch-auto { touch-action: auto; }
-  .dtouch-none { touch-action: none; }
-  .dtouch-pan-x { touch-action: pan-x; }
-  .dtouch-pan-y { touch-action: pan-y; }
+  .dtouch-auto         { touch-action: auto; }
+  .dtouch-none         { touch-action: none; }
+  .dtouch-pan-x        { touch-action: pan-x; }
+  .dtouch-pan-y        { touch-action: pan-y; }
   .dtouch-manipulation { touch-action: manipulation; }
 
-  .dscroll-sooth { scroll-behavior: smooth; }
-  .dscroll-auto { scroll-behavior: auto; }
+  .dscroll-smooth { scroll-behavior: smooth; }
+  .dscroll-auto   { scroll-behavior: auto; }
 
   .dsnap-none { scroll-snap-type: none; }
-  .dsnap-x { scroll-snap-type: x var(--snap-strictness, mandatory); }
-  .dsnap-y { scroll-snap-type: y var(--snap-strictness, mandatory); }
+  .dsnap-x    { scroll-snap-type: x var(--snap-strictness, mandatory); }
+  .dsnap-y    { scroll-snap-type: y var(--snap-strictness, mandatory); }
   .dsnap-both { scroll-snap-type: both var(--snap-strictness, mandatory); }
 
-  .dsnap-start { scroll-snap-align: start; }
-  .dsnap-end { scroll-snap-align: end; }
+  .dsnap-start  { scroll-snap-align: start; }
+  .dsnap-end    { scroll-snap-align: end; }
   .dsnap-center { scroll-snap-align: center; }
 }

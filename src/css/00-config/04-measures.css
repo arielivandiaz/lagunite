@@ -22,9 +22,10 @@
   --space-24: 6rem; /* 96px */
   --space-32: 8rem; /* 128px */
 
-  --radius-s: 0.25rem;
-  --radius-m: 0.5rem; 
-  --radius-l: 1rem;
+  --radius-s: 0.25rem;    /* 4px  */
+  --radius-m: 0.5rem;     /* 8px  */
+  --radius-l: 1rem;       /* 16px */
+  --radius-xl: 1.5rem;    /* 24px */
   --radius-full: 9999px;
 
   /*== Breakpoints (Single Source of Truth) ==*/

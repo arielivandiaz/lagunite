@@ -31,12 +31,6 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 
 ## Visual Effects (`01-effects.css`)
 
-### Content Utilities
-```css
-.content-none          /* content: none */
-.content-empty         /* content: '' */
-```
-
 ### Appearance
 ```css
 .appearance-none       /* appearance: none (remove browser styling) */
@@ -49,24 +43,6 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 .resize                /* resize: both */
 .resize-x              /* resize: horizontal */
 .resize-y              /* resize: vertical */
-```
-
-### Object Fit
-```css
-.object-contain        /* object-fit: contain */
-.object-cover          /* object-fit: cover */
-.object-fill           /* object-fit: fill */
-.object-none           /* object-fit: none */
-.object-scale-down     /* object-fit: scale-down */
-```
-
-### Object Position
-```css
-.object-center         /* object-position: center */
-.object-top            /* object-position: top */
-.object-bottom         /* object-position: bottom */
-.object-left           /* object-position: left */
-.object-right          /* object-position: right */
 ```
 
 ### Mix Blend Mode
@@ -151,7 +127,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 
 ### Scroll Behavior
 ```css
-.scroll-sooth         /* scroll-behavior: smooth */
+.scroll-smooth         /* scroll-behavior: smooth */
 .scroll-auto           /* scroll-behavior: auto */
 ```
 
@@ -282,7 +258,7 @@ The `04-decorators` folder contains utility classes for visual styling and inter
 .border-r-s            /* border-radius: var(--radius-s) */
 .border-r              /* border-radius: var(--radius-m) */
 .border-r-l            /* border-radius: var(--radius-l) */
-.border-r-xl           /* border-radius: var(--radius-l) */
+.border-r-xl           /* border-radius: var(--radius-xl) (24px) */
 .border-r-full         /* border-radius: var(--radius-full) (pill shape) */
 .border-r-circle       /* border-radius: 50% (perfect circle) */
 ```
@@ -519,7 +495,7 @@ All decorator utilities include responsive variants using the `.x` prefix for mo
 
 ### Smooth Scroll Carousel
 ```html
-<div class="snap-x scroll-sooth overflow-x-auto">
+<div class="snap-x scroll-smooth overflow-x-auto">
   <div class="snap-center">Item 1</div>
   <div class="snap-center">Item 2</div>
   <div class="snap-center">Item 3</div>

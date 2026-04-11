@@ -1,0 +1,119 @@
+/* ==========
+   07-compounds / 02-modals.css
+   Modal overlay, dialog shell, regions, size modifiers, and night mode.
+   ========== */
+
+/* @ID: #07-02-01 */
+/* ── Modal overlay ──────────────────────────────────────────────────────── */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* @ID: #07-02-02 */
+/* ── Modal shell ────────────────────────────────────────────────────────── */
+
+.modal {
+  background: var(--color-bg);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-xl);
+  width: 90%;
+  max-width: 32rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: scale(0.95) translateY(10px);
+  transition: transform 0.3s;
+}
+
+.modal-overlay.open .modal {
+  transform: scale(1) translateY(0);
+}
+
+/* @ID: #07-02-03 */
+/* ── Modal header ───────────────────────────────────────────────────────── */
+
+.modal-header {
+  padding: var(--space-4);
+  border-bottom: var(--border-width-s) solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  font-size: 1.25rem;
+  color: var(--gray-500);
+}
+
+.modal-close:hover {
+  color: var(--color-text-base);
+}
+
+/* @ID: #07-02-04 */
+/* ── Modal body & footer ───────────────────────────────────────────────── */
+
+.modal-body {
+  padding: var(--space-4);
+}
+
+.modal-footer {
+  padding: var(--space-3) var(--space-4);
+  border-top: var(--border-width-s) solid var(--color-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+/* @ID: #07-02-05 */
+/* ── Modal sizes ─────────────────────────────────────────────────────────── */
+
+.modal-s {
+  max-width: 24rem;
+}
+
+.modal-l {
+  max-width: 48rem;
+}
+
+.modal-xl {
+  max-width: 64rem;
+}
+
+.modal-fullscreen {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 0;
+}
+
+/* @ID: #07-02-06 */
+/* ── Night mode ─────────────────────────────────────────────────────────── */
+
+.night .modal {
+  background: var(--gray-800);
+  border-color: var(--gray-700);
+}

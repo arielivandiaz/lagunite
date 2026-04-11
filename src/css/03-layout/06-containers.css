@@ -1,8 +1,20 @@
-/********************** Container & Object Utilities ***********************/
+/* ==========================================================================
+   03-layout / 06-containers.css
+   Containers, semantic wrappers, section containers, constrain utilities,
+   object-fit utilities, and a debug helper.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+
+   Breakpoint reference (from 04-measures.css):
+     --breakpoint-s   : 640px
+     --breakpoint-md  : 768px
+     --breakpoint-l   : 1024px
+     --breakpoint-xl  : 1440px
+   ========================================================================== */
 
 /* @ID: #03-06-01 */
-/*** Base Container ***/
-.container { 
+/* ── Base container ─────────────────────────────────────────────────────── */
+
+.container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -10,112 +22,6 @@
   padding-right: var(--space-4);
 }
 
-@media (max-width: 639px) {
-  .xcontainer { 
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
-  }
-}
-
-@media (min-width: 640px) {
-  .dcontainer { 
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--space-6);
-    padding-right: var(--space-6);
-  }
-}
-
-/* @ID: #03-06-02 */
-/*** Container Sizes ***/
-.container-xs { 
-  max-width: 480px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.container-s { 
-  max-width: 640px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.container-m { 
-  max-width: 768px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.container-l { 
-  max-width: 1024px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.container-xl { 
-  max-width: 1280px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.container-xxl { 
-  max-width: 1536px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-@media (max-width: 639px) {
-  .xcontainer-xs { 
-    max-width: 100%; 
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
-  }
-}
-
-@media (min-width: 640px) {
-  .dcontainer-xs { 
-    max-width: 480px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-
-  .dcontainer-s { 
-    max-width: 640px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-
-  .dcontainer-m { 
-    max-width: 768px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-
-  .dcontainer-l { 
-    max-width: 1024px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-
-  .dcontainer-xl { 
-    max-width: 1280px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-
-  .dcontainer-xxl { 
-    max-width: 1536px; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
-}
-
-/* @ID: #03-06-03 */
-/*** Container Fluid (Responsive Padding) ***/
 .container-fluid {
   width: 100%;
   padding-left: var(--space-4);
@@ -136,135 +42,72 @@
   }
 }
 
-/* @ID: #03-06-04 */
-/*** Container Prose ***/
-.container-prose { 
-  max-width: 65ch; 
-  margin-left: auto; 
-  margin-right: auto; 
+/* @ID: #03-06-02 */
+/* ── Container size scale ───────────────────────────────────────────────── */
+/*
+   Use with .container for padding + centering, or standalone for max-width only.
+   Example: <div class="container container-l"> → 1024px centered with padding
+*/
+
+.container-xs  { max-width: 480px;  margin-left: auto; margin-right: auto; }
+.container-s   { max-width: 640px;  margin-left: auto; margin-right: auto; }
+.container-m   { max-width: 768px;  margin-left: auto; margin-right: auto; }
+.container-l   { max-width: 1024px; margin-left: auto; margin-right: auto; }
+.container-xl  { max-width: 1280px; margin-left: auto; margin-right: auto; }
+.container-xxl { max-width: 1536px; margin-left: auto; margin-right: auto; }
+
+/* @ID: #03-06-03 */
+/* ── Semantic containers ────────────────────────────────────────────────── */
+
+.container-prose {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
 }
 
-@media (max-width: 639px) {
-  .xcontainer-prose { 
-    max-width: 100%; 
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
-  }
+.container-card {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 640px) {
-  .dcontainer-prose { 
-    max-width: 65ch; 
-    margin-left: auto; 
-    margin-right: auto; 
-  }
+.container-sidebar {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* @ID: #03-06-05 */
-/*** Container Card ***/
-.container-card { 
-  max-width: 400px; 
-  margin-left: auto; 
-  margin-right: auto; 
+.container-modal {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (max-width: 639px) {
-  .xcontainer-card { 
-    max-width: 100%; 
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-  }
-}
-
-/* @ID: #03-06-06 */
-/*** Container Sidebar ***/
-.container-sidebar { 
-  max-width: 320px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-/* @ID: #03-06-07 */
-/*** Container Modal ***/
-.container-modal { 
-  max-width: 600px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-/* @ID: #03-06-08 */
-/*** Container Hero ***/
-.container-hero { 
-  max-width: 1200px; 
-  margin-left: auto; 
-  margin-right: auto; 
+.container-hero {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: var(--space-6);
   padding-right: var(--space-6);
 }
 
-@media (min-width: 640px) {
-  .dcontainer-hero { 
-    max-width: 1200px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    padding-left: var(--space-8);
-    padding-right: var(--space-8);
-  }
+.container-narrow {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* @ID: #03-06-09 */
-/*** Container Narrow ***/
-.container-narrow { 
-  max-width: 540px; 
-  margin-left: auto; 
-  margin-right: auto; 
+.container-wide {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* @ID: #03-06-10 */
-/*** Container Wide ***/
-.container-wide { 
-  max-width: 1440px; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
+/* @ID: #03-06-04 */
+/* ── Section containers ─────────────────────────────────────────────────── */
 
-/* @ID: #03-06-11 */
-/*** Object Fit Utilities ***/
-.object-contain { object-fit: contain; }
-.object-cover { object-fit: cover; }
-.object-fill { object-fit: fill; }
-.object-none { object-fit: none; }
-.object-scale-down { object-fit: scale-down; }
-
-@media (max-width: 639px) {
-  .xobject-contain { object-fit: contain; }
-  .xobject-cover { object-fit: cover; }
-  .xobject-fill { object-fit: fill; }
-  .xobject-none { object-fit: none; }
-  .xobject-scale-down { object-fit: scale-down; }
-}
-
-@media (min-width: 640px) {
-  .dobject-contain { object-fit: contain; }
-  .dobject-cover { object-fit: cover; }
-  .dobject-fill { object-fit: fill; }
-  .dobject-none { object-fit: none; }
-  .dobject-scale-down { object-fit: scale-down; }
-}
-
-
-/* @ID: #03-06-13 */
-/*** Constrained Containers ***/
-.constrain-xs { max-width: var(--space-32); }  /* 128px */
-.constrain-s { max-width: var(--space-40); }  /* 160px */
-.constrain-m { max-width: var(--space-48); }  /* 192px */
-.constrain-l { max-width: var(--space-56); }  /* 224px */
-.constrain-xl { max-width: var(--space-64); }  /* 256px */
-
-/* @ID: #03-06-14 */
-/*** Section Containers ***/
 .section-container {
   width: 100%;
   margin-left: auto;
@@ -274,51 +117,158 @@
 
 .section-container-s {
   max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--space-8) var(--space-4);
 }
 
 .section-container-l {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--space-16) var(--space-6);
 }
 
-/* @ID: #03-06-15 */
-/*** Container Utility Combinations ***/
+/* @ID: #03-06-05 */
+/* ── Convenience combos ─────────────────────────────────────────────────── */
+
 .container-card-center {
   max-width: 400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 .container-prose-justify {
   max-width: 65ch;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: justify;
 }
 
 .container-hero-center {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding: var(--space-16) var(--space-6);
 }
 
-/* @ID: #03-06-16 */
-/*** Debug Container (Development Only) ***/
+/* @ID: #03-06-06 */
+/* ── Constrain utilities ────────────────────────────────────────────────── */
+
+.constrain-xs { max-width: 8rem; }   /* 128px */
+.constrain-s  { max-width: 10rem; }  /* 160px */
+.constrain-m  { max-width: 12rem; }  /* 192px */
+.constrain-l  { max-width: 14rem; }  /* 224px */
+.constrain-xl { max-width: 16rem; }  /* 256px */
+
+/* @ID: #03-06-07 */
+/* ── Object fit ─────────────────────────────────────────────────────────── */
+
+.object-contain    { object-fit: contain; }
+.object-cover      { object-fit: cover; }
+.object-fill       { object-fit: fill; }
+.object-none       { object-fit: none; }
+.object-scale-down { object-fit: scale-down; }
+
+/* @ID: #03-06-08 */
+/* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
+
+@media (max-width: 639px) {
+  .xcontainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .xcontainer-xs {
+    max-width: 100%;
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
+
+  .xcontainer-prose {
+    max-width: 100%;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .xcontainer-card {
+    max-width: 100%;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .xobject-contain    { object-fit: contain; }
+  .xobject-cover      { object-fit: cover; }
+  .xobject-fill       { object-fit: fill; }
+  .xobject-none       { object-fit: none; }
+  .xobject-scale-down { object-fit: scale-down; }
+}
+
+/* @ID: #03-06-09 */
+/* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
+
+@media (min-width: 640px) {
+  .dcontainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .dcontainer-xs  { max-width: 480px;  margin-left: auto; margin-right: auto; }
+  .dcontainer-s   { max-width: 640px;  margin-left: auto; margin-right: auto; }
+  .dcontainer-m   { max-width: 768px;  margin-left: auto; margin-right: auto; }
+  .dcontainer-l   { max-width: 1024px; margin-left: auto; margin-right: auto; }
+  .dcontainer-xl  { max-width: 1280px; margin-left: auto; margin-right: auto; }
+  .dcontainer-xxl { max-width: 1536px; margin-left: auto; margin-right: auto; }
+
+  .dcontainer-hero {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+
+  .dcontainer-prose {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dobject-contain    { object-fit: contain; }
+  .dobject-cover      { object-fit: cover; }
+  .dobject-fill       { object-fit: fill; }
+  .dobject-none       { object-fit: none; }
+  .dobject-scale-down { object-fit: scale-down; }
+}
+
+/* @ID: #03-06-10 */
+/* ── Debug container (development only) ─────────────────────────────────── */
+
 .container-debug {
+  position: relative;
   outline: 2px dashed var(--color-primary);
   outline-offset: -2px;
 }
 
 .container-debug::before {
-  content: "Container";
+  content: attr(class);
   position: absolute;
   top: 0;
   left: 0;
   background: var(--color-primary);
-  color: var(--color-text-alt);  
+  color: var(--color-text-alt);
   font-size: var(--font-size-xs);
   padding: var(--space-1) var(--space-2);
   font-family: var(--font-mono);
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 1;
 }
-

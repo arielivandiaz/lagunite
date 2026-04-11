@@ -1,9 +1,19 @@
-/* @ID: #03-07-XX */
-/*** Overflow Utilities ***/
+/* ==========================================================================
+   03-layout / 07-overflow.css
+   Overflow, overflow-x/y, scrollbar styling, and responsive variants.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+   ========================================================================== */
+
+/* @ID: #03-07-01 */
+/* ── Overflow utilities ─────────────────────────────────────────────────── */
+
 .overflow-auto { overflow: auto; }
 .overflow-hidden { overflow: hidden; }
 .overflow-visible { overflow: visible; }
 .overflow-scroll { overflow: scroll; }
+
+/* @ID: #03-07-02 */
+/* ── Overflow directional (x, y) ──────────────────────────────────────── */
 
 .overflow-x-auto { overflow-x: auto; }
 .overflow-x-hidden { overflow-x: hidden; }
@@ -14,6 +24,9 @@
 .overflow-y-hidden { overflow-y: hidden; }
 .overflow-y-visible { overflow-y: visible; }
 .overflow-y-scroll { overflow-y: scroll; }
+
+/* @ID: #03-07-03 */
+/* ── Scrollbar utilities ─────────────────────────────────────────────────── */
 
 .scrollbar-thin {
   scrollbar-width: thin;
@@ -26,6 +39,7 @@
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
   border-radius: 999px;
+  background: var(--gray-400);
 }
 
 .scrollbar-none {
@@ -36,6 +50,9 @@
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* @ID: #03-07-04 */
+/* ── Responsive: mobile ──────────────────────────────────────────────────── */
 
 @media (max-width: 639px) {
   .xoverflow-auto { overflow: auto; }
@@ -64,6 +81,7 @@
 
   .xscrollbar-thin::-webkit-scrollbar-thumb {
     border-radius: 999px;
+    background: var(--gray-400);
   }
 
   .xscrollbar-none {
@@ -75,6 +93,9 @@
     display: none;
   }
 }
+
+/* @ID: #03-07-05 */
+/* ── Responsive: desktop ───────────────────────────────────────────────── */
 
 @media (min-width: 640px) {
   .doverflow-auto { overflow: auto; }
@@ -103,6 +124,7 @@
 
   .dscrollbar-thin::-webkit-scrollbar-thumb {
     border-radius: 999px;
+    background: var(--gray-400);
   }
 
   .dscrollbar-none {

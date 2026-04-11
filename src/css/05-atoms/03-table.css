@@ -3,7 +3,7 @@
 table,
 .table {
   border-collapse: collapse;
-  margin: 10px 0;
+  margin: var(--space-3) 0;
   width: 100%;
   font-family: var(--font-text);
   font-size: var(--font-size-base);
@@ -180,15 +180,15 @@ table,
 }
 
 .table.striped.success tbody tr:nth-child(odd) {
-  background-color: rgba(140, 160, 115, 0.1);
+  background-color: rgba(var(--color-success-rgb, 140, 160, 115), 0.1);
 }
 
 .table.striped.warning tbody tr:nth-child(odd) {
-  background-color: rgba(255, 193, 7, 0.1);
+  background-color: rgba(var(--color-warning-rgb, 255, 193, 7), 0.1);
 }
 
 .table.striped.error tbody tr:nth-child(odd) {
-  background-color: rgba(244, 67, 54, 0.1);
+  background-color: rgba(var(--color-error-rgb, 244, 67, 54), 0.1);
 }
 
 /* @ID: #05-03-05 */
@@ -281,7 +281,7 @@ table,
 .table.hover-cell td:hover {
   background: var(--color-primary);
   color: var(--color-text-alt);
-  font-weight: 900;
+  font-weight: var(--font-weight-bold);
   transform: scale(1.02);
 }
 
@@ -310,9 +310,9 @@ table,
 /* Table Card Style */
 .table.card {
   border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-l);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-s);
 }
 
 .table.card thead {
@@ -406,15 +406,15 @@ table,
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 10px 0;
+  margin: var(--space-3) 0;
 }
 
 .table-responsive .table {
   margin: 0;
-  min-width: 600px;
+  min-width: 37.5rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .table th,
   .table td {
     padding: var(--space-2) var(--space-3);
@@ -462,7 +462,7 @@ table,
   }
 }
 
-/* @ID: #05-03-12 */
+/* @ID: #05-03-11 */
 /* Table Row States */
 
 .table tbody tr.selected {
@@ -493,7 +493,7 @@ table,
   background: var(--color-error);
 }
 
-/* @ID: #05-03-13 */
+/* @ID: #05-03-12 */
 /* Table Sorting Indicators */
 .table th.sortable {
   cursor: pointer;

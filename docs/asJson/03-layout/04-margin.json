@@ -1,93 +1,106 @@
 {
   "folder": "03-layout",
   "file": "04-margin.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
-  "totalSelectors": 36,
+  "totalSelectors": 37,
   "content": [
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-0",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: 0 !important",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".marg-auto",
+      "id": "#03-04-01",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": "margin: auto",
+      "responsive": false,
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-01",
       "category": null,
       "properties": [
         "margin"
       ],
       "cssRule": "margin: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides margin (+ auto) ───────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-h-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-02",
       "category": null,
       "properties": [
         "margin-left",
@@ -95,13 +108,13 @@
       ],
       "cssRule": "margin-left: var(--space-1)\nmargin-right: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal margin ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-h-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-02",
       "category": null,
       "properties": [
         "margin-left",
@@ -109,13 +122,13 @@
       ],
       "cssRule": "margin-left: var(--space-3)\nmargin-right: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal margin ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-h",
-      "id": "#03-04-XX",
+      "id": "#03-04-02",
       "category": null,
       "properties": [
         "margin-left",
@@ -123,13 +136,13 @@
       ],
       "cssRule": "margin-left: var(--space-6)\nmargin-right: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal margin ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-h-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-02",
       "category": null,
       "properties": [
         "margin-left",
@@ -137,13 +150,13 @@
       ],
       "cssRule": "margin-left: var(--space-12)\nmargin-right: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal margin ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-h-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-02",
       "category": null,
       "properties": [
         "margin-left",
@@ -151,13 +164,13 @@
       ],
       "cssRule": "margin-left: var(--space-16)\nmargin-right: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal margin ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-v-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-03",
       "category": null,
       "properties": [
         "margin-top",
@@ -165,13 +178,13 @@
       ],
       "cssRule": "margin-top: var(--space-1)\nmargin-bottom: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical margin ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-v-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-03",
       "category": null,
       "properties": [
         "margin-top",
@@ -179,13 +192,13 @@
       ],
       "cssRule": "margin-top: var(--space-3)\nmargin-bottom: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical margin ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-v",
-      "id": "#03-04-XX",
+      "id": "#03-04-03",
       "category": null,
       "properties": [
         "margin-top",
@@ -193,13 +206,13 @@
       ],
       "cssRule": "margin-top: var(--space-6)\nmargin-bottom: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical margin ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-v-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-03",
       "category": null,
       "properties": [
         "margin-top",
@@ -207,13 +220,13 @@
       ],
       "cssRule": "margin-top: var(--space-12)\nmargin-bottom: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical margin ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-v-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-03",
       "category": null,
       "properties": [
         "margin-top",
@@ -221,267 +234,267 @@
       ],
       "cssRule": "margin-top: var(--space-16)\nmargin-bottom: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical margin ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-lf-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-04",
       "category": null,
       "properties": [
         "margin-left"
       ],
       "cssRule": "margin-left: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Left margin ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-lf-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-04",
       "category": null,
       "properties": [
         "margin-left"
       ],
       "cssRule": "margin-left: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Left margin ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-lf",
-      "id": "#03-04-XX",
+      "id": "#03-04-04",
       "category": null,
       "properties": [
         "margin-left"
       ],
       "cssRule": "margin-left: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Left margin ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-lf-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-04",
       "category": null,
       "properties": [
         "margin-left"
       ],
       "cssRule": "margin-left: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Left margin ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-lf-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-04",
       "category": null,
       "properties": [
         "margin-left"
       ],
       "cssRule": "margin-left: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Left margin ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-rg-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-05",
       "category": null,
       "properties": [
         "margin-right"
       ],
       "cssRule": "margin-right: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Right margin ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-rg-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-05",
       "category": null,
       "properties": [
         "margin-right"
       ],
       "cssRule": "margin-right: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Right margin ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-rg",
-      "id": "#03-04-XX",
+      "id": "#03-04-05",
       "category": null,
       "properties": [
         "margin-right"
       ],
       "cssRule": "margin-right: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Right margin ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-rg-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-05",
       "category": null,
       "properties": [
         "margin-right"
       ],
       "cssRule": "margin-right: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Right margin ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-rg-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-05",
       "category": null,
       "properties": [
         "margin-right"
       ],
       "cssRule": "margin-right: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Right margin ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-t-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-06",
       "category": null,
       "properties": [
         "margin-top"
       ],
       "cssRule": "margin-top: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Top margin ──────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-t-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-06",
       "category": null,
       "properties": [
         "margin-top"
       ],
       "cssRule": "margin-top: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Top margin ──────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-t",
-      "id": "#03-04-XX",
+      "id": "#03-04-06",
       "category": null,
       "properties": [
         "margin-top"
       ],
       "cssRule": "margin-top: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Top margin ──────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-t-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-06",
       "category": null,
       "properties": [
         "margin-top"
       ],
       "cssRule": "margin-top: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Top margin ──────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-t-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-06",
       "category": null,
       "properties": [
         "margin-top"
       ],
       "cssRule": "margin-top: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Top margin ──────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-b-xs",
-      "id": "#03-04-XX",
+      "id": "#03-04-07",
       "category": null,
       "properties": [
         "margin-bottom"
       ],
       "cssRule": "margin-bottom: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom margin ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-b-s",
-      "id": "#03-04-XX",
+      "id": "#03-04-07",
       "category": null,
       "properties": [
         "margin-bottom"
       ],
       "cssRule": "margin-bottom: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom margin ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-b",
-      "id": "#03-04-XX",
+      "id": "#03-04-07",
       "category": null,
       "properties": [
         "margin-bottom"
       ],
       "cssRule": "margin-bottom: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom margin ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-b-l",
-      "id": "#03-04-XX",
+      "id": "#03-04-07",
       "category": null,
       "properties": [
         "margin-bottom"
       ],
       "cssRule": "margin-bottom: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom margin ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".marg-b-xl",
-      "id": "#03-04-XX",
+      "id": "#03-04-07",
       "category": null,
       "properties": [
         "margin-bottom"
       ],
       "cssRule": "margin-bottom: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom margin ───────────────────────────────────────────────────────"
     }
   ]
 }

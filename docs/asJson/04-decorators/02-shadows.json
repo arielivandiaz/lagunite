@@ -1,7 +1,7 @@
 {
   "folder": "04-decorators",
   "file": "02-shadows.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
   "totalSelectors": 11,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-none",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
@@ -22,7 +22,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-s",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
@@ -35,12 +35,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--shadow-md)",
+      "cssRule": "box-shadow: var(--shadow-m)",
       "responsive": true,
       "description": "** Box Shadows **"
     },
@@ -48,7 +48,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-l",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
@@ -61,12 +61,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-xl",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow:\r\n    0 20px 25px -5px hsla(0, 0%, 0%, 0.2),\r\n    0 10px 10px -5px hsla(0, 0%, 0%, 0.25)",
+      "cssRule": "box-shadow: var(--shadow-xl)",
       "responsive": true,
       "description": "** Box Shadows **"
     },
@@ -74,7 +74,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-inner",
-      "id": "#04-02-XX",
+      "id": "#04-02-01",
       "category": null,
       "properties": [
         "box-shadow"
@@ -87,12 +87,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".text-shadow-s",
-      "id": "#04-02-XX",
+      "id": "#04-02-02",
       "category": null,
       "properties": [
         "text-shadow"
       ],
-      "cssRule": "text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.3)",
+      "cssRule": "text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22)",
       "responsive": true,
       "description": "** Text Shadows **"
     },
@@ -100,12 +100,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".text-shadow",
-      "id": "#04-02-XX",
+      "id": "#04-02-02",
       "category": null,
       "properties": [
         "text-shadow"
       ],
-      "cssRule": "text-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.35)",
+      "cssRule": "text-shadow: 0 2px 5px rgba(0, 0, 0, 0.26)",
       "responsive": true,
       "description": "** Text Shadows **"
     },
@@ -113,12 +113,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".text-shadow-l",
-      "id": "#04-02-XX",
+      "id": "#04-02-02",
       "category": null,
       "properties": [
         "text-shadow"
       ],
-      "cssRule": "text-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.45)",
+      "cssRule": "text-shadow: 0 6px 16px rgba(0, 0, 0, 0.34)",
       "responsive": true,
       "description": "** Text Shadows **"
     },
@@ -126,12 +126,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-color-primary",
-      "id": "#04-02-XX",
+      "id": "#04-02-03",
       "category": null,
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: 0 0 25px -5px rgba(36, 118, 255, 0.6)",
+      "cssRule": "box-shadow:\r\n    0 18px 40px -26px rgba(var(--color-primary-rgb), 0.55),\r\n    0 0 0 1px rgba(var(--color-primary-rgb), 0.14)",
       "responsive": true,
       "description": "** Shadow Colors **"
     },
@@ -139,12 +139,12 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".shadow-color-black",
-      "id": "#04-02-XX",
+      "id": "#04-02-03",
       "category": null,
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.45)",
+      "cssRule": "box-shadow:\r\n    0 18px 40px -26px rgba(0, 0, 0, 0.40),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06)",
       "responsive": true,
       "description": "** Shadow Colors **"
     }

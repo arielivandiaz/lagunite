@@ -1,9 +1,9 @@
 folder: 03-layout
 file: 06-containers.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 42
-content[42]:
+totalSelectors: 33
+content[33]:
   - type: selector
     selectorType: class
     selector: .container
@@ -12,7 +12,16 @@ content[42]:
     properties[5]: width,margin-left,margin-right,padding-left,padding-right
     cssRule: "width: 100%\nmargin-left: auto\nmargin-right: auto\npadding-left: var(--space-4)\npadding-right: var(--space-4)"
     responsive: true
-    description: ** Base Container **
+    description: ── Base container ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .container-fluid
+    id: #03-06-01
+    category: null
+    properties[3]: width,padding-left,padding-right
+    cssRule: "width: 100%\npadding-left: var(--space-4)\npadding-right: var(--space-4)"
+    responsive: false
+    description: ── Base container ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-xs
@@ -21,7 +30,7 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 480px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-s
@@ -30,7 +39,7 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 640px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-m
@@ -39,7 +48,7 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 768px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-l
@@ -48,7 +57,7 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 1024px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-xl
@@ -57,7 +66,7 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 1280px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-xxl
@@ -66,319 +75,229 @@ content[42]:
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 1536px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Sizes **
-  - type: selector
-    selectorType: class
-    selector: .container-fluid
-    id: #03-06-03
-    category: null
-    properties[3]: width,padding-left,padding-right
-    cssRule: "width: 100%\npadding-left: var(--space-4)\npadding-right: var(--space-4)"
-    responsive: false
-    description: ** Container Fluid (Responsive Padding) **
+    description: "Use with .container for padding + centering, or standalone for max-width only.\r\n   Example: <div class=\"container container-l\"> → 1024px centered with padding"
   - type: selector
     selectorType: class
     selector: .container-prose
-    id: #03-06-04
+    id: #03-06-03
     category: null
     properties[5]: max-width,margin-left,margin-right,padding-left,padding-right
     cssRule: "max-width: 65ch\nmargin-left: auto\nmargin-right: auto\npadding-left: var(--space-4)\npadding-right: var(--space-4)"
     responsive: true
-    description: ** Container Prose **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-card
-    id: #03-06-05
+    id: #03-06-03
     category: null
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 400px\nmargin-left: auto\nmargin-right: auto"
     responsive: true
-    description: ** Container Card **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-sidebar
-    id: #03-06-06
+    id: #03-06-03
     category: null
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 320px\nmargin-left: auto\nmargin-right: auto"
     responsive: false
-    description: ** Container Sidebar **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-modal
-    id: #03-06-07
+    id: #03-06-03
     category: null
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 600px\nmargin-left: auto\nmargin-right: auto"
     responsive: false
-    description: ** Container Modal **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-hero
-    id: #03-06-08
+    id: #03-06-03
     category: null
     properties[5]: max-width,margin-left,margin-right,padding-left,padding-right
     cssRule: "max-width: 1200px\nmargin-left: auto\nmargin-right: auto\npadding-left: var(--space-6)\npadding-right: var(--space-6)"
     responsive: true
-    description: ** Container Hero **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-narrow
-    id: #03-06-09
+    id: #03-06-03
     category: null
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 540px\nmargin-left: auto\nmargin-right: auto"
     responsive: false
-    description: ** Container Narrow **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-wide
-    id: #03-06-10
+    id: #03-06-03
     category: null
     properties[3]: max-width,margin-left,margin-right
     cssRule: "max-width: 1440px\nmargin-left: auto\nmargin-right: auto"
     responsive: false
-    description: ** Container Wide **
+    description: ── Semantic containers ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-contain
-    id: #03-06-11
+    selector: .section-container
+    id: #03-06-04
     category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: contain"
-    responsive: true
-    description: ** Object Fit Utilities **
+    properties[4]: width,margin-left,margin-right,padding
+    cssRule: "width: 100%\nmargin-left: auto\nmargin-right: auto\npadding: var(--space-12) var(--space-4)"
+    responsive: false
+    description: ── Section containers ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-cover
-    id: #03-06-11
+    selector: .section-container-s
+    id: #03-06-04
     category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: cover"
-    responsive: true
-    description: ** Object Fit Utilities **
+    properties[4]: max-width,margin-left,margin-right,padding
+    cssRule: "max-width: 768px\nmargin-left: auto\nmargin-right: auto\npadding: var(--space-8) var(--space-4)"
+    responsive: false
+    description: ── Section containers ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-fill
-    id: #03-06-11
+    selector: .section-container-l
+    id: #03-06-04
     category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: fill"
-    responsive: true
-    description: ** Object Fit Utilities **
+    properties[4]: max-width,margin-left,margin-right,padding
+    cssRule: "max-width: 1200px\nmargin-left: auto\nmargin-right: auto\npadding: var(--space-16) var(--space-6)"
+    responsive: false
+    description: ── Section containers ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-none
-    id: #03-06-11
+    selector: .container-card-center
+    id: #03-06-05
     category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: none"
-    responsive: true
-    description: ** Object Fit Utilities **
+    properties[4]: max-width,margin-left,margin-right,text-align
+    cssRule: "max-width: 400px\nmargin-left: auto\nmargin-right: auto\ntext-align: center"
+    responsive: false
+    description: ── Convenience combos ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-scale-down
-    id: #03-06-11
+    selector: .container-prose-justify
+    id: #03-06-05
     category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: scale-down"
-    responsive: true
-    description: ** Object Fit Utilities **
+    properties[4]: max-width,margin-left,margin-right,text-align
+    cssRule: "max-width: 65ch\nmargin-left: auto\nmargin-right: auto\ntext-align: justify"
+    responsive: false
+    description: ── Convenience combos ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .object-center
-    id: #03-06-12
+    selector: .container-hero-center
+    id: #03-06-05
     category: null
-    properties[1]: object-position
-    cssRule: "object-position: center"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-top
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: top"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-bottom
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: bottom"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-left
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: left"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-right
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: right"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-left-top
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: left top"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-left-bottom
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: left bottom"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-right-top
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: right top"
-    responsive: true
-    description: ** Object Position Utilities **
-  - type: selector
-    selectorType: class
-    selector: .object-right-bottom
-    id: #03-06-12
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: right bottom"
-    responsive: true
-    description: ** Object Position Utilities **
+    properties[5]: max-width,margin-left,margin-right,text-align,padding
+    cssRule: "max-width: 1200px\nmargin-left: auto\nmargin-right: auto\ntext-align: center\npadding: var(--space-16) var(--space-6)"
+    responsive: false
+    description: ── Convenience combos ───────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .constrain-xs
-    id: #03-06-13
+    id: #03-06-06
     category: null
     properties[1]: max-width
-    cssRule: "max-width: var(--space-32)"
+    cssRule: "max-width: 8rem"
     responsive: false
-    description: ** Constrained Containers **
+    description: ── Constrain utilities ──────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .constrain-s
-    id: #03-06-13
+    id: #03-06-06
     category: null
     properties[1]: max-width
-    cssRule: "max-width: var(--space-40)"
+    cssRule: "max-width: 10rem"
     responsive: false
     description: 128px
   - type: selector
     selectorType: class
     selector: .constrain-m
-    id: #03-06-13
+    id: #03-06-06
     category: null
     properties[1]: max-width
-    cssRule: "max-width: var(--space-48)"
+    cssRule: "max-width: 12rem"
     responsive: false
     description: 160px
   - type: selector
     selectorType: class
     selector: .constrain-l
-    id: #03-06-13
+    id: #03-06-06
     category: null
     properties[1]: max-width
-    cssRule: "max-width: var(--space-56)"
+    cssRule: "max-width: 14rem"
     responsive: false
     description: 192px
   - type: selector
     selectorType: class
     selector: .constrain-xl
-    id: #03-06-13
+    id: #03-06-06
     category: null
     properties[1]: max-width
-    cssRule: "max-width: var(--space-64)"
+    cssRule: "max-width: 16rem"
     responsive: false
     description: 224px
   - type: selector
     selectorType: class
-    selector: .section-container
-    id: #03-06-14
+    selector: .object-contain
+    id: #03-06-07
     category: null
-    properties[4]: width,margin-left,margin-right,padding
-    cssRule: "width: 100%\nmargin-left: auto\nmargin-right: auto\npadding: var(--space-12) var(--space-4)"
-    responsive: false
-    description: ** Section Containers **
+    properties[1]: object-fit
+    cssRule: "object-fit: contain"
+    responsive: true
+    description: ── Object fit ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .section-container-s
-    id: #03-06-14
+    selector: .object-cover
+    id: #03-06-07
     category: null
-    properties[2]: max-width,padding
-    cssRule: "max-width: 768px\npadding: var(--space-8) var(--space-4)"
-    responsive: false
-    description: ** Section Containers **
+    properties[1]: object-fit
+    cssRule: "object-fit: cover"
+    responsive: true
+    description: ── Object fit ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .section-container-l
-    id: #03-06-14
+    selector: .object-fill
+    id: #03-06-07
     category: null
-    properties[2]: max-width,padding
-    cssRule: "max-width: 1200px\npadding: var(--space-16) var(--space-6)"
-    responsive: false
-    description: ** Section Containers **
+    properties[1]: object-fit
+    cssRule: "object-fit: fill"
+    responsive: true
+    description: ── Object fit ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .container-card-center
-    id: #03-06-15
+    selector: .object-none
+    id: #03-06-07
     category: null
-    properties[3]: max-width,margin,text-align
-    cssRule: "max-width: 400px\nmargin: 0 auto\ntext-align: center"
-    responsive: false
-    description: ** Container Utility Combinations **
+    properties[1]: object-fit
+    cssRule: "object-fit: none"
+    responsive: true
+    description: ── Object fit ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .container-prose-justify
-    id: #03-06-15
+    selector: .object-scale-down
+    id: #03-06-07
     category: null
-    properties[3]: max-width,margin,text-align
-    cssRule: "max-width: 65ch\nmargin: 0 auto\ntext-align: justify"
-    responsive: false
-    description: ** Container Utility Combinations **
-  - type: selector
-    selectorType: class
-    selector: .container-hero-center
-    id: #03-06-15
-    category: null
-    properties[4]: max-width,margin,text-align,padding
-    cssRule: "max-width: 1200px\nmargin: 0 auto\ntext-align: center\npadding: var(--space-16) var(--space-6)"
-    responsive: false
-    description: ** Container Utility Combinations **
+    properties[1]: object-fit
+    cssRule: "object-fit: scale-down"
+    responsive: true
+    description: ── Object fit ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .container-debug
-    id: #03-06-16
+    id: #03-06-10
     category: null
-    properties[2]: outline,outline-offset
-    cssRule: "outline: 2px dashed var(--color-primary)\noutline-offset: -2px"
+    properties[3]: position,outline,outline-offset
+    cssRule: "position: relative\noutline: 2px dashed var(--color-primary)\noutline-offset: -2px"
     responsive: false
-    description: ** Debug Container (Development Only) **
+    description: ── Debug container (development only) ───────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".container-debug::before"
-    id: #03-06-16
+    id: #03-06-10
     category: null
-    properties[9]: content,position,top,left,background,color,font-size,padding,font-family
-    cssRule: "content: \"Container\"\nposition: absolute\ntop: 0\nleft: 0\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-xs)\npadding: var(--space-1) var(--space-2)\nfont-family: var(--font-mono)"
+    properties[12]: content,position,top,left,background,color,font-size,padding,font-family,line-height,white-space,z-index
+    cssRule: "content: attr(class)\nposition: absolute\ntop: 0\nleft: 0\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-xs)\npadding: var(--space-1) var(--space-2)\nfont-family: var(--font-mono)\nline-height: 1\nwhite-space: nowrap\nz-index: 1"
     responsive: false
-    description: ** Debug Container (Development Only) **
+    description: ── Debug container (development only) ───────────────────────────────────

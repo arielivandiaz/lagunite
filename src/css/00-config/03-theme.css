@@ -135,6 +135,13 @@
     --color-bg: #1a1a1a;
     --color-bg-alt: #f5f5f5;
 
+    /*
+     * Main readable foreground on dark surfaces (body, .bg, .card in night).
+     * :root keeps --color-text-base as #333; without this override, inherited
+     * text stays dark on --color-bg / gray-800 cards (unreadable).
+     */
+    --color-text-base: #e8eaed;
+
     /*== Inputs ==*/
     --input-text: var(--color-text-alt);
     --input-bg: var(--gray-800);

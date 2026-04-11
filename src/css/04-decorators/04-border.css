@@ -264,7 +264,7 @@
   border-radius: var(--radius-l);
 }
 .border-r-xl {
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-xl);
 }
 
 .border-r-s.scrollable::-webkit-scrollbar-track {
@@ -309,7 +309,7 @@
     border-radius: var(--radius-l);
   }
   .dborder-r-xl {
-    border-radius: var(--radius-l);
+    border-radius: var(--radius-xl);
   }
 }
 
