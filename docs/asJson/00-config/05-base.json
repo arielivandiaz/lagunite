@@ -1,0 +1,665 @@
+{
+  "folder": "00-config",
+  "file": "05-base.css",
+  "lastUpdated": "2026-04-11",
+  "hasResponsive": false,
+  "totalSelectors": 45,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "*",
+      "id": "#00-05-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "padding",
+        "outline",
+        "-webkit-tap-highlight-color"
+      ],
+      "cssRule": "margin: 0\npadding: 0\noutline: none\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)",
+      "responsive": false,
+      "description": "** RESET  **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "html",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "min-height",
+        "overflow-x",
+        "background",
+        "font-family",
+        "font-size"
+      ],
+      "cssRule": "width: 100vw\nmax-width: 100vw\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "body",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "min-height",
+        "overflow-x",
+        "background",
+        "font-family",
+        "font-size"
+      ],
+      "cssRule": "width: 100vw\nmax-width: 100vw\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "button",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "border",
+        "background",
+        "cursor"
+      ],
+      "cssRule": "border: none\nbackground: none\ncursor: pointer",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "a",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": "cursor: pointer",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "a",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "text-decoration"
+      ],
+      "cssRule": "text-decoration: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "a:visited",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "text-decoration"
+      ],
+      "cssRule": "text-decoration: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "a:active",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "text-decoration"
+      ],
+      "cssRule": "text-decoration: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "a:enabled",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "text-decoration"
+      ],
+      "cssRule": "text-decoration: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "ul",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "list-style",
+        "text-align"
+      ],
+      "cssRule": "list-style: none\ntext-align: left",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "ol",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "text-align"
+      ],
+      "cssRule": "text-align: left",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "img",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "max-width"
+      ],
+      "cssRule": "max-width: 100%",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "header",
+      "id": "#00-05-03",
+      "category": null,
+      "properties": [
+        "margin"
+      ],
+      "cssRule": "margin: 5vh 0 3vh 0",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "body",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "width",
+        "height",
+        "text-align"
+      ],
+      "cssRule": "width: 100%\nheight: 100%\ntext-align: center",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "body",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "background",
+        "color",
+        "transition"
+      ],
+      "cssRule": "background: var(--color-bg)\ncolor: var(--color-text-base)\ntransition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "body.night",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-bg)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo-hover",
+      "selector": "a:hover",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-primary) !important",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "p",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "margin",
+        "text-align",
+        "overflow-wrap",
+        "word-wrap",
+        "white-space",
+        "padding"
+      ],
+      "cssRule": "margin: 10px 0\ntext-align: left\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal\npadding: 0 15px",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "hr",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display",
+        "height",
+        "border",
+        "border-top",
+        "padding"
+      ],
+      "cssRule": "display: block\nheight: 1px\nborder: 0\nborder-top: 1px solid var(--color-primary)\npadding: 0",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "sub",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "font-size",
+        "position",
+        "top"
+      ],
+      "cssRule": "font-size: 80%\nposition: relative\ntop: 0.1rem",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "sup",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "font-size",
+        "position",
+        "top"
+      ],
+      "cssRule": "font-size: 80%\nposition: relative\ntop: -0.1rem",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "blockquote",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "border-left",
+        "font-style",
+        "text-align",
+        "margin",
+        "padding"
+      ],
+      "cssRule": "border-left: solid 4px var(--color-primary)\nfont-style: italic\ntext-align: left\nmargin: 0 0 2rem 0\npadding: 0.8rem 0.5rem 0.8rem 1.5rem",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "code",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "border-radius",
+        "background",
+        "font-family",
+        "font-size",
+        "margin",
+        "padding"
+      ],
+      "cssRule": "border-radius: 4px\nbackground: #ddd\nfont-family: monospace\nfont-size: 80%\nmargin: 0 0.3rem\npadding: 0.2rem 0.6rem",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "pre",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "-webkit-overflow-scrolling",
+        "font-family",
+        "font-size",
+        "margin"
+      ],
+      "cssRule": "-webkit-overflow-scrolling: touch\nfont-family: monospace\nfont-size: 0.9em\nmargin: 0 0 2rem 0",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "pre code",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "text-align",
+        "display",
+        "line-height",
+        "padding",
+        "margin"
+      ],
+      "cssRule": "text-align: left\ndisplay: block\nline-height: 1.75\npadding: 0.3rem 0.5rem 0.3rem 1rem\nmargin: 0 25px",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night code",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: #000\ncolor: var(--text_color_alt)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "hgroup",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hgroup h1",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hgroup h2",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hgroup h3",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hgroup h4",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "hgroup h5",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline-block",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "ul li",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: 2px 1.5vw 2px 0.5vw",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "ol li",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: 2px 1.5vw 2px 0.5vw",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "tr *",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "left",
+        "right",
+        "margin"
+      ],
+      "cssRule": "left: 0\nright: 0\nmargin: auto",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "td *",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "left",
+        "right",
+        "margin"
+      ],
+      "cssRule": "left: 0\nright: 0\nmargin: auto",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "th",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "overflow-wrap",
+        "word-wrap",
+        "white-space"
+      ],
+      "cssRule": "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "td",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "overflow-wrap",
+        "word-wrap",
+        "white-space"
+      ],
+      "cssRule": "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "th",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: 4px 0",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "caption",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "margin"
+      ],
+      "cssRule": "margin: 15px 0",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "details",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "padding",
+        "max-width",
+        "background-color",
+        "transition"
+      ],
+      "cssRule": "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-secondary)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "summary",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "font-weight",
+        "cursor",
+        "display",
+        "align-items",
+        "justify-content",
+        "list-style"
+      ],
+      "cssRule": "font-weight: 600\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "summary::-webkit-details-marker",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "a:visited",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-base)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".link",
+      "id": "#00-05-04",
+      "category": "Tags",
+      "properties": [
+        "color",
+        "text-decoration",
+        "font-weight"
+      ],
+      "cssRule": "color: var(--color-primary)\ntext-decoration: none\nfont-weight: 700",
+      "responsive": false,
+      "description": "** Static **"
+    }
+  ]
+}

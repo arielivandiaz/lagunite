@@ -1,0 +1,1077 @@
+folder: 03-layout
+file: 09-width.css
+lastUpdated: 2026-04-11
+hasResponsive: true
+totalSelectors: 119
+content[119]:
+  - type: selector
+    selectorType: class
+    selector: .minwp10
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 10%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp15
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 15%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp20
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 20%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp25
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 25%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp30
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 30%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp35
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 35%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp40
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 40%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp45
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 45%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp50
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 50%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp55
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 55%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp60
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 60%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp65
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 65%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp70
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 70%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp75
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 75%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp80
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 80%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp85
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 85%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp90
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 90%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp95
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 95%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minwp100
+    id: null
+    category: null
+    properties[1]: min-width
+    cssRule: "min-width: 100%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp10
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 10%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp15
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 15%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp20
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 20%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp25
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 25%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp30
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 30%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp35
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 35%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp40
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 40%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp45
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 45%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp50
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 50%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp55
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 55%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp60
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 60%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp65
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 65%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp70
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 70%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp75
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 75%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp80
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 80%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp85
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 85%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp90
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 90%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp95
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 95%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxwp100
+    id: null
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 100%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 09-width.css\r\n   Min/max width (percent and viewport), width fractions, and percentage\r\n   width utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: ".wp-1\\/3"
+    id: #03-09-03
+    category: null
+    properties[1]: width
+    cssRule: "width: 33.333333%"
+    responsive: true
+    description: ** Width Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".wp-2\\/3"
+    id: #03-09-03
+    category: null
+    properties[1]: width
+    cssRule: "width: 66.666667%"
+    responsive: true
+    description: ** Width Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".wp-1\\/6"
+    id: #03-09-03
+    category: null
+    properties[1]: width
+    cssRule: "width: 16.666667%"
+    responsive: true
+    description: ** Width Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".wp-5\\/6"
+    id: #03-09-03
+    category: null
+    properties[1]: width
+    cssRule: "width: 83.333333%"
+    responsive: true
+    description: ** Width Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vw10
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 10vw\nwidth: 10dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw15
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 15vw\nwidth: 15dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw20
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 20vw\nwidth: 20dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw25
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 25vw\nwidth: 25dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw30
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 30vw\nwidth: 30dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw35
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 35vw\nwidth: 35dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw40
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 40vw\nwidth: 40dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw45
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 45vw\nwidth: 45dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw50
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 50vw\nwidth: 50dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw55
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 55vw\nwidth: 55dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw60
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 60vw\nwidth: 60dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw65
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 65vw\nwidth: 65dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw70
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 70vw\nwidth: 70dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw75
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 75vw\nwidth: 75dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw80
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 80vw\nwidth: 80dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw85
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 85vw\nwidth: 85dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw90
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 90vw\nwidth: 90dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw95
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 95vw\nwidth: 95dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .vw100
+    id: #03-09-04
+    category: null
+    properties[2]: width,width
+    cssRule: "width: 100vw\nwidth: 100dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw10
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 10vw\nmin-width: 10dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw15
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 15vw\nmin-width: 15dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw20
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 20vw\nmin-width: 20dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw25
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 25vw\nmin-width: 25dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw30
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 30vw\nmin-width: 30dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw35
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 35vw\nmin-width: 35dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw40
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 40vw\nmin-width: 40dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw45
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 45vw\nmin-width: 45dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw50
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 50vw\nmin-width: 50dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw55
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 55vw\nmin-width: 55dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw60
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 60vw\nmin-width: 60dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw65
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 65vw\nmin-width: 65dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw70
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 70vw\nmin-width: 70dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw75
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 75vw\nmin-width: 75dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw80
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 80vw\nmin-width: 80dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw85
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 85vw\nmin-width: 85dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw90
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 90vw\nmin-width: 90dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw95
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 95vw\nmin-width: 95dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .minvw100
+    id: #03-09-04
+    category: null
+    properties[2]: min-width,min-width
+    cssRule: "min-width: 100vw\nmin-width: 100dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw10
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 10vw\nmax-width: 10dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw15
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 15vw\nmax-width: 15dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw20
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 20vw\nmax-width: 20dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw25
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 25vw\nmax-width: 25dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw30
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 30vw\nmax-width: 30dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw35
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 35vw\nmax-width: 35dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw40
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 40vw\nmax-width: 40dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw45
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 45vw\nmax-width: 45dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw50
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 50vw\nmax-width: 50dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw55
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 55vw\nmax-width: 55dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw60
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 60vw\nmax-width: 60dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw65
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 65vw\nmax-width: 65dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw70
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 70vw\nmax-width: 70dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw75
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 75vw\nmax-width: 75dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw80
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 80vw\nmax-width: 80dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw85
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 85vw\nmax-width: 85dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw90
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 90vw\nmax-width: 90dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw95
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 95vw\nmax-width: 95dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .maxvw100
+    id: #03-09-04
+    category: null
+    properties[2]: max-width,max-width
+    cssRule: "max-width: 100vw\nmax-width: 100dvw"
+    responsive: true
+    description: Viewport Width
+  - type: selector
+    selectorType: class
+    selector: .wp5
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 5%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp10
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 10%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp15
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 15%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp20
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 20%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp25
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 25%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp30
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 30%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp35
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 35%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp40
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 40%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp45
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 45%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp50
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 50%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp55
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 55%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp60
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 60%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp65
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 65%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp70
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 70%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp75
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 75%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp80
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 80%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp85
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 85%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp90
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 90%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp95
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 95%"
+    responsive: true
+    description: Porcentage Width
+  - type: selector
+    selectorType: class
+    selector: .wp100
+    id: #03-09-05
+    category: null
+    properties[1]: width
+    cssRule: "width: 100%"
+    responsive: true
+    description: Porcentage Width

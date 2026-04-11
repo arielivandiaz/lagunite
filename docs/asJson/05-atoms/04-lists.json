@@ -1,9 +1,9 @@
 {
   "folder": "05-atoms",
   "file": "04-lists.css",
-  "lastUpdated": "2025-12-14",
-  "hasResponsive": false,
-  "totalSelectors": 6,
+  "lastUpdated": "2026-04-11",
+  "hasResponsive": true,
+  "totalSelectors": 18,
   "content": [
     {
       "type": "selector",
@@ -14,9 +14,9 @@
       "properties": [
         "background-color"
       ],
-      "cssRule": "background-color: rgba(36, 118, 255, 0.1)",
+      "cssRule": "background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1)",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
     },
     {
       "type": "selector",
@@ -27,9 +27,9 @@
       "properties": [
         "background-color"
       ],
-      "cssRule": "background-color: rgba(36, 118, 255, 0.1)",
+      "cssRule": "background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1)",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
     },
     {
       "type": "selector",
@@ -42,7 +42,7 @@
       ],
       "cssRule": "border: none",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
     },
     {
       "type": "selector",
@@ -55,7 +55,7 @@
       ],
       "cssRule": "border: none",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
     },
     {
       "type": "selector",
@@ -68,7 +68,7 @@
       ],
       "cssRule": "border-bottom: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
     },
     {
       "type": "selector",
@@ -81,7 +81,165 @@
       ],
       "cssRule": "border-bottom: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "Lists Base Styles"
+      "description": "── Base: alternate rows & bordered lists ────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-none",
+      "id": "#05-04-02",
+      "category": null,
+      "properties": [
+        "list-style"
+      ],
+      "cssRule": "list-style: none",
+      "responsive": true,
+      "description": "── List layout ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-inline",
+      "id": "#05-04-02",
+      "category": null,
+      "properties": [
+        "list-style",
+        "padding-left",
+        "margin"
+      ],
+      "cssRule": "list-style: none\npadding-left: 0\nmargin: 0",
+      "responsive": true,
+      "description": "── List layout ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-inline > li",
+      "id": "#05-04-02",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: inline",
+      "responsive": true,
+      "description": "── List layout ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-spaced > li + li",
+      "id": "#05-04-02",
+      "category": null,
+      "properties": [
+        "margin-top"
+      ],
+      "cssRule": "margin-top: var(--space-3)",
+      "responsive": false,
+      "description": "── List layout ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-disc",
+      "id": "#05-04-03",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: disc",
+      "responsive": false,
+      "description": "── Unordered marker types ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-circle",
+      "id": "#05-04-03",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: circle",
+      "responsive": false,
+      "description": "── Unordered marker types ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-square",
+      "id": "#05-04-03",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: square",
+      "responsive": false,
+      "description": "── Unordered marker types ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-decimal",
+      "id": "#05-04-04",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: decimal",
+      "responsive": false,
+      "description": "── Ordered marker types & marker position ───────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-alpha",
+      "id": "#05-04-04",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: lower-alpha",
+      "responsive": false,
+      "description": "── Ordered marker types & marker position ───────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-roman",
+      "id": "#05-04-04",
+      "category": null,
+      "properties": [
+        "list-style-type"
+      ],
+      "cssRule": "list-style-type: lower-roman",
+      "responsive": false,
+      "description": "── Ordered marker types & marker position ───────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-inside",
+      "id": "#05-04-04",
+      "category": null,
+      "properties": [
+        "list-style-position"
+      ],
+      "cssRule": "list-style-position: inside",
+      "responsive": false,
+      "description": "── Ordered marker types & marker position ───────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-outside",
+      "id": "#05-04-04",
+      "category": null,
+      "properties": [
+        "list-style-position"
+      ],
+      "cssRule": "list-style-position: outside",
+      "responsive": false,
+      "description": "── Ordered marker types & marker position ───────────────────────────────"
     }
   ]
 }

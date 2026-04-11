@@ -1,114 +1,105 @@
 folder: 10-misc
 file: 01-display.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 12
-content[12]:
+totalSelectors: 11
+content[11]:
   - type: selector
     selectorType: class
     selector: .d-block
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: block"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .d-inline
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: inline"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .d-inline-block
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: inline-block"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .d-flex
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: flex"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .d-inline-flex
+    id: #10-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: inline-flex"
+    responsive: true
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .d-grid
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: grid"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .d-none
-    id: #10-01-XX
+    id: #10-01-01
     category: null
     properties[1]: display
     cssRule: "display: none"
     responsive: true
-    description: ** Display Utilities **
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .visibility-visible
-    id: #10-01-XX
+    selector: .d-contents
+    id: #10-01-01
     category: null
-    properties[1]: visibility
-    cssRule: "visibility: visible"
-    responsive: false
-    description: ** Display Utilities **
-  - type: selector
-    selectorType: class
-    selector: .visibility-invisible
-    id: #10-01-XX
-    category: null
-    properties[1]: visibility
-    cssRule: "visibility: hidden"
-    responsive: false
-    description: ** Display Utilities **
-  - type: selector
-    selectorType: class
-    selector: .visibility-collapse
-    id: #10-01-XX
-    category: null
-    properties[1]: visibility
-    cssRule: "visibility: collapse"
-    responsive: false
-    description: ** Display Utilities **
+    properties[1]: display
+    cssRule: "display: contents"
+    responsive: true
+    description: ── Display ──────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .visible
-    id: #10-01-XX
+    id: #10-01-02
     category: null
     properties[1]: visibility
     cssRule: "visibility: visible"
-    responsive: false
-    description: ** Display Utilities **
+    responsive: true
+    description: ── Visibility ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .invisible
-    id: #10-01-XX
+    id: #10-01-02
     category: null
     properties[1]: visibility
     cssRule: "visibility: hidden"
-    responsive: false
-    description: ** Display Utilities **
+    responsive: true
+    description: ── Visibility ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .collapse
-    id: #10-01-XX
+    id: #10-01-02
     category: null
     properties[1]: visibility
     cssRule: "visibility: collapse"
-    responsive: false
-    description: ** Display Utilities **
+    responsive: true
+    description: ── Visibility ───────────────────────────────────────────────────────────

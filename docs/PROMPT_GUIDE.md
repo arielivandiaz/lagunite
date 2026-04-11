@@ -3,7 +3,7 @@
 ## Core Facts (tell the model up front)
 - Framework: Lagunite v2, utility-first with descriptive class names.
 - Breakpoints: base (no prefix), `x` = max-width 639px, `d` = min-width 640px.
-- Layout: flex stacks (`.row`, `.rowr`, `.col`, `.colr`, `.row-col`, `.col-row`), gaps via `.f-gap-*`, grid via `.grid`, `.grid-auto`, `.grid-cols-1..12`, `.grid-rows-1..6`, responsive `xgrid*`/`dgrid*` and `xg-*`/`dg-*` gaps.
+- Layout: flex stacks (`.row`, `.rowr`, `.col`, `.colr`, `.row-col`, `.col-row`), gaps via `.gap-*` (shared with grid; responsive `.xgap-*` / `.dgap-*`), grid via `.grid`, `.grid-auto`, `.grid-cols-1..12`, `.grid-rows-1..6`, responsive `xgrid*`/`dgrid*`.
 - Spacing: margins `.marg*`, horizontal `.marg-h*`, vertical `.marg-v*`; paddings `.padd*`, `.padd-h*`, `.padd-v*` with `x`/`d` variants. Sizes use `--space-*` tokens.
 - Sizing: intrinsic `.w-auto/.h-auto`, `.w-full/.h-full`, viewport `.w-screen/.h-screen` (vw+ dvw, vh+ dvh), half/quarter screen, semantic steps `.w1..w14`, `.h1..h14`, min-width/height `.min-w1..min-w14`, percent min-width `.minwp10..minwp100` (5% steps) with `x`/`d` variants.
 - Typography: case (`.uppercase`, `.lowercase`, `.capitalize`), letter spacing (`.letter-spacing*`), line height (`.lh*`), text align (`.ta-*` with `xta-*`/`dta-*`).
@@ -23,7 +23,7 @@
 ```
 You are generating HTML with Lagunite v2 utilities (see cheat sheet). 
 Rules: base classes first, then x-prefixed (<=639px), then d-prefixed (>=640px). 
-Prefer layout utilities (row/col/grid, f-gap/g-gap). Use semantic sizes (w1..w14, h1..h14, w-full, w-screen). 
+Prefer layout utilities (row/col/grid, gap-* / xgap-* / dgap-*). Use semantic sizes (w1..w14, h1..h14, w-full, w-screen). 
 Use spacing utilities (padd*, marg*). Avoid inventing classes. If a utility is missing, mention the gap and propose closest existing. 
 Return only the HTML snippet.
 ```
@@ -31,7 +31,7 @@ Return only the HTML snippet.
 **Translate Tailwind to Lagunite**
 ```
 Convert this Tailwind markup to Lagunite v2. Keep the structure; replace classes with Lagunite equivalents. 
-Breakpoints: base, x<=639, d>=640. Use padd*/marg*, row/col/f-gap, grid/grid-cols-*, w-full/w-screen/w1..w14, h1..h14, text alignment classes. 
+Breakpoints: base, x<=639, d>=640. Use padd*/marg*, row/col/gap-*, grid/grid-cols-*, w-full/w-screen/w1..w14, h1..h14, text alignment classes. 
 If an exact match does not exist, note the closest available utility instead of inventing one. Return only the converted HTML.
 ```
 
@@ -51,12 +51,12 @@ Request: “Create a two-column hero that stacks on mobile.”
 Output shape (simplified):
 ```html
 <section class="padd padd-v-l">
-  <div class="grid dgrid-cols-2 xgrid-cols-1 g-gap-l">
-    <div class="row f-gap padd">
+  <div class="grid dgrid-cols-2 xgrid-cols-1 gap-l">
+    <div class="row gap padd">
       <h1 class="capitalize lh">Title</h1>
       <p class="lh">Copy</p>
     </div>
-    <div class="col f-gap padd">
+    <div class="col gap padd">
       <!-- media / illustration -->
     </div>
   </div>

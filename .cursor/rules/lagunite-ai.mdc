@@ -1,0 +1,26 @@
+---
+description: >-
+  Al generar o revisar UI con Lagunite: usar skills del repo, checklist
+  lagunite-validate, sin inventar clases ni duplicar skills por archivo CSS.
+globs: "**/*.html,src/css/**/*.css,demo*.html"
+alwaysApply: false
+---
+
+# Lagunite + IA (proyecto)
+
+## Antes de escribir o cambiar markup / utilidades
+
+1. Leer la skill **`.cursor/skills/lagunite-validate/SKILL.md`** y aplicar su checklist (orden de clases base → `x` → `d`, no inventar, capas layout → spacing → color/tipo → decoradores, capa UI correcta).
+2. Abrir **solo** las skills necesarias para la tarea (no una skill por cada `.css`). Orden sugerido: `lagunite-tokens` → `lagunite-typography` / `lagunite-colors` → `lagunite-spacing` → `lagunite-flex` o `lagunite-grid` → `lagunite-containers` → `lagunite-decorators` / `lagunite-misc` → `lagunite-atoms` → `lagunite-molecules` → `lagunite-compounds` → `lagunite-organisms`; plantillas: `lagunite-patterns`.
+3. Complemento fijo del repo: [`docs/PROMPT_GUIDE.md`](docs/PROMPT_GUIDE.md) y cheatsheets bajo `src/css/**`.
+
+## Reglas de salida
+
+- **Lagunite v2 solo utilidades** documentadas en skills o en `src/css`. Si falta una utilidad, indicar el hueco y la alternativa más cercana; no inventar nombres.
+- **Flex/grid:** `.row` / `.col` centran por defecto; para alinear a un costado usar `jc-fs`, `ai-fs` (o `ai-stretch`) cuando haga falta.
+- **Tema:** con `.night`, priorizar texto semántico (`color-text`, tokens); evitar grises de paleta (`.color-gray-*`) para cuerpo de texto salvo acento consciente.
+- **Docs generados:** tras cambios en CSS del framework, ejecutar `npm run docs:generate` (no editar a mano `docs/asJson` / `docs/asToon`).
+
+## Alcance de esta regla
+
+- HTML (demos, páginas) y hojas bajo `src/css/`. No sustituye revisiones humanas de diseño ni WCAG completas.

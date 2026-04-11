@@ -46,7 +46,7 @@ function listAllClasses() {
 function findByToken() {
   console.log('\n🔍 Example 2: Find Selectors Using --color-primary\n');
   
-  const colorDocs = loadDocs('02-colors', '01-text.json');
+  const colorDocs = loadDocs('02-colors', '02-text.json');
   
   const results = colorDocs.content.filter(
     item => item.tokens.includes('--color-primary')

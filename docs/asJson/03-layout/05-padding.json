@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "05-padding.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
   "totalSelectors": 36,
   "content": [
@@ -9,85 +9,85 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-0",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: 0 !important",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-01",
       "category": null,
       "properties": [
         "padding"
       ],
       "cssRule": "padding: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── All-sides padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-h-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-02",
       "category": null,
       "properties": [
         "padding-left",
@@ -95,13 +95,13 @@
       ],
       "cssRule": "padding-left: var(--space-1)\npadding-right: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-h-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-02",
       "category": null,
       "properties": [
         "padding-left",
@@ -109,13 +109,13 @@
       ],
       "cssRule": "padding-left: var(--space-3)\npadding-right: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-h",
-      "id": "#03-05-XX",
+      "id": "#03-05-02",
       "category": null,
       "properties": [
         "padding-left",
@@ -123,13 +123,13 @@
       ],
       "cssRule": "padding-left: var(--space-6)\npadding-right: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-h-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-02",
       "category": null,
       "properties": [
         "padding-left",
@@ -137,13 +137,13 @@
       ],
       "cssRule": "padding-left: var(--space-12)\npadding-right: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-h-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-02",
       "category": null,
       "properties": [
         "padding-left",
@@ -151,13 +151,13 @@
       ],
       "cssRule": "padding-left: var(--space-16)\npadding-right: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Horizontal padding ───────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-v-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-03",
       "category": null,
       "properties": [
         "padding-top",
@@ -165,13 +165,13 @@
       ],
       "cssRule": "padding-top: var(--space-1)\npadding-bottom: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical padding ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-v-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-03",
       "category": null,
       "properties": [
         "padding-top",
@@ -179,13 +179,13 @@
       ],
       "cssRule": "padding-top: var(--space-3)\npadding-bottom: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical padding ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-v",
-      "id": "#03-05-XX",
+      "id": "#03-05-03",
       "category": null,
       "properties": [
         "padding-top",
@@ -193,13 +193,13 @@
       ],
       "cssRule": "padding-top: var(--space-6)\npadding-bottom: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical padding ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-v-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-03",
       "category": null,
       "properties": [
         "padding-top",
@@ -207,13 +207,13 @@
       ],
       "cssRule": "padding-top: var(--space-12)\npadding-bottom: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical padding ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-v-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-03",
       "category": null,
       "properties": [
         "padding-top",
@@ -221,267 +221,267 @@
       ],
       "cssRule": "padding-top: var(--space-16)\npadding-bottom: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Vertical padding ─────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-lf-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-04",
       "category": null,
       "properties": [
         "padding-left"
       ],
       "cssRule": "padding-left: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Left padding ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-lf-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-04",
       "category": null,
       "properties": [
         "padding-left"
       ],
       "cssRule": "padding-left: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Left padding ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-lf",
-      "id": "#03-05-XX",
+      "id": "#03-05-04",
       "category": null,
       "properties": [
         "padding-left"
       ],
       "cssRule": "padding-left: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Left padding ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-lf-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-04",
       "category": null,
       "properties": [
         "padding-left"
       ],
       "cssRule": "padding-left: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Left padding ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-lf-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-04",
       "category": null,
       "properties": [
         "padding-left"
       ],
       "cssRule": "padding-left: var(--space-16)",
-      "responsive": false,
-      "description": ""
+      "responsive": true,
+      "description": "── Left padding ────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-rg-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-05",
       "category": null,
       "properties": [
         "padding-right"
       ],
       "cssRule": "padding-right: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Right padding ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-rg-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-05",
       "category": null,
       "properties": [
         "padding-right"
       ],
       "cssRule": "padding-right: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Right padding ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-rg",
-      "id": "#03-05-XX",
+      "id": "#03-05-05",
       "category": null,
       "properties": [
         "padding-right"
       ],
       "cssRule": "padding-right: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Right padding ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-rg-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-05",
       "category": null,
       "properties": [
         "padding-right"
       ],
       "cssRule": "padding-right: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Right padding ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-rg-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-05",
       "category": null,
       "properties": [
         "padding-right"
       ],
       "cssRule": "padding-right: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Right padding ───────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-t-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-06",
       "category": null,
       "properties": [
         "padding-top"
       ],
       "cssRule": "padding-top: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Top padding ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-t-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-06",
       "category": null,
       "properties": [
         "padding-top"
       ],
       "cssRule": "padding-top: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Top padding ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-t",
-      "id": "#03-05-XX",
+      "id": "#03-05-06",
       "category": null,
       "properties": [
         "padding-top"
       ],
       "cssRule": "padding-top: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Top padding ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-t-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-06",
       "category": null,
       "properties": [
         "padding-top"
       ],
       "cssRule": "padding-top: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Top padding ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-t-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-06",
       "category": null,
       "properties": [
         "padding-top"
       ],
       "cssRule": "padding-top: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Top padding ─────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-b-xs",
-      "id": "#03-05-XX",
+      "id": "#03-05-07",
       "category": null,
       "properties": [
         "padding-bottom"
       ],
       "cssRule": "padding-bottom: var(--space-1)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom padding ──────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-b-s",
-      "id": "#03-05-XX",
+      "id": "#03-05-07",
       "category": null,
       "properties": [
         "padding-bottom"
       ],
       "cssRule": "padding-bottom: var(--space-3)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom padding ──────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-b",
-      "id": "#03-05-XX",
+      "id": "#03-05-07",
       "category": null,
       "properties": [
         "padding-bottom"
       ],
       "cssRule": "padding-bottom: var(--space-6)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom padding ──────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-b-l",
-      "id": "#03-05-XX",
+      "id": "#03-05-07",
       "category": null,
       "properties": [
         "padding-bottom"
       ],
       "cssRule": "padding-bottom: var(--space-12)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom padding ──────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".padd-b-xl",
-      "id": "#03-05-XX",
+      "id": "#03-05-07",
       "category": null,
       "properties": [
         "padding-bottom"
       ],
       "cssRule": "padding-bottom: var(--space-16)",
       "responsive": true,
-      "description": ""
+      "description": "── Bottom padding ──────────────────────────────────────────────────────"
     }
   ]
 }

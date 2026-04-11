@@ -1,7 +1,7 @@
 {
   "folder": "01-text",
   "file": "01-fonts.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": false,
   "totalSelectors": 37,
   "content": [
@@ -19,7 +19,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -37,7 +37,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -55,7 +55,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -73,7 +73,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -91,7 +91,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -109,7 +109,7 @@
         "word-wrap",
         "white-space"
       ],
-      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
       "responsive": false,
       "description": "** Heading **"
     },
@@ -403,7 +403,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-fluid-xs",
-      "id": "#01-01-010",
+      "id": "#01-01-05",
       "category": null,
       "properties": [
         "font-size"
@@ -416,7 +416,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-fluid-s",
-      "id": "#01-01-010",
+      "id": "#01-01-05",
       "category": null,
       "properties": [
         "font-size"
@@ -429,7 +429,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-fluid",
-      "id": "#01-01-010",
+      "id": "#01-01-05",
       "category": null,
       "properties": [
         "font-size"
@@ -442,7 +442,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-fluid-l",
-      "id": "#01-01-010",
+      "id": "#01-01-05",
       "category": null,
       "properties": [
         "font-size"
@@ -455,7 +455,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-fluid-xl",
-      "id": "#01-01-010",
+      "id": "#01-01-05",
       "category": null,
       "properties": [
         "font-size"
@@ -468,7 +468,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-weight-0",
-      "id": "#01-01-015",
+      "id": "#01-01-06",
       "category": null,
       "properties": [
         "font-weight",
@@ -482,7 +482,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-weight-1",
-      "id": "#01-01-015",
+      "id": "#01-01-06",
       "category": null,
       "properties": [
         "font-weight"
@@ -495,7 +495,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-weight-2",
-      "id": "#01-01-015",
+      "id": "#01-01-06",
       "category": null,
       "properties": [
         "font-weight"
@@ -508,7 +508,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".font-weight-3",
-      "id": "#01-01-015",
+      "id": "#01-01-06",
       "category": null,
       "properties": [
         "font-weight"

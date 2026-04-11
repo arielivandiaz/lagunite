@@ -1,9 +1,9 @@
 folder: 04-decorators
 file: 04-border.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 86
-content[86]:
+totalSelectors: 89
+content[89]:
   - type: selector
     selectorType: class
     selector: .border-w-0
@@ -12,7 +12,7 @@ content[86]:
     properties[1]: border-width
     cssRule: "border-width: 0"
     responsive: true
-    description: ** Border Widths (Atomic) **
+    description: ** Border Widths **
   - type: selector
     selectorType: class
     selector: .border-w-1
@@ -21,7 +21,7 @@ content[86]:
     properties[1]: border-width
     cssRule: "border-width: var(--border-width-s)"
     responsive: true
-    description: ** Border Widths (Atomic) **
+    description: ** Border Widths **
   - type: selector
     selectorType: class
     selector: .border-w-2
@@ -30,7 +30,7 @@ content[86]:
     properties[1]: border-width
     cssRule: "border-width: var(--border-width-md)"
     responsive: true
-    description: ** Border Widths (Atomic) **
+    description: ** Border Widths **
   - type: selector
     selectorType: class
     selector: .border-w-4
@@ -39,7 +39,7 @@ content[86]:
     properties[1]: border-width
     cssRule: "border-width: calc(var(--border-width-md) * 2)"
     responsive: true
-    description: ** Border Widths (Atomic) **
+    description: ** Border Widths **
   - type: selector
     selectorType: class
     selector: .border-solid
@@ -48,7 +48,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: solid"
     responsive: true
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-dashed
@@ -57,7 +57,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: dashed"
     responsive: true
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-dotted
@@ -66,7 +66,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: dotted"
     responsive: true
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-double
@@ -75,7 +75,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: double"
     responsive: false
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-none
@@ -84,7 +84,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: none"
     responsive: true
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-inset
@@ -93,7 +93,7 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: inset"
     responsive: false
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-outset
@@ -102,88 +102,115 @@ content[86]:
     properties[1]: border-style
     cssRule: "border-style: outset"
     responsive: false
-    description: ** Border Styles (Atomic) **
+    description: ** Border Styles **
   - type: selector
     selectorType: class
     selector: .border-color-primary
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-primary)"
-    responsive: true
-    description: ** Border Colors (Atomic) **
+    cssRule: "border-color: var(--color-primary) !important"
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-primary-light
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-primary-light)"
+    cssRule: "border-color: var(--color-primary-light) !important"
     responsive: false
-    description: ** Border Colors (Atomic) **
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-primary-dark
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-primary-dark)"
+    cssRule: "border-color: var(--color-primary-dark) !important"
     responsive: false
-    description: ** Border Colors (Atomic) **
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-secondary
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-secondary)"
+    cssRule: "border-color: var(--color-secondary) !important"
     responsive: false
-    description: ** Border Colors (Atomic) **
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-success
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-success)"
-    responsive: true
-    description: ** Border Colors (Atomic) **
+    cssRule: "border-color: var(--color-success) !important"
+    responsive: false
+    description: ** Border Colors **
+  - type: selector
+    selectorType: class
+    selector: .border-color-success-alt
+    id: #04-04-03
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-success-light) !important"
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-warning
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-warning)"
+    cssRule: "border-color: var(--color-warning) !important"
     responsive: false
-    description: ** Border Colors (Atomic) **
+    description: ** Border Colors **
+  - type: selector
+    selectorType: class
+    selector: .border-color-warning-alt
+    id: #04-04-03
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-warning-light) !important"
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-error
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-error)"
-    responsive: true
-    description: ** Border Colors (Atomic) **
+    cssRule: "border-color: var(--color-error) !important"
+    responsive: false
+    description: ** Border Colors **
+  - type: selector
+    selectorType: class
+    selector: .border-color-error-alt
+    id: #04-04-03
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-error-light) !important"
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-black
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-almost-black)"
+    cssRule: "border-color: var(--color-almost-black) !important"
     responsive: false
-    description: ** Border Colors (Atomic) **
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-white
     id: #04-04-03
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-almost-white)"
-    responsive: true
-    description: ** Border Colors (Atomic) **
+    cssRule: "border-color: var(--color-almost-white) !important"
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-color-transparent
@@ -191,8 +218,8 @@ content[86]:
     category: null
     properties[1]: border-color
     cssRule: "border-color: transparent"
-    responsive: true
-    description: ** Border Colors (Atomic) **
+    responsive: false
+    description: ** Border Colors **
   - type: selector
     selectorType: class
     selector: .border-t
@@ -397,7 +424,7 @@ content[86]:
     id: #04-04-05
     category: null
     properties[1]: border-radius
-    cssRule: "border-radius: var(--radius-md)"
+    cssRule: "border-radius: var(--radius-m)"
     responsive: true
     description: ** Border Radius **
   - type: selector
@@ -415,7 +442,7 @@ content[86]:
     id: #04-04-05
     category: null
     properties[1]: border-radius
-    cssRule: "border-radius: var(--radius-l)"
+    cssRule: "border-radius: var(--radius-xl)"
     responsive: true
     description: ** Border Radius **
   - type: selector
@@ -775,6 +802,6 @@ content[86]:
     id: #04-04-09
     category: null
     properties[2]: border,border-radius
-    cssRule: "border: var(--border)\nborder-radius: var(--radius-md)"
+    cssRule: "border: var(--border)\nborder-radius: var(--radius-m)"
     responsive: false
     description: ** Border Shortcuts **

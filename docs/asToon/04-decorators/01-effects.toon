@@ -1,720 +1,612 @@
 folder: 04-decorators
 file: 01-effects.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 79
-content[79]:
-  - type: selector
-    selectorType: class
-    selector: .content-none
-    id: #04-01-XX
-    category: null
-    properties[1]: content
-    cssRule: "content: none"
-    responsive: true
-    description: ** Content Utilities **
-  - type: selector
-    selectorType: class
-    selector: .content-empty
-    id: #04-01-XX
-    category: null
-    properties[1]: content
-    cssRule: "content: ''"
-    responsive: true
-    description: ** Content Utilities **
+totalSelectors: 67
+content[67]:
   - type: selector
     selectorType: class
     selector: .appearance-none
-    id: #04-01-XX
+    id: #04-01-01
     category: null
     properties[1]: appearance
     cssRule: "appearance: none"
     responsive: true
-    description: ** Appearance **
+    description: ── Appearance ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .appearance-auto
-    id: #04-01-XX
+    id: #04-01-01
     category: null
     properties[1]: appearance
     cssRule: "appearance: auto"
     responsive: true
-    description: ** Appearance **
+    description: ── Appearance ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .resize-none
-    id: #04-01-XX
+    id: #04-01-02
     category: null
     properties[1]: resize
     cssRule: "resize: none"
     responsive: true
-    description: ** Resize **
+    description: ── Resize ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .resize
-    id: #04-01-XX
+    id: #04-01-02
     category: null
     properties[1]: resize
     cssRule: "resize: both"
     responsive: true
-    description: ** Resize **
+    description: ── Resize ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .resize-x
-    id: #04-01-XX
+    id: #04-01-02
     category: null
     properties[1]: resize
     cssRule: "resize: horizontal"
     responsive: true
-    description: ** Resize **
+    description: ── Resize ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .resize-y
-    id: #04-01-XX
+    id: #04-01-02
     category: null
     properties[1]: resize
     cssRule: "resize: vertical"
     responsive: true
-    description: ** Resize **
-  - type: selector
-    selectorType: class
-    selector: .object-contain
-    id: #04-01-XX
-    category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: contain"
-    responsive: true
-    description: ** Object Fit **
-  - type: selector
-    selectorType: class
-    selector: .object-cover
-    id: #04-01-XX
-    category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: cover"
-    responsive: true
-    description: ** Object Fit **
-  - type: selector
-    selectorType: class
-    selector: .object-fill
-    id: #04-01-XX
-    category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: fill"
-    responsive: true
-    description: ** Object Fit **
-  - type: selector
-    selectorType: class
-    selector: .object-none
-    id: #04-01-XX
-    category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: none"
-    responsive: true
-    description: ** Object Fit **
-  - type: selector
-    selectorType: class
-    selector: .object-scale-down
-    id: #04-01-XX
-    category: null
-    properties[1]: object-fit
-    cssRule: "object-fit: scale-down"
-    responsive: true
-    description: ** Object Fit **
-  - type: selector
-    selectorType: class
-    selector: .object-center
-    id: #04-01-XX
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: center"
-    responsive: true
-    description: ** Object Position **
-  - type: selector
-    selectorType: class
-    selector: .object-top
-    id: #04-01-XX
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: top"
-    responsive: true
-    description: ** Object Position **
-  - type: selector
-    selectorType: class
-    selector: .object-bottom
-    id: #04-01-XX
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: bottom"
-    responsive: true
-    description: ** Object Position **
-  - type: selector
-    selectorType: class
-    selector: .object-left
-    id: #04-01-XX
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: left"
-    responsive: true
-    description: ** Object Position **
-  - type: selector
-    selectorType: class
-    selector: .object-right
-    id: #04-01-XX
-    category: null
-    properties[1]: object-position
-    cssRule: "object-position: right"
-    responsive: true
-    description: ** Object Position **
+    description: ── Resize ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-normal
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: normal"
     responsive: true
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-multiply
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: multiply"
     responsive: true
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-screen
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: screen"
     responsive: true
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-overlay
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: overlay"
     responsive: true
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-darken
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: darken"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-lighten
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: lighten"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-color-dodge
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: color-dodge"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-color-burn
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: color-burn"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-hard-light
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: hard-light"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-soft-light
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: soft-light"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-difference
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: difference"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .mix-blend-exclusion
-    id: #04-01-XX
+    id: #04-01-03
     category: null
     properties[1]: mix-blend-mode
     cssRule: "mix-blend-mode: exclusion"
     responsive: false
-    description: ** Mix Blend Mode **
+    description: ── Mix blend mode ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-normal
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: normal"
     responsive: true
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-multiply
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: multiply"
     responsive: true
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-screen
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: screen"
     responsive: true
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-overlay
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: overlay"
     responsive: false
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-darken
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: darken"
     responsive: false
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .bg-blend-lighten
-    id: #04-01-XX
+    id: #04-01-04
     category: null
     properties[1]: background-blend-mode
     cssRule: "background-blend-mode: lighten"
     responsive: false
-    description: ** Background Blend Mode **
+    description: ── Background blend mode ────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .isolate
-    id: #04-01-XX
+    id: #04-01-05
     category: null
     properties[1]: isolation
     cssRule: "isolation: isolate"
     responsive: true
-    description: ** Isolation **
+    description: ── Isolation ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .isolation-auto
-    id: #04-01-XX
+    id: #04-01-05
     category: null
     properties[1]: isolation
     cssRule: "isolation: auto"
     responsive: true
-    description: ** Isolation **
+    description: ── Isolation ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .backdrop-blur-none
-    id: #04-01-XX
+    id: #04-01-06
     category: null
     properties[1]: backdrop-filter
     cssRule: "backdrop-filter: blur(0)"
     responsive: true
-    description: ** Backdrop Filter **
+    description: ── Backdrop blur ────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .backdrop-blur-s
-    id: #04-01-XX
+    id: #04-01-06
     category: null
     properties[1]: backdrop-filter
     cssRule: "backdrop-filter: blur(4px)"
     responsive: true
-    description: ** Backdrop Filter **
+    description: ── Backdrop blur ────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .backdrop-blur
-    id: #04-01-XX
+    id: #04-01-06
     category: null
     properties[1]: backdrop-filter
     cssRule: "backdrop-filter: blur(8px)"
     responsive: true
-    description: ** Backdrop Filter **
+    description: ── Backdrop blur ────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .backdrop-blur-l
-    id: #04-01-XX
+    id: #04-01-06
     category: null
     properties[1]: backdrop-filter
     cssRule: "backdrop-filter: blur(16px)"
     responsive: true
-    description: ** Backdrop Filter **
+    description: ── Backdrop blur ────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .backdrop-blur-xl
-    id: #04-01-XX
+    id: #04-01-06
     category: null
     properties[1]: backdrop-filter
     cssRule: "backdrop-filter: blur(32px)"
     responsive: true
-    description: ** Backdrop Filter **
+    description: ── Backdrop blur ────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .box-decoration-clone
-    id: #04-01-XX
+    id: #04-01-07
     category: null
     properties[1]: box-decoration-break
     cssRule: "box-decoration-break: clone"
     responsive: false
-    description: ** Box Decoration Break **
+    description: ── Box decoration break ─────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .box-decoration-slice
-    id: #04-01-XX
+    id: #04-01-07
     category: null
     properties[1]: box-decoration-break
     cssRule: "box-decoration-break: slice"
     responsive: false
-    description: ** Box Decoration Break **
+    description: ── Box decoration break ─────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .break-inside-auto
-    id: #04-01-XX
+    id: #04-01-08
     category: null
     properties[1]: break-inside
     cssRule: "break-inside: auto"
     responsive: false
-    description: ** Break Inside **
+    description: ── Break inside ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .break-inside-avoid
-    id: #04-01-XX
+    id: #04-01-08
     category: null
     properties[1]: break-inside
     cssRule: "break-inside: avoid"
     responsive: false
-    description: ** Break Inside **
+    description: ── Break inside ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .break-inside-avoid-page
-    id: #04-01-XX
+    id: #04-01-08
     category: null
     properties[1]: break-inside
     cssRule: "break-inside: avoid-page"
     responsive: false
-    description: ** Break Inside **
+    description: ── Break inside ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .break-inside-avoid-column
-    id: #04-01-XX
+    id: #04-01-08
     category: null
     properties[1]: break-inside
     cssRule: "break-inside: avoid-column"
     responsive: false
-    description: ** Break Inside **
+    description: ── Break inside ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".hoverable-s:hover"
-    id: #04-01-XX
+    id: #04-01-09
     category: null
     properties[1]: transform
     cssRule: "transform: scale(1.1)"
     responsive: true
-    description: ** Hoverable (from decorators.css) **
+    description: ── Hoverable ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".hoverable:hover"
-    id: #04-01-XX
+    id: #04-01-09
     category: null
     properties[1]: transform
     cssRule: "transform: scale(1.2)"
     responsive: true
-    description: ** Hoverable (from decorators.css) **
+    description: ── Hoverable ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".hoverable-l:hover"
-    id: #04-01-XX
+    id: #04-01-09
     category: null
     properties[1]: transform
     cssRule: "transform: scale(1.5)"
     responsive: true
-    description: ** Hoverable (from decorators.css) **
+    description: ── Hoverable ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".hoverable-xl:hover"
-    id: #04-01-XX
+    id: #04-01-09
     category: null
     properties[1]: transform
     cssRule: "transform: scale(1.8)"
     responsive: true
-    description: ** Hoverable (from decorators.css) **
+    description: ── Hoverable ────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .touch-auto
-    id: #04-01-XX
+    id: #04-01-10
     category: null
     properties[1]: touch-action
     cssRule: "touch-action: auto"
     responsive: true
-    description: ** Touch Action **
+    description: ── Touch action ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .touch-none
-    id: #04-01-XX
+    id: #04-01-10
     category: null
     properties[1]: touch-action
     cssRule: "touch-action: none"
     responsive: true
-    description: ** Touch Action **
+    description: ── Touch action ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .touch-pan-x
-    id: #04-01-XX
+    id: #04-01-10
     category: null
     properties[1]: touch-action
     cssRule: "touch-action: pan-x"
     responsive: true
-    description: ** Touch Action **
+    description: ── Touch action ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .touch-pan-y
-    id: #04-01-XX
+    id: #04-01-10
     category: null
     properties[1]: touch-action
     cssRule: "touch-action: pan-y"
     responsive: true
-    description: ** Touch Action **
+    description: ── Touch action ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .touch-manipulation
-    id: #04-01-XX
+    id: #04-01-10
     category: null
     properties[1]: touch-action
     cssRule: "touch-action: manipulation"
     responsive: true
-    description: ** Touch Action **
+    description: ── Touch action ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .will-change-auto
-    id: #04-01-XX
+    id: #04-01-11
     category: null
     properties[1]: will-change
     cssRule: "will-change: auto"
     responsive: false
-    description: ** Will Change **
+    description: ── Will change ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .will-change-scroll
-    id: #04-01-XX
+    id: #04-01-11
     category: null
     properties[1]: will-change
     cssRule: "will-change: scroll-position"
     responsive: false
-    description: ** Will Change **
+    description: ── Will change ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .will-change-contents
-    id: #04-01-XX
+    id: #04-01-11
     category: null
     properties[1]: will-change
     cssRule: "will-change: contents"
     responsive: false
-    description: ** Will Change **
+    description: ── Will change ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .will-change-transform
-    id: #04-01-XX
+    id: #04-01-11
     category: null
     properties[1]: will-change
     cssRule: "will-change: transform"
     responsive: false
-    description: ** Will Change **
+    description: ── Will change ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .scroll-sooth
-    id: #04-01-XX
+    selector: .scroll-smooth
+    id: #04-01-12
     category: null
     properties[1]: scroll-behavior
     cssRule: "scroll-behavior: smooth"
     responsive: true
-    description: ** Scroll Behavior **
+    description: ── Scroll behavior ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .scroll-auto
-    id: #04-01-XX
+    id: #04-01-12
     category: null
     properties[1]: scroll-behavior
     cssRule: "scroll-behavior: auto"
     responsive: true
-    description: ** Scroll Behavior **
+    description: ── Scroll behavior ──────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-none
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-type
     cssRule: "scroll-snap-type: none"
     responsive: true
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-x
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-type
     cssRule: "scroll-snap-type: x var(--snap-strictness, mandatory)"
     responsive: true
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-y
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-type
     cssRule: "scroll-snap-type: y var(--snap-strictness, mandatory)"
     responsive: true
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-both
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-type
     cssRule: "scroll-snap-type: both var(--snap-strictness, mandatory)"
     responsive: true
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-mandatory
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: "--snap-strictness"
     cssRule: "--snap-strictness: mandatory"
     responsive: false
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-proximity
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: "--snap-strictness"
     cssRule: "--snap-strictness: proximity"
     responsive: false
-    description: ** Scroll Snap Type **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-start
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-align
     cssRule: "scroll-snap-align: start"
     responsive: true
-    description: ** Scroll Snap Align **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-end
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-align
     cssRule: "scroll-snap-align: end"
     responsive: true
-    description: ** Scroll Snap Align **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-center
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-align
     cssRule: "scroll-snap-align: center"
     responsive: true
-    description: ** Scroll Snap Align **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-normal
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-stop
     cssRule: "scroll-snap-stop: normal"
     responsive: false
-    description: ** Scroll Snap Stop **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .snap-always
-    id: #04-01-XX
+    id: #04-01-13
     category: null
     properties[1]: scroll-snap-stop
     cssRule: "scroll-snap-stop: always"
     responsive: false
-    description: ** Scroll Snap Stop **
+    description: ── Scroll snap ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .caret-transparent
-    id: #04-01-XX
+    id: #04-01-14
     category: null
     properties[1]: caret-color
     cssRule: "caret-color: transparent"
     responsive: false
-    description: ** Caret Color **
+    description: ── Caret / accent color ─────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .caret-current
-    id: #04-01-XX
+    id: #04-01-14
     category: null
     properties[1]: caret-color
     cssRule: "caret-color: currentColor"
     responsive: false
-    description: ** Caret Color **
+    description: ── Caret / accent color ─────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .accent-auto
-    id: #04-01-XX
+    id: #04-01-14
     category: null
     properties[1]: accent-color
     cssRule: "accent-color: auto"
     responsive: false
-    description: ** Accent Color **
+    description: ── Caret / accent color ─────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .accent-current
-    id: #04-01-XX
+    id: #04-01-14
     category: null
     properties[1]: accent-color
     cssRule: "accent-color: currentColor"
     responsive: false
-    description: ** Accent Color **
+    description: ── Caret / accent color ─────────────────────────────────────────────────
 customProperties[2]{property,value}:
   "--snap-strictness",mandatory
   "--snap-strictness",proximity

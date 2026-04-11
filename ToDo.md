@@ -1,3 +1,190 @@
+# Lagunite 2.0 – ToDo de reenganche (Mar 2026)
+
+> **Objetivo:** Retomar el framework y llevarlo a un MVP competitivo frente a frameworks modernos (Tailwind, Bootstrap, etc.), priorizando **claridad**, **ergonomía para layouts reales** y **buenas demos/documentación**.
+
+---
+
+## 1️⃣ Re-conocer el estado actual del CSS
+
+- **1.1 Auditoría rápida de utilidades existentes**
+  - [x] Repasar todos los archivos en `src/css` por capas:
+    - [x] `00-config`: paleta, tipografía, medidas, base.
+    - [x] `01-text`: `fonts`, `typography`, `TEXT.md`.
+    - [x] `02-colors`: texto, fondo, borde, `COLORS.md`.
+    - [x] `03-layout`: flex, grid, position, margin/padding, size/width/height, overflow, containers.
+    - [x] `04-decorators`: efectos, sombras, opacidad, transforms, transitions, animations, filters.
+    - [x] `05-atoms`: buttons, inputs, tables, lists, figures, badges, avatars.
+    - [x] `06-08` (cuando existan): moléculas, compuestos, organismos.
+    - [x] `10-misc`: display, cursor, pseudo.
+  - [x] Anotar en un documento (por ahora puede ser `ToDoAriel.md`) los puntos raros / dudas:
+    - [x] Clases duplicadas entre archivos (ej. `object-*` en `effects` vs `containers`).
+    - [x] Typos o nombres inconsistentes (ej. `scroll-sooth` vs `scroll-smooth`).
+    - [x] IDs `@ID` sin seguir del todo el patrón.
+  - **Resumen:** Ver `ToDoAriel.md` (import roto y variables de borde corregidos; duplicados y typos anotados).
+
+- **1.2 Definir “reglas de nombre” definitivas**
+  - [x] Destilar una **mini carta de nombres** (máx. 1–2 páginas) que responda:
+    - [x] Cómo se construyen las clases: base → prefijo responsive (`x` / `d`) → variante.
+    - [x] Qué abreviaturas están permitidas (`marg`, `padd`, `ai`, `jc`, etc.) y cuáles NO.
+    - [x] Convención para nuevas familias (flex/grid/layout/atoms/organisms).
+  - [x] Volcar esa carta en un archivo visible (por ejemplo `docs/PROMPT_GUIDE.md` o similar) y enlazarla desde la documentación principal.
+  - **Resumen:** Carta en `lagunite-web/src/pages/docs/nomenclature.astro`; auditoría en `ToDoAriel.md` §1.2. Enlace en la navegación de la doc («Nomenclature»).
+
+---
+
+## 0️⃣ Prioridad de pendientes (orden recomendado)
+
+### P0 (hacer primero: desbloquea MVP)
+- **2.1 Pulir layout core:** validar flex/grid/containers/spacing/position/overflow con ejemplos reales.
+- **2.2 Decorators modernos:** terminar el set (effects sin duplicados, opacity/transforms/transitions/animations/filters) y definir 2–3 combos de demos.
+- **3.1 Átomos para uso real:** revisar `02-inputs.css` contra casos reales y completar `figures/table/lists` + `badges/avatars` para landing/dashboard.
+- **4.1 Cheatsheet + guía de lectura de clases:** para que onboarding/migración sea directo.
+
+### P1 (construcción de sistema)
+- **3.2 Moléculas:** form groups, alerts/toasts, dropdown/tooltip/breadcrumb (mínimo viable).
+- **3.3 Organismos:** navbar + sidebar + footer.
+- **4.2 Estructura mínima de docs:** organización por design system / utilities / components.
+
+### P2 (calidad y distribución)
+- **4.3 Demos reales (`web/demo/*`):** landing, dashboard, forms y páginas de componentes.
+- **5.1 Build y distribución:** distribución completa (core/utility-only) e import order estable.
+- **5.2 Calidad:** stylelint + convenciones + flujo de pruebas visuales/manuales.
+
+## 2️⃣ MVP de utilidades para sitios reales
+
+> Meta: con solo `lagunite.css` se pueda montar **un landing**, **un dashboard simple** y **un formulario completo**, sin pelear con el naming.
+
+- **2.1 Pulir layout core**
+  - [ ] Revisar y probar en ejemplos reales:
+    - [x] `03-layout/01-flex.css` – que las combinaciones `row/col` + `x*/d*` cubran los casos típicos (stack en mobile, filas en desktop, centrar contenido).
+      - **Resumen:** Reescritura completa. Gap: reemplazado margin-hack (`f-gap-* > div`) por CSS `gap` nativo con tokens `--space-*` (gap-0 a gap-16, gap-x-*, gap-y-*). Añadidos: `flex-1/auto/initial/none`, `flex-grow/shrink-0`, `order-*` (first/last/none/1-5), `ai-bl` (baseline), `flex-wrap/nowrap` responsive. Corregidos: typo `.f-gap-`, `flex1` → `flex-1`, media query `only screen and` inconsistente. IDs concretos (#03-01-01 a 12).
+    - [x] `03-layout/02-grid.css` – quitar el “Pending to review”: probar `grid-auto`, `grid-cols-*`, `col-span-*`, etc. en un HTML de demo.
+      - **Resumen:** Reescritura completa para production. Eliminado `grid-gap` → `gap`. Eliminadas `.g-gap-*` duplicadas. Unificado alignment con flex. IDs #03-02-01 a 17. Eliminado `/* Pending to review */`. Reemplazado `grid-gap` (deprecado) por `gap` moderno. Eliminadas clases gap duplicadas `.g-gap-*` — ahora se usan las `.gap-*` de `01-flex.css` (CSS `gap` funciona en flex Y grid). Eliminadas clases de alignment duplicadas con flex — se reusan `.jc-c`, `.ai-c`, `.ac-c`, `.as-c` de flex. Renombradas grid-specific alignment a estilo abreviado: `.ji-c`, `.pi-c`, `.js-c`, `.ps-c`. `.grid` ya no fuerza `place-items: center`. `.dgrid` corregido a 1-col. IDs reorganizados (#03-02-01 a 17). Creados: LAYOUT-GRID.md, GRID-CHEATSHEET.md, skill lagunite-grid.
+    - [x] `03-layout/06-containers.css` – confirmar que `container`, `container-m`, `container-hero`, `section-container` sean suficientes para la mayoría de layouts.
+      - **Resumen:** Reescritura production-ready. Corregido bug: `constrain-s/m/l/xl` usaban tokens inexistentes (`--space-40/48/56/64`), reemplazados por rem directos. Corregido `container-debug::before`: padre ahora tiene `position: relative`. Debug label muestra clases del elemento (`content: attr(class)`). Eliminado ID gap (#03-06-12 faltante). Reorganizado en 10 IDs limpios (#03-06-01 a 10). Mantenidos todos los containers semánticos (prose, card, sidebar, modal, hero, narrow, wide). Demo `demo-hero-containers.html` extendido: 12 secciones mostrando size scale, semánticos, section containers, combos, constrains, object-fit, fluid, debug y comparación visual. Creados: LAYOUT-CONTAINERS.md, CONTAINERS-CHEATSHEET.md, skill lagunite-containers.
+    - [x] `03-layout/04-margin.css` y `03-layout/05-padding.css` – revisar escalas de espacio y prefijos responsive.
+      - **Resumen:** Reescritura production-ready. Margin: corregido typo "Marging", agregado `.marg-auto`, formato compacto, IDs #03-04-01 a 09. Padding: corregidos 4 bugs de naming (`.xpadd-l-xl`→`lf-xl`, `.dpadd-l-xl`→`lf-xl`, `.dpadd-r-s`→`rg-s`, `.dpadd-r`→`rg`), IDs #03-05-01 a 09. Creados: LAYOUT-SPACING-CHEATSHEET.md, skill lagunite-spacing.
+    - [x] `03-layout/03-position.css`, `03-layout/07-overflow.css`, `03-layout/08-size.css`, `03-layout/09-width.css`, `03-layout/10-height.css` – verificar que permiten construir headers fijos, sidebars, modales, etc.
+      - **Resumen:** Position: eliminado sistema z-index duplicado (`.z-0`), corregido `.ddpa-rg`→`.dpa-rg`, arreglado `.center` margin override, eliminado `/* ToDo Check */`, IDs #03-03-01 a 10. Overflow: agregado thumb background `var(--gray-400)`, IDs #03-07-01 a 05. Size: eliminados aliases duplicados (`.wmin`→`.w-min`), IDs secuenciales. Width: corregidas 4 media queries invalidas (`max-min-width`, breakpoints 281-767px). Height: corregidas 6 media queries invalidas (`max-min-height`, `max-height`, `min-height` usados en lugar de `max-width`/`min-width`).
+
+- **2.2 Decorators modernos y coherentes**
+  - [ ] Consolidar el set de decoradores:
+    - [x] `04-decorators/01-effects.css` – limpiar duplicados (`object-*`/`object-position`) en favor de una sola fuente de verdad.
+      - **Resumen:** Reescritura completa. Eliminados `content-none`/`content-empty` (movidos a `10-misc/03-pseudo.css`). Eliminados `object-fit`/`object-position` (viven en `06-containers.css`). Corregido typo `scroll-sooth` → `scroll-smooth` (+ responsive). IDs concretos #04-01-01 a 16. Header de archivo con notas de dónde viven las clases movidas.
+    - [x] `02-shadows.css` – revisar que las sombras (`shadow-s`, `shadow`, `shadow-l`, `shadow-xl`, `shadow-inner`) tengan un look moderno “enterprise”.
+    - [x] `03-opacity.css`, `05-transforms.css`, `06-transitions.css`, `07-animations.css`, `08-filters.css` – confirmar escalas (valores) y naming.
+      - **Resumen:** Opacity ampliado a 14 pasos (0–100) + hover variants. Transforms: scale con 90/95/105/110, rotaciones negativas, translate con tokens --space-* y porcentuales ±50%/±full, skew, 9 origins. Transitions: shorthand `.transition`, `.transition-none`, shadow, durations hasta 1000ms, delays hasta 500ms. Animations: slide-in-down/slide-out-up, shake, fill-mode/direction helpers, `prefers-reduced-motion`. Filters: brightness 75/125/200, saturate-200, invert, sepia, hue-rotate, backdrop-blur. Duplicado `.grayscale-100` eliminado.
+  - [x] Definir 2–3 “combos” recomendados (ej. `hoverable + shadow`, `animate-*` + `transition-*`) para las demos.
+
+- **2.3 Miscelánea imprescindible**
+  - [x] `10-misc/01-display.css` y `10-misc/display.css` – decidir cuál es la fuente oficial para `.d-block`, `.d-flex`, `.d-grid`, `.d-none` y limpiar duplicados.
+    - **Resumen:** `01-display.css` es la fuente oficial. Eliminadas clases de visibilidad duplicadas (`visibility-visible` → solo `.visible`). Corregida nomenclatura responsive de visibilidad (`xd-visible` → `xvisible`). Añadidos `.d-inline-flex`, `.d-contents`. IDs concretos #10-01-01 a 04.
+  - [x] `10-misc/02-cursor.css` – cubrir cursores típicos (`pointer`, `not-allowed`, `text`, `move`).
+    - **Resumen:** Añadidos `cursor-default`, `cursor-grab`, `cursor-grabbing`, `cursor-wait`, `cursor-help`, `cursor-crosshair`, `cursor-none`, `select-auto`. IDs concretos #10-02-01 a 05.
+  - [x] `10-misc/03-pseudo.css` – revisar utilidades de pseudo-elementos si las hay y documentarlas mínimamente.
+    - **Resumen:** `content-none`/`content-empty` ahora son canónicos aquí (eliminados de effects). IDs concretos #10-03-01 a 09. Creados: MISC-CHEATSHEET.md, skill lagunite-misc.
+
+---
+
+## 3️⃣ Componentes base para competir con frameworks modernos
+
+> Meta: un set pequeño pero sólido de componentes que se vean “enterprise”, sean fáciles de leer y aparezcan en todas las demos.
+
+- **3.1 Átomos clave (`05-atoms`)**
+  - [x] `01-buttons.css`
+    - [x] Asegurar: `.btn`, tamaños (`.btn.size-xs`, `.btn.size-s`, `.btn`, `.btn.size-l`, `.btn.size-xl`).
+    - [x] Variantes: `.btn` (primary), `.btn.secondary`, `.btn.tertiary`, `.btn.success`, `.btn.warning`, `.btn.error` (+ `.alt` outline).
+    - [x] Estados: `.btn.disabled` / `:disabled`, `.btn.ghost`, `.btn.alt` (outline), `.btn.pressed`, `.btn.selected`, `.btn.pulse`.
+  - [x] `02-inputs.css`
+    - [x] Confirmar que `.input`, `.textarea`, `.select`, `.checkbox`, `.radio`, `.switch`, `.range` estén bien alineados con el design system.
+    - **Resumen:** Reescritura completa para production. Se corrigió el hide global de `input[type="checkbox"]` (ahora scoped a `.checkbox`), se reemplazaron todos los px/colores hardcodeados por tokens, se consolidó toggle/switch, se limpió radio-group/btns/divs, se añadió `font-family: var(--font-sans)` en todos los controles, se unificó `border-width` via `--border-width-s`/`--border-width-md`, se agregaron `focus-visible` y `:has(:disabled)`. IDs actualizados en la doc astro.
+  - [x] `05-figures.css`, `03-table.css`, `04-lists.css`
+    - [x] Garantizar que tablas, listas y figuras tengan estilos por defecto limpios y consistentes.
+    - **Resumen:** Tables: `margin: 10px` → token, `font-weight: 900` → token, `--radius-lg` → `--radius-l`, `box-shadow` → `var(--shadow-s)`, breakpoint 640 → 639, rgba hardcoded → tokens. Lists: expandido de 17 a ~80 líneas, rgba hardcoded → token, añadidos `.list-none`, `.list-inline`, `.list-spaced`, markers (disc/circle/square/decimal/alpha/roman), position (inside/outside), responsive. Figures: eliminado selector `.line-v` duplicado.
+  - [x] `06-badges.css`, `07-avatars.css`
+    - [x] Revisar variantes y estados (`badge-*`, `avatar-*`, `avatar-status-*`) y prepararlos para usarlos en dashboard/landing.
+    - **Resumen:** Badges: IDs renumerados #05-06-01 a 15 (evitar colisión con tables #05-03-*), breakpoint 640 → 639. Avatars: IDs renumerados #05-07-01 a 11 (evitar colisión con lists #05-04-*), breakpoint 640 → 639. Creados: ATOMS-CHEATSHEET.md, skill lagunite-atoms.
+
+- **3.2 Moléculas y compuestos mínimos viables**
+  - [x] Crear/terminar moléculas básicas:
+    - [x] `06-molecules/01-form-groups.css` – `form-group`, `form-label`, `form-help`, `form-error-msg`, `input-group`, `has-error`, `has-success`.
+    - [x] `06-molecules/02-alerts.css` – `alert`, `alert-*`, `toast`.
+    - [x] `06-molecules/03-dropdown.css`, `06-molecules/04-tooltip.css`, `06-molecules/05-breadcrumb.css` (aunque sea en versión simple).
+    - **Resumen:** 5 archivos creados. form-groups: `.form-group`, `.form-label`, `.form-help`, `.form-error-msg`, `.has-error`/`.has-success`, `.input-group` con prepend/append, `.form-row`, night mode. alerts: `.alert-success/warning/error/info`, `.alert-dismissible`, `.alert-close`, `.toast`, night. dropdown: `.dropdown`, `.dropdown-menu`, `.dropdown-item`, `.dropdown-divider`, `.dropdown-header`, `.dropdown-menu-right`, night. tooltip: CSS-only `[data-tooltip]`, 4 positions, night. breadcrumb: `.breadcrumb`, `.breadcrumb-item`, arrow/dot separators, night.
+  - [x] Crear/terminar compuestos:
+    - [x] `07-compounds/01-cards.css` – `card`, `card-header`, `card-body`, `card-footer`, variantes (`card-elevated`, `card-bordered`, etc.).
+    - [x] `07-compounds/02-modals.css` – overlay, caja, tamaños y animaciones básicas.
+    - [ ] `07-compounds/03-media.css`, `07-compounds/04-accordion.css` si da tiempo.
+    - **Resumen:** cards: `.card`, `.card-header/body/footer`, `.card-img-top/bottom`, `.card-title/text`, `.card-elevated/flat/hover`, color variants (primary/success/warning/error), `.card-horizontal`, `.card-group`, night, mobile. modals: `.modal-overlay` + `.open`, `.modal`, `.modal-header/body/footer`, `.modal-close`, sizes (s/l/xl/fullscreen), scale+fade animation, night.
+
+- **3.3 Organismos para estructura de sitio**
+  - [x] `08-organisms/01-navbar.css` – navbar responsive con brand, links y burger.
+  - [x] `08-organisms/02-sidebar.css` – sidebar para dashboard con menú y estados activos.
+  - [x] `08-organisms/03-footer.css` – footer simple multi-columna.
+  - **Resumen:** navbar: `.navbar`, `.navbar-brand`, `.navbar-nav`, `.navbar-link` (hover/active), `.navbar-burger` (hamburger), `.navbar-primary/transparent/sticky`, mobile drawer con `.open`, night. sidebar: `.sidebar`, `.sidebar-header/nav/section/section-title/link/footer`, `.sidebar-compact` (icon-only), `.sidebar-dark`, mobile off-canvas, night. footer: `.footer`, `.footer-grid`, `.footer-title/links/link`, `.footer-bottom`, `.footer-dark/minimal`, single-col on mobile, night.
+
+---
+
+## 4️⃣ Documentación y demos (MVP público)
+
+> Meta: que alguien que viene de Tailwind pueda entender Lagunite en 10–15 minutos y ver demos bonitas.
+
+- **4.1 Cheatsheet y “cómo leer una clase”**
+  - [ ] Actualizar/crear `docs/CHEATSHEET.md` con:
+    - [ ] Ejemplos de decodificación (`.xgrid-cols-2`, `.marg-h-s`, `.container-m`, `.jc-c`, `.ai-fe`).
+    - [ ] Tabla “Tailwind → Lagunite” con ~30–50 equivalencias clave (flex, grid, spacing, sizing, typography).
+  - [ ] Integrar la carta de nombres (del punto 1.2) y el `PROMPT_GUIDE` si existe.
+
+- **4.2 Estructura mínima de docs**
+  - [ ] Crear/organizar:
+    - [ ] `docs/getting-started/installation.md` y `quick-start.md`.
+    - [ ] `docs/design-system/` para colores, tipografía, spacing, borders, breakpoints.
+    - [ ] `docs/utilities/` para layout, spacing, sizing, effects, animations.
+    - [ ] `docs/components/` para botones, inputs, cards, alerts, navbar, etc.
+
+- **4.3 Páginas de demo reales (en `web/`)**
+  - [ ] `web/demo/landing.html` – landing de marketing simple usando containers, grid/flex, buttons, cards, badges.
+  - [ ] `web/demo/dashboard.html` – layout con sidebar, navbar, cards, tablas, badges y avatars.
+  - [ ] `web/demo/forms.html` – formulario complejo usando `form-group`, `input`, `select`, `checkbox`, `radio`, `switch`, `range`, `alert`.
+  - [ ] `web/demo/components/*.html` – páginas pequeñas para botones, inputs, badges, avatars, alerts, cards, modals, navbar.
+
+---
+
+## 5️⃣ Tooling y calidad (después del MVP visual)
+
+> Meta: que Lagunite no solo “se vea bien”, sino que tenga músculo para crecer como framework serio.
+
+- **5.1 Build y distribución**
+  - [ ] Revisar configuración de Vite/PostCSS.
+  - [ ] Asegurar minificación y generación de `lagunite.css` + variantes (core, utilities-only).
+  - [ ] Garantizar que `lagunite.css` importe todas las nuevas utilidades y componentes en orden correcto (config → utilities → components).
+
+- **5.2 Calidad**
+  - [ ] Añadir stylelint con una configuración sencilla para mantener consistencia.
+  - [ ] Definir convenciones básicas para contribuciones (indentación, orden de propiedades, etc.).
+  - [ ] Montar al menos un flujo de pruebas visuales/manuales para las demos principales.
+
+---
+
+## 6️⃣ Enfoque temporal sugerido
+
+- **Esta semana (volver al ritmo)**  
+  - [x] Hacer la auditoría del CSS (`src/css`) y anotar todo en `ToDoAriel.md`.  
+  - [x] Definir y escribir la carta de nombres.  
+  - [ ] Pulir `flex`, `grid` y `containers` con ejemplos reales (2.1).
+  - [ ] Terminar decoradores restantes y definir 2–3 combos recomendados (2.2).
+
+- **Este mes (MVP visual competitivo)**  
+  - [ ] Tener listo el set de utilidades de layout/decorators sin incoherencias (P0).  
+  - [ ] Solidificar átomos clave para uso real (inputs/figures/table/lists + badges/avatars) (3.1).  
+  - [ ] Escribir `getting-started` + cheatsheet (4.1).  
+  - [ ] Crear al menos 2 páginas de demo (`landing`, `forms`) (P2, empezar esqueleto ya).
+
+- **Antes de publicar alpha en npm**  
+  - [ ] Tener navbar, sidebar y cards/modals funcionando y documentados.  
+  - [ ] Contar con `lagunite.css` estable y un pequeño script de build.  
+  - [ ] Sentir que puedes montar un proyecto real solo con Lagunite sin pelearte con las clases.
+
 # Lagunite 2.0 - Development Roadmap
 
 > **Last Updated:** November 11, 2025  
@@ -169,72 +356,74 @@ Esencial para perfiles de usuario.
 Grupos de átomos que funcionan como una unidad simple.
 
 ### 1.2.5 Form Molecules (Groups)
-- [ ] Create `src/css/06-molecules/01-form-groups.css`
-- [ ] Form Group Container: `.form-group` (controls spacing)
-- [ ] Form Label: `.form-label` (with required asterisk support)
-- [ ] Form Helper/Error: `.form-help`, `.form-error-msg`
-- [ ] Input Group: `.input-group` (Input + Button attached, or Icon inside Input)
-- [ ] Validation Wrappers: `.has-error`, `.has-success`
-- [ ] Update ID system: `#06-01-XX`
+- [x] Create `src/css/06-molecules/01-form-groups.css`
+- [x] Form Group Container: `.form-group` (controls spacing)
+- [x] Form Label: `.form-label` (with required asterisk support)
+- [x] Form Helper/Error: `.form-help`, `.form-error-msg`
+- [x] Input Group: `.input-group` (Input + Button attached, or Icon inside Input)
+- [x] Validation Wrappers: `.has-error`, `.has-success`
+- [x] Update ID system: `#06-01-XX`
 - [ ] Create demo page: `web/forms.html`
 
 ### 1.2.6 Alert Molecules
 Se movió aquí porque suele contener texto (átomo) + botón de cerrar (átomo) + icono (átomo).
-- [ ] Create `src/css/06-molecules/02-alerts.css`
-- [ ] Base alert: `.alert`
-- [ ] Variants: `.alert-info`, `.alert-success`, `.alert-warning`, `.alert-error`
-- [ ] Dismissible: `.alert-dismissible`, `.alert-close` (uses icon btn)
-- [ ] Toast variant: `.toast` (fixed position notification)
-- [ ] Update ID system: `#06-02-XX`
+- [x] Create `src/css/06-molecules/02-alerts.css`
+- [x] Base alert: `.alert`
+- [x] Variants: `.alert-info`, `.alert-success`, `.alert-warning`, `.alert-error`
+- [x] Dismissible: `.alert-dismissible`, `.alert-close` (uses icon btn)
+- [x] Toast variant: `.toast` (fixed position notification)
+- [x] Update ID system: `#06-02-XX`
 - [ ] Create demo page: `web/alerts.html`
 
 ### 1.2.7 Dropdown Molecules
-- [ ] Create `src/css/06-molecules/03-dropdown.css`
-- [ ] Dropdown container: `.dropdown`
-- [ ] Dropdown trigger: `.dropdown-trigger` (wraps a btn)
-- [ ] Dropdown menu: `.dropdown-menu`
-- [ ] Dropdown item: `.dropdown-item`
-- [ ] Dropdown divider: `.dropdown-divider`
-- [ ] Positions: `.dropdown-top`, `.dropdown-bottom`, `.dropdown-left`, `.dropdown-right`
-- [ ] Update ID system: `#06-03-XX`
+- [x] Create `src/css/06-molecules/03-dropdown.css`
+- [x] Dropdown container: `.dropdown`
+- [x] Dropdown trigger: `.dropdown-toggle` (wraps a btn)
+- [x] Dropdown menu: `.dropdown-menu`
+- [x] Dropdown item: `.dropdown-item`
+- [x] Dropdown divider: `.dropdown-divider`
+- [x] Dropdown header: `.dropdown-header`, `.dropdown-menu-right`
+- [x] Update ID system: `#06-03-XX`
 
 ### 1.2.8 Tooltip Molecules
-- [ ] Create `src/css/06-molecules/04-tooltip.css`
-- [ ] Tooltip base: `.tooltip` (data-tip attribute)
-- [ ] Positions: `.tooltip-top`, `.tooltip-bottom`, `.tooltip-left`, `.tooltip-right`
-- [ ] Variants: `.tooltip-primary`, `.tooltip-dark`
-- [ ] Update ID system: `#06-04-XX`
+- [x] Create `src/css/06-molecules/04-tooltip.css`
+- [x] Tooltip base: `[data-tooltip]` (CSS-only via data attribute)
+- [x] Positions: `.tooltip-bottom`, `.tooltip-left`, `.tooltip-right` (top is default)
+- [x] Night mode inversion
+- [x] Update ID system: `#06-04-XX`
 
 ### 1.2.9 Breadcrumb Molecules
-- [ ] Create `src/css/06-molecules/05-breadcrumb.css`
-- [ ] Breadcrumb list: `.breadcrumb`
-- [ ] Breadcrumb item: `.breadcrumb-item`
-- [ ] Active state: `.breadcrumb-item-active`
-- [ ] Separators: handled via CSS pseudo-elements
-- [ ] Update ID system: `#06-05-XX`
+- [x] Create `src/css/06-molecules/05-breadcrumb.css`
+- [x] Breadcrumb list: `.breadcrumb`
+- [x] Breadcrumb item: `.breadcrumb-item`
+- [x] Active state: `.breadcrumb-item.active`
+- [x] Separators: `/` default, `.breadcrumb-arrow` (`›`), `.breadcrumb-dot` (`·`)
+- [x] Update ID system: `#06-05-XX`
 
 ## 📂 Layer 07: Compounds (Compuestos)
 Bloques complejos reutilizables. Aquí viven tus Tarjetas y Modales.
 
 ### 1.2.10 Card Compounds
-- [ ] Create `src/css/07-compounds/01-cards.css`
-- [ ] Base card: `.card`
-- [ ] Card Layouts: `.card-row` (horizontal), `.card-col` (vertical default)
-- [ ] Card parts: `.card-header`, `.card-body`, `.card-footer`
-- [ ] Card image: `.card-img`, `.card-img-overlay`
-- [ ] Variants: `.card-elevated`, `.card-bordered`, `.card-flat`
-- [ ] Interactive: `.card-hover-lift`
-- [ ] Update ID system: `#07-01-XX`
+- [x] Create `src/css/07-compounds/01-cards.css`
+- [x] Base card: `.card`
+- [x] Card Layouts: `.card-horizontal` (horizontal), vertical default
+- [x] Card parts: `.card-header`, `.card-body`, `.card-footer`
+- [x] Card image: `.card-img-top`, `.card-img-bottom`
+- [x] Variants: `.card-elevated`, `.card-flat`, color variants (primary/success/warning/error)
+- [x] Interactive: `.card-hover` (lift + shadow on hover)
+- [x] Card group: `.card-group` (auto-fill grid)
+- [x] Update ID system: `#07-01-XX`
 - [ ] Create demo page: `web/cards.html`
 
 ### 1.2.11 Modal Compounds
-- [ ] Create `src/css/07-compounds/02-modals.css`
-- [ ] Modal overlay: `.modal-overlay` (backdrop)
-- [ ] Modal container: `.modal-box`
-- [ ] Sizes: `.modal-s`, `.modal-m`, `.modal-l`, `.modal-fullscreen`
-- [ ] Modal parts: `.modal-header`, `.modal-body`, `.modal-actions` (footer)
-- [ ] Animations: `.modal-zoom-in`, `.modal-fade-up`
-- [ ] Update ID system: `#07-02-XX`
+- [x] Create `src/css/07-compounds/02-modals.css`
+- [x] Modal overlay: `.modal-overlay` (backdrop + flex centering)
+- [x] Modal container: `.modal` (with scale+translate animation)
+- [x] Sizes: `.modal-s`, `.modal-l`, `.modal-xl`, `.modal-fullscreen`
+- [x] Modal parts: `.modal-header`, `.modal-body`, `.modal-footer`
+- [x] Close button: `.modal-close`
+- [x] Animations: scale(0.95) → scale(1) on `.open`
+- [x] Update ID system: `#07-02-XX`
 - [ ] Create demo page: `web/modals.html`
 
 ### 1.2.12 Media Object Compounds (Nuevo Sugerido)
@@ -258,27 +447,31 @@ Clásico patrón de imagen a un lado + texto al otro (comentarios, tweets).
 Secciones estructurales completas de la página.
 
 ### 1.2.14 Navigation Organisms
-- [ ] Create `src/css/08-organisms/01-navbar.css`
-- [ ] Navbar container: `.navbar`
-- [ ] Variants: `.navbar-fixed`, `.navbar-sticky`, `.navbar-glass` (blur effect)
-- [ ] Parts: `.navbar-brand`, `.navbar-start`, `.navbar-end`, `.navbar-center`
-- [ ] Mobile: `.navbar-burger`, `.navbar-menu` (responsive drawer)
-- [ ] Update ID system: `#08-01-XX`
+- [x] Create `src/css/08-organisms/01-navbar.css`
+- [x] Navbar container: `.navbar`
+- [x] Variants: `.navbar-primary`, `.navbar-transparent`, `.navbar-sticky`
+- [x] Parts: `.navbar-brand`, `.navbar-nav`, `.navbar-link` (hover/active)
+- [x] Mobile: `.navbar-burger` (hamburger), `.navbar.open .navbar-nav` (drawer)
+- [x] Update ID system: `#08-01-XX`
 - [ ] Create demo page: `web/navbar.html`
 
 ### 1.2.15 Sidebar Organisms (Nuevo Sugerido)
 Esencial para dashboards o apps complejas.
-- [ ] Create `src/css/08-organisms/02-sidebar.css`
-- [ ] Container: `.sidebar`
-- [ ] Parts: `.sidebar-header`, `.sidebar-content`, `.sidebar-footer`
-- [ ] Menu: `.sidebar-menu`, `.sidebar-item`, `.sidebar-link-active`
-- [ ] Update ID system: `#08-02-XX`
+- [x] Create `src/css/08-organisms/02-sidebar.css`
+- [x] Container: `.sidebar` (16rem, min-height: 100vh)
+- [x] Parts: `.sidebar-header`, `.sidebar-nav`, `.sidebar-footer`
+- [x] Menu: `.sidebar-section`, `.sidebar-section-title`, `.sidebar-link` (hover/active)
+- [x] Compact: `.sidebar-compact` (icon-only, 4rem)
+- [x] Dark variant: `.sidebar-dark`
+- [x] Update ID system: `#08-02-XX`
 
 ### 1.2.16 Footer Organisms (Nuevo Sugerido)
-- [ ] Create `src/css/08-organisms/03-footer.css`
-- [ ] Container: `.footer`
-- [ ] Layout: `.footer-content` (grid/flex columns)
-- [ ] Update ID system: `#08-03-XX`
+- [x] Create `src/css/08-organisms/03-footer.css`
+- [x] Container: `.footer`
+- [x] Layout: `.footer-grid` (auto-fit grid, max 72rem)
+- [x] Parts: `.footer-title`, `.footer-links`, `.footer-link`, `.footer-bottom`
+- [x] Variants: `.footer-dark`, `.footer-minimal`
+- [x] Update ID system: `#08-03-XX`
 
 ### 1.3 Documentation System (Priority: HIGH)
 

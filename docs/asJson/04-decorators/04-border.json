@@ -1,9 +1,9 @@
 {
   "folder": "04-decorators",
   "file": "04-border.css",
-  "lastUpdated": "2025-12-14",
+  "lastUpdated": "2026-04-11",
   "hasResponsive": true,
-  "totalSelectors": 86,
+  "totalSelectors": 89,
   "content": [
     {
       "type": "selector",
@@ -16,7 +16,7 @@
       ],
       "cssRule": "border-width: 0",
       "responsive": true,
-      "description": "** Border Widths (Atomic) **"
+      "description": "** Border Widths **"
     },
     {
       "type": "selector",
@@ -29,7 +29,7 @@
       ],
       "cssRule": "border-width: var(--border-width-s)",
       "responsive": true,
-      "description": "** Border Widths (Atomic) **"
+      "description": "** Border Widths **"
     },
     {
       "type": "selector",
@@ -42,7 +42,7 @@
       ],
       "cssRule": "border-width: var(--border-width-md)",
       "responsive": true,
-      "description": "** Border Widths (Atomic) **"
+      "description": "** Border Widths **"
     },
     {
       "type": "selector",
@@ -55,7 +55,7 @@
       ],
       "cssRule": "border-width: calc(var(--border-width-md) * 2)",
       "responsive": true,
-      "description": "** Border Widths (Atomic) **"
+      "description": "** Border Widths **"
     },
     {
       "type": "selector",
@@ -68,7 +68,7 @@
       ],
       "cssRule": "border-style: solid",
       "responsive": true,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -81,7 +81,7 @@
       ],
       "cssRule": "border-style: dashed",
       "responsive": true,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -94,7 +94,7 @@
       ],
       "cssRule": "border-style: dotted",
       "responsive": true,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -107,7 +107,7 @@
       ],
       "cssRule": "border-style: double",
       "responsive": false,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -120,7 +120,7 @@
       ],
       "cssRule": "border-style: none",
       "responsive": true,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -133,7 +133,7 @@
       ],
       "cssRule": "border-style: inset",
       "responsive": false,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -146,7 +146,7 @@
       ],
       "cssRule": "border-style: outset",
       "responsive": false,
-      "description": "** Border Styles (Atomic) **"
+      "description": "** Border Styles **"
     },
     {
       "type": "selector",
@@ -157,9 +157,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-primary)",
-      "responsive": true,
-      "description": "** Border Colors (Atomic) **"
+      "cssRule": "border-color: var(--color-primary) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -170,9 +170,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-primary-light)",
+      "cssRule": "border-color: var(--color-primary-light) !important",
       "responsive": false,
-      "description": "** Border Colors (Atomic) **"
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -183,9 +183,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-primary-dark)",
+      "cssRule": "border-color: var(--color-primary-dark) !important",
       "responsive": false,
-      "description": "** Border Colors (Atomic) **"
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -196,9 +196,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-secondary)",
+      "cssRule": "border-color: var(--color-secondary) !important",
       "responsive": false,
-      "description": "** Border Colors (Atomic) **"
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -209,9 +209,22 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-success)",
-      "responsive": true,
-      "description": "** Border Colors (Atomic) **"
+      "cssRule": "border-color: var(--color-success) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".border-color-success-alt",
+      "id": "#04-04-03",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success-light) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -222,9 +235,22 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-warning)",
+      "cssRule": "border-color: var(--color-warning) !important",
       "responsive": false,
-      "description": "** Border Colors (Atomic) **"
+      "description": "** Border Colors **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".border-color-warning-alt",
+      "id": "#04-04-03",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-warning-light) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -235,9 +261,22 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-error)",
-      "responsive": true,
-      "description": "** Border Colors (Atomic) **"
+      "cssRule": "border-color: var(--color-error) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".border-color-error-alt",
+      "id": "#04-04-03",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error-light) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -248,9 +287,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-almost-black)",
+      "cssRule": "border-color: var(--color-almost-black) !important",
       "responsive": false,
-      "description": "** Border Colors (Atomic) **"
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -261,9 +300,9 @@
       "properties": [
         "border-color"
       ],
-      "cssRule": "border-color: var(--color-almost-white)",
-      "responsive": true,
-      "description": "** Border Colors (Atomic) **"
+      "cssRule": "border-color: var(--color-almost-white) !important",
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -275,8 +314,8 @@
         "border-color"
       ],
       "cssRule": "border-color: transparent",
-      "responsive": true,
-      "description": "** Border Colors (Atomic) **"
+      "responsive": false,
+      "description": "** Border Colors **"
     },
     {
       "type": "selector",
@@ -573,7 +612,7 @@
       "properties": [
         "border-radius"
       ],
-      "cssRule": "border-radius: var(--radius-md)",
+      "cssRule": "border-radius: var(--radius-m)",
       "responsive": true,
       "description": "** Border Radius **"
     },
@@ -599,7 +638,7 @@
       "properties": [
         "border-radius"
       ],
-      "cssRule": "border-radius: var(--radius-l)",
+      "cssRule": "border-radius: var(--radius-xl)",
       "responsive": true,
       "description": "** Border Radius **"
     },
@@ -1140,7 +1179,7 @@
         "border",
         "border-radius"
       ],
-      "cssRule": "border: var(--border)\nborder-radius: var(--radius-md)",
+      "cssRule": "border: var(--border)\nborder-radius: var(--radius-m)",
       "responsive": false,
       "description": "** Border Shortcuts **"
     }

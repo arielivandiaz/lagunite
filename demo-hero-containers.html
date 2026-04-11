@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite – Containers demo</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      .demo-wrap { min-height: 100vh; }
+      .demo-section { padding: 48px 0; }
+      .demo-outline { outline: 2px dashed rgba(255, 255, 255, 0.35); outline-offset: -2px; }
+      .demo-outline-dark { outline: 2px dashed rgba(0, 0, 0, 0.25); outline-offset: -2px; }
+      .demo-card {
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 14px; padding: 18px;
+        backdrop-filter: blur(10px);
+      }
+      .demo-card-light {
+        background: rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 14px; padding: 18px;
+      }
+      .demo-muted { opacity: 0.85; }
+      .demo-kbd {
+        font-family: var(--font-mono); font-size: 0.95rem;
+        padding: 2px 8px; border-radius: 10px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .demo-kbd-light {
+        font-family: var(--font-mono); font-size: 0.95rem;
+        padding: 2px 8px; border-radius: 10px;
+        background: rgba(0, 0, 0, 0.06);
+      }
+      .demo-line { height: 1px; background: rgba(255, 255, 255, 0.18); margin: 18px 0; }
+      .demo-line-dark { height: 1px; background: rgba(0, 0, 0, 0.12); margin: 18px 0; }
+      .demo-box {
+        padding: 12px 16px; border-radius: 8px; text-align: center;
+        font-family: var(--font-mono); font-size: 0.85rem;
+      }
+      .demo-box-blue { background: rgba(36, 118, 255, 0.12); border: 1px solid rgba(36, 118, 255, 0.25); color: #0965ff; }
+      .demo-box-gray { background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.1); color: #555; }
+      .demo-tag {
+        display: inline-block; font-family: var(--font-mono); font-size: 0.75rem;
+        padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+        background: var(--color-primary); color: white;
+      }
+    </style>
+  </head>
+  <body class="demo-wrap">
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 1. HERO: 2 columnas (stack en mobile)                             -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bgg-4">
+      <div class="container-hero dcontainer-hero demo-outline">
+        <div class="grid dgrid-cols-2 gap-l">
+          <div>
+            <div class="demo-muted font-fluid-s">Lagunite containers demo</div>
+            <h1 class="font-headers font-weight-3 font-fluid-xl lh-xs">
+              Hero en 2 columnas, legible y fácil de mantener
+            </h1>
+            <p class="font-text font-weight-1 font-fluid demo-muted">
+              En mobile se apila por default (1 columna). En desktop usamos
+              <span class="demo-kbd">dgrid-cols-2</span>. El ancho lo controla
+              <span class="demo-kbd">container-hero</span>.
+            </p>
+            <div class="demo-line"></div>
+            <div>
+              <a class="btn" href="#sizes">Ver size scale</a>
+              <a class="btn alt" href="#centered">Hero centrado</a>
+            </div>
+          </div>
+          <div>
+            <div class="demo-card shadow-l">
+              <div class="font-headers font-weight-3 font-fluid">Panel de ejemplo</div>
+              <p class="font-text demo-muted">
+                Este bloque está aquí para "rellenar" la segunda columna y mostrar
+                cómo respira el contenedor.
+              </p>
+              <div class="grid grid-cols-2 gap-s">
+                <div class="demo-card shadow-s">
+                  <div class="font-headers font-weight-3">1200px</div>
+                  <div class="demo-muted">max-width hero</div>
+                </div>
+                <div class="demo-card shadow-s">
+                  <div class="font-headers font-weight-3">padding</div>
+                  <div class="demo-muted">space-6 / space-8</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 2. HERO: centrado con CTA                                         -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="centered" class="demo-section bg-1">
+      <div class="container-hero-center demo-outline">
+        <div class="demo-muted font-fluid-s">Patrón: "center hero"</div>
+        <h2 class="font-headers font-weight-3 font-fluid-xl lh-xs">
+          Hero centrado con CTA
+        </h2>
+        <p class="font-text font-fluid demo-muted">
+          Esta variante usa <span class="demo-kbd">container-hero-center</span> (centrado +
+          padding vertical grande) para el típico primer bloque de landing.
+        </p>
+        <div class="demo-line"></div>
+        <div>
+          <button class="btn">Empezar</button>
+          <button class="btn secondary alt">Ver docs</button>
+          <button class="btn tertiary alt">GitHub</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 3. Container SIZE SCALE: visual comparison                        -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section id="sizes" class="demo-section bg-white">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Container size scale</h3>
+        <p class="font-text demo-muted">
+          Cada barra muestra el max-width real del container. Todos centrados con
+          <span class="demo-kbd-light">margin: auto</span>.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div class="col gap-s">
+          <div class="container-xs demo-box demo-box-blue">.container-xs — 480px</div>
+          <div class="container-s demo-box demo-box-blue">.container-s — 640px</div>
+          <div class="container-m demo-box demo-box-blue">.container-m — 768px</div>
+          <div class="container-l demo-box demo-box-blue">.container-l — 1024px</div>
+          <div class="container-xl demo-box demo-box-blue">.container-xl — 1280px</div>
+          <div class="container-xxl demo-box demo-box-blue">.container-xxl — 1536px</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 4. SEMANTIC containers: prose, card, modal, sidebar               -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section" style="background: #f8f9fa;">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Semantic containers</h3>
+        <p class="font-text demo-muted">
+          Cada tipo tiene un max-width pensado para su contexto. Todos centrados automáticamente.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <!-- Prose -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-prose (65ch)</span>
+          <div class="container-prose demo-card-light">
+            <p class="font-text">
+              Este texto está dentro de un <strong>container-prose</strong>, limitado a 65 caracteres
+              por línea — el ancho ideal para lectura cómoda. Perfecto para artículos, blog posts,
+              documentación y cualquier contenido de texto largo que necesite buena legibilidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-card (400px)</span>
+          <div class="container-card demo-card-light">
+            <h4 class="font-headers font-weight-3">Login Form</h4>
+            <p class="font-text demo-muted">Ancho ideal para formularios de login, cards individuales o contenido compacto.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-sidebar (320px)</span>
+          <div class="container-sidebar demo-card-light">
+            <h4 class="font-headers font-weight-3">Sidebar</h4>
+            <p class="font-text demo-muted">Panel lateral, menú de navegación, filtros.</p>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-modal (600px)</span>
+          <div class="container-modal demo-card-light">
+            <h4 class="font-headers font-weight-3">Modal Dialog</h4>
+            <p class="font-text demo-muted">Ancho estándar para diálogos, confirmaciones y formularios modales.</p>
+          </div>
+        </div>
+
+        <!-- Narrow -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-narrow (540px)</span>
+          <div class="container-narrow demo-card-light">
+            <h4 class="font-headers font-weight-3">Onboarding Step</h4>
+            <p class="font-text demo-muted">Ideal para flujos de signup, onboarding y pasos de wizard.</p>
+          </div>
+        </div>
+
+        <!-- Hero -->
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-hero (1200px)</span>
+          <div class="container-hero demo-card-light">
+            <h4 class="font-headers font-weight-3">Hero Section</h4>
+            <p class="font-text demo-muted">El wrapper principal para hero sections de landing pages. Incluye padding horizontal.</p>
+          </div>
+        </div>
+
+        <!-- Wide -->
+        <div>
+          <span class="demo-tag">.container-wide (1440px)</span>
+          <div class="container-wide demo-card-light">
+            <h4 class="font-headers font-weight-3">Wide Layout</h4>
+            <p class="font-text demo-muted">Para dashboards o layouts extra anchos que necesitan aprovechar toda la pantalla.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 5. SECTION CONTAINERS                                             -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bgg-4">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Section containers</h3>
+        <p class="font-text demo-muted">
+          Secciones con padding vertical incluido. Perfectas para dividir una landing.
+        </p>
+        <div class="demo-line"></div>
+      </div>
+
+      <div class="section-container demo-outline" style="margin-bottom: 24px;">
+        <div class="font-headers font-weight-3">.section-container</div>
+        <div class="demo-muted">100% width, padding: --space-12 vertical, --space-4 horizontal</div>
+      </div>
+
+      <div class="section-container-s demo-outline" style="margin-bottom: 24px;">
+        <div class="font-headers font-weight-3">.section-container-s</div>
+        <div class="demo-muted">768px max, padding: --space-8 vertical, --space-4 horizontal</div>
+      </div>
+
+      <div class="section-container-l demo-outline">
+        <div class="font-headers font-weight-3">.section-container-l</div>
+        <div class="demo-muted">1200px max, padding: --space-16 vertical, --space-6 horizontal</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 6. CONVENIENCE COMBOS                                             -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bg-white">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Convenience combos</h3>
+        <p class="font-text demo-muted">
+          Clases pre-compuestas para los patrones más comunes.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-card-center</span>
+          <div class="container-card-center demo-card-light">
+            <h4 class="font-headers font-weight-3">Centered Card</h4>
+            <p class="font-text demo-muted">Card centrada + text-align: center</p>
+            <button class="btn">Action</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <span class="demo-tag">.container-prose-justify</span>
+          <div class="container-prose-justify demo-card-light">
+            <p class="font-text">
+              Este texto está justificado dentro de un container-prose-justify. El ancho máximo de 65ch
+              mantiene la legibilidad mientras que el text-align: justify da un aspecto más formal,
+              ideal para documentos, reportes y contenido editorial profesional.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <span class="demo-tag">.container-hero-center</span>
+          <div class="container-hero-center demo-card-light">
+            <h4 class="font-headers font-weight-3 font-fluid">Hero Centered</h4>
+            <p class="font-text demo-muted">max-width 1200px + centrado + padding vertical grande</p>
+            <button class="btn">Primary CTA</button>
+            <button class="btn secondary alt">Secondary</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 7. CONSTRAIN utilities                                            -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section" style="background: #f8f9fa;">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Constrain utilities</h3>
+        <p class="font-text demo-muted">
+          Para limitar el ancho de elementos individuales dentro de un container más grande.
+          Ideal para logos, iconos y thumbnails.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div class="col gap-s ai-fs">
+          <div class="constrain-xs demo-box demo-box-gray">.constrain-xs (128px)</div>
+          <div class="constrain-s demo-box demo-box-gray">.constrain-s (160px)</div>
+          <div class="constrain-m demo-box demo-box-gray">.constrain-m (192px)</div>
+          <div class="constrain-l demo-box demo-box-gray">.constrain-l (224px)</div>
+          <div class="constrain-xl demo-box demo-box-gray">.constrain-xl (256px)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 8. OBJECT FIT                                                     -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bg-white">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Object fit</h3>
+        <p class="font-text demo-muted">
+          Control de cómo imágenes y videos llenan su contenedor.
+          Cada cuadro tiene un tamaño fijo de 160x120px.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div class="row gap-s flex-wrap">
+          <div>
+            <span class="demo-tag">.object-contain</span>
+            <div style="width:160px;height:120px;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
+              <img class="object-contain" style="width:100%;height:100%;"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='%232476ff'%3E%3Crect width='300' height='200' rx='8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3E300x200%3C/text%3E%3C/svg%3E" alt="contain" />
+            </div>
+          </div>
+          <div>
+            <span class="demo-tag">.object-cover</span>
+            <div style="width:160px;height:120px;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
+              <img class="object-cover" style="width:100%;height:100%;"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='%232476ff'%3E%3Crect width='300' height='200' rx='8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3E300x200%3C/text%3E%3C/svg%3E" alt="cover" />
+            </div>
+          </div>
+          <div>
+            <span class="demo-tag">.object-fill</span>
+            <div style="width:160px;height:120px;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
+              <img class="object-fill" style="width:100%;height:100%;"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='%232476ff'%3E%3Crect width='300' height='200' rx='8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3E300x200%3C/text%3E%3C/svg%3E" alt="fill" />
+            </div>
+          </div>
+          <div>
+            <span class="demo-tag">.object-none</span>
+            <div style="width:160px;height:120px;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
+              <img class="object-none" style="width:100%;height:100%;"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='%232476ff'%3E%3Crect width='300' height='200' rx='8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3E300x200%3C/text%3E%3C/svg%3E" alt="none" />
+            </div>
+          </div>
+          <div>
+            <span class="demo-tag">.object-scale-down</span>
+            <div style="width:160px;height:120px;overflow:hidden;border-radius:8px;border:1px solid rgba(0,0,0,0.1);">
+              <img class="object-scale-down" style="width:100%;height:100%;"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='%232476ff'%3E%3Crect width='300' height='200' rx='8'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3E300x200%3C/text%3E%3C/svg%3E" alt="scale-down" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 9. CONTAINER-FLUID: responsive padding                            -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bgg-4">
+      <div class="container-fluid demo-outline">
+        <h3 class="font-headers font-weight-3 font-fluid">container-fluid</h3>
+        <p class="font-text demo-muted">
+          100% width con padding que escala: <span class="demo-kbd">--space-4</span> (base) →
+          <span class="demo-kbd">--space-6</span> (640px+) →
+          <span class="demo-kbd">--space-8</span> (1024px+).
+          Redimensioná el browser para ver el cambio.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 10. DEBUG helper                                                  -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section bg-white">
+      <div class="container container-xl">
+        <h3 class="font-headers font-weight-3 font-fluid">Debug helper</h3>
+        <p class="font-text demo-muted">
+          Agregá <span class="demo-kbd-light">.container-debug</span> a cualquier container
+          para ver sus límites y clases durante el desarrollo.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div style="padding: 24px 0;">
+          <div class="container-hero container-debug" style="padding-top: 32px;">
+            <div class="demo-card-light">
+              <p class="font-text demo-muted">
+                Este container tiene <strong>.container-debug</strong> aplicado.
+                Nota el outline y el label con las clases.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding: 24px 0;">
+          <div class="container-m container-debug" style="padding-top: 32px;">
+            <div class="demo-card-light">
+              <p class="font-text demo-muted">
+                Otro ejemplo: <strong>.container-m .container-debug</strong> (768px).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 11. COMPARISON: all containers side by side                       -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section" style="background: #f0f2f5;">
+      <div class="container container-xxl">
+        <h3 class="font-headers font-weight-3 font-fluid">Comparación de anchos</h3>
+        <p class="font-text demo-muted">
+          Todos los containers apilados para comparar sus max-widths.
+        </p>
+        <div class="demo-line-dark"></div>
+
+        <div class="col gap-xs">
+          <div class="container-sidebar demo-box demo-box-gray">.container-sidebar — 320px</div>
+          <div class="container-card demo-box demo-box-gray">.container-card — 400px</div>
+          <div class="container-xs demo-box demo-box-blue">.container-xs — 480px</div>
+          <div class="container-narrow demo-box demo-box-gray">.container-narrow — 540px</div>
+          <div class="container-modal demo-box demo-box-gray">.container-modal — 600px</div>
+          <div class="container-s demo-box demo-box-blue">.container-s — 640px</div>
+          <div class="container-m demo-box demo-box-blue">.container-m — 768px</div>
+          <div class="container-l demo-box demo-box-blue">.container-l — 1024px</div>
+          <div class="container-hero demo-box demo-box-gray">.container-hero — 1200px</div>
+          <div class="container-xl demo-box demo-box-blue">.container-xl — 1280px</div>
+          <div class="container-wide demo-box demo-box-gray">.container-wide — 1440px</div>
+          <div class="container-xxl demo-box demo-box-blue">.container-xxl — 1536px</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 12. REAL-WORLD: feature section pattern                           -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="section-container-l" style="background: white;">
+      <div class="container container-xl">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <span class="demo-tag">section-container-l + grid</span>
+          <h3 class="font-headers font-weight-3 font-fluid">Feature Section Pattern</h3>
+          <p class="font-text demo-muted container-prose" style="margin-bottom: 0;">
+            Un patrón real: section-container-l para padding vertical generoso,
+            container-xl para el ancho, y grid para las columnas.
+          </p>
+        </div>
+
+        <div class="grid dgrid-cols-3 gap-s">
+          <div class="demo-card-light">
+            <h4 class="font-headers font-weight-3">Containers</h4>
+            <p class="font-text demo-muted">Width + centering + padding. Nada más.</p>
+          </div>
+          <div class="demo-card-light">
+            <h4 class="font-headers font-weight-3">Grid / Flex</h4>
+            <p class="font-text demo-muted">Internal layout: columns, rows, alignment.</p>
+          </div>
+          <div class="demo-card-light">
+            <h4 class="font-headers font-weight-3">Composición</h4>
+            <p class="font-text demo-muted">Combiná containers + layout + decorators para cualquier UI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

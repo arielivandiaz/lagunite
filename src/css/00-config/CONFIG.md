@@ -17,7 +17,7 @@ The `00-config` folder contains the foundational CSS tokens and variables for th
 ### 04-measures.css
 **Measurement system tokens** - Spacing, sizes, borders, radii, and breakpoints.
 
-### 10-base.css
+### 05-base.css
 **Reset and base styles** - Global reset styles and base element styling.
 
 ## Color System

@@ -27,9 +27,6 @@ hr.size-xxl {
 .line-v.size-s {
   border-width: 0 0 0 var(--space-px);
 }
-.line-v {
-  border-width: 0 0 0 2px;
-}
 
 .line-v.size-l {
   border-width: 0 0 0 var(--space-1);

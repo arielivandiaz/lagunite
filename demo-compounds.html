@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite – Compounds demo</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      .demo-wrap { min-height: 100vh; background: var(--color-bg); color: var(--color-text-base); }
+      .demo-section { padding: 3rem 1.5rem; max-width: 72rem; margin: 0 auto; }
+      .demo-section + .demo-section { border-top: 1px solid var(--color-border); }
+      .demo-tag {
+        display: inline-block; font-family: var(--font-mono); font-size: 0.75rem;
+        padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+        background: var(--color-primary); color: white;
+      }
+      .demo-spacer { height: 2rem; }
+    </style>
+  </head>
+  <body class="demo-wrap">
+
+    <!-- ================= HEADER ================= -->
+    <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
+      <h1 style="margin: 0 0 0.5rem;">Lagunite – Compounds</h1>
+      <p style="margin: 0; opacity: 0.85;">Cards y modals</p>
+    </header>
+
+    <!-- ================= 1. BASIC CARDS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">01-cards.css</span>
+      <h2>Cards basicas</h2>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Card simple</h3>
+            <p class="card-text">Una card con solo body. Util para contenido breve sin contexto extra.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h3 class="card-title">Con header y footer</h3>
+            <p class="card-text">Card completa con las tres regiones: header, body y footer.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn" style="margin:0; padding: 0.4rem 1rem; font-size: 0.85rem;">Accion</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="https://picsum.photos/seed/lag1/400/200" alt="Imagen demo" />
+          <div class="card-body">
+            <h3 class="card-title">Con imagen</h3>
+            <p class="card-text">Card con <code>.card-img-top</code> para contenido visual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. CARD VARIANTS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">Variantes</span>
+      <h2>Card variants</h2>
+
+      <div class="card-group">
+        <div class="card card-elevated">
+          <div class="card-body">
+            <h3 class="card-title">Elevated</h3>
+            <p class="card-text"><code>.card-elevated</code> agrega box-shadow medio.</p>
+          </div>
+        </div>
+
+        <div class="card card-hover">
+          <div class="card-body">
+            <h3 class="card-title">Hover</h3>
+            <p class="card-text"><code>.card-hover</code> — pasa el mouse para ver el efecto lift.</p>
+          </div>
+        </div>
+
+        <div class="card card-flat">
+          <div class="card-body">
+            <h3 class="card-title">Flat</h3>
+            <p class="card-text"><code>.card-flat</code> sin borde ni fondo. Solo contenido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. SEMANTIC CARDS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">Semanticas</span>
+      <h2>Cards semanticas (color variants)</h2>
+
+      <div class="card-group">
+        <div class="card card-primary">
+          <div class="card-header">Primary</div>
+          <div class="card-body">
+            <p class="card-text">Informacion principal o destacada.</p>
+          </div>
+        </div>
+
+        <div class="card card-success">
+          <div class="card-header">Success</div>
+          <div class="card-body">
+            <p class="card-text">Operacion completada exitosamente.</p>
+          </div>
+        </div>
+
+        <div class="card card-warning">
+          <div class="card-header">Warning</div>
+          <div class="card-body">
+            <p class="card-text">Requiere atencion del usuario.</p>
+          </div>
+        </div>
+
+        <div class="card card-error">
+          <div class="card-header">Error</div>
+          <div class="card-body">
+            <p class="card-text">Algo salio mal, revisar configuracion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. HORIZONTAL CARD ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">Horizontal</span>
+      <h2>Card horizontal</h2>
+
+      <div class="card card-horizontal card-elevated" style="max-width: 40rem;">
+        <img class="card-img" src="https://picsum.photos/seed/lag2/300/250" alt="Imagen demo" />
+        <div>
+          <div class="card-body">
+            <h3 class="card-title">Layout horizontal</h3>
+            <p class="card-text">Con <code>.card-horizontal</code> la imagen ocupa el 40% a la izquierda y el contenido se apila a la derecha. En mobile se vuelve vertical automaticamente.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn" style="margin:0; padding: 0.4rem 1rem; font-size: 0.85rem;">Ver mas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. CARD GROUP GRID ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">card-group</span>
+      <h2>Card group (auto-fill grid)</h2>
+
+      <div class="card-group">
+        <div class="card card-hover">
+          <img class="card-img-top" src="https://picsum.photos/seed/a1/400/180" alt="" />
+          <div class="card-body">
+            <h3 class="card-title">Proyecto Alpha</h3>
+            <p class="card-text">Diseño de sistema modular para apps enterprise.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-primary">Activo</span>
+          </div>
+        </div>
+        <div class="card card-hover">
+          <img class="card-img-top" src="https://picsum.photos/seed/a2/400/180" alt="" />
+          <div class="card-body">
+            <h3 class="card-title">Proyecto Beta</h3>
+            <p class="card-text">Plataforma de e-commerce con pagos integrados.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-warning">En revision</span>
+          </div>
+        </div>
+        <div class="card card-hover">
+          <img class="card-img-top" src="https://picsum.photos/seed/a3/400/180" alt="" />
+          <div class="card-body">
+            <h3 class="card-title">Proyecto Gamma</h3>
+            <p class="card-text">Dashboard de analytics con visualizaciones en tiempo real.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-success">Completado</span>
+          </div>
+        </div>
+        <div class="card card-hover">
+          <img class="card-img-top" src="https://picsum.photos/seed/a4/400/180" alt="" />
+          <div class="card-body">
+            <h3 class="card-title">Proyecto Delta</h3>
+            <p class="card-text">API gateway para microservicios distribuidos.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge badge-error">Pausado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. MODALS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">02-modals.css</span>
+      <h2>Modals</h2>
+      <p>Haz click en los botones para abrir cada tamaño de modal.</p>
+
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem;">
+        <button class="btn" onclick="document.getElementById('modal-default').classList.add('open')">Default (32rem)</button>
+        <button class="btn secondary" onclick="document.getElementById('modal-small').classList.add('open')">Small (24rem)</button>
+        <button class="btn tertiary" onclick="document.getElementById('modal-large').classList.add('open')">Large (48rem)</button>
+      </div>
+
+      <!-- Modal Default -->
+      <div class="modal-overlay" id="modal-default" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="modal">
+          <div class="modal-header">
+            <span class="modal-title">Confirmar accion</span>
+            <button class="modal-close" onclick="document.getElementById('modal-default').classList.remove('open')">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Estas seguro de que quieres continuar con esta accion? Esta operacion no se puede deshacer.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('modal-default').classList.remove('open')">Cancelar</button>
+            <button class="btn" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('modal-default').classList.remove('open')">Confirmar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Small -->
+      <div class="modal-overlay" id="modal-small" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="modal modal-s">
+          <div class="modal-header">
+            <span class="modal-title">Aviso</span>
+            <button class="modal-close" onclick="document.getElementById('modal-small').classList.remove('open')">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Modal pequeño para mensajes breves o confirmaciones simples.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('modal-small').classList.remove('open')">Entendido</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Large -->
+      <div class="modal-overlay" id="modal-large" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="modal modal-l">
+          <div class="modal-header">
+            <span class="modal-title">Detalle del proyecto</span>
+            <button class="modal-close" onclick="document.getElementById('modal-large').classList.remove('open')">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h3>Descripcion</h3>
+            <p>Este es un modal grande ideal para formularios complejos, tablas de datos o contenido extenso que necesita mas espacio horizontal.</p>
+            <div class="form-row" style="margin-top: 1rem;">
+              <div class="form-group" style="flex:1;">
+                <label class="form-label">Nombre del proyecto</label>
+                <input type="text" placeholder="Mi proyecto" />
+              </div>
+              <div class="form-group" style="flex:1;">
+                <label class="form-label">Responsable</label>
+                <input type="text" placeholder="Nombre" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Descripcion</label>
+              <textarea rows="3" placeholder="Describe el proyecto..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('modal-large').classList.remove('open')">Cancelar</button>
+            <button class="btn" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('modal-large').classList.remove('open')">Crear proyecto</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>Modal inline (siempre visible para referencia)</h3>
+      <div style="position: relative; background: rgba(0,0,0,0.15); border-radius: var(--radius-l); padding: 2rem; display: flex; align-items: center; justify-content: center;">
+        <div class="modal" style="position: static; transform: none; width: 100%; max-width: 28rem;">
+          <div class="modal-header">
+            <span class="modal-title">Ejemplo inline</span>
+            <button class="modal-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Este modal se muestra inline sin overlay para que puedas ver su estructura.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.4rem 0.8rem;">Cancelar</button>
+            <button class="btn" style="margin:0; padding: 0.4rem 0.8rem;">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

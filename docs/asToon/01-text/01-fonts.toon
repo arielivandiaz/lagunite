@@ -1,6 +1,6 @@
 folder: 01-text
 file: 01-fonts.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: false
 totalSelectors: 37
 content[37]:
@@ -10,7 +10,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -19,7 +19,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -28,7 +28,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -37,7 +37,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -46,7 +46,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -55,7 +55,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\n/* Added default bold for headers */\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -259,7 +259,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-fluid-xs
-    id: #01-01-010
+    id: #01-01-05
     category: null
     properties[1]: font-size
     cssRule: "font-size: clamp(0.5rem, 1vh, 0.75rem)"
@@ -268,7 +268,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-fluid-s
-    id: #01-01-010
+    id: #01-01-05
     category: null
     properties[1]: font-size
     cssRule: "font-size: clamp(0.75rem, 1.5vh, 1rem)"
@@ -277,7 +277,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-fluid
-    id: #01-01-010
+    id: #01-01-05
     category: null
     properties[1]: font-size
     cssRule: "font-size: clamp(1rem, 2vh, 1.5rem)"
@@ -286,7 +286,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-fluid-l
-    id: #01-01-010
+    id: #01-01-05
     category: null
     properties[1]: font-size
     cssRule: "font-size: clamp(1.25rem, 3vh, 1.5rem)"
@@ -295,7 +295,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-fluid-xl
-    id: #01-01-010
+    id: #01-01-05
     category: null
     properties[1]: font-size
     cssRule: "font-size: clamp(1.5rem, 5vh, 2rem)"
@@ -304,7 +304,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-weight-0
-    id: #01-01-015
+    id: #01-01-06
     category: null
     properties[2]: font-weight,font-weight
     cssRule: "font-weight: lighter\nfont-weight: var(--font-weight-light) !important"
@@ -313,7 +313,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-weight-1
-    id: #01-01-015
+    id: #01-01-06
     category: null
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-normal) !important"
@@ -322,7 +322,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-weight-2
-    id: #01-01-015
+    id: #01-01-06
     category: null
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-medium) !important"
@@ -331,7 +331,7 @@ content[37]:
   - type: selector
     selectorType: class
     selector: .font-weight-3
-    id: #01-01-015
+    id: #01-01-06
     category: null
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-bold) !important"

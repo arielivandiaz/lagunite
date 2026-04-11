@@ -11,7 +11,7 @@
 
 *Powerful, flexible, and crystal clear.*
 
-Lagunite is a modern, utility-focused CSS framework specifically designed for Spanish-speaking teams and enterprises that prioritize code clarity, maintainability, and seamless onboarding. Built from the ground up with descriptive naming conventions and a robust design system, Lagunite empowers teams to build beautiful interfaces faster—without sacrificing readability.
+Lagunite is a modern, utility-focused CSS framework for teams and enterprises that prioritize code clarity, maintainability, and seamless onboarding. Built from the ground up with descriptive naming conventions and a robust design system, it puts documentation first: Markdown docs, live examples, prompt guides, and AI-friendly resources (.toon, PROMPT_GUIDE) so both developers and AI assistants can use it effectively. Lagunite empowers teams to build beautiful interfaces faster—without sacrificing readability.
 
 ---
 
@@ -36,7 +36,7 @@ Lagunite was built with large teams in mind. Unlike cryptic utility frameworks, 
 
 * **📖 Readable & Self-Documenting:** Class names like `.marg-h-s`, `.padd-v-m`, `.border-color-primary` are immediately understandable, even for junior developers.
 
-* **🌍 Spanish-First Documentation:** Comprehensive documentation in Spanish with English translations. Perfect for Latin American and Spanish teams.
+* **📚 Documentation-First:** Documentation is a first-class citizen: Markdown docs, live examples, prompt guides and AI-friendly resources (.toon, PROMPT_GUIDE, cheatsheets) so both humans and assistants can use Lagunite effectively.
 
 * **🎨 Enterprise-Grade Design System:** Built on semantic design tokens (--color-*, --space-*, --radius-*) that integrate seamlessly with corporate design systems.
 
@@ -53,7 +53,7 @@ Lagunite was built with large teams in mind. Unlike cryptic utility frameworks, 
 ## 🚀 Perfect For
 
 - ✅ Enterprise development teams
-- ✅ Spanish-speaking organizations
+- ✅ Projects that want documentation-first (docs, examples, prompt guides, AI-friendly resources)
 - ✅ Projects requiring clear, maintainable code
 - ✅ Teams with junior developers
 - ✅ Companies building design systems
@@ -70,7 +70,7 @@ While there are many excellent CSS frameworks available, Lagunite offers unique 
 | Feature | Lagunite Advantage |
 |---------|-------------------|
 | **Class Naming** | Descriptive and self-documenting (`.marg-h-s`, `.padd-v-m`) makes code immediately understandable, ideal for teams and code reviews |
-| **Documentation Language** | Native Spanish documentation with English support—perfect for Latin American and Spanish teams |
+| **Documentation** | Documentation-first: .md docs, examples, prompt guides, and AI-oriented resources (.toon, PROMPT_GUIDE) for humans and AI assistants alike |
 | **Media Query Organization** | Responsive variants grouped with base styles for easier maintenance and debugging |
 | **Design Token System** | Clear separation between raw palette and semantic tokens, making corporate design system integration seamless |
 | **Learning Curve** | Junior developers can read and understand classes without memorizing cryptic abbreviations |
@@ -84,7 +84,7 @@ While there are many excellent CSS frameworks available, Lagunite offers unique 
 ✅ **Choose Lagunite if you:**
 - Work in enterprise or large team environments
 - Value code readability and maintainability
-- Need Spanish-language documentation and support
+- Want rich, AI-friendly documentation (guides, examples, prompt helpers)
 - Have team members with varying skill levels
 - Conduct frequent code reviews
 - Are building or maintaining a design system
@@ -231,7 +231,7 @@ import 'lagunite/dist/lagunite.css';
 
 ## 🤝 Contributing
 
-Lagunite is in active development and we welcome contributions! Whether you're fixing bugs, improving documentation (especially Spanish translations), or proposing new features—we'd love to have you.
+Lagunite is in active development and we welcome contributions! Whether you're fixing bugs, improving documentation (guides, examples, translations), or proposing new features—we'd love to have you.
 
 ---
 

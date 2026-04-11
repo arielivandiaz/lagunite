@@ -1,0 +1,124 @@
+/* ==========
+   06-molecules / 02-alerts.css
+   Alerts, dismissible alerts, and toast notifications.
+   ========== */
+
+/* @ID: #06-02-01 */
+
+/* ── Alert base ─────────────────────────────────────────────────────────── */
+
+.alert {
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-width-s) solid transparent;
+  border-radius: var(--radius-m);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+/* @ID: #06-02-02 */
+
+/* ── Alert variants ─────────────────────────────────────────────────────── */
+
+.alert-success {
+  background-color: rgba(var(--color-success-rgb), 0.1);
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.alert-warning {
+  background-color: rgba(var(--color-warning-rgb), 0.1);
+  border-color: var(--color-warning);
+  color: var(--color-text-base);
+}
+
+.alert-error {
+  background-color: rgba(var(--color-error-rgb), 0.1);
+  border-color: var(--color-error);
+  color: var(--color-text-base);
+}
+
+.alert-info {
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+  border-color: var(--color-primary);
+  color: var(--color-text-base);
+}
+
+/* @ID: #06-02-03 */
+
+/* ── Dismissible alert + close ─────────────────────────────────────────── */
+
+.alert-dismissible {
+  position: relative;
+  padding-right: var(--space-10);
+}
+
+.alert-close {
+  position: absolute;
+  top: 50%;
+  right: var(--space-3);
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease;
+}
+
+.alert-close:hover {
+  opacity: 1;
+}
+
+/* @ID: #06-02-04 */
+
+/* ── Toast ─────────────────────────────────────────────────────────────── */
+
+.toast {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 1000;
+  min-width: 18rem;
+  max-width: min(24rem, calc(100vw - var(--space-8)));
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-l);
+}
+
+@media (width <= 639px) {
+  .xtoast {
+    right: var(--space-3);
+    left: var(--space-3);
+    min-width: 0;
+    max-width: none;
+    width: auto;
+  }
+}
+
+@media (width >= 640px) {
+  .dtoast {
+    right: var(--space-4);
+    left: auto;
+    min-width: 18rem;
+    max-width: min(24rem, calc(100vw - var(--space-8)));
+    width: auto;
+  }
+}
+
+/* @ID: #06-02-05 */
+
+/* ── Night mode ─────────────────────────────────────────────────────────── */
+
+.night .alert-warning,
+.night .alert-error,
+.night .alert-info {
+  color: var(--color-text-alt);
+}
+
+.night .alert-close {
+  color: inherit;
+}

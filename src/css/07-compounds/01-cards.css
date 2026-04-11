@@ -1,0 +1,158 @@
+/* ==========
+   07-compounds / 01-cards.css
+   Card compound components: structure, media, variants, and layout groups.
+   Responsive: mobile (max-width: 639px), desktop (min-width: 640px).
+   ========== */
+
+/* @ID: #07-01-01 */
+/* ── Card base ──────────────────────────────────────────────────────────── */
+
+.card {
+  background: var(--color-bg);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+/* @ID: #07-01-02 */
+/* ── Card regions ───────────────────────────────────────────────────────── */
+
+.card-header {
+  padding: var(--space-4);
+  border-bottom: var(--border-width-s) solid var(--color-border);
+  font-weight: var(--font-weight-bold);
+}
+
+.card-body {
+  padding: var(--space-4);
+}
+
+.card-footer {
+  padding: var(--space-3) var(--space-4);
+  border-top: var(--border-width-s) solid var(--color-border);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.card-img-top {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+}
+
+.card-img-bottom {
+  width: 100%;
+  display: block;
+  border-radius: 0 0 var(--radius-m) var(--radius-m);
+}
+
+.card-title {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.card-text {
+  color: var(--gray-600);
+  font-size: var(--font-size-base);
+}
+
+/* @ID: #07-01-03 */
+/* ── Card surface variants ──────────────────────────────────────────────── */
+
+.card-elevated {
+  box-shadow: var(--shadow-m);
+}
+
+.card-flat {
+  border: none;
+  background: transparent;
+}
+
+.card-hover {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card-hover:hover {
+  box-shadow: var(--shadow-l);
+  transform: translateY(-2px);
+}
+
+/* @ID: #07-01-04 */
+/* ── Card semantic variants (primary) ───────────────────────────────────── */
+
+.card-primary {
+  border-color: var(--color-primary);
+}
+
+.card-primary .card-header {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+/* @ID: #07-01-05 */
+/* ── Card semantic variants (success, warning, error) ─────────────────────── */
+
+.card-success {
+  border-color: var(--color-success);
+}
+
+.card-success .card-header {
+  background: var(--color-success);
+  color: var(--color-text-alt);
+}
+
+.card-warning {
+  border-color: var(--color-warning);
+}
+
+.card-warning .card-header {
+  background: var(--color-warning);
+  color: var(--color-text-alt);
+}
+
+.card-error {
+  border-color: var(--color-error);
+}
+
+.card-error .card-header {
+  background: var(--color-error);
+  color: var(--color-text-alt);
+}
+
+/* @ID: #07-01-06 */
+/* ── Card horizontal layout & groups ────────────────────────────────────── */
+
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-horizontal .card-img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-group {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+
+/* @ID: #07-01-07 */
+/* ── Night mode & responsive ────────────────────────────────────────────── */
+
+.night .card {
+  background: var(--gray-800);
+  border-color: var(--gray-700);
+}
+
+@media (max-width: 639px) {
+  .card-horizontal {
+    flex-direction: column;
+  }
+
+  .card-horizontal .card-img {
+    width: 100%;
+  }
+}

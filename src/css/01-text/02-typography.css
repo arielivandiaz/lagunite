@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 639px) {
-  /* @ID: #01-02-030sm */
+  /* @ID: #01-02-05 */
   /* Text Align **/
   .xta-c {
     text-align: center;
@@ -115,7 +115,7 @@
 }
 
 @media (min-width: 640px) {
-  /* @ID: #01-02-030sm */
+  /* @ID: #01-02-06 */
   /* Text Align **/
   .dta-c {
     text-align: center;

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite – Organisms demo</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      .demo-wrap { min-height: 100vh; background: var(--color-bg); color: var(--color-text-base); }
+      .demo-section { padding: 3rem 1.5rem; max-width: 72rem; margin: 0 auto; }
+      .demo-section + .demo-section { border-top: 1px solid var(--color-border); }
+      .demo-tag {
+        display: inline-block; font-family: var(--font-mono); font-size: 0.75rem;
+        padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+        background: var(--color-primary); color: white;
+      }
+      .demo-spacer { height: 2rem; }
+      .demo-frame {
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+        overflow: hidden;
+        margin-bottom: 2rem;
+      }
+      .demo-sidebar-wrap {
+        display: flex;
+        height: 28rem;
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+      }
+      .demo-sidebar-wrap .sidebar { min-height: auto; height: 100%; }
+      .demo-sidebar-content { flex: 1; padding: 1.5rem; overflow-y: auto; }
+    </style>
+  </head>
+  <body class="demo-wrap">
+
+    <!-- ================= HEADER ================= -->
+    <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
+      <h1 style="margin: 0 0 0.5rem;">Lagunite – Organisms</h1>
+      <p style="margin: 0; opacity: 0.85;">Navbar, sidebar y footer</p>
+    </header>
+
+    <!-- ================= 1. NAVBAR DEFAULT ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">01-navbar.css</span>
+      <h2>Navbar</h2>
+
+      <h3>Default</h3>
+      <div class="demo-frame">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">Lagunite</a>
+          <ul class="navbar-nav">
+            <li><a class="navbar-link active" href="#">Dashboard</a></li>
+            <li><a class="navbar-link" href="#">Proyectos</a></li>
+            <li><a class="navbar-link" href="#">Equipo</a></li>
+            <li><a class="navbar-link" href="#">Configuracion</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <h3>Primary variant</h3>
+      <div class="demo-frame">
+        <nav class="navbar navbar-primary">
+          <a class="navbar-brand" href="#" style="color: white;">MiApp</a>
+          <ul class="navbar-nav">
+            <li><a class="navbar-link" href="#">Inicio</a></li>
+            <li><a class="navbar-link" href="#">Productos</a></li>
+            <li><a class="navbar-link" href="#">Precios</a></li>
+            <li><a class="navbar-link" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <h3>Transparent variant</h3>
+      <div class="demo-frame" style="background: linear-gradient(135deg, #2476ff 0%, #5e9aff 100%); padding: 0;">
+        <nav class="navbar navbar-transparent" style="color: white;">
+          <a class="navbar-brand" href="#" style="color: white;">Landing</a>
+          <ul class="navbar-nav">
+            <li><a class="navbar-link" href="#" style="color: rgba(255,255,255,0.9);">Features</a></li>
+            <li><a class="navbar-link" href="#" style="color: rgba(255,255,255,0.9);">Pricing</a></li>
+            <li><a class="navbar-link" href="#" style="color: rgba(255,255,255,0.9);">About</a></li>
+          </ul>
+        </nav>
+        <div style="padding: 4rem 2rem; color: white; text-align: center;">
+          <h2 style="margin: 0;">Hero Section</h2>
+          <p style="opacity: 0.8;">Navbar transparente sobre contenido hero</p>
+        </div>
+      </div>
+
+      <h3>Con burger (mobile)</h3>
+      <div class="demo-frame">
+        <nav class="navbar" id="navbar-burger-demo">
+          <a class="navbar-brand" href="#">MiSitio</a>
+          <button class="navbar-burger" style="display: flex; align-items: center; justify-content: center; flex-direction: column;" onclick="this.parentElement.classList.toggle('open')">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="navbar-nav" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--color-bg); border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-m); padding: 0.5rem 0;" id="burger-nav">
+            <li><a class="navbar-link" href="#">Inicio</a></li>
+            <li><a class="navbar-link" href="#">Productos</a></li>
+            <li><a class="navbar-link" href="#">Blog</a></li>
+            <li><a class="navbar-link" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        document.getElementById('navbar-burger-demo').addEventListener('click', function(e) {
+          if (e.target.closest('.navbar-burger')) {
+            var nav = document.getElementById('burger-nav');
+            nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+          }
+        });
+      </script>
+      <p><small>En mobile real (<code>max-width: 639px</code>), el burger aparece automaticamente y la nav se oculta hasta hacer <code>.open</code>.</small></p>
+    </section>
+
+    <!-- ================= 2. SIDEBAR ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">02-sidebar.css</span>
+      <h2>Sidebar</h2>
+
+      <h3>Default sidebar</h3>
+      <div class="demo-sidebar-wrap">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <strong style="color: var(--color-primary);">MiApp</strong>
+          </div>
+          <nav class="sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-title">Principal</div>
+              <a class="sidebar-link active" href="#">
+                <span>📊</span> <span>Dashboard</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>📁</span> <span>Proyectos</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>👥</span> <span>Equipo</span>
+              </a>
+            </div>
+            <div class="sidebar-section">
+              <div class="sidebar-section-title">Gestion</div>
+              <a class="sidebar-link" href="#">
+                <span>📋</span> <span>Tareas</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>📈</span> <span>Reportes</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>⚙️</span> <span>Configuracion</span>
+              </a>
+            </div>
+          </nav>
+          <div class="sidebar-footer">
+            <small style="color: var(--gray-500);">v2.0.0</small>
+          </div>
+        </aside>
+        <div class="demo-sidebar-content">
+          <h3>Contenido principal</h3>
+          <p>La sidebar ocupa 16rem de ancho fijo y el contenido se expande para llenar el espacio restante.</p>
+          <div class="alert alert-info">Selecciona una opcion del menu lateral.</div>
+          <div class="card-group" style="margin-top: 1rem;">
+            <div class="card card-elevated">
+              <div class="card-body">
+                <h4 class="card-title">Usuarios</h4>
+                <p class="card-text" style="font-size: 2rem; font-weight: bold; color: var(--color-primary);">1,234</p>
+              </div>
+            </div>
+            <div class="card card-elevated">
+              <div class="card-body">
+                <h4 class="card-title">Ingresos</h4>
+                <p class="card-text" style="font-size: 2rem; font-weight: bold; color: var(--color-success);">$45.6k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Dark sidebar</h3>
+      <div class="demo-sidebar-wrap">
+        <aside class="sidebar sidebar-dark">
+          <div class="sidebar-header" style="border-color: var(--gray-700);">
+            <strong style="color: var(--color-primary-light);">Admin Panel</strong>
+          </div>
+          <nav class="sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-title" style="color: var(--gray-400);">Menu</div>
+              <a class="sidebar-link active" href="#">
+                <span>🏠</span> <span>Home</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>📊</span> <span>Analytics</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>🔔</span> <span>Notificaciones</span>
+              </a>
+              <a class="sidebar-link" href="#">
+                <span>💬</span> <span>Mensajes</span>
+              </a>
+            </div>
+          </nav>
+          <div class="sidebar-footer" style="border-color: var(--gray-700);">
+            <a class="sidebar-link" href="#" style="color: var(--gray-400);">
+              <span>🚪</span> <span>Cerrar sesion</span>
+            </a>
+          </div>
+        </aside>
+        <div class="demo-sidebar-content">
+          <h3>Dark variant</h3>
+          <p>La clase <code>.sidebar-dark</code> cambia el fondo a <code>var(--gray-900)</code> y los textos a tonos claros. Ideal para dashboards.</p>
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Compact sidebar (solo iconos)</h3>
+      <div class="demo-sidebar-wrap">
+        <aside class="sidebar sidebar-compact sidebar-dark" style="align-items: center;">
+          <div class="sidebar-header" style="border-color: var(--gray-700); padding: 0.75rem;">
+            <strong style="color: var(--color-primary-light); font-size: 1.2rem;">L</strong>
+          </div>
+          <nav class="sidebar-nav" style="padding: 0 0.25rem;">
+            <div class="sidebar-section" style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+              <a class="sidebar-link active" href="#" style="justify-content: center; padding: 0.5rem;" data-tooltip="Dashboard" data-tooltip-right>
+                <span>📊</span> <span>Dashboard</span>
+              </a>
+              <a class="sidebar-link" href="#" style="justify-content: center; padding: 0.5rem;" data-tooltip="Proyectos">
+                <span>📁</span> <span>Proyectos</span>
+              </a>
+              <a class="sidebar-link" href="#" style="justify-content: center; padding: 0.5rem;" data-tooltip="Equipo">
+                <span>👥</span> <span>Equipo</span>
+              </a>
+              <a class="sidebar-link" href="#" style="justify-content: center; padding: 0.5rem;" data-tooltip="Config">
+                <span>⚙️</span> <span>Config</span>
+              </a>
+            </div>
+          </nav>
+        </aside>
+        <div class="demo-sidebar-content">
+          <h3>Compact mode</h3>
+          <p>Con <code>.sidebar-compact</code> el ancho se reduce a 4rem y los <code>span</code> de texto se ocultan, mostrando solo los iconos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. FOOTER ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">03-footer.css</span>
+      <h2>Footer</h2>
+
+      <h3>Multi-columna default</h3>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4 class="footer-title">Producto</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Features</a></li>
+            <li><a class="footer-link" href="#">Pricing</a></li>
+            <li><a class="footer-link" href="#">Changelog</a></li>
+            <li><a class="footer-link" href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Empresa</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Sobre nosotros</a></li>
+            <li><a class="footer-link" href="#">Blog</a></li>
+            <li><a class="footer-link" href="#">Empleo</a></li>
+            <li><a class="footer-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Recursos</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Documentacion</a></li>
+            <li><a class="footer-link" href="#">Guia de inicio</a></li>
+            <li><a class="footer-link" href="#">API Reference</a></li>
+            <li><a class="footer-link" href="#">Soporte</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Privacidad</a></li>
+            <li><a class="footer-link" href="#">Terminos</a></li>
+            <li><a class="footer-link" href="#">Licencia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Lagunite. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <section class="demo-section">
+      <h3>Footer dark</h3>
+    </section>
+
+    <footer class="footer footer-dark">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4 class="footer-title">Lagunite</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">El framework CSS para equipos enterprise</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Docs</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Getting Started</a></li>
+            <li><a class="footer-link" href="#">Components</a></li>
+            <li><a class="footer-link" href="#">Utilities</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">GitHub</a></li>
+            <li><a class="footer-link" href="#">Discord</a></li>
+            <li><a class="footer-link" href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="border-color: var(--gray-700); color: var(--gray-500);">
+        Hecho con ❤ por el equipo Lagunite &middot; 2026
+      </div>
+    </footer>
+
+    <section class="demo-section">
+      <h3>Footer minimal</h3>
+    </section>
+
+    <footer class="footer footer-minimal">
+      &copy; 2026 Lagunite &middot; <a href="#" style="color: var(--color-primary);">Privacidad</a> &middot; <a href="#" style="color: var(--color-primary);">Terminos</a>
+    </footer>
+
+    <!-- ================= 4. FULL LAYOUT COMBO ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">Combo</span>
+      <h2>Layout completo: Navbar + Sidebar + Content + Footer</h2>
+      <p style="color: var(--gray-600); margin-bottom: 1rem;">Ejemplo de como se combinan los tres organismos en un layout real de dashboard.</p>
+    </section>
+
+    <div class="demo-frame" style="max-width: 72rem; margin: 0 auto 3rem; height: 36rem; display: flex; flex-direction: column; overflow: hidden;">
+      <!-- Navbar -->
+      <nav class="navbar" style="flex-shrink: 0;">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <ul class="navbar-nav">
+          <li><a class="navbar-link active" href="#">Overview</a></li>
+          <li><a class="navbar-link" href="#">Reports</a></li>
+          <li><a class="navbar-link" href="#">Settings</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar + Content -->
+      <div style="display: flex; flex: 1; overflow: hidden;">
+        <aside class="sidebar sidebar-dark" style="min-height: auto; height: auto;">
+          <nav class="sidebar-nav">
+            <div class="sidebar-section">
+              <div class="sidebar-section-title" style="color: var(--gray-400);">Navigation</div>
+              <a class="sidebar-link active" href="#"><span>📊</span> <span>Dashboard</span></a>
+              <a class="sidebar-link" href="#"><span>👥</span> <span>Users</span></a>
+              <a class="sidebar-link" href="#"><span>📦</span> <span>Products</span></a>
+              <a class="sidebar-link" href="#"><span>💰</span> <span>Revenue</span></a>
+            </div>
+          </nav>
+        </aside>
+
+        <main style="flex: 1; padding: 1.5rem; overflow-y: auto; background: var(--gray-50);">
+          <nav>
+            <ol class="breadcrumb breadcrumb-arrow" style="margin-bottom: 1rem;">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </nav>
+
+          <div class="card-group" style="margin-bottom: 1.5rem;">
+            <div class="card card-elevated">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 0.8rem; color: var(--gray-500);">Total Users</p>
+                <p style="font-size: 1.8rem; font-weight: bold; color: var(--color-primary); margin: 0;">8,432</p>
+              </div>
+            </div>
+            <div class="card card-elevated">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 0.8rem; color: var(--gray-500);">Revenue</p>
+                <p style="font-size: 1.8rem; font-weight: bold; color: var(--color-success); margin: 0;">$127.5k</p>
+              </div>
+            </div>
+            <div class="card card-elevated">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 0.8rem; color: var(--gray-500);">Active Now</p>
+                <p style="font-size: 1.8rem; font-weight: bold; color: var(--color-tertiary); margin: 0;">342</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-success" style="margin-bottom: 1rem;">
+            <strong>Actualizado:</strong> Todos los reportes fueron generados exitosamente.
+          </div>
+        </main>
+      </div>
+    </div>
+
+  </body>
+</html>

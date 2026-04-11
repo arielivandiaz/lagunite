@@ -1,0 +1,115 @@
+/* ==========
+   06-molecules / 03-dropdown.css
+   Dropdown container, toggle, menu, items, and alignment.
+   ========== */
+
+/* @ID: #06-03-01 */
+
+/* ── Dropdown shell ─────────────────────────────────────────────────────── */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* @ID: #06-03-02 */
+
+/* ── Dropdown menu (toggle .open on .dropdown) ─────────────────────────── */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none;
+  min-width: 10rem;
+  padding: var(--space-2) 0;
+  margin: 0;
+  list-style: none;
+  background: var(--color-bg);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-m);
+}
+
+.night .dropdown-menu {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+/* @ID: #06-03-03 */
+
+/* ── Items, header, divider ─────────────────────────────────────────────── */
+
+.dropdown-item {
+  display: block;
+  padding: var(--space-2) var(--space-4);
+  color: var(--color-text-base);
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+.dropdown-item.active {
+  background-color: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+.dropdown-item:focus-visible {
+  outline: var(--border-width-md) solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.dropdown-header {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+
+.dropdown-divider {
+  margin: var(--space-2) 0;
+  border: none;
+  border-top: var(--border-width-s) solid var(--color-border);
+}
+
+/* @ID: #06-03-04 */
+
+/* ── Night mode ─────────────────────────────────────────────────────────── */
+
+.night .dropdown-item {
+  color: var(--color-text-alt);
+}
+
+.night .dropdown-item:hover,
+.night .dropdown-item.active {
+  color: var(--color-text-alt);
+}
+
+.night .dropdown-header {
+  color: var(--gray-400);
+}
+
+.night .dropdown-divider {
+  border-top-color: var(--color-border);
+}

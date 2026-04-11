@@ -1,72 +1,84 @@
-/* @ID: #10-03-XX */
-/*** Content Utilities ***/
-.content-none { content: none; }
+/* ==========================================================================
+   10-misc / 03-pseudo.css
+   Pseudo-element utilities: content, ::before/::after helpers, clearfix.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+   ========================================================================== */
+
+/* @ID: #10-03-01 */
+/* ── Content ────────────────────────────────────────────────────────────── */
+
+.content-none  { content: none; }
 .content-empty { content: ''; }
 
-/*** Before/After Display Helpers ***/
-.before-block::before { content: ''; display: block; }
-.before-inline::before { content: ''; display: inline; }
+/* @ID: #10-03-02 */
+/* ── Before/After display helpers ───────────────────────────────────────── */
+
+.before-block::before        { content: ''; display: block; }
+.before-inline::before       { content: ''; display: inline; }
 .before-inline-block::before { content: ''; display: inline-block; }
-.before-table::before { content: ''; display: table; }
+.before-table::before        { content: ''; display: table; }
 
-.after-block::after { content: ''; display: block; }
-.after-inline::after { content: ''; display: inline; }
+.after-block::after        { content: ''; display: block; }
+.after-inline::after       { content: ''; display: inline; }
 .after-inline-block::after { content: ''; display: inline-block; }
-.after-table::after { content: ''; display: table; }
+.after-table::after        { content: ''; display: table; }
 
-/*** Before/After Absolute Positioning Shortcuts ***/
+/* @ID: #10-03-03 */
+/* ── Before/After absolute positioning ──────────────────────────────────── */
+
 .before-absolute::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 }
 
 .after-absolute::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 }
 
-/*** Before/After Centered Overlay ***/
+/* @ID: #10-03-04 */
+/* ── Before/After centered overlay ──────────────────────────────────────── */
+
 .before-overlay::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .after-overlay::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/*** Clearfix Utility ***/
+/* @ID: #10-03-05 */
+/* ── Clearfix ───────────────────────────────────────────────────────────── */
+
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/*** Before/After Content from Attribute ***/
-.before-content::before { content: attr(data-before); }
-.after-content::after { content: attr(data-after); }
+/* @ID: #10-03-06 */
+/* ── Content from attribute ─────────────────────────────────────────────── */
 
-/*** Empty State Helpers ***/
+.before-content::before { content: attr(data-before); }
+.after-content::after   { content: attr(data-after); }
+
+/* @ID: #10-03-07 */
+/* ── Empty state helpers ────────────────────────────────────────────────── */
+
 .empty-block::before {
   content: '';
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
 }
 
 .empty-inline::before {
@@ -74,51 +86,48 @@
   display: inline-block;
 }
 
+/* @ID: #10-03-08 */
+/* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
+
 @media (max-width: 639px) {
-  .xcontent-none { content: none; }
+  .xcontent-none  { content: none; }
   .xcontent-empty { content: ''; }
 
-  .xbefore-block::before { content: ''; display: block; }
-  .xbefore-inline::before { content: ''; display: inline; }
+  .xbefore-block::before        { content: ''; display: block; }
+  .xbefore-inline::before       { content: ''; display: inline; }
   .xbefore-inline-block::before { content: ''; display: inline-block; }
-  .xbefore-table::before { content: ''; display: table; }
+  .xbefore-table::before        { content: ''; display: table; }
 
-  .xafter-block::after { content: ''; display: block; }
-  .xafter-inline::after { content: ''; display: inline; }
+  .xafter-block::after        { content: ''; display: block; }
+  .xafter-inline::after       { content: ''; display: inline; }
   .xafter-inline-block::after { content: ''; display: inline-block; }
-  .xafter-table::after { content: ''; display: table; }
+  .xafter-table::after        { content: ''; display: table; }
 
   .xbefore-absolute::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
   }
 
   .xafter-absolute::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
   }
 
   .xbefore-overlay::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .xafter-overlay::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -129,54 +138,51 @@
   }
 
   .xbefore-content::before { content: attr(data-before); }
-  .xafter-content::after { content: attr(data-after); }
+  .xafter-content::after   { content: attr(data-after); }
 }
 
+/* @ID: #10-03-09 */
+/* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
+
 @media (min-width: 640px) {
-  .dcontent-none { content: none; }
+  .dcontent-none  { content: none; }
   .dcontent-empty { content: ''; }
 
-  .dbefore-block::before { content: ''; display: block; }
-  .dbefore-inline::before { content: ''; display: inline; }
+  .dbefore-block::before        { content: ''; display: block; }
+  .dbefore-inline::before       { content: ''; display: inline; }
   .dbefore-inline-block::before { content: ''; display: inline-block; }
-  .dbefore-table::before { content: ''; display: table; }
+  .dbefore-table::before        { content: ''; display: table; }
 
-  .dafter-block::after { content: ''; display: block; }
-  .dafter-inline::after { content: ''; display: inline; }
+  .dafter-block::after        { content: ''; display: block; }
+  .dafter-inline::after       { content: ''; display: inline; }
   .dafter-inline-block::after { content: ''; display: inline-block; }
-  .dafter-table::after { content: ''; display: table; }
+  .dafter-table::after        { content: ''; display: table; }
 
   .dbefore-absolute::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
   }
 
   .dafter-absolute::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
   }
 
   .dbefore-overlay::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .dafter-overlay::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -187,5 +193,5 @@
   }
 
   .dbefore-content::before { content: attr(data-before); }
-  .dafter-content::after { content: attr(data-after); }
+  .dafter-content::after   { content: attr(data-after); }
 }

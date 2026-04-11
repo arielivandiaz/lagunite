@@ -1,13 +1,31 @@
 folder: 04-decorators
 file: 06-transitions.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 17
-content[17]:
+totalSelectors: 27
+content[27]:
+  - type: selector
+    selectorType: class
+    selector: .transition-none
+    id: #04-06-01
+    category: null
+    properties[1]: transition-property
+    cssRule: "transition-property: none"
+    responsive: true
+    description: ** Transition Shorthand **
+  - type: selector
+    selectorType: class
+    selector: .transition
+    id: #04-06-01
+    category: null
+    properties[1]: transition
+    cssRule: "transition: all 0.2s ease-in-out"
+    responsive: true
+    description: ** Transition Shorthand **
   - type: selector
     selectorType: class
     selector: .transition-all
-    id: #04-06-XX
+    id: #04-06-02
     category: null
     properties[1]: transition-property
     cssRule: "transition-property: all"
@@ -16,7 +34,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .transition-colors
-    id: #04-06-XX
+    id: #04-06-02
     category: null
     properties[1]: transition-property
     cssRule: "transition-property: color, background-color, border-color, text-decoration-color, fill, stroke"
@@ -25,7 +43,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .transition-opacity
-    id: #04-06-XX
+    id: #04-06-02
     category: null
     properties[1]: transition-property
     cssRule: "transition-property: opacity"
@@ -34,7 +52,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .transition-transform
-    id: #04-06-XX
+    id: #04-06-02
     category: null
     properties[1]: transition-property
     cssRule: "transition-property: transform"
@@ -42,8 +60,26 @@ content[17]:
     description: ** Transition Properties **
   - type: selector
     selectorType: class
+    selector: .transition-shadow
+    id: #04-06-02
+    category: null
+    properties[1]: transition-property
+    cssRule: "transition-property: box-shadow"
+    responsive: true
+    description: ** Transition Properties **
+  - type: selector
+    selectorType: class
+    selector: .duration-0
+    id: #04-06-03
+    category: null
+    properties[1]: transition-duration
+    cssRule: "transition-duration: 0ms"
+    responsive: false
+    description: ** Transition Durations **
+  - type: selector
+    selectorType: class
     selector: .duration-75
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 75ms"
@@ -52,7 +88,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .duration-100
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 100ms"
@@ -61,7 +97,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .duration-150
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 150ms"
@@ -70,7 +106,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .duration-200
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 200ms"
@@ -79,7 +115,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .duration-300
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 300ms"
@@ -88,7 +124,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .duration-500
-    id: #04-06-XX
+    id: #04-06-03
     category: null
     properties[1]: transition-duration
     cssRule: "transition-duration: 500ms"
@@ -96,8 +132,26 @@ content[17]:
     description: ** Transition Durations **
   - type: selector
     selectorType: class
+    selector: .duration-700
+    id: #04-06-03
+    category: null
+    properties[1]: transition-duration
+    cssRule: "transition-duration: 700ms"
+    responsive: false
+    description: ** Transition Durations **
+  - type: selector
+    selectorType: class
+    selector: .duration-1000
+    id: #04-06-03
+    category: null
+    properties[1]: transition-duration
+    cssRule: "transition-duration: 1000ms"
+    responsive: false
+    description: ** Transition Durations **
+  - type: selector
+    selectorType: class
     selector: .ease-linear
-    id: #04-06-XX
+    id: #04-06-04
     category: null
     properties[1]: transition-timing-function
     cssRule: "transition-timing-function: linear"
@@ -106,7 +160,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .ease-in
-    id: #04-06-XX
+    id: #04-06-04
     category: null
     properties[1]: transition-timing-function
     cssRule: "transition-timing-function: cubic-bezier(0.4, 0, 1, 1)"
@@ -115,7 +169,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .ease-out
-    id: #04-06-XX
+    id: #04-06-04
     category: null
     properties[1]: transition-timing-function
     cssRule: "transition-timing-function: cubic-bezier(0, 0, 0.2, 1)"
@@ -124,7 +178,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .ease-in-out
-    id: #04-06-XX
+    id: #04-06-04
     category: null
     properties[1]: transition-timing-function
     cssRule: "transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)"
@@ -132,8 +186,17 @@ content[17]:
     description: ** Transition Timing Functions **
   - type: selector
     selectorType: class
+    selector: .delay-0
+    id: #04-06-05
+    category: null
+    properties[1]: transition-delay
+    cssRule: "transition-delay: 0ms"
+    responsive: false
+    description: ** Transition Delays **
+  - type: selector
+    selectorType: class
     selector: .delay-75
-    id: #04-06-XX
+    id: #04-06-05
     category: null
     properties[1]: transition-delay
     cssRule: "transition-delay: 75ms"
@@ -142,7 +205,7 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .delay-100
-    id: #04-06-XX
+    id: #04-06-05
     category: null
     properties[1]: transition-delay
     cssRule: "transition-delay: 100ms"
@@ -151,9 +214,36 @@ content[17]:
   - type: selector
     selectorType: class
     selector: .delay-150
-    id: #04-06-XX
+    id: #04-06-05
     category: null
     properties[1]: transition-delay
     cssRule: "transition-delay: 150ms"
+    responsive: true
+    description: ** Transition Delays **
+  - type: selector
+    selectorType: class
+    selector: .delay-200
+    id: #04-06-05
+    category: null
+    properties[1]: transition-delay
+    cssRule: "transition-delay: 200ms"
+    responsive: true
+    description: ** Transition Delays **
+  - type: selector
+    selectorType: class
+    selector: .delay-300
+    id: #04-06-05
+    category: null
+    properties[1]: transition-delay
+    cssRule: "transition-delay: 300ms"
+    responsive: true
+    description: ** Transition Delays **
+  - type: selector
+    selectorType: class
+    selector: .delay-500
+    id: #04-06-05
+    category: null
+    properties[1]: transition-delay
+    cssRule: "transition-delay: 500ms"
     responsive: true
     description: ** Transition Delays **

@@ -989,7 +989,7 @@ input[type="range"] {
   box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
 }
 
-/* @ID: #05-02-16 */
+/* @ID: #05-02-15 */
 /* ── Responsive ─────────────────────────────────────────────────────────── */
 
 @media (max-width: 639px) {

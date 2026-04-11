@@ -1,0 +1,1086 @@
+folder: 03-layout
+file: 10-height.css
+lastUpdated: 2026-04-11
+hasResponsive: true
+totalSelectors: 120
+content[120]:
+  - type: selector
+    selectorType: class
+    selector: .minhp10
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 10%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp15
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 15%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp20
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 20%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp25
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 25%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp30
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 30%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp35
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 35%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp40
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 40%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp45
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 45%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp50
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 50%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp55
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 55%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp60
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 60%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp65
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 65%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp70
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 70%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp75
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 75%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp80
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 80%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp85
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 85%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp90
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 90%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp95
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 95%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .minhp100
+    id: null
+    category: null
+    properties[1]: min-height
+    cssRule: "min-height: 100%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp10
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 10%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp15
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 15%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp20
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 20%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp25
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 25%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp30
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 30%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp35
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 35%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp40
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 40%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp45
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 45%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp50
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 50%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp55
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 55%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp60
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 60%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp65
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 65%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp70
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 70%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp75
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 75%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp80
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 80%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp85
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 85%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp90
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 90%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp95
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 95%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: .maxhp100
+    id: null
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 100%"
+    responsive: true
+    description: "==========================================================================\r\n   03-layout / 10-height.css\r\n   Min/max height (percent and viewport), height fractions, and percentage\r\n   height utilities with responsive x (mobile) and d (desktop) variants.\r\n   Responsive: x = max-width: 639px, d = min-width: 640px.\r\n\r\n   Breakpoint reference (from 04-measures.css):\r\n     --breakpoint-s   : 640px\r\n     --breakpoint-md  : 768px\r\n     --breakpoint-l   : 1024px\r\n     --breakpoint-xl  : 1440px\r\n   =========================================================================="
+  - type: selector
+    selectorType: class
+    selector: ".hp-1\\/3"
+    id: null
+    category: null
+    properties[1]: height
+    cssRule: "height: 33.333333%"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".hp-2\\/3"
+    id: null
+    category: null
+    properties[1]: height
+    cssRule: "height: 66.666667%"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".hp-1\\/6"
+    id: null
+    category: null
+    properties[1]: height
+    cssRule: "height: 16.666667%"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: ".hp-5\\/6"
+    id: null
+    category: null
+    properties[1]: height
+    cssRule: "height: 83.333333%"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh5
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 5vh\nheight: 5dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh10
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 10vh\nheight: 10dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh15
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 15vh\nheight: 15dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh20
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 20vh\nheight: 20dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh25
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 25vh\nheight: 25dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh30
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 30vh\nheight: 30dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh35
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 35vh\nheight: 35dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh40
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 40vh\nheight: 40dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh45
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 45vh\nheight: 45dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh50
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 50vh\nheight: 50dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh55
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 55vh\nheight: 55dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh60
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 60vh\nheight: 60dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh65
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 65vh\nheight: 65dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh70
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 70vh\nheight: 70dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh75
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 75vh\nheight: 75dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh80
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 80vh\nheight: 80dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh85
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 85vh\nheight: 85dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh90
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 90vh\nheight: 90dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh95
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 95vh\nheight: 95dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .vh100
+    id: null
+    category: null
+    properties[2]: height,height
+    cssRule: "height: 100vh\nheight: 100dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh10
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 10vh\nmin-height: 10dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh15
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 15vh\nmin-height: 15dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh20
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 20vh\nmin-height: 20dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh25
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 25vh\nmin-height: 25dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh30
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 30vh\nmin-height: 30dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh35
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 35vh\nmin-height: 35dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh40
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 40vh\nmin-height: 40dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh45
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 45vh\nmin-height: 45dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh50
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 50vh\nmin-height: 50dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh55
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 55vh\nmin-height: 55dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh60
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 60vh\nmin-height: 60dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh65
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 65vh\nmin-height: 65dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh70
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 70vh\nmin-height: 70dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh75
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 75vh\nmin-height: 75dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh80
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 80vh\nmin-height: 80dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh85
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 85vh\nmin-height: 85dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh90
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 90vh\nmin-height: 90dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh95
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 95vh\nmin-height: 95dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .minvh100
+    id: null
+    category: null
+    properties[2]: min-height,min-height
+    cssRule: "min-height: 100vh\nmin-height: 100dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh10
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 10vh\nmax-height: 10dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh15
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 15vh\nmax-height: 15dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh20
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 20vh\nmax-height: 20dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh25
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 25vh\nmax-height: 25dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh30
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 30vh\nmax-height: 30dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh35
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 35vh\nmax-height: 35dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh40
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 40vh\nmax-height: 40dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh45
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 45vh\nmax-height: 45dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh50
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 50vh\nmax-height: 50dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh55
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 55vh\nmax-height: 55dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh60
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 60vh\nmax-height: 60dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh65
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 65vh\nmax-height: 65dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh70
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 70vh\nmax-height: 70dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh75
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 75vh\nmax-height: 75dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh80
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 80vh\nmax-height: 80dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh85
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 85vh\nmax-height: 85dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh90
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 90vh\nmax-height: 90dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh95
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 95vh\nmax-height: 95dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .maxvh100
+    id: null
+    category: null
+    properties[2]: max-height,max-height
+    cssRule: "max-height: 100vh\nmax-height: 100dvh"
+    responsive: true
+    description: ** Height Fractions **
+  - type: selector
+    selectorType: class
+    selector: .hp5
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 5%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp10
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 10%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp15
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 15%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp20
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 20%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp25
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 25%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp30
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 30%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp35
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 35%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp40
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 40%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp45
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 45%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp50
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 50%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp55
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 55%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp60
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 60%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp65
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 65%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp70
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 70%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp75
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 75%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp80
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 80%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp85
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 85%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp90
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 90%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp95
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 95%"
+    responsive: true
+    description: Porcentage Height
+  - type: selector
+    selectorType: class
+    selector: .hp100
+    id: #03-10-03
+    category: null
+    properties[1]: height
+    cssRule: "height: 100%"
+    responsive: true
+    description: Porcentage Height

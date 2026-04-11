@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite – Molecules demo</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      .demo-wrap { min-height: 100vh; background: var(--color-bg); color: var(--color-text-base); }
+      .demo-section { padding: 3rem 1.5rem; max-width: 56rem; margin: 0 auto; }
+      .demo-section + .demo-section { border-top: 1px solid var(--color-border); }
+      .demo-tag {
+        display: inline-block; font-family: var(--font-mono); font-size: 0.75rem;
+        padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+        background: var(--color-primary); color: white;
+      }
+      .demo-grid { display: grid; gap: 2rem; }
+      .demo-grid-2 { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+      .demo-box {
+        padding: 1rem; border-radius: var(--radius-m);
+        border: 1px solid var(--color-border); background: rgba(0,0,0,0.02);
+      }
+      .demo-spacer { height: 1rem; }
+    </style>
+  </head>
+  <body class="demo-wrap">
+
+    <!-- ================= HEADER ================= -->
+    <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
+      <h1 style="margin: 0 0 0.5rem;">Lagunite – Molecules</h1>
+      <p style="margin: 0; opacity: 0.85;">Form groups, alerts, dropdowns, tooltips y breadcrumbs</p>
+    </header>
+
+    <!-- ================= 1. FORM GROUPS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">01-form-groups.css</span>
+      <h2>Form Groups</h2>
+
+      <h3>Grupo basico</h3>
+      <div class="form-group">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" placeholder="Ej: Juan Perez" />
+        <span class="form-help">Ingresa tu nombre tal como aparece en tu documento.</span>
+      </div>
+
+      <h3>Estado de error</h3>
+      <div class="form-group has-error">
+        <label class="form-label">Email</label>
+        <input type="email" value="no-valido" />
+        <span class="form-error-msg">El formato del email no es valido.</span>
+      </div>
+
+      <h3>Estado de exito</h3>
+      <div class="form-group has-success">
+        <label class="form-label">Username</label>
+        <input type="text" value="ariel_ok" />
+        <span class="form-help" style="color: var(--color-success);">Username disponible.</span>
+      </div>
+
+      <h3>Input Group (addon + input)</h3>
+      <div class="form-group">
+        <label class="form-label">Sitio web</label>
+        <div class="input-group">
+          <span class="input-group-prepend">https://</span>
+          <input type="text" placeholder="tu-sitio.com" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Precio</label>
+        <div class="input-group">
+          <span class="input-group-prepend">$</span>
+          <input type="number" placeholder="0.00" />
+          <span class="input-group-append">.00</span>
+        </div>
+      </div>
+
+      <h3>Form Row (campos en linea)</h3>
+      <div class="form-row">
+        <div class="form-group" style="flex:1;">
+          <label class="form-label">Nombre</label>
+          <input type="text" placeholder="Juan" />
+        </div>
+        <div class="form-group" style="flex:1;">
+          <label class="form-label">Apellido</label>
+          <input type="text" placeholder="Perez" />
+        </div>
+        <div class="form-group" style="flex:0.5;">
+          <label class="form-label">Edad</label>
+          <input type="number" placeholder="30" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. ALERTS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">02-alerts.css</span>
+      <h2>Alerts</h2>
+
+      <div class="demo-grid">
+        <div class="alert alert-info">
+          <strong>Info:</strong> Tu sesion se cerrara en 5 minutos.
+        </div>
+        <div class="alert alert-success">
+          <strong>Exito:</strong> Los cambios se guardaron correctamente.
+        </div>
+        <div class="alert alert-warning">
+          <strong>Atencion:</strong> Quedan pocos items en stock.
+        </div>
+        <div class="alert alert-error">
+          <strong>Error:</strong> No se pudo conectar con el servidor.
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Alert dismissible</h3>
+      <div class="alert alert-info alert-dismissible" id="dismiss-demo">
+        <strong>Tip:</strong> Puedes cerrar este alert haciendo click en la X.
+        <button class="alert-close" onclick="this.parentElement.style.display='none'">&times;</button>
+      </div>
+
+      <h3>Toast (esquina inferior derecha)</h3>
+      <p>
+        <button class="btn" onclick="document.getElementById('toast-demo').style.display='block'">Mostrar toast</button>
+        <button class="btn secondary" onclick="document.getElementById('toast-demo').style.display='none'">Ocultar toast</button>
+      </p>
+      <div class="toast" id="toast-demo" style="display:none;">
+        <strong>Notificacion</strong><br>
+        Se actualizo tu perfil exitosamente.
+      </div>
+    </section>
+
+    <!-- ================= 3. DROPDOWNS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">03-dropdown.css</span>
+      <h2>Dropdowns</h2>
+
+      <div class="demo-grid demo-grid-2">
+        <div>
+          <h3>Dropdown basico</h3>
+          <div class="dropdown open">
+            <button class="btn dropdown-toggle">Opciones ▾</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" href="#">Duplicar</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Eliminar</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3>Con header y active</h3>
+          <div class="dropdown open">
+            <button class="btn secondary dropdown-toggle">Cuenta ▾</button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Navegacion</li>
+              <li><a class="dropdown-item active" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Configuracion</a></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-header">Sesion</li>
+              <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+      <p><small>Nota: Los dropdowns se muestran con la clase <code>.open</code> en el contenedor <code>.dropdown</code>. En produccion se togglea con JS.</small></p>
+    </section>
+
+    <!-- ================= 4. TOOLTIPS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">04-tooltip.css</span>
+      <h2>Tooltips</h2>
+      <p>Pasa el mouse sobre los elementos para ver los tooltips.</p>
+
+      <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; padding: 3rem 0;">
+        <button class="btn" data-tooltip="Tooltip arriba (default)">Top</button>
+        <button class="btn secondary" data-tooltip="Tooltip abajo" class="tooltip-bottom">Bottom</button>
+        <button class="btn tertiary" data-tooltip="Tooltip izquierda" class="tooltip-left">Left</button>
+        <button class="btn" data-tooltip="Tooltip derecha" class="tooltip-right" style="background: var(--color-success);">Right</button>
+      </div>
+
+      <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center;">
+        <span data-tooltip="Informacion adicional" style="cursor: help; text-decoration: underline dashed;">Hover sobre texto</span>
+        <a href="#" data-tooltip="Ir al inicio">Link con tooltip</a>
+        <span class="badge badge-primary" data-tooltip="3 notificaciones nuevas">3 nuevas</span>
+      </div>
+    </section>
+
+    <!-- ================= 5. BREADCRUMBS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">05-breadcrumb.css</span>
+      <h2>Breadcrumbs</h2>
+
+      <h3>Separador por defecto (slash)</h3>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="#">Productos</a></li>
+          <li class="breadcrumb-item"><a href="#">Categoria</a></li>
+          <li class="breadcrumb-item active">Producto actual</li>
+        </ol>
+      </nav>
+
+      <h3>Separador flecha</h3>
+      <nav>
+        <ol class="breadcrumb breadcrumb-arrow">
+          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+          <li class="breadcrumb-item active">Perfil</li>
+        </ol>
+      </nav>
+
+      <h3>Separador punto</h3>
+      <nav>
+        <ol class="breadcrumb breadcrumb-dot">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Blog</a></li>
+          <li class="breadcrumb-item"><a href="#">2026</a></li>
+          <li class="breadcrumb-item active">Articulo</li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- ================= 6. ALL TOGETHER ================= -->
+    <section class="demo-section" style="background: var(--gray-50); border-radius: var(--radius-l); margin: 2rem auto; padding: 2rem;">
+      <span class="demo-tag">Combo</span>
+      <h2>Formulario completo</h2>
+      <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Ejemplo combinando form-groups, input-groups, alerts y breadcrumb.</p>
+
+      <nav>
+        <ol class="breadcrumb breadcrumb-arrow" style="margin-bottom: 1rem;">
+          <li class="breadcrumb-item"><a href="#">Cuenta</a></li>
+          <li class="breadcrumb-item"><a href="#">Configuracion</a></li>
+          <li class="breadcrumb-item active">Perfil</li>
+        </ol>
+      </nav>
+
+      <div class="alert alert-info" style="margin-bottom: 1.5rem;">
+        Completa todos los campos para actualizar tu perfil.
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1;">
+          <label class="form-label">Nombre</label>
+          <input type="text" value="Ariel" />
+        </div>
+        <div class="form-group" style="flex:1;">
+          <label class="form-label">Apellido</label>
+          <input type="text" value="Garcia" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" value="ariel@ejemplo.com" />
+        <span class="form-help">No compartiremos tu email con terceros.</span>
+      </div>
+
+      <div class="form-group has-error">
+        <label class="form-label">Telefono</label>
+        <div class="input-group">
+          <span class="input-group-prepend">+54</span>
+          <input type="tel" value="abc" />
+        </div>
+        <span class="form-error-msg">Solo se permiten numeros.</span>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Bio</label>
+        <textarea rows="3" placeholder="Cuenta algo sobre ti..."></textarea>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+        <button class="btn secondary alt">Cancelar</button>
+        <button class="btn">Guardar cambios</button>
+      </div>
+    </section>
+
+  </body>
+</html>

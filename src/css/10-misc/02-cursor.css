@@ -1,37 +1,75 @@
-/* @ID: #10-02-XX */
-.cursor-auto { cursor: auto; }
-.cursor-pointer { cursor: pointer; }
+/* ==========================================================================
+   10-misc / 02-cursor.css
+   Cursor, pointer-events, and user-select utilities.
+   Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
+   ========================================================================== */
+
+/* @ID: #10-02-01 */
+/* ── Cursor ─────────────────────────────────────────────────────────────── */
+
+.cursor-auto        { cursor: auto; }
+.cursor-default     { cursor: default; }
+.cursor-pointer     { cursor: pointer; }
 .cursor-not-allowed { cursor: not-allowed; }
-.cursor-text { cursor: text; }
-.cursor-move { cursor: move; }
+.cursor-text        { cursor: text; }
+.cursor-move        { cursor: move; }
+.cursor-grab        { cursor: grab; }
+.cursor-grabbing    { cursor: grabbing; }
+.cursor-wait        { cursor: wait; }
+.cursor-help        { cursor: help; }
+.cursor-crosshair   { cursor: crosshair; }
+.cursor-none        { cursor: none; }
+
+/* @ID: #10-02-02 */
+/* ── Pointer events ─────────────────────────────────────────────────────── */
+
 .pointer-events-none { pointer-events: none; }
 .pointer-events-auto { pointer-events: auto; }
+
+/* @ID: #10-02-03 */
+/* ── User select ────────────────────────────────────────────────────────── */
+
 .select-none { user-select: none; }
 .select-text { user-select: text; }
-.select-all { user-select: all; }
+.select-all  { user-select: all; }
+.select-auto { user-select: auto; }
+
+/* @ID: #10-02-04 */
+/* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
 @media (max-width: 639px) {
-  .xcursor-auto { cursor: auto; }
-  .xcursor-pointer { cursor: pointer; }
+  .xcursor-auto        { cursor: auto; }
+  .xcursor-pointer     { cursor: pointer; }
   .xcursor-not-allowed { cursor: not-allowed; }
-  .xcursor-text { cursor: text; }
-  .xcursor-move { cursor: move; }
+  .xcursor-text        { cursor: text; }
+  .xcursor-move        { cursor: move; }
+  .xcursor-grab        { cursor: grab; }
+  .xcursor-grabbing    { cursor: grabbing; }
+
   .xpointer-events-none { pointer-events: none; }
   .xpointer-events-auto { pointer-events: auto; }
+
   .xselect-none { user-select: none; }
   .xselect-text { user-select: text; }
-  .xselect-all { user-select: all; }
+  .xselect-all  { user-select: all; }
 }
 
+/* @ID: #10-02-05 */
+/* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
+
 @media (min-width: 640px) {
-  .dcursor-auto { cursor: auto; }
-  .dcursor-pointer { cursor: pointer; }
+  .dcursor-auto        { cursor: auto; }
+  .dcursor-pointer     { cursor: pointer; }
   .dcursor-not-allowed { cursor: not-allowed; }
-  .dcursor-text { cursor: text; }
-  .dcursor-move { cursor: move; }
+  .dcursor-text        { cursor: text; }
+  .dcursor-move        { cursor: move; }
+  .dcursor-grab        { cursor: grab; }
+  .dcursor-grabbing    { cursor: grabbing; }
+
   .dpointer-events-none { pointer-events: none; }
   .dpointer-events-auto { pointer-events: auto; }
+
   .dselect-none { user-select: none; }
   .dselect-text { user-select: text; }
-  .dselect-all { user-select: all; }
+  .dselect-all  { user-select: all; }
 }

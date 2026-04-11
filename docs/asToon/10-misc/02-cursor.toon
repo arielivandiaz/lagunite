@@ -1,96 +1,168 @@
 folder: 10-misc
 file: 02-cursor.css
-lastUpdated: 2025-12-14
+lastUpdated: 2026-04-11
 hasResponsive: true
-totalSelectors: 10
-content[10]:
+totalSelectors: 18
+content[18]:
   - type: selector
     selectorType: class
     selector: .cursor-auto
-    id: #10-02-XX
+    id: #10-02-01
     category: null
     properties[1]: cursor
     cssRule: "cursor: auto"
     responsive: true
-    description: ""
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-default
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: default"
+    responsive: false
+    description: ── Cursor ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .cursor-pointer
-    id: #10-02-XX
+    id: #10-02-01
     category: null
     properties[1]: cursor
     cssRule: "cursor: pointer"
     responsive: true
-    description: ""
+    description: ── Cursor ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .cursor-not-allowed
-    id: #10-02-XX
+    id: #10-02-01
     category: null
     properties[1]: cursor
     cssRule: "cursor: not-allowed"
     responsive: true
-    description: ""
+    description: ── Cursor ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .cursor-text
-    id: #10-02-XX
+    id: #10-02-01
     category: null
     properties[1]: cursor
     cssRule: "cursor: text"
     responsive: true
-    description: ""
+    description: ── Cursor ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .cursor-move
-    id: #10-02-XX
+    id: #10-02-01
     category: null
     properties[1]: cursor
     cssRule: "cursor: move"
     responsive: true
-    description: ""
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-grab
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: grab"
+    responsive: true
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-grabbing
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: grabbing"
+    responsive: true
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-wait
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: wait"
+    responsive: false
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-help
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: help"
+    responsive: false
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-crosshair
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: crosshair"
+    responsive: false
+    description: ── Cursor ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cursor-none
+    id: #10-02-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: none"
+    responsive: false
+    description: ── Cursor ───────────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .pointer-events-none
-    id: #10-02-XX
+    id: #10-02-02
     category: null
     properties[1]: pointer-events
     cssRule: "pointer-events: none"
     responsive: true
-    description: ""
+    description: ── Pointer events ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .pointer-events-auto
-    id: #10-02-XX
+    id: #10-02-02
     category: null
     properties[1]: pointer-events
     cssRule: "pointer-events: auto"
     responsive: true
-    description: ""
+    description: ── Pointer events ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .select-none
-    id: #10-02-XX
+    id: #10-02-03
     category: null
     properties[1]: user-select
     cssRule: "user-select: none"
     responsive: true
-    description: ""
+    description: ── User select ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .select-text
-    id: #10-02-XX
+    id: #10-02-03
     category: null
     properties[1]: user-select
     cssRule: "user-select: text"
     responsive: true
-    description: ""
+    description: ── User select ──────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .select-all
-    id: #10-02-XX
+    id: #10-02-03
     category: null
     properties[1]: user-select
     cssRule: "user-select: all"
     responsive: true
-    description: ""
+    description: ── User select ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .select-auto
+    id: #10-02-03
+    category: null
+    properties[1]: user-select
+    cssRule: "user-select: auto"
+    responsive: false
+    description: ── User select ──────────────────────────────────────────────────────────
