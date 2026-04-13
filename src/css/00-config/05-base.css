@@ -91,7 +91,7 @@ img {
   max-width: 100%;
 }
 
-header {
+header:not(.navbar):not(.doc-navbar-overlay) {
   margin: 5vh 0 3vh 0;
 }
 

@@ -35,6 +35,15 @@
 - Line height: `.lh-xs`, `.lh-s`, `.lh`, `.lh-l`, `.lh-xl`, `.lh-xxl`.
 - Text align: `.ta-c`, `.ta-lf`, `.ta-rg`, `.ta-j`, `.ta-ja` with responsive `xta-*` and `dta-*`.
 
+## Organisms · Navbar (Important)
+- Base shell: `.navbar`.
+- Position helpers: `.navbar-sticky`, `.navbar-primary`, `.navbar-transparent`.
+- Structure: `.navbar-brand`, `.navbar-nav`, `.navbar-item`, `.navbar-link`, optional `.navbar-burger`.
+- Keep navbar spacing scoped to navbar classes. Avoid global `header { ... }` rules.
+- If global header spacing is needed, use a safe selector:
+	`header:not(.navbar):not(.doc-navbar-overlay)`
+- For overlay navbars (icon-only bars), prefer a dedicated class like `.doc-navbar-overlay` and set explicit `position/top/z-index`.
+
 ## Quick Usage Patterns
 - Centered column: `class="col f-gap padd"` (stacks children, centers, adds gap and padding).
 - Responsive grid list: `class="grid xgrid-cols-1 dgrid-cols-3 g-gap"`.

@@ -7,6 +7,8 @@
 - Spacing: margins `.marg*`, horizontal `.marg-h*`, vertical `.marg-v*`; paddings `.padd*`, `.padd-h*`, `.padd-v*` with `x`/`d` variants. Sizes use `--space-*` tokens.
 - Sizing: intrinsic `.w-auto/.h-auto`, `.w-full/.h-full`, viewport `.w-screen/.h-screen` (vw+ dvw, vh+ dvh), half/quarter screen, semantic steps `.w1..w14`, `.h1..h14`, min-width/height `.min-w1..min-w14`, percent min-width `.minwp10..minwp100` (5% steps) with `x`/`d` variants.
 - Typography: case (`.uppercase`, `.lowercase`, `.capitalize`), letter spacing (`.letter-spacing*`), line height (`.lh*`), text align (`.ta-*` with `xta-*`/`dta-*`).
+- Navbar organisms: `.navbar`, `.navbar-brand`, `.navbar-nav`, `.navbar-item`, `.navbar-link`, `.navbar-burger`; variants `.navbar-sticky`, `.navbar-primary`, `.navbar-transparent`.
+- Navbar safety: never style all `header` tags for spacing. If needed, scope as `header:not(.navbar):not(.doc-navbar-overlay)`.
 
 ## Prompting Rules for the Assistant
 - Say explicitly: “Use Lagunite v2 utilities only; do not invent classes.”
@@ -16,6 +18,7 @@
 - Use spacing tokens via utilities (`.padd`, `.marg-h-s`) instead of raw px.
 - Use semantic sizes (`.w1`, `.w-full`, `.w-screen`) before arbitrary widths.
 - Keep output minimal: only the requested HTML/JSX with classes; short notes if a utility is missing.
+- When working with navbars, always keep rules component-scoped (`.navbar*`) and avoid global tag selectors that can shift layout unexpectedly.
 
 ## Ready-to-Copy Prompt Starters
 
