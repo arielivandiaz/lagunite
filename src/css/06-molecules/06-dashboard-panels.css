@@ -1,0 +1,101 @@
+/* ==========
+   06-molecules / 06-dashboard-panels.css
+   Dashboard content blocks: page heading, KPI cards, and panel grid.
+   ========== */
+
+/* @ID: #06-06-01 */
+
+.dashboard-page-head {
+  margin-bottom: var(--space-5);
+}
+
+.dashboard-page-head h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem);
+  color: var(--gray-900);
+}
+
+.dashboard-page-head p {
+  margin-top: var(--space-2);
+  color: var(--gray-600);
+}
+
+/* @ID: #06-06-02 */
+
+.dashboard-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.dashboard-kpi-card {
+  background: #ffffff;
+  border: var(--border-width-s) solid var(--gray-200);
+  border-radius: var(--radius-l);
+  padding: var(--space-4);
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.dashboard-kpi-card p {
+  margin: 0;
+  color: var(--gray-600);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dashboard-kpi-card h2 {
+  margin: var(--space-2) 0 4px;
+  color: var(--gray-900);
+  font-size: 1.65rem;
+}
+
+.dashboard-kpi-card span {
+  color: var(--blue-500);
+  font-size: var(--font-size-s);
+}
+
+/* @ID: #06-06-03 */
+
+.dashboard-panels-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: var(--space-3);
+}
+
+.dashboard-panel {
+  background: #ffffff;
+  border: var(--border-width-s) solid var(--gray-200);
+  border-radius: var(--radius-l);
+  padding: var(--space-4);
+  min-height: 220px;
+}
+
+.dashboard-panel h3 {
+  margin: 0;
+  color: var(--gray-900);
+}
+
+.dashboard-panel p {
+  margin-top: var(--space-2);
+  color: var(--gray-500);
+}
+
+/* @ID: #06-06-04 */
+
+@media (width <= 1140px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-panels-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 640px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}

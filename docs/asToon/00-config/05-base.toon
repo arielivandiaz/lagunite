@@ -113,8 +113,8 @@ content[45]:
     responsive: false
     description: ** Static **
   - type: selector
-    selectorType: element
-    selector: header
+    selectorType: pseudo
+    selector: "header:not(.navbar):not(.doc-navbar-overlay)"
     id: #00-05-03
     category: null
     properties[1]: margin

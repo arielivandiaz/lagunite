@@ -181,8 +181,8 @@
     },
     {
       "type": "selector",
-      "selectorType": "element",
-      "selector": "header",
+      "selectorType": "pseudo",
+      "selector": "header:not(.navbar):not(.doc-navbar-overlay)",
       "id": "#00-05-03",
       "category": null,
       "properties": [
