@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>POC — Tabla Libro Mayor</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      body {
+        background: #111;
+        min-height: 100vh;
+        padding: 48px 24px;
+        font-family: var(--font-text);
+      }
+
+      /* Card contenedor: fondo oscuro con borde sutil */
+      .ledger-card {
+        background: #1e2025;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        overflow: hidden;
+        max-width: 900px;
+        margin: 0 auto;
+        /* GAP: needs .card dark variant or .bg-gray-900 class */
+      }
+
+      .ledger-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        /* GAP: border-bottom color via utility would need .border-b-alpha class */
+      }
+
+      /* Tabla sin margin propio dentro del card */
+      .ledger-card .table {
+        margin: 0;
+      }
+
+      /* Monto en columna numérica — espaciado tabular */
+      .amount {
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.01em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ─── Variante 1: dark card (imagen de referencia) ─────────────────── -->
+    <div class="night ledger-card">
+
+      <!-- Encabezado del card -->
+      <div class="ledger-header">
+        <span class="font-headers font-weight-3 font-l">Libro Mayor de Transacciones</span>
+        <a href="#" class="color-primary font-s font-weight-2">Download CSV</a>
+      </div>
+
+      <!-- Tabla responsiva -->
+      <div class="table-responsive">
+        <table class="table divided sleek">
+          <thead>
+            <tr>
+              <th class="uppercase letter-spacing-s font-xs">Fecha</th>
+              <th class="uppercase letter-spacing-s font-xs">Tipo</th>
+              <th class="uppercase letter-spacing-s font-xs">Concepto</th>
+              <th class="uppercase letter-spacing-s font-xs ta-rg">Monto</th>
+              <th class="uppercase letter-spacing-s font-xs ta-rg">Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-s">12 Abr 2024</td>
+              <td><span class="badge badge-pill badge-success-light">Pago de Cuota</span></td>
+              <td class="font-s">Cuota Mensual Ref: 45290</td>
+              <td class="ta-rg bold font-s color-error amount">-$150.00</td>
+              <td class="ta-rg font-s amount">$2,450.00</td>
+            </tr>
+            <tr>
+              <td class="font-s">05 Abr 2024</td>
+              <td><span class="badge badge-pill badge-error-light">Cargo de Interés</span></td>
+              <td class="font-s">Devengo Interés Período Marzo</td>
+              <td class="ta-rg bold font-s color-success amount">+$45.20</td>
+              <td class="ta-rg font-s amount">$2,600.00</td>
+            </tr>
+            <tr>
+              <td class="font-s">28 Mar 2024</td>
+              <td><span class="badge badge-pill badge-warning-light">Pago Parcial</span></td>
+              <td class="font-s">Abono Extraordinario a Capital</td>
+              <td class="ta-rg bold font-s color-error amount">-$500.00</td>
+              <td class="ta-rg font-s amount">$2,554.80</td>
+            </tr>
+            <tr>
+              <td class="font-s">12 Mar 2024</td>
+              <td><span class="badge badge-pill badge-success-light">Pago de Cuota</span></td>
+              <td class="font-s">Cuota Mensual Ref: 45188</td>
+              <td class="ta-rg bold font-s color-error amount">-$150.00</td>
+              <td class="ta-rg font-s amount">$3,054.80</td>
+            </tr>
+            <tr>
+              <td class="font-s">01 Mar 2024</td>
+              <td><span class="badge badge-pill badge-error-light">Cargo de Interés</span></td>
+              <td class="font-s">Devengo Interés Período Febrero</td>
+              <td class="ta-rg bold font-s color-success amount">+$52.80</td>
+              <td class="ta-rg font-s amount">$3,204.80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ─── Separador ─────────────────────────────────────────────────────── -->
+    <p class="ta-c font-xs letter-spacing-s uppercase" style="color: rgba(255,255,255,0.3); margin: 48px 0 32px;">
+      ── Variantes de tipos de movimiento ──
+    </p>
+
+    <!-- ─── Variante 2: todos los badge types + light mode para comparar ──── -->
+    <div class="container container-l">
+
+      <!-- Badge showcase (night) -->
+      <div class="night ledger-card" style="margin-bottom: 32px;">
+        <div class="ledger-header">
+          <span class="font-headers font-weight-3 font-s">Tipos de movimiento — night</span>
+        </div>
+        <div style="padding: 16px 24px;" class="row gap-s flex-wrap">
+          <span class="badge badge-pill badge-success-light">Pago de Cuota</span>
+          <span class="badge badge-pill badge-error-light">Cargo de Interés</span>
+          <span class="badge badge-pill badge-warning-light">Pago Parcial</span>
+          <span class="badge badge-pill badge-info-light">Transferencia</span>
+          <span class="badge badge-pill badge-primary-light">Ajuste</span>
+          <span class="badge badge-pill badge-secondary">Cancelado</span>
+        </div>
+      </div>
+
+      <!-- Badge showcase (light) -->
+      <div class="ledger-card" style="background: #fff; border: 1px solid rgba(0,0,0,0.08); margin-bottom: 32px;">
+        <div class="ledger-header" style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+          <span class="font-headers font-weight-3 font-s">Tipos de movimiento — light</span>
+        </div>
+        <div style="padding: 16px 24px;" class="row gap-s flex-wrap">
+          <span class="badge badge-pill badge-success-light">Pago de Cuota</span>
+          <span class="badge badge-pill badge-error-light">Cargo de Interés</span>
+          <span class="badge badge-pill badge-warning-light">Pago Parcial</span>
+          <span class="badge badge-pill badge-info-light">Transferencia</span>
+          <span class="badge badge-pill badge-primary-light">Ajuste</span>
+          <span class="badge badge-pill badge-secondary">Cancelado</span>
+        </div>
+      </div>
+
+      <!-- Tabla light para comparar -->
+      <div class="ledger-card" style="background: #fff; border: 1px solid rgba(0,0,0,0.08);">
+        <div class="ledger-header" style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+          <span class="font-headers font-weight-3 font-l">Libro Mayor — light mode</span>
+          <a href="#" class="color-primary font-s font-weight-2">Download CSV</a>
+        </div>
+        <div class="table-responsive">
+          <table class="table divided sleek">
+            <thead>
+              <tr>
+                <th class="uppercase letter-spacing-s font-xs">Fecha</th>
+                <th class="uppercase letter-spacing-s font-xs">Tipo</th>
+                <th class="uppercase letter-spacing-s font-xs">Concepto</th>
+                <th class="uppercase letter-spacing-s font-xs ta-rg">Monto</th>
+                <th class="uppercase letter-spacing-s font-xs ta-rg">Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-s">12 Abr 2024</td>
+                <td><span class="badge badge-pill badge-success-light">Pago de Cuota</span></td>
+                <td class="font-s">Cuota Mensual Ref: 45290</td>
+                <td class="ta-rg bold font-s color-error amount">-$150.00</td>
+                <td class="ta-rg font-s amount">$2,450.00</td>
+              </tr>
+              <tr>
+                <td class="font-s">05 Abr 2024</td>
+                <td><span class="badge badge-pill badge-error-light">Cargo de Interés</span></td>
+                <td class="font-s">Devengo Interés Período Marzo</td>
+                <td class="ta-rg bold font-s color-success amount">+$45.20</td>
+                <td class="ta-rg font-s amount">$2,600.00</td>
+              </tr>
+              <tr>
+                <td class="font-s">28 Mar 2024</td>
+                <td><span class="badge badge-pill badge-warning-light">Pago Parcial</span></td>
+                <td class="font-s">Abono Extraordinario a Capital</td>
+                <td class="ta-rg bold font-s color-error amount">-$500.00</td>
+                <td class="ta-rg font-s amount">$2,554.80</td>
+              </tr>
+              <tr>
+                <td class="font-s">12 Mar 2024</td>
+                <td><span class="badge badge-pill badge-success-light">Pago de Cuota</span></td>
+                <td class="font-s">Cuota Mensual Ref: 45188</td>
+                <td class="ta-rg bold font-s color-error amount">-$150.00</td>
+                <td class="ta-rg font-s amount">$3,054.80</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

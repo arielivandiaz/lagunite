@@ -1,0 +1,182 @@
+/* @ID: #06-08-01 */
+/* Draggable Node Component
+   For use within .dnd-canvas or similar spatial containers.
+   Supports pointer events, grid snap, and z-index management.
+   Use --dnd-node-accent to set per-node color (defaults to primary).
+*/
+
+.dnd-node {
+  /* Accent token — override inline or via modifier class */
+  --dnd-node-accent: var(--color-primary);
+
+  /* Layout */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  /* Sizing */
+  width: var(--space-44);
+  min-height: var(--space-24);
+
+  /* Appearance */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-l);
+  background: #fff;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 14px rgba(0, 0, 0, 0.09);
+
+  /* Interaction */
+  user-select: none;
+  touch-action: none;
+  cursor: grab;
+  overflow: visible;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.dnd-node:hover {
+  border-color: rgba(var(--color-primary-rgb), 0.35);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 6px 20px rgba(var(--color-primary-rgb), 0.13);
+}
+
+.dnd-node.is-dragging {
+  cursor: grabbing;
+  border-color: var(--dnd-node-accent);
+  box-shadow:
+    0 10px 32px rgba(0, 0, 0, 0.14),
+    0 3px 10px rgba(0, 0, 0, 0.08);
+  transform: scale(1.02);
+}
+
+/* ── Node header ──────────────────────────────────────────────────────── */
+
+.dnd-node-header {
+  /* Typography */
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  /* Appearance */
+  color: var(--dnd-node-accent);
+  border-left: 3px solid var(--dnd-node-accent);
+
+  /* Spacing */
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ── Node body ────────────────────────────────────────────────────────── */
+
+.dnd-node-body {
+  /* Typography */
+  font-size: var(--font-size-s);
+  line-height: 1.5;
+
+  /* Appearance */
+  color: var(--color-text-base);
+
+  /* Spacing */
+  padding: var(--space-3);
+  flex: 1;
+}
+
+/* ── Node footer / status ────────────────────────────────────────────── */
+
+.dnd-node-status {
+  /* Typography */
+  font-size: var(--font-size-xs);
+  color: var(--gray-400);
+
+  /* Spacing */
+  padding: var(--space-1) var(--space-3) var(--space-2);
+}
+
+/* ── Connection handles ───────────────────────────────────────────────── */
+
+.node-handle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 2px solid var(--dnd-node-accent);
+  border-radius: 50%;
+  cursor: crosshair;
+  z-index: 20;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+  touch-action: none;
+}
+
+.node-handle:hover,
+.node-handle.active {
+  background: var(--dnd-node-accent);
+  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4);
+}
+
+/* Handle positions — centered on each edge (offset = half of 14px = 7px) */
+.node-handle[data-port="top"]    { top: -7px;    left: 50%;  transform: translateX(-50%); }
+.node-handle[data-port="right"]  { top: 50%;     right: -7px; transform: translateY(-50%); }
+.node-handle[data-port="bottom"] { bottom: -7px; left: 50%;  transform: translateX(-50%); }
+.node-handle[data-port="left"]   { top: 50%;     left: -7px; transform: translateY(-50%); }
+
+.node-handle[data-port="top"]:hover,
+.node-handle[data-port="top"].active    { transform: translateX(-50%) scale(1.35); }
+.node-handle[data-port="right"]:hover,
+.node-handle[data-port="right"].active  { transform: translateY(-50%) scale(1.35); }
+.node-handle[data-port="bottom"]:hover,
+.node-handle[data-port="bottom"].active { transform: translateX(-50%) scale(1.35); }
+.node-handle[data-port="left"]:hover,
+.node-handle[data-port="left"].active   { transform: translateY(-50%) scale(1.35); }
+
+/* ── Night mode ──────────────────────────────────────────────────────── */
+
+.night .dnd-node {
+  background: var(--gray-800);
+  border-color: rgba(255, 255, 255, 0.07);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.night .dnd-node:hover {
+  border-color: rgba(94, 154, 255, 0.45);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 6px 20px rgba(94, 154, 255, 0.18);
+}
+
+.night .dnd-node.is-dragging {
+  border-color: var(--color-primary-light);
+  box-shadow:
+    0 10px 32px rgba(0, 0, 0, 0.55),
+    0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.night .dnd-node-header {
+  color: var(--color-primary-light);
+  border-left-color: var(--color-primary-light);
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.night .dnd-node-body {
+  color: var(--gray-200);
+}
+
+.night .dnd-node-status {
+  color: var(--gray-600);
+}
+
+.night .node-handle {
+  background: var(--gray-800);
+  border-color: var(--color-primary-light);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.night .node-handle:hover,
+.night .node-handle.active {
+  background: var(--color-primary-light);
+  box-shadow: 0 2px 8px rgba(94, 154, 255, 0.45);
+}

@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagunite · Guia de Position</title>
+  <link rel="stylesheet" href="dist/lagunite.css" />
+  <style>
+    /* Demo helpers only (no framework utilities) */
+    .stage {
+      min-height: 180px;
+      border-radius: var(--radius-m);
+      padding: var(--space-3);
+      position: relative;
+      overflow: hidden;
+    }
+    .stage.tall {
+      min-height: 260px;
+    }
+    .box {
+      border-radius: var(--radius-m);
+      padding: var(--space-3) var(--space-4);
+      min-width: 72px;
+      min-height: 42px;
+      font-size: var(--font-size-s);
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ghost-grid {
+      background-image:
+        linear-gradient(to right, rgba(0,0,0,0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .sticky-host {
+      max-height: 260px;
+      overflow: auto;
+      border-radius: var(--radius-m);
+    }
+    .floating-hint {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 1000;
+      pointer-events: none;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body class="bg">
+
+  <header class="bgg-2 padd-v-l">
+    <div class="container-l col gap-s ai-c ta-c">
+      <h1 class="bold font-xxl">Position en Lagunite</h1>
+      <p class="font-l opacity-80">Guia practica: "Si quiero esta posicion, uso estas clases".</p>
+      <div class="row gap-s">
+        <a class="btn std" href="demo-flex-layouts.html">Flex</a>
+        <a class="btn secondary std" href="demo-grid-layouts.html">Grid</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-l padd-v-l col gap-l ai-fs">
+
+    <div class="alert alert-info wp100">
+      <strong>Como leer esta guia:</strong> cada tarjeta muestra el patron, las clases, y una demo visual.
+      Esta pagina usa utilidades reales de <code>03-position.css</code> con helpers minimos solo para pintar cajas.
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">1 · Tipos base de posicion</h2>
+      <p class="font-s color-text-alt">
+        Usa <code>.pos-static</code>, <code>.pos-relative</code>, <code>.pos-absolute</code>, <code>.pos-fixed</code> y <code>.pos-sticky</code>
+        cuando quieras declarar el modo base de posicionamiento.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Padre relativo + hijo absoluto</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.pos-relative</span>
+              <span class="badge badge-secondary badge-pill">.pos-absolute</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Caso tipico: badge o boton flotando dentro de una tarjeta.</p>
+            <div class="stage bordered ghost-grid pos-relative">
+              <div class="box bg-1">Contenido</div>
+              <div class="box bg-4 pos-absolute top-0 right-0">Badge</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Comparacion static vs relative</strong>
+            <span class="badge badge-secondary badge-pill">.pos-static / .pos-relative</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Con <code>relative</code> creas el contexto para hijos absolutos.</p>
+            <div class="row gap-s ai-fs">
+              <div class="stage bordered pos-static flex-1">
+                <div class="box bg-2">static</div>
+                <div class="box bg-5 pos-absolute top-0 right-0">se posiciona fuera del bloque esperado</div>
+              </div>
+              <div class="stage bordered pos-relative flex-1">
+                <div class="box bg-2">relative</div>
+                <div class="box bg-3 pos-absolute top-0 right-0">queda anclado al bloque</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">2 · Atajos absolutos pa-*</h2>
+      <p class="font-s color-text-alt">
+        En vez de escribir 2-4 clases de inset, puedes usar atajos: <code>pa-full</code>, <code>pa-tl</code>, <code>pa-br</code>,
+        <code>pa-h</code>, <code>pa-v</code>, etc.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Overlay total</strong>
+            <span class="badge badge-secondary badge-pill">.pa-full</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Cubre todo el contenedor padre. Util para overlays de carga o estados vacios.</p>
+            <div class="stage bordered rel">
+              <div class="box bg-1">Contenido base</div>
+              <div class="pa-full row jc-c ai-c bg-alt opacity-90">
+                <div class="box bg-5">Overlay .pa-full</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Esquinas rapidas</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-secondary badge-pill">.pa-tl</span>
+              <span class="badge badge-secondary badge-pill">.pa-tr</span>
+              <span class="badge badge-secondary badge-pill">.pa-bl</span>
+              <span class="badge badge-secondary badge-pill">.pa-br</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Patron tipico de controles de imagen (acciones en esquinas).</p>
+            <div class="stage bordered rel ghost-grid">
+              <div class="box bg-1 center">Zona principal</div>
+              <div class="box bg-2 pa-tl">TL</div>
+              <div class="box bg-3 pa-tr">TR</div>
+              <div class="box bg-4 pa-bl">BL</div>
+              <div class="box bg-5 pa-br">BR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">3 · Fixed con pf-* (anclado al viewport)</h2>
+      <p class="font-s color-text-alt">
+        <code>pf-*</code> ignora el contenedor y se fija a la ventana. Ideal para CTA flotante, chat button o barra de soporte.
+      </p>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Boton fijo inferior derecha</strong>
+          <span class="badge badge-secondary badge-pill">.pf-br</span>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Demo real en esta misma pagina: abajo a la derecha hay un mini badge fijo con <code>pf-br</code> + <code>marg</code>.
+          </p>
+          <div class="alert alert-info">Haz scroll y veras que el badge no se mueve con el contenido.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">4 · Centrado: center, center-h, center-v, abs-center</h2>
+      <p class="font-s color-text-alt">
+        Usa <code>center</code> para centrar horizontal un bloque con ancho, y <code>abs-center</code> para centrar absoluto exacto en ambos ejes.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Centrado absoluto perfecto</strong>
+            <span class="badge badge-secondary badge-pill">.abs-center</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Ideal para modales custom, loaders o mensajes vacios.</p>
+            <div class="stage bordered rel ghost-grid">
+              <div class="box bg-4 abs-center">abs-center</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Center horizontal de bloque</strong>
+            <span class="badge badge-secondary badge-pill">.center</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Clase rapida para centrar un bloque con ancho definido.</p>
+            <div class="stage bordered">
+              <div class="box bg-2 center" style="width: 180px">Bloque centrado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">5 · Sticky: se pega al borde al hacer scroll</h2>
+      <p class="font-s color-text-alt">
+        <code>.pos-sticky</code> funciona dentro de un contenedor con scroll. Debes combinarlo con inset, por ejemplo <code>.top-0</code>.
+      </p>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Header sticky dentro de panel scrolleable</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-secondary badge-pill">.pos-sticky</span>
+            <span class="badge badge-secondary badge-pill">.top-0</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <div class="sticky-host bordered">
+            <div class="bg-5 padd-s pos-sticky top-0 z5">Sticky header top-0</div>
+            <div class="col gap-s padd-s ai-fs">
+              <div class="card wp100"><div class="card-body">Fila 1</div></div>
+              <div class="card wp100"><div class="card-body">Fila 2</div></div>
+              <div class="card wp100"><div class="card-body">Fila 3</div></div>
+              <div class="card wp100"><div class="card-body">Fila 4</div></div>
+              <div class="card wp100"><div class="card-body">Fila 5</div></div>
+              <div class="card wp100"><div class="card-body">Fila 6</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">6 · Float de anclaje rapido en contenedor relativo</h2>
+      <p class="font-s color-text-alt">
+        <code>float-tr</code>, <code>float-tl</code>, <code>float-bc</code>, <code>float-c</code> son utilidades absolutas rapidas para anclar overlays.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Accion en esquina superior derecha</strong>
+            <span class="badge badge-secondary badge-pill">.float-tr</span>
+          </div>
+          <div class="card-body">
+            <div class="stage bordered rel ghost-grid">
+              <div class="box bg-1 center">Imagen / tarjeta</div>
+              <div class="box bg-3 float-tr">Editar</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Boton centrado inferior</strong>
+            <span class="badge badge-secondary badge-pill">.float-bc</span>
+          </div>
+          <div class="card-body">
+            <div class="stage bordered rel ghost-grid">
+              <div class="box bg-2 center">Video / media</div>
+              <div class="box bg-4 float-bc">Play</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">7 · Z-index por capas</h2>
+      <p class="font-s color-text-alt">
+        Usa <code>.z0</code> ... <code>.z20</code> para controlar superposicion.
+      </p>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>3 capas superpuestas</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-secondary badge-pill">.z1</span>
+            <span class="badge badge-secondary badge-pill">.z5</span>
+            <span class="badge badge-secondary badge-pill">.z10</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="stage bordered rel ghost-grid">
+            <div class="box bg-1 pa-tl z1" style="width: 130px; height: 90px">z1</div>
+            <div class="box bg-2 pa-tl z5" style="left: 40px; top: 35px; width: 130px; height: 90px">z5</div>
+            <div class="box bg-4 pa-tl z10" style="left: 80px; top: 70px; width: 130px; height: 90px">z10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">8 · Inset utilities: top/right/bottom/left</h2>
+      <p class="font-s color-text-alt">
+        Puedes combinar <code>top-0</code>, <code>right-0</code>, <code>left-full</code>, <code>top-1/2</code> para posicionamiento preciso.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Tooltip a la derecha del trigger</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-secondary badge-pill">.left-full</span>
+              <span class="badge badge-secondary badge-pill">.top-0</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="stage bordered rel">
+              <div class="box bg-2 pa-tl">Trigger</div>
+              <div class="box bg-5 pos-absolute left-full top-0" style="margin-left: 8px">Tooltip</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Badge centrado vertical derecha</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-secondary badge-pill">.right-0</span>
+              <span class="badge badge-secondary badge-pill">.top-1/2</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="stage bordered rel">
+              <div class="box bg-1 center" style="width: 200px">Card body</div>
+              <div class="box bg-4 pos-absolute right-0 top-1/2" style="transform: translateY(-50%)">Info</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">9 · Patrones reales</h2>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Notificacion en esquina de avatar</strong>
+            <span class="badge badge-primary badge-pill">.rel + .pa-tr</span>
+          </div>
+          <div class="card-body">
+            <div class="stage bordered rel row jc-c ai-c">
+              <div class="avatar avatar-xl avatar-initials">AD</div>
+              <span class="badge badge-error badge-pill pa-tr">3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>CTA flotante de soporte</strong>
+            <span class="badge badge-primary badge-pill">.pf-br</span>
+          </div>
+          <div class="card-body">
+            <p class="font-s color-text-alt">Clase ideal para botones de ayuda, chat o feedback global.</p>
+            <div class="alert alert-info">En esta demo se muestra como badge fijo abajo a la derecha.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Hero con texto centrado absoluto</strong>
+            <span class="badge badge-primary badge-pill">.abs-center</span>
+          </div>
+          <div class="card-body">
+            <div class="stage tall bordered rel bgg-6">
+              <div class="abs-center col gap-s ai-c ta-c">
+                <h3 class="font-xl bold">Titulo Hero</h3>
+                <p class="font-s">Mensaje central alineado exacto.</p>
+                <a class="btn std" href="#">Accion</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Panel con header sticky</strong>
+            <span class="badge badge-primary badge-pill">.pos-sticky .top-0</span>
+          </div>
+          <div class="card-body">
+            <div class="sticky-host bordered">
+              <div class="bg-3 padd-s pos-sticky top-0 z5">Filtros</div>
+              <div class="col gap-s padd-s ai-fs">
+                <p class="font-s">Resultado 1</p>
+                <p class="font-s">Resultado 2</p>
+                <p class="font-s">Resultado 3</p>
+                <p class="font-s">Resultado 4</p>
+                <p class="font-s">Resultado 5</p>
+                <p class="font-s">Resultado 6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-primary wp100">
+      <div class="card-header">
+        <strong>Cheatsheet rapida · Position</strong>
+      </div>
+      <div class="card-body">
+        <div class="grid dgrid-cols-2 gap-m">
+          <div class="col gap-xs">
+            <p class="bold font-s">Tipos base</p>
+            <p class="font-xs"><code>.pos-static</code> · <code>.pos-relative</code> · <code>.pos-absolute</code> · <code>.pos-fixed</code> · <code>.pos-sticky</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Absoluto rapido</p>
+            <p class="font-xs"><code>.pa-full</code> · <code>.pa-h</code> · <code>.pa-v</code> · <code>.pa-tl</code> · <code>.pa-br</code> ...</p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Fixed rapido</p>
+            <p class="font-xs"><code>.pf-full</code> · <code>.pf-t</code> · <code>.pf-br</code> ...</p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Centering</p>
+            <p class="font-xs"><code>.center</code> · <code>.center-h</code> · <code>.center-v</code> · <code>.abs-center</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Float helpers</p>
+            <p class="font-xs"><code>.float-tr</code> · <code>.float-bc</code> · <code>.float-c</code> ...</p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Capas</p>
+            <p class="font-xs"><code>.z0</code> · <code>.z1</code> · <code>.z5</code> · <code>.z10</code> · <code>.z20</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Inset</p>
+            <p class="font-xs"><code>.top-0</code> · <code>.right-0</code> · <code>.left-full</code> · <code>.top-1/2</code> ...</p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Responsive</p>
+            <p class="font-xs">Todas las familias tienen prefijos <code>x*</code> (mobile) y <code>d*</code> (desktop).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="floating-hint pf-br marg">
+    <span class="badge badge-success badge-pill">Demo fixed (.pf-br)</span>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom ta-c">
+      <p class="font-s color-text-alt">Lagunite CSS Framework · Position Learning Guide · v2</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -494,6 +494,84 @@ table,
 }
 
 /* @ID: #05-03-12 */
+/* Table Dark Variant — for use on dark/glass backgrounds */
+
+.table.dark {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.table.dark th,
+.table.dark td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+.table.dark thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(21, 24, 43, 0.96);
+  color: #ddd6fe;
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+}
+
+.table.dark tbody tr:hover {
+  background: rgba(167, 139, 250, 0.14);
+}
+
+/* @ID: #05-03-13 */
+/* Table Sleek — modern fintech/dashboard style */
+/* Use inside .night for dark variant, works in light too */
+.table.sleek th,
+.table.sleek td {
+  padding: var(--space-5) var(--space-5);
+  vertical-align: middle;
+}
+
+.table.sleek thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.table.sleek thead th {
+  color: rgba(0, 0, 0, 0.38);
+  background: transparent;
+  font-weight: var(--font-weight-medium);
+}
+
+.table.sleek tbody tr {
+  transition: background 0.15s ease;
+}
+
+.table.sleek tbody tr:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.table.sleek.divided tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.table.sleek.divided tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Dark context overrides */
+.night .table.sleek thead {
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+}
+
+.night .table.sleek thead th {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.night .table.sleek tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.night .table.sleek.divided tbody tr {
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+}
+
+/* @ID: #05-03-14 */
 /* Table Sorting Indicators */
 .table th.sortable {
   cursor: pointer;

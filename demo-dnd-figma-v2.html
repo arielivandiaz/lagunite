@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagunite DnD v2 — Node Connections</title>
+    <link rel="stylesheet" href="./dist/lagunite.css" />
+    <style>
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: var(--font-body, "Segoe UI", "Noto Sans", sans-serif);
+        background: var(--gray-100);
+        color: var(--color-text-base);
+      }
+
+      /* ── App shell ───────────────────────────────────────────────────── */
+
+      .app {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        height: 100vh;
+      }
+
+      /* ── Sidebar ─────────────────────────────────────────────────────── */
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid var(--color-border);
+        background: #fff;
+        overflow-y: auto;
+      }
+
+      .night .sidebar {
+        background: var(--gray-800);
+      }
+
+      .sidebar-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-4) var(--space-4) var(--space-3);
+      }
+
+      .sidebar-brand {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+      }
+
+      .sidebar-brand-icon {
+        font-size: 1.25rem;
+        line-height: 1;
+        color: var(--color-primary);
+      }
+
+      .sidebar-brand-name {
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-base);
+        letter-spacing: -0.01em;
+      }
+
+      #theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        background: var(--gray-100);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background 0.15s;
+        min-width: unset;
+      }
+
+      #theme-toggle:hover {
+        background: var(--gray-200);
+        box-shadow: none;
+      }
+
+      .night #theme-toggle {
+        background: var(--gray-700);
+        border-color: var(--gray-600);
+      }
+
+      .night #theme-toggle:hover {
+        background: var(--gray-600);
+        box-shadow: none;
+      }
+
+      .sidebar-divider {
+        height: 1px;
+        background: var(--color-border);
+        margin: 0 var(--space-4);
+      }
+
+      .sidebar-section {
+        padding: var(--space-3) var(--space-4);
+      }
+
+      .sidebar-label {
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--gray-400);
+        margin-bottom: var(--space-2);
+      }
+
+      /* ── Node-add buttons ────────────────────────────────────────────── */
+
+      .node-add-btns {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+      }
+
+      .node-add-btn {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-2) var(--space-3);
+        background: var(--gray-50);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-text-base);
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+        text-align: left;
+        width: 100%;
+      }
+
+      .node-add-btn:hover {
+        box-shadow: none;
+      }
+
+      .node-add-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      /* Frame = primary blue */
+      .node-add-btn[data-create="Frame"] .node-add-dot { background: var(--color-primary); }
+      .node-add-btn[data-create="Frame"]:hover {
+        background: var(--blue-50);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+      }
+
+      /* Card = violet */
+      .node-add-btn[data-create="Card"] .node-add-dot { background: #7c3aed; }
+      .node-add-btn[data-create="Card"]:hover {
+        background: #f5f3ff;
+        border-color: #7c3aed;
+        color: #7c3aed;
+      }
+
+      /* Note = amber */
+      .node-add-btn[data-create="Note"] .node-add-dot { background: var(--color-tertiary); }
+      .node-add-btn[data-create="Note"]:hover {
+        background: #fff7ed;
+        border-color: var(--color-tertiary);
+        color: var(--color-tertiary);
+      }
+
+      .night .node-add-btn {
+        background: var(--gray-700);
+        border-color: var(--gray-600);
+        color: var(--gray-200);
+      }
+
+      .night .node-add-btn[data-create="Frame"]:hover { background: #1e2a40; border-color: var(--color-primary-light); color: var(--color-primary-light); }
+      .night .node-add-btn[data-create="Card"]:hover  { background: #1e1830; border-color: #a78bfa; color: #a78bfa; }
+      .night .node-add-btn[data-create="Note"]:hover  { background: #2a1f10; border-color: var(--color-tertiary-light); color: var(--color-tertiary-light); }
+
+      /* ── Mode indicator ──────────────────────────────────────────────── */
+
+      #mode-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-2) var(--space-3);
+        border-radius: var(--radius-m);
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-bold);
+        background: var(--gray-100);
+        color: var(--gray-600);
+        border: 1px solid var(--color-border);
+        width: 100%;
+        transition: background 0.2s, color 0.2s, border-color 0.2s;
+      }
+
+      #mode-indicator::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gray-400);
+        flex-shrink: 0;
+        transition: background 0.2s;
+      }
+
+      #mode-indicator.connect-mode {
+        background: #fff7ed;
+        color: var(--color-tertiary);
+        border-color: var(--color-tertiary-light);
+      }
+
+      #mode-indicator.connect-mode::before {
+        background: var(--color-tertiary);
+      }
+
+      .night #mode-indicator {
+        background: var(--gray-700);
+        color: var(--gray-400);
+        border-color: var(--gray-600);
+      }
+
+      .night #mode-indicator.connect-mode {
+        background: #2a1f10;
+        color: var(--color-tertiary-light);
+        border-color: var(--color-tertiary);
+      }
+
+      /* ── Zoom controls ───────────────────────────────────────────────── */
+
+      .zoom-row {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+      }
+
+      .zoom-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+        min-width: unset;
+        background: var(--gray-100);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--color-text-base);
+        cursor: pointer;
+        transition: background 0.15s;
+        line-height: 1;
+      }
+
+      .zoom-btn:hover {
+        background: var(--gray-200);
+      }
+
+      .night .zoom-btn {
+        background: var(--gray-700);
+        border-color: var(--gray-600);
+        color: var(--gray-200);
+      }
+
+      .night .zoom-btn:hover {
+        background: var(--gray-600);
+      }
+
+      #zoom-display {
+        flex: 1;
+        text-align: center;
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-base);
+        font-variant-numeric: tabular-nums;
+      }
+
+      #zoom-reset {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--space-1) var(--space-3);
+        margin: 0;
+        min-width: unset;
+        width: 100%;
+        background: var(--gray-100);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-m);
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-medium);
+        color: var(--gray-500);
+        cursor: pointer;
+        margin-top: var(--space-2);
+        transition: background 0.15s;
+      }
+
+      #zoom-reset:hover {
+        background: var(--gray-200);
+        color: var(--color-text-base);
+      }
+
+      .night #zoom-reset {
+        background: var(--gray-700);
+        border-color: var(--gray-600);
+        color: var(--gray-500);
+      }
+
+      .night #zoom-reset:hover {
+        background: var(--gray-600);
+        color: var(--gray-200);
+      }
+
+      /* ── Controls list ───────────────────────────────────────────────── */
+
+      .controls-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+      }
+
+      .control-row {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        font-size: var(--font-size-xs);
+        color: var(--gray-500);
+      }
+
+      .control-row kbd {
+        display: inline-flex;
+        align-items: center;
+        padding: 1px 6px;
+        background: var(--gray-100);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: inherit;
+        color: var(--gray-600);
+        white-space: nowrap;
+      }
+
+      .night .control-row { color: var(--gray-500); }
+      .night .control-row kbd { background: var(--gray-700); border-color: var(--gray-600); color: var(--gray-400); }
+
+      /* ── Canvas area ─────────────────────────────────────────────────── */
+
+      .canvas-wrap {
+        padding: var(--space-4);
+        min-width: 0;
+        background: var(--gray-100);
+      }
+
+      .night .canvas-wrap {
+        background: var(--gray-900);
+      }
+
+      .dnd-canvas {
+        height: calc(100vh - var(--space-8));
+      }
+
+      /* ── Canvas inner stage ───────────────────────────────────────────── */
+      #canvas-stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* ── SVG wire layer ──────────────────────────────────────────────── */
+      #wire-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: visible;
+      }
+
+      /* ── Per-kind node accent colors ─────────────────────────────────── */
+      .dnd-node.node-frame { --dnd-node-accent: var(--color-primary); }
+      .dnd-node.node-card  { --dnd-node-accent: #7c3aed; }
+      .dnd-node.node-note  { --dnd-node-accent: var(--color-tertiary); }
+
+      /* Night mode: lighter accents on dark nodes */
+      .night .dnd-node.node-card  { --dnd-node-accent: #a78bfa; }
+
+      @media (max-width: 900px) {
+        .app {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr;
+        }
+
+        .sidebar {
+          border-right: none;
+          border-bottom: 1px solid var(--color-border);
+        }
+
+        .canvas-wrap { padding: var(--space-3); }
+
+        .dnd-canvas {
+          height: calc(100vh - 280px - var(--space-6));
+          min-height: 440px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+
+        <!-- Brand + theme toggle -->
+        <div class="sidebar-top">
+          <div class="sidebar-brand">
+            <span class="sidebar-brand-icon">⬡</span>
+            <span class="sidebar-brand-name">Canvas</span>
+          </div>
+          <button id="theme-toggle" title="Toggle theme">🌙</button>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Add nodes -->
+        <div class="sidebar-section">
+          <div class="sidebar-label">Add node</div>
+          <div class="node-add-btns">
+            <button class="node-add-btn" data-create="Frame">
+              <span class="node-add-dot"></span> Frame
+            </button>
+            <button class="node-add-btn" data-create="Card">
+              <span class="node-add-dot"></span> Card
+            </button>
+            <button class="node-add-btn" data-create="Note">
+              <span class="node-add-dot"></span> Note
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Mode -->
+        <div class="sidebar-section">
+          <div class="sidebar-label">Mode</div>
+          <div id="mode-indicator">Drag</div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Zoom -->
+        <div class="sidebar-section">
+          <div class="sidebar-label">Zoom</div>
+          <div class="zoom-row">
+            <button id="zoom-out" class="zoom-btn" title="Zoom out">−</button>
+            <span id="zoom-display">100%</span>
+            <button id="zoom-in" class="zoom-btn" title="Zoom in">+</button>
+          </div>
+          <button id="zoom-reset">Reset zoom</button>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Controls -->
+        <div class="sidebar-section">
+          <div class="sidebar-label">Controls</div>
+          <div class="controls-list">
+            <div class="control-row"><kbd>Drag</kbd> node body to move</div>
+            <div class="control-row"><kbd>Drag</kbd> edge dot to connect</div>
+            <div class="control-row"><kbd>Drop</kbd> on node to wire</div>
+            <div class="control-row"><kbd>Click</kbd> wire to delete</div>
+            <div class="control-row"><kbd>Scroll</kbd> on canvas to zoom</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <main class="canvas-wrap">
+        <section id="stage" class="dnd-canvas" aria-label="Design canvas">
+          <div id="canvas-stage">
+            <!-- SVG wire layer sits below nodes in DOM order -->
+            <svg id="wire-layer" aria-hidden="true"></svg>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      (function () {
+        // ── Theme toggle ──────────────────────────────────────────────
+        const themeToggle = document.getElementById("theme-toggle");
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem("dnd-theme") || "light";
+        if (savedTheme === "night") {
+          html.classList.add("night");
+          themeToggle.textContent = "☀️";
+        }
+
+        themeToggle.addEventListener("click", function () {
+          if (html.classList.contains("night")) {
+            html.classList.remove("night");
+            themeToggle.textContent = "🌙";
+            localStorage.setItem("dnd-theme", "light");
+          } else {
+            html.classList.add("night");
+            themeToggle.textContent = "☀️";
+            localStorage.setItem("dnd-theme", "night");
+          }
+        });
+
+        // ── Constants & state ─────────────────────────────────────────
+        const GRID_SNAP   = 8;
+        const ZOOM_STEP   = 0.25;
+        const MIN_ZOOM    = 0.25;
+        const MAX_ZOOM    = 4;
+        let zoom          = 1;
+        let nodeCounter   = 0;
+        let zIndexCounter = 10;
+
+        // Wire state
+        // Each wire: { id, fromNode, fromPort, toNode, toPort, el }
+        const wires = [];
+        let wireDraft = null; // { fromNode, fromPort, ghostEl }
+
+        const stage         = document.getElementById("stage");
+        const canvasStage   = document.getElementById("canvas-stage");
+        const wireLayer     = document.getElementById("wire-layer");
+        const zoomDisplay   = document.getElementById("zoom-display");
+        const modeIndicator = document.getElementById("mode-indicator");
+        const createButtons = document.querySelectorAll("[data-create]");
+
+        // ── Zoom ──────────────────────────────────────────────────────
+        function setZoom(newZoom) {
+          zoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Math.round(newZoom * 100) / 100));
+          canvasStage.style.transform = "scale(" + zoom + ")";
+          canvasStage.style.transformOrigin = "0 0";
+          zoomDisplay.textContent = Math.round(zoom * 100) + "%";
+        }
+
+        document.getElementById("zoom-in").addEventListener("click",    function () { setZoom(zoom + ZOOM_STEP); });
+        document.getElementById("zoom-out").addEventListener("click",   function () { setZoom(zoom - ZOOM_STEP); });
+        document.getElementById("zoom-reset").addEventListener("click", function () { setZoom(1); });
+
+        stage.addEventListener("wheel", function (e) {
+          e.preventDefault();
+          setZoom(zoom + (e.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP));
+        }, { passive: false });
+
+        // ── Coordinate helpers ────────────────────────────────────────
+        function snap(v) { return Math.round(v / GRID_SNAP) * GRID_SNAP; }
+        function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+        function screenToCanvas(clientX, clientY) {
+          const rect = stage.getBoundingClientRect();
+          return {
+            x: (clientX - rect.left) / zoom,
+            y: (clientY - rect.top)  / zoom,
+          };
+        }
+
+        function portCenter(node, port) {
+          const x = Number(node.dataset.x || 0);
+          const y = Number(node.dataset.y || 0);
+          const w = node.offsetWidth;
+          const h = node.offsetHeight;
+          switch (port) {
+            case "top":    return { x: x + w / 2, y: y };
+            case "right":  return { x: x + w,     y: y + h / 2 };
+            case "bottom": return { x: x + w / 2, y: y + h };
+            case "left":   return { x: x,          y: y + h / 2 };
+          }
+        }
+
+        function portVector(port) {
+          switch (port) {
+            case "top":    return { x: 0,  y: -1 };
+            case "right":  return { x: 1,  y: 0  };
+            case "bottom": return { x: 0,  y: 1  };
+            case "left":   return { x: -1, y: 0  };
+            default:       return { x: 1,  y: 0  };
+          }
+        }
+
+        function bezierPath(x1, y1, fromPort, x2, y2, toPort) {
+          const startDir = portVector(fromPort);
+          const endDir   = portVector(toPort);
+          const dist     = Math.hypot(x2 - x1, y2 - y1);
+          const handle   = Math.max(28, Math.min(140, dist * 0.45));
+
+          const c1x = x1 + startDir.x * handle;
+          const c1y = y1 + startDir.y * handle;
+          const c2x = x2 + endDir.x * handle;
+          const c2y = y2 + endDir.y * handle;
+
+          return "M " + x1 + " " + y1 +
+                 " C " + c1x + " " + c1y +
+                 ", "  + c2x + " " + c2y +
+                 ", "  + x2  + " " + y2;
+        }
+
+        // ── Wire rendering ────────────────────────────────────────────
+        function updateWire(wire) {
+          const a = portCenter(wire.fromNode, wire.fromPort);
+          const b = portCenter(wire.toNode,   wire.toPort);
+          wire.el.setAttribute("d", bezierPath(a.x, a.y, wire.fromPort, b.x, b.y, wire.toPort));
+        }
+
+        function updateAllWires() { wires.forEach(updateWire); }
+
+        function addWire(fromNode, fromPort, toNode, toPort) {
+          const exists = wires.some(function (w) {
+            return w.fromNode === fromNode && w.fromPort === fromPort &&
+                   w.toNode   === toNode   && w.toPort   === toPort;
+          });
+          if (exists) return;
+
+          const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          path.classList.add("wire");
+
+          const wire = { fromNode, fromPort, toNode, toPort, el: path };
+          wires.push(wire);
+          wireLayer.appendChild(path);
+          updateWire(wire);
+
+          path.addEventListener("click", function () {
+            wireLayer.removeChild(path);
+            const idx = wires.indexOf(wire);
+            if (idx !== -1) wires.splice(idx, 1);
+          });
+        }
+
+        // ── Ghost wire ────────────────────────────────────────────────
+        function startGhostWire(fromNode, fromPort) {
+          const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          path.classList.add("wire-ghost");
+          wireLayer.appendChild(path);
+          wireDraft = { fromNode, fromPort, ghostEl: path };
+          modeIndicator.textContent = "Connect";
+          modeIndicator.classList.add("connect-mode");
+        }
+
+        function updateGhostWire(canvasX, canvasY) {
+          if (!wireDraft) return;
+          const a = portCenter(wireDraft.fromNode, wireDraft.fromPort);
+          const toPortByStart = { top: "bottom", right: "left", bottom: "top", left: "right" };
+          wireDraft.ghostEl.setAttribute(
+            "d",
+            bezierPath(a.x, a.y, wireDraft.fromPort, canvasX, canvasY, toPortByStart[wireDraft.fromPort])
+          );
+        }
+
+        function commitGhostWire(toNode, toPort) {
+          if (!wireDraft) return;
+          if (toNode && toNode !== wireDraft.fromNode) {
+            addWire(wireDraft.fromNode, wireDraft.fromPort, toNode, toPort);
+          }
+          cancelGhostWire();
+        }
+
+        function cancelGhostWire() {
+          if (!wireDraft) return;
+          wireLayer.removeChild(wireDraft.ghostEl);
+          wireDraft = null;
+          modeIndicator.textContent = "Drag";
+          modeIndicator.classList.remove("connect-mode");
+        }
+
+        // ── Node creation ─────────────────────────────────────────────
+        function setNodePosition(node, x, y) {
+          node.dataset.x = String(x);
+          node.dataset.y = String(y);
+          node.style.transform = "translate(" + x + "px, " + y + "px)";
+          updateAllWires();
+        }
+
+        // Per-kind content
+        const kindMeta = {
+          Frame: {
+            cssClass: "node-frame",
+            body: "Container for related nodes. Use to group a flow or section.",
+            status: "Frame",
+          },
+          Card: {
+            cssClass: "node-card",
+            body: "Displays a discrete piece of information or an action item.",
+            status: "Card",
+          },
+          Note: {
+            cssClass: "node-note",
+            body: "Annotation or comment. Attach to any part of the canvas.",
+            status: "Note",
+          },
+        };
+
+        function createNode(kind, x, y) {
+          nodeCounter += 1;
+          const meta = kindMeta[kind] || { cssClass: "node-frame", body: "", status: kind };
+
+          const node = document.createElement("article");
+          node.className = "dnd-node " + meta.cssClass;
+          node.id = "node-" + nodeCounter;
+          node.tabIndex = 0;
+          node.innerHTML =
+            '<div class="dnd-node-header">' + kind + '</div>' +
+            '<div class="dnd-node-body">' + meta.body + '</div>' +
+            '<div class="dnd-node-status">' + meta.status + ' · #' + nodeCounter + '</div>' +
+            '<div class="node-handle" data-port="top"    title="Connect from top"></div>' +
+            '<div class="node-handle" data-port="right"  title="Connect from right"></div>' +
+            '<div class="node-handle" data-port="bottom" title="Connect from bottom"></div>' +
+            '<div class="node-handle" data-port="left"   title="Connect from left"></div>';
+
+          zIndexCounter += 1;
+          node.style.zIndex = String(zIndexCounter);
+          setNodePosition(node, snap(x), snap(y));
+
+          attachDrag(node);
+          attachHandles(node);
+
+          canvasStage.appendChild(node);
+          return node;
+        }
+
+        // ── Drag (move node body) ─────────────────────────────────────
+        function attachDrag(node) {
+          let drag = null;
+
+          node.addEventListener("pointerdown", function (event) {
+            if (event.target.classList.contains("node-handle")) return;
+            if (event.button !== 0 && event.pointerType !== "touch") return;
+
+            const pos   = screenToCanvas(event.clientX, event.clientY);
+            const nodeX = Number(node.dataset.x || 0);
+            const nodeY = Number(node.dataset.y || 0);
+
+            drag = {
+              pointerId: event.pointerId,
+              offsetX: pos.x - nodeX,
+              offsetY: pos.y - nodeY,
+            };
+
+            zIndexCounter += 1;
+            node.style.zIndex = String(zIndexCounter);
+            node.classList.add("is-dragging");
+            node.setPointerCapture(event.pointerId);
+          });
+
+          node.addEventListener("pointermove", function (event) {
+            if (!drag || event.pointerId !== drag.pointerId) return;
+
+            const rect = stage.getBoundingClientRect();
+            const maxX = rect.width  / zoom - node.offsetWidth;
+            const maxY = rect.height / zoom - node.offsetHeight;
+            const pos  = screenToCanvas(event.clientX, event.clientY);
+
+            const nextX = snap(clamp(pos.x - drag.offsetX, 0, maxX));
+            const nextY = snap(clamp(pos.y - drag.offsetY, 0, maxY));
+            setNodePosition(node, nextX, nextY);
+          });
+
+          function endDrag(event) {
+            if (!drag || event.pointerId !== drag.pointerId) return;
+            node.classList.remove("is-dragging");
+            node.releasePointerCapture(event.pointerId);
+            drag = null;
+          }
+
+          node.addEventListener("pointerup",     endDrag);
+          node.addEventListener("pointercancel", endDrag);
+        }
+
+        // ── Handles (connect nodes) ───────────────────────────────────
+        function attachHandles(node) {
+          node.querySelectorAll(".node-handle").forEach(function (handle) {
+            const port = handle.dataset.port;
+
+            handle.addEventListener("pointerdown", function (event) {
+              event.stopPropagation();
+              event.preventDefault();
+              handle.classList.add("active");
+              handle.setPointerCapture(event.pointerId);
+              startGhostWire(node, port);
+            });
+
+            handle.addEventListener("pointermove", function (event) {
+              if (!wireDraft) return;
+              const pos = screenToCanvas(event.clientX, event.clientY);
+              updateGhostWire(pos.x, pos.y);
+            });
+
+            handle.addEventListener("pointerup", function (event) {
+              handle.classList.remove("active");
+              if (!wireDraft) return;
+
+              handle.releasePointerCapture(event.pointerId);
+              const pos    = screenToCanvas(event.clientX, event.clientY);
+              const target = findHandleAt(pos.x, pos.y, node);
+
+              if (target) {
+                commitGhostWire(target.node, target.port);
+              } else {
+                const targetNode = findNodeAt(pos.x, pos.y, node);
+                if (targetNode) {
+                  commitGhostWire(targetNode, nearestPortOf(targetNode, pos.x, pos.y));
+                } else {
+                  cancelGhostWire();
+                }
+              }
+            });
+
+            handle.addEventListener("pointercancel", function () {
+              handle.classList.remove("active");
+              cancelGhostWire();
+            });
+          });
+        }
+
+        // ── Hit testing ───────────────────────────────────────────────
+        function findHandleAt(cx, cy, excludeNode) {
+          for (const n of canvasStage.querySelectorAll(".dnd-node")) {
+            if (n === excludeNode) continue;
+            for (const h of n.querySelectorAll(".node-handle")) {
+              const c = portCenter(n, h.dataset.port);
+              if (Math.abs(c.x - cx) < 16 && Math.abs(c.y - cy) < 16) {
+                return { node: n, port: h.dataset.port };
+              }
+            }
+          }
+          return null;
+        }
+
+        function findNodeAt(cx, cy, excludeNode) {
+          for (const n of canvasStage.querySelectorAll(".dnd-node")) {
+            if (n === excludeNode) continue;
+            const nx = Number(n.dataset.x || 0);
+            const ny = Number(n.dataset.y || 0);
+            if (cx >= nx && cx <= nx + n.offsetWidth && cy >= ny && cy <= ny + n.offsetHeight) {
+              return n;
+            }
+          }
+          return null;
+        }
+
+        function nearestPortOf(node, cx, cy) {
+          let best = null, bestDist = Infinity;
+          ["top", "right", "bottom", "left"].forEach(function (p) {
+            const c = portCenter(node, p);
+            const d = Math.hypot(c.x - cx, c.y - cy);
+            if (d < bestDist) { bestDist = d; best = p; }
+          });
+          return best;
+        }
+
+        // ── Button wiring ─────────────────────────────────────────────
+        function addNodeFromButton(kind) {
+          const count = canvasStage.querySelectorAll(".dnd-node").length;
+          const x = 24 + (count % 4) * 40;
+          const y = 24 + (count % 4) * 32;
+          createNode(kind, x, y);
+        }
+
+        createButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            addNodeFromButton(button.dataset.create || "Frame");
+          });
+        });
+
+        stage.addEventListener("pointerup", function () {
+          if (wireDraft) cancelGhostWire();
+        });
+
+        // ── Init ──────────────────────────────────────────────────────
+        setZoom(1);
+        const n1 = createNode("Frame", 40,  40);
+        const n2 = createNode("Card",  320, 80);
+        const n3 = createNode("Note",  580, 200);
+
+        setTimeout(function () {
+          addWire(n1, "right", n2, "left");
+        }, 0);
+      })();
+    </script>
+  </body>
+</html>
