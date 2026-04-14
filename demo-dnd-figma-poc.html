@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagunite Drag and Drop PoC</title>
+    <link rel="stylesheet" href="./dist/lagunite.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: var(--font-body, "Segoe UI", "Noto Sans", sans-serif);
+        background: var(--color-bg);
+        color: var(--color-text-base);
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        height: 100vh;
+        gap: 0;
+      }
+
+      .sidebar {
+        border-right: var(--border);
+        background: var(--color-bg);
+        padding: var(--space-4);
+        overflow-y: auto;
+      }
+
+      .title {
+        margin: 0 0 var(--space-2) 0;
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+      }
+
+      .subtitle {
+        margin: 0 0 var(--space-4) 0;
+        color: var(--color-text-base);
+        opacity: 0.65;
+        font-size: var(--font-size-s);
+        line-height: 1.4;
+      }
+
+      .stack {
+        display: grid;
+        gap: var(--space-2);
+        margin-bottom: var(--space-4);
+      }
+
+      .btn-compact {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--font-size-s);
+      }
+
+      .hint {
+        border: var(--border);
+        border-radius: var(--radius-m);
+        padding: var(--space-3);
+        background: var(--color-bg-alt);
+        color: var(--color-text-alt);
+        font-size: var(--font-size-xs);
+        line-height: 1.5;
+      }
+
+      .night .hint {
+        background: var(--color-bg-alt);
+        color: var(--color-text-base);
+      }
+
+      .canvas-wrap {
+        padding: var(--space-4);
+        min-width: 0;
+      }
+
+      .dnd-canvas {
+        height: calc(100vh - var(--space-8));
+      }
+
+      @media (max-width: 900px) {
+        .app {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr;
+        }
+
+        .sidebar {
+          border-right: none;
+          border-bottom: var(--border);
+        }
+
+        .canvas-wrap {
+          padding: var(--space-3);
+        }
+
+        .dnd-canvas {
+          height: calc(100vh - 280px - var(--space-6));
+          min-height: 440px;
+        }
+      }
+
+      #canvas-stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .zoom-controls {
+        display: grid;
+        grid-template-columns: 36px 1fr 36px;
+        gap: var(--space-2);
+        align-items: center;
+        margin-top: var(--space-3);
+      }
+
+      .zoom-label {
+        text-align: center;
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-base);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2);">
+          <h1 class="title" style="margin: 0;">Drag & Drop Canvas</h1>
+          <button id="theme-toggle" class="btn" style="padding: var(--space-2) var(--space-2); min-width: 44px; white-space: nowrap; font-size: var(--font-size-s);">🌙</button>
+        </div>
+        <p class="subtitle">
+          Grid-based spatial canvas. Draggable nodes snap to 8px. Uses Lagunite framework styles.
+        </p>
+
+        <div class="stack">
+          <button class="btn btn-compact" data-create="Frame">Add Frame</button>
+          <button class="btn btn-compact secondary" data-create="Card">Add Card</button>
+          <button class="btn btn-compact tertiary" data-create="Note">Add Note</button>
+        </div>
+
+        <div class="hint">
+          <strong>Interact with canvas:</strong>
+          <br />
+          • Drag blocks freely
+          <br />
+          • Snap to 8px grid
+          <br />
+          • Blocks stay within bounds
+          <br />
+          • New blocks appear at top-left
+          <br />
+          • Scroll on canvas to zoom
+        </div>
+
+        <div style="margin-top: var(--space-4);">
+          <div class="zoom-controls">
+            <button id="zoom-out" class="btn secondary" style="padding: 0; width: 36px; height: 36px; min-width: unset;">−</button>
+            <span id="zoom-display" class="zoom-label">100%</span>
+            <button id="zoom-in" class="btn secondary" style="padding: 0; width: 36px; height: 36px; min-width: unset;">+</button>
+          </div>
+          <div style="margin-top: var(--space-2);">
+            <button id="zoom-reset" class="btn btn-compact tertiary">Reset zoom</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="canvas-wrap">
+        <section id="stage" class="dnd-canvas" aria-label="Design canvas">
+          <div id="canvas-stage"></div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      (function () {
+        // Theme toggle
+        const themeToggle = document.getElementById("theme-toggle");
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        if (savedTheme === "night") {
+          html.classList.add("night");
+          themeToggle.textContent = "☀️";
+        }
+
+        themeToggle.addEventListener("click", function () {
+          if (html.classList.contains("night")) {
+            html.classList.remove("night");
+            themeToggle.textContent = "🌙";
+            localStorage.setItem("theme", "light");
+          } else {
+            html.classList.add("night");
+            themeToggle.textContent = "☀️";
+            localStorage.setItem("theme", "night");
+          }
+        });
+
+        // Canvas setup
+        const GRID_SNAP = 8;
+        const ZOOM_STEP = 0.25;
+        const MIN_ZOOM = 0.25;
+        const MAX_ZOOM = 4;
+        let zoom = 1;
+
+        const stage = document.getElementById("stage");
+        const canvasStage = document.getElementById("canvas-stage");
+        const zoomDisplay = document.getElementById("zoom-display");
+        const createButtons = document.querySelectorAll("[data-create]");
+        let zIndexCounter = 10;
+
+        // Zoom functions
+        function setZoom(newZoom) {
+          zoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Math.round(newZoom * 100) / 100));
+          canvasStage.style.transform = "scale(" + zoom + ")";
+          canvasStage.style.transformOrigin = "0 0";
+          zoomDisplay.textContent = Math.round(zoom * 100) + "%";
+        }
+
+        document.getElementById("zoom-in").addEventListener("click", function () { setZoom(zoom + ZOOM_STEP); });
+        document.getElementById("zoom-out").addEventListener("click", function () { setZoom(zoom - ZOOM_STEP); });
+        document.getElementById("zoom-reset").addEventListener("click", function () { setZoom(1); });
+
+        stage.addEventListener("wheel", function (event) {
+          event.preventDefault();
+          setZoom(zoom + (event.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP));
+        }, { passive: false });
+
+        // Drag & Drop
+        function snap(value) {
+          return Math.round(value / GRID_SNAP) * GRID_SNAP;
+        }
+
+        function clamp(value, min, max) {
+          return Math.max(min, Math.min(max, value));
+        }
+
+        function setNodePosition(node, x, y) {
+          node.dataset.x = String(x);
+          node.dataset.y = String(y);
+          node.style.transform = "translate(" + x + "px, " + y + "px)";
+        }
+
+        function createNode(kind, x, y) {
+          const node = document.createElement("article");
+          node.className = "dnd-node";
+          node.tabIndex = 0;
+          node.innerHTML =
+            '<div class="dnd-node-header">' + kind + '</div>' +
+            '<div class="dnd-node-body">Draggable element positioned on the grid.</div>' +
+            '<div class="dnd-node-status">Snap 8px</div>';
+
+          zIndexCounter += 1;
+          node.style.zIndex = String(zIndexCounter);
+          setNodePosition(node, snap(x), snap(y));
+          attachDrag(node);
+          canvasStage.appendChild(node);
+          return node;
+        }
+
+        function attachDrag(node) {
+          let drag = null;
+
+          node.addEventListener("pointerdown", function (event) {
+            if (event.button !== 0 && event.pointerType !== "touch") return;
+
+            const rect = stage.getBoundingClientRect();
+            const nodeX = Number(node.dataset.x || "0");
+            const nodeY = Number(node.dataset.y || "0");
+
+            // Divide by zoom to convert screen coords → canvas coords
+            drag = {
+              pointerId: event.pointerId,
+              offsetX: (event.clientX - rect.left) / zoom - nodeX,
+              offsetY: (event.clientY - rect.top) / zoom - nodeY,
+            };
+
+            zIndexCounter += 1;
+            node.style.zIndex = String(zIndexCounter);
+            node.classList.add("is-dragging");
+            node.setPointerCapture(event.pointerId);
+          });
+
+          node.addEventListener("pointermove", function (event) {
+            if (!drag || event.pointerId !== drag.pointerId) return;
+
+            const rect = stage.getBoundingClientRect();
+            // Bounds in canvas coords: screen size / zoom, minus node's unscaled size
+            const maxX = rect.width / zoom - node.offsetWidth;
+            const maxY = rect.height / zoom - node.offsetHeight;
+
+            const rawX = (event.clientX - rect.left) / zoom - drag.offsetX;
+            const rawY = (event.clientY - rect.top) / zoom - drag.offsetY;
+            const nextX = snap(clamp(rawX, 0, maxX));
+            const nextY = snap(clamp(rawY, 0, maxY));
+
+            setNodePosition(node, nextX, nextY);
+          });
+
+          function endDrag(event) {
+            if (!drag || event.pointerId !== drag.pointerId) return;
+            node.classList.remove("is-dragging");
+            node.releasePointerCapture(event.pointerId);
+            drag = null;
+          }
+
+          node.addEventListener("pointerup", endDrag);
+          node.addEventListener("pointercancel", endDrag);
+        }
+
+        function addNodeFromButton(kind) {
+          const count = canvasStage.querySelectorAll(".dnd-node").length;
+          const x = 24 + (count % 4) * 36;
+          const y = 24 + (count % 4) * 28;
+          createNode(kind, x, y);
+        }
+
+        createButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            addNodeFromButton(button.dataset.create || "Layer");
+          });
+        });
+
+        // Init
+        setZoom(1);
+        createNode("Frame", 40, 40);
+        createNode("Card", 260, 120);
+        createNode("Note", 520, 220);
+      })();
+    </script>
+  </body>
+</html>

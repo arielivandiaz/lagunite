@@ -1,0 +1,75 @@
+/* ==========
+   06-molecules / 07-dashboard-alt-panels.css
+   Alternative dashboard content panels, links, and wide data table.
+   Naming: all classes use -alt suffix to avoid collisions with
+   06-dashboard-panels.css when both systems are loaded together.
+   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)
+   ========== */
+
+.dashboard-main-alt {
+  max-width: 100%;
+  color: #ffffff;
+}
+
+.dashboard-panel-alt {
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(8, 13, 30, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1rem;
+}
+
+.dashboard-panel-alt__title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f8fafc;
+  text-align: left;
+}
+
+.dashboard-links-alt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dashboard-link-alt {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f5f3ff;
+  text-decoration: none;
+  padding: 0.38rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.dashboard-link-alt:hover,
+.dashboard-link-alt:focus-visible {
+  background: rgba(167, 139, 250, 0.3);
+  border-color: rgba(221, 214, 254, 0.55);
+}
+
+/* Scroll container with glass styling — use .table.dark inside */
+.dashboard-table-wrap-alt {
+  width: 100%;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 12, 24, 0.65);
+}
+
+@media (max-width: 959px) {
+  .dashboard-main-alt {
+    padding-top: 0.2rem;
+  }
+
+  .dashboard-panel-alt {
+    padding: 0.8rem;
+  }
+}

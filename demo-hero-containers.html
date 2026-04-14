@@ -472,5 +472,359 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 13. DARK HERO — gradient text + métricas                          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section" style="background: #070b14; min-height: 88vh; display: flex; align-items: center;">
+      <div class="container-hero-center">
+        <div style="
+          display: inline-block;
+          padding: 4px 14px;
+          border-radius: 999px;
+          border: 1px solid rgba(94, 154, 255, 0.35);
+          background: rgba(36, 118, 255, 0.1);
+          color: #5e9aff;
+          font-size: 0.78rem;
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          margin-bottom: 28px;
+        ">Nuevo · v2.1 disponible</div>
+
+        <h2 class="font-headers font-weight-3 lh-xs" style="
+          font-size: clamp(2.2rem, 5vw, 4rem);
+          background: linear-gradient(140deg, #fff 20%, #a5c8ff 55%, #2476ff 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin: 0 0 20px;
+        ">
+          Interfaces modernas,<br>sin overhead
+        </h2>
+
+        <p class="font-text font-fluid" style="color: rgba(255,255,255,0.5); max-width: 480px; margin: 0 auto 36px; line-height: 1.7;">
+          Un framework CSS componible, sin dependencias. Token-based, dark-mode nativo, listo para producción.
+        </p>
+
+        <div>
+          <button class="btn">Empezar →</button>
+          <button class="btn alt" style="border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.7);">Ver documentación</button>
+        </div>
+
+        <div style="
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0;
+          max-width: 420px;
+          margin: 52px auto 0;
+          border: 1px solid rgba(255,255,255,0.07);
+          border-radius: 14px;
+          overflow: hidden;
+        ">
+          <div style="padding: 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.07);">
+            <div class="font-headers font-weight-3" style="font-size: 1.75rem; color: #fff; line-height: 1;">57kb</div>
+            <div style="font-size: 0.7rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">gzip</div>
+          </div>
+          <div style="padding: 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.07);">
+            <div class="font-headers font-weight-3" style="font-size: 1.75rem; color: #fff; line-height: 1;">0</div>
+            <div style="font-size: 0.7rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">deps</div>
+          </div>
+          <div style="padding: 20px; text-align: center;">
+            <div class="font-headers font-weight-3" style="font-size: 1.75rem; color: #fff; line-height: 1;">2.1</div>
+            <div style="font-size: 0.7rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;">latest</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 14. BENTO GRID — layout asimétrico con span                       -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="demo-section" style="background: #080c18;">
+      <div class="container container-xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="demo-tag">bento grid</span>
+          <h3 class="font-headers font-weight-3 font-fluid" style="color: #fff; margin: 8px 0 6px;">Bento layout con grid + span</h3>
+          <p class="font-text" style="color: rgba(255,255,255,0.4); margin: 0;">
+            <span class="demo-kbd">grid-template-columns: 2fr 1fr 1fr</span> + <span class="demo-kbd">grid-row: span 2</span> inline
+          </p>
+        </div>
+
+        <div class="grid gap-s" style="grid-template-columns: 2fr 1fr 1fr;">
+
+          <!-- Celda grande: span 2 filas -->
+          <div class="demo-card shadow-l" style="grid-row: span 2; min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; padding: 28px;">
+            <div>
+              <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #5e9aff; font-weight: 700; margin-bottom: 14px;">Componentes</div>
+              <h4 class="font-headers font-weight-3" style="color: #fff; font-size: 1.5rem; margin: 0 0 14px; line-height: 1.3;">
+                Composición<br>sin límites
+              </h4>
+              <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.65; margin: 0;">
+                Cada clase hace una sola cosa bien. Combinás el resultado en el HTML, sin CSS extra.
+              </p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px;">
+              <span style="padding: 4px 12px; border-radius: 999px; background: rgba(36,118,255,0.15); border: 1px solid rgba(36,118,255,0.3); color: #5e9aff; font-size: 0.78rem; font-weight: 600;">.btn</span>
+              <span style="padding: 4px 12px; border-radius: 999px; background: rgba(36,118,255,0.15); border: 1px solid rgba(36,118,255,0.3); color: #5e9aff; font-size: 0.78rem; font-weight: 600;">.grid</span>
+              <span style="padding: 4px 12px; border-radius: 999px; background: rgba(36,118,255,0.15); border: 1px solid rgba(36,118,255,0.3); color: #5e9aff; font-size: 0.78rem; font-weight: 600;">.container-hero</span>
+              <span style="padding: 4px 12px; border-radius: 999px; background: rgba(36,118,255,0.15); border: 1px solid rgba(36,118,255,0.3); color: #5e9aff; font-size: 0.78rem; font-weight: 600;">.shadow-l</span>
+            </div>
+          </div>
+
+          <!-- Celda stat -->
+          <div class="demo-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; min-height: 140px;">
+            <div class="font-headers font-weight-3" style="font-size: 2.4rem; color: #fff; line-height: 1;">48</div>
+            <div style="font-size: 0.7rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.09em; margin-top: 6px;">componentes</div>
+          </div>
+
+          <!-- Celda stat -->
+          <div class="demo-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; min-height: 140px; background: rgba(36,118,255,0.12); border-color: rgba(36,118,255,0.25);">
+            <div class="font-headers font-weight-3" style="font-size: 2.4rem; color: #5e9aff; line-height: 1;">∞</div>
+            <div style="font-size: 0.7rem; color: rgba(94,154,255,0.6); text-transform: uppercase; letter-spacing: 0.09em; margin-top: 6px;">combinaciones</div>
+          </div>
+
+          <!-- Celda ancha: span 2 columnas -->
+          <div class="demo-card" style="grid-column: span 2; display: flex; align-items: center; gap: 20px; padding: 22px 28px;">
+            <div style="font-size: 2rem; line-height: 1; flex-shrink: 0;">🎨</div>
+            <div style="min-width: 0;">
+              <div class="font-headers font-weight-3" style="color: #fff; margin-bottom: 4px;">Theming con CSS variables</div>
+              <div style="color: rgba(255,255,255,0.45); font-size: 0.85rem;">Cambiá el look completo desde <span class="demo-kbd">:root</span>. Sin recompilar.</div>
+            </div>
+            <button class="btn alt" style="border-color: rgba(255,255,255,0.18); color: rgba(255,255,255,0.7); white-space: nowrap; margin: 0; flex-shrink: 0;">Ver tokens →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 15. PRICING TIERS — 3 columnas con dgrid-cols-3                   -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="section-container-l" style="background: #f4f6fb;">
+      <div class="container container-xl">
+        <div style="text-align: center; margin-bottom: 52px;">
+          <span class="demo-tag">pricing</span>
+          <h3 class="font-headers font-weight-3 font-fluid">Pricing tiers</h3>
+          <p class="font-text demo-muted" style="margin: 0;">
+            <span class="demo-kbd-light">dgrid-cols-3</span> + card destacada con <span class="demo-kbd-light">transform: scale(1.04)</span>
+          </p>
+        </div>
+
+        <div class="grid dgrid-cols-3 gap-s" style="align-items: start;">
+
+          <!-- Free -->
+          <div class="demo-card-light" style="padding: 30px; border-radius: 18px;">
+            <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--gray-400); margin-bottom: 18px;">Free</div>
+            <div style="margin-bottom: 20px;">
+              <span class="font-headers font-weight-3" style="font-size: 2.8rem; color: var(--gray-900); line-height: 1;">$0</span>
+              <span style="color: var(--gray-400); font-size: 0.85rem;"> / mes</span>
+            </div>
+            <div class="demo-line-dark"></div>
+            <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 11px;">
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;3 proyectos</li>
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;1 GB storage</li>
+              <li style="font-size: 0.88rem; color: var(--gray-400);">— &nbsp;Colaboración</li>
+              <li style="font-size: 0.88rem; color: var(--gray-400);">— &nbsp;Analytics</li>
+              <li style="font-size: 0.88rem; color: var(--gray-400);">— &nbsp;Soporte prioritario</li>
+            </ul>
+            <button class="btn secondary alt" style="width: 100%; margin: 0;">Empezar gratis</button>
+          </div>
+
+          <!-- Pro — destacado -->
+          <div style="
+            padding: 30px;
+            border-radius: 18px;
+            background: var(--color-primary);
+            color: white;
+            position: relative;
+            transform: scale(1.04);
+            box-shadow: 0 20px 48px rgba(36,118,255,0.35);
+          ">
+            <div style="
+              position: absolute;
+              top: -13px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: var(--color-tertiary);
+              color: #fff;
+              padding: 3px 16px;
+              border-radius: 999px;
+              font-size: 0.7rem;
+              font-weight: 800;
+              white-space: nowrap;
+              letter-spacing: 0.06em;
+            ">MÁS POPULAR</div>
+
+            <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: rgba(255,255,255,0.6); margin-bottom: 18px;">Pro</div>
+            <div style="margin-bottom: 20px;">
+              <span class="font-headers font-weight-3" style="font-size: 2.8rem; line-height: 1;">$29</span>
+              <span style="color: rgba(255,255,255,0.55); font-size: 0.85rem;"> / mes</span>
+            </div>
+            <div style="height: 1px; background: rgba(255,255,255,0.18); margin: 18px 0;"></div>
+            <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 11px;">
+              <li style="font-size: 0.88rem;">✓ &nbsp;Proyectos ilimitados</li>
+              <li style="font-size: 0.88rem;">✓ &nbsp;50 GB storage</li>
+              <li style="font-size: 0.88rem;">✓ &nbsp;Colaboración en equipo</li>
+              <li style="font-size: 0.88rem;">✓ &nbsp;Analytics básico</li>
+              <li style="font-size: 0.88rem; color: rgba(255,255,255,0.45);">— &nbsp;Soporte prioritario</li>
+            </ul>
+            <button class="btn" style="width: 100%; margin: 0; background: #fff; color: var(--color-primary); font-weight: 700;">Elegir Pro</button>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="demo-card-light" style="padding: 30px; border-radius: 18px;">
+            <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--gray-400); margin-bottom: 18px;">Enterprise</div>
+            <div style="margin-bottom: 20px;">
+              <span class="font-headers font-weight-3" style="font-size: 2.8rem; color: var(--gray-900); line-height: 1;">Custom</span>
+            </div>
+            <div class="demo-line-dark"></div>
+            <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 11px;">
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;Todo lo de Pro</li>
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;Storage ilimitado</li>
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;SLA 99.9%</li>
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;Analytics avanzado</li>
+              <li style="font-size: 0.88rem; color: var(--gray-700);">✓ &nbsp;Soporte 24/7</li>
+            </ul>
+            <button class="btn" style="width: 100%; margin: 0;">Contactar ventas</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 16. TESTIMONIALS — social proof con grid                          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section class="section-container-l" style="background: #fff;">
+      <div class="container container-xl">
+        <div style="text-align: center; margin-bottom: 52px;">
+          <span class="demo-tag">social proof</span>
+          <h3 class="font-headers font-weight-3 font-fluid">Testimonials</h3>
+          <p class="font-text demo-muted" style="margin: 0;"><span class="demo-kbd-light">dgrid-cols-3</span> + avatar con gradient del sistema</p>
+        </div>
+
+        <div class="grid dgrid-cols-3 gap-s">
+
+          <div class="demo-card-light" style="padding: 26px; border-radius: 16px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="color: var(--color-primary); font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+            <p class="font-text" style="color: var(--gray-700); margin: 0; line-height: 1.65; font-size: 0.9rem; flex: 1;">
+              "La mejor DX que tuve con un framework CSS. Sin opiniones forzadas, todo composable."
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; padding-top: 4px; border-top: 1px solid rgba(0,0,0,0.06);">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--bg-gradient-4); flex-shrink: 0;"></div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.85rem; color: var(--gray-900);">Ana García</div>
+                <div style="font-size: 0.75rem; color: var(--gray-400);">Frontend Lead @ Startup</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-card-light" style="padding: 26px; border-radius: 16px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="color: var(--color-primary); font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+            <p class="font-text" style="color: var(--gray-700); margin: 0; line-height: 1.65; font-size: 0.9rem; flex: 1;">
+              "Migré de Tailwind y no vuelvo. Las variables de tema me ahorran horas cada sprint."
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; padding-top: 4px; border-top: 1px solid rgba(0,0,0,0.06);">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--bg-gradient-1); flex-shrink: 0;"></div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.85rem; color: var(--gray-900);">Martín López</div>
+                <div style="font-size: 0.75rem; color: var(--gray-400);">Indie developer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-card-light" style="padding: 26px; border-radius: 16px; display: flex; flex-direction: column; gap: 16px;">
+            <div style="color: var(--color-primary); font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+            <p class="font-text" style="color: var(--gray-700); margin: 0; line-height: 1.65; font-size: 0.9rem; flex: 1;">
+              "Diseño y desarrollo en paralelo por primera vez en mi carrera. Las CSS vars son la clave."
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px; padding-top: 4px; border-top: 1px solid rgba(0,0,0,0.06);">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, var(--color-tertiary-light), var(--color-tertiary-dark)); flex-shrink: 0;"></div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.85rem; color: var(--gray-900);">Valeria Ríos</div>
+                <div style="font-size: 0.75rem; color: var(--gray-400);">Design Lead @ Agency</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <!-- 17. FEATURE SPLIT — alternating izq/der con dgrid-cols-2          -->
+    <!-- ═══════════════════════════════════════════════════════════════════ -->
+    <section style="background: #f8f9fb;">
+
+      <!-- Feature A: texto izquierda, visual derecha -->
+      <div class="section-container">
+        <div class="container container-xl">
+          <div class="grid dgrid-cols-2 gap-l" style="align-items: center;">
+            <div>
+              <div style="display: inline-block; padding: 3px 12px; border-radius: 999px; background: rgba(36,118,255,0.08); border: 1px solid rgba(36,118,255,0.2); color: var(--color-primary); font-size: 0.78rem; font-weight: 700; margin-bottom: 18px;">Performance</div>
+              <h3 class="font-headers font-weight-3 font-fluid" style="margin: 0 0 14px; color: var(--gray-900);">Rápido por diseño</h3>
+              <p class="font-text demo-muted" style="line-height: 1.7; margin: 0 0 24px;">
+                Sin JavaScript en runtime, sin build steps obligatorios. Solo CSS puro que el browser
+                ya sabe optimizar. Scores perfectos de Lighthouse desde el primer deploy.
+              </p>
+              <button class="btn">Ver benchmarks →</button>
+            </div>
+            <div class="demo-card-light" style="padding: 28px; border-radius: 18px;">
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--gray-600);">Performance</span>
+                  <span class="font-headers font-weight-3" style="color: var(--color-success); font-size: 1.1rem;">100</span>
+                </div>
+                <div style="height: 8px; background: var(--gray-100); border-radius: 99px; overflow: hidden;">
+                  <div style="height: 100%; width: 100%; background: var(--color-success); border-radius: 99px;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--gray-600);">Accessibility</span>
+                  <span class="font-headers font-weight-3" style="color: var(--color-success); font-size: 1.1rem;">100</span>
+                </div>
+                <div style="height: 8px; background: var(--gray-100); border-radius: 99px; overflow: hidden;">
+                  <div style="height: 100%; width: 100%; background: var(--color-success); border-radius: 99px;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: var(--gray-600);">Best Practices</span>
+                  <span class="font-headers font-weight-3" style="color: var(--color-success); font-size: 1.1rem;">100</span>
+                </div>
+                <div style="height: 8px; background: var(--gray-100); border-radius: 99px; overflow: hidden;">
+                  <div style="height: 100%; width: 96%; background: var(--color-success); border-radius: 99px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature B: visual izquierda, texto derecha -->
+      <div class="section-container" style="background: #fff; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container container-xl">
+          <div class="grid dgrid-cols-2 gap-l" style="align-items: center;">
+            <div class="demo-card-light" style="padding: 28px; border-radius: 18px; font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.8; color: var(--gray-700);">
+              <div><span style="color: var(--gray-400);">/* Un botón primario */</span></div>
+              <div><span style="color: var(--color-primary);">.btn</span></div>
+              <div style="margin-top: 8px;"><span style="color: var(--gray-400);">/* Variante outline */</span></div>
+              <div><span style="color: var(--color-primary);">.btn.alt</span></div>
+              <div style="margin-top: 8px;"><span style="color: var(--gray-400);">/* Secundario outline */</span></div>
+              <div><span style="color: var(--color-primary);">.btn.secondary.alt</span></div>
+              <div style="margin-top: 8px;"><span style="color: var(--gray-400);">/* Pequeño, sin margen */</span></div>
+              <div><span style="color: var(--color-primary);">.btn.size-s</span> <span style="color: var(--gray-400);">style="margin:0"</span></div>
+            </div>
+            <div>
+              <div style="display: inline-block; padding: 3px 12px; border-radius: 999px; background: rgba(249,115,22,0.08); border: 1px solid rgba(249,115,22,0.2); color: var(--color-tertiary); font-size: 0.78rem; font-weight: 700; margin-bottom: 18px;">Composable</div>
+              <h3 class="font-headers font-weight-3 font-fluid" style="margin: 0 0 14px; color: var(--gray-900);">Clases que se combinan</h3>
+              <p class="font-text demo-muted" style="line-height: 1.7; margin: 0 0 24px;">
+                Sin configuración, sin props de componentes. Las clases se acumulan y se leen directamente
+                en el HTML. Lo que ves es lo que obtenés.
+              </p>
+              <button class="btn tertiary">Explorar componentes →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </body>
 </html>

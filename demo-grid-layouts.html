@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagunite · Guía de Grid</title>
+  <link rel="stylesheet" href="dist/lagunite.css" />
+  <style>
+    /* ── Demo helpers — NOT framework classes ── */
+    .cell {
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-m);
+      font-weight: bold;
+      font-size: var(--font-size-s);
+      text-align: center;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cell small {
+      display: block;
+      font-weight: normal;
+      font-size: var(--font-size-xs);
+      opacity: 0.8;
+    }
+    .demo-grid {
+      border-radius: var(--radius-m);
+      padding: var(--space-3);
+      min-height: 80px;
+    }
+    .numbered > *::before {
+      content: attr(data-n);
+      display: block;
+      font-size: var(--font-size-xs);
+      opacity: 0.6;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg">
+
+  <!-- ════════════════════════════════════════════
+       PAGE HEADER
+  ════════════════════════════════════════════ -->
+  <header class="bgg-4 padd-v-l">
+    <div class="container-l col gap-s ai-c ta-c">
+      <h1 class="bold font-xxl">Grid en Lagunite</h1>
+      <p class="font-l opacity-80">
+        Guía de aprendizaje: "Si quiero este layout, uso estas clases."
+      </p>
+      <a class="btn std" href="demo-flex-layouts.html">← Ver guía de Flex</a>
+    </div>
+  </header>
+
+  <main class="container-l padd-v-l col gap-l ai-fs">
+
+    <div class="alert alert-info wp100">
+      <strong>Cómo leer esta guía:</strong> cada tarjeta muestra un patrón concreto,
+      las clases como badges y un ejemplo visual con celdas coloreadas.
+      El gap usa las mismas clases <code>.gap-*</code> que Flex — CSS <code>gap</code> funciona en ambos.
+      Redimensiona la ventana para ver los efectos responsive.
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         1. COLUMNAS FIJAS
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">1 · Columnas fijas — grid-cols-N</h2>
+      <p class="font-s color-text-alt">
+        <code>.grid</code> arranca con 1 columna. Agrega <code>.grid-cols-N</code> (1–12) para definir cuántas columnas iguales quieres.
+        Todas las columnas son <code>1fr</code>, por lo que ocupan el espacio disponible por igual.
+      </p>
+
+      <div class="col gap-s wp100">
+
+        <!-- 2 cols -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>2 columnas iguales</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid</span>
+              <span class="badge badge-secondary badge-pill">.grid-cols-2</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Ideal para layouts de dos paneles: formulario + info, texto + imagen.</p>
+            <div class="demo-grid bordered grid grid-cols-2 gap-s">
+              <div class="cell bg-1">Col 1</div>
+              <div class="cell bg-2">Col 2</div>
+              <div class="cell bg-1">Col 1</div>
+              <div class="cell bg-2">Col 2</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 cols -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>3 columnas iguales</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid</span>
+              <span class="badge badge-secondary badge-pill">.grid-cols-3</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Features de producto, cards de pricing, columnas de texto.</p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s">
+              <div class="cell bg-1">Col 1</div>
+              <div class="cell bg-2">Col 2</div>
+              <div class="cell bg-3">Col 3</div>
+              <div class="cell bg-1">Col 1</div>
+              <div class="cell bg-2">Col 2</div>
+              <div class="cell bg-3">Col 3</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 cols -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>4 columnas iguales</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid</span>
+              <span class="badge badge-secondary badge-pill">.grid-cols-4</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Galerías de iconos, dashboards de métricas con 4 KPIs.</p>
+            <div class="demo-grid bordered grid grid-cols-4 gap-s">
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">B</div>
+              <div class="cell bg-3">C</div>
+              <div class="cell bg-4">D</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         2. GRID AUTO — columnas responsivas automáticas
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">2 · Grid Auto — columnas responsivas sin media queries</h2>
+      <p class="font-s color-text-alt">
+        <code>.grid-auto</code> usa <code>auto-fit, minmax(250px, 1fr)</code>:
+        el browser decide cuántas columnas caben según el ancho disponible. Sin media queries, sin pensar.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Auto-fit (rellena el espacio)</strong>
+            <span class="badge badge-primary badge-pill">.grid-auto</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Las columnas vacías se contraen. Si hay 3 items en 4 posibles, los 3 se expanden para llenar el ancho.
+              Perfecto para colecciones de cards sin cantidad fija.
+            </p>
+            <div class="demo-grid bordered grid-auto gap-s">
+              <div class="cell bg-1">Card A</div>
+              <div class="cell bg-2">Card B</div>
+              <div class="cell bg-3">Card C</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Auto-fill (mantiene columnas vacías)</strong>
+            <span class="badge badge-primary badge-pill">.grid-auto-fill</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              A diferencia de <code>auto-fit</code>, las columnas vacías <em>no</em> se colapsan.
+              Los items no se expanden para llenar el espacio restante.
+            </p>
+            <div class="demo-grid bordered grid-auto-fill gap-s">
+              <div class="cell bg-1">Card A</div>
+              <div class="cell bg-2">Card B</div>
+              <div class="cell bg-3">Card C</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         3. COLUMN SPAN — celdas que ocupan varias columnas
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">3 · Column Span — celdas que ocupan múltiples columnas</h2>
+      <p class="font-s color-text-alt">
+        En un grid de N columnas, una celda puede extenderse con <code>.col-span-X</code>.
+        <code>.col-span-full</code> siempre ocupa toda la fila, sea cual sea el número de columnas.
+      </p>
+
+      <div class="col gap-s wp100">
+
+        <!-- span básico en grid de 4 -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Grid 4 cols — span variable</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid-cols-4</span>
+              <span class="badge badge-secondary badge-pill">.col-span-2</span>
+              <span class="badge badge-secondary badge-pill">.col-span-3</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Útil para layouts asimétricos: hero que cubre más espacio, widget principal + sidebar, etc.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-4 gap-s">
+              <div class="cell bg-1 col-span-2">col-span-2</div>
+              <div class="cell bg-2">1</div>
+              <div class="cell bg-2">1</div>
+              <div class="cell bg-3">1</div>
+              <div class="cell bg-1 col-span-3">col-span-3</div>
+              <div class="cell bg-4 col-span-full">col-span-full</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Layout clásico 12 cols -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Sistema de 12 columnas (estilo Bootstrap)</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid-cols-12</span>
+              <span class="badge badge-secondary badge-pill">.col-span-*</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El clásico sistema de 12 columnas. La suma de <code>col-span-*</code> en cada fila debe dar 12.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-12 gap-s">
+              <div class="cell bg-5 col-span-12">col-span-12 (full)</div>
+              <div class="cell bg-1 col-span-6">col-span-6</div>
+              <div class="cell bg-2 col-span-6">col-span-6</div>
+              <div class="cell bg-1 col-span-4">col-span-4</div>
+              <div class="cell bg-2 col-span-4">col-span-4</div>
+              <div class="cell bg-3 col-span-4">col-span-4</div>
+              <div class="cell bg-1 col-span-3">col-span-3</div>
+              <div class="cell bg-2 col-span-3">col-span-3</div>
+              <div class="cell bg-3 col-span-3">col-span-3</div>
+              <div class="cell bg-4 col-span-3">col-span-3</div>
+              <div class="cell bg-1 col-span-8">col-span-8 (main)</div>
+              <div class="cell bg-3 col-span-4">col-span-4 (aside)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         4. ROW SPAN — celdas que ocupan varias filas
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">4 · Row Span — celdas que ocupan múltiples filas</h2>
+      <p class="font-s color-text-alt">
+        Con <code>.row-span-X</code> una celda puede extenderse verticalmente.
+        Necesita que el grid tenga un número de filas definido o que las filas implícitas tengan altura suficiente.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Celda alta + celdas normales</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid-cols-3</span>
+              <span class="badge badge-secondary badge-pill">.row-span-2</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Imagen o destacado que ocupa 2 filas a la izquierda, y dos celdas normales a su derecha.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s" style="grid-template-rows: repeat(2, 80px)">
+              <div class="cell bg-5 row-span-2">row-span-2<small>(imagen destacada)</small></div>
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">B</div>
+              <div class="cell bg-3">C</div>
+              <div class="cell bg-4">D</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Sidebar alta + contenido múltiples filas</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid-cols-4</span>
+              <span class="badge badge-secondary badge-pill">.row-span-3</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              La sidebar ocupa toda la altura mientras el contenido se divide en filas a su lado.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-4 gap-s" style="grid-template-rows: repeat(3, 56px)">
+              <div class="cell bg-5 row-span-3 col-span-1">Sidebar<small>row-span-3</small></div>
+              <div class="cell bg-1 col-span-3">Header</div>
+              <div class="cell bg-2 col-span-3">Main content</div>
+              <div class="cell bg-3 col-span-3">Footer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         5. PLACEMENT — col-start / col-end
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">5 · Placement explícito — col-start / col-end</h2>
+      <p class="font-s color-text-alt">
+        A diferencia de <code>col-span</code> (que dice "ocupa X celdas"), <code>col-start</code> y <code>col-end</code>
+        dicen exactamente en qué línea de grid empieza y termina la celda.
+      </p>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Posicionamiento preciso en grid de 6 columnas</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.grid-cols-6</span>
+            <span class="badge badge-secondary badge-pill">.col-start-*</span>
+            <span class="badge badge-secondary badge-pill">.col-end-*</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Útil para layouts tipo magazine donde cada pieza tiene una posición exacta predefinida.
+            Las líneas de grid empiezan en 1 (antes de la 1ª columna) hasta N+1 (después de la última).
+          </p>
+          <div class="demo-grid bordered grid grid-cols-6 gap-s">
+            <div class="cell bg-1 col-start-1 col-end-3">start 1 → end 3</div>
+            <div class="cell bg-2 col-start-3 col-end-5">start 3 → end 5</div>
+            <div class="cell bg-3 col-start-5 col-end-7">start 5 → end 7</div>
+            <div class="cell bg-4 col-start-2 col-end-6">start 2 → end 6 (centrado)</div>
+            <div class="cell bg-5 col-start-1 col-end-4">start 1 → end 4</div>
+            <div class="cell bg-1 col-start-4 col-end-7">start 4 → end 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         6. ALINEACIÓN DE ITEMS — ji / pi / js / ps
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">6 · Alineación de items — justify-items y place-items</h2>
+      <p class="font-s color-text-alt">
+        En Grid, los items tienen dos ejes de alineación: <strong>inline (horizontal)</strong> con <code>ji-*</code>
+        y <strong>block (vertical)</strong>. <code>pi-*</code> controla ambos a la vez.
+        <code>js-*</code> y <code>ps-*</code> aplican por item individual.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <!-- ji-s -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Items al inicio horizontal</strong>
+            <span class="badge badge-secondary badge-pill">.ji-s</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Los items se alinean al inicio horizontal de su celda (no llenan el ancho).</p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s ji-s" style="min-height: 100px">
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">Texto largo</div>
+              <div class="cell bg-3">B</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ji-c -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Items centrados horizontalmente</strong>
+            <span class="badge badge-secondary badge-pill">.ji-c</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Centra los items dentro de su celda sin que se estiren.</p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s ji-c" style="min-height: 100px">
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">Texto largo</div>
+              <div class="cell bg-3">B</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pi-c — ambos ejes -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Centrado en ambos ejes (place-items)</strong>
+            <span class="badge badge-secondary badge-pill">.pi-c</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Shorthand para centrar horizontal Y vertical a la vez. Ideal cuando todas las celdas tienen altura fija.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s pi-c" style="grid-template-rows: repeat(2, 80px)">
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">Largo</div>
+              <div class="cell bg-3">B</div>
+              <div class="cell bg-4">C</div>
+              <div class="cell bg-5">D</div>
+              <div class="cell bg-1">E</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- js-* por item individual -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Cada celda elige su alineación (justify-self)</strong>
+            <span class="badge badge-secondary badge-pill">.js-s / .js-c / .js-e</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Sobreescribe la alineación del contenedor para un item concreto. El contenedor no tiene <code>ji-*</code>.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-3 gap-s" style="grid-template-rows: 80px">
+              <div class="cell bg-1 js-s">js-s<small>inicio</small></div>
+              <div class="cell bg-2 js-c">js-c<small>centro</small></div>
+              <div class="cell bg-3 js-e">js-e<small>final</small></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         7. AUTO FLOW — dirección del flujo automático
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">7 · Auto Flow — cómo se colocan los items automáticamente</h2>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Flujo por fila (por defecto)</strong>
+            <span class="badge badge-secondary badge-pill">.grid-flow-row</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El comportamiento normal: items llenan de izquierda a derecha, de arriba a abajo.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-3 grid-flow-row gap-s">
+              <div class="cell bg-1">1</div>
+              <div class="cell bg-2">2</div>
+              <div class="cell bg-3">3</div>
+              <div class="cell bg-4">4</div>
+              <div class="cell bg-5">5</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Flujo denso (rellena huecos)</strong>
+            <span class="badge badge-secondary badge-pill">.grid-flow-dense</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Cuando hay spans que crean huecos, <code>dense</code> intenta rellenarlos con items posteriores.
+              Útil para galerías tipo masonry con items de tamaño variable.
+            </p>
+            <div class="demo-grid bordered grid grid-cols-3 grid-flow-dense gap-s">
+              <div class="cell bg-5 col-span-2">span-2 (crea hueco)</div>
+              <div class="cell bg-1">2</div>
+              <div class="cell bg-2">3</div>
+              <div class="cell bg-3">4 (rellena el hueco)</div>
+              <div class="cell bg-4">5</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         8. RESPONSIVE — distinto grid por breakpoint
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">8 · Responsive — distinto grid por breakpoint</h2>
+      <p class="font-s color-text-alt">
+        Prefijo <strong><code>x</code></strong> = solo mobile (≤639px) ·
+        Prefijo <strong><code>d</code></strong> = solo desktop (≥640px).
+        <em>Redimensiona la ventana para ver el cambio en vivo.</em>
+      </p>
+
+      <div class="col gap-s wp100">
+
+        <!-- 1 col mobile → 3 col desktop -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>1 columna en mobile → 3 en desktop</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid</span>
+              <span class="badge badge-secondary badge-pill">.xgrid-cols-1</span>
+              <span class="badge badge-secondary badge-pill">.dgrid-cols-3</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El patrón responsive de grid más común. El markup es siempre el mismo; las clases hacen el trabajo.
+            </p>
+            <div class="demo-grid bordered grid xgrid-cols-1 dgrid-cols-3 gap-s">
+              <div class="cell bg-1">Feature A</div>
+              <div class="cell bg-2">Feature B</div>
+              <div class="cell bg-3">Feature C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 mobile → 4 desktop -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>2 columnas en mobile → 4 en desktop</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.grid</span>
+              <span class="badge badge-secondary badge-pill">.xgrid-cols-2</span>
+              <span class="badge badge-secondary badge-pill">.dgrid-cols-4</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Galería de productos: 2 columnas en mobile (más cómodas con el pulgar), 4 en desktop.
+            </p>
+            <div class="demo-grid bordered grid xgrid-cols-2 dgrid-cols-4 gap-s">
+              <div class="cell bg-1">A</div>
+              <div class="cell bg-2">B</div>
+              <div class="cell bg-3">C</div>
+              <div class="cell bg-4">D</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- span responsive: col-span-full mobile, col-span-4 desktop -->
+        <div class="card wp100">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Span diferente por breakpoint</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-primary badge-pill">.dgrid-cols-12</span>
+              <span class="badge badge-secondary badge-pill">.xcol-span-full</span>
+              <span class="badge badge-secondary badge-pill">.dcol-span-8</span>
+              <span class="badge badge-secondary badge-pill">.dcol-span-4</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              En mobile, todo ocupa el 100%. En desktop, el main toma 8/12 y el aside 4/12.
+            </p>
+            <div class="demo-grid bordered grid dgrid-cols-12 gap-s">
+              <div class="cell bg-5 xcol-span-full dcol-span-12">Header (full)</div>
+              <div class="cell bg-1 xcol-span-full dcol-span-8" style="min-height: 80px">Main (8/12 en desktop)</div>
+              <div class="cell bg-3 xcol-span-full dcol-span-4" style="min-height: 80px">Aside (4/12 en desktop)</div>
+              <div class="cell bg-5 xcol-span-full dcol-span-12">Footer (full)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         9. GRID CENTER — centrado simple
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">9 · Grid Center — centrado con place-items built-in</h2>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Celda única centrada</strong>
+          <span class="badge badge-primary badge-pill">.grid-center</span>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            <code>.grid-center</code> = <code>display: grid; place-items: center</code>.
+            El truco más corto para centrar un elemento único dentro de su contenedor padre.
+            Equivalente al clásico <code>flex-center</code> pero para grid de una celda.
+          </p>
+          <div class="bordered border-r grid-center" style="min-height: 160px">
+            <div class="cell bg-4 padd">
+              Centrado con .grid-center<br>
+              <small>sin indicar cols ni rows</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         10. PATRONES REALES
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">10 · Patrones de la vida real</h2>
+      <p class="font-s color-text-alt">Layouts concretos que combinan varias utilidades de grid.</p>
+
+      <!-- Dashboard -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Dashboard — 4 métricas + tabla + sidebar</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.dgrid-cols-4</span>
+            <span class="badge badge-secondary badge-pill">.dcol-span-3</span>
+            <span class="badge badge-secondary badge-pill">.dcol-span-1</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Fila de KPIs (4 columnas), luego tabla principal (3/4) con sidebar (1/4). Todo en una grid de 4 columnas.
+          </p>
+          <div class="demo-grid bordered grid xgrid-cols-2 dgrid-cols-4 gap-s">
+            <!-- KPIs -->
+            <div class="cell bg-1 col gap-xs" style="min-height:60px">KPI 1<small>4.2K usuarios</small></div>
+            <div class="cell bg-2 col gap-xs" style="min-height:60px">KPI 2<small>+18% MoM</small></div>
+            <div class="cell bg-3 col gap-xs" style="min-height:60px">KPI 3<small>$12.4K MRR</small></div>
+            <div class="cell bg-4 col gap-xs" style="min-height:60px">KPI 4<small>87 NPS</small></div>
+            <!-- Tabla + Aside -->
+            <div class="cell bg-alt xcol-span-full dcol-span-3" style="min-height:100px; border: var(--border)">
+              Tabla principal (span 3)
+            </div>
+            <div class="cell bg-1 xcol-span-full dcol-span-1" style="min-height:100px">Widget (span 1)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería tipo masonry con dense -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Galería con items de distinto tamaño + dense</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.grid-cols-4</span>
+            <span class="badge badge-secondary badge-pill">.col-span-2 / .row-span-2</span>
+            <span class="badge badge-secondary badge-pill">.grid-flow-dense</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Items de tamaño variable. Con <code>grid-flow-dense</code> los items pequeños rellenan los huecos automáticamente.
+          </p>
+          <div class="demo-grid bordered grid grid-cols-4 grid-flow-dense gap-s">
+            <div class="cell bg-5 col-span-2 row-span-2" style="min-height: 120px">⭐ Destacado<br><small>col-span-2 row-span-2</small></div>
+            <div class="cell bg-1">A</div>
+            <div class="cell bg-2">B</div>
+            <div class="cell bg-3 col-span-2">C (span-2)</div>
+            <div class="cell bg-4">D</div>
+            <div class="cell bg-1">E</div>
+            <div class="cell bg-2">F</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Landing 2 cols -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Hero de landing — texto + imagen</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.grid</span>
+            <span class="badge badge-secondary badge-pill">.dgrid-cols-2</span>
+            <span class="badge badge-secondary badge-pill">.ai-c</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            1 columna en mobile (texto arriba, imagen abajo), 2 columnas iguales en desktop.
+            Añade <code>ai-c</code> para centrar el texto verticalmente respecto a la imagen.
+          </p>
+          <div class="demo-grid bordered grid dgrid-cols-2 gap-l ai-c padd-s">
+            <div class="col gap-s ai-fs">
+              <h3 class="font-xl bold">Título del producto</h3>
+              <p class="font-s color-text-alt">Descripción de valor que explica el diferencial.</p>
+              <a class="btn std" href="#">Comenzar gratis</a>
+            </div>
+            <div class="cell bg-4 border-r" style="min-height: 160px">
+              Imagen / Ilustración
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer grid -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Footer multi-columna</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.grid-auto</span>
+            <span class="badge badge-secondary badge-pill">.col-span-full</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Columnas de links que se adaptan solas con <code>grid-auto</code>. El copyright usa <code>col-span-full</code>.
+          </p>
+          <div class="demo-grid bordered grid-auto gap padd-s">
+            <div class="col gap-xs ai-fs">
+              <p class="bold font-s">Producto</p>
+              <p class="font-xs color-text-alt">Características</p>
+              <p class="font-xs color-text-alt">Precios</p>
+              <p class="font-xs color-text-alt">Changelog</p>
+            </div>
+            <div class="col gap-xs ai-fs">
+              <p class="bold font-s">Empresa</p>
+              <p class="font-xs color-text-alt">Sobre nosotros</p>
+              <p class="font-xs color-text-alt">Blog</p>
+              <p class="font-xs color-text-alt">Contacto</p>
+            </div>
+            <div class="col gap-xs ai-fs">
+              <p class="bold font-s">Recursos</p>
+              <p class="font-xs color-text-alt">Documentación</p>
+              <p class="font-xs color-text-alt">Guías</p>
+              <p class="font-xs color-text-alt">API</p>
+            </div>
+            <div class="col gap-xs ai-fs">
+              <p class="bold font-s">Legal</p>
+              <p class="font-xs color-text-alt">Privacidad</p>
+              <p class="font-xs color-text-alt">Términos</p>
+              <p class="font-xs color-text-alt">Cookies</p>
+            </div>
+            <div class="cell bg-alt col-span-full border-r font-xs color-text-alt" style="min-height: 40px">
+              © 2026 Lagunite · col-span-full
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         RESUMEN
+    ════════════════════════════════════════════ -->
+    <div class="card card-primary wp100">
+      <div class="card-header">
+        <strong>Cheatsheet rápida — Grid</strong>
+      </div>
+      <div class="card-body">
+        <div class="grid dgrid-cols-2 gap-m">
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Contenedores</p>
+            <p class="font-xs"><code>.grid</code> · <code>.grid-auto</code> · <code>.grid-auto-fill</code> · <code>.grid-center</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Columnas fijas</p>
+            <p class="font-xs"><code>.grid-cols-1</code> … <code>.grid-cols-12</code></p>
+            <p class="font-xs">Responsive: <code>.xgrid-cols-*</code> · <code>.dgrid-cols-*</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Column span</p>
+            <p class="font-xs"><code>.col-span-1</code> … <code>.col-span-12</code> · <code>.col-span-full</code></p>
+            <p class="font-xs">Responsive: <code>.xcol-span-*</code> · <code>.dcol-span-*</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Row span</p>
+            <p class="font-xs"><code>.row-span-1</code> … <code>.row-span-6</code> · <code>.row-span-full</code></p>
+            <p class="font-xs">Responsive: <code>.xrow-span-*</code> · <code>.drow-span-*</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Placement explícito</p>
+            <p class="font-xs"><code>.col-start-1</code>…<code>6</code> · <code>.col-end-1</code>…<code>7</code></p>
+            <p class="font-xs"><code>.row-start-1</code>…<code>6</code> · <code>.row-end-1</code>…<code>7</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Alineación de items (contenedor)</p>
+            <p class="font-xs"><code>.ji-s</code> · <code>.ji-c</code> · <code>.ji-e</code> · <code>.ji-str</code> (justify-items)</p>
+            <p class="font-xs"><code>.pi-c</code> · <code>.pi-s</code> · <code>.pi-e</code> · <code>.pi-str</code> (place-items)</p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Alineación por item</p>
+            <p class="font-xs"><code>.js-s</code> · <code>.js-c</code> · <code>.js-e</code> · <code>.js-str</code> (justify-self)</p>
+            <p class="font-xs"><code>.ps-c</code> · <code>.ps-s</code> · <code>.ps-e</code> · <code>.ps-str</code> (place-self)</p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Auto flow</p>
+            <p class="font-xs"><code>.grid-flow-row</code> · <code>.grid-flow-col</code> · <code>.grid-flow-dense</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Gap (compartido con Flex)</p>
+            <p class="font-xs"><code>.gap-xs</code> · <code>.gap-s</code> · <code>.gap</code> · <code>.gap-l</code> · <code>.gap-xl</code></p>
+            <p class="font-xs">Numeric: <code>.gap-1</code> … <code>.gap-16</code></p>
+          </div>
+
+          <div class="col gap-xs">
+            <p class="bold font-s">Alineación compartida con Flex</p>
+            <p class="font-xs"><code>.jc-*</code> · <code>.ai-*</code> · <code>.ac-*</code> — funcionan igual en grid</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom ta-c">
+      <p class="font-s color-text-alt">Lagunite CSS Framework · Grid Learning Guide · v2</p>
+    </div>
+  </footer>
+
+</body>
+</html>

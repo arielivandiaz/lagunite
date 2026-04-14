@@ -1,0 +1,134 @@
+/* @ID: #08-09-01 */
+/* Drag & Drop Canvas Organism
+   Grid-based spatial canvas for draggable nodes.
+   Supports snap-to-grid and pointer-based interactions.
+   Works with .dnd-node molecules inside.
+*/
+
+.dnd-canvas {
+  /* Layout */
+  position: relative;
+  display: block;
+  width: 100%;
+
+  /* Appearance — dot grid (Figma-style) */
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-l);
+  background-color: var(--gray-50);
+  background-image: radial-gradient(circle, var(--gray-300) 1.5px, transparent 1.5px);
+  background-size: var(--dnd-grid-major, 24px) var(--dnd-grid-major, 24px);
+  background-position: 0 0;
+
+  /* Sizing */
+  overflow: hidden;
+
+  /* Interaction */
+  user-select: none;
+  touch-action: none;
+}
+
+.dnd-canvas:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.1);
+}
+
+/* ── Inner stage (transform target for zoom/pan) ─────────────────────── */
+
+.dnd-canvas-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── SVG wire layer (sits below nodes in DOM order) ──────────────────── */
+
+.dnd-wire-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* ── Committed wires ──────────────────────────────────────────────────── */
+
+.wire {
+  stroke: var(--color-primary);
+  stroke-width: 2;
+  stroke-linecap: round;
+  fill: none;
+  pointer-events: stroke;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: stroke 0.15s, opacity 0.15s, stroke-width 0.15s;
+}
+
+.wire:hover {
+  stroke: var(--color-tertiary);
+  stroke-width: 2.5;
+  opacity: 1;
+}
+
+/* ── Ghost wire (drawn while connecting) ─────────────────────────────── */
+
+.wire-ghost {
+  stroke: var(--color-primary);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+  stroke-linecap: round;
+  fill: none;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* ── Night mode ──────────────────────────────────────────────────────── */
+
+.night .dnd-canvas {
+  background-color: var(--gray-900);
+  border-color: var(--gray-700);
+  background-image: radial-gradient(circle, var(--gray-700) 1.5px, transparent 1.5px);
+}
+
+.night .dnd-canvas:focus-within {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(94, 154, 255, 0.15);
+}
+
+.night .wire        { stroke: var(--color-primary-light); }
+.night .wire-ghost  { stroke: var(--color-primary-light); }
+
+/* ── Fullscreen variant ───────────────────────────────────────────────── */
+
+.dnd-canvas.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 100;
+}
+
+/* ── Sizing utilities (use with .dnd-canvas) ──────────────────────────── */
+
+.dnd-canvas.height-xs { height: 300px; }
+.dnd-canvas.height-s  { height: 480px; }
+.dnd-canvas.height-m  { height: 600px; }
+.dnd-canvas.height-l  { height: 800px; }
+.dnd-canvas.height-xl { height: 1000px; }
+
+@media (max-width: 639px) {
+  .dnd-canvas {
+    height: 480px;
+  }
+
+  .dnd-canvas.fullscreen {
+    height: calc(100vh - 56px);
+  }
+}

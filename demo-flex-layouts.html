@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagunite · Guía de Flex</title>
+  <link rel="stylesheet" href="dist/lagunite.css" />
+  <style>
+    /* ── Demo helpers — NOT framework classes (solo para las cajas visuales) ── */
+    .item {
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-m);
+      font-weight: bold;
+      font-size: var(--font-size-s);
+      text-align: center;
+      white-space: nowrap;
+      min-width: 52px;
+    }
+    .item.tall {
+      padding: var(--space-6) var(--space-4);
+    }
+    .item.very-tall {
+      padding: var(--space-8) var(--space-4);
+    }
+    .demo-area {
+      min-height: 120px;
+      border-radius: var(--radius-m);
+      padding: var(--space-3);
+    }
+    .demo-area.taller {
+      min-height: 180px;
+    }
+  </style>
+</head>
+
+<body class="bg">
+
+  <!-- ════════════════════════════════════════════
+       PAGE HEADER
+  ════════════════════════════════════════════ -->
+  <header class="bgg-3 padd-v-l">
+    <div class="container-l col gap-s ai-c ta-c">
+      <h1 class="bold font-xxl">Flex en Lagunite</h1>
+      <p class="font-l opacity-80">
+        Guía de aprendizaje: "Si quiero este layout, uso estas clases."
+      </p>
+    </div>
+  </header>
+
+  <main class="container-l padd-v-l col gap-l ai-fs">
+
+    <!-- HOW TO READ -->
+    <div class="alert alert-info wp100">
+      <strong>Cómo leer esta guía:</strong> cada tarjeta muestra un patrón concreto con su descripción de uso,
+      las clases involucradas como badges, y un ejemplo visual con items coloreados.
+      Redimensiona la ventana para ver los efectos responsive.
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         1. DIRECCIÓN BÁSICA
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">1 · Dirección básica</h2>
+      <p class="font-s color-text-alt">
+        Todos los contenedores flex en Lagunite ya tienen <code>justify-content: center</code> y <code>align-items: center</code> por defecto.
+        Solo necesitas elegir la dirección.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <!-- .row -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Fila horizontal centrada</strong>
+            <span class="badge badge-primary badge-pill">.row</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Items en fila, centrados horizontal y verticalmente sin configuración extra.
+            </p>
+            <div class="demo-area bordered row gap-s">
+              <div class="item bg-1">Item 1</div>
+              <div class="item bg-2">Item 2</div>
+              <div class="item bg-3">Item 3</div>
+              <div class="item bg-4">Item 4</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- .col -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Columna vertical centrada</strong>
+            <span class="badge badge-primary badge-pill">.col</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Items apilados en columna, centrados horizontalmente por defecto.
+            </p>
+            <div class="demo-area bordered col gap-s">
+              <div class="item bg-1">Item 1</div>
+              <div class="item bg-2">Item 2</div>
+              <div class="item bg-3">Item 3</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         2. JUSTIFY CONTENT — eje principal
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">2 · Justify Content — posición sobre el eje principal</h2>
+      <p class="font-s color-text-alt">
+        En <code>row</code>: controla la distribución <strong>horizontal</strong> de los items.
+        En <code>col</code>: controla la distribución <strong>vertical</strong>.
+      </p>
+
+      <div class="grid dgrid-cols-3 gap-s wp100">
+
+        <!-- jc-fs -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Inicio</strong>
+            <span class="badge badge-secondary badge-pill">.jc-fs</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items pegados al inicio (izquierda en row).</p>
+            <div class="demo-area bordered row gap-s jc-fs">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jc-c -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Centro</strong>
+            <span class="badge badge-secondary badge-pill">.jc-c</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items agrupados en el centro del contenedor.</p>
+            <div class="demo-area bordered row gap-s jc-c">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jc-fe -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Final</strong>
+            <span class="badge badge-secondary badge-pill">.jc-fe</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items pegados al final (derecha en row).</p>
+            <div class="demo-area bordered row gap-s jc-fe">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jc-sb -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Espacio entre</strong>
+            <span class="badge badge-secondary badge-pill">.jc-sb</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Espacio igual <em>entre</em> items. Los extremos tocan el borde del contenedor.
+              Clásico para navbars.
+            </p>
+            <div class="demo-area bordered row jc-sb">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jc-sa -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Espacio alrededor</strong>
+            <span class="badge badge-secondary badge-pill">.jc-sa</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Espacio igual <em>alrededor</em> de cada item. Los extremos tienen la mitad de espacio que el interior.
+            </p>
+            <div class="demo-area bordered row jc-sa">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jc-se -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Espacio uniforme</strong>
+            <span class="badge badge-secondary badge-pill">.jc-se</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Espacio exactamente igual en todos los huecos, incluyendo extremos. Más uniforme que <code>jc-sa</code>.
+            </p>
+            <div class="demo-area bordered row jc-se">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         3. ALIGN ITEMS — eje cruzado
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">3 · Align Items — alineación sobre el eje cruzado</h2>
+      <p class="font-s color-text-alt">
+        En <code>row</code>: controla la alineación <strong>vertical</strong> de los items en el contenedor.
+        Los items tienen alturas diferentes para que el efecto sea visible.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <!-- ai-fs -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Inicio del eje cruzado</strong>
+            <span class="badge badge-secondary badge-pill">.ai-fs</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items alineados arriba (en row). Cada item ocupa solo su altura natural.</p>
+            <div class="demo-area taller bordered row gap-s jc-c ai-fs">
+              <div class="item bg-2 tall">A<br><small>alto</small></div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4 very-tall">C<br><small>muy<br>alto</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ai-c -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Centro del eje cruzado</strong>
+            <span class="badge badge-secondary badge-pill">.ai-c</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items centrados verticalmente (es el comportamiento por defecto de <code>.row</code>).</p>
+            <div class="demo-area taller bordered row gap-s jc-c ai-c">
+              <div class="item bg-2 tall">A<br><small>alto</small></div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4 very-tall">C<br><small>muy<br>alto</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ai-fe -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Final del eje cruzado</strong>
+            <span class="badge badge-secondary badge-pill">.ai-fe</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Items alineados abajo (en row). Todos tocan el borde inferior del contenedor.</p>
+            <div class="demo-area taller bordered row gap-s jc-c ai-fe">
+              <div class="item bg-2 tall">A<br><small>alto</small></div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4 very-tall">C<br><small>muy<br>alto</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ai-s -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Stretch (estiramiento)</strong>
+            <span class="badge badge-secondary badge-pill">.ai-s</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">Los items se estiran para cubrir toda la altura del contenedor. Ideal para columnas igual de altas.</p>
+            <div class="demo-area taller bordered row gap-s jc-c ai-s">
+              <div class="item bg-2">A</div>
+              <div class="item bg-3">B</div>
+              <div class="item bg-4">C</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         4. ALIGN SELF — control por item
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">4 · Align Self — cada item elige su propia alineación</h2>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Alineación individual en el eje cruzado</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-secondary badge-pill">.as-fs</span>
+            <span class="badge badge-secondary badge-pill">.as-c</span>
+            <span class="badge badge-secondary badge-pill">.as-fe</span>
+            <span class="badge badge-secondary badge-pill">.as-s</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Usa cuando los items de un mismo contenedor flex necesitan posicionarse de forma distinta en el eje cruzado.
+            Cada item aplica su propia clase <code>as-*</code>. Estas clases sobreescriben el <code>align-items</code> del padre.
+          </p>
+          <div class="demo-area taller bordered row gap-s jc-c">
+            <div class="item bg-1 as-fs">as-fs<br><small>inicio</small></div>
+            <div class="item bg-2 as-c">as-c<br><small>centro</small></div>
+            <div class="item bg-3 as-fe">as-fe<br><small>final</small></div>
+            <div class="item bg-4 as-s">as-s<br><small>stretch</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         5. FLEX ITEMS — tamaños y comportamiento
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">5 · Tamaño de items flex</h2>
+      <p class="font-s color-text-alt">
+        Controla cómo los items hijos ocupan el espacio disponible del contenedor.
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <!-- flex-1 -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Cuatro columnas iguales</strong>
+            <span class="badge badge-success badge-pill">.flex-1</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Todos los hijos comparten el espacio disponible por igual, sin importar su contenido.
+            </p>
+            <div class="demo-area bordered row gap-s ai-fs">
+              <div class="item bg-1 flex-1">1</div>
+              <div class="item bg-2 flex-1">2</div>
+              <div class="item bg-3 flex-1">3</div>
+              <div class="item bg-4 flex-1">4</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- flex-none + flex-1 -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Ancho fijo + flexible</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-success badge-pill">.flex-none</span>
+              <span class="badge badge-success badge-pill">.flex-1</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Un item mantiene su ancho fijo, el resto ocupa todo el espacio disponible.
+            </p>
+            <div class="demo-area bordered row gap-s ai-fs">
+              <div class="item bg-5 flex-none" style="width: 90px">Fijo<br>90px</div>
+              <div class="item bg-2 flex-1">Flexible — ocupa el espacio restante</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- flex-shrink-0 -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>No encoger aunque haya poco espacio</strong>
+            <span class="badge badge-success badge-pill">.flex-shrink-0</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El item nunca se encoge. Perfecto para logos, iconos o sidebars que deben mantener su ancho.
+            </p>
+            <div class="demo-area bordered row gap-s ai-c flex-nowrap overflow-hidden">
+              <div class="item bg-5 flex-shrink-0" style="width: 110px">Logo<br><small>.flex-shrink-0</small></div>
+              <div class="item bg-2 flex-1 overflow-hidden">Texto de navegación que se adapta al espacio sin comprimir el logo de la izquierda</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- flex-auto -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Parte de su tamaño natural, pero flexible</strong>
+            <span class="badge badge-success badge-pill">.flex-auto</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El item parte de su tamaño natural pero puede crecer y encoger. Los items más largos obtienen más espacio.
+            </p>
+            <div class="demo-area bordered row gap-s ai-fs">
+              <div class="item bg-1 flex-auto">Corto</div>
+              <div class="item bg-2 flex-auto">Texto bastante más largo</div>
+              <div class="item bg-3 flex-auto">Medio</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         6. GAP — espacio entre items
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">6 · Gap — espacio entre items</h2>
+
+      <div class="card wp100">
+        <div class="card-header">
+          <strong>Escala semántica de gap</strong>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Usa <code>.gap-*</code> en el contenedor flex. La escala es: <strong>xs → s → (base) → l → xl</strong>.
+            También hay escala numérica: <code>.gap-1</code> … <code>.gap-16</code>.
+          </p>
+
+          <div class="col gap-s">
+            <div class="row ai-c gap-s">
+              <span class="badge badge-outline badge-pill" style="width:72px; justify-content:center">gap-xs</span>
+              <div class="row gap-xs flex-1 ai-fs">
+                <div class="item bg-1">A</div>
+                <div class="item bg-2">B</div>
+                <div class="item bg-3">C</div>
+                <div class="item bg-4">D</div>
+              </div>
+            </div>
+            <div class="row ai-c gap-s">
+              <span class="badge badge-outline badge-pill" style="width:72px; justify-content:center">gap-s</span>
+              <div class="row gap-s flex-1 ai-fs">
+                <div class="item bg-1">A</div>
+                <div class="item bg-2">B</div>
+                <div class="item bg-3">C</div>
+                <div class="item bg-4">D</div>
+              </div>
+            </div>
+            <div class="row ai-c gap-s">
+              <span class="badge badge-outline badge-pill" style="width:72px; justify-content:center">gap</span>
+              <div class="row gap flex-1 ai-fs">
+                <div class="item bg-1">A</div>
+                <div class="item bg-2">B</div>
+                <div class="item bg-3">C</div>
+                <div class="item bg-4">D</div>
+              </div>
+            </div>
+            <div class="row ai-c gap-s">
+              <span class="badge badge-outline badge-pill" style="width:72px; justify-content:center">gap-l</span>
+              <div class="row gap-l flex-1 ai-fs">
+                <div class="item bg-1">A</div>
+                <div class="item bg-2">B</div>
+                <div class="item bg-3">C</div>
+                <div class="item bg-4">D</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         7. ORDER — cambiar el orden visual
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">7 · Order — reordenar items visualmente sin tocar el HTML</h2>
+
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>El HTML dice A·B·C·D pero la pantalla muestra D·A·C·B</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-secondary badge-pill">.order-first</span>
+            <span class="badge badge-secondary badge-pill">.order-last</span>
+            <span class="badge badge-secondary badge-pill">.order-2</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Útil para reordenar layouts en responsive sin duplicar markup.
+            Prefijos <code>xorder-*</code> y <code>dorder-*</code> aplican por breakpoint.
+          </p>
+          <div class="demo-area bordered row gap-s ai-c jc-c">
+            <div class="item bg-1 order-2">A <small>(order-2)</small></div>
+            <div class="item bg-2 order-last">B <small>(order-last)</small></div>
+            <div class="item bg-3 order-3">C <small>(order-3)</small></div>
+            <div class="item bg-4 order-first">D <small>(order-first)</small></div>
+          </div>
+          <div class="alert alert-info font-s">
+            HTML: A → B → C → D &nbsp;|&nbsp; Visual: <strong>D → A → C → B</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         8. RESPONSIVE
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">8 · Responsive — distinto layout por breakpoint</h2>
+      <p class="font-s color-text-alt">
+        Prefijo <strong><code>x</code></strong> = solo mobile (≤639px) ·
+        Prefijo <strong><code>d</code></strong> = solo desktop (≥640px).
+        <em>Redimensiona la ventana para ver el cambio en vivo.</em>
+      </p>
+
+      <div class="grid dgrid-cols-2 gap-s wp100">
+
+        <!-- col-row -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Columna en mobile → fila en desktop</strong>
+            <span class="badge badge-primary badge-pill">.col-row</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              El patrón responsive más común. Los items se apilan en mobile y quedan en fila desde 640px.
+            </p>
+            <div class="col-row bordered border-r gap-s padd-s">
+              <div class="item bg-1 flex-1">A</div>
+              <div class="item bg-2 flex-1">B</div>
+              <div class="item bg-3 flex-1">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- row-col -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Fila en mobile → columna en desktop</strong>
+            <span class="badge badge-primary badge-pill">.row-col</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Útil para tabs horizontales en mobile que se convierten en una navegación vertical en desktop.
+            </p>
+            <div class="row-col bordered border-r gap-s padd-s">
+              <div class="item bg-2 flex-1">Tab 1</div>
+              <div class="item bg-3 flex-1">Tab 2</div>
+              <div class="item bg-4 flex-1">Tab 3</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alineación responsive -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Alineación diferente por breakpoint</strong>
+            <div class="row gap-xs">
+              <span class="badge badge-secondary badge-pill">.xjc-c</span>
+              <span class="badge badge-secondary badge-pill">.djc-fs</span>
+            </div>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Centrado en mobile (<code>xjc-c</code>), alineado al inicio en desktop (<code>djc-fs</code>).
+              Combina prefijos responsivos en el mismo elemento.
+            </p>
+            <div class="row xjc-c djc-fs gap-s bordered border-r padd-s">
+              <div class="item bg-1">A</div>
+              <div class="item bg-2">B</div>
+              <div class="item bg-3">C</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- flex-nowrap -->
+        <div class="card">
+          <div class="card-header row jc-sb ai-c">
+            <strong>Sin salto de línea</strong>
+            <span class="badge badge-secondary badge-pill">.flex-nowrap</span>
+          </div>
+          <div class="card-body col gap-s">
+            <p class="font-s color-text-alt">
+              Por defecto los contenedores flex hacen wrap. Usa <code>flex-nowrap</code> para forzar una sola línea.
+              Los items se encogerán si no caben, salvo que tengan <code>flex-shrink-0</code>.
+            </p>
+            <div class="row flex-nowrap gap-s bordered border-r overflow-hidden padd-s">
+              <div class="item bg-1 flex-shrink-0">Uno</div>
+              <div class="item bg-2 flex-shrink-0">Dos</div>
+              <div class="item bg-3 flex-shrink-0">Tres (largo)</div>
+              <div class="item bg-4 flex-shrink-0">Cuatro</div>
+              <div class="item bg-5 flex-shrink-0">Cinco</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         9. PATRONES REALES
+    ════════════════════════════════════════════ -->
+    <div class="col gap-s wp100">
+      <h2 class="font-xl bold">9 · Patrones de la vida real</h2>
+      <p class="font-s color-text-alt">
+        Combinaciones concretas de utilidades flex para los layouts más comunes.
+      </p>
+
+      <!-- Navbar -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Navbar — logo izquierda, links derecha</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.row</span>
+            <span class="badge badge-secondary badge-pill">.jc-sb</span>
+            <span class="badge badge-secondary badge-pill">.ai-c</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            El patrón de navbar más típico: marca/logo al inicio, acciones/links al final.
+            En Lagunite puedes usar el organismo <code>.navbar</code> directamente.
+          </p>
+          <nav class="navbar bordered border-r">
+            <a class="navbar-brand" href="#">🏄 Lagunite</a>
+            <ul class="navbar-nav">
+              <li><a class="navbar-link active" href="#">Inicio</a></li>
+              <li><a class="navbar-link" href="#">Docs</a></li>
+              <li><a class="navbar-link" href="#">GitHub</a></li>
+            </ul>
+          </nav>
+          <div class="row gap-s">
+            <span class="badge badge-outline badge-pill">.navbar</span>
+            <span class="badge badge-outline badge-pill">.navbar-brand</span>
+            <span class="badge badge-outline badge-pill">.navbar-nav</span>
+            <span class="badge badge-outline badge-pill">.navbar-link</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar + main -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Sidebar fija + contenido principal</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.col-row</span>
+            <span class="badge badge-secondary badge-pill">.flex-shrink-0</span>
+            <span class="badge badge-secondary badge-pill">.flex-1</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Columna en mobile, fila en desktop. El sidebar no se encoge y el main ocupa todo el espacio sobrante.
+          </p>
+          <div class="col-row gap-s bordered border-r">
+            <aside class="bg-1 padd-s flex-shrink-0 col gap-xs ai-fs" style="width: 160px">
+              <p class="font-s bold">.flex-shrink-0</p>
+              <p class="font-xs">Sidebar — 160px fijo</p>
+            </aside>
+            <main class="bg-alt padd flex-1 col gap-xs ai-fs">
+              <p class="font-s bold">.flex-1</p>
+              <p class="font-xs">Main — ocupa el espacio restante, sin importar cuánto sea</p>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards iguales -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Tarjetas de igual ancho en fila</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.row</span>
+            <span class="badge badge-secondary badge-pill">.gap-s</span>
+            <span class="badge badge-success badge-pill">.flex-1 (en cada card)</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Todas las tarjetas toman el mismo ancho sin importar cuánto contenido tienen.
+            Las alturas también se igualan gracias al <code>ai-s</code> (stretch por defecto en row cuando se especifica).
+          </p>
+          <div class="row gap-s ai-fs">
+            <div class="card flex-1">
+              <div class="card-body">
+                <h3 class="font-l bold">Card A</h3>
+                <p class="font-s color-text-alt">Texto corto.</p>
+              </div>
+            </div>
+            <div class="card flex-1">
+              <div class="card-body">
+                <h3 class="font-l bold">Card B</h3>
+                <p class="font-s color-text-alt">Texto bastante más largo para demostrar que el ancho se mantiene igual en todos los casos.</p>
+              </div>
+            </div>
+            <div class="card flex-1">
+              <div class="card-body">
+                <h3 class="font-l bold">Card C</h3>
+                <p class="font-s color-text-alt">Texto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero centrado -->
+      <div class="card wp100">
+        <div class="card-header row jc-sb ai-c">
+          <strong>Sección hero centrada en ambos ejes</strong>
+          <div class="row gap-xs">
+            <span class="badge badge-primary badge-pill">.col</span>
+            <span class="badge badge-secondary badge-pill">.flex-center</span>
+          </div>
+        </div>
+        <div class="card-body col gap-s">
+          <p class="font-s color-text-alt">
+            Contenido centrado horizontal y verticalmente. Ideal para heroes, 404s o splash screens.
+            <code>.flex-center</code> es un shorthand de <code>display:flex + align-items:center + justify-content:center</code>.
+          </p>
+          <div class="bgg-4 border-r col gap-s flex-center" style="min-height: 200px">
+            <h2 class="font-xl bold">Título del Hero</h2>
+            <p class="font-s opacity-80">Descripción breve del producto.</p>
+            <a class="btn std" href="#">Comenzar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ════════════════════════════════════════════
+         RESUMEN
+    ════════════════════════════════════════════ -->
+    <div class="card card-primary wp100">
+      <div class="card-header">
+        <strong>Cheatsheet rápida</strong>
+      </div>
+      <div class="card-body">
+        <div class="grid dgrid-cols-2 gap-m">
+          <div class="col gap-xs">
+            <p class="bold font-s">Dirección</p>
+            <p class="font-xs"><code>.row</code> · <code>.col</code> · <code>.rowr</code> · <code>.colr</code></p>
+            <p class="font-xs"><code>.col-row</code> · <code>.row-col</code> (responsive flip)</p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Justify content</p>
+            <p class="font-xs"><code>.jc-fs</code> · <code>.jc-c</code> · <code>.jc-fe</code> · <code>.jc-sb</code> · <code>.jc-sa</code> · <code>.jc-se</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Align items</p>
+            <p class="font-xs"><code>.ai-fs</code> · <code>.ai-c</code> · <code>.ai-fe</code> · <code>.ai-s</code> · <code>.ai-bl</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Align self</p>
+            <p class="font-xs"><code>.as-fs</code> · <code>.as-c</code> · <code>.as-fe</code> · <code>.as-s</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Tamaño de items</p>
+            <p class="font-xs"><code>.flex-1</code> · <code>.flex-auto</code> · <code>.flex-none</code> · <code>.flex-shrink-0</code> · <code>.flex-grow</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Gap</p>
+            <p class="font-xs"><code>.gap-xs</code> · <code>.gap-s</code> · <code>.gap</code> · <code>.gap-l</code> · <code>.gap-xl</code></p>
+            <p class="font-xs">Numeric: <code>.gap-1</code> … <code>.gap-16</code></p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Responsive (todos los modificadores)</p>
+            <p class="font-xs">
+              Prefijo <code>x</code> = mobile (≤639px) → <code>.xjc-fs</code> · <code>.xai-c</code> …<br>
+              Prefijo <code>d</code> = desktop (≥640px) → <code>.djc-sb</code> · <code>.dai-s</code> …
+            </p>
+          </div>
+          <div class="col gap-xs">
+            <p class="bold font-s">Order</p>
+            <p class="font-xs"><code>.order-first</code> · <code>.order-last</code> · <code>.order-1</code> … <code>.order-5</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom ta-c">
+      <p class="font-s color-text-alt">Lagunite CSS Framework · Flex Learning Guide · v2</p>
+    </div>
+  </footer>
+
+</body>
+</html>
