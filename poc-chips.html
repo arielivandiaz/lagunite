@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POC — Chips (propuesta)</title>
+  <link rel="stylesheet" href="./dist/lagunite.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+
+    /* =============================================
+       TOKENS POR TEMA
+    ============================================= */
+    [data-theme="dark"] {
+      --bg-page:          #0f1117;
+      --bg-panel:         #16181f;
+      --bg-card:          rgba(255,255,255,0.03);
+      --border-card:      rgba(255,255,255,0.06);
+      --border-panel:     rgba(255,255,255,0.07);
+      --text-primary:     rgba(255,255,255,0.85);
+      --text-secondary:   rgba(255,255,255,0.35);
+      --text-label:       rgba(255,255,255,0.28);
+      --divider:          rgba(255,255,255,0.06);
+      --toggle-bg:        rgba(255,255,255,0.07);
+      --toggle-color:     rgba(255,255,255,0.65);
+      --toggle-border:    rgba(255,255,255,0.1);
+
+      /* chip base */
+      --chip-border-default: rgba(255,255,255,0.1);
+
+      /* success */
+      --chip-success-hue:    80, 200, 120;
+      --chip-success-bg:     rgba(80, 200, 120, 0.15);
+      --chip-success-color:  #50C878;
+      --chip-success-border: rgba(80, 200, 120, 0.3);
+      --chip-success-solid:  #50C878;
+      --chip-success-solid-text: #071a0d;
+      --chip-success-glow:   rgba(80, 200, 120, 0.45);
+      --chip-success-grad:   linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%);
+      --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%);
+
+      /* danger */
+      --chip-danger-hue:     255, 99, 71;
+      --chip-danger-bg:      rgba(255, 99, 71, 0.15);
+      --chip-danger-color:   #FF6347;
+      --chip-danger-border:  rgba(255, 99, 71, 0.3);
+      --chip-danger-solid:   #FF6347;
+      --chip-danger-solid-text: #fff;
+      --chip-danger-glow:    rgba(255, 99, 71, 0.45);
+      --chip-danger-grad:    linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%);
+      --chip-danger-grad-solid: linear-gradient(135deg, #ff7a5c 0%, #e03820 100%);
+
+      /* warning */
+      --chip-warning-hue:    255, 191, 0;
+      --chip-warning-bg:     rgba(255, 191, 0, 0.15);
+      --chip-warning-color:  #FFBF00;
+      --chip-warning-border: rgba(255, 191, 0, 0.3);
+      --chip-warning-solid:  #FFBF00;
+      --chip-warning-solid-text: #1a1200;
+      --chip-warning-glow:   rgba(255, 191, 0, 0.45);
+      --chip-warning-grad:   linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%);
+      --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%);
+
+      /* info */
+      --chip-info-hue:       100, 149, 237;
+      --chip-info-bg:        rgba(100, 149, 237, 0.15);
+      --chip-info-color:     #6495ED;
+      --chip-info-border:    rgba(100, 149, 237, 0.3);
+      --chip-info-solid:     #6495ED;
+      --chip-info-solid-text: #06101f;
+      --chip-info-glow:      rgba(100, 149, 237, 0.45);
+      --chip-info-grad:      linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%);
+      --chip-info-grad-solid: linear-gradient(135deg, #7aabff 0%, #4070d8 100%);
+    }
+
+    [data-theme="light"] {
+      --bg-page:          #eef0f4;
+      --bg-panel:         #f8f9fb;
+      --bg-card:          rgba(255,255,255,0.85);
+      --border-card:      rgba(0,0,0,0.07);
+      --border-panel:     rgba(0,0,0,0.08);
+      --text-primary:     rgba(0,0,0,0.82);
+      --text-secondary:   rgba(0,0,0,0.35);
+      --text-label:       rgba(0,0,0,0.32);
+      --divider:          rgba(0,0,0,0.07);
+      --toggle-bg:        rgba(0,0,0,0.06);
+      --toggle-color:     rgba(0,0,0,0.55);
+      --toggle-border:    rgba(0,0,0,0.1);
+
+      --chip-border-default: rgba(0,0,0,0.08);
+
+      /* success */
+      --chip-success-bg:     rgba(80, 200, 120, 0.14);
+      --chip-success-color:  #23904a;
+      --chip-success-border: rgba(80, 200, 120, 0.38);
+      --chip-success-solid:  #3ecb72;        /* vibrante, no apagado */
+      --chip-success-solid-text: #07260f;
+      --chip-success-glow:   rgba(62, 203, 114, 0.38);
+      --chip-success-grad:   linear-gradient(135deg, rgba(80,200,120,0.2) 0%, rgba(40,150,80,0.08) 100%);
+      --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%);
+
+      /* danger */
+      --chip-danger-bg:      rgba(255, 99, 71, 0.11);
+      --chip-danger-color:   #c93218;
+      --chip-danger-border:  rgba(255, 99, 71, 0.36);
+      --chip-danger-solid:   #f94f2b;        /* rojo vivo */
+      --chip-danger-solid-text: #fff;
+      --chip-danger-glow:    rgba(249, 79, 43, 0.35);
+      --chip-danger-grad:    linear-gradient(135deg, rgba(255,99,71,0.18) 0%, rgba(200,50,30,0.07) 100%);
+      --chip-danger-grad-solid: linear-gradient(135deg, #ff7055 0%, #d63010 100%);
+
+      /* warning */
+      --chip-warning-bg:     rgba(255, 191, 0, 0.13);
+      --chip-warning-color:  #a07800;
+      --chip-warning-border: rgba(255, 191, 0, 0.38);
+      --chip-warning-solid:  #f5b800;        /* ámbar vibrante */
+      --chip-warning-solid-text: #1a1200;
+      --chip-warning-glow:   rgba(245, 184, 0, 0.38);
+      --chip-warning-grad:   linear-gradient(135deg, rgba(255,191,0,0.2) 0%, rgba(200,140,0,0.07) 100%);
+      --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%);
+
+      /* info */
+      --chip-info-bg:        rgba(100, 149, 237, 0.12);
+      --chip-info-color:     #2f5bbf;
+      --chip-info-border:    rgba(100, 149, 237, 0.36);
+      --chip-info-solid:     #4b7ef0;        /* azul vivo */
+      --chip-info-solid-text: #fff;
+      --chip-info-glow:      rgba(75, 126, 240, 0.35);
+      --chip-info-grad:      linear-gradient(135deg, rgba(100,149,237,0.18) 0%, rgba(60,100,200,0.07) 100%);
+      --chip-info-grad-solid: linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-page);
+      font-family: 'Manrope', sans-serif;
+      min-height: 100vh;
+      padding: 72px 24px 80px;
+      transition: background 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* =============================================
+       LAYOUT
+    ============================================= */
+    .page-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      text-align: center;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 820px;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-label);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+      margin-bottom: 18px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .row-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-label);
+      letter-spacing: 0.04em;
+      width: 110px;
+      flex-shrink: 0;
+    }
+
+    .row-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* =============================================
+       CHIP — BASE
+    ============================================= */
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      border: 1px solid var(--chip-border-default);
+      white-space: nowrap;
+      line-height: 1.5;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    /* ---- VARIANTES ---- */
+    .chip-success { background: var(--chip-success-bg); color: var(--chip-success-color); border-color: var(--chip-success-border); }
+    .chip-danger  { background: var(--chip-danger-bg);  color: var(--chip-danger-color);  border-color: var(--chip-danger-border); }
+    .chip-warning { background: var(--chip-warning-bg); color: var(--chip-warning-color); border-color: var(--chip-warning-border); }
+    .chip-info    { background: var(--chip-info-bg);    color: var(--chip-info-color);    border-color: var(--chip-info-border); }
+
+    /* ---- SÓLIDO ---- */
+    .chip-solid.chip-success { background: var(--chip-success-solid); color: var(--chip-success-solid-text); border-color: transparent; }
+    .chip-solid.chip-danger  { background: var(--chip-danger-solid);  color: var(--chip-danger-solid-text);  border-color: transparent; }
+    .chip-solid.chip-warning { background: var(--chip-warning-solid); color: var(--chip-warning-solid-text); border-color: transparent; }
+    .chip-solid.chip-info    { background: var(--chip-info-solid);    color: var(--chip-info-solid-text);    border-color: transparent; }
+
+    /* ---- OUTLINE ---- */
+    .chip-outline { background: transparent; }
+
+    /* ---- TAMAÑOS ---- */
+    .chip-s { font-size: 10px; padding: 2px 8px; }
+    .chip-l { font-size: 14px; padding: 6px 16px; }
+
+    /* ============================================
+       .bgg — FONDO GRADIENTE
+       Funciona solo y combinado con .chip-solid
+    ============================================= */
+    .chip.bgg.chip-success { background: var(--chip-success-grad); }
+    .chip.bgg.chip-danger  { background: var(--chip-danger-grad); }
+    .chip.bgg.chip-warning { background: var(--chip-warning-grad); }
+    .chip.bgg.chip-info    { background: var(--chip-info-grad); }
+
+    /* sólido + gradiente */
+    .chip-solid.bgg.chip-success { background: var(--chip-success-grad-solid); color: var(--chip-success-solid-text); }
+    .chip-solid.bgg.chip-danger  { background: var(--chip-danger-grad-solid);  color: var(--chip-danger-solid-text); }
+    .chip-solid.bgg.chip-warning { background: var(--chip-warning-grad-solid); color: var(--chip-warning-solid-text); }
+    .chip-solid.bgg.chip-info    { background: var(--chip-info-grad-solid);    color: var(--chip-info-solid-text); }
+
+    /* ============================================
+       .shadow — SOMBRA DEL COLOR
+    ============================================= */
+    .chip.shadow.chip-success { box-shadow: 0 4px 18px -2px var(--chip-success-glow); }
+    .chip.shadow.chip-danger  { box-shadow: 0 4px 18px -2px var(--chip-danger-glow); }
+    .chip.shadow.chip-warning { box-shadow: 0 4px 18px -2px var(--chip-warning-glow); }
+    .chip.shadow.chip-info    { box-shadow: 0 4px 18px -2px var(--chip-info-glow); }
+
+    /* sólido + shadow: sombra más pronunciada */
+    .chip-solid.shadow.chip-success { box-shadow: 0 6px 24px -4px var(--chip-success-glow); }
+    .chip-solid.shadow.chip-danger  { box-shadow: 0 6px 24px -4px var(--chip-danger-glow); }
+    .chip-solid.shadow.chip-warning { box-shadow: 0 6px 24px -4px var(--chip-warning-glow); }
+    .chip-solid.shadow.chip-info    { box-shadow: 0 6px 24px -4px var(--chip-info-glow); }
+
+    /* ============================================
+       .lit — EFECTO ILUMINADO (luz interior)
+       Combina highlight superior + resplandor suave
+    ============================================= */
+    .chip.lit::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      /* highlight lineal desde arriba — simula luz interior */
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.22) 0%,
+        rgba(255,255,255,0.0)  55%
+      );
+      pointer-events: none;
+    }
+
+    /* en modo sólido el highlight es más fuerte */
+    .chip-solid.lit::before {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.35) 0%,
+        rgba(255,255,255,0.0)  60%
+      );
+    }
+
+    /* borde interior brillante */
+    .chip.lit {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -1px 0 rgba(0,0,0,0.08);
+    }
+
+    /* lit + shadow: acumulan */
+    .chip.lit.shadow.chip-success {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -1px 0 rgba(0,0,0,0.08),
+        0 4px 18px -2px var(--chip-success-glow);
+    }
+    .chip.lit.shadow.chip-danger {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -1px 0 rgba(0,0,0,0.08),
+        0 4px 18px -2px var(--chip-danger-glow);
+    }
+    .chip.lit.shadow.chip-warning {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -1px 0 rgba(0,0,0,0.08),
+        0 4px 18px -2px var(--chip-warning-glow);
+    }
+    .chip.lit.shadow.chip-info {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -1px 0 rgba(0,0,0,0.08),
+        0 4px 18px -2px var(--chip-info-glow);
+    }
+
+    /* sólido + lit + shadow */
+    .chip-solid.lit.shadow.chip-success { box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(0,0,0,0.1), 0 6px 24px -4px var(--chip-success-glow); }
+    .chip-solid.lit.shadow.chip-danger  { box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(0,0,0,0.1), 0 6px 24px -4px var(--chip-danger-glow); }
+    .chip-solid.lit.shadow.chip-warning { box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(0,0,0,0.1), 0 6px 24px -4px var(--chip-warning-glow); }
+    .chip-solid.lit.shadow.chip-info    { box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(0,0,0,0.1), 0 6px 24px -4px var(--chip-info-glow); }
+
+    /* =============================================
+       CARDS CONTEXTO
+    ============================================= */
+    .movement-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+    .movement-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 12px 16px;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .movement-meta { display: flex; flex-direction: column; gap: 3px; }
+    .movement-title { color: var(--text-primary); font-size: 13px; font-weight: 600; letter-spacing: -0.01em; }
+    .movement-date  { color: var(--text-secondary); font-size: 10px; }
+    .movement-right { display: flex; align-items: center; gap: 10px; }
+    .movement-amount { color: var(--text-primary); font-size: 13px; font-weight: 600; }
+
+    /* =============================================
+       TOGGLE
+    ============================================= */
+    .theme-toggle {
+      position: fixed;
+      top: 18px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--toggle-bg);
+      border: 1px solid var(--toggle-border);
+      color: var(--toggle-color);
+      font-family: 'Manrope', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      padding: 6px 14px;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 100;
+    }
+    .theme-toggle:hover { opacity: 0.75; }
+
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <span id="toggleIcon">☀️</span>
+    <span id="toggleLabel">Modo claro</span>
+  </button>
+
+  <p class="page-title">Chips — propuesta de modificadores</p>
+
+  <!-- BASE -->
+  <div class="section">
+    <p class="section-title">Base — glassmorphism</p>
+    <div class="row">
+      <span class="chip chip-success">✓ Pago de cuota</span>
+      <span class="chip chip-danger">↑ Cargo de interés</span>
+      <span class="chip chip-warning">◐ Pago parcial</span>
+      <span class="chip chip-info">⇄ Transferencia</span>
+    </div>
+  </div>
+
+  <!-- SÓLIDO -->
+  <div class="section">
+    <p class="section-title">Sólido — .chip-solid</p>
+    <div class="row">
+      <span class="chip chip-solid chip-success">✓ Pago de cuota</span>
+      <span class="chip chip-solid chip-danger">↑ Cargo de interés</span>
+      <span class="chip chip-solid chip-warning">◐ Pago parcial</span>
+      <span class="chip chip-solid chip-info">⇄ Transferencia</span>
+    </div>
+  </div>
+
+  <!-- GRADIENTE -->
+  <div class="section">
+    <p class="section-title">Gradiente — .bgg</p>
+    <div class="row">
+      <div class="row-label">glassmorphism</div>
+      <div class="row-chips">
+        <span class="chip bgg chip-success">✓ Pago de cuota</span>
+        <span class="chip bgg chip-danger">↑ Cargo de interés</span>
+        <span class="chip bgg chip-warning">◐ Pago parcial</span>
+        <span class="chip bgg chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">sólido + gradiente</div>
+      <div class="row-chips">
+        <span class="chip chip-solid bgg chip-success">✓ Pago de cuota</span>
+        <span class="chip chip-solid bgg chip-danger">↑ Cargo de interés</span>
+        <span class="chip chip-solid bgg chip-warning">◐ Pago parcial</span>
+        <span class="chip chip-solid bgg chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHADOW -->
+  <div class="section">
+    <p class="section-title">Sombra de color — .shadow</p>
+    <div class="row">
+      <div class="row-label">glassmorphism</div>
+      <div class="row-chips">
+        <span class="chip shadow chip-success">✓ Pago de cuota</span>
+        <span class="chip shadow chip-danger">↑ Cargo de interés</span>
+        <span class="chip shadow chip-warning">◐ Pago parcial</span>
+        <span class="chip shadow chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">sólido + sombra</div>
+      <div class="row-chips">
+        <span class="chip chip-solid shadow chip-success">✓ Pago de cuota</span>
+        <span class="chip chip-solid shadow chip-danger">↑ Cargo de interés</span>
+        <span class="chip chip-solid shadow chip-warning">◐ Pago parcial</span>
+        <span class="chip chip-solid shadow chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIT -->
+  <div class="section">
+    <p class="section-title">Iluminado — .lit</p>
+    <div class="row">
+      <div class="row-label">glassmorphism</div>
+      <div class="row-chips">
+        <span class="chip lit chip-success">✓ Pago de cuota</span>
+        <span class="chip lit chip-danger">↑ Cargo de interés</span>
+        <span class="chip lit chip-warning">◐ Pago parcial</span>
+        <span class="chip lit chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">sólido + lit</div>
+      <div class="row-chips">
+        <span class="chip chip-solid lit chip-success">✓ Pago de cuota</span>
+        <span class="chip chip-solid lit chip-danger">↑ Cargo de interés</span>
+        <span class="chip chip-solid lit chip-warning">◐ Pago parcial</span>
+        <span class="chip chip-solid lit chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMBINACIONES -->
+  <div class="section">
+    <p class="section-title">Combinaciones</p>
+    <div class="row">
+      <div class="row-label">bgg + shadow</div>
+      <div class="row-chips">
+        <span class="chip bgg shadow chip-success">✓ Pago de cuota</span>
+        <span class="chip bgg shadow chip-danger">↑ Cargo de interés</span>
+        <span class="chip bgg shadow chip-warning">◐ Pago parcial</span>
+        <span class="chip bgg shadow chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">bgg + lit</div>
+      <div class="row-chips">
+        <span class="chip bgg lit chip-success">✓ Pago de cuota</span>
+        <span class="chip bgg lit chip-danger">↑ Cargo de interés</span>
+        <span class="chip bgg lit chip-warning">◐ Pago parcial</span>
+        <span class="chip bgg lit chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">lit + shadow</div>
+      <div class="row-chips">
+        <span class="chip lit shadow chip-success">✓ Pago de cuota</span>
+        <span class="chip lit shadow chip-danger">↑ Cargo de interés</span>
+        <span class="chip lit shadow chip-warning">◐ Pago parcial</span>
+        <span class="chip lit shadow chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-label">sólido todo</div>
+      <div class="row-chips">
+        <span class="chip chip-solid bgg lit shadow chip-success">✓ Pago de cuota</span>
+        <span class="chip chip-solid bgg lit shadow chip-danger">↑ Cargo de interés</span>
+        <span class="chip chip-solid bgg lit shadow chip-warning">◐ Pago parcial</span>
+        <span class="chip chip-solid bgg lit shadow chip-info">⇄ Transferencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEXTO -->
+  <div class="section">
+    <p class="section-title">En contexto — lista de movimientos (sólido + bgg + lit + shadow)</p>
+    <div class="movement-list">
+      <div class="movement-row">
+        <div class="movement-meta">
+          <span class="movement-title">Cuota 3/12</span>
+          <span class="movement-date">15 abr 2026</span>
+        </div>
+        <div class="movement-right">
+          <span class="movement-amount">-$12.500</span>
+          <span class="chip chip-solid bgg lit shadow chip-success">✓ Pago de cuota</span>
+        </div>
+      </div>
+      <div class="movement-row">
+        <div class="movement-meta">
+          <span class="movement-title">Interés moratorio</span>
+          <span class="movement-date">12 abr 2026</span>
+        </div>
+        <div class="movement-right">
+          <span class="movement-amount">-$980</span>
+          <span class="chip chip-solid bgg lit shadow chip-danger">↑ Cargo de interés</span>
+        </div>
+      </div>
+      <div class="movement-row">
+        <div class="movement-meta">
+          <span class="movement-title">Abono parcial</span>
+          <span class="movement-date">10 abr 2026</span>
+        </div>
+        <div class="movement-right">
+          <span class="movement-amount">-$5.000</span>
+          <span class="chip chip-solid bgg lit shadow chip-warning">◐ Pago parcial</span>
+        </div>
+      </div>
+      <div class="movement-row">
+        <div class="movement-meta">
+          <span class="movement-title">Ajuste saldo</span>
+          <span class="movement-date">08 abr 2026</span>
+        </div>
+        <div class="movement-right">
+          <span class="movement-amount">+$2.300</span>
+          <span class="chip chip-solid bgg lit shadow chip-info">⇄ Transferencia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('toggleIcon').textContent  = isDark ? '🌙' : '☀️';
+      document.getElementById('toggleLabel').textContent = isDark ? 'Modo oscuro' : 'Modo claro';
+    }
+  </script>
+
+</body>
+</html>

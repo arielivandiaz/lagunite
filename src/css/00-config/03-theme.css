@@ -36,7 +36,54 @@
     --color-error: #fa3434;
     --color-error-light: #fdd0d0;
     --color-error-rgb: 250, 52, 52;
-  
+
+    /*== Chip component tokens ==*/
+    /* Chip colors are intentionally different from --color-success/warning/error.
+       They use vibrant, fintech-grade hues tuned for translucent + solid chip variants. */
+    --chip-success:            #50C878;
+    --chip-success-rgb:        80, 200, 120;
+    --chip-success-text:       #23904a;
+    --chip-success-bg:         rgba(80, 200, 120, 0.14);
+    --chip-success-border:     rgba(80, 200, 120, 0.38);
+    --chip-success-glow:       rgba(62, 203, 114, 0.38);
+    --chip-success-solid-bg:   #3ecb72;
+    --chip-success-solid-text: #07260f;
+    --chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.20) 0%, rgba(40,150,80,0.08) 100%);
+    --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%);
+
+    --chip-danger:             #FF6347;
+    --chip-danger-rgb:         255, 99, 71;
+    --chip-danger-text:        #c93218;
+    --chip-danger-bg:          rgba(255, 99, 71, 0.11);
+    --chip-danger-border:      rgba(255, 99, 71, 0.36);
+    --chip-danger-glow:        rgba(249, 79, 43, 0.35);
+    --chip-danger-solid-bg:    #f94f2b;
+    --chip-danger-solid-text:  #fff;
+    --chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.18) 0%, rgba(200,50,30,0.07) 100%);
+    --chip-danger-grad-solid:  linear-gradient(135deg, #ff7055 0%, #d63010 100%);
+
+    --chip-warning:            #FFBF00;
+    --chip-warning-rgb:        255, 191, 0;
+    --chip-warning-text:       #a07800;
+    --chip-warning-bg:         rgba(255, 191, 0, 0.13);
+    --chip-warning-border:     rgba(255, 191, 0, 0.38);
+    --chip-warning-glow:       rgba(245, 184, 0, 0.38);
+    --chip-warning-solid-bg:   #f5b800;
+    --chip-warning-solid-text: #1a1200;
+    --chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.20) 0%, rgba(200,140,0,0.07) 100%);
+    --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%);
+
+    --chip-info:               #6495ED;
+    --chip-info-rgb:           100, 149, 237;
+    --chip-info-text:          #2f5bbf;
+    --chip-info-bg:            rgba(100, 149, 237, 0.12);
+    --chip-info-border:        rgba(100, 149, 237, 0.36);
+    --chip-info-glow:          rgba(75, 126, 240, 0.35);
+    --chip-info-solid-bg:      #4b7ef0;
+    --chip-info-solid-text:    #fff;
+    --chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.18) 0%, rgba(60,100,200,0.07) 100%);
+    --chip-info-grad-solid:    linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%);
+
     /*== Text Colors ==*/
     --color-text-base: #333;
     --color-text-alt: #fff;
@@ -154,7 +201,44 @@
     /*== Border Colors ==*/
     --color-border: var(--gray-700);
     --color-border-hover: var(--gray-600);
-  
+
+    /*== Chip dark-mode overrides ==*/
+    --chip-success-text:       #50C878;
+    --chip-success-bg:         rgba(80, 200, 120, 0.15);
+    --chip-success-border:     rgba(80, 200, 120, 0.30);
+    --chip-success-glow:       rgba(80, 200, 120, 0.45);
+    --chip-success-solid-bg:   #50C878;
+    --chip-success-solid-text: #071a0d;
+    --chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%);
+    --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%);
+
+    --chip-danger-text:        #FF6347;
+    --chip-danger-bg:          rgba(255, 99, 71, 0.15);
+    --chip-danger-border:      rgba(255, 99, 71, 0.30);
+    --chip-danger-glow:        rgba(255, 99, 71, 0.45);
+    --chip-danger-solid-bg:    #FF6347;
+    --chip-danger-solid-text:  #fff;
+    --chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%);
+    --chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%);
+
+    --chip-warning-text:       #FFBF00;
+    --chip-warning-bg:         rgba(255, 191, 0, 0.15);
+    --chip-warning-border:     rgba(255, 191, 0, 0.30);
+    --chip-warning-glow:       rgba(255, 191, 0, 0.45);
+    --chip-warning-solid-bg:   #FFBF00;
+    --chip-warning-solid-text: #1a1200;
+    --chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%);
+    --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%);
+
+    --chip-info-text:          #6495ED;
+    --chip-info-bg:            rgba(100, 149, 237, 0.15);
+    --chip-info-border:        rgba(100, 149, 237, 0.30);
+    --chip-info-glow:          rgba(100, 149, 237, 0.45);
+    --chip-info-solid-bg:      #6495ED;
+    --chip-info-solid-text:    #06101f;
+    --chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%);
+    --chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%);
+
     /*== Shadows ==*/
     --shadow-s:
       0 1px 2px rgba(255, 255, 255, 0.18),

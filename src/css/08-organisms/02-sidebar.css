@@ -36,11 +36,24 @@
   padding: 0 var(--space-2);
 }
 
+.sidebar-list,
+.sidebar-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-sublist {
+  padding: 0 var(--space-2) var(--space-1) var(--space-2);
+}
+
 .sidebar-section {
   margin-bottom: var(--space-4);
 }
 
 .sidebar-section-title {
+  display: flex;
+  align-items: center;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
@@ -48,6 +61,28 @@
   color: var(--gray-500);
   padding: var(--space-2) var(--space-3);
   margin-bottom: var(--space-1);
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar-section-title::-webkit-details-marker {
+  display: none;
+}
+
+.sidebar-section > details {
+  margin: 0;
+}
+
+.sidebar-section > details > .sidebar-section-title::after {
+  content: "▸";
+  margin-left: auto;
+  font-size: 0.625rem;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.sidebar-section > details[open] > .sidebar-section-title::after {
+  transform: rotate(90deg);
 }
 
 /* @ID: #08-02-03 */
@@ -62,13 +97,22 @@
   color: var(--color-text-base);
   text-decoration: none;
   border-radius: var(--radius-s);
-  transition: all 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
   font-size: var(--font-size-base);
 }
 
 .sidebar-link:hover {
   background: rgba(var(--color-primary-rgb), 0.1);
   color: var(--color-primary);
+}
+
+.sidebar-link:focus-visible,
+.sidebar-section-title:focus-visible {
+  outline: 2px solid rgba(var(--color-primary-rgb), 0.45);
+  outline-offset: 1px;
 }
 
 .sidebar-link.active {
@@ -107,8 +151,22 @@
   border-color: var(--gray-700);
 }
 
+.sidebar-dark .sidebar-section-title {
+  color: var(--gray-500);
+}
+
 .sidebar-dark .sidebar-link {
   color: var(--gray-300);
+}
+
+.sidebar-dark .sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gray-100);
+}
+
+.sidebar-dark .sidebar-link.active {
+  background: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 /* @ID: #08-02-05 */
@@ -135,4 +193,22 @@
 .night .sidebar {
   background: var(--gray-900);
   border-color: var(--gray-700);
+}
+
+.night .sidebar .sidebar-section-title {
+  color: var(--gray-500);
+}
+
+.night .sidebar .sidebar-link {
+  color: var(--gray-300);
+}
+
+.night .sidebar .sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gray-100);
+}
+
+.night .sidebar .sidebar-link.active {
+  background: var(--color-primary-dark);
+  color: var(--color-primary);
 }

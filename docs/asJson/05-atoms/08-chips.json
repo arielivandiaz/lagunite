@@ -1,0 +1,558 @@
+{
+  "folder": "05-atoms",
+  "file": "08-chips.css",
+  "lastUpdated": "2026-04-15",
+  "hasResponsive": false,
+  "totalSelectors": 39,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip",
+      "id": "#05-08-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "padding",
+        "border-radius",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "letter-spacing",
+        "border",
+        "white-space",
+        "line-height",
+        "position",
+        "overflow",
+        "user-select",
+        "backdrop-filter"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\ngap: var(--space-1)\npadding: var(--space-1) var(--space-3)\nborder-radius: var(--radius-full)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-bold)\nletter-spacing: -0.01em\nborder: 1px solid transparent\nwhite-space: nowrap\nline-height: 1.5\nposition: relative\noverflow: hidden\nuser-select: none\nbackdrop-filter: blur(4px)",
+      "responsive": false,
+      "description": "Chips are standalone semantic labels used inline within content to represent\n  a category, status, or filter (e.g. \"Payment\", \"Transfer\", \"Partial\").\n\n  Unlike .badge — which annotates other elements (counters, overlays, dots) —\n  a chip is always descriptive and self-contained.\n\n  Color tokens are defined in 00-config/03-theme.css under \"Chip component tokens\".\n\n  Modifiers:\n    .chip-solid     — filled background (vibrant, high-contrast)\n    .chip-outline   — transparent background, colored border only\n    .chip-s / .chip-l — size variants\n    .bgg            — gradient background (combine with any variant)\n    .shadow         — colored drop-shadow matching the chip hue\n    .lit            — inner light effect (highlight at top + inset border glow)\n\n  Modifier combinations are fully supported:\n    .chip-solid.bgg.lit.shadow.chip-success   → maximum premium effect"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-success",
+      "id": "#05-08-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-success-bg)\ncolor:        var(--chip-success-text)\nborder-color: var(--chip-success-border)",
+      "responsive": false,
+      "description": "** Chip Color Variants **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-danger",
+      "id": "#05-08-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-danger-bg)\ncolor:        var(--chip-danger-text)\nborder-color: var(--chip-danger-border)",
+      "responsive": false,
+      "description": "** Chip Color Variants **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-warning",
+      "id": "#05-08-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-warning-bg)\ncolor:        var(--chip-warning-text)\nborder-color: var(--chip-warning-border)",
+      "responsive": false,
+      "description": "** Chip Color Variants **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-info",
+      "id": "#05-08-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-info-bg)\ncolor:        var(--chip-info-text)\nborder-color: var(--chip-info-border)",
+      "responsive": false,
+      "description": "** Chip Color Variants **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.chip-success",
+      "id": "#05-08-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-success-solid-bg)\ncolor:        var(--chip-success-solid-text)\nborder-color: transparent",
+      "responsive": false,
+      "description": "** Chip Solid Variant **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.chip-danger",
+      "id": "#05-08-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-danger-solid-bg)\ncolor:        var(--chip-danger-solid-text)\nborder-color: transparent",
+      "responsive": false,
+      "description": "** Chip Solid Variant **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.chip-warning",
+      "id": "#05-08-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-warning-solid-bg)\ncolor:        var(--chip-warning-solid-text)\nborder-color: transparent",
+      "responsive": false,
+      "description": "** Chip Solid Variant **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.chip-info",
+      "id": "#05-08-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-color"
+      ],
+      "cssRule": "background:   var(--chip-info-solid-bg)\ncolor:        var(--chip-info-solid-text)\nborder-color: transparent",
+      "responsive": false,
+      "description": "** Chip Solid Variant **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-outline",
+      "id": "#05-08-04",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent",
+      "responsive": false,
+      "description": "** Chip Outline Variant **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-s",
+      "id": "#05-08-05",
+      "category": null,
+      "properties": [
+        "font-size",
+        "padding"
+      ],
+      "cssRule": "font-size: 0.625rem\npadding: 0.125rem var(--space-2)",
+      "responsive": false,
+      "description": "** Chip Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-l",
+      "id": "#05-08-05",
+      "category": null,
+      "properties": [
+        "font-size",
+        "padding"
+      ],
+      "cssRule": "font-size: var(--font-size-s)\npadding: var(--space-2) var(--space-4)",
+      "responsive": false,
+      "description": "** Chip Sizes **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.bgg.chip-success",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--chip-success-grad)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.bgg.chip-danger",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--chip-danger-grad)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.bgg.chip-warning",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--chip-warning-grad)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.bgg.chip-info",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--chip-info-grad)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.bgg.chip-success",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--chip-success-grad-solid)\ncolor: var(--chip-success-solid-text)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.bgg.chip-danger",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--chip-danger-grad-solid)\ncolor: var(--chip-danger-solid-text)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.bgg.chip-warning",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--chip-warning-grad-solid)\ncolor: var(--chip-warning-solid-text)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.bgg.chip-info",
+      "id": "#05-08-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--chip-info-grad-solid)\ncolor: var(--chip-info-solid-text)",
+      "responsive": false,
+      "description": "Overrides background with a directional gradient of the chip's color.\n  Works on both base (glass) and solid variants."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.shadow.chip-success",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 4px 18px -2px var(--chip-success-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.shadow.chip-danger",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 4px 18px -2px var(--chip-danger-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.shadow.chip-warning",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 4px 18px -2px var(--chip-warning-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.shadow.chip-info",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 4px 18px -2px var(--chip-info-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.shadow.chip-success",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 6px 24px -4px var(--chip-success-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.shadow.chip-danger",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 6px 24px -4px var(--chip-danger-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.shadow.chip-warning",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 6px 24px -4px var(--chip-warning-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.shadow.chip-info",
+      "id": "#05-08-07",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 6px 24px -4px var(--chip-info-glow)",
+      "responsive": false,
+      "description": "Adds a colored drop-shadow that matches the chip hue.\n  On solid chips the shadow is more pronounced."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit::before",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "inset",
+        "border-radius",
+        "background",
+        "pointer-events"
+      ],
+      "cssRule": "content: \"\"\nposition: absolute\ninset: 0\nborder-radius: inherit\nbackground: linear-gradient(\n        180deg,\n        rgba(255, 255, 255, 0.22) 0%,\n        rgba(255, 255, 255, 0.00) 55%\n    )\npointer-events: none",
+      "responsive": false,
+      "description": "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.lit::before",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: linear-gradient(\n        180deg,\n        rgba(255, 255, 255, 0.35) 0%,\n        rgba(255, 255, 255, 0.00) 60%\n    )",
+      "responsive": false,
+      "description": "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08)",
+      "responsive": false,
+      "description": "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit.shadow.chip-success",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-success-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit.shadow.chip-danger",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-danger-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit.shadow.chip-warning",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-warning-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip.lit.shadow.chip-info",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-info-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.lit.shadow.chip-success",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-success-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.lit.shadow.chip-danger",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-danger-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.lit.shadow.chip-warning",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-warning-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".chip-solid.lit.shadow.chip-info",
+      "id": "#05-08-08",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-info-glow)",
+      "responsive": false,
+      "description": "lit + shadow: merged box-shadow declarations"
+    }
+  ]
+}

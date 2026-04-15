@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "03-theme.css",
-  "lastUpdated": "2026-04-11",
+  "lastUpdated": "2026-04-15",
   "hasResponsive": false,
   "totalSelectors": 5,
   "content": [
@@ -35,6 +35,46 @@
         "--color-error",
         "--color-error-light",
         "--color-error-rgb",
+        "--chip-success",
+        "--chip-success-rgb",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger",
+        "--chip-danger-rgb",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning",
+        "--chip-warning-rgb",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info",
+        "--chip-info-rgb",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
         "--color-text-base",
         "--color-text-alt",
         "--color-bg",
@@ -70,7 +110,7 @@
         "--shadow-xl",
         "--shadow-inner"
       ],
-      "cssRule": "/*== Color Assignments ==*/\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/*== Text Colors ==*/\n--color-text-base: #333\n--color-text-alt: #fff\n/*== Background Colors ==*/\n--color-bg: #eee\n--color-bg-alt: #222\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/*== Inputs (semantic aliases for form controls) ==*/\n--input-text: var(--color-text-base)\n--input-bg: var(--color-bg)\n--input-border: var(--gray-300)\n--input-placeholder: var(--gray-400)\n/* Chevron for native <select> (data URI; stroke matches gray-600) */\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Chevron on primary strip (.select-container.alt) */\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-zone: 2.75rem\n/*== Gradients ==*/\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\n      180deg,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 50%,\n      rgba(0, 90, 238, 1) 100%\n    )\n--bg-gradient-5: radial-gradient(\n      circle,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 100%\n    )\n--bg-gradient-6: radial-gradient(\n      circle,\n      rgba(238, 238, 238, 1) 0%,\n      rgba(193, 216, 255, 1) 100%\n    )\n--bg-gradient-7: repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )\n--bg-gradient-8: repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )\n/*== Borders ==*/\n--border-width-s: 1px\n--border-width-md: 2px\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(0, 0, 0, 0.06),\n      0 0 0 1px rgba(0, 0, 0, 0.02)\n/* Subtle */\n--shadow-m:\n      0 8px 16px -10px rgba(0, 0, 0, 0.18),\n      0 3px 8px -4px rgba(0, 0, 0, 0.12),\n      0 0 0 1px rgba(0, 0, 0, 0.03)\n/* Medium */\n--shadow-l:\n      0 18px 40px -26px rgba(0, 0, 0, 0.30),\n      0 10px 18px -14px rgba(0, 0, 0, 0.18),\n      0 0 0 1px rgba(0, 0, 0, 0.04)\n/* Large */\n--shadow-xl:\n      0 34px 70px -46px rgba(0, 0, 0, 0.45),\n      0 18px 30px -22px rgba(0, 0, 0, 0.25),\n      0 0 0 1px rgba(0, 0, 0, 0.05)\n/* Extra Large */\n--shadow-inner:\n      inset 0 1px 2px rgba(0, 0, 0, 0.14),\n      inset 0 0 0 1px rgba(0, 0, 0, 0.06)\n/* Inner */",
+      "cssRule": "/*== Color Assignments ==*/\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/*== Chip component tokens ==*/\n/* Chip colors are intentionally different from --color-success/warning/error.\n       They use vibrant, fintech-grade hues tuned for translucent + solid chip variants. */\n--chip-success:            #50C878\n--chip-success-rgb:        80, 200, 120\n--chip-success-text:       #23904a\n--chip-success-bg:         rgba(80, 200, 120, 0.14)\n--chip-success-border:     rgba(80, 200, 120, 0.38)\n--chip-success-glow:       rgba(62, 203, 114, 0.38)\n--chip-success-solid-bg:   #3ecb72\n--chip-success-solid-text: #07260f\n--chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.20) 0%, rgba(40,150,80,0.08) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%)\n--chip-danger:             #FF6347\n--chip-danger-rgb:         255, 99, 71\n--chip-danger-text:        #c93218\n--chip-danger-bg:          rgba(255, 99, 71, 0.11)\n--chip-danger-border:      rgba(255, 99, 71, 0.36)\n--chip-danger-glow:        rgba(249, 79, 43, 0.35)\n--chip-danger-solid-bg:    #f94f2b\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.18) 0%, rgba(200,50,30,0.07) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7055 0%, #d63010 100%)\n--chip-warning:            #FFBF00\n--chip-warning-rgb:        255, 191, 0\n--chip-warning-text:       #a07800\n--chip-warning-bg:         rgba(255, 191, 0, 0.13)\n--chip-warning-border:     rgba(255, 191, 0, 0.38)\n--chip-warning-glow:       rgba(245, 184, 0, 0.38)\n--chip-warning-solid-bg:   #f5b800\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.20) 0%, rgba(200,140,0,0.07) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%)\n--chip-info:               #6495ED\n--chip-info-rgb:           100, 149, 237\n--chip-info-text:          #2f5bbf\n--chip-info-bg:            rgba(100, 149, 237, 0.12)\n--chip-info-border:        rgba(100, 149, 237, 0.36)\n--chip-info-glow:          rgba(75, 126, 240, 0.35)\n--chip-info-solid-bg:      #4b7ef0\n--chip-info-solid-text:    #fff\n--chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.18) 0%, rgba(60,100,200,0.07) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%)\n/*== Text Colors ==*/\n--color-text-base: #333\n--color-text-alt: #fff\n/*== Background Colors ==*/\n--color-bg: #eee\n--color-bg-alt: #222\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/*== Inputs (semantic aliases for form controls) ==*/\n--input-text: var(--color-text-base)\n--input-bg: var(--color-bg)\n--input-border: var(--gray-300)\n--input-placeholder: var(--gray-400)\n/* Chevron for native <select> (data URI; stroke matches gray-600) */\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Chevron on primary strip (.select-container.alt) */\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-zone: 2.75rem\n/*== Gradients ==*/\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\n      180deg,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 50%,\n      rgba(0, 90, 238, 1) 100%\n    )\n--bg-gradient-5: radial-gradient(\n      circle,\n      rgba(94, 154, 255, 1) 0%,\n      rgba(36, 118, 255, 1) 100%\n    )\n--bg-gradient-6: radial-gradient(\n      circle,\n      rgba(238, 238, 238, 1) 0%,\n      rgba(193, 216, 255, 1) 100%\n    )\n--bg-gradient-7: repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )\n--bg-gradient-8: repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )\n/*== Borders ==*/\n--border-width-s: 1px\n--border-width-md: 2px\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(0, 0, 0, 0.06),\n      0 0 0 1px rgba(0, 0, 0, 0.02)\n/* Subtle */\n--shadow-m:\n      0 8px 16px -10px rgba(0, 0, 0, 0.18),\n      0 3px 8px -4px rgba(0, 0, 0, 0.12),\n      0 0 0 1px rgba(0, 0, 0, 0.03)\n/* Medium */\n--shadow-l:\n      0 18px 40px -26px rgba(0, 0, 0, 0.30),\n      0 10px 18px -14px rgba(0, 0, 0, 0.18),\n      0 0 0 1px rgba(0, 0, 0, 0.04)\n/* Large */\n--shadow-xl:\n      0 34px 70px -46px rgba(0, 0, 0, 0.45),\n      0 18px 30px -22px rgba(0, 0, 0, 0.25),\n      0 0 0 1px rgba(0, 0, 0, 0.05)\n/* Extra Large */\n--shadow-inner:\n      inset 0 1px 2px rgba(0, 0, 0, 0.14),\n      inset 0 0 0 1px rgba(0, 0, 0, 0.06)\n/* Inner */",
       "responsive": false,
       "description": "|--------------------------------------------------------------------------\n  | Semantic theme variables @ID: #00-03-01\n  |--------------------------------------------------------------------------\n  |\n  | These variables give meaning to the raw palette values. This is what\n  | should be used throughout the library and overridden for theming."
     },
@@ -92,13 +132,45 @@
         "--select-chevron-on-primary",
         "--color-border",
         "--color-border-hover",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
         "--shadow-s",
         "--shadow-m",
         "--shadow-l",
         "--shadow-xl",
         "--shadow-inner"
       ],
-      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Chip dark-mode overrides ==*/\n--chip-success-text:       #50C878\n--chip-success-bg:         rgba(80, 200, 120, 0.15)\n--chip-success-border:     rgba(80, 200, 120, 0.30)\n--chip-success-glow:       rgba(80, 200, 120, 0.45)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgba(255, 99, 71, 0.15)\n--chip-danger-border:      rgba(255, 99, 71, 0.30)\n--chip-danger-glow:        rgba(255, 99, 71, 0.45)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgba(255, 191, 0, 0.15)\n--chip-warning-border:     rgba(255, 191, 0, 0.30)\n--chip-warning-glow:       rgba(255, 191, 0, 0.45)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgba(100, 149, 237, 0.15)\n--chip-info-border:        rgba(100, 149, 237, 0.30)\n--chip-info-glow:          rgba(100, 149, 237, 0.45)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
       "responsive": false,
       "description": "** Dark Theme (Night Mode) **"
     },
@@ -120,13 +192,45 @@
         "--select-chevron-on-primary",
         "--color-border",
         "--color-border-hover",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
         "--shadow-s",
         "--shadow-m",
         "--shadow-l",
         "--shadow-xl",
         "--shadow-inner"
       ],
-      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
+      "cssRule": "/*== Background Colors ==*/\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/*== Inputs ==*/\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/*== Border Colors ==*/\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/*== Chip dark-mode overrides ==*/\n--chip-success-text:       #50C878\n--chip-success-bg:         rgba(80, 200, 120, 0.15)\n--chip-success-border:     rgba(80, 200, 120, 0.30)\n--chip-success-glow:       rgba(80, 200, 120, 0.45)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgba(255, 99, 71, 0.15)\n--chip-danger-border:      rgba(255, 99, 71, 0.30)\n--chip-danger-glow:        rgba(255, 99, 71, 0.45)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgba(255, 191, 0, 0.15)\n--chip-warning-border:     rgba(255, 191, 0, 0.30)\n--chip-warning-glow:       rgba(255, 191, 0, 0.45)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgba(100, 149, 237, 0.15)\n--chip-info-border:        rgba(100, 149, 237, 0.30)\n--chip-info-glow:          rgba(100, 149, 237, 0.45)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n/*== Shadows ==*/\n--shadow-s:\n      0 1px 2px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.10)\n--shadow-m:\n      0 6px 16px rgba(255, 255, 255, 0.18),\n      0 0 0 1px rgba(255, 255, 255, 0.16)\n--shadow-l:\n      0 14px 32px rgba(255, 255, 255, 0.22),\n      0 0 0 1px rgba(255, 255, 255, 0.18)\n--shadow-xl:\n      0 26px 64px rgba(255, 255, 255, 0.26),\n      0 0 0 1px rgba(255, 255, 255, 0.2)\n--shadow-inner:\n      inset 0 1px 2px rgba(255, 255, 255, 0.25),\n      inset 0 0 0 1px rgba(255, 255, 255, 0.14)",
       "responsive": false,
       "description": "** Dark Theme (Night Mode) **"
     },
@@ -258,6 +362,166 @@
     {
       "property": "--color-error-rgb",
       "value": "250, 52, 52"
+    },
+    {
+      "property": "--chip-success",
+      "value": "#50C878"
+    },
+    {
+      "property": "--chip-success-rgb",
+      "value": "80, 200, 120"
+    },
+    {
+      "property": "--chip-success-text",
+      "value": "#23904a"
+    },
+    {
+      "property": "--chip-success-bg",
+      "value": "rgba(80, 200, 120, 0.14)"
+    },
+    {
+      "property": "--chip-success-border",
+      "value": "rgba(80, 200, 120, 0.38)"
+    },
+    {
+      "property": "--chip-success-glow",
+      "value": "rgba(62, 203, 114, 0.38)"
+    },
+    {
+      "property": "--chip-success-solid-bg",
+      "value": "#3ecb72"
+    },
+    {
+      "property": "--chip-success-solid-text",
+      "value": "#07260f"
+    },
+    {
+      "property": "--chip-success-grad",
+      "value": "linear-gradient(135deg, rgba(80,200,120,0.20) 0%, rgba(40,150,80,0.08) 100%)"
+    },
+    {
+      "property": "--chip-success-grad-solid",
+      "value": "linear-gradient(135deg, #5ed68a 0%, #28a856 100%)"
+    },
+    {
+      "property": "--chip-danger",
+      "value": "#FF6347"
+    },
+    {
+      "property": "--chip-danger-rgb",
+      "value": "255, 99, 71"
+    },
+    {
+      "property": "--chip-danger-text",
+      "value": "#c93218"
+    },
+    {
+      "property": "--chip-danger-bg",
+      "value": "rgba(255, 99, 71, 0.11)"
+    },
+    {
+      "property": "--chip-danger-border",
+      "value": "rgba(255, 99, 71, 0.36)"
+    },
+    {
+      "property": "--chip-danger-glow",
+      "value": "rgba(249, 79, 43, 0.35)"
+    },
+    {
+      "property": "--chip-danger-solid-bg",
+      "value": "#f94f2b"
+    },
+    {
+      "property": "--chip-danger-solid-text",
+      "value": "#fff"
+    },
+    {
+      "property": "--chip-danger-grad",
+      "value": "linear-gradient(135deg, rgba(255,99,71,0.18) 0%, rgba(200,50,30,0.07) 100%)"
+    },
+    {
+      "property": "--chip-danger-grad-solid",
+      "value": "linear-gradient(135deg, #ff7055 0%, #d63010 100%)"
+    },
+    {
+      "property": "--chip-warning",
+      "value": "#FFBF00"
+    },
+    {
+      "property": "--chip-warning-rgb",
+      "value": "255, 191, 0"
+    },
+    {
+      "property": "--chip-warning-text",
+      "value": "#a07800"
+    },
+    {
+      "property": "--chip-warning-bg",
+      "value": "rgba(255, 191, 0, 0.13)"
+    },
+    {
+      "property": "--chip-warning-border",
+      "value": "rgba(255, 191, 0, 0.38)"
+    },
+    {
+      "property": "--chip-warning-glow",
+      "value": "rgba(245, 184, 0, 0.38)"
+    },
+    {
+      "property": "--chip-warning-solid-bg",
+      "value": "#f5b800"
+    },
+    {
+      "property": "--chip-warning-solid-text",
+      "value": "#1a1200"
+    },
+    {
+      "property": "--chip-warning-grad",
+      "value": "linear-gradient(135deg, rgba(255,191,0,0.20) 0%, rgba(200,140,0,0.07) 100%)"
+    },
+    {
+      "property": "--chip-warning-grad-solid",
+      "value": "linear-gradient(135deg, #ffd040 0%, #d49400 100%)"
+    },
+    {
+      "property": "--chip-info",
+      "value": "#6495ED"
+    },
+    {
+      "property": "--chip-info-rgb",
+      "value": "100, 149, 237"
+    },
+    {
+      "property": "--chip-info-text",
+      "value": "#2f5bbf"
+    },
+    {
+      "property": "--chip-info-bg",
+      "value": "rgba(100, 149, 237, 0.12)"
+    },
+    {
+      "property": "--chip-info-border",
+      "value": "rgba(100, 149, 237, 0.36)"
+    },
+    {
+      "property": "--chip-info-glow",
+      "value": "rgba(75, 126, 240, 0.35)"
+    },
+    {
+      "property": "--chip-info-solid-bg",
+      "value": "#4b7ef0"
+    },
+    {
+      "property": "--chip-info-solid-text",
+      "value": "#fff"
+    },
+    {
+      "property": "--chip-info-grad",
+      "value": "linear-gradient(135deg, rgba(100,149,237,0.18) 0%, rgba(60,100,200,0.07) 100%)"
+    },
+    {
+      "property": "--chip-info-grad-solid",
+      "value": "linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%)"
     },
     {
       "property": "--color-text-base",
@@ -438,6 +702,134 @@
     {
       "property": "--color-border-hover",
       "value": "var(--gray-600)"
+    },
+    {
+      "property": "--chip-success-text",
+      "value": "#50C878"
+    },
+    {
+      "property": "--chip-success-bg",
+      "value": "rgba(80, 200, 120, 0.15)"
+    },
+    {
+      "property": "--chip-success-border",
+      "value": "rgba(80, 200, 120, 0.30)"
+    },
+    {
+      "property": "--chip-success-glow",
+      "value": "rgba(80, 200, 120, 0.45)"
+    },
+    {
+      "property": "--chip-success-solid-bg",
+      "value": "#50C878"
+    },
+    {
+      "property": "--chip-success-solid-text",
+      "value": "#071a0d"
+    },
+    {
+      "property": "--chip-success-grad",
+      "value": "linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%)"
+    },
+    {
+      "property": "--chip-success-grad-solid",
+      "value": "linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)"
+    },
+    {
+      "property": "--chip-danger-text",
+      "value": "#FF6347"
+    },
+    {
+      "property": "--chip-danger-bg",
+      "value": "rgba(255, 99, 71, 0.15)"
+    },
+    {
+      "property": "--chip-danger-border",
+      "value": "rgba(255, 99, 71, 0.30)"
+    },
+    {
+      "property": "--chip-danger-glow",
+      "value": "rgba(255, 99, 71, 0.45)"
+    },
+    {
+      "property": "--chip-danger-solid-bg",
+      "value": "#FF6347"
+    },
+    {
+      "property": "--chip-danger-solid-text",
+      "value": "#fff"
+    },
+    {
+      "property": "--chip-danger-grad",
+      "value": "linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%)"
+    },
+    {
+      "property": "--chip-danger-grad-solid",
+      "value": "linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)"
+    },
+    {
+      "property": "--chip-warning-text",
+      "value": "#FFBF00"
+    },
+    {
+      "property": "--chip-warning-bg",
+      "value": "rgba(255, 191, 0, 0.15)"
+    },
+    {
+      "property": "--chip-warning-border",
+      "value": "rgba(255, 191, 0, 0.30)"
+    },
+    {
+      "property": "--chip-warning-glow",
+      "value": "rgba(255, 191, 0, 0.45)"
+    },
+    {
+      "property": "--chip-warning-solid-bg",
+      "value": "#FFBF00"
+    },
+    {
+      "property": "--chip-warning-solid-text",
+      "value": "#1a1200"
+    },
+    {
+      "property": "--chip-warning-grad",
+      "value": "linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%)"
+    },
+    {
+      "property": "--chip-warning-grad-solid",
+      "value": "linear-gradient(135deg, #ffd040 0%, #e09e00 100%)"
+    },
+    {
+      "property": "--chip-info-text",
+      "value": "#6495ED"
+    },
+    {
+      "property": "--chip-info-bg",
+      "value": "rgba(100, 149, 237, 0.15)"
+    },
+    {
+      "property": "--chip-info-border",
+      "value": "rgba(100, 149, 237, 0.30)"
+    },
+    {
+      "property": "--chip-info-glow",
+      "value": "rgba(100, 149, 237, 0.45)"
+    },
+    {
+      "property": "--chip-info-solid-bg",
+      "value": "#6495ED"
+    },
+    {
+      "property": "--chip-info-solid-text",
+      "value": "#06101f"
+    },
+    {
+      "property": "--chip-info-grad",
+      "value": "linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%)"
+    },
+    {
+      "property": "--chip-info-grad-solid",
+      "value": "linear-gradient(135deg, #7aabff 0%, #4070d8 100%)"
     },
     {
       "property": "--shadow-s",
