@@ -9,13 +9,14 @@ content[1]:
     selector: ":root"
     id: null
     category: null
-    properties[15]: "--font-sans","--font-mono","--font-text","--font-headers","--font-size-xs","--font-size-s","--font-size-base","--font-size-l","--font-size-xl","--font-size-xxl","--font-size-3xl","--font-weight-light","--font-weight-normal","--font-weight-medium","--font-weight-bold"
-    cssRule: "--font-sans:\r\n    \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700"
+    properties[16]: "--font-sans","--font-mono","--font-display","--font-text","--font-headers","--font-size-xs","--font-size-s","--font-size-base","--font-size-l","--font-size-xl","--font-size-xxl","--font-size-3xl","--font-weight-light","--font-weight-normal","--font-weight-medium","--font-weight-bold"
+    cssRule: "--font-sans:\r\n    \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-display: \"Manrope\", \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700"
     responsive: false
     description: ""
-customProperties[15]{property,value}:
+customProperties[16]{property,value}:
   "--font-sans","\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
   "--font-mono","\"JetBrains Mono\", \"Fira Code\", monospace"
+  "--font-display","\"Manrope\", \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
   "--font-text","\"Zen Kaku Gothic Antique\", sans-serif"
   "--font-headers","\"PT Sans\", sans-serif"
   "--font-size-xs",0.75rem

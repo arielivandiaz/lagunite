@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite — Stat Cards POC</title>
+    <link rel="stylesheet" href="../src/lagunite.css" />
+    <style>
+      body { padding: 2rem; background: #f4f6fa; }
+
+      .scene { margin-bottom: 3.5rem; }
+      .scene-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .scene-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background: #1e293b;
+        color: #e2e8f0;
+        letter-spacing: 0.02em;
+      }
+      .sub-label {
+        font-size: 0.68rem;
+        font-family: var(--font-mono);
+        color: var(--stat-label, rgba(0,0,0,0.35));
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: color 0.35s;
+      }
+
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #ffffff;
+        color: #334155;
+        font-size: 0.78rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+        letter-spacing: 0.01em;
+      }
+      .theme-toggle:hover { background: #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 0.25rem;">Stat Cards POC</h1>
+    <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom: 2.5rem;">
+      Patrones de KPI / indicadores para dashboards financieros.
+    </p>
+
+    <div class="scene">
+      <div class="scene-head">
+        <span class="scene-label">🔮 stat-card (glass · dark/light)</span>
+        <button class="theme-toggle" id="glass-toggle" onclick="toggleGlass()">☀️ Cambiar a modo claro</button>
+      </div>
+
+      <div class="stat-surface" id="glass-showcase" data-mode="dark">
+        <p class="sub-label">Indicadores principales</p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-label">Saldo vivo</div>
+            <div class="stat-value">$2,450.00</div>
+            <div class="stat-trend-down">↓ 4.2% vs mes anterior</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Próximo pago</div>
+            <div class="stat-value">20/04/26</div>
+            <div class="stat-sub">Monto: <strong>$150.00</strong></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Interés acumulado</div>
+            <div class="stat-value">$450.00</div>
+            <div class="stat-progress">
+              <div class="stat-progress-fill" style="--stat-fill: 35%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Salud del crédito</div>
+            <div class="stat-value stat-value-s stat-tone-success">
+              <span class="stat-dot stat-dot-success"></span> Óptima
+            </div>
+            <span class="stat-icon" aria-hidden="true">🛡</span>
+          </div>
+        </div>
+
+        <hr class="stat-divider" />
+
+        <p class="sub-label">Variantes de sub-indicadores</p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-label">Ventas del mes</div>
+            <div class="stat-value">$18,340</div>
+            <div class="stat-trend-down">↓ 8.5% vs mes anterior</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Clientes activos</div>
+            <div class="stat-value">1,284</div>
+            <div class="stat-trend-up">↑ 12.3% este trimestre</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Meta de cobranza</div>
+            <div class="stat-value">68%</div>
+            <div class="stat-row">
+              <div class="stat-progress" style="flex: 1;">
+                <div class="stat-progress-fill stat-progress-fill-alt" style="--stat-fill: 68%;"></div>
+              </div>
+              <span class="stat-meta">68 / 100</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Riesgo operativo</div>
+            <div class="stat-value stat-value-s stat-tone-warning">
+              <span class="stat-dot stat-dot-warning"></span> Moderado
+            </div>
+            <div class="stat-sub">2 alertas abiertas</div>
+            <span class="stat-icon" aria-hidden="true">⚠</span>
+          </div>
+        </div>
+
+        <hr class="stat-divider" />
+
+        <p class="sub-label">Patrones avanzados</p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-label">Ventas del mes</div>
+            <div class="stat-value">$18,340</div>
+            <div class="stat-compare">
+              <span class="stat-compare-label">Mar 2026</span>
+              <span class="stat-compare-value">$21,200</span>
+              <span class="stat-trend-down stat-trend-compact">↓ 13.5%</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Score crediticio</div>
+            <div class="stat-value">720</div>
+            <div class="stat-score">
+              <div class="stat-score-fill" style="--stat-fill: 72%;"></div>
+            </div>
+            <div class="stat-score-range">
+              <span>300</span>
+              <span>720 / 850</span>
+              <span>850</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Solicitudes del mes</div>
+            <div class="stat-value stat-value-s">842 totales</div>
+            <div class="stat-split">
+              <div>
+                <div class="stat-split-value stat-tone-success">813</div>
+                <div class="stat-split-label">Aprobadas</div>
+              </div>
+              <div>
+                <div class="stat-split-value stat-tone-danger">29</div>
+                <div class="stat-split-label">Rechazadas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Cambio neto mensual</div>
+            <div class="stat-value stat-tone-success">+$1,240</div>
+            <div class="stat-sub">Último cierre: 31/03/26</div>
+            <span class="stat-icon" aria-hidden="true">📈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleGlass() {
+        const scene = document.getElementById('glass-showcase');
+        const btn = document.getElementById('glass-toggle');
+        const going = scene.dataset.mode === 'dark' ? 'light' : 'dark';
+        scene.dataset.mode = going;
+        btn.textContent = going === 'dark'
+          ? '☀️ Cambiar a modo claro'
+          : '🌙 Cambiar a modo oscuro';
+      }
+    </script>
+  </body>
+</html>
