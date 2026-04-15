@@ -30,11 +30,11 @@
 }
 
 .dashboard-kpi-card {
-  background: #ffffff;
+  background: #fff;
   border: var(--border-width-s) solid var(--gray-200);
   border-radius: var(--radius-l);
   padding: var(--space-4);
-  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 3px 12px rgb(15 23 42 / 5%);
 }
 
 .dashboard-kpi-card p {
@@ -51,7 +51,8 @@
   font-size: 1.65rem;
 }
 
-.dashboard-kpi-card span {
+.dashboard-kpi-card > span:not(.badge, .chip),
+.dashboard-kpi-meta {
   color: var(--blue-500);
   font-size: var(--font-size-s);
 }
@@ -65,7 +66,7 @@
 }
 
 .dashboard-panel {
-  background: #ffffff;
+  background: #fff;
   border: var(--border-width-s) solid var(--gray-200);
   border-radius: var(--radius-l);
   padding: var(--space-4);
