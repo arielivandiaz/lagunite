@@ -1,0 +1,235 @@
+/* @ID: #05-08-01 */
+/*** Chip Base ***/
+/*
+  Chips are standalone semantic labels used inline within content to represent
+  a category, status, or filter (e.g. "Payment", "Transfer", "Partial").
+
+  Unlike .badge — which annotates other elements (counters, overlays, dots) —
+  a chip is always descriptive and self-contained.
+
+  Color tokens are defined in 00-config/03-theme.css under "Chip component tokens".
+
+  Modifiers:
+    .chip-solid     — filled background (vibrant, high-contrast)
+    .chip-outline   — transparent background, colored border only
+    .chip-s / .chip-l — size variants
+    .bgg            — gradient background (combine with any variant)
+    .shadow         — colored drop-shadow matching the chip hue
+    .lit            — inner light effect (highlight at top + inset border glow)
+
+  Modifier combinations are fully supported:
+    .chip-solid.bgg.lit.shadow.chip-success   → maximum premium effect
+*/
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.01em;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    backdrop-filter: blur(4px);
+}
+
+/* @ID: #05-08-02 */
+/*** Chip Color Variants ***/
+
+.chip-success {
+    background:   var(--chip-success-bg);
+    color:        var(--chip-success-text);
+    border-color: var(--chip-success-border);
+}
+
+.chip-danger {
+    background:   var(--chip-danger-bg);
+    color:        var(--chip-danger-text);
+    border-color: var(--chip-danger-border);
+}
+
+.chip-warning {
+    background:   var(--chip-warning-bg);
+    color:        var(--chip-warning-text);
+    border-color: var(--chip-warning-border);
+}
+
+.chip-info {
+    background:   var(--chip-info-bg);
+    color:        var(--chip-info-text);
+    border-color: var(--chip-info-border);
+}
+
+/* @ID: #05-08-03 */
+/*** Chip Solid Variant ***/
+
+.chip-solid.chip-success {
+    background:   var(--chip-success-solid-bg);
+    color:        var(--chip-success-solid-text);
+    border-color: transparent;
+}
+
+.chip-solid.chip-danger {
+    background:   var(--chip-danger-solid-bg);
+    color:        var(--chip-danger-solid-text);
+    border-color: transparent;
+}
+
+.chip-solid.chip-warning {
+    background:   var(--chip-warning-solid-bg);
+    color:        var(--chip-warning-solid-text);
+    border-color: transparent;
+}
+
+.chip-solid.chip-info {
+    background:   var(--chip-info-solid-bg);
+    color:        var(--chip-info-solid-text);
+    border-color: transparent;
+}
+
+/* @ID: #05-08-04 */
+/*** Chip Outline Variant ***/
+
+.chip-outline {
+    background: transparent;
+}
+
+/* @ID: #05-08-05 */
+/*** Chip Sizes ***/
+
+.chip-s {
+    font-size: 0.625rem;
+    padding: 0.125rem var(--space-2);
+}
+
+.chip-l {
+    font-size: var(--font-size-s);
+    padding: var(--space-2) var(--space-4);
+}
+
+/* @ID: #05-08-06 */
+/*** Chip Gradient Modifier (.bgg) ***/
+/*
+  Overrides background with a directional gradient of the chip's color.
+  Works on both base (glass) and solid variants.
+*/
+
+.chip.bgg.chip-success { background: var(--chip-success-grad); }
+.chip.bgg.chip-danger  { background: var(--chip-danger-grad); }
+.chip.bgg.chip-warning { background: var(--chip-warning-grad); }
+.chip.bgg.chip-info    { background: var(--chip-info-grad); }
+
+.chip-solid.bgg.chip-success { background: var(--chip-success-grad-solid); color: var(--chip-success-solid-text); }
+.chip-solid.bgg.chip-danger  { background: var(--chip-danger-grad-solid);  color: var(--chip-danger-solid-text); }
+.chip-solid.bgg.chip-warning { background: var(--chip-warning-grad-solid); color: var(--chip-warning-solid-text); }
+.chip-solid.bgg.chip-info    { background: var(--chip-info-grad-solid);    color: var(--chip-info-solid-text); }
+
+/* @ID: #05-08-07 */
+/*** Chip Shadow Modifier (.shadow) ***/
+/*
+  Adds a colored drop-shadow that matches the chip hue.
+  On solid chips the shadow is more pronounced.
+*/
+
+.chip.shadow.chip-success { box-shadow: 0 4px 18px -2px var(--chip-success-glow); }
+.chip.shadow.chip-danger  { box-shadow: 0 4px 18px -2px var(--chip-danger-glow); }
+.chip.shadow.chip-warning { box-shadow: 0 4px 18px -2px var(--chip-warning-glow); }
+.chip.shadow.chip-info    { box-shadow: 0 4px 18px -2px var(--chip-info-glow); }
+
+.chip-solid.shadow.chip-success { box-shadow: 0 6px 24px -4px var(--chip-success-glow); }
+.chip-solid.shadow.chip-danger  { box-shadow: 0 6px 24px -4px var(--chip-danger-glow); }
+.chip-solid.shadow.chip-warning { box-shadow: 0 6px 24px -4px var(--chip-warning-glow); }
+.chip-solid.shadow.chip-info    { box-shadow: 0 6px 24px -4px var(--chip-info-glow); }
+
+/* @ID: #05-08-08 */
+/*** Chip Lit Modifier (.lit) ***/
+/*
+  Simulates an inner light source: a semi-transparent highlight gradient
+  from the top edge + an inset border glow at the bottom.
+  Stronger on solid chips.
+*/
+
+.chip.lit::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.22) 0%,
+        rgba(255, 255, 255, 0.00) 55%
+    );
+    pointer-events: none;
+}
+
+.chip-solid.lit::before {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(255, 255, 255, 0.00) 60%
+    );
+}
+
+.chip.lit {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.30),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* lit + shadow: merged box-shadow declarations */
+.chip.lit.shadow.chip-success {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.30),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        0 4px 18px -2px var(--chip-success-glow);
+}
+.chip.lit.shadow.chip-danger {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.30),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        0 4px 18px -2px var(--chip-danger-glow);
+}
+.chip.lit.shadow.chip-warning {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.30),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        0 4px 18px -2px var(--chip-warning-glow);
+}
+.chip.lit.shadow.chip-info {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.30),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        0 4px 18px -2px var(--chip-info-glow);
+}
+
+.chip-solid.lit.shadow.chip-success {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        0 6px 24px -4px var(--chip-success-glow);
+}
+.chip-solid.lit.shadow.chip-danger {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        0 6px 24px -4px var(--chip-danger-glow);
+}
+.chip-solid.lit.shadow.chip-warning {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        0 6px 24px -4px var(--chip-warning-glow);
+}
+.chip-solid.lit.shadow.chip-info {
+    box-shadow:
+        inset 0  1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        0 6px 24px -4px var(--chip-info-glow);
+}

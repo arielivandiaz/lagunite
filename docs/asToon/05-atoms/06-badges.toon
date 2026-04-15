@@ -1,6 +1,6 @@
 folder: 05-atoms
 file: 06-badges.css
-lastUpdated: 2026-04-11
+lastUpdated: 2026-04-15
 hasResponsive: false
 totalSelectors: 72
 content[72]:
@@ -613,42 +613,42 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--blue-900)\ncolor: var(--blue-200)"
+    cssRule: "background: rgba(59, 130, 246, 0.15)\ncolor: var(--blue-300)"
     responsive: false
-    description: ** Badge Light Variants **
+    description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
     selectorType: class
     selector: .night .badge-success-light
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--green-900)\ncolor: var(--green-200)"
+    cssRule: "background: rgba(16, 185, 129, 0.15)\ncolor: var(--green-300)"
     responsive: false
-    description: ** Badge Light Variants **
+    description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
     selectorType: class
     selector: .night .badge-info-light
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--blue-950)\ncolor: var(--blue-300)"
+    cssRule: "background: rgba(59, 130, 246, 0.12)\ncolor: var(--blue-300)"
     responsive: false
-    description: ** Badge Light Variants **
+    description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
     selectorType: class
     selector: .night .badge-warning-light
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--yellow-900)\ncolor: var(--yellow-200)"
+    cssRule: "background: rgba(234, 179, 8, 0.15)\ncolor: var(--yellow-300)"
     responsive: false
-    description: ** Badge Light Variants **
+    description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
     selectorType: class
     selector: .night .badge-error-light
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--red-900)\ncolor: var(--red-200)"
+    cssRule: "background: rgba(239, 68, 68, 0.15)\ncolor: var(--red-300)"
     responsive: false
-    description: ** Badge Light Variants **
+    description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"

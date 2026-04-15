@@ -1,9 +1,9 @@
 folder: 05-atoms
 file: 03-table.css
-lastUpdated: 2026-04-11
+lastUpdated: 2026-04-15
 hasResponsive: false
-totalSelectors: 112
-content[112]:
+totalSelectors: 129
+content[129]:
   - type: selector
     selectorType: element
     selector: table
@@ -969,8 +969,161 @@ content[112]:
     description: Table Row States
   - type: selector
     selectorType: class
-    selector: .table th.sortable
+    selector: .table.dark
     id: #05-03-12
+    category: null
+    properties[1]: color
+    cssRule: "color: rgba(255, 255, 255, 0.9)"
+    responsive: false
+    description: Table Dark Variant — for use on dark/glass backgrounds
+  - type: selector
+    selectorType: class
+    selector: .table.dark th
+    id: #05-03-12
+    category: null
+    properties[2]: border-bottom,white-space
+    cssRule: "border-bottom: 1px solid rgba(255, 255, 255, 0.08)\nwhite-space: nowrap"
+    responsive: false
+    description: Table Dark Variant — for use on dark/glass backgrounds
+  - type: selector
+    selectorType: class
+    selector: .table.dark td
+    id: #05-03-12
+    category: null
+    properties[2]: border-bottom,white-space
+    cssRule: "border-bottom: 1px solid rgba(255, 255, 255, 0.08)\nwhite-space: nowrap"
+    responsive: false
+    description: Table Dark Variant — for use on dark/glass backgrounds
+  - type: selector
+    selectorType: class
+    selector: .table.dark thead th
+    id: #05-03-12
+    category: null
+    properties[6]: position,top,z-index,background,color,border-bottom-color
+    cssRule: "position: sticky\ntop: 0\nz-index: 1\nbackground: rgba(21, 24, 43, 0.96)\ncolor: #ddd6fe\nborder-bottom-color: rgba(255, 255, 255, 0.14)"
+    responsive: false
+    description: Table Dark Variant — for use on dark/glass backgrounds
+  - type: selector
+    selectorType: class
+    selector: ".table.dark tbody tr:hover"
+    id: #05-03-12
+    category: null
+    properties[1]: background
+    cssRule: "background: rgba(167, 139, 250, 0.14)"
+    responsive: false
+    description: Table Dark Variant — for use on dark/glass backgrounds
+  - type: selector
+    selectorType: class
+    selector: .table.sleek th
+    id: #05-03-13
+    category: null
+    properties[2]: padding,vertical-align
+    cssRule: "padding: var(--space-5) var(--space-5)\nvertical-align: middle"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .table.sleek td
+    id: #05-03-13
+    category: null
+    properties[2]: padding,vertical-align
+    cssRule: "padding: var(--space-5) var(--space-5)\nvertical-align: middle"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .table.sleek thead
+    id: #05-03-13
+    category: null
+    properties[1]: border-bottom
+    cssRule: "border-bottom: 1px solid rgba(0, 0, 0, 0.08)"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .table.sleek thead th
+    id: #05-03-13
+    category: null
+    properties[3]: color,background,font-weight
+    cssRule: "color: rgba(0, 0, 0, 0.38)\nbackground: transparent\nfont-weight: var(--font-weight-medium)"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .table.sleek tbody tr
+    id: #05-03-13
+    category: null
+    properties[1]: transition
+    cssRule: "transition: background 0.15s ease"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: ".table.sleek tbody tr:hover"
+    id: #05-03-13
+    category: null
+    properties[1]: background
+    cssRule: "background: rgba(0, 0, 0, 0.04)"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .table.sleek.divided tbody tr
+    id: #05-03-13
+    category: null
+    properties[1]: border-bottom
+    cssRule: "border-bottom: 1px solid rgba(0, 0, 0, 0.07)"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: ".table.sleek.divided tbody tr:last-child"
+    id: #05-03-13
+    category: null
+    properties[1]: border-bottom
+    cssRule: "border-bottom: none"
+    responsive: false
+    description: "Use inside .night for dark variant, works in light too"
+  - type: selector
+    selectorType: class
+    selector: .night .table.sleek thead
+    id: #05-03-13
+    category: null
+    properties[1]: border-bottom-color
+    cssRule: "border-bottom-color: rgba(255, 255, 255, 0.07)"
+    responsive: false
+    description: Dark context overrides
+  - type: selector
+    selectorType: class
+    selector: .night .table.sleek thead th
+    id: #05-03-13
+    category: null
+    properties[1]: color
+    cssRule: "color: rgba(255, 255, 255, 0.38)"
+    responsive: false
+    description: Dark context overrides
+  - type: selector
+    selectorType: class
+    selector: ".night .table.sleek tbody tr:hover"
+    id: #05-03-13
+    category: null
+    properties[1]: background
+    cssRule: "background: rgba(255, 255, 255, 0.05)"
+    responsive: false
+    description: Dark context overrides
+  - type: selector
+    selectorType: class
+    selector: .night .table.sleek.divided tbody tr
+    id: #05-03-13
+    category: null
+    properties[1]: border-bottom-color
+    cssRule: "border-bottom-color: rgba(255, 255, 255, 0.07)"
+    responsive: false
+    description: Dark context overrides
+  - type: selector
+    selectorType: class
+    selector: .table th.sortable
+    id: #05-03-14
     category: null
     properties[4]: cursor,user-select,position,padding-right
     cssRule: "cursor: pointer\nuser-select: none\nposition: relative\npadding-right: var(--space-6)"
@@ -979,7 +1132,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable:hover"
-    id: #05-03-12
+    id: #05-03-14
     category: null
     properties[1]: background
     cssRule: "background: rgba(var(--color-primary-rgb, 36, 118, 255), 0.1)"
@@ -988,7 +1141,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable::after"
-    id: #05-03-12
+    id: #05-03-14
     category: null
     properties[5]: content,position,right,opacity,font-size
     cssRule: "content: \"⇅\"\nposition: absolute\nright: var(--space-2)\nopacity: 0.3\nfont-size: 0.8em"
@@ -997,7 +1150,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable.sort-asc::after"
-    id: #05-03-12
+    id: #05-03-14
     category: null
     properties[3]: content,opacity,color
     cssRule: "content: \"↑\"\nopacity: 1\ncolor: var(--color-primary)"
@@ -1006,7 +1159,7 @@ content[112]:
   - type: selector
     selectorType: class
     selector: ".table th.sortable.sort-desc::after"
-    id: #05-03-12
+    id: #05-03-14
     category: null
     properties[3]: content,opacity,color
     cssRule: "content: \"↓\"\nopacity: 1\ncolor: var(--color-primary)"
