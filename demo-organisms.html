@@ -37,7 +37,7 @@
     <!-- ================= HEADER ================= -->
     <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
       <h1 style="margin: 0 0 0.5rem;">Lagunite – Organisms</h1>
-      <p style="margin: 0; opacity: 0.85;">Navbar, sidebar y footer</p>
+      <p style="margin: 0; opacity: 0.85;">Navbar, sidebar, topbar y footer</p>
     </header>
 
     <!-- ================= 1. NAVBAR DEFAULT ================= -->
@@ -246,7 +246,65 @@
       </div>
     </section>
 
-    <!-- ================= 3. FOOTER ================= -->
+    <!-- ================= 3. TOPBAR ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">06-topbar.css</span>
+      <h2>Topbar generica</h2>
+
+      <h3>Default</h3>
+      <div class="demo-frame">
+        <header class="topbar">
+          <div class="topbar-left">
+            <a href="#" class="topbar-brand">Lagunite</a>
+            <span class="topbar-divider"></span>
+            <p class="topbar-subtitle topbar-hide-mobile">Workspace</p>
+          </div>
+          <div class="topbar-center topbar-hide-mobile">
+            <div class="topbar-search">
+              <input class="input" type="search" placeholder="Buscar proyectos, archivos o usuarios..." />
+            </div>
+          </div>
+          <div class="topbar-right">
+            <button class="topbar-action" aria-label="Notifications">🔔 <span class="topbar-badge">3</span></button>
+            <button class="topbar-action topbar-hide-mobile" aria-label="Settings">⚙️</button>
+            <span class="topbar-avatar">AR</span>
+          </div>
+        </header>
+      </div>
+
+      <h3>Primary + sticky + elevated</h3>
+      <div class="demo-frame">
+        <header class="topbar topbar-primary topbar-sticky topbar-elevated">
+          <div class="topbar-left">
+            <button class="topbar-action" aria-label="Open menu">☰</button>
+            <h3 class="topbar-title" style="margin: 0;">Control Center</h3>
+          </div>
+          <div class="topbar-center topbar-hide-mobile">
+            <p class="topbar-subtitle" style="margin: 0;">Production environment</p>
+          </div>
+          <div class="topbar-right">
+            <a href="#" class="topbar-action">Docs</a>
+            <a href="#" class="topbar-action">Support</a>
+          </div>
+        </header>
+      </div>
+
+      <h3>Compacta para toolbars densas</h3>
+      <div class="demo-frame">
+        <header class="topbar topbar-compact">
+          <div class="topbar-left">
+            <h3 class="topbar-title" style="margin: 0;">Inbox</h3>
+          </div>
+          <div class="topbar-right">
+            <button class="topbar-action" aria-label="New">＋</button>
+            <button class="topbar-action" aria-label="Filter">⛃</button>
+            <button class="topbar-action" aria-label="Sort">↕</button>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <!-- ================= 4. FOOTER ================= -->
     <section class="demo-section">
       <span class="demo-tag">03-footer.css</span>
       <h2>Footer</h2>
@@ -339,7 +397,7 @@
       &copy; 2026 Lagunite &middot; <a href="#" style="color: var(--color-primary);">Privacidad</a> &middot; <a href="#" style="color: var(--color-primary);">Terminos</a>
     </footer>
 
-    <!-- ================= 4. FULL LAYOUT COMBO ================= -->
+    <!-- ================= 5. FULL LAYOUT COMBO ================= -->
     <section class="demo-section">
       <span class="demo-tag">Combo</span>
       <h2>Layout completo: Navbar + Sidebar + Content + Footer</h2>

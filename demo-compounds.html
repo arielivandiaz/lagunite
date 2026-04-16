@@ -22,7 +22,7 @@
     <!-- ================= HEADER ================= -->
     <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
       <h1 style="margin: 0 0 0.5rem;">Lagunite – Compounds</h1>
-      <p style="margin: 0; opacity: 0.85;">Cards y modals</p>
+      <p style="margin: 0; opacity: 0.85;">Cards, empty states, modals, and bottom sheets</p>
     </header>
 
     <!-- ================= 1. BASIC CARDS ================= -->
@@ -192,7 +192,80 @@
       </div>
     </section>
 
-    <!-- ================= 6. MODALS ================= -->
+    <!-- ================= 6. EMPTY STATE ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">04-empty-state.css</span>
+      <h2>Empty State</h2>
+      <p>Componente para pantallas sin datos, sin resultados o con onboarding inicial.</p>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <div class="empty-state">
+              <span class="empty-state-icon">📁</span>
+              <h3 class="empty-state-title">No hay proyectos aún</h3>
+              <p class="empty-state-text">Crea tu primer proyecto para comenzar a organizar tareas, archivos y miembros del equipo.</p>
+              <div class="empty-state-actions">
+                <button class="btn" style="margin:0; padding: 0.45rem 1rem;">Crear proyecto</button>
+                <button class="btn secondary alt" style="margin:0; padding: 0.45rem 1rem;">Ver plantilla</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="empty-state empty-state-compact empty-state-warning">
+              <span class="empty-state-icon">🔎</span>
+              <h3 class="empty-state-title">Sin resultados</h3>
+              <p class="empty-state-text">No encontramos coincidencias con tus filtros actuales.</p>
+              <div class="empty-state-actions">
+                <button class="btn warning" style="margin:0; padding: 0.4rem 0.9rem;">Limpiar filtros</button>
+              </div>
+              <p class="empty-state-meta">Tip: prueba con menos criterios o busca por palabra clave.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Layout horizontal</h3>
+      <div class="card">
+        <div class="card-body">
+          <div class="empty-state empty-state-horizontal empty-state-info">
+            <span class="empty-state-icon">📊</span>
+            <div class="empty-state-content">
+              <h3 class="empty-state-title">No hay reportes generados</h3>
+              <p class="empty-state-text">Cuando ejecutes tu primer proceso de analytics, los reportes aparecerán aquí automáticamente.</p>
+              <div class="empty-state-actions">
+                <button class="btn tertiary" style="margin:0; padding: 0.45rem 1rem;">Generar reporte</button>
+                <a href="#" class="btn secondary alt" style="margin:0; padding: 0.45rem 1rem;">Ver documentación</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Hero onboarding state</h3>
+      <div class="card">
+        <div class="card-body">
+          <div class="empty-state empty-state-hero empty-state-success">
+            <span class="empty-state-icon">✨</span>
+            <h3 class="empty-state-title">Tu espacio está listo</h3>
+            <p class="empty-state-text">Conecta una fuente de datos o invita miembros para activar el flujo de trabajo colaborativo.</p>
+            <div class="empty-state-actions">
+              <button class="btn" style="margin:0; padding: 0.5rem 1.15rem;">Invitar equipo</button>
+              <button class="btn secondary" style="margin:0; padding: 0.5rem 1.15rem;">Conectar datos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. MODALS ================= -->
     <section class="demo-section">
       <span class="demo-tag">02-modals.css</span>
       <h2>Modals</h2>
@@ -282,6 +355,117 @@
           <div class="modal-footer">
             <button class="btn secondary alt" style="margin:0; padding: 0.4rem 0.8rem;">Cancelar</button>
             <button class="btn" style="margin:0; padding: 0.4rem 0.8rem;">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. BOTTOM SHEETS ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">03-bottom-sheet.css</span>
+      <h2>Bottom sheets</h2>
+      <p>Mobile-first sheet pattern for short tasks, action menus, and quick filters.</p>
+
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem;">
+        <button class="btn" onclick="document.getElementById('sheet-default').classList.add('open')">Open default sheet</button>
+        <button class="btn secondary" onclick="document.getElementById('sheet-medium').classList.add('open')">Open medium sheet</button>
+        <button class="btn tertiary" onclick="document.getElementById('sheet-full').classList.add('open')">Open full sheet</button>
+      </div>
+
+      <div class="bottom-sheet-overlay" id="sheet-default" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="bottom-sheet bottom-sheet-snap-s">
+          <div class="bottom-sheet-handle"></div>
+          <div class="bottom-sheet-header">
+            <span class="bottom-sheet-title">Quick actions</span>
+            <button class="bottom-sheet-close" onclick="document.getElementById('sheet-default').classList.remove('open')">&times;</button>
+          </div>
+          <div class="bottom-sheet-body">
+            <div class="col gap-s ai-fs">
+              <button class="btn fit" style="margin:0;">Share</button>
+              <button class="btn secondary fit" style="margin:0;">Duplicate</button>
+              <button class="btn warning fit" style="margin:0;">Archive</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-sheet-overlay" id="sheet-medium" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="bottom-sheet bottom-sheet-snap-m">
+          <div class="bottom-sheet-handle"></div>
+          <div class="bottom-sheet-header">
+            <span class="bottom-sheet-title">Filter results</span>
+            <button class="bottom-sheet-close" onclick="document.getElementById('sheet-medium').classList.remove('open')">&times;</button>
+          </div>
+          <div class="bottom-sheet-body">
+            <div class="form-group">
+              <label class="form-label">Status</label>
+              <select>
+                <option>All</option>
+                <option>Open</option>
+                <option>In review</option>
+                <option>Closed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Owner</label>
+              <input type="text" placeholder="Search owner" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Notes</label>
+              <textarea rows="3" placeholder="Optional note for this filter set..."></textarea>
+            </div>
+          </div>
+          <div class="bottom-sheet-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('sheet-medium').classList.remove('open')">Cancel</button>
+            <button class="btn" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('sheet-medium').classList.remove('open')">Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-sheet-overlay" id="sheet-full" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="bottom-sheet bottom-sheet-full">
+          <div class="bottom-sheet-handle"></div>
+          <div class="bottom-sheet-header">
+            <span class="bottom-sheet-title">Checkout summary</span>
+            <button class="bottom-sheet-close" onclick="document.getElementById('sheet-full').classList.remove('open')">&times;</button>
+          </div>
+          <div class="bottom-sheet-body">
+            <div class="card-group">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Starter plan</h3>
+                  <p class="card-text">1 workspace, 3 collaborators, and core analytics included.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Team plan</h3>
+                  <p class="card-text">Unlimited projects, advanced permissions, and activity logs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-sheet-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('sheet-full').classList.remove('open')">Back</button>
+            <button class="btn" style="margin:0; padding: 0.5rem 1rem;" onclick="document.getElementById('sheet-full').classList.remove('open')">Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>Inline preview</h3>
+      <div style="position: relative; background: rgba(0,0,0,0.08); border-radius: var(--radius-l); padding: 2rem 1rem 0; min-height: 26rem; overflow: hidden;">
+        <div class="bottom-sheet bottom-sheet-snap-m" style="position: absolute; inset: auto 0 0 0; width: 100%; max-width: none; transform: none;">
+          <div class="bottom-sheet-handle"></div>
+          <div class="bottom-sheet-header">
+            <span class="bottom-sheet-title">Inline preview</span>
+            <button class="bottom-sheet-close">&times;</button>
+          </div>
+          <div class="bottom-sheet-body">
+            <p>This preview shows the structure without opening the overlay.</p>
+          </div>
+          <div class="bottom-sheet-footer">
+            <button class="btn secondary alt" style="margin:0; padding: 0.4rem 0.8rem;">Dismiss</button>
+            <button class="btn" style="margin:0; padding: 0.4rem 0.8rem;">Save</button>
           </div>
         </div>
       </div>

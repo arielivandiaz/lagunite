@@ -1,0 +1,142 @@
+{
+  "folder": "06-molecules",
+  "file": "07-dashboard-alt-panels.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 8,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-main-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "color"
+      ],
+      "cssRule": "max-width: 100%\ncolor: #ffffff",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-panel-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-bottom",
+        "background",
+        "border",
+        "border-radius",
+        "box-shadow",
+        "backdrop-filter",
+        "-webkit-backdrop-filter",
+        "padding"
+      ],
+      "cssRule": "margin-bottom: 1rem\nbackground: rgba(255, 255, 255, 0.08)\nborder: 1px solid rgba(255, 255, 255, 0.12)\nborder-radius: 16px\nbox-shadow: 0 12px 35px rgba(8, 13, 30, 0.3)\nbackdrop-filter: blur(8px)\n-webkit-backdrop-filter: blur(8px)\npadding: 1rem",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-panel-alt__title",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "font-weight",
+        "color",
+        "text-align"
+      ],
+      "cssRule": "margin: 0 0 0.75rem\nfont-size: 1rem\nfont-weight: 800\ncolor: #f8fafc\ntext-align: left",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-links-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "flex-wrap",
+        "gap"
+      ],
+      "cssRule": "display: flex\nflex-wrap: wrap\ngap: 0.5rem",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-link-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "border-radius",
+        "border",
+        "background",
+        "color",
+        "text-decoration",
+        "padding",
+        "font-size",
+        "font-weight"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\nborder-radius: 9999px\nborder: 1px solid rgba(255, 255, 255, 0.16)\nbackground: rgba(255, 255, 255, 0.1)\ncolor: #f5f3ff\ntext-decoration: none\npadding: 0.38rem 0.75rem\nfont-size: 0.85rem\nfont-weight: 700",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-link-alt:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: rgba(167, 139, 250, 0.3)\nborder-color: rgba(221, 214, 254, 0.55)",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-link-alt:focus-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: rgba(167, 139, 250, 0.3)\nborder-color: rgba(221, 214, 254, 0.55)",
+      "responsive": false,
+      "description": "==========\n   06-molecules / 07-dashboard-alt-panels.css\n   Alternative dashboard content panels, links, and wide data table.\n   Naming: all classes use -alt suffix to avoid collisions with\n   06-dashboard-panels.css when both systems are loaded together.\n   Pattern: .dashboard-panel (classic) / .dashboard-panel-alt (this file)\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-table-wrap-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "overflow",
+        "border-radius",
+        "border",
+        "background"
+      ],
+      "cssRule": "width: 100%\noverflow: auto\nborder-radius: 12px\nborder: 1px solid rgba(255, 255, 255, 0.12)\nbackground: rgba(9, 12, 24, 0.65)",
+      "responsive": false,
+      "description": "Scroll container with glass styling — use .table.dark inside"
+    }
+  ]
+}

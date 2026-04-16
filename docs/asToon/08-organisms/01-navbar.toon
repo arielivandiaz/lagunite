@@ -1,0 +1,141 @@
+folder: 08-organisms
+file: 01-navbar.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 15
+content[15]:
+  - type: selector
+    selectorType: class
+    selector: .navbar
+    id: #08-01-01
+    category: null
+    properties[8]: display,align-items,justify-content,padding,background,border-bottom,position,z-index
+    cssRule: "display: flex\nalign-items: center\njustify-content: space-between\npadding: var(--space-3) var(--space-4)\nbackground: var(--color-bg)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nposition: relative\nz-index: 100"
+    responsive: false
+    description: ── Navbar shell ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-brand
+    id: #08-01-02
+    category: null
+    properties[7]: font-size,font-weight,color,text-decoration,display,align-items,gap
+    cssRule: "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\ntext-decoration: none\ndisplay: flex\nalign-items: center\ngap: var(--space-2)"
+    responsive: false
+    description: ── Brand & nav list ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-brand img
+    id: #08-01-02
+    category: null
+    properties[1]: height
+    cssRule: "height: 2rem"
+    responsive: false
+    description: ── Brand & nav list ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-nav
+    id: #08-01-02
+    category: null
+    properties[6]: display,align-items,gap,list-style,margin,padding
+    cssRule: "display: flex\nalign-items: center\ngap: var(--space-1)\nlist-style: none\nmargin: 0\npadding: 0"
+    responsive: false
+    description: ── Brand & nav list ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-link
+    id: #08-01-03
+    category: null
+    properties[8]: display,align-items,padding,color,text-decoration,font-size,border-radius,transition
+    cssRule: "display: inline-flex\nalign-items: center\npadding: var(--space-2) var(--space-3)\ncolor: var(--color-text-base)\ntext-decoration: none\nfont-size: var(--font-size-base)\nborder-radius: var(--radius-s)\ntransition:\n    background 0.2s,\n    color 0.2s"
+    responsive: false
+    description: ── Nav links ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".navbar-link:hover"
+    id: #08-01-03
+    category: null
+    properties[2]: background,color
+    cssRule: "background: rgba(var(--color-primary-rgb), 0.1)\ncolor: var(--color-primary)"
+    responsive: false
+    description: ── Nav links ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-link.active
+    id: #08-01-03
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: ── Nav links ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-burger
+    id: #08-01-04
+    category: null
+    properties[8]: display,background,border,cursor,padding,width,height,position
+    cssRule: "display: none\nbackground: none\nborder: none\ncursor: pointer\npadding: var(--space-2)\nwidth: 2.5rem\nheight: 2.5rem\nposition: relative"
+    responsive: false
+    description: ── Mobile burger ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-burger span
+    id: #08-01-04
+    category: null
+    properties[6]: display,width,height,background,transition,margin
+    cssRule: "display: block\nwidth: 100%\nheight: 2px\nbackground: var(--color-text-base)\ntransition: all 0.3s\nmargin: 5px 0"
+    responsive: false
+    description: ── Mobile burger ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-primary
+    id: #08-01-05
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-primary)"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-primary .navbar-brand
+    id: #08-01-05
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-primary .navbar-link
+    id: #08-01-05
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-transparent
+    id: #08-01-05
+    category: null
+    properties[2]: background,border
+    cssRule: "background: transparent\nborder: none"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .navbar-sticky
+    id: #08-01-05
+    category: null
+    properties[2]: position,top
+    cssRule: "position: sticky\ntop: 0"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .navbar
+    id: #08-01-05
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)"
+    responsive: false
+    description: ── Variants ─────────────────────────────────────────────────────────────

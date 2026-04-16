@@ -1,0 +1,1417 @@
+{
+  "folder": "06-molecules",
+  "file": "01-form-groups.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": true,
+  "totalSelectors": 104,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-group",
+      "id": "#06-01-01",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "gap",
+        "margin-bottom"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\ngap: var(--space-1)\nmargin-bottom: var(--space-4)",
+      "responsive": false,
+      "description": "── Form group, label, help, error ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-label",
+      "id": "#06-01-01",
+      "category": null,
+      "properties": [
+        "font-weight",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "font-weight: var(--font-weight-medium)\nfont-size: var(--font-size-s)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "── Form group, label, help, error ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-help",
+      "id": "#06-01-01",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--gray-500)",
+      "responsive": false,
+      "description": "── Form group, label, help, error ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-error-msg",
+      "id": "#06-01-01",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--color-error)",
+      "responsive": false,
+      "description": "── Form group, label, help, error ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-group.has-error\n  :is(\n    .input",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"text\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"number\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"email\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"password\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"search\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"tel\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"url\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"date\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"datetime-local\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"month\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"week\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"time\"]\n  )",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-group.has-error\n  :is(\n    .input",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"text\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"number\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"email\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"password\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"search\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"tel\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"url\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"date\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"datetime-local\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"month\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"week\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"time\"]\n  ):focus",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-group.has-success\n  :is(\n    .input",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"text\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"number\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"email\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"password\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"search\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"tel\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"url\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"date\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"datetime-local\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"month\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"week\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"time\"]\n  )",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-group.has-success\n  :is(\n    .input",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"text\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"number\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"email\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"password\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"search\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"tel\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"url\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"date\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"datetime-local\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"month\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input[type=\"week\"]",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input[type=\"time\"]\n  ):focus",
+      "id": "#06-01-02",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-success-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Validation states (inputs inside .form-group) ────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "width"
+      ],
+      "cssRule": "display: flex\nalign-items: stretch\nwidth: 100%",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "flex: 1 1 auto\nmin-width: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "flex: 1 1 auto\nmin-width: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "flex: 1 1 auto\nmin-width: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input)",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "flex: 1 1 auto\nmin-width: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > * + *",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "margin-left"
+      ],
+      "cssRule": "margin-left: calc(-1 * var(--border-width-s))",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > *",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "position",
+        "z-index"
+      ],
+      "cssRule": "position: relative\nz-index: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > *:focus",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": "z-index: 2",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > *:focus-within",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "z-index"
+      ],
+      "cssRule": "z-index: 2",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group-prepend",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "flex-shrink",
+        "padding",
+        "font-size",
+        "line-height",
+        "color",
+        "background",
+        "border"
+      ],
+      "cssRule": "display: flex\nalign-items: center\nflex-shrink: 0\npadding: var(--space-3) var(--space-4)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--color-text-base)\nbackground: var(--color-border)\nborder: var(--border-width-s) solid var(--input-border)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group-append",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "flex-shrink",
+        "padding",
+        "font-size",
+        "line-height",
+        "color",
+        "background",
+        "border"
+      ],
+      "cssRule": "display: flex\nalign-items: center\nflex-shrink: 0\npadding: var(--space-3) var(--space-4)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--color-text-base)\nbackground: var(--color-border)\nborder: var(--border-width-s) solid var(--input-border)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input):only-child",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > .input-group-prepend:first-child",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: var(--radius-m) 0 0 var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > .input-group-append:last-child",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-radius"
+      ],
+      "cssRule": "border-radius: 0 var(--radius-m) var(--radius-m) 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > .input-group-prepend:first-child + :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "input)",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group > .input-group-prepend:first-child\n  + :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: var(--radius-m)\nborder-bottom-right-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: var(--radius-m)\nborder-bottom-right-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: var(--radius-m)\nborder-bottom-right-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input):last-child:not(.input-group-append)",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: var(--radius-m)\nborder-bottom-right-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group\n  > :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input):not(:first-child",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group-prepend",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group-append)",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-left-radius",
+        "border-bottom-left-radius"
+      ],
+      "cssRule": "border-top-left-radius: 0\nborder-bottom-left-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".input-group\n  > :is(.input",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: 0\nborder-bottom-right-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "textarea",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: 0\nborder-bottom-right-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "select",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: 0\nborder-bottom-right-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "input):has(+ .input-group-append)",
+      "id": "#06-01-03",
+      "category": null,
+      "properties": [
+        "border-top-right-radius",
+        "border-bottom-right-radius"
+      ],
+      "cssRule": "border-top-right-radius: 0\nborder-bottom-right-radius: 0",
+      "responsive": false,
+      "description": "── Input group (control + addons) ─────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".form-row",
+      "id": "#06-01-04",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-wrap",
+        "gap"
+      ],
+      "cssRule": "display: flex\nflex-wrap: wrap\ngap: var(--space-4)",
+      "responsive": true,
+      "description": "── Horizontal form row ───────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .form-label",
+      "id": "#06-01-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Night mode: labels & help ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .form-help",
+      "id": "#06-01-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Night mode: labels & help ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .input-group .input-group-prepend",
+      "id": "#06-01-06",
+      "category": null,
+      "properties": [
+        "color",
+        "background",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nbackground: var(--gray-700)\nborder-color: var(--input-border)",
+      "responsive": false,
+      "description": "── Night mode: input group addons ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .input-group .input-group-append",
+      "id": "#06-01-06",
+      "category": null,
+      "properties": [
+        "color",
+        "background",
+        "border-color"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nbackground: var(--gray-700)\nborder-color: var(--input-border)",
+      "responsive": false,
+      "description": "── Night mode: input group addons ───────────────────────────────────────"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+folder: 06-molecules
+file: 11-skeleton.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 30
+content[30]:
+  - type: selector
+    selectorType: class
+    selector: .skeleton
+    id: #06-11-01
+    category: null
+    properties[7]: "--skeleton-bg","--skeleton-bg-alt","--skeleton-radius",display,background,border-radius,animation
+    cssRule: "--skeleton-bg: var(--gray-200)\n--skeleton-bg-alt: var(--gray-100)\n--skeleton-radius: var(--radius-s)\ndisplay: block\nbackground: linear-gradient(180deg, var(--skeleton-bg), var(--skeleton-bg-alt))\nborder-radius: var(--skeleton-radius)\nanimation: skeleton-pulse 1.55s ease-in-out infinite"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-line
+    id: #06-11-01
+    category: null
+    properties[4]: display,width,height,border-radius
+    cssRule: "display: block\nwidth: 100%\nheight: 0.75rem\nborder-radius: var(--radius-full)"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-block
+    id: #06-11-01
+    category: null
+    properties[3]: display,width,min-height
+    cssRule: "display: block\nwidth: 100%\nmin-height: var(--space-16)"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-circle
+    id: #06-11-01
+    category: null
+    properties[4]: display,width,height,border-radius
+    cssRule: "display: block\nwidth: 2.5rem\nheight: 2.5rem\nborder-radius: 50%"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-text-group
+    id: #06-11-01
+    category: null
+    properties[2]: display,gap
+    cssRule: "display: grid\ngap: var(--space-2)"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".skeleton-text-group .skeleton-line:nth-child(1)"
+    id: #06-11-01
+    category: null
+    properties[1]: width
+    cssRule: "width: 96%"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".skeleton-text-group .skeleton-line:nth-child(2)"
+    id: #06-11-01
+    category: null
+    properties[1]: width
+    cssRule: "width: 88%"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".skeleton-text-group .skeleton-line:nth-child(3)"
+    id: #06-11-01
+    category: null
+    properties[1]: width
+    cssRule: "width: 64%"
+    responsive: false
+    description: ── Base primitives ─────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-button
+    id: #06-11-02
+    category: null
+    properties[3]: width,height,border-radius
+    cssRule: "width: 7.5rem\nheight: 2.25rem\nborder-radius: var(--radius-m)"
+    responsive: false
+    description: ── UI patterns ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-input
+    id: #06-11-02
+    category: null
+    properties[3]: width,height,border-radius
+    cssRule: "width: 100%\nheight: 2.5rem\nborder-radius: var(--radius-m)"
+    responsive: false
+    description: ── UI patterns ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-chip
+    id: #06-11-02
+    category: null
+    properties[3]: width,height,border-radius
+    cssRule: "width: 4.5rem\nheight: 1.625rem\nborder-radius: var(--radius-full)"
+    responsive: false
+    description: ── UI patterns ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-badge
+    id: #06-11-02
+    category: null
+    properties[3]: width,height,border-radius
+    cssRule: "width: 3.25rem\nheight: 1.125rem\nborder-radius: var(--radius-full)"
+    responsive: false
+    description: ── UI patterns ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-avatar
+    id: #06-11-02
+    category: null
+    properties[3]: width,height,border-radius
+    cssRule: "width: 2.25rem\nheight: 2.25rem\nborder-radius: 50%"
+    responsive: false
+    description: ── UI patterns ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-card
+    id: #06-11-03
+    category: null
+    properties[6]: display,gap,padding,border,border-radius,background
+    cssRule: "display: grid\ngap: var(--space-3)\npadding: var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbackground: var(--color-bg)"
+    responsive: false
+    description: ── Content patterns ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-list-item
+    id: #06-11-03
+    category: null
+    properties[5]: display,grid-template-columns,align-items,gap,padding
+    cssRule: "display: grid\ngrid-template-columns: auto 1fr auto\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3) 0"
+    responsive: false
+    description: ── Content patterns ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-table-row
+    id: #06-11-03
+    category: null
+    properties[5]: display,grid-template-columns,gap,align-items,padding
+    cssRule: "display: grid\ngrid-template-columns: 1.2fr 1fr 0.8fr 0.6fr\ngap: var(--space-3)\nalign-items: center\npadding: var(--space-2) 0"
+    responsive: false
+    description: ── Content patterns ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-media-object
+    id: #06-11-03
+    category: null
+    properties[3]: display,align-items,gap
+    cssRule: "display: flex\nalign-items: center\ngap: var(--space-3)"
+    responsive: false
+    description: ── Content patterns ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-article
+    id: #06-11-03
+    category: null
+    properties[2]: display,gap
+    cssRule: "display: grid\ngap: var(--space-3)"
+    responsive: false
+    description: ── Content patterns ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-inline
+    id: #06-11-04
+    category: null
+    properties[1]: display
+    cssRule: "display: inline-block"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-full-width
+    id: #06-11-04
+    category: null
+    properties[1]: width
+    cssRule: "width: 100%"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-grid
+    id: #06-11-04
+    category: null
+    properties[3]: display,grid-template-columns,gap
+    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))\ngap: var(--space-3)"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .skeleton-shimmer
+    id: #06-11-04
+    category: null
+    properties[3]: position,overflow,isolation
+    cssRule: "position: relative\noverflow: hidden\nisolation: isolate"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".skeleton-shimmer::after"
+    id: #06-11-04
+    category: null
+    properties[6]: content,position,inset,transform,background,animation
+    cssRule: "content: \"\"\nposition: absolute\ninset: 0\ntransform: translateX(-120%)\nbackground: linear-gradient(\r\n    90deg,\r\n    rgba(255, 255, 255, 0) 0%,\r\n    rgba(255, 255, 255, 0.5) 50%,\r\n    rgba(255, 255, 255, 0) 100%\r\n  )\nanimation: skeleton-shimmer 1.45s linear infinite"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: complex
+    selector: 0%
+    id: #06-11-04
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 0.88"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: complex
+    selector: 100%
+    id: #06-11-04
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 0.88"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: complex
+    selector: 50%
+    id: #06-11-04
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 0.58"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: complex
+    selector: 100%
+    id: #06-11-04
+    category: null
+    properties[1]: transform
+    cssRule: "transform: translateX(120%)"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .skeleton
+    id: #06-11-04
+    category: null
+    properties[2]: "--skeleton-bg","--skeleton-bg-alt"
+    cssRule: "--skeleton-bg: var(--gray-700)\n--skeleton-bg-alt: var(--gray-600)"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .skeleton-card
+    id: #06-11-04
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night .skeleton-shimmer::after"
+    id: #06-11-04
+    category: null
+    properties[1]: background
+    cssRule: "background: linear-gradient(\r\n    90deg,\r\n    rgba(255, 255, 255, 0) 0%,\r\n    rgba(255, 255, 255, 0.16) 50%,\r\n    rgba(255, 255, 255, 0) 100%\r\n  )"
+    responsive: false
+    description: ── Layout and states ───────────────────────────────────────────────────
+customProperties[5]{property,value}:
+  "--skeleton-bg",var(--gray-200)
+  "--skeleton-bg-alt",var(--gray-100)
+  "--skeleton-radius",var(--radius-s)
+  "--skeleton-bg",var(--gray-700)
+  "--skeleton-bg-alt",var(--gray-600)

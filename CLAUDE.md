@@ -59,25 +59,27 @@ Do not treat `lagunite-web/` as part of this repo or assume changes here affect 
 
 ## Full skill files (read on demand)
 
-When a task requires depth on a specific area, read the relevant skill file:
+When a task requires depth on a specific area, read the relevant skill file.
+Index: `ai/SKILLS-INDEX.md`
 
 | Skill | Path |
 | --- | --- |
-| Tokens (CSS vars) | `.cursor/skills/lagunite-tokens/SKILL.md` |
-| Typography | `.cursor/skills/lagunite-typography/SKILL.md` |
-| Colors | `.cursor/skills/lagunite-colors/SKILL.md` |
-| Spacing & sizing | `.cursor/skills/lagunite-spacing/SKILL.md` |
-| Flex layout | `.cursor/skills/lagunite-flex/SKILL.md` |
-| Grid layout | `.cursor/skills/lagunite-grid/SKILL.md` |
-| Containers | `.cursor/skills/lagunite-containers/SKILL.md` |
-| Decorators | `.cursor/skills/lagunite-decorators/SKILL.md` |
-| Atoms | `.cursor/skills/lagunite-atoms/SKILL.md` |
-| Molecules | `.cursor/skills/lagunite-molecules/SKILL.md` |
-| Compounds | `.cursor/skills/lagunite-compounds/SKILL.md` |
-| Organisms | `.cursor/skills/lagunite-organisms/SKILL.md` |
-| Patterns | `.cursor/skills/lagunite-patterns/SKILL.md` |
-| Misc | `.cursor/skills/lagunite-misc/SKILL.md` |
-| Validate (meta) | `.cursor/skills/lagunite-validate/SKILL.md` |
+| Tokens (CSS vars) | `ai/skills/tokens.md` |
+| Typography | `ai/skills/typography.md` |
+| Colors | `ai/skills/colors.md` |
+| Spacing & sizing | `ai/skills/spacing.md` |
+| Flex layout | `ai/skills/flex.md` |
+| Grid layout | `ai/skills/grid.md` |
+| Containers | `ai/skills/containers.md` |
+| Decorators | `ai/skills/decorators.md` |
+| Atoms | `ai/skills/atoms.md` |
+| Molecules | `ai/skills/molecules.md` |
+| Compounds | `ai/skills/compounds.md` |
+| Organisms | `ai/skills/organisms.md` |
+| Patterns | `ai/skills/patterns.md` |
+| Misc | `ai/skills/misc.md` |
+| Validate (meta) | `ai/skills/validate.md` |
+| Tailwind migration | `ai/skills/tailwind-migration.md` |
 
 In-repo cheatsheets: `src/css/03-layout/FLEX-CHEATSHEET.md`, `GRID-CHEATSHEET.md`, `CONTAINERS-CHEATSHEET.md`, `LAYOUT-SPACING-CHEATSHEET.md`. Decorators: `src/css/04-decorators/DECORATORS-CHEATSHEET.md`. Atoms: `src/css/05-atoms/ATOMS-CHEATSHEET.md`.
 

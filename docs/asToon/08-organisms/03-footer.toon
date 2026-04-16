@@ -1,0 +1,114 @@
+folder: 08-organisms
+file: 03-footer.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 12
+content[12]:
+  - type: selector
+    selectorType: class
+    selector: .footer
+    id: #08-03-01
+    category: null
+    properties[4]: padding,background,border-top,color
+    cssRule: "padding: var(--space-8) var(--space-4)\nbackground: var(--gray-100)\nborder-top: var(--border-width-s) solid var(--color-border)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: ── Footer shell & grid ─────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-grid
+    id: #08-03-01
+    category: null
+    properties[5]: display,grid-template-columns,gap,max-width,margin
+    cssRule: "display: grid\ngrid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))\ngap: var(--space-8)\nmax-width: 72rem\nmargin: 0 auto"
+    responsive: false
+    description: ── Footer shell & grid ─────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-title
+    id: #08-03-02
+    category: null
+    properties[4]: font-size,font-weight,margin-bottom,color
+    cssRule: "font-size: var(--font-size-base)\nfont-weight: var(--font-weight-bold)\nmargin-bottom: var(--space-3)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: "── Columns: titles & links ─────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .footer-links
+    id: #08-03-02
+    category: null
+    properties[6]: list-style,padding,margin,display,flex-direction,gap
+    cssRule: "list-style: none\npadding: 0\nmargin: 0\ndisplay: flex\nflex-direction: column\ngap: var(--space-2)"
+    responsive: false
+    description: "── Columns: titles & links ─────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .footer-link
+    id: #08-03-02
+    category: null
+    properties[4]: color,text-decoration,font-size,transition
+    cssRule: "color: var(--gray-600)\ntext-decoration: none\nfont-size: var(--font-size-s)\ntransition: color 0.2s"
+    responsive: false
+    description: "── Columns: titles & links ─────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: ".footer-link:hover"
+    id: #08-03-02
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary)"
+    responsive: false
+    description: "── Columns: titles & links ─────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .footer-bottom
+    id: #08-03-03
+    category: null
+    properties[6]: border-top,margin-top,padding-top,text-align,font-size,color
+    cssRule: "border-top: var(--border-width-s) solid var(--color-border)\nmargin-top: var(--space-8)\npadding-top: var(--space-4)\ntext-align: center\nfont-size: var(--font-size-xs)\ncolor: var(--gray-500)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-dark
+    id: #08-03-03
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--gray-900)\ncolor: var(--gray-300)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-dark .footer-title
+    id: #08-03-03
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-100)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-dark .footer-link
+    id: #08-03-03
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-400)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .footer-minimal
+    id: #08-03-03
+    category: null
+    properties[3]: padding,text-align,font-size
+    cssRule: "padding: var(--space-4)\ntext-align: center\nfont-size: var(--font-size-s)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .footer
+    id: #08-03-03
+    category: null
+    properties[3]: background,border-color,color
+    cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)\ncolor: var(--gray-300)"
+    responsive: false
+    description: ── Bottom bar & variants ───────────────────────────────────────────────

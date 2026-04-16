@@ -78,3 +78,18 @@ Reference implementation: `src/css/05-atoms/` (`03-table.css`, `04-lists.css`, `
 | Overlap row | `.avatar-group` (+ `.avatar-group-xs` … `-xl`) |
 | Deep stack | `.avatar-stack` + `.avatar-stack-counter` |
 | Focus ring | `.avatar-ring`, `.avatar-ring-secondary` … `-error`, `.avatar-ring-thick` |
+
+## Tags — class reference
+
+| Layer | Classes |
+|-------|---------|
+| Base | `.tag` |
+| Size | `.tag-xs`, `.tag-s`, `.tag-l` |
+| Shape | `.tag-rounded` |
+| Semantic | `.tag-primary`, `.tag-secondary`, `.tag-success`, `.tag-info`, `.tag-warning`, `.tag-error` |
+| Style variants | `.tag-solid`, `.tag-outline`, `.tag-dot` |
+| Interaction | `.tag-clickable` |
+| Removable pattern | `.tag-removable` + child `<button class="tag-remove">` |
+| Grouping | `.tag-group` |
+
+**Usage note**: treat `.tag` as classification metadata (taxonomy, labels, categories). For stronger status pills with premium visuals use `.chip`; for counters/overlays use `.badge`.

@@ -28,6 +28,9 @@ const FOLDER_MAP = {
   '03-layout': '03-layout',
   '04-decorators': '04-decorators',
   '05-atoms': '05-atoms',
+  '06-molecules': '06-molecules',
+  '07-compounds': '07-compounds',
+  '08-organisms': '08-organisms',
   '07-form': '07-form',
   '10-misc': '10-misc'
 };

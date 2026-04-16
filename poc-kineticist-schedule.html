@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" class="night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kineticist | Class Schedule (Lagunite POC)</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    />
+    <style>
+      /* POC-scoped skin on top of Lagunite primitives/components */
+      :root {
+        --fitness-surface-1: #060e20;
+        --fitness-surface-2: #101a31;
+        --fitness-surface-3: #141f38;
+        --fitness-brand-a: #8455ef;
+        --fitness-brand-b: #ba9eff;
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+
+      .fitness-page {
+        min-height: 100vh;
+        background: linear-gradient(180deg, var(--fitness-surface-1) 0%, var(--fitness-surface-2) 100%);
+        color: #dee5ff;
+      }
+
+      .fitness-brand {
+        font-family: var(--font-headers);
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: -0.04em;
+        text-decoration: none;
+        background: linear-gradient(135deg, var(--fitness-brand-b) 0%, var(--fitness-brand-a) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fitness-topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 40;
+        background: rgba(6, 14, 32, 0.75);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(186, 158, 255, 0.15);
+        box-shadow: 0 0 40px rgba(186, 158, 255, 0.08);
+      }
+
+      .fitness-main-wrap {
+        padding-top: 5.5rem;
+      }
+
+      .fitness-shell {
+        display: flex;
+        gap: var(--space-6);
+        align-items: stretch;
+      }
+
+      .fitness-capsule {
+        position: sticky;
+        top: 6.5rem;
+        align-self: flex-start;
+        width: 5.5rem;
+        min-height: 80vh;
+        border-radius: 999px;
+        background: rgba(20, 31, 56, 0.48);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(186, 158, 255, 0.18);
+        box-shadow: var(--shadow-xl);
+        padding: var(--space-3) var(--space-2);
+      }
+
+      .fitness-capsule .sidebar-nav {
+        padding: 0;
+      }
+
+      .fitness-icon-btn {
+        width: 3rem;
+        height: 3rem;
+        min-width: 3rem;
+        margin: 0;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: #a3aac4 !important;
+      }
+
+      .fitness-icon-btn:hover {
+        background: rgba(255, 255, 255, 0.06);
+        color: #dee5ff !important;
+        border-color: rgba(186, 158, 255, 0.3);
+      }
+
+      .fitness-icon-btn.active {
+        background: linear-gradient(135deg, var(--fitness-brand-a) 0%, var(--fitness-brand-b) 100%);
+        color: #fff !important;
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.35);
+      }
+
+      .fitness-icon-divider {
+        width: 2rem;
+        height: 1px;
+        margin: var(--space-2) auto;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .fitness-content {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .fitness-week-title {
+        font-size: var(--font-size-xxl);
+        margin: 0;
+      }
+
+      .fitness-subtitle {
+        font-size: var(--font-size-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: var(--font-weight-bold);
+        background: linear-gradient(135deg, var(--fitness-brand-b) 0%, var(--fitness-brand-a) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .fitness-day-head {
+        text-align: center;
+        padding-bottom: var(--space-3);
+      }
+
+      .fitness-day-head .day {
+        display: block;
+        font-size: var(--font-size-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #a3aac4;
+        font-weight: var(--font-weight-bold);
+        margin-bottom: 0.25rem;
+      }
+
+      .fitness-day-head .num {
+        font-size: 1.65rem;
+        font-weight: var(--font-weight-bold);
+        color: #dee5ff;
+      }
+
+      .fitness-day-head.current .day {
+        color: #c4b5fd;
+      }
+
+      .fitness-day-head.current .num-pill {
+        width: 2.75rem;
+        height: 2.75rem;
+        margin: 0 auto;
+        border-radius: var(--radius-m);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--fitness-brand-a) 0%, var(--fitness-brand-b) 100%);
+        box-shadow: 0 10px 24px rgba(132, 85, 239, 0.35);
+      }
+
+      .fitness-event {
+        background: rgba(20, 31, 56, 0.85);
+        border: 1px solid rgba(186, 158, 255, 0.2);
+      }
+
+      .fitness-event-muted {
+        opacity: 0.7;
+        border-color: rgba(126, 135, 160, 0.28);
+      }
+
+      .fitness-event-time {
+        font-size: 0.68rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #c4b5fd;
+      }
+
+      .fitness-event-title {
+        margin: 0;
+        color: #dee5ff;
+        font-size: var(--font-size-base);
+      }
+
+      .fitness-fab {
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        width: 4rem;
+        height: 4rem;
+        min-width: 4rem;
+        margin: 0;
+        border-radius: 999px;
+        border: none;
+        z-index: 50;
+        background: linear-gradient(135deg, var(--fitness-brand-a) 0%, var(--fitness-brand-b) 100%);
+        box-shadow: 0 20px 40px rgba(139, 92, 246, 0.45);
+      }
+
+      @media (max-width: 639px) {
+        .fitness-shell {
+          flex-direction: column;
+        }
+
+        .fitness-capsule {
+          position: static;
+          width: 100%;
+          min-height: auto;
+          border-radius: var(--radius-l);
+        }
+
+        .fitness-capsule .sidebar-section {
+          margin-bottom: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--space-2);
+          justify-content: center;
+        }
+
+        .fitness-main-wrap {
+          padding-top: 6rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="fitness-page">
+    <header class="topbar fitness-topbar">
+      <div class="topbar-left">
+        <a class="fitness-brand" href="#">KINETICIST</a>
+        <nav class="row gap-s topbar-hide-mobile">
+          <a class="tag tag-primary tag-solid" href="#">Classes</a>
+          <a class="tag tag-outline tag-clickable" href="#">My Reservations</a>
+          <a class="tag tag-outline tag-clickable" href="#">Membership</a>
+        </nav>
+      </div>
+
+      <div class="topbar-right">
+        <button class="topbar-action" type="button" aria-label="Notifications">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <button class="topbar-action" type="button" aria-label="Account">
+          <span class="material-symbols-outlined">account_circle</span>
+        </button>
+        <img
+          class="avatar avatar-circle avatar-s"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjIEOgZ5RNL5xqkvWFDy6We_hAQDGMoE9lxsFPMZgib-Vm3i0GPOVStIzrEzuz-eBsR-Wb4GK5T9adc86R0NxG31u-9qHiiNcJHVhsHi6pSMpo_DXFZflmC1bLrdam5z9FmVtcXsuC5lJVMnSVyBg5P3j83ahYW-lwavoUkakxMDjWYB4hhappCTcg-CLuTpE93o6V4G56uNDUXR1ythfHHm5L7UCFu_va7dozk1YehOnQj-p94pLC2pPuZadVWQmcaWl90sW1I0"
+          alt="User profile avatar"
+        />
+      </div>
+    </header>
+
+    <div class="container-fluid fitness-main-wrap">
+      <div class="fitness-shell">
+        <aside class="sidebar fitness-capsule">
+          <div class="sidebar-nav">
+            <div class="sidebar-section">
+              <button class="btn icon fit fitness-icon-btn active" type="button" title="All Classes">
+                <span class="material-symbols-outlined">fitness_center</span>
+              </button>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="Yoga">
+                <span class="material-symbols-outlined">self_improvement</span>
+              </button>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="HIIT">
+                <span class="material-symbols-outlined">bolt</span>
+              </button>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="Strength">
+                <span class="material-symbols-outlined">exercise</span>
+              </button>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="Pilates">
+                <span class="material-symbols-outlined">accessibility_new</span>
+              </button>
+              <div class="fitness-icon-divider"></div>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="My Reservations">
+                <span class="material-symbols-outlined">calendar_month</span>
+              </button>
+              <button class="btn icon fit fitness-icon-btn" type="button" title="Membership">
+                <span class="material-symbols-outlined">card_membership</span>
+              </button>
+            </div>
+          </div>
+          <div class="sidebar-footer row jc-c">
+            <img
+              class="avatar avatar-circle avatar-s"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjIEOgZ5RNL5xqkvWFDy6We_hAQDGMoE9lxsFPMZgib-Vm3i0GPOVStIzrEzuz-eBsR-Wb4GK5T9adc86R0NxG31u-9qHiiNcJHVhsHi6pSMpo_DXFZflmC1bLrdam5z9FmVtcXsuC5lJVMnSVyBg5P3j83ahYW-lwavoUkakxMDjWYB4hhappCTcg-CLuTpE93o6V4G56uNDUXR1ythfHHm5L7UCFu_va7dozk1YehOnQj-p94pLC2pPuZadVWQmcaWl90sW1I0"
+              alt="User profile thumbnail"
+            />
+          </div>
+        </aside>
+
+        <main class="fitness-content">
+          <section class="row jc-sb ai-fe marg-b">
+            <div>
+              <p class="fitness-subtitle marg-b-xs">Weekly Schedule</p>
+              <h1 class="fitness-week-title">September 11 - 17</h1>
+            </div>
+            <div class="row gap-xs">
+              <button class="btn icon fit secondary ghost" type="button" aria-label="Previous week">
+                <span class="material-symbols-outlined">chevron_left</span>
+              </button>
+              <button class="btn size-s std secondary ghost" type="button">Today</button>
+              <button class="btn icon fit secondary ghost" type="button" aria-label="Next week">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="grid gap-s xgrid-cols-1 dgrid-cols-7 marg-b-l">
+            <div class="fitness-day-head">
+              <span class="day">Mon</span>
+              <span class="num">11</span>
+            </div>
+            <div class="fitness-day-head">
+              <span class="day">Tue</span>
+              <span class="num">12</span>
+            </div>
+            <div class="fitness-day-head current">
+              <span class="day">Wed</span>
+              <div class="num-pill"><span class="num">13</span></div>
+            </div>
+            <div class="fitness-day-head">
+              <span class="day">Thu</span>
+              <span class="num">14</span>
+            </div>
+            <div class="fitness-day-head">
+              <span class="day">Fri</span>
+              <span class="num">15</span>
+            </div>
+            <div class="fitness-day-head">
+              <span class="day">Sat</span>
+              <span class="num">16</span>
+            </div>
+            <div class="fitness-day-head">
+              <span class="day">Sun</span>
+              <span class="num">17</span>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">07:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Power Yoga</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img
+                      class="avatar avatar-circle avatar-xs"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn2M1ZW7yBrXeBcZf6hMNVs3JOY-DcEBUbtgXvhfdyMHFeFZbEKGk4kkWnqIFGEacu7aYT-d4RtODBNiLPySzeG4rwLIbc5qx_EPmNJqDkhxdyh5fEvTpNB49yUUL8m6Oe-wIOEVOY_cuPJCaj6_bdTAgyX1ab3AXb7Et3hs7gg5ELJdapJCpc-VYyesIACsgtPYdgytfZkAbJdRtg8z5ZF6Z_p2C2ftfjdUFvrb95yCtlJ_hDuAFBWwTB8Y48MHhpX4YbGv1YFak"
+                      alt="Instructor Sarah"
+                    />
+                    <span class="font-xs color-gray-400">Sarah J.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">12:30 PM</p>
+                  <h3 class="fitness-event-title marg-b-s">Full Body Strength</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img
+                      class="avatar avatar-circle avatar-xs"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvBsJeUohg-Issv842OVALD0kFe1VOJ6_-Is50LozIeAS4egvFS4eZX72lIXIZDWvqUkr8DkeA0ZAB5XJvNRT4HLkT_redIb5Qjcn2rs306BdJRUKaCP706gR4gV7ujTVsy0ApxG5TmVggSUr0Uzs6fP0aT_-BdO4AgofC5AiWfjdvM1slm8Q6a2Dbzs9fiCJNZTXTQjkmZPQyBkvYqywkxXzCjcpsElAYl3lgZlA0aJMN2gQXvAEwC_3L5vbKDsisrDr1pBXhTDY"
+                      alt="Instructor Mike"
+                    />
+                    <span class="font-xs color-gray-400">Mike T.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event fitness-event-muted">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">08:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Morning HIIT</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img
+                      class="avatar avatar-circle avatar-xs"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUJApion9-7pALNd-uz--3vyTOkprz_izCOdC4gnRPavkNEfJwyB-ilgG9zl_y6a2KKjbeu5J1XY-V4q10tkNMbOqdbb7qO3B35DXsSzNB0UGy5wp26LtqodHCqOxjHmAdjM21Vj9TgqxsVt86WLI4bjn6yfrznxeuqTrkXR3JkfptUiLV2pgQWgz3I5VBWrF-uE0Rk_lzcC9d643MnrJettEZDFBh5Y0rXRxXVG-O6_vYW5RD1AX0VJrbyx1PvGRqvcvtFnOJo7M"
+                      alt="Instructor Elena"
+                    />
+                    <span class="font-xs color-gray-400">Elena R.</span>
+                  </div>
+                  <button class="btn secondary size-s fit" disabled>Booked</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">07:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Power Yoga</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa6nskPrudgIlmhWRrVnrBWFDjT3CDjdeqo97GfDM5HCOrATOrvgWJ810FytgfbfRG1t7su1_rpc5IHiAkSZ9VA3TO3qeDWh86083cKE_DPwSs9dqX--0dOt_rXQmPi5b2ERzR0DQvCd2pkLUOB7mmFWxDNkx_x_zbnMZWF-7dd5pzvgKlLvy-x4agbagzBzMraoDuQU7Q0oWHvq3ITNN1NTcpmVqBaTx1wYCrq4nC_3KBHnCkG1x1m9R9ZAfVVj1GdVqZAiK7SN0" alt="Instructor Sarah" />
+                    <span class="font-xs color-gray-400">Sarah J.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">06:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Endurance HIIT</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Y930IQ_bxpvrvIdJgla5OYtJvmYU3WDzlBATi1GIRizB1ZShwBDVe24U3KY_JzGaCSTwnFaIVeo-04giE1PYkSE6UsYxAxEog3GYyRzM1Jn40lc_b4HeB7nonDKmRk_0e3ULXVx7ZZSuEIsAwgBwF4bADNhKIfRCT1VWDh7mJgrItpHIABrbNwQUeZlkfGWuNoGQK6wFWCcZyP6EB6cAlhJ_qjNPX9DeNY52Cypi6RH7BNfh-V1-KICcSj28S0lct-SyIEnFkBc" alt="Instructor Elena" />
+                    <span class="font-xs color-gray-400">Elena R.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">10:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Vinyasa Flow</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvsh1NPy_TOD6QkxtjkvY5ALxGyQVOF9hxNJOcZ3kP1xwMK9Pn2KkdER4A-_J5NNTkTyr1eqH_jeV5OwGkqKU9phlS20ohBvObwgtzZ-TDfRnGYQamI-Jp3Jw9GVoYU1sZiC419ZJ1nRzgHsuTvQXE8KiEUa_gAbNzFl_0QT8NlJA1oqC498MnnE_l9iO648QbRWWCMz1locBLvThq454v6xj3myewbfdbb47RhmQNu9yFpB8pmT1LOJjO-EbMUnwfV_-GVZkN-c" alt="Instructor Sarah" />
+                    <span class="font-xs color-gray-400">Sarah J.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <article class="card fitness-event">
+                <div class="card-body">
+                  <p class="fitness-event-time marg-b-xs">09:00 AM</p>
+                  <h3 class="fitness-event-title marg-b-s">Weekend Warrior</h3>
+                  <div class="row ai-c gap-xs marg-b-s">
+                    <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLksZ1fl3IyTODKMAwbNVDOfAqaGiPp63nnWc-9vUC76DvbaqSqKV6T9QyC9ZEOHXRdsvB32pkPu3NSJRzIkck0bPsy4wsTqAsPKxZg9_dB1UkCHYfBu_LQSiA6A-9WWnEK8dB22tuxcAkL3-d0l8UeYIAdaz05tnyMoDh3kyUWBX7XGPgi1kQOyA0p-u60pGvu9sEKaf1vIEMljiEoUG0YPQrmV1oGL7Qre3qdJm60bsyWusx5jjVG-it1hLNQkxIXhG6YXuaZsE" alt="Instructor Mike" />
+                    <span class="font-xs color-gray-400">Mike T.</span>
+                  </div>
+                  <button class="btn std size-s fit">Reserve</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col gap-s">
+              <div class="empty-state empty-state-compact empty-state-info">
+                <span class="empty-state-icon">🌙</span>
+                <h3 class="empty-state-title">Rest Day</h3>
+                <p class="empty-state-text">No classes scheduled for Sunday.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-s xgrid-cols-1 dgrid-cols-12">
+            <article class="card card-elevated dcol-span-8">
+              <div class="card-body">
+                <h2 class="marg-b-xs">New Workshop: Breathwork Mastery</h2>
+                <p class="card-text marg-b-s">
+                  Join master instructor Marcus Chen for an intensive 2-hour session focused on performance breathing and recovery techniques.
+                </p>
+                <button class="btn std">Register Now</button>
+              </div>
+            </article>
+
+            <article class="card card-primary dcol-span-4">
+              <div class="card-body">
+                <p class="font-xxl marg-b-xs">★</p>
+                <h3 class="marg-b-xs">Premium Member Benefit</h3>
+                <p class="font-s lh">You have 2 unused guest passes for this month. Bring a friend to any class.</p>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <button class="fitness-fab" type="button" aria-label="Add schedule item">
+      <span class="material-symbols-outlined">add</span>
+    </button>
+  </body>
+</html>

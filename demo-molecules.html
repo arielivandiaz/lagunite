@@ -28,7 +28,7 @@
     <!-- ================= HEADER ================= -->
     <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
       <h1 style="margin: 0 0 0.5rem;">Lagunite – Molecules</h1>
-      <p style="margin: 0; opacity: 0.85;">Form groups, alerts, dropdowns, tooltips y breadcrumbs</p>
+      <p style="margin: 0; opacity: 0.85;">Form groups, alerts, dropdowns, tooltips, tabs, segmented controls, snackbars, skeletons, list items y breadcrumbs</p>
     </header>
 
     <!-- ================= 1. FORM GROUPS ================= -->
@@ -129,6 +129,29 @@
         <strong>Notificacion</strong><br>
         Se actualizo tu perfil exitosamente.
       </div>
+
+      <div class="demo-spacer"></div>
+
+      <h3>Snackbar (centro inferior)</h3>
+      <p>
+        <button class="btn" onclick="showSnackbar('snackbar-demo')">Mostrar snackbar</button>
+        <button class="btn secondary" onclick="showSnackbar('snackbar-success')">Success</button>
+        <button class="btn warning" onclick="showSnackbar('snackbar-warning')">Warning</button>
+      </p>
+      <div class="snackbar" id="snackbar-demo">
+        <span class="snackbar-message">Draft saved. Continue editing or undo the last change.</span>
+        <button class="snackbar-action">Undo</button>
+        <button class="snackbar-close" onclick="hideSnackbar('snackbar-demo')">&times;</button>
+      </div>
+      <div class="snackbar snackbar-success" id="snackbar-success">
+        <span class="snackbar-message">Workspace published successfully.</span>
+        <button class="snackbar-close" onclick="hideSnackbar('snackbar-success')">&times;</button>
+      </div>
+      <div class="snackbar snackbar-warning" id="snackbar-warning">
+        <span class="snackbar-message">You are working offline. Some actions may be delayed.</span>
+        <button class="snackbar-action">Retry</button>
+        <button class="snackbar-close" onclick="hideSnackbar('snackbar-warning')">&times;</button>
+      </div>
     </section>
 
     <!-- ================= 3. DROPDOWNS ================= -->
@@ -192,6 +215,237 @@
 
     <!-- ================= 5. BREADCRUMBS ================= -->
     <section class="demo-section">
+      <span class="demo-tag">10-tabs.css</span>
+      <h2>Tabs</h2>
+      <p>Example tabs using the framework classes. This demo toggles the active state with minimal JavaScript.</p>
+
+      <div class="demo-grid">
+        <div class="demo-box">
+          <h3>Underline tabs</h3>
+          <div class="tabs" data-tabs-demo>
+            <div class="tab-list" role="tablist" aria-label="Project tabs">
+              <button class="tab-button active" role="tab" aria-selected="true" data-tab-target="overview-panel">Overview</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="activity-panel">Activity</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="settings-panel">Settings</button>
+            </div>
+
+            <div class="tab-panel active" id="overview-panel" role="tabpanel">
+              <strong>Overview</strong>
+              <p style="margin: 0.5rem 0 0;">Quick summary, KPIs, and the main status for the current workspace.</p>
+            </div>
+
+            <div class="tab-panel" id="activity-panel" role="tabpanel" hidden>
+              <strong>Activity</strong>
+              <p style="margin: 0.5rem 0 0;">Recent actions, updates, and timeline entries for the selected entity.</p>
+            </div>
+
+            <div class="tab-panel" id="settings-panel" role="tabpanel" hidden>
+              <strong>Settings</strong>
+              <p style="margin: 0.5rem 0 0;">Configuration controls, toggles, and permissions for this section.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Pill tabs</h3>
+          <div class="tabs" data-tabs-demo>
+            <div class="tab-list tab-list-pills tab-list-equal" role="tablist" aria-label="Billing tabs">
+              <button class="tab-button active" role="tab" aria-selected="true" data-tab-target="monthly-panel">Monthly</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="quarterly-panel">Quarterly</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="yearly-panel">Yearly</button>
+            </div>
+
+            <div class="tab-panel active" id="monthly-panel" role="tabpanel">
+              <strong>Monthly plan</strong>
+              <p style="margin: 0.5rem 0 0;">Best for teams that need maximum flexibility and predictable short billing cycles.</p>
+            </div>
+
+            <div class="tab-panel" id="quarterly-panel" role="tabpanel" hidden>
+              <strong>Quarterly plan</strong>
+              <p style="margin: 0.5rem 0 0;">Balanced option with lower churn and a moderate discount over the monthly plan.</p>
+            </div>
+
+            <div class="tab-panel" id="yearly-panel" role="tabpanel" hidden>
+              <strong>Yearly plan</strong>
+              <p style="margin: 0.5rem 0 0;">The lowest effective price for stable products with a long planning horizon.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Vertical tabs</h3>
+          <div class="tabs tabs-vertical" data-tabs-demo>
+            <div class="tab-list" role="tablist" aria-label="Support tabs">
+              <button class="tab-button active" role="tab" aria-selected="true" data-tab-target="faq-panel">FAQ</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="tickets-panel">Tickets</button>
+              <button class="tab-button" role="tab" aria-selected="false" data-tab-target="sla-panel">SLA</button>
+            </div>
+
+            <div style="flex: 1;">
+              <div class="tab-panel active" id="faq-panel" role="tabpanel">
+                <strong>FAQ</strong>
+                <p style="margin: 0.5rem 0 0;">Use vertical tabs when the labels are longer or the content needs more horizontal room.</p>
+              </div>
+
+              <div class="tab-panel" id="tickets-panel" role="tabpanel" hidden>
+                <strong>Tickets</strong>
+                <p style="margin: 0.5rem 0 0;">Helpful for support centers, admin consoles, and side navigation inside settings views.</p>
+              </div>
+
+              <div class="tab-panel" id="sla-panel" role="tabpanel" hidden>
+                <strong>SLA</strong>
+                <p style="margin: 0.5rem 0 0;">The variant collapses back to stacked tabs on small screens automatically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. SEGMENTED CONTROL ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">09-segmented-control.css</span>
+      <h2>Segmented Control</h2>
+      <p>Single-select control para elegir una opción de un grupo. Soporta patrones de radio y botones con variantes.</p>
+
+      <div class="demo-grid demo-grid-2">
+        <div class="demo-box">
+          <h3>Default (filled)</h3>
+          <div class="segmented-control segmented-control-equal">
+            <input type="radio" name="sc1" id="sc1-a" />
+            <label for="sc1-a" class="segmented-option">Option A</label>
+            <input type="radio" name="sc1" id="sc1-b" checked />
+            <label for="sc1-b" class="segmented-option">Option B</label>
+            <input type="radio" name="sc1" id="sc1-c" />
+            <label for="sc1-c" class="segmented-option">Option C</label>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Outline variant</h3>
+          <div class="segmented-control segmented-control-outline segmented-control-equal">
+            <input type="radio" name="sc2" id="sc2-a" />
+            <label for="sc2-a" class="segmented-option">Week</label>
+            <input type="radio" name="sc2" id="sc2-b" checked />
+            <label for="sc2-b" class="segmented-option">Month</label>
+            <input type="radio" name="sc2" id="sc2-c" />
+            <label for="sc2-c" class="segmented-option">Year</label>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Subtle (underline)</h3>
+          <div class="segmented-control segmented-control-subtle">
+            <input type="radio" name="sc3" id="sc3-a" />
+            <label for="sc3-a" class="segmented-option">Draft</label>
+            <input type="radio" name="sc3" id="sc3-b" checked />
+            <label for="sc3-b" class="segmented-option">Published</label>
+            <input type="radio" name="sc3" id="sc3-c" />
+            <label for="sc3-c" class="segmented-option">Archived</label>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Button pattern (no radio)</h3>
+          <div class="segmented-control segmented-control-equal">
+            <button class="segmented-option active">Icon only</button>
+            <button class="segmented-option">Text only</button>
+            <button class="segmented-option">Mixed</button>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>With icons</h3>
+          <div class="segmented-control segmented-control-equal">
+            <input type="radio" name="sc4" id="sc4-a" />
+            <label for="sc4-a" class="segmented-option segmented-option-icon"><span>🌞</span> Light</label>
+            <input type="radio" name="sc4" id="sc4-b" checked />
+            <label for="sc4-b" class="segmented-option segmented-option-icon"><span>🌙</span> Dark</label>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Vertical layout</h3>
+          <div class="segmented-control segmented-control-vertical">
+            <input type="radio" name="sc5" id="sc5-a" />
+            <label for="sc5-a" class="segmented-option">Small</label>
+            <input type="radio" name="sc5" id="sc5-b" checked />
+            <label for="sc5-b" class="segmented-option">Medium</label>
+            <input type="radio" name="sc5" id="sc5-c" />
+            <label for="sc5-c" class="segmented-option">Large</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. SKELETON ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">11-skeleton.css</span>
+      <h2>Skeleton</h2>
+      <p>Placeholders para estados de carga con shapes base, patrones de contenido y shimmer opcional.</p>
+
+      <div class="demo-grid demo-grid-2">
+        <div class="demo-box">
+          <h3>Primitivos</h3>
+          <div class="skeleton-text-group">
+            <span class="skeleton skeleton-line skeleton-shimmer"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer" style="width: 82%;"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer" style="width: 65%;"></span>
+          </div>
+          <div class="demo-spacer"></div>
+          <span class="skeleton skeleton-block skeleton-shimmer" style="height: 5rem;"></span>
+          <div class="demo-spacer"></div>
+          <span class="skeleton skeleton-circle skeleton-shimmer"></span>
+        </div>
+
+        <div class="demo-box">
+          <h3>UI placeholders</h3>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <span class="skeleton skeleton-button skeleton-shimmer"></span>
+            <span class="skeleton skeleton-input skeleton-shimmer" style="max-width: 13rem;"></span>
+            <span class="skeleton skeleton-chip skeleton-shimmer"></span>
+            <span class="skeleton skeleton-badge skeleton-shimmer"></span>
+            <span class="skeleton skeleton-avatar skeleton-shimmer"></span>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Card skeleton</h3>
+          <article class="skeleton-card">
+            <div class="skeleton-media-object">
+              <span class="skeleton skeleton-avatar skeleton-shimmer"></span>
+              <div class="skeleton-text-group" style="flex: 1;">
+                <span class="skeleton skeleton-line skeleton-shimmer"></span>
+                <span class="skeleton skeleton-line skeleton-shimmer" style="width: 70%;"></span>
+              </div>
+            </div>
+            <span class="skeleton skeleton-block skeleton-shimmer" style="height: 6rem;"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer" style="width: 45%;"></span>
+          </article>
+        </div>
+
+        <div class="demo-box">
+          <h3>List + table row skeleton</h3>
+          <div class="skeleton-list-item">
+            <span class="skeleton skeleton-avatar skeleton-shimmer"></span>
+            <div class="skeleton-text-group">
+              <span class="skeleton skeleton-line skeleton-shimmer"></span>
+              <span class="skeleton skeleton-line skeleton-shimmer" style="width: 60%;"></span>
+            </div>
+            <span class="skeleton skeleton-badge skeleton-shimmer"></span>
+          </div>
+          <div class="skeleton-table-row">
+            <span class="skeleton skeleton-line skeleton-shimmer"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer"></span>
+            <span class="skeleton skeleton-line skeleton-shimmer"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. BREADCRUMBS ================= -->
+    <section class="demo-section">
       <span class="demo-tag">05-breadcrumb.css</span>
       <h2>Breadcrumbs</h2>
 
@@ -225,7 +479,161 @@
       </nav>
     </section>
 
-    <!-- ================= 6. ALL TOGETHER ================= -->
+    <!-- ================= 8. LIST ITEM ================= -->
+    <section class="demo-section">
+      <span class="demo-tag">10-list-item.css</span>
+      <h2>List Item</h2>
+      <p>Componente reutilizable para filas de listas con soporte para avatar, contenido, acciones y estados.</p>
+
+      <h3>Lista básica</h3>
+      <div class="list-container">
+        <div class="list-item">
+          <div class="list-item-avatar">👤</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Juan Pérez</p>
+            <p class="list-item-meta">juan@ejemplo.com</p>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-item-avatar">👤</div>
+          <div class="list-item-content">
+            <p class="list-item-text">María García</p>
+            <p class="list-item-meta">maria@ejemplo.com</p>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-item-avatar">👤</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Carlos López</p>
+            <p class="list-item-meta">carlos@ejemplo.com</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Con acciones</h3>
+      <div class="list-container">
+        <div class="list-item">
+          <div class="list-item-avatar">📁</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Mi Proyecto</p>
+            <p class="list-item-meta">Creado hace 2 días</p>
+          </div>
+          <div class="list-item-actions">
+            <button class="list-item-action" title="Favorito">⭐</button>
+            <button class="list-item-action" title="Descargar">⬇️</button>
+            <button class="list-item-action" title="Más">⋯</button>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-item-avatar">📁</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Documentos</p>
+            <p class="list-item-meta">Actualizado hoy</p>
+          </div>
+          <div class="list-item-actions">
+            <button class="list-item-action" title="Favorito">☆</button>
+            <button class="list-item-action" title="Descargar">⬇️</button>
+            <button class="list-item-action" title="Más">⋯</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>Seleccionable con checkbox</h3>
+      <div class="list-container">
+        <div class="list-item list-item-with-checkbox">
+          <input type="checkbox" class="list-item-checkbox" />
+          <div class="list-item-avatar">📧</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Notificación importante</p>
+            <p class="list-item-meta">De: sistema@app.com</p>
+          </div>
+          <span class="list-item-badge list-item-badge-info">Leído</span>
+        </div>
+        <div class="list-item list-item-with-checkbox list-item-selected">
+          <input type="checkbox" class="list-item-checkbox" checked />
+          <div class="list-item-avatar">📧</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Invitación a evento</p>
+            <p class="list-item-meta">De: eventos@corp.com</p>
+          </div>
+          <span class="list-item-badge list-item-badge-success">Nuevo</span>
+        </div>
+        <div class="list-item list-item-with-checkbox">
+          <input type="checkbox" class="list-item-checkbox" />
+          <div class="list-item-avatar">📧</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Reporte mensual</p>
+            <p class="list-item-meta">De: reportes@data.com</p>
+          </div>
+          <span class="list-item-badge list-item-badge-warning">Pendiente</span>
+        </div>
+      </div>
+
+      <h3>Como enlaces interactivos</h3>
+      <div class="list-container">
+        <a href="#" class="list-item-link">
+          <div class="list-item-avatar">🌐</div>
+          <div class="list-item-content">
+            <p class="list-item-text">Sitio web principal</p>
+            <p class="list-item-meta">www.ejemplo.com</p>
+          </div>
+          <span style="font-size: 1.2rem;">→</span>
+        </a>
+        <a href="#" class="list-item-link">
+          <div class="list-item-avatar">📱</div>
+          <div class="list-item-content">
+            <p class="list-item-text">App móvil</p>
+            <p class="list-item-meta">Disponible en iOS y Android</p>
+          </div>
+          <span style="font-size: 1.2rem;">→</span>
+        </a>
+      </div>
+
+      <h3>Con indicadores de estado</h3>
+      <div class="list-container" style="padding: var(--space-2);">
+        <div style="display: flex; gap: 1rem; align-items: center; padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+          <span class="list-item-status list-item-status-online"></span>
+          <div>
+            <p class="list-item-text">Juliana - Online</p>
+            <p class="list-item-meta">Última actividad hace 2 min</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center; padding: var(--space-3); border-bottom: 1px solid var(--color-border);">
+          <span class="list-item-status list-item-status-away"></span>
+          <div>
+            <p class="list-item-text">Roberto - Away</p>
+            <p class="list-item-meta">Ausente desde hace 15 min</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center; padding: var(--space-3);">
+          <span class="list-item-status list-item-status-offline"></span>
+          <div>
+            <p class="list-item-text">Diego - Offline</p>
+            <p class="list-item-meta">Desconectado hace 2 horas</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Variante compacta</h3>
+      <div class="list-container list-container-compact">
+        <div class="list-item">
+          <div class="list-item-avatar" style="width: 2rem; height: 2rem; font-size: 0.9rem;">📌</div>
+          <div class="list-item-content">
+            <p class="list-item-text" style="font-size: 0.9rem;">Tarea 1</p>
+          </div>
+          <span class="list-item-badge" style="font-size: 0.65rem; padding: 2px 4px;">P1</span>
+        </div>
+        <div class="list-item">
+          <div class="list-item-avatar" style="width: 2rem; height: 2rem; font-size: 0.9rem;">📌</div>
+          <div class="list-item-content">
+            <p class="list-item-text" style="font-size: 0.9rem;">Tarea 2</p>
+          </div>
+          <span class="list-item-badge" style="font-size: 0.65rem; padding: 2px 4px;">P2</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 9. ALL TOGETHER ================= -->
     <section class="demo-section" style="background: var(--gray-50); border-radius: var(--radius-l); margin: 2rem auto; padding: 2rem;">
       <span class="demo-tag">Combo</span>
       <h2>Formulario completo</h2>
@@ -279,6 +687,71 @@
         <button class="btn">Guardar cambios</button>
       </div>
     </section>
+
+    <script>
+      const snackbarTimers = new Map();
+
+      function hideSnackbar(id) {
+        const node = document.getElementById(id);
+        const timer = snackbarTimers.get(id);
+
+        if (timer) {
+          window.clearTimeout(timer);
+          snackbarTimers.delete(id);
+        }
+
+        node?.classList.remove('open');
+      }
+
+      function showSnackbar(id) {
+        const node = document.getElementById(id);
+
+        if (!node) return;
+
+        hideSnackbar(id);
+        node.classList.add('open');
+
+        const timer = window.setTimeout(() => {
+          node.classList.remove('open');
+          snackbarTimers.delete(id);
+        }, 3600);
+
+        snackbarTimers.set(id, timer);
+      }
+
+      const tabsDemos = document.querySelectorAll('[data-tabs-demo]');
+
+      tabsDemos.forEach((tabsRoot) => {
+        const buttons = tabsRoot.querySelectorAll('.tab-button[data-tab-target]');
+        const panels = tabsRoot.querySelectorAll('.tab-panel[id]');
+
+        buttons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-tab-target');
+
+            buttons.forEach((item) => {
+              item.classList.remove('active');
+              item.setAttribute('aria-selected', 'false');
+            });
+
+            panels.forEach((panel) => {
+              panel.classList.remove('active');
+              panel.setAttribute('hidden', '');
+            });
+
+            const targetPanel = tabsRoot.querySelector(`#${targetId}`);
+
+            button.classList.add('active');
+            button.setAttribute('aria-selected', 'true');
+
+            if (targetPanel) {
+              targetPanel.classList.add('active');
+              targetPanel.removeAttribute('hidden');
+            }
+          });
+        });
+      });
+    </script>
 
   </body>
 </html>

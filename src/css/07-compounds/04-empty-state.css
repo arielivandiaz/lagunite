@@ -1,0 +1,181 @@
+/* ==========
+   07-compounds / 04-empty-state.css
+   Empty state block for no-data, no-results, and onboarding contexts.
+   ========== */
+
+/* @ID: #07-04-01 */
+/* ── Base container and structure ──────────────────────────────────────── */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  border: var(--border-width-s) dashed var(--color-border);
+  border-radius: var(--radius-l);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.empty-state-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.12);
+  border: var(--border-width-s) solid rgba(var(--color-primary-rgb), 0.28);
+}
+
+.empty-state-illustration {
+  width: min(100%, 14rem);
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.empty-state-title {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-base);
+}
+
+.empty-state-text {
+  margin: 0;
+  max-width: 40ch;
+  color: var(--gray-600);
+  font-size: var(--font-size-base);
+}
+
+.empty-state-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.empty-state-meta {
+  margin: 0;
+  font-size: var(--font-size-s);
+  color: var(--gray-500);
+}
+
+/* @ID: #07-04-02 */
+/* ── Size and layout variants ──────────────────────────────────────────── */
+
+.empty-state-compact {
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+
+.empty-state-compact .empty-state-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.empty-state-compact .empty-state-title {
+  font-size: var(--font-size-l);
+}
+
+.empty-state-hero {
+  min-height: 22rem;
+  padding: var(--space-8) var(--space-6);
+}
+
+.empty-state-horizontal {
+  flex-direction: row;
+  text-align: left;
+  justify-content: flex-start;
+  gap: var(--space-4);
+}
+
+.empty-state-horizontal .empty-state-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.empty-state-horizontal .empty-state-actions {
+  justify-content: flex-start;
+}
+
+/* @ID: #07-04-03 */
+/* ── Semantic variants ──────────────────────────────────────────────────── */
+
+.empty-state-success .empty-state-icon {
+  color: var(--color-success);
+  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.13);
+}
+
+.empty-state-warning .empty-state-icon {
+  color: var(--color-warning);
+  border-color: rgba(234, 179, 8, 0.45);
+  background: rgba(234, 179, 8, 0.2);
+}
+
+.empty-state-error .empty-state-icon {
+  color: var(--color-error);
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.14);
+}
+
+.empty-state-info .empty-state-icon {
+  color: var(--color-info);
+  border-color: rgba(59, 130, 246, 0.4);
+  background: rgba(59, 130, 246, 0.14);
+}
+
+/* @ID: #07-04-04 */
+/* ── Responsive and night mode ─────────────────────────────────────────── */
+
+@media (width <= 639px) {
+  .empty-state {
+    padding: var(--space-5) var(--space-3);
+  }
+
+  .empty-state-title {
+    font-size: var(--font-size-l);
+  }
+
+  .empty-state-horizontal {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .empty-state-horizontal .empty-state-actions {
+    justify-content: center;
+  }
+}
+
+.night .empty-state {
+  border-color: var(--gray-700);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.night .empty-state-title {
+  color: var(--gray-100);
+}
+
+.night .empty-state-text {
+  color: var(--gray-400);
+}
+
+.night .empty-state-meta {
+  color: var(--gray-500);
+}
+
+.night .empty-state-icon {
+  border-color: rgba(var(--color-primary-rgb), 0.45);
+  background: rgba(var(--color-primary-rgb), 0.2);
+}

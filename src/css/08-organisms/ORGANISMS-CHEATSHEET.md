@@ -44,6 +44,23 @@ Organisms usually define shell structure, while spacing, grid, and flex alignmen
 | `.footer-bottom` | Bottom meta row. |
 | `.footer-dark` / `.footer-minimal` | Footer variants. |
 
+## `06-topbar.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.topbar` | Generic top horizontal bar for app headers. |
+| `.topbar-left` / `.topbar-center` / `.topbar-right` | Three-slot layout regions with flexible spacing. |
+| `.topbar-brand` | Brand/product link style. |
+| `.topbar-title` / `.topbar-subtitle` | Heading and contextual subtitle text. |
+| `.topbar-divider` | Vertical separator between grouped elements. |
+| `.topbar-search` | Search field container (full width with max limit). |
+| `.topbar-action` | Action button/link surface with hover/focus states. |
+| `.topbar-badge` | Notification counter badge. |
+| `.topbar-avatar` | Avatar slot (image or initials). |
+| `.topbar-sticky` / `.topbar-elevated` | Sticky and elevated variants. |
+| `.topbar-primary` / `.topbar-compact` | Color variant and compact density variant. |
+| `.topbar-hide-mobile` | Utility class to hide selected nodes on mobile. |
+
 ---
 
 ## `04-dashboard-shell.css`

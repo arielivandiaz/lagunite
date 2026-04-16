@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lagunite - Atoms demo</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <style>
+      .demo-wrap { min-height: 100vh; background: var(--color-bg); color: var(--color-text-base); }
+      .demo-section { padding: 3rem 1.5rem; max-width: 64rem; margin: 0 auto; }
+      .demo-tag {
+        display: inline-block; font-family: var(--font-mono); font-size: 0.75rem;
+        padding: 2px 8px; border-radius: 6px; margin-bottom: 8px;
+        background: var(--color-primary); color: white;
+      }
+      .demo-grid { display: grid; gap: 1.5rem; }
+      .demo-grid-2 { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+      .demo-box {
+        padding: 1rem; border-radius: var(--radius-m);
+        border: 1px solid var(--color-border); background: rgba(0, 0, 0, 0.02);
+      }
+    </style>
+  </head>
+  <body class="demo-wrap">
+    <header style="background: var(--color-primary); color: white; padding: 3rem 1.5rem; text-align: center;">
+      <h1 style="margin: 0 0 0.5rem;">Lagunite - Atoms</h1>
+      <p style="margin: 0; opacity: 0.9;">Tag atom preview</p>
+    </header>
+
+    <section class="demo-section">
+      <span class="demo-tag">09-tags.css</span>
+      <h2>Tags</h2>
+      <p>Lightweight labels for taxonomy, category, and state metadata.</p>
+
+      <div class="demo-grid demo-grid-2">
+        <div class="demo-box">
+          <h3>Semantic tags</h3>
+          <div class="tag-group">
+            <span class="tag tag-primary">Frontend</span>
+            <span class="tag tag-secondary">Design</span>
+            <span class="tag tag-success">Approved</span>
+            <span class="tag tag-info">In review</span>
+            <span class="tag tag-warning">Pending</span>
+            <span class="tag tag-error">Blocked</span>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Style variants</h3>
+          <div class="tag-group">
+            <span class="tag tag-primary tag-solid">Solid</span>
+            <span class="tag tag-success tag-outline">Outline</span>
+            <span class="tag tag-warning tag-dot">Dot</span>
+            <span class="tag tag-error tag-rounded">Rounded</span>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Sizes</h3>
+          <div class="tag-group" style="align-items: center;">
+            <span class="tag tag-primary tag-xs">XS</span>
+            <span class="tag tag-primary tag-s">Small</span>
+            <span class="tag tag-primary">Base</span>
+            <span class="tag tag-primary tag-l">Large</span>
+          </div>
+        </div>
+
+        <div class="demo-box">
+          <h3>Clickable and removable</h3>
+          <div class="tag-group">
+            <button class="tag tag-info tag-clickable">Filter</button>
+            <button class="tag tag-success tag-clickable">Selected</button>
+            <span class="tag tag-secondary tag-removable">TypeScript <button class="tag-remove" aria-label="Remove tag">x</button></span>
+            <span class="tag tag-warning tag-removable">Finance <button class="tag-remove" aria-label="Remove tag">x</button></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -118,6 +118,22 @@ Concise reference for **tables**, **lists**, **figures**, **badges**, **avatars*
 | Premium gradient | `.chip chip-solid bgg lit shadow chip-success` |
 | Small filter tag | `.chip chip-s chip-warning` |
 
+## `09-tags.css` (#05-09-01 ... #05-09-06)
+
+| ID | Classes | What it does |
+|----|---------|--------------|
+| #05-09-01 | `.tag` | Lightweight taxonomy label base. |
+| | `.tag-rounded` | Full pill radius variant. |
+| #05-09-02 | `.tag-xs` / `.tag-s` / `.tag-l` | Size variants for compact or prominent labels. |
+| #05-09-03 | `.tag-primary` / `.tag-secondary` / `.tag-success` / `.tag-info` / `.tag-warning` / `.tag-error` | Semantic color variants. |
+| #05-09-04 | `.tag-solid` | Strong filled style. |
+| | `.tag-outline` | Transparent outlined style. |
+| | `.tag-dot` | Leading status dot indicator. |
+| #05-09-05 | `.tag-clickable` | Hover/focus interaction states. |
+| | `.tag-removable` + `.tag-remove` | Removable tag pattern with inline close control. |
+| #05-09-06 | `.tag-group` | Wrapping group helper for multiple tags. |
+| | `.night .tag...` | Night-mode support for all semantic variants. |
+
 ## Quick patterns
 
 **Sortable table**

@@ -1,0 +1,132 @@
+folder: 06-molecules
+file: 06-dashboard-panels.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 14
+content[14]:
+  - type: selector
+    selectorType: class
+    selector: .dashboard-page-head
+    id: #06-06-01
+    category: null
+    properties[1]: margin-bottom
+    cssRule: "margin-bottom: var(--space-5)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-page-head h1
+    id: #06-06-01
+    category: null
+    properties[3]: margin,font-size,color
+    cssRule: "margin: 0\nfont-size: clamp(1.5rem, 2vw + 1rem, 2.2rem)\ncolor: var(--gray-900)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-page-head p
+    id: #06-06-01
+    category: null
+    properties[2]: margin-top,color
+    cssRule: "margin-top: var(--space-2)\ncolor: var(--gray-600)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-kpi-grid
+    id: #06-06-02
+    category: null
+    properties[4]: display,grid-template-columns,gap,margin-bottom
+    cssRule: "display: grid\ngrid-template-columns: repeat(4, minmax(0, 1fr))\ngap: var(--space-3)\nmargin-bottom: var(--space-4)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-kpi-card
+    id: #06-06-02
+    category: null
+    properties[5]: background,border,border-radius,padding,box-shadow
+    cssRule: "background: #fff\nborder: var(--border-width-s) solid var(--gray-200)\nborder-radius: var(--radius-l)\npadding: var(--space-4)\nbox-shadow: 0 3px 12px rgb(15 23 42 / 5%)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-kpi-card p
+    id: #06-06-02
+    category: null
+    properties[5]: margin,color,font-size,letter-spacing,text-transform
+    cssRule: "margin: 0\ncolor: var(--gray-600)\nfont-size: var(--font-size-xs)\nletter-spacing: 0.04em\ntext-transform: uppercase"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-kpi-card h2
+    id: #06-06-02
+    category: null
+    properties[3]: margin,color,font-size
+    cssRule: "margin: var(--space-2) 0 4px\ncolor: var(--gray-900)\nfont-size: 1.65rem"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: ".dashboard-kpi-card > span:not(.badge"
+    id: #06-06-02
+    category: null
+    properties[2]: color,font-size
+    cssRule: "color: var(--blue-500)\nfont-size: var(--font-size-s)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .chip)
+    id: #06-06-02
+    category: null
+    properties[2]: color,font-size
+    cssRule: "color: var(--blue-500)\nfont-size: var(--font-size-s)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-kpi-meta
+    id: #06-06-02
+    category: null
+    properties[2]: color,font-size
+    cssRule: "color: var(--blue-500)\nfont-size: var(--font-size-s)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-panels-grid
+    id: #06-06-03
+    category: null
+    properties[3]: display,grid-template-columns,gap
+    cssRule: "display: grid\ngrid-template-columns: 1.7fr 1fr\ngap: var(--space-3)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-panel
+    id: #06-06-03
+    category: null
+    properties[5]: background,border,border-radius,padding,min-height
+    cssRule: "background: #fff\nborder: var(--border-width-s) solid var(--gray-200)\nborder-radius: var(--radius-l)\npadding: var(--space-4)\nmin-height: 220px"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-panel h3
+    id: #06-06-03
+    category: null
+    properties[2]: margin,color
+    cssRule: "margin: 0\ncolor: var(--gray-900)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="
+  - type: selector
+    selectorType: class
+    selector: .dashboard-panel p
+    id: #06-06-03
+    category: null
+    properties[2]: margin-top,color
+    cssRule: "margin-top: var(--space-2)\ncolor: var(--gray-500)"
+    responsive: false
+    description: "==========\r\n   06-molecules / 06-dashboard-panels.css\r\n   Dashboard content blocks: page heading, KPI cards, and panel grid.\r\n   =========="

@@ -1,0 +1,264 @@
+/* ==========
+   06-molecules / 09-segmented-control.css
+   Segmented control for selecting a single option from a group.
+   Supports radio button or button patterns with flexible styling.
+   ========= */
+
+/* @ID: #06-09-01 */
+/* ── Segmented control shell ───────────────────────────────────────────── */
+
+.segmented-control {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1);
+  background: var(--color-bg-alt);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-l);
+  gap: 0;
+  font-family: var(--font-sans);
+}
+
+.segmented-control-full-width {
+  width: 100%;
+}
+
+.segmented-control-large {
+  padding: var(--space-2);
+}
+
+.segmented-control-small {
+  padding: var(--space-0);
+}
+
+/* @ID: #06-09-02 */
+/* ── Radio button pattern (hidden input + label) ─────────────────────── */
+
+.segmented-control input[type="radio"],
+.segmented-control input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.segmented-option {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-3);
+  margin: 0;
+  border: none;
+  border-radius: var(--radius-m);
+  background: transparent;
+  color: var(--color-text-alt);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.segmented-option:hover {
+  background: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-primary);
+}
+
+.segmented-option:focus-visible {
+  outline: var(--border-width-md) solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Active state via .active class (for button pattern) */
+.segmented-option.active {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+  box-shadow: none;
+}
+
+/* Active state via :checked (for radio pattern) */
+.segmented-control input:checked + .segmented-option {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+.segmented-control input:checked + .segmented-option:hover {
+  background: var(--color-primary-dark);
+}
+
+.segmented-control input:disabled + .segmented-option,
+.segmented-option:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.segmented-control input:focus-visible + .segmented-option {
+  outline: var(--border-width-md) solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* @ID: #06-09-03 */
+/* ── Variants ──────────────────────────────────────────────────────────── */
+
+.segmented-control-outline {
+  background: transparent;
+  border: var(--border-width-md) solid var(--color-border);
+}
+
+.segmented-control-outline .segmented-option {
+  color: var(--color-text-base);
+}
+
+.segmented-control-outline .segmented-option:hover {
+  background: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-primary);
+}
+
+.segmented-control-outline input:checked + .segmented-option {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+  border-radius: var(--radius-m);
+}
+
+.segmented-control-subtle {
+  background: transparent;
+  border: none;
+}
+
+.segmented-control-subtle .segmented-option {
+  color: var(--color-text-alt);
+  border-bottom: var(--border-width-md) solid transparent;
+  border-radius: 0;
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+}
+
+.segmented-control-subtle .segmented-option:hover {
+  background: transparent;
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.segmented-control-subtle input:checked + .segmented-option {
+  background: transparent;
+  border-bottom-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.segmented-control-equal .segmented-option {
+  flex: 1;
+}
+
+.segmented-control-fullwidth {
+  width: 100%;
+}
+
+.segmented-control-fullwidth .segmented-option {
+  flex: 1;
+}
+
+/* @ID: #06-09-04 */
+/* ── Vertical layout ───────────────────────────────────────────────────── */
+
+.segmented-control-vertical {
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-2);
+}
+
+.segmented-control-vertical .segmented-option {
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: var(--radius-m);
+}
+
+/* @ID: #06-09-05 */
+/* ── Icon support ──────────────────────────────────────────────────────── */
+
+.segmented-option svg,
+.segmented-option i {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.segmented-option-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* @ID: #06-09-06 */
+/* ── Night mode ────────────────────────────────────────────────────────── */
+
+.night .segmented-control {
+  background: var(--gray-800);
+  border-color: var(--gray-700);
+}
+
+.night .segmented-option {
+  color: var(--gray-300);
+}
+
+.night .segmented-option:hover {
+  background: rgba(var(--color-primary-rgb), 0.15);
+  color: var(--color-primary-light);
+}
+
+.night .segmented-option.active,
+.night .segmented-control input:checked + .segmented-option {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+.night .segmented-control-outline {
+  border-color: var(--gray-700);
+  background: transparent;
+}
+
+.night .segmented-control-outline .segmented-option {
+  color: var(--gray-300);
+}
+
+.night .segmented-control-outline .segmented-option:hover {
+  background: rgba(var(--color-primary-rgb), 0.15);
+  color: var(--color-primary-light);
+}
+
+.night .segmented-control-subtle {
+  background: transparent;
+}
+
+.night .segmented-control-subtle .segmented-option {
+  color: var(--gray-300);
+  border-bottom-color: transparent;
+}
+
+.night .segmented-control-subtle .segmented-option:hover {
+  border-bottom-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.night .segmented-control-subtle input:checked + .segmented-option {
+  border-bottom-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+/* @ID: #06-09-07 */
+/* ── Responsive ────────────────────────────────────────────────────────── */
+
+@media (width <= 639px) {
+  .segmented-control-stack-mobile {
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-2);
+  }
+
+  .segmented-control-stack-mobile .segmented-option {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

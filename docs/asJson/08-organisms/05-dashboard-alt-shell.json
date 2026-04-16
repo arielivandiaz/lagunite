@@ -1,0 +1,985 @@
+{
+  "folder": "08-organisms",
+  "file": "05-dashboard-alt-shell.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 55,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".page-dashboard-alt",
+      "id": null,
+      "category": null,
+      "properties": [
+        "--dashboard-rail-gap",
+        "--dashboard-top-safe",
+        "--dashboard-end-safe",
+        "min-height",
+        "background"
+      ],
+      "cssRule": "--dashboard-rail-gap: 6rem\n--dashboard-top-safe: 8.5rem\n--dashboard-end-safe: 10rem\nmin-height: 100dvh\nbackground: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-alt-shell",
+      "id": null,
+      "category": null,
+      "properties": [
+        "min-height"
+      ],
+      "cssRule": "min-height: 100dvh",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-content",
+      "id": null,
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding"
+      ],
+      "cssRule": "min-height: 100dvh\npadding: var(--dashboard-top-safe) var(--dashboard-end-safe) 2rem var(--dashboard-rail-gap)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-rail",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "left",
+        "top",
+        "transform",
+        "z-index",
+        "box-sizing",
+        "width",
+        "min-height",
+        "padding",
+        "border-radius",
+        "display",
+        "flex-direction",
+        "align-items",
+        "justify-content",
+        "gap",
+        "overflow",
+        "background",
+        "backdrop-filter",
+        "-webkit-backdrop-filter",
+        "box-shadow",
+        "border"
+      ],
+      "cssRule": "position: fixed\nleft: 1rem\ntop: 50%\ntransform: translateY(-50%)\nz-index: 30\nbox-sizing: border-box\nwidth: 4.15rem\nmin-height: min(70vh, 520px)\npadding: 1rem 0.55rem\nborder-radius: 9999px\ndisplay: flex\nflex-direction: column\nalign-items: center\njustify-content: space-between\ngap: 1rem\noverflow: visible\nbackground: rgba(22, 27, 47, 0.82)\nbackdrop-filter: blur(14px)\n-webkit-backdrop-filter: blur(14px)\nbox-shadow: 0 12px 40px rgba(8, 13, 30, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06)\nborder: 1px solid rgba(255, 255, 255, 0.1)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-rail__a11y-title",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-mobile__a11y-title",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__a11y-title",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sr-only",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-brand-top",
+      "id": null,
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "border-radius",
+        "text-decoration",
+        "background",
+        "box-shadow",
+        "transition"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: flex\nalign-items: center\njustify-content: center\nwidth: 2.65rem\nheight: 2.65rem\nborder-radius: 9999px\ntext-decoration: none\nbackground: radial-gradient(circle at 30% 25%, #a78bfa 0%, #7c3aed 45%, #5b21b6 100%)\nbox-shadow: 0 0 0 2px rgba(167, 139, 250, 0.35), 0 8px 28px rgba(91, 33, 182, 0.55)\ntransition: transform 0.2s ease, box-shadow 0.2s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-brand-top:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "box-shadow"
+      ],
+      "cssRule": "transform: scale(1.05)\nbox-shadow: 0 0 0 2px rgba(196, 181, 253, 0.5), 0 10px 32px rgba(91, 33, 182, 0.65)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-brand-top__icon",
+      "id": null,
+      "category": null,
+      "properties": [
+        "font-size",
+        "line-height",
+        "filter"
+      ],
+      "cssRule": "font-size: 1.15rem\nline-height: 1\nfilter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35))",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-avatar-bottom",
+      "id": null,
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "border-radius",
+        "text-decoration",
+        "overflow",
+        "background",
+        "border",
+        "box-shadow",
+        "transition"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: flex\nalign-items: center\njustify-content: center\nwidth: 2.65rem\nheight: 2.65rem\nborder-radius: 9999px\ntext-decoration: none\noverflow: hidden\nbackground: #ffffff\nborder: 2px solid rgba(255, 255, 255, 0.85)\nbox-shadow: 0 6px 20px rgba(124, 58, 237, 0.22)\ntransition: transform 0.2s ease, box-shadow 0.2s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-avatar-bottom:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "box-shadow"
+      ],
+      "cssRule": "transform: scale(1.05)\nbox-shadow: 0 8px 26px rgba(124, 58, 237, 0.32)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-avatar-bottom__img",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "object-fit",
+        "display"
+      ],
+      "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover\ndisplay: block",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-avatar-bottom__fallback",
+      "id": null,
+      "category": null,
+      "properties": [
+        "font-size",
+        "font-weight",
+        "color"
+      ],
+      "cssRule": "font-size: 0.95rem\nfont-weight: 800\ncolor: #6d28d9",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__nav",
+      "id": null,
+      "category": null,
+      "properties": [
+        "--sidebar-icon-size",
+        "--sidebar-icon-center-x",
+        "flex",
+        "display",
+        "flex-direction",
+        "align-items",
+        "justify-content",
+        "gap",
+        "width",
+        "min-height",
+        "overflow"
+      ],
+      "cssRule": "--sidebar-icon-size: 2.55rem\n--sidebar-icon-center-x: calc(var(--sidebar-icon-size) / 2)\nflex: 1\ndisplay: flex\nflex-direction: column\nalign-items: flex-start\njustify-content: center\ngap: 0.65rem\nwidth: 100%\nmin-height: 0\noverflow: visible",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "z-index",
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "text-decoration",
+        "color",
+        "font-weight",
+        "font-size",
+        "overflow",
+        "background",
+        "border",
+        "box-shadow",
+        "transition"
+      ],
+      "cssRule": "position: relative\nz-index: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: flex-start\nwidth: var(--sidebar-icon-size)\nheight: var(--sidebar-icon-size)\npadding: 0\nmargin: 0\ntext-decoration: none\ncolor: rgba(255, 255, 255, 0.72)\nfont-weight: 700\nfont-size: 1.05rem\noverflow: visible\nbackground: transparent\nborder: none\nbox-shadow: none\ntransition: width 0.05s linear, z-index 0s linear 0.4s",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "align-items",
+        "justify-content",
+        "gap",
+        "overflow",
+        "min-height",
+        "min-width",
+        "padding",
+        "box-sizing",
+        "border-radius",
+        "background",
+        "border",
+        "color",
+        "transform-origin",
+        "transform",
+        "transition"
+      ],
+      "cssRule": "display: inline-flex\nflex-direction: row\nalign-items: center\njustify-content: flex-start\ngap: 0.45rem\noverflow: visible\nmin-height: var(--sidebar-icon-size)\nmin-width: var(--sidebar-icon-size)\npadding: 0 0.65rem 0 0\nbox-sizing: border-box\nborder-radius: 9999px\nbackground: rgba(38, 42, 62, 0.92)\nborder: 1px solid rgba(255, 255, 255, 0.14)\ncolor: inherit\ntransform-origin: var(--sidebar-icon-center-x) 50%\ntransform: rotate(90deg)\ntransition:\r\n    transform 0.45s cubic-bezier(0.34, 1.15, 0.42, 1),\r\n    background 0.22s ease,\r\n    border-color 0.22s ease,\r\n    box-shadow 0.22s ease,\r\n    color 0.22s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index",
+        "width",
+        "max-width",
+        "transition"
+      ],
+      "cssRule": "z-index: 5\nwidth: max-content\nmax-width: min(240px, 72vw)\ntransition: width 0.05s linear, z-index 0s",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:focus-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "z-index",
+        "width",
+        "max-width",
+        "transition"
+      ],
+      "cssRule": "z-index: 5\nwidth: max-content\nmax-width: min(240px, 72vw)\ntransition: width 0.05s linear, z-index 0s",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:hover .dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "background",
+        "border-color",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "transform: rotate(0deg)\nbackground: rgba(76, 29, 149, 0.94)\nborder-color: rgba(196, 181, 253, 0.55)\ncolor: #f5f3ff\nbox-shadow: 0 10px 32px rgba(49, 46, 129, 0.55)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:focus-visible .dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform",
+        "background",
+        "border-color",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "transform: rotate(0deg)\nbackground: rgba(76, 29, 149, 0.94)\nborder-color: rgba(196, 181, 253, 0.55)\ncolor: #f5f3ff\nbox-shadow: 0 10px 32px rgba(49, 46, 129, 0.55)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link.is-active .dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "background: rgba(48, 42, 72, 0.94)\nborder-color: rgba(196, 181, 253, 0.38)\nbox-shadow: 0 0 0 1px rgba(167, 139, 250, 0.35)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link.is-active:hover .dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "background: rgba(91, 33, 182, 0.96)\nborder-color: rgba(221, 214, 254, 0.65)\ncolor: #fff\nbox-shadow: 0 12px 36px rgba(49, 46, 129, 0.58)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link.is-active:focus-visible .dashboard-sidebar__link-surface",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "background: rgba(91, 33, 182, 0.96)\nborder-color: rgba(221, 214, 254, 0.65)\ncolor: #fff\nbox-shadow: 0 12px 36px rgba(49, 46, 129, 0.58)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__label",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "max-width",
+        "opacity",
+        "overflow",
+        "font-size",
+        "font-weight",
+        "letter-spacing",
+        "line-height",
+        "white-space",
+        "transition"
+      ],
+      "cssRule": "display: block\nmax-width: 0\nopacity: 0\noverflow: hidden\nfont-size: 0.82rem\nfont-weight: 700\nletter-spacing: 0.01em\nline-height: 1.2\nwhite-space: nowrap\ntransition: max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.28s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:hover .dashboard-sidebar__label",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "opacity"
+      ],
+      "cssRule": "max-width: 12rem\nopacity: 1",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:focus-visible .dashboard-sidebar__label",
+      "id": null,
+      "category": null,
+      "properties": [
+        "max-width",
+        "opacity"
+      ],
+      "cssRule": "max-width: 12rem\nopacity: 1",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-nav-icon--rail",
+      "id": null,
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "width",
+        "height",
+        "display",
+        "align-items",
+        "justify-content",
+        "overflow",
+        "color",
+        "transition"
+      ],
+      "cssRule": "flex-shrink: 0\nwidth: var(--sidebar-icon-size, 2.55rem)\nheight: var(--sidebar-icon-size, 2.55rem)\ndisplay: flex\nalign-items: center\njustify-content: center\noverflow: visible\ncolor: inherit\ntransition: color 0.22s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-nav-icon__inner",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "line-height",
+        "transform-origin",
+        "transform",
+        "transition"
+      ],
+      "cssRule": "display: flex\nalign-items: center\njustify-content: center\nline-height: 1\ntransform-origin: center center\ntransform: rotate(-90deg)\ntransition: transform 0.45s cubic-bezier(0.34, 1.15, 0.42, 1)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:hover .sidebar-nav-icon--rail",
+      "id": null,
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #e9d5ff",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:focus-visible .sidebar-nav-icon--rail",
+      "id": null,
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #e9d5ff",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:hover .sidebar-nav-icon__inner",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: rotate(0deg) scale(1.08)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link:focus-visible .sidebar-nav-icon__inner",
+      "id": null,
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: rotate(0deg) scale(1.08)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar__link.is-active .sidebar-nav-icon--rail",
+      "id": null,
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #c4b5fd",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-mobile",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "right",
+        "top",
+        "z-index",
+        "width"
+      ],
+      "cssRule": "position: fixed\nright: 1rem\ntop: 1rem\nz-index: 35\nwidth: min(520px, calc(100vw - 8rem))",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__row",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "gap",
+        "padding",
+        "border-radius",
+        "background",
+        "backdrop-filter",
+        "-webkit-backdrop-filter",
+        "box-shadow",
+        "border"
+      ],
+      "cssRule": "display: flex\nalign-items: center\njustify-content: space-between\ngap: 0.55rem\npadding: 0.45rem 0.55rem 0.45rem 0.9rem\nborder-radius: 9999px\nbackground: rgba(22, 27, 47, 0.88)\nbackdrop-filter: blur(14px)\n-webkit-backdrop-filter: blur(14px)\nbox-shadow: 0 10px 34px rgba(8, 13, 30, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.08)\nborder: 1px solid rgba(255, 255, 255, 0.12)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__brand-slot",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__burger",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__nav",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: 0.45rem",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__link",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-radius",
+        "display",
+        "align-items",
+        "justify-content",
+        "text-decoration",
+        "color",
+        "background",
+        "border",
+        "transition"
+      ],
+      "cssRule": "width: 2.35rem\nheight: 2.35rem\nborder-radius: 9999px\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ntext-decoration: none\ncolor: rgba(255, 255, 255, 0.84)\nbackground: rgba(255, 255, 255, 0.1)\nborder: 1px solid rgba(255, 255, 255, 0.1)\ntransition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__link:hover",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(255, 255, 255, 0.2)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__link:focus-visible",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(255, 255, 255, 0.2)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__link.is-active",
+      "id": null,
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "color"
+      ],
+      "cssRule": "background: rgba(91, 33, 182, 0.92)\nborder-color: rgba(196, 181, 253, 0.45)\ncolor: #fff",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__avatar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-radius",
+        "overflow",
+        "display",
+        "align-items",
+        "justify-content",
+        "background",
+        "text-decoration",
+        "border",
+        "box-shadow"
+      ],
+      "cssRule": "width: 2.65rem\nheight: 2.65rem\nborder-radius: 9999px\noverflow: hidden\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nbackground: #fff\ntext-decoration: none\nborder: 2px solid rgba(255, 255, 255, 0.78)\nbox-shadow: 0 8px 24px rgba(91, 33, 182, 0.35)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__avatar-img",
+      "id": null,
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "object-fit"
+      ],
+      "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__avatar-fallback",
+      "id": null,
+      "category": null,
+      "properties": [
+        "font-weight",
+        "color"
+      ],
+      "cssRule": "font-weight: 800\ncolor: #6d28d9",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__panel",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-top",
+        "border-radius",
+        "background",
+        "border",
+        "padding"
+      ],
+      "cssRule": "margin-top: 0.5rem\nborder-radius: 16px\nbackground: rgba(22, 27, 47, 0.95)\nborder: 1px solid rgba(255, 255, 255, 0.12)\npadding: 0.5rem",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__mobile-nav",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-floating-nav__mobile-link",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-header-bar",
+      "id": null,
+      "category": null,
+      "properties": [
+        "position",
+        "left",
+        "top",
+        "z-index",
+        "display",
+        "text-decoration",
+        "border-radius",
+        "background",
+        "border",
+        "box-shadow",
+        "padding"
+      ],
+      "cssRule": "position: fixed\nleft: 6rem\ntop: 1rem\nz-index: 34\ndisplay: inline-flex\ntext-decoration: none\nborder-radius: 16px\nbackground: rgba(255, 255, 255, 0.95)\nborder: 1px solid rgba(15, 23, 42, 0.08)\nbox-shadow: 0 10px 30px rgba(5, 9, 24, 0.2)\npadding: 0.7rem 1rem",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-header-bar__content",
+      "id": null,
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "align-items",
+        "line-height"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\nalign-items: flex-start\nline-height: 1.2",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-header-bar__title",
+      "id": null,
+      "category": null,
+      "properties": [
+        "font-weight",
+        "color"
+      ],
+      "cssRule": "font-weight: 800\ncolor: #111827",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-header-bar__subtitle",
+      "id": null,
+      "category": null,
+      "properties": [
+        "margin-top",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin-top: 0.14rem\nfont-size: 0.78rem\ncolor: #4b5563",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 05-dashboard-alt-shell.css\r\n   Alternative dashboard shell: left rail, mobile dock, floating navbar, and header bar.\r\n   =========="
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--dashboard-rail-gap",
+      "value": "6rem"
+    },
+    {
+      "property": "--dashboard-top-safe",
+      "value": "8.5rem"
+    },
+    {
+      "property": "--dashboard-end-safe",
+      "value": "10rem"
+    },
+    {
+      "property": "--sidebar-icon-size",
+      "value": "2.55rem"
+    },
+    {
+      "property": "--sidebar-icon-center-x",
+      "value": "calc(var(--sidebar-icon-size) / 2)"
+    }
+  ]
+}

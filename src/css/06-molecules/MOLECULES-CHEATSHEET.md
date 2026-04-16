@@ -24,6 +24,10 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 | `.alert-success` / `.alert-warning` / `.alert-error` / `.alert-info` | Semantic alert variants. |
 | `.alert-dismissible` / `.alert-close` | Extra padding and positioned dismiss control. |
 | `.toast` | Fixed-position toast shell. |
+| `.snackbar` / `.open` | Bottom-centered transient feedback shell and visible state. |
+| `.snackbar-message` | Main text block inside the snackbar. |
+| `.snackbar-action` / `.snackbar-close` | Inline action and dismiss controls. |
+| `.snackbar-success` / `.snackbar-warning` / `.snackbar-error` / `.snackbar-info` | Semantic snackbar variants. |
 
 ## `03-dropdown.css`
 
@@ -49,6 +53,68 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 | `.breadcrumb` | Breadcrumb container. |
 | `.breadcrumb-item` / `.active` | Segments and current-page state. |
 | `.breadcrumb-arrow` / `.breadcrumb-dot` | Alternate separator styles. |
+
+## `10-tabs.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.tabs` | Root wrapper for the whole tabs UI. |
+| `.tab-list` | Trigger row/column. Use it with buttons, links, or tab-like controls. |
+| `.tab-button` / `.active` | Tab trigger. Active state can also be driven by `aria-selected="true"`. |
+| `.tab-panel` / `.active` | Content panel. Only the active panel is shown. |
+| `.tab-list-pills` | Rounded pill navigation variant. |
+| `.tab-list-equal` | Makes all triggers distribute evenly. |
+| `.tabs-vertical` | Side-by-side vertical layout that collapses to stacked on mobile. |
+
+## `09-segmented-control.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.segmented-control` | Container for segmented control options. |
+| `.segmented-option` | Individual option/button. Active state via `.active` or `:checked` on adjacent radio. |
+| `.segmented-control-equal` | Distribute options evenly (flex: 1). |
+| `.segmented-control-fullwidth` | Stretch control to 100% width. |
+| `.segmented-control-outline` | Border-only variant with transparent background. |
+| `.segmented-control-subtle` | Underline variant (bottom border activation). |
+| `.segmented-control-vertical` | Stack options vertically. |
+| `.segmented-control-stack-mobile` | Switch to vertical on mobile. |
+| `.segmented-option-icon` | Helper class for icon + text alignment. |
+
+## `11-skeleton.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.skeleton` | Base placeholder surface. |
+| `.skeleton-line` / `.skeleton-block` / `.skeleton-circle` | Primitive line, block, and circular shapes. |
+| `.skeleton-text-group` | Vertical stack of lines with varied widths for text simulation. |
+| `.skeleton-button` / `.skeleton-input` / `.skeleton-chip` / `.skeleton-badge` / `.skeleton-avatar` | Common control placeholders. |
+| `.skeleton-card` / `.skeleton-list-item` / `.skeleton-table-row` / `.skeleton-media-object` / `.skeleton-article` | Composed content placeholders. |
+| `.skeleton-inline` / `.skeleton-full-width` / `.skeleton-grid` | Layout helpers for inline, full-width, and grid loading states. |
+| `.skeleton-shimmer` | Animated shimmer overlay. |
+
+## `10-list-item.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.list-item` | Base list item row with flex layout (avatar + content + actions). |
+| `.list-item-avatar` | Optional leading avatar/icon slot (2.5rem circle). |
+| `.list-item-content` | Text content container with flexible flex-grow. |
+| `.list-item-text` | Primary text (title) with ellipsis truncation. |
+| `.list-item-meta` | Secondary text (subtitle/timestamp) with reduced font and soft color. |
+| `.list-item-actions` | Trailing action buttons container. |
+| `.list-item-action` | Icon button for inline actions (favorite, delete, more, etc.). |
+| `.list-item-interactive` | Hover state styling for clickable list items. |
+| `.list-item-link` | Semantic link wrapper (flex display, no underline, focus styles). |
+| `.list-item-checkbox` | Checkbox input inside list item. |
+| `.list-item-with-checkbox` | Container modifier to accommodate checkbox layout. |
+| `.list-item-selected` | Visual state for selected/active rows. |
+| `.list-item-disabled` | Disabled state with reduced opacity and no interactivity. |
+| `.list-item-badge` / `.list-item-badge-success` / `.list-item-badge-warning` / `.list-item-badge-error` / `.list-item-badge-info` | Status badges with semantic colors. |
+| `.list-item-status` / `.list-item-status-online` / `.list-item-status-away` / `.list-item-status-offline` | Small circular status indicators. |
+| `.list-container` | Wrapper with border, rounded corners, and background. |
+| `.list-container-compact` | Reduced padding variant (var(--space-2)). |
+| `.list-container-spacious` | Increased padding variant (var(--space-4)). |
+| `.list-container-divider` | Thicker border between items. |
 
 ---
 

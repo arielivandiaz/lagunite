@@ -1,0 +1,159 @@
+folder: 06-molecules
+file: 03-dropdown.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 17
+content[17]:
+  - type: selector
+    selectorType: class
+    selector: .dropdown
+    id: #06-03-01
+    category: null
+    properties[2]: position,display
+    cssRule: "position: relative\ndisplay: inline-block"
+    responsive: false
+    description: ── Dropdown shell ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .dropdown-toggle
+    id: #06-03-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: pointer"
+    responsive: false
+    description: ── Dropdown shell ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .dropdown-menu
+    id: #06-03-02
+    category: null
+    properties[13]: position,top,left,z-index,display,min-width,padding,margin,list-style,background,border,border-radius,box-shadow
+    cssRule: "position: absolute\ntop: 100%\nleft: 0\nz-index: 100\ndisplay: none\nmin-width: 10rem\npadding: var(--space-2) 0\nmargin: 0\nlist-style: none\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-m)"
+    responsive: false
+    description: ── Dropdown menu (toggle .open on .dropdown) ───────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .dropdown-menu
+    id: #06-03-02
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--color-bg)\nborder-color: var(--color-border)"
+    responsive: false
+    description: ── Dropdown menu (toggle .open on .dropdown) ───────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .dropdown.open .dropdown-menu
+    id: #06-03-02
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: ── Dropdown menu (toggle .open on .dropdown) ───────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .dropdown-menu-right
+    id: #06-03-02
+    category: null
+    properties[2]: right,left
+    cssRule: "right: 0\nleft: auto"
+    responsive: false
+    description: ── Dropdown menu (toggle .open on .dropdown) ───────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .dropdown-item
+    id: #06-03-03
+    category: null
+    properties[5]: display,padding,color,text-decoration,transition
+    cssRule: "display: block\npadding: var(--space-2) var(--space-4)\ncolor: var(--color-text-base)\ntext-decoration: none\ntransition:\n    background-color 0.2s ease,\n    color 0.2s ease"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: ".dropdown-item:hover"
+    id: #06-03-03
+    category: null
+    properties[2]: background-color,color
+    cssRule: "background-color: var(--color-primary)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .dropdown-item.active
+    id: #06-03-03
+    category: null
+    properties[2]: background-color,color
+    cssRule: "background-color: var(--color-primary)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: ".dropdown-item:focus-visible"
+    id: #06-03-03
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: -2px"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .dropdown-header
+    id: #06-03-03
+    category: null
+    properties[5]: padding,font-size,font-weight,color,text-transform
+    cssRule: "padding: var(--space-2) var(--space-4)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-bold)\ncolor: var(--gray-500)\ntext-transform: uppercase"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .dropdown-divider
+    id: #06-03-03
+    category: null
+    properties[3]: margin,border,border-top
+    cssRule: "margin: var(--space-2) 0\nborder: none\nborder-top: var(--border-width-s) solid var(--color-border)"
+    responsive: false
+    description: "── Items, header, divider ───────────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .night .dropdown-item
+    id: #06-03-04
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night .dropdown-item:hover"
+    id: #06-03-04
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .dropdown-item.active
+    id: #06-03-04
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .dropdown-header
+    id: #06-03-04
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-400)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .dropdown-divider
+    id: #06-03-04
+    category: null
+    properties[1]: border-top-color
+    cssRule: "border-top-color: var(--color-border)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
