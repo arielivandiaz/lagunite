@@ -1,0 +1,587 @@
+{
+  "folder": "08-organisms",
+  "file": "06-topbar.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 38,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar",
+      "id": "#08-06-01",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "align-items",
+        "justify-content",
+        "gap",
+        "min-height",
+        "padding",
+        "background",
+        "border-bottom",
+        "z-index"
+      ],
+      "cssRule": "position: relative\ndisplay: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\nmin-height: 3.5rem\npadding: var(--space-2) var(--space-4)\nbackground: var(--color-bg)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nz-index: 120",
+      "responsive": false,
+      "description": "── Topbar shell ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-sticky",
+      "id": "#08-06-01",
+      "category": null,
+      "properties": [
+        "position",
+        "top"
+      ],
+      "cssRule": "position: sticky\ntop: 0",
+      "responsive": false,
+      "description": "── Topbar shell ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-elevated",
+      "id": "#08-06-01",
+      "category": null,
+      "properties": [
+        "box-shadow"
+      ],
+      "cssRule": "box-shadow: var(--shadow-s)",
+      "responsive": false,
+      "description": "── Topbar shell ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-left",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "min-width"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-2)\nmin-width: 0",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-center",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "min-width"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-2)\nmin-width: 0",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-right",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "min-width"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-2)\nmin-width: 0",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-left",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "flex"
+      ],
+      "cssRule": "flex: 1",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-right",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "flex"
+      ],
+      "cssRule": "flex: 1",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-center",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "flex",
+        "justify-content"
+      ],
+      "cssRule": "flex: 2\njustify-content: center",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-right",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "justify-content"
+      ],
+      "cssRule": "justify-content: flex-end",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-brand",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "color",
+        "text-decoration",
+        "font-weight",
+        "white-space"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\ngap: var(--space-2)\ncolor: var(--color-text-base)\ntext-decoration: none\nfont-weight: var(--font-weight-bold)\nwhite-space: nowrap",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-title",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "color",
+        "white-space",
+        "overflow",
+        "text-overflow"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-l)\ncolor: var(--color-text-base)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-subtitle",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-divider",
+      "id": "#08-06-02",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "background"
+      ],
+      "cssRule": "width: 1px\nheight: 1.5rem\nbackground: var(--color-border)",
+      "responsive": false,
+      "description": "── Regions and content slots ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-search",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width"
+      ],
+      "cssRule": "width: 100%\nmax-width: 32rem",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-search input",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: 100%",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-action",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "min-width",
+        "height",
+        "padding",
+        "border",
+        "border-radius",
+        "background",
+        "color",
+        "text-decoration",
+        "cursor",
+        "transition"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 2.25rem\nheight: 2.25rem\npadding: 0 var(--space-2)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbackground: var(--color-bg)\ncolor: var(--color-text-base)\ntext-decoration: none\ncursor: pointer\ntransition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-action:hover",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--color-primary)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.06)",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-action:focus-visible",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 1px",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-badge",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "min-width",
+        "height",
+        "border-radius",
+        "background",
+        "color",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "padding"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 1.2rem\nheight: 1.2rem\nborder-radius: var(--radius-full)\nbackground: var(--color-error)\ncolor: var(--color-text-alt)\nfont-size: 0.68rem\nfont-weight: var(--font-weight-bold)\nline-height: 1\npadding: 0 0.25rem",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-avatar",
+      "id": "#08-06-03",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-radius",
+        "object-fit",
+        "display",
+        "align-items",
+        "justify-content",
+        "border",
+        "background",
+        "font-size",
+        "font-weight",
+        "color"
+      ],
+      "cssRule": "width: 2rem\nheight: 2rem\nborder-radius: var(--radius-full)\nobject-fit: cover\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nborder: var(--border-width-s) solid var(--color-border)\nbackground: var(--gray-100)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-bold)\ncolor: var(--gray-700)",
+      "responsive": false,
+      "description": "── Interactive elements ────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--color-primary)\nborder-color: rgba(255, 255, 255, 0.22)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-brand",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-title",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-subtitle",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-action",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-action",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: rgba(255, 255, 255, 0.35)\nbackground: rgba(255, 255, 255, 0.08)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-action:hover",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: rgba(255, 255, 255, 0.16)\nborder-color: rgba(255, 255, 255, 0.55)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-primary .topbar-divider",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(255, 255, 255, 0.32)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".topbar-compact",
+      "id": "#08-06-04",
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding"
+      ],
+      "cssRule": "min-height: 3rem\npadding: var(--space-1) var(--space-3)",
+      "responsive": false,
+      "description": "── Style variants ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-brand",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-100)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-title",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-100)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-subtitle",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-divider",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-action",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--gray-700)\nbackground: var(--gray-800)\ncolor: var(--gray-200)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-action:hover",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--color-primary)\ncolor: var(--color-primary-light)\nbackground: rgba(var(--color-primary-rgb), 0.18)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .topbar-avatar",
+      "id": "#08-06-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--gray-700)\nbackground: var(--gray-800)\ncolor: var(--gray-200)",
+      "responsive": false,
+      "description": "── Night mode ───────────────────────────────────────────────────────────"
+    }
+  ]
+}

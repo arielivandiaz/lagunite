@@ -1,0 +1,331 @@
+﻿<!doctype html>
+<html lang="en" class="night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kineticist | Class Schedule â€” Lagunite POC v2</title>
+    <link rel="stylesheet" href="./src/lagunite.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <style>
+      /* â”€â”€ Minimal POC skin (only what Lagunite can't express yet) â”€â”€ */
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+
+      /* Brand gradient text â€” no Lagunite utility for gradient-clip text */
+      .gradient-text {
+        background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Calendar: current-day pill */
+      .day-current-pill {
+        width: 2.75rem;
+        height: 2.75rem;
+        margin: 0.25rem auto 0;
+      }
+
+      /* Capsule override for .sidebar â€” neutralise full-height + straight border */
+      .sidebar.sidebar-capsule {
+        min-height: auto;
+        border-right: none;
+        border-radius: var(--radius-full);
+        border: 1px solid rgba(var(--color-primary-rgb), 0.18);
+        backdrop-filter: blur(12px);
+        align-self: flex-start;
+        top: 3.5rem; /* offset below topbar (min-height: 3.5rem) */
+      }
+
+      /* sidebar-compact hides all span â€” restore icon spans */
+      .sidebar-compact .sidebar-link .material-symbols-outlined {
+        display: inline;
+      }
+
+      /* Event card time label */
+      .event-time {
+        font-size: 0.68rem;
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950">
+
+    <!-- â•â•â•â•â•â•â• TOPBAR â•â•â•â•â•â•â• -->
+    <header class="topbar topbar-sticky topbar-elevated bg-gray-900 backdrop-blur-l z20">
+      <div class="topbar-left gap-s">
+        <a class="topbar-brand gradient-text font-xl letter-spacing-s" href="#">KINETICIST</a>
+        <nav class="row gap-xs topbar-hide-mobile">
+          <a class="tag tag-primary tag-solid" href="#">Classes</a>
+          <a class="tag tag-outline tag-clickable" href="#">My Reservations</a>
+          <a class="tag tag-outline tag-clickable" href="#">Membership</a>
+        </nav>
+      </div>
+      <div class="topbar-right">
+        <button class="topbar-action" type="button" aria-label="Toggle theme" onclick="document.documentElement.classList.toggle('night'); document.body.classList.toggle('bg-gray-950'); document.body.classList.toggle('bg');">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+        <button class="topbar-action" type="button" aria-label="Notifications">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+        <button class="topbar-action" type="button" aria-label="Account">
+          <span class="material-symbols-outlined">account_circle</span>
+        </button>
+        <img
+          class="avatar avatar-circle avatar-s"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjIEOgZ5RNL5xqkvWFDy6We_hAQDGMoE9lxsFPMZgib-Vm3i0GPOVStIzrEzuz-eBsR-Wb4GK5T9adc86R0NxG31u-9qHiiNcJHVhsHi6pSMpo_DXFZflmC1bLrdam5z9FmVtcXsuC5lJVMnSVyBg5P3j83ahYW-lwavoUkakxMDjWYB4hhappCTcg-CLuTpE93o6V4G56uNDUXR1ythfHHm5L7UCFu_va7dozk1YehOnQj-p94pLC2pPuZadVWQmcaWl90sW1I0"
+          alt="User profile avatar"
+        />
+      </div>
+    </header>
+
+    <!-- â•â•â•â•â•â•â• SHELL: sidebar + main â•â•â•â•â•â•â• -->
+    <div class="row ai-stretch container-fluid padd-v-s">
+
+      <!-- Sidebar: framework .sidebar + capsule override -->
+      <aside class="sidebar sidebar-compact sidebar-dark sidebar-capsule pos-sticky xd-none shadow marg-v-s">
+        <nav class="sidebar-nav">
+          <div class="sidebar-section col ai-c gap-xs">
+            <a class="sidebar-link active border-r-full" href="#" title="All Classes">
+              <span class="material-symbols-outlined">fitness_center</span>
+            </a>
+            <a class="sidebar-link border-r-full" href="#" title="Yoga">
+              <span class="material-symbols-outlined">self_improvement</span>
+            </a>
+            <a class="sidebar-link border-r-full" href="#" title="HIIT">
+              <span class="material-symbols-outlined">bolt</span>
+            </a>
+            <a class="sidebar-link border-r-full" href="#" title="Strength">
+              <span class="material-symbols-outlined">exercise</span>
+            </a>
+            <a class="sidebar-link border-r-full" href="#" title="Pilates">
+              <span class="material-symbols-outlined">accessibility_new</span>
+            </a>
+            <div class="separator-h-s"></div>
+            <a class="sidebar-link border-r-full" href="#" title="Calendar">
+              <span class="material-symbols-outlined">calendar_month</span>
+            </a>
+            <a class="sidebar-link border-r-full" href="#" title="Membership">
+              <span class="material-symbols-outlined">card_membership</span>
+            </a>
+          </div>
+        </nav>
+        <div class="sidebar-footer row jc-c">
+          <img
+            class="avatar avatar-circle avatar-s"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjIEOgZ5RNL5xqkvWFDy6We_hAQDGMoE9lxsFPMZgib-Vm3i0GPOVStIzrEzuz-eBsR-Wb4GK5T9adc86R0NxG31u-9qHiiNcJHVhsHi6pSMpo_DXFZflmC1bLrdam5z9FmVtcXsuC5lJVMnSVyBg5P3j83ahYW-lwavoUkakxMDjWYB4hhappCTcg-CLuTpE93o6V4G56uNDUXR1ythfHHm5L7UCFu_va7dozk1YehOnQj-p94pLC2pPuZadVWQmcaWl90sW1I0"
+            alt="User profile thumbnail"
+          />
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="flex-1 padd-h-s">
+
+        <!-- Schedule header -->
+        <section class="row jc-sb ai-fe marg-b">
+          <div>
+            <p class="gradient-text font-xs uppercase letter-spacing-l font-weight-3 marg-b-xs">Weekly Schedule</p>
+            <h1 class="font-xxl font-weight-3">September 11 â€“ 17</h1>
+          </div>
+          <div class="row gap-xs bg-gray-800 border-r-l padd-xs">
+            <button class="btn icon fit ghost border-r" type="button" aria-label="Previous week">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="btn size-s fit ghost border-r" type="button">Today</button>
+            <button class="btn icon fit ghost border-r" type="button" aria-label="Next week">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Calendar grid -->
+        <section class="grid gap-s xgrid-cols-2 dgrid-cols-7 marg-b-l">
+          <!-- Day headers -->
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Mon</span>
+            <span class="font-xl font-weight-3">11</span>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Tue</span>
+            <span class="font-xl font-weight-3">12</span>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-primary-light font-weight-3">Wed</span>
+            <div class="day-current-pill bgg-1 border-r-l flex-center shadow-color-primary">
+              <span class="font-xl font-weight-3 color-text-alt">13</span>
+            </div>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Thu</span>
+            <span class="font-xl font-weight-3">14</span>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Fri</span>
+            <span class="font-xl font-weight-3">15</span>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Sat</span>
+            <span class="font-xl font-weight-3">16</span>
+          </div>
+          <div class="ta-c padd-b-xs">
+            <span class="d-block font-xs uppercase letter-spacing color-gray-400 font-weight-3">Sun</span>
+            <span class="font-xl font-weight-3">17</span>
+          </div>
+
+          <!-- Monday -->
+          <div class="col gap-s">
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">07:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Power Yoga</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn2M1ZW7yBrXeBcZf6hMNVs3JOY-DcEBUbtgXvhfdyMHFeFZbEKGk4kkWnqIFGEacu7aYT-d4RtODBNiLPySzeG4rwLIbc5qx_EPmNJqDkhxdyh5fEvTpNB49yUUL8m6Oe-wIOEVOY_cuPJCaj6_bdTAgyX1ab3AXb7Et3hs7gg5ELJdapJCpc-VYyesIACsgtPYdgytfZkAbJdRtg8z5ZF6Z_p2C2ftfjdUFvrb95yCtlJ_hDuAFBWwTB8Y48MHhpX4YbGv1YFak" alt="Sarah J." />
+                  <span class="font-xs color-gray-400">Sarah J.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">12:30 PM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Full Body Strength</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvBsJeUohg-Issv842OVALD0kFe1VOJ6_-Is50LozIeAS4egvFS4eZX72lIXIZDWvqUkr8DkeA0ZAB5XJvNRT4HLkT_redIb5Qjcn2rs306BdJRUKaCP706gR4gV7ujTVsy0ApxG5TmVggSUr0Uzs6fP0aT_-BdO4AgofC5AiWfjdvM1slm8Q6a2Dbzs9fiCJNZTXTQjkmZPQyBkvYqywkxXzCjcpsElAYl3lgZlA0aJMN2gQXvAEwC_3L5vbKDsisrDr1pBXhTDY" alt="Mike T." />
+                  <span class="font-xs color-gray-400">Mike T.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Tuesday -->
+          <div class="col gap-s">
+            <article class="card border-r-full opacity-60">
+              <div class="card-body">
+                <p class="event-time color-gray-400 font-weight-3 uppercase marg-b-xs">08:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Morning HIIT</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUJApion9-7pALNd-uz--3vyTOkprz_izCOdC4gnRPavkNEfJwyB-ilgG9zl_y6a2KKjbeu5J1XY-V4q10tkNMbOqdbb7qO3B35DXsSzNB0UGy5wp26LtqodHCqOxjHmAdjM21Vj9TgqxsVt86WLI4bjn6yfrznxeuqTrkXR3JkfptUiLV2pgQWgz3I5VBWrF-uE0Rk_lzcC9d643MnrJettEZDFBh5Y0rXRxXVG-O6_vYW5RD1AX0VJrbyx1PvGRqvcvtFnOJo7M" alt="Elena R." />
+                  <span class="font-xs color-gray-400">Elena R.</span>
+                </div>
+                <button class="btn secondary size-s fit border-r-full" disabled>Booked</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Wednesday -->
+          <div class="col gap-s">
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">07:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Power Yoga</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa6nskPrudgIlmhWRrVnrBWFDjT3CDjdeqo97GfDM5HCOrATOrvgWJ810FytgfbfRG1t7su1_rpc5IHiAkSZ9VA3TO3qeDWh86083cKE_DPwSs9dqX--0dOt_rXQmPi5b2ERzR0DQvCd2pkLUOB7mmFWxDNkx_x_zbnMZWF-7dd5pzvgKlLvy-x4agbagzBzMraoDuQU7Q0oWHvq3ITNN1NTcpmVqBaTx1wYCrq4nC_3KBHnCkG1x1m9R9ZAfVVj1GdVqZAiK7SN0" alt="Sarah J." />
+                  <span class="font-xs color-gray-400">Sarah J.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">05:30 PM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Kettlebell Flow</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARwVI_EyhFYspIU0sSRgDnxllZaswlYoqDcmwDwTsTqGEG0b4ZVh7vw2bBeIVgK88ik0JyRldB1Plp4BjTgod3MhjRh2FtxzUUxIRFOYsE620PlZqFf7EdSyOeufdbXClspYeSbqY6tPl4naSXkZC95oc531pTd3N80b4RWlPByGuc2aww0cDlzf68Qsk_nijktBpZGSFeHsh5V76an5UFRN9fAcY1R15rDO-YNnd68EktiRumgaRzghRpr10dPY2Ih1U22hZQyFw" alt="David K." />
+                  <span class="font-xs color-gray-400">David K.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Thursday -->
+          <div class="col gap-s">
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">06:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Endurance HIIT</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Y930IQ_bxpvrvIdJgla5OYtJvmYU3WDzlBATi1GIRizB1ZShwBDVe24U3KY_JzGaCSTwnFaIVeo-04giE1PYkSE6UsYxAxEog3GYyRzM1Jn40lc_b4HeB7nonDKmRk_0e3ULXVx7ZZSuEIsAwgBwF4bADNhKIfRCT1VWDh7mJgrItpHIABrbNwQUeZlkfGWuNoGQK6wFWCcZyP6EB6cAlhJ_qjNPX9DeNY52Cypi6RH7BNfh-V1-KICcSj28S0lct-SyIEnFkBc" alt="Elena R." />
+                  <span class="font-xs color-gray-400">Elena R.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Friday -->
+          <div class="col gap-s">
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">10:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Vinyasa Flow</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJvsh1NPy_TOD6QkxtjkvY5ALxGyQVOF9hxNJOcZ3kP1xwMK9Pn2KkdER4A-_J5NNTkTyr1eqH_jeV5OwGkqKU9phlS20ohBvObwgtzZ-TDfRnGYQamI-Jp3Jw9GVoYU1sZiC419ZJ1nRzgHsuTvQXE8KiEUa_gAbNzFl_0QT8NlJA1oqC498MnnE_l9iO648QbRWWCMz1locBLvThq454v6xj3myewbfdbb47RhmQNu9yFpB8pmT1LOJjO-EbMUnwfV_-GVZkN-c" alt="Sarah J." />
+                  <span class="font-xs color-gray-400">Sarah J.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Saturday -->
+          <div class="col gap-s">
+            <article class="card border-r-full shadow-s">
+              <div class="card-body">
+                <p class="event-time color-primary-light font-weight-3 uppercase marg-b-xs">09:00 AM</p>
+                <h3 class="font-s font-weight-3 marg-b-s">Weekend Warrior</h3>
+                <div class="row ai-c gap-xs marg-b-s">
+                  <img class="avatar avatar-circle avatar-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLksZ1fl3IyTODKMAwbNVDOfAqaGiPp63nnWc-9vUC76DvbaqSqKV6T9QyC9ZEOHXRdsvB32pkPu3NSJRzIkck0bPsy4wsTqAsPKxZg9_dB1UkCHYfBu_LQSiA6A-9WWnEK8dB22tuxcAkL3-d0l8UeYIAdaz05tnyMoDh3kyUWBX7XGPgi1kQOyA0p-u60pGvu9sEKaf1vIEMljiEoUG0YPQrmV1oGL7Qre3qdJm60bsyWusx5jjVG-it1hLNQkxIXhG6YXuaZsE" alt="Mike T." />
+                  <span class="font-xs color-gray-400">Mike T.</span>
+                </div>
+                <button class="btn size-s fit border-r-full">Reserve</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Sunday -->
+          <div class="col gap-s">
+            <div class="empty-state empty-state-compact">
+              <span class="empty-state-icon">ðŸŒ™</span>
+              <h3 class="empty-state-title">Rest Day</h3>
+              <p class="empty-state-text">No classes scheduled.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bento promo section -->
+        <section class="grid gap-s xgrid-cols-1 dgrid-cols-12">
+          <article class="card card-elevated border-r-full dcol-span-8">
+            <div class="card-body">
+              <h2 class="marg-b-xs">New Workshop: Breathwork Mastery</h2>
+              <p class="card-text marg-b-s lh">
+                Join master instructor Marcus Chen for an intensive 2-hour session focusing on performance breathing and recovery techniques.
+              </p>
+              <button class="btn std border-r-full">Register Now</button>
+            </div>
+          </article>
+
+          <article class="card card-primary border-r-full dcol-span-4">
+            <div class="card-body">
+              <p class="font-xxl marg-b-xs">â˜…</p>
+              <h3 class="marg-b-xs">Premium Member Benefit</h3>
+              <p class="font-s lh">You have 2 unused guest passes for this month. Bring a friend to any class!</p>
+            </div>
+          </article>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- FAB -->
+    <button class="btn icon bg-1 border-r-full shadow pf-br" type="button" aria-label="Add" style="right:2rem;bottom:2rem;z-index:50;">
+      <span class="material-symbols-outlined font-xl">add</span>
+    </button>
+
+  </body>
+</html>

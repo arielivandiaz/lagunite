@@ -1,0 +1,609 @@
+{
+  "folder": "05-atoms",
+  "file": "09-tags.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 40,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag",
+      "id": "#05-09-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "min-height",
+        "padding",
+        "border-radius",
+        "border",
+        "background",
+        "color",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "white-space",
+        "text-decoration",
+        "user-select"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\ngap: var(--space-1)\nmin-height: 1.5rem\npadding: 0.15rem var(--space-2)\nborder-radius: var(--radius-s)\nborder: var(--border-width-s) solid var(--gray-300)\nbackground: var(--gray-100)\ncolor: var(--gray-800)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-medium)\nline-height: 1.2\nwhite-space: nowrap\ntext-decoration: none\nuser-select: none",
+      "responsive": false,
+      "description": "── Tag base ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-rounded",
+      "id": "#05-09-01",
+      "category": null,
+      "properties": [
+        "border-radius",
+        "padding-left",
+        "padding-right"
+      ],
+      "cssRule": "border-radius: var(--radius-full)\npadding-left: var(--space-3)\npadding-right: var(--space-3)",
+      "responsive": false,
+      "description": "── Tag base ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-xs",
+      "id": "#05-09-02",
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding",
+        "font-size"
+      ],
+      "cssRule": "min-height: 1.2rem\npadding: 0.05rem var(--space-1)\nfont-size: 0.64rem",
+      "responsive": false,
+      "description": "── Size modifiers ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-s",
+      "id": "#05-09-02",
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding",
+        "font-size"
+      ],
+      "cssRule": "min-height: 1.35rem\npadding: 0.1rem var(--space-2)\nfont-size: 0.7rem",
+      "responsive": false,
+      "description": "── Size modifiers ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-l",
+      "id": "#05-09-02",
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding",
+        "font-size"
+      ],
+      "cssRule": "min-height: 1.9rem\npadding: 0.25rem var(--space-3)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "── Size modifiers ───────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-primary",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-secondary",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--color-secondary)\nbackground: rgba(var(--color-secondary-rgb), 0.12)\ncolor: var(--color-secondary)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-success",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--green-500)\nbackground: rgba(16, 185, 129, 0.13)\ncolor: var(--green-700)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-info",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--blue-500)\nbackground: rgba(59, 130, 246, 0.13)\ncolor: var(--blue-700)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-warning",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--yellow-500)\nbackground: rgba(234, 179, 8, 0.2)\ncolor: var(--yellow-800)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-error",
+      "id": "#05-09-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--red-500)\nbackground: rgba(239, 68, 68, 0.13)\ncolor: var(--red-700)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-primary",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-secondary",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-secondary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-success",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--green-600)\ncolor: #fff",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-info",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--blue-600)\ncolor: #fff",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-warning",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--yellow-500)\ncolor: var(--gray-900)",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-solid.tag-error",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--red-600)\ncolor: #fff",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-outline",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-dot",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "position",
+        "padding-left"
+      ],
+      "cssRule": "position: relative\npadding-left: var(--space-4)",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-dot::before",
+      "id": "#05-09-04",
+      "category": null,
+      "properties": [
+        "content",
+        "position",
+        "left",
+        "top",
+        "width",
+        "height",
+        "border-radius",
+        "transform",
+        "background"
+      ],
+      "cssRule": "content: \"\"\nposition: absolute\nleft: var(--space-2)\ntop: 50%\nwidth: 0.35rem\nheight: 0.35rem\nborder-radius: 50%\ntransform: translateY(-50%)\nbackground: currentColor",
+      "responsive": false,
+      "description": "── Style variants and indicators ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-clickable",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "cursor",
+        "transition"
+      ],
+      "cssRule": "cursor: pointer\ntransition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-clickable:hover",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-clickable:focus-visible",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 1px",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-removable",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "padding-right"
+      ],
+      "cssRule": "padding-right: var(--space-1)",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-remove",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "border",
+        "background",
+        "color",
+        "width",
+        "height",
+        "border-radius",
+        "display",
+        "align-items",
+        "justify-content",
+        "cursor",
+        "padding",
+        "line-height"
+      ],
+      "cssRule": "border: none\nbackground: transparent\ncolor: inherit\nwidth: 1rem\nheight: 1rem\nborder-radius: var(--radius-full)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ncursor: pointer\npadding: 0\nline-height: 1",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-remove:hover",
+      "id": "#05-09-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(0, 0, 0, 0.12)",
+      "responsive": false,
+      "description": "── Interactive and removable tags ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tag-group",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-wrap",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\nflex-wrap: wrap\ngap: var(--space-2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background",
+        "color"
+      ],
+      "cssRule": "border-color: var(--gray-600)\nbackground: var(--gray-800)\ncolor: var(--gray-200)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-primary",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--color-primary-light)\ncolor: var(--color-primary-light)\nbackground: rgba(var(--color-primary-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-secondary",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--gray-400)\ncolor: var(--gray-200)\nbackground: rgba(255, 255, 255, 0.06)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-success",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: #22c55e\ncolor: #86efac\nbackground: rgba(34, 197, 94, 0.2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-info",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: #60a5fa\ncolor: #bfdbfe\nbackground: rgba(59, 130, 246, 0.2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-warning",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: #facc15\ncolor: #fde047\nbackground: rgba(234, 179, 8, 0.2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-error",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color",
+        "background"
+      ],
+      "cssRule": "border-color: #f87171\ncolor: #fca5a5\nbackground: rgba(239, 68, 68, 0.2)",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-primary",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-secondary",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-success",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-info",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-warning",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tag-solid.tag-error",
+      "id": "#05-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: #fff",
+      "responsive": false,
+      "description": "── Group and night mode ─────────────────────────────────────────────────"
+    }
+  ]
+}

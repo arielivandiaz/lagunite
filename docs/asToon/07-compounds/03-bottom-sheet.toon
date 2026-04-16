@@ -1,0 +1,186 @@
+folder: 07-compounds
+file: 03-bottom-sheet.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 20
+content[20]:
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-overlay
+    id: #07-03-01
+    category: null
+    properties[11]: position,inset,display,align-items,justify-content,padding,background,z-index,opacity,pointer-events,transition
+    cssRule: "position: fixed\ninset: 0\ndisplay: flex\nalign-items: flex-end\njustify-content: center\npadding: var(--space-4) var(--space-3) 0\nbackground: rgba(2, 6, 23, 0.52)\nz-index: 1010\nopacity: 0\npointer-events: none\ntransition: opacity 0.28s ease"
+    responsive: false
+    description: ── Bottom sheet overlay ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-overlay.open
+    id: #07-03-01
+    category: null
+    properties[2]: opacity,pointer-events
+    cssRule: "opacity: 1\npointer-events: auto"
+    responsive: false
+    description: ── Bottom sheet overlay ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet
+    id: #07-03-02
+    category: null
+    properties[12]: width,max-height,display,flex-direction,background,border,border-bottom,border-radius,box-shadow,transform,transition,overflow
+    cssRule: "width: min(100%, 42rem)\nmax-height: min(82vh, 42rem)\ndisplay: flex\nflex-direction: column\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-bottom: none\nborder-radius: var(--radius-xl) var(--radius-xl) 0 0\nbox-shadow: var(--shadow-xl)\ntransform: translateY(100%)\ntransition: transform 0.3s ease\noverflow: hidden"
+    responsive: false
+    description: ── Bottom sheet shell ──────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-overlay.open .bottom-sheet
+    id: #07-03-02
+    category: null
+    properties[1]: transform
+    cssRule: "transform: translateY(0)"
+    responsive: false
+    description: ── Bottom sheet shell ──────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-handle
+    id: #07-03-02
+    category: null
+    properties[6]: width,height,margin,border-radius,background,flex-shrink
+    cssRule: "width: 3rem\nheight: 0.3125rem\nmargin: var(--space-3) auto var(--space-1)\nborder-radius: var(--radius-full)\nbackground: var(--gray-300)\nflex-shrink: 0"
+    responsive: false
+    description: ── Bottom sheet shell ──────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-header
+    id: #07-03-03
+    category: null
+    properties[6]: display,align-items,justify-content,gap,padding,border-bottom
+    cssRule: "display: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\npadding: var(--space-3) var(--space-4)\nborder-bottom: var(--border-width-s) solid var(--color-border)"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-title
+    id: #07-03-03
+    category: null
+    properties[3]: margin,font-size,font-weight
+    cssRule: "margin: 0\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-close
+    id: #07-03-03
+    category: null
+    properties[13]: display,align-items,justify-content,width,height,padding,background,border,border-radius,color,cursor,font-size,transition
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 2.25rem\nheight: 2.25rem\npadding: 0\nbackground: transparent\nborder: none\nborder-radius: var(--radius-full)\ncolor: var(--gray-500)\ncursor: pointer\nfont-size: 1.25rem\ntransition: background-color 0.2s ease, color 0.2s ease"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".bottom-sheet-close:hover"
+    id: #07-03-03
+    category: null
+    properties[2]: background,color
+    cssRule: "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".bottom-sheet-close:focus-visible"
+    id: #07-03-03
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-body
+    id: #07-03-03
+    category: null
+    properties[2]: padding,overflow-y
+    cssRule: "padding: var(--space-4)\noverflow-y: auto"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-footer
+    id: #07-03-03
+    category: null
+    properties[5]: display,justify-content,gap,padding,border-top
+    cssRule: "display: flex\njustify-content: flex-end\ngap: var(--space-2)\npadding: var(--space-3) var(--space-4) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)"
+    responsive: false
+    description: ── Regions ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-snap-s
+    id: #07-03-04
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 40vh"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-snap-m
+    id: #07-03-04
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 62vh"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-snap-l
+    id: #07-03-04
+    category: null
+    properties[1]: max-height
+    cssRule: "max-height: 82vh"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .bottom-sheet-full
+    id: #07-03-04
+    category: null
+    properties[4]: width,max-width,max-height,border-radius
+    cssRule: "width: 100%\nmax-width: 100%\nmax-height: 100vh\nborder-radius: 0"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .bottom-sheet
+    id: #07-03-04
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .bottom-sheet-handle
+    id: #07-03-04
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--gray-600)"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .bottom-sheet-close
+    id: #07-03-04
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-300)"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night .bottom-sheet-close:hover"
+    id: #07-03-04
+    category: null
+    properties[2]: color,background
+    cssRule: "color: var(--color-text-alt)\nbackground: rgba(255, 255, 255, 0.08)"
+    responsive: false
+    description: ── Snap sizes ──────────────────────────────────────────────────────────

@@ -1,0 +1,480 @@
+{
+  "folder": "08-organisms",
+  "file": "04-dashboard-shell.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 30,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":root",
+      "id": "#08-04-01",
+      "category": null,
+      "properties": [
+        "--dashboard-nav-h",
+        "--dashboard-sidebar-w"
+      ],
+      "cssRule": "--dashboard-nav-h: 58px\n--dashboard-sidebar-w: 260px",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-navbar",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "position",
+        "top",
+        "z-index",
+        "background",
+        "border-bottom"
+      ],
+      "cssRule": "position: sticky\ntop: 0\nz-index: 220\nbackground: var(--color-bg)\nborder-bottom: var(--border-width-s) solid var(--color-border)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-navbar-inner",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "height",
+        "display",
+        "align-items",
+        "justify-content",
+        "gap",
+        "padding"
+      ],
+      "cssRule": "height: var(--dashboard-nav-h)\ndisplay: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\npadding: 0 var(--space-4)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-navbar-left",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "min-width"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-3)\nmin-width: 0",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-brand",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "font-size",
+        "font-weight",
+        "color",
+        "text-decoration",
+        "letter-spacing"
+      ],
+      "cssRule": "font-size: var(--font-size-base)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-text-base)\ntext-decoration: none\nletter-spacing: 0.2px",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-title",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "color",
+        "font-size",
+        "white-space",
+        "overflow",
+        "text-overflow"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nfont-size: var(--font-size-s)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-top-nav",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-3)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-top-nav a",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "text-decoration",
+        "color",
+        "font-size"
+      ],
+      "cssRule": "text-decoration: none\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-top-nav a:hover",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-base)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-menu-toggle",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "justify-content",
+        "gap",
+        "border",
+        "background",
+        "border-radius",
+        "width",
+        "height",
+        "cursor",
+        "padding"
+      ],
+      "cssRule": "display: inline-flex\nflex-direction: column\njustify-content: center\ngap: 4px\nborder: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg-alt)\nborder-radius: var(--radius-s)\nwidth: 34px\nheight: 34px\ncursor: pointer\npadding: 0 var(--space-2)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-menu-toggle span",
+      "id": "#08-04-02",
+      "category": null,
+      "properties": [
+        "height",
+        "width",
+        "background",
+        "border-radius"
+      ],
+      "cssRule": "height: 2px\nwidth: 100%\nbackground: var(--gray-700)\nborder-radius: 2px",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-shell",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "display",
+        "min-height",
+        "background"
+      ],
+      "cssRule": "display: flex\nmin-height: calc(100vh - var(--dashboard-nav-h))\nbackground: linear-gradient(180deg, var(--gray-50) 0%, var(--color-bg) 60%)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "width",
+        "border-right",
+        "background",
+        "flex-shrink",
+        "display",
+        "flex-direction",
+        "gap",
+        "padding",
+        "overflow-y",
+        "transition"
+      ],
+      "cssRule": "width: var(--dashboard-sidebar-w)\nborder-right: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg)\nflex-shrink: 0\ndisplay: flex\nflex-direction: column\ngap: var(--space-4)\npadding: var(--space-4)\noverflow-y: auto\ntransition: transform 0.2s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-header h2",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size"
+      ],
+      "cssRule": "margin: 2px 0 0\nfont-size: var(--font-size-l)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-kicker",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "margin",
+        "text-transform",
+        "letter-spacing",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin: 0\ntext-transform: uppercase\nletter-spacing: 0.08em\nfont-size: var(--font-size-xs)\ncolor: var(--gray-500)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-list",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "margin",
+        "padding",
+        "list-style",
+        "display",
+        "gap"
+      ],
+      "cssRule": "margin: 0\npadding: 0\nlist-style: none\ndisplay: grid\ngap: var(--space-1)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-link",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "display",
+        "border-radius",
+        "padding",
+        "text-decoration",
+        "color",
+        "transition"
+      ],
+      "cssRule": "display: block\nborder-radius: var(--radius-m)\npadding: var(--space-2) var(--space-3)\ntext-decoration: none\ncolor: var(--gray-700)\ntransition:\r\n    background 0.15s ease,\r\n    color 0.15s ease",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-link:hover",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--gray-100)\ncolor: var(--gray-900)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-link.active",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--gray-900)\ncolor: var(--gray-50)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-sidebar-footer",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "margin-top",
+        "color"
+      ],
+      "cssRule": "margin-top: auto\ncolor: var(--gray-500)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-main",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width",
+        "padding"
+      ],
+      "cssRule": "flex: 1\nmin-width: 0\npadding: var(--space-5)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dashboard-overlay",
+      "id": "#08-04-03",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: none",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-navbar",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-sidebar",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-brand",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-200)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-sidebar-link",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-200)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-title",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-200)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-top-nav a",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-200)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-sidebar-link:hover",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(255, 255, 255, 0.08)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dashboard-sidebar-link.active",
+      "id": "#08-04-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--dashboard-nav-h",
+      "value": "58px"
+    },
+    {
+      "property": "--dashboard-sidebar-w",
+      "value": "260px"
+    }
+  ]
+}

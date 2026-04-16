@@ -1,0 +1,209 @@
+/* ==========
+   06-molecules / 11-skeleton.css
+   Skeleton loading primitives and composed placeholders for common UI patterns.
+   ========= */
+
+/* @ID: #06-11-01 */
+/* ── Base primitives ───────────────────────────────────────────────────── */
+
+.skeleton {
+  --skeleton-bg: var(--gray-200);
+  --skeleton-bg-alt: var(--gray-100);
+  --skeleton-radius: var(--radius-s);
+  display: block;
+  background: linear-gradient(180deg, var(--skeleton-bg), var(--skeleton-bg-alt));
+  border-radius: var(--skeleton-radius);
+  animation: skeleton-pulse 1.55s ease-in-out infinite;
+}
+
+.skeleton-line {
+  display: block;
+  width: 100%;
+  height: 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-block {
+  display: block;
+  width: 100%;
+  min-height: var(--space-16);
+}
+
+.skeleton-circle {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.skeleton-text-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.skeleton-text-group .skeleton-line:nth-child(1) {
+  width: 96%;
+}
+
+.skeleton-text-group .skeleton-line:nth-child(2) {
+  width: 88%;
+}
+
+.skeleton-text-group .skeleton-line:nth-child(3) {
+  width: 64%;
+}
+
+/* @ID: #06-11-02 */
+/* ── UI patterns ───────────────────────────────────────────────────────── */
+
+.skeleton-button {
+  width: 7.5rem;
+  height: 2.25rem;
+  border-radius: var(--radius-m);
+}
+
+.skeleton-input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: var(--radius-m);
+}
+
+.skeleton-chip {
+  width: 4.5rem;
+  height: 1.625rem;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-badge {
+  width: 3.25rem;
+  height: 1.125rem;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+}
+
+/* @ID: #06-11-03 */
+/* ── Content patterns ──────────────────────────────────────────────────── */
+
+.skeleton-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-m);
+  background: var(--color-bg);
+}
+
+.skeleton-list-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+}
+
+.skeleton-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr 0.6fr;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-2) 0;
+}
+
+.skeleton-media-object {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.skeleton-article {
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* @ID: #06-11-04 */
+/* ── Layout and states ─────────────────────────────────────────────────── */
+
+.skeleton-inline {
+  display: inline-block;
+}
+
+.skeleton-full-width {
+  width: 100%;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-3);
+}
+
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.skeleton-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: skeleton-shimmer 1.45s linear infinite;
+}
+
+/* @ID: #06-11-05 */
+/* ── Motion and night mode ─────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton,
+  .skeleton-shimmer::after {
+    animation: none;
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.88;
+  }
+
+  50% {
+    opacity: 0.58;
+  }
+}
+
+@keyframes skeleton-shimmer {
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.night .skeleton {
+  --skeleton-bg: var(--gray-700);
+  --skeleton-bg-alt: var(--gray-600);
+}
+
+.night .skeleton-card {
+  background: var(--gray-900);
+  border-color: var(--gray-700);
+}
+
+.night .skeleton-shimmer::after {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.16) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

@@ -1,0 +1,248 @@
+/* ==========
+   05-atoms / 09-tags.css
+   Tag atom: lightweight taxonomy label (category, topic, state).
+   Unlike chips, tags are visually calmer and classification-oriented.
+   ========== */
+
+/* @ID: #05-09-01 */
+/* ── Tag base ──────────────────────────────────────────────────────────── */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 1.5rem;
+  padding: 0.15rem var(--space-2);
+  border-radius: var(--radius-s);
+  border: var(--border-width-s) solid var(--gray-300);
+  background: var(--gray-100);
+  color: var(--gray-800);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  user-select: none;
+}
+
+.tag-rounded {
+  border-radius: var(--radius-full);
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+/* @ID: #05-09-02 */
+/* ── Size modifiers ─────────────────────────────────────────────────────── */
+
+.tag-xs {
+  min-height: 1.2rem;
+  padding: 0.05rem var(--space-1);
+  font-size: 0.64rem;
+}
+
+.tag-s {
+  min-height: 1.35rem;
+  padding: 0.1rem var(--space-2);
+  font-size: 0.7rem;
+}
+
+.tag-l {
+  min-height: 1.9rem;
+  padding: 0.25rem var(--space-3);
+  font-size: var(--font-size-s);
+}
+
+/* @ID: #05-09-03 */
+/* ── Semantic variants ──────────────────────────────────────────────────── */
+
+.tag-primary {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.12);
+  color: var(--color-primary);
+}
+
+.tag-secondary {
+  border-color: var(--color-secondary);
+  background: rgba(var(--color-secondary-rgb), 0.12);
+  color: var(--color-secondary);
+}
+
+.tag-success {
+  border-color: var(--green-500);
+  background: rgba(16, 185, 129, 0.13);
+  color: var(--green-700);
+}
+
+.tag-info {
+  border-color: var(--blue-500);
+  background: rgba(59, 130, 246, 0.13);
+  color: var(--blue-700);
+}
+
+.tag-warning {
+  border-color: var(--yellow-500);
+  background: rgba(234, 179, 8, 0.2);
+  color: var(--yellow-800);
+}
+
+.tag-error {
+  border-color: var(--red-500);
+  background: rgba(239, 68, 68, 0.13);
+  color: var(--red-700);
+}
+
+/* @ID: #05-09-04 */
+/* ── Style variants and indicators ──────────────────────────────────────── */
+
+.tag-solid.tag-primary {
+  background: var(--color-primary);
+  color: var(--color-text-alt);
+}
+
+.tag-solid.tag-secondary {
+  background: var(--color-secondary);
+  color: var(--color-text-alt);
+}
+
+.tag-solid.tag-success {
+  background: var(--green-600);
+  color: #fff;
+}
+
+.tag-solid.tag-info {
+  background: var(--blue-600);
+  color: #fff;
+}
+
+.tag-solid.tag-warning {
+  background: var(--yellow-500);
+  color: var(--gray-900);
+}
+
+.tag-solid.tag-error {
+  background: var(--red-600);
+  color: #fff;
+}
+
+.tag-outline {
+  background: transparent;
+}
+
+.tag-dot {
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.tag-dot::before {
+  content: "";
+  position: absolute;
+  left: var(--space-2);
+  top: 50%;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: currentColor;
+}
+
+/* @ID: #05-09-05 */
+/* ── Interactive and removable tags ─────────────────────────────────────── */
+
+.tag-clickable {
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.tag-clickable:hover {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.12);
+  color: var(--color-primary);
+}
+
+.tag-clickable:focus-visible {
+  outline: var(--border-width-md) solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.tag-removable {
+  padding-right: var(--space-1);
+}
+
+.tag-remove {
+  border: none;
+  background: transparent;
+  color: inherit;
+  width: 1rem;
+  height: 1rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.tag-remove:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* @ID: #05-09-06 */
+/* ── Group and night mode ───────────────────────────────────────────────── */
+
+.tag-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.night .tag {
+  border-color: var(--gray-600);
+  background: var(--gray-800);
+  color: var(--gray-200);
+}
+
+.night .tag-primary {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+  background: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.night .tag-secondary {
+  border-color: var(--gray-400);
+  color: var(--gray-200);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.night .tag-success {
+  border-color: #22c55e;
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.night .tag-info {
+  border-color: #60a5fa;
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.night .tag-warning {
+  border-color: #facc15;
+  color: #fde047;
+  background: rgba(234, 179, 8, 0.2);
+}
+
+.night .tag-error {
+  border-color: #f87171;
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.night .tag-solid.tag-primary,
+.night .tag-solid.tag-secondary,
+.night .tag-solid.tag-success,
+.night .tag-solid.tag-info,
+.night .tag-solid.tag-warning,
+.night .tag-solid.tag-error {
+  color: #fff;
+}

@@ -1,0 +1,303 @@
+folder: 06-molecules
+file: 02-alerts.css
+lastUpdated: 2026-04-16
+hasResponsive: true
+totalSelectors: 33
+content[33]:
+  - type: selector
+    selectorType: class
+    selector: .alert
+    id: #06-02-01
+    category: null
+    properties[5]: padding,border,border-radius,font-size,line-height
+    cssRule: "padding: var(--space-3) var(--space-4)\nborder: var(--border-width-s) solid transparent\nborder-radius: var(--radius-m)\nfont-size: var(--font-size-base)\nline-height: 1.5"
+    responsive: false
+    description: ── Alert base ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-success
+    id: #06-02-02
+    category: null
+    properties[3]: background-color,border-color,color
+    cssRule: "background-color: rgba(var(--color-success-rgb), 0.1)\nborder-color: var(--color-success)\ncolor: var(--color-success)"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-warning
+    id: #06-02-02
+    category: null
+    properties[3]: background-color,border-color,color
+    cssRule: "background-color: rgba(var(--color-warning-rgb), 0.1)\nborder-color: var(--color-warning)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-error
+    id: #06-02-02
+    category: null
+    properties[3]: background-color,border-color,color
+    cssRule: "background-color: rgba(var(--color-error-rgb), 0.1)\nborder-color: var(--color-error)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-info
+    id: #06-02-02
+    category: null
+    properties[3]: background-color,border-color,color
+    cssRule: "background-color: rgba(var(--color-primary-rgb), 0.1)\nborder-color: var(--color-primary)\ncolor: var(--color-text-base)"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-dismissible
+    id: #06-02-03
+    category: null
+    properties[2]: position,padding-right
+    cssRule: "position: relative\npadding-right: var(--space-10)"
+    responsive: false
+    description: ── Dismissible alert + close ───────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-close
+    id: #06-02-03
+    category: null
+    properties[12]: position,top,right,padding,border,background,font,line-height,cursor,opacity,transform,transition
+    cssRule: "position: absolute\ntop: 50%\nright: var(--space-3)\npadding: 0\nborder: none\nbackground: none\nfont: inherit\nline-height: 1\ncursor: pointer\nopacity: 0.7\ntransform: translateY(-50%)\ntransition: opacity 0.2s ease"
+    responsive: false
+    description: ── Dismissible alert + close ───────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".alert-close:hover"
+    id: #06-02-03
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 1"
+    responsive: false
+    description: ── Dismissible alert + close ───────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .toast
+    id: #06-02-04
+    category: null
+    properties[11]: position,right,bottom,z-index,min-width,max-width,padding,background,border,border-radius,box-shadow
+    cssRule: "position: fixed\nright: var(--space-4)\nbottom: var(--space-4)\nz-index: 1000\nmin-width: 18rem\nmax-width: min(24rem, calc(100vw - var(--space-8)))\npadding: var(--space-3) var(--space-4)\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-l)"
+    responsive: true
+    description: ── Toast ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar
+    id: #06-02-05
+    category: null
+    properties[18]: position,left,bottom,z-index,display,align-items,justify-content,gap,width,padding,color,background,border-radius,box-shadow,opacity,pointer-events,transform,transition
+    cssRule: "position: fixed\nleft: 50%\nbottom: var(--space-4)\nz-index: 1005\ndisplay: inline-flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\nwidth: min(calc(100vw - var(--space-6)), 34rem)\npadding: var(--space-3) var(--space-4)\ncolor: var(--gray-50)\nbackground: var(--gray-900)\nborder-radius: var(--radius-full)\nbox-shadow: var(--shadow-l)\nopacity: 0\npointer-events: none\ntransform: translateX(-50%) translateY(calc(100% + var(--space-4)))\ntransition:\n    opacity 0.24s ease,\n    transform 0.24s ease"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar.open
+    id: #06-02-05
+    category: null
+    properties[3]: opacity,pointer-events,transform
+    cssRule: "opacity: 1\npointer-events: auto\ntransform: translateX(-50%) translateY(0)"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-message
+    id: #06-02-05
+    category: null
+    properties[2]: flex,min-width
+    cssRule: "flex: 1\nmin-width: 0"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-action
+    id: #06-02-05
+    category: null
+    properties[9]: display,align-items,justify-content,padding,background,border,color,font,cursor
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\npadding: 0\nbackground: none\nborder: none\ncolor: inherit\nfont: inherit\ncursor: pointer"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-close
+    id: #06-02-05
+    category: null
+    properties[9]: display,align-items,justify-content,padding,background,border,color,font,cursor
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\npadding: 0\nbackground: none\nborder: none\ncolor: inherit\nfont: inherit\ncursor: pointer"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-action
+    id: #06-02-05
+    category: null
+    properties[2]: font-weight,white-space
+    cssRule: "font-weight: var(--font-weight-bold)\nwhite-space: nowrap"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".snackbar-action:hover"
+    id: #06-02-05
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 0.82"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".snackbar-close:hover"
+    id: #06-02-05
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 0.82"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-close
+    id: #06-02-05
+    category: null
+    properties[5]: width,height,border-radius,font-size,line-height
+    cssRule: "width: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nfont-size: 1rem\nline-height: 1"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".snackbar-close:focus-visible"
+    id: #06-02-05
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: var(--border-width-md) solid currentcolor\noutline-offset: 2px"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".snackbar-action:focus-visible"
+    id: #06-02-05
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: var(--border-width-md) solid currentcolor\noutline-offset: 2px"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-success
+    id: #06-02-05
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-success)"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-warning
+    id: #06-02-05
+    category: null
+    properties[2]: color,background
+    cssRule: "color: var(--gray-950)\nbackground: var(--color-warning)"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-error
+    id: #06-02-05
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-error)"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .snackbar-info
+    id: #06-02-05
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-primary)"
+    responsive: false
+    description: ── Snackbar ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .alert-warning
+    id: #06-02-06
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .alert-error
+    id: #06-02-06
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .alert-info
+    id: #06-02-06
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .alert-close
+    id: #06-02-06
+    category: null
+    properties[1]: color
+    cssRule: "color: inherit"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .snackbar
+    id: #06-02-06
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--gray-100)\ncolor: var(--gray-950)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .snackbar-success
+    id: #06-02-06
+    category: null
+    properties[1]: background
+    cssRule: "background: #8ee7a6"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .snackbar-warning
+    id: #06-02-06
+    category: null
+    properties[1]: background
+    cssRule: "background: #ffd45b"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .snackbar-error
+    id: #06-02-06
+    category: null
+    properties[1]: background
+    cssRule: "background: #ff8b8b"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .snackbar-info
+    id: #06-02-06
+    category: null
+    properties[1]: background
+    cssRule: "background: #8cb8ff"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────

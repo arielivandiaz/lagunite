@@ -73,9 +73,73 @@ Compounds are self-contained UI blocks built from tokens + atoms + layout. **Use
 ### Night
 `.night .modal` uses dark surface colors.
 
+## Bottom sheet — `03-bottom-sheet.css`
+
+### Structure
+
+```text
+.bottom-sheet-overlay.open
+  └── .bottom-sheet.bottom-sheet-snap-{s|m|l}|.bottom-sheet-full
+        ├── .bottom-sheet-handle
+        ├── .bottom-sheet-header
+        │     ├── .bottom-sheet-title
+        │     └── button.bottom-sheet-close
+        ├── .bottom-sheet-body
+        └── .bottom-sheet-footer
+```
+
+| Class | Role |
+| --- | --- |
+| `.bottom-sheet-overlay` | Full-screen dimmed overlay anchored to the bottom; hidden until `.open` |
+| `.bottom-sheet` | Sliding panel shell |
+| `.bottom-sheet-handle` | Small drag affordance bar at the top |
+| `.bottom-sheet-header` | Title row + close |
+| `.bottom-sheet-title` | Title text |
+| `.bottom-sheet-close` | Close button |
+| `.bottom-sheet-body` | Scrollable content region |
+| `.bottom-sheet-footer` | Action row |
+
+### Sizes
+`.bottom-sheet-snap-s` `.bottom-sheet-snap-m` `.bottom-sheet-snap-l` `.bottom-sheet-full`.
+
+### Night
+`.night .bottom-sheet` adjusts surface, handle, and close button colors.
+
+## Empty state — `04-empty-state.css`
+
+### Structure
+
+```text
+.empty-state(.empty-state-compact|.empty-state-hero|.empty-state-horizontal?)
+  ├── .empty-state-icon or .empty-state-illustration
+  ├── .empty-state-title
+  ├── .empty-state-text
+  ├── .empty-state-actions
+  └── .empty-state-meta (optional)
+```
+
+| Class | Role |
+| --- | --- |
+| `.empty-state` | Base empty-state shell with centered layout and dashed border |
+| `.empty-state-icon` | Circular icon surface |
+| `.empty-state-illustration` | Optional image/illustration block |
+| `.empty-state-title` | Main heading |
+| `.empty-state-text` | Supporting description |
+| `.empty-state-actions` | CTA row (buttons/links) |
+| `.empty-state-meta` | Optional helper note |
+
+### Variants
+`.empty-state-compact` `.empty-state-hero` `.empty-state-horizontal`
+
+### Semantic styles
+`.empty-state-success` `.empty-state-warning` `.empty-state-error` `.empty-state-info`
+
+### Night
+`.night .empty-state` adjusts border, text, and icon surfaces for dark backgrounds.
+
 ## Behavior note
 
-Modal open state and overlay clicks are **not** defined in CSS alone; wire `.open` with JS as needed.
+Modal and bottom-sheet open state plus overlay clicks are **not** defined in CSS alone; wire `.open` with JS as needed.
 
 ## Related skills
 

@@ -1,0 +1,69 @@
+folder: 06-molecules
+file: 04-tooltip.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 7
+content[7]:
+  - type: selector
+    selectorType: complex
+    selector: "[data-tooltip]"
+    id: #06-04-01
+    category: null
+    properties[1]: position
+    cssRule: "position: relative"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip]::after"
+    id: #06-04-01
+    category: null
+    properties[16]: content,position,bottom,left,z-index,padding,font-size,line-height,color,white-space,pointer-events,background,border-radius,opacity,transform,transition
+    cssRule: "content: attr(data-tooltip)\nposition: absolute\nbottom: calc(100% + var(--space-2))\nleft: 50%\nz-index: 200\npadding: var(--space-1) var(--space-2)\nfont-size: var(--font-size-xs)\nline-height: 1.35\ncolor: var(--color-almost-white)\nwhite-space: nowrap\npointer-events: none\nbackground: var(--color-almost-black)\nborder-radius: var(--radius-s)\nopacity: 0\ntransform: translateX(-50%)\ntransition: opacity 0.2s ease"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo-hover
+    selector: "[data-tooltip]:hover::after"
+    id: #06-04-01
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 1"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip].tooltip-bottom::after"
+    id: #06-04-02
+    category: null
+    properties[3]: top,bottom,transform
+    cssRule: "top: calc(100% + var(--space-2))\nbottom: auto\ntransform: translateX(-50%)"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip].tooltip-left::after"
+    id: #06-04-02
+    category: null
+    properties[2]: inset,transform
+    cssRule: "inset: 50% calc(100% + var(--space-2)) auto auto\ntransform: translateY(-50%)"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip].tooltip-right::after"
+    id: #06-04-02
+    category: null
+    properties[4]: top,bottom,left,transform
+    cssRule: "top: 50%\nbottom: auto\nleft: calc(100% + var(--space-2))\ntransform: translateY(-50%)"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night [data-tooltip]::after"
+    id: #06-04-03
+    category: null
+    properties[2]: color,background
+    cssRule: "color: var(--color-almost-black)\nbackground: var(--color-almost-white)"
+    responsive: false
+    description: ── Night mode (invert bubble) ───────────────────────────────────────────

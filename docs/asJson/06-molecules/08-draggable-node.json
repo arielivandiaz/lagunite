@@ -1,0 +1,466 @@
+{
+  "folder": "06-molecules",
+  "file": "08-draggable-node.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 30,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "--dnd-node-accent",
+        "position",
+        "display",
+        "flex-direction",
+        "width",
+        "min-height",
+        "border",
+        "border-radius",
+        "background",
+        "box-shadow",
+        "user-select",
+        "touch-action",
+        "cursor",
+        "overflow",
+        "transition"
+      ],
+      "cssRule": "/* Accent token — override inline or via modifier class */\n--dnd-node-accent: var(--color-primary)\n/* Layout */\nposition: absolute\ndisplay: flex\nflex-direction: column\n/* Sizing */\nwidth: var(--space-44)\nmin-height: var(--space-24)\n/* Appearance */\nborder: 1px solid rgba(0, 0, 0, 0.08)\nborder-radius: var(--radius-l)\nbackground: #fff\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.05),\n    0 4px 14px rgba(0, 0, 0, 0.09)\n/* Interaction */\nuser-select: none\ntouch-action: none\ncursor: grab\noverflow: visible\ntransition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease",
+      "responsive": false,
+      "description": "Draggable Node Component\n   For use within .dnd-canvas or similar spatial containers.\n   Supports pointer events, grid snap, and z-index management.\n   Use --dnd-node-accent to set per-node color (defaults to primary)."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "border-color: rgba(var(--color-primary-rgb), 0.35)\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.05),\n    0 6px 20px rgba(var(--color-primary-rgb), 0.13)",
+      "responsive": false,
+      "description": "Draggable Node Component\n   For use within .dnd-canvas or similar spatial containers.\n   Supports pointer events, grid snap, and z-index management.\n   Use --dnd-node-accent to set per-node color (defaults to primary)."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node.is-dragging",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "cursor",
+        "border-color",
+        "box-shadow",
+        "transform"
+      ],
+      "cssRule": "cursor: grabbing\nborder-color: var(--dnd-node-accent)\nbox-shadow:\n    0 10px 32px rgba(0, 0, 0, 0.14),\n    0 3px 10px rgba(0, 0, 0, 0.08)\ntransform: scale(1.02)",
+      "responsive": false,
+      "description": "Draggable Node Component\n   For use within .dnd-canvas or similar spatial containers.\n   Supports pointer events, grid snap, and z-index management.\n   Use --dnd-node-accent to set per-node color (defaults to primary)."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node-header",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "font-size",
+        "font-weight",
+        "text-transform",
+        "letter-spacing",
+        "color",
+        "border-left",
+        "padding",
+        "border-bottom"
+      ],
+      "cssRule": "/* Typography */\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-bold)\ntext-transform: uppercase\nletter-spacing: 0.06em\n/* Appearance */\ncolor: var(--dnd-node-accent)\nborder-left: 3px solid var(--dnd-node-accent)\n/* Spacing */\npadding: var(--space-2) var(--space-3)\nborder-bottom: 1px solid rgba(0, 0, 0, 0.06)",
+      "responsive": false,
+      "description": "── Node header ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node-body",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "font-size",
+        "line-height",
+        "color",
+        "padding",
+        "flex"
+      ],
+      "cssRule": "/* Typography */\nfont-size: var(--font-size-s)\nline-height: 1.5\n/* Appearance */\ncolor: var(--color-text-base)\n/* Spacing */\npadding: var(--space-3)\nflex: 1",
+      "responsive": false,
+      "description": "── Node body ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dnd-node-status",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "font-size",
+        "color",
+        "padding"
+      ],
+      "cssRule": "/* Typography */\nfont-size: var(--font-size-xs)\ncolor: var(--gray-400)\n/* Spacing */\npadding: var(--space-1) var(--space-3) var(--space-2)",
+      "responsive": false,
+      "description": "── Node footer / status ──────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "background",
+        "border",
+        "border-radius",
+        "cursor",
+        "z-index",
+        "box-shadow",
+        "transition",
+        "touch-action"
+      ],
+      "cssRule": "position: absolute\nwidth: 14px\nheight: 14px\nbackground: #fff\nborder: 2px solid var(--dnd-node-accent)\nborder-radius: 50%\ncursor: crosshair\nz-index: 20\nbox-shadow: 0 1px 4px rgba(0, 0, 0, 0.14)\ntransition: background 0.15s, transform 0.15s, box-shadow 0.15s\ntouch-action: none",
+      "responsive": false,
+      "description": "── Connection handles ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--dnd-node-accent)\nbox-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4)",
+      "responsive": false,
+      "description": "── Connection handles ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle.active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--dnd-node-accent)\nbox-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.4)",
+      "responsive": false,
+      "description": "── Connection handles ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"top\"]",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "top",
+        "left",
+        "transform"
+      ],
+      "cssRule": "top: -7px\nleft: 50%\ntransform: translateX(-50%)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"right\"]",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "top",
+        "right",
+        "transform"
+      ],
+      "cssRule": "top: 50%\nright: -7px\ntransform: translateY(-50%)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"bottom\"]",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "bottom",
+        "left",
+        "transform"
+      ],
+      "cssRule": "bottom: -7px\nleft: 50%\ntransform: translateX(-50%)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"left\"]",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "top",
+        "left",
+        "transform"
+      ],
+      "cssRule": "top: 50%\nleft: -7px\ntransform: translateY(-50%)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"top\"]:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateX(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"top\"].active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateX(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"right\"]:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"right\"].active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"bottom\"]:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateX(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"bottom\"].active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateX(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"left\"]:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".node-handle[data-port=\"left\"].active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(-50%) scale(1.35)",
+      "responsive": false,
+      "description": "Handle positions — centered on each edge (offset = half of 14px = 7px)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--gray-800)\nborder-color: rgba(255, 255, 255, 0.07)\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.4),\n    0 4px 14px rgba(0, 0, 0, 0.45)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "border-color: rgba(94, 154, 255, 0.45)\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.4),\n    0 6px 20px rgba(94, 154, 255, 0.18)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node.is-dragging",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "border-color: var(--color-primary-light)\nbox-shadow:\n    0 10px 32px rgba(0, 0, 0, 0.55),\n    0 3px 10px rgba(0, 0, 0, 0.35)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node-header",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "color",
+        "border-left-color",
+        "border-bottom-color"
+      ],
+      "cssRule": "color: var(--color-primary-light)\nborder-left-color: var(--color-primary-light)\nborder-bottom-color: rgba(255, 255, 255, 0.06)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node-body",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-200)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .dnd-node-status",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-600)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .node-handle",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--gray-800)\nborder-color: var(--color-primary-light)\nbox-shadow: 0 1px 4px rgba(0, 0, 0, 0.5)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .node-handle:hover",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary-light)\nbox-shadow: 0 2px 8px rgba(94, 154, 255, 0.45)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .node-handle.active",
+      "id": "#06-08-01",
+      "category": null,
+      "properties": [
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary-light)\nbox-shadow: 0 2px 8px rgba(94, 154, 255, 0.45)",
+      "responsive": false,
+      "description": "── Night mode ────────────────────────────────────────────────────────"
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--dnd-node-accent",
+      "value": "var(--color-primary)"
+    }
+  ]
+}

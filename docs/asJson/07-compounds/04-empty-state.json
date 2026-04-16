@@ -1,0 +1,361 @@
+{
+  "folder": "07-compounds",
+  "file": "04-empty-state.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 23,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "align-items",
+        "justify-content",
+        "gap",
+        "text-align",
+        "padding",
+        "border",
+        "border-radius",
+        "background"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\nalign-items: center\njustify-content: center\ngap: var(--space-3)\ntext-align: center\npadding: var(--space-6) var(--space-4)\nborder: var(--border-width-s) dashed var(--color-border)\nborder-radius: var(--radius-l)\nbackground: linear-gradient(180deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0) 100%)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-icon",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-radius",
+        "display",
+        "align-items",
+        "justify-content",
+        "font-size",
+        "color",
+        "background",
+        "border"
+      ],
+      "cssRule": "width: 3.25rem\nheight: 3.25rem\nborder-radius: var(--radius-full)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nfont-size: 1.4rem\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\nborder: var(--border-width-s) solid rgba(var(--color-primary-rgb), 0.28)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-illustration",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "display",
+        "object-fit"
+      ],
+      "cssRule": "width: min(100%, 14rem)\nheight: auto\ndisplay: block\nobject-fit: contain",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-title",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "font-weight",
+        "color"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-xl)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-text",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "max-width",
+        "color",
+        "font-size"
+      ],
+      "cssRule": "margin: 0\nmax-width: 40ch\ncolor: var(--gray-600)\nfont-size: var(--font-size-base)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-actions",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "flex-wrap",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\nflex-wrap: wrap\ngap: var(--space-2)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-meta",
+      "id": "#07-04-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "color"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)",
+      "responsive": false,
+      "description": "── Base container and structure ────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-compact",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "gap",
+        "padding"
+      ],
+      "cssRule": "gap: var(--space-2)\npadding: var(--space-4)",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-compact .empty-state-icon",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "font-size"
+      ],
+      "cssRule": "width: 2.5rem\nheight: 2.5rem\nfont-size: 1.1rem",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-compact .empty-state-title",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "font-size"
+      ],
+      "cssRule": "font-size: var(--font-size-l)",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-hero",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "min-height",
+        "padding"
+      ],
+      "cssRule": "min-height: 22rem\npadding: var(--space-8) var(--space-6)",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-horizontal",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "text-align",
+        "justify-content",
+        "gap"
+      ],
+      "cssRule": "flex-direction: row\ntext-align: left\njustify-content: flex-start\ngap: var(--space-4)",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-horizontal .empty-state-content",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "gap",
+        "min-width"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\ngap: var(--space-2)\nmin-width: 0",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-horizontal .empty-state-actions",
+      "id": "#07-04-02",
+      "category": null,
+      "properties": [
+        "justify-content"
+      ],
+      "cssRule": "justify-content: flex-start",
+      "responsive": false,
+      "description": "── Size and layout variants ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-success .empty-state-icon",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-success)\nborder-color: rgba(34, 197, 94, 0.35)\nbackground: rgba(34, 197, 94, 0.13)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-warning .empty-state-icon",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-warning)\nborder-color: rgba(234, 179, 8, 0.45)\nbackground: rgba(234, 179, 8, 0.2)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-error .empty-state-icon",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-error)\nborder-color: rgba(239, 68, 68, 0.4)\nbackground: rgba(239, 68, 68, 0.14)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".empty-state-info .empty-state-icon",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "border-color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-info)\nborder-color: rgba(59, 130, 246, 0.4)\nbackground: rgba(59, 130, 246, 0.14)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .empty-state",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--gray-700)\nbackground: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .empty-state-title",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-100)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .empty-state-text",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .empty-state-meta",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-500)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .empty-state-icon",
+      "id": "#07-04-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: rgba(var(--color-primary-rgb), 0.45)\nbackground: rgba(var(--color-primary-rgb), 0.2)",
+      "responsive": false,
+      "description": "── Semantic variants ────────────────────────────────────────────────────"
+    }
+  ]
+}

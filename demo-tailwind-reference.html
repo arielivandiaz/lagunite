@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind → Lagunite Reference</title>
+  <link rel="stylesheet" href="./src/lagunite.css" />
+  <style>
+    body { padding: 0; margin: 0; }
+    .ref-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .ref-table th { background: var(--color-primary); color: white; padding: 8px 12px; text-align: left; font-weight: 600; }
+    .ref-table td { padding: 6px 12px; border-bottom: 1px solid var(--color-border, #e5e7eb); vertical-align: top; }
+    .ref-table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+    .ref-table tr:hover td { background: rgba(var(--color-primary-rgb, 79,70,229), 0.05); }
+    code { font-family: var(--font-mono); font-size: 0.82rem; background: rgba(0,0,0,0.07); padding: 1px 5px; border-radius: 3px; color: var(--color-almost-black); }
+    .tag-tw  { background: #e0f2fe; color: #0369a1; border-radius: 4px; padding: 1px 6px; font-size: 0.75rem; font-weight: 600; margin-right: 4px; }
+    .tag-lg  { background: #dcfce7; color: #166534; border-radius: 4px; padding: 1px 6px; font-size: 0.75rem; font-weight: 600; }
+    .tag-warn { background: #fef9c3; color: #854d0e; border-radius: 4px; padding: 1px 6px; font-size: 0.75rem; }
+    .note { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    .section-label { background: #f3f4f6; padding: 6px 12px; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: #374151; border-bottom: 1px solid #e5e7eb; }
+    .sidebar-nav-item { cursor: pointer; transition: background 0.15s; }
+    .sidebar-nav-item:hover { background: rgba(0,0,0,0.04); }
+  </style>
+</head>
+<body class="bg">
+
+<!-- Header -->
+<div class="navbar navbar-primary navbar-sticky">
+  <div class="navbar-brand">
+    <span class="bold">Tailwind</span>
+    <span class="marg-h-s color-almost-white" style="opacity:0.5">→</span>
+    <span class="bold color-almost-white">Lagunite</span>
+    <span class="badge badge-s badge-outline marg-lf-s">Reference</span>
+  </div>
+  <nav class="navbar-nav">
+    <a href="#breakpoints" class="navbar-link">Breakpoints</a>
+    <a href="#flex" class="navbar-link">Flex</a>
+    <a href="#grid" class="navbar-link">Grid</a>
+    <a href="#spacing" class="navbar-link">Spacing</a>
+    <a href="#typography" class="navbar-link">Type</a>
+    <a href="#colors" class="navbar-link">Colors</a>
+    <a href="#borders" class="navbar-link">Borders</a>
+    <a href="#position" class="navbar-link">Position</a>
+    <a href="#effects" class="navbar-link">Effects</a>
+    <a href="#components" class="navbar-link">Components</a>
+  </nav>
+</div>
+
+<!-- Main layout -->
+<div class="row jc-fs ai-fs" style="min-height:calc(100vh - 56px)">
+
+  <!-- Sidebar -->
+  <aside class="col jc-fs ai-fs padd-v" style="width:220px; min-height:calc(100vh - 56px); border-right:1px solid #e5e7eb; position:sticky; top:56px; flex-shrink:0;">
+    <p class="font-xs uppercase letter-spacing-l color-text-alt marg-h marg-t-s marg-b-s">Sections</p>
+    <a href="#breakpoints" class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Breakpoints</a>
+    <a href="#display"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Display</a>
+    <a href="#flex"        class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Flex</a>
+    <a href="#grid"        class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Grid</a>
+    <a href="#gap"         class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Gap</a>
+    <a href="#spacing"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Margin / Padding</a>
+    <a href="#typography"  class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Typography</a>
+    <a href="#colors"      class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Colors</a>
+    <a href="#borders"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Borders</a>
+    <a href="#shadows"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Shadows</a>
+    <a href="#position"    class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Position</a>
+    <a href="#sizing"      class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Sizing</a>
+    <a href="#opacity"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Opacity</a>
+    <a href="#effects"     class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Transforms & FX</a>
+    <a href="#transitions" class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Transitions</a>
+    <a href="#cursor"      class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Cursor</a>
+    <a href="#components"  class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Components</a>
+    <a href="#nosupport"   class="d-block padd-v-xs padd-h w-full color-text sidebar-nav-item" style="text-decoration:none">Not Supported</a>
+  </aside>
+
+  <!-- Content -->
+  <main class="flex-1 padd" style="max-width:calc(100% - 220px);">
+
+    <!-- Intro -->
+    <div class="alert alert-info marg-b">
+      <strong>Key differences:</strong> (1) Only 2 breakpoints: <code>x</code> mobile ≤639px, <code>d</code> desktop ≥640px.
+      (2) <code>.row</code>/<code>.col</code> already include <code>display:flex</code>.
+      (3) Spacing uses semantic names: <code>xs s (base) l xl</code>.
+      (4) Many <code>.bg-*</code> also set text color.
+      (5) Use component classes (<code>.card</code>, <code>.btn</code>, <code>.alert</code>) instead of utility stacks.
+    </div>
+
+    <!-- ── Breakpoints ──────────────────────────────────────────────────── -->
+    <h2 id="breakpoints" class="font-xl bold marg-b-s marg-t-l">Breakpoints</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><code>sm:foo</code> <code>md:foo</code> <code>lg:foo</code> <code>xl:foo</code></td><td><code>dfoo</code></td><td>min-width: 640px — merged prefix, no space</td></tr>
+          <tr><td><code>max-sm:foo</code></td><td><code>xfoo</code></td><td>max-width: 639px — mobile only</td></tr>
+          <tr><td><code>sm:flex-col</code></td><td><code>dcol</code></td><td>Responsive direction</td></tr>
+          <tr><td><code>hidden md:block</code></td><td><code>d-none dd-block</code></td><td>Hide base, show desktop</td></tr>
+          <tr><td><code>block sm:hidden</code></td><td><code>d-block dd-none</code></td><td>Show base, hide desktop</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Display ─────────────────────────────────────────────────────── -->
+    <h2 id="display" class="font-xl bold marg-b-s marg-t-l">Display</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>block</code></td><td><code>.d-block</code></td></tr>
+          <tr><td><code>inline</code></td><td><code>.d-inline</code></td></tr>
+          <tr><td><code>inline-block</code></td><td><code>.d-inline-block</code></td></tr>
+          <tr><td><code>flex</code></td><td><code>.d-flex</code> — but prefer <code>.row</code>/<code>.col</code> for containers</td></tr>
+          <tr><td><code>inline-flex</code></td><td><code>.d-inline-flex</code></td></tr>
+          <tr><td><code>grid</code></td><td><code>.d-grid</code> or <code>.grid</code></td></tr>
+          <tr><td><code>hidden</code></td><td><code>.d-none</code></td></tr>
+          <tr><td><code>invisible</code></td><td><code>.invisible</code></td></tr>
+          <tr><td><code>contents</code></td><td><code>.d-contents</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Flex ───────────────────────────────────────────────────────── -->
+    <h2 id="flex" class="font-xl bold marg-b-s marg-t-l">Flex</h2>
+    <div class="alert alert-warning marg-b-s">
+      <code>.row</code> and <code>.col</code> already set <code>display:flex; flex-wrap:wrap; justify-content:center; align-items:center</code>. Never add <code>d-flex</code> alongside them.
+    </div>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td colspan="2" class="section-label">Direction</td></tr>
+          <tr><td><code>flex flex-row</code></td><td><code>.row</code></td></tr>
+          <tr><td><code>flex flex-col</code></td><td><code>.col</code></td></tr>
+          <tr><td><code>flex flex-row-reverse</code></td><td><code>.rowr</code></td></tr>
+          <tr><td><code>flex flex-col-reverse</code></td><td><code>.colr</code></td></tr>
+          <tr><td><code>sm:flex-row</code></td><td><code>.drow</code></td></tr>
+          <tr><td><code>sm:flex-col</code></td><td><code>.dcol</code></td></tr>
+          <tr><td><code>max-sm:flex-col</code></td><td><code>.xcol</code></td></tr>
+          <tr><td colspan="2" class="section-label">Justify Content</td></tr>
+          <tr><td><code>justify-center</code></td><td><code>.jc-c</code></td></tr>
+          <tr><td><code>justify-start</code></td><td><code>.jc-fs</code></td></tr>
+          <tr><td><code>justify-end</code></td><td><code>.jc-fe</code></td></tr>
+          <tr><td><code>justify-between</code></td><td><code>.jc-sb</code></td></tr>
+          <tr><td><code>justify-around</code></td><td><code>.jc-sa</code></td></tr>
+          <tr><td><code>justify-evenly</code></td><td><code>.jc-se</code></td></tr>
+          <tr><td><code>sm:justify-between</code></td><td><code>.djc-sb</code></td></tr>
+          <tr><td colspan="2" class="section-label">Align Items</td></tr>
+          <tr><td><code>items-center</code></td><td><code>.ai-c</code></td></tr>
+          <tr><td><code>items-start</code></td><td><code>.ai-fs</code></td></tr>
+          <tr><td><code>items-end</code></td><td><code>.ai-fe</code></td></tr>
+          <tr><td><code>items-stretch</code></td><td><code>.ai-s</code></td></tr>
+          <tr><td><code>items-baseline</code></td><td><code>.ai-bl</code></td></tr>
+          <tr><td colspan="2" class="section-label">Align Self</td></tr>
+          <tr><td><code>self-center</code></td><td><code>.as-c</code></td></tr>
+          <tr><td><code>self-start</code></td><td><code>.as-fs</code></td></tr>
+          <tr><td><code>self-end</code></td><td><code>.as-fe</code></td></tr>
+          <tr><td><code>self-stretch</code></td><td><code>.as-s</code></td></tr>
+          <tr><td colspan="2" class="section-label">Flex Items</td></tr>
+          <tr><td><code>flex-1</code></td><td><code>.flex-1</code></td></tr>
+          <tr><td><code>flex-auto</code></td><td><code>.flex-auto</code></td></tr>
+          <tr><td><code>flex-none</code></td><td><code>.flex-none</code></td></tr>
+          <tr><td><code>grow</code></td><td><code>.flex-grow</code></td></tr>
+          <tr><td><code>grow-0</code></td><td><code>.flex-grow-0</code></td></tr>
+          <tr><td><code>shrink</code></td><td><code>.flex-shrink</code></td></tr>
+          <tr><td><code>shrink-0</code></td><td><code>.flex-shrink-0</code></td></tr>
+          <tr><td><code>flex-wrap</code></td><td><code>.flex-wrap</code></td></tr>
+          <tr><td><code>flex-nowrap</code></td><td><code>.flex-nowrap</code></td></tr>
+          <tr><td colspan="2" class="section-label">Order</td></tr>
+          <tr><td><code>order-first</code></td><td><code>.order-first</code></td></tr>
+          <tr><td><code>order-last</code></td><td><code>.order-last</code></td></tr>
+          <tr><td><code>order-1</code> … <code>order-5</code></td><td><code>.order-1</code> … <code>.order-5</code></td></tr>
+          <tr><td colspan="2" class="section-label">Shortcuts</td></tr>
+          <tr><td><code>flex items-center justify-center</code></td><td><code>.flex-center</code></td></tr>
+          <tr><td><code>flex justify-center</code></td><td><code>.flex-center-h</code></td></tr>
+          <tr><td><code>flex items-center</code></td><td><code>.flex-center-v</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Grid ───────────────────────────────────────────────────────── -->
+    <h2 id="grid" class="font-xl bold marg-b-s marg-t-l">Grid</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>grid</code></td><td><code>.grid</code></td></tr>
+          <tr><td><code>grid-cols-1</code> … <code>grid-cols-12</code></td><td><code>.grid-cols-1</code> … <code>.grid-cols-12</code></td></tr>
+          <tr><td><code>sm:grid-cols-3</code></td><td><code>.dgrid-cols-3</code></td></tr>
+          <tr><td><code>col-span-1</code> … <code>col-span-12</code></td><td><code>.col-span-1</code> … <code>.col-span-12</code></td></tr>
+          <tr><td><code>col-span-full</code></td><td><code>.col-span-full</code></td></tr>
+          <tr><td><code>row-span-1</code> … <code>row-span-6</code></td><td><code>.row-span-1</code> … <code>.row-span-6</code></td></tr>
+          <tr><td><code>col-start-1</code></td><td><code>.col-start-1</code></td></tr>
+          <tr><td><code>col-end-3</code></td><td><code>.col-end-3</code></td></tr>
+          <tr><td><code>grid-flow-row</code></td><td><code>.grid-flow-row</code></td></tr>
+          <tr><td><code>grid-flow-col</code></td><td><code>.grid-flow-col</code></td></tr>
+          <tr><td><code>grid-flow-dense</code></td><td><code>.grid-flow-dense</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Gap ─────────────────────────────────────────────────────────── -->
+    <h2 id="gap" class="font-xl bold marg-b-s marg-t-l">Gap (Flex + Grid)</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th><th>px</th></tr></thead>
+        <tbody>
+          <tr><td><code>gap-1</code></td><td><code>.gap-xs</code> or <code>.gap-1</code></td><td>4px</td></tr>
+          <tr><td><code>gap-2</code></td><td><code>.gap-2</code></td><td>8px</td></tr>
+          <tr><td><code>gap-3</code></td><td><code>.gap-s</code> or <code>.gap-3</code></td><td>12px</td></tr>
+          <tr><td><code>gap-4</code></td><td><code>.gap-4</code></td><td>16px</td></tr>
+          <tr><td><code>gap-6</code></td><td><code>.gap</code> or <code>.gap-6</code></td><td>24px</td></tr>
+          <tr><td><code>gap-8</code></td><td><code>.gap-8</code></td><td>32px</td></tr>
+          <tr><td><code>gap-12</code></td><td><code>.gap-l</code> or <code>.gap-12</code></td><td>48px</td></tr>
+          <tr><td><code>gap-16</code></td><td><code>.gap-xl</code> or <code>.gap-16</code></td><td>64px</td></tr>
+          <tr><td><code>gap-x-4</code></td><td><code>.gap-h-4</code></td><td>column-gap</td></tr>
+          <tr><td><code>gap-y-4</code></td><td><code>.gap-v-4</code></td><td>row-gap</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Spacing ─────────────────────────────────────────────────────── -->
+    <h2 id="spacing" class="font-xl bold marg-b-s marg-t-l">Margin & Padding</h2>
+    <p class="marg-b-s color-text-alt">Scale: <code>xs</code>=4px &nbsp; <code>s</code>=12px &nbsp; <code>(base)</code>=24px &nbsp; <code>l</code>=48px &nbsp; <code>xl</code>=64px</p>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td colspan="2" class="section-label">Margin</td></tr>
+          <tr><td><code>m-auto</code></td><td><code>.marg-auto</code></td></tr>
+          <tr><td><code>m-0</code></td><td><code>.marg-0</code></td></tr>
+          <tr><td><code>m-1</code> (4px)</td><td><code>.marg-xs</code></td></tr>
+          <tr><td><code>m-3</code> (12px)</td><td><code>.marg-s</code></td></tr>
+          <tr><td><code>m-6</code> (24px)</td><td><code>.marg</code></td></tr>
+          <tr><td><code>m-12</code> (48px)</td><td><code>.marg-l</code></td></tr>
+          <tr><td><code>m-16</code> (64px)</td><td><code>.marg-xl</code></td></tr>
+          <tr><td><code>mx-*</code></td><td><code>.marg-h-*</code></td></tr>
+          <tr><td><code>my-*</code></td><td><code>.marg-v-*</code></td></tr>
+          <tr><td><code>mt-*</code></td><td><code>.marg-t-*</code></td></tr>
+          <tr><td><code>mb-*</code></td><td><code>.marg-b-*</code></td></tr>
+          <tr><td><code>ml-*</code></td><td><code>.marg-lf-*</code></td></tr>
+          <tr><td><code>mr-*</code></td><td><code>.marg-rg-*</code></td></tr>
+          <tr><td colspan="2" class="section-label">Padding</td></tr>
+          <tr><td><code>p-0</code></td><td><code>.padd-0</code></td></tr>
+          <tr><td><code>p-1</code> (4px)</td><td><code>.padd-xs</code></td></tr>
+          <tr><td><code>p-3</code> (12px)</td><td><code>.padd-s</code></td></tr>
+          <tr><td><code>p-6</code> (24px)</td><td><code>.padd</code></td></tr>
+          <tr><td><code>p-12</code> (48px)</td><td><code>.padd-l</code></td></tr>
+          <tr><td><code>p-16</code> (64px)</td><td><code>.padd-xl</code></td></tr>
+          <tr><td><code>px-*</code></td><td><code>.padd-h-*</code></td></tr>
+          <tr><td><code>py-*</code></td><td><code>.padd-v-*</code></td></tr>
+          <tr><td><code>pt-*</code></td><td><code>.padd-t-*</code></td></tr>
+          <tr><td><code>pb-*</code></td><td><code>.padd-b-*</code></td></tr>
+          <tr><td><code>pl-*</code></td><td><code>.padd-lf-*</code></td></tr>
+          <tr><td><code>pr-*</code></td><td><code>.padd-rg-*</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Typography ──────────────────────────────────────────────────── -->
+    <h2 id="typography" class="font-xl bold marg-b-s marg-t-l">Typography</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td colspan="2" class="section-label">Size</td></tr>
+          <tr><td><code>text-xs</code></td><td><code>.font-xs</code></td></tr>
+          <tr><td><code>text-sm</code></td><td><code>.font-s</code></td></tr>
+          <tr><td><code>text-base</code></td><td>(default)</td></tr>
+          <tr><td><code>text-lg</code></td><td><code>.font-l</code></td></tr>
+          <tr><td><code>text-xl</code></td><td><code>.font-xl</code></td></tr>
+          <tr><td><code>text-2xl</code></td><td><code>.font-xxl</code></td></tr>
+          <tr><td><code>text-3xl</code></td><td><code>.font-3xl</code></td></tr>
+          <tr><td colspan="2" class="section-label">Weight</td></tr>
+          <tr><td><code>font-light</code></td><td><code>.font-weight-0</code></td></tr>
+          <tr><td><code>font-normal</code></td><td><code>.font-weight-1</code></td></tr>
+          <tr><td><code>font-medium</code></td><td><code>.font-weight-2</code></td></tr>
+          <tr><td><code>font-bold</code></td><td><code>.bold</code> or <code>.font-weight-3</code></td></tr>
+          <tr><td><code>italic</code></td><td><code>.italic</code></td></tr>
+          <tr><td colspan="2" class="section-label">Transform</td></tr>
+          <tr><td><code>uppercase</code></td><td><code>.uppercase</code></td></tr>
+          <tr><td><code>lowercase</code></td><td><code>.lowercase</code></td></tr>
+          <tr><td><code>capitalize</code></td><td><code>.capitalize</code></td></tr>
+          <tr><td colspan="2" class="section-label">Align</td></tr>
+          <tr><td><code>text-center</code></td><td><code>.ta-c</code></td></tr>
+          <tr><td><code>text-left</code></td><td><code>.ta-lf</code></td></tr>
+          <tr><td><code>text-right</code></td><td><code>.ta-rg</code></td></tr>
+          <tr><td><code>text-justify</code></td><td><code>.ta-j</code></td></tr>
+          <tr><td colspan="2" class="section-label">Line height</td></tr>
+          <tr><td><code>leading-tight</code></td><td><code>.lh-xs</code></td></tr>
+          <tr><td><code>leading-snug</code></td><td><code>.lh-s</code></td></tr>
+          <tr><td><code>leading-normal</code></td><td><code>.lh</code></td></tr>
+          <tr><td><code>leading-relaxed</code></td><td><code>.lh-l</code></td></tr>
+          <tr><td><code>leading-loose</code></td><td><code>.lh-xl</code></td></tr>
+          <tr><td colspan="2" class="section-label">Letter spacing</td></tr>
+          <tr><td><code>tracking-tight</code></td><td><code>.letter-spacing-xs</code></td></tr>
+          <tr><td><code>tracking-normal</code></td><td><code>.letter-spacing</code></td></tr>
+          <tr><td><code>tracking-wide</code></td><td><code>.letter-spacing-l</code></td></tr>
+          <tr><td><code>tracking-widest</code></td><td><code>.letter-spacing-xxl</code></td></tr>
+          <tr><td colspan="2" class="section-label">Font family</td></tr>
+          <tr><td><code>font-sans</code></td><td><code>.font-sans</code></td></tr>
+          <tr><td><code>font-mono</code></td><td><code>.font-mono</code></td></tr>
+          <tr><td><code>font-serif</code></td><td><code>.font-headers</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Colors ─────────────────────────────────────────────────────── -->
+    <h2 id="colors" class="font-xl bold marg-b-s marg-t-l">Colors</h2>
+    <div class="alert alert-warning marg-b-s">
+      Many <code>.bg-*</code> utilities set both background AND text color. Do not stack conflicting <code>.color-*</code> on the same element.
+    </div>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td colspan="2" class="section-label">Text color</td></tr>
+          <tr><td><code>text-{color}-{shade}</code></td><td><code>.color-{color}-{shade}</code></td></tr>
+          <tr><td><code>text-green-500</code></td><td><code>.color-success</code></td></tr>
+          <tr><td><code>text-red-500</code></td><td><code>.color-error</code></td></tr>
+          <tr><td><code>text-yellow-500</code></td><td><code>.color-warning</code></td></tr>
+          <tr><td><code>text-white</code></td><td><code>.color-almost-white</code></td></tr>
+          <tr><td><code>text-black</code></td><td><code>.color-almost-black</code></td></tr>
+          <tr><td colspan="2" class="section-label">Background</td></tr>
+          <tr><td><code>bg-white</code></td><td><code>.bg-white</code></td></tr>
+          <tr><td><code>bg-black</code></td><td><code>.bg-black</code></td></tr>
+          <tr><td><code>bg-gray-50</code></td><td><code>.bg-gray-50</code> or <code>.bg</code></td></tr>
+          <tr><td><code>bg-gray-100</code></td><td><code>.bg-1</code> or <code>.bg-gray-100</code></td></tr>
+          <tr><td><code>bg-{color}-{shade}</code></td><td><code>.bg-{color}-{shade}</code></td></tr>
+          <tr><td><code>bg-green-*</code></td><td><code>.bg-success</code></td></tr>
+          <tr><td><code>bg-red-*</code></td><td><code>.bg-error</code></td></tr>
+          <tr><td><code>bg-yellow-*</code></td><td><code>.bg-warning</code></td></tr>
+          <tr><td colspan="2" class="section-label">Border color</td></tr>
+          <tr><td><code>border-{color}-{shade}</code></td><td><code>.border-color-{color}-{shade}</code></td></tr>
+          <tr><td><code>border-gray-200</code></td><td><code>.border-color-gray-200</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Borders ─────────────────────────────────────────────────────── -->
+    <h2 id="borders" class="font-xl bold marg-b-s marg-t-l">Borders</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>border</code></td><td><code>.border</code></td></tr>
+          <tr><td><code>border-0</code></td><td><code>.border-w-0</code></td></tr>
+          <tr><td><code>border-2</code></td><td><code>.border-w-2</code></td></tr>
+          <tr><td><code>border-4</code></td><td><code>.border-w-4</code></td></tr>
+          <tr><td><code>border-t</code></td><td><code>.border-w-t-1</code></td></tr>
+          <tr><td><code>border-b</code></td><td><code>.border-w-b-1</code></td></tr>
+          <tr><td><code>border-l</code></td><td><code>.border-w-lf-1</code></td></tr>
+          <tr><td><code>border-r</code></td><td><code>.border-w-rg-1</code></td></tr>
+          <tr><td><code>border-solid</code></td><td><code>.border-solid</code></td></tr>
+          <tr><td><code>border-dashed</code></td><td><code>.border-dashed</code></td></tr>
+          <tr><td><code>border-dotted</code></td><td><code>.border-dotted</code></td></tr>
+          <tr><td><code>border-none</code></td><td><code>.border-none</code></td></tr>
+          <tr><td colspan="2" class="section-label">Border Radius</td></tr>
+          <tr><td><code>rounded-none</code></td><td><code>.border-r-0</code></td></tr>
+          <tr><td><code>rounded-sm</code></td><td><code>.border-r-s</code></td></tr>
+          <tr><td><code>rounded</code></td><td><code>.border-r</code></td></tr>
+          <tr><td><code>rounded-lg</code></td><td><code>.border-r-l</code></td></tr>
+          <tr><td><code>rounded-xl</code></td><td><code>.border-r-xl</code></td></tr>
+          <tr><td><code>rounded-full</code></td><td><code>.border-r-full</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Shadows ─────────────────────────────────────────────────────── -->
+    <h2 id="shadows" class="font-xl bold marg-b-s marg-t-l">Shadows</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>shadow-none</code></td><td><code>.shadow-none</code></td></tr>
+          <tr><td><code>shadow-sm</code></td><td><code>.shadow-s</code></td></tr>
+          <tr><td><code>shadow</code></td><td><code>.shadow</code></td></tr>
+          <tr><td><code>shadow-lg</code></td><td><code>.shadow-l</code></td></tr>
+          <tr><td><code>shadow-xl</code></td><td><code>.shadow-xl</code></td></tr>
+          <tr><td><code>shadow-inner</code></td><td><code>.shadow-inner</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Position ────────────────────────────────────────────────────── -->
+    <h2 id="position" class="font-xl bold marg-b-s marg-t-l">Position</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>static</code></td><td><code>.pos-static</code></td></tr>
+          <tr><td><code>relative</code></td><td><code>.rel</code></td></tr>
+          <tr><td><code>absolute</code></td><td><code>.abs</code></td></tr>
+          <tr><td><code>fixed</code></td><td><code>.pos-fixed</code></td></tr>
+          <tr><td><code>sticky</code></td><td><code>.pos-sticky</code></td></tr>
+          <tr><td><code>inset-0</code></td><td><code>.pa-full</code></td></tr>
+          <tr><td><code>inset-x-0</code></td><td><code>.pa-h</code></td></tr>
+          <tr><td><code>inset-y-0</code></td><td><code>.pa-v</code></td></tr>
+          <tr><td><code>top-0</code></td><td><code>.top-0</code></td></tr>
+          <tr><td><code>bottom-0</code></td><td><code>.bottom-0</code></td></tr>
+          <tr><td><code>left-0</code></td><td><code>.left-0</code></td></tr>
+          <tr><td><code>right-0</code></td><td><code>.right-0</code></td></tr>
+          <tr><td><code>top-auto</code></td><td><code>.top-auto</code></td></tr>
+          <tr><td><code>z-0</code></td><td><code>.z0</code></td></tr>
+          <tr><td><code>z-10</code></td><td><code>.z10</code></td></tr>
+          <tr><td><code>z-20</code></td><td><code>.z20</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Sizing ──────────────────────────────────────────────────────── -->
+    <h2 id="sizing" class="font-xl bold marg-b-s marg-t-l">Width & Height</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>w-auto</code></td><td><code>.w-auto</code></td></tr>
+          <tr><td><code>h-auto</code></td><td><code>.h-auto</code></td></tr>
+          <tr><td><code>w-full</code> (100%)</td><td><code>.wp100</code></td></tr>
+          <tr><td><code>w-1/2</code></td><td><code>.wp50</code></td></tr>
+          <tr><td><code>w-1/3</code></td><td><code>.wp-1\/3</code></td></tr>
+          <tr><td><code>w-2/3</code></td><td><code>.wp-2\/3</code></td></tr>
+          <tr><td><code>w-screen</code></td><td><code>.w-full-screen</code></td></tr>
+          <tr><td><code>h-screen</code></td><td><code>.h-full-screen</code></td></tr>
+          <tr><td><code>w-fit</code></td><td><code>.w-fit</code></td></tr>
+          <tr><td><code>w-min</code></td><td><code>.w-min</code></td></tr>
+          <tr><td><code>w-max</code></td><td><code>.w-max</code></td></tr>
+          <tr><td colspan="2" class="section-label">Max-width containers</td></tr>
+          <tr><td><code>max-w-xs</code></td><td><code>.container-xs</code> (480px)</td></tr>
+          <tr><td><code>max-w-sm</code></td><td><code>.container-s</code> (640px)</td></tr>
+          <tr><td><code>max-w-md</code></td><td><code>.container-m</code> (768px)</td></tr>
+          <tr><td><code>max-w-lg</code></td><td><code>.container-l</code> (1024px)</td></tr>
+          <tr><td><code>max-w-xl</code></td><td><code>.container-xl</code> (1280px)</td></tr>
+          <tr><td><code>max-w-prose</code></td><td><code>.container-prose</code> (65ch)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Opacity ─────────────────────────────────────────────────────── -->
+    <h2 id="opacity" class="font-xl bold marg-b-s marg-t-l">Opacity</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>opacity-0</code></td><td><code>.opacity-0</code></td></tr>
+          <tr><td><code>opacity-25</code></td><td><code>.opacity-25</code></td></tr>
+          <tr><td><code>opacity-50</code></td><td><code>.opacity-50</code></td></tr>
+          <tr><td><code>opacity-75</code></td><td><code>.opacity-75</code></td></tr>
+          <tr><td><code>opacity-100</code></td><td><code>.opacity-100</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Transforms & FX ─────────────────────────────────────────────── -->
+    <h2 id="effects" class="font-xl bold marg-b-s marg-t-l">Transforms & Filters</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td colspan="2" class="section-label">Transforms</td></tr>
+          <tr><td><code>scale-50/100/150</code></td><td><code>.scale-50/100/150</code></td></tr>
+          <tr><td><code>rotate-45/90/180</code></td><td><code>.rotate-45/90/180</code></td></tr>
+          <tr><td><code>translate-x-*</code></td><td><code>.translate-x-*</code></td></tr>
+          <tr><td><code>translate-y-*</code></td><td><code>.translate-y-*</code></td></tr>
+          <tr><td colspan="2" class="section-label">Filters</td></tr>
+          <tr><td><code>blur-sm/lg</code></td><td><code>.blur-s/.blur-l</code></td></tr>
+          <tr><td><code>grayscale</code></td><td><code>.grayscale</code></td></tr>
+          <tr><td><code>invert</code></td><td><code>.invert</code></td></tr>
+          <tr><td><code>sepia</code></td><td><code>.sepia</code></td></tr>
+          <tr><td><code>backdrop-blur-sm/lg</code></td><td><code>.backdrop-blur-s/.backdrop-blur-l</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Transitions ─────────────────────────────────────────────────── -->
+    <h2 id="transitions" class="font-xl bold marg-b-s marg-t-l">Transitions & Animations</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>transition</code></td><td><code>.transition</code></td></tr>
+          <tr><td><code>transition-none</code></td><td><code>.transition-none</code></td></tr>
+          <tr><td><code>transition-colors</code></td><td><code>.transition-colors</code></td></tr>
+          <tr><td><code>transition-opacity</code></td><td><code>.transition-opacity</code></td></tr>
+          <tr><td><code>transition-transform</code></td><td><code>.transition-transform</code></td></tr>
+          <tr><td><code>duration-75/100/150/200/300/500/700/1000</code></td><td>same pattern</td></tr>
+          <tr><td><code>ease-linear/in/out/in-out</code></td><td><code>.ease-linear/.ease-in/.ease-out/.ease-in-out</code></td></tr>
+          <tr><td><code>delay-75/100/200/300/500</code></td><td>same pattern</td></tr>
+          <tr><td><code>animate-spin</code></td><td><code>.animate-spin</code></td></tr>
+          <tr><td><code>animate-pulse</code></td><td><code>.animate-pulse</code></td></tr>
+          <tr><td><code>animate-bounce</code></td><td><code>.animate-bounce</code></td></tr>
+          <tr><td><code>animate-none</code></td><td><code>.animate-none</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Cursor ──────────────────────────────────────────────────────── -->
+    <h2 id="cursor" class="font-xl bold marg-b-s marg-t-l">Cursor & Interaction</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td><code>cursor-pointer</code></td><td><code>.cursor-pointer</code></td></tr>
+          <tr><td><code>cursor-not-allowed</code></td><td><code>.cursor-not-allowed</code></td></tr>
+          <tr><td><code>cursor-grab</code></td><td><code>.cursor-grab</code></td></tr>
+          <tr><td><code>cursor-text</code></td><td><code>.cursor-text</code></td></tr>
+          <tr><td><code>cursor-none</code></td><td><code>.cursor-none</code></td></tr>
+          <tr><td><code>pointer-events-none</code></td><td><code>.pointer-events-none</code></td></tr>
+          <tr><td><code>select-none</code></td><td><code>.select-none</code></td></tr>
+          <tr><td><code>select-all</code></td><td><code>.select-all</code></td></tr>
+          <tr><td><code>overflow-hidden</code></td><td><code>.overflow-hidden</code></td></tr>
+          <tr><td><code>overflow-auto</code></td><td><code>.overflow-auto</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Components ─────────────────────────────────────────────────── -->
+    <h2 id="components" class="font-xl bold marg-b-s marg-t-l">Components — Replace Utility Stacks</h2>
+    <p class="marg-b-s color-text-alt">Lagunite provides pre-built component classes. Use these instead of recreating them with utilities.</p>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Pattern</th><th>Tailwind approach</th><th>Lagunite</th></tr></thead>
+        <tbody>
+          <tr><td>Button</td><td><code>px-4 py-2 bg-blue-600 text-white rounded font-medium hover:...</code></td><td><code>.btn.btn-primary</code></td></tr>
+          <tr><td>Card</td><td><code>bg-white rounded-lg shadow p-4</code></td><td><code>.card &gt; .card-body</code></td></tr>
+          <tr><td>Alert</td><td><code>flex items-center gap-3 p-4 bg-green-50 rounded border</code></td><td><code>.alert.alert-success</code></td></tr>
+          <tr><td>Badge</td><td><code>inline-flex px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100</code></td><td><code>.badge.badge-primary.badge-pill</code></td></tr>
+          <tr><td>Modal</td><td>Overlay div + centered container + backdrop JS</td><td><code>.modal-overlay.open &gt; .modal</code></td></tr>
+          <tr><td>Navbar</td><td><code>flex sticky top-0 shadow px-4 py-3 z-50</code></td><td><code>.navbar</code></td></tr>
+          <tr><td>Tooltip</td><td>JS library or CSS tricks</td><td><code>data-tooltip="text"</code> attribute</td></tr>
+          <tr><td>Dark mode</td><td><code>dark:bg-gray-900 dark:text-white</code> per element</td><td><code>.night</code> on ancestor</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Not Supported ───────────────────────────────────────────────── -->
+    <h2 id="nosupport" class="font-xl bold marg-b-s marg-t-l">Not Supported in Lagunite</h2>
+    <div class="card card-flat marg-b">
+      <table class="ref-table">
+        <thead><tr><th>Tailwind feature</th><th>Workaround</th></tr></thead>
+        <tbody>
+          <tr><td><code>w-[200px]</code> arbitrary values</td><td><code>style="width:200px"</code> + <code>&lt;!-- GAP: needs .w-{n} --&gt;</code></td></tr>
+          <tr><td><code>peer-*</code> / <code>group-*</code></td><td>JS or custom CSS</td></tr>
+          <tr><td><code>has-*</code> selector variants</td><td>Custom CSS</td></tr>
+          <tr><td><code>@container</code> queries</td><td>Use `x*` / `d*` breakpoints</td></tr>
+          <tr><td><code>sm:</code> <code>md:</code> <code>lg:</code> <code>xl:</code> <code>2xl:</code> (5 breakpoints)</td><td>Map all to <code>d*</code> (min-640px) or <code>x*</code> (max-639px)</td></tr>
+          <tr><td><code>text-opacity-*</code> / <code>bg-opacity-*</code></td><td>Use <code>.opacity-*</code> on element or rgba in style</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="marg-v-l ta-c color-text-alt font-s">
+      Lagunite v2 — <a href="./docs/tailwind-to-lagunite.md">Full markdown reference</a>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

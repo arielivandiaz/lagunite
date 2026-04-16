@@ -1,0 +1,141 @@
+folder: 07-compounds
+file: 02-modals.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 15
+content[15]:
+  - type: selector
+    selectorType: class
+    selector: .modal-overlay
+    id: #07-02-01
+    category: null
+    properties[10]: position,inset,background,display,align-items,justify-content,z-index,opacity,pointer-events,transition
+    cssRule: "position: fixed\ninset: 0\nbackground: rgba(0, 0, 0, 0.5)\ndisplay: flex\nalign-items: center\njustify-content: center\nz-index: 1000\nopacity: 0\npointer-events: none\ntransition: opacity 0.3s"
+    responsive: false
+    description: ── Modal overlay ────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-overlay.open
+    id: #07-02-01
+    category: null
+    properties[2]: opacity,pointer-events
+    cssRule: "opacity: 1\npointer-events: auto"
+    responsive: false
+    description: ── Modal overlay ────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal
+    id: #07-02-02
+    category: null
+    properties[9]: background,border-radius,box-shadow,width,max-width,max-height,overflow-y,transform,transition
+    cssRule: "background: var(--color-bg)\nborder-radius: var(--radius-l)\nbox-shadow: var(--shadow-xl)\nwidth: 90%\nmax-width: 32rem\nmax-height: 90vh\noverflow-y: auto\ntransform: scale(0.95) translateY(10px)\ntransition: transform 0.3s"
+    responsive: false
+    description: ── Modal shell ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-overlay.open .modal
+    id: #07-02-02
+    category: null
+    properties[1]: transform
+    cssRule: "transform: scale(1) translateY(0)"
+    responsive: false
+    description: ── Modal shell ──────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-header
+    id: #07-02-03
+    category: null
+    properties[5]: padding,border-bottom,display,align-items,justify-content
+    cssRule: "padding: var(--space-4)\nborder-bottom: var(--border-width-s) solid var(--color-border)\ndisplay: flex\nalign-items: center\njustify-content: space-between"
+    responsive: false
+    description: ── Modal header ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-title
+    id: #07-02-03
+    category: null
+    properties[2]: font-size,font-weight
+    cssRule: "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)"
+    responsive: false
+    description: ── Modal header ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-close
+    id: #07-02-03
+    category: null
+    properties[6]: background,border,cursor,padding,font-size,color
+    cssRule: "background: transparent\nborder: none\ncursor: pointer\npadding: var(--space-2)\nfont-size: 1.25rem\ncolor: var(--gray-500)"
+    responsive: false
+    description: ── Modal header ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".modal-close:hover"
+    id: #07-02-03
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-base)"
+    responsive: false
+    description: ── Modal header ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-body
+    id: #07-02-04
+    category: null
+    properties[1]: padding
+    cssRule: "padding: var(--space-4)"
+    responsive: false
+    description: ── Modal body & footer ─────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-footer
+    id: #07-02-04
+    category: null
+    properties[5]: padding,border-top,display,justify-content,gap
+    cssRule: "padding: var(--space-3) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\ndisplay: flex\njustify-content: flex-end\ngap: var(--space-2)"
+    responsive: false
+    description: ── Modal body & footer ─────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-s
+    id: #07-02-05
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 24rem"
+    responsive: false
+    description: ── Modal sizes ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-l
+    id: #07-02-05
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 48rem"
+    responsive: false
+    description: ── Modal sizes ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-xl
+    id: #07-02-05
+    category: null
+    properties[1]: max-width
+    cssRule: "max-width: 64rem"
+    responsive: false
+    description: ── Modal sizes ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .modal-fullscreen
+    id: #07-02-05
+    category: null
+    properties[5]: width,max-width,height,max-height,border-radius
+    cssRule: "width: 100%\nmax-width: 100%\nheight: 100%\nmax-height: 100%\nborder-radius: 0"
+    responsive: false
+    description: ── Modal sizes ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .modal
+    id: #07-02-06
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
+    responsive: false
+    description: ── Night mode ───────────────────────────────────────────────────────────

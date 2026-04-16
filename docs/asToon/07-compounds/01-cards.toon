@@ -1,0 +1,222 @@
+folder: 07-compounds
+file: 01-cards.css
+lastUpdated: 2026-04-16
+hasResponsive: false
+totalSelectors: 24
+content[24]:
+  - type: selector
+    selectorType: class
+    selector: .card
+    id: #07-01-01
+    category: null
+    properties[5]: background,border,border-radius,overflow,transition
+    cssRule: "background: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\noverflow: hidden\ntransition: box-shadow 0.2s"
+    responsive: false
+    description: ── Card base ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-header
+    id: #07-01-02
+    category: null
+    properties[3]: padding,border-bottom,font-weight
+    cssRule: "padding: var(--space-4)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nfont-weight: var(--font-weight-bold)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-body
+    id: #07-01-02
+    category: null
+    properties[1]: padding
+    cssRule: "padding: var(--space-4)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-footer
+    id: #07-01-02
+    category: null
+    properties[3]: padding,border-top,background
+    cssRule: "padding: var(--space-3) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\nbackground: rgba(0, 0, 0, 0.02)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-img-top
+    id: #07-01-02
+    category: null
+    properties[3]: width,display,border-radius
+    cssRule: "width: 100%\ndisplay: block\nborder-radius: var(--radius-m) var(--radius-m) 0 0"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-img-bottom
+    id: #07-01-02
+    category: null
+    properties[3]: width,display,border-radius
+    cssRule: "width: 100%\ndisplay: block\nborder-radius: 0 0 var(--radius-m) var(--radius-m)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-title
+    id: #07-01-02
+    category: null
+    properties[3]: font-size,font-weight,margin-bottom
+    cssRule: "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)\nmargin-bottom: var(--space-2)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-text
+    id: #07-01-02
+    category: null
+    properties[2]: color,font-size
+    cssRule: "color: var(--gray-600)\nfont-size: var(--font-size-base)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-elevated
+    id: #07-01-03
+    category: null
+    properties[1]: box-shadow
+    cssRule: "box-shadow: var(--shadow-m)"
+    responsive: false
+    description: ── Card surface variants ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-flat
+    id: #07-01-03
+    category: null
+    properties[2]: border,background
+    cssRule: "border: none\nbackground: transparent"
+    responsive: false
+    description: ── Card surface variants ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-hover
+    id: #07-01-03
+    category: null
+    properties[1]: transition
+    cssRule: "transition: box-shadow 0.2s, transform 0.2s"
+    responsive: false
+    description: ── Card surface variants ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".card-hover:hover"
+    id: #07-01-03
+    category: null
+    properties[2]: box-shadow,transform
+    cssRule: "box-shadow: var(--shadow-l)\ntransform: translateY(-2px)"
+    responsive: false
+    description: ── Card surface variants ────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-primary
+    id: #07-01-04
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-primary)"
+    responsive: false
+    description: ── Card semantic variants (primary) ─────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-primary .card-header
+    id: #07-01-04
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: ── Card semantic variants (primary) ─────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-success
+    id: #07-01-05
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-success)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-success .card-header
+    id: #07-01-05
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--color-success)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-warning
+    id: #07-01-05
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-warning)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-warning .card-header
+    id: #07-01-05
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--color-warning)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-error
+    id: #07-01-05
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-error)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-error .card-header
+    id: #07-01-05
+    category: null
+    properties[2]: background,color
+    cssRule: "background: var(--color-error)\ncolor: var(--color-text-alt)"
+    responsive: false
+    description: "── Card semantic variants (success, warning, error) ───────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .card-horizontal
+    id: #07-01-06
+    category: null
+    properties[2]: display,flex-direction
+    cssRule: "display: flex\nflex-direction: row"
+    responsive: false
+    description: ── Card horizontal layout & groups ──────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-horizontal .card-img
+    id: #07-01-06
+    category: null
+    properties[2]: width,object-fit
+    cssRule: "width: 40%\nobject-fit: cover"
+    responsive: false
+    description: ── Card horizontal layout & groups ──────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .card-group
+    id: #07-01-06
+    category: null
+    properties[3]: display,gap,grid-template-columns
+    cssRule: "display: grid\ngap: var(--space-4)\ngrid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))"
+    responsive: false
+    description: ── Card horizontal layout & groups ──────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .card
+    id: #07-01-07
+    category: null
+    properties[2]: background,border-color
+    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
+    responsive: false
+    description: ── Night mode & responsive ──────────────────────────────────────────────

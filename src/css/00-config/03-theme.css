@@ -239,22 +239,22 @@
     --chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%);
     --chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%);
 
-    /*== Shadows ==*/
+    /*== Shadows (dark: subtle black with faint border ring) ==*/
     --shadow-s:
-      0 1px 2px rgba(255, 255, 255, 0.18),
-      0 0 0 1px rgba(255, 255, 255, 0.10);
+      0 1px 3px rgba(0, 0, 0, 0.40),
+      0 0 0 1px rgba(255, 255, 255, 0.04);
     --shadow-m:
-      0 6px 16px rgba(255, 255, 255, 0.18),
-      0 0 0 1px rgba(255, 255, 255, 0.16);
+      0 4px 12px rgba(0, 0, 0, 0.50),
+      0 0 0 1px rgba(255, 255, 255, 0.05);
     --shadow-l:
-      0 14px 32px rgba(255, 255, 255, 0.22),
-      0 0 0 1px rgba(255, 255, 255, 0.18);
+      0 10px 28px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(255, 255, 255, 0.06);
     --shadow-xl:
-      0 26px 64px rgba(255, 255, 255, 0.26),
-      0 0 0 1px rgba(255, 255, 255, 0.2);
+      0 20px 50px rgba(0, 0, 0, 0.60),
+      0 0 0 1px rgba(255, 255, 255, 0.07);
     --shadow-inner:
-      inset 0 1px 2px rgba(255, 255, 255, 0.25),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+      inset 0 1px 3px rgba(0, 0, 0, 0.45),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   }
   
   /* @ID: #00-03-03 */
@@ -269,21 +269,21 @@
     color: var(--color-text-alt);
     --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
     --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
-    /* Invertir sombras cuando se usa sólo a nivel de componente */
+    /* Sombras a nivel de componente (dark: negro sutil + anillo tenue) */
     --shadow-s:
-      0 1px 2px rgba(255, 255, 255, 0.18),
-      0 0 0 1px rgba(255, 255, 255, 0.10);
+      0 1px 3px rgba(0, 0, 0, 0.40),
+      0 0 0 1px rgba(255, 255, 255, 0.04);
     --shadow-m:
-      0 6px 16px rgba(255, 255, 255, 0.18),
-      0 0 0 1px rgba(255, 255, 255, 0.16);
+      0 4px 12px rgba(0, 0, 0, 0.50),
+      0 0 0 1px rgba(255, 255, 255, 0.05);
     --shadow-l:
-      0 14px 32px rgba(255, 255, 255, 0.22),
-      0 0 0 1px rgba(255, 255, 255, 0.18);
+      0 10px 28px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(255, 255, 255, 0.06);
     --shadow-xl:
-      0 26px 64px rgba(255, 255, 255, 0.26),
-      0 0 0 1px rgba(255, 255, 255, 0.2);
+      0 20px 50px rgba(0, 0, 0, 0.60),
+      0 0 0 1px rgba(255, 255, 255, 0.07);
     --shadow-inner:
-      inset 0 1px 2px rgba(255, 255, 255, 0.25),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+      inset 0 1px 3px rgba(0, 0, 0, 0.45),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   }
   

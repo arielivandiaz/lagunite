@@ -1,7 +1,7 @@
 /* ==========
-   06-molecules / 02-alerts.css
-   Alerts, dismissible alerts, and toast notifications.
-   ========== */
+  06-molecules / 02-alerts.css
+  Alerts, dismissible alerts, toast notifications, and snackbar feedback.
+  ========== */
 
 /* @ID: #06-02-01 */
 
@@ -111,6 +111,105 @@
 
 /* @ID: #06-02-05 */
 
+/* ── Snackbar ─────────────────────────────────────────────────────────── */
+
+.snackbar {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-4);
+  z-index: 1005;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: min(calc(100vw - var(--space-6)), 34rem);
+  padding: var(--space-3) var(--space-4);
+  color: var(--gray-50);
+  background: var(--gray-900);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-l);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(calc(100% + var(--space-4)));
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+}
+
+.snackbar.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.snackbar-message {
+  flex: 1;
+  min-width: 0;
+}
+
+.snackbar-action,
+.snackbar-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.snackbar-action {
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+}
+
+.snackbar-action:hover,
+.snackbar-close:hover {
+  opacity: 0.82;
+}
+
+.snackbar-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.snackbar-close:focus-visible,
+.snackbar-action:focus-visible {
+  outline: var(--border-width-md) solid currentcolor;
+  outline-offset: 2px;
+}
+
+.snackbar-success {
+  background: var(--color-success);
+}
+
+.snackbar-warning {
+  color: var(--gray-950);
+  background: var(--color-warning);
+}
+
+.snackbar-error {
+  background: var(--color-error);
+}
+
+.snackbar-info {
+  background: var(--color-primary);
+}
+
+@media (width <= 639px) {
+  .snackbar {
+    width: calc(100vw - var(--space-6));
+    border-radius: var(--radius-l);
+  }
+}
+
+/* @ID: #06-02-06 */
+
 /* ── Night mode ─────────────────────────────────────────────────────────── */
 
 .night .alert-warning,
@@ -121,4 +220,25 @@
 
 .night .alert-close {
   color: inherit;
+}
+
+.night .snackbar {
+  background: var(--gray-100);
+  color: var(--gray-950);
+}
+
+.night .snackbar-success {
+  background: #8ee7a6;
+}
+
+.night .snackbar-warning {
+  background: #ffd45b;
+}
+
+.night .snackbar-error {
+  background: #ff8b8b;
+}
+
+.night .snackbar-info {
+  background: #8cb8ff;
 }

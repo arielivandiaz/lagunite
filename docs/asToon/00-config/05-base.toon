@@ -1,16 +1,34 @@
 folder: 00-config
 file: 05-base.css
-lastUpdated: 2026-04-15
+lastUpdated: 2026-04-16
 hasResponsive: false
-totalSelectors: 45
-content[45]:
+totalSelectors: 47
+content[47]:
   - type: selector
     selectorType: complex
     selector: *
     id: #00-05-01
     category: null
-    properties[4]: margin,padding,outline,"-webkit-tap-highlight-color"
-    cssRule: "margin: 0\npadding: 0\noutline: none\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    responsive: false
+    description: ** RESET  **
+  - type: selector
+    selectorType: pseudo
+    selector: "*::before"
+    id: #00-05-01
+    category: null
+    properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    responsive: false
+    description: ** RESET  **
+  - type: selector
+    selectorType: pseudo
+    selector: "*::after"
+    id: #00-05-01
+    category: null
+    properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
     responsive: false
     description: ** RESET  **
   - type: selector
@@ -19,7 +37,7 @@ content[45]:
     id: #00-05-03
     category: null
     properties[7]: width,max-width,min-height,overflow-x,background,font-family,font-size
-    cssRule: "width: 100vw\nmax-width: 100vw\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
+    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
     responsive: false
     description: ** Static **
   - type: selector
@@ -28,7 +46,7 @@ content[45]:
     id: #00-05-03
     category: null
     properties[7]: width,max-width,min-height,overflow-x,background,font-family,font-size
-    cssRule: "width: 100vw\nmax-width: 100vw\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
+    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
     responsive: false
     description: ** Static **
   - type: selector
@@ -114,7 +132,7 @@ content[45]:
     description: ** Static **
   - type: selector
     selectorType: pseudo
-    selector: "header:not(.navbar):not(.doc-navbar-overlay)"
+    selector: "header:not(.navbar):not(.doc-navbar-overlay):not(.topbar)"
     id: #00-05-03
     category: null
     properties[1]: margin

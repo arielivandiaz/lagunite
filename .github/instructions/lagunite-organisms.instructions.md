@@ -64,6 +64,32 @@ On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with 
 ### Night
 `.night .footer` — dark surface.
 
+## Topbar — `06-topbar.css`
+
+| Class | Role |
+| --- | --- |
+| `.topbar` | Generic top horizontal bar with left/center/right regions |
+| `.topbar-left` / `.topbar-center` / `.topbar-right` | Internal regions with flexible alignment |
+| `.topbar-brand` | Brand or product link |
+| `.topbar-title` / `.topbar-subtitle` | Main and secondary text |
+| `.topbar-divider` | Vertical separator between groups |
+| `.topbar-search` | Search input wrapper (full-width up to max width) |
+| `.topbar-action` | Action button/link surface |
+| `.topbar-badge` | Small notification counter badge |
+| `.topbar-avatar` | Avatar slot (image/initials) |
+| `.topbar-sticky` | Sticky behavior (`top: 0`) |
+| `.topbar-elevated` | Adds subtle shadow |
+| `.topbar-primary` | Primary background style variant |
+| `.topbar-compact` | Reduced-height compact toolbar |
+| `.topbar-hide-mobile` | Hide selected elements at <=639px |
+
+### Mobile behavior
+- `.topbar-hide-mobile` allows selective collapse at <=639px.
+- `.topbar-center` aligns left on small screens for denser layouts.
+
+### Night
+`.night .topbar` — dark surface and adjusted action/label contrast.
+
 ## Layout composition
 
 Organisms do not replace layout utilities:

@@ -1,0 +1,641 @@
+{
+  "folder": "06-molecules",
+  "file": "09-segmented-control.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 43,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control",
+      "id": "#06-09-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "padding",
+        "background",
+        "border",
+        "border-radius",
+        "gap",
+        "font-family"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\npadding: var(--space-1)\nbackground: var(--color-bg-alt)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-l)\ngap: 0\nfont-family: var(--font-sans)",
+      "responsive": false,
+      "description": "── Segmented control shell ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-full-width",
+      "id": "#06-09-01",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: 100%",
+      "responsive": false,
+      "description": "── Segmented control shell ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-large",
+      "id": "#06-09-01",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-2)",
+      "responsive": false,
+      "description": "── Segmented control shell ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-small",
+      "id": "#06-09-01",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-0)",
+      "responsive": false,
+      "description": "── Segmented control shell ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input[type=\"radio\"]",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "position",
+        "clip",
+        "width",
+        "height",
+        "overflow",
+        "white-space"
+      ],
+      "cssRule": "position: absolute\nclip: rect(0 0 0 0)\nwidth: 1px\nheight: 1px\noverflow: hidden\nwhite-space: nowrap",
+      "responsive": false,
+      "description": "── Radio button pattern (hidden input + label) ───────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input[type=\"checkbox\"]",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "position",
+        "clip",
+        "width",
+        "height",
+        "overflow",
+        "white-space"
+      ],
+      "cssRule": "position: absolute\nclip: rect(0 0 0 0)\nwidth: 1px\nheight: 1px\noverflow: hidden\nwhite-space: nowrap",
+      "responsive": false,
+      "description": "── Radio button pattern (hidden input + label) ───────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "flex",
+        "display",
+        "align-items",
+        "justify-content",
+        "padding",
+        "margin",
+        "border",
+        "border-radius",
+        "background",
+        "color",
+        "font-size",
+        "font-weight",
+        "cursor",
+        "transition",
+        "white-space",
+        "text-decoration"
+      ],
+      "cssRule": "flex: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\npadding: var(--space-2) var(--space-3)\nmargin: 0\nborder: none\nborder-radius: var(--radius-m)\nbackground: transparent\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\ncursor: pointer\ntransition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease\nwhite-space: nowrap\ntext-decoration: none",
+      "responsive": false,
+      "description": "── Radio button pattern (hidden input + label) ───────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option:hover",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Radio button pattern (hidden input + label) ───────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option:focus-visible",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "── Radio button pattern (hidden input + label) ───────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option.active",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "box-shadow"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)\nbox-shadow: none",
+      "responsive": false,
+      "description": "Active state via .active class (for button pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input:checked + .segmented-option",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "Active state via :checked (for radio pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input:checked + .segmented-option:hover",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-primary-dark)",
+      "responsive": false,
+      "description": "Active state via :checked (for radio pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input:disabled + .segmented-option",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.55\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Active state via :checked (for radio pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option:disabled",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.55\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "Active state via :checked (for radio pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control input:focus-visible + .segmented-option",
+      "id": "#06-09-02",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "Active state via :checked (for radio pattern)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-outline",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "border"
+      ],
+      "cssRule": "background: transparent\nborder: var(--border-width-md) solid var(--color-border)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-outline .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-text-base)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-outline .segmented-option:hover",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-outline input:checked + .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color",
+        "border-radius"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)\nborder-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-subtle",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "border"
+      ],
+      "cssRule": "background: transparent\nborder: none",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-subtle .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "color",
+        "border-bottom",
+        "border-radius",
+        "padding"
+      ],
+      "cssRule": "color: var(--color-text-alt)\nborder-bottom: var(--border-width-md) solid transparent\nborder-radius: 0\npadding: var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-subtle .segmented-option:hover",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "border-bottom-color",
+        "color"
+      ],
+      "cssRule": "background: transparent\nborder-bottom-color: var(--color-primary)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-subtle input:checked + .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "background",
+        "border-bottom-color",
+        "color"
+      ],
+      "cssRule": "background: transparent\nborder-bottom-color: var(--color-primary)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-equal .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "flex"
+      ],
+      "cssRule": "flex: 1",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-fullwidth",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "width"
+      ],
+      "cssRule": "width: 100%",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-fullwidth .segmented-option",
+      "id": "#06-09-03",
+      "category": null,
+      "properties": [
+        "flex"
+      ],
+      "cssRule": "flex: 1",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-vertical",
+      "id": "#06-09-04",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "gap",
+        "padding"
+      ],
+      "cssRule": "flex-direction: column\ngap: var(--space-1)\npadding: var(--space-2)",
+      "responsive": false,
+      "description": "── Vertical layout ─────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-control-vertical .segmented-option",
+      "id": "#06-09-04",
+      "category": null,
+      "properties": [
+        "width",
+        "justify-content",
+        "border-radius"
+      ],
+      "cssRule": "width: 100%\njustify-content: flex-start\nborder-radius: var(--radius-m)",
+      "responsive": false,
+      "description": "── Vertical layout ─────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option svg",
+      "id": "#06-09-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "flex-shrink"
+      ],
+      "cssRule": "width: 1.25rem\nheight: 1.25rem\nflex-shrink: 0",
+      "responsive": false,
+      "description": "── Icon support ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option i",
+      "id": "#06-09-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "flex-shrink"
+      ],
+      "cssRule": "width: 1.25rem\nheight: 1.25rem\nflex-shrink: 0",
+      "responsive": false,
+      "description": "── Icon support ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".segmented-option-icon",
+      "id": "#06-09-05",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\ngap: var(--space-1)",
+      "responsive": false,
+      "description": "── Icon support ────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-800)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-option",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-300)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-option:hover",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.15)\ncolor: var(--color-primary-light)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-option.active",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control input:checked + .segmented-option",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-outline",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--gray-700)\nbackground: transparent",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-outline .segmented-option",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-300)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-outline .segmented-option:hover",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.15)\ncolor: var(--color-primary-light)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-subtle",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: transparent",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-subtle .segmented-option",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "color",
+        "border-bottom-color"
+      ],
+      "cssRule": "color: var(--gray-300)\nborder-bottom-color: transparent",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-subtle .segmented-option:hover",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "border-bottom-color",
+        "color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-primary-light)\ncolor: var(--color-primary-light)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .segmented-control-subtle input:checked + .segmented-option",
+      "id": "#06-09-06",
+      "category": null,
+      "properties": [
+        "border-bottom-color",
+        "color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-primary-light)\ncolor: var(--color-primary-light)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+{
+  "folder": "06-molecules",
+  "file": "10-list-item.css",
+  "lastUpdated": "2026-04-16",
+  "hasResponsive": false,
+  "totalSelectors": 45,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap",
+        "padding",
+        "border-bottom",
+        "background",
+        "transition"
+      ],
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg)\ntransition: background 0.15s ease, box-shadow 0.15s ease",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item:last-child",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: none",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-avatar",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "border-radius",
+        "background",
+        "overflow"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: flex\nalign-items: center\njustify-content: center\nwidth: 2.5rem\nheight: 2.5rem\nborder-radius: 50%\nbackground: var(--gray-200)\noverflow: hidden",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-avatar img",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "object-fit"
+      ],
+      "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-content",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width",
+        "display",
+        "flex-direction",
+        "gap"
+      ],
+      "cssRule": "flex: 1\nmin-width: 0\ndisplay: flex\nflex-direction: column\ngap: var(--space-1)",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-text",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "font-weight",
+        "color",
+        "white-space",
+        "overflow",
+        "text-overflow"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-base)\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-text-base)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-meta",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "margin",
+        "font-size",
+        "color",
+        "white-space",
+        "overflow",
+        "text-overflow"
+      ],
+      "cssRule": "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-actions",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: flex\nalign-items: center\ngap: var(--space-2)",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-action",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "justify-content",
+        "width",
+        "height",
+        "padding",
+        "background",
+        "border",
+        "border-radius",
+        "color",
+        "cursor",
+        "font-size",
+        "transition"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 2rem\nheight: 2rem\npadding: 0\nbackground: transparent\nborder: none\nborder-radius: var(--radius-m)\ncolor: var(--gray-500)\ncursor: pointer\nfont-size: 1rem\ntransition: background 0.2s ease, color 0.2s ease",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-action:hover",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-action:focus-visible",
+      "id": "#06-10-01",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "── Base list item structure ────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-interactive",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "cursor"
+      ],
+      "cssRule": "cursor: pointer",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-interactive:hover",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.05)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-interactive:active",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.1)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-link",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "text-decoration",
+        "color",
+        "display",
+        "align-items",
+        "gap",
+        "padding",
+        "border-bottom",
+        "background",
+        "transition"
+      ],
+      "cssRule": "text-decoration: none\ncolor: inherit\ndisplay: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg)\ntransition: background 0.15s ease",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-link:hover",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.05)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-link:focus-visible",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: -2px",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-link:last-child",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: none",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-checkbox",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "width",
+        "height",
+        "margin",
+        "cursor"
+      ],
+      "cssRule": "flex-shrink: 0\nwidth: 1.75rem\nheight: 1.75rem\nmargin: 0\ncursor: pointer",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-with-checkbox",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "padding-left"
+      ],
+      "cssRule": "padding-left: var(--space-2)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-with-checkbox .list-item-checkbox",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "flex-shrink"
+      ],
+      "cssRule": "flex-shrink: 0",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-selected",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.08)",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-disabled",
+      "id": "#06-10-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.55\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "── Variants ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-badge",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "align-items",
+        "padding",
+        "background",
+        "color",
+        "border-radius",
+        "font-size",
+        "font-weight",
+        "white-space"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: inline-flex\nalign-items: center\npadding: 0.25rem 0.5rem\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\nborder-radius: var(--radius-full)\nfont-size: 0.75rem\nfont-weight: var(--font-weight-bold)\nwhite-space: nowrap",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-badge-success",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-success)\ncolor: white",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-badge-warning",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-warning)\ncolor: white",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-badge-error",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-error)\ncolor: white",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-badge-info",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-info)\ncolor: white",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-status",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "display",
+        "width",
+        "height",
+        "border-radius"
+      ],
+      "cssRule": "flex-shrink: 0\ndisplay: inline-block\nwidth: 0.75rem\nheight: 0.75rem\nborder-radius: 50%",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-status-online",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-success)",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-status-away",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-warning)",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-item-status-offline",
+      "id": "#06-10-03",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--gray-400)",
+      "responsive": false,
+      "description": "── Badge and status indicators ──────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-container",
+      "id": "#06-10-04",
+      "category": null,
+      "properties": [
+        "background",
+        "border",
+        "border-radius",
+        "overflow"
+      ],
+      "cssRule": "background: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\noverflow: hidden",
+      "responsive": false,
+      "description": "── Spacing and container ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-container-compact .list-item",
+      "id": "#06-10-04",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-2)",
+      "responsive": false,
+      "description": "── Spacing and container ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-container-spacious .list-item",
+      "id": "#06-10-04",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-4)",
+      "responsive": false,
+      "description": "── Spacing and container ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".list-container-divider .list-item",
+      "id": "#06-10-04",
+      "category": null,
+      "properties": [
+        "border-bottom"
+      ],
+      "cssRule": "border-bottom: var(--border-width-md) solid var(--color-border)",
+      "responsive": false,
+      "description": "── Spacing and container ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-800)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-avatar",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-interactive:hover",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.15)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-link:hover",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.15)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-meta",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-selected",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.18)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-action",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-item-action:hover",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.15)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .list-container",
+      "id": "#06-10-06",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--gray-800)\nborder-color: var(--gray-700)",
+      "responsive": false,
+      "description": "── Night mode ──────────────────────────────────────────────────────────"
+    }
+  ]
+}
