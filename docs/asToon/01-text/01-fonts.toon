@@ -1,6 +1,6 @@
 folder: 01-text
 file: 01-fonts.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 37
 content[37]:
@@ -264,7 +264,7 @@ content[37]:
     properties[1]: font-size
     cssRule: "font-size: clamp(0.5rem, 1vh, 0.75rem)"
     responsive: false
-    description: Font Fluid *
+    description: Font Fluid
   - type: selector
     selectorType: class
     selector: .font-fluid-s
@@ -273,7 +273,7 @@ content[37]:
     properties[1]: font-size
     cssRule: "font-size: clamp(0.75rem, 1.5vh, 1rem)"
     responsive: false
-    description: Font Fluid *
+    description: Font Fluid
   - type: selector
     selectorType: class
     selector: .font-fluid
@@ -282,7 +282,7 @@ content[37]:
     properties[1]: font-size
     cssRule: "font-size: clamp(1rem, 2vh, 1.5rem)"
     responsive: false
-    description: Font Fluid *
+    description: Font Fluid
   - type: selector
     selectorType: class
     selector: .font-fluid-l
@@ -291,7 +291,7 @@ content[37]:
     properties[1]: font-size
     cssRule: "font-size: clamp(1.25rem, 3vh, 1.5rem)"
     responsive: false
-    description: Font Fluid *
+    description: Font Fluid
   - type: selector
     selectorType: class
     selector: .font-fluid-xl
@@ -300,16 +300,16 @@ content[37]:
     properties[1]: font-size
     cssRule: "font-size: clamp(1.5rem, 5vh, 2rem)"
     responsive: false
-    description: Font Fluid *
+    description: Font Fluid
   - type: selector
     selectorType: class
     selector: .font-weight-0
     id: #01-01-06
     category: null
-    properties[2]: font-weight,font-weight
-    cssRule: "font-weight: lighter\nfont-weight: var(--font-weight-light) !important"
+    properties[1]: font-weight
+    cssRule: "font-weight: var(--font-weight-light) !important"
     responsive: false
-    description: Font Weight *
+    description: Font Weight
   - type: selector
     selectorType: class
     selector: .font-weight-1
@@ -318,7 +318,7 @@ content[37]:
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-normal) !important"
     responsive: false
-    description: Font Weight *
+    description: Font Weight
   - type: selector
     selectorType: class
     selector: .font-weight-2
@@ -327,7 +327,7 @@ content[37]:
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-medium) !important"
     responsive: false
-    description: Font Weight *
+    description: Font Weight
   - type: selector
     selectorType: class
     selector: .font-weight-3
@@ -336,4 +336,4 @@ content[37]:
     properties[1]: font-weight
     cssRule: "font-weight: var(--font-weight-bold) !important"
     responsive: false
-    description: Font Weight *
+    description: Font Weight

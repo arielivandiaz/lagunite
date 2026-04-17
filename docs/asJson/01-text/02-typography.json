@@ -1,7 +1,7 @@
 {
   "folder": "01-text",
   "file": "02-typography.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": true,
   "totalSelectors": 20,
   "content": [
@@ -55,7 +55,7 @@
       ],
       "cssRule": "letter-spacing: -0.1rem",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -68,7 +68,7 @@
       ],
       "cssRule": "letter-spacing: -0.05rem",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -81,7 +81,7 @@
       ],
       "cssRule": "letter-spacing: 0.05rem",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -94,7 +94,7 @@
       ],
       "cssRule": "letter-spacing: 0.1em",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -107,7 +107,7 @@
       ],
       "cssRule": "letter-spacing: 0.2em",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -120,7 +120,7 @@
       ],
       "cssRule": "letter-spacing: 0.4rem",
       "responsive": false,
-      "description": "Letter Spaccing *"
+      "description": "Letter Spaccing"
     },
     {
       "type": "selector",
@@ -133,7 +133,7 @@
       ],
       "cssRule": "line-height: 0.85",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -146,7 +146,7 @@
       ],
       "cssRule": "line-height: 0.95",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -159,7 +159,7 @@
       ],
       "cssRule": "line-height: 1.5",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -172,7 +172,7 @@
       ],
       "cssRule": "line-height: 1.7",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -185,7 +185,7 @@
       ],
       "cssRule": "line-height: 2",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -198,7 +198,7 @@
       ],
       "cssRule": "line-height: 2.5",
       "responsive": false,
-      "description": "Line Height *"
+      "description": "Line Height"
     },
     {
       "type": "selector",
@@ -211,7 +211,7 @@
       ],
       "cssRule": "text-align: center",
       "responsive": true,
-      "description": "Text Align *"
+      "description": "Text Align"
     },
     {
       "type": "selector",
@@ -224,7 +224,7 @@
       ],
       "cssRule": "text-align: left",
       "responsive": true,
-      "description": "Text Align *"
+      "description": "Text Align"
     },
     {
       "type": "selector",
@@ -237,7 +237,7 @@
       ],
       "cssRule": "text-align: right",
       "responsive": true,
-      "description": "Text Align *"
+      "description": "Text Align"
     },
     {
       "type": "selector",
@@ -250,7 +250,7 @@
       ],
       "cssRule": "text-align: justify",
       "responsive": true,
-      "description": "Text Align *"
+      "description": "Text Align"
     },
     {
       "type": "selector",
@@ -263,7 +263,7 @@
       ],
       "cssRule": "text-align: justify-all",
       "responsive": true,
-      "description": "Text Align *"
+      "description": "Text Align"
     }
   ]
 }

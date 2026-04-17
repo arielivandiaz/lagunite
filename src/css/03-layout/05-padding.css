@@ -12,6 +12,7 @@
    ========================================================================== */
 
 /* @ID: #03-05-01 */
+
 /* ── All-sides padding ─────────────────────────────────────────────────── */
 
 .padd-0    { padding: 0 !important; }
@@ -22,6 +23,7 @@
 .padd-xl   { padding: var(--space-16); }
 
 /* @ID: #03-05-02 */
+
 /* ── Horizontal padding ─────────────────────────────────────────────────── */
 
 .padd-h-xs { padding-left: var(--space-1); padding-right: var(--space-1); }
@@ -31,6 +33,7 @@
 .padd-h-xl { padding-left: var(--space-16); padding-right: var(--space-16); }
 
 /* @ID: #03-05-03 */
+
 /* ── Vertical padding ───────────────────────────────────────────────────── */
 
 .padd-v-xs { padding-top: var(--space-1); padding-bottom: var(--space-1); }
@@ -40,6 +43,7 @@
 .padd-v-xl { padding-top: var(--space-16); padding-bottom: var(--space-16); }
 
 /* @ID: #03-05-04 */
+
 /* ── Left padding ──────────────────────────────────────────────────────── */
 
 .padd-lf-xs { padding-left: var(--space-1); }
@@ -49,6 +53,7 @@
 .padd-lf-xl { padding-left: var(--space-16); }
 
 /* @ID: #03-05-05 */
+
 /* ── Right padding ─────────────────────────────────────────────────────── */
 
 .padd-rg-xs { padding-right: var(--space-1); }
@@ -58,6 +63,7 @@
 .padd-rg-xl { padding-right: var(--space-16); }
 
 /* @ID: #03-05-06 */
+
 /* ── Top padding ───────────────────────────────────────────────────────── */
 
 .padd-t-xs { padding-top: var(--space-1); }
@@ -67,6 +73,7 @@
 .padd-t-xl { padding-top: var(--space-16); }
 
 /* @ID: #03-05-07 */
+
 /* ── Bottom padding ────────────────────────────────────────────────────── */
 
 .padd-b-xs { padding-bottom: var(--space-1); }
@@ -76,9 +83,10 @@
 .padd-b-xl { padding-bottom: var(--space-16); }
 
 /* @ID: #03-05-08 */
+
 /* ── Responsive: mobile (x) ───────────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xpadd-0    { padding: 0 !important; }
   .xpadd-xs   { padding: var(--space-1); }
   .xpadd-s    { padding: var(--space-3); }
@@ -124,9 +132,10 @@
 }
 
 /* @ID: #03-05-09 */
+
 /* ── Responsive: desktop (d) ──────────────────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dpadd-0    { padding: 0 !important; }
   .dpadd-xs   { padding: var(--space-1); }
   .dpadd-s    { padding: var(--space-3); }

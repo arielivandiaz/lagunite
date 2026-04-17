@@ -1,9 +1,9 @@
 folder: 03-layout
 file: 01-flex.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: true
-totalSelectors: 86
-content[86]:
+totalSelectors: 92
+content[92]:
   - type: selector
     selectorType: class
     selector: .col
@@ -60,6 +60,24 @@ content[86]:
     description: ── Flex containers (direction) ──────────────────────────────────────────
   - type: selector
     selectorType: class
+    selector: .rowr-col
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center"
+    responsive: false
+    description: ── Flex containers (direction) ──────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .rowr-colr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center"
+    responsive: false
+    description: ── Flex containers (direction) ──────────────────────────────────────────
+  - type: selector
+    selectorType: class
     selector: .col-row
     id: #03-01-01
     category: null
@@ -70,6 +88,24 @@ content[86]:
   - type: selector
     selectorType: class
     selector: .col-rowr
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center"
+    responsive: false
+    description: ── Flex containers (direction) ──────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .colr-row
+    id: #03-01-01
+    category: null
+    properties[4]: display,flex-wrap,justify-content,align-items
+    cssRule: "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center"
+    responsive: false
+    description: ── Flex containers (direction) ──────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .colr-rowr
     id: #03-01-01
     category: null
     properties[4]: display,flex-wrap,justify-content,align-items
@@ -294,6 +330,15 @@ content[86]:
     description: ── Gap — semantic scale (matches marg/padd naming) ──────────────────────
   - type: selector
     selectorType: class
+    selector: .gap-h-xl
+    id: #03-01-05
+    category: null
+    properties[1]: column-gap
+    cssRule: "column-gap: var(--space-16)"
+    responsive: false
+    description: ── Gap — semantic scale (matches marg/padd naming) ──────────────────────
+  - type: selector
+    selectorType: class
     selector: .gap-v-xs
     id: #03-01-05
     category: null
@@ -326,6 +371,15 @@ content[86]:
     category: null
     properties[1]: row-gap
     cssRule: "row-gap: var(--space-12)"
+    responsive: false
+    description: ── Gap — semantic scale (matches marg/padd naming) ──────────────────────
+  - type: selector
+    selectorType: class
+    selector: .gap-v-xl
+    id: #03-01-05
+    category: null
+    properties[1]: row-gap
+    cssRule: "row-gap: var(--space-16)"
     responsive: false
     description: ── Gap — semantic scale (matches marg/padd naming) ──────────────────────
   - type: selector
@@ -371,7 +425,7 @@ content[86]:
     category: null
     properties[1]: gap
     cssRule: "gap: var(--space-5)"
-    responsive: false
+    responsive: true
     description: "── Gap — numeric scale (fine control, maps 1:1 to --space-N) ────────────"
   - type: selector
     selectorType: class
@@ -398,7 +452,7 @@ content[86]:
     category: null
     properties[1]: gap
     cssRule: "gap: var(--space-10)"
-    responsive: false
+    responsive: true
     description: "── Gap — numeric scale (fine control, maps 1:1 to --space-N) ────────────"
   - type: selector
     selectorType: class
@@ -407,7 +461,7 @@ content[86]:
     category: null
     properties[1]: gap
     cssRule: "gap: var(--space-12)"
-    responsive: false
+    responsive: true
     description: "── Gap — numeric scale (fine control, maps 1:1 to --space-N) ────────────"
   - type: selector
     selectorType: class
@@ -416,7 +470,7 @@ content[86]:
     category: null
     properties[1]: gap
     cssRule: "gap: var(--space-16)"
-    responsive: false
+    responsive: true
     description: "── Gap — numeric scale (fine control, maps 1:1 to --space-N) ────────────"
   - type: selector
     selectorType: class

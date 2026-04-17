@@ -12,6 +12,7 @@
    ========================================================================== */
 
 /* @ID: #03-06-01 */
+
 /* ── Base container ─────────────────────────────────────────────────────── */
 
 .container {
@@ -28,14 +29,14 @@
   padding-right: var(--space-4);
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .container-fluid {
     padding-left: var(--space-6);
     padding-right: var(--space-6);
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .container-fluid {
     padding-left: var(--space-8);
     padding-right: var(--space-8);
@@ -43,7 +44,9 @@
 }
 
 /* @ID: #03-06-02 */
+
 /* ── Container size scale ───────────────────────────────────────────────── */
+
 /*
    Use with .container for padding + centering, or standalone for max-width only.
    Example: <div class="container container-l"> → 1024px centered with padding
@@ -57,6 +60,7 @@
 .container-xxl { max-width: 1536px; margin-left: auto; margin-right: auto; }
 
 /* @ID: #03-06-03 */
+
 /* ── Semantic containers ────────────────────────────────────────────────── */
 
 .container-prose {
@@ -106,6 +110,7 @@
 }
 
 /* @ID: #03-06-04 */
+
 /* ── Section containers ─────────────────────────────────────────────────── */
 
 .section-container {
@@ -130,6 +135,7 @@
 }
 
 /* @ID: #03-06-05 */
+
 /* ── Convenience combos ─────────────────────────────────────────────────── */
 
 .container-card-center {
@@ -155,6 +161,7 @@
 }
 
 /* @ID: #03-06-06 */
+
 /* ── Constrain utilities ────────────────────────────────────────────────── */
 
 .constrain-xs { max-width: 8rem; }   /* 128px */
@@ -164,6 +171,7 @@
 .constrain-xl { max-width: 16rem; }  /* 256px */
 
 /* @ID: #03-06-07 */
+
 /* ── Object fit ─────────────────────────────────────────────────────────── */
 
 .object-contain    { object-fit: contain; }
@@ -173,9 +181,10 @@
 .object-scale-down { object-fit: scale-down; }
 
 /* @ID: #03-06-08 */
+
 /* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xcontainer {
     width: 100%;
     margin-left: auto;
@@ -210,9 +219,10 @@
 }
 
 /* @ID: #03-06-09 */
+
 /* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dcontainer {
     width: 100%;
     margin-left: auto;
@@ -250,6 +260,7 @@
 }
 
 /* @ID: #03-06-10 */
+
 /* ── Debug container (development only) ─────────────────────────────────── */
 
 .container-debug {

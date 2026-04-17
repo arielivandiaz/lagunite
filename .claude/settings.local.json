@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx stylelint *)",
+      "Bash(awk '{print $NF}')",
+      "Bash(grep -oE \"[a-z-]+-[a-z-]+$\")",
+      "Bash(npm pack *)"
+    ]
+  }
+}

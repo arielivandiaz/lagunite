@@ -1,16 +1,22 @@
-/* 05-atoms: avatars */
+/* ==========================================================================
+   05-atoms / 07-avatars.css
+   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,
+   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.
+   Responsive: x = mobile (max-width: 639px).
+   ========================================================================== */
+
 /* @ID: #05-07-01 */
 .avatar {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: var(--space-10); /* 2.5rem / 40px default */
+	width: var(--space-10);
 	height: var(--space-10);
-	border-radius: 50%; /* Circle by default */
+	border-radius: 50%;
 	overflow: hidden;
-	background-color: var(--color-neutral-200);
-	color: var(--color-neutral-700);
+	background-color: var(--gray-200);
+	color: var(--gray-700);
 	font-weight: var(--font-weight-medium);
 	font-size: var(--font-size-base);
 	line-height: 1;
@@ -25,35 +31,32 @@
 	display: block;
 }
 
-/* Night mode */
 .night .avatar {
-	background-color: var(--color-neutral-700);
-	color: var(--color-neutral-200);
+	background-color: var(--gray-700);
+	color: var(--gray-200);
 }
 
 /* @ID: #05-07-02 */
 .avatar-xs {
-	width: var(--space-6); /* 1.5rem / 24px */
+	width: var(--space-6);
 	height: var(--space-6);
 	font-size: var(--font-size-xs);
 }
 
 .avatar-s {
-	width: var(--space-8); /* 2rem / 32px */
+	width: var(--space-8);
 	height: var(--space-8);
 	font-size: var(--font-size-s);
 }
 
-/* .avatar is default size (40px) */
-
 .avatar-l {
-	width: var(--space-12); /* 3rem / 48px */
+	width: var(--space-12);
 	height: var(--space-12);
 	font-size: var(--font-size-l);
 }
 
 .avatar-xl {
-	width: var(--space-16); /* 4rem / 64px */
+	width: var(--space-16);
 	height: var(--space-16);
 	font-size: var(--font-size-xl);
 }
@@ -86,16 +89,14 @@
 	min-width: 8px;
 	min-height: 8px;
 	border-radius: 50%;
-	border: 2px solid var(--color-surface);
-	background-color: var(--color-neutral-400);
+	border: 2px solid var(--color-bg);
+	background-color: var(--gray-400);
 }
 
-/* Night mode border */
 .night .avatar-status::after {
-	border-color: var(--color-surface-night);
+	border-color: var(--color-bg);
 }
 
-/* Status variants */
 .avatar-status-online::after {
 	background-color: var(--color-success);
 }
@@ -109,27 +110,26 @@
 }
 
 .avatar-status-offline::after {
-	background-color: var(--color-neutral-400);
+	background-color: var(--gray-400);
 }
 
 /* @ID: #05-07-05 */
 .avatar-placeholder {
 	background: linear-gradient(
 		135deg,
-		var(--color-neutral-300) 0%,
-		var(--color-neutral-200) 100%
+		var(--gray-300) 0%,
+		var(--gray-200) 100%
 	);
 }
 
 .night .avatar-placeholder {
 	background: linear-gradient(
 		135deg,
-		var(--color-neutral-600) 0%,
-		var(--color-neutral-700) 100%
+		var(--gray-600) 0%,
+		var(--gray-700) 100%
 	);
 }
 
-/* Icon placeholder (requires icon inside) */
 .avatar-placeholder svg,
 .avatar-placeholder i {
 	width: 50%;
@@ -144,80 +144,77 @@
 		var(--color-primary) 0%,
 		var(--color-primary-dark) 100%
 	);
-	color: var(--color-text-inverse);
-	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-alt);
+	font-weight: var(--font-weight-medium);
 	text-transform: uppercase;
 }
 
-/* Color variants for initials */
 .avatar-initials-secondary {
 	background: linear-gradient(
 		135deg,
 		var(--color-secondary) 0%,
 		var(--color-secondary-dark) 100%
 	);
-	color: var(--color-text-inverse);
+	color: var(--color-text-alt);
 }
 
 .avatar-initials-success {
 	background: linear-gradient(
 		135deg,
-		var(--color-success) 0%,
-		var(--color-success-dark) 100%
+		var(--green-500) 0%,
+		var(--green-700) 100%
 	);
-	color: var(--color-text-inverse);
+	color: var(--color-text-alt);
 }
 
 .avatar-initials-info {
 	background: linear-gradient(
 		135deg,
-		var(--color-info) 0%,
-		var(--color-info-dark) 100%
+		var(--blue-500) 0%,
+		var(--blue-700) 100%
 	);
-	color: var(--color-text-inverse);
+	color: var(--color-text-alt);
 }
 
 .avatar-initials-warning {
 	background: linear-gradient(
 		135deg,
-		var(--color-warning) 0%,
-		var(--color-warning-dark) 100%
+		var(--yellow-500) 0%,
+		var(--yellow-700) 100%
 	);
-	color: var(--color-text-inverse);
+	color: var(--gray-900);
 }
 
 .avatar-initials-error {
 	background: linear-gradient(
 		135deg,
-		var(--color-error) 0%,
-		var(--color-error-dark) 100%
+		var(--red-500) 0%,
+		var(--red-700) 100%
 	);
-	color: var(--color-text-inverse);
+	color: var(--color-text-alt);
 }
 
 /* @ID: #05-07-07 */
 .avatar-group {
 	display: inline-flex;
 	align-items: center;
-	flex-direction: row-reverse; /* Reverses order for stacking */
+	flex-direction: row-reverse;
 }
 
 .avatar-group .avatar {
-	margin-left: calc(var(--space-2) * -1); /* -0.5rem overlap */
-	border: 2px solid var(--color-surface);
-	transition: transform var(--transition-duration-150) var(--transition-timing-ease-out);
+	margin-left: calc(var(--space-2) * -1);
+	border: 2px solid var(--color-bg);
+	transition: transform 150ms ease-out;
 }
 
 .night .avatar-group .avatar {
-	border-color: var(--color-surface-night);
+	border-color: var(--color-bg);
 }
 
-/* First avatar (visually last due to reverse) has no margin */
 .avatar-group .avatar:first-child {
 	margin-left: 0;
 }
 
-/* Hover effect - lift avatar */
 .avatar-group .avatar:hover {
 	transform: translateY(-2px);
 	z-index: 10;
@@ -231,13 +228,13 @@
 }
 
 .avatar-stack .avatar {
-	margin-left: calc(var(--space-4) * -1); /* -1rem overlap - more than group */
-	border: 3px solid var(--color-surface);
+	margin-left: calc(var(--space-4) * -1);
+	border: 3px solid var(--color-bg);
 	box-shadow: var(--shadow-s);
 }
 
 .night .avatar-stack .avatar {
-	border-color: var(--color-surface-night);
+	border-color: var(--color-bg);
 }
 
 .avatar-stack .avatar:first-child {
@@ -249,7 +246,6 @@
 	z-index: 10;
 }
 
-/* Counter for remaining avatars */
 .avatar-stack-counter {
 	display: inline-flex;
 	align-items: center;
@@ -258,34 +254,33 @@
 	height: var(--space-10);
 	margin-left: calc(var(--space-4) * -1);
 	border-radius: 50%;
-	border: 3px solid var(--color-surface);
-	background-color: var(--color-neutral-300);
-	color: var(--color-neutral-700);
+	border: 3px solid var(--color-bg);
+	background-color: var(--gray-300);
+	color: var(--gray-700);
 	font-size: var(--font-size-s);
-	font-weight: var(--font-weight-semibold);
+	font-weight: var(--font-weight-medium);
 	flex-shrink: 0;
 	cursor: pointer;
-	transition: all var(--transition-duration-150) var(--transition-timing-ease-out);
+	transition: all 150ms ease-out;
 }
 
 .night .avatar-stack-counter {
-	border-color: var(--color-surface-night);
-	background-color: var(--color-neutral-700);
-	color: var(--color-neutral-200);
+	border-color: var(--color-bg);
+	background-color: var(--gray-700);
+	color: var(--gray-200);
 }
 
 .avatar-stack-counter:hover {
 	transform: scale(1.1);
-	background-color: var(--color-neutral-400);
+	background-color: var(--gray-400);
 	z-index: 10;
 }
 
 .night .avatar-stack-counter:hover {
-	background-color: var(--color-neutral-600);
+	background-color: var(--gray-600);
 }
 
 /* @ID: #05-07-09 */
-/* Extra small group */
 .avatar-group-xs .avatar,
 .avatar-stack-xs .avatar {
 	border-width: 1px;
@@ -307,14 +302,13 @@
 	font-size: var(--font-size-xs);
 }
 
-/* Small group */
 .avatar-group-s .avatar,
 .avatar-stack-s .avatar {
 	border-width: 2px;
 }
 
 .avatar-group-s .avatar {
-	margin-left: calc(var(--space-1-5) * -1);
+	margin-left: calc(var(--space-2) * -0.75);
 }
 
 .avatar-stack-s .avatar,
@@ -328,7 +322,6 @@
 	font-size: var(--font-size-s);
 }
 
-/* Large group */
 .avatar-group-l .avatar,
 .avatar-stack-l .avatar {
 	border-width: 3px;
@@ -349,7 +342,6 @@
 	font-size: var(--font-size-l);
 }
 
-/* Extra large group */
 .avatar-group-xl .avatar,
 .avatar-stack-xl .avatar {
 	border-width: 4px;
@@ -385,7 +377,7 @@
 }
 
 .avatar-ring-info {
-	border-color: var(--color-info);
+	border-color: var(--blue-500);
 }
 
 .avatar-ring-warning {
@@ -396,15 +388,13 @@
 	border-color: var(--color-error);
 }
 
-/* Thick ring variants */
 .avatar-ring-thick {
 	border-width: 3px;
 	padding: 3px;
 }
 
 /* @ID: #05-07-11 */
-@media (max-width: 639px) {
-	/* Reduce avatar sizes on mobile for groups */
+@media (width <= 639px) {
 	.avatar-group .avatar,
 	.avatar-stack .avatar {
 		width: var(--space-8);
@@ -412,7 +402,7 @@
 	}
 
 	.avatar-group .avatar {
-		margin-left: calc(var(--space-1-5) * -1);
+		margin-left: calc(var(--space-2) * -0.75);
 	}
 
 	.avatar-stack .avatar {
@@ -428,7 +418,6 @@
 		border-width: 2px;
 	}
 
-	/* Reduce status indicator size */
 	.avatar-status::after {
 		min-width: 6px;
 		min-height: 6px;

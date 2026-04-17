@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.0.21",
+  "version": "2.0.22",
   "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
@@ -44,5 +44,26 @@
     "vite": "^5.2.13"
   },
   "author": "Ariel Diaz <ariel@laguna.com.ar>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "css-framework",
+    "utility-first",
+    "design-system",
+    "ui",
+    "dark-mode",
+    "night-mode",
+    "responsive",
+    "atoms",
+    "molecules",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielivandiaz/lagunite.git"
+  },
+  "homepage": "https://github.com/arielivandiaz/lagunite#readme",
+  "bugs": {
+    "url": "https://github.com/arielivandiaz/lagunite/issues"
+  }
 }

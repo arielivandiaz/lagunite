@@ -9,6 +9,7 @@
    ========================================================================== */
 
 /* @ID: #03-02-01 */
+
 /* ── Grid containers ────────────────────────────────────────────────────── */
 
 .grid {
@@ -35,6 +36,7 @@
 }
 
 /* @ID: #03-02-02 */
+
 /* ── Grid columns ───────────────────────────────────────────────────────── */
 
 .grid-cols-1  { grid-template-columns: repeat(1, 1fr); }
@@ -51,6 +53,7 @@
 .grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
 
 /* @ID: #03-02-03 */
+
 /* ── Grid rows ──────────────────────────────────────────────────────────── */
 
 .grid-rows-1 { grid-template-rows: repeat(1, 1fr); }
@@ -61,9 +64,10 @@
 .grid-rows-6 { grid-template-rows: repeat(6, 1fr); }
 
 /* @ID: #03-02-04 */
+
 /* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xgrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,9 +92,10 @@
 }
 
 /* @ID: #03-02-05 */
+
 /* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dgrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,6 +130,7 @@
 }
 
 /* @ID: #03-02-06 */
+
 /* ── Column span ────────────────────────────────────────────────────────── */
 
 .col-span-1    { grid-column: span 1; }
@@ -142,6 +148,7 @@
 .col-span-full { grid-column: 1 / -1; }
 
 /* @ID: #03-02-07 */
+
 /* ── Row span ───────────────────────────────────────────────────────────── */
 
 .row-span-1    { grid-row: span 1; }
@@ -153,6 +160,7 @@
 .row-span-full { grid-row: 1 / -1; }
 
 /* @ID: #03-02-08 */
+
 /* ── Column start / end ─────────────────────────────────────────────────── */
 
 .col-start-1    { grid-column-start: 1; }
@@ -173,6 +181,7 @@
 .col-end-auto { grid-column-end: auto; }
 
 /* @ID: #03-02-09 */
+
 /* ── Row start / end ────────────────────────────────────────────────────── */
 
 .row-start-1    { grid-row-start: 1; }
@@ -193,9 +202,10 @@
 .row-end-auto { grid-row-end: auto; }
 
 /* @ID: #03-02-10 */
+
 /* ── Responsive span (mobile) ───────────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xcol-span-1    { grid-column: span 1; }
   .xcol-span-2    { grid-column: span 2; }
   .xcol-span-3    { grid-column: span 3; }
@@ -210,9 +220,10 @@
 }
 
 /* @ID: #03-02-11 */
+
 /* ── Responsive span (desktop) ──────────────────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dcol-span-1    { grid-column: span 1; }
   .dcol-span-2    { grid-column: span 2; }
   .dcol-span-3    { grid-column: span 3; }
@@ -237,7 +248,9 @@
 }
 
 /* @ID: #03-02-12 */
+
 /* ── Grid-specific alignment (justify-items, place-items) ───────────────── */
+
 /*
    For shared properties (justify-content, align-items, align-content, align-self)
    use the flex classes: .jc-c, .ai-c, .ac-c, .as-c — they work in grid too.
@@ -254,6 +267,7 @@
 .pi-str { place-items: stretch !important; }
 
 /* @ID: #03-02-13 */
+
 /* ── Grid-specific alignment (justify-self, place-self) ─────────────────── */
 
 .js-c   { justify-self: center !important; }
@@ -267,9 +281,10 @@
 .ps-str { place-self: stretch !important; }
 
 /* @ID: #03-02-14 */
+
 /* ── Responsive grid alignment (mobile) ─────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xji-c   { justify-items: center !important; }
   .xji-s   { justify-items: start !important; }
   .xji-e   { justify-items: end !important; }
@@ -292,9 +307,10 @@
 }
 
 /* @ID: #03-02-15 */
+
 /* ── Responsive grid alignment (desktop) ────────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dji-c   { justify-items: center !important; }
   .dji-s   { justify-items: start !important; }
   .dji-e   { justify-items: end !important; }
@@ -317,6 +333,7 @@
 }
 
 /* @ID: #03-02-16 */
+
 /* ── Auto flow ──────────────────────────────────────────────────────────── */
 
 .grid-flow-row       { grid-auto-flow: row; }
@@ -326,6 +343,7 @@
 .grid-flow-col-dense { grid-auto-flow: column dense; }
 
 /* @ID: #03-02-17 */
+
 /* ── Auto columns / rows ────────────────────────────────────────────────── */
 
 .auto-cols-auto { grid-auto-columns: auto; }

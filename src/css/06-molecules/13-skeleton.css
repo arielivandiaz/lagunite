@@ -1,15 +1,17 @@
 /* ==========
-   06-molecules / 11-skeleton.css
+   06-molecules / 13-skeleton.css
    Skeleton loading primitives and composed placeholders for common UI patterns.
    ========= */
 
-/* @ID: #06-11-01 */
+/* @ID: #06-13-01 */
+
 /* ── Base primitives ───────────────────────────────────────────────────── */
 
 .skeleton {
   --skeleton-bg: var(--gray-200);
   --skeleton-bg-alt: var(--gray-100);
   --skeleton-radius: var(--radius-s);
+
   display: block;
   background: linear-gradient(180deg, var(--skeleton-bg), var(--skeleton-bg-alt));
   border-radius: var(--skeleton-radius);
@@ -53,7 +55,8 @@
   width: 64%;
 }
 
-/* @ID: #06-11-02 */
+/* @ID: #06-13-02 */
+
 /* ── UI patterns ───────────────────────────────────────────────────────── */
 
 .skeleton-button {
@@ -86,7 +89,8 @@
   border-radius: 50%;
 }
 
-/* @ID: #06-11-03 */
+/* @ID: #06-13-03 */
+
 /* ── Content patterns ──────────────────────────────────────────────────── */
 
 .skeleton-card {
@@ -125,7 +129,8 @@
   gap: var(--space-3);
 }
 
-/* @ID: #06-11-04 */
+/* @ID: #06-13-04 */
+
 /* ── Layout and states ─────────────────────────────────────────────────── */
 
 .skeleton-inline {
@@ -155,14 +160,15 @@
   transform: translateX(-120%);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgb(255 255 255 / 0%) 0%,
+    rgb(255 255 255 / 50%) 50%,
+    rgb(255 255 255 / 0%) 100%
   );
   animation: skeleton-shimmer 1.45s linear infinite;
 }
 
-/* @ID: #06-11-05 */
+/* @ID: #06-13-05 */
+
 /* ── Motion and night mode ─────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
@@ -202,8 +208,8 @@
 .night .skeleton-shimmer::after {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.16) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgb(255 255 255 / 0%) 0%,
+    rgb(255 255 255 / 16%) 50%,
+    rgb(255 255 255 / 0%) 100%
   );
 }

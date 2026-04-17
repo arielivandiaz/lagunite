@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "05-base.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 47,
   "content": [
@@ -60,7 +60,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "html",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "width",
@@ -71,7 +71,7 @@
         "font-family",
         "font-size"
       ],
-      "cssRule": "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
+      "cssRule": "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--color-bg)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -79,7 +79,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "body",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "width",
@@ -90,7 +90,7 @@
         "font-family",
         "font-size"
       ],
-      "cssRule": "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
+      "cssRule": "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--color-bg)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -98,7 +98,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "button",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "border",
@@ -113,7 +113,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "a",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "cursor"
@@ -126,7 +126,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "a",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "text-decoration"
@@ -139,7 +139,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "a:visited",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "text-decoration"
@@ -152,7 +152,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "a:active",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "text-decoration"
@@ -165,7 +165,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "a:enabled",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "text-decoration"
@@ -178,7 +178,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "ul",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "list-style",
@@ -192,7 +192,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "ol",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "text-align"
@@ -205,7 +205,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "img",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "max-width"
@@ -218,7 +218,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "header:not(.navbar):not(.doc-navbar-overlay):not(.topbar)",
-      "id": "#00-05-03",
+      "id": "#00-05-02",
       "category": null,
       "properties": [
         "margin"
@@ -231,7 +231,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "body",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "width",
@@ -246,7 +246,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "body",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "background",
@@ -261,7 +261,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "body.night",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "background",
@@ -275,7 +275,7 @@
       "type": "selector",
       "selectorType": "pseudo-hover",
       "selector": "a:hover",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "color"
@@ -288,7 +288,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "p",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "margin",
@@ -306,7 +306,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "hr",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display",
@@ -323,7 +323,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "sub",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "font-size",
@@ -338,7 +338,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "sup",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "font-size",
@@ -353,7 +353,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "blockquote",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "border-left",
@@ -370,7 +370,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "code",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "border-radius",
@@ -388,7 +388,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "pre",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "-webkit-overflow-scrolling",
@@ -404,7 +404,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "pre code",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "text-align",
@@ -421,13 +421,13 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night code",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "background",
         "color"
       ],
-      "cssRule": "background: #000\ncolor: var(--text_color_alt)",
+      "cssRule": "background: #000\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -435,7 +435,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "hgroup",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -448,7 +448,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "hgroup h1",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -461,7 +461,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "hgroup h2",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -474,7 +474,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "hgroup h3",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -487,7 +487,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "hgroup h4",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -500,7 +500,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "hgroup h5",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -513,7 +513,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "ul li",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "padding"
@@ -526,7 +526,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "ol li",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "padding"
@@ -539,7 +539,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "tr *",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "left",
@@ -554,7 +554,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "td *",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "left",
@@ -569,7 +569,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "th",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "overflow-wrap",
@@ -584,7 +584,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "td",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "overflow-wrap",
@@ -599,7 +599,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "th",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "padding"
@@ -612,7 +612,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "caption",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "margin"
@@ -625,7 +625,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "details",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "padding",
@@ -633,7 +633,7 @@
         "background-color",
         "transition"
       ],
-      "cssRule": "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-secondary)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease",
+      "cssRule": "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-alt)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease",
       "responsive": false,
       "description": "** Static **"
     },
@@ -641,7 +641,7 @@
       "type": "selector",
       "selectorType": "element",
       "selector": "summary",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "font-weight",
@@ -659,7 +659,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "summary::-webkit-details-marker",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "display"
@@ -672,7 +672,7 @@
       "type": "selector",
       "selectorType": "pseudo",
       "selector": "a:visited",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "color"
@@ -685,7 +685,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".link",
-      "id": "#00-05-04",
+      "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "color",

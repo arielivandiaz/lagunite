@@ -1,6 +1,6 @@
 folder: 08-organisms
 file: 09-dnd-canvas.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 17
 content[17]:
@@ -10,9 +10,9 @@ content[17]:
     id: #08-09-01
     category: null
     properties[12]: position,display,width,border,border-radius,background-color,background-image,background-size,background-position,overflow,user-select,touch-action
-    cssRule: "/* Layout */\nposition: relative\ndisplay: block\nwidth: 100%\n/* Appearance — dot grid (Figma-style) */\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-l)\nbackground-color: var(--gray-50)\nbackground-image: radial-gradient(circle, var(--gray-300) 1.5px, transparent 1.5px)\nbackground-size: var(--dnd-grid-major, 24px) var(--dnd-grid-major, 24px)\nbackground-position: 0 0\n/* Sizing */\noverflow: hidden\n/* Interaction */\nuser-select: none\ntouch-action: none"
+    cssRule: "position: relative\ndisplay: block\nwidth: 100%\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-l)\nbackground-color: var(--gray-50)\nbackground-image: radial-gradient(circle, var(--gray-300) 1.5px, transparent 1.5px)\nbackground-size: var(--dnd-grid-major, 24px) var(--dnd-grid-major, 24px)\nbackground-position: 0 0\noverflow: hidden\nuser-select: none\ntouch-action: none"
     responsive: false
-    description: "Drag & Drop Canvas Organism\n   Grid-based spatial canvas for draggable nodes.\n   Supports snap-to-grid and pointer-based interactions.\n   Works with .dnd-node molecules inside."
+    description: ── Canvas base and stage ───────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".dnd-canvas:focus-within"
@@ -21,7 +21,7 @@ content[17]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.1)"
     responsive: false
-    description: "Drag & Drop Canvas Organism\n   Grid-based spatial canvas for draggable nodes.\n   Supports snap-to-grid and pointer-based interactions.\n   Works with .dnd-node molecules inside."
+    description: ── Canvas base and stage ───────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas-stage
@@ -30,7 +30,7 @@ content[17]:
     properties[5]: position,top,left,width,height
     cssRule: "position: absolute\ntop: 0\nleft: 0\nwidth: 100%\nheight: 100%"
     responsive: false
-    description: ── Inner stage (transform target for zoom/pan) ───────────────────────
+    description: ── Canvas base and stage ───────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-wire-layer
@@ -39,121 +39,121 @@ content[17]:
     properties[7]: position,top,left,width,height,pointer-events,overflow
     cssRule: "position: absolute\ntop: 0\nleft: 0\nwidth: 100%\nheight: 100%\npointer-events: none\noverflow: visible"
     responsive: false
-    description: ── SVG wire layer (sits below nodes in DOM order) ────────────────────
+    description: ── Canvas base and stage ───────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .wire
-    id: #08-09-01
+    id: #08-09-02
     category: null
     properties[8]: stroke,stroke-width,stroke-linecap,fill,pointer-events,cursor,opacity,transition
     cssRule: "stroke: var(--color-primary)\nstroke-width: 2\nstroke-linecap: round\nfill: none\npointer-events: stroke\ncursor: pointer\nopacity: 0.85\ntransition: stroke 0.15s, opacity 0.15s, stroke-width 0.15s"
     responsive: false
-    description: ── Committed wires ────────────────────────────────────────────────────
+    description: ── Wires (committed and ghost) ─────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: ".wire:hover"
-    id: #08-09-01
+    id: #08-09-02
     category: null
     properties[3]: stroke,stroke-width,opacity
     cssRule: "stroke: var(--color-tertiary)\nstroke-width: 2.5\nopacity: 1"
     responsive: false
-    description: ── Committed wires ────────────────────────────────────────────────────
+    description: ── Wires (committed and ghost) ─────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .wire-ghost
-    id: #08-09-01
+    id: #08-09-02
     category: null
     properties[7]: stroke,stroke-width,stroke-dasharray,stroke-linecap,fill,pointer-events,opacity
     cssRule: "stroke: var(--color-primary)\nstroke-width: 2\nstroke-dasharray: 6 4\nstroke-linecap: round\nfill: none\npointer-events: none\nopacity: 0.65"
     responsive: false
-    description: ── Ghost wire (drawn while connecting) ───────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .dnd-canvas
-    id: #08-09-01
-    category: null
-    properties[3]: background-color,border-color,background-image
-    cssRule: "background-color: var(--gray-900)\nborder-color: var(--gray-700)\nbackground-image: radial-gradient(circle, var(--gray-700) 1.5px, transparent 1.5px)"
-    responsive: false
-    description: ── Night mode ────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .dnd-canvas:focus-within"
-    id: #08-09-01
-    category: null
-    properties[2]: border-color,box-shadow
-    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 3px rgba(94, 154, 255, 0.15)"
-    responsive: false
-    description: ── Night mode ────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .wire
-    id: #08-09-01
-    category: null
-    properties[1]: stroke
-    cssRule: "stroke: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .wire-ghost
-    id: #08-09-01
-    category: null
-    properties[1]: stroke
-    cssRule: "stroke: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ────────────────────────────────────────────────────────
+    description: ── Wires (committed and ghost) ─────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.fullscreen
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[9]: position,top,left,right,bottom,width,height,border-radius,z-index
     cssRule: "position: fixed\ntop: 0\nleft: 0\nright: 0\nbottom: 0\nwidth: 100%\nheight: 100%\nborder-radius: 0\nz-index: 100"
     responsive: false
-    description: ── Fullscreen variant ─────────────────────────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.height-xs
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[1]: height
     cssRule: "height: 300px"
     responsive: false
-    description: ── Sizing utilities (use with .dnd-canvas) ────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.height-s
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[1]: height
     cssRule: "height: 480px"
     responsive: false
-    description: ── Sizing utilities (use with .dnd-canvas) ────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.height-m
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[1]: height
     cssRule: "height: 600px"
     responsive: false
-    description: ── Sizing utilities (use with .dnd-canvas) ────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.height-l
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[1]: height
     cssRule: "height: 800px"
     responsive: false
-    description: ── Sizing utilities (use with .dnd-canvas) ────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .dnd-canvas.height-xl
-    id: #08-09-01
+    id: #08-09-03
     category: null
     properties[1]: height
     cssRule: "height: 1000px"
     responsive: false
-    description: ── Sizing utilities (use with .dnd-canvas) ────────────────────────────
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .dnd-canvas
+    id: #08-09-03
+    category: null
+    properties[3]: background-color,border-color,background-image
+    cssRule: "background-color: var(--gray-900)\nborder-color: var(--gray-700)\nbackground-image: radial-gradient(circle, var(--gray-700) 1.5px, transparent 1.5px)"
+    responsive: false
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night .dnd-canvas:focus-within"
+    id: #08-09-03
+    category: null
+    properties[2]: border-color,box-shadow
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 3px rgba(94, 154, 255, 0.15)"
+    responsive: false
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .wire
+    id: #08-09-03
+    category: null
+    properties[1]: stroke
+    cssRule: "stroke: var(--color-primary-light)"
+    responsive: false
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .wire-ghost
+    id: #08-09-03
+    category: null
+    properties[1]: stroke
+    cssRule: "stroke: var(--color-primary-light)"
+    responsive: false
+    description: ── Variants (fullscreen and sizing) ────────────────────────────────────

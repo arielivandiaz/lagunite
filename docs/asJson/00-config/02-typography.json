@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "02-typography.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 1,
   "content": [
@@ -27,9 +27,12 @@
         "--font-weight-light",
         "--font-weight-normal",
         "--font-weight-medium",
-        "--font-weight-bold"
+        "--font-weight-bold",
+        "--line-height-tight",
+        "--line-height-normal",
+        "--line-height-loose"
       ],
-      "cssRule": "--font-sans:\r\n    \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-display: \"Manrope\", \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700",
+      "cssRule": "--font-sans:\r\n    \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-display: \"Manrope\", \"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700\n--line-height-tight: 1.2\n--line-height-normal: 1.5\n--line-height-loose: 1.8",
       "responsive": false,
       "description": ""
     }
@@ -98,6 +101,18 @@
     {
       "property": "--font-weight-bold",
       "value": "700"
+    },
+    {
+      "property": "--line-height-tight",
+      "value": "1.2"
+    },
+    {
+      "property": "--line-height-normal",
+      "value": "1.5"
+    },
+    {
+      "property": "--line-height-loose",
+      "value": "1.8"
     }
   ]
 }

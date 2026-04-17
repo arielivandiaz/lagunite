@@ -1,4 +1,5 @@
 /* @ID: #05-06-01 */
+
 /*** Badge Base Styles ***/
 
 .badge {
@@ -31,6 +32,7 @@
 }
 
 /* @ID: #05-06-02 */
+
 /*** Badge Sizes ***/
 
 .badge-xs {
@@ -52,6 +54,7 @@
 }
 
 /* @ID: #05-06-03 */
+
 /*** Badge Variants - Primary ***/
 
 .badge-primary {
@@ -66,6 +69,7 @@
 }
 
 /* @ID: #05-06-04 */
+
 /*** Badge Variants - Secondary ***/
 
 .badge-secondary {
@@ -91,6 +95,7 @@
 }
 
 /* @ID: #05-06-05 */
+
 /*** Badge Variants - Semantic Colors ***/
 
 .badge-success {
@@ -138,21 +143,24 @@
 }
 
 /* @ID: #05-06-06 */
+
 /*** Badge Outlined Variant ***/
 
 .badge-outline {
     background: transparent;
+
     /* Single hue: border follows text (avoids gray-700 text + gray-400 border). */
     color: var(--gray-600);
-    border: var(--border-width-s) solid currentColor;
+    border: var(--border-width-s) solid currentcolor;
 }
 
 .night .badge-outline {
     color: var(--gray-300);
-    border-color: currentColor;
+    border-color: currentcolor;
 }
 
 /* @ID: #05-06-07 */
+
 /*** Badge Pill Variant ***/
 
 .badge-pill {
@@ -177,6 +185,7 @@
 }
 
 /* @ID: #05-06-08 */
+
 /*** Badge Dot Indicator ***/
 
 .badge-dot {
@@ -193,7 +202,7 @@
     width: 0.375rem;
     height: 0.375rem;
     border-radius: var(--radius-full);
-    background: currentColor;
+    background: currentcolor;
 }
 
 .badge-xs.badge-dot {
@@ -227,6 +236,7 @@
 }
 
 /* @ID: #05-06-09 */
+
 /*** Badge with Icon ***/
 
 .badge-icon {
@@ -258,6 +268,7 @@
 }
 
 /* @ID: #05-06-10 */
+
 /*** Badge with Close Button ***/
 
 .badge-dismissible {
@@ -274,7 +285,7 @@
     padding: 0;
     border: none;
     background: transparent;
-    color: currentColor;
+    color: currentcolor;
     opacity: 0.7;
     cursor: pointer;
     border-radius: var(--radius-s);
@@ -283,7 +294,7 @@
 
 .badge-close:hover {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgb(0 0 0 / 10%);
 }
 
 .badge-close::before {
@@ -321,6 +332,7 @@
 }
 
 /* @ID: #05-06-11 */
+
 /*** Badge with Counter ***/
 
 .badge-counter {
@@ -342,6 +354,7 @@
 }
 
 /* @ID: #05-06-12 */
+
 /*** Badge Positioning (for notifications) ***/
 
 .badge-absolute {
@@ -373,6 +386,7 @@
 }
 
 /* @ID: #05-06-13 */
+
 /*** Badge Group ***/
 
 .badge-group {
@@ -387,6 +401,7 @@
 }
 
 /* @ID: #05-06-14 */
+
 /*** Badge Light Variants ***/
 
 .badge-primary-light {
@@ -416,34 +431,35 @@
 
 /* badge-*-light in night mode: translucent tint + light text (fintech dark pattern) */
 .night .badge-primary-light {
-    background: rgba(59, 130, 246, 0.15);
+    background: rgb(59 130 246 / 15%);
     color: var(--blue-300);
 }
 
 .night .badge-success-light {
-    background: rgba(16, 185, 129, 0.15);
+    background: rgb(16 185 129 / 15%);
     color: var(--green-300);
 }
 
 .night .badge-info-light {
-    background: rgba(59, 130, 246, 0.12);
+    background: rgb(59 130 246 / 12%);
     color: var(--blue-300);
 }
 
 .night .badge-warning-light {
-    background: rgba(234, 179, 8, 0.15);
+    background: rgb(234 179 8 / 15%);
     color: var(--yellow-300);
 }
 
 .night .badge-error-light {
-    background: rgba(239, 68, 68, 0.15);
+    background: rgb(239 68 68 / 15%);
     color: var(--red-300);
 }
 
 /* @ID: #05-06-15 */
+
 /*** Responsive Adjustments ***/
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
     .badge {
         font-size: 0.625rem;
     }

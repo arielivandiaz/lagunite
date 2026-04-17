@@ -5,8 +5,8 @@
 */
 
 :root {
-
-  /*== Sizes ==*/
+  /* == Sizes == */
+  --space-0: 0;
   --space-px: 1px;
   --space-1: 0.25rem; /* 4px */
   --space-2: 0.5rem; /* 8px */
@@ -21,15 +21,16 @@
   --space-20: 5rem; /* 80px */
   --space-24: 6rem; /* 96px */
   --space-32: 8rem; /* 128px */
-
   --radius-s: 0.25rem;    /* 4px  */
   --radius-m: 0.5rem;     /* 8px  */
   --radius-l: 1rem;       /* 16px */
   --radius-xl: 1.5rem;    /* 24px */
   --radius-full: 9999px;
 
-  /*== Breakpoints (Single Source of Truth) ==*/
+  /* == Breakpoints (Single Source of Truth) == */
+
   /* Note: CSS Custom Properties cannot be used directly in media query definitions. */
+
   /* These are for documentation and potential use in JS or preprocessors. */
   --breakpoint-s: 640px;
   --breakpoint-md: 768px;

@@ -1,6 +1,6 @@
 folder: 07-compounds
 file: 04-empty-state.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 23
 content[23]:
@@ -163,7 +163,7 @@ content[23]:
     id: #07-04-03
     category: null
     properties[3]: color,border-color,background
-    cssRule: "color: var(--color-info)\nborder-color: rgba(59, 130, 246, 0.4)\nbackground: rgba(59, 130, 246, 0.14)"
+    cssRule: "color: var(--blue-500)\nborder-color: rgba(59, 130, 246, 0.4)\nbackground: rgba(59, 130, 246, 0.14)"
     responsive: false
     description: ── Semantic variants ────────────────────────────────────────────────────
   - type: selector

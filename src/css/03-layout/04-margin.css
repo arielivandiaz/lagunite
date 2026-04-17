@@ -12,6 +12,7 @@
    ========================================================================== */
 
 /* @ID: #03-04-01 */
+
 /* ── All-sides margin (+ auto) ─────────────────────────────────────────── */
 
 .marg-0    { margin: 0 !important; }
@@ -23,6 +24,7 @@
 .marg-xl   { margin: var(--space-16); }
 
 /* @ID: #03-04-02 */
+
 /* ── Horizontal margin ─────────────────────────────────────────────────── */
 
 .marg-h-xs { margin-left: var(--space-1); margin-right: var(--space-1); }
@@ -32,6 +34,7 @@
 .marg-h-xl { margin-left: var(--space-16); margin-right: var(--space-16); }
 
 /* @ID: #03-04-03 */
+
 /* ── Vertical margin ───────────────────────────────────────────────────── */
 
 .marg-v-xs { margin-top: var(--space-1); margin-bottom: var(--space-1); }
@@ -41,6 +44,7 @@
 .marg-v-xl { margin-top: var(--space-16); margin-bottom: var(--space-16); }
 
 /* @ID: #03-04-04 */
+
 /* ── Left margin ───────────────────────────────────────────────────────── */
 
 .marg-lf-xs { margin-left: var(--space-1); }
@@ -50,6 +54,7 @@
 .marg-lf-xl { margin-left: var(--space-16); }
 
 /* @ID: #03-04-05 */
+
 /* ── Right margin ──────────────────────────────────────────────────────── */
 
 .marg-rg-xs { margin-right: var(--space-1); }
@@ -59,6 +64,7 @@
 .marg-rg-xl { margin-right: var(--space-16); }
 
 /* @ID: #03-04-06 */
+
 /* ── Top margin ────────────────────────────────────────────────────────── */
 
 .marg-t-xs { margin-top: var(--space-1); }
@@ -68,6 +74,7 @@
 .marg-t-xl { margin-top: var(--space-16); }
 
 /* @ID: #03-04-07 */
+
 /* ── Bottom margin ─────────────────────────────────────────────────────── */
 
 .marg-b-xs { margin-bottom: var(--space-1); }
@@ -77,9 +84,10 @@
 .marg-b-xl { margin-bottom: var(--space-16); }
 
 /* @ID: #03-04-08 */
+
 /* ── Responsive: mobile (x) ───────────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xmarg-0    { margin: 0 !important; }
   .xmarg-xs   { margin: var(--space-1); }
   .xmarg-s    { margin: var(--space-3); }
@@ -125,9 +133,10 @@
 }
 
 /* @ID: #03-04-09 */
+
 /* ── Responsive: desktop (d) ──────────────────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dmarg-0    { margin: 0 !important; }
   .dmarg-xs   { margin: var(--space-1); }
   .dmarg-s    { margin: var(--space-3); }

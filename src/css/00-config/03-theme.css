@@ -8,25 +8,21 @@
   */
 
   :root {
-    /*== Color Assignments ==*/
+    /* == Color Assignments == */
     --color-primary: #2476ff;
     --color-primary-light: #5e9aff;
     --color-primary-dark: #0965ff;
     --color-primary-rgb: 36, 118, 255;
-  
     --color-secondary: #747474;
     --color-secondary-light: #333;
     --color-secondary-dark: #292929;
     --color-secondary-rgb: 116, 116, 116;
-  
     --color-tertiary: #f97316;
     --color-tertiary-light: #ffa261;
     --color-tertiary-dark: #c95300;
     --color-tertiary-rgb: 249, 115, 22;
-  
     --color-almost-black: #333;
     --color-almost-white: #fcfcfc;
-  
     --color-success: #009112;
     --color-success-light: #98ff98;
     --color-success-rgb: 0, 145, 18;
@@ -37,69 +33,65 @@
     --color-error-light: #fdd0d0;
     --color-error-rgb: 250, 52, 52;
 
-    /*== Chip component tokens ==*/
+    /* == Chip component tokens == */
+
     /* Chip colors are intentionally different from --color-success/warning/error.
        They use vibrant, fintech-grade hues tuned for translucent + solid chip variants. */
     --chip-success:            #50C878;
     --chip-success-rgb:        80, 200, 120;
     --chip-success-text:       #23904a;
-    --chip-success-bg:         rgba(80, 200, 120, 0.14);
-    --chip-success-border:     rgba(80, 200, 120, 0.38);
-    --chip-success-glow:       rgba(62, 203, 114, 0.38);
+    --chip-success-bg:         rgb(80 200 120 / 14%);
+    --chip-success-border:     rgb(80 200 120 / 38%);
+    --chip-success-glow:       rgb(62 203 114 / 38%);
     --chip-success-solid-bg:   #3ecb72;
     --chip-success-solid-text: #07260f;
-    --chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.20) 0%, rgba(40,150,80,0.08) 100%);
+    --chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 20%) 0%, rgb(40 150 80 / 8%) 100%);
     --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%);
-
     --chip-danger:             #FF6347;
     --chip-danger-rgb:         255, 99, 71;
     --chip-danger-text:        #c93218;
-    --chip-danger-bg:          rgba(255, 99, 71, 0.11);
-    --chip-danger-border:      rgba(255, 99, 71, 0.36);
-    --chip-danger-glow:        rgba(249, 79, 43, 0.35);
+    --chip-danger-bg:          rgb(255 99 71 / 11%);
+    --chip-danger-border:      rgb(255 99 71 / 36%);
+    --chip-danger-glow:        rgb(249 79 43 / 35%);
     --chip-danger-solid-bg:    #f94f2b;
     --chip-danger-solid-text:  #fff;
-    --chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.18) 0%, rgba(200,50,30,0.07) 100%);
+    --chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 18%) 0%, rgb(200 50 30 / 7%) 100%);
     --chip-danger-grad-solid:  linear-gradient(135deg, #ff7055 0%, #d63010 100%);
-
     --chip-warning:            #FFBF00;
     --chip-warning-rgb:        255, 191, 0;
     --chip-warning-text:       #a07800;
-    --chip-warning-bg:         rgba(255, 191, 0, 0.13);
-    --chip-warning-border:     rgba(255, 191, 0, 0.38);
-    --chip-warning-glow:       rgba(245, 184, 0, 0.38);
+    --chip-warning-bg:         rgb(255 191 0 / 13%);
+    --chip-warning-border:     rgb(255 191 0 / 38%);
+    --chip-warning-glow:       rgb(245 184 0 / 38%);
     --chip-warning-solid-bg:   #f5b800;
     --chip-warning-solid-text: #1a1200;
-    --chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.20) 0%, rgba(200,140,0,0.07) 100%);
+    --chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 20%) 0%, rgb(200 140 0 / 7%) 100%);
     --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%);
-
     --chip-info:               #6495ED;
     --chip-info-rgb:           100, 149, 237;
     --chip-info-text:          #2f5bbf;
-    --chip-info-bg:            rgba(100, 149, 237, 0.12);
-    --chip-info-border:        rgba(100, 149, 237, 0.36);
-    --chip-info-glow:          rgba(75, 126, 240, 0.35);
+    --chip-info-bg:            rgb(100 149 237 / 12%);
+    --chip-info-border:        rgb(100 149 237 / 36%);
+    --chip-info-glow:          rgb(75 126 240 / 35%);
     --chip-info-solid-bg:      #4b7ef0;
     --chip-info-solid-text:    #fff;
-    --chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.18) 0%, rgba(60,100,200,0.07) 100%);
+    --chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 18%) 0%, rgb(60 100 200 / 7%) 100%);
     --chip-info-grad-solid:    linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%);
 
-    /*== Text Colors ==*/
+    /* == Text Colors == */
     --color-text-base: #333;
     --color-text-alt: #fff;
   
-    /*== Background Colors ==*/
+    /* == Background Colors == */
     --color-bg: #eee;
     --color-bg-alt: #222;
-  
     --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
     --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);
     --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);
-  
     --color-border: var(--gray-200);
     --color-border-hover: var(--gray-300);
 
-    /*== Inputs (semantic aliases for form controls) ==*/
+    /* == Inputs (semantic aliases for form controls) == */
     --input-text: var(--color-text-base);
     --input-bg: var(--color-bg);
     --input-border: var(--gray-300);
@@ -107,29 +99,30 @@
 
     /* Chevron for native <select> (data URI; stroke matches gray-600) */
     --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+
     /* Chevron on primary strip (.select-container.alt) */
     --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
     --select-chevron-zone: 2.75rem;
   
-    /*== Gradients ==*/
+    /* == Gradients == */
     --bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%);
     --bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%);
     --bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
     --bg-gradient-4: linear-gradient(
       180deg,
-      rgba(94, 154, 255, 1) 0%,
-      rgba(36, 118, 255, 1) 50%,
-      rgba(0, 90, 238, 1) 100%
+      rgb(94 154 255 / 100%) 0%,
+      rgb(36 118 255 / 100%) 50%,
+      rgb(0 90 238 / 100%) 100%
     );
     --bg-gradient-5: radial-gradient(
       circle,
-      rgba(94, 154, 255, 1) 0%,
-      rgba(36, 118, 255, 1) 100%
+      rgb(94 154 255 / 100%) 0%,
+      rgb(36 118 255 / 100%) 100%
     );
     --bg-gradient-6: radial-gradient(
       circle,
-      rgba(238, 238, 238, 1) 0%,
-      rgba(193, 216, 255, 1) 100%
+      rgb(238 238 238 / 100%) 0%,
+      rgb(193 216 255 / 100%) 100%
     );
     --bg-gradient-7: repeating-linear-gradient(
       45deg,
@@ -146,39 +139,44 @@
       #444 32px
     );
   
-    /*== Borders ==*/
+    /* == Borders == */
     --border-width-s: 1px;
     --border-width-md: 2px;
     --border: 2px solid #2476ff;
     --border-light: 2px solid #5e9aff;
     --border-dark: 2px solid #0965ff;
   
-    /*== Shadows ==*/
+    /* == Shadows == */
     --shadow-s:
-      0 1px 2px rgba(0, 0, 0, 0.06),
-      0 0 0 1px rgba(0, 0, 0, 0.02); /* Subtle */
+      0 1px 2px rgb(0 0 0 / 6%),
+      0 0 0 1px rgb(0 0 0 / 2%); /* Subtle */
+
     --shadow-m:
-      0 8px 16px -10px rgba(0, 0, 0, 0.18),
-      0 3px 8px -4px rgba(0, 0, 0, 0.12),
-      0 0 0 1px rgba(0, 0, 0, 0.03); /* Medium */
+      0 8px 16px -10px rgb(0 0 0 / 18%),
+      0 3px 8px -4px rgb(0 0 0 / 12%),
+      0 0 0 1px rgb(0 0 0 / 3%); /* Medium */
+
     --shadow-l:
-      0 18px 40px -26px rgba(0, 0, 0, 0.30),
-      0 10px 18px -14px rgba(0, 0, 0, 0.18),
-      0 0 0 1px rgba(0, 0, 0, 0.04); /* Large */
+      0 18px 40px -26px rgb(0 0 0 / 30%),
+      0 10px 18px -14px rgb(0 0 0 / 18%),
+      0 0 0 1px rgb(0 0 0 / 4%); /* Large */
+
     --shadow-xl:
-      0 34px 70px -46px rgba(0, 0, 0, 0.45),
-      0 18px 30px -22px rgba(0, 0, 0, 0.25),
-      0 0 0 1px rgba(0, 0, 0, 0.05); /* Extra Large */
+      0 34px 70px -46px rgb(0 0 0 / 45%),
+      0 18px 30px -22px rgb(0 0 0 / 25%),
+      0 0 0 1px rgb(0 0 0 / 5%); /* Extra Large */
+
     --shadow-inner:
-      inset 0 1px 2px rgba(0, 0, 0, 0.14),
-      inset 0 0 0 1px rgba(0, 0, 0, 0.06); /* Inner */
+      inset 0 1px 2px rgb(0 0 0 / 14%),
+      inset 0 0 0 1px rgb(0 0 0 / 6%); /* Inner */
   }
   
   /* @ID: #00-03-02 */
+
   /*** Dark Theme (Night Mode) ***/
   .night,
   .night * {
-    /*== Background Colors ==*/
+    /* == Background Colors == */
     --color-bg: #1a1a1a;
     --color-bg-alt: #f5f5f5;
 
@@ -189,75 +187,72 @@
      */
     --color-text-base: #e8eaed;
 
-    /*== Inputs ==*/
+    /* == Inputs == */
     --input-text: var(--color-text-alt);
     --input-bg: var(--gray-800);
     --input-border: var(--gray-600);
     --input-placeholder: var(--gray-500);
-
     --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
     --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
 
-    /*== Border Colors ==*/
+    /* == Border Colors == */
     --color-border: var(--gray-700);
     --color-border-hover: var(--gray-600);
 
-    /*== Chip dark-mode overrides ==*/
+    /* == Chip dark-mode overrides == */
     --chip-success-text:       #50C878;
-    --chip-success-bg:         rgba(80, 200, 120, 0.15);
-    --chip-success-border:     rgba(80, 200, 120, 0.30);
-    --chip-success-glow:       rgba(80, 200, 120, 0.45);
+    --chip-success-bg:         rgb(80 200 120 / 15%);
+    --chip-success-border:     rgb(80 200 120 / 30%);
+    --chip-success-glow:       rgb(80 200 120 / 45%);
     --chip-success-solid-bg:   #50C878;
     --chip-success-solid-text: #071a0d;
-    --chip-success-grad:       linear-gradient(135deg, rgba(80,200,120,0.28) 0%, rgba(40,150,80,0.12) 100%);
+    --chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%);
     --chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%);
-
     --chip-danger-text:        #FF6347;
-    --chip-danger-bg:          rgba(255, 99, 71, 0.15);
-    --chip-danger-border:      rgba(255, 99, 71, 0.30);
-    --chip-danger-glow:        rgba(255, 99, 71, 0.45);
+    --chip-danger-bg:          rgb(255 99 71 / 15%);
+    --chip-danger-border:      rgb(255 99 71 / 30%);
+    --chip-danger-glow:        rgb(255 99 71 / 45%);
     --chip-danger-solid-bg:    #FF6347;
     --chip-danger-solid-text:  #fff;
-    --chip-danger-grad:        linear-gradient(135deg, rgba(255,99,71,0.28) 0%, rgba(200,50,30,0.12) 100%);
+    --chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%);
     --chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%);
-
     --chip-warning-text:       #FFBF00;
-    --chip-warning-bg:         rgba(255, 191, 0, 0.15);
-    --chip-warning-border:     rgba(255, 191, 0, 0.30);
-    --chip-warning-glow:       rgba(255, 191, 0, 0.45);
+    --chip-warning-bg:         rgb(255 191 0 / 15%);
+    --chip-warning-border:     rgb(255 191 0 / 30%);
+    --chip-warning-glow:       rgb(255 191 0 / 45%);
     --chip-warning-solid-bg:   #FFBF00;
     --chip-warning-solid-text: #1a1200;
-    --chip-warning-grad:       linear-gradient(135deg, rgba(255,191,0,0.28) 0%, rgba(200,140,0,0.12) 100%);
+    --chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%);
     --chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%);
-
     --chip-info-text:          #6495ED;
-    --chip-info-bg:            rgba(100, 149, 237, 0.15);
-    --chip-info-border:        rgba(100, 149, 237, 0.30);
-    --chip-info-glow:          rgba(100, 149, 237, 0.45);
+    --chip-info-bg:            rgb(100 149 237 / 15%);
+    --chip-info-border:        rgb(100 149 237 / 30%);
+    --chip-info-glow:          rgb(100 149 237 / 45%);
     --chip-info-solid-bg:      #6495ED;
     --chip-info-solid-text:    #06101f;
-    --chip-info-grad:          linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(60,100,200,0.12) 100%);
+    --chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%);
     --chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%);
 
-    /*== Shadows (dark: subtle black with faint border ring) ==*/
+    /* == Shadows (dark: subtle black with faint border ring) == */
     --shadow-s:
-      0 1px 3px rgba(0, 0, 0, 0.40),
-      0 0 0 1px rgba(255, 255, 255, 0.04);
+      0 1px 3px rgb(0 0 0 / 40%),
+      0 0 0 1px rgb(255 255 255 / 4%);
     --shadow-m:
-      0 4px 12px rgba(0, 0, 0, 0.50),
-      0 0 0 1px rgba(255, 255, 255, 0.05);
+      0 4px 12px rgb(0 0 0 / 50%),
+      0 0 0 1px rgb(255 255 255 / 5%);
     --shadow-l:
-      0 10px 28px rgba(0, 0, 0, 0.55),
-      0 0 0 1px rgba(255, 255, 255, 0.06);
+      0 10px 28px rgb(0 0 0 / 55%),
+      0 0 0 1px rgb(255 255 255 / 6%);
     --shadow-xl:
-      0 20px 50px rgba(0, 0, 0, 0.60),
-      0 0 0 1px rgba(255, 255, 255, 0.07);
+      0 20px 50px rgb(0 0 0 / 60%),
+      0 0 0 1px rgb(255 255 255 / 7%);
     --shadow-inner:
-      inset 0 1px 3px rgba(0, 0, 0, 0.45),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+      inset 0 1px 3px rgb(0 0 0 / 45%),
+      inset 0 0 0 1px rgb(255 255 255 / 6%);
   }
   
   /* @ID: #00-03-03 */
+
   /*** Theme Toggle Classes ***/
   .theme-light {
     background: var(--color-bg);
@@ -267,23 +262,25 @@
   .theme-night {
     background: var(--color-bg-alt);
     color: var(--color-text-alt);
+
     --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
     --select-chevron-on-primary: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+
     /* Sombras a nivel de componente (dark: negro sutil + anillo tenue) */
     --shadow-s:
-      0 1px 3px rgba(0, 0, 0, 0.40),
-      0 0 0 1px rgba(255, 255, 255, 0.04);
+      0 1px 3px rgb(0 0 0 / 40%),
+      0 0 0 1px rgb(255 255 255 / 4%);
     --shadow-m:
-      0 4px 12px rgba(0, 0, 0, 0.50),
-      0 0 0 1px rgba(255, 255, 255, 0.05);
+      0 4px 12px rgb(0 0 0 / 50%),
+      0 0 0 1px rgb(255 255 255 / 5%);
     --shadow-l:
-      0 10px 28px rgba(0, 0, 0, 0.55),
-      0 0 0 1px rgba(255, 255, 255, 0.06);
+      0 10px 28px rgb(0 0 0 / 55%),
+      0 0 0 1px rgb(255 255 255 / 6%);
     --shadow-xl:
-      0 20px 50px rgba(0, 0, 0, 0.60),
-      0 0 0 1px rgba(255, 255, 255, 0.07);
+      0 20px 50px rgb(0 0 0 / 60%),
+      0 0 0 1px rgb(255 255 255 / 7%);
     --shadow-inner:
-      inset 0 1px 3px rgba(0, 0, 0, 0.45),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+      inset 0 1px 3px rgb(0 0 0 / 45%),
+      inset 0 0 0 1px rgb(255 255 255 / 6%);
   }
   

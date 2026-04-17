@@ -5,6 +5,7 @@
    ========================================================================== */
 
 /* @ID: #03-01-01 */
+
 /* ── Flex containers (direction) ────────────────────────────────────────── */
 
 .col,
@@ -13,8 +14,12 @@
 .rowr,
 .row-col,
 .row-colr,
+.rowr-col,
+.rowr-colr,
 .col-row,
-.col-rowr {
+.col-rowr,
+.colr-row,
+.colr-rowr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,9 +32,10 @@
 .rowr { flex-direction: row-reverse; }
 
 /* @ID: #03-01-02 */
+
 /* ── Responsive direction (x / d) ──────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xcol,
   .xcolr,
   .xrow,
@@ -46,7 +52,7 @@
   .xrowr { flex-direction: row-reverse; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dcol,
   .dcolr,
   .drow,
@@ -64,18 +70,22 @@
 }
 
 /* @ID: #03-01-03 */
+
 /* ── Combo direction (mobile-first → flips on desktop) ──────────────────── */
 
 .row-col,
 .row-colr  { flex-direction: row; }
+
 .rowr-col,
 .rowr-colr { flex-direction: row-reverse; }
+
 .col-row,
 .col-rowr  { flex-direction: column; }
+
 .colr-row,
 .colr-rowr { flex-direction: column-reverse; }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .row-col   { flex-direction: column; }
   .row-colr  { flex-direction: column-reverse; }
   .rowr-col  { flex-direction: column; }
@@ -88,22 +98,24 @@
 }
 
 /* @ID: #03-01-04 */
+
 /* ── Wrap ───────────────────────────────────────────────────────────────── */
 
 .flex-wrap   { flex-wrap: wrap; }
 .flex-nowrap { flex-wrap: nowrap; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xflex-wrap   { flex-wrap: wrap; }
   .xflex-nowrap { flex-wrap: nowrap; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dflex-wrap   { flex-wrap: wrap; }
   .dflex-nowrap { flex-wrap: nowrap; }
 }
 
 /* @ID: #03-01-05 */
+
 /* ── Gap — semantic scale (matches marg/padd naming) ────────────────────── */
 
 .gap-0  { gap: 0; }
@@ -117,11 +129,13 @@
 .gap-h-s  { column-gap: var(--space-3); }
 .gap-h    { column-gap: var(--space-6); }
 .gap-h-l  { column-gap: var(--space-12); }
+.gap-h-xl { column-gap: var(--space-16); }
 
 .gap-v-xs { row-gap: var(--space-1); }
 .gap-v-s  { row-gap: var(--space-3); }
 .gap-v    { row-gap: var(--space-6); }
 .gap-v-l  { row-gap: var(--space-12); }
+.gap-v-xl { row-gap: var(--space-16); }
 
 /* ── Gap — numeric scale (fine control, maps 1:1 to --space-N) ──────────── */
 
@@ -136,7 +150,7 @@
 .gap-12 { gap: var(--space-12); }
 .gap-16 { gap: var(--space-16); }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xgap-0  { gap: 0; }
   .xgap-xs { gap: var(--space-1); }
   .xgap-s  { gap: var(--space-3); }
@@ -148,11 +162,15 @@
   .xgap-2  { gap: var(--space-2); }
   .xgap-3  { gap: var(--space-3); }
   .xgap-4  { gap: var(--space-4); }
+  .xgap-5  { gap: var(--space-5); }
   .xgap-6  { gap: var(--space-6); }
   .xgap-8  { gap: var(--space-8); }
+  .xgap-10 { gap: var(--space-10); }
+  .xgap-12 { gap: var(--space-12); }
+  .xgap-16 { gap: var(--space-16); }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dgap-0  { gap: 0; }
   .dgap-xs { gap: var(--space-1); }
   .dgap-s  { gap: var(--space-3); }
@@ -164,11 +182,16 @@
   .dgap-2  { gap: var(--space-2); }
   .dgap-3  { gap: var(--space-3); }
   .dgap-4  { gap: var(--space-4); }
+  .dgap-5  { gap: var(--space-5); }
   .dgap-6  { gap: var(--space-6); }
   .dgap-8  { gap: var(--space-8); }
+  .dgap-10 { gap: var(--space-10); }
+  .dgap-12 { gap: var(--space-12); }
+  .dgap-16 { gap: var(--space-16); }
 }
 
 /* @ID: #03-01-06 */
+
 /* ── Flex item shorthand ────────────────────────────────────────────────── */
 
 .flex-1       { flex: 1 1 0%; }
@@ -183,6 +206,7 @@
 .flex-shrink   { flex-shrink: 1; }
 
 /* @ID: #03-01-07 */
+
 /* ── Order ──────────────────────────────────────────────────────────────── */
 
 .order-first { order: -9999; }
@@ -194,7 +218,7 @@
 .order-4     { order: 4; }
 .order-5     { order: 5; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xorder-first { order: -9999; }
   .xorder-last  { order: 9999; }
   .xorder-none  { order: 0; }
@@ -203,7 +227,7 @@
   .xorder-3     { order: 3; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dorder-first { order: -9999; }
   .dorder-last  { order: 9999; }
   .dorder-none  { order: 0; }
@@ -213,6 +237,7 @@
 }
 
 /* @ID: #03-01-08 */
+
 /* ── Align items ────────────────────────────────────────────────────────── */
 
 .ai-c  { align-items: center !important; }
@@ -221,14 +246,14 @@
 .ai-s  { align-items: stretch !important; }
 .ai-bl { align-items: baseline !important; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xai-c  { align-items: center !important; }
   .xai-fs { align-items: flex-start !important; }
   .xai-fe { align-items: flex-end !important; }
   .xai-s  { align-items: stretch !important; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dai-c  { align-items: center !important; }
   .dai-fs { align-items: flex-start !important; }
   .dai-fe { align-items: flex-end !important; }
@@ -236,6 +261,7 @@
 }
 
 /* @ID: #03-01-09 */
+
 /* ── Align self ─────────────────────────────────────────────────────────── */
 
 .as-c  { align-self: center !important; }
@@ -243,14 +269,14 @@
 .as-fe { align-self: flex-end !important; }
 .as-s  { align-self: stretch !important; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xas-c  { align-self: center !important; }
   .xas-fs { align-self: flex-start !important; }
   .xas-fe { align-self: flex-end !important; }
   .xas-s  { align-self: stretch !important; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .das-c  { align-self: center !important; }
   .das-fs { align-self: flex-start !important; }
   .das-fe { align-self: flex-end !important; }
@@ -258,6 +284,7 @@
 }
 
 /* @ID: #03-01-10 */
+
 /* ── Align content ──────────────────────────────────────────────────────── */
 
 .ac-c  { align-content: center !important; }
@@ -267,7 +294,7 @@
 .ac-sa { align-content: space-around !important; }
 .ac-sb { align-content: space-between !important; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xac-c  { align-content: center !important; }
   .xac-fs { align-content: flex-start !important; }
   .xac-fe { align-content: flex-end !important; }
@@ -276,7 +303,7 @@
   .xac-sb { align-content: space-between !important; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dac-c  { align-content: center !important; }
   .dac-fs { align-content: flex-start !important; }
   .dac-fe { align-content: flex-end !important; }
@@ -286,6 +313,7 @@
 }
 
 /* @ID: #03-01-11 */
+
 /* ── Justify content ────────────────────────────────────────────────────── */
 
 .jc-c  { justify-content: center !important; }
@@ -295,7 +323,7 @@
 .jc-sb { justify-content: space-between !important; }
 .jc-se { justify-content: space-evenly !important; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xjc-c  { justify-content: center !important; }
   .xjc-fs { justify-content: flex-start !important; }
   .xjc-fe { justify-content: flex-end !important; }
@@ -304,7 +332,7 @@
   .xjc-se { justify-content: space-evenly !important; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .djc-c  { justify-content: center !important; }
   .djc-fs { justify-content: flex-start !important; }
   .djc-fe { justify-content: flex-end !important; }
@@ -314,6 +342,7 @@
 }
 
 /* @ID: #03-01-12 */
+
 /* ── Convenience shorthands ─────────────────────────────────────────────── */
 
 .flex-center {
@@ -321,41 +350,47 @@
   align-items: center;
   justify-content: center;
 }
+
 .flex-center-h {
   display: flex;
   justify-content: center;
 }
+
 .flex-center-v {
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xflex-center {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .xflex-center-h {
     display: flex;
     justify-content: center;
   }
+
   .xflex-center-v {
     display: flex;
     align-items: center;
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dflex-center {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .dflex-center-h {
     display: flex;
     justify-content: center;
   }
+
   .dflex-center-v {
     display: flex;
     align-items: center;

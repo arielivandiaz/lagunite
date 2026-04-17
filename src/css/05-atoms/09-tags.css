@@ -5,6 +5,7 @@
    ========== */
 
 /* @ID: #05-09-01 */
+
 /* ── Tag base ──────────────────────────────────────────────────────────── */
 
 .tag {
@@ -32,6 +33,7 @@
 }
 
 /* @ID: #05-09-02 */
+
 /* ── Size modifiers ─────────────────────────────────────────────────────── */
 
 .tag-xs {
@@ -53,6 +55,7 @@
 }
 
 /* @ID: #05-09-03 */
+
 /* ── Semantic variants ──────────────────────────────────────────────────── */
 
 .tag-primary {
@@ -69,29 +72,30 @@
 
 .tag-success {
   border-color: var(--green-500);
-  background: rgba(16, 185, 129, 0.13);
+  background: rgb(16 185 129 / 13%);
   color: var(--green-700);
 }
 
 .tag-info {
   border-color: var(--blue-500);
-  background: rgba(59, 130, 246, 0.13);
+  background: rgb(59 130 246 / 13%);
   color: var(--blue-700);
 }
 
 .tag-warning {
   border-color: var(--yellow-500);
-  background: rgba(234, 179, 8, 0.2);
+  background: rgb(234 179 8 / 20%);
   color: var(--yellow-800);
 }
 
 .tag-error {
   border-color: var(--red-500);
-  background: rgba(239, 68, 68, 0.13);
+  background: rgb(239 68 68 / 13%);
   color: var(--red-700);
 }
 
 /* @ID: #05-09-04 */
+
 /* ── Style variants and indicators ──────────────────────────────────────── */
 
 .tag-solid.tag-primary {
@@ -142,10 +146,11 @@
   height: 0.35rem;
   border-radius: 50%;
   transform: translateY(-50%);
-  background: currentColor;
+  background: currentcolor;
 }
 
 /* @ID: #05-09-05 */
+
 /* ── Interactive and removable tags ─────────────────────────────────────── */
 
 .tag-clickable {
@@ -184,10 +189,11 @@
 }
 
 .tag-remove:hover {
-  background: rgba(0, 0, 0, 0.12);
+  background: rgb(0 0 0 / 12%);
 }
 
 /* @ID: #05-09-06 */
+
 /* ── Group and night mode ───────────────────────────────────────────────── */
 
 .tag-group {
@@ -211,31 +217,31 @@
 .night .tag-secondary {
   border-color: var(--gray-400);
   color: var(--gray-200);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgb(255 255 255 / 6%);
 }
 
 .night .tag-success {
   border-color: #22c55e;
   color: #86efac;
-  background: rgba(34, 197, 94, 0.2);
+  background: rgb(34 197 94 / 20%);
 }
 
 .night .tag-info {
   border-color: #60a5fa;
   color: #bfdbfe;
-  background: rgba(59, 130, 246, 0.2);
+  background: rgb(59 130 246 / 20%);
 }
 
 .night .tag-warning {
   border-color: #facc15;
   color: #fde047;
-  background: rgba(234, 179, 8, 0.2);
+  background: rgb(234 179 8 / 20%);
 }
 
 .night .tag-error {
   border-color: #f87171;
   color: #fca5a5;
-  background: rgba(239, 68, 68, 0.2);
+  background: rgb(239 68 68 / 20%);
 }
 
 .night .tag-solid.tag-primary,

@@ -1,7 +1,7 @@
 {
   "folder": "06-molecules",
-  "file": "11-skeleton.css",
-  "lastUpdated": "2026-04-16",
+  "file": "13-skeleton.css",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 30,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "--skeleton-bg",
@@ -28,7 +28,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-line",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "display",
@@ -44,7 +44,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-block",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "display",
@@ -59,7 +59,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-circle",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "display",
@@ -75,7 +75,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-text-group",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "display",
@@ -89,7 +89,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-text-group .skeleton-line:nth-child(1)",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "width"
@@ -102,7 +102,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-text-group .skeleton-line:nth-child(2)",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "width"
@@ -115,7 +115,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-text-group .skeleton-line:nth-child(3)",
-      "id": "#06-11-01",
+      "id": "#06-13-01",
       "category": null,
       "properties": [
         "width"
@@ -128,7 +128,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-button",
-      "id": "#06-11-02",
+      "id": "#06-13-02",
       "category": null,
       "properties": [
         "width",
@@ -143,7 +143,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-input",
-      "id": "#06-11-02",
+      "id": "#06-13-02",
       "category": null,
       "properties": [
         "width",
@@ -158,7 +158,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-chip",
-      "id": "#06-11-02",
+      "id": "#06-13-02",
       "category": null,
       "properties": [
         "width",
@@ -173,7 +173,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-badge",
-      "id": "#06-11-02",
+      "id": "#06-13-02",
       "category": null,
       "properties": [
         "width",
@@ -188,7 +188,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-avatar",
-      "id": "#06-11-02",
+      "id": "#06-13-02",
       "category": null,
       "properties": [
         "width",
@@ -203,7 +203,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-card",
-      "id": "#06-11-03",
+      "id": "#06-13-03",
       "category": null,
       "properties": [
         "display",
@@ -221,7 +221,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-list-item",
-      "id": "#06-11-03",
+      "id": "#06-13-03",
       "category": null,
       "properties": [
         "display",
@@ -238,7 +238,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-table-row",
-      "id": "#06-11-03",
+      "id": "#06-13-03",
       "category": null,
       "properties": [
         "display",
@@ -255,7 +255,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-media-object",
-      "id": "#06-11-03",
+      "id": "#06-13-03",
       "category": null,
       "properties": [
         "display",
@@ -270,7 +270,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-article",
-      "id": "#06-11-03",
+      "id": "#06-13-03",
       "category": null,
       "properties": [
         "display",
@@ -284,7 +284,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-inline",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "display"
@@ -297,7 +297,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-full-width",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "width"
@@ -310,7 +310,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-grid",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "display",
@@ -325,7 +325,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-shimmer",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "position",
@@ -340,7 +340,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".skeleton-shimmer::after",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "content",
@@ -358,7 +358,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "0%",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "opacity"
@@ -371,7 +371,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "100%",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "opacity"
@@ -384,7 +384,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "50%",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "opacity"
@@ -397,7 +397,7 @@
       "type": "selector",
       "selectorType": "complex",
       "selector": "100%",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "transform"
@@ -410,7 +410,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .skeleton",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "--skeleton-bg",
@@ -424,7 +424,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .skeleton-card",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "background",
@@ -438,7 +438,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .skeleton-shimmer::after",
-      "id": "#06-11-04",
+      "id": "#06-13-04",
       "category": null,
       "properties": [
         "background"

@@ -1,9 +1,9 @@
 /* ==========
-   06-molecules / 09-stat-cards.css
+   06-molecules / 10-stat-cards.css
    Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.
    ========== */
 
-/* @ID: #06-09-01 */
+/* @ID: #06-10-01 */
 
 .stat-grid {
   display: grid;
@@ -70,7 +70,7 @@
   --stat-digit-label: rgb(15 20 45 / 38%);
 }
 
-/* @ID: #06-09-02 */
+/* @ID: #06-10-02 */
 
 .stat-card {
   position: relative;
@@ -146,7 +146,7 @@
   transition: color 0.35s;
 }
 
-/* @ID: #06-09-03 */
+/* @ID: #06-10-03 */
 
 .stat-trend-up,
 .stat-trend-down {
@@ -209,7 +209,7 @@
   background: linear-gradient(90deg, #f87171 0%, #fbbf24 40%, #4ade80 75%, #34d399 100%);
 }
 
-/* @ID: #06-09-04 */
+/* @ID: #06-10-04 */
 
 .stat-dot {
   display: inline-block;
@@ -253,7 +253,7 @@
   transition: border-color 0.35s;
 }
 
-/* @ID: #06-09-05 */
+/* @ID: #06-10-05 */
 
 .stat-compare {
   display: flex;
@@ -319,7 +319,7 @@
   transition: color 0.35s;
 }
 
-/* @ID: #06-09-06 */
+/* @ID: #06-10-06 */
 
 @media (width < 960px) {
   .stat-grid {

@@ -1,4 +1,5 @@
 /* @ID: #05-03-01 */
+
 /* Table Base Styles */
 table,
 .table {
@@ -32,6 +33,7 @@ table,
 }
 
 /* @ID: #05-03-02 */
+
 /* Table Sizing */
 .table.size-s th,
 .table.size-s td {
@@ -50,6 +52,7 @@ table,
 }
 
 /* @ID: #05-03-03 */
+
 /* Table Color Variants */
 .table.main thead {
   border-bottom: solid 2px;
@@ -162,6 +165,7 @@ table,
 }
 
 /* @ID: #05-03-04 */
+
 /* Table Striped (Zebra) */
 .table.striped tbody tr:nth-child(odd) {
   background-color: rgba(var(--color-primary-rgb, 36, 118, 255), 0.4);
@@ -192,6 +196,7 @@ table,
 }
 
 /* @ID: #05-03-05 */
+
 /* Table Bordered */
 .table.bordered,
 .table.bordered td,
@@ -236,6 +241,7 @@ table,
 }
 
 /* @ID: #05-03-06 */
+
 /* Table hover */
 .table.hover tbody tr {
   transition:
@@ -307,6 +313,7 @@ table,
 }
 
 /* @ID: #05-03-07 */
+
 /* Table Card Style */
 .table.card {
   border: 2px solid var(--color-border);
@@ -342,6 +349,7 @@ table,
 }
 
 /* @ID: #05-03-08 */
+
 /* Table Row Dividers */
 .table.divided tbody tr {
   border-bottom: 1px solid var(--color-border);
@@ -385,6 +393,7 @@ table,
 }
 
 /* @ID: #05-03-09 */
+
 /* Table Alignment Utilities */
 .table th.valign-top,
 .table td.valign-top {
@@ -402,6 +411,7 @@ table,
 }
 
 /* @ID: #05-03-10 */
+
 /* Table Responsive */
 .table-responsive {
   overflow-x: auto;
@@ -414,7 +424,7 @@ table,
   min-width: 37.5rem;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .table th,
   .table td {
     padding: var(--space-2) var(--space-3);
@@ -463,6 +473,7 @@ table,
 }
 
 /* @ID: #05-03-11 */
+
 /* Table Row States */
 
 .table tbody tr.selected {
@@ -494,15 +505,16 @@ table,
 }
 
 /* @ID: #05-03-12 */
+
 /* Table Dark Variant — for use on dark/glass backgrounds */
 
 .table.dark {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255 255 255 / 90%);
 }
 
 .table.dark th,
 .table.dark td {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
   white-space: nowrap;
 }
 
@@ -510,17 +522,19 @@ table,
   position: sticky;
   top: 0;
   z-index: 1;
-  background: rgba(21, 24, 43, 0.96);
+  background: rgb(21 24 43 / 96%);
   color: #ddd6fe;
-  border-bottom-color: rgba(255, 255, 255, 0.14);
+  border-bottom-color: rgb(255 255 255 / 14%);
 }
 
 .table.dark tbody tr:hover {
-  background: rgba(167, 139, 250, 0.14);
+  background: rgb(167 139 250 / 14%);
 }
 
 /* @ID: #05-03-13 */
+
 /* Table Sleek — modern fintech/dashboard style */
+
 /* Use inside .night for dark variant, works in light too */
 .table.sleek th,
 .table.sleek td {
@@ -529,11 +543,11 @@ table,
 }
 
 .table.sleek thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgb(0 0 0 / 8%);
 }
 
 .table.sleek thead th {
-  color: rgba(0, 0, 0, 0.38);
+  color: rgb(0 0 0 / 38%);
   background: transparent;
   font-weight: var(--font-weight-medium);
 }
@@ -543,11 +557,11 @@ table,
 }
 
 .table.sleek tbody tr:hover {
-  background: rgba(0, 0, 0, 0.04);
+  background: rgb(0 0 0 / 4%);
 }
 
 .table.sleek.divided tbody tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgb(0 0 0 / 7%);
 }
 
 .table.sleek.divided tbody tr:last-child {
@@ -556,22 +570,23 @@ table,
 
 /* Dark context overrides */
 .night .table.sleek thead {
-  border-bottom-color: rgba(255, 255, 255, 0.07);
+  border-bottom-color: rgb(255 255 255 / 7%);
 }
 
 .night .table.sleek thead th {
-  color: rgba(255, 255, 255, 0.38);
+  color: rgb(255 255 255 / 38%);
 }
 
 .night .table.sleek tbody tr:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(255 255 255 / 5%);
 }
 
 .night .table.sleek.divided tbody tr {
-  border-bottom-color: rgba(255, 255, 255, 0.07);
+  border-bottom-color: rgb(255 255 255 / 7%);
 }
 
 /* @ID: #05-03-14 */
+
 /* Table Sorting Indicators */
 .table th.sortable {
   cursor: pointer;

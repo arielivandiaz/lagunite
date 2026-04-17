@@ -1,7 +1,7 @@
 {
   "folder": "06-molecules",
   "file": "08-draggable-node.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 30,
   "content": [
@@ -28,7 +28,7 @@
         "overflow",
         "transition"
       ],
-      "cssRule": "/* Accent token — override inline or via modifier class */\n--dnd-node-accent: var(--color-primary)\n/* Layout */\nposition: absolute\ndisplay: flex\nflex-direction: column\n/* Sizing */\nwidth: var(--space-44)\nmin-height: var(--space-24)\n/* Appearance */\nborder: 1px solid rgba(0, 0, 0, 0.08)\nborder-radius: var(--radius-l)\nbackground: #fff\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.05),\n    0 4px 14px rgba(0, 0, 0, 0.09)\n/* Interaction */\nuser-select: none\ntouch-action: none\ncursor: grab\noverflow: visible\ntransition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease",
+      "cssRule": "/* Accent token — override inline or via modifier class */\n--dnd-node-accent: var(--color-primary)\n/* Layout */\nposition: absolute\ndisplay: flex\nflex-direction: column\n/* Sizing */\nwidth: calc(var(--space-32) + var(--space-12))\nmin-height: var(--space-24)\n/* Appearance */\nborder: 1px solid rgba(0, 0, 0, 0.08)\nborder-radius: var(--radius-l)\nbackground: #fff\nbox-shadow:\n    0 1px 3px rgba(0, 0, 0, 0.05),\n    0 4px 14px rgba(0, 0, 0, 0.09)\n/* Interaction */\nuser-select: none\ntouch-action: none\ncursor: grab\noverflow: visible\ntransition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease",
       "responsive": false,
       "description": "Draggable Node Component\n   For use within .dnd-canvas or similar spatial containers.\n   Supports pointer events, grid snap, and z-index management.\n   Use --dnd-node-accent to set per-node color (defaults to primary)."
     },

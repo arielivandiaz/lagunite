@@ -1,6 +1,6 @@
 folder: 01-text
 file: 02-typography.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: true
 totalSelectors: 20
 content[20]:
@@ -39,7 +39,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: -0.1rem"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .letter-spacing-s
@@ -48,7 +48,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: -0.05rem"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .letter-spacing
@@ -57,7 +57,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: 0.05rem"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .letter-spacing-l
@@ -66,7 +66,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: 0.1em"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .letter-spacing-xl
@@ -75,7 +75,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: 0.2em"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .letter-spacing-xxl
@@ -84,7 +84,7 @@ content[20]:
     properties[1]: letter-spacing
     cssRule: "letter-spacing: 0.4rem"
     responsive: false
-    description: Letter Spaccing *
+    description: Letter Spaccing
   - type: selector
     selectorType: class
     selector: .lh-xs
@@ -93,7 +93,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 0.85"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .lh-s
@@ -102,7 +102,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 0.95"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .lh
@@ -111,7 +111,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 1.5"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .lh-l
@@ -120,7 +120,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 1.7"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .lh-xl
@@ -129,7 +129,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 2"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .lh-xxl
@@ -138,7 +138,7 @@ content[20]:
     properties[1]: line-height
     cssRule: "line-height: 2.5"
     responsive: false
-    description: Line Height *
+    description: Line Height
   - type: selector
     selectorType: class
     selector: .ta-c
@@ -147,7 +147,7 @@ content[20]:
     properties[1]: text-align
     cssRule: "text-align: center"
     responsive: true
-    description: Text Align *
+    description: Text Align
   - type: selector
     selectorType: class
     selector: .ta-lf
@@ -156,7 +156,7 @@ content[20]:
     properties[1]: text-align
     cssRule: "text-align: left"
     responsive: true
-    description: Text Align *
+    description: Text Align
   - type: selector
     selectorType: class
     selector: .ta-rg
@@ -165,7 +165,7 @@ content[20]:
     properties[1]: text-align
     cssRule: "text-align: right"
     responsive: true
-    description: Text Align *
+    description: Text Align
   - type: selector
     selectorType: class
     selector: .ta-j
@@ -174,7 +174,7 @@ content[20]:
     properties[1]: text-align
     cssRule: "text-align: justify"
     responsive: true
-    description: Text Align *
+    description: Text Align
   - type: selector
     selectorType: class
     selector: .ta-ja
@@ -183,4 +183,4 @@ content[20]:
     properties[1]: text-align
     cssRule: "text-align: justify-all"
     responsive: true
-    description: Text Align *
+    description: Text Align

@@ -200,7 +200,7 @@
     position: fixed;
     inset: var(--dashboard-nav-h) 0 0 0;
     z-index: 240;
-    background: rgba(2, 6, 23, 0.38);
+    background: rgb(2 6 23 / 38%);
   }
 
   .dashboard-top-nav {
@@ -228,7 +228,7 @@
 }
 
 .night .dashboard-sidebar-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(255 255 255 / 8%);
 }
 
 .night .dashboard-sidebar-link.active {

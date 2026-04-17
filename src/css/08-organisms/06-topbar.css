@@ -5,6 +5,7 @@
    ========== */
 
 /* @ID: #08-06-01 */
+
 /* ── Topbar shell ──────────────────────────────────────────────────────── */
 
 .topbar {
@@ -30,6 +31,7 @@
 }
 
 /* @ID: #08-06-02 */
+
 /* ── Regions and content slots ─────────────────────────────────────────── */
 
 .topbar-left,
@@ -87,6 +89,7 @@
 }
 
 /* @ID: #08-06-03 */
+
 /* ── Interactive elements ──────────────────────────────────────────────── */
 
 .topbar-search {
@@ -156,11 +159,12 @@
 }
 
 /* @ID: #08-06-04 */
+
 /* ── Style variants ─────────────────────────────────────────────────────── */
 
 .topbar-primary {
   background: var(--color-primary);
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: rgb(255 255 255 / 22%);
 }
 
 .topbar-primary .topbar-brand,
@@ -171,17 +175,17 @@
 }
 
 .topbar-primary .topbar-action {
-  border-color: rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: rgb(255 255 255 / 35%);
+  background: rgb(255 255 255 / 8%);
 }
 
 .topbar-primary .topbar-action:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.55);
+  background: rgb(255 255 255 / 16%);
+  border-color: rgb(255 255 255 / 55%);
 }
 
 .topbar-primary .topbar-divider {
-  background: rgba(255, 255, 255, 0.32);
+  background: rgb(255 255 255 / 32%);
 }
 
 .topbar-compact {
@@ -190,6 +194,7 @@
 }
 
 /* @ID: #08-06-05 */
+
 /* ── Responsive behavior ────────────────────────────────────────────────── */
 
 @media (width <= 639px) {
@@ -216,6 +221,7 @@
 }
 
 /* @ID: #08-06-06 */
+
 /* ── Night mode ─────────────────────────────────────────────────────────── */
 
 .night .topbar {

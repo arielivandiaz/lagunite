@@ -6,6 +6,7 @@
    ========================================================================== */
 
 /* @ID: #03-03-01 */
+
 /* ── Position types ─────────────────────────────────────────────────────── */
 
 .pos-static { position: static; }
@@ -14,7 +15,7 @@
 .pos-fixed { position: fixed; }
 .pos-sticky { position: sticky; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xpos-static { position: static; }
   .xpos-relative { position: relative; }
   .xpos-absolute { position: absolute; }
@@ -22,7 +23,7 @@
   .xpos-sticky { position: sticky; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dpos-static { position: static; }
   .dpos-relative { position: relative; }
   .dpos-absolute { position: absolute; }
@@ -31,6 +32,7 @@
 }
 
 /* @ID: #03-03-02 */
+
 /* ── Absolute position shortcuts ────────────────────────────────────────── */
 
 .abs,
@@ -48,7 +50,7 @@
   position: absolute;
 }
 
-.pa-full { bottom: 0; top: 0; right: 0; left: 0; }
+.pa-full { inset: 0; }
 .pa-h { right: 0; left: 0; }
 .pa-v { bottom: 0; top: 0; }
 .pa-rg { right: 0; }
@@ -60,7 +62,7 @@
 .pa-bl { bottom: 0; left: 0; }
 .pa-br { bottom: 0; right: 0; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xabs,
   .xpa-full,
   .xpa-h,
@@ -76,7 +78,7 @@
     position: absolute;
   }
 
-  .xpa-full { bottom: 0; top: 0; right: 0; left: 0; }
+  .xpa-full { inset: 0; }
   .xpa-h { right: 0; left: 0; }
   .xpa-v { bottom: 0; top: 0; }
   .xpa-rg { right: 0; }
@@ -89,7 +91,7 @@
   .xpa-br { bottom: 0; right: 0; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dabs,
   .dpa-full,
   .dpa-h,
@@ -105,7 +107,7 @@
     position: absolute;
   }
 
-  .dpa-full { bottom: 0; top: 0; right: 0; left: 0; }
+  .dpa-full { inset: 0; }
   .dpa-h { right: 0; left: 0; }
   .dpa-v { bottom: 0; top: 0; }
   .dpa-rg { right: 0; }
@@ -119,11 +121,13 @@
 }
 
 /* @ID: #03-03-03 */
+
 /* ── Relative shortcut ────────────────────────────────────────────────────── */
 
 .rel { position: relative; }
 
 /* @ID: #03-03-04 */
+
 /* ── Fixed position shortcuts ─────────────────────────────────────────────── */
 
 .pf,
@@ -141,7 +145,7 @@
   position: fixed;
 }
 
-.pf-full { bottom: 0; top: 0; right: 0; left: 0; }
+.pf-full { inset: 0; }
 .pf-h { right: 0; left: 0; }
 .pf-v { bottom: 0; top: 0; }
 .pf-rg { right: 0; }
@@ -153,7 +157,7 @@
 .pf-bl { bottom: 0; left: 0; }
 .pf-br { bottom: 0; right: 0; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xpf,
   .xpf-full,
   .xpf-h,
@@ -169,7 +173,7 @@
     position: fixed;
   }
 
-  .xpf-full { bottom: 0; top: 0; right: 0; left: 0; }
+  .xpf-full { inset: 0; }
   .xpf-h { right: 0; left: 0; }
   .xpf-v { bottom: 0; top: 0; }
   .xpf-rg { right: 0; }
@@ -182,7 +186,7 @@
   .xpf-br { bottom: 0; right: 0; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dpf,
   .dpf-full,
   .dpf-h,
@@ -198,7 +202,7 @@
     position: fixed;
   }
 
-  .dpf-full { bottom: 0; top: 0; right: 0; left: 0; }
+  .dpf-full { inset: 0; }
   .dpf-h { right: 0; left: 0; }
   .dpf-v { bottom: 0; top: 0; }
   .dpf-rg { right: 0; }
@@ -212,11 +216,13 @@
 }
 
 /* @ID: #03-03-05 */
+
 /* ── Centering utilities ─────────────────────────────────────────────────── */
 
 .center-h { left: 0; right: 0; margin: auto; }
 .center-v { top: 0; bottom: 0; margin: auto; }
 .center { left: 0; right: 0; margin-left: auto; margin-right: auto; }
+
 .abs-center {
   position: absolute;
   top: 50%;
@@ -224,10 +230,11 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xcenter-h { left: 0; right: 0; margin: auto; }
   .xcenter-v { top: 0; bottom: 0; margin: auto; }
   .xcenter { left: 0; right: 0; margin-left: auto; margin-right: auto; }
+
   .xabs-center {
     position: absolute;
     top: 50%;
@@ -236,10 +243,11 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dcenter-h { left: 0; right: 0; margin: auto; }
   .dcenter-v { top: 0; bottom: 0; margin: auto; }
   .dcenter { left: 0; right: 0; margin-left: auto; margin-right: auto; }
+
   .dabs-center {
     position: absolute;
     top: 50%;
@@ -249,28 +257,33 @@
 }
 
 /* @ID: #03-03-06 */
+
 /* ── Float utilities ─────────────────────────────────────────────────────── */
 
 .float-r,
 .float-rg { float: right; }
+
 .float-l,
 .float-lf { float: left; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xfloat-r,
   .xfloat-rg { float: right; }
+
   .xfloat-l,
   .xfloat-lf { float: left; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dfloat-r,
   .dfloat-rg { float: right; }
+
   .dfloat-l,
   .dfloat-lf { float: left; }
 }
 
 /* @ID: #03-03-07 */
+
 /* ── Float positioning in .rel container ────────────────────────────────── */
 
 .float-tr,
@@ -292,11 +305,12 @@
 .float-br { bottom: 0; right: 0; }
 .float-bl { bottom: 0; left: 0; }
 .float-bc { bottom: 0; right: 0; left: 0; }
-.float-c { bottom: 0; top: 0; left: 0; right: 0; }
+.float-c { inset: 0; }
 .float-cl { bottom: 0; top: 0; left: 0; }
 .float-cr { bottom: 0; top: 0; right: 0; }
 
 /* @ID: #03-03-08 */
+
 /* ── Z-index (.z0-.z20) ─────────────────────────────────────────────────── */
 
 .z0 { z-index: 0; }
@@ -309,7 +323,7 @@
 .z15 { z-index: 15; }
 .z20 { z-index: 20; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xz0 { z-index: 0; }
   .xz1 { z-index: 1; }
   .xz2 { z-index: 2; }
@@ -321,7 +335,7 @@
   .xz20 { z-index: 20; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dz0 { z-index: 0; }
   .dz1 { z-index: 1; }
   .dz2 { z-index: 2; }
@@ -334,6 +348,7 @@
 }
 
 /* @ID: #03-03-09 */
+
 /* ── Inset utilities ─────────────────────────────────────────────────────── */
 
 .top-0 { top: 0; }
@@ -353,7 +368,7 @@
 .bottom-1\/2 { bottom: 50%; }
 .left-1\/2 { left: 50%; }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xtop-0 { top: 0; }
   .xright-0 { right: 0; }
   .xbottom-0 { bottom: 0; }
@@ -364,7 +379,7 @@
   .xleft-auto { left: auto; }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dtop-0 { top: 0; }
   .dright-0 { right: 0; }
   .dbottom-0 { bottom: 0; }
@@ -376,6 +391,7 @@
 }
 
 /* @ID: #03-03-10 */
+
 /* ── Separators ──────────────────────────────────────────────────────────── */
 
 .separator,
@@ -397,18 +413,20 @@
 
 .separator-v-xs { height: var(--space-1); }
 .separator-v-s { height: var(--space-3); }
+
 .separator-v-m,
 .separator-v { height: var(--space-6); }
 .separator-v-l { height: var(--space-12); }
 .separator-v-xl { height: var(--space-16); }
 .separator-h-xs { width: var(--space-1); }
 .separator-h-s { width: var(--space-3); }
+
 .separator-h-m,
 .separator-h { width: var(--space-6); }
 .separator-h-l { width: var(--space-12); }
 .separator-h-xl { width: var(--space-16); }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xseparator,
   .xseparator-v-xs,
   .xseparator-v-s,
@@ -428,19 +446,21 @@
 
   .xseparator-v-xs { height: var(--space-1); }
   .xseparator-v-s { height: var(--space-3); }
+
   .xseparator-v-m,
   .xseparator-v { height: var(--space-6); }
   .xseparator-v-l { height: var(--space-12); }
   .xseparator-v-xl { height: var(--space-16); }
   .xseparator-h-xs { width: var(--space-1); }
   .xseparator-h-s { width: var(--space-3); }
+
   .xseparator-h-m,
   .xseparator-h { width: var(--space-6); }
   .xseparator-h-l { width: var(--space-12); }
   .xseparator-h-xl { width: var(--space-16); }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dseparator,
   .dseparator-v-xs,
   .dseparator-v-s,
@@ -460,12 +480,14 @@
 
   .dseparator-v-xs { height: var(--space-1); }
   .dseparator-v-s { height: var(--space-3); }
+
   .dseparator-v-m,
   .dseparator-v { height: var(--space-6); }
   .dseparator-v-l { height: var(--space-12); }
   .dseparator-v-xl { height: var(--space-16); }
   .dseparator-h-xs { width: var(--space-1); }
   .dseparator-h-s { width: var(--space-3); }
+
   .dseparator-h-m,
   .dseparator-h { width: var(--space-6); }
   .dseparator-h-l { width: var(--space-12); }

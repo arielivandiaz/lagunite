@@ -4,11 +4,13 @@
    ========================================================================== */
 
 /* @ID: #04-06-01 */
+
 /*** Transition Shorthand ***/
 .transition-none { transition-property: none; }
 .transition      { transition: all 0.2s ease-in-out; }
 
 /* @ID: #04-06-02 */
+
 /*** Transition Properties ***/
 .transition-all       { transition-property: all; }
 .transition-colors    { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; }
@@ -17,6 +19,7 @@
 .transition-shadow    { transition-property: box-shadow; }
 
 /* @ID: #04-06-03 */
+
 /*** Transition Durations ***/
 .duration-0    { transition-duration: 0ms; }
 .duration-75   { transition-duration: 75ms; }
@@ -29,6 +32,7 @@
 .duration-1000 { transition-duration: 1000ms; }
 
 /* @ID: #04-06-04 */
+
 /*** Transition Timing Functions ***/
 .ease-linear { transition-timing-function: linear; }
 .ease-in     { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
@@ -36,6 +40,7 @@
 .ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 /* @ID: #04-06-05 */
+
 /*** Transition Delays ***/
 .delay-0   { transition-delay: 0ms; }
 .delay-75  { transition-delay: 75ms; }
@@ -46,8 +51,9 @@
 .delay-500 { transition-delay: 500ms; }
 
 /* @ID: #04-06-06 */
+
 /*** Responsive: mobile (max-width: 639px) ***/
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xtransition-none { transition-property: none; }
   .xtransition      { transition: all 0.2s ease-in-out; }
 
@@ -78,8 +84,9 @@
 }
 
 /* @ID: #04-06-07 */
+
 /*** Responsive: desktop (min-width: 640px) ***/
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dtransition-none { transition-property: none; }
   .dtransition      { transition: all 0.2s ease-in-out; }
 

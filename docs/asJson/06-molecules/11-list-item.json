@@ -1,7 +1,7 @@
 {
   "folder": "06-molecules",
-  "file": "10-list-item.css",
-  "lastUpdated": "2026-04-16",
+  "file": "11-list-item.css",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 45,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "display",
@@ -28,7 +28,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item:last-child",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "border-bottom"
@@ -41,7 +41,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-avatar",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "flex-shrink",
@@ -62,7 +62,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-avatar img",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "width",
@@ -77,7 +77,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-content",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "flex",
@@ -94,7 +94,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-text",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "margin",
@@ -113,7 +113,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-meta",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "margin",
@@ -131,7 +131,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-actions",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "flex-shrink",
@@ -147,7 +147,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-action",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "display",
@@ -172,7 +172,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-action:hover",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "background",
@@ -186,7 +186,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-action:focus-visible",
-      "id": "#06-10-01",
+      "id": "#06-11-01",
       "category": null,
       "properties": [
         "outline",
@@ -200,7 +200,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-interactive",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "cursor"
@@ -213,7 +213,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-interactive:hover",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "background"
@@ -226,7 +226,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-interactive:active",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "background"
@@ -239,7 +239,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-link",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "text-decoration",
@@ -260,7 +260,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-link:hover",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "background"
@@ -273,7 +273,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-link:focus-visible",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "outline",
@@ -287,7 +287,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-link:last-child",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "border-bottom"
@@ -300,7 +300,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-checkbox",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "flex-shrink",
@@ -317,7 +317,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-with-checkbox",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "padding-left"
@@ -330,7 +330,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-with-checkbox .list-item-checkbox",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "flex-shrink"
@@ -343,7 +343,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-selected",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "background"
@@ -356,7 +356,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-disabled",
-      "id": "#06-10-02",
+      "id": "#06-11-02",
       "category": null,
       "properties": [
         "opacity",
@@ -371,7 +371,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-badge",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "flex-shrink",
@@ -393,7 +393,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-badge-success",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background",
@@ -407,7 +407,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-badge-warning",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background",
@@ -421,7 +421,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-badge-error",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background",
@@ -435,13 +435,13 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-badge-info",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background",
         "color"
       ],
-      "cssRule": "background: var(--color-info)\ncolor: white",
+      "cssRule": "background: var(--blue-500)\ncolor: white",
       "responsive": false,
       "description": "── Badge and status indicators ──────────────────────────────────────────"
     },
@@ -449,7 +449,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-status",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "flex-shrink",
@@ -466,7 +466,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-status-online",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background"
@@ -479,7 +479,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-status-away",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background"
@@ -492,7 +492,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-item-status-offline",
-      "id": "#06-10-03",
+      "id": "#06-11-03",
       "category": null,
       "properties": [
         "background"
@@ -505,7 +505,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-container",
-      "id": "#06-10-04",
+      "id": "#06-11-04",
       "category": null,
       "properties": [
         "background",
@@ -521,7 +521,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-container-compact .list-item",
-      "id": "#06-10-04",
+      "id": "#06-11-04",
       "category": null,
       "properties": [
         "padding"
@@ -534,7 +534,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-container-spacious .list-item",
-      "id": "#06-10-04",
+      "id": "#06-11-04",
       "category": null,
       "properties": [
         "padding"
@@ -547,7 +547,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".list-container-divider .list-item",
-      "id": "#06-10-04",
+      "id": "#06-11-04",
       "category": null,
       "properties": [
         "border-bottom"
@@ -560,7 +560,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background",
@@ -574,7 +574,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-avatar",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background"
@@ -587,7 +587,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-interactive:hover",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background"
@@ -600,7 +600,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-link:hover",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background"
@@ -613,7 +613,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-meta",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "color"
@@ -626,7 +626,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-selected",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background"
@@ -639,7 +639,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-action",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "color"
@@ -652,7 +652,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-item-action:hover",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background"
@@ -665,7 +665,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .list-container",
-      "id": "#06-10-06",
+      "id": "#06-11-06",
       "category": null,
       "properties": [
         "background",

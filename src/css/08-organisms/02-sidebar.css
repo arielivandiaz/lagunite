@@ -160,7 +160,7 @@
 }
 
 .sidebar-dark .sidebar-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(255 255 255 / 8%);
   color: var(--gray-100);
 }
 
@@ -204,7 +204,7 @@
 }
 
 .night .sidebar .sidebar-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(255 255 255 / 8%);
   color: var(--gray-100);
 }
 
