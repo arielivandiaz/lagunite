@@ -5,6 +5,7 @@
    ========================================================================== */
 
 /* @ID: #10-01-01 */
+
 /* ── Display ────────────────────────────────────────────────────────────── */
 
 .d-block        { display: block; }
@@ -17,6 +18,7 @@
 .d-contents     { display: contents; }
 
 /* @ID: #10-01-02 */
+
 /* ── Visibility ─────────────────────────────────────────────────────────── */
 
 .visible   { visibility: visible; }
@@ -24,9 +26,10 @@
 .collapse  { visibility: collapse; }
 
 /* @ID: #10-01-03 */
+
 /* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xd-block        { display: block; }
   .xd-inline       { display: inline; }
   .xd-inline-block { display: inline-block; }
@@ -42,9 +45,10 @@
 }
 
 /* @ID: #10-01-04 */
+
 /* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dd-block        { display: block; }
   .dd-inline       { display: inline; }
   .dd-inline-block { display: inline-block; }

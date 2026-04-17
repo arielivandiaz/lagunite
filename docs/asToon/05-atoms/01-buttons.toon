@@ -1,6 +1,6 @@
 folder: 05-atoms
 file: 01-buttons.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 81
 content[81]:
@@ -19,7 +19,7 @@ content[81]:
     id: #05-01-01
     category: null
     properties[1]: color
-    cssRule: "color: var(--color-text)"
+    cssRule: "color: var(--color-text-base)"
     responsive: false
     description: Button Base Styles
   - type: selector

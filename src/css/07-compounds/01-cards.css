@@ -5,6 +5,7 @@
    ========== */
 
 /* @ID: #07-01-01 */
+
 /* ── Card base ──────────────────────────────────────────────────────────── */
 
 .card {
@@ -16,6 +17,7 @@
 }
 
 /* @ID: #07-01-02 */
+
 /* ── Card regions ───────────────────────────────────────────────────────── */
 
 .card-header {
@@ -31,7 +33,7 @@
 .card-footer {
   padding: var(--space-3) var(--space-4);
   border-top: var(--border-width-s) solid var(--color-border);
-  background: rgba(0, 0, 0, 0.02);
+  background: rgb(0 0 0 / 2%);
 }
 
 .card-img-top {
@@ -58,6 +60,7 @@
 }
 
 /* @ID: #07-01-03 */
+
 /* ── Card surface variants ──────────────────────────────────────────────── */
 
 .card-elevated {
@@ -79,6 +82,7 @@
 }
 
 /* @ID: #07-01-04 */
+
 /* ── Card semantic variants (primary) ───────────────────────────────────── */
 
 .card-primary {
@@ -91,6 +95,7 @@
 }
 
 /* @ID: #07-01-05 */
+
 /* ── Card semantic variants (success, warning, error) ─────────────────────── */
 
 .card-success {
@@ -121,6 +126,7 @@
 }
 
 /* @ID: #07-01-06 */
+
 /* ── Card horizontal layout & groups ────────────────────────────────────── */
 
 .card-horizontal {
@@ -140,6 +146,7 @@
 }
 
 /* @ID: #07-01-07 */
+
 /* ── Night mode & responsive ────────────────────────────────────────────── */
 
 .night .card {
@@ -147,7 +154,7 @@
   border-color: var(--gray-700);
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .card-horizontal {
     flex-direction: column;
   }

@@ -1,9 +1,10 @@
 /* ==========
-   06-molecules / 10-list-item.css
+   06-molecules / 11-list-item.css
    List item component for common patterns: avatar + text + actions, selectable, status badges.
    ========= */
 
-/* @ID: #06-10-01 */
+/* @ID: #06-11-01 */
+
 /* ── Base list item structure ──────────────────────────────────────────── */
 
 .list-item {
@@ -98,7 +99,8 @@
   outline-offset: 2px;
 }
 
-/* @ID: #06-10-02 */
+/* @ID: #06-11-02 */
+
 /* ── Variants ──────────────────────────────────────────────────────────── */
 
 .list-item-interactive {
@@ -164,7 +166,8 @@
   pointer-events: none;
 }
 
-/* @ID: #06-10-03 */
+/* @ID: #06-11-03 */
+
 /* ── Badge and status indicators ────────────────────────────────────────── */
 
 .list-item-badge {
@@ -196,7 +199,7 @@
 }
 
 .list-item-badge-info {
-  background: var(--color-info);
+  background: var(--blue-500);
   color: white;
 }
 
@@ -220,7 +223,8 @@
   background: var(--gray-400);
 }
 
-/* @ID: #06-10-04 */
+/* @ID: #06-11-04 */
+
 /* ── Spacing and container ─────────────────────────────────────────────── */
 
 .list-container {
@@ -242,7 +246,8 @@
   border-bottom: var(--border-width-md) solid var(--color-border);
 }
 
-/* @ID: #06-10-05 */
+/* @ID: #06-11-05 */
+
 /* ── Responsive ────────────────────────────────────────────────────────── */
 
 @media (width <= 639px) {
@@ -271,7 +276,8 @@
   }
 }
 
-/* @ID: #06-10-06 */
+/* @ID: #06-11-06 */
+
 /* ── Night mode ────────────────────────────────────────────────────────── */
 
 .night .list-item {

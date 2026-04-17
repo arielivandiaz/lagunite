@@ -8,17 +8,17 @@
 
 .dashboard-main-alt {
   max-width: 100%;
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashboard-panel-alt {
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(255 255 255 / 12%);
   border-radius: 16px;
-  box-shadow: 0 12px 35px rgba(8, 13, 30, 0.3);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 35px rgb(8 13 30 / 30%);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   padding: 1rem;
 }
 
@@ -40,8 +40,8 @@
   display: inline-flex;
   align-items: center;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255 255 255 / 16%);
+  background: rgb(255 255 255 / 10%);
   color: #f5f3ff;
   text-decoration: none;
   padding: 0.38rem 0.75rem;
@@ -51,8 +51,8 @@
 
 .dashboard-link-alt:hover,
 .dashboard-link-alt:focus-visible {
-  background: rgba(167, 139, 250, 0.3);
-  border-color: rgba(221, 214, 254, 0.55);
+  background: rgb(167 139 250 / 30%);
+  border-color: rgb(221 214 254 / 55%);
 }
 
 /* Scroll container with glass styling — use .table.dark inside */
@@ -60,11 +60,11 @@
   width: 100%;
   overflow: auto;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(9, 12, 24, 0.65);
+  border: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(9 12 24 / 65%);
 }
 
-@media (max-width: 959px) {
+@media (width <= 959px) {
   .dashboard-main-alt {
     padding-top: 0.2rem;
   }

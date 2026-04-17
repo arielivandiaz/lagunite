@@ -1,5 +1,7 @@
 /* @ID: #05-08-01 */
+
 /*** Chip Base ***/
+
 /*
   Chips are standalone semantic labels used inline within content to represent
   a category, status, or filter (e.g. "Payment", "Transfer", "Partial").
@@ -41,6 +43,7 @@
 }
 
 /* @ID: #05-08-02 */
+
 /*** Chip Color Variants ***/
 
 .chip-success {
@@ -68,6 +71,7 @@
 }
 
 /* @ID: #05-08-03 */
+
 /*** Chip Solid Variant ***/
 
 .chip-solid.chip-success {
@@ -95,6 +99,7 @@
 }
 
 /* @ID: #05-08-04 */
+
 /*** Chip Outline Variant ***/
 
 .chip-outline {
@@ -102,6 +107,7 @@
 }
 
 /* @ID: #05-08-05 */
+
 /*** Chip Sizes ***/
 
 .chip-s {
@@ -115,7 +121,9 @@
 }
 
 /* @ID: #05-08-06 */
+
 /*** Chip Gradient Modifier (.bgg) ***/
+
 /*
   Overrides background with a directional gradient of the chip's color.
   Works on both base (glass) and solid variants.
@@ -132,7 +140,9 @@
 .chip-solid.bgg.chip-info    { background: var(--chip-info-grad-solid);    color: var(--chip-info-solid-text); }
 
 /* @ID: #05-08-07 */
+
 /*** Chip Shadow Modifier (.shadow) ***/
+
 /*
   Adds a colored drop-shadow that matches the chip hue.
   On solid chips the shadow is more pronounced.
@@ -149,7 +159,9 @@
 .chip-solid.shadow.chip-info    { box-shadow: 0 6px 24px -4px var(--chip-info-glow); }
 
 /* @ID: #05-08-08 */
+
 /*** Chip Lit Modifier (.lit) ***/
+
 /*
   Simulates an inner light source: a semi-transparent highlight gradient
   from the top edge + an inset border glow at the bottom.
@@ -163,8 +175,8 @@
     border-radius: inherit;
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.22) 0%,
-        rgba(255, 255, 255, 0.00) 55%
+        rgb(255 255 255 / 22%) 0%,
+        rgb(255 255 255 / 0%) 55%
     );
     pointer-events: none;
 }
@@ -172,64 +184,70 @@
 .chip-solid.lit::before {
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.35) 0%,
-        rgba(255, 255, 255, 0.00) 60%
+        rgb(255 255 255 / 35%) 0%,
+        rgb(255 255 255 / 0%) 60%
     );
 }
 
 .chip.lit {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.30),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08);
+        inset 0  1px 0 rgb(255 255 255 / 30%),
+        inset 0 -1px 0 rgb(0 0 0 / 8%);
 }
 
 /* lit + shadow: merged box-shadow declarations */
 .chip.lit.shadow.chip-success {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.30),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        inset 0  1px 0 rgb(255 255 255 / 30%),
+        inset 0 -1px 0 rgb(0 0 0 / 8%),
         0 4px 18px -2px var(--chip-success-glow);
 }
+
 .chip.lit.shadow.chip-danger {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.30),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        inset 0  1px 0 rgb(255 255 255 / 30%),
+        inset 0 -1px 0 rgb(0 0 0 / 8%),
         0 4px 18px -2px var(--chip-danger-glow);
 }
+
 .chip.lit.shadow.chip-warning {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.30),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        inset 0  1px 0 rgb(255 255 255 / 30%),
+        inset 0 -1px 0 rgb(0 0 0 / 8%),
         0 4px 18px -2px var(--chip-warning-glow);
 }
+
 .chip.lit.shadow.chip-info {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.30),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        inset 0  1px 0 rgb(255 255 255 / 30%),
+        inset 0 -1px 0 rgb(0 0 0 / 8%),
         0 4px 18px -2px var(--chip-info-glow);
 }
 
 .chip-solid.lit.shadow.chip-success {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.35),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        inset 0  1px 0 rgb(255 255 255 / 35%),
+        inset 0 -1px 0 rgb(0 0 0 / 10%),
         0 6px 24px -4px var(--chip-success-glow);
 }
+
 .chip-solid.lit.shadow.chip-danger {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.35),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        inset 0  1px 0 rgb(255 255 255 / 35%),
+        inset 0 -1px 0 rgb(0 0 0 / 10%),
         0 6px 24px -4px var(--chip-danger-glow);
 }
+
 .chip-solid.lit.shadow.chip-warning {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.35),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        inset 0  1px 0 rgb(255 255 255 / 35%),
+        inset 0 -1px 0 rgb(0 0 0 / 10%),
         0 6px 24px -4px var(--chip-warning-glow);
 }
+
 .chip-solid.lit.shadow.chip-info {
     box-shadow:
-        inset 0  1px 0 rgba(255, 255, 255, 0.35),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.10),
+        inset 0  1px 0 rgb(255 255 255 / 35%),
+        inset 0 -1px 0 rgb(0 0 0 / 10%),
         0 6px 24px -4px var(--chip-info-glow);
 }

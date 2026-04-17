@@ -87,7 +87,7 @@
   min-width: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xminwp10 {
     min-width: 10%;
   }
@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dminwp10 {
     min-width: 10%;
   }
@@ -319,8 +319,9 @@
   max-width: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   /* @ID: #03-09-01 */
+
   /* max Width % */
   .xmaxwp10 {
     max-width: 10%;
@@ -399,8 +400,9 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   /* @ID: #03-09-02 */
+
   /* max Width % */
   .dmaxwp10 {
     max-width: 10%;
@@ -481,51 +483,62 @@
 
 
 /* @ID: #03-09-03 */
+
 /*** Width Fractions ***/
 .wp-1\/3 {
   width: 33.333333%;
 }
+
 .wp-2\/3 {
   width: 66.666667%;
 }
+
 .wp-1\/6 {
   width: 16.666667%;
 }
+
 .wp-5\/6 {
   width: 83.333333%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xwp-1\/3 {
     width: 33.333333%;
   }
+
   .xwp-2\/3 {
     width: 66.666667%;
   }
+
   .xwp-1\/6 {
     width: 16.666667%;
   }
+
   .xwp-5\/6 {
     width: 83.333333%;
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dwp-1\/3 {
     width: 33.333333%;
   }
+
   .dwp-2\/3 {
     width: 66.666667%;
   }
+
   .dwp-1\/6 {
     width: 16.666667%;
   }
+
   .dwp-5\/6 {
     width: 83.333333%;
   }
 }
 
 /* @ID: #03-09-04 */
+
 /* Viewport Width */
 .vw10 {
   width: 10vw;
@@ -622,7 +635,7 @@
   width: 100dvw;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xvw10 {
     width: 10vw;
     width: 10dvw;
@@ -719,7 +732,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dvw10 {
     width: 10vw;
     width: 10dvw;
@@ -911,7 +924,7 @@
   min-width: 100dvw;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xminvw10 {
     min-width: 10vw;
     min-width: 10dvw;
@@ -1008,7 +1021,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dminvw10 {
     min-width: 10vw;
     min-width: 10dvw;
@@ -1200,7 +1213,7 @@
   max-width: 100dvw;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xmaxvw10 {
     max-width: 10vw;
     max-width: 10dvw;
@@ -1297,7 +1310,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dmaxvw10 {
     max-width: 10vw;
     max-width: 10dvw;
@@ -1395,188 +1408,247 @@
 }
 
 /* @ID: #03-09-05 */
+
 /* Porcentage Width */
 .wp5{
   width: 5%;
 }
+
 .wp10{
   width: 10%;
 }
+
 .wp15{
   width: 15%;
 }
+
 .wp20{
   width: 20%;
 }
+
 .wp25{
   width: 25%;
 }
+
 .wp30{
   width: 30%;
 }
+
 .wp35{
   width: 35%;
 }
+
 .wp40{
   width: 40%;
 }
+
 .wp45{
   width: 45%;
 }
+
 .wp50{
   width: 50%;
 }
+
 .wp55{
   width: 55%;
 }
+
 .wp60{
   width: 60%;
 }
+
 .wp65{
   width: 65%;
 }
+
 .wp70{
   width: 70%;
 }
+
 .wp75{
   width: 75%;
 }
+
 .wp80{
   width: 80%;
 }
+
 .wp85{
   width: 85%;
 }
+
 .wp90{
   width: 90%;
 }
+
 .wp95{
   width: 95%;
 }
+
 .wp100{
   width: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xwp5{
     width: 5%;
   }
+
   .xwp10{
     width: 10%;
   }
+
   .xwp15{
     width: 15%;
   }
+
   .xwp20{
     width: 20%;
   }
+
   .xwp25{
     width: 25%;
   }
+
   .xwp30{
     width: 30%;
   }
+
   .xwp35{
     width: 35%;
   }
+
   .xwp40{
     width: 40%;
   }
+
   .xwp45{
     width: 45%;
   }
+
   .xwp50{
     width: 50%;
   }
+
   .xwp55{
     width: 55%;
   }
+
   .xwp60{
     width: 60%;
   }
+
   .xwp65{
     width: 65%;
   }
+
   .xwp70{
     width: 70%;
   }
+
   .xwp75{
     width: 75%;
   }
+
   .xwp80{
     width: 80%;
   }
+
   .xwp85{
     width: 85%;
   }
+
   .xwp90{
     width: 90%;
   }
+
   .xwp95{
     width: 95%;
   }
+
   .xwp100{
     width: 100%;
   }
 }
-@media (min-width: 640px) {
+
+@media (width >= 640px) {
   .dwp5{
     width: 5%;
   }
+
   .dwp10{
     width: 10%;
   }
+
   .dwp15{
     width: 15%;
   }
+
   .dwp20{
     width: 20%;
   }
+
   .dwp25{
     width: 25%;
   }
+
   .dwp30{
     width: 30%;
   }
+
   .dwp35{
     width: 35%;
   }
+
   .dwp40{
     width: 40%;
   }
+
   .dwp45{
     width: 45%;
   }
+
   .dwp50{
     width: 50%;
   }
+
   .dwp55{
     width: 55%;
   }
+
   .dwp60{
     width: 60%;
   }
+
   .dwp65{
     width: 65%;
   }
+
   .dwp70{
     width: 70%;
   }
+
   .dwp75{
     width: 75%;
   }
+
   .dwp80{
     width: 80%;
   }
+
   .dwp85{
     width: 85%;
   }
+
   .dwp90{
     width: 90%;
   }
+
   .dwp95{
     width: 95%;
   }
+
   .dwp100{
     width: 100%;
   }

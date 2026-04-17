@@ -9,6 +9,7 @@
 */
 
 /* @ID: #00-05-01 */
+
 /*** RESET  ***/
 *,
 *::before,
@@ -17,41 +18,11 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 /* @ID: #00-05-02 */
-/*** Media Query Example  ***/
-@media (max-width: 639px) {
-} /* sm */
-@media (min-width: 640px) {
-} /* md */
-@media (min-width: 768px) {
-} /* lg */
-@media (min-width: 1024px) {
-}
-@media (min-width: 1440px) {  
-}/* xl */
 
-/* Example of responsive class
-/* @media (min-width: 768px) {
-  .md\:card {
-    border: 2px solid #3b82f6; 
-  }
-}
-
-@media (min-width: 992px) {
-  .lg\:card {
-    border: 2px solid #10b981;
-  }
-} 
-  
-<div class="card md:card lg:card">
-  Contenido de la tarjeta responsiva
-</div>
-*/
-
-/* @ID: #00-05-03 */
 /*** Static ***/
 html,
 body {
@@ -59,7 +30,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  background: var(--background_body);
+  background: var(--color-bg);
   font-family: var(--font-text);
   font-size: var(--font-size-base);
 }
@@ -94,20 +65,18 @@ img {
   max-width: 100%;
 }
 
-header:not(.navbar):not(.doc-navbar-overlay):not(.topbar) {
-  margin: 5vh 0 3vh 0;
+header:not(.navbar, .doc-navbar-overlay, .topbar) {
+  margin: 5vh 0 3vh;
 }
 
-/* @ID: #00-05-04 */
+/* @ID: #00-05-03 */
+
 /**** Tags ****/
 
 body {
   width: 100%;
   height: 100%;
   text-align: center;
-}
-
-body {
   background: var(--color-bg);
   color: var(--color-text-base);
   transition:
@@ -157,7 +126,7 @@ blockquote {
   border-left: solid 4px var(--color-primary);
   font-style: italic;
   text-align: left;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   padding: 0.8rem 0.5rem 0.8rem 1.5rem;
 }
 
@@ -174,7 +143,7 @@ pre {
   -webkit-overflow-scrolling: touch;
   font-family: monospace;
   font-size: 0.9em;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
 }
 
 pre code {
@@ -187,7 +156,7 @@ pre code {
 
 .night code {
   background: #000;
-  color: var(--text_color_alt);
+  color: var(--color-text-alt);
 }
 
 hgroup,
@@ -204,7 +173,7 @@ ol li {
   padding: 2px 1.5vw 2px 0.5vw;
 }
 
-@media only screen and (min-width: 281px) and (max-width: 767px) {
+@media (width <= 639px) {
   table {
     font-size: 80%;
   }
@@ -235,7 +204,7 @@ caption {
 details {
   padding: 12px;
   max-width: 100%;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-alt);
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease;

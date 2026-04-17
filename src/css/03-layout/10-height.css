@@ -87,7 +87,7 @@
   min-height: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xminhp10 {
     min-height: 10%;
   }
@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dminhp10 {
     min-height: 10%;
   }
@@ -319,8 +319,9 @@
   max-height: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   /* @ID: #03-10-01 */
+
   /* max Height % */
   .xmaxhp10 {
     max-height: 10%;
@@ -399,8 +400,9 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   /* @ID: #03-10-02 */
+
   /* Max Height % */
   .dmaxhp10 {
     max-height: 10%;
@@ -483,40 +485,50 @@
 .hp-1\/3 {
   height: 33.333333%;
 }
+
 .hp-2\/3 {
   height: 66.666667%;
 }
+
 .hp-1\/6 {
   height: 16.666667%;
 }
+
 .hp-5\/6 {
   height: 83.333333%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xhp-1\/3 {
     height: 33.333333%;
   }
+
   .xhp-2\/3 {
     height: 66.666667%;
   }
+
   .xhp-1\/6 {
     height: 16.666667%;
   }
+
   .xhp-5\/6 {
     height: 83.333333%;
   }
 }
-@media (min-width: 640px) {
+
+@media (width >= 640px) {
   .dhp-1\/3 {
     height: 33.333333%;
   }
+
   .dhp-2\/3 {
     height: 66.666667%;
   }
+
   .dhp-1\/6 {
     height: 16.666667%;
   }
+
   .dhp-5\/6 {
     height: 83.333333%;
   }
@@ -622,7 +634,7 @@
   height: 100dvh;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xvh5 {
     height: 5vh;
     height: 5dvh;
@@ -724,7 +736,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dvh5 {
     height: 5vh;
     height: 5dvh;
@@ -921,7 +933,7 @@
   min-height: 100dvh;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xminvh10 {
     min-height: 10vh;
     min-height: 10dvh;
@@ -1018,7 +1030,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dminvh10 {
     min-height: 10vh;
     min-height: 10dvh;
@@ -1210,7 +1222,7 @@
   max-height: 100dvh;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xmaxvh10 {
     max-height: 10vh;
     max-height: 10dvh;
@@ -1307,7 +1319,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dmaxvh10 {
     max-height: 10vh;
     max-height: 10dvh;
@@ -1406,188 +1418,247 @@
 
 
 /* @ID: #03-10-03 */
+
 /* Porcentage Height */
 .hp5{
   height: 5%;
 }
+
 .hp10{
   height: 10%;
 }
+
 .hp15{
   height: 15%;
 }
+
 .hp20{
   height: 20%;
 }
+
 .hp25{
   height: 25%;
 }
+
 .hp30{
   height: 30%;
 }
+
 .hp35{
   height: 35%;
 }
+
 .hp40{
   height: 40%;
 }
+
 .hp45{
   height: 45%;
 }
+
 .hp50{
   height: 50%;
 }
+
 .hp55{
   height: 55%;
 }
+
 .hp60{
   height: 60%;
 }
+
 .hp65{
   height: 65%;
 }
+
 .hp70{
   height: 70%;
 }
+
 .hp75{
   height: 75%;
 }
+
 .hp80{
   height: 80%;
 }
+
 .hp85{
   height: 85%;
 }
+
 .hp90{
   height: 90%;
 }
+
 .hp95{
   height: 95%;
 }
+
 .hp100{
   height: 100%;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xhp5{
     height: 5%;
   }
+
   .xhp10{
     height: 10%;
   }
+
   .xhp15{
     height: 15%;
   }
+
   .xhp20{
     height: 20%;
   }
+
   .xhp25{
     height: 25%;
   }
+
   .xhp30{
     height: 30%;
   }
+
   .xhp35{
     height: 35%;
   }
+
   .xhp40{
     height: 40%;
   }
+
   .xhp45{
     height: 45%;
   }
+
   .xhp50{
     height: 50%;
   }
+
   .xhp55{
     height: 55%;
   }
+
   .xhp60{
     height: 60%;
   }
+
   .xhp65{
     height: 65%;
   }
+
   .xhp70{
     height: 70%;
   }
+
   .xhp75{
     height: 75%;
   }
+
   .xhp80{
     height: 80%;
   }
+
   .xhp85{
     height: 85%;
   }
+
   .xhp90{
     height: 90%;
   }
+
   .xhp95{
     height: 95%;
   }
+
   .xhp100{
     height: 100%;
   }
 }
-@media (min-width: 640px) {
+
+@media (width >= 640px) {
   .dhp5{
     height: 5%;
   }
+
   .dhp10{
     height: 10%;
   }
+
   .dhp15{
     height: 15%;
   }
+
   .dhp20{
     height: 20%;
   }
+
   .dhp25{
     height: 25%;
   }
+
   .dhp30{
     height: 30%;
   }
+
   .dhp35{
     height: 35%;
   }
+
   .dhp40{
     height: 40%;
   }
+
   .dhp45{
     height: 45%;
   }
+
   .dhp50{
     height: 50%;
   }
+
   .dhp55{
     height: 55%;
   }
+
   .dhp60{
     height: 60%;
   }
+
   .dhp65{
     height: 65%;
   }
+
   .dhp70{
     height: 70%;
   }
+
   .dhp75{
     height: 75%;
   }
+
   .dhp80{
     height: 80%;
   }
+
   .dhp85{
     height: 85%;
   }
+
   .dhp90{
     height: 90%;
   }
+
   .dhp95{
     height: 95%;
   }
+
   .dhp100{
     height: 100%;
   }

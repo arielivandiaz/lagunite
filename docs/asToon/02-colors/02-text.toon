@@ -1,13 +1,13 @@
 folder: 02-colors
 file: 02-text.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 71
 content[71]:
   - type: selector
     selectorType: class
     selector: .color-text
-    id: #02-01-01
+    id: #02-02-01
     category: null
     properties[1]: color
     cssRule: "color: var(--color-text-base)"
@@ -16,7 +16,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-text-alt
-    id: #02-01-01
+    id: #02-02-01
     category: null
     properties[1]: color
     cssRule: "color: var(--color-text-alt)"
@@ -25,7 +25,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-primary
-    id: #02-01-02
+    id: #02-02-02
     category: null
     properties[1]: color
     cssRule: "color: var(--color-primary)"
@@ -34,7 +34,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-primary-light
-    id: #02-01-02
+    id: #02-02-02
     category: null
     properties[1]: color
     cssRule: "color: var(--color-primary-light)"
@@ -43,7 +43,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-primary-dark
-    id: #02-01-02
+    id: #02-02-02
     category: null
     properties[1]: color
     cssRule: "color: var(--color-primary-dark)"
@@ -52,7 +52,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-secondary
-    id: #02-01-03
+    id: #02-02-03
     category: null
     properties[1]: color
     cssRule: "color: var(--color-secondary)"
@@ -61,7 +61,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-secondary-light
-    id: #02-01-03
+    id: #02-02-03
     category: null
     properties[1]: color
     cssRule: "color: var(--color-secondary-light)"
@@ -70,7 +70,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-secondary-dark
-    id: #02-01-03
+    id: #02-02-03
     category: null
     properties[1]: color
     cssRule: "color: var(--color-secondary-dark)"
@@ -79,7 +79,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-tertiary
-    id: #02-01-04
+    id: #02-02-04
     category: null
     properties[1]: color
     cssRule: "color: var(--color-tertiary)"
@@ -88,7 +88,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-tertiary-light
-    id: #02-01-04
+    id: #02-02-04
     category: null
     properties[1]: color
     cssRule: "color: var(--color-tertiary-light)"
@@ -97,7 +97,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-tertiary-dark
-    id: #02-01-04
+    id: #02-02-04
     category: null
     properties[1]: color
     cssRule: "color: var(--color-tertiary-dark)"
@@ -106,7 +106,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-almost-black
-    id: #02-01-05
+    id: #02-02-05
     category: null
     properties[1]: color
     cssRule: "color: var(--color-almost-black)"
@@ -115,7 +115,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-almost-white
-    id: #02-01-05
+    id: #02-02-05
     category: null
     properties[1]: color
     cssRule: "color: var(--color-almost-white)"
@@ -124,7 +124,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-success
-    id: #02-01-06
+    id: #02-02-06
     category: null
     properties[1]: color
     cssRule: "color: var(--color-success)"
@@ -133,7 +133,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-warning
-    id: #02-01-06
+    id: #02-02-06
     category: null
     properties[1]: color
     cssRule: "color: var(--color-warning)"
@@ -142,7 +142,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-error
-    id: #02-01-06
+    id: #02-02-06
     category: null
     properties[1]: color
     cssRule: "color: var(--color-error)"
@@ -151,7 +151,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-50
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-50)"
@@ -160,7 +160,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-100
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-100)"
@@ -169,7 +169,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-200
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-200)"
@@ -178,7 +178,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-300
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-300)"
@@ -187,7 +187,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-400
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-400)"
@@ -196,7 +196,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-500
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-500)"
@@ -205,7 +205,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-600
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-600)"
@@ -214,7 +214,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-700
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-700)"
@@ -223,7 +223,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-800
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-800)"
@@ -232,7 +232,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-900
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-900)"
@@ -241,7 +241,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-gray-950
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-950)"
@@ -250,7 +250,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-50
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-50)"
@@ -259,7 +259,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-100
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-100)"
@@ -268,7 +268,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-200
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-200)"
@@ -277,7 +277,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-300
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-300)"
@@ -286,7 +286,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-400
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-400)"
@@ -295,7 +295,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-500
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-500)"
@@ -304,7 +304,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-600
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-600)"
@@ -313,7 +313,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-700
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-700)"
@@ -322,7 +322,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-800
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-800)"
@@ -331,7 +331,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-900
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-900)"
@@ -340,7 +340,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-blue-950
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--blue-950)"
@@ -349,7 +349,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-50
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-50)"
@@ -358,7 +358,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-100
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-100)"
@@ -367,7 +367,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-200
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-200)"
@@ -376,7 +376,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-300
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-300)"
@@ -385,7 +385,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-400
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-400)"
@@ -394,7 +394,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-500
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-500)"
@@ -403,7 +403,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-600
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-600)"
@@ -412,7 +412,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-700
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-700)"
@@ -421,7 +421,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-800
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-800)"
@@ -430,7 +430,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-900
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-900)"
@@ -439,7 +439,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-green-950
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--green-950)"
@@ -448,7 +448,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-50
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-50)"
@@ -457,7 +457,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-100
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-100)"
@@ -466,7 +466,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-200
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-200)"
@@ -475,7 +475,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-300
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-300)"
@@ -484,7 +484,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-400
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-400)"
@@ -493,7 +493,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-500
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-500)"
@@ -502,7 +502,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-600
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-600)"
@@ -511,7 +511,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-700
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-700)"
@@ -520,7 +520,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-800
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-800)"
@@ -529,7 +529,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-900
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-900)"
@@ -538,7 +538,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-yellow-950
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--yellow-950)"
@@ -547,7 +547,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-50
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-50)"
@@ -556,7 +556,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-100
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-100)"
@@ -565,7 +565,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-200
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-200)"
@@ -574,7 +574,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-300
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-300)"
@@ -583,7 +583,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-400
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-400)"
@@ -592,7 +592,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-500
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-500)"
@@ -601,7 +601,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-600
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-600)"
@@ -610,7 +610,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-700
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-700)"
@@ -619,7 +619,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-800
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-800)"
@@ -628,7 +628,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-900
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-900)"
@@ -637,7 +637,7 @@ content[71]:
   - type: selector
     selectorType: class
     selector: .color-red-950
-    id: #02-01-07
+    id: #02-02-07
     category: null
     properties[1]: color
     cssRule: "color: var(--red-950)"

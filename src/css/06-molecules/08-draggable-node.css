@@ -1,4 +1,5 @@
 /* @ID: #06-08-01 */
+
 /* Draggable Node Component
    For use within .dnd-canvas or similar spatial containers.
    Supports pointer events, grid snap, and z-index management.
@@ -15,16 +16,16 @@
   flex-direction: column;
 
   /* Sizing */
-  width: var(--space-44);
+  width: calc(var(--space-32) + var(--space-12));
   min-height: var(--space-24);
 
   /* Appearance */
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgb(0 0 0 / 8%);
   border-radius: var(--radius-l);
   background: #fff;
   box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.05),
-    0 4px 14px rgba(0, 0, 0, 0.09);
+    0 1px 3px rgb(0 0 0 / 5%),
+    0 4px 14px rgb(0 0 0 / 9%);
 
   /* Interaction */
   user-select: none;
@@ -37,7 +38,7 @@
 .dnd-node:hover {
   border-color: rgba(var(--color-primary-rgb), 0.35);
   box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgb(0 0 0 / 5%),
     0 6px 20px rgba(var(--color-primary-rgb), 0.13);
 }
 
@@ -45,8 +46,8 @@
   cursor: grabbing;
   border-color: var(--dnd-node-accent);
   box-shadow:
-    0 10px 32px rgba(0, 0, 0, 0.14),
-    0 3px 10px rgba(0, 0, 0, 0.08);
+    0 10px 32px rgb(0 0 0 / 14%),
+    0 3px 10px rgb(0 0 0 / 8%);
   transform: scale(1.02);
 }
 
@@ -65,7 +66,7 @@
 
   /* Spacing */
   padding: var(--space-2) var(--space-3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgb(0 0 0 / 6%);
 }
 
 /* ── Node body ────────────────────────────────────────────────────────── */
@@ -105,7 +106,7 @@
   border-radius: 50%;
   cursor: crosshair;
   z-index: 20;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 14%);
   transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
   touch-action: none;
 }
@@ -124,10 +125,13 @@
 
 .node-handle[data-port="top"]:hover,
 .node-handle[data-port="top"].active    { transform: translateX(-50%) scale(1.35); }
+
 .node-handle[data-port="right"]:hover,
 .node-handle[data-port="right"].active  { transform: translateY(-50%) scale(1.35); }
+
 .node-handle[data-port="bottom"]:hover,
 .node-handle[data-port="bottom"].active { transform: translateX(-50%) scale(1.35); }
+
 .node-handle[data-port="left"]:hover,
 .node-handle[data-port="left"].active   { transform: translateY(-50%) scale(1.35); }
 
@@ -135,30 +139,30 @@
 
 .night .dnd-node {
   background: var(--gray-800);
-  border-color: rgba(255, 255, 255, 0.07);
+  border-color: rgb(255 255 255 / 7%);
   box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.4),
-    0 4px 14px rgba(0, 0, 0, 0.45);
+    0 1px 3px rgb(0 0 0 / 40%),
+    0 4px 14px rgb(0 0 0 / 45%);
 }
 
 .night .dnd-node:hover {
-  border-color: rgba(94, 154, 255, 0.45);
+  border-color: rgb(94 154 255 / 45%);
   box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.4),
-    0 6px 20px rgba(94, 154, 255, 0.18);
+    0 1px 3px rgb(0 0 0 / 40%),
+    0 6px 20px rgb(94 154 255 / 18%);
 }
 
 .night .dnd-node.is-dragging {
   border-color: var(--color-primary-light);
   box-shadow:
-    0 10px 32px rgba(0, 0, 0, 0.55),
-    0 3px 10px rgba(0, 0, 0, 0.35);
+    0 10px 32px rgb(0 0 0 / 55%),
+    0 3px 10px rgb(0 0 0 / 35%);
 }
 
 .night .dnd-node-header {
   color: var(--color-primary-light);
   border-left-color: var(--color-primary-light);
-  border-bottom-color: rgba(255, 255, 255, 0.06);
+  border-bottom-color: rgb(255 255 255 / 6%);
 }
 
 .night .dnd-node-body {
@@ -172,11 +176,11 @@
 .night .node-handle {
   background: var(--gray-800);
   border-color: var(--color-primary-light);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
 }
 
 .night .node-handle:hover,
 .night .node-handle.active {
   background: var(--color-primary-light);
-  box-shadow: 0 2px 8px rgba(94, 154, 255, 0.45);
+  box-shadow: 0 2px 8px rgb(94 154 255 / 45%);
 }

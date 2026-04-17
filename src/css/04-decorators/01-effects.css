@@ -10,12 +10,14 @@
    ========================================================================== */
 
 /* @ID: #04-01-01 */
+
 /* ── Appearance ─────────────────────────────────────────────────────────── */
 
 .appearance-none { appearance: none; }
 .appearance-auto { appearance: auto; }
 
 /* @ID: #04-01-02 */
+
 /* ── Resize ─────────────────────────────────────────────────────────────── */
 
 .resize-none { resize: none; }
@@ -24,6 +26,7 @@
 .resize-y    { resize: vertical; }
 
 /* @ID: #04-01-03 */
+
 /* ── Mix blend mode ─────────────────────────────────────────────────────── */
 
 .mix-blend-normal      { mix-blend-mode: normal; }
@@ -40,6 +43,7 @@
 .mix-blend-exclusion   { mix-blend-mode: exclusion; }
 
 /* @ID: #04-01-04 */
+
 /* ── Background blend mode ──────────────────────────────────────────────── */
 
 .bg-blend-normal   { background-blend-mode: normal; }
@@ -50,12 +54,14 @@
 .bg-blend-lighten  { background-blend-mode: lighten; }
 
 /* @ID: #04-01-05 */
+
 /* ── Isolation ──────────────────────────────────────────────────────────── */
 
 .isolate        { isolation: isolate; }
 .isolation-auto { isolation: auto; }
 
 /* @ID: #04-01-06 */
+
 /* ── Backdrop blur ──────────────────────────────────────────────────────── */
 
 .backdrop-blur-none { backdrop-filter: blur(0); }
@@ -65,12 +71,14 @@
 .backdrop-blur-xl   { backdrop-filter: blur(32px); }
 
 /* @ID: #04-01-07 */
+
 /* ── Box decoration break ───────────────────────────────────────────────── */
 
 .box-decoration-clone { box-decoration-break: clone; }
 .box-decoration-slice { box-decoration-break: slice; }
 
 /* @ID: #04-01-08 */
+
 /* ── Break inside ───────────────────────────────────────────────────────── */
 
 .break-inside-auto         { break-inside: auto; }
@@ -79,6 +87,7 @@
 .break-inside-avoid-column { break-inside: avoid-column; }
 
 /* @ID: #04-01-09 */
+
 /* ── Hoverable ──────────────────────────────────────────────────────────── */
 
 .hoverable-s:hover  { transform: scale(1.1); }
@@ -87,6 +96,7 @@
 .hoverable-xl:hover { transform: scale(1.8); }
 
 /* @ID: #04-01-10 */
+
 /* ── Touch action ───────────────────────────────────────────────────────── */
 
 .touch-auto         { touch-action: auto; }
@@ -96,6 +106,7 @@
 .touch-manipulation { touch-action: manipulation; }
 
 /* @ID: #04-01-11 */
+
 /* ── Will change ────────────────────────────────────────────────────────── */
 
 .will-change-auto      { will-change: auto; }
@@ -104,12 +115,14 @@
 .will-change-transform { will-change: transform; }
 
 /* @ID: #04-01-12 */
+
 /* ── Scroll behavior ────────────────────────────────────────────────────── */
 
 .scroll-smooth { scroll-behavior: smooth; }
 .scroll-auto   { scroll-behavior: auto; }
 
 /* @ID: #04-01-13 */
+
 /* ── Scroll snap ────────────────────────────────────────────────────────── */
 
 .snap-none  { scroll-snap-type: none; }
@@ -128,18 +141,20 @@
 .snap-always { scroll-snap-stop: always; }
 
 /* @ID: #04-01-14 */
+
 /* ── Caret / accent color ───────────────────────────────────────────────── */
 
 .caret-transparent { caret-color: transparent; }
-.caret-current     { caret-color: currentColor; }
+.caret-current     { caret-color: currentcolor; }
 
 .accent-auto    { accent-color: auto; }
-.accent-current { accent-color: currentColor; }
+.accent-current { accent-color: currentcolor; }
 
 /* @ID: #04-01-15 */
+
 /* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xappearance-none { appearance: none; }
   .xappearance-auto { appearance: auto; }
 
@@ -191,9 +206,10 @@
 }
 
 /* @ID: #04-01-16 */
+
 /* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dappearance-none { appearance: none; }
   .dappearance-auto { appearance: auto; }
 

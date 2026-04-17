@@ -1,4 +1,5 @@
 /* @ID: #05-01-01 */
+
 /* Button Base Styles */
 .btn {
   /* Layout */
@@ -30,9 +31,11 @@
   user-select: none;
   white-space: nowrap;
 }
+
 .night .btn {
-  color: var(--color-text);
+  color: var(--color-text-base);
 }
+
 .btn.alt {
   background: none;
   color: var(--color-primary) !important;
@@ -45,6 +48,7 @@
   background: var(--color-secondary);
   color: var(--color-text-alt) !important;
 }
+
 .btn.secondary.alt {
   background: none;
   border: 2px solid var(--color-secondary);
@@ -56,6 +60,7 @@
   background: var(--color-tertiary);
   color: var(--color-text-alt) !important;
 }
+
 .btn.tertiary.alt {
   background: none;
   border: 2px solid var(--color-tertiary);
@@ -67,6 +72,7 @@
   background: var(--color-success-light);
   color: var(--color-success) !important;
 }
+
 .btn.success.alt {
   background: none;
   border: 2px solid var(--color-success);
@@ -78,6 +84,7 @@
   background: var(--color-warning-light);
   color: var(--color-warning) !important;
 }
+
 .btn.warning.alt {
   background: none;
   border: 2px solid var(--color-warning);
@@ -89,6 +96,7 @@
   background: var(--color-error-light);
   color: var(--color-error) !important;
 }
+
 .btn.error.alt {
   background: none;
   border: 2px solid var(--color-error);
@@ -97,6 +105,7 @@
 }
 
 /* @ID: #05-01-02 */
+
 /* Button Icons */
 .btn.icon {
   padding: var(--space-1);
@@ -104,12 +113,14 @@
   width: 2.5rem;
   aspect-ratio: 1;
 }
+
 .btn.icon-s {
   padding: calc(var(--space-1) * 0.5);
   min-width: 2rem;
   width: 2rem;
   aspect-ratio: 1;
 }
+
 .btn.icon-l {
   padding: var(--space-2);
   min-width: 3rem;
@@ -117,10 +128,12 @@
   aspect-ratio: 1;
   font-size: var(--font-size-l);
 }
+
 .btn .icon-lf {
   display: inline-flex;
   margin-right: var(--space-2);
 }
+
 .btn .icon-rg {
   display: inline-flex;
   margin-left: var(--space-2);
@@ -128,9 +141,10 @@
 
 
 /* @ID: #05-01-03 */
+
 /* Button Sizes */
 .btn.fit {
-  min-width: 0px;
+  min-width: 0;
   width: fit-content;
   padding: var(--space-3);
 }
@@ -160,30 +174,37 @@
 }
 
 /* @ID: #05-01-04 */
+
 /* Button Sizes Standard */
 .btn.size-xs.std {
   min-width: var(--space-16);
 }
+
 .btn.size-s.std {
   min-width: var(--space-20);
 }
+
 .btn.std {
   min-width: var(--space-24);
 }
+
 .btn.size-l.std {
   min-width: var(--space-32);
 }
+
 .btn.size-xl.std {
   min-width: calc(var(--space-32) * 1.5);
 }
 
 /* @ID: #05-01-05 */
+
 /* Button Ghost Variant */
 .btn.ghost {
   background: transparent;
   box-shadow: none;
   color: var(--color-primary);
 }
+
 .btn.ghost:hover {
   color: var(--color-text-alt);
   background: var(--color-primary);
@@ -194,6 +215,7 @@
   box-shadow: none;
   color: var(--color-secondary) !important;
 }
+
 .btn.secondary.ghost:hover {
   color: var(--color-text-alt) !important;
   background: var(--color-secondary) !important;
@@ -204,6 +226,7 @@
   box-shadow: none;
   color: var(--color-tertiary) !important;
 }
+
 .btn.tertiary.ghost:hover {
   color: var(--color-text-alt) !important;
   background: var(--color-tertiary) !important;
@@ -214,6 +237,7 @@
   box-shadow: none;
   color: var(--color-success) !important;
 }
+
 .btn.success.ghost:hover {
   color: var(--color-text-alt) !important;
   background: var(--color-success) !important;
@@ -224,6 +248,7 @@
   box-shadow: none;
   color: var(--color-warning) !important;
 }
+
 .btn.warning.ghost:hover {
   color: var(--color-text-alt) !important;
   background: var(--color-warning) !important;
@@ -234,6 +259,7 @@
   box-shadow: none;
   color: var(--color-error) !important;
 }
+
 .btn.error.ghost:hover {
   color: var(--color-text-alt) !important;
   background: var(--color-error) !important;
@@ -261,22 +287,27 @@
 .btn.alt.ghost:hover {
   border-color: var(--color-primary);
 }
+
 .btn.secondary.alt.ghost:hover {
   color: var(--color-secondary) !important;
   border-color: var(--color-secondary);
 }
+
 .btn.tertiary.alt.ghost:hover {
   color: var(--color-tertiary) !important;
   border-color: var(--color-tertiary);
 }
+
 .btn.success.alt.ghost:hover {
   color: var(--color-success) !important;
   border-color: var(--color-success);
 }
+
 .btn.warning.alt.ghost:hover {
   color: var(--color-warning) !important;
   border-color: var(--color-warning);
 }
+
 .btn.error.alt.ghost:hover {
   color: var(--color-error) !important;
   border-color: var(--color-error);
@@ -284,24 +315,30 @@
 
 
 /* @ID: #05-01-06 */
+
 /* Button States */
 .btn:hover {
-  box-shadow: var(--color-primary) 0px 6px 12px -3px;
+  box-shadow: var(--color-primary) 0 6px 12px -3px;
 }
+
 .btn.secondary:hover {
-  box-shadow: var(--color-secondary) 0px 6px 12px -3px;
+  box-shadow: var(--color-secondary) 0 6px 12px -3px;
 }
+
 .btn.tertiary:hover {
-  box-shadow: var(--color-tertiary) 0px 6px 12px -3px;
+  box-shadow: var(--color-tertiary) 0 6px 12px -3px;
 }
+
 .btn.success:hover {
-  box-shadow: var(--color-success) 0px 6px 12px -3px;
+  box-shadow: var(--color-success) 0 6px 12px -3px;
 }
+
 .btn.warning:hover {
-  box-shadow: var(--color-warning) 0px 6px 12px -3px;
+  box-shadow: var(--color-warning) 0 6px 12px -3px;
 }
+
 .btn.error:hover {
-  box-shadow: var(--color-error) 0px 6px 12px -3px;
+  box-shadow: var(--color-error) 0 6px 12px -3px;
 }
 
 .btn:disabled,
@@ -314,12 +351,13 @@
 .btn.pressed,
 .btn.selected {
   background: var(--color-primary-dark);
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 2px 4px rgb(0 0 0 / 20%);
 }
 
 .btn.secondary.pressed {
   background: var(--color-secondary-dark);
 }
+
 .btn.tertiary.pressed {
   background: var(--color-tertiary-dark);
 }
@@ -331,6 +369,7 @@
 
 
 /* @ID: #05-01-07 */
+
 /* Button Groups */
 .btn-group {
   display: inline-flex;
@@ -353,7 +392,7 @@
 }
 
 .btn-group .btn:not(:last-child) {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgb(255 255 255 / 20%);
 }
 
 .btn-group-vertical {
@@ -379,12 +418,13 @@
 }
 
 .btn-group-vertical .btn:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
 
 /* @ID: #05-01-08 */
+
 /* Responsive Adjustments */
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .btn {
     padding: var(--space-2) var(--space-4);
     font-size: var(--font-size-s);

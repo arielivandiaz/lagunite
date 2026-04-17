@@ -1,13 +1,13 @@
 folder: 02-colors
 file: 01-background.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 115
 content[115]:
   - type: selector
     selectorType: class
     selector: .bg
-    id: #02-02-01
+    id: #02-01-01
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-bg) !important\ncolor: var(--color-text-base) !important"
@@ -16,7 +16,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-alt
-    id: #02-02-01
+    id: #02-01-01
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-bg-alt) !important\ncolor: var(--color-text-alt) !important"
@@ -25,7 +25,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .night .bg-alt
-    id: #02-02-01
+    id: #02-01-01
     category: null
     properties[1]: color
     cssRule: "color: var(--gray-900) !important"
@@ -34,7 +34,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-1
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-primary) !important\ncolor: var(--color-text-alt) !important"
@@ -43,7 +43,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-2
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-primary-light) !important\ncolor: var(--color-text-alt) !important"
@@ -52,7 +52,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-3
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-primary-dark) !important\ncolor: var(--color-text-alt) !important"
@@ -61,7 +61,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-4
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-secondary) !important\ncolor: var(--color-text-alt) !important"
@@ -70,7 +70,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-5
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-secondary-light) !important\ncolor: var(--color-text-alt) !important"
@@ -79,7 +79,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-6
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-secondary-dark) !important\ncolor: var(--color-text-alt) !important"
@@ -88,16 +88,16 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-7
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-tertiary) !important\ncolor: var(--color-text) !important"
+    cssRule: "background: var(--color-tertiary) !important\ncolor: var(--color-text-base) !important"
     responsive: false
     description: "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
   - type: selector
     selectorType: class
     selector: .bg-8
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-tertiary-light) !important\ncolor: var(--color-text-alt) !important"
@@ -106,16 +106,16 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-9
-    id: #02-02-02
+    id: #02-01-02
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text) !important"
+    cssRule: "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text-base) !important"
     responsive: false
     description: "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
   - type: selector
     selectorType: class
     selector: .bg-black
-    id: #02-02-03
+    id: #02-01-03
     category: null
     properties[2]: background,color
     cssRule: "background: #000 !important\ncolor: var(--color-text-alt) !important"
@@ -124,7 +124,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-ablack
-    id: #02-02-03
+    id: #02-01-03
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-almost-black) !important\ncolor: var(--color-text-alt) !important"
@@ -133,7 +133,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-white
-    id: #02-02-03
+    id: #02-01-03
     category: null
     properties[2]: background,color
     cssRule: "background: #fff !important\n/*\r\n   * Default ink on paper. Do not use !important: chained .color-* utilities load\r\n   * later (02-text.css) and must win (e.g. .bg-white.color-primary on badges).\r\n   */\ncolor: var(--gray-900)"
@@ -142,7 +142,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-awhite
-    id: #02-02-03
+    id: #02-01-03
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-almost-white) !important\ncolor: var(--color-text-base) !important"
@@ -151,7 +151,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-success
-    id: #02-02-04
+    id: #02-01-04
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-success-light) !important\ncolor: var(--color-success) !important"
@@ -160,7 +160,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-warning
-    id: #02-02-04
+    id: #02-01-04
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-warning-light) !important\ncolor: var(--color-warning) !important"
@@ -169,7 +169,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-error
-    id: #02-02-04
+    id: #02-01-04
     category: null
     properties[2]: background,color
     cssRule: "background: var(--color-error-light) !important\ncolor: var(--color-error) !important"
@@ -178,7 +178,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-success
-    id: #02-02-04
+    id: #02-01-04
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to right, var(--color-success-light), var(--color-success))\ncolor: var(--color-text-alt)"
@@ -187,7 +187,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-1)\ncolor: var(--color-text-alt)"
@@ -196,7 +196,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-2)\ncolor: var(--color-text-base)"
@@ -205,7 +205,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-3)\ncolor: var(--color-text-alt)"
@@ -214,7 +214,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-4)\ncolor: var(--color-text-alt)"
@@ -223,7 +223,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-5
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-5)\ncolor: var(--color-text-alt)"
@@ -232,7 +232,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-6
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-6)\ncolor: var(--color-text-base)"
@@ -241,7 +241,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-7
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-7)\ncolor: var(--color-text-alt)"
@@ -250,7 +250,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-8
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: var(--bg-gradient-8)\ncolor: var(--color-text-alt)"
@@ -259,7 +259,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-lf-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -268,7 +268,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-lf-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -277,7 +277,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-lf-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -286,7 +286,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-lf-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -295,7 +295,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-rg-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -304,7 +304,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-rg-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -313,7 +313,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-rg-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -322,7 +322,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-rg-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -331,7 +331,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-t-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -340,7 +340,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-t-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -349,7 +349,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-t-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -358,7 +358,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-t-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -367,7 +367,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-b-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -376,7 +376,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-b-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -385,7 +385,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-b-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -394,7 +394,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-b-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -403,7 +403,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tl-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -412,7 +412,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tl-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -421,7 +421,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tl-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -430,7 +430,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tl-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -439,7 +439,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tr-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -448,7 +448,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tr-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -457,7 +457,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tr-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -466,7 +466,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-tr-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to top right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -475,7 +475,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-bl-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -484,7 +484,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-bl-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -493,7 +493,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-bl-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -502,7 +502,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-bl-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -511,7 +511,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-br-1
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)"
@@ -520,7 +520,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-br-2
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)"
@@ -529,7 +529,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-br-3
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)"
@@ -538,7 +538,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bgg-br-4
-    id: #02-02-05
+    id: #02-01-05
     category: null
     properties[2]: background,color
     cssRule: "background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)"
@@ -547,7 +547,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-50
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-50)"
@@ -556,7 +556,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-100
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-100)"
@@ -565,7 +565,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-200
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-200)"
@@ -574,7 +574,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-300
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-300)"
@@ -583,7 +583,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-400
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-400)"
@@ -592,7 +592,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-500
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-500)"
@@ -601,7 +601,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-600
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-600)"
@@ -610,7 +610,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-700
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-700)"
@@ -619,7 +619,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-800
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-800)"
@@ -628,7 +628,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-900
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-900)"
@@ -637,7 +637,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-gray-950
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--gray-950)"
@@ -646,7 +646,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-50
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-50)"
@@ -655,7 +655,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-100
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-100)"
@@ -664,7 +664,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-200
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-200)"
@@ -673,7 +673,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-300
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-300)"
@@ -682,7 +682,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-400
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-400)"
@@ -691,7 +691,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-500
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-500)"
@@ -700,7 +700,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-600
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-600)"
@@ -709,7 +709,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-700
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-700)"
@@ -718,7 +718,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-800
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-800)"
@@ -727,7 +727,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-900
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-900)"
@@ -736,7 +736,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-blue-950
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--blue-950)"
@@ -745,7 +745,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-50
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-50)"
@@ -754,7 +754,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-100
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-100)"
@@ -763,7 +763,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-200
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-200)"
@@ -772,7 +772,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-300
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-300)"
@@ -781,7 +781,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-400
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-400)"
@@ -790,7 +790,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-500
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-500)"
@@ -799,7 +799,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-600
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-600)"
@@ -808,7 +808,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-700
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-700)"
@@ -817,7 +817,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-800
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-800)"
@@ -826,7 +826,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-900
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-900)"
@@ -835,7 +835,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-green-950
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--green-950)"
@@ -844,7 +844,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-50
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-50)"
@@ -853,7 +853,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-100
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-100)"
@@ -862,7 +862,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-200
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-200)"
@@ -871,7 +871,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-300
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-300)"
@@ -880,7 +880,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-400
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-400)"
@@ -889,7 +889,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-500
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-500)"
@@ -898,7 +898,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-600
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-600)"
@@ -907,7 +907,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-700
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-700)"
@@ -916,7 +916,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-800
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-800)"
@@ -925,7 +925,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-900
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-900)"
@@ -934,7 +934,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-yellow-950
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--yellow-950)"
@@ -943,7 +943,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-50
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-50)"
@@ -952,7 +952,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-100
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-100)"
@@ -961,7 +961,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-200
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-200)"
@@ -970,7 +970,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-300
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-300)"
@@ -979,7 +979,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-400
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-400)"
@@ -988,7 +988,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-500
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-500)"
@@ -997,7 +997,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-600
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-600)"
@@ -1006,7 +1006,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-700
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-700)"
@@ -1015,7 +1015,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-800
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-800)"
@@ -1024,7 +1024,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-900
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-900)"
@@ -1033,7 +1033,7 @@ content[115]:
   - type: selector
     selectorType: class
     selector: .bg-red-950
-    id: #02-02-06
+    id: #02-01-06
     category: null
     properties[1]: background
     cssRule: "background: var(--red-950)"

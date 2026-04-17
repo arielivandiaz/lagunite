@@ -1,6 +1,7 @@
-/********************** Text Format ********************************************/
+/********************** Text Format *******************************************/
 
 /* @ID: #01-02-01 */
+
 /* Text Transform */
 .uppercase {
   text-transform: uppercase;
@@ -15,7 +16,8 @@
 }
 
 /* @ID: #01-02-02 */
-/* Letter Spaccing **/
+
+/* Letter Spaccing */
 .letter-spacing-xs {
   letter-spacing: -0.1rem;
 }
@@ -41,7 +43,8 @@
 }
 
 /* @ID: #01-02-03 */
-/* Line Height **/
+
+/* Line Height */
 .lh-xs {
   line-height: 0.85;
 }
@@ -66,10 +69,11 @@
   line-height: 2.5;
 }
 
-/********************** Text Align ********************************************/
+/********************** Text Align *******************************************/
 
 /* @ID: #01-02-04 */
-/* Text Align **/
+
+/* Text Align */
 .ta-c {
   text-align: center;
 }
@@ -90,9 +94,10 @@
   text-align: justify-all;
 }
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   /* @ID: #01-02-05 */
-  /* Text Align **/
+
+  /* Text Align */
   .xta-c {
     text-align: center;
   }
@@ -114,9 +119,10 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   /* @ID: #01-02-06 */
-  /* Text Align **/
+
+  /* Text Align */
   .dta-c {
     text-align: center;
   }

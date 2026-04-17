@@ -4,6 +4,7 @@
    ========================================================================== */
 
 /* @ID: #04-07-01 */
+
 /*** Keyframes ***/
 @keyframes spin {
   0%   { transform: rotate(0deg); }
@@ -59,6 +60,7 @@
 }
 
 /* @ID: #04-07-02 */
+
 /*** Animation Utilities ***/
 .animate-none { animation: none; }
 
@@ -103,6 +105,7 @@
 }
 
 /* @ID: #04-07-03 */
+
 /*** Animation Duration Helpers ***/
 .animate-duration-75   { animation-duration: 75ms; }
 .animate-duration-100  { animation-duration: 100ms; }
@@ -115,6 +118,7 @@
 .animate-duration-2000 { animation-duration: 2000ms; }
 
 /* @ID: #04-07-04 */
+
 /*** Animation Delay Helpers ***/
 .animate-delay-75  { animation-delay: 75ms; }
 .animate-delay-100 { animation-delay: 100ms; }
@@ -124,11 +128,13 @@
 .animate-delay-500 { animation-delay: 500ms; }
 
 /* @ID: #04-07-05 */
+
 /*** Animation Iteration Helpers ***/
 .animate-once     { animation-iteration-count: 1; }
 .animate-infinite { animation-iteration-count: infinite; }
 
 /* @ID: #04-07-06 */
+
 /*** Animation Fill Mode Helpers ***/
 .animate-fill-none      { animation-fill-mode: none; }
 .animate-fill-forwards  { animation-fill-mode: forwards; }
@@ -136,12 +142,14 @@
 .animate-fill-both      { animation-fill-mode: both; }
 
 /* @ID: #04-07-07 */
+
 /*** Animation Direction Helpers ***/
 .animate-normal    { animation-direction: normal; }
 .animate-reverse   { animation-direction: reverse; }
 .animate-alternate { animation-direction: alternate; }
 
 /* @ID: #04-07-08 */
+
 /*** Accessibility: respect prefers-reduced-motion ***/
 @media (prefers-reduced-motion: reduce) {
   .animate-spin,
@@ -160,8 +168,9 @@
 }
 
 /* @ID: #04-07-09 */
+
 /*** Responsive: mobile (max-width: 639px) ***/
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xanimate-none { animation: none; }
   .xanimate-spin   { animation: spin 1s linear infinite; }
   .xanimate-pulse  { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
@@ -180,8 +189,9 @@
 }
 
 /* @ID: #04-07-10 */
+
 /*** Responsive: desktop (min-width: 640px) ***/
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .danimate-none { animation: none; }
   .danimate-spin   { animation: spin 1s linear infinite; }
   .danimate-pulse  { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }

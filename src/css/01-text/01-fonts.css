@@ -1,6 +1,7 @@
 /********************** Fonts **************************************************/
 
 /* @ID: #01-01-01 */
+
 /*** Heading ***/
 h1,
 h2,
@@ -19,23 +20,28 @@ h6 {
 h1 {
   font-size: clamp(2.5rem, 5vw, 5rem);
 }
+
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
 }
+
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
+
 h4 {
   font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
+
 h5 {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
+
 h6 {
   font-size: var(--font-size-base);
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (width >= 640px) {
   h1 {
     font-size: 5rem;
   }
@@ -58,6 +64,7 @@ h6 {
 }
 
 /* @ID: #01-01-02 */
+
 /* Font Transform */
 .bold {
   font-weight: bold;
@@ -68,21 +75,26 @@ h6 {
 }
 
 /* @ID: #01-01-03 */
+
 /* Font Family */
 .font-text {
   font-family: var(--font-text);
 }
+
 .font-headers {
   font-family: var(--font-headers);
 }
+
 .font-sans {
   font-family: var(--font-sans);
 }
+
 .font-mono {
   font-family: var(--font-mono);
 }
 
 /* @ID: #01-01-04 */
+
 /* Font Size */
 .font-xs {
   font-size: var(--font-size-xs) !important;
@@ -125,7 +137,8 @@ h6 {
 }
 
 /* @ID: #01-01-05 */
-/* Font Fluid **/
+
+/* Font Fluid */
 .font-fluid-xs {
   font-size: clamp(0.5rem, 1vh, 0.75rem);
 }
@@ -147,11 +160,12 @@ h6 {
 }
 
 /* @ID: #01-01-06 */
-/* Font Weight **/
+
+/* Font Weight */
 .font-weight-0 {
-  font-weight: lighter;
   font-weight: var(--font-weight-light) !important;
 }
+
 .font-weight-1 {
   font-weight: var(--font-weight-normal) !important;
 }

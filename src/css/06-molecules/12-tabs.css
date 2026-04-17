@@ -1,10 +1,10 @@
 /* ==========
-   06-molecules / 10-tabs.css
+   06-molecules / 12-tabs.css
    Tabs navigation with underline, pills, equal-width, and vertical variants.
    Active state can be driven with .active or aria-selected="true".
    ========= */
 
-/* @ID: #06-10-01 */
+/* @ID: #06-12-01 */
 
 /* ── Tabs shell ────────────────────────────────────────────────────────── */
 
@@ -29,7 +29,7 @@
   flex: 1 1 0;
 }
 
-/* @ID: #06-10-02 */
+/* @ID: #06-12-02 */
 
 /* ── Tab triggers ──────────────────────────────────────────────────────── */
 
@@ -81,7 +81,7 @@
   pointer-events: none;
 }
 
-/* @ID: #06-10-03 */
+/* @ID: #06-12-03 */
 
 /* ── Tab panel ─────────────────────────────────────────────────────────── */
 
@@ -102,7 +102,7 @@
   display: none !important;
 }
 
-/* @ID: #06-10-04 */
+/* @ID: #06-12-04 */
 
 /* ── Variants ──────────────────────────────────────────────────────────── */
 
@@ -150,7 +150,7 @@
   flex: 1;
 }
 
-/* @ID: #06-10-05 */
+/* @ID: #06-12-05 */
 
 /* ── Responsive & night ────────────────────────────────────────────────── */
 
@@ -178,7 +178,7 @@
 
 .night .tab-button:hover {
   color: var(--color-text-alt);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(255 255 255 / 8%);
 }
 
 .night .tab-button.active,

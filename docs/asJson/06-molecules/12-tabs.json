@@ -1,7 +1,7 @@
 {
   "folder": "06-molecules",
-  "file": "10-tabs.css",
-  "lastUpdated": "2026-04-16",
+  "file": "12-tabs.css",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 30,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs",
-      "id": "#06-10-01",
+      "id": "#06-12-01",
       "category": null,
       "properties": [
         "display",
@@ -25,7 +25,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list",
-      "id": "#06-10-01",
+      "id": "#06-12-01",
       "category": null,
       "properties": [
         "display",
@@ -44,7 +44,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list-equal .tab-button",
-      "id": "#06-10-01",
+      "id": "#06-12-01",
       "category": null,
       "properties": [
         "flex"
@@ -57,7 +57,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "display",
@@ -87,7 +87,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button:hover",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "color",
@@ -101,7 +101,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button:focus-visible",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "outline",
@@ -115,7 +115,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button.active",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "color",
@@ -130,7 +130,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button[aria-selected=\"true\"]",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "color",
@@ -145,7 +145,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button:disabled",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "opacity",
@@ -160,7 +160,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-button[aria-disabled=\"true\"]",
-      "id": "#06-10-02",
+      "id": "#06-12-02",
       "category": null,
       "properties": [
         "opacity",
@@ -175,7 +175,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-panel",
-      "id": "#06-10-03",
+      "id": "#06-12-03",
       "category": null,
       "properties": [
         "display",
@@ -193,7 +193,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-panel.active",
-      "id": "#06-10-03",
+      "id": "#06-12-03",
       "category": null,
       "properties": [
         "display"
@@ -206,7 +206,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-panel[hidden]",
-      "id": "#06-10-03",
+      "id": "#06-12-03",
       "category": null,
       "properties": [
         "display"
@@ -219,7 +219,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list-pills",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "border-bottom",
@@ -233,7 +233,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list-pills .tab-button",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "border-radius"
@@ -246,7 +246,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list-pills .tab-button.active",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color",
@@ -261,7 +261,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tab-list-pills .tab-button[aria-selected=\"true\"]",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color",
@@ -276,7 +276,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "flex-direction",
@@ -290,7 +290,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical .tab-list",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "flex-direction",
@@ -308,7 +308,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical .tab-button",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "justify-content",
@@ -322,7 +322,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical .tab-button.active",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "box-shadow"
@@ -335,7 +335,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical .tab-button[aria-selected=\"true\"]",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "box-shadow"
@@ -348,7 +348,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".tabs-vertical .tab-panel",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "flex"
@@ -361,7 +361,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-button",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color"
@@ -374,7 +374,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-button:hover",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color",
@@ -388,7 +388,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-button.active",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color",
@@ -402,7 +402,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-button[aria-selected=\"true\"]",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "color",
@@ -416,7 +416,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-list-pills .tab-button.active",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "background"
@@ -429,7 +429,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-list-pills .tab-button[aria-selected=\"true\"]",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "background"
@@ -442,7 +442,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .tab-panel",
-      "id": "#06-10-04",
+      "id": "#06-12-04",
       "category": null,
       "properties": [
         "background",

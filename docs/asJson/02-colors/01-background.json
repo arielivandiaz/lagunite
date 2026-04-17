@@ -1,7 +1,7 @@
 {
   "folder": "02-colors",
   "file": "01-background.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 115,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg",
-      "id": "#02-02-01",
+      "id": "#02-01-01",
       "category": null,
       "properties": [
         "background",
@@ -23,7 +23,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-alt",
-      "id": "#02-02-01",
+      "id": "#02-01-01",
       "category": null,
       "properties": [
         "background",
@@ -37,7 +37,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".night .bg-alt",
-      "id": "#02-02-01",
+      "id": "#02-01-01",
       "category": null,
       "properties": [
         "color"
@@ -50,7 +50,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-1",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -64,7 +64,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-2",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -78,7 +78,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-3",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -92,7 +92,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-4",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -106,7 +106,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-5",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -120,7 +120,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-6",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -134,13 +134,13 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-7",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
         "color"
       ],
-      "cssRule": "background: var(--color-tertiary) !important\ncolor: var(--color-text) !important",
+      "cssRule": "background: var(--color-tertiary) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
       "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
     },
@@ -148,7 +148,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-8",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
@@ -162,13 +162,13 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-9",
-      "id": "#02-02-02",
+      "id": "#02-01-02",
       "category": null,
       "properties": [
         "background",
         "color"
       ],
-      "cssRule": "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text) !important",
+      "cssRule": "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
       "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
     },
@@ -176,7 +176,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-black",
-      "id": "#02-02-03",
+      "id": "#02-01-03",
       "category": null,
       "properties": [
         "background",
@@ -190,7 +190,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-ablack",
-      "id": "#02-02-03",
+      "id": "#02-01-03",
       "category": null,
       "properties": [
         "background",
@@ -204,7 +204,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-white",
-      "id": "#02-02-03",
+      "id": "#02-01-03",
       "category": null,
       "properties": [
         "background",
@@ -218,7 +218,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-awhite",
-      "id": "#02-02-03",
+      "id": "#02-01-03",
       "category": null,
       "properties": [
         "background",
@@ -232,7 +232,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-success",
-      "id": "#02-02-04",
+      "id": "#02-01-04",
       "category": null,
       "properties": [
         "background",
@@ -246,7 +246,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-warning",
-      "id": "#02-02-04",
+      "id": "#02-01-04",
       "category": null,
       "properties": [
         "background",
@@ -260,7 +260,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-error",
-      "id": "#02-02-04",
+      "id": "#02-01-04",
       "category": null,
       "properties": [
         "background",
@@ -274,7 +274,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-success",
-      "id": "#02-02-04",
+      "id": "#02-01-04",
       "category": null,
       "properties": [
         "background",
@@ -288,7 +288,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -302,7 +302,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -316,7 +316,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -330,7 +330,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -344,7 +344,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-5",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -358,7 +358,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-6",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -372,7 +372,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-7",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -386,7 +386,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-8",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -400,7 +400,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-lf-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -414,7 +414,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-lf-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -428,7 +428,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-lf-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -442,7 +442,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-lf-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -456,7 +456,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-rg-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -470,7 +470,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-rg-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -484,7 +484,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-rg-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -498,7 +498,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-rg-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -512,7 +512,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-t-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -526,7 +526,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-t-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -540,7 +540,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-t-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -554,7 +554,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-t-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -568,7 +568,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-b-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -582,7 +582,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-b-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -596,7 +596,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-b-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -610,7 +610,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-b-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -624,7 +624,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tl-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -638,7 +638,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tl-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -652,7 +652,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tl-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -666,7 +666,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tl-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -680,7 +680,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tr-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -694,7 +694,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tr-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -708,7 +708,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tr-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -722,7 +722,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-tr-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -736,7 +736,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-bl-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -750,7 +750,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-bl-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -764,7 +764,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-bl-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -778,7 +778,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-bl-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -792,7 +792,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-br-1",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -806,7 +806,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-br-2",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -820,7 +820,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-br-3",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -834,7 +834,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bgg-br-4",
-      "id": "#02-02-05",
+      "id": "#02-01-05",
       "category": null,
       "properties": [
         "background",
@@ -848,7 +848,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-50",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -861,7 +861,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-100",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -874,7 +874,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-200",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -887,7 +887,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-300",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -900,7 +900,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-400",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -913,7 +913,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-500",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -926,7 +926,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-600",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -939,7 +939,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-700",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -952,7 +952,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-800",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -965,7 +965,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-900",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -978,7 +978,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-gray-950",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -991,7 +991,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-50",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1004,7 +1004,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-100",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1017,7 +1017,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-200",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1030,7 +1030,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-300",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1043,7 +1043,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-400",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1056,7 +1056,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-500",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1069,7 +1069,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-600",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1082,7 +1082,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-700",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1095,7 +1095,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-800",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1108,7 +1108,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-900",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1121,7 +1121,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-blue-950",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1134,7 +1134,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-50",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1147,7 +1147,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-100",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1160,7 +1160,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-200",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1173,7 +1173,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-300",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1186,7 +1186,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-400",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1199,7 +1199,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-500",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1212,7 +1212,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-600",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1225,7 +1225,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-700",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1238,7 +1238,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-800",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1251,7 +1251,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-900",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1264,7 +1264,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-green-950",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1277,7 +1277,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-50",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1290,7 +1290,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-100",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1303,7 +1303,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-200",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1316,7 +1316,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-300",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1329,7 +1329,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-400",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1342,7 +1342,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-500",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1355,7 +1355,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-600",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1368,7 +1368,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-700",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1381,7 +1381,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-800",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1394,7 +1394,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-900",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1407,7 +1407,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-yellow-950",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1420,7 +1420,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-50",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1433,7 +1433,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-100",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1446,7 +1446,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-200",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1459,7 +1459,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-300",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1472,7 +1472,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-400",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1485,7 +1485,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-500",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1498,7 +1498,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-600",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1511,7 +1511,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-700",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1524,7 +1524,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-800",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1537,7 +1537,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-900",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"
@@ -1550,7 +1550,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".bg-red-950",
-      "id": "#02-02-06",
+      "id": "#02-01-06",
       "category": null,
       "properties": [
         "background"

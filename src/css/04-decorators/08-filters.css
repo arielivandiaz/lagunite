@@ -4,6 +4,7 @@
    ========================================================================== */
 
 /* @ID: #04-08-01 */
+
 /*** Blur ***/
 .blur-none { filter: blur(0); }
 .blur-s    { filter: blur(4px); }
@@ -12,6 +13,7 @@
 .blur-xl   { filter: blur(32px); }
 
 /* @ID: #04-08-02 */
+
 /*** Brightness ***/
 .brightness-0   { filter: brightness(0); }
 .brightness-50  { filter: brightness(0.5); }
@@ -22,6 +24,7 @@
 .brightness-200 { filter: brightness(2); }
 
 /* @ID: #04-08-03 */
+
 /*** Contrast ***/
 .contrast-0   { filter: contrast(0); }
 .contrast-50  { filter: contrast(0.5); }
@@ -31,11 +34,13 @@
 .contrast-150 { filter: contrast(1.5); }
 
 /* @ID: #04-08-04 */
+
 /*** Grayscale ***/
 .grayscale-0 { filter: grayscale(0); }
 .grayscale   { filter: grayscale(1); }
 
 /* @ID: #04-08-05 */
+
 /*** Saturate ***/
 .saturate-0   { filter: saturate(0); }
 .saturate-50  { filter: saturate(0.5); }
@@ -44,16 +49,19 @@
 .saturate-200 { filter: saturate(2); }
 
 /* @ID: #04-08-06 */
+
 /*** Invert ***/
 .invert-0 { filter: invert(0); }
 .invert   { filter: invert(1); }
 
 /* @ID: #04-08-07 */
+
 /*** Sepia ***/
 .sepia-0 { filter: sepia(0); }
 .sepia   { filter: sepia(1); }
 
 /* @ID: #04-08-08 */
+
 /*** Hue Rotate ***/
 .hue-rotate-0   { filter: hue-rotate(0deg); }
 .hue-rotate-15  { filter: hue-rotate(15deg); }
@@ -63,6 +71,7 @@
 .hue-rotate-180 { filter: hue-rotate(180deg); }
 
 /* @ID: #04-08-09 */
+
 /*** Backdrop Blur ***/
 .backdrop-blur-none { backdrop-filter: blur(0); }
 .backdrop-blur-s    { backdrop-filter: blur(4px); }
@@ -71,8 +80,9 @@
 .backdrop-blur-xl   { backdrop-filter: blur(32px); }
 
 /* @ID: #04-08-10 */
+
 /*** Responsive: mobile (max-width: 639px) ***/
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xblur-none { filter: blur(0); }
   .xblur-s    { filter: blur(4px); }
   .xblur      { filter: blur(8px); }
@@ -111,8 +121,9 @@
 }
 
 /* @ID: #04-08-11 */
+
 /*** Responsive: desktop (min-width: 640px) ***/
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dblur-none { filter: blur(0); }
   .dblur-s    { filter: blur(4px); }
   .dblur      { filter: blur(8px); }

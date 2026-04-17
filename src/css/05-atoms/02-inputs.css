@@ -6,6 +6,7 @@
    ========================================================================== */
 
 /* @ID: #05-02-01 */
+
 /* ── Text inputs & textarea (boxed / default) ───────────────────────────── */
 
 :is(
@@ -83,7 +84,7 @@
   input[type="time"],
   textarea,
   .input
-):hover:not(:focus):not(:disabled) {
+):hover:not(:focus, :disabled) {
   border-color: var(--color-border-hover);
 }
 
@@ -110,6 +111,7 @@
 }
 
 /* @ID: #05-02-06 */
+
 /* ── Select ─────────────────────────────────────────────────────────────── */
 
 select,
@@ -138,8 +140,8 @@ select,
   accent-color: var(--color-primary);
 }
 
-select:hover:not(:focus):not(:disabled),
-.select:hover:not(:focus):not(:disabled) {
+select:hover:not(:focus, :disabled),
+.select:hover:not(:focus, :disabled) {
   border-color: var(--color-border-hover);
 }
 
@@ -221,8 +223,8 @@ select[multiple] option {
   margin: var(--space-2) 0;
 }
 
-.select-container.alt select:not([size]):not([multiple]),
-.select-container.alt .select:not([size]):not([multiple]) {
+.select-container.alt select:not([size], [multiple]),
+.select-container.alt .select:not([size], [multiple]) {
   background-color: var(--gray-50);
   border-color: var(--gray-300);
   background-image: var(--select-chevron-on-primary), linear-gradient(
@@ -248,6 +250,7 @@ select[multiple] option {
 }
 
 /* @ID: #05-02-02 */
+
 /* ── Floating label ─────────────────────────────────────────────────────── */
 
 .input-line {
@@ -308,6 +311,7 @@ select[multiple] option {
 }
 
 /* @ID: #05-02-03 */
+
 /* ── Input underline (modern single-line) ───────────────────────────────── */
 
 .input-underline,
@@ -339,7 +343,7 @@ textarea.input-underline {
   outline: none;
 }
 
-.input-underline:hover:not(:focus):not(:disabled) {
+.input-underline:hover:not(:focus, :disabled) {
   border-bottom-color: var(--color-border-hover);
 }
 
@@ -350,6 +354,7 @@ textarea.input-underline {
 }
 
 /* @ID: #05-02-04 */
+
 /* ── Input minimal (borderless, subtle bg) ──────────────────────────────── */
 
 .input-minimal,
@@ -380,7 +385,7 @@ textarea.input-minimal {
   outline: none;
 }
 
-.input-minimal:hover:not(:focus):not(:disabled) {
+.input-minimal:hover:not(:focus, :disabled) {
   background-color: var(--gray-100);
 }
 
@@ -391,6 +396,7 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-05 */
+
 /* ── Validation states (:invalid / :valid) ──────────────────────────────── */
 
 :is(.input, .input-field, .input-underline, .input-minimal):invalid:not(:placeholder-shown) {
@@ -424,6 +430,7 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-07 */
+
 /* ── Checkbox ───────────────────────────────────────────────────────────── */
 
 .checkboxContainer,
@@ -432,7 +439,7 @@ textarea.input-minimal {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin: 8px 10px 10px 10px;
+  margin: 8px 10px 10px;
   padding: 5px 10px 5px 40px;
 }
 
@@ -469,19 +476,19 @@ textarea.input-minimal {
   border-radius: 6px;
 }
 
-.checkmark:after {
+.checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.checkbox input:checked ~ .checkmark:after,
-.checkboxContainer input:checked ~ .checkmark:after {
+.checkbox input:checked ~ .checkmark::after,
+.checkboxContainer input:checked ~ .checkmark::after {
   display: block;
 }
 
-.checkbox .checkmark:after,
-.checkboxContainer .checkmark:after {
+.checkbox .checkmark::after,
+.checkboxContainer .checkmark::after {
   left: 8px;
   top: -10px;
   width: 10px;
@@ -500,7 +507,7 @@ textarea.input-minimal {
   padding-left: 35px;
 }
 
-.checkbox-s .checkmark:after {
+.checkbox-s .checkmark::after {
   left: 6px;
   top: -8px;
   width: 8px;
@@ -516,7 +523,7 @@ textarea.input-minimal {
   padding-left: 48px;
 }
 
-.checkbox-l .checkmark:after {
+.checkbox-l .checkmark::after {
   left: 10px;
   top: -12px;
   width: 12px;
@@ -524,7 +531,9 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-08 */
+
 /* ── Toggle ─────────────────────────────────────────────────────────────── */
+
 /*
    <input type="checkbox" class="toggle" id="t1" />
    <label for="t1" class="toggle-btn"></label>
@@ -554,7 +563,7 @@ textarea.input-minimal {
   vertical-align: middle;
 }
 
-.toggle + .toggle-btn:after {
+.toggle + .toggle-btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -564,11 +573,11 @@ textarea.input-minimal {
   height: 1.25rem;
   border-radius: var(--radius-full);
   background: var(--color-almost-white);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
   transition: left 0.2s ease;
 }
 
-.toggle + .toggle-btn:before {
+.toggle + .toggle-btn::before {
   display: none;
 }
 
@@ -576,7 +585,7 @@ textarea.input-minimal {
   background: var(--color-primary);
 }
 
-.toggle:checked + .toggle-btn:after {
+.toggle:checked + .toggle-btn::after {
   left: calc(100% - 1.25rem - 0.125rem);
 }
 
@@ -590,12 +599,12 @@ textarea.input-minimal {
   height: 1.25rem;
 }
 
-.toggle + .toggle-btn.size-s:after {
+.toggle + .toggle-btn.size-s::after {
   width: 1rem;
   height: 1rem;
 }
 
-.toggle:checked + .toggle-btn.size-s:after {
+.toggle:checked + .toggle-btn.size-s::after {
   left: calc(100% - 1rem - 0.125rem);
 }
 
@@ -605,17 +614,19 @@ textarea.input-minimal {
   height: 1.875rem;
 }
 
-.toggle + .toggle-btn.size-l:after {
+.toggle + .toggle-btn.size-l::after {
   width: 1.625rem;
   height: 1.625rem;
 }
 
-.toggle:checked + .toggle-btn.size-l:after {
+.toggle:checked + .toggle-btn.size-l::after {
   left: calc(100% - 1.625rem - 0.125rem);
 }
 
 /* @ID: #05-02-09 */
+
 /* ── Radio group (pill bar) ─────────────────────────────────────────────── */
+
 /*
    <div class="radio-group">
      <input type="radio" name="g" id="r1" />
@@ -668,6 +679,7 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-10 */
+
 /* ── Radio buttons (pill-shaped, separate) ──────────────────────────────── */
 
 .radio-btns {
@@ -714,6 +726,7 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-11 */
+
 /* ── Radio divs (visual cards as radio options) ─────────────────────────── */
 
 .radio-divs {
@@ -765,6 +778,7 @@ textarea.input-minimal {
 }
 
 /* @ID: #05-02-12 */
+
 /* ── Range slider ───────────────────────────────────────────────────────── */
 
 input[type="range"] {
@@ -807,8 +821,8 @@ input[type="range"] {
   background: var(--color-primary);
   border: 3px solid var(--input-bg);
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.06);
+    0 2px 6px rgb(0 0 0 / 15%),
+    0 0 0 1px rgb(0 0 0 / 6%);
   cursor: grab;
   margin-top: -0.5rem;
   transition: transform 0.15s ease, box-shadow 0.2s ease;
@@ -821,8 +835,8 @@ input[type="range"] {
   background: var(--color-primary);
   border: 3px solid var(--input-bg);
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.06);
+    0 2px 6px rgb(0 0 0 / 15%),
+    0 0 0 1px rgb(0 0 0 / 6%);
   cursor: grab;
   transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
@@ -835,27 +849,27 @@ input[type="range"] {
 
 .range:hover::-webkit-slider-thumb {
   transform: scale(1.12);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(0 0 0 / 8%);
 }
 
 .range:hover::-moz-range-thumb {
   transform: scale(1.12);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(0 0 0 / 8%);
 }
 
 .range:focus { outline: none; }
 
 .range:focus::-webkit-slider-thumb {
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgb(0 0 0 / 15%),
+    0 0 0 1px rgb(0 0 0 / 6%),
     0 0 0 4px rgba(var(--color-primary-rgb), 0.25);
 }
 
 .range:focus::-moz-range-thumb {
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.15),
-    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgb(0 0 0 / 15%),
+    0 0 0 1px rgb(0 0 0 / 6%),
     0 0 0 4px rgba(var(--color-primary-rgb), 0.25);
 }
 
@@ -866,6 +880,7 @@ input[type="range"] {
 .range.range-lg::-moz-range-thumb { width: 1.75rem; height: 1.75rem; }
 
 /* @ID: #05-02-13 */
+
 /* ── File input ─────────────────────────────────────────────────────────── */
 
 .file-input-wrap {
@@ -930,14 +945,14 @@ input[type="range"] {
 }
 
 /* @ID: #05-02-14 */
+
 /* ── Layout helpers (input-container, range-container) ──────────────────── */
 
 .input-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin: var(--space-2) var(--space-1);
 }
 
@@ -948,7 +963,7 @@ input[type="range"] {
   white-space: normal;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .input-container span {
     max-width: 18rem;
     margin-right: var(--space-3);
@@ -975,12 +990,11 @@ input[type="range"] {
   border: var(--border-width-s) solid var(--color-primary);
   border-radius: var(--radius-m);
   appearance: textfield;
-  -moz-appearance: textfield;
 }
 
 .range-container input[type="number"]::-webkit-inner-spin-button,
 .range-container input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -990,9 +1004,10 @@ input[type="range"] {
 }
 
 /* @ID: #05-02-15 */
+
 /* ── Responsive ─────────────────────────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   :is(
     input[type="text"],
     input[type="number"],

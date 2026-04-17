@@ -1,7 +1,7 @@
 {
   "folder": "06-molecules",
-  "file": "09-stat-cards.css",
-  "lastUpdated": "2026-04-16",
+  "file": "10-stat-cards.css",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 43,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-grid",
-      "id": "#06-09-01",
+      "id": "#06-10-01",
       "category": null,
       "properties": [
         "display",
@@ -18,13 +18,13 @@
       ],
       "cssRule": "display: grid\ngrid-template-columns: repeat(4, minmax(0, 1fr))\ngap: 1rem",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-surface",
-      "id": "#06-09-01",
+      "id": "#06-10-01",
       "category": null,
       "properties": [
         "border-radius",
@@ -56,13 +56,13 @@
       ],
       "cssRule": "border-radius: 1.25rem\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #a78bfa\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #a78bfa)\n--stat-digit-label: rgb(255 255 255 / 28%)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-surface[data-mode=\"dark\"]",
-      "id": "#06-09-01",
+      "id": "#06-10-01",
       "category": null,
       "properties": [
         "border-radius",
@@ -94,13 +94,13 @@
       ],
       "cssRule": "border-radius: 1.25rem\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #a78bfa\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #a78bfa)\n--stat-digit-label: rgb(255 255 255 / 28%)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-surface-light",
-      "id": "#06-09-01",
+      "id": "#06-10-01",
       "category": null,
       "properties": [
         "color",
@@ -129,13 +129,13 @@
       ],
       "cssRule": "color: #1a1e30\nbackground: linear-gradient(135deg, #dce8ff 0%, #eef3fc 50%, #e2eaf9 100%)\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(0 0 0 / 8%)\n--stat-shadow: 0 4px 20px rgb(20 40 80 / 8%)\n--stat-text: #1a1e30\n--stat-label: rgb(15 20 45 / 46%)\n--stat-sub: rgb(15 20 45 / 50%)\n--stat-sub-strong: #7c3aed\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #7c3aed)\n--stat-digit-label: rgb(15 20 45 / 38%)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-surface[data-mode=\"light\"]",
-      "id": "#06-09-01",
+      "id": "#06-10-01",
       "category": null,
       "properties": [
         "color",
@@ -164,13 +164,13 @@
       ],
       "cssRule": "color: #1a1e30\nbackground: linear-gradient(135deg, #dce8ff 0%, #eef3fc 50%, #e2eaf9 100%)\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(0 0 0 / 8%)\n--stat-shadow: 0 4px 20px rgb(20 40 80 / 8%)\n--stat-text: #1a1e30\n--stat-label: rgb(15 20 45 / 46%)\n--stat-sub: rgb(15 20 45 / 50%)\n--stat-sub-strong: #7c3aed\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #7c3aed)\n--stat-digit-label: rgb(15 20 45 / 38%)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-card",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "position",
@@ -189,13 +189,13 @@
       ],
       "cssRule": "position: relative\noverflow: hidden\ndisplay: flex\nflex-direction: column\ngap: 0.5rem\npadding: 1.25rem 1.5rem\nborder: 1px solid var(--stat-card-border)\nborder-radius: 1rem\nbackground: var(--stat-card-bg)\ncolor: var(--stat-text)\nbox-shadow: var(--stat-shadow)\nbackdrop-filter: blur(8px)\ntransition:\r\n    background 0.4s,\r\n    border-color 0.4s,\r\n    color 0.4s,\r\n    box-shadow 0.4s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-label",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "font-size",
@@ -207,13 +207,13 @@
       ],
       "cssRule": "font-size: 0.68rem\nfont-weight: 700\nletter-spacing: 0.09em\ntext-transform: uppercase\ncolor: var(--stat-label)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-value",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "margin",
@@ -228,65 +228,65 @@
       ],
       "cssRule": "margin: 0\ncolor: var(--stat-text)\nfont-family: var(--font-display)\nfont-size: 1.75rem\nfont-weight: 800\nline-height: 1.1\nletter-spacing: -0.02em\nfont-variant-numeric: tabular-nums\ntransition: color 0.4s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-value-s",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "font-size"
       ],
       "cssRule": "font-size: 1.35rem",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-tone-success",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "color"
       ],
       "cssRule": "color: var(--stat-ok-color)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-tone-warning",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "color"
       ],
       "cssRule": "color: var(--stat-warn-color)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-tone-danger",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "color"
       ],
       "cssRule": "color: var(--stat-bad-color)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-sub",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "font-size",
@@ -295,13 +295,13 @@
       ],
       "cssRule": "font-size: 0.8rem\ncolor: var(--stat-sub)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-sub strong",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "color",
@@ -309,13 +309,13 @@
       ],
       "cssRule": "color: var(--stat-sub-strong)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-meta",
-      "id": "#06-09-02",
+      "id": "#06-10-02",
       "category": null,
       "properties": [
         "font-size",
@@ -324,13 +324,13 @@
       ],
       "cssRule": "font-size: 0.7rem\ncolor: var(--stat-digit-label)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-trend-up",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "font-size",
@@ -339,13 +339,13 @@
       ],
       "cssRule": "font-size: 0.8rem\nfont-weight: 600\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-trend-down",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "font-size",
@@ -354,52 +354,52 @@
       ],
       "cssRule": "font-size: 0.8rem\nfont-weight: 600\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-trend-up",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "color"
       ],
       "cssRule": "color: var(--stat-trend-up)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-trend-down",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "color"
       ],
       "cssRule": "color: var(--stat-trend-down)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-trend-compact",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "font-size"
       ],
       "cssRule": "font-size: 0.72rem",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-row",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "display",
@@ -408,13 +408,13 @@
       ],
       "cssRule": "display: flex\nalign-items: center\ngap: 0.5rem",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-progress",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "overflow",
@@ -424,13 +424,13 @@
       ],
       "cssRule": "overflow: hidden\nborder-radius: var(--radius-full)\nbackground: var(--stat-track-bg)\ntransition: background 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-score",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "overflow",
@@ -440,26 +440,26 @@
       ],
       "cssRule": "overflow: hidden\nborder-radius: var(--radius-full)\nbackground: var(--stat-track-bg)\ntransition: background 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-progress",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "height"
       ],
       "cssRule": "height: 5px",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-score",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "height",
@@ -467,13 +467,13 @@
       ],
       "cssRule": "height: 6px\nmargin-top: 2px",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-progress-fill",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "height",
@@ -482,13 +482,13 @@
       ],
       "cssRule": "height: 100%\nwidth: var(--stat-fill, 0%)\nborder-radius: var(--radius-full)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-score-fill",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "height",
@@ -497,52 +497,52 @@
       ],
       "cssRule": "height: 100%\nwidth: var(--stat-fill, 0%)\nborder-radius: var(--radius-full)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-progress-fill",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "background"
       ],
       "cssRule": "background: var(--stat-progress-default)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-progress-fill-alt",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "background"
       ],
       "cssRule": "background: var(--stat-progress-emphasis)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-score-fill",
-      "id": "#06-09-03",
+      "id": "#06-10-03",
       "category": null,
       "properties": [
         "background"
       ],
       "cssRule": "background: linear-gradient(90deg, #f87171 0%, #fbbf24 40%, #4ade80 75%, #34d399 100%)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-dot",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "display",
@@ -554,13 +554,13 @@
       ],
       "cssRule": "display: inline-block\nwidth: 10px\nheight: 10px\nmargin-right: 4px\nborder-radius: 50%\nflex-shrink: 0",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-dot-success",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "background",
@@ -568,13 +568,13 @@
       ],
       "cssRule": "background: var(--stat-ok-color)\nbox-shadow: 0 0 6px var(--stat-ok-glow)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-dot-warning",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "background",
@@ -582,13 +582,13 @@
       ],
       "cssRule": "background: var(--stat-warn-color)\nbox-shadow: 0 0 6px var(--stat-warn-glow)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-dot-danger",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "background",
@@ -596,13 +596,13 @@
       ],
       "cssRule": "background: var(--stat-bad-color)\nbox-shadow: 0 0 6px var(--stat-bad-glow)",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-icon",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "position",
@@ -616,13 +616,13 @@
       ],
       "cssRule": "position: absolute\nright: 1rem\nbottom: 0.5rem\nfont-size: 2.5rem\nline-height: 1\nopacity: var(--stat-icon-opacity)\ntransition: opacity 0.35s\npointer-events: none",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-divider",
-      "id": "#06-09-04",
+      "id": "#06-10-04",
       "category": null,
       "properties": [
         "margin",
@@ -632,13 +632,13 @@
       ],
       "cssRule": "margin: 1.5rem 0\nborder: none\nborder-top: 1px solid var(--stat-divider)\ntransition: border-color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-compare",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "display",
@@ -651,13 +651,13 @@
       ],
       "cssRule": "display: flex\nalign-items: center\ngap: 8px\nmargin-top: 4px\npadding-top: 6px\nborder-top: 1px solid var(--stat-divider)\ntransition: border-color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-compare-label",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "font-size",
@@ -666,13 +666,13 @@
       ],
       "cssRule": "font-size: 0.68rem\ncolor: var(--stat-label)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-compare-value",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "margin-left",
@@ -685,13 +685,13 @@
       ],
       "cssRule": "margin-left: auto\ncolor: var(--stat-sub)\nfont-family: var(--font-display)\nfont-size: 0.8rem\nfont-weight: 700\nfont-variant-numeric: tabular-nums\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-score-range",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "display",
@@ -703,13 +703,13 @@
       ],
       "cssRule": "display: flex\njustify-content: space-between\nmargin-top: 3px\nfont-size: 0.6rem\ncolor: var(--stat-label)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-split",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "display",
@@ -722,13 +722,13 @@
       ],
       "cssRule": "display: grid\ngrid-template-columns: 1fr 1fr\ngap: 0.75rem\nmargin-top: 4px\npadding-top: 8px\nborder-top: 1px solid var(--stat-divider)\ntransition: border-color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-split-value",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "font-family",
@@ -741,13 +741,13 @@
       ],
       "cssRule": "font-family: var(--font-display)\nfont-size: 1.25rem\nfont-weight: 800\nline-height: 1.1\nletter-spacing: -0.02em\nfont-variant-numeric: tabular-nums\ntransition: color 0.4s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".stat-split-label",
-      "id": "#06-09-05",
+      "id": "#06-10-05",
       "category": null,
       "properties": [
         "font-size",
@@ -759,7 +759,7 @@
       ],
       "cssRule": "font-size: 0.62rem\nfont-weight: 700\nletter-spacing: 0.07em\ntext-transform: uppercase\ncolor: var(--stat-label)\ntransition: color 0.35s",
       "responsive": false,
-      "description": "==========\r\n   06-molecules / 09-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
+      "description": "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
     }
   ],
   "customProperties": [

@@ -5,6 +5,7 @@
    ========================================================================== */
 
 /* @ID: #03-07-01 */
+
 /* ── Overflow utilities ─────────────────────────────────────────────────── */
 
 .overflow-auto { overflow: auto; }
@@ -13,6 +14,7 @@
 .overflow-scroll { overflow: scroll; }
 
 /* @ID: #03-07-02 */
+
 /* ── Overflow directional (x, y) ──────────────────────────────────────── */
 
 .overflow-x-auto { overflow-x: auto; }
@@ -26,6 +28,7 @@
 .overflow-y-scroll { overflow-y: scroll; }
 
 /* @ID: #03-07-03 */
+
 /* ── Scrollbar utilities ─────────────────────────────────────────────────── */
 
 .scrollbar-thin {
@@ -52,9 +55,10 @@
 }
 
 /* @ID: #03-07-04 */
+
 /* ── Responsive: mobile ──────────────────────────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xoverflow-auto { overflow: auto; }
   .xoverflow-hidden { overflow: hidden; }
   .xoverflow-visible { overflow: visible; }
@@ -95,9 +99,10 @@
 }
 
 /* @ID: #03-07-05 */
+
 /* ── Responsive: desktop ───────────────────────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .doverflow-auto { overflow: auto; }
   .doverflow-hidden { overflow: hidden; }
   .doverflow-visible { overflow: visible; }

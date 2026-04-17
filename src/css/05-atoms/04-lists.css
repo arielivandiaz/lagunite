@@ -7,6 +7,7 @@
    ========================================================================== */
 
 /* @ID: #05-04-01 */
+
 /* ── Base: alternate rows & bordered lists ──────────────────────────────── */
 
 ul.alt li:nth-child(2n),
@@ -25,6 +26,7 @@ ul.bordered li:not(:last-child) {
 }
 
 /* @ID: #05-04-02 */
+
 /* ── List layout ───────────────────────────────────────────────────────── */
 
 .list-none {
@@ -46,6 +48,7 @@ ul.bordered li:not(:last-child) {
 }
 
 /* @ID: #05-04-03 */
+
 /* ── Unordered marker types ─────────────────────────────────────────────── */
 
 .list-disc {
@@ -61,6 +64,7 @@ ul.bordered li:not(:last-child) {
 }
 
 /* @ID: #05-04-04 */
+
 /* ── Ordered marker types & marker position ─────────────────────────────── */
 
 .list-decimal {
@@ -84,9 +88,10 @@ ul.bordered li:not(:last-child) {
 }
 
 /* @ID: #05-04-05 */
+
 /* ── Responsive: mobile (max-width: 639px) ────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xlist-none {
     list-style: none;
   }
@@ -104,7 +109,7 @@ ul.bordered li:not(:last-child) {
 
 /* ── Responsive: desktop (min-width: 640px) ───────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dlist-none {
     list-style: none;
   }

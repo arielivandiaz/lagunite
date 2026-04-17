@@ -1,6 +1,6 @@
 folder: 00-config
 file: 05-base.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 47
 content[47]:
@@ -34,25 +34,25 @@ content[47]:
   - type: selector
     selectorType: element
     selector: html
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[7]: width,max-width,min-height,overflow-x,background,font-family,font-size
-    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
+    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--color-bg)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
     responsive: false
     description: ** Static **
   - type: selector
     selectorType: element
     selector: body
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[7]: width,max-width,min-height,overflow-x,background,font-family,font-size
-    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--background_body)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
+    cssRule: "width: 100%\nmax-width: 100%\nmin-height: 100vh\noverflow-x: hidden\nbackground: var(--color-bg)\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)"
     responsive: false
     description: ** Static **
   - type: selector
     selectorType: element
     selector: button
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[3]: border,background,cursor
     cssRule: "border: none\nbackground: none\ncursor: pointer"
@@ -61,7 +61,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: a
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: cursor
     cssRule: "cursor: pointer"
@@ -70,7 +70,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: a
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: text-decoration
     cssRule: "text-decoration: none"
@@ -79,7 +79,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "a:visited"
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: text-decoration
     cssRule: "text-decoration: none"
@@ -88,7 +88,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "a:active"
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: text-decoration
     cssRule: "text-decoration: none"
@@ -97,7 +97,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "a:enabled"
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: text-decoration
     cssRule: "text-decoration: none"
@@ -106,7 +106,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: ul
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[2]: list-style,text-align
     cssRule: "list-style: none\ntext-align: left"
@@ -115,7 +115,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: ol
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: text-align
     cssRule: "text-align: left"
@@ -124,7 +124,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: img
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: max-width
     cssRule: "max-width: 100%"
@@ -133,7 +133,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "header:not(.navbar):not(.doc-navbar-overlay):not(.topbar)"
-    id: #00-05-03
+    id: #00-05-02
     category: null
     properties[1]: margin
     cssRule: "margin: 5vh 0 3vh 0"
@@ -142,7 +142,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: body
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: width,height,text-align
     cssRule: "width: 100%\nheight: 100%\ntext-align: center"
@@ -151,7 +151,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: body
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: background,color,transition
     cssRule: "background: var(--color-bg)\ncolor: var(--color-text-base)\ntransition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease"
@@ -160,7 +160,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: body.night
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[2]: background,color
     cssRule: "background: var(--color-bg)\ncolor: var(--color-text-base)"
@@ -169,7 +169,7 @@ content[47]:
   - type: selector
     selectorType: pseudo-hover
     selector: "a:hover"
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: color
     cssRule: "color: var(--color-primary) !important"
@@ -178,7 +178,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: p
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[6]: margin,text-align,overflow-wrap,word-wrap,white-space,padding
     cssRule: "margin: 10px 0\ntext-align: left\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal\npadding: 0 15px"
@@ -187,7 +187,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: hr
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[5]: display,height,border,border-top,padding
     cssRule: "display: block\nheight: 1px\nborder: 0\nborder-top: 1px solid var(--color-primary)\npadding: 0"
@@ -196,7 +196,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: sub
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: font-size,position,top
     cssRule: "font-size: 80%\nposition: relative\ntop: 0.1rem"
@@ -205,7 +205,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: sup
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: font-size,position,top
     cssRule: "font-size: 80%\nposition: relative\ntop: -0.1rem"
@@ -214,7 +214,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: blockquote
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[5]: border-left,font-style,text-align,margin,padding
     cssRule: "border-left: solid 4px var(--color-primary)\nfont-style: italic\ntext-align: left\nmargin: 0 0 2rem 0\npadding: 0.8rem 0.5rem 0.8rem 1.5rem"
@@ -223,7 +223,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: code
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[6]: border-radius,background,font-family,font-size,margin,padding
     cssRule: "border-radius: 4px\nbackground: #ddd\nfont-family: monospace\nfont-size: 80%\nmargin: 0 0.3rem\npadding: 0.2rem 0.6rem"
@@ -232,7 +232,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: pre
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[4]: "-webkit-overflow-scrolling",font-family,font-size,margin
     cssRule: "-webkit-overflow-scrolling: touch\nfont-family: monospace\nfont-size: 0.9em\nmargin: 0 0 2rem 0"
@@ -241,7 +241,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: pre code
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[5]: text-align,display,line-height,padding,margin
     cssRule: "text-align: left\ndisplay: block\nline-height: 1.75\npadding: 0.3rem 0.5rem 0.3rem 1rem\nmargin: 0 25px"
@@ -250,16 +250,16 @@ content[47]:
   - type: selector
     selectorType: class
     selector: .night code
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[2]: background,color
-    cssRule: "background: #000\ncolor: var(--text_color_alt)"
+    cssRule: "background: #000\ncolor: var(--color-text-alt)"
     responsive: false
     description: ** Static **
   - type: selector
     selectorType: element
     selector: hgroup
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -268,7 +268,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: hgroup h1
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -277,7 +277,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: hgroup h2
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -286,7 +286,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: hgroup h3
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -295,7 +295,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: hgroup h4
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -304,7 +304,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: hgroup h5
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: inline-block"
@@ -313,7 +313,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: ul li
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: padding
     cssRule: "padding: 2px 1.5vw 2px 0.5vw"
@@ -322,7 +322,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: ol li
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: padding
     cssRule: "padding: 2px 1.5vw 2px 0.5vw"
@@ -331,7 +331,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: tr *
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: left,right,margin
     cssRule: "left: 0\nright: 0\nmargin: auto"
@@ -340,7 +340,7 @@ content[47]:
   - type: selector
     selectorType: complex
     selector: td *
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: left,right,margin
     cssRule: "left: 0\nright: 0\nmargin: auto"
@@ -349,7 +349,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: th
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: overflow-wrap,word-wrap,white-space
     cssRule: "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
@@ -358,7 +358,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: td
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: overflow-wrap,word-wrap,white-space
     cssRule: "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
@@ -367,7 +367,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: th
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: padding
     cssRule: "padding: 4px 0"
@@ -376,7 +376,7 @@ content[47]:
   - type: selector
     selectorType: element
     selector: caption
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: margin
     cssRule: "margin: 15px 0"
@@ -385,16 +385,16 @@ content[47]:
   - type: selector
     selectorType: element
     selector: details
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[4]: padding,max-width,background-color,transition
-    cssRule: "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-secondary)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease"
+    cssRule: "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-alt)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease"
     responsive: false
     description: ** Static **
   - type: selector
     selectorType: element
     selector: summary
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[6]: font-weight,cursor,display,align-items,justify-content,list-style
     cssRule: "font-weight: 600\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none"
@@ -403,7 +403,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "summary::-webkit-details-marker"
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: display
     cssRule: "display: none"
@@ -412,7 +412,7 @@ content[47]:
   - type: selector
     selectorType: pseudo
     selector: "a:visited"
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[1]: color
     cssRule: "color: var(--color-text-base)"
@@ -421,7 +421,7 @@ content[47]:
   - type: selector
     selectorType: class
     selector: .link
-    id: #00-05-04
+    id: #00-05-03
     category: Tags
     properties[3]: color,text-decoration,font-weight
     cssRule: "color: var(--color-primary)\ntext-decoration: none\nfont-weight: 700"

@@ -5,6 +5,7 @@
    ========================================================================== */
 
 /* @ID: #10-02-01 */
+
 /* ── Cursor ─────────────────────────────────────────────────────────────── */
 
 .cursor-auto        { cursor: auto; }
@@ -21,12 +22,14 @@
 .cursor-none        { cursor: none; }
 
 /* @ID: #10-02-02 */
+
 /* ── Pointer events ─────────────────────────────────────────────────────── */
 
 .pointer-events-none { pointer-events: none; }
 .pointer-events-auto { pointer-events: auto; }
 
 /* @ID: #10-02-03 */
+
 /* ── User select ────────────────────────────────────────────────────────── */
 
 .select-none { user-select: none; }
@@ -35,9 +38,10 @@
 .select-auto { user-select: auto; }
 
 /* @ID: #10-02-04 */
+
 /* ── Responsive: mobile (max-width: 639px) ──────────────────────────────── */
 
-@media (max-width: 639px) {
+@media (width <= 639px) {
   .xcursor-auto        { cursor: auto; }
   .xcursor-pointer     { cursor: pointer; }
   .xcursor-not-allowed { cursor: not-allowed; }
@@ -55,9 +59,10 @@
 }
 
 /* @ID: #10-02-05 */
+
 /* ── Responsive: desktop (min-width: 640px) ─────────────────────────────── */
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .dcursor-auto        { cursor: auto; }
   .dcursor-pointer     { cursor: pointer; }
   .dcursor-not-allowed { cursor: not-allowed; }

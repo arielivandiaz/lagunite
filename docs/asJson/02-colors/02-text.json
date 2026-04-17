@@ -1,7 +1,7 @@
 {
   "folder": "02-colors",
   "file": "02-text.css",
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "hasResponsive": false,
   "totalSelectors": 71,
   "content": [
@@ -9,7 +9,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-text",
-      "id": "#02-01-01",
+      "id": "#02-02-01",
       "category": null,
       "properties": [
         "color"
@@ -22,7 +22,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-text-alt",
-      "id": "#02-01-01",
+      "id": "#02-02-01",
       "category": null,
       "properties": [
         "color"
@@ -35,7 +35,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-primary",
-      "id": "#02-01-02",
+      "id": "#02-02-02",
       "category": null,
       "properties": [
         "color"
@@ -48,7 +48,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-primary-light",
-      "id": "#02-01-02",
+      "id": "#02-02-02",
       "category": null,
       "properties": [
         "color"
@@ -61,7 +61,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-primary-dark",
-      "id": "#02-01-02",
+      "id": "#02-02-02",
       "category": null,
       "properties": [
         "color"
@@ -74,7 +74,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-secondary",
-      "id": "#02-01-03",
+      "id": "#02-02-03",
       "category": null,
       "properties": [
         "color"
@@ -87,7 +87,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-secondary-light",
-      "id": "#02-01-03",
+      "id": "#02-02-03",
       "category": null,
       "properties": [
         "color"
@@ -100,7 +100,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-secondary-dark",
-      "id": "#02-01-03",
+      "id": "#02-02-03",
       "category": null,
       "properties": [
         "color"
@@ -113,7 +113,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-tertiary",
-      "id": "#02-01-04",
+      "id": "#02-02-04",
       "category": null,
       "properties": [
         "color"
@@ -126,7 +126,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-tertiary-light",
-      "id": "#02-01-04",
+      "id": "#02-02-04",
       "category": null,
       "properties": [
         "color"
@@ -139,7 +139,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-tertiary-dark",
-      "id": "#02-01-04",
+      "id": "#02-02-04",
       "category": null,
       "properties": [
         "color"
@@ -152,7 +152,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-almost-black",
-      "id": "#02-01-05",
+      "id": "#02-02-05",
       "category": null,
       "properties": [
         "color"
@@ -165,7 +165,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-almost-white",
-      "id": "#02-01-05",
+      "id": "#02-02-05",
       "category": null,
       "properties": [
         "color"
@@ -178,7 +178,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-success",
-      "id": "#02-01-06",
+      "id": "#02-02-06",
       "category": null,
       "properties": [
         "color"
@@ -191,7 +191,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-warning",
-      "id": "#02-01-06",
+      "id": "#02-02-06",
       "category": null,
       "properties": [
         "color"
@@ -204,7 +204,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-error",
-      "id": "#02-01-06",
+      "id": "#02-02-06",
       "category": null,
       "properties": [
         "color"
@@ -217,7 +217,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-50",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -230,7 +230,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-100",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -243,7 +243,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-200",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -256,7 +256,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-300",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -269,7 +269,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-400",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -282,7 +282,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-500",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -295,7 +295,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-600",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -308,7 +308,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-700",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -321,7 +321,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-800",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -334,7 +334,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-900",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -347,7 +347,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-gray-950",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -360,7 +360,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-50",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -373,7 +373,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-100",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -386,7 +386,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-200",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -399,7 +399,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-300",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -412,7 +412,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-400",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -425,7 +425,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-500",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -438,7 +438,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-600",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -451,7 +451,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-700",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -464,7 +464,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-800",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -477,7 +477,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-900",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -490,7 +490,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-blue-950",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -503,7 +503,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-50",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -516,7 +516,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-100",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -529,7 +529,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-200",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -542,7 +542,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-300",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -555,7 +555,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-400",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -568,7 +568,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-500",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -581,7 +581,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-600",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -594,7 +594,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-700",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -607,7 +607,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-800",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -620,7 +620,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-900",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -633,7 +633,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-green-950",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -646,7 +646,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-50",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -659,7 +659,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-100",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -672,7 +672,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-200",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -685,7 +685,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-300",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -698,7 +698,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-400",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -711,7 +711,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-500",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -724,7 +724,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-600",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -737,7 +737,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-700",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -750,7 +750,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-800",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -763,7 +763,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-900",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -776,7 +776,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-yellow-950",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -789,7 +789,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-50",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -802,7 +802,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-100",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -815,7 +815,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-200",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -828,7 +828,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-300",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -841,7 +841,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-400",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -854,7 +854,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-500",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -867,7 +867,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-600",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -880,7 +880,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-700",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -893,7 +893,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-800",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -906,7 +906,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-900",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"
@@ -919,7 +919,7 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".color-red-950",
-      "id": "#02-01-07",
+      "id": "#02-02-07",
       "category": null,
       "properties": [
         "color"

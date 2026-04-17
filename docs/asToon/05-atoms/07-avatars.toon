@@ -1,6 +1,6 @@
 folder: 05-atoms
 file: 07-avatars.css
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-17
 hasResponsive: false
 totalSelectors: 72
 content[72]:
@@ -10,9 +10,9 @@ content[72]:
     id: #05-07-01
     category: null
     properties[15]: position,display,align-items,justify-content,width,height,border-radius,overflow,background-color,color,font-weight,font-size,line-height,flex-shrink,user-select
-    cssRule: "position: relative\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\n/* 2.5rem / 40px default */\nheight: var(--space-10)\nborder-radius: 50%\n/* Circle by default */\noverflow: hidden\nbackground-color: var(--color-neutral-200)\ncolor: var(--color-neutral-700)\nfont-weight: var(--font-weight-medium)\nfont-size: var(--font-size-base)\nline-height: 1\nflex-shrink: 0\nuser-select: none"
+    cssRule: "position: relative\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nborder-radius: 50%\noverflow: hidden\nbackground-color: var(--gray-200)\ncolor: var(--gray-700)\nfont-weight: var(--font-weight-medium)\nfont-size: var(--font-size-base)\nline-height: 1\nflex-shrink: 0\nuser-select: none"
     responsive: false
-    description: "05-atoms: avatars"
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar img
@@ -21,52 +21,52 @@ content[72]:
     properties[4]: width,height,object-fit,display
     cssRule: "width: 100%\nheight: 100%\nobject-fit: cover\ndisplay: block"
     responsive: false
-    description: "05-atoms: avatars"
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .night .avatar
     id: #05-07-01
     category: null
     properties[2]: background-color,color
-    cssRule: "background-color: var(--color-neutral-700)\ncolor: var(--color-neutral-200)"
+    cssRule: "background-color: var(--gray-700)\ncolor: var(--gray-200)"
     responsive: false
-    description: Night mode
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-xs
     id: #05-07-02
     category: null
     properties[3]: width,height,font-size
-    cssRule: "width: var(--space-6)\n/* 1.5rem / 24px */\nheight: var(--space-6)\nfont-size: var(--font-size-xs)"
+    cssRule: "width: var(--space-6)\nheight: var(--space-6)\nfont-size: var(--font-size-xs)"
     responsive: false
-    description: Night mode
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-s
     id: #05-07-02
     category: null
     properties[3]: width,height,font-size
-    cssRule: "width: var(--space-8)\n/* 2rem / 32px */\nheight: var(--space-8)\nfont-size: var(--font-size-s)"
+    cssRule: "width: var(--space-8)\nheight: var(--space-8)\nfont-size: var(--font-size-s)"
     responsive: false
-    description: Night mode
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-l
     id: #05-07-02
     category: null
     properties[3]: width,height,font-size
-    cssRule: "width: var(--space-12)\n/* 3rem / 48px */\nheight: var(--space-12)\nfont-size: var(--font-size-l)"
+    cssRule: "width: var(--space-12)\nheight: var(--space-12)\nfont-size: var(--font-size-l)"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-xl
     id: #05-07-02
     category: null
     properties[3]: width,height,font-size
-    cssRule: "width: var(--space-16)\n/* 4rem / 64px */\nheight: var(--space-16)\nfont-size: var(--font-size-xl)"
+    cssRule: "width: var(--space-16)\nheight: var(--space-16)\nfont-size: var(--font-size-xl)"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-circle
@@ -75,7 +75,7 @@ content[72]:
     properties[1]: border-radius
     cssRule: "border-radius: 50%"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-rounded
@@ -84,7 +84,7 @@ content[72]:
     properties[1]: border-radius
     cssRule: "border-radius: var(--radius-l)"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-square
@@ -93,7 +93,7 @@ content[72]:
     properties[1]: border-radius
     cssRule: "border-radius: var(--radius-s)"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-status
@@ -102,25 +102,25 @@ content[72]:
     properties[1]: position
     cssRule: "position: relative"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-status::after"
     id: #05-07-04
     category: null
     properties[11]: content,position,bottom,right,width,height,min-width,min-height,border-radius,border,background-color
-    cssRule: "content: ''\nposition: absolute\nbottom: 0\nright: 0\nwidth: 25%\nheight: 25%\nmin-width: 8px\nmin-height: 8px\nborder-radius: 50%\nborder: 2px solid var(--color-surface)\nbackground-color: var(--color-neutral-400)"
+    cssRule: "content: ''\nposition: absolute\nbottom: 0\nright: 0\nwidth: 25%\nheight: 25%\nmin-width: 8px\nmin-height: 8px\nborder-radius: 50%\nborder: 2px solid var(--color-bg)\nbackground-color: var(--gray-400)"
     responsive: false
-    description: .avatar is default size (40px)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".night .avatar-status::after"
     id: #05-07-04
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-surface-night)"
+    cssRule: "border-color: var(--color-bg)"
     responsive: false
-    description: Night mode border
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-status-online::after"
@@ -129,7 +129,7 @@ content[72]:
     properties[1]: background-color
     cssRule: "background-color: var(--color-success)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-status-busy::after"
@@ -138,7 +138,7 @@ content[72]:
     properties[1]: background-color
     cssRule: "background-color: var(--color-error)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-status-away::after"
@@ -147,34 +147,34 @@ content[72]:
     properties[1]: background-color
     cssRule: "background-color: var(--color-warning)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-status-offline::after"
     id: #05-07-04
     category: null
     properties[1]: background-color
-    cssRule: "background-color: var(--color-neutral-400)"
+    cssRule: "background-color: var(--gray-400)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-placeholder
     id: #05-07-05
     category: null
     properties[1]: background
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-neutral-300) 0%,\r\n\t\tvar(--color-neutral-200) 100%\r\n\t)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--gray-300) 0%,\n\t\tvar(--gray-200) 100%\n\t)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .night .avatar-placeholder
     id: #05-07-05
     category: null
     properties[1]: background
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-neutral-600) 0%,\r\n\t\tvar(--color-neutral-700) 100%\r\n\t)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--gray-600) 0%,\n\t\tvar(--gray-700) 100%\n\t)"
     responsive: false
-    description: Status variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-placeholder svg
@@ -183,7 +183,7 @@ content[72]:
     properties[3]: width,height,opacity
     cssRule: "width: 50%\nheight: 50%\nopacity: 0.5"
     responsive: false
-    description: Icon placeholder (requires icon inside)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-placeholder i
@@ -192,88 +192,88 @@ content[72]:
     properties[3]: width,height,opacity
     cssRule: "width: 50%\nheight: 50%\nopacity: 0.5"
     responsive: false
-    description: Icon placeholder (requires icon inside)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials
     id: #05-07-06
     category: null
     properties[4]: background,color,font-weight,text-transform
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-primary) 0%,\r\n\t\tvar(--color-primary-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)\nfont-weight: var(--font-weight-semibold)\ntext-transform: uppercase"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--color-primary) 0%,\n\t\tvar(--color-primary-dark) 100%\n\t)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-medium)\ntext-transform: uppercase"
     responsive: false
-    description: Icon placeholder (requires icon inside)
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials-secondary
     id: #05-07-06
     category: null
     properties[2]: background,color
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-secondary) 0%,\r\n\t\tvar(--color-secondary-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--color-secondary) 0%,\n\t\tvar(--color-secondary-dark) 100%\n\t)\ncolor: var(--color-text-alt)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials-success
     id: #05-07-06
     category: null
     properties[2]: background,color
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-success) 0%,\r\n\t\tvar(--color-success-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--green-500) 0%,\n\t\tvar(--green-700) 100%\n\t)\ncolor: var(--color-text-alt)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials-info
     id: #05-07-06
     category: null
     properties[2]: background,color
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-info) 0%,\r\n\t\tvar(--color-info-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--blue-500) 0%,\n\t\tvar(--blue-700) 100%\n\t)\ncolor: var(--color-text-alt)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials-warning
     id: #05-07-06
     category: null
     properties[2]: background,color
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-warning) 0%,\r\n\t\tvar(--color-warning-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--yellow-500) 0%,\n\t\tvar(--yellow-700) 100%\n\t)\ncolor: var(--gray-900)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-initials-error
     id: #05-07-06
     category: null
     properties[2]: background,color
-    cssRule: "background: linear-gradient(\r\n\t\t135deg,\r\n\t\tvar(--color-error) 0%,\r\n\t\tvar(--color-error-dark) 100%\r\n\t)\ncolor: var(--color-text-inverse)"
+    cssRule: "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--red-500) 0%,\n\t\tvar(--red-700) 100%\n\t)\ncolor: var(--color-text-alt)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group
     id: #05-07-07
     category: null
     properties[3]: display,align-items,flex-direction
-    cssRule: "display: inline-flex\nalign-items: center\nflex-direction: row-reverse\n/* Reverses order for stacking */"
+    cssRule: "display: inline-flex\nalign-items: center\nflex-direction: row-reverse"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group .avatar
     id: #05-07-07
     category: null
     properties[3]: margin-left,border,transition
-    cssRule: "margin-left: calc(var(--space-2) * -1)\n/* -0.5rem overlap */\nborder: 2px solid var(--color-surface)\ntransition: transform var(--transition-duration-150) var(--transition-timing-ease-out)"
+    cssRule: "margin-left: calc(var(--space-2) * -1)\nborder: 2px solid var(--color-bg)\ntransition: transform 150ms ease-out"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .night .avatar-group .avatar
     id: #05-07-07
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-surface-night)"
+    cssRule: "border-color: var(--color-bg)"
     responsive: false
-    description: Color variants for initials
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-group .avatar:first-child"
@@ -282,7 +282,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: 0"
     responsive: false
-    description: First avatar (visually last due to reverse) has no margin
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-group .avatar:hover"
@@ -291,7 +291,7 @@ content[72]:
     properties[2]: transform,z-index
     cssRule: "transform: translateY(-2px)\nz-index: 10"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack
@@ -300,25 +300,25 @@ content[72]:
     properties[3]: display,align-items,flex-direction
     cssRule: "display: inline-flex\nalign-items: center\nflex-direction: row-reverse"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack .avatar
     id: #05-07-08
     category: null
     properties[3]: margin-left,border,box-shadow
-    cssRule: "margin-left: calc(var(--space-4) * -1)\n/* -1rem overlap - more than group */\nborder: 3px solid var(--color-surface)\nbox-shadow: var(--shadow-s)"
+    cssRule: "margin-left: calc(var(--space-4) * -1)\nborder: 3px solid var(--color-bg)\nbox-shadow: var(--shadow-s)"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .night .avatar-stack .avatar
     id: #05-07-08
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-surface-night)"
+    cssRule: "border-color: var(--color-bg)"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-stack .avatar:first-child"
@@ -327,7 +327,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: 0"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-stack .avatar:hover"
@@ -336,43 +336,43 @@ content[72]:
     properties[2]: transform,z-index
     cssRule: "transform: scale(1.1)\nz-index: 10"
     responsive: false
-    description: Hover effect - lift avatar
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-counter
     id: #05-07-08
     category: null
     properties[15]: display,align-items,justify-content,width,height,margin-left,border-radius,border,background-color,color,font-size,font-weight,flex-shrink,cursor,transition
-    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nmargin-left: calc(var(--space-4) * -1)\nborder-radius: 50%\nborder: 3px solid var(--color-surface)\nbackground-color: var(--color-neutral-300)\ncolor: var(--color-neutral-700)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-semibold)\nflex-shrink: 0\ncursor: pointer\ntransition: all var(--transition-duration-150) var(--transition-timing-ease-out)"
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nmargin-left: calc(var(--space-4) * -1)\nborder-radius: 50%\nborder: 3px solid var(--color-bg)\nbackground-color: var(--gray-300)\ncolor: var(--gray-700)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\nflex-shrink: 0\ncursor: pointer\ntransition: all 150ms ease-out"
     responsive: false
-    description: Counter for remaining avatars
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .night .avatar-stack-counter
     id: #05-07-08
     category: null
     properties[3]: border-color,background-color,color
-    cssRule: "border-color: var(--color-surface-night)\nbackground-color: var(--color-neutral-700)\ncolor: var(--color-neutral-200)"
+    cssRule: "border-color: var(--color-bg)\nbackground-color: var(--gray-700)\ncolor: var(--gray-200)"
     responsive: false
-    description: Counter for remaining avatars
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".avatar-stack-counter:hover"
     id: #05-07-08
     category: null
     properties[3]: transform,background-color,z-index
-    cssRule: "transform: scale(1.1)\nbackground-color: var(--color-neutral-400)\nz-index: 10"
+    cssRule: "transform: scale(1.1)\nbackground-color: var(--gray-400)\nz-index: 10"
     responsive: false
-    description: Counter for remaining avatars
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: ".night .avatar-stack-counter:hover"
     id: #05-07-08
     category: null
     properties[1]: background-color
-    cssRule: "background-color: var(--color-neutral-600)"
+    cssRule: "background-color: var(--gray-600)"
     responsive: false
-    description: Counter for remaining avatars
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-xs .avatar
@@ -381,7 +381,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 1px"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xs .avatar
@@ -390,7 +390,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 1px"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-xs .avatar
@@ -399,7 +399,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-1) * -1)"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xs .avatar
@@ -408,7 +408,7 @@ content[72]:
     properties[2]: margin-left,border-width
     cssRule: "margin-left: calc(var(--space-2) * -1)\nborder-width: 2px"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xs .avatar-stack-counter
@@ -417,7 +417,7 @@ content[72]:
     properties[2]: margin-left,border-width
     cssRule: "margin-left: calc(var(--space-2) * -1)\nborder-width: 2px"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-counter-xs
@@ -426,7 +426,7 @@ content[72]:
     properties[3]: width,height,font-size
     cssRule: "width: var(--space-6)\nheight: var(--space-6)\nfont-size: var(--font-size-xs)"
     responsive: false
-    description: Extra small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-s .avatar
@@ -435,7 +435,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 2px"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-s .avatar
@@ -444,16 +444,16 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 2px"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-s .avatar
     id: #05-07-09
     category: null
     properties[1]: margin-left
-    cssRule: "margin-left: calc(var(--space-1-5) * -1)"
+    cssRule: "margin-left: calc(var(--space-2) * -0.75)"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-s .avatar
@@ -462,7 +462,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-3) * -1)"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-s .avatar-stack-counter
@@ -471,7 +471,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-3) * -1)"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-counter-s
@@ -480,7 +480,7 @@ content[72]:
     properties[3]: width,height,font-size
     cssRule: "width: var(--space-8)\nheight: var(--space-8)\nfont-size: var(--font-size-s)"
     responsive: false
-    description: Small group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-l .avatar
@@ -489,7 +489,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 3px"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-l .avatar
@@ -498,7 +498,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 3px"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-l .avatar
@@ -507,7 +507,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-3) * -1)"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-l .avatar
@@ -516,7 +516,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-5) * -1)"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-l .avatar-stack-counter
@@ -525,7 +525,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-5) * -1)"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-counter-l
@@ -534,7 +534,7 @@ content[72]:
     properties[3]: width,height,font-size
     cssRule: "width: var(--space-12)\nheight: var(--space-12)\nfont-size: var(--font-size-l)"
     responsive: false
-    description: Large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-xl .avatar
@@ -543,7 +543,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 4px"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xl .avatar
@@ -552,7 +552,7 @@ content[72]:
     properties[1]: border-width
     cssRule: "border-width: 4px"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-group-xl .avatar
@@ -561,7 +561,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-4) * -1)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xl .avatar
@@ -570,7 +570,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-6) * -1)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-xl .avatar-stack-counter
@@ -579,7 +579,7 @@ content[72]:
     properties[1]: margin-left
     cssRule: "margin-left: calc(var(--space-6) * -1)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-stack-counter-xl
@@ -588,7 +588,7 @@ content[72]:
     properties[3]: width,height,font-size
     cssRule: "width: var(--space-16)\nheight: var(--space-16)\nfont-size: var(--font-size-xl)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring
@@ -597,7 +597,7 @@ content[72]:
     properties[2]: border,padding
     cssRule: "border: 2px solid var(--color-primary)\npadding: 2px"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-secondary
@@ -606,7 +606,7 @@ content[72]:
     properties[1]: border-color
     cssRule: "border-color: var(--color-secondary)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-success
@@ -615,16 +615,16 @@ content[72]:
     properties[1]: border-color
     cssRule: "border-color: var(--color-success)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-info
     id: #05-07-10
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-info)"
+    cssRule: "border-color: var(--blue-500)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-warning
@@ -633,7 +633,7 @@ content[72]:
     properties[1]: border-color
     cssRule: "border-color: var(--color-warning)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-error
@@ -642,7 +642,7 @@ content[72]:
     properties[1]: border-color
     cssRule: "border-color: var(--color-error)"
     responsive: false
-    description: Extra large group
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
   - type: selector
     selectorType: class
     selector: .avatar-ring-thick
@@ -651,4 +651,4 @@ content[72]:
     properties[2]: border-width,padding
     cssRule: "border-width: 3px\npadding: 3px"
     responsive: false
-    description: Thick ring variants
+    description: "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
