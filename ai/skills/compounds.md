@@ -21,7 +21,7 @@
 | `.card-img-top` | Full-width image (top radii) |
 | `.card-img-bottom` | Full-width image (bottom radii) |
 | `.card-title` | Title inside body |
-| `.card-text` | Muted body text |
+| `.card-text` | Muted body text (light: gray-600; **night: gray-400**) |
 
 ### Style modifiers
 

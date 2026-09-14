@@ -9,8 +9,9 @@
 ## Core rules
 
 1. Every direction class (`.row`, `.col`, `.rowr`, `.colr`) already sets `display: flex; flex-wrap: wrap; justify-content: center; align-items: center`. **Never add `d-flex` alongside them.**
-2. Responsive prefix `x` = mobile (max-width: 639px), `d` = desktop (min-width: 640px).
-3. Gap follows the same semantic scale as `marg`/`padd`: `xs`=4px, `s`=12px, base=24px, `l`=48px, `xl`=64px.
+2. **Gotcha (UI quality):** default centering breaks forms, dashboards, and lists. For content UI always override with **`jc-fs ai-fs`** (or `ai-s`). Leave centering for heroes / empty states. See `compose.md`.
+3. Responsive prefix `x` = mobile (max-width: 639px), `d` = desktop (min-width: 640px).
+4. Gap follows the same semantic scale as `marg`/`padd`: `xs`=4px, `s`=12px, base=24px, `l`=48px, `xl`=64px.
 
 ## Container direction
 

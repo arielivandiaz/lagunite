@@ -846,7 +846,7 @@
       "properties": [
         "caret-color"
       ],
-      "cssRule": "caret-color: currentColor",
+      "cssRule": "caret-color: currentcolor",
       "responsive": false,
       "description": "── Caret / accent color ─────────────────────────────────────────────────"
     },
@@ -872,7 +872,7 @@
       "properties": [
         "accent-color"
       ],
-      "cssRule": "accent-color: currentColor",
+      "cssRule": "accent-color: currentcolor",
       "responsive": false,
       "description": "── Caret / accent color ─────────────────────────────────────────────────"
     }

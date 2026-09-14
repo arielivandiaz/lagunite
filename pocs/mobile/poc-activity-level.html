@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Level - Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+  <style>
+    /* GAP: .radio-btns labels are inline; need full-width pill variant */
+    .radio-btns.full-width { flex-direction: column; }
+    .radio-btns.full-width label { width: 100%; }
+  </style>
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+  <!-- Top bar: back arrow -->
+  <div class="row wp100 jc-fs padd-h-l">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+  </div>
+
+  <!-- Main content: heading + options -->
+  <div class="col ai-c gap-xl wp90 flex-1 jc-c">
+
+    <div class="col ai-c gap-xs wp100">
+      <h2 class="marg-0 ta-c">Physical Activity Level?</h2>
+      <p class="font-s opacity-70 ta-c marg-0" style="max-width: 280px">
+        Choose your regular activity level. This will help us to personalize plans for you
+      </p>
+    </div>
+
+    <!-- Activity level radio-btns -->
+    <div class="radio-btns full-width wp100">
+      <input type="radio" name="level" id="beginner" value="beginner">
+      <label for="beginner">Beginner</label>
+
+      <input type="radio" name="level" id="intermediate" value="intermediate" checked>
+      <label for="intermediate">Intermediate</label>
+
+      <input type="radio" name="level" id="advanced" value="advanced">
+      <label for="advanced">Advanced</label>
+    </div>
+
+  </div>
+
+  <!-- Footer: Back + Continue -->
+  <div class="row gap-s padd-h-l wp100">
+    <button class="btn alt border-r-full flex-1 size-l" type="button">Back</button>
+    <button class="btn primary border-r-full flex-1 size-l" type="button">Continue</button>
+  </div>
+
+</div>
+
+</body>
+</html>

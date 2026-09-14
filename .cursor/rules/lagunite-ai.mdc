@@ -1,8 +1,8 @@
 ---
 description: >-
-  Al generar o revisar UI con Lagunite: usar skills del repo, checklist
-  lagunite-validate, sin inventar clases ni duplicar skills por archivo CSS.
-globs: "**/*.html,src/css/**/*.css,demo*.html"
+  Al generar o revisar UI con Lagunite: compose + UI Validator multi-skill,
+  sin inventar clases ni duplicar skills por archivo CSS.
+globs: "**/*.html,src/css/**/*.css,demo*.html,pocs/**/*.html"
 alwaysApply: false
 ---
 
@@ -10,17 +10,23 @@ alwaysApply: false
 
 ## Antes de escribir o cambiar markup / utilidades
 
-1. Leer la skill **`.cursor/skills/lagunite-validate/SKILL.md`** y aplicar su checklist (orden de clases base → `x` → `d`, no inventar, capas layout → spacing → color/tipo → decoradores, capa UI correcta).
-2. Abrir **solo** las skills necesarias para la tarea (no una skill por cada `.css`). Orden sugerido: `lagunite-tokens` → `lagunite-typography` / `lagunite-colors` → `lagunite-spacing` → `lagunite-flex` o `lagunite-grid` → `lagunite-containers` → `lagunite-decorators` / `lagunite-misc` → `lagunite-atoms` → `lagunite-molecules` → `lagunite-compounds` → `lagunite-organisms`; plantillas: `lagunite-patterns`.
-3. Complemento fijo del repo: [`docs/PROMPT_GUIDE.md`](docs/PROMPT_GUIDE.md) y cheatsheets bajo `src/css/**`.
+1. Si generás una **pantalla / sección / form / dashboard**: leer **`ai/skills/compose.md`** y **`ai/skills/contrast.md`**.
+2. Abrir **solo** las skills de capa necesarias (tokens → … → patterns).
+3. Tras generar o al auditar: ejecutar el **UI Validator** — [`ai/skills/validate.md`](ai/skills/validate.md) (orquesta `validate-structure` / `forms` / `night` / `a11y`). En Cursor: agente/skill **lagunite-ui-validator**.
+4. Complemento: [`docs/PROMPT_GUIDE.md`](docs/PROMPT_GUIDE.md) y cheatsheets bajo `src/css/**`.
 
 ## Reglas de salida
 
-- **Lagunite v2 solo utilidades** documentadas en skills o en `src/css`. Si falta una utilidad, indicar el hueco y la alternativa más cercana; no inventar nombres.
-- **Flex/grid:** `.row` / `.col` centran por defecto; para alinear a un costado usar `jc-fs`, `ai-fs` (o `ai-stretch`) cuando haga falta.
-- **Tema:** con `.night`, priorizar texto semántico (`color-text`, tokens); evitar grises de paleta (`.color-gray-*`) para cuerpo de texto salvo acento consciente.
-- **Docs generados:** tras cambios en CSS del framework, ejecutar `npm run docs:generate` (no editar a mano `docs/asJson` / `docs/asToon`).
+- **Lagunite v2 solo utilidades** documentadas en skills o en `src/css`. Si falta una, indicar hueco + alternativa; no inventar nombres.
+- **Flex/grid:** `.row` / `.col` centran por defecto → contenido con `jc-fs` / `ai-fs` (o `ai-s`). Center solo heroes/empty.
+- **Superficies:** `.bg` / `.card` / grays neutros — **no** `.bg-1`…`.bg-9` como paneles.
+- **Texto muted:** `.card-text` (light + night) — **nunca** `.color-text-alt` como subtítulo.
+- **Viewport full-height:** `minvh100`, no `minhp100`.
+- **Botones:** `.btn`, `.btn.alt`, `.btn.secondary`, `.btn.ghost`.
+- **Inputs:** native green/red only with `placeholder`; empty stays neutral; or use `.has-error` / `.has-success`.
+- **Tema:** `.night` en `body`; muted con `.card-text`, no gray oscuros sobre paneles oscuros.
+- **Docs generados:** tras CSS del framework → `npm run docs:generate`.
 
-## Alcance de esta regla
+## Alcance
 
-- HTML (demos, páginas) y hojas bajo `src/css/`. No sustituye revisiones humanas de diseño ni WCAG completas.
+- HTML (demos, POCs) y `src/css/`. No sustituye WCAG completa ni el track `ToDo-prod`.

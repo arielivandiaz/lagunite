@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="night">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Kinetic — Routines (Lagunite POC)</title>
+  <link rel="stylesheet" href="../dist/lagunite.css" />
+  <style>
+    /* Phone-form-factor wrapper */
+    body {
+      display: flex;
+      justify-content: center;
+      background: #000;
+    }
+    .app-frame {
+      width: 100%;
+      max-width: 430px;
+      min-height: 100vh;
+      padding-bottom: 90px; /* clear fixed bottom nav */
+      position: relative;
+    }
+
+    /* GAP: no toggle-chip with .active state — Lagunite chips don't track selection */
+    .filter-chip {
+      cursor: pointer;
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-m);
+      border: 1px solid var(--gray-700);
+      background: var(--gray-900);
+      color: var(--gray-400);
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-bold);
+      font-family: var(--font-sans);
+      white-space: nowrap;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .filter-chip.active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #000;
+    }
+
+    /* GAP: no .bottom-tab-nav organism */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 430px;
+      background: var(--gray-950, #0a0a0a);
+      border-top: 1px solid var(--gray-800);
+      padding: var(--space-3) var(--space-6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .bottom-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-1);
+      font-size: 0.65rem;
+      font-family: var(--font-sans);
+      font-weight: var(--font-weight-bold);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--gray-600);
+      cursor: pointer;
+    }
+    .bottom-nav-item.active {
+      background: var(--color-primary);
+      color: #000;
+      padding: var(--space-2) var(--space-6);
+      border-radius: var(--radius-full);
+    }
+    .bottom-nav-item .nav-icon {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* GAP: no .weekly-calendar organism */
+    .cal-day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-1);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-m);
+      font-family: var(--font-sans);
+      color: var(--gray-500);
+    }
+    .cal-day .cal-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; }
+    .cal-day .cal-num   { font-size: 1.1rem; font-weight: 800; }
+    .cal-day.active {
+      background: var(--color-primary);
+      color: #000;
+      border-radius: var(--radius-m);
+    }
+    .cal-day.active .cal-label { color: rgba(0,0,0,0.6); }
+
+    /* Workout image placeholder */
+    .workout-img {
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+      border-radius: var(--radius-m);
+      object-fit: cover;
+      background: var(--gray-800);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg">
+<div class="app-frame">
+
+  <!-- ── TOP NAV ── -->
+  <nav class="navbar navbar-sticky backdrop-blur" style="background: rgba(10,10,10,0.9);">
+    <button class="cursor-pointer color-text-alt border-none" style="background:none; font-size:1.3rem; padding:0;">☰</button>
+    <a class="navbar-brand color-primary font-weight-3 uppercase letter-spacing-xs font-s">Apex Kinetic</a>
+    <div class="avatar avatar-circle avatar-s bg-gray-700 color-text flex-center font-weight-3 font-xs">AR</div>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="padd-h padd-t-l padd-b">
+    <h1 class="font-fluid-xl font-weight-3 uppercase letter-spacing-xs lh-xs marg-b-xs">My Routines</h1>
+    <p class="font-xs uppercase letter-spacing-xxl color-text-alt">Elite Performance Protocols</p>
+  </div>
+
+  <!-- ── DISCOVERY FILTER CARD ── -->
+  <div class="padd-h marg-b-l">
+    <div class="bg-gray-800 border border-color-gray-700 border-r-l padd">
+
+      <!-- Card header -->
+      <div class="row jc-sb ai-c marg-b">
+        <span class="font-xs uppercase letter-spacing-l color-primary font-weight-3">Discovery Filter</span>
+        <span class="color-gray-600 font-s cursor-pointer">⚙</span>
+      </div>
+
+      <!-- Muscle Focus -->
+      <p class="font-xs uppercase letter-spacing-xl color-gray-500 marg-b-xs">Muscle Focus</p>
+      <div class="row jc-fs flex-wrap gap-s marg-b">
+        <button class="filter-chip active">Chest</button>
+        <button class="filter-chip">Legs</button>
+        <button class="filter-chip">Back</button>
+        <button class="filter-chip">Core</button>
+      </div>
+
+      <!-- Training Mode -->
+      <p class="font-xs uppercase letter-spacing-xl color-gray-500 marg-b-xs">Training Mode</p>
+      <div class="row jc-fs flex-wrap gap-s">
+        <button class="filter-chip">Strength</button>
+        <button class="filter-chip active">HIIT</button>
+        <button class="filter-chip">Endurance</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── WEEKLY SCHEDULE ── -->
+  <div class="padd-h marg-b-l">
+    <div class="row jc-sb ai-c marg-b-s">
+      <h2 class="font-weight-3 uppercase letter-spacing-xs">Weekly Schedule</h2>
+      <span class="point size-s bg-primary"></span>
+    </div>
+
+    <div class="bg-gray-800 border border-color-gray-700 border-r-l padd row jc-sb ai-c">
+      <div class="cal-day">
+        <span class="cal-label">M</span>
+        <span class="cal-num">12</span>
+      </div>
+      <div class="cal-day">
+        <span class="cal-label">T</span>
+        <span class="cal-num">13</span>
+      </div>
+      <div class="cal-day active">
+        <span class="cal-label">W</span>
+        <span class="cal-num">14</span>
+      </div>
+      <div class="cal-day">
+        <span class="cal-label">T</span>
+        <span class="cal-num">15</span>
+      </div>
+      <div class="cal-day">
+        <span class="cal-label">F</span>
+        <span class="cal-num">16</span>
+      </div>
+      <div class="cal-day">
+        <span class="cal-label">S</span>
+        <span class="cal-num">17</span>
+      </div>
+      <div class="cal-day">
+        <span class="cal-label">S</span>
+        <span class="cal-num">18</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WORKOUT LIST ── -->
+  <div class="padd-h">
+
+    <!-- Item 1 -->
+    <div class="row jc-fs ai-c gap padd-v border-b border-color-gray-900">
+      <div class="workout-img bg-gray-800">🏋️</div>
+      <div class="flex-1">
+        <span class="font-xs uppercase letter-spacing-l color-primary font-weight-3 d-block marg-b-xs">Strength</span>
+        <h3 class="font-weight-3 uppercase letter-spacing-xs lh-xs marg-b-xs">Hypertrophy<br>Chest</h3>
+        <div class="row jc-fs ai-c gap-s font-xs color-gray-500">
+          <span>⏱ 55min</span>
+          <span class="color-gray-600">·</span>
+          <span>⚡ 12 exercises</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="row jc-fs ai-c gap padd-v border-b border-color-gray-900">
+      <div class="workout-img bg-gray-800">🏃</div>
+      <div class="flex-1">
+        <span class="font-xs uppercase letter-spacing-l color-primary font-weight-3 d-block marg-b-xs">HIIT</span>
+        <h3 class="font-weight-3 uppercase letter-spacing-xs lh-xs marg-b-xs">Vortex<br>Metabolic</h3>
+        <div class="row jc-fs ai-c gap-s font-xs color-gray-500">
+          <span>⏱ 32min</span>
+          <span class="color-gray-600">·</span>
+          <span>⚡ 8 exercises</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="row jc-fs ai-c gap padd-v border-b border-color-gray-900">
+      <div class="workout-img bg-gray-800">🚴</div>
+      <div class="flex-1">
+        <span class="font-xs uppercase letter-spacing-l color-primary font-weight-3 d-block marg-b-xs">Endurance</span>
+        <h3 class="font-weight-3 uppercase letter-spacing-xs lh-xs marg-b-xs">Alpha Capacity</h3>
+        <div class="row jc-fs ai-c gap-s font-xs color-gray-500">
+          <span>⏱ 45min</span>
+          <span class="color-gray-600">·</span>
+          <span>⚡ 5 exercises</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="row jc-fs ai-c gap padd-v">
+      <div class="workout-img bg-gray-800">🔱</div>
+      <div class="flex-1">
+        <span class="font-xs uppercase letter-spacing-l color-primary font-weight-3 d-block marg-b-xs">Strength</span>
+        <h3 class="font-weight-3 uppercase letter-spacing-xs lh-xs marg-b-xs">Primal Chain</h3>
+        <div class="row jc-fs ai-c gap-s font-xs color-gray-500">
+          <span>⏱ 60min</span>
+          <span class="color-gray-600">·</span>
+          <span>⚡ 10 exercises</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /padd-h -->
+
+</div><!-- /app-frame -->
+
+<!-- ── BOTTOM TAB NAV ── -->
+<!-- GAP: no .bottom-tab-nav organism in Lagunite -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-item">
+    <span class="nav-icon">📋</span>
+    <span>Feed</span>
+  </div>
+  <div class="bottom-nav-item active">
+    <span class="nav-icon">✚</span>
+    <span>Routines</span>
+  </div>
+  <div class="bottom-nav-item">
+    <span class="nav-icon">📈</span>
+    <span>Activity</span>
+  </div>
+  <div class="bottom-nav-item">
+    <span class="nav-icon">👤</span>
+    <span>Profile</span>
+  </div>
+</nav>
+
+</body>
+</html>

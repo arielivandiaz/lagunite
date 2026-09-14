@@ -68,7 +68,7 @@
         "--red-900",
         "--red-950"
       ],
-      "cssRule": "/*== Neutral Palette (Gray) ==*/\n--gray-50: hsl(210, 20%, 95%)\n--gray-100: hsl(210, 18%, 89%)\n--gray-200: hsl(210, 15%, 82%)\n--gray-300: hsl(210, 13%, 70%)\n--gray-400: hsl(210, 11%, 60%)\n--gray-500: hsl(210, 9%, 50%)\n--gray-600: hsl(210, 10%, 40%)\n--gray-700: hsl(210, 12%, 30%)\n--gray-800: hsl(210, 15%, 20%)\n--gray-900: hsl(210, 20%, 10%)\n--gray-950: hsl(210, 25%, 5%)\n/*== Primary Palette (Blue) ==*/\n--blue-50: hsl(210, 90%, 96%)\n--blue-100: hsl(210, 90%, 90%)\n--blue-200: hsl(210, 90%, 80%)\n--blue-300: hsl(210, 90%, 70%)\n--blue-400: hsl(210, 90%, 60%)\n--blue-500: hsl(210, 90%, 50%)\n--blue-600: hsl(210, 85%, 40%)\n--blue-700: hsl(210, 80%, 30%)\n--blue-800: hsl(210, 80%, 25%)\n--blue-900: hsl(210, 85%, 20%)\n--blue-950: hsl(210, 90%, 15%)\n/*== Accent Palette: Green (Success) ==*/\n--green-50: hsl(140, 65%, 96%)\n--green-100: hsl(140, 65%, 90%)\n--green-200: hsl(140, 60%, 80%)\n--green-300: hsl(140, 60%, 70%)\n--green-400: hsl(140, 60%, 60%)\n--green-500: hsl(140, 60%, 45%)\n--green-600: hsl(140, 70%, 35%)\n--green-700: hsl(140, 75%, 28%)\n--green-800: hsl(140, 75%, 20%)\n--green-900: hsl(140, 80%, 15%)\n--green-950: hsl(140, 85%, 10%)\n/*== Accent Palette: Yellow (Warning) ==*/\n--yellow-50: hsl(45, 95%, 96%)\n--yellow-100: hsl(45, 95%, 90%)\n--yellow-200: hsl(45, 90%, 80%)\n--yellow-300: hsl(45, 90%, 70%)\n--yellow-400: hsl(45, 90%, 60%)\n--yellow-500: hsl(45, 90%, 50%)\n--yellow-600: hsl(42, 85%, 45%)\n--yellow-700: hsl(40, 80%, 38%)\n--yellow-800: hsl(38, 75%, 30%)\n--yellow-900: hsl(36, 70%, 22%)\n--yellow-950: hsl(35, 65%, 15%)\n/*== Accent Palette: Red (Danger) ==*/\n--red-50: hsl(0, 85%, 96%)\n--red-100: hsl(0, 85%, 90%)\n--red-200: hsl(0, 80%, 80%)\n--red-300: hsl(0, 80%, 70%)\n--red-400: hsl(0, 80%, 60%)\n--red-500: hsl(0, 75%, 50%)\n--red-600: hsl(0, 70%, 42%)\n--red-700: hsl(0, 75%, 35%)\n--red-800: hsl(0, 75%, 28%)\n--red-900: hsl(0, 80%, 20%)\n--red-950: hsl(0, 85%, 15%)",
+      "cssRule": "/* == Neutral Palette (Gray) == */\n--gray-50: hsl(210deg 20% 95%)\n--gray-100: hsl(210deg 18% 89%)\n--gray-200: hsl(210deg 15% 82%)\n--gray-300: hsl(210deg 13% 70%)\n--gray-400: hsl(210deg 11% 60%)\n--gray-500: hsl(210deg 9% 50%)\n--gray-600: hsl(210deg 10% 40%)\n--gray-700: hsl(210deg 12% 30%)\n--gray-800: hsl(210deg 15% 20%)\n--gray-900: hsl(210deg 20% 10%)\n--gray-950: hsl(210deg 25% 5%)\n/* == Primary Palette (Blue) == */\n--blue-50: hsl(210deg 90% 96%)\n--blue-100: hsl(210deg 90% 90%)\n--blue-200: hsl(210deg 90% 80%)\n--blue-300: hsl(210deg 90% 70%)\n--blue-400: hsl(210deg 90% 60%)\n--blue-500: hsl(210deg 90% 50%)\n--blue-600: hsl(210deg 85% 40%)\n--blue-700: hsl(210deg 80% 30%)\n--blue-800: hsl(210deg 80% 25%)\n--blue-900: hsl(210deg 85% 20%)\n--blue-950: hsl(210deg 90% 15%)\n/* == Accent Palette: Green (Success) == */\n--green-50: hsl(140deg 65% 96%)\n--green-100: hsl(140deg 65% 90%)\n--green-200: hsl(140deg 60% 80%)\n--green-300: hsl(140deg 60% 70%)\n--green-400: hsl(140deg 60% 60%)\n--green-500: hsl(140deg 60% 45%)\n--green-600: hsl(140deg 70% 35%)\n--green-700: hsl(140deg 75% 28%)\n--green-800: hsl(140deg 75% 20%)\n--green-900: hsl(140deg 80% 15%)\n--green-950: hsl(140deg 85% 10%)\n/* == Accent Palette: Yellow (Warning) == */\n--yellow-50: hsl(45deg 95% 96%)\n--yellow-100: hsl(45deg 95% 90%)\n--yellow-200: hsl(45deg 90% 80%)\n--yellow-300: hsl(45deg 90% 70%)\n--yellow-400: hsl(45deg 90% 60%)\n--yellow-500: hsl(45deg 90% 50%)\n--yellow-600: hsl(42deg 85% 45%)\n--yellow-700: hsl(40deg 80% 38%)\n--yellow-800: hsl(38deg 75% 30%)\n--yellow-900: hsl(36deg 70% 22%)\n--yellow-950: hsl(35deg 65% 15%)\n/* == Accent Palette: Red (Danger) == */\n--red-50: hsl(0deg 85% 96%)\n--red-100: hsl(0deg 85% 90%)\n--red-200: hsl(0deg 80% 80%)\n--red-300: hsl(0deg 80% 70%)\n--red-400: hsl(0deg 80% 60%)\n--red-500: hsl(0deg 75% 50%)\n--red-600: hsl(0deg 70% 42%)\n--red-700: hsl(0deg 75% 35%)\n--red-800: hsl(0deg 75% 28%)\n--red-900: hsl(0deg 80% 20%)\n--red-950: hsl(0deg 85% 15%)",
       "responsive": false,
       "description": "|--------------------------------------------------------------------------\r\n| Raw Color Palette @ID: #00-01-01\r\n|--------------------------------------------------------------------------\r\n|\r\n| This file contains the raw color options for the design system.\r\n| These variables represent the \"what we have\" and should rarely\r\n| be used directly in components.\r\n|"
     }
@@ -76,223 +76,223 @@
   "customProperties": [
     {
       "property": "--gray-50",
-      "value": "hsl(210, 20%, 95%)"
+      "value": "hsl(210deg 20% 95%)"
     },
     {
       "property": "--gray-100",
-      "value": "hsl(210, 18%, 89%)"
+      "value": "hsl(210deg 18% 89%)"
     },
     {
       "property": "--gray-200",
-      "value": "hsl(210, 15%, 82%)"
+      "value": "hsl(210deg 15% 82%)"
     },
     {
       "property": "--gray-300",
-      "value": "hsl(210, 13%, 70%)"
+      "value": "hsl(210deg 13% 70%)"
     },
     {
       "property": "--gray-400",
-      "value": "hsl(210, 11%, 60%)"
+      "value": "hsl(210deg 11% 60%)"
     },
     {
       "property": "--gray-500",
-      "value": "hsl(210, 9%, 50%)"
+      "value": "hsl(210deg 9% 50%)"
     },
     {
       "property": "--gray-600",
-      "value": "hsl(210, 10%, 40%)"
+      "value": "hsl(210deg 10% 40%)"
     },
     {
       "property": "--gray-700",
-      "value": "hsl(210, 12%, 30%)"
+      "value": "hsl(210deg 12% 30%)"
     },
     {
       "property": "--gray-800",
-      "value": "hsl(210, 15%, 20%)"
+      "value": "hsl(210deg 15% 20%)"
     },
     {
       "property": "--gray-900",
-      "value": "hsl(210, 20%, 10%)"
+      "value": "hsl(210deg 20% 10%)"
     },
     {
       "property": "--gray-950",
-      "value": "hsl(210, 25%, 5%)"
+      "value": "hsl(210deg 25% 5%)"
     },
     {
       "property": "--blue-50",
-      "value": "hsl(210, 90%, 96%)"
+      "value": "hsl(210deg 90% 96%)"
     },
     {
       "property": "--blue-100",
-      "value": "hsl(210, 90%, 90%)"
+      "value": "hsl(210deg 90% 90%)"
     },
     {
       "property": "--blue-200",
-      "value": "hsl(210, 90%, 80%)"
+      "value": "hsl(210deg 90% 80%)"
     },
     {
       "property": "--blue-300",
-      "value": "hsl(210, 90%, 70%)"
+      "value": "hsl(210deg 90% 70%)"
     },
     {
       "property": "--blue-400",
-      "value": "hsl(210, 90%, 60%)"
+      "value": "hsl(210deg 90% 60%)"
     },
     {
       "property": "--blue-500",
-      "value": "hsl(210, 90%, 50%)"
+      "value": "hsl(210deg 90% 50%)"
     },
     {
       "property": "--blue-600",
-      "value": "hsl(210, 85%, 40%)"
+      "value": "hsl(210deg 85% 40%)"
     },
     {
       "property": "--blue-700",
-      "value": "hsl(210, 80%, 30%)"
+      "value": "hsl(210deg 80% 30%)"
     },
     {
       "property": "--blue-800",
-      "value": "hsl(210, 80%, 25%)"
+      "value": "hsl(210deg 80% 25%)"
     },
     {
       "property": "--blue-900",
-      "value": "hsl(210, 85%, 20%)"
+      "value": "hsl(210deg 85% 20%)"
     },
     {
       "property": "--blue-950",
-      "value": "hsl(210, 90%, 15%)"
+      "value": "hsl(210deg 90% 15%)"
     },
     {
       "property": "--green-50",
-      "value": "hsl(140, 65%, 96%)"
+      "value": "hsl(140deg 65% 96%)"
     },
     {
       "property": "--green-100",
-      "value": "hsl(140, 65%, 90%)"
+      "value": "hsl(140deg 65% 90%)"
     },
     {
       "property": "--green-200",
-      "value": "hsl(140, 60%, 80%)"
+      "value": "hsl(140deg 60% 80%)"
     },
     {
       "property": "--green-300",
-      "value": "hsl(140, 60%, 70%)"
+      "value": "hsl(140deg 60% 70%)"
     },
     {
       "property": "--green-400",
-      "value": "hsl(140, 60%, 60%)"
+      "value": "hsl(140deg 60% 60%)"
     },
     {
       "property": "--green-500",
-      "value": "hsl(140, 60%, 45%)"
+      "value": "hsl(140deg 60% 45%)"
     },
     {
       "property": "--green-600",
-      "value": "hsl(140, 70%, 35%)"
+      "value": "hsl(140deg 70% 35%)"
     },
     {
       "property": "--green-700",
-      "value": "hsl(140, 75%, 28%)"
+      "value": "hsl(140deg 75% 28%)"
     },
     {
       "property": "--green-800",
-      "value": "hsl(140, 75%, 20%)"
+      "value": "hsl(140deg 75% 20%)"
     },
     {
       "property": "--green-900",
-      "value": "hsl(140, 80%, 15%)"
+      "value": "hsl(140deg 80% 15%)"
     },
     {
       "property": "--green-950",
-      "value": "hsl(140, 85%, 10%)"
+      "value": "hsl(140deg 85% 10%)"
     },
     {
       "property": "--yellow-50",
-      "value": "hsl(45, 95%, 96%)"
+      "value": "hsl(45deg 95% 96%)"
     },
     {
       "property": "--yellow-100",
-      "value": "hsl(45, 95%, 90%)"
+      "value": "hsl(45deg 95% 90%)"
     },
     {
       "property": "--yellow-200",
-      "value": "hsl(45, 90%, 80%)"
+      "value": "hsl(45deg 90% 80%)"
     },
     {
       "property": "--yellow-300",
-      "value": "hsl(45, 90%, 70%)"
+      "value": "hsl(45deg 90% 70%)"
     },
     {
       "property": "--yellow-400",
-      "value": "hsl(45, 90%, 60%)"
+      "value": "hsl(45deg 90% 60%)"
     },
     {
       "property": "--yellow-500",
-      "value": "hsl(45, 90%, 50%)"
+      "value": "hsl(45deg 90% 50%)"
     },
     {
       "property": "--yellow-600",
-      "value": "hsl(42, 85%, 45%)"
+      "value": "hsl(42deg 85% 45%)"
     },
     {
       "property": "--yellow-700",
-      "value": "hsl(40, 80%, 38%)"
+      "value": "hsl(40deg 80% 38%)"
     },
     {
       "property": "--yellow-800",
-      "value": "hsl(38, 75%, 30%)"
+      "value": "hsl(38deg 75% 30%)"
     },
     {
       "property": "--yellow-900",
-      "value": "hsl(36, 70%, 22%)"
+      "value": "hsl(36deg 70% 22%)"
     },
     {
       "property": "--yellow-950",
-      "value": "hsl(35, 65%, 15%)"
+      "value": "hsl(35deg 65% 15%)"
     },
     {
       "property": "--red-50",
-      "value": "hsl(0, 85%, 96%)"
+      "value": "hsl(0deg 85% 96%)"
     },
     {
       "property": "--red-100",
-      "value": "hsl(0, 85%, 90%)"
+      "value": "hsl(0deg 85% 90%)"
     },
     {
       "property": "--red-200",
-      "value": "hsl(0, 80%, 80%)"
+      "value": "hsl(0deg 80% 80%)"
     },
     {
       "property": "--red-300",
-      "value": "hsl(0, 80%, 70%)"
+      "value": "hsl(0deg 80% 70%)"
     },
     {
       "property": "--red-400",
-      "value": "hsl(0, 80%, 60%)"
+      "value": "hsl(0deg 80% 60%)"
     },
     {
       "property": "--red-500",
-      "value": "hsl(0, 75%, 50%)"
+      "value": "hsl(0deg 75% 50%)"
     },
     {
       "property": "--red-600",
-      "value": "hsl(0, 70%, 42%)"
+      "value": "hsl(0deg 70% 42%)"
     },
     {
       "property": "--red-700",
-      "value": "hsl(0, 75%, 35%)"
+      "value": "hsl(0deg 75% 35%)"
     },
     {
       "property": "--red-800",
-      "value": "hsl(0, 75%, 28%)"
+      "value": "hsl(0deg 75% 28%)"
     },
     {
       "property": "--red-900",
-      "value": "hsl(0, 80%, 20%)"
+      "value": "hsl(0deg 80% 20%)"
     },
     {
       "property": "--red-950",
-      "value": "hsl(0, 85%, 15%)"
+      "value": "hsl(0deg 85% 15%)"
     }
   ]
 }

@@ -304,7 +304,7 @@
         "width",
         "padding"
       ],
-      "cssRule": "min-width: 0px\nwidth: fit-content\npadding: var(--space-3)",
+      "cssRule": "min-width: 0\nwidth: fit-content\npadding: var(--space-3)",
       "responsive": false,
       "description": "Button Sizes"
     },
@@ -861,7 +861,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-primary) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-primary) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -874,7 +874,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-secondary) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-secondary) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -887,7 +887,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-tertiary) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-tertiary) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -900,7 +900,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-success) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-success) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -913,7 +913,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-warning) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-warning) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -926,7 +926,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow: var(--color-error) 0px 6px 12px -3px",
+      "cssRule": "box-shadow: var(--color-error) 0 6px 12px -3px",
       "responsive": false,
       "description": "Button States"
     },
@@ -970,7 +970,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgba(0,0,0,0.2)",
+      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgb(0 0 0 / 20%)",
       "responsive": false,
       "description": "Button States"
     },
@@ -984,7 +984,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgba(0,0,0,0.2)",
+      "cssRule": "background: var(--color-primary-dark)\nbox-shadow: inset 0 2px 4px rgb(0 0 0 / 20%)",
       "responsive": false,
       "description": "Button States"
     },
@@ -1092,7 +1092,7 @@
       "properties": [
         "border-right"
       ],
-      "cssRule": "border-right: 1px solid rgba(255, 255, 255, 0.2)",
+      "cssRule": "border-right: 1px solid rgb(255 255 255 / 20%)",
       "responsive": false,
       "description": "Button Groups"
     },
@@ -1163,7 +1163,7 @@
       "properties": [
         "border-bottom"
       ],
-      "cssRule": "border-bottom: 1px solid rgba(255, 255, 255, 0.2)",
+      "cssRule": "border-bottom: 1px solid rgb(255 255 255 / 20%)",
       "responsive": false,
       "description": "Button Groups"
     }

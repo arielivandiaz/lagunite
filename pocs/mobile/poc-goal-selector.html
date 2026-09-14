@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Selector - Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+  <!-- Top bar: back arrow -->
+  <div class="row wp100 jc-fs padd-h-l">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+  </div>
+
+  <!-- Main content: heading + options -->
+  <div class="col ai-c gap-l wp90 flex-1 jc-c">
+
+    <div class="col ai-c gap-xs wp100">
+      <h2 class="marg-0 ta-c">What is Your Goal?</h2>
+      <p class="font-s opacity-70 ta-c marg-0" style="max-width: 280px">
+        You can choose more than one. Don't worry, you can always change it later
+      </p>
+    </div>
+
+    <!-- Goal options -->
+    <div class="col gap-s wp100">
+
+      <label class="selectable-option">
+        <input type="checkbox" checked>
+        <span class="selectable-option-label">Get Fitter</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+      <label class="selectable-option">
+        <input type="checkbox" checked>
+        <span class="selectable-option-label">Gain Weight</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+      <label class="selectable-option">
+        <input type="checkbox">
+        <span class="selectable-option-label">Lose Weight</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+      <label class="selectable-option">
+        <input type="checkbox" checked>
+        <span class="selectable-option-label">Building Muscles</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+      <label class="selectable-option">
+        <input type="checkbox">
+        <span class="selectable-option-label">Improving Endurance</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+      <label class="selectable-option">
+        <input type="checkbox">
+        <span class="selectable-option-label">Others</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+
+    </div>
+
+  </div>
+
+  <!-- Footer: Back + Continue -->
+  <div class="row gap-s padd-h-l wp100">
+    <button class="btn alt border-r-full flex-1 size-l" type="button">Back</button>
+    <button class="btn primary border-r-full flex-1 size-l" type="button">Continue</button>
+  </div>
+
+</div>
+
+</body>
+</html>

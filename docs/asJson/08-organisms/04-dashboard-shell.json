@@ -448,7 +448,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": "background: rgba(255, 255, 255, 0.08)",
+      "cssRule": "background: rgb(255 255 255 / 8%)",
       "responsive": false,
       "description": "==========\r\n   08-organisms / 04-dashboard-shell.css\r\n   Dashboard app shell: top navbar, sidebar drawer, content area, overlay.\r\n   Breakpoint: 900px for sidebar behavior.\r\n   =========="
     },

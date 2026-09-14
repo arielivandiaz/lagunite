@@ -579,7 +579,7 @@
       "properties": [
         "border-radius"
       ],
-      "cssRule": "border-radius: 30% 70% 30% 70%",
+      "cssRule": "border-radius: 30% 70%",
       "responsive": false,
       "description": "Blob Figure"
     },
@@ -592,7 +592,7 @@
       "properties": [
         "border-radius"
       ],
-      "cssRule": "border-radius: 50% 20% 50% 20%",
+      "cssRule": "border-radius: 50% 20%",
       "responsive": false,
       "description": "Blob Figure"
     },
@@ -605,7 +605,7 @@
       "properties": [
         "border-radius"
       ],
-      "cssRule": "border-radius: 60% 40% 40% 60%/50% 40% 65% 55%",
+      "cssRule": "border-radius: 60% 40% 40% 60% / 50% 40% 65% 55%",
       "responsive": false,
       "description": "Blob Figure"
     },

@@ -10,7 +10,7 @@ content[15]:
     id: #07-02-01
     category: null
     properties[10]: position,inset,background,display,align-items,justify-content,z-index,opacity,pointer-events,transition
-    cssRule: "position: fixed\ninset: 0\nbackground: rgba(0, 0, 0, 0.5)\ndisplay: flex\nalign-items: center\njustify-content: center\nz-index: 1000\nopacity: 0\npointer-events: none\ntransition: opacity 0.3s"
+    cssRule: "position: fixed\ninset: 0\nbackground: rgb(0 0 0 / 50%)\ndisplay: flex\nalign-items: center\njustify-content: center\nz-index: 1000\nopacity: 0\npointer-events: none\ntransition: opacity 0.3s"
     responsive: false
     description: ── Modal overlay ────────────────────────────────────────────────────────
   - type: selector

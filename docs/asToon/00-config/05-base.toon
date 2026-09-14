@@ -2,15 +2,15 @@ folder: 00-config
 file: 05-base.css
 lastUpdated: 2026-04-17
 hasResponsive: false
-totalSelectors: 47
-content[47]:
+totalSelectors: 48
+content[48]:
   - type: selector
     selectorType: complex
     selector: *
     id: #00-05-01
     category: null
     properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
-    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)"
     responsive: false
     description: ** RESET  **
   - type: selector
@@ -19,7 +19,7 @@ content[47]:
     id: #00-05-01
     category: null
     properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
-    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)"
     responsive: false
     description: ** RESET  **
   - type: selector
@@ -28,7 +28,7 @@ content[47]:
     id: #00-05-01
     category: null
     properties[5]: margin,padding,outline,box-sizing,"-webkit-tap-highlight-color"
-    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+    cssRule: "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)"
     responsive: false
     description: ** RESET  **
   - type: selector
@@ -132,11 +132,29 @@ content[47]:
     description: ** Static **
   - type: selector
     selectorType: pseudo
-    selector: "header:not(.navbar):not(.doc-navbar-overlay):not(.topbar)"
+    selector: "header:not(.navbar"
     id: #00-05-02
     category: null
     properties[1]: margin
-    cssRule: "margin: 5vh 0 3vh 0"
+    cssRule: "margin: 5vh 0 3vh"
+    responsive: false
+    description: ** Static **
+  - type: selector
+    selectorType: class
+    selector: .doc-navbar-overlay
+    id: #00-05-02
+    category: null
+    properties[1]: margin
+    cssRule: "margin: 5vh 0 3vh"
+    responsive: false
+    description: ** Static **
+  - type: selector
+    selectorType: class
+    selector: .topbar)
+    id: #00-05-02
+    category: null
+    properties[1]: margin
+    cssRule: "margin: 5vh 0 3vh"
     responsive: false
     description: ** Static **
   - type: selector
@@ -144,17 +162,8 @@ content[47]:
     selector: body
     id: #00-05-03
     category: Tags
-    properties[3]: width,height,text-align
-    cssRule: "width: 100%\nheight: 100%\ntext-align: center"
-    responsive: false
-    description: ** Static **
-  - type: selector
-    selectorType: element
-    selector: body
-    id: #00-05-03
-    category: Tags
-    properties[3]: background,color,transition
-    cssRule: "background: var(--color-bg)\ncolor: var(--color-text-base)\ntransition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease"
+    properties[6]: width,height,text-align,background,color,transition
+    cssRule: "width: 100%\nheight: 100%\ntext-align: center\nbackground: var(--color-bg)\ncolor: var(--color-text-base)\ntransition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease"
     responsive: false
     description: ** Static **
   - type: selector
@@ -217,7 +226,7 @@ content[47]:
     id: #00-05-03
     category: Tags
     properties[5]: border-left,font-style,text-align,margin,padding
-    cssRule: "border-left: solid 4px var(--color-primary)\nfont-style: italic\ntext-align: left\nmargin: 0 0 2rem 0\npadding: 0.8rem 0.5rem 0.8rem 1.5rem"
+    cssRule: "border-left: solid 4px var(--color-primary)\nfont-style: italic\ntext-align: left\nmargin: 0 0 2rem\npadding: 0.8rem 0.5rem 0.8rem 1.5rem"
     responsive: false
     description: ** Static **
   - type: selector
@@ -235,7 +244,7 @@ content[47]:
     id: #00-05-03
     category: Tags
     properties[4]: "-webkit-overflow-scrolling",font-family,font-size,margin
-    cssRule: "-webkit-overflow-scrolling: touch\nfont-family: monospace\nfont-size: 0.9em\nmargin: 0 0 2rem 0"
+    cssRule: "-webkit-overflow-scrolling: touch\nfont-family: monospace\nfont-size: 0.9em\nmargin: 0 0 2rem"
     responsive: false
     description: ** Static **
   - type: selector

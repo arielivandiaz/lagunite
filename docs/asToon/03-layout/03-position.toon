@@ -162,8 +162,8 @@ content[128]:
     selector: .pa-full
     id: #03-03-02
     category: null
-    properties[4]: bottom,top,right,left
-    cssRule: "bottom: 0\ntop: 0\nright: 0\nleft: 0"
+    properties[1]: inset
+    cssRule: "inset: 0"
     responsive: true
     description: ── Absolute position shortcuts ──────────────────────────────────────────
   - type: selector
@@ -378,8 +378,8 @@ content[128]:
     selector: .pf-full
     id: #03-03-04
     category: null
-    properties[4]: bottom,top,right,left
-    cssRule: "bottom: 0\ntop: 0\nright: 0\nleft: 0"
+    properties[1]: inset
+    cssRule: "inset: 0"
     responsive: true
     description: ── Fixed position shortcuts ───────────────────────────────────────────────
   - type: selector
@@ -684,8 +684,8 @@ content[128]:
     selector: .float-c
     id: #03-03-07
     category: null
-    properties[4]: bottom,top,left,right
-    cssRule: "bottom: 0\ntop: 0\nleft: 0\nright: 0"
+    properties[1]: inset
+    cssRule: "inset: 0"
     responsive: false
     description: ── Float positioning in .rel container ──────────────────────────────────
   - type: selector

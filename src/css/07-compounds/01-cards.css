@@ -59,6 +59,11 @@
   font-size: var(--font-size-base);
 }
 
+.night .card-text {
+  /* gray-600 is too dark on .night .card (gray-800) */
+  color: var(--gray-400);
+}
+
 /* @ID: #07-01-03 */
 
 /* ── Card surface variants ──────────────────────────────────────────────── */
@@ -126,6 +131,44 @@
 }
 
 /* @ID: #07-01-06 */
+
+/* ── Card accent — colored left border only ─────────────────────────────── */
+/*
+  @title Card accent variants
+  @desc  Highlights only the left border with a semantic or palette color.
+         Combine with .card. The other three borders become transparent.
+  @example
+    <div class="card card-accent-primary"><div class="card-body">...</div></div>
+    <div class="card card-accent-success"><div class="card-body">...</div></div>
+  @classes
+    .card-accent-primary   | left border in primary color
+    .card-accent-secondary | left border in secondary color
+    .card-accent-tertiary  | left border in tertiary color
+    .card-accent-success   | left border in success color
+    .card-accent-warning   | left border in warning color
+    .card-accent-error     | left border in error color
+*/
+
+.card-accent-primary,
+.card-accent-secondary,
+.card-accent-tertiary,
+.card-accent-success,
+.card-accent-warning,
+.card-accent-error {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-width: 4px;
+}
+
+.card-accent-primary   { border-left-color: var(--color-primary); }
+.card-accent-secondary { border-left-color: var(--color-secondary); }
+.card-accent-tertiary  { border-left-color: var(--color-tertiary); }
+.card-accent-success   { border-left-color: var(--color-success); }
+.card-accent-warning   { border-left-color: var(--color-warning); }
+.card-accent-error     { border-left-color: var(--color-error); }
+
+/* @ID: #07-01-07 */
 
 /* ── Card horizontal layout & groups ────────────────────────────────────── */
 

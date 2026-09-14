@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill Profile - Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+  <style>
+    /* GAP: avatar edit badge — small circular button overlaying avatar bottom-right */
+    .avatar-edit {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: white;
+      border: 2px solid var(--color-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    /* GAP: phone input with flag prefix — needs .input-group variant or dedicated molecule */
+    .phone-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .phone-row .phone-prefix {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+      flex-shrink: 0;
+      font-size: var(--font-size-s);
+      color: var(--color-text-base);
+      padding: var(--space-3) 0;
+      border-bottom: var(--border-width-s) solid var(--input-border);
+    }
+    .phone-row input[type="tel"] {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+  <!-- Top bar: back arrow -->
+  <div class="row wp100 jc-fs padd-h-l">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="col ai-c gap-l wp90 flex-1 jc-fs padd-v-l">
+
+    <div class="col ai-c gap-xs wp100">
+      <h2 class="marg-0 ta-c">Fill Your Profile</h2>
+      <p class="font-s opacity-70 ta-c marg-0" style="max-width: 280px">
+        Don't worry, you can always change it later, or you can skip it for now
+      </p>
+    </div>
+
+    <!-- Avatar with edit button -->
+    <div class="pos-relative marg-v-s">
+      <div class="avatar avatar-xl avatar-placeholder">&#128100;</div>
+      <button class="avatar-edit" type="button" aria-label="Change photo">&#9998;</button>
+    </div>
+
+    <!-- Profile form -->
+    <div class="col gap-xs wp100">
+      <div class="form-group">
+        <input type="text" placeholder="Full Name">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Nickname">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <div class="phone-row">
+          <span class="phone-prefix">&#127482;&#127480; +1</span>
+          <input type="tel" placeholder="Phone Number">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer: Skip + Start -->
+  <div class="row gap-s padd-h-l wp100">
+    <button class="btn alt border-r-full flex-1 size-l" type="button">Skip</button>
+    <button class="btn primary border-r-full flex-1 size-l" type="button">Start</button>
+  </div>
+
+</div>
+
+</body>
+</html>

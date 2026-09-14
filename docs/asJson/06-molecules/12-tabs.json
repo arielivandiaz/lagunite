@@ -380,7 +380,7 @@
         "color",
         "background"
       ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: rgba(255, 255, 255, 0.08)",
+      "cssRule": "color: var(--color-text-alt)\nbackground: rgb(255 255 255 / 8%)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     },

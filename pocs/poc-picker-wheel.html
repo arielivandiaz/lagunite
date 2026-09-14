@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POC · picker-wheel</title>
+  <!-- CSS + JS ya viven en el framework:
+         src/css/06-molecules/14-picker-wheel.css
+         src/js/06-molecules/14-picker-wheel.js
+       El bundle auto-inicializa todos los `.picker-wheel` del DOM. -->
+  <link rel="stylesheet" href="../dist/lagunite.css" />
+</head>
+
+<body class="bg padd-l">
+
+  <header class="row jc-sb ai-c marg-b-l gap-l">
+    <div class="col gap-xs">
+      <h1 class="font-xl">POC · <code>.picker-wheel</code></h1>
+      <p class="font-s opacity-70" style="max-width: 640px">
+        Wheel picker tipo iOS. Valores declarados en <code>data-values</code> — continuos o arbitrarios.
+        Soporta click, rueda del mouse, drag y flechas opcionales.
+      </p>
+    </div>
+    <button id="theme-toggle" class="btn" type="button">🌙 Modo oscuro</button>
+  </header>
+
+  <section class="grid dgrid-cols-3 gap-xl">
+
+    <!-- 1. Horizontal continuo · sin flechas · sin readout -->
+    <div class="bordered col ai-c jc-fs gap-l padd-l" style="min-height: 460px">
+      <div class="col ai-c gap-xs">
+        <h2 class="font-l">What is Your Weight?</h2>
+        <p class="font-s opacity-70 ta-c">Weight in kg. Don't worry, you can always change it later</p>
+      </div>
+
+      <div class="picker-wheel col ai-c jc-c gap-s"
+           data-values="50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80"
+           data-value="65">
+        <div class="picker-wheel-track row ai-c jc-c gap-l"></div>
+        <div class="picker-wheel-indicator triangle size-s"></div>
+      </div>
+    </div>
+
+    <!-- 2. Vertical continuo · flechas arriba/abajo · con readout -->
+    <div class="bordered col ai-c jc-fs gap-s padd-l" style="min-height: 460px">
+      <div class="col ai-c gap-xs">
+        <h2 class="font-l">What is Your Height?</h2>
+        <p class="font-s opacity-70 ta-c">Height in cm. Con flechas opcionales.</p>
+      </div>
+
+      <div class="picker-wheel picker-wheel-v col ai-c jc-c gap-s"
+           data-values="150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190"
+           data-value="175">
+        <button class="picker-wheel-btn picker-wheel-prev" type="button" aria-label="Valor anterior">
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><polyline points="3.5,9 7,5.5 10.5,9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="picker-wheel-track col ai-c jc-c"></div>
+        <button class="picker-wheel-btn picker-wheel-next" type="button" aria-label="Valor siguiente">
+          <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><polyline points="3.5,5 7,8.5 10.5,5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <p class="picker-readout" data-readout>valor: <b>175</b> cm</p>
+    </div>
+
+    <!-- 3. Horizontal NO continuo · flechas izq/der · con readout -->
+    <div class="bordered col ai-c jc-fs gap-l padd-l" style="min-height: 460px">
+      <div class="col ai-c gap-xs">
+        <h2 class="font-l">Shoe size (EU)</h2>
+        <p class="font-s opacity-70 ta-c">Valores arbitrarios: <code>36, 37.5, 39, 40, 41.5, 43, 45</code></p>
+      </div>
+
+      <div class="picker-wheel col ai-c jc-c gap-s"
+           data-values="36,37.5,39,40,41.5,43,45"
+           data-value="40">
+        <div class="picker-wheel-row row ai-c jc-c gap-s">
+          <button class="picker-wheel-btn picker-wheel-prev" type="button" aria-label="Valor anterior">
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><polyline points="9,3.5 5.5,7 9,10.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="picker-wheel-track row ai-c jc-c gap-l"></div>
+          <button class="picker-wheel-btn picker-wheel-next" type="button" aria-label="Valor siguiente">
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><polyline points="5,3.5 8.5,7 5,10.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="picker-wheel-indicator triangle size-s"></div>
+      </div>
+
+      <p class="picker-readout" data-readout>valor: <b>40</b></p>
+    </div>
+
+  </section>
+
+  <footer class="row jc-c gap-s marg-t-xl">
+    <button class="btn" type="button">Back</button>
+    <button class="btn primary" type="button">Continue</button>
+  </footer>
+
+  <!-- Estilos exclusivos de esta POC (readout, layout de demo) — no son del componente -->
+  <style>
+    .picker-readout { font-family: var(--font-mono); font-size: var(--font-size-s); }
+    .picker-readout b {
+      color: var(--color-primary);
+      font-size: var(--font-size-l);
+      display: inline-block;
+      min-width: 4ch;
+      text-align: center;
+    }
+  </style>
+
+  <script type="module">
+    import '../dist/lagunite.js';
+
+    // Page-specific: readouts + toggle de tema
+    document.querySelectorAll('.picker-wheel').forEach(el => {
+      const readout = el.parentElement.querySelector('[data-readout] b');
+      if (readout) el.addEventListener('change', e => { readout.textContent = e.detail.value; });
+    });
+
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      const isNight = document.body.classList.toggle('night');
+      toggle.textContent = isNight ? '☀️ Modo claro' : '🌙 Modo oscuro';
+    });
+  </script>
+</body>
+</html>

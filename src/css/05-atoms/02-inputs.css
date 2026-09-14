@@ -398,34 +398,40 @@ textarea.input-minimal {
 /* @ID: #05-02-05 */
 
 /* ── Validation states (:invalid / :valid) ──────────────────────────────── */
+/*
+ * Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is
+ * always true, so empty optional fields matched :valid and turned green.
+ * With placeholder: empty → placeholder shown → neutral; filled valid → green;
+ * filled invalid → red.
+ */
 
-:is(.input, .input-field, .input-underline, .input-minimal):invalid:not(:placeholder-shown) {
+:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:invalid:not(:placeholder-shown) {
   border-color: var(--color-error);
   box-shadow: none;
 }
 
-.input-underline:invalid:not(:placeholder-shown) {
+.input-underline[placeholder]:invalid:not(:placeholder-shown) {
   border-bottom-color: var(--color-error);
 }
 
-:is(.input, .input-field, .input-underline, .input-minimal):invalid:not(:placeholder-shown):focus {
+:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:invalid:not(:placeholder-shown):focus {
   box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25);
 }
 
-.input-field:invalid:not(:placeholder-shown) ~ .input-label {
+.input-field[placeholder]:invalid:not(:placeholder-shown) ~ .input-label {
   color: var(--color-error);
 }
 
-:is(.input, .input-field, .input-underline, .input-minimal):valid:not(:placeholder-shown) {
+:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:valid:not(:placeholder-shown) {
   border-color: var(--color-success);
   box-shadow: none;
 }
 
-.input-underline:valid:not(:placeholder-shown) {
+.input-underline[placeholder]:valid:not(:placeholder-shown) {
   border-bottom-color: var(--color-success);
 }
 
-.input-field:valid:not(:placeholder-shown) ~ .input-label {
+.input-field[placeholder]:valid:not(:placeholder-shown) ~ .input-label {
   color: var(--color-success);
 }
 

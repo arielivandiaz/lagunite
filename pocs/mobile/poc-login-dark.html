@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Dark Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+
+
+
+  <!-- Main content -->
+  <div class="col ai-c gap-l wp90 flex-1 jc-c">
+
+      <div class="row wp100 jc-fs">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+  </div>
+
+    <!-- Heading -->
+    <div class="ta-lf wp100 ">
+      <h1 class="marg-0">Create your<br>Account</h1>
+    </div>
+
+    <!-- Form -->
+    <form class="col gap-s wp100" bg-1 onsubmit="return false;">
+
+      <input type="email" class="input border-r" placeholder="Email" autocomplete="email">
+
+      <input type="password" class="input border-r" placeholder="Password" autocomplete="new-password" id="pwd">
+
+      <!-- Remember me -->
+      <div class="row jc-fe ai-c">
+        <label class="checkbox font-s color-gray-400">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Remember me
+        </label>
+      </div>
+
+      <!-- Sign up button -->
+      <button type="submit" class="btn size-l border-r-l wp100">
+        Sign up
+      </button>
+
+    </form>
+
+    <!-- Divider -->
+    <p class="font-s color-gray-500 ta-c marg-0">or continue with</p>
+
+    <!-- Social buttons -->
+    <div class="row gap jc-c">
+      <button class="btn secondary icon border-r-circle" aria-label="Facebook">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+      </button>
+      <button class="btn secondary icon border-r-circle" aria-label="Twitter">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </button>
+      <button class="btn secondary icon border-r-circle" aria-label="Google">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09a6.1 6.1 0 0 1 0-4.17V7.07H2.18A10.01 10.01 0 0 0 2 12c0 1.61.39 3.14 1.07 4.49z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      </button>
+      <button class="btn secondary icon border-r-circle" aria-label="Apple">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.52-3.23 0-1.44.62-2.2.44-3.06-.4C3.79 16.17 4.36 9.53 8.74 9.28c1.3.07 2.2.75 2.96.8.96-.2 1.88-.92 3.16-.83 1.07.08 2.05.51 2.66 1.38-2.44 1.46-1.86 4.67.53 5.57-.62 1.64-1.43 3.26-3 4.08zM12.03 9.2C11.88 7.1 13.6 5.36 15.6 5.2c.28 2.34-2.14 4.09-3.57 4z"/></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Bottom link -->
+  <div class="ta-c padd-v-s">
+    <span class="font-s color-gray-500">You don't have an account?</span>
+    <a href="#" class="font-s color-primary bold marg-lf-xs">Sign up</a>
+  </div>
+
+</div>
+
+<script>
+  function togglePwd() {
+    const p = document.getElementById('pwd');
+    p.type = p.type === 'password' ? 'text' : 'password';
+  }
+</script>
+</body>
+</html>

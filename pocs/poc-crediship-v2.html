@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es" class="night">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrediShip — Preview Landing v2 (Lagunite)</title>
+  <link rel="stylesheet" href="../dist/lagunite.css" />
+  <style>
+    /* Theme: override primary → emerald green */
+    :root {
+      --color-primary: #10b981;
+      --color-primary-dark: #059669;
+      --color-primary-light: #34d399;
+      --bg-primary: #10b981; /* .btn uses --bg-primary for background */
+    }
+    /* GAP: no min-height utility for visual placeholders */
+    .visual-placeholder { min-height: 360px; }
+    /* GAP: no semi-transparent bg + backdrop-blur combo class — navbar needs manual opacity */
+    .navbar-blur-bg { background: rgba(10, 10, 10, 0.92); }
+  </style>
+</head>
+<body class="bg">
+
+<!-- ── NAV ── -->
+<nav class="navbar navbar-sticky navbar-blur-bg backdrop-blur border-b border-color-gray-900 z20">
+  <a class="navbar-brand color-almost-white font-weight-3 letter-spacing-xs">
+    Credi<span class="color-primary">Ship</span>
+  </a>
+  <ul class="navbar-nav xd-none gap-l">
+    <li><a href="#" class="navbar-link color-text-alt">Producto</a></li>
+    <li><a href="#" class="navbar-link color-text-alt">Simulador</a></li>
+    <li><a href="#" class="navbar-link color-text-alt">Precios</a></li>
+    <li><a href="#" class="navbar-link color-text-alt">Casos de uso</a></li>
+  </ul>
+  <button class="btn">Empezar gratis</button>
+  <button class="navbar-burger dd-none" onclick="this.closest('.navbar').classList.toggle('open')">☰</button>
+</nav>
+
+<div class="container-l padd-h">
+
+  <!-- ── HERO ── -->
+  <section class="padd-v-xl">
+    <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c">
+      <div>
+        <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S01 — Hero</span>
+        <h1 class="font-fluid-xl lh-xs letter-spacing-xs font-weight-3 marg-b-l">
+          ¿Cuánto te está costando realmente <em class="color-primary" style="font-style:normal">ese crédito</em>?
+        </h1>
+        <p class="font-l color-text-alt marg-b-l lh">
+          CrediShip calcula hasta el último centavo — capital, intereses, mora y costo financiero total — en tiempo real. Sin fórmulas que se rompen. Sin números que no cierran.
+        </p>
+        <p class="color-gray-500 marg-b-l lh-l">
+          Si gestionás préstamos con una planilla, hay algo que no sabés. El costo real de cada contrato no se ve en una celda. Se ve cuando ya es tarde.
+        </p>
+        <div class="row jc-fs gap-s marg-b-l">
+          <a href="#" class="btn">Calculá mi cartera ahora →</a>
+          <a href="#" class="btn alt">Ver cómo funciona</a>
+        </div>
+        <div class="row jc-fs ai-c gap-s font-xs color-gray-600">
+          <span>Sin tarjeta requerida</span>
+          <span class="point size-s bg-gray-700"></span>
+          <span>Setup en 5 minutos</span>
+          <span class="point size-s bg-gray-700"></span>
+          <span>Cancelá cuando quieras</span>
+        </div>
+      </div>
+      <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh">
+        [Dashboard UI] Transición de celda Excel rota → dashboard CrediShip con capital, intereses y CFT en tiempo real. Dark mode. Accent verde esmeralda.
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── SOCIAL PROOF (full-bleed) ── -->
+<section class="bg-1 border-t border-color-gray-900 border-b padd-v-l">
+  <div class="container-l padd-h ta-c">
+    <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S02 — Prueba Social</span>
+    <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">La herramienta que usan quienes manejan dinero en serio</h2>
+    <p class="color-gray-500 lh marg-b-0">
+      Gestores de cartera, prestamistas privados y asesores financieros que administran desde $500K hasta $10M mensuales confían en CrediShip para cerrar cada período sin discrepancias ni disputas.
+    </p>
+    <div class="row jc-c ai-c gap-l flex-wrap marg-t-l">
+      <div class="badge badge-s border border-color-gray-800 bg-2 letter-spacing uppercase">Gestores de Cartera</div>
+      <div class="badge badge-s border border-color-gray-800 bg-2 letter-spacing uppercase">Prestamistas Privados</div>
+      <div class="badge badge-s border border-color-gray-800 bg-2 letter-spacing uppercase">Asesores Financieros</div>
+      <div class="badge badge-s border border-color-gray-800 bg-2 letter-spacing uppercase">Microfinancieras</div>
+    </div>
+  </div>
+</section>
+
+<div class="container-l padd-h">
+
+  <!-- FASE 2 -->
+  <p class="ta-c font-xs uppercase letter-spacing-xxl color-gray-700 marg-v-xl padd-b-s border-b border-color-gray-900">Fase 2 — El problema</p>
+
+  <!-- S03 PAIN: CFT OCULTO — visual izquierda en desktop -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S03 — El costo que no ves</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Tu banco sabe exactamente cuánto te cobra. ¿Vos sabés cuánto te deben?</h2>
+      <p class="color-gray-500 marg-b lh">
+        El CFT real de un préstamo con interés compuesto, penalidades por mora y capital variable no se calcula en una planilla. Se calcula con un motor diseñado para eso.
+      </p>
+      <p class="color-gray-500 marg-b-l lh">
+        Cada mes que no tenés ese número, estás dejando plata sobre la mesa — o pagando de más sin saberlo.
+      </p>
+      <div class="grid grid-cols-2 gap-s marg-b-l">
+        <div class="bg-red-950 border border-color-red-900 border-r padd">
+          <span class="font-3xl font-weight-3 color-error d-block">$6.000</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">Mal calculados por período con un error del 0.5% en $1M</span>
+        </div>
+        <div class="bg-red-950 border border-color-red-900 border-r padd">
+          <span class="font-3xl font-weight-3 color-error d-block">78%</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">De prestamistas no conoce su CFT real hasta una disputa</span>
+        </div>
+      </div>
+      <a href="#" class="btn">Descubrir mi costo real →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh dorder-first">
+      [Visual] Embudo 3D goteando capital — el texto se ilumina mostrando cómo el cálculo "ciego" drena ingresos período a período.
+    </div>
+  </div>
+
+  <!-- S04 PAIN: DESGASTE OPERATIVO -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S04 — El desgaste semanal</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">3 horas por semana reconciliando planillas que igual terminan mal</h2>
+      <p class="color-gray-500 marg-b lh">
+        Cruzar movimientos a mano. Buscar el error en la fórmula. Explicarle a un cliente por qué el saldo no cierra con lo que él tiene anotado.
+      </p>
+      <p class="color-gray-500 marg-b lh">
+        Ese tiempo no vuelve. Y la respuesta <em>"hubo un error en la planilla"</em> destruye la confianza.
+      </p>
+      <p class="color-gray-500 marg-b-l lh">
+        CrediShip tiene un registro inmutable: cada movimiento queda asentado, trazado y auditado. Siempre tiene la razón.
+      </p>
+      <a href="#" class="btn">Recuperar ese tiempo →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh">
+      [Visual] Split-screen: izquierda — papeles, fórmulas rotas, cursor perdido. Derecha — dashboard limpio, saldo exacto, registro auditado.
+    </div>
+  </div>
+
+  <!-- FASE 3 -->
+  <p class="ta-c font-xs uppercase letter-spacing-xxl color-gray-700 marg-v-xl padd-b-s border-b border-color-gray-900">Fase 3 — La solución</p>
+
+  <!-- S05 SIMULADOR — visual izquierda en desktop -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S05 — Motor de simulación</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">¿Qué pasa si cobro el 40% ahora y refinancio el resto?</h2>
+      <p class="color-gray-500 marg-b lh">Antes de comprometerte con un cliente, conocé el número exacto.</p>
+      <p class="color-gray-500 marg-b-l lh">
+        El simulador What-If de CrediShip proyecta el impacto de cada decisión en segundos — con los tres sistemas de amortización: francés, alemán y directo.
+      </p>
+      <ul class="list-none marg-b-l">
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Comparar sistemas de amortización (Francés vs. Alemán vs. Directo)</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Simular quitas totales o parciales</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Evaluar impacto de pagos anticipados</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Proyectar mora acumulada por período</span>
+        </li>
+      </ul>
+      <a href="#" class="btn">Simular un escenario →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh dorder-first">
+      [Dashboard] Tres curvas de amortización superpuestas (Francés / Alemán / Directo) con diferencias numéricas al hover. Input "What-If" en el panel izquierdo.
+    </div>
+  </div>
+
+  <!-- S06 TRAZABILIDAD -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S06 — Panel central</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Toda tu cartera. Un solo lugar. Nada que se escape.</h2>
+      <p class="color-gray-500 marg-b lh">Múltiples contratos, múltiples deudores, múltiples tasas. Todo en una sola pantalla.</p>
+      <p class="color-gray-500 marg-b-l lh">
+        Cada movimiento registrado con fecha, tipo y monto. Auditable en cualquier momento. Exportable como informe PDF institucional con un clic.
+      </p>
+      <ul class="list-none marg-b-l">
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Vista unificada de todos los contratos activos</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Línea de tiempo de movimientos por crédito</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Exportación PDF con membrete en un clic</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Alertas automáticas de vencimientos y desvíos</span>
+        </li>
+      </ul>
+      <a href="#" class="btn">Ver el panel →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh">
+      [Dashboard completo] Panel multi-cartera con cards por deudor, timeline de pagos y botón "Exportar PDF" destacado. Accent verde en saldos positivos.
+    </div>
+  </div>
+
+  <!-- FASE 4 -->
+  <p class="ta-c font-xs uppercase letter-spacing-xxl color-gray-700 marg-v-xl padd-b-s border-b border-color-gray-900">Fase 4 — Por qué CrediShip</p>
+
+  <!-- S07 TABLA COMPARATIVA -->
+  <div class="ta-c marg-b-l">
+    <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S07 — Comparativa</span>
+    <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Las calculadoras gratuitas te dan un estimado.<br>CrediShip te da el número.</h2>
+    <p class="color-gray-500 marg-b-l lh" style="max-width: 760px; margin-left: auto; margin-right: auto;">
+      <!-- GAP: no .marg-h-auto utility — using inline style -->
+      Excel es flexible. Hasta que se rompe una fórmula, alguien borra una celda o el archivo no abre en el dispositivo del cliente. CrediShip fue diseñado para lo que Excel nunca pudo hacer bien: gestionar cartera con rigor bancario.
+    </p>
+  </div>
+
+  <div class="table-responsive marg-b-l">
+    <table class="table divided hover">
+      <thead>
+        <tr>
+          <th class="ta-lf font-xs uppercase letter-spacing">Función</th>
+          <th class="ta-lf font-xs uppercase letter-spacing color-text-alt">Calculadora online</th>
+          <th class="ta-lf font-xs uppercase letter-spacing color-text-alt">Excel</th>
+          <th class="ta-lf font-xs uppercase letter-spacing color-primary">CrediShip</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="color-almost-white font-weight-2">Historial de movimientos</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">Manual</td>
+          <td class="color-primary font-weight-2">✓ Automático</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Mora y penalidades</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">Manual</td>
+          <td class="color-primary font-weight-2">✓ Calculado</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Sistemas de amortización</td>
+          <td class="color-gray-600">Básico</td>
+          <td class="color-gray-600">Manual</td>
+          <td class="color-primary font-weight-2">✓ Los 3 sistemas</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Corrección sin pérdida de historial</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-primary font-weight-2">✓ Auditado</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Exportación PDF institucional</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-primary font-weight-2">✓ Con membrete</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Backup y acceso multi-dispositivo</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">Limitado</td>
+          <td class="color-primary font-weight-2">✓ Cloud</td>
+        </tr>
+        <tr>
+          <td class="color-almost-white font-weight-2">Simulación What-If</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-gray-600">✗ No</td>
+          <td class="color-primary font-weight-2">✓ Tiempo real</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ta-c marg-b-xl">
+    <a href="#" class="btn">Ver diferencias completas →</a>
+  </div>
+
+  <!-- S08 ROI -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S08 — Retorno de inversión</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Una sola discrepancia evitada paga el año entero</h2>
+      <p class="color-gray-500 marg-b lh">
+        Un error de cálculo en un crédito de $1.000.000 al 3% mensual puede representar $30.000 mal liquidados en el primer período.
+      </p>
+      <p class="color-gray-500 marg-b-l lh">
+        CrediShip cuesta menos que eso en todo el año. Y audita cada número automáticamente.
+      </p>
+      <div class="grid grid-cols-2 gap-s marg-b-l">
+        <div class="bg-1 border border-color-gray-800 border-r padd">
+          <span class="font-3xl font-weight-3 color-primary d-block">~3 hs</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">Recuperadas por semana en reconciliaciones</span>
+        </div>
+        <div class="bg-1 border border-color-gray-800 border-r padd">
+          <span class="font-3xl font-weight-3 color-primary d-block">$0</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">Conflictos por saldos incorrectos</span>
+        </div>
+        <div class="bg-1 border border-color-gray-800 border-r padd">
+          <span class="font-3xl font-weight-3 color-primary d-block">100%</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">Trazabilidad de cada movimiento</span>
+        </div>
+        <div class="bg-1 border border-color-gray-800 border-r padd">
+          <span class="font-3xl font-weight-3 color-primary d-block">&lt; 5 min</span>
+          <span class="font-xs color-gray-500 marg-t-xs d-block">Para tener la cartera operativa</span>
+        </div>
+      </div>
+      <a href="#" class="btn">Calcular mi ROI →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh">
+      [Gráfico] Línea de "Costo operativo" cayendo drásticamente al activar CrediShip. Línea de "Cartera soportada" subiendo sin límite.
+    </div>
+  </div>
+
+  <!-- FASE 5 -->
+  <p class="ta-c font-xs uppercase letter-spacing-xxl color-gray-700 marg-v-xl padd-b-s border-b border-color-gray-900">Fase 5 — Empezar es fácil</p>
+
+  <!-- S09 ONBOARDING — visual izquierda en desktop -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S09 — Onboarding</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Estás operativo en 5 minutos. Sin setup complejo.</h2>
+      <p class="color-gray-500 marg-b-l lh">
+        No hace falta migrar todo de una vez. Importá desde CSV o cargá manualmente. CrediShip normaliza los datos y te muestra el dashboard listo para operar.
+      </p>
+      <div class="col gap ai-fs marg-b-l">
+        <div class="row jc-fs ai-fs gap-s">
+          <!-- GAP: no .step-num utility — using inline size + border-r-full -->
+          <div class="flex-center border border-r-full border-color-primary color-primary font-weight-3 font-xs flex-shrink-0" style="width:32px; height:32px;">1</div>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Creá tu cuenta gratis</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Sin tarjeta de crédito. Solo tu email.</div>
+          </div>
+        </div>
+        <div class="row jc-fs ai-fs gap-s">
+          <div class="flex-center border border-r-full border-color-primary color-primary font-weight-3 font-xs flex-shrink-0" style="width:32px; height:32px;">2</div>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Importá desde CSV o cargá manualmente</div>
+            <div class="font-xs color-gray-500 marg-t-xs">CrediShip detecta inconsistencias y normaliza los datos.</div>
+          </div>
+        </div>
+        <div class="row jc-fs ai-fs gap-s">
+          <div class="flex-center border border-r-full border-color-primary color-primary font-weight-3 font-xs flex-shrink-0" style="width:32px; height:32px;">3</div>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Tu cartera en el dashboard</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Visibilidad total desde el primer día. Soporte en tiempo real si lo necesitás.</div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Empezar ahora — gratis →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh dorder-first">
+      [Mockup 3 pasos] "Importar CSV" → "Analizar consistencia" → "Dashboard activo". Cada paso conectado por un indicador de progreso verde.
+    </div>
+  </div>
+
+  <!-- S10 RESILIENCIA -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S10 — Tolerancia a errores</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">¿Cargaste mal una transacción? No pasa nada.</h2>
+      <p class="color-gray-500 marg-b lh">
+        Los errores humanos pasan. Lo que no puede pasar es perder el rastro de lo que se corrigió y por qué.
+      </p>
+      <p class="color-gray-500 marg-b-l lh">
+        CrediShip tiene historial de correcciones auditado: podés ajustar, revertir o documentar cualquier cambio sin alterar el registro legal. Todo queda asentado.
+      </p>
+      <ul class="list-none marg-b-l">
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Corrección de movimientos con registro de cambio</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Reversión de transacciones sin pérdida de trazabilidad</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs border-b border-color-gray-900 color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Documentación de motivo de ajuste</span>
+        </li>
+        <li class="row jc-fs ai-fs gap-s padd-v-xs color-gray-300 font-s">
+          <span class="color-primary font-weight-3 flex-shrink-0">✓</span>
+          <span>Log de auditoría exportable</span>
+        </li>
+      </ul>
+      <a href="#" class="btn marg-t-s">Ver cómo funciona →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh">
+      [Visual estética DevOps] Historial de versiones seguro: "Cambio registrado — 14/04/2026 15:32 — Motivo: error tipeo" en log auditado con diff visual.
+    </div>
+  </div>
+
+  <!-- FASE 6 -->
+  <p class="ta-c font-xs uppercase letter-spacing-xxl color-gray-700 marg-v-xl padd-b-s border-b border-color-gray-900">Fase 6 — Confianza y garantías</p>
+
+  <!-- S11 SEGURIDAD — visual izquierda en desktop -->
+  <div class="grid xgrid-cols-1 dgrid-cols-2 gap-xl ai-c marg-b-xl">
+    <div>
+      <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S11 — Seguridad</span>
+      <h2 class="font-fluid font-weight-3 letter-spacing-xs marg-b-s">Tus contratos y tu cartera bajo cifrado bancario. Siempre.</h2>
+      <p class="color-gray-500 marg-b lh">
+        Encriptación AES-256 en reposo y en tránsito. Backups automáticos. Sin acceso de terceros.
+      </p>
+      <p class="color-gray-500 marg-b-l lh">
+        Y si tu banco liquida distinto a nuestro motor de cálculo, lo auditamos nosotros. Gratis. Sin letra chica.
+      </p>
+      <div class="grid grid-cols-2 xgrid-cols-1 gap-s marg-b-l">
+        <div class="row jc-fs ai-fs gap-s bg-1 padd border border-color-gray-800 border-r">
+          <span class="font-xl flex-shrink-0">🔒</span>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">AES-256</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Todos los datos en reposo y tránsito</div>
+          </div>
+        </div>
+        <div class="row jc-fs ai-fs gap-s bg-1 padd border border-color-gray-800 border-r">
+          <span class="font-xl flex-shrink-0">☁️</span>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Backup automático</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Diario, en la nube, sin intervención</div>
+          </div>
+        </div>
+        <div class="row jc-fs ai-fs gap-s bg-1 padd border border-color-gray-800 border-r">
+          <span class="font-xl flex-shrink-0">🔍</span>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Auditoría bancaria</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Si tu banco difiere, lo auditamos gratis</div>
+          </div>
+        </div>
+        <div class="row jc-fs ai-fs gap-s bg-1 padd border border-color-gray-800 border-r">
+          <span class="font-xl flex-shrink-0">📋</span>
+          <div class="flex-1">
+            <div class="font-weight-2 font-s color-almost-white">Logs exportables</div>
+            <div class="font-xs color-gray-500 marg-t-xs">Para auditorías externas o legales</div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Ver certificados →</a>
+    </div>
+    <div class="visual-placeholder bg-2 border border-dashed border-color-gray-800 border-r-l padd-l flex-center ta-c color-gray-700 font-xs lh dorder-first">
+      [Visual] Candado holográfico minimalista + "AES-256" + "Audit Ready" + escudo con iridiscencia verde. Estética militar-técnica.
+    </div>
+  </div>
+
+  <!-- S12 FINAL CTA -->
+  <!-- GAP: no .bgg-* gradient matches dark-green diagonal — using inline gradient -->
+  <div class="ta-c padd-l padd-v-xl marg-b-xl border border-color-green-900 border-r-xl"
+       style="background: linear-gradient(135deg, #0a0a0a 0%, #0d1f17 100%);">
+    <span class="font-xs letter-spacing-l uppercase color-primary d-block marg-b-s">S12 — CTA Final</span>
+    <h2 class="font-fluid-l font-weight-3 letter-spacing-xs marg-b-s">Dejá de calcular a ciegas.</h2>
+    <p class="font-l color-text-alt marg-b-l">
+      Cada día que seguís con planillas hay un número que no conocés. Un costo que no ves. Un error que todavía no encontraste.
+    </p>
+    <p class="color-gray-500 marg-b-l lh" style="max-width: 500px; margin-left: auto; margin-right: auto;">
+      <!-- GAP: no .max-w-500 or .marg-h-auto — using inline style -->
+      Empezá hoy con CrediShip. Tenés visibilidad total de tu cartera en menos de una hora — sin riesgos, sin setup complejo.
+    </p>
+    <div class="row jc-c gap-s flex-wrap marg-b-l">
+      <a href="#" class="btn" style="padding: var(--space-4) var(--space-10); font-size: var(--font-size-l);">Activar mi cuenta gratis →</a>
+      <a href="#" class="btn alt">Hablar con un asesor</a>
+    </div>
+    <div class="row jc-c ai-c gap-s font-xs color-gray-700">
+      <span>Sin tarjeta de crédito</span>
+      <span>·</span>
+      <span>Cancelá cuando quieras</span>
+      <span>·</span>
+      <span>Migración asistida incluida</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="footer footer-dark footer-minimal">
+  <p>© 2026 CrediShip · <a href="https://crediship.com" class="footer-link">crediship.com</a> · Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

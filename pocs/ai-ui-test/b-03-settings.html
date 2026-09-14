@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B03 Settings — compose</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button
+    type="button"
+    id="theme-toggle"
+    class="btn alt size-s pos-fixed top-0 right-0 marg-s z5"
+    aria-label="Toggle night mode"
+  >Night</button>
+
+  <div class="minvh100">
+    <div class="container-s padd-v-l">
+      <header class="marg-b col jc-fs ai-s gap-s">
+        <h1 class="font-xl bold color-text">Settings</h1>
+        <p class="font-s card-text">Profile details used across the product.</p>
+      </header>
+      <div class="card">
+        <div class="card-header">Profile</div>
+        <div class="card-body col jc-fs ai-s gap">
+          <div class="form-group">
+            <label class="form-label" for="name">Display name</label>
+            <input class="input" id="name" name="name" type="text" autocomplete="nickname" placeholder="Ada Lovelace" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bio">Bio</label>
+            <textarea class="input" id="bio" name="bio" rows="3" placeholder="Short public blurb"></textarea>
+            <p class="form-help">Short public blurb.</p>
+          </div>
+        </div>
+        <div class="card-footer row jc-fe ai-c gap-s">
+          <button type="button" class="btn alt">Cancel</button>
+          <button type="submit" class="btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">
+    <a href="./index.html">← index</a> · <a href="./a-03-settings.html">ver A</a>
+  </p>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    function syncLabel() {
+      btn.textContent = document.body.classList.contains('night') ? 'Day' : 'Night';
+    }
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+      syncLabel();
+    });
+    syncLabel();
+  </script>
+</body>
+</html>

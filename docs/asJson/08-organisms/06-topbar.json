@@ -361,7 +361,7 @@
         "background",
         "border-color"
       ],
-      "cssRule": "background: var(--color-primary)\nborder-color: rgba(255, 255, 255, 0.22)",
+      "cssRule": "background: var(--color-primary)\nborder-color: rgb(255 255 255 / 22%)",
       "responsive": false,
       "description": "── Style variants ───────────────────────────────────────────────────────"
     },
@@ -427,7 +427,7 @@
         "border-color",
         "background"
       ],
-      "cssRule": "border-color: rgba(255, 255, 255, 0.35)\nbackground: rgba(255, 255, 255, 0.08)",
+      "cssRule": "border-color: rgb(255 255 255 / 35%)\nbackground: rgb(255 255 255 / 8%)",
       "responsive": false,
       "description": "── Style variants ───────────────────────────────────────────────────────"
     },
@@ -441,7 +441,7 @@
         "background",
         "border-color"
       ],
-      "cssRule": "background: rgba(255, 255, 255, 0.16)\nborder-color: rgba(255, 255, 255, 0.55)",
+      "cssRule": "background: rgb(255 255 255 / 16%)\nborder-color: rgb(255 255 255 / 55%)",
       "responsive": false,
       "description": "── Style variants ───────────────────────────────────────────────────────"
     },
@@ -454,7 +454,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": "background: rgba(255, 255, 255, 0.32)",
+      "cssRule": "background: rgb(255 255 255 / 32%)",
       "responsive": false,
       "description": "── Style variants ───────────────────────────────────────────────────────"
     },

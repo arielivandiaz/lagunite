@@ -37,7 +37,7 @@ content[24]:
     id: #07-01-02
     category: null
     properties[3]: padding,border-top,background
-    cssRule: "padding: var(--space-3) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\nbackground: rgba(0, 0, 0, 0.02)"
+    cssRule: "padding: var(--space-3) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\nbackground: rgb(0 0 0 / 2%)"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector

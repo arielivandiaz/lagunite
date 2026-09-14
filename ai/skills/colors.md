@@ -10,6 +10,8 @@
 **If a class is not listed here or produced by an allowed pattern below, do not invent it.**
 
 > **Warning:** Many **background** utilities set both `background` and `color` for contrast. Avoid stacking a conflicting `.color-*` on the same element unless intentional.
+>
+> **Muted copy:** use `.card-text` (light + night). **Never** `.color-text-alt` as muted (that token is `#fff` for on-fill text).
 
 ---
 
@@ -17,8 +19,8 @@
 
 | Class | Purpose |
 | --- | --- |
-| `.color-text` | `var(--color-text-base)` |
-| `.color-text-alt` | `var(--color-text-alt)` |
+| `.color-text` | Main readable text (`--color-text-base`, ~`#333` light / light gray in night) |
+| `.color-text-alt` | **Not muted.** Inverse / on-fill text (`--color-text-alt` = **`#fff`**). Use on `.bg-1`… primary fills, `.bg-alt` in light mode — **never** as subtitle on a white/light card. |
 | `.color-primary` | primary |
 | `.color-primary-light` | primary light |
 | `.color-primary-dark` | primary dark |
