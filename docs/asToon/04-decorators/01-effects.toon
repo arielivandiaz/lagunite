@@ -586,7 +586,7 @@ content[67]:
     id: #04-01-14
     category: null
     properties[1]: caret-color
-    cssRule: "caret-color: currentColor"
+    cssRule: "caret-color: currentcolor"
     responsive: false
     description: ── Caret / accent color ─────────────────────────────────────────────────
   - type: selector
@@ -604,7 +604,7 @@ content[67]:
     id: #04-01-14
     category: null
     properties[1]: accent-color
-    cssRule: "accent-color: currentColor"
+    cssRule: "accent-color: currentcolor"
     responsive: false
     description: ── Caret / accent color ─────────────────────────────────────────────────
 customProperties[2]{property,value}:

@@ -226,7 +226,7 @@ content[30]:
     id: #06-12-04
     category: null
     properties[2]: color,background
-    cssRule: "color: var(--color-text-alt)\nbackground: rgba(255, 255, 255, 0.08)"
+    cssRule: "color: var(--color-text-alt)\nbackground: rgb(255 255 255 / 8%)"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector

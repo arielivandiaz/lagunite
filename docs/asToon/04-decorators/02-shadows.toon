@@ -64,7 +64,7 @@ content[11]:
     id: #04-02-02
     category: null
     properties[1]: text-shadow
-    cssRule: "text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22)"
+    cssRule: "text-shadow: 0 1px 2px rgb(0 0 0 / 22%)"
     responsive: true
     description: ** Text Shadows **
   - type: selector
@@ -73,7 +73,7 @@ content[11]:
     id: #04-02-02
     category: null
     properties[1]: text-shadow
-    cssRule: "text-shadow: 0 2px 5px rgba(0, 0, 0, 0.26)"
+    cssRule: "text-shadow: 0 2px 5px rgb(0 0 0 / 26%)"
     responsive: true
     description: ** Text Shadows **
   - type: selector
@@ -82,7 +82,7 @@ content[11]:
     id: #04-02-02
     category: null
     properties[1]: text-shadow
-    cssRule: "text-shadow: 0 6px 16px rgba(0, 0, 0, 0.34)"
+    cssRule: "text-shadow: 0 6px 16px rgb(0 0 0 / 34%)"
     responsive: true
     description: ** Text Shadows **
   - type: selector
@@ -100,6 +100,6 @@ content[11]:
     id: #04-02-03
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\r\n    0 18px 40px -26px rgba(0, 0, 0, 0.40),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06)"
+    cssRule: "box-shadow:\r\n    0 18px 40px -26px rgb(0 0 0 / 40%),\r\n    0 0 0 1px rgb(0 0 0 / 6%)"
     responsive: true
     description: ** Shadow Colors **

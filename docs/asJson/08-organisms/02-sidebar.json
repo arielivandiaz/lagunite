@@ -389,7 +389,7 @@
         "background",
         "color"
       ],
-      "cssRule": "background: rgba(255, 255, 255, 0.08)\ncolor: var(--gray-100)",
+      "cssRule": "background: rgb(255 255 255 / 8%)\ncolor: var(--gray-100)",
       "responsive": false,
       "description": "── Footer row, compact, dark ───────────────────────────────────────────"
     },
@@ -457,7 +457,7 @@
         "background",
         "color"
       ],
-      "cssRule": "background: rgba(255, 255, 255, 0.08)\ncolor: var(--gray-100)",
+      "cssRule": "background: rgb(255 255 255 / 8%)\ncolor: var(--gray-100)",
       "responsive": false,
       "description": "── Footer row, compact, dark ───────────────────────────────────────────"
     },

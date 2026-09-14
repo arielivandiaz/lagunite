@@ -19,7 +19,7 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
         <p class="font-l lh color-text marg-b-m">Short value proposition for visitors.</p>
         <div class="row gap-s">
           <a class="btn" href="#">Primary</a>
-          <a class="btn btn-secondary" href="#">Secondary</a>
+          <a class="btn alt" href="#">Secondary</a>
         </div>
       </div>
       <div class="card card-elevated padd-m">
@@ -34,15 +34,15 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
   <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Readable</h3>
-      <p class="font-s lh color-text-alt">Descriptive utility classes.</p>
+      <p class="font-s lh card-text">Descriptive utility classes.</p>
     </div>
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Flexible</h3>
-      <p class="font-s lh color-text-alt">Compose with grid and gap.</p>
+      <p class="font-s lh card-text">Compose with grid and gap.</p>
     </div>
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Enterprise</h3>
-      <p class="font-s lh color-text-alt">Tokens and semantic colors.</p>
+      <p class="font-s lh card-text">Tokens and semantic colors.</p>
     </div>
   </div>
 </section>
@@ -105,8 +105,8 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
       <p class="form-error-msg">Password is required.</p>
     </div>
     <div class="row gap-s jc-fe marg-t">
-      <button type="button" class="btn btn-ghost">Cancel</button>
-      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" class="btn alt">Cancel</button>
+      <button type="submit" class="btn">Save</button>
     </div>
   </form>
 </div>
@@ -137,4 +137,68 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
     </ul>
   </section>
 </article>
+```
+
+---
+
+## 5. Auth card (golden — uses compose rules)
+
+```html
+<!-- Skills: compose, containers, compounds, molecules, atoms -->
+<div class="bg minvh100 row jc-c ai-c padd">
+  <div class="container-card">
+    <div class="card card-elevated">
+      <div class="card-body">
+        <h1 class="font-l bold color-text marg-b-s">Sign in</h1>
+        <p class="font-s card-text">Use your work email to continue.</p>
+        <form class="col jc-fs ai-s gap-s">
+          <div class="form-group">
+            <label class="form-label" for="auth-email">Email</label>
+            <input class="input" id="auth-email" type="email" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="auth-pwd">Password</label>
+            <input class="input" id="auth-pwd" type="password" autocomplete="current-password" />
+          </div>
+          <div class="row jc-fe ai-c gap-s marg-t">
+            <button type="button" class="btn alt">Cancel</button>
+            <button type="submit" class="btn">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## 6. Settings section (golden)
+
+```html
+<!-- Skills: compose, containers, compounds, molecules -->
+<div class="container-s padd-v-l">
+  <header class="marg-b">
+    <h1 class="font-xl bold color-text marg-b-s">Settings</h1>
+    <p class="font-s card-text">Profile details used across the product.</p>
+  </header>
+  <div class="card">
+    <div class="card-header">Profile</div>
+    <div class="card-body col jc-fs ai-s gap">
+      <div class="form-group">
+        <label class="form-label" for="set-name">Display name</label>
+        <input class="input" id="set-name" type="text" autocomplete="nickname" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="set-bio">Bio</label>
+        <textarea class="input" id="set-bio" rows="3"></textarea>
+        <p class="form-help">Short public blurb.</p>
+      </div>
+    </div>
+    <div class="card-footer row jc-fe ai-c gap-s">
+      <button type="button" class="btn alt">Cancel</button>
+      <button type="submit" class="btn">Save changes</button>
+    </div>
+  </div>
+</div>
 ```

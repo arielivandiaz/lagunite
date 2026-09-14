@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI UI test — index</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg padd">
+  <div class="container-m padd-v-l col jc-fs ai-s gap">
+    <h1 class="font-xl bold color-text">AI UI test — Lagunite compose</h1>
+    <p class="font-s color-text-alt lh">
+      Corrida <strong>A</strong> = baseline (errores típicos de agente sin compose).
+      Corrida <strong>B</strong> = mismas pantallas aplicando <code>ai/skills/compose.md</code>.
+      Abrí cada par lado a lado y usá <a class="color-primary" href="./SCORECARD.md">SCORECARD.md</a>.
+    </p>
+    <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+      <div class="card">
+        <div class="card-header">1 · Auth</div>
+        <div class="card-body col jc-fs ai-s gap-s">
+          <a class="btn alt" href="./a-01-auth.html">A — baseline</a>
+          <a class="btn" href="./b-01-auth.html">B — compose</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">2 · Dashboard</div>
+        <div class="card-body col jc-fs ai-s gap-s">
+          <a class="btn alt" href="./a-02-dashboard.html">A — baseline</a>
+          <a class="btn" href="./b-02-dashboard.html">B — compose</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">3 · Settings</div>
+        <div class="card-body col jc-fs ai-s gap-s">
+          <a class="btn alt" href="./a-03-settings.html">A — baseline</a>
+          <a class="btn" href="./b-03-settings.html">B — compose</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

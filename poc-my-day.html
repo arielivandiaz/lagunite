@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="night">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POC — My Day Task List</title>
+  <link rel="stylesheet" href="./src/lagunite.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    /* ── Inline checkbox: reset .checkbox default margin/padding ── */
+    .task-check {
+      margin: 0;
+      padding: 0 0 0 34px;
+      display: flex;
+      align-items: center;
+      min-height: 26px;
+    }
+    .task-check .checkmark { left: 0; }
+
+    /* ── Subtask checkbox ────────────────────────────────────────── */
+    .sub-check {
+      margin: 0;
+      padding: 0 0 0 28px;
+      display: flex;
+      align-items: center;
+      min-height: 20px;
+    }
+    .sub-check .checkmark { left: 0; }
+
+    /* ── Strikethrough on completed tasks ────────────────────────── */
+    .text-done {
+      text-decoration: line-through;
+      opacity: 0.45;
+    }
+
+    /* ── Custom palette (POC-level, not in framework tokens) ──────── */
+    :root {
+      --poc-orange: #f97316;
+      --poc-yellow: #eab308;
+      --poc-green:  #22c55e;
+      --poc-cyan:   #06b6d4;
+      --poc-purple: #a855f7;
+      --poc-pink:   #ec4899;
+    }
+
+    /* ── card-accent POC colors — full accent rule (width + transparent) ── */
+    /* ── card-accent POC colors — shorthand + double-class specificity ─── */
+    .card.card-accent-orange  { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-orange); }
+    .card.card-accent-yellow  { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-yellow); }
+    .card.card-accent-green   { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-green); }
+    .card.card-accent-cyan    { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-cyan); }
+    .card.card-accent-purple  { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-purple); }
+    .card.card-accent-pink    { border-top: 1px solid transparent; border-right: 1px solid transparent; border-bottom: 1px solid transparent; border-left: 4px solid var(--poc-pink); }
+
+    /* ── Checkmark color per accent ─────────────────────────────── */
+    .check-orange .checkmark                    { border-color: var(--poc-orange); }
+    .check-orange input:checked ~ .checkmark    { background: var(--poc-orange); box-shadow: 0 0 8px 1px var(--poc-orange); border-color: var(--poc-orange); }
+    .check-yellow .checkmark                    { border-color: var(--poc-yellow); }
+    .check-yellow input:checked ~ .checkmark    { background: var(--poc-yellow); box-shadow: 0 0 8px 1px var(--poc-yellow); border-color: var(--poc-yellow); }
+    .check-green .checkmark                     { border-color: var(--poc-green); }
+    .check-green input:checked ~ .checkmark     { background: var(--poc-green);  box-shadow: 0 0 8px 1px var(--poc-green);  border-color: var(--poc-green); }
+    .check-cyan .checkmark                      { border-color: var(--poc-cyan); }
+    .check-cyan input:checked ~ .checkmark      { background: var(--poc-cyan);   box-shadow: 0 0 8px 1px var(--poc-cyan);   border-color: var(--poc-cyan); }
+    .check-purple .checkmark                    { border-color: var(--poc-purple); }
+    .check-purple input:checked ~ .checkmark    { background: var(--poc-purple); box-shadow: 0 0 8px 1px var(--poc-purple); border-color: var(--poc-purple); }
+    .check-pink .checkmark                      { border-color: var(--poc-pink); }
+    .check-pink input:checked ~ .checkmark      { background: var(--poc-pink);   box-shadow: 0 0 8px 1px var(--poc-pink);   border-color: var(--poc-pink); }
+
+    /* ── FAB ─────────────────────────────────────────────────────── */
+    .fab {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 padd padd-b-xl">
+
+  <!-- ── Header ─────────────────────────────────────── -->
+  <div class="marg-b-l">
+    <h1 class="color-almost-white marg-0" style="font-size:2rem;font-weight:700;">My Day</h1>
+    <p class="color-gray-500 marg-0" style="font-size:0.7rem;letter-spacing:0.1em;font-weight:600;">MONDAY, OCTOBER 21</p>
+  </div>
+
+  <!-- ── Task list ───────────────────────────────────── -->
+  <div class="col gap-s">
+
+    <!-- Task 1 — orange -->
+    <div class="card card-accent-orange bg-gray-800 padd row ai-c gap-s">
+      <label class="checkbox task-check check-orange">
+        <input type="checkbox" /><span class="checkmark"></span>
+      </label>
+      <span class="flex-1 color-almost-white task-label">Review quarterly marketing strategy</span>
+      <svg width="18" height="18" fill="none" stroke="#6b7280" stroke-width="1.5" viewBox="0 0 24 24" style="flex-shrink:0;">
+        <path stroke-linejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+    </div>
+
+    <!-- Task 2 — yellow -->
+    <div class="card card-accent-yellow bg-gray-800 padd row ai-c gap-s">
+      <label class="checkbox task-check check-yellow">
+        <input type="checkbox" /><span class="checkmark"></span>
+      </label>
+      <span class="flex-1 color-almost-white task-label">Pick up organic groceries</span>
+    </div>
+
+    <!-- Task 3 — green, expandable subtasks -->
+    <div class="card card-accent-green bg-gray-800 padd col gap-s">
+      <div class="row ai-c gap-s">
+        <label class="checkbox task-check check-green">
+          <input type="checkbox" /><span class="checkmark"></span>
+        </label>
+        <span class="flex-1 color-almost-white task-label">Product Launch Prep</span>
+        <span class="badge badge-success badge-outline badge-pill">Subtasks 1/3</span>
+        <svg width="16" height="16" fill="none" stroke="#9ca3af" stroke-width="2.5" viewBox="0 0 24 24" style="flex-shrink:0;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18 15l-6-6-6 6"/>
+        </svg>
+      </div>
+      <!-- Subtask list -->
+      <div class="col gap-xs padd-lf-l">
+        <div class="row ai-c gap-s">
+          <label class="checkbox checkbox-s sub-check">
+            <input type="checkbox" /><span class="checkmark"></span>
+          </label>
+          <span class="color-gray-400 task-label" style="font-size:0.875rem;">Update slide deck</span>
+        </div>
+        <div class="row ai-c gap-s">
+          <label class="checkbox checkbox-s sub-check">
+            <input type="checkbox" checked /><span class="checkmark"></span>
+          </label>
+          <span class="text-done color-gray-500 task-label" style="font-size:0.875rem;">Confirm venue booking</span>
+        </div>
+        <div class="row ai-c gap-s">
+          <label class="checkbox checkbox-s sub-check">
+            <input type="checkbox" /><span class="checkmark"></span>
+          </label>
+          <span class="color-gray-400 task-label" style="font-size:0.875rem;">Send invitations</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 4 — cyan, DONE -->
+    <div class="card card-accent-cyan bg-gray-800 padd row ai-c gap-s">
+      <label class="checkbox task-check check-cyan">
+        <input type="checkbox" checked /><span class="checkmark"></span>
+      </label>
+      <span class="flex-1 text-done color-gray-500 task-label">Morning yoga session</span>
+    </div>
+
+    <!-- Task 5 — purple -->
+    <div class="card card-accent-purple bg-gray-800 padd row ai-c gap-s">
+      <label class="checkbox task-check check-purple">
+        <input type="checkbox" /><span class="checkmark"></span>
+      </label>
+      <span class="flex-1 color-almost-white task-label">Read 20 pages of new book</span>
+    </div>
+
+    <!-- Task 6 — pink -->
+    <div class="card card-accent-pink bg-gray-800 padd row ai-c gap-s">
+      <label class="checkbox task-check check-pink">
+        <input type="checkbox" /><span class="checkmark"></span>
+      </label>
+      <span class="flex-1 color-almost-white task-label">Call family</span>
+    </div>
+
+  </div><!-- /col -->
+
+  <!-- ── FAB ─────────────────────────────────────────── -->
+  <button class="fab bgg-2 color-almost-white flex-center" aria-label="Add task">+</button>
+
+  <script>
+    // Toggle strikethrough on label when checkbox changes
+    document.querySelectorAll('.checkbox input[type="checkbox"]').forEach(function(cb) {
+      function syncLabel() {
+        var label = cb.closest('.row, .task-card')?.querySelector('.task-label');
+        if (!label) return;
+        if (cb.checked) {
+          label.classList.add('text-done', 'color-gray-500');
+          label.classList.remove('color-almost-white', 'color-gray-400');
+        } else {
+          label.classList.remove('text-done', 'color-gray-500');
+          // restore original color by checking parent card color
+          label.style.opacity = '';
+          if (label.style.fontSize) {
+            label.classList.add('color-gray-400');
+          } else {
+            label.classList.add('color-almost-white');
+          }
+        }
+      }
+      cb.addEventListener('change', syncLabel);
+      syncLabel(); // init state
+    });
+  </script>
+
+</body>
+</html>

@@ -1,241 +1,243 @@
 # Lagunite — Ready to Prod (v2.1)
 
-> **Fecha:** 2026-04-16 · **Versión actual:** 2.0.21 · **Objetivo:** llevar Lagunite a un release estable en NPM con calidad auditada archivo por archivo.
+> **Fecha actualización:** 2026-09-14 · **Versión actual:** 2.0.22 · **Objetivo:** estabilizar y completar el **runtime CSS (+ JS de componentes)** y publicar un release NPM auditado.
+>
+> **Prioridad de producto (acordada):**  
+> 1) **Terminar y estabilizar la librería CSS** (`ToDo-prod` — este archivo)  
+> 2) Recién después: track AI-first JSON→HTML ([`ToDo-ai-first.md`](./ToDo-ai-first.md) / [`FUTURE-AI-FIRST.md`](./FUTURE-AI-FIRST.md))  
+> AI-first es norte de futuro; **no compite** con el cierre de v2.1. Congelar renames cosméticos de utilities salvo bugs o deudas explícitas de abajo.
 >
 > **Scope explícito:**
-> - ✅ En alcance: `src/css/**`, `dist/`, `docs/` (generados), scripts, release engineering.
-> - ⏸️ Fuera de alcance por ahora: `web/**` (Ariel limpia luego), `lagunite-web/**` (proyecto separado, no tocar).
->
-> Los archivos viejos (`ToDo.md`, `ToDoAriel.md`, `list-componentes-to-do.md`, `checklist.md`) se archivan como referencia. Este documento es la única fuente de verdad para la senda a producción.
+> - ✅ En alcance: `src/css/**`, `src/js/**` (componentes del framework), `dist/`, `docs/` generados, demos canónicas, release engineering.
+> - ⏸️ Fuera de alcance: `lagunite-web/**` (repo aparte), compiler/schema AI-first, playground JSON.
+> - ⏸️ `web/**` / POCs sueltos: archivar o mover; no bloquean el release si existen demos canónicas.
+
+Este documento es la **única checklist ejecutable** para cerrar el framework CSS hacia producción.
 
 ---
 
-## 📊 Diagnóstico inicial
+## 📊 Estado real (2026-09-14)
 
-**Lo que YA está hecho (verificado en repo):**
-- 10 capas CSS completas con todos los archivos importados en `src/lagunite.css`.
-- Componentes cubiertos: atoms (buttons, inputs, table, lists, figures, badges, avatars, chips, tags); molecules (form-groups, alerts, dropdown, tooltip, breadcrumb, dashboard-panels, segmented-control, stat-cards, list-item, tabs, skeleton, draggable-node); compounds (cards, modals, bottom-sheet, empty-state); organisms (navbar, sidebar, footer, dashboard-shell, topbar, dnd-canvas).
-- Cheatsheets por capa + 16 skill files en `ai/skills/`.
-- `CLAUDE.md` + `.claude/FRAMEWORK-QUICKREF.md`.
-- Build funcional (Vite + PostCSS), `dist/lagunite.css` + `.js` + `.umd.cjs` generándose.
-- Stylelint instalado, script `lint:css` definido.
-- Docs auto-generadas en `docs/asJson` y `docs/asToon`.
+### Ya hecho
+- Auditoría archivo-a-archivo **RTP-1** de las capas históricas (config → misc) — ver checklist abajo, casi todo `[x]`.
+- Stylelint limpio (0 errores) · build Vite/PostCSS OK · `package.json` exports/keywords/repo OK.
+- Docs pipeline `docs:generate` / `docs:merge` · skills + cheatsheets · contraste skill.
+- Imports auto en `src/lagunite.css` incluyen moléculas nuevas.
 
-**Gaps críticos para producción:**
-1. **Auditoría archivo por archivo sin empezar:** `checklist.md` tiene 50 filas con todas las columnas vacías (revisado / Ids / correcciones / readyToProd).
-2. **Stylelint nunca corrido a fondo**, posibles inconsistencias acumuladas.
-3. **README.md apunta a features pero no refleja el estado real** de los componentes v2.0.21.
-4. **Sin `CHANGELOG.md`** formal con historial de versiones.
-5. **Sin release workflow** (tagging, publicación NPM validada, semver claro).
-6. **Sin auditoría a11y** (focus visible, contraste, aria, navegación teclado).
-7. **Sin verificación cross-browser** documentada.
-8. **Demos dispersas en root** (`demo-*.html`, `poc-*.html`, `pocs/`): falta un set canónico de demos de validación para QA manual del release.
+### Gaps que aún impiden “framework completo / release”
+| # | Gap | Fase |
+| --- | --- | --- |
+| 1 | **2 moléculas nuevas sin auditoría readyToProd:** `14-picker-wheel`, `15-selectable-option` (+ JS del picker) | RTP-1b |
+| 2 | **Deudas de naming/consolidación** abiertas (object-fit, pallete→palette, jc-c vs jc-center, xd-/dd-) | RTP-1b |
+| 3 | **Sin carpeta `demos/` canónica** — solo POCs dispersos | RTP-3 |
+| 4 | **README / CHANGELOG / publish path** incompletos | RTP-4 |
+| 5 | **a11y + night + tokens + browsers** no firmados de punta a punta | RTP-5 |
+| 6 | Skills/cheatsheets **no documentan** picker-wheel / selectable-option | RTP-1b / docs |
+| 7 | Diagnóstico viejo del doc (abril) decía “auditoría sin empezar / stylelint nunca corrido” — **obsoleto** | (corregido acá) |
 
----
-
-## 🚦 Plan por fases
-
-### Fase RTP-1 · Auditoría CSS archivo por archivo
-
-> **Meta:** completar la tabla de `checklist.md` para los 50 archivos de `src/css/**`. Este es el bloqueante raíz: hasta que cada archivo esté marcado como `readyToProd`, no hay release.
-
-Para **cada archivo CSS** validar y marcar columna:
-- [ ] **revisado** — leído de principio a fin en la versión actual.
-- [ ] **Ids** — todos los bloques tienen ID concreto `#NN-NN-XX` (no placeholders `#NN-NN-XX` sin número).
-- [ ] **correcciones** — typos, selectores inválidos, media queries mal escritas, propiedades deprecadas corregidas.
-- [ ] **cambios** — renombres / consolidaciones documentados en el commit.
-- [ ] **upgrades** — modernizaciones opcionales ya aplicadas (tokens donde hay hardcodes, `gap` donde hay margin-hack, etc.).
-- [ ] **readyToProd** — firma final: sin dudas abiertas, consistente con el resto del sistema, cubierto por al menos una demo.
-
-**Orden recomendado** (de infra hacia arriba):
-
-- [x] `00-config/01-pallete.css` — ✅ 2026-04-16. 5 paletas HSL × 11 escalones, sin typos, IDs OK. Fix menor: whitespace en `:root {  `. Rename a `01-palette.css` diferido (batch con imports + docs).
-- [x] `00-config/02-typography.css` — ✅ 2026-04-16. 5 families + 7 sizes + 4 weights. Todas las vars en uso (`--font-display` → stat-cards). Fix: consolidé 3 `@import url(...)` de Google Fonts en 1 request.
-- [x] `00-config/03-theme.css` — ✅ 2026-04-16. Light + dark (`.night`) + toggle classes. Todas las vars (`-rgb`, border-width, chip, shadow) en uso. Decisiones: `--border-width-md` se queda (40+ usos), `.night *` universal selector se queda (patrón deliberado), indent cosmético se deja. Deuda técnica anotada: `--color-primary` hardcode vs palette (refactor fuera de scope).
-- [x] `00-config/04-measures.css` — ✅ 2026-04-16. Spacing (14 niveles) + radius (5) + breakpoints (4). **Bug fix:** agregado `--space-0: 0` (se referenciaba en `segmented-control:30` sin estar definido). Blank line cosmética eliminada.
-- [x] `00-config/05-base.css` — ✅ 2026-04-16. **3 bugs fix:** vars indefinidas corregidas (`--background_body` → `--color-bg`, `--text_color_alt` → `--color-text-alt`, `--color-bg-secondary` → `--color-bg-alt`). **Código muerto:** eliminado bloque "Media Query Example" (29 líneas de comentario mal formado). **Normalización:** breakpoint random `281-767px` en tabla mobile → `max-width: 639px` (alineado con framework). IDs renumerados secuencialmente. Deuda reconocida: `!important` en `a:hover`, hardcodes de px/color en `code`/`blockquote` (dejados por estabilidad visual).
-- [x] `01-text/01-fonts.css` — ✅ 2026-04-16. h1-h6 fluid + MQ desktop, familias (.font-*), sizes (.font-xs..3xl + 250-500%), fluid, weights. **Bug fix:** `--line-height-tight` indefinido (usado aquí y en badges) → añadido a `02-typography.css` junto con `-normal` y `-loose`. Typos en comentarios (`**/`) y doble declaración `.font-weight-0` simplificada.
-- [x] `01-text/02-typography.css` — ✅ 2026-04-16. Transform (upper/lower/capitalize), letter-spacing (6), line-height (6), text-align (5 × 3 breakpoints). Typos `**/` → `*/` (5 casos). Decisiones: letter-spacing `-l`/`-xl` en `em` se deja (intencional: proporcional al font-size). `.ta-ja` (justify-all) se deja pese a soporte browser limitado — API ya documentada, no rompe.
-- [x] `02-colors/01-background.css` — ✅ 2026-04-16. 458 líneas: semánticos (bg/bg-alt/bg-1..9), b/w, success/warning/error, 8 gradientes + 24 directionales, paletas completas (gray/blue/green/yellow/red × 11). **2 bugs fix:** `var(--color-text)` indefinido usado 3 veces (2 aquí + 1 en buttons) → `--color-text-base`. **Renumeración IDs:** `#02-02-*` → `#02-01-*` (alinear con orden de archivo).
-- [x] `02-colors/02-text.css` — ✅ 2026-04-16. 7 bloques: text-base/alt, primary/secondary/tertiary (con light/dark), almost-b/w, success/warning/error, paletas completas. Sin bugs. **Renumeración IDs:** `#02-01-*` → `#02-02-*` (alinear con orden de archivo). Trailing blank lines limpiadas.
-- [x] `02-colors/03-border.css` — ✅ 2026-04-16. 4 bloques: semánticos (primary/secondary/tertiary + light/dark), b/w/transparent, success/warning/error + combinatorias con `.bg-*.border`, paletas completas. IDs `#02-03-*` correctos. Sin bugs, sin cambios.
-- [ ] `03-layout/01-flex.css`
-- [ ] `03-layout/02-grid.css`
-- [ ] `03-layout/03-position.css`
-- [ ] `03-layout/04-margin.css`
-- [ ] `03-layout/05-padding.css`
-- [ ] `03-layout/06-containers.css`
-- [ ] `03-layout/07-overflow.css`
-- [ ] `03-layout/08-size.css`
-- [ ] `03-layout/09-width.css`
-- [ ] `03-layout/10-height.css`
-- [ ] `04-decorators/01-effects.css`
-- [ ] `04-decorators/02-shadows.css`
-- [ ] `04-decorators/03-opacity.css`
-- [ ] `04-decorators/04-border.css`
-- [ ] `04-decorators/05-transforms.css`
-- [ ] `04-decorators/06-transitions.css`
-- [ ] `04-decorators/07-animations.css`
-- [ ] `04-decorators/08-filters.css`
-- [x] `05-atoms/01-buttons.css` — ✅ 2026-04-16. Revisado en auditoría anterior, sin bugs.
-- [x] `05-atoms/02-inputs.css` — ✅ 2026-04-17. **Fix:** declaración duplicada `appearance: textfield` eliminada (línea 992-993).
-- [x] `05-atoms/03-table.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `05-atoms/04-lists.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `05-atoms/05-figures.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `05-atoms/06-badges.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `05-atoms/07-avatars.css` — ✅ 2026-04-16. **Rewrite completo:** archivo tenía ~10 tokens inexistentes (`--color-neutral-*`, `--color-surface`, `--color-text-inverse`, `--color-info`, `--color-success-dark`, `--transition-duration-*`, `--space-1-5`, `--font-weight-semibold`). Mapeado a tokens válidos del framework.
-- [x] `05-atoms/08-chips.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `05-atoms/09-tags.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/01-form-groups.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/02-alerts.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/03-dropdown.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/04-tooltip.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/05-breadcrumb.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/06-dashboard-panels.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/07-dashboard-alt-panels.css` — ✅ 2026-04-17. Hardcodes intencionales (hex, rgba) del estilo alt-dashboard. **Fix stylelint:** añadido `-webkit-backdrop-filter` para Safari iOS.
-- [x] `06-molecules/08-draggable-node.css` — ✅ 2026-04-16. **Fix:** `var(--space-44)` indefinido → `calc(var(--space-32) + var(--space-12))`.
-- [x] `06-molecules/09-segmented-control.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `06-molecules/10-stat-cards.css` *(renombrado desde `09-stat-cards.css`)* — ✅ 2026-04-16. **Resolución de colisión:** renombrado + IDs `#06-09-*` → `#06-10-*`. Sin bugs funcionales.
-- [x] `06-molecules/11-list-item.css` *(renombrado desde `10-list-item.css`)* — ✅ 2026-04-16. **Renombrado** + IDs `#06-10-*` → `#06-11-*`. **Bug fix:** `var(--color-info)` → `var(--blue-500)`.
-- [x] `06-molecules/12-tabs.css` *(renombrado desde `10-tabs.css`)* — ✅ 2026-04-16. **Renombrado** + IDs `#06-10-*` → `#06-12-*`. Sin bugs funcionales.
-- [x] `06-molecules/13-skeleton.css` *(renombrado desde `11-skeleton.css`)* — ✅ 2026-04-16. **Renombrado** + IDs `#06-11-*` → `#06-13-*`. Sin bugs funcionales.
-- [x] `07-compounds/01-cards.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `07-compounds/02-modals.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `07-compounds/03-bottom-sheet.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `07-compounds/04-empty-state.css` — ✅ 2026-04-16. **Bug fix:** `var(--color-info)` → `var(--blue-500)`.
-- [x] `08-organisms/01-navbar.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `08-organisms/02-sidebar.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `08-organisms/03-footer.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `08-organisms/04-dashboard-shell.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `08-organisms/05-dashboard-alt-shell.css` — ✅ 2026-04-17. Hardcodes intencionales. **Fix stylelint:** añadidos 3 `-webkit-backdrop-filter` para Safari iOS.
-- [x] `08-organisms/06-topbar.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `08-organisms/09-dnd-canvas.css` — ✅ 2026-04-16. **Restructurado:** IDs reorganizados en 4 bloques (#08-09-01 a #08-09-04) para consistencia con otros organismos. Sin bugs. *(⚠️ salto de numeración en directorio: faltan 07, 08, deuda anotada.)*
-- [x] `10-misc/01-display.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `10-misc/02-cursor.css` — ✅ 2026-04-16. Revisado, sin bugs.
-- [x] `10-misc/03-pseudo.css` — ✅ 2026-04-16. Revisado, sin bugs.
-
-**Pendientes arrastrados desde `ToDoAriel.md` que hay que resolver durante esta fase:**
-- [ ] Decidir y consolidar `object-fit` / `object-position` (actualmente en `03-layout/06-containers.css` **y** `04-decorators/01-effects.css`).
-- [ ] Decidir renombre `01-pallete.css` → `01-palette.css` (actualizar `scripts/generate-imports.js` y referencias).
-- [x] **Resueltas colisiones** en `06-molecules/` (`09-09-`, `10-10-`) — archivos renombrados a 10-stat-cards, 11-list-item, 12-tabs, 13-skeleton con IDs renumerados. Salto `06 → 09` en organisms queda anotado como deuda menor (no crítico).
-- [ ] Unificar naming flex/grid (`jc-c` vs `jc-center`) — decidir convención y aplicar.
-- [ ] Homogeneizar prefijo responsive en display (`xd-*`/`dd-*`) con el resto (`x*`/`d*`), dejando alias si hace falta.
+### Inventario CSS actual
+66 archivos en `src/css/**` (sin capa `09-patterns` en disco; patterns viven como skill/docs, no como carpeta CSS).  
+Moléculas nuevas ya importadas en `src/lagunite.css`:
+- `06-molecules/14-picker-wheel.css` + `src/js/06-molecules/14-picker-wheel.js`
+- `06-molecules/15-selectable-option.css` (CSS-only, `:checked`)
 
 ---
 
-### Fase RTP-2 · Calidad de código y build
+## 🎯 Definición de “framework completo” (DoD v2.1)
 
-> **Meta:** el repo pasa lint limpio, compila sin warnings y el bundle tiene tamaño/source-maps adecuados.
+El release v2.1 se considera listo cuando:
 
-- [x] **Stylelint correr y dejar limpio:** ✅ 2026-04-17
-  - [x] Ejecutado `npm run lint:css` → 2305 errores iniciales.
-  - [x] Autofix (`stylelint --fix`) redujo a 439 → `stylelint.config.cjs` ampliado (desactivadas reglas cosméticas: `declaration-block-single-line-max-declarations`, `no-descending-specificity`, `number-max-precision`, `selector-class-pattern`, `color-function-notation`, `alpha-value-notation`, `media-feature-range-notation`, `comment-empty-line-before`, `rule-empty-line-before`, `at-rule-empty-line-before`, `declaration-block-no-redundant-longhand-properties`; `property-no-vendor-prefix` permite `backdrop-filter`).
-  - [x] Fixes manuales: duplicate `body {}` en base.css, duplicate `appearance` en inputs.css, 4× `-webkit-backdrop-filter` añadidos en dashboard-alt (Safari iOS).
-  - [x] Estado final: **0 errores**.
-- [x] **Build en modo producción:** ✅ 2026-04-17
-  - [x] `npm run build` genera `dist/lagunite.css` sin errores.
-  - [x] **Baseline:** 329.88 KB raw / 48.15 KB gzip (v2.0.21).
-  - [ ] Source maps (`.css.map`) — pendiente, habilitar en `vite.config.js`.
-- [x] **Imports y orden:** ✅ 2026-04-17
-  - [x] `scripts/generate-imports.js` refleja estructura tras renombres (stat-cards/list-item/tabs/skeleton).
-  - [x] Orden de `@import` en `src/lagunite.css` validado: config → text → colors → layout → decorators → atoms → molecules → compounds → organisms → misc.
-- [x] **Package.json:** ✅ 2026-04-17
-  - [x] `exports`, `main`, `module`, `style` apuntan a archivos reales de `dist/`.
-  - [x] `npm pack --dry-run` → 6 archivos, 55.8 KB tarball, 349.8 KB unpacked.
-  - [x] Añadidos `keywords` (12 términos: css, css-framework, utility-first, design-system, ui, dark-mode, night-mode, responsive, atoms, molecules, components).
-  - [x] Añadidos `repository` (github.com/arielivandiaz/lagunite), `homepage`, `bugs`.
-- [x] **Docs generadas:** ✅ 2026-04-17
-  - [x] `npm run docs:generate` ejecutado — todas las capas regeneradas.
-  - [x] `docs/asJson/` y `docs/asToon/` sincronizados con CSS v2.0.21.
-  - [ ] ⚠️ Script advierte `Skipping 07-form (not found)` — directorio huérfano en script, limpiar en RTP-4.
+1. Todo `src/css/**` en el bundle está **revisado / readyToProd** (incluye picker + selectable).
+2. JS de componentes del framework está documentado y smoke-testeado (picker-wheel).
+3. Existen **5 demos canónicas** en `demos/` sin `style=""` inventado (o con `<!-- GAP -->` resuelto).
+4. `npm run lint:css` + `npm run build` + `npm run docs:generate` pasan.
+5. README + CHANGELOG reflejan v2.1; `npm pack --dry-run` OK.
+6. Checklist RTP-5 mínima firmada (focus, contraste semántico, night en demos, browsers documentados).
+
+**Fuera del DoD v2.1:** AI compiler, MCP, playground JSON, multi-target React.
+
+---
+
+## 🚦 Plan por fases (orden de ataque)
+
+### Orden recomendado ahora
+1. **RTP-1b** — cerrar deudas + auditar moléculas nuevas  
+2. **RTP-3** — demos canónicas (prueba de que el CSS sirve)  
+3. **RTP-5** — a11y / night / tokens (en paralelo con demos)  
+4. **RTP-2 residual** — source maps + limpiar warning `07-form`  
+5. **RTP-4** — README, CHANGELOG, publish  
+
+---
+
+### Fase RTP-1 · Auditoría CSS (histórica) — ✅ casi completa
+
+> Meta original: cada archivo `readyToProd`. El listado largo de abajo queda como registro.
+
+**Pendientes arrastrados (mover a RTP-1b):**
+- [ ] Consolidar `object-fit` / `object-position` (`06-containers` vs `01-effects`)
+- [ ] Renombre `01-pallete.css` → `01-palette.css` (imports + docs + scripts)
+- [ ] Unificar naming flex/grid (`jc-c` vs `jc-center`) — decidir + alias o migrate
+- [ ] Homogeneizar display responsive (`xd-*`/`dd-*` → `x*`/`d*` + alias)
+
+**Registro archivo por archivo** (auditoría 2026-04-16/17):
+
+- [x] `00-config/01-pallete.css` … `05-base.css`
+- [x] `01-text/*`
+- [x] `02-colors/*`
+- [x] `03-layout/*`
+- [x] `04-decorators/*`
+- [x] `05-atoms/*`
+- [x] `06-molecules/01` … `13` (stat-cards/list-item/tabs/skeleton renombrados)
+- [x] `07-compounds/*`
+- [x] `08-organisms/*` (salto 07/08 en numeración = deuda menor)
+- [x] `10-misc/*`
+
+*(Detalle histórico de fixes por archivo: conservar en git history de este ToDo / commits de abril; no repetir aquí para no alargar.)*
+
+---
+
+### Fase RTP-1b · Cerrar framework CSS (prioridad actual)
+
+> **Meta:** lo que falta para decir “el CSS del framework está completo y estable”.
+
+#### Componentes nuevos (obligatorio)
+- [ ] Auditar `06-molecules/14-picker-wheel.css` → readyToProd  
+  - [ ] IDs `#06-14-*` OK · tokens válidos · `.night` · reduced-motion si anima  
+  - [ ] Revisar `src/js/06-molecules/14-picker-wheel.js` + export en `src/lagunite.js`  
+  - [ ] Demo o POC canónico (puede vivir en `demos/` o promover desde `pocs/`)  
+  - [ ] Documentar en `ai/skills/molecules.md` + cheatsheet molecules  
+  - [ ] `npm run docs:generate` tras el OK
+- [ ] Auditar `06-molecules/15-selectable-option.css` → readyToProd  
+  - [ ] IDs `#06-15-*` · a11y label/input · `.night`  
+  - [ ] Demo (goal/preference list)  
+  - [ ] Skills + docs:generate
+
+#### Deudas de API (decidir y aplicar o explicitar “won’t fix v2.1”)
+- [ ] `object-fit` / `object-position` — una sola capa dueña
+- [ ] `pallete` → `palette` (breaking de path interno; actualizar generadores)
+- [ ] Convención `jc-c` vs `jc-center` (elegir canónica; alias de compat si hace falta)
+- [ ] Prefijos `xd-`/`dd-` en display
+- [ ] Numeración organisms 07/08 faltantes — documentar o renumerar (bajo riesgo)
+
+#### Proceso al agregar / editar CSS (responde notas Ariel)
+**Si hay que agregar algo nuevo:**
+1. Elegir capa (`05-atoms` … `08-organisms`, etc.)
+2. Archivo numerado + bloque `@ID`
+3. Tokens del sistema (no hex sueltos salvo excepción documentada)
+4. Import via `generate-imports` / build
+5. Demo mínima o GAP explícito
+6. `docs:generate` + actualizar skill/cheatsheet de esa capa
+7. Marcar fila readyToProd en este ToDo
+
+**Si hay que editar o extender algo existente:**
+1. No romper classnames públicos sin nota en CHANGELOG
+2. Preferir alias + deprecation antes de rename breaking
+3. Re-correr lint + docs:generate
+4. Actualizar demo que cubra el componente
+5. Si el cambio es solo cosmético de naming → diferir post-v2.1 salvo deuda RTP-1b marcada
+
+**Done RTP-1b cuando:** picker + selectable readyToProd + deudas decididas (hechas o “won’t fix v2.1” por escrito) + skills al día.
+
+---
+
+### Fase RTP-2 · Calidad de código y build — ✅ mayormente hecha
+
+- [x] Stylelint 0 errores (2026-04-17)
+- [x] Build prod OK · baseline ~330 KB / ~48 KB gzip (v2.0.21)
+- [x] Imports / orden de capas OK
+- [x] package.json exports / pack dry-run OK
+- [x] docs:generate sincronizado (re-correr tras RTP-1b)
+- [ ] Source maps (`.css.map`) en `vite.config.js` — opcional para v2.1
+- [ ] Limpiar warning script `Skipping 07-form (not found)`
+- [ ] Re-baseline gzip tras incluir picker/selectable; fijar budget en RTP-5
 
 ---
 
 ### Fase RTP-3 · Demos canónicas de validación
 
-> **Meta:** un set pequeño de demos en `demos/` (nueva carpeta limpia) que sirva para QA manual y como showcase. Los `demo-*.html` y `poc-*.html` sueltos del root se archivan o borran después.
+> **Meta:** QA manual + proof de que el framework se puede usar sin POCs caóticos.
 
-**Demos base (obligatorias para release):**
-- [ ] `demos/01-landing.html` — marketing: containers, grid, hero, buttons, cards, badges, footer.
-- [ ] `demos/02-dashboard.html` — app layout: sidebar + topbar + stat-cards + table + dashboard-panels.
-- [ ] `demos/03-forms.html` — formulario completo: form-groups, inputs, select, checkbox, radio, switch, range, validación, alerts.
-- [ ] `demos/04-components.html` — índice navegable de TODOS los componentes en un solo archivo (prueba visual rápida).
-- [ ] `demos/05-night-mode.html` — variante `.night` de las 4 demos anteriores lado a lado.
+**Demos obligatorias** (crear carpeta `demos/`):
+- [ ] `demos/01-landing.html` — containers, grid, hero, buttons, cards, badges, footer
+- [ ] `demos/02-dashboard.html` — sidebar + topbar + stat-cards + table + panels
+- [ ] `demos/03-forms.html` — form-groups, inputs, select, checkbox/radio/switch, alerts + **selectable-option**
+- [ ] `demos/04-components.html` — índice de componentes (incl. picker-wheel)
+- [ ] `demos/05-night-mode.html` — mismas superficies bajo `.night`
 
-**Criterios de aceptación por demo:**
-- [ ] Solo clases documentadas; cero `style=""`. Si aparece un gap, marcar `<!-- GAP: reason -->` y abrir ítem en Fase RTP-1.
-- [ ] Responsive probado en 320 / 640 / 1024 / 1440 px.
-- [ ] Pasa auditoría a11y básica (headings jerárquicos, labels, focus visible, contraste AA).
-- [ ] Cada demo linkea a su sección en el cheatsheet correspondiente.
+**Criterios por demo:**
+- [ ] Solo clases documentadas; `style=""` → `<!-- GAP -->` + ítem RTP-1b
+- [ ] Responsive 320 / 640 / 1024 / 1440
+- [ ] a11y básica (headings, labels, focus)
+- [ ] Link a cheatsheet de la capa
+
+**Limpieza:**
+- [ ] Inventariar `demo-*.html` / `poc-*.html` / `pocs/` → archivar, promover a `demos/`, o borrar
+
+**Done cuando:** las 5 demos abren con `npm run dev` y cubren el DoD visual.
 
 ---
 
 ### Fase RTP-4 · Release engineering
 
-> **Meta:** cadena reproducible para publicar en NPM con versionado semántico y changelog.
+> **Meta:** publicar v2.1 con narrativa honestamente CSS-completa.
 
-- [ ] **README.md:**
-  - [ ] Actualizar ejemplos al estado v2.1 (clases que realmente existen).
-  - [ ] Sección "Installation" con `npm i lagunite`, import del CSS y CDN fallback.
-  - [ ] Sección "Quick start" con snippet mínimo funcional.
-  - [ ] Link a cheatsheets de `src/css/**/*-CHEATSHEET.md`.
-  - [ ] Badges de versión, licencia, tamaño bundle.
-- [ ] **README_ES.md:** sincronizar con la versión EN tras cambios.
-- [ ] **CHANGELOG.md:**
-  - [ ] Crear si no existe, formato [Keep a Changelog](https://keepachangelog.com/).
-  - [ ] Historial retroactivo mínimo: v2.0.17 → v2.0.21 (una línea por versión).
-  - [ ] Entry para v2.1.0 detallando el trabajo de RTP-1/2/3.
-- [ ] **Semver / tagging:**
-  - [ ] Decidir si el release sale como v2.1.0 (minor) o v3.0.0 (major con breakings).
-  - [ ] Git tag `vX.Y.Z` tras el merge a `main`.
-- [ ] **NPM publish validation:**
-  - [ ] `npm pack --dry-run` — revisar archivos incluidos.
-  - [ ] `npm publish --dry-run` antes del real.
-  - [ ] `npm publish` (con 2FA activo).
-  - [ ] Smoke test: proyecto vacío con `npm i lagunite@latest` importa y funciona.
-- [ ] **Contribuciones:**
-  - [ ] `CONTRIBUTING.md` mínimo (cómo correr dev, lint, build).
-  - [ ] `.github/ISSUE_TEMPLATE/` básico (bug, feature).
+- [ ] **README.md** — install, quick start, lista real de componentes v2.1, badges, browsers
+- [ ] **README_ES.md** — sync
+- [ ] **CHANGELOG.md** — Keep a Changelog; retro v2.0.17→2.0.22 + entry 2.1.0
+- [ ] Semver: default propuesto **v2.1.0** (minor) salvo breakings de RTP-1b (palette rename path, jc-*, etc.) → entonces documentar migration o diferir breakings
+- [ ] `npm pack` / `npm publish --dry-run` / publish + smoke test proyecto vacío
+- [ ] `CONTRIBUTING.md` mínimo + issue templates
+- [ ] Mencionar AI-first solo como “exploración futura” (link a FUTURE), **no** como feature shippeada
 
 ---
 
-### Fase RTP-5 · Auditoría transversal (paralelizable)
+### Fase RTP-5 · Auditoría transversal
 
-> **Meta:** validar dimensiones que no se pueden chequear archivo-a-archivo.
+> **Meta:** calidad que no se ve archivo por archivo.
 
-- [ ] **Accesibilidad:**
-  - [ ] Focus visible consistente en todos los atoms interactivos (button, input, link, checkbox, radio, switch).
-  - [ ] Contraste AA en combinaciones `bg-*` / `color-*` del sistema semántico.
-  - [ ] `aria-*` documentado en patrones que lo necesitan (modal, dropdown, tooltip, alert-dismissible).
-  - [ ] `prefers-reduced-motion` respetado en animations (ya parcial en skeleton).
-- [ ] **Cross-browser:**
-  - [ ] Chromium, Firefox, Safari (Mac + iOS) en las 5 demos canónicas.
-  - [ ] Documentar en README qué navegadores se soportan oficialmente.
-- [ ] **Modo oscuro `.night`:**
-  - [ ] Revisar que cada componente tenga regla `.night` coherente.
-  - [ ] Paleta semántica (`--color-text-base`, `--color-bg`) sin color-gray-* sueltos en cuerpo.
-- [ ] **Token sanity check:**
-  - [ ] Todos los valores duros (px, hex, rgba) en componentes remplazados por tokens.
-  - [ ] No hay `var(--*)` apuntando a variables no definidas.
-- [ ] **Print styles:** decidir si se soportan o se documenta explícitamente que no.
-- [ ] **Size budget:**
-  - [ ] Fijar límite en KB gzip para `dist/lagunite.css`.
-  - [ ] Falla el build si se supera (opcional, script simple con `stat` + `gzip`).
+- [ ] **a11y:** focus visible en atoms interactivos; contraste AA semántico; aria en modal/dropdown/tooltip/alert; `prefers-reduced-motion`
+- [ ] **Browsers:** Chromium, Firefox, Safari (Mac+iOS) en demos; documentar soporte
+- [ ] **`.night`:** componentes coherentes; cuerpo con tokens semánticos (no gray sueltos)
+- [ ] **Tokens:** sin `var(--*)` rotos; hardcodes justificados o tokenizados
+- [ ] **Print:** soportar o documentar “no soportado”
+- [ ] **Size budget:** límite gzip + (opcional) fail en CI
 
 ---
 
-## 🧭 Enfoque temporal
+## 🗺️ Roadmap corto (para no dispersarse)
 
-- **Sprint 1 (semana 1-2):** Fase RTP-1 capas `00-config` a `04-decorators` + Fase RTP-2 stylelint limpio.
-- **Sprint 2 (semana 3-4):** Fase RTP-1 capas `05-atoms` a `10-misc` + Fase RTP-3 demos 01-03.
-- **Sprint 3 (semana 5):** Fase RTP-3 demos 04-05 + Fase RTP-5 (a11y + cross-browser).
-- **Sprint 4 (semana 6):** Fase RTP-4 release (README, CHANGELOG, publish v2.1.0).
+| Paso | Fase | Resultado visible |
+| --- | --- | --- |
+| 1 | RTP-1b | Picker + selectable auditados + deudas decididas |
+| 2 | RTP-3 | `demos/01`–`05` usables |
+| 3 | RTP-5 (mínimo) | Night + focus + contraste en demos |
+| 4 | RTP-2 residual | Warning 07-form limpio; baseline gzip |
+| 5 | RTP-4 | Tag v2.1.0 + NPM |
+
+Después de eso → retomar [`ToDo-ai-first.md`](./ToDo-ai-first.md).
+
+---
+
+## 🔗 Relación con AI-first
+
+| Situación | Qué hacer |
+| --- | --- |
+| Idea JSON→HTML | Documentada; **en pausa de ejecución** hasta DoD v2.1 |
+| Spike compiler | No empezar hasta demos + release path claros (salvo experimento personal aislado) |
+| Rename de utilities | Solo si está en RTP-1b; si no, congelar |
+| Docs asJson | Seguir generando; son input futuro del compiler, pero hoy sirven al release |
 
 ---
 
 ## 📝 Notas operativas
 
-- Cada archivo de Fase RTP-1 se marca **aquí mismo** (no re-abrir `checklist.md` en paralelo; consolidar en este ToDo).
-- Commits siguen el patrón `v2.0.x` del historial actual; el tag final cambia a `v2.1.0`.
-- Al cerrar cada fase, actualizar memoria del proyecto con el hito alcanzado.
-- POCs nuevos van a `pocs/` con prefijo `poc-`; demos estables pasan a `demos/` con prefijo numérico.
+- Marcar progreso **aquí** (no reabrir `checklist.md` paralelo).
+- Commits: seguir estilo del repo; tag final `v2.1.0` (o el semver que salga de RTP-4).
+- POCs → `pocs/poc-*`; demos estables → `demos/NN-*.html`.
+- Tras cualquier cambio CSS: `npm run lint:css` · `npm run build` · `npm run docs:generate`.
+
+---
+
+## Registro histórico RTP-1 (detalle abril 2026)
+
+La auditoría detallada por archivo (bugs fix, renumeraciones, decisiones) está en el historial git de este documento (versión 2026-04-17). Resumen: config/text/colors/layout/decorators/atoms/molecules(01–13)/compounds/organisms/misc marcados readyToProd en esa pasada.

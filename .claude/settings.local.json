@@ -4,7 +4,8 @@
       "Bash(npx stylelint *)",
       "Bash(awk '{print $NF}')",
       "Bash(grep -oE \"[a-z-]+-[a-z-]+$\")",
-      "Bash(npm pack *)"
+      "Bash(npm pack *)",
+      "Bash(node scripts/generate-imports.js)"
     ]
   }
 }

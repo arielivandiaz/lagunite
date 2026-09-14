@@ -262,7 +262,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[6]: content,position,inset,border-radius,background,pointer-events
-    cssRule: "content: \"\"\nposition: absolute\ninset: 0\nborder-radius: inherit\nbackground: linear-gradient(\n        180deg,\n        rgba(255, 255, 255, 0.22) 0%,\n        rgba(255, 255, 255, 0.00) 55%\n    )\npointer-events: none"
+    cssRule: "content: \"\"\nposition: absolute\ninset: 0\nborder-radius: inherit\nbackground: linear-gradient(\n        180deg,\n        rgb(255 255 255 / 22%) 0%,\n        rgb(255 255 255 / 0%) 55%\n    )\npointer-events: none"
     responsive: false
     description: "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
   - type: selector
@@ -271,7 +271,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: background
-    cssRule: "background: linear-gradient(\n        180deg,\n        rgba(255, 255, 255, 0.35) 0%,\n        rgba(255, 255, 255, 0.00) 60%\n    )"
+    cssRule: "background: linear-gradient(\n        180deg,\n        rgb(255 255 255 / 35%) 0%,\n        rgb(255 255 255 / 0%) 60%\n    )"
     responsive: false
     description: "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
   - type: selector
@@ -280,7 +280,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 30%),\n        inset 0 -1px 0 rgb(0 0 0 / 8%)"
     responsive: false
     description: "Simulates an inner light source: a semi-transparent highlight gradient\n  from the top edge + an inset border glow at the bottom.\n  Stronger on solid chips."
   - type: selector
@@ -289,7 +289,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-success-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 30%),\n        inset 0 -1px 0 rgb(0 0 0 / 8%),\n        0 4px 18px -2px var(--chip-success-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -298,7 +298,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-danger-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 30%),\n        inset 0 -1px 0 rgb(0 0 0 / 8%),\n        0 4px 18px -2px var(--chip-danger-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -307,7 +307,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-warning-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 30%),\n        inset 0 -1px 0 rgb(0 0 0 / 8%),\n        0 4px 18px -2px var(--chip-warning-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -316,7 +316,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.30),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.08),\n        0 4px 18px -2px var(--chip-info-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 30%),\n        inset 0 -1px 0 rgb(0 0 0 / 8%),\n        0 4px 18px -2px var(--chip-info-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -325,7 +325,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-success-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 35%),\n        inset 0 -1px 0 rgb(0 0 0 / 10%),\n        0 6px 24px -4px var(--chip-success-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -334,7 +334,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-danger-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 35%),\n        inset 0 -1px 0 rgb(0 0 0 / 10%),\n        0 6px 24px -4px var(--chip-danger-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -343,7 +343,7 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-warning-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 35%),\n        inset 0 -1px 0 rgb(0 0 0 / 10%),\n        0 6px 24px -4px var(--chip-warning-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"
   - type: selector
@@ -352,6 +352,6 @@ content[39]:
     id: #05-08-08
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow:\n        inset 0  1px 0 rgba(255, 255, 255, 0.35),\n        inset 0 -1px 0 rgba(0, 0, 0, 0.10),\n        0 6px 24px -4px var(--chip-info-glow)"
+    cssRule: "box-shadow:\n        inset 0  1px 0 rgb(255 255 255 / 35%),\n        inset 0 -1px 0 rgb(0 0 0 / 10%),\n        0 6px 24px -4px var(--chip-info-glow)"
     responsive: false
     description: "lit + shadow: merged box-shadow declarations"

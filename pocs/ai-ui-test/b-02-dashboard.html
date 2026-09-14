@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B02 Dashboard — compose</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button
+    type="button"
+    id="theme-toggle"
+    class="btn alt size-s pos-fixed top-0 right-0 marg-s z5"
+    aria-label="Toggle night mode"
+  >Night</button>
+
+  <div class="row col-row jc-fs ai-s minvh100">
+    <aside class="sidebar flex-shrink-0">
+      <div class="sidebar-header">
+        <span class="font-l bold color-primary">App</span>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-section">
+          <div class="sidebar-section-title">Main</div>
+          <a class="sidebar-link active" href="#"><span>Dashboard</span></a>
+          <a class="sidebar-link" href="#"><span>Reports</span></a>
+          <a class="sidebar-link" href="#"><span>Settings</span></a>
+        </div>
+      </nav>
+    </aside>
+    <main class="flex-1 padd bg col jc-fs ai-s gap">
+      <h1 class="font-xl bold color-text">Dashboard</h1>
+      <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+        <div class="stat-card">
+          <div class="stat-label">Users</div>
+          <p class="stat-value">1.2k</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Revenue</div>
+          <p class="stat-value">$48k</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Churn</div>
+          <p class="stat-value">2.1%</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Recent accounts</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table striped hover">
+              <thead>
+                <tr><th>Name</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Ada</td><td><span class="badge badge-success">Active</span></td></tr>
+                <tr><td>Lin</td><td><span class="badge badge-warning">Trial</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">
+    <a href="./index.html">← index</a> · <a href="./a-02-dashboard.html">ver A</a>
+  </p>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    function syncLabel() {
+      btn.textContent = document.body.classList.contains('night') ? 'Day' : 'Night';
+    }
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+      syncLabel();
+    });
+    syncLabel();
+  </script>
+</body>
+</html>

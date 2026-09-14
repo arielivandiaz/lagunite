@@ -3,7 +3,7 @@
   "file": "02-inputs.css",
   "lastUpdated": "2026-04-17",
   "hasResponsive": false,
-  "totalSelectors": 211,
+  "totalSelectors": 218,
   "content": [
     {
       "type": "selector",
@@ -780,7 +780,20 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input\r\n):hover:not(:focus):not(:disabled)",
+      "selector": ".input\r\n):hover:not(:focus",
+      "id": "#05-02-01",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-border-hover)",
+      "responsive": false,
+      "description": "── Text inputs & textarea (boxed / default) ─────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":disabled)",
       "id": "#05-02-01",
       "category": null,
       "properties": [
@@ -1085,7 +1098,20 @@
     {
       "type": "selector",
       "selectorType": "pseudo-hover",
-      "selector": "select:hover:not(:focus):not(:disabled)",
+      "selector": "select:hover:not(:focus",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-border-hover)",
+      "responsive": false,
+      "description": "── Select ───────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":disabled)",
       "id": "#05-02-06",
       "category": null,
       "properties": [
@@ -1098,7 +1124,20 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".select:hover:not(:focus):not(:disabled)",
+      "selector": ".select:hover:not(:focus",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-border-hover)",
+      "responsive": false,
+      "description": "── Select ───────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":disabled)",
       "id": "#05-02-06",
       "category": null,
       "properties": [
@@ -1413,7 +1452,25 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".select-container.alt select:not([size]):not([multiple])",
+      "selector": ".select-container.alt select:not([size]",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "background-color",
+        "border-color",
+        "background-image",
+        "background-repeat",
+        "background-position",
+        "background-size"
+      ],
+      "cssRule": "background-color: var(--gray-50)\nborder-color: var(--gray-300)\nbackground-image: var(--select-chevron-on-primary), linear-gradient(\r\n    to right,\r\n    transparent 0,\r\n    transparent calc(100% - var(--select-chevron-zone)),\r\n    var(--color-primary) calc(100% - var(--select-chevron-zone))\r\n  )\nbackground-repeat: no-repeat, no-repeat\nbackground-position:\r\n    right calc(var(--select-chevron-zone) * 0.5 - 0.5625rem) center,\r\n    center\nbackground-size: 1.125rem, 100% 100%",
+      "responsive": false,
+      "description": "── Select ───────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "[multiple])",
       "id": "#05-02-06",
       "category": null,
       "properties": [
@@ -1431,7 +1488,25 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".select-container.alt .select:not([size]):not([multiple])",
+      "selector": ".select-container.alt .select:not([size]",
+      "id": "#05-02-06",
+      "category": null,
+      "properties": [
+        "background-color",
+        "border-color",
+        "background-image",
+        "background-repeat",
+        "background-position",
+        "background-size"
+      ],
+      "cssRule": "background-color: var(--gray-50)\nborder-color: var(--gray-300)\nbackground-image: var(--select-chevron-on-primary), linear-gradient(\r\n    to right,\r\n    transparent 0,\r\n    transparent calc(100% - var(--select-chevron-zone)),\r\n    var(--color-primary) calc(100% - var(--select-chevron-zone))\r\n  )\nbackground-repeat: no-repeat, no-repeat\nbackground-position:\r\n    right calc(var(--select-chevron-zone) * 0.5 - 0.5625rem) center,\r\n    center\nbackground-size: 1.125rem, 100% 100%",
+      "responsive": false,
+      "description": "── Select ───────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "[multiple])",
       "id": "#05-02-06",
       "category": null,
       "properties": [
@@ -1755,7 +1830,20 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-underline:hover:not(:focus):not(:disabled)",
+      "selector": ".input-underline:hover:not(:focus",
+      "id": "#05-02-03",
+      "category": null,
+      "properties": [
+        "border-bottom-color"
+      ],
+      "cssRule": "border-bottom-color: var(--color-border-hover)",
+      "responsive": false,
+      "description": "── Input underline (modern single-line) ─────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":disabled)",
       "id": "#05-02-03",
       "category": null,
       "properties": [
@@ -1892,7 +1980,20 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-minimal:hover:not(:focus):not(:disabled)",
+      "selector": ".input-minimal:hover:not(:focus",
+      "id": "#05-02-04",
+      "category": null,
+      "properties": [
+        "background-color"
+      ],
+      "cssRule": "background-color: var(--gray-100)",
+      "responsive": false,
+      "description": "── Input minimal (borderless, subtle bg) ────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":disabled)",
       "id": "#05-02-04",
       "category": null,
       "properties": [
@@ -2147,7 +2248,7 @@
         "margin",
         "padding"
       ],
-      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 10px 10px 10px\npadding: 5px 10px 5px 40px",
+      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 10px 10px\npadding: 5px 10px 5px 40px",
       "responsive": false,
       "description": "── Checkbox ─────────────────────────────────────────────────────────────"
     },
@@ -2165,7 +2266,7 @@
         "margin",
         "padding"
       ],
-      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 10px 10px 10px\npadding: 5px 10px 5px 40px",
+      "cssRule": "position: relative\ndisplay: block\ncursor: pointer\nuser-select: none\nmargin: 8px 10px 10px\npadding: 5px 10px 5px 40px",
       "responsive": false,
       "description": "── Checkbox ─────────────────────────────────────────────────────────────"
     },
@@ -2283,7 +2384,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkmark:after",
+      "selector": ".checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2298,7 +2399,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkbox input:checked ~ .checkmark:after",
+      "selector": ".checkbox input:checked ~ .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2311,7 +2412,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkboxContainer input:checked ~ .checkmark:after",
+      "selector": ".checkboxContainer input:checked ~ .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2324,7 +2425,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkbox .checkmark:after",
+      "selector": ".checkbox .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2343,7 +2444,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkboxContainer .checkmark:after",
+      "selector": ".checkboxContainer .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2389,7 +2490,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkbox-s .checkmark:after",
+      "selector": ".checkbox-s .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2432,7 +2533,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".checkbox-l .checkmark:after",
+      "selector": ".checkbox-l .checkmark::after",
       "id": "#05-02-07",
       "category": null,
       "properties": [
@@ -2488,7 +2589,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle + .toggle-btn:after",
+      "selector": ".toggle + .toggle-btn::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2504,14 +2605,14 @@
         "box-shadow",
         "transition"
       ],
-      "cssRule": "content: \"\"\nposition: absolute\ntop: 50%\nleft: 0.125rem\ntransform: translateY(-50%)\nwidth: 1.25rem\nheight: 1.25rem\nborder-radius: var(--radius-full)\nbackground: var(--color-almost-white)\nbox-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)\ntransition: left 0.2s ease",
+      "cssRule": "content: \"\"\nposition: absolute\ntop: 50%\nleft: 0.125rem\ntransform: translateY(-50%)\nwidth: 1.25rem\nheight: 1.25rem\nborder-radius: var(--radius-full)\nbackground: var(--color-almost-white)\nbox-shadow: 0 1px 3px rgb(0 0 0 / 20%)\ntransition: left 0.2s ease",
       "responsive": false,
       "description": "<input type=\"checkbox\" class=\"toggle\" id=\"t1\" />\r\n   <label for=\"t1\" class=\"toggle-btn\"></label>\r\n\r\n   Sizes: .size-s, (default), .size-l"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle + .toggle-btn:before",
+      "selector": ".toggle + .toggle-btn::before",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2537,7 +2638,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle:checked + .toggle-btn:after",
+      "selector": ".toggle:checked + .toggle-btn::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2577,7 +2678,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle + .toggle-btn.size-s:after",
+      "selector": ".toggle + .toggle-btn.size-s::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2591,7 +2692,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle:checked + .toggle-btn.size-s:after",
+      "selector": ".toggle:checked + .toggle-btn.size-s::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2618,7 +2719,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle + .toggle-btn.size-l:after",
+      "selector": ".toggle + .toggle-btn.size-l::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -2632,7 +2733,7 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".toggle:checked + .toggle-btn.size-l:after",
+      "selector": ".toggle:checked + .toggle-btn.size-l::after",
       "id": "#05-02-08",
       "category": null,
       "properties": [
@@ -3034,7 +3135,7 @@
         "margin-top",
         "transition"
       ],
-      "cssRule": "appearance: none\nwidth: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 3px solid var(--input-bg)\nbox-shadow:\r\n    0 2px 6px rgba(0, 0, 0, 0.15),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06)\ncursor: grab\nmargin-top: -0.5rem\ntransition: transform 0.15s ease, box-shadow 0.2s ease",
+      "cssRule": "appearance: none\nwidth: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 3px solid var(--input-bg)\nbox-shadow:\r\n    0 2px 6px rgb(0 0 0 / 15%),\r\n    0 0 0 1px rgb(0 0 0 / 6%)\ncursor: grab\nmargin-top: -0.5rem\ntransition: transform 0.15s ease, box-shadow 0.2s ease",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3054,7 +3155,7 @@
         "cursor",
         "transition"
       ],
-      "cssRule": "width: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 3px solid var(--input-bg)\nbox-shadow:\r\n    0 2px 6px rgba(0, 0, 0, 0.15),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06)\ncursor: grab\ntransition: transform 0.15s ease, box-shadow 0.2s ease",
+      "cssRule": "width: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nbackground: var(--color-primary)\nborder: 3px solid var(--input-bg)\nbox-shadow:\r\n    0 2px 6px rgb(0 0 0 / 15%),\r\n    0 0 0 1px rgb(0 0 0 / 6%)\ncursor: grab\ntransition: transform 0.15s ease, box-shadow 0.2s ease",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3120,7 +3221,7 @@
         "transform",
         "box-shadow"
       ],
-      "cssRule": "transform: scale(1.12)\nbox-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08)",
+      "cssRule": "transform: scale(1.12)\nbox-shadow: 0 3px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(0 0 0 / 8%)",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3134,7 +3235,7 @@
         "transform",
         "box-shadow"
       ],
-      "cssRule": "transform: scale(1.12)\nbox-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08)",
+      "cssRule": "transform: scale(1.12)\nbox-shadow: 0 3px 10px rgb(0 0 0 / 20%), 0 0 0 1px rgb(0 0 0 / 8%)",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3160,7 +3261,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow:\r\n    0 2px 6px rgba(0, 0, 0, 0.15),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06),\r\n    0 0 0 4px rgba(var(--color-primary-rgb), 0.25)",
+      "cssRule": "box-shadow:\r\n    0 2px 6px rgb(0 0 0 / 15%),\r\n    0 0 0 1px rgb(0 0 0 / 6%),\r\n    0 0 0 4px rgba(var(--color-primary-rgb), 0.25)",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3173,7 +3274,7 @@
       "properties": [
         "box-shadow"
       ],
-      "cssRule": "box-shadow:\r\n    0 2px 6px rgba(0, 0, 0, 0.15),\r\n    0 0 0 1px rgba(0, 0, 0, 0.06),\r\n    0 0 0 4px rgba(var(--color-primary-rgb), 0.25)",
+      "cssRule": "box-shadow:\r\n    0 2px 6px rgb(0 0 0 / 15%),\r\n    0 0 0 1px rgb(0 0 0 / 6%),\r\n    0 0 0 4px rgba(var(--color-primary-rgb), 0.25)",
       "responsive": false,
       "description": "── Range slider ─────────────────────────────────────────────────────────"
     },
@@ -3390,13 +3491,12 @@
       "category": null,
       "properties": [
         "display",
-        "flex-direction",
+        "flex-flow",
         "justify-content",
         "align-items",
-        "flex-wrap",
         "margin"
       ],
-      "cssRule": "display: flex\nflex-direction: row\njustify-content: center\nalign-items: center\nflex-wrap: wrap\nmargin: var(--space-2) var(--space-1)",
+      "cssRule": "display: flex\nflex-flow: row wrap\njustify-content: center\nalign-items: center\nmargin: var(--space-2) var(--space-1)",
       "responsive": false,
       "description": "── Layout helpers (input-container, range-container) ────────────────────"
     },
@@ -3450,10 +3550,9 @@
         "background-color",
         "border",
         "border-radius",
-        "appearance",
-        "-moz-appearance"
+        "appearance"
       ],
-      "cssRule": "min-width: 0 !important\nwidth: 3.5rem\npadding: var(--space-1) var(--space-2)\ntext-align: center\nfont-family: var(--font-sans)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-primary)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--color-primary)\nborder-radius: var(--radius-m)\nappearance: textfield\n-moz-appearance: textfield",
+      "cssRule": "min-width: 0 !important\nwidth: 3.5rem\npadding: var(--space-1) var(--space-2)\ntext-align: center\nfont-family: var(--font-sans)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-primary)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--color-primary)\nborder-radius: var(--radius-m)\nappearance: textfield",
       "responsive": false,
       "description": "── Layout helpers (input-container, range-container) ────────────────────"
     },
@@ -3464,10 +3563,10 @@
       "id": "#05-02-14",
       "category": null,
       "properties": [
-        "-webkit-appearance",
+        "appearance",
         "margin"
       ],
-      "cssRule": "-webkit-appearance: none\nmargin: 0",
+      "cssRule": "appearance: none\nmargin: 0",
       "responsive": false,
       "description": "── Layout helpers (input-container, range-container) ────────────────────"
     },
@@ -3478,10 +3577,10 @@
       "id": "#05-02-14",
       "category": null,
       "properties": [
-        "-webkit-appearance",
+        "appearance",
         "margin"
       ],
-      "cssRule": "-webkit-appearance: none\nmargin: 0",
+      "cssRule": "appearance: none\nmargin: 0",
       "responsive": false,
       "description": "── Layout helpers (input-container, range-container) ────────────────────"
     },

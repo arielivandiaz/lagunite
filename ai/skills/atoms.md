@@ -17,6 +17,7 @@
 5. **Avatars** default to 40px circle; add size/shape classes on the same node.
 6. **Responsive:** list utilities use `xlist-*` (mobile) and `dlist-*` (desktop).
 7. **Night mode:** add `.night` on an ancestor. Badges and avatars include `.night` overrides.
+8. **Native input validation colors** (green/red borders) only apply when the control has a **`placeholder`**. Empty fields stay neutral; filled `:valid` → green; filled `:invalid` → red. Prefer class toggles `.form-group.has-error` / `.has-success` for explicit app validation.
 
 ## Tables
 

@@ -3,42 +3,59 @@
 Vendor-neutral skill files for any AI assistant or IDE.
 All files are plain Markdown — no proprietary frontmatter.
 
-## Skills
+> **Track AI-first:** norte documentado en [`../ToDo-ai-first.md`](../ToDo-ai-first.md) — en pausa hasta estabilizar CSS (`../ToDo-prod.md`). Estas skills son la referencia del **runtime CSS** y del **UI Validator**.
+
+## UI Validator (multi-skill agent)
+
+| Role | File | Use when |
+| --- | --- | --- |
+| **Orchestrator** | [skills/validate.md](skills/validate.md) | Entry: audit / fix Lagunite HTML; returns structured report |
+| Structure | [skills/validate-structure.md](skills/validate-structure.md) | Classnames, order, layers |
+| Forms | [skills/validate-forms.md](skills/validate-forms.md) | form-group, inputs, native valid/invalid |
+| Night | [skills/validate-night.md](skills/validate-night.md) | `.night` surfaces & muted text |
+| A11y | [skills/validate-a11y.md](skills/validate-a11y.md) | Labels, focus, light a11y gates |
+| Compose | [skills/compose.md](skills/compose.md) | UI craft — alignment, rhythm, anti-patterns |
+| Contrast | [skills/contrast.md](skills/contrast.md) | bg/text pairing, WCAG notes |
+
+**Cursor:** agent [`.cursor/agents/lagunite-ui-validator.md`](../.cursor/agents/lagunite-ui-validator.md) · skill `lagunite-ui-validator`.
+
+## Layer skills
 
 | Skill | File | Use when |
 | --- | --- | --- |
-| **Tokens** | [skills/tokens.md](skills/tokens.md) | Working with CSS variables (`--space-*`, `--color-*`, `--radius-*`, `--font-*`) |
-| **Typography** | [skills/typography.md](skills/typography.md) | Setting font size, weight, line height, letter spacing, text align |
-| **Colors** | [skills/colors.md](skills/colors.md) | Text color, backgrounds, gradients, border colors |
-| **Spacing & Sizing** | [skills/spacing.md](skills/spacing.md) | Margin, padding, position, width, height, overflow |
-| **Flex** | [skills/flex.md](skills/flex.md) | Flex containers, direction, alignment, gap, order |
-| **Grid** | [skills/grid.md](skills/grid.md) | Grid containers, columns, rows, span, placement |
-| **Containers** | [skills/containers.md](skills/containers.md) | Page-level width constraints, hero, prose, section wrappers |
-| **Decorators** | [skills/decorators.md](skills/decorators.md) | Shadows, borders, radius, transforms, transitions, animations, filters |
-| **Atoms** | [skills/atoms.md](skills/atoms.md) | Tables, lists, figures, badges, avatars |
-| **Molecules** | [skills/molecules.md](skills/molecules.md) | Form groups, alerts, dropdowns, tooltips, breadcrumbs |
+| **Tokens** | [skills/tokens.md](skills/tokens.md) | CSS variables (`--space-*`, `--color-*`, …) |
+| **Typography** | [skills/typography.md](skills/typography.md) | Font size, weight, line height, align |
+| **Colors** | [skills/colors.md](skills/colors.md) | Text, backgrounds, gradients, borders |
+| **Spacing & Sizing** | [skills/spacing.md](skills/spacing.md) | Margin, padding, position, width, height |
+| **Flex** | [skills/flex.md](skills/flex.md) | Flex containers, alignment, gap |
+| **Grid** | [skills/grid.md](skills/grid.md) | Grid containers, columns, placement |
+| **Containers** | [skills/containers.md](skills/containers.md) | Page width constraints, hero, prose |
+| **Decorators** | [skills/decorators.md](skills/decorators.md) | Shadows, borders, motion, filters |
+| **Atoms** | [skills/atoms.md](skills/atoms.md) | Tables, lists, figures, badges, avatars, inputs notes |
+| **Molecules** | [skills/molecules.md](skills/molecules.md) | Form groups, alerts, dropdowns, … |
 | **Compounds** | [skills/compounds.md](skills/compounds.md) | Cards, modals |
 | **Organisms** | [skills/organisms.md](skills/organisms.md) | Navbar, sidebar, footer |
-| **Patterns** | [skills/patterns.md](skills/patterns.md) | Full-page HTML starting points (landing, dashboard, form, blog) |
-| **Misc** | [skills/misc.md](skills/misc.md) | Display, visibility, cursor, pseudo-elements |
-| **Validate** | [skills/validate.md](skills/validate.md) | Checklist before/after generating Lagunite HTML |
-| **Tailwind Migration** | [skills/tailwind-migration.md](skills/tailwind-migration.md) | Translating Tailwind utilities to Lagunite equivalents |
+| **Patterns** | [skills/patterns.md](skills/patterns.md) | Page starting points |
+| **Misc** | [skills/misc.md](skills/misc.md) | Display, cursor, pseudo |
+| **Tailwind Migration** | [skills/tailwind-migration.md](skills/tailwind-migration.md) | Tailwind → Lagunite |
 
-## Layer order
+## Recommended flow
+
+```
+generate screen → compose + layer skills
+              → Lagunite UI Validator (validate.md orchestrator)
+              → fix → re-validate until no FAIL
+```
 
 ```
 tokens → typography/colors → spacing/layout → decorators
   → atoms → molecules → compounds → organisms → patterns
 ```
 
-Pick the skill for the layer you're working in. Always validate with the **validate** skill before finalizing output.
-
-## How to load in your AI tool
+## How to load
 
 | Tool | How |
 | --- | --- |
-| **Claude Code** | `@./ai/skills/skill-name.md` in CLAUDE.md or in prompt |
-| **Cursor** | Reference path in `.cursor/rules/*.mdc` |
-| **GitHub Copilot** | Include in `.github/copilot-instructions.md` |
-| **Windsurf** | Reference in `.windsurfrules` |
-| **Any chat AI** | Paste the file content directly |
+| **Cursor** | Agent `Lagunite UI Validator` or skill `lagunite-ui-validator`; rules in `.cursor/rules/lagunite-ai.mdc` |
+| **Claude Code** | `@./ai/skills/validate.md` then domain files |
+| **Any chat AI** | Paste orchestrator + needed domain skills |

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender - Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+  <style>
+    /* GAP: .radio-divs label div uses border-radius-m; need circle override for this use case */
+    .radio-divs.gender-pick label div {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--color-text-alt);
+    }
+  </style>
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+  <!-- Top bar: back arrow -->
+  <div class="row wp100 jc-fs padd-h-l">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+  </div>
+
+  <!-- Main content: heading + gender options -->
+  <div class="col ai-c gap-xl wp90 flex-1 jc-c">
+
+    <div class="col ai-c gap-xs wp100">
+      <h2 class="marg-0 ta-c">Tell Us About Yourself</h2>
+      <p class="font-s opacity-70 ta-c marg-0" style="max-width: 280px">
+        To give you a better experience and results we need to know your gender
+      </p>
+    </div>
+
+    <!-- Gender radio-divs -->
+    <div class="radio-divs gender-pick col ai-c gap-l">
+
+      <div>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">
+          <div>&#9794;</div>
+          Male
+        </label>
+      </div>
+
+      <div>
+        <input type="radio" name="gender" id="female" value="female" checked>
+        <label for="female">
+          <div>&#9792;</div>
+          Female
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer: Continue -->
+  <div class="row gap-s padd-h-l wp100">
+    <button class="btn primary border-r-full flex-1 size-l" type="button">Continue</button>
+  </div>
+
+</div>
+
+</body>
+</html>

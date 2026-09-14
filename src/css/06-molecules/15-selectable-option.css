@@ -1,0 +1,170 @@
+/* ==========
+   06-molecules / 15-selectable-option.css
+   Selectable option — pill-shaped toggle for multi/single selection lists.
+   Typical use: goal selectors, preference checklists, filter lists.
+
+   Markup (multi-select):
+     <label class="selectable-option">
+       <input type="checkbox">
+       <span class="selectable-option-label">Get Fitter</span>
+       <span class="selectable-option-indicator"></span>
+     </label>
+
+   Markup (single-select):
+     <label class="selectable-option">
+       <input type="radio" name="group">
+       <span class="selectable-option-label">Option A</span>
+       <span class="selectable-option-indicator"></span>
+     </label>
+
+   Selected state is driven by :checked — no JS needed.
+   ========= */
+
+/* @ID: #06-15-01 */
+
+/* ── Base container ───────────────────────────────────────────────────── */
+
+.selectable-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.selectable-option:hover {
+  border-color: var(--color-primary);
+}
+
+/* Hide the native input */
+.selectable-option input[type="checkbox"],
+.selectable-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* @ID: #06-15-02 */
+
+/* ── Label ────────────────────────────────────────────────────────────── */
+
+.selectable-option-label {
+  font-family: var(--font-headers);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-base);
+  flex: 1;
+  min-width: 0;
+}
+
+/* @ID: #06-15-03 */
+
+/* ── Indicator (circle with checkmark) ────────────────────────────────── */
+
+.selectable-option-indicator {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.selectable-option-indicator::after {
+  content: "";
+  display: none;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+/* @ID: #06-15-04 */
+
+/* ── Selected state (via :checked) ────────────────────────────────────── */
+
+.selectable-option:has(input:checked) {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.08);
+}
+
+.selectable-option:has(input:checked) .selectable-option-indicator {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.selectable-option:has(input:checked) .selectable-option-indicator::after {
+  display: block;
+}
+
+/* Focus-visible ring for keyboard nav */
+.selectable-option:has(input:focus-visible) {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* @ID: #06-15-05 */
+
+/* ── Size variants ────────────────────────────────────────────────────── */
+
+.selectable-option.size-s {
+  padding: var(--space-2) var(--space-3);
+}
+
+.selectable-option.size-s .selectable-option-label {
+  font-size: var(--font-size-s);
+}
+
+.selectable-option.size-s .selectable-option-indicator {
+  width: 20px;
+  height: 20px;
+}
+
+.selectable-option.size-s .selectable-option-indicator::after {
+  width: 5px;
+  height: 9px;
+  border-width: 0 2px 2px 0;
+}
+
+.selectable-option.size-l {
+  padding: var(--space-4) var(--space-5);
+}
+
+.selectable-option.size-l .selectable-option-label {
+  font-size: var(--font-size-l);
+}
+
+.selectable-option.size-l .selectable-option-indicator {
+  width: 28px;
+  height: 28px;
+}
+
+.selectable-option.size-l .selectable-option-indicator::after {
+  width: 7px;
+  height: 13px;
+  border-width: 0 3px 3px 0;
+}
+
+/* @ID: #06-15-06 */
+
+/* ── Disabled ─────────────────────────────────────────────────────────── */
+
+.selectable-option:has(input:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

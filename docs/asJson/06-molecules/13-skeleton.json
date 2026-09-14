@@ -350,7 +350,7 @@
         "background",
         "animation"
       ],
-      "cssRule": "content: \"\"\nposition: absolute\ninset: 0\ntransform: translateX(-120%)\nbackground: linear-gradient(\r\n    90deg,\r\n    rgba(255, 255, 255, 0) 0%,\r\n    rgba(255, 255, 255, 0.5) 50%,\r\n    rgba(255, 255, 255, 0) 100%\r\n  )\nanimation: skeleton-shimmer 1.45s linear infinite",
+      "cssRule": "content: \"\"\nposition: absolute\ninset: 0\ntransform: translateX(-120%)\nbackground: linear-gradient(\r\n    90deg,\r\n    rgb(255 255 255 / 0%) 0%,\r\n    rgb(255 255 255 / 50%) 50%,\r\n    rgb(255 255 255 / 0%) 100%\r\n  )\nanimation: skeleton-shimmer 1.45s linear infinite",
       "responsive": false,
       "description": "── Layout and states ───────────────────────────────────────────────────"
     },
@@ -443,7 +443,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": "background: linear-gradient(\r\n    90deg,\r\n    rgba(255, 255, 255, 0) 0%,\r\n    rgba(255, 255, 255, 0.16) 50%,\r\n    rgba(255, 255, 255, 0) 100%\r\n  )",
+      "cssRule": "background: linear-gradient(\r\n    90deg,\r\n    rgb(255 255 255 / 0%) 0%,\r\n    rgb(255 255 255 / 16%) 50%,\r\n    rgb(255 255 255 / 0%) 100%\r\n  )",
       "responsive": false,
       "description": "── Layout and states ───────────────────────────────────────────────────"
     }

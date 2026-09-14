@@ -50,7 +50,9 @@ Do not treat `lagunite-web/` as part of this repo or assume changes here affect 
 ### After generating — quick review
 - Scan for unknown or Tailwind-style abbreviations.
 - Check responsive prefixes match intent (`x` = mobile, `d` = desktop).
-- **Background + text:** many `.bg-*` utilities set text color; do not stack conflicting `.color-*` without reason.
+- **Screens / forms / dashboards:** apply `ai/skills/compose.md`, then run the **UI Validator** orchestrator (`ai/skills/validate.md` + domain skills).
+- **Background + text:** read `ai/skills/contrast.md` before bg/text pairing.
+- **`.bg-1`…`.bg-9` are NOT neutral surfaces** — they resolve to primary/secondary/tertiary colors. For neutral dark cards use `.bg-gray-800`/`.bg-gray-900`; for adaptive surfaces use `.bg`.
 - Navbar safety: never style all `header` tags for spacing. Scope as `header:not(.navbar):not(.doc-navbar-overlay)` if needed.
 
 ## Framework quick reference
@@ -77,8 +79,14 @@ Index: `ai/SKILLS-INDEX.md`
 | Compounds | `ai/skills/compounds.md` |
 | Organisms | `ai/skills/organisms.md` |
 | Patterns | `ai/skills/patterns.md` |
+| Compose (UI craft) | `ai/skills/compose.md` |
 | Misc | `ai/skills/misc.md` |
-| Validate (meta) | `ai/skills/validate.md` |
+| **UI Validator (orchestrator)** | `ai/skills/validate.md` |
+| Validate — structure | `ai/skills/validate-structure.md` |
+| Validate — forms | `ai/skills/validate-forms.md` |
+| Validate — night | `ai/skills/validate-night.md` |
+| Validate — a11y | `ai/skills/validate-a11y.md` |
+| Contrast | `ai/skills/contrast.md` |
 | Tailwind migration | `ai/skills/tailwind-migration.md` |
 
 In-repo cheatsheets: `src/css/03-layout/FLEX-CHEATSHEET.md`, `GRID-CHEATSHEET.md`, `CONTAINERS-CHEATSHEET.md`, `LAYOUT-SPACING-CHEATSHEET.md`. Decorators: `src/css/04-decorators/DECORATORS-CHEATSHEET.md`. Atoms: `src/css/05-atoms/ATOMS-CHEATSHEET.md`.

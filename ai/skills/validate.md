@@ -1,45 +1,107 @@
-# Lagunite Validate (Meta)
+# Lagunite UI Validator (orchestrator)
 
-> Checklist for reviewing or generating Lagunite markup. Use whenever producing or auditing HTML/CSS that claims to use Lagunite.
+> **This is the agent entrypoint** for validating or refining Lagunite UI.  
+> It does **not** replace domain skills — it **routes** to them and merges a single report.
+>
+> Domain skills live beside this file:
+> `validate-structure` · `validate-forms` · `validate-night` · `validate-a11y`  
+> Plus craft/color: `compose.md` · `contrast.md`
 
 ---
 
-## Before you generate
+## When to run
 
-1. **Pick the right skill** for the layer: tokens → typography/colors → spacing/layout → decorators → atoms → molecules → compounds → organisms → patterns.
-2. **Do not invent classes.** If a class is not in the relevant skill or `src/css`, say it is missing and suggest the closest documented utility.
-3. **Prefer utilities over `style=""` or raw px**, unless the framework truly has no match (then state the gap explicitly with `<!-- GAP: reason -->`).
+- After generating a screen / section / form / dashboard
+- When the user asks to “validate”, “auditar”, “revisar UI Lagunite”, or refine broken B/POC HTML
+- Before treating a POC as a golden example for skills
 
-## Class string hygiene
+---
 
-1. **Order:** base utilities first, then **`x*`** (max-width 639px), then **`d*`** (min-width 640px).
-2. **Layout first:** flex/grid/position → margin/padding/gap → typography/colors → borders/shadows/effects.
-3. **Gap in grid/flex:** use **`.gap-*`** (and `xgap*` / `dgap*`) — **not** removed legacy names like `g-gap` or `f-gap`.
+## Agent protocol (follow in order)
 
-## Layer sanity
+### 0. Scope the target
+- Identify files or HTML under review
+- Note modes to check: **light** always; **night** if `.night` / theme toggle exists or user cares about dark
 
-| Layer | Skill | Examples |
-| --- | --- | --- |
-| Atoms | atoms | `.btn`, `.input`, tables, lists |
-| Molecules | molecules | `.form-group`, `.alert`, `.dropdown` |
-| Compounds | compounds | `.card`, `.modal` |
-| Organisms | organisms | `.navbar`, `.sidebar`, `.footer` |
+### 1. Load skills (read before judging)
+| Always | If forms/inputs | If night / toggle | Always for screens | Always for color pairs |
+| --- | --- | --- | --- | --- |
+| `validate-structure.md` | `validate-forms.md` | `validate-night.md` | `compose.md` | `contrast.md` |
+| `validate-a11y.md` | | | | |
 
-Do not put organism markup inside a molecule class name; keep DOM structure as in the source CSS files.
+Skip a domain only if clearly N/A (e.g. no form → skip forms with Status: SKIP).
 
-## After you generate (quick review)
+### 2. Run each domain checklist
+Produce the structured subsection each skill defines (`Structure`, `Forms`, `Night`, `A11y`, plus `Compose` / `Contrast` notes).
 
-- Scan for unknown or Tailwind-style abbreviations.
-- Check responsive prefixes match intent (`x` = mobile, `d` = desktop).
-- **Background + text:** many `.bg-*` utilities set text color; do not stack conflicting `.color-*` without reason.
-- **Navbar safety:** never style all `header` tags for spacing. Scope as `header:not(.navbar):not(.doc-navbar-overlay)` if needed.
+### 3. Fix or report
+- **Default when editing repo HTML:** apply safe fixes (classnames, `jc-fs`, `card-text`, placeholders, `minvh100`, …)
+- **Do not** invent new CSS utilities in the same pass unless the user asked for a framework fix
+- If the bug is in framework CSS (like empty inputs turning green), fix CSS + mention in the report
 
-## Cheatsheets in this repo
+### 4. Final report (required shape)
 
-- Layout: `src/css/03-layout/FLEX-CHEATSHEET.md`, `GRID-CHEATSHEET.md`, `CONTAINERS-CHEATSHEET.md`, `LAYOUT-SPACING-CHEATSHEET.md`
-- Decorators: `src/css/04-decorators/DECORATORS-CHEATSHEET.md`
-- Atoms: `src/css/05-atoms/ATOMS-CHEATSHEET.md`
+```markdown
+## Lagunite UI Validator report
 
-## One-line prompt you can reuse
+**Target:** <path or snippet>
+**Modes:** light | night | both
 
-> "Lagunite v2 only: use skills + `src/css`; base then `x` then `d`; no invented classes; layout utilities before decoration."
+### Compose
+- Status: PASS | FAIL | WARN | SKIP
+- …
+
+### Structure
+- Status: …
+- …
+
+### Forms
+- Status: …
+- …
+
+### Night
+- Status: …
+- …
+
+### A11y
+- Status: …
+- …
+
+### Contrast
+- Status: …
+- …
+
+### Summary
+- Blockers (FAIL): …
+- Warnings: …
+- Changes made: …
+- Follow-ups (CSS / skills / demos): …
+```
+
+Overall gate: **any FAIL in Structure / Forms / Night (when applicable) / Compose blockers → not done.**
+
+---
+
+## Quick routing (cheat)
+
+| Symptom | Open first |
+| --- | --- |
+| Floated/centered mess, random cards | `compose` + `validate-structure` |
+| White/tiny muted text | `validate-night` + `contrast` + `compose` (`.card-text`) |
+| Green/red empty inputs | `validate-forms` |
+| `btn-primary`, Tailwind names | `validate-structure` |
+| Missing labels / focus | `validate-a11y` |
+
+---
+
+## What this agent is not
+
+- Not a full WCAG consultancy
+- Not the screenshot auto-refiner (future tooling)
+- Not a substitute for `ToDo-prod` CSS release work
+
+---
+
+## One-line invoke
+
+> Run the Lagunite UI Validator: read `ai/skills/validate.md` then domain skills; fix HTML; return the structured report.

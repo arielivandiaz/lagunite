@@ -233,12 +233,9 @@
       "id": "#03-03-02",
       "category": null,
       "properties": [
-        "bottom",
-        "top",
-        "right",
-        "left"
+        "inset"
       ],
-      "cssRule": "bottom: 0\ntop: 0\nright: 0\nleft: 0",
+      "cssRule": "inset: 0",
       "responsive": true,
       "description": "── Absolute position shortcuts ──────────────────────────────────────────"
     },
@@ -554,12 +551,9 @@
       "id": "#03-03-04",
       "category": null,
       "properties": [
-        "bottom",
-        "top",
-        "right",
-        "left"
+        "inset"
       ],
-      "cssRule": "bottom: 0\ntop: 0\nright: 0\nleft: 0",
+      "cssRule": "inset: 0",
       "responsive": true,
       "description": "── Fixed position shortcuts ───────────────────────────────────────────────"
     },
@@ -1032,12 +1026,9 @@
       "id": "#03-03-07",
       "category": null,
       "properties": [
-        "bottom",
-        "top",
-        "left",
-        "right"
+        "inset"
       ],
-      "cssRule": "bottom: 0\ntop: 0\nleft: 0\nright: 0",
+      "cssRule": "inset: 0",
       "responsive": false,
       "description": "── Float positioning in .rel container ──────────────────────────────────"
     },

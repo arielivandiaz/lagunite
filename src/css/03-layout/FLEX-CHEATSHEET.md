@@ -1,5 +1,7 @@
 # Flex Cheatsheet — Lagunite
 
+> **Gotcha:** `.row` / `.col` default to **center** on both axes. For forms, lists, dashboards use `jc-fs ai-fs` (or `ai-s`). Full UI rules: `ai/skills/compose.md`.
+
 ## Direction
 ```
 .row      →  .col      ↓  .rowr  ←  .colr  ↑

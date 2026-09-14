@@ -133,7 +133,7 @@
         "background",
         "color"
       ],
-      "cssRule": "border-color: var(--green-500)\nbackground: rgba(16, 185, 129, 0.13)\ncolor: var(--green-700)",
+      "cssRule": "border-color: var(--green-500)\nbackground: rgb(16 185 129 / 13%)\ncolor: var(--green-700)",
       "responsive": false,
       "description": "── Semantic variants ────────────────────────────────────────────────────"
     },
@@ -148,7 +148,7 @@
         "background",
         "color"
       ],
-      "cssRule": "border-color: var(--blue-500)\nbackground: rgba(59, 130, 246, 0.13)\ncolor: var(--blue-700)",
+      "cssRule": "border-color: var(--blue-500)\nbackground: rgb(59 130 246 / 13%)\ncolor: var(--blue-700)",
       "responsive": false,
       "description": "── Semantic variants ────────────────────────────────────────────────────"
     },
@@ -163,7 +163,7 @@
         "background",
         "color"
       ],
-      "cssRule": "border-color: var(--yellow-500)\nbackground: rgba(234, 179, 8, 0.2)\ncolor: var(--yellow-800)",
+      "cssRule": "border-color: var(--yellow-500)\nbackground: rgb(234 179 8 / 20%)\ncolor: var(--yellow-800)",
       "responsive": false,
       "description": "── Semantic variants ────────────────────────────────────────────────────"
     },
@@ -178,7 +178,7 @@
         "background",
         "color"
       ],
-      "cssRule": "border-color: var(--red-500)\nbackground: rgba(239, 68, 68, 0.13)\ncolor: var(--red-700)",
+      "cssRule": "border-color: var(--red-500)\nbackground: rgb(239 68 68 / 13%)\ncolor: var(--red-700)",
       "responsive": false,
       "description": "── Semantic variants ────────────────────────────────────────────────────"
     },
@@ -310,7 +310,7 @@
         "transform",
         "background"
       ],
-      "cssRule": "content: \"\"\nposition: absolute\nleft: var(--space-2)\ntop: 50%\nwidth: 0.35rem\nheight: 0.35rem\nborder-radius: 50%\ntransform: translateY(-50%)\nbackground: currentColor",
+      "cssRule": "content: \"\"\nposition: absolute\nleft: var(--space-2)\ntop: 50%\nwidth: 0.35rem\nheight: 0.35rem\nborder-radius: 50%\ntransform: translateY(-50%)\nbackground: currentcolor",
       "responsive": false,
       "description": "── Style variants and indicators ────────────────────────────────────────"
     },
@@ -403,7 +403,7 @@
       "properties": [
         "background"
       ],
-      "cssRule": "background: rgba(0, 0, 0, 0.12)",
+      "cssRule": "background: rgb(0 0 0 / 12%)",
       "responsive": false,
       "description": "── Interactive and removable tags ───────────────────────────────────────"
     },
@@ -463,7 +463,7 @@
         "color",
         "background"
       ],
-      "cssRule": "border-color: var(--gray-400)\ncolor: var(--gray-200)\nbackground: rgba(255, 255, 255, 0.06)",
+      "cssRule": "border-color: var(--gray-400)\ncolor: var(--gray-200)\nbackground: rgb(255 255 255 / 6%)",
       "responsive": false,
       "description": "── Group and night mode ─────────────────────────────────────────────────"
     },
@@ -478,7 +478,7 @@
         "color",
         "background"
       ],
-      "cssRule": "border-color: #22c55e\ncolor: #86efac\nbackground: rgba(34, 197, 94, 0.2)",
+      "cssRule": "border-color: #22c55e\ncolor: #86efac\nbackground: rgb(34 197 94 / 20%)",
       "responsive": false,
       "description": "── Group and night mode ─────────────────────────────────────────────────"
     },
@@ -493,7 +493,7 @@
         "color",
         "background"
       ],
-      "cssRule": "border-color: #60a5fa\ncolor: #bfdbfe\nbackground: rgba(59, 130, 246, 0.2)",
+      "cssRule": "border-color: #60a5fa\ncolor: #bfdbfe\nbackground: rgb(59 130 246 / 20%)",
       "responsive": false,
       "description": "── Group and night mode ─────────────────────────────────────────────────"
     },
@@ -508,7 +508,7 @@
         "color",
         "background"
       ],
-      "cssRule": "border-color: #facc15\ncolor: #fde047\nbackground: rgba(234, 179, 8, 0.2)",
+      "cssRule": "border-color: #facc15\ncolor: #fde047\nbackground: rgb(234 179 8 / 20%)",
       "responsive": false,
       "description": "── Group and night mode ─────────────────────────────────────────────────"
     },
@@ -523,7 +523,7 @@
         "color",
         "background"
       ],
-      "cssRule": "border-color: #f87171\ncolor: #fca5a5\nbackground: rgba(239, 68, 68, 0.2)",
+      "cssRule": "border-color: #f87171\ncolor: #fca5a5\nbackground: rgb(239 68 68 / 20%)",
       "responsive": false,
       "description": "── Group and night mode ─────────────────────────────────────────────────"
     },

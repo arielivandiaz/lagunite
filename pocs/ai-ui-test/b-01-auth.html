@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B01 Auth — compose</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!-- CORRIDA B: ai/skills/compose.md -->
+  <button
+    type="button"
+    id="theme-toggle"
+    class="btn alt size-s pos-fixed top-0 right-0 marg-s z5"
+    aria-label="Toggle night mode"
+  >Night</button>
+
+  <div class="minvh100 row jc-c ai-c padd">
+    <div class="container-card">
+      <div class="card card-elevated">
+        <div class="card-body col jc-fs ai-s gap-s">
+          <h1 class="font-l bold color-text">Sign in</h1>
+          <!-- NOT color-text-alt: that token is #fff (on dark/primary fills). Muted on light = .card-text -->
+          <p class="font-s card-text">Use your work email to continue.</p>
+          <form class="col jc-fs ai-s gap-s">
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pwd">Password</label>
+              <input class="input" id="pwd" name="pwd" type="password" autocomplete="current-password" placeholder="••••••••" />
+            </div>
+            <div class="row jc-fe ai-c gap-s marg-t">
+              <button type="button" class="btn alt">Cancel</button>
+              <button type="submit" class="btn">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">
+    <a href="./index.html">← index</a> · <a href="./a-01-auth.html">ver A</a>
+  </p>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    function syncLabel() {
+      btn.textContent = document.body.classList.contains('night') ? 'Day' : 'Night';
+    }
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+      syncLabel();
+    });
+    syncLabel();
+  </script>
+</body>
+</html>

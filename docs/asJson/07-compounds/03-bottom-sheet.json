@@ -24,7 +24,7 @@
         "pointer-events",
         "transition"
       ],
-      "cssRule": "position: fixed\ninset: 0\ndisplay: flex\nalign-items: flex-end\njustify-content: center\npadding: var(--space-4) var(--space-3) 0\nbackground: rgba(2, 6, 23, 0.52)\nz-index: 1010\nopacity: 0\npointer-events: none\ntransition: opacity 0.28s ease",
+      "cssRule": "position: fixed\ninset: 0\ndisplay: flex\nalign-items: flex-end\njustify-content: center\npadding: var(--space-4) var(--space-3) 0\nbackground: rgb(2 6 23 / 52%)\nz-index: 1010\nopacity: 0\npointer-events: none\ntransition: opacity 0.28s ease",
       "responsive": false,
       "description": "── Bottom sheet overlay ────────────────────────────────────────────────"
     },
@@ -319,7 +319,7 @@
         "color",
         "background"
       ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: rgba(255, 255, 255, 0.08)",
+      "cssRule": "color: var(--color-text-alt)\nbackground: rgb(255 255 255 / 8%)",
       "responsive": false,
       "description": "── Snap sizes ──────────────────────────────────────────────────────────"
     }

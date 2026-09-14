@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification - Mobile POC</title>
+  <link rel="stylesheet" href="../../dist/lagunite.css">
+  <style>
+    /* GAP: needs OTP input molecule */
+    .otp-group {
+      display: flex;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+    .otp-group input {
+      width: 56px;
+      height: 56px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: var(--font-weight-bold);
+      font-family: var(--font-headers);
+      border-radius: var(--radius-m);
+      caret-color: var(--color-primary);
+    }
+    .otp-group input:focus {
+      border-color: var(--color-primary);
+    }
+    .otp-group input.filled {
+      border-color: var(--color-primary);
+      background: rgba(var(--color-primary-rgb), 0.08);
+    }
+
+  </style>
+</head>
+<body class="night bg marg-0">
+
+<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+
+<div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
+
+  <!-- Top bar: back arrow + title -->
+  <div class="row wp100 ai-c gap-s padd-h-l">
+    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+    <h3 class="marg-0 font-bold">Forgot Password</h3>
+  </div>
+
+  <!-- Main content -->
+  <div class="col ai-c gap-l wp90 flex-1 jc-c">
+
+    <p class="font-s opacity-70 ta-c marg-0">
+      Code has been send to +1 85 ****** 90
+    </p>
+
+    <!-- OTP inputs -->
+    <div class="otp-group" id="otpGroup">
+      <input type="text" inputmode="numeric" maxlength="1" autocomplete="one-time-code" aria-label="Digit 1">
+      <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 2">
+      <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 3">
+      <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 4">
+    </div>
+
+    <!-- Resend timer -->
+    <p class="font-s opacity-70 ta-c marg-0">
+      Resend code in <span class="color-primary font-bold" id="timer">56</span> s
+    </p>
+
+
+  </div>
+
+  <!-- Footer: Verify -->
+  <div class="row gap-s padd-h-l wp100">
+    <button class="btn primary border-r-full flex-1 size-l" type="button" id="verifyBtn" disabled>Verify</button>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  const inputs = document.querySelectorAll('#otpGroup input');
+  const verifyBtn = document.getElementById('verifyBtn');
+
+  function updateState() {
+    const filled = [...inputs].every(i => i.value.length === 1);
+    verifyBtn.disabled = !filled;
+    inputs.forEach(i => i.classList.toggle('filled', i.value.length === 1));
+  }
+
+  function focusNext(idx) {
+    if (idx < inputs.length) inputs[idx].focus();
+  }
+
+  // Keyboard input
+  inputs.forEach((inp, idx) => {
+    inp.addEventListener('input', () => {
+      inp.value = inp.value.replace(/\D/g, '').slice(-1);
+      if (inp.value) focusNext(idx + 1);
+      updateState();
+    });
+
+    inp.addEventListener('keydown', e => {
+      if (e.key === 'Backspace' && !inp.value && idx > 0) {
+        inputs[idx - 1].value = '';
+        inputs[idx - 1].focus();
+        updateState();
+      }
+    });
+
+    // Paste support: distribute digits across all boxes
+    inp.addEventListener('paste', e => {
+      e.preventDefault();
+      const text = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '');
+      if (!text) return;
+      for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = text[i] || '';
+      }
+      focusNext(Math.min(text.length, inputs.length - 1));
+      updateState();
+    });
+  });
+
+  // Focus first input on load
+  inputs[0].focus();
+
+  // Countdown timer
+  let seconds = 56;
+  const timerEl = document.getElementById('timer');
+  const interval = setInterval(() => {
+    seconds--;
+    timerEl.textContent = seconds;
+    if (seconds <= 0) clearInterval(interval);
+  }, 1000);
+})();
+</script>
+
+</body>
+</html>

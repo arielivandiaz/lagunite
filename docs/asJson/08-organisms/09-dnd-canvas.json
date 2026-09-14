@@ -141,16 +141,13 @@
       "category": null,
       "properties": [
         "position",
-        "top",
-        "left",
-        "right",
-        "bottom",
+        "inset",
         "width",
         "height",
         "border-radius",
         "z-index"
       ],
-      "cssRule": "position: fixed\ntop: 0\nleft: 0\nright: 0\nbottom: 0\nwidth: 100%\nheight: 100%\nborder-radius: 0\nz-index: 100",
+      "cssRule": "position: fixed\ninset: 0\nwidth: 100%\nheight: 100%\nborder-radius: 0\nz-index: 100",
       "responsive": false,
       "description": "── Variants (fullscreen and sizing) ────────────────────────────────────"
     },
@@ -244,7 +241,7 @@
         "border-color",
         "box-shadow"
       ],
-      "cssRule": "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 3px rgba(94, 154, 255, 0.15)",
+      "cssRule": "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 3px rgb(94 154 255 / 15%)",
       "responsive": false,
       "description": "── Variants (fullscreen and sizing) ────────────────────────────────────"
     },

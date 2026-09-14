@@ -1,0 +1,327 @@
+{
+  "communities": {
+    "0": [
+      "scripts_generate_contrast_docs",
+      "scripts_generate_contrast_docs_allnightvars",
+      "scripts_generate_contrast_docs_allvars",
+      "scripts_generate_contrast_docs_buildpalettedata",
+      "scripts_generate_contrast_docs_buildsemanticdata",
+      "scripts_generate_contrast_docs_contrastratio",
+      "scripts_generate_contrast_docs_dirname",
+      "scripts_generate_contrast_docs_extractvars",
+      "scripts_generate_contrast_docs_families",
+      "scripts_generate_contrast_docs_generateskillmd",
+      "scripts_generate_contrast_docs_hextorgb",
+      "scripts_generate_contrast_docs_hsltorgb",
+      "scripts_generate_contrast_docs_issues",
+      "scripts_generate_contrast_docs_lightsemantic",
+      "scripts_generate_contrast_docs_luminance",
+      "scripts_generate_contrast_docs_nightsemantic",
+      "scripts_generate_contrast_docs_nightvars",
+      "scripts_generate_contrast_docs_palettecss",
+      "scripts_generate_contrast_docs_palettedata",
+      "scripts_generate_contrast_docs_palettesafetextlabel",
+      "scripts_generate_contrast_docs_palettevars",
+      "scripts_generate_contrast_docs_parsecolorvalue",
+      "scripts_generate_contrast_docs_parsenightvars",
+      "scripts_generate_contrast_docs_parserootvars",
+      "scripts_generate_contrast_docs_ratingemoji",
+      "scripts_generate_contrast_docs_read",
+      "scripts_generate_contrast_docs_resolvecolor",
+      "scripts_generate_contrast_docs_resolvevalue",
+      "scripts_generate_contrast_docs_rgbtohex",
+      "scripts_generate_contrast_docs_root",
+      "scripts_generate_contrast_docs_semantic_bgs",
+      "scripts_generate_contrast_docs_semanticrow",
+      "scripts_generate_contrast_docs_skillmd",
+      "scripts_generate_contrast_docs_srgb",
+      "scripts_generate_contrast_docs_steps",
+      "scripts_generate_contrast_docs_themecss",
+      "scripts_generate_contrast_docs_themevars",
+      "scripts_generate_contrast_docs_updatepoc",
+      "scripts_generate_contrast_docs_wcagrating",
+      "scripts_generate_contrast_docs_write"
+    ],
+    "1": [
+      "src_js_utils_dom",
+      "src_js_utils_dom_addclass",
+      "src_js_utils_dom_addevent",
+      "src_js_utils_dom_addeventchange",
+      "src_js_utils_dom_addeventclick",
+      "src_js_utils_dom_carrousel",
+      "src_js_utils_dom_createtablefromobj",
+      "src_js_utils_dom_delay",
+      "src_js_utils_dom_disappearing",
+      "src_js_utils_dom_getelement",
+      "src_js_utils_dom_getvalue",
+      "src_js_utils_dom_hidde",
+      "src_js_utils_dom_hiddeafter",
+      "src_js_utils_dom_hidemenu",
+      "src_js_utils_dom_initcarrousel",
+      "src_js_utils_dom_removeallchildnodes",
+      "src_js_utils_dom_removeclass",
+      "src_js_utils_dom_settext",
+      "src_js_utils_dom_setvalue",
+      "src_js_utils_dom_show",
+      "src_js_utils_dom_showmenu",
+      "src_js_utils_dom_toggle",
+      "src_js_utils_dom_toggleclass",
+      "src_js_utils_dom_updateinput",
+      "src_js_utils_dom_updatetext"
+    ],
+    "2": [
+      "autoprefixer",
+      "cssnano",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_cssnano",
+      "package_devdependencies_postcss",
+      "package_devdependencies_postcss_import",
+      "package_devdependencies_postcss_preset_env",
+      "package_devdependencies_prettier",
+      "package_devdependencies_stylelint",
+      "package_devdependencies_stylelint_config_standard",
+      "package_devdependencies_toon_format_toon",
+      "package_devdependencies_vite",
+      "postcss",
+      "postcss_import",
+      "postcss_preset_env",
+      "prettier",
+      "stylelint",
+      "stylelint_config_standard",
+      "toon_format_toon",
+      "vite"
+    ],
+    "3": [
+      "package",
+      "package_author",
+      "package_bugs",
+      "package_bugs_url",
+      "package_description",
+      "package_exports",
+      "package_exports_style_css",
+      "package_files",
+      "package_homepage",
+      "package_license",
+      "package_main",
+      "package_module",
+      "package_name",
+      "package_repository",
+      "package_repository_type",
+      "package_repository_url",
+      "package_style",
+      "package_type",
+      "package_version",
+      "ref_dist"
+    ],
+    "4": [
+      "scripts_generate_css_docs",
+      "scripts_generate_css_docs_cleanolddocs",
+      "scripts_generate_css_docs_dirname",
+      "scripts_generate_css_docs_docs_dir",
+      "scripts_generate_css_docs_docs_toon_dir",
+      "scripts_generate_css_docs_extractcategory",
+      "scripts_generate_css_docs_extractcssvariables",
+      "scripts_generate_css_docs_extractmeta",
+      "scripts_generate_css_docs_filename",
+      "scripts_generate_css_docs_folder_map",
+      "scripts_generate_css_docs_getselectortype",
+      "scripts_generate_css_docs_hasresponsivevariants",
+      "scripts_generate_css_docs_main",
+      "scripts_generate_css_docs_parsecssfile",
+      "scripts_generate_css_docs_processcssdirectory",
+      "scripts_generate_css_docs_src_dir"
+    ],
+    "5": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_build_dev",
+      "package_scripts_contrast_update",
+      "package_scripts_dev",
+      "package_scripts_docs",
+      "package_scripts_docs_generate",
+      "package_scripts_docs_merge",
+      "package_scripts_docs_watch",
+      "package_scripts_format",
+      "package_scripts_increment_build",
+      "package_scripts_lint_css",
+      "package_scripts_prebuild",
+      "package_scripts_predev",
+      "package_scripts_preview"
+    ],
+    "6": [
+      "webpack_config",
+      "webpack_config_autoprefixer",
+      "webpack_config_cleanwebpackplugin",
+      "webpack_config_configdevelop",
+      "webpack_config_configproduction",
+      "webpack_config_cssminimizerplugin",
+      "webpack_config_entrycss",
+      "webpack_config_entryjs",
+      "webpack_config_glob",
+      "webpack_config_globalentry",
+      "webpack_config_minicssextractplugin",
+      "webpack_config_path",
+      "webpack_config_pkg",
+      "webpack_config_terserplugin",
+      "webpack_config_webpack"
+    ],
+    "7": [
+      "scripts_docs_usage_examples",
+      "scripts_docs_usage_examples_dirname",
+      "scripts_docs_usage_examples_docs_dir",
+      "scripts_docs_usage_examples_filename",
+      "scripts_docs_usage_examples_findbycategory",
+      "scripts_docs_usage_examples_findbytoken",
+      "scripts_docs_usage_examples_generateautocomplete",
+      "scripts_docs_usage_examples_generatehtml",
+      "scripts_docs_usage_examples_generatetypes",
+      "scripts_docs_usage_examples_listallclasses",
+      "scripts_docs_usage_examples_listresponsiveutils",
+      "scripts_docs_usage_examples_loaddocs",
+      "scripts_docs_usage_examples_validatetokens"
+    ],
+    "8": [
+      "package_keywords",
+      "ref_atoms",
+      "ref_components",
+      "ref_css",
+      "ref_css_framework",
+      "ref_dark_mode",
+      "ref_design_system",
+      "ref_molecules",
+      "ref_night_mode",
+      "ref_responsive",
+      "ref_ui",
+      "ref_utility_first"
+    ],
+    "9": [
+      "src_js_06_molecules_14_picker_wheel",
+      "src_js_06_molecules_14_picker_wheel_initpickerwheels",
+      "src_js_06_molecules_14_picker_wheel_pickerwheel",
+      "src_js_06_molecules_14_picker_wheel_pickerwheel_bind",
+      "src_js_06_molecules_14_picker_wheel_pickerwheel_constructor",
+      "src_js_06_molecules_14_picker_wheel_pickerwheel_render",
+      "src_js_06_molecules_14_picker_wheel_pickerwheel_selectindex",
+      "src_lagunite"
+    ],
+    "10": [
+      "scripts_increment_dev_compile_count",
+      "scripts_increment_dev_compile_count_counter_path",
+      "scripts_increment_dev_compile_count_dirname",
+      "scripts_increment_dev_compile_count_filename",
+      "scripts_increment_dev_compile_count_main",
+      "scripts_increment_dev_compile_count_readcount",
+      "scripts_increment_dev_compile_count_writecount"
+    ],
+    "11": [
+      "scripts_merge_docs",
+      "scripts_merge_docs_dirname",
+      "scripts_merge_docs_filename",
+      "scripts_merge_docs_getalljsonfiles",
+      "scripts_merge_docs_mergejsonfiles"
+    ],
+    "12": [
+      "version_updateversion",
+      "version_updateversion_dirname",
+      "version_updateversion_filename",
+      "version_updateversion_packagejsonpath",
+      "version_updateversion_updateversion"
+    ],
+    "13": [
+      "scripts_generate_imports",
+      "scripts_generate_imports_cssdir",
+      "scripts_generate_imports_outputfile"
+    ],
+    "14": [
+      "autocommit",
+      "autocommit_sh__entry"
+    ],
+    "15": [
+      "postcss_config"
+    ],
+    "16": [
+      "stylelint_config"
+    ],
+    "17": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08846153846153847,
+    "1": 0.15666666666666668,
+    "2": 0.09523809523809523,
+    "3": 0.1,
+    "4": 0.18333333333333332,
+    "5": 0.13333333333333333,
+    "6": 0.13333333333333333,
+    "7": 0.2564102564102564,
+    "8": 0.16666666666666666,
+    "9": 0.4642857142857143,
+    "10": 0.38095238095238093,
+    "11": 0.5,
+    "12": 0.4,
+    "13": 0.6666666666666666,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_js_utils_dom_getelement",
+      "label": "getElement()",
+      "degree": 18
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 15
+    },
+    {
+      "id": "package_keywords",
+      "label": "keywords",
+      "degree": 12
+    },
+    {
+      "id": "scripts_docs_usage_examples_loaddocs",
+      "label": "loadDocs()",
+      "degree": 9
+    },
+    {
+      "id": "scripts_generate_contrast_docs_generateskillmd",
+      "label": "generateSkillMd()",
+      "degree": 9
+    },
+    {
+      "id": "scripts_generate_contrast_docs_parsecolorvalue",
+      "label": "parseColorValue()",
+      "degree": 8
+    },
+    {
+      "id": "scripts_generate_contrast_docs_luminance",
+      "label": "luminance()",
+      "degree": 6
+    },
+    {
+      "id": "scripts_generate_contrast_docs_buildpalettedata",
+      "label": "buildPaletteData()",
+      "degree": 6
+    },
+    {
+      "id": "scripts_generate_contrast_docs_buildsemanticdata",
+      "label": "buildSemanticData()",
+      "degree": 6
+    },
+    {
+      "id": "scripts_generate_css_docs_parsecssfile",
+      "label": "parseCSSFile()",
+      "degree": 6
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

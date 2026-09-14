@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrast Grid — Lagunite</title>
+  <link rel="stylesheet" href="../dist/lagunite.css" />
+  <style>
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .swatch {
+      border-radius: var(--radius-m);
+      padding: 14px 16px;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      border: 1px solid rgba(128,128,128,0.15);
+    }
+    .swatch-name {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      opacity: 0.55;
+    }
+    .text-sample {
+      font-size: 0.78rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .text-sample .label { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+    .contrast-badge {
+      font-family: monospace;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      min-width: 44px;
+      text-align: center;
+    }
+    .badge-aaa  { background: #14532d; color: #86efac; }
+    .badge-aa   { background: #1e3a5f; color: #93c5fd; }
+    .badge-aa18 { background: #3b1f00; color: #fbbf24; }
+    .badge-fail { background: #450a0a; color: #fca5a5; }
+    .badge-skip { background: #1f1f1f; color: #555; }
+
+    .section-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 700;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(128,128,128,0.2);
+    }
+    .palette-strip {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .palette-swatch {
+      flex: 1;
+      min-width: 60px;
+      height: 72px;
+      border-radius: var(--radius-s);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      font-family: monospace;
+      font-size: 0.6rem;
+      font-weight: 700;
+      border: 1px solid rgba(128,128,128,0.1);
+    }
+    .palette-swatch .step-label { opacity: 0.55; font-size: 0.58rem; }
+    .palette-swatch .ratio-wh,
+    .palette-swatch .ratio-bk { font-size: 0.6rem; }
+
+    .mode-toggle {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 10px 24px;
+      border-bottom: 1px solid rgba(128,128,128,0.2);
+      backdrop-filter: blur(8px);
+    }
+    .toggle-btn {
+      padding: 6px 16px;
+      border-radius: 6px;
+      border: 1px solid rgba(128,128,128,0.3);
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.7rem;
+      margin-bottom: 24px;
+    }
+    .legend span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  </style>
+</head>
+<body class="bg">
+
+<!-- STICKY TOOLBAR -->
+<div class="mode-toggle bg">
+  <strong style="font-size:.85rem; letter-spacing:.05em;">CONTRAST GRID</strong>
+  <span style="font-size:.7rem; opacity:.5;">Lagunite — bg-* × color-*</span>
+  <button class="toggle-btn" id="modeBtn" onclick="toggleMode()">☀ Light mode</button>
+  <button class="toggle-btn" onclick="recompute()" style="opacity:.6;">↺ Recompute</button>
+</div>
+
+<div class="container padd-t">
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <span><span class="contrast-badge badge-aaa">AAA</span> ≥ 7:1 — perfect</span>
+    <span><span class="contrast-badge badge-aa">AA</span> ≥ 4.5:1 — normal text ✓</span>
+    <span><span class="contrast-badge badge-aa18">AA18</span> ≥ 3:1 — large text only</span>
+    <span><span class="contrast-badge badge-fail">FAIL</span> &lt; 3:1 — avoid</span>
+    <span><span class="contrast-badge badge-skip">—</span> gradient / skip</span>
+  </div>
+
+  <!-- ── SEMANTIC BACKGROUNDS ── -->
+  <div class="section-title">Semantic Backgrounds</div>
+  <div class="swatch-grid" id="semantic-grid"></div>
+
+  <!-- ── GRADIENT BACKGROUNDS ── -->
+  <div class="section-title">Gradient Backgrounds (bgg-*)</div>
+  <div class="swatch-grid" id="gradient-grid"></div>
+
+  <!-- ── PALETTE STRIPS ── -->
+  <div class="section-title">Palette — Gray</div>
+  <div class="palette-strip" id="pal-gray"></div>
+
+  <div class="section-title">Palette — Blue</div>
+  <div class="palette-strip" id="pal-blue"></div>
+
+  <div class="section-title">Palette — Green</div>
+  <div class="palette-strip" id="pal-green"></div>
+
+  <div class="section-title">Palette — Yellow</div>
+  <div class="palette-strip" id="pal-yellow"></div>
+
+  <div class="section-title">Palette — Red</div>
+  <div class="palette-strip" id="pal-red"></div>
+
+</div>
+
+<script>
+// ── WCAG contrast engine ────────────────────────────────────────────────────
+function sRGB(c) {
+  c /= 255;
+  return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+}
+function luminance(r, g, b) {
+  return 0.2126 * sRGB(r) + 0.7152 * sRGB(g) + 0.0722 * sRGB(b);
+}
+function contrastRatio(l1, l2) {
+  const [hi, lo] = l1 > l2 ? [l1, l2] : [l2, l1];
+  return (hi + 0.05) / (lo + 0.05);
+}
+function parseColor(str) {
+  if (!str) return null;
+  const m = str.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+  return m ? [+m[1], +m[2], +m[3]] : null;
+}
+function getBgColor(el) {
+  // Walk up to find first non-transparent bg
+  let node = el;
+  while (node && node !== document.body.parentElement) {
+    const bg = window.getComputedStyle(node).backgroundColor;
+    const rgb = parseColor(bg);
+    if (rgb && !(rgb[0] === 0 && rgb[1] === 0 && rgb[2] === 0 && bg.includes('rgba(0, 0, 0, 0)'))) {
+      return rgb;
+    }
+    node = node.parentElement;
+  }
+  return [255, 255, 255];
+}
+
+function ratingBadge(ratio) {
+  const r = ratio.toFixed(1);
+  if (ratio >= 7)   return `<span class="contrast-badge badge-aaa">AAA ${r}</span>`;
+  if (ratio >= 4.5) return `<span class="contrast-badge badge-aa">AA ${r}</span>`;
+  if (ratio >= 3)   return `<span class="contrast-badge badge-aa18">AA18 ${r}</span>`;
+  return `<span class="contrast-badge badge-fail">✗ ${r}</span>`;
+}
+function skipBadge() {
+  return `<span class="contrast-badge badge-skip">—</span>`;
+}
+
+// ── Text probes ─────────────────────────────────────────────────────────────
+const PROBES = [
+  { label: '(default — auto)',   cls: '' },          // what bg-* sets on its own
+  { label: 'color-text',         cls: 'color-text' },
+  { label: 'color-text-alt',     cls: 'color-text-alt' },
+  { label: 'color-almost-white', cls: 'color-almost-white' },
+  { label: 'color-almost-black', cls: 'color-almost-black' },
+  { label: 'color-primary',      cls: 'color-primary' },
+  { label: 'color-error',        cls: 'color-error' },
+];
+
+// ── Build swatch card ────────────────────────────────────────────────────────
+function makeSwatch(bgClass, label) {
+  const div = document.createElement('div');
+  div.className = `swatch ${bgClass}`;
+  div.dataset.bg = bgClass;
+
+  const name = document.createElement('div');
+  name.className = 'swatch-name';
+  name.textContent = `.${label || bgClass}`;
+  div.appendChild(name);
+
+  PROBES.forEach(p => {
+    const row = document.createElement('div');
+    row.className = `text-sample ${p.cls}`;
+    row.innerHTML = `<span class="label">${p.label}</span><span class="badge-slot">${skipBadge()}</span>`;
+    div.appendChild(row);
+  });
+
+  return div;
+}
+
+// ── Recompute all badges ─────────────────────────────────────────────────────
+function recompute() {
+  document.querySelectorAll('.swatch').forEach(swatch => {
+    const bgRgb = getBgColor(swatch);
+    if (!bgRgb) return;
+
+    const bgStr = window.getComputedStyle(swatch).backgroundColor;
+    // Gradient or transparent: skip
+    const isGradient = !parseColor(bgStr);
+
+    swatch.querySelectorAll('.text-sample').forEach(row => {
+      const slot = row.querySelector('.badge-slot');
+      if (!slot) return;
+      if (isGradient) { slot.innerHTML = skipBadge(); return; }
+
+      const textRgb = parseColor(window.getComputedStyle(row).color);
+      if (!textRgb) { slot.innerHTML = skipBadge(); return; }
+
+      const bgL  = luminance(...bgRgb);
+      const txtL = luminance(...textRgb);
+      const ratio = contrastRatio(bgL, txtL);
+      slot.innerHTML = ratingBadge(ratio);
+    });
+  });
+
+  // Palette swatches
+  document.querySelectorAll('.palette-swatch').forEach(sw => {
+    const bgRgb = parseColor(window.getComputedStyle(sw).backgroundColor);
+    if (!bgRgb) return;
+    const bgL = luminance(...bgRgb);
+
+    const white = [255, 255, 255];
+    const black = [0, 0, 0];
+    const rW = contrastRatio(bgL, luminance(...white));
+    const rB = contrastRatio(bgL, luminance(...black));
+
+    const whiteEl = sw.querySelector('.ratio-wh');
+    const blackEl = sw.querySelector('.ratio-bk');
+    if (whiteEl) {
+      whiteEl.textContent = `W ${rW.toFixed(1)}`;
+      whiteEl.style.color = '#fff';
+      whiteEl.style.opacity = rW >= 4.5 ? '1' : '0.3';
+    }
+    if (blackEl) {
+      blackEl.textContent = `B ${rB.toFixed(1)}`;
+      blackEl.style.color = '#000';
+      blackEl.style.background = 'rgba(255,255,255,0.7)';
+      blackEl.style.padding = '0 2px';
+      blackEl.style.borderRadius = '2px';
+      blackEl.style.opacity = rB >= 4.5 ? '1' : '0.3';
+    }
+  });
+}
+
+// ── Build semantic grid ──────────────────────────────────────────────────────
+const SEMANTIC_BGS = [
+  'bg', 'bg-alt',
+  'bg-1', 'bg-2', 'bg-3', 'bg-4', 'bg-5', 'bg-6', 'bg-7', 'bg-8', 'bg-9',
+  'bg-black', 'bg-ablack', 'bg-white', 'bg-awhite',
+  'bg-success', 'bg-warning', 'bg-error',
+];
+
+const GRADIENT_BGS = [
+  'bgg-1', 'bgg-2', 'bgg-3', 'bgg-4',
+  'bgg-5', 'bgg-6', 'bgg-7', 'bgg-8',
+  'bgg-success', 'bgg-lf-1', 'bgg-rg-1', 'bgg-t-1', 'bgg-b-1',
+];
+
+const PALETTE_STEPS = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
+const PALETTE_FAMILIES = ['gray', 'blue', 'green', 'yellow', 'red'];
+
+function buildSwatchGrid(containerID, classes) {
+  const grid = document.getElementById(containerID);
+  classes.forEach(bgCls => {
+    grid.appendChild(makeSwatch(bgCls));
+  });
+}
+
+function buildPaletteStrip(containerID, family) {
+  const strip = document.getElementById(containerID);
+  PALETTE_STEPS.forEach(step => {
+    const div = document.createElement('div');
+    div.className = `palette-swatch bg-${family}-${step}`;
+    div.innerHTML = `
+      <span class="step-label">${step}</span>
+      <span class="ratio-wh">W —</span>
+      <span class="ratio-bk">B —</span>
+    `;
+    strip.appendChild(div);
+  });
+}
+
+// ── Toggle night mode ────────────────────────────────────────────────────────
+function toggleMode() {
+  const html = document.documentElement;
+  const isNight = html.classList.toggle('night');
+  document.getElementById('modeBtn').textContent = isNight ? '☀ Light mode' : '🌙 Dark mode';
+  setTimeout(recompute, 50); // wait for CSS vars to settle
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+buildSwatchGrid('semantic-grid', SEMANTIC_BGS);
+buildSwatchGrid('gradient-grid', GRADIENT_BGS);
+PALETTE_FAMILIES.forEach(fam => buildPaletteStrip(`pal-${fam}`, fam));
+
+// Initial compute after paint
+requestAnimationFrame(() => setTimeout(recompute, 100));
+</script>
+
+<!-- CONTRAST-DATA:START -->
+<script id="contrast-data-source" type="application/json">
+{
+  "palette": {
+    "gray": {
+      "50": {
+        "hex": "#f0f2f5",
+        "lum": 0.8862,
+        "vsWhite": {
+          "ratio": 1.12,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 18.72,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "100": {
+        "hex": "#dee3e8",
+        "lum": 0.7629,
+        "vsWhite": {
+          "ratio": 1.29,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 16.26,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "200": {
+        "hex": "#cad1d8",
+        "lum": 0.6312,
+        "vsWhite": {
+          "ratio": 1.54,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 13.62,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "300": {
+        "hex": "#a9b3bc",
+        "lum": 0.4431,
+        "vsWhite": {
+          "ratio": 2.13,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 9.86,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "400": {
+        "hex": "#8e99a4",
+        "lum": 0.3121,
+        "vsWhite": {
+          "ratio": 2.9,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 7.24,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "500": {
+        "hex": "#74808b",
+        "lum": 0.2102,
+        "vsWhite": {
+          "ratio": 4.04,
+          "rating": "AA18"
+        },
+        "vsBlack": {
+          "ratio": 5.2,
+          "rating": "AA"
+        },
+        "safeText": "dark"
+      },
+      "600": {
+        "hex": "#5c6670",
+        "lum": 0.1295,
+        "vsWhite": {
+          "ratio": 5.85,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 3.59,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "700": {
+        "hex": "#434d56",
+        "lum": 0.0717,
+        "vsWhite": {
+          "ratio": 8.63,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2.43,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "800": {
+        "hex": "#2b333b",
+        "lum": 0.032,
+        "vsWhite": {
+          "ratio": 12.81,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.64,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "900": {
+        "hex": "#141a1f",
+        "lum": 0.0099,
+        "vsWhite": {
+          "ratio": 17.54,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.2,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "950": {
+        "hex": "#0a0d10",
+        "lum": 0.0039,
+        "vsWhite": {
+          "ratio": 19.48,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.08,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      }
+    },
+    "blue": {
+      "50": {
+        "hex": "#ecf5fe",
+        "lum": 0.9029,
+        "vsWhite": {
+          "ratio": 1.1,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 19.06,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "100": {
+        "hex": "#cfe6fc",
+        "lum": 0.7689,
+        "vsWhite": {
+          "ratio": 1.28,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 16.38,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "200": {
+        "hex": "#9eccfa",
+        "lum": 0.5736,
+        "vsWhite": {
+          "ratio": 1.68,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 12.47,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "300": {
+        "hex": "#6eb3f7",
+        "lum": 0.4227,
+        "vsWhite": {
+          "ratio": 2.22,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 9.45,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "400": {
+        "hex": "#3d99f5",
+        "lum": 0.3037,
+        "vsWhite": {
+          "ratio": 2.97,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 7.07,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "500": {
+        "hex": "#0d80f2",
+        "lum": 0.2193,
+        "vsWhite": {
+          "ratio": 3.9,
+          "rating": "AA18"
+        },
+        "vsBlack": {
+          "ratio": 5.39,
+          "rating": "AA"
+        },
+        "safeText": "dark"
+      },
+      "600": {
+        "hex": "#0f66bd",
+        "lum": 0.1328,
+        "vsWhite": {
+          "ratio": 5.74,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 3.66,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "700": {
+        "hex": "#0f4d8a",
+        "lum": 0.0724,
+        "vsWhite": {
+          "ratio": 8.58,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2.45,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "800": {
+        "hex": "#0d4073",
+        "lum": 0.0499,
+        "vsWhite": {
+          "ratio": 10.51,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "900": {
+        "hex": "#08335e",
+        "lum": 0.0323,
+        "vsWhite": {
+          "ratio": 12.76,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.65,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "950": {
+        "hex": "#042649",
+        "lum": 0.0189,
+        "vsWhite": {
+          "ratio": 15.23,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.38,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      }
+    },
+    "green": {
+      "50": {
+        "hex": "#eefbf3",
+        "lum": 0.9364,
+        "vsWhite": {
+          "ratio": 1.06,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 19.73,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "100": {
+        "hex": "#d5f6e0",
+        "lum": 0.8544,
+        "vsWhite": {
+          "ratio": 1.16,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 18.09,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "200": {
+        "hex": "#adebc2",
+        "lum": 0.722,
+        "vsWhite": {
+          "ratio": 1.36,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 15.44,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "300": {
+        "hex": "#85e0a3",
+        "lum": 0.6094,
+        "vsWhite": {
+          "ratio": 1.59,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 13.19,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "400": {
+        "hex": "#5cd685",
+        "lum": 0.5206,
+        "vsWhite": {
+          "ratio": 1.84,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 11.41,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "500": {
+        "hex": "#2eb85c",
+        "lum": 0.3563,
+        "vsWhite": {
+          "ratio": 2.58,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 8.13,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "600": {
+        "hex": "#1b9844",
+        "lum": 0.2311,
+        "vsWhite": {
+          "ratio": 3.74,
+          "rating": "AA18"
+        },
+        "vsBlack": {
+          "ratio": 5.62,
+          "rating": "AA"
+        },
+        "safeText": "dark"
+      },
+      "700": {
+        "hex": "#127d36",
+        "lum": 0.1506,
+        "vsWhite": {
+          "ratio": 5.23,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 4.01,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "800": {
+        "hex": "#0d5926",
+        "lum": 0.0737,
+        "vsWhite": {
+          "ratio": 8.49,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2.47,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "900": {
+        "hex": "#08451c",
+        "lum": 0.0439,
+        "vsWhite": {
+          "ratio": 11.18,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.88,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "950": {
+        "hex": "#042f12",
+        "lum": 0.021,
+        "vsWhite": {
+          "ratio": 14.78,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.42,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      }
+    },
+    "yellow": {
+      "50": {
+        "hex": "#fefaeb",
+        "lum": 0.9544,
+        "vsWhite": {
+          "ratio": 1.05,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 20.09,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "100": {
+        "hex": "#fef2cd",
+        "lum": 0.8898,
+        "vsWhite": {
+          "ratio": 1.12,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 18.8,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "200": {
+        "hex": "#fae39e",
+        "lum": 0.7773,
+        "vsWhite": {
+          "ratio": 1.27,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 16.55,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "300": {
+        "hex": "#f7d56e",
+        "lum": 0.6849,
+        "vsWhite": {
+          "ratio": 1.43,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 14.7,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "400": {
+        "hex": "#f5c73d",
+        "lum": 0.606,
+        "vsWhite": {
+          "ratio": 1.6,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 13.12,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "500": {
+        "hex": "#f2b90d",
+        "lum": 0.536,
+        "vsWhite": {
+          "ratio": 1.79,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 11.72,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "600": {
+        "hex": "#d49a11",
+        "lum": 0.3715,
+        "vsWhite": {
+          "ratio": 2.49,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 8.43,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "700": {
+        "hex": "#ae7b13",
+        "lum": 0.2321,
+        "vsWhite": {
+          "ratio": 3.72,
+          "rating": "AA18"
+        },
+        "vsBlack": {
+          "ratio": 5.64,
+          "rating": "AA"
+        },
+        "safeText": "dark"
+      },
+      "800": {
+        "hex": "#865c13",
+        "lum": 0.1277,
+        "vsWhite": {
+          "ratio": 5.91,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 3.55,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "900": {
+        "hex": "#5f4011",
+        "lum": 0.0614,
+        "vsWhite": {
+          "ratio": 9.43,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2.23,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "950": {
+        "hex": "#3f2a0d",
+        "lum": 0.0274,
+        "vsWhite": {
+          "ratio": 13.56,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.55,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      }
+    },
+    "red": {
+      "50": {
+        "hex": "#fdecec",
+        "lum": 0.8693,
+        "vsWhite": {
+          "ratio": 1.14,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 18.39,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "100": {
+        "hex": "#fbd0d0",
+        "lum": 0.7018,
+        "vsWhite": {
+          "ratio": 1.4,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 15.04,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "200": {
+        "hex": "#f5a3a3",
+        "lum": 0.4825,
+        "vsWhite": {
+          "ratio": 1.97,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 10.65,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "300": {
+        "hex": "#f07575",
+        "lum": 0.3253,
+        "vsWhite": {
+          "ratio": 2.8,
+          "rating": "FAIL"
+        },
+        "vsBlack": {
+          "ratio": 7.51,
+          "rating": "AAA"
+        },
+        "safeText": "dark"
+      },
+      "400": {
+        "hex": "#eb4747",
+        "lum": 0.2262,
+        "vsWhite": {
+          "ratio": 3.8,
+          "rating": "AA18"
+        },
+        "vsBlack": {
+          "ratio": 5.52,
+          "rating": "AA"
+        },
+        "safeText": "dark"
+      },
+      "500": {
+        "hex": "#df2020",
+        "lum": 0.1683,
+        "vsWhite": {
+          "ratio": 4.81,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 4.37,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "600": {
+        "hex": "#b62020",
+        "lum": 0.1108,
+        "vsWhite": {
+          "ratio": 6.53,
+          "rating": "AA"
+        },
+        "vsBlack": {
+          "ratio": 3.22,
+          "rating": "AA18"
+        },
+        "safeText": "light"
+      },
+      "700": {
+        "hex": "#9c1616",
+        "lum": 0.077,
+        "vsWhite": {
+          "ratio": 8.27,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 2.54,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "800": {
+        "hex": "#7d1212",
+        "lum": 0.0484,
+        "vsWhite": {
+          "ratio": 10.67,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.97,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "900": {
+        "hex": "#5c0a0a",
+        "lum": 0.0251,
+        "vsWhite": {
+          "ratio": 13.97,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.5,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      },
+      "950": {
+        "hex": "#470606",
+        "lum": 0.0148,
+        "vsWhite": {
+          "ratio": 16.2,
+          "rating": "AAA"
+        },
+        "vsBlack": {
+          "ratio": 1.3,
+          "rating": "FAIL"
+        },
+        "safeText": "light"
+      }
+    }
+  },
+  "semantic": {
+    ".bg": {
+      "hex": "#eeeeee",
+      "lum": 0.855,
+      "autoText": "#333333",
+      "autoRatio": 10.89,
+      "autoRating": "AAA"
+    },
+    ".bg-alt": {
+      "hex": "#222222",
+      "lum": 0.016,
+      "autoText": "#ffffff",
+      "autoRatio": 15.91,
+      "autoRating": "AAA"
+    },
+    ".bg-1": {
+      "hex": "#2476ff",
+      "lum": 0.2055,
+      "autoText": "#ffffff",
+      "autoRatio": 4.11,
+      "autoRating": "AA18"
+    },
+    ".bg-2": {
+      "hex": "#5e9aff",
+      "lum": 0.3271,
+      "autoText": "#ffffff",
+      "autoRatio": 2.78,
+      "autoRating": "FAIL"
+    },
+    ".bg-3": {
+      "hex": "#0965ff",
+      "lum": 0.1659,
+      "autoText": "#ffffff",
+      "autoRatio": 4.86,
+      "autoRating": "AA"
+    },
+    ".bg-4": {
+      "hex": "#747474",
+      "lum": 0.1746,
+      "autoText": "#ffffff",
+      "autoRatio": 4.67,
+      "autoRating": "AA"
+    },
+    ".bg-5": {
+      "hex": "#333333",
+      "lum": 0.0331,
+      "autoText": "#ffffff",
+      "autoRatio": 12.63,
+      "autoRating": "AAA"
+    },
+    ".bg-6": {
+      "hex": "#292929",
+      "lum": 0.0222,
+      "autoText": "#ffffff",
+      "autoRatio": 14.55,
+      "autoRating": "AAA"
+    },
+    ".bg-7": {
+      "hex": "#f97316",
+      "lum": 0.3246,
+      "autoText": "#333333",
+      "autoRatio": 4.51,
+      "autoRating": "AA"
+    },
+    ".bg-8": {
+      "hex": "#ffa261",
+      "lum": 0.4796,
+      "autoText": "#ffffff",
+      "autoRatio": 1.98,
+      "autoRating": "FAIL"
+    },
+    ".bg-9": {
+      "hex": "#c95300",
+      "lum": 0.186,
+      "autoText": "#333333",
+      "autoRatio": 2.84,
+      "autoRating": "FAIL"
+    },
+    ".bg-black": {
+      "hex": "#000000",
+      "lum": 0,
+      "autoText": "#ffffff",
+      "autoRatio": 21,
+      "autoRating": "AAA"
+    },
+    ".bg-ablack": {
+      "hex": "#333333",
+      "lum": 0.0331,
+      "autoText": "#ffffff",
+      "autoRatio": 12.63,
+      "autoRating": "AAA"
+    },
+    ".bg-white": {
+      "hex": "#ffffff",
+      "lum": 1,
+      "autoText": "#141a1f",
+      "autoRatio": 17.54,
+      "autoRating": "AAA"
+    },
+    ".bg-awhite": {
+      "hex": "#fcfcfc",
+      "lum": 0.9734,
+      "autoText": "#333333",
+      "autoRatio": 12.32,
+      "autoRating": "AAA"
+    },
+    ".bg-success": {
+      "hex": "#98ff98",
+      "lum": 0.8046,
+      "autoText": "#009112",
+      "autoRatio": 3.38,
+      "autoRating": "AA18"
+    },
+    ".bg-warning": {
+      "hex": "#ffead5",
+      "lum": 0.8491,
+      "autoText": "#ff9017",
+      "autoRatio": 1.94,
+      "autoRating": "FAIL"
+    },
+    ".bg-error": {
+      "hex": "#fdd0d0",
+      "lum": 0.7055,
+      "autoText": "#fa3434",
+      "autoRatio": 2.7,
+      "autoRating": "FAIL"
+    }
+  }
+}
+</script>
+<!-- CONTRAST-DATA:END -->
+</body>
+</html>

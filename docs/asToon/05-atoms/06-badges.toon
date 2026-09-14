@@ -172,7 +172,7 @@ content[72]:
     id: #05-06-06
     category: null
     properties[3]: background,color,border
-    cssRule: "background: transparent\n/* Single hue: border follows text (avoids gray-700 text + gray-400 border). */\ncolor: var(--gray-600)\nborder: var(--border-width-s) solid currentColor"
+    cssRule: "background: transparent\n/* Single hue: border follows text (avoids gray-700 text + gray-400 border). */\ncolor: var(--gray-600)\nborder: var(--border-width-s) solid currentcolor"
     responsive: false
     description: ** Badge Outlined Variant **
   - type: selector
@@ -181,7 +181,7 @@ content[72]:
     id: #05-06-06
     category: null
     properties[2]: color,border-color
-    cssRule: "color: var(--gray-300)\nborder-color: currentColor"
+    cssRule: "color: var(--gray-300)\nborder-color: currentcolor"
     responsive: false
     description: ** Badge Outlined Variant **
   - type: selector
@@ -235,7 +235,7 @@ content[72]:
     id: #05-06-08
     category: null
     properties[9]: content,position,left,top,transform,width,height,border-radius,background
-    cssRule: "content: \"\"\nposition: absolute\nleft: var(--space-2)\ntop: 50%\ntransform: translateY(-50%)\nwidth: 0.375rem\nheight: 0.375rem\nborder-radius: var(--radius-full)\nbackground: currentColor"
+    cssRule: "content: \"\"\nposition: absolute\nleft: var(--space-2)\ntop: 50%\ntransform: translateY(-50%)\nwidth: 0.375rem\nheight: 0.375rem\nborder-radius: var(--radius-full)\nbackground: currentcolor"
     responsive: false
     description: ** Badge Dot Indicator **
   - type: selector
@@ -388,7 +388,7 @@ content[72]:
     id: #05-06-10
     category: null
     properties[14]: display,align-items,justify-content,width,height,margin-left,padding,border,background,color,opacity,cursor,border-radius,transition
-    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 1rem\nheight: 1rem\nmargin-left: var(--space-1)\npadding: 0\nborder: none\nbackground: transparent\ncolor: currentColor\nopacity: 0.7\ncursor: pointer\nborder-radius: var(--radius-s)\ntransition: all 0.2s ease"
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 1rem\nheight: 1rem\nmargin-left: var(--space-1)\npadding: 0\nborder: none\nbackground: transparent\ncolor: currentcolor\nopacity: 0.7\ncursor: pointer\nborder-radius: var(--radius-s)\ntransition: all 0.2s ease"
     responsive: false
     description: ** Badge with Close Button **
   - type: selector
@@ -397,7 +397,7 @@ content[72]:
     id: #05-06-10
     category: null
     properties[2]: opacity,background
-    cssRule: "opacity: 1\nbackground: rgba(0, 0, 0, 0.1)"
+    cssRule: "opacity: 1\nbackground: rgb(0 0 0 / 10%)"
     responsive: false
     description: ** Badge with Close Button **
   - type: selector
@@ -613,7 +613,7 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(59, 130, 246, 0.15)\ncolor: var(--blue-300)"
+    cssRule: "background: rgb(59 130 246 / 15%)\ncolor: var(--blue-300)"
     responsive: false
     description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
@@ -622,7 +622,7 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(16, 185, 129, 0.15)\ncolor: var(--green-300)"
+    cssRule: "background: rgb(16 185 129 / 15%)\ncolor: var(--green-300)"
     responsive: false
     description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
@@ -631,7 +631,7 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(59, 130, 246, 0.12)\ncolor: var(--blue-300)"
+    cssRule: "background: rgb(59 130 246 / 12%)\ncolor: var(--blue-300)"
     responsive: false
     description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
@@ -640,7 +640,7 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(234, 179, 8, 0.15)\ncolor: var(--yellow-300)"
+    cssRule: "background: rgb(234 179 8 / 15%)\ncolor: var(--yellow-300)"
     responsive: false
     description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
   - type: selector
@@ -649,6 +649,6 @@ content[72]:
     id: #05-06-14
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(239, 68, 68, 0.15)\ncolor: var(--red-300)"
+    cssRule: "background: rgb(239 68 68 / 15%)\ncolor: var(--red-300)"
     responsive: false
     description: "badge-*-light in night mode: translucent tint + light text (fintech dark pattern)"
