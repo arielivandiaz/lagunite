@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-compose
+description: >-
+  Compose Lagunite screens and sections: hierarchy, spacing, responsive, anti-patterns.
+---
 
-This skill has moved to [`ai/skills/compose.md`](../../../ai/skills/compose.md).
+Use the canonical skill: [`ai/skills/compose.md`](../../../ai/skills/compose.md).

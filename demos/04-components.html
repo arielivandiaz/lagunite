@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 04 · Components — Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!-- Cheatsheets: MOLECULES · COMPOUNDS · picker-wheel JS -->
+
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="./index.html">← demos</a></p>
+      <h1 class="font-xl bold color-text">Components index</h1>
+      <p class="font-s text-muted">
+        Smoke samples of molecules and compounds. Full catalog:
+        <a class="color-primary" href="../src/css/06-molecules/MOLECULES-CHEATSHEET.md">molecules cheatsheet</a>.
+      </p>
+    </header>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Alerts</h2>
+      <div class="alert alert-success" role="status">Saved successfully. [demo]</div>
+      <div class="alert alert-warning" role="status">Review required fields.</div>
+      <div class="alert alert-error" role="alert">Something went wrong. [demo]</div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Tabs</h2>
+      <div class="tabs">
+        <div class="tab-list" role="tablist">
+          <button type="button" class="tab-button active" role="tab" aria-selected="true" data-tab="one">Overview</button>
+          <button type="button" class="tab-button" role="tab" aria-selected="false" data-tab="two">Details</button>
+        </div>
+        <div class="tab-panel active" data-panel="one" role="tabpanel">
+          <p class="font-s text-muted padd-s">Overview panel — add <code>.active</code> / <code>aria-selected</code> via JS.</p>
+        </div>
+        <div class="tab-panel" data-panel="two" role="tabpanel" hidden>
+          <p class="font-s text-muted padd-s">Details panel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Segmented control</h2>
+      <div class="segmented-control" role="group" aria-label="View">
+        <button type="button" class="segmented-option active">Day</button>
+        <button type="button" class="segmented-option">Week</button>
+        <button type="button" class="segmented-option">Month</button>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">List item</h2>
+      <div class="list-container">
+        <div class="list-item list-item-interactive">
+          <div class="list-item-content">
+            <p class="list-item-text">Ariel Diaz</p>
+            <p class="list-item-meta">Owner · online</p>
+          </div>
+          <span class="list-item-status list-item-status-online" aria-label="Online"></span>
+        </div>
+        <div class="list-item">
+          <div class="list-item-content">
+            <p class="list-item-text">Guest user</p>
+            <p class="list-item-meta">Away</p>
+          </div>
+          <span class="list-item-status list-item-status-away" aria-label="Away"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Cards & empty state</h2>
+      <div class="grid xgrid-cols-1 dgrid-cols-2 gap">
+        <div class="card">
+          <div class="card-header">Flat card (default)</div>
+          <div class="card-body">
+            <p class="card-text">Elevation is opt-in via <code>.card-elevated</code>.</p>
+          </div>
+        </div>
+        <div class="card card-elevated">
+          <div class="card-header">Elevated (≤1 / view)</div>
+          <div class="card-body">
+            <p class="card-text">Use when the surface must float above the page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="empty-state">
+        <p class="empty-state-title">No projects yet</p>
+        <p class="empty-state-text">Create one to see it here. [demo]</p>
+        <div class="empty-state-actions">
+          <a class="btn size-s" href="./03-forms.html">Create project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Modal</h2>
+      <p class="font-s text-muted">Overlay + dialog; close control has <code>:focus-visible</code>.</p>
+      <button type="button" class="btn alt size-s" id="open-modal">Open modal [demo]</button>
+      <div class="modal-overlay" id="demo-modal" role="presentation">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+          <div class="modal-header">
+            <h3 class="modal-title" id="demo-modal-title">Confirm</h3>
+            <button type="button" class="modal-close" id="close-modal" aria-label="Close">×</button>
+          </div>
+          <div class="modal-body">
+            <p class="font-s text-muted">Example dialog for focus and night smoke. [demo]</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn alt" id="dismiss-modal">Cancel</button>
+            <button type="button" class="btn" id="confirm-modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Picker wheel</h2>
+      <p class="font-s text-muted">
+        Requires JS (<code>PickerWheel</code> / auto-init). POC:
+        <a class="color-primary" href="../pocs/poc-picker-wheel.html">poc-picker-wheel.html</a>
+      </p>
+      <div class="card padd col ai-c gap">
+        <div
+          class="picker-wheel col ai-c flex-center gap-s"
+          data-values="36,37.5,39,40,41.5,43,45"
+          data-value="40"
+          data-aria-label="EU shoe size"
+        >
+          <div class="picker-wheel-row row ai-c jc-c gap-s">
+            <button class="picker-wheel-btn picker-wheel-prev" type="button" aria-label="Previous">‹</button>
+            <div class="picker-wheel-track row ai-c jc-c gap-l"></div>
+            <button class="picker-wheel-btn picker-wheel-next" type="button" aria-label="Next">›</button>
+          </div>
+          <div class="picker-wheel-indicator triangle size-s"></div>
+        </div>
+        <p class="font-s text-muted marg-0">Selected: <strong id="pw-value">40</strong></p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">More demos</h2>
+      <div class="row gap-s">
+        <a class="btn alt" href="./01-landing.html">Landing</a>
+        <a class="btn alt" href="./02-dashboard.html">Dashboard</a>
+        <a class="btn alt" href="./03-forms.html">Forms</a>
+        <a class="btn alt" href="./05-night-mode.html">Night</a>
+      </div>
+    </section>
+  </div>
+
+  <script type="module">
+    import '../src/lagunite.js';
+
+    document.querySelector('.picker-wheel')?.addEventListener('change', (e) => {
+      const el = document.getElementById('pw-value');
+      if (el) el.textContent = e.detail.value;
+    });
+
+    document.querySelectorAll('.tab-button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const tabs = btn.closest('.tabs');
+        tabs.querySelectorAll('.tab-button').forEach((b) => {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+        const id = btn.dataset.tab;
+        tabs.querySelectorAll('.tab-panel').forEach((p) => {
+          const on = p.dataset.panel === id;
+          p.classList.toggle('active', on);
+          p.hidden = !on;
+        });
+      });
+    });
+
+    document.querySelectorAll('.segmented-option').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        btn.parentElement.querySelectorAll('.segmented-option').forEach((b) => b.classList.toggle('active', b === btn));
+      });
+    });
+
+    const overlay = document.getElementById('demo-modal');
+    const openModal = () => overlay?.classList.add('open');
+    const closeModal = () => overlay?.classList.remove('open');
+    document.getElementById('open-modal')?.addEventListener('click', openModal);
+    document.getElementById('close-modal')?.addEventListener('click', closeModal);
+    document.getElementById('dismiss-modal')?.addEventListener('click', closeModal);
+    document.getElementById('confirm-modal')?.addEventListener('click', closeModal);
+    overlay?.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+
+    const theme = document.getElementById('theme-toggle');
+    const sync = () => { theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night'; };
+    theme.addEventListener('click', () => { document.body.classList.toggle('night'); sync(); });
+    sync();
+  </script>
+</body>
+</html>

@@ -67,6 +67,8 @@
 /* @ID: #07-01-03 */
 
 /* ── Card surface variants ──────────────────────────────────────────────── */
+/* Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.
+   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like). */
 
 .card-elevated {
   box-shadow: var(--shadow-m);
@@ -84,6 +86,17 @@
 .card-hover:hover {
   box-shadow: var(--shadow-l);
   transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card-hover {
+    transition: none;
+  }
+
+  .card-hover:hover {
+    transform: none;
+  }
 }
 
 /* @ID: #07-01-04 */

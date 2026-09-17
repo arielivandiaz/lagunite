@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-decorators
+description: >-
+  Lagunite decorators: shadows, borders, motion, filters, surface-glass.
+---
 
-This skill has moved to [`ai/skills/decorators.md`](../../../ai/skills/decorators.md).
+Use the canonical skill: [`ai/skills/decorators.md`](../../../ai/skills/decorators.md).

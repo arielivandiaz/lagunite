@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-typography
+description: >-
+  Lagunite typography utilities: size, weight, line-height, align.
+---
 
-This skill has moved to [`ai/skills/typography.md`](../../../ai/skills/typography.md).
+Use the canonical skill: [`ai/skills/typography.md`](../../../ai/skills/typography.md).

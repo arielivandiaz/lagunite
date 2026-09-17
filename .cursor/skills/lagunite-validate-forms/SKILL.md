@@ -1,4 +1,7 @@
-# Moved
+---
+name: lagunite-validate-forms
+description: >-
+  Validate Lagunite forms: form-group, labels, inputs, native valid/invalid.
+---
 
-Forms checks live in [`ai/skills/validate-forms.md`](../../../ai/skills/validate-forms.md).  
-Orchestrator: [`ai/skills/validate.md`](../../../ai/skills/validate.md).
+Use the canonical skill: [`ai/skills/validate-forms.md`](../../../ai/skills/validate-forms.md).

@@ -1,9 +1,9 @@
 folder: 07-compounds
 file: 02-modals.css
-lastUpdated: 2026-04-17
+lastUpdated: 2026-09-15
 hasResponsive: false
-totalSelectors: 15
-content[15]:
+totalSelectors: 16
+content[16]:
   - type: selector
     selectorType: class
     selector: .modal-overlay
@@ -74,6 +74,15 @@ content[15]:
     category: null
     properties[1]: color
     cssRule: "color: var(--color-text-base)"
+    responsive: false
+    description: ── Modal header ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".modal-close:focus-visible"
+    id: #07-02-03
+    category: null
+    properties[3]: outline,outline-offset,border-radius
+    cssRule: "outline: 2px solid var(--color-primary)\noutline-offset: 2px\nborder-radius: var(--radius-s)"
     responsive: false
     description: ── Modal header ─────────────────────────────────────────────────────────
   - type: selector

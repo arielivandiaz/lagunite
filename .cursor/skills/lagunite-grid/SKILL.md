@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-grid
+description: >-
+  Lagunite grid layout: columns, gaps, placement, responsive prefixes.
+---
 
-This skill has moved to [`ai/skills/grid.md`](../../../ai/skills/grid.md).
+Use the canonical skill: [`ai/skills/grid.md`](../../../ai/skills/grid.md).

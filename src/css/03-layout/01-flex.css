@@ -22,8 +22,8 @@
 .colr-rowr {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .col  { flex-direction: column; }
@@ -42,8 +42,8 @@
   .xrowr {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .xcol  { flex-direction: column; }
@@ -59,8 +59,8 @@
   .drowr {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .dcol  { flex-direction: column; }

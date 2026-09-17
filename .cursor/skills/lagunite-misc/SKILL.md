@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-misc
+description: >-
+  Lagunite misc utilities: display, cursor, pseudo helpers.
+---
 
-This skill has moved to [`ai/skills/misc.md`](../../../ai/skills/misc.md).
+Use the canonical skill: [`ai/skills/misc.md`](../../../ai/skills/misc.md).

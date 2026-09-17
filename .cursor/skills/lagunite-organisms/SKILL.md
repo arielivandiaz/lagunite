@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-organisms
+description: >-
+  Lagunite organisms: navbar, sidebar, footer, dashboard shells, topbar.
+---
 
-This skill has moved to [`ai/skills/organisms.md`](../../../ai/skills/organisms.md).
+Use the canonical skill: [`ai/skills/organisms.md`](../../../ai/skills/organisms.md).

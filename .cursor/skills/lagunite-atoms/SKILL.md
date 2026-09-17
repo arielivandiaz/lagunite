@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-atoms
+description: >-
+  Lagunite atoms: buttons notes, inputs, table, lists, badges, avatars, chips, tags.
+---
 
-This skill has moved to [`ai/skills/atoms.md`](../../../ai/skills/atoms.md).
+Use the canonical skill: [`ai/skills/atoms.md`](../../../ai/skills/atoms.md).

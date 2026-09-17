@@ -140,7 +140,7 @@ Use these for dark panels, cards, modals. Never `.bg-1`–`.bg-9`.
 ```html
 <div class="bg-gray-800 border border-color-gray-700 border-r-l padd">
   <p class="color-text">Body copy — readable in night mode</p>
-  <p class="color-text-alt">Muted / secondary text</p>
+  <p class="text-muted">Muted / secondary text</p>
 </div>
 ```
 

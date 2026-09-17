@@ -1,7 +1,7 @@
 {
   "folder": "03-layout",
   "file": "01-flex.css",
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-09-15",
   "hasResponsive": true,
   "totalSelectors": 92,
   "content": [
@@ -17,7 +17,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": true,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -33,7 +33,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": true,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -49,7 +49,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": true,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -65,7 +65,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": true,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -81,7 +81,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -97,7 +97,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -113,7 +113,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -129,7 +129,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -145,7 +145,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -161,7 +161,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -177,7 +177,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },
@@ -193,7 +193,7 @@
         "justify-content",
         "align-items"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: center\nalign-items: center",
+      "cssRule": "display: flex\nflex-wrap: wrap\njustify-content: flex-start\nalign-items: flex-start",
       "responsive": false,
       "description": "── Flex containers (direction) ──────────────────────────────────────────"
     },

@@ -1,4 +1,7 @@
-# Moved
+---
+name: lagunite-validate-a11y
+description: >-
+  Validate Lagunite light a11y: labels, focus, headings, icon-only controls.
+---
 
-A11y checks live in [`ai/skills/validate-a11y.md`](../../../ai/skills/validate-a11y.md).  
-Orchestrator: [`ai/skills/validate.md`](../../../ai/skills/validate.md).
+Use the canonical skill: [`ai/skills/validate-a11y.md`](../../../ai/skills/validate-a11y.md).

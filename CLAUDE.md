@@ -1,99 +1,32 @@
-# Lagunite — Claude context
+# Lagunite — agent context (keep lean)
 
-## Project identity
+## Identity
+- **Lagunite v2** — utility-first CSS, descriptive class names → `dist/lagunite.css` (Vite + PostCSS)
+- **Commands:** `npm run dev` · `npm run build` · `npm run docs:generate` (after CSS changes) · `npm run lint:css`
+- **Adjacent (separate repo):** `lagunite-web/` — do not treat as part of this project
 
-- **Framework:** Lagunite v2 — utility-first CSS with descriptive class names
-- **NPM:** `lagunite` (v2.0.17)
-- **Build:** Vite + PostCSS → `dist/lagunite.css`
-- **Key commands:**
-  - `npm run dev` — dev server (Vite, hot reload)
-  - `npm run build` — production build (increments version)
-  - `npm run docs:generate` — regenerate `docs/asJson/` from CSS comments (**run after any CSS change**)
-  - `npm run docs:merge` — merge generated docs
-  - `npm run lint:css` — Stylelint
+## Hard rules (always)
+1. **Do not invent classes.** Missing → say so + closest utility or `<!-- GAP: … -->`.
+2. Class order: **base → `x*` (≤639) → `d*` (≥640)**. Layout → spacing → type/color → deco.
+3. Flex gap: `.gap-*` / `xgap*` / `dgap*` only.
+4. **`.bg-1`…`.bg-9` are theme accents, not neutral panels.** Surfaces: `.bg` / `.bg-surface` / `.card` / grays. Muted: `.card-text` / `.text-muted` (not `.color-text-alt` — use `.color-on-fill` on primary fills).
+5. `.row`/`.col` **start by default**; center with `.flex-center` or `jc-c ai-c`. `.btn` has `margin: 0` — space via parent `gap` / `marg-*`.
+6. After CSS edits: `docs:generate`. Don’t hand-edit `docs/asJson` / `asToon`.
 
-## Adjacent project: lagunite-web
-
-`lagunite-web/` is a **completely separate project** (its own git repo) that lives next to this one only for practical development convenience. It is an Astro 5 site that consumes the compiled output of this framework:
-- Imports `../../../dist/lagunite.css` (from its `Layout.astro`)
-- Runs its own `npm run docs:sync` to pull `docs/asJson/` from this project
-
-Do not treat `lagunite-web/` as part of this repo or assume changes here affect it automatically.
-
-**When you also need to update lagunite-web after a CSS change:**
-1. Edit `src/css/<layer>/<file>.css`
-2. `npm run build` in lagunite/
-3. `npm run docs:generate` in lagunite/
-4. `npm run docs:sync` in lagunite-web/ (separate step, separate project)
-5. Update the relevant `.cursor/skills/*/SKILL.md`
-
-## Validate rules (always apply)
-
-### Before generating HTML/CSS
-1. **Pick the right layer** — tokens → typography/colors → spacing/layout → decorators → atoms → molecules → compounds → organisms → patterns.
-2. **Do not invent classes.** If a class is not in a skill or `src/css/`, say it is missing and suggest the closest documented utility.
-3. **Prefer utilities** over `style=""` or raw px. If no match exists, state the gap explicitly with `<!-- GAP: reason -->`.
-
-### Class string order
-1. **Base utilities** first, then **`x*`** (max-width 639px), then **`d*`** (min-width 640px).
-2. **Layout first:** flex/grid/position → margin/padding/gap → typography/colors → borders/shadows/effects.
-3. **Gap in grid/flex:** use `.gap-*` (and `xgap*` / `dgap*`) — NOT removed names like `g-gap` or `f-gap`.
-
-### Layer sanity
-| Layer | Skill | Examples |
-| --- | --- | --- |
-| Atoms | lagunite-atoms | `.btn`, `.input`, tables, lists |
-| Molecules | lagunite-molecules | `.form-group`, `.alert`, `.dropdown` |
-| Compounds | lagunite-compounds | `.card`, `.modal` |
-| Organisms | lagunite-organisms | `.navbar`, `.sidebar`, `.footer` |
-
-### After generating — quick review
-- Scan for unknown or Tailwind-style abbreviations.
-- Check responsive prefixes match intent (`x` = mobile, `d` = desktop).
-- **Screens / forms / dashboards:** apply `ai/skills/compose.md`, then run the **UI Validator** orchestrator (`ai/skills/validate.md` + domain skills).
-- **Background + text:** read `ai/skills/contrast.md` before bg/text pairing.
-- **`.bg-1`…`.bg-9` are NOT neutral surfaces** — they resolve to primary/secondary/tertiary colors. For neutral dark cards use `.bg-gray-800`/`.bg-gray-900`; for adaptive surfaces use `.bg`.
-- Navbar safety: never style all `header` tags for spacing. Scope as `header:not(.navbar):not(.doc-navbar-overlay)` if needed.
-
-## Framework quick reference
-
-@.claude/FRAMEWORK-QUICKREF.md
-
-## Full skill files (read on demand)
-
-When a task requires depth on a specific area, read the relevant skill file.
-Index: `ai/SKILLS-INDEX.md`
-
-| Skill | Path |
+## Load on demand (do NOT preload)
+| Need | Open |
 | --- | --- |
-| Tokens (CSS vars) | `ai/skills/tokens.md` |
-| Typography | `ai/skills/typography.md` |
-| Colors | `ai/skills/colors.md` |
-| Spacing & sizing | `ai/skills/spacing.md` |
-| Flex layout | `ai/skills/flex.md` |
-| Grid layout | `ai/skills/grid.md` |
-| Containers | `ai/skills/containers.md` |
-| Decorators | `ai/skills/decorators.md` |
-| Atoms | `ai/skills/atoms.md` |
-| Molecules | `ai/skills/molecules.md` |
-| Compounds | `ai/skills/compounds.md` |
-| Organisms | `ai/skills/organisms.md` |
-| Patterns | `ai/skills/patterns.md` |
-| Compose (UI craft) | `ai/skills/compose.md` |
-| Misc | `ai/skills/misc.md` |
-| **UI Validator (orchestrator)** | `ai/skills/validate.md` |
-| Validate — structure | `ai/skills/validate-structure.md` |
-| Validate — forms | `ai/skills/validate-forms.md` |
-| Validate — night | `ai/skills/validate-night.md` |
-| Validate — a11y | `ai/skills/validate-a11y.md` |
-| Contrast | `ai/skills/contrast.md` |
-| Tailwind migration | `ai/skills/tailwind-migration.md` |
+| **Agents & skills map** | `ai/AGENTS-AND-SKILLS.md` |
+| Sync IDE wrappers | `npm run ai:sync` |
+| Skill index | `ai/SKILLS-INDEX.md` |
+| Screen / form UI | `ai/skills/compose.md` → then UI Validator `ai/skills/validate.md` |
+| Taste / AI-slop filter | `ai/skills/anti-slop.md` |
+| Class encyclopedia | `.claude/FRAMEWORK-QUICKREF.md` or layer skill under `ai/skills/` |
+| CSS release checklist (RTP historial) | `ToDo-prod.md` |
+| **Revisión personal pre-publish** | `REVISION-v2.1.md` |
+| Support / browsers / size | `SUPPORT.md` |
+| Shipped features | `FEATURES.md` |
+| AI-first / JSON→HTML | `ToDo-ai-first.md` (paused until CSS gate) |
 
-In-repo cheatsheets: `src/css/03-layout/FLEX-CHEATSHEET.md`, `GRID-CHEATSHEET.md`, `CONTAINERS-CHEATSHEET.md`, `LAYOUT-SPACING-CHEATSHEET.md`. Decorators: `src/css/04-decorators/DECORATORS-CHEATSHEET.md`. Atoms: `src/css/05-atoms/ATOMS-CHEATSHEET.md`.
-
-## HTML POC workflow
-
-- **File naming:** `poc-{topic}.html` (in-progress POCs), `demo-{topic}.html` (stable demos) — in repo root.
-- **POC files** link to `./src/lagunite.css` or `./dist/lagunite.css` and hot-reload with `npm run dev`.
-- **Mark every `style=""`** with `<!-- GAP: needs .utility-name -->`.
-- After visual sign-off: move gaps to `src/css/<layer>/<file>.css` → build → docs:generate → update skill.
+## POC / demo
+- `pocs/` or `poc-*.html` → link `src/lagunite.css`; mark `style=""` with `<!-- GAP -->`.

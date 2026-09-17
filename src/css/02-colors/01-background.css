@@ -1,3 +1,15 @@
+/* ==========
+   02-colors / 01-background.css
+   Page/surface fills, theme accent fills, and named gradients.
+
+   Anti-slop (RTP):
+   - `.bg` / `.bg-surface` / `.bg-surface-raised` / gray neutrals = panels & page chrome.
+   - `.bg-1`…`.bg-9` = **theme accent fills** (brand/primary/secondary/tertiary), NOT
+     “background levels” or neutral cards. Never use them as default page panels.
+   - `.bgg-*` = accent gradients only (hero strip, badge, CTA band). Do not paint the
+     whole page with a rainbow gradient as identity (see ai/skills/anti-slop L-01/L-10).
+   ========== */
+
 /* @ID: #02-01-01 */
 .bg {
   background: var(--color-bg) !important;
@@ -9,12 +21,23 @@
   color: var(--color-text-alt) !important;
 }
 
+.bg-surface {
+  background: var(--color-surface) !important;
+  color: var(--color-text-base) !important;
+}
+
+.bg-surface-raised {
+  background: var(--color-surface-raised) !important;
+  color: var(--color-text-base) !important;
+}
+
 /* Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills). */
 .night .bg-alt {
   color: var(--gray-900) !important;
 }
 
 /* @ID: #02-01-02 */
+/* Theme accent fills (not neutral surface ladder) */
 .bg-1 {
   background: var(--color-primary) !important;
   color: var(--color-text-alt) !important;
@@ -108,6 +131,7 @@
 }
 
 /* @ID: #02-01-05 */
+/* Named gradients — accent / hierarchy only; not default full-page identity */
 .bgg-1 {
   background: var(--bg-gradient-1);
   color: var(--color-text-alt);

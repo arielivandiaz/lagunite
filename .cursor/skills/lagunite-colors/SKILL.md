@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-colors
+description: >-
+  Lagunite color utilities: text, backgrounds, surfaces, on-fill, borders.
+---
 
-This skill has moved to [`ai/skills/colors.md`](../../../ai/skills/colors.md).
+Use the canonical skill: [`ai/skills/colors.md`](../../../ai/skills/colors.md).

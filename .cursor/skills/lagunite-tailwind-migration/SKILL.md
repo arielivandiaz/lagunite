@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-tailwind-migration
+description: >-
+  Migrate Tailwind class patterns to Lagunite utilities.
+---
 
-This skill has moved to [`ai/skills/tailwind-migration.md`](../../../ai/skills/tailwind-migration.md).
+Use the canonical skill: [`ai/skills/tailwind-migration.md`](../../../ai/skills/tailwind-migration.md).

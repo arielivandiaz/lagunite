@@ -1,9 +1,9 @@
 folder: 07-compounds
 file: 01-cards.css
-lastUpdated: 2026-04-17
+lastUpdated: 2026-09-15
 hasResponsive: false
-totalSelectors: 24
-content[24]:
+totalSelectors: 37
+content[37]:
   - type: selector
     selectorType: class
     selector: .card
@@ -78,13 +78,22 @@ content[24]:
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
+    selector: .night .card-text
+    id: #07-01-02
+    category: null
+    properties[1]: color
+    cssRule: "/* gray-600 is too dark on .night .card (gray-800) */\ncolor: var(--gray-400)"
+    responsive: false
+    description: ── Card regions ─────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
     selector: .card-elevated
     id: #07-01-03
     category: null
     properties[1]: box-shadow
     cssRule: "box-shadow: var(--shadow-m)"
     responsive: false
-    description: ── Card surface variants ────────────────────────────────────────────────
+    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
   - type: selector
     selectorType: class
     selector: .card-flat
@@ -93,7 +102,7 @@ content[24]:
     properties[2]: border,background
     cssRule: "border: none\nbackground: transparent"
     responsive: false
-    description: ── Card surface variants ────────────────────────────────────────────────
+    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
   - type: selector
     selectorType: class
     selector: .card-hover
@@ -102,7 +111,7 @@ content[24]:
     properties[1]: transition
     cssRule: "transition: box-shadow 0.2s, transform 0.2s"
     responsive: false
-    description: ── Card surface variants ────────────────────────────────────────────────
+    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
   - type: selector
     selectorType: class
     selector: ".card-hover:hover"
@@ -111,7 +120,7 @@ content[24]:
     properties[2]: box-shadow,transform
     cssRule: "box-shadow: var(--shadow-l)\ntransform: translateY(-2px)"
     responsive: false
-    description: ── Card surface variants ────────────────────────────────────────────────
+    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
   - type: selector
     selectorType: class
     selector: .card-primary
@@ -186,8 +195,116 @@ content[24]:
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
     selectorType: class
-    selector: .card-horizontal
+    selector: .card-accent-primary
     id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-secondary
+    id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-tertiary
+    id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-success
+    id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-warning
+    id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-error
+    id: #07-01-06
+    category: null
+    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
+    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-primary
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-primary)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-secondary
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-secondary)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-tertiary
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-tertiary)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-success
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-success)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-warning
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-warning)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-accent-error
+    id: #07-01-06
+    category: null
+    properties[1]: border-left-color
+    cssRule: "border-left-color: var(--color-error)"
+    responsive: false
+    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+  - type: selector
+    selectorType: class
+    selector: .card-horizontal
+    id: #07-01-07
     category: null
     properties[2]: display,flex-direction
     cssRule: "display: flex\nflex-direction: row"
@@ -196,7 +313,7 @@ content[24]:
   - type: selector
     selectorType: class
     selector: .card-horizontal .card-img
-    id: #07-01-06
+    id: #07-01-07
     category: null
     properties[2]: width,object-fit
     cssRule: "width: 40%\nobject-fit: cover"
@@ -205,7 +322,7 @@ content[24]:
   - type: selector
     selectorType: class
     selector: .card-group
-    id: #07-01-06
+    id: #07-01-07
     category: null
     properties[3]: display,gap,grid-template-columns
     cssRule: "display: grid\ngap: var(--space-4)\ngrid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))"

@@ -1,0 +1,231 @@
+folder: 06-molecules
+file: 14-picker-wheel.css
+lastUpdated: 2026-09-15
+hasResponsive: false
+totalSelectors: 25
+content[25]:
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel
+    id: #06-14-01
+    category: null
+    properties[2]: user-select,touch-action
+    cssRule: "user-select: none\ntouch-action: none"
+    responsive: false
+    description: ── Contenedor base ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-track
+    id: #06-14-01
+    category: null
+    properties[3]: min-height,width,cursor
+    cssRule: "min-height: 5rem\n/* 80px */\nwidth: 100%\ncursor: grab"
+    responsive: false
+    description: ── Contenedor base ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel.dragging .picker-wheel-track
+    id: #06-14-01
+    category: null
+    properties[1]: cursor
+    cssRule: "cursor: grabbing"
+    responsive: false
+    description: ── Contenedor base ────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-v .picker-wheel-track
+    id: #06-14-01
+    category: null
+    properties[2]: min-height,flex-direction
+    cssRule: "min-height: 17.5rem\n/* 280px */\nflex-direction: column"
+    responsive: false
+    description: Variante vertical
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-item
+    id: #06-14-02
+    category: null
+    properties[9]: background,border,padding,cursor,font-family,font-weight,color,line-height,transition
+    cssRule: "background: transparent\nborder: 0\npadding: 0\ncursor: pointer\nfont-family: var(--font-headers)\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-text-base)\nline-height: 1\ntransition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-item.far
+    id: #06-14-02
+    category: null
+    properties[2]: font-size,opacity
+    cssRule: "font-size: 1.25rem\nopacity: 0.35"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-item.near
+    id: #06-14-02
+    category: null
+    properties[2]: font-size,opacity
+    cssRule: "font-size: 1.75rem\nopacity: 0.65"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-item.active
+    id: #06-14-02
+    category: null
+    properties[4]: font-size,color,opacity,transform
+    cssRule: "font-size: 3rem\ncolor: var(--color-primary)\nopacity: 1\ntransform: scale(1.05)"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".picker-wheel-item:focus-visible"
+    id: #06-14-02
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: 2px solid var(--color-primary)\noutline-offset: 2px"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-item.is-empty
+    id: #06-14-02
+    category: null
+    properties[1]: visibility
+    cssRule: "visibility: hidden"
+    responsive: false
+    description: ── Items ──────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-v .picker-wheel-item.active
+    id: #06-14-02
+    category: null
+    properties[4]: border-top,border-bottom,padding,margin
+    cssRule: "border-top: 2px solid var(--color-primary)\nborder-bottom: 2px solid var(--color-primary)\npadding: var(--space-3) 0 calc(var(--space-3) + 2px)\nmargin: var(--space-5) 0"
+    responsive: false
+    description: "Vertical: el seleccionado lleva linea arriba y abajo + aire"
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel .picker-wheel-indicator
+    id: #06-14-03
+    category: null
+    properties[1]: margin-top
+    cssRule: "margin-top: var(--space-2)"
+    responsive: false
+    description: ── Indicador (triángulo horizontal) ───────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-v .picker-wheel-indicator
+    id: #06-14-03
+    category: null
+    properties[1]: display
+    cssRule: "display: none"
+    responsive: false
+    description: ── Indicador (triángulo horizontal) ───────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-row
+    id: #06-14-04
+    category: null
+    properties[2]: width,flex-wrap
+    cssRule: "width: 100%\nflex-wrap: nowrap"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-row > .picker-wheel-track
+    id: #06-14-04
+    category: null
+    properties[3]: flex,min-width,width
+    cssRule: "flex: 1 1 auto\nmin-width: 0\nwidth: auto"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-row > .picker-wheel-btn
+    id: #06-14-04
+    category: null
+    properties[1]: flex
+    cssRule: "flex: 0 0 auto"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-btn
+    id: #06-14-04
+    category: null
+    properties[13]: width,height,border-radius,border,background,color,cursor,font-size,line-height,display,align-items,justify-content,transition
+    cssRule: "width: 2.25rem\nheight: 2.25rem\nborder-radius: var(--radius-full)\nborder: var(--border)\nbackground: transparent\ncolor: var(--color-primary)\ncursor: pointer\nfont-size: 1.1rem\nline-height: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ntransition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: ".picker-wheel-btn:hover"
+    id: #06-14-04
+    category: null
+    properties[3]: background,color,border-color
+    cssRule: "background: var(--color-primary)\ncolor: var(--color-on-fill, var(--color-text-alt))\nborder-color: var(--color-primary)"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: ".picker-wheel-btn:focus-visible"
+    id: #06-14-04
+    category: null
+    properties[2]: outline,outline-offset
+    cssRule: "outline: 2px solid var(--color-primary)\noutline-offset: 2px"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: ".picker-wheel-btn:disabled"
+    id: #06-14-04
+    category: null
+    properties[2]: opacity,cursor
+    cssRule: "opacity: 0.35\ncursor: not-allowed"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: .picker-wheel-btn svg
+    id: #06-14-04
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
+  - type: selector
+    selectorType: class
+    selector: .night .picker-wheel-item
+    id: #06-14-05
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-base)"
+    responsive: false
+    description: ── Night + reduced motion ─────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .picker-wheel-item.active
+    id: #06-14-05
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary)"
+    responsive: false
+    description: ── Night + reduced motion ─────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .night .picker-wheel-btn
+    id: #06-14-05
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-border)"
+    responsive: false
+    description: ── Night + reduced motion ─────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".night .picker-wheel-btn:hover"
+    id: #06-14-05
+    category: null
+    properties[1]: border-color
+    cssRule: "border-color: var(--color-primary)"
+    responsive: false
+    description: ── Night + reduced motion ─────────────────────────────────────────────

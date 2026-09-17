@@ -1,4 +1,7 @@
-# Moved
+---
+name: lagunite-validate-structure
+description: >-
+  Validate Lagunite classnames, order, and layer structure.
+---
 
-Structure checks live in [`ai/skills/validate-structure.md`](../../../ai/skills/validate-structure.md).  
-Orchestrator: [`ai/skills/validate.md`](../../../ai/skills/validate.md).
+Use the canonical skill: [`ai/skills/validate-structure.md`](../../../ai/skills/validate-structure.md).

@@ -87,7 +87,7 @@ Same directions as margin. Special: `.padd-0`
 
 ## Flex (`src/css/03-layout/01-flex.css`)
 
-> Direction classes (`.row` `.col` etc.) already set `display: flex; flex-wrap: wrap; justify-content: center; align-items: center`. Never add `d-flex` alongside.
+> Direction classes (`.row` `.col` etc.) already set `display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start`. Use `.flex-center` or `jc-c ai-c` explicitly when you want centered composition. Never add `d-flex` alongside.
 
 | Group | Classes |
 | --- | --- |

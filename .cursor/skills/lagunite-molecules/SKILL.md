@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-molecules
+description: >-
+  Lagunite molecules: form-groups, alerts, tabs, picker-wheel, selectable-option, and more.
+---
 
-This skill has moved to [`ai/skills/molecules.md`](../../../ai/skills/molecules.md).
+Use the canonical skill: [`ai/skills/molecules.md`](../../../ai/skills/molecules.md).

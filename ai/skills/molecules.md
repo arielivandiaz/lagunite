@@ -3,7 +3,7 @@
 > Form groups, alerts, dropdowns, tooltips, breadcrumbs, and other small reusable UI blocks.
 > Use when composing atoms (inputs, buttons) into structured molecule components.
 
-**Source files:** `src/css/06-molecules/` (`01-form-groups.css` through `11-skeleton.css`)
+**Source files:** `src/css/06-molecules/` (`01-form-groups.css` … `15-selectable-option.css`)
 
 **Only use classes and attributes documented below.** Do not invent molecule class names.
 
@@ -72,9 +72,44 @@ Molecules combine **atoms** (`.input`, `.btn`) with structure and state. They si
 | `.breadcrumb-arrow` | Arrow separators |
 | `.breadcrumb-dot` | Dot separators |
 
+## Picker wheel (`14-picker-wheel.css` + JS)
+
+Requires `src/js/06-molecules/14-picker-wheel.js` (auto-init via `lagunite.js`, or `new PickerWheel(el)` / `initPickerWheels()`).
+
+| Class / attr | Role |
+| --- | --- |
+| `.picker-wheel` | Root; set `data-values="a,b,c"` and optional `data-value` |
+| `.picker-wheel-v` | Vertical orientation |
+| `.picker-wheel-track` | Items container (JS fills buttons) |
+| `.picker-wheel-item` | Value button (`.active` / `.near` / `.far` / `.is-empty`) |
+| `.picker-wheel-indicator` | Optional triangle under horizontal track |
+| `.picker-wheel-row` | Horizontal row when using prev/next arrows |
+| `.picker-wheel-btn` | Arrow chrome |
+| `.picker-wheel-prev` / `.picker-wheel-next` | Decrement / increment controls |
+| `data-aria-label` | Optional accessible name (maps to `aria-label`) |
+
+Emits `change` with `detail: { value, index }`. Keyboard: arrows + Home/End. Disable auto-init with `LAGUNITE_NO_AUTO_INIT`.
+
+POC: `pocs/poc-picker-wheel.html`
+
+## Selectable option (`15-selectable-option.css`)
+
+CSS-only (`:checked`). No JS.
+
+| Class | Role |
+| --- | --- |
+| `.selectable-option` | `<label>` wrapping checkbox/radio + label + indicator |
+| `.selectable-option-label` | Text |
+| `.selectable-option-indicator` | Circle checkmark |
+| `.selectable-option.size-s` / `.size-l` | Density |
+| `:has(input:checked)` | Selected (do not invent a `.selected` class) |
+| `:has(input:disabled)` | Disabled |
+
+POC: `pocs/mobile/poc-goal-selector.html`
+
 ## Night mode
 
-Several files include `.night` selectors (alerts, dropdown, breadcrumb, form labels). Add `.night` on a parent for automatic dark color adjustments.
+Several files include `.night` selectors (alerts, dropdown, breadcrumb, form labels, picker, selectable). Add `.night` on a parent for automatic dark color adjustments.
 
 ## Related skills
 

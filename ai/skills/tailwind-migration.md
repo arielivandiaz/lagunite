@@ -9,7 +9,7 @@
 
 ## Critical rules (read first)
 
-1. **`.row` / `.col` already set `display: flex`**. Never pair them with `d-flex`. They also set `flex-wrap: wrap; justify-content: center; align-items: center` as defaults.
+1. **`.row` / `.col` already set `display: flex`**. Never pair them with `d-flex`. They set `flex-wrap: wrap; justify-content: flex-start; align-items: flex-start` as defaults, and you opt into centering with `.flex-center` / `jc-c ai-c`.
 2. **Only 2 breakpoints:** `x` (max-width 639px, mobile) and `d` (min-width 640px, desktop). All of Tailwind's `sm:` `md:` `lg:` `xl:` `2xl:` map to `d*`.
 3. **Responsive prefix is merged, not a separate word:** `sm:flex-col` → `dcol`, not `d flex-col`.
 4. **Many `.bg-*` also set text color.** Don't stack conflicting `.color-*` on the same element.

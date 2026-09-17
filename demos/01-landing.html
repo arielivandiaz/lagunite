@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 01 · Landing — Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!-- Cheatsheets: LAYOUT-CONTAINERS · ATOMS · COMPOUNDS · ORGANISMS (footer) · colors -->
+
+  <header class="navbar navbar-sticky">
+    <a class="navbar-brand bold" href="./index.html">Lagunite</a>
+    <button class="navbar-burger" type="button" aria-label="Open menu" id="nav-burger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-nav">
+      <li><a class="navbar-link active" href="#features">Features</a></li>
+      <li><a class="navbar-link" href="#cta">Get started</a></li>
+      <li><a class="navbar-link" href="./02-dashboard.html">Dashboard</a></li>
+    </ul>
+  </header>
+
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <main>
+    <section class="container-fluid padd-v-l">
+      <div class="container-l">
+        <div class="grid xgrid-cols-1 dgrid-cols-2 gap-l ai-c">
+          <div class="col gap">
+            <p class="font-s bold color-primary">Utility-first CSS</p>
+            <h1 class="font-xxl bold color-text">Build screens with descriptive classes</h1>
+            <p class="font-l lh text-muted">
+              Lagunite ships layout, tokens, and components — no invented Tailwind names.
+            </p>
+            <div class="row gap-s ai-c">
+              <a class="btn size-l" href="#cta">Get started</a>
+              <a class="btn alt size-l" href="./04-components.html">Browse components</a>
+            </div>
+            <div class="row gap-s ai-c">
+              <span class="badge badge-success">CSS runtime</span>
+              <span class="badge badge-info">Night mode</span>
+              <span class="badge badge-secondary">Responsive</span>
+            </div>
+          </div>
+          <div class="card padd col gap-s">
+            <p class="font-s bold color-text">Hero panel</p>
+            <p class="font-s text-muted">
+              Prefer <code>.bg</code> / <code>.card</code> for surfaces. Theme accents (<code>.bg-1</code>…<code>.bg-9</code>) are for CTAs, not panels.
+            </p>
+            <div class="row gap-s">
+              <span class="badge badge-primary">.container-l</span>
+              <span class="badge badge-outline">.grid</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container padd-v-l">
+      <header class="col gap-s marg-b ai-c ta-c">
+        <h2 class="font-xl bold color-text">Features</h2>
+        <p class="font-s text-muted">One job per card — flat by default (elevate only when it must float).</p>
+      </header>
+      <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+        <article class="card padd col gap-s">
+          <h3 class="font-l bold">Readable</h3>
+          <p class="font-s lh text-muted">Descriptive utilities ordered base → <code>x*</code> → <code>d*</code>.</p>
+        </article>
+        <article class="card padd col gap-s">
+          <h3 class="font-l bold">Composable</h3>
+          <p class="font-s lh text-muted">Atoms → molecules → compounds → organisms.</p>
+        </article>
+        <article class="card padd col gap-s">
+          <h3 class="font-l bold">Tokenized</h3>
+          <p class="font-s lh text-muted">Spacing, color, and type from config — not hex soup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cta" class="container padd-v-l">
+      <div class="card card-elevated padd col gap ai-c ta-c">
+        <h2 class="font-xl bold color-text">Ready to try?</h2>
+        <p class="font-s text-muted">Continue to the dashboard or forms demos.</p>
+        <div class="row gap-s">
+          <a class="btn" href="./02-dashboard.html">Open dashboard</a>
+          <a class="btn alt" href="./03-forms.html">Open forms</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer marg-t-l">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Lagunite</p>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./index.html">Demos</a></li>
+          <li><a class="footer-link" href="../src/css/03-layout/LAYOUT-CONTAINERS.md">Containers cheatsheet</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Layers</p>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="../src/css/05-atoms/ATOMS-CHEATSHEET.md">Atoms</a></li>
+          <li><a class="footer-link" href="../src/css/07-compounds/01-cards.css">Cards source</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="font-s text-muted marg-0">Demo 01 · canonical · [demo]</p>
+    </div>
+  </footer>
+
+  <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">
+    <a href="./index.html">← demos</a>
+  </p>
+
+  <script>
+    const burger = document.getElementById('nav-burger');
+    const navbar = document.querySelector('.navbar');
+    burger?.addEventListener('click', () => navbar.classList.toggle('open'));
+
+    const theme = document.getElementById('theme-toggle');
+    const sync = () => { theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night'; };
+    theme.addEventListener('click', () => { document.body.classList.toggle('night'); sync(); });
+    sync();
+  </script>
+</body>
+</html>

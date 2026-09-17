@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-containers
+description: >-
+  Lagunite containers, page width, hero and prose width helpers.
+---
 
-This skill has moved to [`ai/skills/containers.md`](../../../ai/skills/containers.md).
+Use the canonical skill: [`ai/skills/containers.md`](../../../ai/skills/containers.md).

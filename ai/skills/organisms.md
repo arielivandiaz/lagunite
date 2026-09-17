@@ -4,6 +4,8 @@
 
 **Source files:** `src/css/08-organisms/` (`01-navbar.css`, `02-sidebar.css`, `03-footer.css`, `04-dashboard-shell.css`, `05-dashboard-alt-shell.css`, `06-topbar.css`, `09-dnd-canvas.css`)
 
+**Numbering note (won’t renumber in v2.1):** files jump `06` → `09`. Slots `07`/`08` are unused — keep IDs stable; do not invent `07-*` / `08-*` organism files without a product decision.
+
 **Only the classes below exist.** Do not invent organism class names.
 
 ---

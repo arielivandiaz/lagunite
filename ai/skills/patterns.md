@@ -10,20 +10,20 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
 ## 1. Landing (hero + feature grid + CTA)
 
 ```html
-<!-- Skills: containers, grid, typography, colors, atoms -->
-<section class="container-fluid padd-v-l bgg-2">
+<!-- Skills: containers, grid, typography, colors, atoms · anti-slop: no full-page bgg -->
+<section class="container-fluid padd-v-l bg">
   <div class="container-l">
     <div class="grid xgrid-cols-1 dgrid-cols-2 gap-l ai-c">
-      <div class="col padd-v-m">
-        <h1 class="font-xxl bold color-text marg-b-s">Product headline</h1>
-        <p class="font-l lh color-text marg-b-m">Short value proposition for visitors.</p>
+      <div class="col gap-s">
+        <h1 class="font-xxl bold color-text">Product headline</h1>
+        <p class="font-l lh text-muted">Short value proposition for visitors.</p>
         <div class="row gap-s">
           <a class="btn" href="#">Primary</a>
           <a class="btn alt" href="#">Secondary</a>
         </div>
       </div>
-      <div class="card card-elevated padd-m">
-        <p class="font-s color-text">Hero panel or illustration area.</p>
+      <div class="card padd">
+        <p class="font-s text-muted">Hero panel or illustration area.</p>
       </div>
     </div>
   </div>
@@ -34,20 +34,21 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
   <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Readable</h3>
-      <p class="font-s lh card-text">Descriptive utility classes.</p>
+      <p class="font-s lh text-muted">Descriptive utility classes.</p>
     </div>
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Flexible</h3>
-      <p class="font-s lh card-text">Compose with grid and gap.</p>
+      <p class="font-s lh text-muted">Compose with grid and gap.</p>
     </div>
     <div class="card padd">
       <h3 class="font-l bold marg-b-s">Enterprise</h3>
-      <p class="font-s lh card-text">Tokens and semantic colors.</p>
+      <p class="font-s lh text-muted">Tokens and semantic colors.</p>
     </div>
   </div>
 </section>
 ```
 
+Optional accent strip (purpose-gate, not page identity): `<div class="bgg-2 padd-v">…</div>` once.
 ---
 
 ## 2. Dashboard (sidebar + main)
@@ -141,28 +142,34 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
 
 ---
 
-## 5. Auth card (golden — uses compose rules)
+## 5. Auth card (golden — compose + anti-slop)
 
 ```html
-<!-- Skills: compose, containers, compounds, molecules, atoms -->
-<div class="bg minvh100 row jc-c ai-c padd">
-  <div class="container-card">
+<!-- Skills: compose, anti-slop, containers, compounds, molecules, atoms
+     L-17: one full-width primary; secondary = text link
+     L-12: at most one card-elevated -->
+<div class="bg minvh100 row flex-center padd">
+  <div class="container-card col gap">
+    <header class="col gap-s">
+      <h1 class="font-l bold color-text">Sign in</h1>
+      <p class="font-s text-muted">Use your work email to continue.</p>
+    </header>
     <div class="card card-elevated">
       <div class="card-body">
-        <h1 class="font-l bold color-text marg-b-s">Sign in</h1>
-        <p class="font-s card-text">Use your work email to continue.</p>
-        <form class="col jc-fs ai-s gap-s">
+        <form class="col gap">
           <div class="form-group">
             <label class="form-label" for="auth-email">Email</label>
-            <input class="input" id="auth-email" type="email" autocomplete="email" />
+            <input class="input" id="auth-email" type="email" autocomplete="email" placeholder="you@company.com" />
           </div>
           <div class="form-group">
             <label class="form-label" for="auth-pwd">Password</label>
-            <input class="input" id="auth-pwd" type="password" autocomplete="current-password" />
+            <input class="input" id="auth-pwd" type="password" autocomplete="current-password" placeholder="••••••••" />
           </div>
-          <div class="row jc-fe ai-c gap-s marg-t">
-            <button type="button" class="btn alt">Cancel</button>
-            <button type="submit" class="btn">Continue</button>
+          <div class="col gap-s marg-t">
+            <button type="submit" class="btn size-l marg-0 wp100">Sign in</button>
+            <p class="ta-c marg-0">
+              <a class="font-s color-primary" href="#">Forgot password?</a>
+            </p>
           </div>
         </form>
       </div>
@@ -170,6 +177,8 @@ These snippets use **only** documented Lagunite classes. Adjust copy and add JS 
   </div>
 </div>
 ```
+
+> Wizard footers (Back + Continue) may use `row gap-s` + two `.btn.flex-1` — that is not the auth “twin chrome” anti-pattern.
 
 ---
 

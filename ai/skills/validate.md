@@ -5,7 +5,7 @@
 >
 > Domain skills live beside this file:
 > `validate-structure` · `validate-forms` · `validate-night` · `validate-a11y`  
-> Plus craft/color: `compose.md` · `contrast.md`
+> Plus craft/color/filter: `compose.md` · `contrast.md` · **`anti-slop.md`**
 
 ---
 
@@ -24,12 +24,13 @@
 - Note modes to check: **light** always; **night** if `.night` / theme toggle exists or user cares about dark
 
 ### 1. Load skills (read before judging)
-| Always | If forms/inputs | If night / toggle | Always for screens | Always for color pairs |
-| --- | --- | --- | --- | --- |
-| `validate-structure.md` | `validate-forms.md` | `validate-night.md` | `compose.md` | `contrast.md` |
-| `validate-a11y.md` | | | | |
+| Always | If forms/inputs | If night / toggle | Always for screens | Always for color pairs | Always for taste / “AI look” |
+| --- | --- | --- | --- | --- | --- |
+| `validate-structure.md` | `validate-forms.md` | `validate-night.md` | `compose.md` | `contrast.md` | **`anti-slop.md`** |
+| `validate-a11y.md` | | | | | |
 
-Skip a domain only if clearly N/A (e.g. no form → skip forms with Status: SKIP).
+Skip a domain only if clearly N/A (e.g. no form → skip forms with Status: SKIP).  
+For **anti-slop**: ask During vs After once if the user didn’t specify; default **During** when generating, **After** when only auditing.
 
 ### 2. Run each domain checklist
 Produce the structured subsection each skill defines (`Structure`, `Forms`, `Night`, `A11y`, plus `Compose` / `Contrast` notes).
@@ -71,6 +72,10 @@ Produce the structured subsection each skill defines (`Structure`, `Forms`, `Nig
 - Status: …
 - …
 
+### Anti-Slop
+- Status: …
+- …
+
 ### Summary
 - Blockers (FAIL): …
 - Warnings: …
@@ -78,7 +83,7 @@ Produce the structured subsection each skill defines (`Structure`, `Forms`, `Nig
 - Follow-ups (CSS / skills / demos): …
 ```
 
-Overall gate: **any FAIL in Structure / Forms / Night (when applicable) / Compose blockers → not done.**
+Overall gate: **any FAIL in Structure / Forms / Night (when applicable) / Compose blockers / Anti-Slop Hard Gate → not done.**
 
 ---
 
@@ -91,6 +96,7 @@ Overall gate: **any FAIL in Structure / Forms / Night (when applicable) / Compos
 | Green/red empty inputs | `validate-forms` |
 | `btn-primary`, Tailwind names | `validate-structure` |
 | Missing labels / focus | `validate-a11y` |
+| Purple gradients, glow soup, fake testimonials, emoji UI | **`anti-slop`** |
 
 ---
 

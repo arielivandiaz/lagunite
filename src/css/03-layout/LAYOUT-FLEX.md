@@ -2,8 +2,8 @@
 
 ## Quick start
 
-Every flex container in Lagunite starts **centered and wrapping** by default.  
-Just pick a direction:
+Every flex container in Lagunite starts **start-aligned and wrapping** by default.  
+Just pick a direction, then use `.flex-center` or `jc-c ai-c` when you want a centered composition:
 
 ```html
 <div class="row gap-s">          <!-- horizontal, small gap -->
@@ -28,7 +28,7 @@ Just pick a direction:
 | `.col` | `flex-direction: column` | Vertical stack |
 | `.colr` | `flex-direction: column-reverse` | |
 
-All of them set `display: flex; flex-wrap: wrap; justify-content: center; align-items: center`.
+All of them set `display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start`.
 
 ### Responsive direction
 

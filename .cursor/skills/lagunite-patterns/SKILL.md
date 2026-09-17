@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-patterns
+description: >-
+  Lagunite page patterns: landing, dashboard, forms, auth starting points.
+---
 
-This skill has moved to [`ai/skills/patterns.md`](../../../ai/skills/patterns.md).
+Use the canonical skill: [`ai/skills/patterns.md`](../../../ai/skills/patterns.md).

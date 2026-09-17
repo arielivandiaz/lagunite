@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 02 · Dashboard — Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!-- Cheatsheets: ORGANISMS · MOLECULES (stat-cards) · ATOMS (table/badges) · COMPOUNDS -->
+
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="row col-row jc-fs ai-s minvh100">
+    <aside class="sidebar flex-shrink-0" id="app-sidebar">
+      <div class="sidebar-header">
+        <span class="font-l bold color-primary">Lagunite</span>
+      </div>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <div class="sidebar-section">
+          <div class="sidebar-section-title">Main</div>
+          <a class="sidebar-link active" href="./02-dashboard.html"><span>Dashboard</span></a>
+          <a class="sidebar-link" href="./03-forms.html"><span>Forms</span></a>
+          <a class="sidebar-link" href="./04-components.html"><span>Components</span></a>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section-title">Docs</div>
+          <a class="sidebar-link" href="./index.html"><span>Demo index</span></a>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" class="btn alt size-s wp100" id="sidebar-toggle">Toggle</button>
+      </div>
+    </aside>
+
+    <div class="flex-1 col">
+      <header class="topbar topbar-sticky">
+        <div class="topbar-left">
+          <button type="button" class="topbar-action xd-flex dd-none" id="sidebar-open" aria-label="Open sidebar">☰</button>
+          <div class="col gap-xs">
+            <p class="topbar-title">Dashboard</p>
+            <p class="topbar-subtitle text-muted">Workspace overview · [demo]</p>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <span class="badge badge-success">Live</span>
+          <span class="topbar-avatar" aria-hidden="true">A</span>
+        </div>
+      </header>
+
+      <main class="flex-1 padd bg col gap">
+        <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+          <article class="stat-card">
+            <div class="stat-label">Users</div>
+            <p class="stat-value">1.2k</p>
+            <p class="stat-meta">+4.2% this week</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-label">Revenue</div>
+            <p class="stat-value">$48k</p>
+            <p class="stat-meta">MRR · [demo]</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-label">Churn</div>
+            <p class="stat-value">2.1%</p>
+            <p class="stat-meta"><span class="stat-dot stat-dot-success"></span> Healthy</p>
+          </article>
+        </div>
+
+        <div class="grid xgrid-cols-1 dgrid-cols-2 gap">
+          <section class="card">
+            <div class="card-header">Recent accounts</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table striped hover">
+                  <thead>
+                    <tr><th scope="col">Name</th><th scope="col">Plan</th><th scope="col">Status</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ada Lovelace</td>
+                      <td>Pro</td>
+                      <td><span class="badge badge-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lin Torvalds</td>
+                      <td>Trial</td>
+                      <td><span class="badge badge-warning">Trial</span></td>
+                    </tr>
+                    <tr>
+                      <td>Grace Hopper</td>
+                      <td>Team</td>
+                      <td><span class="badge badge-info">Invited</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-header">Panel notes</div>
+            <div class="card-body col gap-s">
+              <p class="font-s text-muted">
+                Surfaces use <code>.card</code> / <code>.bg</code>. Stats use molecule <code>.stat-card</code>.
+              </p>
+              <p class="font-s text-muted">
+                Cheatsheet:
+                <a class="color-primary" href="../src/css/08-organisms/ORGANISMS-CHEATSHEET.md">organisms</a>
+                ·
+                <a class="color-primary" href="../src/css/06-molecules/MOLECULES-CHEATSHEET.md">molecules</a>
+              </p>
+              <a class="btn alt size-s" href="./05-night-mode.html">View night surfaces</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">
+    <a href="./index.html">← demos</a>
+  </p>
+
+  <script>
+    const sidebar = document.getElementById('app-sidebar');
+    document.getElementById('sidebar-open')?.addEventListener('click', () => sidebar.classList.add('open'));
+    document.getElementById('sidebar-toggle')?.addEventListener('click', () => sidebar.classList.toggle('open'));
+
+    const theme = document.getElementById('theme-toggle');
+    const sync = () => { theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night'; };
+    theme.addEventListener('click', () => { document.body.classList.toggle('night'); sync(); });
+    sync();
+  </script>
+</body>
+</html>

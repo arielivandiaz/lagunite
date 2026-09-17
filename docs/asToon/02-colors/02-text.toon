@@ -1,9 +1,9 @@
 folder: 02-colors
 file: 02-text.css
-lastUpdated: 2026-04-17
+lastUpdated: 2026-09-15
 hasResponsive: false
-totalSelectors: 71
-content[71]:
+totalSelectors: 76
+content[76]:
   - type: selector
     selectorType: class
     selector: .color-text
@@ -20,6 +20,51 @@ content[71]:
     category: null
     properties[1]: color
     cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-on-fill
+    id: #02-02-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-on-fill, var(--color-text-alt))"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .text-muted
+    id: #02-02-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-600)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .color-muted
+    id: #02-02-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-600)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .night .text-muted
+    id: #02-02-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-400)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .night .color-muted
+    id: #02-02-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--gray-400)"
     responsive: false
     description: ""
   - type: selector

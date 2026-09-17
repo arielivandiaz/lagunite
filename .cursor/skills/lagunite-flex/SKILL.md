@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-flex
+description: >-
+  Lagunite flex layout: row/col defaults, gap, alignment, flex-center.
+---
 
-This skill has moved to [`ai/skills/flex.md`](../../../ai/skills/flex.md).
+Use the canonical skill: [`ai/skills/flex.md`](../../../ai/skills/flex.md).

@@ -1,22 +1,25 @@
 ---
-applyTo: "**/*.html,src/css/**/*.css,demo*.html,lagunite-web/src/**/*.astro"
+applyTo: "**/*.html,src/css/**/*.css,pocs/**/*.html,demos/**/*.html"
 ---
 
-# Lagunite + AI (proyecto)
+# Lagunite UI (scoped) — GitHub Copilot
 
-## Antes de escribir o cambiar markup / utilidades
+Same hard rules as [`.cursor/rules/lagunite-ai.mdc`](../../.cursor/rules/lagunite-ai.mdc). Canonical map: [`ai/AGENTS-AND-SKILLS.md`](../../ai/AGENTS-AND-SKILLS.md).
 
-1. Leer la skill **`lagunite-validate`** y aplicar su checklist (orden de clases base → `x` → `d`, no inventar, capas layout → spacing → color/tipo → decoradores, capa UI correcta).
-2. Abrir **solo** las skills necesarias para la tarea (no una skill por cada `.css`). Orden sugerido: `lagunite-tokens` → `lagunite-typography` / `lagunite-colors` → `lagunite-spacing` → `lagunite-flex` o `lagunite-grid` → `lagunite-containers` → `lagunite-decorators` / `lagunite-misc` → `lagunite-atoms` → `lagunite-molecules` → `lagunite-compounds` → `lagunite-organisms`; plantillas: `lagunite-patterns`.
-3. Complemento fijo del repo: [`docs/PROMPT_GUIDE.md`](docs/PROMPT_GUIDE.md) y cheatsheets bajo `src/css/**`.
+## Always for these files
+- No invented classes; utilities only from skills / `src/css`
+- Order: base → `x*` → `d*`; layout before deco; `.gap-*` for flex/grid gap
+- Surfaces: `.bg` / `.bg-surface` / `.card` / grays — not `.bg-1..9` as panels
+- Muted: `.card-text` / `.text-muted` — never `.color-text-alt` as subtitle (use `.color-on-fill` on fills)
+- Flex defaults to start; center with `.flex-center` or `jc-c ai-c`
+- Full-width primary CTA: `.btn.size-l.marg-0.wp100` (`.btn` has `margin: 0`)
+- CSS change → `npm run docs:generate`
 
-## Reglas de salida
+## On demand only
+- Map: `ai/AGENTS-AND-SKILLS.md`
+- Craft: `ai/skills/compose.md`
+- Audit: `ai/skills/validate.md`
+- Slop filter: `ai/skills/anti-slop.md`
+- Index: `ai/SKILLS-INDEX.md`
 
-- **Lagunite v2 solo utilidades** documentadas en skills o en `src/css`. Si falta una utilidad, indicar el hueco y la alternativa más cercana; no inventar nombres.
-- **Flex/grid:** `.row` / `.col` centran por defecto; para alinear a un costado usar `jc-fs`, `ai-fs` (o `ai-stretch`) cuando haga falta.
-- **Tema:** con `.night`, priorizar texto semántico (`color-text`, tokens); evitar grises de paleta (`.color-gray-*`) para cuerpo de texto salvo acento consciente.
-- **Docs generados:** tras cambios en CSS del framework, ejecutar `npm run docs:generate` (no editar a mano `docs/asJson` / `docs/asToon`).
-
-## Alcance de esta regla
-
-- HTML (demos, páginas) y hojas bajo `src/css/`. No sustituye revisiones humanas de diseño ni WCAG completas.
+Do **not** read every `ai/skills/*.md` unless the task needs that layer.

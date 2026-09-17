@@ -81,10 +81,14 @@
     /* == Text Colors == */
     --color-text-base: #333;
     --color-text-alt: #fff;
+    --color-on-fill: var(--color-text-alt);
   
     /* == Background Colors == */
     --color-bg: #eee;
     --color-bg-alt: #222;
+    --color-surface: #f5f5f5;
+    --color-surface-raised: #fff;
+    --color-surface-muted: #e7e7e7;
     --bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%);
     --bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%);
     --bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%);
@@ -179,6 +183,9 @@
     /* == Background Colors == */
     --color-bg: #1a1a1a;
     --color-bg-alt: #f5f5f5;
+    --color-surface: #252525;
+    --color-surface-raised: #2e2e2e;
+    --color-surface-muted: #1d1d1d;
 
     /*
      * Main readable foreground on dark surfaces (body, .bg, .card in night).

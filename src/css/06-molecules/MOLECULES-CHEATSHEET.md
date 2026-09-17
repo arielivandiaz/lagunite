@@ -111,6 +111,8 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 | `.list-item-disabled` | Disabled state with reduced opacity and no interactivity. |
 | `.list-item-badge` / `.list-item-badge-success` / `.list-item-badge-warning` / `.list-item-badge-error` / `.list-item-badge-info` | Status badges with semantic colors. |
 | `.list-item-status` / `.list-item-status-online` / `.list-item-status-away` / `.list-item-status-offline` | Small circular status indicators. |
+
+> Status dots are **static** (no pulse/glow). Use only for real presence/state — not decoration (anti-slop L-18).
 | `.list-container` | Wrapper with border, rounded corners, and background. |
 | `.list-container-compact` | Reduced padding variant (var(--space-2)). |
 | `.list-container-spacious` | Increased padding variant (var(--space-4)). |
@@ -229,3 +231,32 @@ Modern KPI/stat system for dashboards and finance panels.
   </div>
 </section>
 ```
+
+---
+
+## `14-picker-wheel.css` (+ JS)
+
+| Classes / attrs | What it does |
+|-----------------|--------------|
+| `.picker-wheel` | Root wheel. `data-values="a,b,c"` required; optional `data-value`, `data-aria-label`. |
+| `.picker-wheel-v` | Vertical layout. |
+| `.picker-wheel-track` | Slot filled by JS with `.picker-wheel-item` buttons. |
+| `.picker-wheel-item` + `.active` / `.near` / `.far` / `.is-empty` | Value chrome by distance from selection. |
+| `.picker-wheel-indicator` | Optional under-track marker (hidden in vertical). |
+| `.picker-wheel-row` | Nowrap row for track + arrow buttons. |
+| `.picker-wheel-btn` + `.picker-wheel-prev` / `.picker-wheel-next` | Optional steppers. |
+
+Auto-init via `lagunite.js`. Event: `change` → `{ value, index }`.
+
+---
+
+## `15-selectable-option.css`
+
+| Classes | What it does |
+|---------|--------------|
+| `.selectable-option` | Label shell for checkbox/radio preference rows. |
+| `.selectable-option-label` | Primary text. |
+| `.selectable-option-indicator` | Leading/trailing check circle. |
+| `.selectable-option.size-s` / `.size-l` | Compact / large density. |
+
+Selected via `:checked` (no JS).

@@ -1,5 +1,7 @@
-# Moved
+---
+name: lagunite-validate
+description: >-
+  Lagunite UI Validator orchestrator: route domain skills and emit structured report.
+---
 
-Orchestrator (multi-skill UI Validator agent): [`ai/skills/validate.md`](../../../ai/skills/validate.md).  
-Prefer invoking **lagunite-ui-validator** for full audits.
-
+Use the canonical skill: [`ai/skills/validate.md`](../../../ai/skills/validate.md).

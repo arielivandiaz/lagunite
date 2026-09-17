@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-tokens
+description: >-
+  Lagunite design tokens and CSS variables (--space-*, --color-*, radii, motion).
+---
 
-This skill has moved to [`ai/skills/tokens.md`](../../../ai/skills/tokens.md).
+Use the canonical skill: [`ai/skills/tokens.md`](../../../ai/skills/tokens.md).

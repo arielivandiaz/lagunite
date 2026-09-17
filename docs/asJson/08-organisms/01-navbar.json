@@ -1,9 +1,9 @@
 {
   "folder": "08-organisms",
   "file": "01-navbar.css",
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-09-15",
   "hasResponsive": false,
-  "totalSelectors": 15,
+  "totalSelectors": 18,
   "content": [
     {
       "type": "selector",
@@ -112,6 +112,34 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".navbar-link:focus-visible",
+      "id": "#08-01-03",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "── Nav links ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-brand:focus-visible",
+      "id": "#08-01-03",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "── Nav links ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".navbar-link.active",
       "id": "#08-01-03",
       "category": null,
@@ -140,6 +168,21 @@
         "position"
       ],
       "cssRule": "display: none\nbackground: none\nborder: none\ncursor: pointer\npadding: var(--space-2)\nwidth: 2.5rem\nheight: 2.5rem\nposition: relative",
+      "responsive": false,
+      "description": "── Mobile burger ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-burger:focus-visible",
+      "id": "#08-01-04",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset",
+        "border-radius"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px\nborder-radius: var(--radius-s)",
       "responsive": false,
       "description": "── Mobile burger ─────────────────────────────────────────────────────────"
     },

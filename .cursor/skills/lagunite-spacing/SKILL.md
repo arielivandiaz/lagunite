@@ -1,3 +1,7 @@
-# Moved
+---
+name: lagunite-spacing
+description: >-
+  Lagunite spacing and sizing: margin, padding, position, width, height.
+---
 
-This skill has moved to [`ai/skills/spacing.md`](../../../ai/skills/spacing.md).
+Use the canonical skill: [`ai/skills/spacing.md`](../../../ai/skills/spacing.md).

@@ -1,4 +1,7 @@
-# Moved
+---
+name: lagunite-validate-night
+description: >-
+  Validate Lagunite .night surfaces, muted text, and accent fills.
+---
 
-Night checks live in [`ai/skills/validate-night.md`](../../../ai/skills/validate-night.md).  
-Orchestrator: [`ai/skills/validate.md`](../../../ai/skills/validate.md).
+Use the canonical skill: [`ai/skills/validate-night.md`](../../../ai/skills/validate-night.md).

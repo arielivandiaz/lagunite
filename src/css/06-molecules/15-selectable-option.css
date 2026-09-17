@@ -25,6 +25,7 @@
 /* ── Base container ───────────────────────────────────────────────────── */
 
 .selectable-option {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +37,6 @@
   background: transparent;
   cursor: pointer;
   user-select: none;
-  -webkit-user-select: none;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
@@ -44,14 +44,18 @@
   border-color: var(--color-primary);
 }
 
-/* Hide the native input */
+/* Visually hidden but focusable native control */
 .selectable-option input[type="checkbox"],
 .selectable-option input[type="radio"] {
   position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-  pointer-events: none;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* @ID: #06-15-02 */
@@ -73,9 +77,9 @@
 
 .selectable-option-indicator {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-full);
   border: 2px solid var(--color-border);
   display: flex;
   align-items: center;
@@ -88,7 +92,7 @@
   display: none;
   width: 6px;
   height: 11px;
-  border: solid white;
+  border: solid var(--color-on-fill, var(--color-text-alt));
   border-width: 0 2.5px 2.5px 0;
   transform: rotate(45deg) translateY(-1px);
 }
@@ -130,8 +134,8 @@
 }
 
 .selectable-option.size-s .selectable-option-indicator {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .selectable-option.size-s .selectable-option-indicator::after {
@@ -149,8 +153,8 @@
 }
 
 .selectable-option.size-l .selectable-option-indicator {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .selectable-option.size-l .selectable-option-indicator::after {
@@ -167,4 +171,31 @@
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/* @ID: #06-15-07 */
+
+/* ── Night + reduced motion ───────────────────────────────────────────── */
+
+.night .selectable-option {
+  border-color: var(--color-border);
+}
+
+.night .selectable-option:hover {
+  border-color: var(--color-primary);
+}
+
+.night .selectable-option:has(input:checked) {
+  background: rgba(var(--color-primary-rgb), 0.16);
+}
+
+.night .selectable-option-indicator {
+  border-color: var(--color-border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selectable-option,
+  .selectable-option-indicator {
+    transition: none;
+  }
 }
