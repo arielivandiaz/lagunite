@@ -1,0 +1,43 @@
+name: Bug report
+description: Something broken in the CSS/JS runtime
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Prefer a minimal repro against `demos/` or a small HTML snippet.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Expected vs actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro
+      description: HTML classes, Lagunite version, browser.
+      render: html
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: "2.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome / Edge
+        - Firefox
+        - Safari macOS
+        - Safari iOS
+        - Other
+    validations:
+      required: true

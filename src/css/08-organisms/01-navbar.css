@@ -71,6 +71,12 @@
   color: var(--color-primary);
 }
 
+.navbar-link:focus-visible,
+.navbar-brand:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .navbar-link.active {
   background: var(--color-primary);
   color: var(--color-text-alt);
@@ -89,6 +95,12 @@
   width: 2.5rem;
   height: 2.5rem;
   position: relative;
+}
+
+.navbar-burger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
 }
 
 .navbar-burger span {

@@ -5,7 +5,8 @@
    caret/accent color.
    Responsive: x = mobile (max-width: 639px), d = desktop (min-width: 640px).
 
-   Note: object-fit/position live in 06-containers.css.
+   Note: object-fit utilities live in 03-layout/06-containers.css (sole owner).
+         object-position utilities are not shipped (won’t fix v2.1).
          content-none/empty live in 10-misc/03-pseudo.css.
    ========================================================================== */
 
@@ -69,6 +70,20 @@
 .backdrop-blur      { backdrop-filter: blur(8px); }
 .backdrop-blur-l    { backdrop-filter: blur(16px); }
 .backdrop-blur-xl   { backdrop-filter: blur(32px); }
+
+/* @ID: #04-01-06b */
+
+/* ── Opt-in frosted surface (anti-slop L-11: ≤1–2 per view, never default on card+sidebar+modal) ── */
+
+.surface-glass {
+  background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.night .surface-glass {
+  background: color-mix(in srgb, var(--gray-900) 70%, transparent);
+}
 
 /* @ID: #04-01-07 */
 

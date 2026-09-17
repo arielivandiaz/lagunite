@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>B01 Auth — compose</title>
+  <title>B01 Auth — compose + anti-slop</title>
   <link rel="stylesheet" href="../../src/lagunite.css" />
 </head>
 <body class="bg">
-  <!-- CORRIDA B: ai/skills/compose.md -->
+  <!--
+    CORRIDA B: compose + anti-slop (During)
+    - Split brand panel: product identity (not purple gradient hero)
+    - card-elevated: only the form lifts (L-12 ≤1)
+    - One accent CTA (L-17); secondary = text link
+    - .btn margin is 0; stacks use gap / marg-0.wp100 defensively
+    - On brand panel: color-on-fill / color-text-alt; muted elsewhere = text-muted / card-text (L-04)
+  -->
+
   <button
     type="button"
     id="theme-toggle"
@@ -15,30 +23,76 @@
     aria-label="Toggle night mode"
   >Night</button>
 
-  <div class="minvh100 row jc-c ai-c padd">
-    <div class="container-card">
-      <div class="card card-elevated">
-        <div class="card-body col jc-fs ai-s gap-s">
-          <h1 class="font-l bold color-text">Sign in</h1>
-          <!-- NOT color-text-alt: that token is #fff (on dark/primary fills). Muted on light = .card-text -->
-          <p class="font-s card-text">Use your work email to continue.</p>
-          <form class="col jc-fs ai-s gap-s">
-            <div class="form-group">
-              <label class="form-label" for="email">Email</label>
-              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="pwd">Password</label>
-              <input class="input" id="pwd" name="pwd" type="password" autocomplete="current-password" placeholder="••••••••" />
-            </div>
-            <div class="row jc-fe ai-c gap-s marg-t">
-              <button type="button" class="btn alt">Cancel</button>
-              <button type="submit" class="btn">Continue</button>
-            </div>
-          </form>
+  <div class="minvh100 grid xgrid-cols-1 dgrid-cols-2">
+    <!-- Brand column: intentional dark strip for product identity (L-19 purpose: brand, not “tech default”) -->
+    <aside class="xd-none dcol jc-fe ai-fs gap padd-l bg-gray-900">
+      <p class="font-xl bold color-on-fill">Lagunite</p>
+      <p class="font-s lh color-on-fill">
+        Demo workspace for the CSS runtime. Sign in with any email format to try the form states.
+      </p>
+      <p class="font-s color-gray-400">POC · ai-ui-test · [demo]</p>
+    </aside>
+
+    <main class="minvh100 col jc-c ai-c padd">
+      <div class="container-card col jc-fs ai-s gap">
+        <header class="col jc-fs ai-s gap-s">
+          <p class="font-s bold color-primary dd-none">Lagunite</p>
+          <h1 class="font-l bold color-text">Sign in to your workspace</h1>
+          <p class="font-s text-muted">
+            Enter the email you use at work. We’ll keep you signed in on this device.
+          </p>
+        </header>
+
+        <div class="card card-elevated">
+          <div class="card-body">
+            <form class="col jc-fs ai-s gap" action="#" method="post">
+              <div class="form-group">
+                <label class="form-label" for="email">Work email</label>
+                <input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="you@company.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="pwd">Password</label>
+                <input
+                  class="input"
+                  id="pwd"
+                  name="pwd"
+                  type="password"
+                  autocomplete="current-password"
+                  required
+                  placeholder="At least 8 characters"
+                />
+                <p class="form-help">
+                  <a class="color-primary" href="./index.html">Forgot password?</a>
+                  <!-- honest: links to test index, not a fake flow -->
+                </p>
+              </div>
+
+              <div class="col gap-s marg-t">
+                <!-- L-17: one accent CTA. size-l matches inputs; marg-0 defensive (btn margin already 0). -->
+                <button type="submit" class="btn size-l marg-0 wp100">Sign in</button>
+                <p class="ta-c marg-0">
+                  <a class="font-s color-primary" href="./index.html">Back to tests</a>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
+
+        <p class="font-s text-muted ta-c">
+          No account yet?
+          <a class="color-primary" href="./index.html">Return to the test index</a>
+          — signup is not part of this POC.
+        </p>
       </div>
-    </div>
+    </main>
   </div>
 
   <p class="pos-fixed bottom-0 left-0 marg-s font-s z5">

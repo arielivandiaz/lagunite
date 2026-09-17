@@ -55,7 +55,7 @@ Responsive: prefix with `x` (mobile) or `dd` (desktop):
 
 ## Flex
 
-> **Important:** `.row` and `.col` already set `display: flex; flex-wrap: wrap; justify-content: center; align-items: center`. Never combine with `d-flex`.
+> **Important:** `.row` and `.col` already set `display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start`. Use `.flex-center` / `jc-c ai-c` when you intentionally want centering. Never combine with `d-flex`.
 
 ### Direction
 

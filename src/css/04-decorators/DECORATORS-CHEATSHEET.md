@@ -2,7 +2,7 @@
 
 **Responsive prefixes:** `x` = mobile only (`max-width: 639px`), `d` = desktop only (`min-width: 640px`). Prefix the utility name (e.g. `.xshadow`, `.dtransition`). Not every utility has `x`/`d` variants—see source files when in doubt.
 
-**Relocated utilities:** `content-none` / empty-content helpers live in `10-misc/03-pseudo.css`. `object-fit` / `object-position` live in `03-layout/06-containers.css`—not in `01-effects.css`.
+**Relocated utilities:** `content-none` / empty-content helpers live in `10-misc/03-pseudo.css`. `object-fit` lives in `03-layout/06-containers.css`—not in `01-effects.css`. `object-position` utilities are not shipped.
 
 **Typo fix:** use **`scroll-smooth`** (not `scroll-sooth`).
 
@@ -49,6 +49,7 @@
 | `.backdrop-blur` | `backdrop-filter: blur(8px)` |
 | `.backdrop-blur-l` | `backdrop-filter: blur(16px)` |
 | `.backdrop-blur-xl` | `backdrop-filter: blur(32px)` |
+| `.surface-glass` | Opt-in frosted panel (`color-mix` + blur). Anti-slop: ≤1–2 / view. |
 
 *(Same class names also appear in `08-filters.css`.)*
 

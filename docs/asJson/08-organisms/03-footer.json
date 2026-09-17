@@ -1,9 +1,9 @@
 {
   "folder": "08-organisms",
   "file": "03-footer.css",
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-09-15",
   "hasResponsive": false,
-  "totalSelectors": 12,
+  "totalSelectors": 17,
   "content": [
     {
       "type": "selector",
@@ -104,6 +104,21 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".footer-link:focus-visible",
+      "id": "#08-03-02",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset",
+        "border-radius"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "── Columns: titles & links ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".footer-bottom",
       "id": "#08-03-03",
       "category": null,
@@ -186,6 +201,59 @@
         "color"
       ],
       "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)\ncolor: var(--gray-300)",
+      "responsive": false,
+      "description": "── Bottom bar & variants ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .footer-title",
+      "id": "#08-03-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-100)",
+      "responsive": false,
+      "description": "── Bottom bar & variants ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .footer-link",
+      "id": "#08-03-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--gray-400)",
+      "responsive": false,
+      "description": "── Bottom bar & variants ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .footer-link:hover",
+      "id": "#08-03-03",
+      "category": null,
+      "properties": [
+        "color"
+      ],
+      "cssRule": "color: var(--color-primary)",
+      "responsive": false,
+      "description": "── Bottom bar & variants ───────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .footer-bottom",
+      "id": "#08-03-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "cssRule": "border-color: var(--gray-700)\ncolor: var(--gray-500)",
       "responsive": false,
       "description": "── Bottom bar & variants ───────────────────────────────────────────────"
     }

@@ -20,6 +20,8 @@
 //
 // Evento emitido:
 //   'change' → detail: { value, index }
+//
+// A11y: role=listbox + option; flechas teclado; aria-label opcional via data-aria-label
 
 const DRAG_STEP_PX = 56;
 
@@ -44,8 +46,18 @@ export class PickerWheel {
 
     if (!this.track) return;
 
+    this.setupA11y();
     this.render();
     this.bind();
+  }
+
+  setupA11y() {
+    if (!this.el.hasAttribute('role')) this.el.setAttribute('role', 'listbox');
+    if (!this.el.hasAttribute('tabindex')) this.el.setAttribute('tabindex', '0');
+    if (!this.el.hasAttribute('aria-label') && this.el.dataset.ariaLabel) {
+      this.el.setAttribute('aria-label', this.el.dataset.ariaLabel);
+    }
+    this.el.setAttribute('aria-orientation', this.vertical ? 'vertical' : 'horizontal');
   }
 
   bind() {
@@ -55,6 +67,24 @@ export class PickerWheel {
       if (!item || !item.dataset.value) return;
       const idx = this.values.indexOf(item.dataset.value);
       if (idx >= 0) this.selectIndex(idx);
+    });
+
+    this.el.addEventListener('keydown', e => {
+      const prevKey = this.vertical ? 'ArrowUp' : 'ArrowLeft';
+      const nextKey = this.vertical ? 'ArrowDown' : 'ArrowRight';
+      if (e.key === prevKey) {
+        e.preventDefault();
+        this.selectIndex(this.index - 1);
+      } else if (e.key === nextKey) {
+        e.preventDefault();
+        this.selectIndex(this.index + 1);
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        this.selectIndex(0);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        this.selectIndex(this.values.length - 1);
+      }
     });
 
     this.el.addEventListener('wheel', e => {
@@ -124,6 +154,7 @@ export class PickerWheel {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'picker-wheel-item';
+      btn.setAttribute('role', 'option');
       const abs = Math.abs(offset);
       if (offset === 0) btn.classList.add('active');
       else if (abs === 1) btn.classList.add('near');
@@ -132,13 +163,17 @@ export class PickerWheel {
       if (vIdx >= 0 && vIdx < this.values.length) {
         btn.textContent = this.values[vIdx];
         btn.dataset.value = this.values[vIdx];
+        btn.setAttribute('aria-selected', offset === 0 ? 'true' : 'false');
+        btn.tabIndex = -1;
       } else {
         btn.textContent = '\u00A0';
         btn.disabled = true;
-        btn.style.visibility = 'hidden';
+        btn.classList.add('is-empty');
+        btn.setAttribute('aria-hidden', 'true');
       }
       this.track.appendChild(btn);
     }
+    this.el.setAttribute('aria-valuenow', this.values[this.index] ?? '');
     if (this.prevBtn) this.prevBtn.disabled = this.index === 0;
     if (this.nextBtn) this.nextBtn.disabled = this.index === this.values.length - 1;
   }

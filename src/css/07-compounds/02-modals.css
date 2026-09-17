@@ -75,6 +75,12 @@
   color: var(--color-text-base);
 }
 
+.modal-close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
 /* @ID: #07-02-04 */
 
 /* ── Modal body & footer ───────────────────────────────────────────────── */
@@ -122,4 +128,12 @@
 .night .modal {
   background: var(--gray-800);
   border-color: var(--gray-700);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-overlay,
+  .modal-overlay.open .modal,
+  .modal {
+    transition: none;
+  }
 }

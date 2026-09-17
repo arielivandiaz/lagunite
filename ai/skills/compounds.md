@@ -21,15 +21,15 @@
 | `.card-img-top` | Full-width image (top radii) |
 | `.card-img-bottom` | Full-width image (bottom radii) |
 | `.card-title` | Title inside body |
-| `.card-text` | Muted body text (light: gray-600; **night: gray-400**) |
+| `.card-text` | Muted body text (light: gray-600; **night: gray-400**) — or use `.text-muted` |
 
 ### Style modifiers
 
 | Class | Role |
 | --- | --- |
-| `.card-elevated` | Shadow |
+| `.card-elevated` | Opt-in shadow — default `.card` is flat; **≤1 elevated / view** unless floating job |
 | `.card-flat` | No border, transparent bg |
-| `.card-hover` | Lift + shadow on hover |
+| `.card-hover` | Lift + shadow on hover (respects `prefers-reduced-motion`) |
 
 ### Semantic variants (header tinted)
 

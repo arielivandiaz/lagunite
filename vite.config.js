@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
   return {
     build: {
       minify: mode === "production",
+      sourcemap: true,
 
       lib: {
         entry: resolve(__dirname, "src/lagunite.js"),

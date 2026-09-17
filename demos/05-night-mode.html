@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 05 · Night mode — Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="night bg">
+  <!-- Same surface recipe as 01–04 under .night · validate-night skill -->
+
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Day</button>
+
+  <div class="container padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="./index.html">← demos</a></p>
+      <h1 class="font-xl bold color-text">Night mode surfaces</h1>
+      <p class="font-s text-muted">
+        Body starts with <code>.night</code>. Toggle to compare light.
+        Prefer <code>.text-muted</code> / <code>.card-text</code> — never <code>.color-text-alt</code> as muted.
+      </p>
+    </header>
+
+    <section class="grid xgrid-cols-1 dgrid-cols-3 gap">
+      <div class="card padd col gap-s">
+        <p class="font-s bold color-text">.card</p>
+        <p class="card-text">Card muted text (night → gray-400).</p>
+      </div>
+      <div class="bg-surface padd bordered col gap-s">
+        <p class="font-s bold color-text">.bg-surface</p>
+        <p class="font-s text-muted">Neutral panel alias.</p>
+      </div>
+      <div class="bg-surface-raised padd bordered col gap-s">
+        <p class="font-s bold color-text">.bg-surface-raised</p>
+        <p class="font-s text-muted">Raised panel alias.</p>
+      </div>
+    </section>
+
+    <section class="grid xgrid-cols-1 dgrid-cols-2 gap">
+      <div class="bg-1 padd col gap-s">
+        <p class="font-s bold color-on-fill">.bg-1 + .color-on-fill</p>
+        <p class="font-s color-on-fill">Theme accent fill — not a neutral panel.</p>
+      </div>
+      <div class="bg-gray-900 padd col gap-s">
+        <p class="font-s bold color-on-fill">.bg-gray-900</p>
+        <p class="font-s color-gray-400">Dark strip for brand chrome.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Form snippet</div>
+      <div class="card-body col gap">
+        <div class="form-group">
+          <label class="form-label" for="n-email">Email</label>
+          <input class="input" id="n-email" type="email" placeholder="you@company.com" />
+          <p class="form-help">Help text stays readable in night.</p>
+        </div>
+        <label class="selectable-option">
+          <input type="checkbox" checked />
+          <span class="selectable-option-label">Keep me signed in</span>
+          <span class="selectable-option-indicator"></span>
+        </label>
+        <button type="button" class="btn size-l marg-0 wp100">Sign in</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Table + badges</div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table striped hover">
+            <thead>
+              <tr><th scope="col">Item</th><th scope="col">State</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Build</td><td><span class="badge badge-success">Pass</span></td></tr>
+              <tr><td>Lint</td><td><span class="badge badge-warning">Warn</span></td></tr>
+              <tr><td>Docs</td><td><span class="badge badge-info">Synced</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <div class="alert alert-info" role="status">Info alert under night.</div>
+      <div class="alert alert-error" role="alert">Error alert under night.</div>
+    </section>
+
+    <p class="font-s text-muted">
+      Skill: <a class="color-primary" href="../ai/skills/validate-night.md">validate-night.md</a>
+      · Related demos: <a class="color-primary" href="./01-landing.html">01</a>
+      <a class="color-primary" href="./02-dashboard.html">02</a>
+      <a class="color-primary" href="./03-forms.html">03</a>
+    </p>
+  </div>
+
+  <script>
+    const theme = document.getElementById('theme-toggle');
+    const sync = () => { theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night'; };
+    theme.addEventListener('click', () => { document.body.classList.toggle('night'); sync(); });
+    sync();
+  </script>
+</body>
+</html>

@@ -3,6 +3,15 @@
    Wheel picker (iOS-style) para seleccionar de una lista de valores.
    Soporta rango continuo (1..N) y arbitrario (36, 37.5, 39, 41.5, ...).
    Requiere JS: src/js/06-molecules/14-picker-wheel.js.
+
+   Markup:
+     <div class="picker-wheel" data-values="a,b,c" data-value="b" role="listbox">
+       <div class="picker-wheel-track row ai-c jc-c gap-l"></div>
+       <div class="picker-wheel-indicator triangle size-s"></div>
+     </div>
+
+   Vertical: add `.picker-wheel-v`. Optional arrows: `.picker-wheel-prev` / `.picker-wheel-next`
+   (use with `.picker-wheel-btn`). Horizontal + arrows: wrap track in `.picker-wheel-row`.
    ========= */
 
 /* @ID: #06-14-01 */
@@ -12,11 +21,10 @@
 .picker-wheel {
   user-select: none;
   touch-action: none;
-  -webkit-user-select: none;
 }
 
 .picker-wheel-track {
-  min-height: 80px;
+  min-height: 5rem; /* 80px */
   width: 100%;
   cursor: grab;
 }
@@ -27,7 +35,7 @@
 
 /* Variante vertical */
 .picker-wheel-v .picker-wheel-track {
-  min-height: 280px;
+  min-height: 17.5rem; /* 280px */
   flex-direction: column;
 }
 
@@ -41,7 +49,7 @@
   padding: 0;
   cursor: pointer;
   font-family: var(--font-headers);
-  font-weight: var(--font-weight-3);
+  font-weight: var(--font-weight-medium);
   color: var(--color-text-base);
   line-height: 1;
   transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
@@ -64,12 +72,21 @@
   transform: scale(1.05);
 }
 
+.picker-wheel-item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.picker-wheel-item.is-empty {
+  visibility: hidden;
+}
+
 /* Vertical: el seleccionado lleva linea arriba y abajo + aire */
 .picker-wheel-v .picker-wheel-item.active {
   border-top: 2px solid var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
-  padding: 12px 0 14px;
-  margin: 18px 0;
+  padding: var(--space-3) 0 calc(var(--space-3) + 2px);
+  margin: var(--space-5) 0;
 }
 
 /* @ID: #06-14-03 */
@@ -77,7 +94,7 @@
 /* ── Indicador (triángulo horizontal) ─────────────────────────────────── */
 
 .picker-wheel .picker-wheel-indicator {
-  margin-top: 8px;
+  margin-top: var(--space-2);
 }
 
 .picker-wheel-v .picker-wheel-indicator {
@@ -105,9 +122,9 @@
 }
 
 .picker-wheel-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
   border: var(--border);
   background: transparent;
   color: var(--color-primary);
@@ -122,8 +139,13 @@
 
 .picker-wheel-btn:hover {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-fill, var(--color-text-alt));
   border-color: var(--color-primary);
+}
+
+.picker-wheel-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .picker-wheel-btn:disabled {
@@ -133,4 +155,35 @@
 
 .picker-wheel-btn svg {
   display: block;
+}
+
+/* @ID: #06-14-05 */
+
+/* ── Night + reduced motion ───────────────────────────────────────────── */
+
+.night .picker-wheel-item {
+  color: var(--color-text-base);
+}
+
+.night .picker-wheel-item.active {
+  color: var(--color-primary);
+}
+
+.night .picker-wheel-btn {
+  border-color: var(--color-border);
+}
+
+.night .picker-wheel-btn:hover {
+  border-color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .picker-wheel-item,
+  .picker-wheel-btn {
+    transition: none;
+  }
+
+  .picker-wheel-item.active {
+    transform: none;
+  }
 }

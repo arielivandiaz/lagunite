@@ -1,6 +1,6 @@
 # Flex Cheatsheet — Lagunite
 
-> **Gotcha:** `.row` / `.col` default to **center** on both axes. For forms, lists, dashboards use `jc-fs ai-fs` (or `ai-s`). Full UI rules: `ai/skills/compose.md`.
+> **Gotcha:** `.row` / `.col` default to **start-aligned**. For centered hero/empty-state layouts use `.flex-center` or `jc-c ai-c`. For forms, lists, dashboards use `jc-fs ai-fs` (or `ai-s`). Full UI rules: `ai/skills/compose.md`.
 
 ## Direction
 ```

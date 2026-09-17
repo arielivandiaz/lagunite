@@ -37,8 +37,10 @@ Lagunite paints `:valid` / `:invalid` **only if the control has a `placeholder`*
 
 ### Alignment inside forms
 - Form stacks: `col jc-fs ai-s gap-s` (or `gap`)
-- Action row: `row jc-fe ai-c gap-s`
-- Labels should not sit optically centered as a side-effect of a parent `.row` default center — override with `jc-fs ai-fs` / `ai-s`
+- Actions: `row jc-fe ai-c gap-s` **or** one full-width primary + quiet text link (auth cards)
+- Full-width primary: `.btn.size-l.marg-0.wp100` (`.btn` already has `margin: 0`; `.marg-0` is defensive in stacks)
+- Avoid stacking `.btn` + `.btn.alt` both `wp100` (generic twin CTAs)
+- Labels should not sit optically centered — don’t force `jc-c ai-c` on form parents (flex defaults are start)
 
 ---
 

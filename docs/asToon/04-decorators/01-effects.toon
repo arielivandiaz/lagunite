@@ -1,9 +1,9 @@
 folder: 04-decorators
 file: 01-effects.css
-lastUpdated: 2026-04-17
+lastUpdated: 2026-09-15
 hasResponsive: true
-totalSelectors: 67
-content[67]:
+totalSelectors: 69
+content[69]:
   - type: selector
     selectorType: class
     selector: .appearance-none
@@ -283,6 +283,24 @@ content[67]:
     cssRule: "backdrop-filter: blur(32px)"
     responsive: true
     description: ── Backdrop blur ────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .surface-glass
+    id: #04-01-06b
+    category: null
+    properties[3]: background,backdrop-filter,"-webkit-backdrop-filter"
+    cssRule: "background: color-mix(in srgb, var(--color-bg) 72%, transparent)\nbackdrop-filter: blur(8px)\n-webkit-backdrop-filter: blur(8px)"
+    responsive: false
+    description: "── Opt-in frosted surface (anti-slop L-11: ≤1–2 per view, never default on card+sidebar+modal) ──"
+  - type: selector
+    selectorType: class
+    selector: .night .surface-glass
+    id: #04-01-06b
+    category: null
+    properties[1]: background
+    cssRule: "background: color-mix(in srgb, var(--gray-900) 70%, transparent)"
+    responsive: false
+    description: "── Opt-in frosted surface (anti-slop L-11: ≤1–2 per view, never default on card+sidebar+modal) ──"
   - type: selector
     selectorType: class
     selector: .box-decoration-clone

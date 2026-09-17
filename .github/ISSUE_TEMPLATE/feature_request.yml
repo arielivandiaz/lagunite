@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose a utility or component for the CSS runtime
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check `FEATURES.md` and layer cheatsheets first. AI-first / compiler ideas belong in discussions or `ToDo-ai-first.md`, not as a v2.1 blocker.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can you not express with existing classes?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Suggested class names, layer (atoms/molecules/…), and markup example.
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Suggested layer
+      options:
+        - tokens / config
+        - layout
+        - colors
+        - atoms
+        - molecules
+        - compounds
+        - organisms
+        - docs / skills
+        - unsure
+    validations:
+      required: true

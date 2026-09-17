@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AI-first / JSON→HTML ideas
+    url: https://github.com/arielivandiaz/lagunite/blob/main/FUTURE-AI-FIRST.md
+    about: Future exploration — not part of the v2.1 CSS runtime release.

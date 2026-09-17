@@ -1,7 +1,7 @@
 {
   "name": "lagunite",
-  "version": "2.0.23",
-  "description": "Una librería CSS moderna y ligera, con utilidades y un sistema de diseño personalizable.",
+  "version": "2.1.1",
+  "description": "Utility-first CSS framework with descriptive class names, design tokens, and layered components.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",
   "module": "./dist/lagunite.js",
@@ -30,7 +30,9 @@
     "docs:merge": "node scripts/merge-docs.js",
     "docs:watch": "nodemon --watch src/css --ext css --exec npm run docs:generate",
     "increment-build": "node scripts/increment-dev-compile-count.js",
-    "contrast:update": "node scripts/generate-contrast-docs.js"
+    "contrast:update": "node scripts/generate-contrast-docs.js",
+    "check:size": "node scripts/check-size.js",
+    "ai:sync": "node scripts/sync-ai-surfaces.mjs"
   },
   "devDependencies": {
     "@toon-format/toon": "^1.3.0",

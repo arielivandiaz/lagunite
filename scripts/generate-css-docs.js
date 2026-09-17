@@ -31,7 +31,6 @@ const FOLDER_MAP = {
   '06-molecules': '06-molecules',
   '07-compounds': '07-compounds',
   '08-organisms': '08-organisms',
-  '07-form': '07-form',
   '10-misc': '10-misc'
 };
 

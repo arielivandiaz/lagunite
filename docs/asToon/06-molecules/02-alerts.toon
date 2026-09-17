@@ -1,9 +1,9 @@
 folder: 06-molecules
 file: 02-alerts.css
-lastUpdated: 2026-04-17
+lastUpdated: 2026-09-15
 hasResponsive: true
-totalSelectors: 33
-content[33]:
+totalSelectors: 34
+content[34]:
   - type: selector
     selectorType: class
     selector: .alert
@@ -74,6 +74,15 @@ content[33]:
     category: null
     properties[1]: opacity
     cssRule: "opacity: 1"
+    responsive: false
+    description: ── Dismissible alert + close ───────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".alert-close:focus-visible"
+    id: #06-02-03
+    category: null
+    properties[4]: outline,outline-offset,border-radius,opacity
+    cssRule: "outline: 2px solid var(--color-primary)\noutline-offset: 2px\nborder-radius: var(--radius-s)\nopacity: 1"
     responsive: false
     description: ── Dismissible alert + close ───────────────────────────────────────────
   - type: selector

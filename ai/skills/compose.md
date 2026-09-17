@@ -4,21 +4,22 @@
 > Cheatsheets answer “what class exists?”. This skill answers “how do I assemble a coherent UI?”.
 > Always pair with `validate.md` and `contrast.md` before finishing.
 
-**Related:** `patterns.md` (starting HTML) · `flex.md` / `grid.md` / `containers.md` · `colors.md` · `spacing.md`
+**Load with:** `compose.md` when generating screens. The **UI Validator** also runs **`anti-slop.md`** (taste filter adapted from [anti-slop](https://github.com/miqdadbadjuber/anti-slop)).
 
 ---
 
 ## 0. Non-negotiables (Lagunite-specific)
 
-1. **`.row` / `.col` / `.rowr` / `.colr` center on both axes by default.**  
-   For app/content UI (forms, lists, dashboards, settings): add **`jc-fs ai-fs`** (or `ai-s` to stretch).  
-   Reserve default centering for heroes, empty states, and icon+label chips.
-2. **`.bg-1` … `.bg-9` are theme accents, NOT neutral panels.**  
-   Surfaces: `.bg`, `.bg-alt` (careful in night), `.card`, `.bg-white`, `.bg-gray-800` / `.bg-gray-900` in `.night`.
+1. **`.row` / `.col` / `.rowr` / `.colr` start-aligned by default** (anti-slop P0).  
+   Content UI usually needs no extra alignment classes. Use `.flex-center` or `jc-c ai-c` only for heroes, empty states, and icon+label chips.
+2. **`.bg-1` … `.bg-9` are theme accent fills, NOT neutral panels.**  
+   Surfaces: `.bg`, `.bg-surface`, `.bg-surface-raised`, `.card`, gray neutrals. Accents = CTAs / brand strips only.
 3. **Do not invent classnames** (`btn-primary`, `btn-ghost`, `d-flex`, `mx-auto`, Tailwind names).  
-   Buttons: `.btn` · `.btn.alt` · `.btn.secondary` · `.btn.ghost` (chained classes, not `btn-ghost`).
+   Buttons: `.btn` · `.btn.alt` · `.btn.secondary` · `.btn.ghost` (chained classes, not `btn-ghost`).  
+   `.btn` has `margin: 0` — space with parent `gap` / `marg-*`.
 4. **One spacing rhythm per section.** Prefer a single gap scale (`gap-s` or `gap`) + matching padd (`padd` / `padd-m`). Do not mix `gap-xs` + `gap-xl` + random `marg-*` in the same block.
 5. **Prefer molecules/compounds over utility soup** when they exist: `.form-group`, `.card` + regions, `.alert`, `.stat-card`, `.sidebar`.
+6. **Muted copy:** `.text-muted` or `.card-text` — never `.color-text-alt` as subtitle. On fills: `.color-on-fill`.
 
 ---
 
@@ -29,7 +30,7 @@
 2. Sections       → vertical stack (col jc-fs ai-fs / gap)
 3. Clusters       → card | form-group | grid of equals
 4. Clusters’ guts → row/col with explicit alignment + gap
-5. Chrome         → type scale, color-text / color-text-alt, borders/shadows last
+5. Chrome         → type scale, color-text / color-on-fill / text-muted, borders/shadows last
 ```
 
 If you start with colors or shadows, stop and restart from layout.
@@ -42,12 +43,12 @@ If you start with colors or shadows, stop and restart from layout.
 | --- | --- |
 | Content column / form / article | `col jc-fs ai-fs gap-s` (or `gap`) |
 | Toolbar / header bar | `row jc-sb ai-c gap-s` |
-| Actions at end of form | `row jc-fe ai-c gap-s` |
+| Actions at end of form | `row jc-fe ai-c gap-s` **or** one `.btn.size-l.marg-0.wp100` + text link (prefer this in auth cards) |
 | Equal cards | `grid xgrid-cols-1 dgrid-cols-3 gap` |
 | Sidebar + main | organism `.sidebar` + `main.flex-1` (see patterns) — not a centered `.row` of everything |
-| True center (hero/empty) | default `.row`/`.col` **or** `flex-center` — only here |
+| True center (hero/empty) | `.flex-center` or `jc-c ai-c` — only here |
 
-**Default mistake:** wrapping the whole page in `.row` without `jc-fs` → “everything floats in the middle”.
+**Default mistake:** forcing `jc-c ai-c` on forms/settings so “everything floats in the middle”.
 
 ---
 
@@ -55,12 +56,13 @@ If you start with colors or shadows, stop and restart from layout.
 
 | Role | Prefer | Avoid |
 | --- | --- | --- |
-| Page background | `.bg` | `.bg-1`, random gradients on every section |
-| Panel / card | `.card` (+ `.card-body`) or `.bg-white bordered` | Nested `.card` inside `.card` without reason |
+| Page background | `.bg` | `.bg-1`, full-page `bgg-*` |
+| Panel / card | `.card` (flat by default) / `.bg-surface` | Nested `.card` inside `.card` without reason · default `.card-elevated` everywhere |
 | Primary CTA fill | `.btn` | inventing `btn-primary` |
-| Secondary CTA | `.btn.alt` or `.btn.secondary` | another filled primary beside it |
+| Secondary CTA | `.btn.alt` or text link | twin full-width `.btn` + `.btn.alt` in auth |
 | Body text | `.color-text` (or inherit from `.bg`) | `.color-text-alt` on light panels |
-| Muted / help on light **or** night cards | `.card-text` (has `.night` override) | `.color-text-alt` (`#fff`) · bare `.color-gray-600` in night |
+| Muted / help | `.text-muted` or `.card-text` | `.color-text-alt` (`#fff`) · bare `.color-gray-600` in night |
+| On-fill text | `.color-on-fill` | using `.color-text-alt` as the “muted” name |
 | Night panels | `.bg-gray-800` / `.bg-gray-900` inside `.night` | `.bg-1`…`.bg-9` as “dark mode” |
 
 Read `contrast.md` before any custom `bg-*` + `color-*` pair.
@@ -73,7 +75,7 @@ Per view, aim for **three levels max**:
 
 1. Page/section title — `font-xl` or `font-l` + `bold`
 2. Body — default / `font-s` + `lh`
-3. Meta/help — `font-s` + `.card-text` (never `.color-text-alt` on light UI)
+3. Meta/help — `font-s` + `.text-muted` or `.card-text` (never `.color-text-alt` on light UI)
 
 Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 
@@ -111,7 +113,7 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 | Form fields without `.form-group` | label + input + help inside `.form-group` |
 | Inputs without `placeholder` expecting native green/red | Add `placeholder` **or** use `.has-error` / `.has-success` — empty fields must stay neutral |
 | Sidebar built from random flex | Use `.sidebar` organism markup |
-| `.color-text-alt` as “muted” on cards | `.card-text` — `color-text-alt` is white (`#fff`) |
+| `.color-text-alt` as “muted” on cards | `.text-muted` / `.card-text` — on fills use `.color-on-fill` |
 | Full-viewport center with `minhp100` | Use **`minvh100`** (viewport), not `%` of parent |
 | Inline `style=""` for layout | Utilities or `<!-- GAP: … -->` |
 
@@ -191,7 +193,7 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 - [ ] ≤3 type levels
 - [ ] Forms use `.form-group` + `.form-label` + `.input`
 - [ ] Cards use `.card` / `.card-header` / `.card-body` / `.card-footer` when structured
-- [ ] Muted copy uses `.card-text` (not `.color-text-alt` on light surfaces)
+- [ ] Muted copy uses `.text-muted` or `.card-text` (not `.color-text-alt` on light surfaces)
 - [ ] Full-bleed centered shells use `minvh100`, not `minhp100`
 - [ ] Ran mental pass of `contrast.md` for bg/text
 - [ ] No invented / Tailwind classes

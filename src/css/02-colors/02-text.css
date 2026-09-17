@@ -7,6 +7,20 @@
   color: var(--color-text-alt);
 }
 
+.color-on-fill {
+  color: var(--color-on-fill, var(--color-text-alt));
+}
+
+.text-muted,
+.color-muted {
+  color: var(--gray-600);
+}
+
+.night .text-muted,
+.night .color-muted {
+  color: var(--gray-400);
+}
+
 /* @ID: #02-02-02 */
 .color-primary {
   color: var(--color-primary);

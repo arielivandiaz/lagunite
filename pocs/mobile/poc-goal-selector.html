@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goal Selector - Mobile POC</title>
-  <link rel="stylesheet" href="../../dist/lagunite.css">
+  <title>POC · selectable-option</title>
+  <link rel="stylesheet" href="../../src/lagunite.css">
 </head>
-<body class="night bg marg-0">
+<body class="bg marg-0">
 
-<button class="color-primary icon pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle theme" onclick="document.body.classList.toggle('night')">&#9790;</button>
+<button class="btn alt icon pos-fixed top-0 right-0 marg-s z5" type="button" aria-label="Toggle theme" id="theme-toggle">Theme</button>
 
 <div class="wp100 dwp40 col jc-sb padd-v-l h-full-screen">
 
-  <!-- Top bar: back arrow -->
   <div class="row wp100 jc-fs padd-h-l">
-    <a href="#" class="btn alt icon" aria-label="Go back">&#8592;</a>
+    <a href="#" class="btn alt icon" aria-label="Go back">←</a>
   </div>
 
-  <!-- Main content: heading + options -->
-  <div class="col ai-c gap-l wp90 flex-1 jc-c">
+  <div class="col ai-c gap-l wp90 flex-1 flex-center">
 
     <div class="col ai-c gap-xs wp100">
-      <h2 class="marg-0 ta-c">What is Your Goal?</h2>
-      <p class="font-s opacity-70 ta-c marg-0" style="max-width: 280px">
-        You can choose more than one. Don't worry, you can always change it later
+      <h1 class="font-xl marg-0 ta-c">What is Your Goal?</h1>
+      <!-- GAP: max-width for caption -->
+      <p class="font-s text-muted ta-c marg-0" style="max-width: 280px">
+        Multi-select via checkbox. You can choose more than one.
       </p>
     </div>
 
-    <!-- Goal options -->
-    <div class="col gap-s wp100">
+    <div class="col gap-s wp100" role="group" aria-label="Goals">
 
       <label class="selectable-option">
         <input type="checkbox" checked>
@@ -54,29 +52,48 @@
         <span class="selectable-option-indicator"></span>
       </label>
 
-      <label class="selectable-option">
+      <label class="selectable-option size-s">
         <input type="checkbox">
         <span class="selectable-option-label">Improving Endurance</span>
         <span class="selectable-option-indicator"></span>
       </label>
 
       <label class="selectable-option">
-        <input type="checkbox">
-        <span class="selectable-option-label">Others</span>
+        <input type="checkbox" disabled>
+        <span class="selectable-option-label">Others (disabled)</span>
         <span class="selectable-option-indicator"></span>
       </label>
 
     </div>
 
+    <div class="col gap-s wp100">
+      <p class="font-s text-muted marg-0">Single-select (radio)</p>
+      <label class="selectable-option">
+        <input type="radio" name="plan" checked>
+        <span class="selectable-option-label">Free</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+      <label class="selectable-option">
+        <input type="radio" name="plan">
+        <span class="selectable-option-label">Pro</span>
+        <span class="selectable-option-indicator"></span>
+      </label>
+    </div>
+
   </div>
 
-  <!-- Footer: Back + Continue -->
   <div class="row gap-s padd-h-l wp100">
-    <button class="btn alt border-r-full flex-1 size-l" type="button">Back</button>
-    <button class="btn primary border-r-full flex-1 size-l" type="button">Continue</button>
+    <button class="btn alt flex-1 size-l marg-0" type="button">Back</button>
+    <button class="btn primary flex-1 size-l marg-0" type="button">Continue</button>
   </div>
 
 </div>
+
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('night');
+  });
+</script>
 
 </body>
 </html>

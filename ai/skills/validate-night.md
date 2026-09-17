@@ -24,10 +24,10 @@
 | Role | Prefer | Avoid |
 | --- | --- | --- |
 | Body / titles | `.color-text` or inherit from `.bg` | `.color-gray-800` / dark grays on dark bg |
-| Muted / help | **`.card-text`** (night override → gray-400) | `.color-text-alt` (`#fff` — on-fill only) · bare `.color-gray-600` on dark cards |
+| Muted / help | **`.text-muted`** or **`.card-text`** (night overrides) | `.color-text-alt` (`#fff` — on-fill only) · bare `.color-gray-600` on dark cards |
 
 ### Critical token reminder
-- `.color-text-alt` = **white** (`--color-text-alt`). For text **on** primary/dark fills — **not** muted subtitles.
+- Prefer `.color-on-fill` on primary/dark fills. `.color-text-alt` is legacy on-fill white — **not** muted subtitles.
 - `.bg-alt` in night can flip to a light strip — don’t assume it’s a dark panel.
 
 ### Demo / POC expectation

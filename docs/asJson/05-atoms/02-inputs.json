@@ -1,7 +1,7 @@
 {
   "folder": "05-atoms",
   "file": "02-inputs.css",
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-09-15",
   "hasResponsive": false,
   "totalSelectors": 218,
   "content": [
@@ -2030,7 +2030,7 @@
       ],
       "cssRule": "border-color: var(--color-error)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2044,7 +2044,7 @@
       ],
       "cssRule": "border-color: var(--color-error)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2058,12 +2058,12 @@
       ],
       "cssRule": "border-color: var(--color-error)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-minimal):invalid:not(:placeholder-shown)",
+      "selector": ".input-minimal)[placeholder]:invalid:not(:placeholder-shown)",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2072,12 +2072,12 @@
       ],
       "cssRule": "border-color: var(--color-error)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-underline:invalid:not(:placeholder-shown)",
+      "selector": ".input-underline[placeholder]:invalid:not(:placeholder-shown)",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2085,7 +2085,7 @@
       ],
       "cssRule": "border-bottom-color: var(--color-error)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2098,7 +2098,7 @@
       ],
       "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2111,7 +2111,7 @@
       ],
       "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2124,12 +2124,12 @@
       ],
       "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-minimal):invalid:not(:placeholder-shown):focus",
+      "selector": ".input-minimal)[placeholder]:invalid:not(:placeholder-shown):focus",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2137,12 +2137,12 @@
       ],
       "cssRule": "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-field:invalid:not(:placeholder-shown) ~ .input-label",
+      "selector": ".input-field[placeholder]:invalid:not(:placeholder-shown) ~ .input-label",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2150,7 +2150,7 @@
       ],
       "cssRule": "color: var(--color-error)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2164,7 +2164,7 @@
       ],
       "cssRule": "border-color: var(--color-success)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2178,7 +2178,7 @@
       ],
       "cssRule": "border-color: var(--color-success)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
@@ -2192,12 +2192,12 @@
       ],
       "cssRule": "border-color: var(--color-success)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-minimal):valid:not(:placeholder-shown)",
+      "selector": ".input-minimal)[placeholder]:valid:not(:placeholder-shown)",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2206,12 +2206,12 @@
       ],
       "cssRule": "border-color: var(--color-success)\nbox-shadow: none",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-underline:valid:not(:placeholder-shown)",
+      "selector": ".input-underline[placeholder]:valid:not(:placeholder-shown)",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2219,12 +2219,12 @@
       ],
       "cssRule": "border-bottom-color: var(--color-success)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".input-field:valid:not(:placeholder-shown) ~ .input-label",
+      "selector": ".input-field[placeholder]:valid:not(:placeholder-shown) ~ .input-label",
       "id": "#05-02-05",
       "category": null,
       "properties": [
@@ -2232,7 +2232,7 @@
       ],
       "cssRule": "color: var(--color-success)",
       "responsive": false,
-      "description": "── Validation states (:invalid / :valid) ────────────────────────────────"
+      "description": "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
     },
     {
       "type": "selector",

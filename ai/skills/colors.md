@@ -11,7 +11,8 @@
 
 > **Warning:** Many **background** utilities set both `background` and `color` for contrast. Avoid stacking a conflicting `.color-*` on the same element unless intentional.
 >
-> **Muted copy:** use `.card-text` (light + night). **Never** `.color-text-alt` as muted (that token is `#fff` for on-fill text).
+> **Muted copy:** prefer `.text-muted` or `.card-text` (both have `.night` overrides).  
+> **Never** `.color-text-alt` as muted — that token is on-fill `#fff`. Prefer `.color-on-fill` on primary/accent fills.
 
 ---
 
@@ -19,8 +20,10 @@
 
 | Class | Purpose |
 | --- | --- |
-| `.color-text` | Main readable text (`--color-text-base`, ~`#333` light / light gray in night) |
-| `.color-text-alt` | **Not muted.** Inverse / on-fill text (`--color-text-alt` = **`#fff`**). Use on `.bg-1`… primary fills, `.bg-alt` in light mode — **never** as subtitle on a white/light card. |
+| `.color-text` | Main readable text (`--color-text-base`) |
+| `.color-text-alt` | **Deprecated as “muted”.** Inverse / on-fill `#fff`. Prefer `.color-on-fill` on fills. |
+| `.color-on-fill` | Canonical on-primary / on-fill text (aliases `--color-on-fill`) |
+| `.text-muted` | Semantic muted copy (light + `.night`) |
 | `.color-primary` | primary |
 | `.color-primary-light` | primary light |
 | `.color-primary-dark` | primary dark |
@@ -50,7 +53,8 @@ Example: `.color-gray-500`, `.color-blue-700`
 | --- | --- |
 | `.bg` | page bg + base text color |
 | `.bg-alt` | alt bg + alt text color |
-| `.bg-1` … `.bg-9` | numbered surfaces (each sets text color) |
+| `.bg-surface` / `.bg-surface-raised` | neutral panels (prefer over accents) |
+| `.bg-1` … `.bg-9` | **theme accent fills** (brand colors) — **not** neutral “background levels” or cards |
 | `.bg-black` | #000 + alt text |
 | `.bg-ablack` | almost black + alt text |
 | `.bg-white` | #fff + base text |
@@ -60,6 +64,8 @@ Example: `.color-gray-500`, `.color-blue-700`
 | `.bg-error` | error light bg + error text |
 
 ## Named gradients (`bgg-*`)
+
+> **Purpose-gate:** accents only (hero strip, CTA band, badge). Do **not** use as full-page identity / every section fill (anti-slop L-01 / L-10).
 
 | Class | Notes |
 | --- | --- |

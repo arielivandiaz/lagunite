@@ -1,0 +1,379 @@
+{
+  "folder": "06-molecules",
+  "file": "15-selectable-option.css",
+  "lastUpdated": "2026-09-15",
+  "hasResponsive": false,
+  "totalSelectors": 24,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option",
+      "id": "#06-15-01",
+      "category": null,
+      "properties": [
+        "position",
+        "display",
+        "align-items",
+        "justify-content",
+        "gap",
+        "width",
+        "padding",
+        "border",
+        "border-radius",
+        "background",
+        "cursor",
+        "user-select",
+        "transition"
+      ],
+      "cssRule": "position: relative\ndisplay: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nborder: 2px solid var(--color-border)\nborder-radius: var(--radius-xl)\nbackground: transparent\ncursor: pointer\nuser-select: none\ntransition: border-color 0.2s ease, background 0.2s ease",
+      "responsive": false,
+      "description": "── Base container ─────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:hover",
+      "id": "#06-15-01",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "── Base container ─────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option input[type=\"checkbox\"]",
+      "id": "#06-15-01",
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "Visually hidden but focusable native control"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option input[type=\"radio\"]",
+      "id": "#06-15-01",
+      "category": null,
+      "properties": [
+        "position",
+        "width",
+        "height",
+        "padding",
+        "margin",
+        "overflow",
+        "clip",
+        "white-space",
+        "border"
+      ],
+      "cssRule": "position: absolute\nwidth: 1px\nheight: 1px\npadding: 0\nmargin: -1px\noverflow: hidden\nclip: rect(0, 0, 0, 0)\nwhite-space: nowrap\nborder: 0",
+      "responsive": false,
+      "description": "Visually hidden but focusable native control"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option-label",
+      "id": "#06-15-02",
+      "category": null,
+      "properties": [
+        "font-family",
+        "font-size",
+        "font-weight",
+        "color",
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "font-family: var(--font-headers)\nfont-size: var(--font-size-base)\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-text-base)\nflex: 1\nmin-width: 0",
+      "responsive": false,
+      "description": "── Label ──────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option-indicator",
+      "id": "#06-15-03",
+      "category": null,
+      "properties": [
+        "flex-shrink",
+        "width",
+        "height",
+        "border-radius",
+        "border",
+        "display",
+        "align-items",
+        "justify-content",
+        "transition"
+      ],
+      "cssRule": "flex-shrink: 0\nwidth: 1.5rem\nheight: 1.5rem\nborder-radius: var(--radius-full)\nborder: 2px solid var(--color-border)\ndisplay: flex\nalign-items: center\njustify-content: center\ntransition: background 0.2s ease, border-color 0.2s ease",
+      "responsive": false,
+      "description": "── Indicator (circle with checkmark) ──────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option-indicator::after",
+      "id": "#06-15-03",
+      "category": null,
+      "properties": [
+        "content",
+        "display",
+        "width",
+        "height",
+        "border",
+        "border-width",
+        "transform"
+      ],
+      "cssRule": "content: \"\"\ndisplay: none\nwidth: 6px\nheight: 11px\nborder: solid var(--color-on-fill, var(--color-text-alt))\nborder-width: 0 2.5px 2.5px 0\ntransform: rotate(45deg) translateY(-1px)",
+      "responsive": false,
+      "description": "── Indicator (circle with checkmark) ──────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:has(input:checked)",
+      "id": "#06-15-04",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.08)",
+      "responsive": false,
+      "description": "── Selected state (via :checked) ──────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:has(input:checked) .selectable-option-indicator",
+      "id": "#06-15-04",
+      "category": null,
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "cssRule": "background: var(--color-primary)\nborder-color: var(--color-primary)",
+      "responsive": false,
+      "description": "── Selected state (via :checked) ──────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:has(input:checked) .selectable-option-indicator::after",
+      "id": "#06-15-04",
+      "category": null,
+      "properties": [
+        "display"
+      ],
+      "cssRule": "display: block",
+      "responsive": false,
+      "description": "── Selected state (via :checked) ──────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:has(input:focus-visible)",
+      "id": "#06-15-04",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
+      "responsive": false,
+      "description": "Focus-visible ring for keyboard nav"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-s",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-2) var(--space-3)",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-s .selectable-option-label",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "font-size"
+      ],
+      "cssRule": "font-size: var(--font-size-s)",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-s .selectable-option-indicator",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 1.25rem\nheight: 1.25rem",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-s .selectable-option-indicator::after",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-width"
+      ],
+      "cssRule": "width: 5px\nheight: 9px\nborder-width: 0 2px 2px 0",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-l",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "padding"
+      ],
+      "cssRule": "padding: var(--space-4) var(--space-5)",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-l .selectable-option-label",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "font-size"
+      ],
+      "cssRule": "font-size: var(--font-size-l)",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-l .selectable-option-indicator",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 1.75rem\nheight: 1.75rem",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option.size-l .selectable-option-indicator::after",
+      "id": "#06-15-05",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-width"
+      ],
+      "cssRule": "width: 7px\nheight: 13px\nborder-width: 0 3px 3px 0",
+      "responsive": false,
+      "description": "── Size variants ──────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".selectable-option:has(input:disabled)",
+      "id": "#06-15-06",
+      "category": null,
+      "properties": [
+        "opacity",
+        "cursor",
+        "pointer-events"
+      ],
+      "cssRule": "opacity: 0.5\ncursor: not-allowed\npointer-events: none",
+      "responsive": false,
+      "description": "── Disabled ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .selectable-option",
+      "id": "#06-15-07",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-border)",
+      "responsive": false,
+      "description": "── Night + reduced motion ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .selectable-option:hover",
+      "id": "#06-15-07",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-primary)",
+      "responsive": false,
+      "description": "── Night + reduced motion ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .selectable-option:has(input:checked)",
+      "id": "#06-15-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.16)",
+      "responsive": false,
+      "description": "── Night + reduced motion ─────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .selectable-option-indicator",
+      "id": "#06-15-07",
+      "category": null,
+      "properties": [
+        "border-color"
+      ],
+      "cssRule": "border-color: var(--color-border)",
+      "responsive": false,
+      "description": "── Night + reduced motion ─────────────────────────────────────────────"
+    }
+  ]
+}

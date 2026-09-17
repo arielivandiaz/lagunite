@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 03 · Forms — Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!-- Cheatsheets: molecules form-groups · atoms inputs · selectable-option · alerts -->
+
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="./index.html">← demos</a></p>
+      <h1 class="font-xl bold color-text">Forms</h1>
+      <p class="font-s text-muted">
+        Form-groups, native controls, alerts, and selectable-option.
+        Cheatsheet: <a class="color-primary" href="../src/css/06-molecules/MOLECULES-CHEATSHEET.md">molecules</a>
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Native <code>:valid</code>/<code>:invalid</code> chrome only applies when the control has a <code>placeholder</code>.
+    </div>
+
+    <form class="card" action="#" method="post">
+      <div class="card-header">Profile</div>
+      <div class="card-body col gap">
+        <div class="form-row">
+          <div class="form-group flex-1">
+            <label class="form-label" for="email">Work email</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+            <p class="form-help">We never share your email.</p>
+          </div>
+          <div class="form-group flex-1">
+            <label class="form-label" for="role">Role</label>
+            <select class="input" id="role" name="role">
+              <option value="">Select…</option>
+              <option>Designer</option>
+              <option>Engineer</option>
+              <option>PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bio">Bio</label>
+          <textarea class="input" id="bio" name="bio" rows="3" placeholder="Short public blurb"></textarea>
+        </div>
+
+        <div class="form-group has-error">
+          <label class="form-label" for="pwd">Password</label>
+          <input class="input" id="pwd" name="pwd" type="password" autocomplete="new-password" placeholder="At least 8 characters" />
+          <p class="form-error-msg">Password is required. [demo]</p>
+        </div>
+
+        <fieldset class="col gap-s">
+          <legend class="form-label">Preferences</legend>
+          <label class="checkbox">
+            <input type="checkbox" checked />
+            <span class="checkmark"></span>
+            Email digest
+          </label>
+          <div class="row ai-c gap-s">
+            <input type="checkbox" class="toggle" id="marketing" />
+            <label for="marketing" class="toggle-btn"></label>
+            <label class="font-s" for="marketing">Marketing emails</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="col gap-s">
+          <legend class="form-label">Plan</legend>
+          <div class="radio-group">
+            <input type="radio" name="plan" id="plan-free" checked />
+            <label for="plan-free">Free</label>
+            <input type="radio" name="plan" id="plan-pro" />
+            <label for="plan-pro">Pro</label>
+          </div>
+        </fieldset>
+
+        <div class="col gap-s">
+          <p class="form-label marg-0">Goals (selectable-option)</p>
+          <label class="selectable-option">
+            <input type="checkbox" checked />
+            <span class="selectable-option-label">Ship v2.1</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+          <label class="selectable-option">
+            <input type="checkbox" />
+            <span class="selectable-option-label">Write docs</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+          <label class="selectable-option">
+            <input type="radio" name="priority" checked />
+            <span class="selectable-option-label">Priority: CSS first</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+          <label class="selectable-option">
+            <input type="radio" name="priority" />
+            <span class="selectable-option-label">Priority: AI-first</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+        </div>
+      </div>
+      <div class="card-footer row jc-fe ai-c gap-s">
+        <button type="button" class="btn alt">Cancel</button>
+        <button type="submit" class="btn">Save changes</button>
+      </div>
+    </form>
+
+    <section class="card padd col gap-s">
+      <h2 class="font-l bold">Auth-style CTA (anti-slop L-17)</h2>
+      <p class="font-s text-muted">One full-width primary + text link — not twin chrome buttons.</p>
+      <button type="button" class="btn size-l marg-0 wp100">Continue</button>
+      <p class="ta-c marg-0"><a class="font-s color-primary" href="./01-landing.html">Back to landing</a></p>
+    </section>
+  </div>
+
+  <script>
+    const theme = document.getElementById('theme-toggle');
+    const sync = () => { theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night'; };
+    theme.addEventListener('click', () => { document.body.classList.toggle('night'); sync(); });
+    sync();
+  </script>
+</body>
+</html>

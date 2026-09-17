@@ -1,9 +1,12 @@
 # Lagunite AI Skills Index
 
 Vendor-neutral skill files for any AI assistant or IDE.
-All files are plain Markdown — no proprietary frontmatter.
+Canonical content lives in [`skills/*.md`](./skills/) — plain Markdown.
 
-> **Track AI-first:** norte documentado en [`../ToDo-ai-first.md`](../ToDo-ai-first.md) — en pausa hasta estabilizar CSS (`../ToDo-prod.md`). Estas skills son la referencia del **runtime CSS** y del **UI Validator**.
+> **Map (agent + skills + Cursor / GitHub / Claude):** [`AGENTS-AND-SKILLS.md`](./AGENTS-AND-SKILLS.md)  
+> **Token hygiene:** [`CONTEXT-HYGIENE.md`](./CONTEXT-HYGIENE.md) — no precargar este índice entero ni todas las skills.  
+> **Sync IDE wrappers:** `npm run ai:sync`  
+> **Track AI-first:** [`../ToDo-ai-first.md`](../ToDo-ai-first.md) (después del gate CSS / revisión v2.1).
 
 ## UI Validator (multi-skill agent)
 
@@ -16,8 +19,9 @@ All files are plain Markdown — no proprietary frontmatter.
 | A11y | [skills/validate-a11y.md](skills/validate-a11y.md) | Labels, focus, light a11y gates |
 | Compose | [skills/compose.md](skills/compose.md) | UI craft — alignment, rhythm, anti-patterns |
 | Contrast | [skills/contrast.md](skills/contrast.md) | bg/text pairing, WCAG notes |
+| **Anti-Slop** | [skills/anti-slop.md](skills/anti-slop.md) | Filter generic AI UI/copy; Lagunite-mapped |
 
-**Cursor:** agent [`.cursor/agents/lagunite-ui-validator.md`](../.cursor/agents/lagunite-ui-validator.md) · skill `lagunite-ui-validator`.
+**Cursor:** agent [`.cursor/agents/lagunite-ui-validator.md`](../.cursor/agents/lagunite-ui-validator.md) · skill `lagunite-ui-validator` · wrappers in [`.cursor/skills/`](../.cursor/skills/).
 
 ## Layer skills
 
@@ -30,9 +34,9 @@ All files are plain Markdown — no proprietary frontmatter.
 | **Flex** | [skills/flex.md](skills/flex.md) | Flex containers, alignment, gap |
 | **Grid** | [skills/grid.md](skills/grid.md) | Grid containers, columns, placement |
 | **Containers** | [skills/containers.md](skills/containers.md) | Page width constraints, hero, prose |
-| **Decorators** | [skills/decorators.md](skills/decorators.md) | Shadows, borders, motion, filters |
+| **Decorators** | [skills/decorators.md](skills/decorators.md) | Shadows, borders, motion, filters, `.surface-glass` |
 | **Atoms** | [skills/atoms.md](skills/atoms.md) | Tables, lists, figures, badges, avatars, inputs notes |
-| **Molecules** | [skills/molecules.md](skills/molecules.md) | Form groups, alerts, dropdowns, … |
+| **Molecules** | [skills/molecules.md](skills/molecules.md) | Form groups, alerts, dropdowns, picker, selectable, … |
 | **Compounds** | [skills/compounds.md](skills/compounds.md) | Cards, modals |
 | **Organisms** | [skills/organisms.md](skills/organisms.md) | Navbar, sidebar, footer |
 | **Patterns** | [skills/patterns.md](skills/patterns.md) | Page starting points |
@@ -42,7 +46,7 @@ All files are plain Markdown — no proprietary frontmatter.
 ## Recommended flow
 
 ```
-generate screen → compose + layer skills
+generate screen → compose + layer skills (+ demos/ as visual bar)
               → Lagunite UI Validator (validate.md orchestrator)
               → fix → re-validate until no FAIL
 ```
@@ -56,6 +60,15 @@ tokens → typography/colors → spacing/layout → decorators
 
 | Tool | How |
 | --- | --- |
-| **Cursor** | Agent `Lagunite UI Validator` or skill `lagunite-ui-validator`; rules in `.cursor/rules/lagunite-ai.mdc` |
-| **Claude Code** | `@./ai/skills/validate.md` then domain files |
-| **Any chat AI** | Paste orchestrator + needed domain skills |
+| **Cursor** | Agent `Lagunite UI Validator` or skill `lagunite-ui-validator`; rules `.cursor/rules/lagunite-ai.mdc` |
+| **GitHub Copilot** | `.github/agents/` + `.github/skills/` + `.github/instructions/` (synced) |
+| **Claude Code** | `.claude/agents/` + `.claude/skills/`; lean [`CLAUDE.md`](../CLAUDE.md); or `@ai/skills/validate.md` |
+| **Any chat AI** | Paste orchestrator + needed domain skills from `ai/skills/` |
+
+## Maintain wrappers
+
+```bash
+npm run ai:sync
+```
+
+Then update this index + `AGENTS-AND-SKILLS.md` if the catalog changed.

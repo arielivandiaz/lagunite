@@ -21,6 +21,7 @@
 - **Scroll behavior:** `.scroll-smooth`, `.scroll-auto` (use `.scroll-smooth`, not `.scroll-sooth`)
 - **Scroll snap:** `.snap-none|x|y|both`, `.snap-mandatory|proximity`, `.snap-start|end|center`, `.snap-normal|always`
 - **Backdrop blur:** `.backdrop-blur-none`, `.backdrop-blur-s`, `.backdrop-blur`, `.backdrop-blur-l`, `.backdrop-blur-xl`
+- **Frosted panel (opt-in):** `.surface-glass` — `color-mix` + blur; night variant included. Anti-slop: ≤1–2 per view, not default on every card/sidebar/modal
 - **Touch:** `.touch-auto`, `.touch-none`, `.touch-pan-x`, `.touch-pan-y`, `.touch-manipulation`
 - **Will-change:** `.will-change-auto`, `.will-change-scroll`, `.will-change-contents`, `.will-change-transform`
 - **Blend modes:** `.mix-blend-*` (many modes), `.bg-blend-*` (subset)

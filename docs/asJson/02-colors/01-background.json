@@ -1,9 +1,9 @@
 {
   "folder": "02-colors",
   "file": "01-background.css",
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-09-15",
   "hasResponsive": false,
-  "totalSelectors": 115,
+  "totalSelectors": 117,
   "content": [
     {
       "type": "selector",
@@ -17,7 +17,7 @@
       ],
       "cssRule": "background: var(--color-bg) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
-      "description": ""
+      "description": "==========\r\n   02-colors / 01-background.css\r\n   Page/surface fills, theme accent fills, and named gradients.\r\n\r\n   Anti-slop (RTP):\r\n   - `.bg` / `.bg-surface` / `.bg-surface-raised` / gray neutrals = panels & page chrome.\r\n   - `.bg-1`…`.bg-9` = **theme accent fills** (brand/primary/secondary/tertiary), NOT\r\n     “background levels” or neutral cards. Never use them as default page panels.\r\n   - `.bgg-*` = accent gradients only (hero strip, badge, CTA band). Do not paint the\r\n     whole page with a rainbow gradient as identity (see ai/skills/anti-slop L-01/L-10).\r\n   =========="
     },
     {
       "type": "selector",
@@ -31,7 +31,35 @@
       ],
       "cssRule": "background: var(--color-bg-alt) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": ""
+      "description": "==========\r\n   02-colors / 01-background.css\r\n   Page/surface fills, theme accent fills, and named gradients.\r\n\r\n   Anti-slop (RTP):\r\n   - `.bg` / `.bg-surface` / `.bg-surface-raised` / gray neutrals = panels & page chrome.\r\n   - `.bg-1`…`.bg-9` = **theme accent fills** (brand/primary/secondary/tertiary), NOT\r\n     “background levels” or neutral cards. Never use them as default page panels.\r\n   - `.bgg-*` = accent gradients only (hero strip, badge, CTA band). Do not paint the\r\n     whole page with a rainbow gradient as identity (see ai/skills/anti-slop L-01/L-10).\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-surface",
+      "id": "#02-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-surface) !important\ncolor: var(--color-text-base) !important",
+      "responsive": false,
+      "description": "==========\r\n   02-colors / 01-background.css\r\n   Page/surface fills, theme accent fills, and named gradients.\r\n\r\n   Anti-slop (RTP):\r\n   - `.bg` / `.bg-surface` / `.bg-surface-raised` / gray neutrals = panels & page chrome.\r\n   - `.bg-1`…`.bg-9` = **theme accent fills** (brand/primary/secondary/tertiary), NOT\r\n     “background levels” or neutral cards. Never use them as default page panels.\r\n   - `.bgg-*` = accent gradients only (hero strip, badge, CTA band). Do not paint the\r\n     whole page with a rainbow gradient as identity (see ai/skills/anti-slop L-01/L-10).\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-surface-raised",
+      "id": "#02-01-01",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: var(--color-surface-raised) !important\ncolor: var(--color-text-base) !important",
+      "responsive": false,
+      "description": "==========\r\n   02-colors / 01-background.css\r\n   Page/surface fills, theme accent fills, and named gradients.\r\n\r\n   Anti-slop (RTP):\r\n   - `.bg` / `.bg-surface` / `.bg-surface-raised` / gray neutrals = panels & page chrome.\r\n   - `.bg-1`…`.bg-9` = **theme accent fills** (brand/primary/secondary/tertiary), NOT\r\n     “background levels” or neutral cards. Never use them as default page panels.\r\n   - `.bgg-*` = accent gradients only (hero strip, badge, CTA band). Do not paint the\r\n     whole page with a rainbow gradient as identity (see ai/skills/anti-slop L-01/L-10).\r\n   =========="
     },
     {
       "type": "selector",
@@ -58,7 +86,7 @@
       ],
       "cssRule": "background: var(--color-primary) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -72,7 +100,7 @@
       ],
       "cssRule": "background: var(--color-primary-light) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -86,7 +114,7 @@
       ],
       "cssRule": "background: var(--color-primary-dark) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -100,7 +128,7 @@
       ],
       "cssRule": "background: var(--color-secondary) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -114,7 +142,7 @@
       ],
       "cssRule": "background: var(--color-secondary-light) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -128,7 +156,7 @@
       ],
       "cssRule": "background: var(--color-secondary-dark) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -142,7 +170,7 @@
       ],
       "cssRule": "background: var(--color-tertiary) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -156,7 +184,7 @@
       ],
       "cssRule": "background: var(--color-tertiary-light) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -170,7 +198,7 @@
       ],
       "cssRule": "background: var(--color-tertiary-dark) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -184,7 +212,7 @@
       ],
       "cssRule": "background: #000 !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -198,7 +226,7 @@
       ],
       "cssRule": "background: var(--color-almost-black) !important\ncolor: var(--color-text-alt) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -212,7 +240,7 @@
       ],
       "cssRule": "background: #fff !important\n/*\r\n   * Default ink on paper. Do not use !important: chained .color-* utilities load\r\n   * later (02-text.css) and must win (e.g. .bg-white.color-primary on badges).\r\n   */\ncolor: var(--gray-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -226,7 +254,7 @@
       ],
       "cssRule": "background: var(--color-almost-white) !important\ncolor: var(--color-text-base) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -240,7 +268,7 @@
       ],
       "cssRule": "background: var(--color-success-light) !important\ncolor: var(--color-success) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -254,7 +282,7 @@
       ],
       "cssRule": "background: var(--color-warning-light) !important\ncolor: var(--color-warning) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -268,7 +296,7 @@
       ],
       "cssRule": "background: var(--color-error-light) !important\ncolor: var(--color-error) !important",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -282,7 +310,7 @@
       ],
       "cssRule": "background: linear-gradient(to right, var(--color-success-light), var(--color-success))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Theme accent fills (not neutral surface ladder)"
     },
     {
       "type": "selector",
@@ -296,7 +324,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-1)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -310,7 +338,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-2)\ncolor: var(--color-text-base)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -324,7 +352,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-3)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -338,7 +366,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-4)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -352,7 +380,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-5)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -366,7 +394,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-6)\ncolor: var(--color-text-base)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -380,7 +408,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-7)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -394,7 +422,7 @@
       ],
       "cssRule": "background: var(--bg-gradient-8)\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -408,7 +436,7 @@
       ],
       "cssRule": "background: linear-gradient(to left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -422,7 +450,7 @@
       ],
       "cssRule": "background: linear-gradient(to left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -436,7 +464,7 @@
       ],
       "cssRule": "background: linear-gradient(to left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -450,7 +478,7 @@
       ],
       "cssRule": "background: linear-gradient(to left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -464,7 +492,7 @@
       ],
       "cssRule": "background: linear-gradient(to right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -478,7 +506,7 @@
       ],
       "cssRule": "background: linear-gradient(to right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -492,7 +520,7 @@
       ],
       "cssRule": "background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -506,7 +534,7 @@
       ],
       "cssRule": "background: linear-gradient(to right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -520,7 +548,7 @@
       ],
       "cssRule": "background: linear-gradient(to top, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -534,7 +562,7 @@
       ],
       "cssRule": "background: linear-gradient(to top, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -548,7 +576,7 @@
       ],
       "cssRule": "background: linear-gradient(to top, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -562,7 +590,7 @@
       ],
       "cssRule": "background: linear-gradient(to top, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -576,7 +604,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -590,7 +618,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -604,7 +632,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -618,7 +646,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -632,7 +660,7 @@
       ],
       "cssRule": "background: linear-gradient(to top left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -646,7 +674,7 @@
       ],
       "cssRule": "background: linear-gradient(to top left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -660,7 +688,7 @@
       ],
       "cssRule": "background: linear-gradient(to top left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -674,7 +702,7 @@
       ],
       "cssRule": "background: linear-gradient(to top left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -688,7 +716,7 @@
       ],
       "cssRule": "background: linear-gradient(to top right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -702,7 +730,7 @@
       ],
       "cssRule": "background: linear-gradient(to top right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -716,7 +744,7 @@
       ],
       "cssRule": "background: linear-gradient(to top right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -730,7 +758,7 @@
       ],
       "cssRule": "background: linear-gradient(to top right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -744,7 +772,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -758,7 +786,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom left, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -772,7 +800,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -786,7 +814,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom left, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -800,7 +828,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-black))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -814,7 +842,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom right, var(--color-primary), var(--color-almost-white))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -828,7 +856,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-dark))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -842,7 +870,7 @@
       ],
       "cssRule": "background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light))\ncolor: var(--color-text-alt)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -855,7 +883,7 @@
       ],
       "cssRule": "background: var(--gray-50)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -868,7 +896,7 @@
       ],
       "cssRule": "background: var(--gray-100)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -881,7 +909,7 @@
       ],
       "cssRule": "background: var(--gray-200)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -894,7 +922,7 @@
       ],
       "cssRule": "background: var(--gray-300)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -907,7 +935,7 @@
       ],
       "cssRule": "background: var(--gray-400)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -920,7 +948,7 @@
       ],
       "cssRule": "background: var(--gray-500)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -933,7 +961,7 @@
       ],
       "cssRule": "background: var(--gray-600)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -946,7 +974,7 @@
       ],
       "cssRule": "background: var(--gray-700)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -959,7 +987,7 @@
       ],
       "cssRule": "background: var(--gray-800)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -972,7 +1000,7 @@
       ],
       "cssRule": "background: var(--gray-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -985,7 +1013,7 @@
       ],
       "cssRule": "background: var(--gray-950)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -998,7 +1026,7 @@
       ],
       "cssRule": "background: var(--blue-50)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1011,7 +1039,7 @@
       ],
       "cssRule": "background: var(--blue-100)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1024,7 +1052,7 @@
       ],
       "cssRule": "background: var(--blue-200)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1037,7 +1065,7 @@
       ],
       "cssRule": "background: var(--blue-300)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1050,7 +1078,7 @@
       ],
       "cssRule": "background: var(--blue-400)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1063,7 +1091,7 @@
       ],
       "cssRule": "background: var(--blue-500)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1076,7 +1104,7 @@
       ],
       "cssRule": "background: var(--blue-600)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1089,7 +1117,7 @@
       ],
       "cssRule": "background: var(--blue-700)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1102,7 +1130,7 @@
       ],
       "cssRule": "background: var(--blue-800)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1115,7 +1143,7 @@
       ],
       "cssRule": "background: var(--blue-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1128,7 +1156,7 @@
       ],
       "cssRule": "background: var(--blue-950)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1141,7 +1169,7 @@
       ],
       "cssRule": "background: var(--green-50)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1154,7 +1182,7 @@
       ],
       "cssRule": "background: var(--green-100)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1167,7 +1195,7 @@
       ],
       "cssRule": "background: var(--green-200)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1180,7 +1208,7 @@
       ],
       "cssRule": "background: var(--green-300)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1193,7 +1221,7 @@
       ],
       "cssRule": "background: var(--green-400)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1206,7 +1234,7 @@
       ],
       "cssRule": "background: var(--green-500)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1219,7 +1247,7 @@
       ],
       "cssRule": "background: var(--green-600)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1232,7 +1260,7 @@
       ],
       "cssRule": "background: var(--green-700)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1245,7 +1273,7 @@
       ],
       "cssRule": "background: var(--green-800)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1258,7 +1286,7 @@
       ],
       "cssRule": "background: var(--green-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1271,7 +1299,7 @@
       ],
       "cssRule": "background: var(--green-950)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1284,7 +1312,7 @@
       ],
       "cssRule": "background: var(--yellow-50)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1297,7 +1325,7 @@
       ],
       "cssRule": "background: var(--yellow-100)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1310,7 +1338,7 @@
       ],
       "cssRule": "background: var(--yellow-200)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1323,7 +1351,7 @@
       ],
       "cssRule": "background: var(--yellow-300)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1336,7 +1364,7 @@
       ],
       "cssRule": "background: var(--yellow-400)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1349,7 +1377,7 @@
       ],
       "cssRule": "background: var(--yellow-500)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1362,7 +1390,7 @@
       ],
       "cssRule": "background: var(--yellow-600)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1375,7 +1403,7 @@
       ],
       "cssRule": "background: var(--yellow-700)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1388,7 +1416,7 @@
       ],
       "cssRule": "background: var(--yellow-800)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1401,7 +1429,7 @@
       ],
       "cssRule": "background: var(--yellow-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1414,7 +1442,7 @@
       ],
       "cssRule": "background: var(--yellow-950)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1427,7 +1455,7 @@
       ],
       "cssRule": "background: var(--red-50)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1440,7 +1468,7 @@
       ],
       "cssRule": "background: var(--red-100)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1453,7 +1481,7 @@
       ],
       "cssRule": "background: var(--red-200)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1466,7 +1494,7 @@
       ],
       "cssRule": "background: var(--red-300)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1479,7 +1507,7 @@
       ],
       "cssRule": "background: var(--red-400)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1492,7 +1520,7 @@
       ],
       "cssRule": "background: var(--red-500)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1505,7 +1533,7 @@
       ],
       "cssRule": "background: var(--red-600)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1518,7 +1546,7 @@
       ],
       "cssRule": "background: var(--red-700)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1531,7 +1559,7 @@
       ],
       "cssRule": "background: var(--red-800)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1544,7 +1572,7 @@
       ],
       "cssRule": "background: var(--red-900)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     },
     {
       "type": "selector",
@@ -1557,7 +1585,7 @@
       ],
       "cssRule": "background: var(--red-950)",
       "responsive": false,
-      "description": "Night: --color-bg-alt is a light strip; keep dark text there (text-alt stays #fff for primary fills)."
+      "description": "Named gradients — accent / hierarchy only; not default full-page identity"
     }
   ]
 }

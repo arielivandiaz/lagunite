@@ -1,32 +1,27 @@
 ---
 description: >-
-  Al generar o revisar UI con Lagunite: compose + UI Validator multi-skill,
-  sin inventar clases ni duplicar skills por archivo CSS.
-globs: "**/*.html,src/css/**/*.css,demo*.html,pocs/**/*.html"
+  Lagunite HTML/CSS: short hard rules. Load compose/validate skills only when
+  generating or auditing screens — do not dump the full skill library.
+globs: "**/*.html,src/css/**/*.css,pocs/**/*.html,demos/**/*.html"
 alwaysApply: false
 ---
 
-# Lagunite + IA (proyecto)
+# Lagunite UI (scoped)
 
-## Antes de escribir o cambiar markup / utilidades
+## Always for these files
+- No invented classes; utilities only from skills / `src/css`
+- Order: base → `x*` → `d*`; layout before deco; `.gap-*` for flex/grid gap
+- Surfaces: `.bg` / `.bg-surface` / `.card` / grays — not `.bg-1..9` as panels
+- Muted: `.card-text` / `.text-muted` — never `.color-text-alt` as subtitle (use `.color-on-fill` on fills)
+- Flex defaults to start; center with `.flex-center` or `jc-c ai-c`
+- Full-width primary CTA: `.btn.size-l.marg-0.wp100` (`.btn` has `margin: 0`)
+- CSS change → `npm run docs:generate`
 
-1. Si generás una **pantalla / sección / form / dashboard**: leer **`ai/skills/compose.md`** y **`ai/skills/contrast.md`**.
-2. Abrir **solo** las skills de capa necesarias (tokens → … → patterns).
-3. Tras generar o al auditar: ejecutar el **UI Validator** — [`ai/skills/validate.md`](ai/skills/validate.md) (orquesta `validate-structure` / `forms` / `night` / `a11y`). En Cursor: agente/skill **lagunite-ui-validator**.
-4. Complemento: [`docs/PROMPT_GUIDE.md`](docs/PROMPT_GUIDE.md) y cheatsheets bajo `src/css/**`.
+## On demand only
+- Map: `ai/AGENTS-AND-SKILLS.md`
+- Craft: `ai/skills/compose.md`
+- Audit: `ai/skills/validate.md` (orchestrator; pulls domain skills as needed)
+- Slop filter: `ai/skills/anti-slop.md`
+- Index: `ai/SKILLS-INDEX.md`
 
-## Reglas de salida
-
-- **Lagunite v2 solo utilidades** documentadas en skills o en `src/css`. Si falta una, indicar hueco + alternativa; no inventar nombres.
-- **Flex/grid:** `.row` / `.col` centran por defecto → contenido con `jc-fs` / `ai-fs` (o `ai-s`). Center solo heroes/empty.
-- **Superficies:** `.bg` / `.card` / grays neutros — **no** `.bg-1`…`.bg-9` como paneles.
-- **Texto muted:** `.card-text` (light + night) — **nunca** `.color-text-alt` como subtítulo.
-- **Viewport full-height:** `minvh100`, no `minhp100`.
-- **Botones:** `.btn`, `.btn.alt`, `.btn.secondary`, `.btn.ghost`.
-- **Inputs:** native green/red only with `placeholder`; empty stays neutral; or use `.has-error` / `.has-success`.
-- **Tema:** `.night` en `body`; muted con `.card-text`, no gray oscuros sobre paneles oscuros.
-- **Docs generados:** tras CSS del framework → `npm run docs:generate`.
-
-## Alcance
-
-- HTML (demos, POCs) y `src/css/`. No sustituye WCAG completa ni el track `ToDo-prod`.
+Do **not** read every `ai/skills/*.md` or cheatsheet unless the task needs that layer.
