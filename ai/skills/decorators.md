@@ -113,3 +113,20 @@ Stack `.transition-colors` + `.duration-200` + `.ease-out` for typical UI hovers
 | Smooth anchor scroll | `.scroll-smooth` on scrolling ancestor |
 
 **Full tables:** `src/css/04-decorators/DECORATORS-CHEATSHEET.md`
+
+---
+
+## v3 additions — `09-backgrounds.css`
+
+| Class | Use |
+| --- | --- |
+| `.bg-mesh` | Soft blue radials over `--color-bg` (stronger in Night). Heroes, CTA bands |
+| `.bg-grid` | 48px line grid fading from the top (`::before`). Pair with `.bg-mesh` |
+| `.bg-dots` | 20px dot grid fading downward. Feature sections |
+| `.bg-spotlight` | Light from the top in `--color-primary-soft`. Centered sections |
+| `.glass` | Translucent surface + blur + hairline + highlight |
+| `.text-gradient` | Blue gradient text — one word of a headline |
+| `.overline-label` | Uppercase eyebrow above section titles (AA blue) |
+| `.section` | Landing section rhythm: 64px mobile / 96px desktop vertical padding |
+
+Rule: **one effect background per section**. `bgg-*` gradients are legacy.

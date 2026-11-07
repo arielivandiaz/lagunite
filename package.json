@@ -1,6 +1,6 @@
 {
   "name": "lagunite",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Utility-first CSS framework with descriptive class names, design tokens, and layered components.",
   "type": "module",
   "main": "./dist/lagunite.umd.cjs",

@@ -59,9 +59,9 @@ Hard Gate = absolute for Lagunite agents. Purpose-Gate = allowed only with a one
 
 | ID | Pattern | Lagunite note |
 | --- | --- | --- |
-| **L-10** | Gradients (`bgg-*`) | One hierarchy job max unless brand demands more. |
-| **L-11** | Glass / backdrop-blur | ≤1–2 surfaces. Prefer opt-in `.surface-glass` (or compose blur + translucent bg). Not every card/sidebar/modal. |
-| **L-12** | Elevation (`.card-elevated`, heavy shadows) | Default `.card` is flat; ≤1 elevated per view unless floating job. |
+| **L-10** | Gradients and effect backgrounds | v3: blue family only (`.bg-mesh`, `.bg-grid`, `.bg-dots`, `.bg-spotlight`). One effect per section; `bgg-*` is legacy. `.text-gradient` on one word only. |
+| **L-11** | Glass / backdrop-blur | Built into `.navbar`, `.topbar`, `.toast` and modal backdrops. Opt-in `.glass` / `.card-glass` / `.btn.glass` only over mesh/grid/image. Not every card. |
+| **L-12** | Elevation (`.card-elevated`, `.card-featured`) | Default `.card` is subtly raised; `.card-elevated` for floating jobs; `.card-featured` once per group. Don’t add extra `.shadow-*` on top of components. |
 | **L-13** | Glow / pulse / endless motion | Only via explicit `.animate-*`; rare; `prefers-reduced-motion` kills loops. |
 | **L-14** | Uniform feature-card grids | Vary hierarchy; not every feature needs identical `.card` + icon. |
 | **L-15** | Bento / mosaic dashboards | Only if content sizes truly differ; else simple `grid` + `gap`. |

@@ -1,4 +1,4 @@
-# Lagunite 2.1
+# Lagunite 3
 
 [![NPM Version](https://img.shields.io/npm/v/lagunite?style=flat-square)](https://www.npmjs.com/package/lagunite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -52,7 +52,11 @@ Responsive prefixes: **base → `x*` (≤639px) → `d*` (≥640px)**. Flex gap:
 
 ---
 
-## What’s in v2.1
+## What’s new in v3
+
+Same class names as v2, new skin: buttons and cards with depth (top highlight, layered shadows, colored lift), glass navbar, display typography, blue mesh/grid backgrounds, and a token set that passes WCAG AA in Day and Night. The brand blue `#2476ff` is unchanged. Upgrading is a stylesheet swap; check pages that relied on the v2 base (centered `body`, `header`/`p` margins). Details: [`CHANGELOG.md`](./CHANGELOG.md) · QA page: [`pocs/v3-components.html`](./pocs/v3-components.html) · design source: [`design/lagunite3/`](./design/lagunite3/).
+
+## What’s in the box
 
 | Layer | Includes |
 | --- | --- |

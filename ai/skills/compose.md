@@ -20,6 +20,8 @@
 4. **One spacing rhythm per section.** Prefer a single gap scale (`gap-s` or `gap`) + matching padd (`padd` / `padd-m`). Do not mix `gap-xs` + `gap-xl` + random `marg-*` in the same block.
 5. **Prefer molecules/compounds over utility soup** when they exist: `.form-group`, `.card` + regions, `.alert`, `.stat-card`, `.sidebar`.
 6. **Muted copy:** `.text-muted` or `.card-text` — never `.color-text-alt` as subtitle. On fills: `.color-on-fill`.
+7. **v3 skin does the depth.** `.btn`, `.card`, inputs and `.navbar` already carry highlight, shadow and blur. Don’t add `.shadow-*`, borders or gradients on top; pick the variant (`.card-elevated`, `.card-featured`, `.btn.soft`) instead.
+8. **Night is tokens.** `.night` (or `[data-theme="dark"]`) swaps every token. Never hand-paint night with `.bg-gray-*` / `.color-gray-*`.
 
 ---
 
@@ -60,13 +62,18 @@ If you start with colors or shadows, stop and restart from layout.
 | Role | Prefer | Avoid |
 | --- | --- | --- |
 | Page background | `.bg` | `.bg-1`, full-page `bgg-*` |
-| Panel / card | `.card` (flat by default) / `.bg-surface` | Nested `.card` inside `.card` without reason · default `.card-elevated` everywhere |
-| Primary CTA fill | `.btn` | inventing `btn-primary` |
-| Secondary CTA | `.btn.alt` or text link | twin full-width `.btn` + `.btn.alt` in auth |
+| Section band | `.bg-surface` (alternate with `.bg`) | stacking several effect backgrounds |
+| Panel / card | `.card` (raised, subtle shadow) / `.card-sunken` for secondary groups | Nested `.card` inside `.card` without reason · `.card-elevated` everywhere |
+| Highlighted item | `.card-featured` — **one per group** (the recommended plan) | two featured cards side by side |
+| Hero / CTA background | `.bg-mesh`, `.bg-mesh.bg-grid`, `.bg-spotlight`, `.bg-dots` — **one per section** | `bgg-*`, purple/indigo gradients |
+| Glass | `.glass`, `.card-glass`, `.btn.glass` **only over** mesh/grid/image | glass on a plain `.bg` (looks like nothing) |
+| Primary CTA fill | `.btn` (add `.pill` + `.size-l` in heroes) | inventing `btn-primary` |
+| Secondary CTA | `.btn.alt`, `.btn.soft` or `.btn.ghost` | twin full-width `.btn` + `.btn.alt` in auth |
 | Body text | `.color-text` (or inherit from `.bg`) | `.color-text-alt` on light panels |
-| Muted / help | `.text-muted` or `.card-text` | `.color-text-alt` (`#fff`) · bare `.color-gray-600` in night |
+| Muted / help | `.text-muted` or `.card-text` | `.color-text-alt` (`#fff`) · `.color-gray-*` |
+| Blue text / eyebrow | `.color-primary` (AA text blue) or `.overline-label` | raw `var(--color-primary)` as text on light bg |
 | On-fill text | `.color-on-fill` | using `.color-text-alt` as the “muted” name |
-| Night panels | `.bg-gray-800` / `.bg-gray-900` inside `.night` | `.bg-1`…`.bg-9` as “dark mode” |
+| Night | tokens via `.night` on `body` | `.bg-gray-800` / `.bg-1`…`.bg-9` as “dark mode” |
 
 Read `contrast.md` before any custom `bg-*` + `color-*` pair.
 
@@ -76,17 +83,20 @@ Read `contrast.md` before any custom `bg-*` + `color-*` pair.
 
 Per view, aim for **three levels max**:
 
-1. Page/section title — `font-xl` or `font-l` + `bold`
-2. Body — default / `font-s` + `lh`
+1. Title — landing: `h1` / `h2` (display face, tight tracking, auto-sized) or `.font-display-2xl|xl|l`; app UI: `h3`/`h4` or `.card-title`
+2. Body — default / `.font-l` for leads / `.font-s` in cards
 3. Meta/help — `font-s` + `.text-muted` or `.card-text` (never `.color-text-alt` on light UI)
 
-Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
+Optional eyebrow above a section title: `.overline-label`. `.text-gradient` on **one word** of a hero headline, never a sentence.
+
+Do not size hero titles with `font-xxl` (24px) — use `h1` or `.font-display-*`. Do not stack `font-xxl` + `font-xl` + `font-l` in one card.
 
 ---
 
 ## 5. Spacing rhythm
 
-- Section vertical: `padd-v-l` or `padd-v-m` on the section/container — not margin on every child.
+- Landing sections: `.section` (64px mobile / 96px desktop) on the section, `.container` inside.
+- App sections: `padd-v-l` or `padd-v-m` on the section/container — not margin on every child.
 - Inside a card: `card-body` already pads; extra `padd` only if needed once.
 - Sibling groups: one `gap-s` or `gap` on the parent flex/grid.
 - Separate blocks: `marg-b` / `marg-b-m` sparingly — prefer parent `gap`.
@@ -151,6 +161,32 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
     </div>
   </div>
 </div>
+```
+
+### Landing hero + pricing (v3)
+```html
+<section class="bg-mesh bg-grid section">
+  <div class="container col ai-c gap-l ta-c">
+    <span class="badge badge-announce"><span class="badge badge-primary">Nuevo</span> Plantillas compartidas</span>
+    <h1>El lugar <span class="text-gradient">tranquilo</span> donde tu equipo trabaja</h1>
+    <p class="font-l text-muted">Tareas, notas y entregas en un solo lugar.</p>
+    <div class="row jc-c gap-s">
+      <a class="btn size-l pill" href="#">Empezar gratis</a>
+      <a class="btn glass size-l pill" href="#">Ver demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-spotlight section">
+  <div class="container col gap-l">
+    <div class="col ai-c gap-s ta-c"><p class="overline-label">Precios</p><h2>Precios simples</h2></div>
+    <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+      <article class="card padd col gap">…<a class="btn alt wp100" href="#">Empezar gratis</a></article>
+      <article class="card card-featured padd col gap">…<a class="btn wp100" href="#">Probar 14 días</a></article>
+      <article class="card padd col gap">…<a class="btn alt wp100" href="#">Hablar con ventas</a></article>
+    </div>
+  </div>
+</section>
 ```
 
 ### Settings stack

@@ -135,3 +135,21 @@
 - Do NOT put block content inside `.badge` — `white-space: nowrap` is intentional.
 - Do NOT mix `avatar-group` and `avatar-stack` on the same element — wrappers differ.
 - Do NOT assume `.triangle` or `.point` behave like flex boxes.
+
+---
+
+## v3 additions (Lagunite 3 skin)
+
+| Class | Use |
+| --- | --- |
+| `.btn` | Gradient with top highlight + colored lift; hover rises 1px, press scales 0.98 |
+| `.btn.soft` | Tinted primary (`--color-primary-soft`) for supporting actions |
+| `.btn.glass` | Glass button — only over `.bg-mesh` / `.bg-grid` / images |
+| `.btn.pill` | Full radius (hero CTAs) |
+| `.btn .btn-arrow` | SVG that nudges right on hover |
+| `.btn.error` | Solid destructive (`--color-danger-fill`); `.success` / `.warning` stay soft |
+| `.kbd` | Keyboard hint inside buttons and menus |
+| `.badge-*` (solid) | Gradient fills; `.badge-*-light` = soft tint, AA text in both themes |
+| `.badge-announce` | Glass pill above hero titles; can contain a `.badge` |
+
+Chips (`.chip-*`) keep their own vivid palette and are **legacy** in v3: prefer `.badge-*-light` for status.

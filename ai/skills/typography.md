@@ -95,3 +95,12 @@ Recipes: `lab/recipes/improve-text-layout-and-legibility.html`, `precise-text-al
 ## Composition
 
 Prefer semantic sizes (`.font-s`, `.font-l`) and line-height (`.lh`) on body copy; use `.font-headers` or heading tags for titles. Combine with skill **colors** for `color-*` and layout skills for spacing.
+
+---
+
+## v3 type
+
+- Faces: `--font-display` (Bricolage Grotesque) for `h1`–`h6`, titles and prices; `--font-sans` (Instrument Sans) for text; `--font-mono` (JetBrains Mono).
+- `h1` → up to 72px, `h2` → up to 44px, tight negative tracking, `text-wrap: balance`.
+- `.font-display-2xl` (72) · `.font-display-xl` (56) · `.font-display-l` (44): display face at any element. Use these (or `h1`/`h2`) for hero and section titles — not `.font-xxl` (24px).
+- `.font-*` size and `.font-weight-*` utilities no longer use `!important`.

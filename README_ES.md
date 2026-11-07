@@ -1,4 +1,4 @@
-# Lagunite 2.1
+# Lagunite 3
 
 [![NPM Version](https://img.shields.io/npm/v/lagunite?style=flat-square)](https://www.npmjs.com/package/lagunite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -52,7 +52,11 @@ Prefijos responsive: **base → `x*` (≤639px) → `d*` (≥640px)**. Gap flex:
 
 ---
 
-## Qué incluye v2.1
+## Qué hay de nuevo en v3
+
+Mismas clases que v2, piel nueva: botones y cards con profundidad (brillo superior, sombras en capas, sombra de color), navbar de vidrio, tipografía display, fondos de malla y grilla en azul, y tokens que pasan WCAG AA en Day y Night. El azul de marca `#2476ff` no cambia. Actualizar es reemplazar el stylesheet; revisá las páginas que dependían de la base de v2 (`body` centrado, márgenes en `header`/`p`). Detalle: [`CHANGELOG.md`](./CHANGELOG.md) · página de QA: [`pocs/v3-components.html`](./pocs/v3-components.html) · fuente de diseño: [`design/lagunite3/`](./design/lagunite3/).
+
+## Qué incluye
 
 | Capa | Incluye |
 | --- | --- |

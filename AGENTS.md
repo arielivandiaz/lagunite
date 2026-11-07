@@ -1,7 +1,7 @@
 # Lagunite — agent context (keep lean)
 
 ## Identity
-- **Lagunite v2** — utility-first CSS, descriptive class names → `dist/lagunite.css` (Vite + PostCSS)
+- **Lagunite v3** — utility-first CSS, descriptive class names → `dist/lagunite.css` (Vite + PostCSS). v3 = same class API as v2 with the Lagunite 3 skin (depth, glass, display type). Tokens source: `design/lagunite3/tokens.json`.
 - **Commands:** `npm run dev` · `npm run build` · `npm run docs:generate` (after CSS changes) · `npm run lint:css`
 - **Adjacent (separate repo):** `lagunite-web/` — do not treat as part of this project
 
@@ -12,6 +12,7 @@
 4. **`.bg-1`…`.bg-9` are theme accents, not neutral panels.** Surfaces: `.bg` / `.bg-surface` / `.card` / grays. Muted: `.card-text` / `.text-muted` (not `.color-text-alt` — use `.color-on-fill` on primary fills).
 5. `.row`/`.col` **start by default**; center with `.flex-center` or `jc-c ai-c`. `.btn` has `margin: 0` — space via parent `gap` / `marg-*`.
 6. After CSS edits: `docs:generate`. Don’t hand-edit `docs/asJson` / `asToon`.
+7. **Components already carry depth** (highlight, shadow, blur). Don’t stack `.shadow-*` / borders / gradients on `.btn` or `.card`; pick a variant (`.card-featured` once per group, `.btn.soft`, `.glass` only over `.bg-mesh`/`.bg-grid`). Night = tokens via `.night`, never `.bg-gray-*`.
 
 ## Skill tree (do NOT preload siblings)
 Skills are a **tree**, not a pile. Open **one node**, then at most **one child**.
