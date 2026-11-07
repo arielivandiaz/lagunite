@@ -12,55 +12,39 @@ h6 {
   font-family: var(--font-headers);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-title);
+  color: var(--color-text-base);
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  white-space: normal;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 7vw, var(--font-size-display-2xl));
+  letter-spacing: var(--letter-spacing-display);
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 5vw, var(--font-size-display-l));
+  letter-spacing: var(--letter-spacing-display);
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3.5vw, var(--font-size-3xl));
 }
 
 h4 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-semibold);
 }
 
 h5 {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
 }
 
 h6 {
   font-size: var(--font-size-base);
-}
-
-@media only screen and (width >= 640px) {
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1.2rem;
-  }
+  font-weight: var(--font-weight-semibold);
 }
 
 /* @ID: #01-01-02 */
@@ -97,43 +81,69 @@ h6 {
 
 /* Font Size */
 .font-xs {
-  font-size: var(--font-size-xs) !important;
+  font-size: var(--font-size-xs);
 }
 
 .font-s {
-  font-size: var(--font-size-s) !important;
+  font-size: var(--font-size-s);
 }
 
 .font-l {
-  font-size: var(--font-size-l) !important;
+  font-size: var(--font-size-l);
 }
 
 .font-xl {
-  font-size: var(--font-size-xl) !important;
+  font-size: var(--font-size-xl);
 }
 
 .font-xxl {
-  font-size: var(--font-size-xxl) !important;
+  font-size: var(--font-size-xxl);
 }
 
 .font-3xl {
-  font-size: var(--font-size-3xl) !important;
+  font-size: var(--font-size-3xl);
+}
+
+/* Display sizes: titles with the display face and tight tracking */
+.font-display-l,
+.font-display-xl,
+.font-display-2xl {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.05;
+  letter-spacing: var(--letter-spacing-display);
+}
+
+.font-display-l {
+  font-size: clamp(2rem, 5vw, var(--font-size-display-l));
+}
+
+.font-display-xl {
+  font-size: clamp(2.25rem, 6vw, var(--font-size-display-xl));
+}
+
+.font-display-2xl {
+  font-size: clamp(2.75rem, 8vw, var(--font-size-display-2xl));
+}
+
+.font-display {
+  font-family: var(--font-display);
 }
 
 .font-250 {
-  font-size: 250% !important;
+  font-size: 250%;
 }
 
 .font-300 {
-  font-size: 300% !important;
+  font-size: 300%;
 }
 
 .font-400 {
-  font-size: 400% !important;
+  font-size: 400%;
 }
 
 .font-500 {
-  font-size: 500% !important;
+  font-size: 500%;
 }
 
 /* @ID: #01-01-05 */
@@ -163,17 +173,17 @@ h6 {
 
 /* Font Weight */
 .font-weight-0 {
-  font-weight: var(--font-weight-light) !important;
+  font-weight: var(--font-weight-light);
 }
 
 .font-weight-1 {
-  font-weight: var(--font-weight-normal) !important;
+  font-weight: var(--font-weight-normal);
 }
 
 .font-weight-2 {
-  font-weight: var(--font-weight-medium) !important;
+  font-weight: var(--font-weight-medium);
 }
 
 .font-weight-3 {
-  font-weight: var(--font-weight-bold) !important;
+  font-weight: var(--font-weight-bold);
 }

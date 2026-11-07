@@ -6,6 +6,9 @@
 | This file contains the reset styles for the design system.
 | These styles are applied globally to ensure a consistent baseline.
 |
+| v3: neutral base. No centered body, no margins on header or p,
+| visible keyboard focus everywhere.
+|
 */
 
 /* @ID: #00-05-01 */
@@ -16,9 +19,17 @@
 *::after {
   margin: 0;
   padding: 0;
-  outline: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* @ID: #00-05-02 */
@@ -39,34 +50,24 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  font: inherit;
+  color: inherit;
 }
 
 a {
   cursor: pointer;
-}
-
-a,
-a:visited,
-a:active,
-a:enabled {
+  color: var(--color-primary-text);
   text-decoration: none;
 }
 
 ul {
   list-style: none;
-  text-align: left;
 }
 
-ol {
-  text-align: left;
-}
-
-img {
+img,
+svg,
+video {
   max-width: 100%;
-}
-
-header:not(.navbar, .doc-navbar-overlay, .topbar) {
-  margin: 5vh 0 3vh;
 }
 
 /* @ID: #00-05-03 */
@@ -75,39 +76,30 @@ header:not(.navbar, .doc-navbar-overlay, .topbar) {
 
 body {
   width: 100%;
-  height: 100%;
-  text-align: center;
+  line-height: var(--line-height-normal);
   background: var(--color-bg);
   color: var(--color-text-base);
+  -webkit-font-smoothing: antialiased;
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+    background-color var(--dur-slow) var(--ease-out),
+    color var(--dur-slow) var(--ease-out);
 }
 
-body.night {
-  background: var(--color-bg);
+::selection {
+  background: var(--color-primary-soft);
   color: var(--color-text-base);
-}
-
-a:hover {
-  color: var(--color-primary) !important;
 }
 
 p {
-  margin: 10px 0;
-  text-align: left;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  white-space: normal;
-  padding: 0 15px;
+  text-wrap: pretty;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid var(--color-primary);
-  padding: 0;
+  background: var(--color-border-strong);
 }
 
 sub {
@@ -123,95 +115,58 @@ sup {
 }
 
 blockquote {
-  border-left: solid 4px var(--color-primary);
-  font-style: italic;
-  text-align: left;
-  margin: 0 0 2rem;
-  padding: 0.8rem 0.5rem 0.8rem 1.5rem;
+  font-size: var(--font-size-l);
+  line-height: 1.6;
+  color: var(--color-text-base);
 }
 
 code {
-  border-radius: 4px;
-  background: #ddd;
-  font-family: monospace;
-  font-size: 80%;
-  margin: 0 0.3rem;
-  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-xs);
+  background: var(--color-surface-muted);
+  box-shadow: inset 0 0 0 1px var(--color-border);
+  color: var(--color-text-base);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
 }
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: monospace;
-  font-size: 0.9em;
-  margin: 0 0 2rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-muted);
+  box-shadow: inset 0 0 0 1px var(--color-border);
 }
 
 pre code {
-  text-align: left;
   display: block;
-  line-height: 1.75;
-  padding: 0.3rem 0.5rem 0.3rem 1rem;
-  margin: 0 25px;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  font-size: inherit;
 }
 
-.night code {
-  background: #000;
-  color: var(--color-text-alt);
-}
-
-hgroup,
-hgroup h1,
-hgroup h2,
-hgroup h3,
-hgroup h4,
-hgroup h5 {
-  display: inline-block;
-}
-
-ul li,
-ol li {
-  padding: 2px 1.5vw 2px 0.5vw;
-}
-
-@media (width <= 639px) {
-  table {
-    font-size: 80%;
-  }
-}
-
-tr *,
-td * {
-  left: 0;
-  right: 0;
-  margin: auto;
+table {
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
 }
 
 th,
 td {
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-th {
-  padding: 4px 0;
-}
-
-caption {
-  margin: 15px 0;
+  text-align: left;
 }
 
 details {
-  padding: 12px;
   max-width: 100%;
-  background-color: var(--color-bg-alt);
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease;
 }
 
 summary {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -223,12 +178,22 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-a:visited {
-  color: var(--color-text-base);
+.link {
+  color: var(--color-primary-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
 }
 
-.link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: 700;
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+  }
 }
