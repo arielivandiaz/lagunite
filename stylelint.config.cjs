@@ -15,7 +15,7 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
     'property-no-vendor-prefix': [
       true,
-      { ignoreProperties: ['backdrop-filter', 'mask-image'] }
+      { ignoreProperties: ['backdrop-filter', 'mask-image', 'background-clip'] }
     ],
     'selector-pseudo-class-no-unknown': [
       true,

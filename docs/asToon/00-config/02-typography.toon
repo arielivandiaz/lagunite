@@ -1,6 +1,6 @@
 folder: 00-config
 file: 02-typography.css
-lastUpdated: 2026-09-23
+lastUpdated: 2026-11-07
 hasResponsive: false
 totalSelectors: 1
 content[1]:
@@ -9,16 +9,16 @@ content[1]:
     selector: ":root"
     id: null
     category: null
-    properties[19]: "--font-sans","--font-mono","--font-display","--font-text","--font-headers","--font-size-xs","--font-size-s","--font-size-base","--font-size-l","--font-size-xl","--font-size-xxl","--font-size-3xl","--font-weight-light","--font-weight-normal","--font-weight-medium","--font-weight-bold","--line-height-tight","--line-height-normal","--line-height-loose"
-    cssRule: "--font-sans:\r\n    \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-display: \"Manrope\", \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700\n--line-height-tight: 1.2\n--line-height-normal: 1.5\n--line-height-loose: 1.8"
+    properties[25]: "--font-sans","--font-display","--font-mono","--font-text","--font-headers","--font-size-xs","--font-size-s","--font-size-base","--font-size-l","--font-size-xl","--font-size-xxl","--font-size-3xl","--font-size-display-l","--font-size-display-xl","--font-size-display-2xl","--font-weight-light","--font-weight-normal","--font-weight-medium","--font-weight-semibold","--font-weight-bold","--line-height-tight","--line-height-normal","--line-height-loose","--letter-spacing-display","--letter-spacing-title"
+    cssRule: "--font-sans: \"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif\n--font-display: \"Bricolage Grotesque\", \"Instrument Sans\", system-ui, sans-serif\n--font-mono: \"JetBrains Mono\", ui-monospace, \"SF Mono\", monospace\n--font-text: var(--font-sans)\n--font-headers: var(--font-display)\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-size-display-l: 2.75rem\n/* 44px */\n--font-size-display-xl: 3.5rem\n/* 56px */\n--font-size-display-2xl: 4.5rem\n/* 72px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-semibold: 600\n--font-weight-bold: 700\n--line-height-tight: 1.15\n--line-height-normal: 1.5\n--line-height-loose: 1.8\n--letter-spacing-display: -0.03em\n--letter-spacing-title: -0.015em"
     responsive: false
     description: ""
-customProperties[19]{property,value}:
-  "--font-sans","\"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif"
-  "--font-mono","\"JetBrains Mono\", \"Fira Code\", monospace"
-  "--font-display","\"Manrope\", \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif"
-  "--font-text","\"Zen Kaku Gothic Antique\", sans-serif"
-  "--font-headers","\"PT Sans\", sans-serif"
+customProperties[25]{property,value}:
+  "--font-sans","\"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+  "--font-display","\"Bricolage Grotesque\", \"Instrument Sans\", system-ui, sans-serif"
+  "--font-mono","\"JetBrains Mono\", ui-monospace, \"SF Mono\", monospace"
+  "--font-text",var(--font-sans)
+  "--font-headers",var(--font-display)
   "--font-size-xs",0.75rem
   "--font-size-s",0.875rem
   "--font-size-base",1rem
@@ -26,10 +26,16 @@ customProperties[19]{property,value}:
   "--font-size-xl",1.25rem
   "--font-size-xxl",1.5rem
   "--font-size-3xl",2rem
+  "--font-size-display-l",2.75rem
+  "--font-size-display-xl",3.5rem
+  "--font-size-display-2xl",4.5rem
   "--font-weight-light","300"
   "--font-weight-normal","400"
   "--font-weight-medium","500"
+  "--font-weight-semibold","600"
   "--font-weight-bold","700"
-  "--line-height-tight","1.2"
+  "--line-height-tight","1.15"
   "--line-height-normal","1.5"
   "--line-height-loose","1.8"
+  "--letter-spacing-display","-0.03em"
+  "--letter-spacing-title","-0.015em"

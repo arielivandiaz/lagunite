@@ -1,16 +1,16 @@
 folder: 06-molecules
 file: 09-segmented-control.css
-lastUpdated: 2026-09-23
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 43
-content[43]:
+totalSelectors: 31
+content[31]:
   - type: selector
     selectorType: class
     selector: .segmented-control
     id: #06-09-01
     category: null
-    properties[8]: display,align-items,padding,background,border,border-radius,gap,font-family
-    cssRule: "display: inline-flex\nalign-items: center\npadding: var(--space-1)\nbackground: var(--color-bg-alt)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-l)\ngap: 0\nfont-family: var(--font-sans)"
+    properties[9]: display,align-items,padding,background,border,border-radius,box-shadow,gap,font-family
+    cssRule: "display: inline-flex\nalign-items: center\npadding: var(--space-1)\nbackground: var(--color-surface-muted)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbox-shadow: var(--shadow-inner)\ngap: 2px\nfont-family: var(--font-sans)"
     responsive: false
     description: ── Segmented control shell ─────────────────────────────────────────────
   - type: selector
@@ -63,8 +63,8 @@ content[43]:
     selector: .segmented-option
     id: #06-09-02
     category: null
-    properties[16]: flex,display,align-items,justify-content,padding,margin,border,border-radius,background,color,font-size,font-weight,cursor,transition,white-space,text-decoration
-    cssRule: "flex: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\npadding: var(--space-2) var(--space-3)\nmargin: 0\nborder: none\nborder-radius: var(--radius-m)\nbackground: transparent\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\ncursor: pointer\ntransition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease\nwhite-space: nowrap\ntext-decoration: none"
+    properties[18]: flex,display,align-items,justify-content,gap,min-height,padding,margin,border,border-radius,background,color,font-size,font-weight,cursor,transition,white-space,text-decoration
+    cssRule: "flex: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ngap: var(--space-2)\nmin-height: 2rem\npadding: 0 0.875rem\nmargin: 0\nborder: none\nborder-radius: calc(var(--radius-lg) - 4px)\nbackground: transparent\ncolor: var(--color-text-muted)\nfont-size: 0.8125rem\nfont-weight: var(--font-weight-semibold)\ncursor: pointer\ntransition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nwhite-space: nowrap\ntext-decoration: none"
     responsive: false
     description: ── Radio button pattern (hidden input + label) ───────────────────────
   - type: selector
@@ -72,8 +72,8 @@ content[43]:
     selector: ".segmented-option:hover"
     id: #06-09-02
     category: null
-    properties[2]: background,color
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)"
+    properties[1]: color
+    cssRule: "color: var(--color-text-base)"
     responsive: false
     description: ── Radio button pattern (hidden input + label) ───────────────────────
   - type: selector
@@ -81,8 +81,8 @@ content[43]:
     selector: ".segmented-option:focus-visible"
     id: #06-09-02
     category: null
-    properties[2]: outline,outline-offset
-    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px"
+    properties[2]: outline,box-shadow
+    cssRule: "outline: none\nbox-shadow: var(--shadow-focus)"
     responsive: false
     description: ── Radio button pattern (hidden input + label) ───────────────────────
   - type: selector
@@ -91,7 +91,7 @@ content[43]:
     id: #06-09-02
     category: null
     properties[3]: background,color,box-shadow
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)\nbox-shadow: none"
+    cssRule: "background: var(--color-surface-raised)\ncolor: var(--color-text-base)\nbox-shadow: inset 0 1px 0 var(--color-highlight), 0 0 0 1px var(--color-border), var(--shadow-s)"
     responsive: false
     description: Active state via .active class (for button pattern)
   - type: selector
@@ -99,17 +99,8 @@ content[43]:
     selector: ".segmented-control input:checked + .segmented-option"
     id: #06-09-02
     category: null
-    properties[2]: background,color
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
-    responsive: false
-    description: "Active state via :checked (for radio pattern)"
-  - type: selector
-    selectorType: class
-    selector: ".segmented-control input:checked + .segmented-option:hover"
-    id: #06-09-02
-    category: null
-    properties[1]: background
-    cssRule: "background: var(--color-primary-dark)"
+    properties[3]: background,color,box-shadow
+    cssRule: "background: var(--color-surface-raised)\ncolor: var(--color-text-base)\nbox-shadow: inset 0 1px 0 var(--color-highlight), 0 0 0 1px var(--color-border), var(--shadow-s)"
     responsive: false
     description: "Active state via :checked (for radio pattern)"
   - type: selector
@@ -135,8 +126,8 @@ content[43]:
     selector: ".segmented-control input:focus-visible + .segmented-option"
     id: #06-09-02
     category: null
-    properties[2]: outline,outline-offset
-    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px"
+    properties[2]: outline,box-shadow
+    cssRule: "outline: none\nbox-shadow: var(--shadow-focus)"
     responsive: false
     description: "Active state via :checked (for radio pattern)"
   - type: selector
@@ -144,8 +135,8 @@ content[43]:
     selector: .segmented-control-outline
     id: #06-09-03
     category: null
-    properties[2]: background,border
-    cssRule: "background: transparent\nborder: var(--border-width-md) solid var(--color-border)"
+    properties[3]: background,border,box-shadow
+    cssRule: "background: transparent\nborder: var(--border-width-s) solid var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -162,8 +153,17 @@ content[43]:
     selector: ".segmented-control-outline .segmented-option:hover"
     id: #06-09-03
     category: null
-    properties[2]: background,color
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)"
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
+    responsive: false
+    description: ── Variants ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .segmented-control-outline .segmented-option.active
+    id: #06-09-03
+    category: null
+    properties[3]: color,background,box-shadow
+    cssRule: "color: var(--color-on-primary)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 22%)"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -171,8 +171,8 @@ content[43]:
     selector: ".segmented-control-outline input:checked + .segmented-option"
     id: #06-09-03
     category: null
-    properties[3]: background,color,border-radius
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)\nborder-radius: var(--radius-m)"
+    properties[3]: color,background,box-shadow
+    cssRule: "color: var(--color-on-primary)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 22%)"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -180,8 +180,8 @@ content[43]:
     selector: .segmented-control-subtle
     id: #06-09-03
     category: null
-    properties[2]: background,border
-    cssRule: "background: transparent\nborder: none"
+    properties[3]: background,border,box-shadow
+    cssRule: "background: transparent\nborder: none\nbox-shadow: none"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -190,7 +190,7 @@ content[43]:
     id: #06-09-03
     category: null
     properties[4]: color,border-bottom,border-radius,padding
-    cssRule: "color: var(--color-text-alt)\nborder-bottom: var(--border-width-md) solid transparent\nborder-radius: 0\npadding: var(--space-2) var(--space-3) var(--space-2) var(--space-3)"
+    cssRule: "color: var(--color-text-muted)\nborder-bottom: var(--border-width-md) solid transparent\nborder-radius: 0\npadding: var(--space-2) var(--space-3) var(--space-2) var(--space-3)"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -283,111 +283,3 @@ content[43]:
     cssRule: "display: inline-flex\nalign-items: center\ngap: var(--space-1)"
     responsive: false
     description: ── Icon support ────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-control
-    id: #06-09-06
-    category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-option
-    id: #06-09-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-300)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .segmented-option:hover"
-    id: #06-09-06
-    category: null
-    properties[2]: background,color
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.15)\ncolor: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-option.active
-    id: #06-09-06
-    category: null
-    properties[2]: background,color
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .segmented-control input:checked + .segmented-option"
-    id: #06-09-06
-    category: null
-    properties[2]: background,color
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-control-outline
-    id: #06-09-06
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: var(--gray-700)\nbackground: transparent"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-control-outline .segmented-option
-    id: #06-09-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-300)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .segmented-control-outline .segmented-option:hover"
-    id: #06-09-06
-    category: null
-    properties[2]: background,color
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.15)\ncolor: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-control-subtle
-    id: #06-09-06
-    category: null
-    properties[1]: background
-    cssRule: "background: transparent"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .segmented-control-subtle .segmented-option
-    id: #06-09-06
-    category: null
-    properties[2]: color,border-bottom-color
-    cssRule: "color: var(--gray-300)\nborder-bottom-color: transparent"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .segmented-control-subtle .segmented-option:hover"
-    id: #06-09-06
-    category: null
-    properties[2]: border-bottom-color,color
-    cssRule: "border-bottom-color: var(--color-primary-light)\ncolor: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .segmented-control-subtle input:checked + .segmented-option"
-    id: #06-09-06
-    category: null
-    properties[2]: border-bottom-color,color
-    cssRule: "border-bottom-color: var(--color-primary-light)\ncolor: var(--color-primary-light)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────

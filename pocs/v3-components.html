@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lagunite 3 · Componentes</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<!-- QA de v3: cada componente con sus clases de siempre. Toggle Night arriba a la derecha. -->
+<body class="bg">
+  <header class="navbar navbar-floating" id="nav">
+    <a class="navbar-brand" href="#"><span class="brand-mark" aria-hidden="true"></span>Lagunite 3</a>
+    <button class="navbar-burger" type="button" aria-label="Abrir menú" id="burger"><span></span><span></span><span></span></button>
+    <ul class="navbar-nav">
+      <li><a class="navbar-link active" href="#buttons">Botones</a></li>
+      <li><a class="navbar-link" href="#cards">Cards</a></li>
+      <li><a class="navbar-link" href="#forms">Formularios</a></li>
+      <li><a class="navbar-link" href="#data">Datos</a></li>
+    </ul>
+    <button type="button" class="btn alt size-s pill" id="theme">Night</button>
+  </header>
+
+  <main>
+    <section class="bg-mesh bg-grid padd-v-xl">
+      <div class="container col ai-c gap ta-c padd-v-l">
+        <span class="badge badge-announce"><span class="badge badge-primary">v3</span> Nueva piel, mismas clases</span>
+        <h1>Componentes con <span class="text-gradient">profundidad</span></h1>
+        <p class="font-l text-muted">Página de QA: cada bloque usa las clases de Lagunite 2 con la piel de Lagunite 3.</p>
+        <div class="row gap-s jc-c">
+          <a class="btn size-l pill" href="#buttons">Ver botones</a>
+          <a class="btn glass size-l pill" href="#cards">Ver cards</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buttons" class="container section col gap-l">
+      <div class="col gap-s"><p class="overline-label">Atoms</p><h2>Botones</h2></div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn">Primario</button>
+        <button type="button" class="btn alt">Alt</button>
+        <button type="button" class="btn soft">Soft</button>
+        <button type="button" class="btn ghost">Ghost</button>
+        <button type="button" class="btn secondary">Secondary</button>
+        <button type="button" class="btn tertiary">Tertiary</button>
+        <button type="button" class="btn error">Error</button>
+        <button type="button" class="btn success">Success</button>
+        <button type="button" class="btn warning">Warning</button>
+        <button type="button" class="btn" disabled>Disabled</button>
+      </div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn secondary alt">Secondary alt</button>
+        <button type="button" class="btn success alt">Success alt</button>
+        <button type="button" class="btn error alt">Error alt</button>
+        <button type="button" class="btn error ghost">Error ghost</button>
+        <button type="button" class="btn alt ghost">Alt ghost</button>
+      </div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn size-xs">XS</button>
+        <button type="button" class="btn size-s">Small</button>
+        <button type="button" class="btn">Default</button>
+        <button type="button" class="btn size-l">Large</button>
+        <button type="button" class="btn size-xl pill">XL pill</button>
+        <button type="button" class="btn alt icon" aria-label="Agregar">+</button>
+        <div class="btn-group"><button type="button" class="btn">Uno</button><button type="button" class="btn">Dos</button><button type="button" class="btn">Tres</button></div>
+      </div>
+      <div class="row gap-s ai-c">
+        <span class="badge">Neutral</span>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-error">Error</span>
+        <span class="badge badge-primary-light">Primary light</span>
+        <span class="badge badge-success-light">Success light</span>
+        <span class="badge badge-warning-light">Warning light</span>
+        <span class="badge badge-error-light">Error light</span>
+        <span class="badge badge-outline">Outline</span>
+        <span class="badge badge-primary badge-pill">Pill</span>
+        <span class="avatar avatar-initials">LM</span>
+        <span class="avatar">JR</span>
+      </div>
+    </section>
+
+    <section id="cards" class="bg-surface section">
+      <div class="container col gap-l">
+        <div class="col gap-s"><p class="overline-label">Compounds</p><h2>Cards</h2></div>
+        <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+          <article class="card padd col gap-s"><h3 class="card-title">.card</h3><p class="card-text">Superficie elevada con brillo superior y sombra suave.</p></article>
+          <article class="card card-hover padd col gap-s"><h3 class="card-title">.card-hover</h3><p class="card-text">Sube y gana sombra al pasar el mouse.</p></article>
+          <article class="card card-featured padd col gap-s"><h3 class="card-title">.card-featured</h3><p class="card-text">Borde en gradiente azul. Una por grupo.</p></article>
+          <article class="card card-accent-primary padd col gap-s"><h3 class="card-title">.card-accent-primary</h3><p class="card-text">Línea superior de color.</p></article>
+          <article class="card card-primary"><div class="card-header">.card-primary</div><div class="card-body"><p class="card-text">Con header, body y footer.</p></div><div class="card-footer row jc-fe gap-s"><button type="button" class="btn ghost size-s">Cancelar</button><button type="button" class="btn size-s">Guardar</button></div></article>
+          <div class="empty-state"><span class="empty-state-icon">∅</span><h3 class="empty-state-title">Sin tareas</h3><p class="empty-state-text">Creá la primera para empezar.</p><div class="empty-state-actions"><button type="button" class="btn size-s">Crear tarea</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forms" class="container section grid xgrid-cols-1 dgrid-cols-2 gap-xl">
+      <form class="col ai-s gap">
+        <p class="overline-label">Molecules</p>
+        <h2>Formularios</h2>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="vos@empresa.com" />
+          <p class="form-help">Te mandamos un link de acceso.</p>
+        </div>
+        <div class="form-group has-error">
+          <label class="form-label" for="team">Equipo</label>
+          <input id="team" type="text" placeholder="Ej: Diseño" />
+          <p class="form-error-msg">Escribí un nombre para continuar.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="plan">Plan</label>
+          <select id="plan"><option>Inicial</option><option>Equipo</option></select>
+        </div>
+      </form>
+      <div class="col ai-s gap">
+        <div class="alert alert-info" role="status">Tu prueba termina en 5 días.</div>
+        <div class="alert alert-success" role="status">Guardamos los cambios.</div>
+        <div class="alert alert-warning" role="status">Te quedan 2 lugares.</div>
+        <div class="alert alert-error" role="alert">No pudimos procesar el pago.</div>
+        <div class="segmented-control" role="group" aria-label="Facturación">
+          <button type="button" class="segmented-option active" aria-pressed="true">Mensual</button>
+          <button type="button" class="segmented-option" aria-pressed="false">Anual</button>
+        </div>
+        <div class="tabs">
+          <div class="tab-list" role="tablist"><button type="button" class="tab-button active" role="tab" aria-selected="true">Resumen</button><button type="button" class="tab-button" role="tab" aria-selected="false">Tareas</button><button type="button" class="tab-button" role="tab" aria-selected="false">Entregas</button></div>
+          <div class="tab-panel active" role="tabpanel"><p class="text-muted">Tres tareas vencen esta semana.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="container section col gap-l">
+      <div class="col gap-s"><p class="overline-label">Atoms</p><h2>Tabla</h2></div>
+      <div class="table-responsive card">
+        <table class="table marg-0">
+          <thead><tr><th scope="col">Tarea</th><th scope="col">Responsable</th><th scope="col">Estado</th></tr></thead>
+          <tbody>
+            <tr><td>Diseño de onboarding</td><td>Lucía</td><td><span class="badge badge-success-light">Listo</span></td></tr>
+            <tr><td>Revisión de precios</td><td>Juan</td><td><span class="badge badge-warning-light">En curso</span></td></tr>
+            <tr><td>Lanzamiento beta</td><td>Sofía</td><td><span class="badge">Pendiente</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><p class="footer-title">Producto</p><ul class="footer-links"><li><a class="footer-link" href="#">Funciones</a></li><li><a class="footer-link" href="#">Precios</a></li></ul></div>
+      <div><p class="footer-title">Empresa</p><ul class="footer-links"><li><a class="footer-link" href="#">Nosotros</a></li><li><a class="footer-link" href="#">Contacto</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Lagunite</span><span>v3</span></div>
+  </footer>
+
+  <script>
+    const theme = document.getElementById('theme');
+    theme.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+      theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night';
+    });
+    document.getElementById('burger').addEventListener('click', () => document.getElementById('nav').classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 {
   "folder": "06-molecules",
   "file": "01-form-groups.css",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": true,
-  "totalSelectors": 118,
+  "totalSelectors": 116,
   "content": [
     {
       "type": "selector",
@@ -32,7 +32,7 @@
         "font-size",
         "color"
       ],
-      "cssRule": "font-weight: var(--font-weight-medium)\nfont-size: var(--font-size-s)\ncolor: var(--color-text-base)",
+      "cssRule": "font-weight: var(--font-weight-semibold)\nfont-size: var(--font-size-s)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "── Form group, label, help, error ───────────────────────────────────────"
     },
@@ -47,7 +47,7 @@
         "font-size",
         "color"
       ],
-      "cssRule": "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--gray-500)",
+      "cssRule": "margin-top: var(--space-1)\nfont-size: 0.8125rem\ncolor: var(--color-text-muted)",
       "responsive": false,
       "description": "── Form group, label, help, error ───────────────────────────────────────"
     },
@@ -60,9 +60,10 @@
       "properties": [
         "margin-top",
         "font-size",
+        "font-weight",
         "color"
       ],
-      "cssRule": "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--color-error)",
+      "cssRule": "margin-top: var(--space-1)\nfont-size: 0.8125rem\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-error)",
       "responsive": false,
       "description": "── Form group, label, help, error ───────────────────────────────────────"
     },
@@ -1539,32 +1540,6 @@
       "cssRule": "display: flex\nflex-wrap: wrap\ngap: var(--space-4)",
       "responsive": true,
       "description": "── Horizontal form row ───────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .form-label",
-      "id": "#06-01-05",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode: labels & help ───────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .form-help",
-      "id": "#06-01-05",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--gray-400)",
-      "responsive": false,
-      "description": "── Night mode: labels & help ───────────────────────────────────────────"
     },
     {
       "type": "selector",

@@ -12,10 +12,11 @@
   display: inline-flex;
   align-items: center;
   padding: var(--space-1);
-  background: var(--color-bg-alt);
+  background: var(--color-surface-muted);
   border: var(--border-width-s) solid var(--color-border);
-  border-radius: var(--radius-l);
-  gap: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-inner);
+  gap: 2px;
   font-family: var(--font-sans);
 }
 
@@ -50,45 +51,43 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-2) var(--space-3);
+  gap: var(--space-2);
+  min-height: 2rem;
+  padding: 0 0.875rem;
   margin: 0;
   border: none;
-  border-radius: var(--radius-m);
+  border-radius: calc(var(--radius-lg) - 4px);
   background: transparent;
-  color: var(--color-text-alt);
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
   white-space: nowrap;
   text-decoration: none;
 }
 
 .segmented-option:hover {
-  background: rgba(var(--color-primary-rgb), 0.08);
-  color: var(--color-primary);
+  color: var(--color-text-base);
 }
 
 .segmented-option:focus-visible {
-  outline: var(--border-width-md) solid var(--color-primary);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 /* Active state via .active class (for button pattern) */
 .segmented-option.active {
-  background: var(--color-primary);
-  color: var(--color-text-alt);
-  box-shadow: none;
+  background: var(--color-surface-raised);
+  color: var(--color-text-base);
+  box-shadow: inset 0 1px 0 var(--color-highlight), 0 0 0 1px var(--color-border), var(--shadow-s);
 }
 
 /* Active state via :checked (for radio pattern) */
 .segmented-control input:checked + .segmented-option {
-  background: var(--color-primary);
-  color: var(--color-text-alt);
-}
-
-.segmented-control input:checked + .segmented-option:hover {
-  background: var(--color-primary-dark);
+  background: var(--color-surface-raised);
+  color: var(--color-text-base);
+  box-shadow: inset 0 1px 0 var(--color-highlight), 0 0 0 1px var(--color-border), var(--shadow-s);
 }
 
 .segmented-control input:disabled + .segmented-option,
@@ -99,8 +98,8 @@
 }
 
 .segmented-control input:focus-visible + .segmented-option {
-  outline: var(--border-width-md) solid var(--color-primary);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 /* @ID: #06-09-03 */
@@ -109,7 +108,8 @@
 
 .segmented-control-outline {
   background: transparent;
-  border: var(--border-width-md) solid var(--color-border);
+  border: var(--border-width-s) solid var(--color-border-strong);
+  box-shadow: none;
 }
 
 .segmented-control-outline .segmented-option {
@@ -117,23 +117,24 @@
 }
 
 .segmented-control-outline .segmented-option:hover {
-  background: rgba(var(--color-primary-rgb), 0.08);
-  color: var(--color-primary);
+  background: var(--color-surface-muted);
 }
 
+.segmented-control-outline .segmented-option.active,
 .segmented-control-outline input:checked + .segmented-option {
-  background: var(--color-primary);
-  color: var(--color-text-alt);
-  border-radius: var(--radius-m);
+  color: var(--color-on-primary);
+  background: var(--gradient-primary);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 22%);
 }
 
 .segmented-control-subtle {
   background: transparent;
   border: none;
+  box-shadow: none;
 }
 
 .segmented-control-subtle .segmented-option {
-  color: var(--color-text-alt);
+  color: var(--color-text-muted);
   border-bottom: var(--border-width-md) solid transparent;
   border-radius: 0;
   padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
@@ -194,63 +195,6 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-}
-
-/* @ID: #06-09-06 */
-
-/* ── Night mode ────────────────────────────────────────────────────────── */
-
-.night .segmented-control {
-  background: var(--gray-800);
-  border-color: var(--gray-700);
-}
-
-.night .segmented-option {
-  color: var(--gray-300);
-}
-
-.night .segmented-option:hover {
-  background: rgba(var(--color-primary-rgb), 0.15);
-  color: var(--color-primary-light);
-}
-
-.night .segmented-option.active,
-.night .segmented-control input:checked + .segmented-option {
-  background: var(--color-primary);
-  color: var(--color-text-alt);
-}
-
-.night .segmented-control-outline {
-  border-color: var(--gray-700);
-  background: transparent;
-}
-
-.night .segmented-control-outline .segmented-option {
-  color: var(--gray-300);
-}
-
-.night .segmented-control-outline .segmented-option:hover {
-  background: rgba(var(--color-primary-rgb), 0.15);
-  color: var(--color-primary-light);
-}
-
-.night .segmented-control-subtle {
-  background: transparent;
-}
-
-.night .segmented-control-subtle .segmented-option {
-  color: var(--gray-300);
-  border-bottom-color: transparent;
-}
-
-.night .segmented-control-subtle .segmented-option:hover {
-  border-bottom-color: var(--color-primary-light);
-  color: var(--color-primary-light);
-}
-
-.night .segmented-control-subtle input:checked + .segmented-option {
-  border-bottom-color: var(--color-primary-light);
-  color: var(--color-primary-light);
 }
 
 /* @ID: #06-09-07 */

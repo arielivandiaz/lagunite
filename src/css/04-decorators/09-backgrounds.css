@@ -1,0 +1,118 @@
+/* ==========
+   04-decorators / 09-backgrounds.css
+   v3 section backgrounds and surface effects, blue family only.
+   One effect per section: mesh, grid, dots or spotlight (grid and dots pair well with mesh).
+   ========== */
+
+/* @ID: #04-09-01 */
+
+/* ── Mesh: soft blue radials ───────────────────────────────────────────── */
+
+.bg-mesh {
+  background:
+    radial-gradient(60% 50% at 15% 0%, rgba(var(--color-primary-rgb), 0.16) 0%, transparent 70%),
+    radial-gradient(45% 40% at 90% 10%, rgb(92 155 255 / 14%) 0%, transparent 70%),
+    radial-gradient(50% 50% at 50% 110%, rgba(var(--color-primary-rgb), 0.1) 0%, transparent 70%),
+    var(--color-bg);
+}
+
+.night .bg-mesh,
+[data-theme="dark"] .bg-mesh {
+  background:
+    radial-gradient(60% 50% at 15% 0%, rgba(var(--color-primary-rgb), 0.26) 0%, transparent 70%),
+    radial-gradient(45% 40% at 90% 10%, rgb(92 155 255 / 16%) 0%, transparent 70%),
+    radial-gradient(50% 50% at 50% 110%, rgba(var(--color-primary-rgb), 0.14) 0%, transparent 70%),
+    var(--color-bg);
+}
+
+/* @ID: #04-09-02 */
+
+/* ── Grid and dots: patterns that fade out (drawn behind content) ───────── */
+
+.bg-grid,
+.bg-dots {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-grid::before,
+.bg-dots::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-grid::before {
+  background-image:
+    linear-gradient(var(--color-border-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border-strong) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+}
+
+.bg-dots::before {
+  background-image: radial-gradient(var(--color-border-strong) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+  mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+}
+
+/* @ID: #04-09-03 */
+
+/* ── Spotlight: light from the top ──────────────────────────────────────── */
+
+.bg-spotlight {
+  background: radial-gradient(80% 60% at 50% -10%, var(--color-primary-soft) 0%, transparent 60%), var(--color-bg);
+}
+
+/* @ID: #04-09-04 */
+
+/* ── Glass surface ─────────────────────────────────────────────────────── */
+
+.glass {
+  background: var(--color-glass);
+  -webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  border: var(--border-width-s) solid var(--color-border);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l);
+}
+
+/* @ID: #04-09-05 */
+
+/* ── Text accents ──────────────────────────────────────────────────────── */
+
+/* One word of a headline, never a full sentence */
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Uppercase eyebrow above section titles */
+.overline-label {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.33;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary-text);
+}
+
+/* @ID: #04-09-06 */
+
+/* ── Section rhythm ────────────────────────────────────────────────────── */
+
+.section {
+  padding-block: var(--space-16);
+}
+
+@media (width >= 640px) {
+  .section {
+    padding-block: var(--space-24);
+  }
+}

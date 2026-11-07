@@ -1,9 +1,9 @@
 {
   "folder": "08-organisms",
   "file": "01-navbar.css",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 27,
+  "totalSelectors": 32,
   "content": [
     {
       "type": "selector",
@@ -15,13 +15,37 @@
         "display",
         "align-items",
         "justify-content",
+        "gap",
+        "min-height",
         "padding",
         "background",
+        "-webkit-backdrop-filter",
+        "backdrop-filter",
         "border-bottom",
         "position",
         "z-index"
       ],
-      "cssRule": "display: flex\nalign-items: center\njustify-content: space-between\npadding: var(--space-3) var(--space-4)\nbackground: var(--color-bg)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nposition: relative\nz-index: 100",
+      "cssRule": "display: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-6)\nmin-height: 4rem\npadding: var(--space-3) var(--space-6)\nbackground: var(--color-glass)\n-webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%)\nbackdrop-filter: blur(var(--blur-md)) saturate(160%)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nposition: relative\nz-index: 100",
+      "responsive": false,
+      "description": "── Navbar shell ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-floating",
+      "id": "#08-01-01",
+      "category": null,
+      "properties": [
+        "top",
+        "max-width",
+        "min-height",
+        "margin",
+        "padding",
+        "border",
+        "border-radius",
+        "box-shadow"
+      ],
+      "cssRule": "top: var(--space-3)\nmax-width: 1080px\nmin-height: 3.5rem\nmargin: var(--space-3) auto 0\npadding: var(--space-2) var(--space-2) var(--space-2) var(--space-5)\nborder: 0\nborder-radius: var(--radius-full)\nbox-shadow: inset 0 1px 0 var(--color-highlight), 0 0 0 1px var(--color-border-strong), var(--shadow-l)",
       "responsive": false,
       "description": "── Navbar shell ─────────────────────────────────────────────────────────"
     },
@@ -32,15 +56,17 @@
       "id": "#08-01-02",
       "category": null,
       "properties": [
-        "font-size",
-        "font-weight",
-        "color",
-        "text-decoration",
         "display",
         "align-items",
-        "gap"
+        "gap",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "letter-spacing",
+        "color",
+        "text-decoration"
       ],
-      "cssRule": "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\ntext-decoration: none\ndisplay: flex\nalign-items: center\ngap: var(--space-2)",
+      "cssRule": "display: flex\nalign-items: center\ngap: 0.625rem\nfont-family: var(--font-display)\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)\nletter-spacing: -0.02em\ncolor: var(--color-text-base)\ntext-decoration: none",
       "responsive": false,
       "description": "── Brand & nav list ─────────────────────────────────────────────────────"
     },
@@ -60,6 +86,24 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".brand-mark",
+      "id": "#08-01-02",
+      "category": null,
+      "properties": [
+        "flex",
+        "width",
+        "height",
+        "border-radius",
+        "background",
+        "box-shadow"
+      ],
+      "cssRule": "flex: none\nwidth: 1.625rem\nheight: 1.625rem\nborder-radius: var(--radius-sm)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 30%), var(--shadow-primary)",
+      "responsive": false,
+      "description": "Placeholder mark when there is no logo: a square with the primary gradient"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".navbar-nav",
       "id": "#08-01-02",
       "category": null,
@@ -73,7 +117,7 @@
       ],
       "cssRule": "display: flex\nalign-items: center\ngap: var(--space-1)\nlist-style: none\nmargin: 0\npadding: 0",
       "responsive": false,
-      "description": "── Brand & nav list ─────────────────────────────────────────────────────"
+      "description": "Placeholder mark when there is no logo: a square with the primary gradient"
     },
     {
       "type": "selector",
@@ -84,14 +128,16 @@
       "properties": [
         "display",
         "align-items",
+        "min-height",
         "padding",
         "color",
         "text-decoration",
         "font-size",
+        "font-weight",
         "border-radius",
         "transition"
       ],
-      "cssRule": "display: inline-flex\nalign-items: center\npadding: var(--space-2) var(--space-3)\ncolor: var(--color-text-base)\ntext-decoration: none\nfont-size: var(--font-size-base)\nborder-radius: var(--radius-s)\ntransition:\n    background 0.2s,\n    color 0.2s",
+      "cssRule": "display: inline-flex\nalign-items: center\nmin-height: 2.25rem\npadding: 0 var(--space-3)\ncolor: var(--color-text-muted)\ntext-decoration: none\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\nborder-radius: var(--radius-full)\ntransition:\n    background var(--dur) var(--ease-out),\n    color var(--dur) var(--ease-out)",
       "responsive": false,
       "description": "── Nav links ────────────────────────────────────────────────────────────"
     },
@@ -105,35 +151,7 @@
         "background",
         "color"
       ],
-      "cssRule": "background: rgba(var(--color-primary-rgb), 0.1)\ncolor: var(--color-primary)",
-      "responsive": false,
-      "description": "── Nav links ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".navbar-link:focus-visible",
-      "id": "#08-01-03",
-      "category": null,
-      "properties": [
-        "outline",
-        "outline-offset"
-      ],
-      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
-      "responsive": false,
-      "description": "── Nav links ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".navbar-brand:focus-visible",
-      "id": "#08-01-03",
-      "category": null,
-      "properties": [
-        "outline",
-        "outline-offset"
-      ],
-      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
+      "cssRule": "background: var(--color-surface-muted)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "── Nav links ────────────────────────────────────────────────────────────"
     },
@@ -147,7 +165,37 @@
         "background",
         "color"
       ],
-      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "cssRule": "background: var(--color-surface-muted)\ncolor: var(--color-text-base)",
+      "responsive": false,
+      "description": "── Nav links ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-link:focus-visible",
+      "id": "#08-01-03",
+      "category": null,
+      "properties": [
+        "outline",
+        "box-shadow",
+        "border-radius"
+      ],
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)\nborder-radius: var(--radius-full)",
+      "responsive": false,
+      "description": "── Nav links ────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-brand:focus-visible",
+      "id": "#08-01-03",
+      "category": null,
+      "properties": [
+        "outline",
+        "box-shadow",
+        "border-radius"
+      ],
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)\nborder-radius: var(--radius-full)",
       "responsive": false,
       "description": "── Nav links ────────────────────────────────────────────────────────────"
     },
@@ -165,9 +213,23 @@
         "padding",
         "width",
         "height",
-        "position"
+        "position",
+        "border-radius"
       ],
-      "cssRule": "display: none\nbackground: none\nborder: none\ncursor: pointer\npadding: var(--space-2)\nwidth: 2.5rem\nheight: 2.5rem\nposition: relative",
+      "cssRule": "display: none\nbackground: none\nborder: none\ncursor: pointer\npadding: var(--space-2)\nwidth: 2.5rem\nheight: 2.5rem\nposition: relative\nborder-radius: var(--radius-md)",
+      "responsive": false,
+      "description": "── Mobile burger ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-burger:hover",
+      "id": "#08-01-04",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-surface-muted)",
       "responsive": false,
       "description": "── Mobile burger ─────────────────────────────────────────────────────────"
     },
@@ -179,10 +241,9 @@
       "category": null,
       "properties": [
         "outline",
-        "outline-offset",
-        "border-radius"
+        "box-shadow"
       ],
-      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px\nborder-radius: var(--radius-s)",
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)",
       "responsive": false,
       "description": "── Mobile burger ─────────────────────────────────────────────────────────"
     },
@@ -194,13 +255,54 @@
       "category": null,
       "properties": [
         "display",
+        "flex-shrink",
         "width",
         "height",
+        "margin",
+        "border-radius",
         "background",
-        "transition",
-        "margin"
+        "transition"
       ],
-      "cssRule": "display: block\nwidth: 100%\nheight: 2px\nbackground: var(--color-text-base)\ntransition: all 0.3s\nmargin: 5px 0",
+      "cssRule": "display: block\nflex-shrink: 0\nwidth: 1.25rem\nheight: 2px\nmargin: 2px 0\nborder-radius: 2px\nbackground: var(--color-text-base)\ntransition: transform var(--dur) var(--ease-out), opacity var(--dur) var(--ease-out)",
+      "responsive": false,
+      "description": "── Mobile burger ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar.open .navbar-burger span:nth-child(1)",
+      "id": "#08-01-04",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(6px) rotate(45deg)",
+      "responsive": false,
+      "description": "── Mobile burger ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar.open .navbar-burger span:nth-child(2)",
+      "id": "#08-01-04",
+      "category": null,
+      "properties": [
+        "opacity"
+      ],
+      "cssRule": "opacity: 0",
+      "responsive": false,
+      "description": "── Mobile burger ─────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar.open .navbar-burger span:nth-child(3)",
+      "id": "#08-01-04",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: translateY(-6px) rotate(-45deg)",
       "responsive": false,
       "description": "── Mobile burger ─────────────────────────────────────────────────────────"
     },
@@ -211,9 +313,10 @@
       "id": "#08-01-05",
       "category": null,
       "properties": [
-        "background"
+        "background",
+        "border-color"
       ],
-      "cssRule": "background: var(--color-primary)",
+      "cssRule": "background: var(--gradient-primary)\nborder-color: transparent",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
@@ -226,7 +329,7 @@
       "properties": [
         "color"
       ],
-      "cssRule": "color: var(--color-text-alt)",
+      "cssRule": "color: var(--color-on-primary)",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
@@ -239,7 +342,35 @@
       "properties": [
         "color"
       ],
-      "cssRule": "color: var(--color-text-alt)",
+      "cssRule": "color: var(--color-on-primary)",
+      "responsive": false,
+      "description": "── Variants ─────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-primary .navbar-link:hover",
+      "id": "#08-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 16%)\ncolor: var(--color-on-primary)",
+      "responsive": false,
+      "description": "── Variants ─────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-primary .navbar-link.active",
+      "id": "#08-01-05",
+      "category": null,
+      "properties": [
+        "background",
+        "color"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 16%)\ncolor: var(--color-on-primary)",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
@@ -251,9 +382,11 @@
       "category": null,
       "properties": [
         "background",
+        "-webkit-backdrop-filter",
+        "backdrop-filter",
         "border"
       ],
-      "cssRule": "background: transparent\nborder: none",
+      "cssRule": "background: transparent\n-webkit-backdrop-filter: none\nbackdrop-filter: none\nborder: none",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
@@ -264,24 +397,35 @@
       "id": "#08-01-05",
       "category": null,
       "properties": [
-        "position",
-        "top"
+        "position"
       ],
-      "cssRule": "position: sticky\ntop: 0",
+      "cssRule": "position: sticky",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night .navbar",
+      "selector": ".navbar-floating",
       "id": "#08-01-05",
       "category": null,
       "properties": [
-        "background",
-        "border-color"
+        "position"
       ],
-      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "cssRule": "position: sticky",
+      "responsive": false,
+      "description": "── Variants ─────────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".navbar-sticky",
+      "id": "#08-01-05",
+      "category": null,
+      "properties": [
+        "top"
+      ],
+      "cssRule": "top: 0",
       "responsive": false,
       "description": "── Variants ─────────────────────────────────────────────────────────────"
     },
@@ -305,13 +449,10 @@
       "id": "#08-01-07",
       "category": null,
       "properties": [
-        "font-weight",
         "color",
-        "background",
-        "text-decoration",
-        "text-underline-offset"
+        "background"
       ],
-      "cssRule": "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em",
+      "cssRule": "color: var(--color-primary-text)\nbackground: var(--color-primary-soft)",
       "responsive": false,
       "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
     },
@@ -322,13 +463,10 @@
       "id": "#08-01-07",
       "category": null,
       "properties": [
-        "font-weight",
         "color",
-        "background",
-        "text-decoration",
-        "text-underline-offset"
+        "background"
       ],
-      "cssRule": "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em",
+      "cssRule": "color: var(--color-primary-text)\nbackground: var(--color-primary-soft)",
       "responsive": false,
       "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
     },
@@ -339,13 +477,10 @@
       "id": "#08-01-07",
       "category": null,
       "properties": [
-        "font-weight",
         "color",
-        "background",
-        "text-decoration",
-        "text-underline-offset"
+        "background"
       ],
-      "cssRule": "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em",
+      "cssRule": "color: var(--color-primary-text)\nbackground: var(--color-primary-soft)",
       "responsive": false,
       "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
     },
@@ -356,65 +491,10 @@
       "id": "#08-01-07",
       "category": null,
       "properties": [
-        "font-weight",
         "color",
-        "background",
-        "text-decoration",
-        "text-underline-offset"
+        "background"
       ],
-      "cssRule": "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em",
-      "responsive": false,
-      "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .scrollspy a:is(:target-current",
-      "id": "#08-01-07",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary-light)",
-      "responsive": false,
-      "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".scrollspy-current)",
-      "id": "#08-01-07",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary-light)",
-      "responsive": false,
-      "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .scrollspy .navbar-link:is(:target-current",
-      "id": "#08-01-07",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary-light)",
-      "responsive": false,
-      "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".scrollspy-current)",
-      "id": "#08-01-07",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary-light)",
+      "cssRule": "color: var(--color-primary-text)\nbackground: var(--color-primary-soft)",
       "responsive": false,
       "description": "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
     }

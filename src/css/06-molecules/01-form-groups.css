@@ -16,20 +16,21 @@
 }
 
 .form-label {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-s);
   color: var(--color-text-base);
 }
 
 .form-help {
   margin-top: var(--space-1);
-  font-size: var(--font-size-xs);
-  color: var(--gray-500);
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
 }
 
 .form-error-msg {
   margin-top: var(--space-1);
-  font-size: var(--font-size-xs);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-medium);
   color: var(--color-error);
 }
 
@@ -253,13 +254,6 @@
 
 /* ── Night mode: labels & help ─────────────────────────────────────────── */
 
-.night .form-label {
-  color: var(--color-text-alt);
-}
-
-.night .form-help {
-  color: var(--gray-400);
-}
 
 /* @ID: #06-01-06 */
 

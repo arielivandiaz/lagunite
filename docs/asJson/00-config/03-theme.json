@@ -1,9 +1,9 @@
 {
   "folder": "00-config",
   "file": "03-theme.css",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 6,
+  "totalSelectors": 10,
   "content": [
     {
       "type": "selector",
@@ -13,11 +13,17 @@
       "category": null,
       "properties": [
         "color-scheme",
+        "accent-color",
         "--color-primary",
         "--color-primary-light",
         "--color-primary-dark",
         "--color-primary-rgb",
-        "accent-color",
+        "--color-primary-fill",
+        "--color-primary-fill-end",
+        "--color-primary-text",
+        "--color-primary-soft",
+        "--color-on-primary",
+        "--focus-ring",
         "--color-secondary",
         "--color-secondary-light",
         "--color-secondary-dark",
@@ -37,6 +43,22 @@
         "--color-error",
         "--color-error-light",
         "--color-error-rgb",
+        "--color-danger-fill",
+        "--color-text-base",
+        "--color-text-muted",
+        "--color-text-subtle",
+        "--color-text-alt",
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-surface",
+        "--color-surface-raised",
+        "--color-surface-muted",
+        "--color-glass",
+        "--color-overlay",
+        "--color-highlight",
+        "--color-border",
+        "--color-border-strong",
+        "--input-border",
         "--chip-success",
         "--chip-success-rgb",
         "--chip-success-text",
@@ -77,23 +99,6 @@
         "--chip-info-solid-text",
         "--chip-info-grad",
         "--chip-info-grad-solid",
-        "--color-text-base",
-        "--color-text-alt",
-        "--color-on-fill",
-        "--color-bg",
-        "--color-bg-alt",
-        "--color-surface",
-        "--color-surface-raised",
-        "--color-surface-muted",
-        "--bg-primary",
-        "--bg-secondary",
-        "--bg-tertiary",
-        "--color-border",
-        "--color-border-hover",
-        "--input-text",
-        "--input-bg",
-        "--input-border",
-        "--input-placeholder",
         "--select-chevron",
         "--select-chevron-on-primary",
         "--select-chevron-zone",
@@ -105,165 +110,381 @@
         "--bg-gradient-6",
         "--bg-gradient-7",
         "--bg-gradient-8",
+        "--gradient-text",
+        "--gradient-border",
         "--border-width-s",
         "--border-width-md",
+        "--shadow-xs",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner",
+        "--shadow-primary",
+        "--shadow-primary-hover",
+        "--shadow-focus"
+      ],
+      "cssRule": "color-scheme: light\naccent-color: var(--color-primary)\n/* == Brand == */\n--color-primary: #2476ff\n--color-primary-light: #5c9bff\n--color-primary-dark: #1660e6\n--color-primary-rgb: 36, 118, 255\n--color-primary-fill: #1a6af5\n/* button base: white text 4.75:1 */\n--color-primary-fill-end: #1660e6\n--color-primary-text: #1557d6\n/* links and blue text: 6.24:1 on white */\n--color-primary-soft: #eaf2ff\n--color-on-primary: #fff\n--focus-ring: rgb(36 118 255 / 50%)\n/* == Secondary (neutral slate) and tertiary (orange accent) == */\n--color-secondary: #5a6478\n--color-secondary-light: #8b95a8\n--color-secondary-dark: #3a4252\n--color-secondary-rgb: 90, 100, 120\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c2410c\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #0d1220\n--color-almost-white: #fbfcfd\n/* == Status (text on white ≥ 4.5:1) == */\n--color-success: #0b7a55\n--color-success-light: #e7f7ef\n--color-success-rgb: 11, 122, 85\n--color-warning: #a05a00\n--color-warning-light: #fff4e0\n--color-warning-rgb: 160, 90, 0\n--color-error: #c42a30\n--color-error-light: #fdecec\n--color-error-rgb: 196, 42, 48\n--color-danger-fill: #d6343a\n/* == Text == */\n--color-text-base: #0d1220\n--color-text-muted: #5a6478\n--color-text-subtle: #8b95a8\n--color-text-alt: #fff\n/* == Surfaces == */\n--color-bg: #f6f7f9\n--color-bg-alt: #161a23\n--color-surface: #fff\n--color-surface-raised: #fff\n--color-surface-muted: #eef0f4\n--color-glass: rgb(255 255 255 / 72%)\n--color-overlay: rgb(9 11 16 / 55%)\n--color-highlight: rgb(255 255 255 / 70%)\n/* == Lines == */\n--color-border: rgb(13 18 32 / 9%)\n--color-border-strong: rgb(13 18 32 / 16%)\n--input-border: #8b95a8\n/* 3.02:1 control boundary */\n/* == Chip component tokens == */\n/* Chip colors are intentionally different from --color-success/warning/error.\n       They use vibrant hues tuned for translucent + solid chip variants. */\n--chip-success:            #50C878\n--chip-success-rgb:        80, 200, 120\n--chip-success-text:       #23904a\n--chip-success-bg:         rgb(80 200 120 / 14%)\n--chip-success-border:     rgb(80 200 120 / 38%)\n--chip-success-glow:       rgb(62 203 114 / 38%)\n--chip-success-solid-bg:   #3ecb72\n--chip-success-solid-text: #07260f\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 20%) 0%, rgb(40 150 80 / 8%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%)\n--chip-danger:             #FF6347\n--chip-danger-rgb:         255, 99, 71\n--chip-danger-text:        #c93218\n--chip-danger-bg:          rgb(255 99 71 / 11%)\n--chip-danger-border:      rgb(255 99 71 / 36%)\n--chip-danger-glow:        rgb(249 79 43 / 35%)\n--chip-danger-solid-bg:    #f94f2b\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 18%) 0%, rgb(200 50 30 / 7%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7055 0%, #d63010 100%)\n--chip-warning:            #FFBF00\n--chip-warning-rgb:        255, 191, 0\n--chip-warning-text:       #a07800\n--chip-warning-bg:         rgb(255 191 0 / 13%)\n--chip-warning-border:     rgb(255 191 0 / 38%)\n--chip-warning-glow:       rgb(245 184 0 / 38%)\n--chip-warning-solid-bg:   #f5b800\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 20%) 0%, rgb(200 140 0 / 7%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%)\n--chip-info:               #6495ED\n--chip-info-rgb:           100, 149, 237\n--chip-info-text:          #2f5bbf\n--chip-info-bg:            rgb(100 149 237 / 12%)\n--chip-info-border:        rgb(100 149 237 / 36%)\n--chip-info-glow:          rgb(75 126 240 / 35%)\n--chip-info-solid-bg:      #4b7ef0\n--chip-info-solid-text:    #fff\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 18%) 0%, rgb(60 100 200 / 7%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%)\n/* Chevron for native <select> (data URI; stroke matches slate-600) */\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235a6478' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Chevron on primary strip (.select-container.alt) */\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-zone: 2.75rem\n/* == Gradients (blue family only) == */\n--bg-gradient-1: linear-gradient(0deg, #1660e6 0%, #5c9bff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #bcd6ff 100%)\n--bg-gradient-3: linear-gradient(0deg, #124dbb 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(180deg, #5c9bff 0%, #2476ff 50%, #1660e6 100%)\n--bg-gradient-5: radial-gradient(circle, #5c9bff 0%, #2476ff 100%)\n--bg-gradient-6: radial-gradient(circle, #f6f7f9 0%, #d9e8ff 100%)\n--bg-gradient-7: repeating-linear-gradient(45deg, #2476ff, #5c9bff 20px, #fff 20px, #e1e5eb 32px)\n--bg-gradient-8: repeating-linear-gradient(45deg, #5c9bff, #1660e6 20px, #090b10 20px, #3a4252 32px)\n--gradient-text: linear-gradient(100deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-700) 100%)\n--gradient-border: linear-gradient(140deg, var(--blue-300) 0%, var(--color-primary) 40%, var(--blue-700) 70%, var(--blue-300) 100%)\n/* == Borders == */\n--border-width-s: 1px\n--border-width-md: 2px\n/* == Shadows (layered, cool-tinted) == */\n--shadow-xs: 0 1px 2px rgb(13 18 32 / 6%)\n--shadow-s: 0 1px 2px rgb(13 18 32 / 5%), 0 2px 6px -1px rgb(13 18 32 / 6%)\n--shadow-m: 0 2px 4px -1px rgb(13 18 32 / 6%), 0 8px 20px -6px rgb(13 18 32 / 12%)\n--shadow-l: 0 4px 8px -2px rgb(13 18 32 / 6%), 0 18px 40px -12px rgb(13 18 32 / 18%)\n--shadow-xl: 0 8px 16px -4px rgb(13 18 32 / 8%), 0 32px 64px -16px rgb(13 18 32 / 24%)\n--shadow-inner: inset 0 1px 2px rgb(13 18 32 / 8%)\n--shadow-primary: 0 1px 2px rgb(22 96 230 / 30%), 0 6px 16px -4px rgb(36 118 255 / 45%)\n--shadow-primary-hover: 0 2px 4px rgb(22 96 230 / 30%), 0 12px 28px -6px rgb(36 118 255 / 55%)\n--shadow-focus: 0 0 0 3px rgb(36 118 255 / 40%)",
+      "responsive": false,
+      "description": "|--------------------------------------------------------------------------\n  | Semantic theme variables @ID: #00-03-01\n  |--------------------------------------------------------------------------\n  |\n  | These variables give meaning to the raw palette values. This is what\n  | should be used throughout the library and overridden for theming.\n  |\n  | v3 (Lagunite 3): source of truth is design/lagunite3/tokens.json.\n  | Night applies with .night (on body or any element) or [data-theme=\"dark\"],\n  | and reaches <html> through :root:has(> body.night)."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night",
+      "id": "#00-03-02",
+      "category": null,
+      "properties": [
+        "color-scheme",
+        "--color-primary-text",
+        "--color-primary-soft",
+        "--focus-ring",
+        "--color-success",
+        "--color-success-light",
+        "--color-warning",
+        "--color-warning-light",
+        "--color-error",
+        "--color-error-light",
+        "--color-text-base",
+        "--color-text-muted",
+        "--color-text-subtle",
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-surface",
+        "--color-surface-raised",
+        "--color-surface-muted",
+        "--color-glass",
+        "--color-overlay",
+        "--color-highlight",
+        "--color-border",
+        "--color-border-strong",
+        "--input-border",
+        "--select-chevron",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
+        "--shadow-xs",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner",
+        "--shadow-primary",
+        "--shadow-primary-hover",
+        "--shadow-focus",
+        "--gradient-text",
+        "--gradient-border"
+      ],
+      "cssRule": "color-scheme: dark\n--color-primary-text: #7aaeff\n--color-primary-soft: #16264a\n--focus-ring: rgb(92 155 255 / 60%)\n--color-success: #34d399\n--color-success-light: #0f2a20\n--color-warning: #fbbf24\n--color-warning-light: #2d220c\n--color-error: #ff7a80\n--color-error-light: #2f1517\n--color-text-base: #eef1f6\n--color-text-muted: #9aa3b5\n--color-text-subtle: #6b7486\n--color-bg: #090b10\n--color-bg-alt: #f6f7f9\n--color-surface: #10131a\n--color-surface-raised: #161a23\n--color-surface-muted: #0c0e14\n--color-glass: rgb(22 26 35 / 70%)\n--color-overlay: rgb(0 0 0 / 65%)\n--color-highlight: rgb(255 255 255 / 6%)\n--color-border: rgb(255 255 255 / 8%)\n--color-border-strong: rgb(255 255 255 / 14%)\n--input-border: #5f687b\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239aa3b5' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* == Chip dark-mode overrides == */\n--chip-success-text:       #50C878\n--chip-success-bg:         rgb(80 200 120 / 15%)\n--chip-success-border:     rgb(80 200 120 / 30%)\n--chip-success-glow:       rgb(80 200 120 / 45%)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgb(255 99 71 / 15%)\n--chip-danger-border:      rgb(255 99 71 / 30%)\n--chip-danger-glow:        rgb(255 99 71 / 45%)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgb(255 191 0 / 15%)\n--chip-warning-border:     rgb(255 191 0 / 30%)\n--chip-warning-glow:       rgb(255 191 0 / 45%)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgb(100 149 237 / 15%)\n--chip-info-border:        rgb(100 149 237 / 30%)\n--chip-info-glow:          rgb(100 149 237 / 45%)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n--shadow-xs: 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-s: 0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px -2px rgb(0 0 0 / 50%)\n--shadow-m: 0 2px 4px rgb(0 0 0 / 40%), 0 10px 24px -8px rgb(0 0 0 / 60%)\n--shadow-l: 0 4px 10px rgb(0 0 0 / 45%), 0 22px 48px -14px rgb(0 0 0 / 70%)\n--shadow-xl: 0 8px 16px rgb(0 0 0 / 50%), 0 36px 72px -18px rgb(0 0 0 / 75%)\n--shadow-inner: inset 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-primary: 0 1px 2px rgb(0 0 0 / 50%), 0 8px 22px -6px rgb(36 118 255 / 55%)\n--shadow-primary-hover: 0 2px 4px rgb(0 0 0 / 50%), 0 14px 32px -8px rgb(36 118 255 / 65%)\n--shadow-focus: 0 0 0 3px rgb(92 155 255 / 55%)\n--gradient-text: linear-gradient(100deg, var(--blue-200) 0%, var(--blue-400) 45%, var(--color-primary) 100%)\n--gradient-border: linear-gradient(140deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-800) 70%, var(--blue-400) 100%)",
+      "responsive": false,
+      "description": "** Dark Theme (Night Mode) **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "[data-theme=\"dark\"]",
+      "id": "#00-03-02",
+      "category": null,
+      "properties": [
+        "color-scheme",
+        "--color-primary-text",
+        "--color-primary-soft",
+        "--focus-ring",
+        "--color-success",
+        "--color-success-light",
+        "--color-warning",
+        "--color-warning-light",
+        "--color-error",
+        "--color-error-light",
+        "--color-text-base",
+        "--color-text-muted",
+        "--color-text-subtle",
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-surface",
+        "--color-surface-raised",
+        "--color-surface-muted",
+        "--color-glass",
+        "--color-overlay",
+        "--color-highlight",
+        "--color-border",
+        "--color-border-strong",
+        "--input-border",
+        "--select-chevron",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
+        "--shadow-xs",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner",
+        "--shadow-primary",
+        "--shadow-primary-hover",
+        "--shadow-focus",
+        "--gradient-text",
+        "--gradient-border"
+      ],
+      "cssRule": "color-scheme: dark\n--color-primary-text: #7aaeff\n--color-primary-soft: #16264a\n--focus-ring: rgb(92 155 255 / 60%)\n--color-success: #34d399\n--color-success-light: #0f2a20\n--color-warning: #fbbf24\n--color-warning-light: #2d220c\n--color-error: #ff7a80\n--color-error-light: #2f1517\n--color-text-base: #eef1f6\n--color-text-muted: #9aa3b5\n--color-text-subtle: #6b7486\n--color-bg: #090b10\n--color-bg-alt: #f6f7f9\n--color-surface: #10131a\n--color-surface-raised: #161a23\n--color-surface-muted: #0c0e14\n--color-glass: rgb(22 26 35 / 70%)\n--color-overlay: rgb(0 0 0 / 65%)\n--color-highlight: rgb(255 255 255 / 6%)\n--color-border: rgb(255 255 255 / 8%)\n--color-border-strong: rgb(255 255 255 / 14%)\n--input-border: #5f687b\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239aa3b5' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* == Chip dark-mode overrides == */\n--chip-success-text:       #50C878\n--chip-success-bg:         rgb(80 200 120 / 15%)\n--chip-success-border:     rgb(80 200 120 / 30%)\n--chip-success-glow:       rgb(80 200 120 / 45%)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgb(255 99 71 / 15%)\n--chip-danger-border:      rgb(255 99 71 / 30%)\n--chip-danger-glow:        rgb(255 99 71 / 45%)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgb(255 191 0 / 15%)\n--chip-warning-border:     rgb(255 191 0 / 30%)\n--chip-warning-glow:       rgb(255 191 0 / 45%)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgb(100 149 237 / 15%)\n--chip-info-border:        rgb(100 149 237 / 30%)\n--chip-info-glow:          rgb(100 149 237 / 45%)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n--shadow-xs: 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-s: 0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px -2px rgb(0 0 0 / 50%)\n--shadow-m: 0 2px 4px rgb(0 0 0 / 40%), 0 10px 24px -8px rgb(0 0 0 / 60%)\n--shadow-l: 0 4px 10px rgb(0 0 0 / 45%), 0 22px 48px -14px rgb(0 0 0 / 70%)\n--shadow-xl: 0 8px 16px rgb(0 0 0 / 50%), 0 36px 72px -18px rgb(0 0 0 / 75%)\n--shadow-inner: inset 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-primary: 0 1px 2px rgb(0 0 0 / 50%), 0 8px 22px -6px rgb(36 118 255 / 55%)\n--shadow-primary-hover: 0 2px 4px rgb(0 0 0 / 50%), 0 14px 32px -8px rgb(36 118 255 / 65%)\n--shadow-focus: 0 0 0 3px rgb(92 155 255 / 55%)\n--gradient-text: linear-gradient(100deg, var(--blue-200) 0%, var(--blue-400) 45%, var(--color-primary) 100%)\n--gradient-border: linear-gradient(140deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-800) 70%, var(--blue-400) 100%)",
+      "responsive": false,
+      "description": "** Dark Theme (Night Mode) **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":root:has(> body.night)",
+      "id": "#00-03-02",
+      "category": null,
+      "properties": [
+        "color-scheme",
+        "--color-primary-text",
+        "--color-primary-soft",
+        "--focus-ring",
+        "--color-success",
+        "--color-success-light",
+        "--color-warning",
+        "--color-warning-light",
+        "--color-error",
+        "--color-error-light",
+        "--color-text-base",
+        "--color-text-muted",
+        "--color-text-subtle",
+        "--color-bg",
+        "--color-bg-alt",
+        "--color-surface",
+        "--color-surface-raised",
+        "--color-surface-muted",
+        "--color-glass",
+        "--color-overlay",
+        "--color-highlight",
+        "--color-border",
+        "--color-border-strong",
+        "--input-border",
+        "--select-chevron",
+        "--chip-success-text",
+        "--chip-success-bg",
+        "--chip-success-border",
+        "--chip-success-glow",
+        "--chip-success-solid-bg",
+        "--chip-success-solid-text",
+        "--chip-success-grad",
+        "--chip-success-grad-solid",
+        "--chip-danger-text",
+        "--chip-danger-bg",
+        "--chip-danger-border",
+        "--chip-danger-glow",
+        "--chip-danger-solid-bg",
+        "--chip-danger-solid-text",
+        "--chip-danger-grad",
+        "--chip-danger-grad-solid",
+        "--chip-warning-text",
+        "--chip-warning-bg",
+        "--chip-warning-border",
+        "--chip-warning-glow",
+        "--chip-warning-solid-bg",
+        "--chip-warning-solid-text",
+        "--chip-warning-grad",
+        "--chip-warning-grad-solid",
+        "--chip-info-text",
+        "--chip-info-bg",
+        "--chip-info-border",
+        "--chip-info-glow",
+        "--chip-info-solid-bg",
+        "--chip-info-solid-text",
+        "--chip-info-grad",
+        "--chip-info-grad-solid",
+        "--shadow-xs",
+        "--shadow-s",
+        "--shadow-m",
+        "--shadow-l",
+        "--shadow-xl",
+        "--shadow-inner",
+        "--shadow-primary",
+        "--shadow-primary-hover",
+        "--shadow-focus",
+        "--gradient-text",
+        "--gradient-border"
+      ],
+      "cssRule": "color-scheme: dark\n--color-primary-text: #7aaeff\n--color-primary-soft: #16264a\n--focus-ring: rgb(92 155 255 / 60%)\n--color-success: #34d399\n--color-success-light: #0f2a20\n--color-warning: #fbbf24\n--color-warning-light: #2d220c\n--color-error: #ff7a80\n--color-error-light: #2f1517\n--color-text-base: #eef1f6\n--color-text-muted: #9aa3b5\n--color-text-subtle: #6b7486\n--color-bg: #090b10\n--color-bg-alt: #f6f7f9\n--color-surface: #10131a\n--color-surface-raised: #161a23\n--color-surface-muted: #0c0e14\n--color-glass: rgb(22 26 35 / 70%)\n--color-overlay: rgb(0 0 0 / 65%)\n--color-highlight: rgb(255 255 255 / 6%)\n--color-border: rgb(255 255 255 / 8%)\n--color-border-strong: rgb(255 255 255 / 14%)\n--input-border: #5f687b\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239aa3b5' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* == Chip dark-mode overrides == */\n--chip-success-text:       #50C878\n--chip-success-bg:         rgb(80 200 120 / 15%)\n--chip-success-border:     rgb(80 200 120 / 30%)\n--chip-success-glow:       rgb(80 200 120 / 45%)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgb(255 99 71 / 15%)\n--chip-danger-border:      rgb(255 99 71 / 30%)\n--chip-danger-glow:        rgb(255 99 71 / 45%)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgb(255 191 0 / 15%)\n--chip-warning-border:     rgb(255 191 0 / 30%)\n--chip-warning-glow:       rgb(255 191 0 / 45%)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgb(100 149 237 / 15%)\n--chip-info-border:        rgb(100 149 237 / 30%)\n--chip-info-glow:          rgb(100 149 237 / 45%)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n--shadow-xs: 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-s: 0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px -2px rgb(0 0 0 / 50%)\n--shadow-m: 0 2px 4px rgb(0 0 0 / 40%), 0 10px 24px -8px rgb(0 0 0 / 60%)\n--shadow-l: 0 4px 10px rgb(0 0 0 / 45%), 0 22px 48px -14px rgb(0 0 0 / 70%)\n--shadow-xl: 0 8px 16px rgb(0 0 0 / 50%), 0 36px 72px -18px rgb(0 0 0 / 75%)\n--shadow-inner: inset 0 1px 2px rgb(0 0 0 / 50%)\n--shadow-primary: 0 1px 2px rgb(0 0 0 / 50%), 0 8px 22px -6px rgb(36 118 255 / 55%)\n--shadow-primary-hover: 0 2px 4px rgb(0 0 0 / 50%), 0 14px 32px -8px rgb(36 118 255 / 65%)\n--shadow-focus: 0 0 0 3px rgb(92 155 255 / 55%)\n--gradient-text: linear-gradient(100deg, var(--blue-200) 0%, var(--blue-400) 45%, var(--color-primary) 100%)\n--gradient-border: linear-gradient(140deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-800) 70%, var(--blue-400) 100%)",
+      "responsive": false,
+      "description": "** Dark Theme (Night Mode) **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":root",
+      "id": "#00-03-03",
+      "category": null,
+      "properties": [
+        "--color-text",
+        "--color-on-fill",
+        "--color-danger",
+        "--color-danger-soft",
+        "--color-surface-sunken",
+        "--color-border-hover",
+        "--input-text",
+        "--input-bg",
+        "--input-placeholder",
+        "--bg-primary",
+        "--bg-secondary",
+        "--bg-tertiary",
+        "--gradient-primary",
         "--border",
         "--border-light",
-        "--border-dark",
-        "--shadow-s",
-        "--shadow-m",
-        "--shadow-l",
-        "--shadow-xl",
-        "--shadow-inner"
+        "--border-dark"
       ],
-      "cssRule": "/* Native UI (scrollbars, form controls) follow Lagunite light by default.\n       Toggle .night → color-scheme: dark (see below). */\ncolor-scheme: light\n/* == Color Assignments == */\n--color-primary: #2476ff\n--color-primary-light: #5e9aff\n--color-primary-dark: #0965ff\n--color-primary-rgb: 36, 118, 255\n/* Brand tint for native checkbox / radio / range / progress */\naccent-color: var(--color-primary)\n--color-secondary: #747474\n--color-secondary-light: #333\n--color-secondary-dark: #292929\n--color-secondary-rgb: 116, 116, 116\n--color-tertiary: #f97316\n--color-tertiary-light: #ffa261\n--color-tertiary-dark: #c95300\n--color-tertiary-rgb: 249, 115, 22\n--color-almost-black: #333\n--color-almost-white: #fcfcfc\n--color-success: #009112\n--color-success-light: #98ff98\n--color-success-rgb: 0, 145, 18\n--color-warning: #ff9017\n--color-warning-light: #ffead5\n--color-warning-rgb: 255, 144, 23\n--color-error: #fa3434\n--color-error-light: #fdd0d0\n--color-error-rgb: 250, 52, 52\n/* == Chip component tokens == */\n/* Chip colors are intentionally different from --color-success/warning/error.\n       They use vibrant, fintech-grade hues tuned for translucent + solid chip variants. */\n--chip-success:            #50C878\n--chip-success-rgb:        80, 200, 120\n--chip-success-text:       #23904a\n--chip-success-bg:         rgb(80 200 120 / 14%)\n--chip-success-border:     rgb(80 200 120 / 38%)\n--chip-success-glow:       rgb(62 203 114 / 38%)\n--chip-success-solid-bg:   #3ecb72\n--chip-success-solid-text: #07260f\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 20%) 0%, rgb(40 150 80 / 8%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #28a856 100%)\n--chip-danger:             #FF6347\n--chip-danger-rgb:         255, 99, 71\n--chip-danger-text:        #c93218\n--chip-danger-bg:          rgb(255 99 71 / 11%)\n--chip-danger-border:      rgb(255 99 71 / 36%)\n--chip-danger-glow:        rgb(249 79 43 / 35%)\n--chip-danger-solid-bg:    #f94f2b\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 18%) 0%, rgb(200 50 30 / 7%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7055 0%, #d63010 100%)\n--chip-warning:            #FFBF00\n--chip-warning-rgb:        255, 191, 0\n--chip-warning-text:       #a07800\n--chip-warning-bg:         rgb(255 191 0 / 13%)\n--chip-warning-border:     rgb(255 191 0 / 38%)\n--chip-warning-glow:       rgb(245 184 0 / 38%)\n--chip-warning-solid-bg:   #f5b800\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 20%) 0%, rgb(200 140 0 / 7%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #d49400 100%)\n--chip-info:               #6495ED\n--chip-info-rgb:           100, 149, 237\n--chip-info-text:          #2f5bbf\n--chip-info-bg:            rgb(100 149 237 / 12%)\n--chip-info-border:        rgb(100 149 237 / 36%)\n--chip-info-glow:          rgb(75 126 240 / 35%)\n--chip-info-solid-bg:      #4b7ef0\n--chip-info-solid-text:    #fff\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 18%) 0%, rgb(60 100 200 / 7%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%)\n/* == Text Colors == */\n--color-text-base: #333\n--color-text-alt: #fff\n--color-on-fill: var(--color-text-alt)\n/* == Background Colors == */\n--color-bg: #eee\n--color-bg-alt: #222\n--color-surface: #f5f5f5\n--color-surface-raised: #fff\n--color-surface-muted: #e7e7e7\n--bg-primary: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-secondary: linear-gradient(0deg, #292929 0%, #747474 100%)\n--bg-tertiary: linear-gradient(0deg, #bbb 0%, #fff 100%)\n--color-border: var(--gray-200)\n--color-border-hover: var(--gray-300)\n/* == Inputs (semantic aliases for form controls) == */\n--input-text: var(--color-text-base)\n--input-bg: var(--color-bg)\n--input-border: var(--gray-300)\n--input-placeholder: var(--gray-400)\n/* Chevron for native <select> (data URI; stroke matches gray-600) */\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Chevron on primary strip (.select-container.alt) */\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-zone: 2.75rem\n/* == Gradients == */\n--bg-gradient-1: linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)\n--bg-gradient-2: linear-gradient(0deg, #fff 0%, #5e9aff 100%)\n--bg-gradient-3: linear-gradient(0deg, #0965ff 0%, #2476ff 100%)\n--bg-gradient-4: linear-gradient(\n      180deg,\n      rgb(94 154 255 / 100%) 0%,\n      rgb(36 118 255 / 100%) 50%,\n      rgb(0 90 238 / 100%) 100%\n    )\n--bg-gradient-5: radial-gradient(\n      circle,\n      rgb(94 154 255 / 100%) 0%,\n      rgb(36 118 255 / 100%) 100%\n    )\n--bg-gradient-6: radial-gradient(\n      circle,\n      rgb(238 238 238 / 100%) 0%,\n      rgb(193 216 255 / 100%) 100%\n    )\n--bg-gradient-7: repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )\n--bg-gradient-8: repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )\n/* == Borders == */\n--border-width-s: 1px\n--border-width-md: 2px\n--border: 2px solid #2476ff\n--border-light: 2px solid #5e9aff\n--border-dark: 2px solid #0965ff\n/* == Shadows == */\n--shadow-s:\n      0 1px 2px rgb(0 0 0 / 6%),\n      0 0 0 1px rgb(0 0 0 / 2%)\n/* Subtle */\n--shadow-m:\n      0 8px 16px -10px rgb(0 0 0 / 18%),\n      0 3px 8px -4px rgb(0 0 0 / 12%),\n      0 0 0 1px rgb(0 0 0 / 3%)\n/* Medium */\n--shadow-l:\n      0 18px 40px -26px rgb(0 0 0 / 30%),\n      0 10px 18px -14px rgb(0 0 0 / 18%),\n      0 0 0 1px rgb(0 0 0 / 4%)\n/* Large */\n--shadow-xl:\n      0 34px 70px -46px rgb(0 0 0 / 45%),\n      0 18px 30px -22px rgb(0 0 0 / 25%),\n      0 0 0 1px rgb(0 0 0 / 5%)\n/* Extra Large */\n--shadow-inner:\n      inset 0 1px 2px rgb(0 0 0 / 14%),\n      inset 0 0 0 1px rgb(0 0 0 / 6%)\n/* Inner */",
+      "cssRule": "--color-text: var(--color-text-base)\n--color-on-fill: var(--color-text-alt)\n--color-danger: var(--color-error)\n--color-danger-soft: var(--color-error-light)\n--color-surface-sunken: var(--color-surface-muted)\n--color-border-hover: var(--color-border-strong)\n--input-text: var(--color-text-base)\n--input-bg: var(--color-surface-raised)\n--input-placeholder: var(--color-text-subtle)\n--bg-primary: linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--bg-secondary: linear-gradient(180deg, var(--slate-600) 0%, var(--slate-800) 100%)\n--bg-tertiary: linear-gradient(180deg, var(--color-surface-raised) 0%, var(--color-surface-muted) 100%)\n--gradient-primary: linear-gradient(180deg, rgb(255 255 255 / 18%) 0%, rgb(255 255 255 / 0%) 52%), linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--border: 1px solid var(--color-border-strong)\n--border-light: 1px solid var(--color-border)\n--border-dark: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "|--------------------------------------------------------------------------\n  | Semantic theme variables @ID: #00-03-01\n  |--------------------------------------------------------------------------\n  |\n  | These variables give meaning to the raw palette values. This is what\n  | should be used throughout the library and overridden for theming."
+      "description": "** Derived tokens: re-resolved at every theme root so aliases follow Night **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".night",
-      "id": "#00-03-02",
+      "id": "#00-03-03",
       "category": null,
       "properties": [
-        "color-scheme"
+        "--color-text",
+        "--color-on-fill",
+        "--color-danger",
+        "--color-danger-soft",
+        "--color-surface-sunken",
+        "--color-border-hover",
+        "--input-text",
+        "--input-bg",
+        "--input-placeholder",
+        "--bg-primary",
+        "--bg-secondary",
+        "--bg-tertiary",
+        "--gradient-primary",
+        "--border",
+        "--border-light",
+        "--border-dark"
       ],
-      "cssRule": "color-scheme: dark",
+      "cssRule": "--color-text: var(--color-text-base)\n--color-on-fill: var(--color-text-alt)\n--color-danger: var(--color-error)\n--color-danger-soft: var(--color-error-light)\n--color-surface-sunken: var(--color-surface-muted)\n--color-border-hover: var(--color-border-strong)\n--input-text: var(--color-text-base)\n--input-bg: var(--color-surface-raised)\n--input-placeholder: var(--color-text-subtle)\n--bg-primary: linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--bg-secondary: linear-gradient(180deg, var(--slate-600) 0%, var(--slate-800) 100%)\n--bg-tertiary: linear-gradient(180deg, var(--color-surface-raised) 0%, var(--color-surface-muted) 100%)\n--gradient-primary: linear-gradient(180deg, rgb(255 255 255 / 18%) 0%, rgb(255 255 255 / 0%) 52%), linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--border: 1px solid var(--color-border-strong)\n--border-light: 1px solid var(--color-border)\n--border-dark: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "** Dark Theme (Night Mode) **"
+      "description": "** Derived tokens: re-resolved at every theme root so aliases follow Night **"
     },
     {
       "type": "selector",
-      "selectorType": "class",
-      "selector": ".night",
-      "id": "#00-03-02",
+      "selectorType": "complex",
+      "selector": "[data-theme=\"dark\"]",
+      "id": "#00-03-03",
       "category": null,
       "properties": [
-        "--color-bg",
-        "--color-bg-alt",
-        "--color-surface",
-        "--color-surface-raised",
-        "--color-surface-muted",
-        "--color-text-base",
+        "--color-text",
+        "--color-on-fill",
+        "--color-danger",
+        "--color-danger-soft",
+        "--color-surface-sunken",
+        "--color-border-hover",
         "--input-text",
         "--input-bg",
-        "--input-border",
         "--input-placeholder",
-        "--select-chevron",
-        "--select-chevron-on-primary",
-        "--color-border",
-        "--color-border-hover",
-        "--chip-success-text",
-        "--chip-success-bg",
-        "--chip-success-border",
-        "--chip-success-glow",
-        "--chip-success-solid-bg",
-        "--chip-success-solid-text",
-        "--chip-success-grad",
-        "--chip-success-grad-solid",
-        "--chip-danger-text",
-        "--chip-danger-bg",
-        "--chip-danger-border",
-        "--chip-danger-glow",
-        "--chip-danger-solid-bg",
-        "--chip-danger-solid-text",
-        "--chip-danger-grad",
-        "--chip-danger-grad-solid",
-        "--chip-warning-text",
-        "--chip-warning-bg",
-        "--chip-warning-border",
-        "--chip-warning-glow",
-        "--chip-warning-solid-bg",
-        "--chip-warning-solid-text",
-        "--chip-warning-grad",
-        "--chip-warning-grad-solid",
-        "--chip-info-text",
-        "--chip-info-bg",
-        "--chip-info-border",
-        "--chip-info-glow",
-        "--chip-info-solid-bg",
-        "--chip-info-solid-text",
-        "--chip-info-grad",
-        "--chip-info-grad-solid",
-        "--shadow-s",
-        "--shadow-m",
-        "--shadow-l",
-        "--shadow-xl",
-        "--shadow-inner"
+        "--bg-primary",
+        "--bg-secondary",
+        "--bg-tertiary",
+        "--gradient-primary",
+        "--border",
+        "--border-light",
+        "--border-dark"
       ],
-      "cssRule": "/* == Background Colors == */\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n--color-surface: #252525\n--color-surface-raised: #2e2e2e\n--color-surface-muted: #1d1d1d\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/* == Inputs == */\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* == Border Colors == */\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/* == Chip dark-mode overrides == */\n--chip-success-text:       #50C878\n--chip-success-bg:         rgb(80 200 120 / 15%)\n--chip-success-border:     rgb(80 200 120 / 30%)\n--chip-success-glow:       rgb(80 200 120 / 45%)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgb(255 99 71 / 15%)\n--chip-danger-border:      rgb(255 99 71 / 30%)\n--chip-danger-glow:        rgb(255 99 71 / 45%)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgb(255 191 0 / 15%)\n--chip-warning-border:     rgb(255 191 0 / 30%)\n--chip-warning-glow:       rgb(255 191 0 / 45%)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgb(100 149 237 / 15%)\n--chip-info-border:        rgb(100 149 237 / 30%)\n--chip-info-glow:          rgb(100 149 237 / 45%)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n/* == Shadows (dark: subtle black with faint border ring) == */\n--shadow-s:\n      0 1px 3px rgb(0 0 0 / 40%),\n      0 0 0 1px rgb(255 255 255 / 4%)\n--shadow-m:\n      0 4px 12px rgb(0 0 0 / 50%),\n      0 0 0 1px rgb(255 255 255 / 5%)\n--shadow-l:\n      0 10px 28px rgb(0 0 0 / 55%),\n      0 0 0 1px rgb(255 255 255 / 6%)\n--shadow-xl:\n      0 20px 50px rgb(0 0 0 / 60%),\n      0 0 0 1px rgb(255 255 255 / 7%)\n--shadow-inner:\n      inset 0 1px 3px rgb(0 0 0 / 45%),\n      inset 0 0 0 1px rgb(255 255 255 / 6%)",
+      "cssRule": "--color-text: var(--color-text-base)\n--color-on-fill: var(--color-text-alt)\n--color-danger: var(--color-error)\n--color-danger-soft: var(--color-error-light)\n--color-surface-sunken: var(--color-surface-muted)\n--color-border-hover: var(--color-border-strong)\n--input-text: var(--color-text-base)\n--input-bg: var(--color-surface-raised)\n--input-placeholder: var(--color-text-subtle)\n--bg-primary: linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--bg-secondary: linear-gradient(180deg, var(--slate-600) 0%, var(--slate-800) 100%)\n--bg-tertiary: linear-gradient(180deg, var(--color-surface-raised) 0%, var(--color-surface-muted) 100%)\n--gradient-primary: linear-gradient(180deg, rgb(255 255 255 / 18%) 0%, rgb(255 255 255 / 0%) 52%), linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--border: 1px solid var(--color-border-strong)\n--border-light: 1px solid var(--color-border)\n--border-dark: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "** Dark Theme (Night Mode) **"
+      "description": "** Derived tokens: re-resolved at every theme root so aliases follow Night **"
     },
     {
       "type": "selector",
-      "selectorType": "class",
-      "selector": ".night *",
-      "id": "#00-03-02",
+      "selectorType": "pseudo",
+      "selector": ":root:has(> body.night)",
+      "id": "#00-03-03",
       "category": null,
       "properties": [
-        "--color-bg",
-        "--color-bg-alt",
-        "--color-surface",
-        "--color-surface-raised",
-        "--color-surface-muted",
-        "--color-text-base",
+        "--color-text",
+        "--color-on-fill",
+        "--color-danger",
+        "--color-danger-soft",
+        "--color-surface-sunken",
+        "--color-border-hover",
         "--input-text",
         "--input-bg",
-        "--input-border",
         "--input-placeholder",
-        "--select-chevron",
-        "--select-chevron-on-primary",
-        "--color-border",
-        "--color-border-hover",
-        "--chip-success-text",
-        "--chip-success-bg",
-        "--chip-success-border",
-        "--chip-success-glow",
-        "--chip-success-solid-bg",
-        "--chip-success-solid-text",
-        "--chip-success-grad",
-        "--chip-success-grad-solid",
-        "--chip-danger-text",
-        "--chip-danger-bg",
-        "--chip-danger-border",
-        "--chip-danger-glow",
-        "--chip-danger-solid-bg",
-        "--chip-danger-solid-text",
-        "--chip-danger-grad",
-        "--chip-danger-grad-solid",
-        "--chip-warning-text",
-        "--chip-warning-bg",
-        "--chip-warning-border",
-        "--chip-warning-glow",
-        "--chip-warning-solid-bg",
-        "--chip-warning-solid-text",
-        "--chip-warning-grad",
-        "--chip-warning-grad-solid",
-        "--chip-info-text",
-        "--chip-info-bg",
-        "--chip-info-border",
-        "--chip-info-glow",
-        "--chip-info-solid-bg",
-        "--chip-info-solid-text",
-        "--chip-info-grad",
-        "--chip-info-grad-solid",
-        "--shadow-s",
-        "--shadow-m",
-        "--shadow-l",
-        "--shadow-xl",
-        "--shadow-inner"
+        "--bg-primary",
+        "--bg-secondary",
+        "--bg-tertiary",
+        "--gradient-primary",
+        "--border",
+        "--border-light",
+        "--border-dark"
       ],
-      "cssRule": "/* == Background Colors == */\n--color-bg: #1a1a1a\n--color-bg-alt: #f5f5f5\n--color-surface: #252525\n--color-surface-raised: #2e2e2e\n--color-surface-muted: #1d1d1d\n/*\n     * Main readable foreground on dark surfaces (body, .bg, .card in night).\n     * :root keeps --color-text-base as #333; without this override, inherited\n     * text stays dark on --color-bg / gray-800 cards (unreadable).\n     */\n--color-text-base: #e8eaed\n/* == Inputs == */\n--input-text: var(--color-text-alt)\n--input-bg: var(--gray-800)\n--input-border: var(--gray-600)\n--input-placeholder: var(--gray-500)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* == Border Colors == */\n--color-border: var(--gray-700)\n--color-border-hover: var(--gray-600)\n/* == Chip dark-mode overrides == */\n--chip-success-text:       #50C878\n--chip-success-bg:         rgb(80 200 120 / 15%)\n--chip-success-border:     rgb(80 200 120 / 30%)\n--chip-success-glow:       rgb(80 200 120 / 45%)\n--chip-success-solid-bg:   #50C878\n--chip-success-solid-text: #071a0d\n--chip-success-grad:       linear-gradient(135deg, rgb(80 200 120 / 28%) 0%, rgb(40 150 80 / 12%) 100%)\n--chip-success-grad-solid: linear-gradient(135deg, #5ed68a 0%, #3aaa60 100%)\n--chip-danger-text:        #FF6347\n--chip-danger-bg:          rgb(255 99 71 / 15%)\n--chip-danger-border:      rgb(255 99 71 / 30%)\n--chip-danger-glow:        rgb(255 99 71 / 45%)\n--chip-danger-solid-bg:    #FF6347\n--chip-danger-solid-text:  #fff\n--chip-danger-grad:        linear-gradient(135deg, rgb(255 99 71 / 28%) 0%, rgb(200 50 30 / 12%) 100%)\n--chip-danger-grad-solid:  linear-gradient(135deg, #ff7a5c 0%, #e03820 100%)\n--chip-warning-text:       #FFBF00\n--chip-warning-bg:         rgb(255 191 0 / 15%)\n--chip-warning-border:     rgb(255 191 0 / 30%)\n--chip-warning-glow:       rgb(255 191 0 / 45%)\n--chip-warning-solid-bg:   #FFBF00\n--chip-warning-solid-text: #1a1200\n--chip-warning-grad:       linear-gradient(135deg, rgb(255 191 0 / 28%) 0%, rgb(200 140 0 / 12%) 100%)\n--chip-warning-grad-solid: linear-gradient(135deg, #ffd040 0%, #e09e00 100%)\n--chip-info-text:          #6495ED\n--chip-info-bg:            rgb(100 149 237 / 15%)\n--chip-info-border:        rgb(100 149 237 / 30%)\n--chip-info-glow:          rgb(100 149 237 / 45%)\n--chip-info-solid-bg:      #6495ED\n--chip-info-solid-text:    #06101f\n--chip-info-grad:          linear-gradient(135deg, rgb(100 149 237 / 28%) 0%, rgb(60 100 200 / 12%) 100%)\n--chip-info-grad-solid:    linear-gradient(135deg, #7aabff 0%, #4070d8 100%)\n/* == Shadows (dark: subtle black with faint border ring) == */\n--shadow-s:\n      0 1px 3px rgb(0 0 0 / 40%),\n      0 0 0 1px rgb(255 255 255 / 4%)\n--shadow-m:\n      0 4px 12px rgb(0 0 0 / 50%),\n      0 0 0 1px rgb(255 255 255 / 5%)\n--shadow-l:\n      0 10px 28px rgb(0 0 0 / 55%),\n      0 0 0 1px rgb(255 255 255 / 6%)\n--shadow-xl:\n      0 20px 50px rgb(0 0 0 / 60%),\n      0 0 0 1px rgb(255 255 255 / 7%)\n--shadow-inner:\n      inset 0 1px 3px rgb(0 0 0 / 45%),\n      inset 0 0 0 1px rgb(255 255 255 / 6%)",
+      "cssRule": "--color-text: var(--color-text-base)\n--color-on-fill: var(--color-text-alt)\n--color-danger: var(--color-error)\n--color-danger-soft: var(--color-error-light)\n--color-surface-sunken: var(--color-surface-muted)\n--color-border-hover: var(--color-border-strong)\n--input-text: var(--color-text-base)\n--input-bg: var(--color-surface-raised)\n--input-placeholder: var(--color-text-subtle)\n--bg-primary: linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--bg-secondary: linear-gradient(180deg, var(--slate-600) 0%, var(--slate-800) 100%)\n--bg-tertiary: linear-gradient(180deg, var(--color-surface-raised) 0%, var(--color-surface-muted) 100%)\n--gradient-primary: linear-gradient(180deg, rgb(255 255 255 / 18%) 0%, rgb(255 255 255 / 0%) 52%), linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)\n--border: 1px solid var(--color-border-strong)\n--border-light: 1px solid var(--color-border)\n--border-dark: 1px solid var(--color-primary)",
       "responsive": false,
-      "description": "** Dark Theme (Night Mode) **"
+      "description": "** Derived tokens: re-resolved at every theme root so aliases follow Night **"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".theme-light",
-      "id": "#00-03-03",
+      "id": "#00-03-04",
       "category": null,
       "properties": [
         "background",
@@ -277,20 +498,13 @@
       "type": "selector",
       "selectorType": "class",
       "selector": ".theme-night",
-      "id": "#00-03-03",
+      "id": "#00-03-04",
       "category": null,
       "properties": [
         "background",
-        "color",
-        "--select-chevron",
-        "--select-chevron-on-primary",
-        "--shadow-s",
-        "--shadow-m",
-        "--shadow-l",
-        "--shadow-xl",
-        "--shadow-inner"
+        "color"
       ],
-      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)\n--select-chevron: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n--select-chevron-on-primary: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")\n/* Sombras a nivel de componente (dark: negro sutil + anillo tenue) */\n--shadow-s:\n      0 1px 3px rgb(0 0 0 / 40%),\n      0 0 0 1px rgb(255 255 255 / 4%)\n--shadow-m:\n      0 4px 12px rgb(0 0 0 / 50%),\n      0 0 0 1px rgb(255 255 255 / 5%)\n--shadow-l:\n      0 10px 28px rgb(0 0 0 / 55%),\n      0 0 0 1px rgb(255 255 255 / 6%)\n--shadow-xl:\n      0 20px 50px rgb(0 0 0 / 60%),\n      0 0 0 1px rgb(255 255 255 / 7%)\n--shadow-inner:\n      inset 0 1px 3px rgb(0 0 0 / 45%),\n      inset 0 0 0 1px rgb(255 255 255 / 6%)",
+      "cssRule": "background: var(--color-bg-alt)\ncolor: var(--color-text-alt)",
       "responsive": false,
       "description": "** Theme Toggle Classes **"
     }
@@ -302,31 +516,55 @@
     },
     {
       "property": "--color-primary-light",
-      "value": "#5e9aff"
+      "value": "#5c9bff"
     },
     {
       "property": "--color-primary-dark",
-      "value": "#0965ff"
+      "value": "#1660e6"
     },
     {
       "property": "--color-primary-rgb",
       "value": "36, 118, 255"
     },
     {
+      "property": "--color-primary-fill",
+      "value": "#1a6af5"
+    },
+    {
+      "property": "--color-primary-fill-end",
+      "value": "#1660e6"
+    },
+    {
+      "property": "--color-primary-text",
+      "value": "#1557d6"
+    },
+    {
+      "property": "--color-primary-soft",
+      "value": "#eaf2ff"
+    },
+    {
+      "property": "--color-on-primary",
+      "value": "#fff"
+    },
+    {
+      "property": "--focus-ring",
+      "value": "rgb(36 118 255 / 50%)"
+    },
+    {
       "property": "--color-secondary",
-      "value": "#747474"
+      "value": "#5a6478"
     },
     {
       "property": "--color-secondary-light",
-      "value": "#333"
+      "value": "#8b95a8"
     },
     {
       "property": "--color-secondary-dark",
-      "value": "#292929"
+      "value": "#3a4252"
     },
     {
       "property": "--color-secondary-rgb",
-      "value": "116, 116, 116"
+      "value": "90, 100, 120"
     },
     {
       "property": "--color-tertiary",
@@ -338,7 +576,7 @@
     },
     {
       "property": "--color-tertiary-dark",
-      "value": "#c95300"
+      "value": "#c2410c"
     },
     {
       "property": "--color-tertiary-rgb",
@@ -346,47 +584,111 @@
     },
     {
       "property": "--color-almost-black",
-      "value": "#333"
+      "value": "#0d1220"
     },
     {
       "property": "--color-almost-white",
-      "value": "#fcfcfc"
+      "value": "#fbfcfd"
     },
     {
       "property": "--color-success",
-      "value": "#009112"
+      "value": "#0b7a55"
     },
     {
       "property": "--color-success-light",
-      "value": "#98ff98"
+      "value": "#e7f7ef"
     },
     {
       "property": "--color-success-rgb",
-      "value": "0, 145, 18"
+      "value": "11, 122, 85"
     },
     {
       "property": "--color-warning",
-      "value": "#ff9017"
+      "value": "#a05a00"
     },
     {
       "property": "--color-warning-light",
-      "value": "#ffead5"
+      "value": "#fff4e0"
     },
     {
       "property": "--color-warning-rgb",
-      "value": "255, 144, 23"
+      "value": "160, 90, 0"
     },
     {
       "property": "--color-error",
-      "value": "#fa3434"
+      "value": "#c42a30"
     },
     {
       "property": "--color-error-light",
-      "value": "#fdd0d0"
+      "value": "#fdecec"
     },
     {
       "property": "--color-error-rgb",
-      "value": "250, 52, 52"
+      "value": "196, 42, 48"
+    },
+    {
+      "property": "--color-danger-fill",
+      "value": "#d6343a"
+    },
+    {
+      "property": "--color-text-base",
+      "value": "#0d1220"
+    },
+    {
+      "property": "--color-text-muted",
+      "value": "#5a6478"
+    },
+    {
+      "property": "--color-text-subtle",
+      "value": "#8b95a8"
+    },
+    {
+      "property": "--color-text-alt",
+      "value": "#fff"
+    },
+    {
+      "property": "--color-bg",
+      "value": "#f6f7f9"
+    },
+    {
+      "property": "--color-bg-alt",
+      "value": "#161a23"
+    },
+    {
+      "property": "--color-surface",
+      "value": "#fff"
+    },
+    {
+      "property": "--color-surface-raised",
+      "value": "#fff"
+    },
+    {
+      "property": "--color-surface-muted",
+      "value": "#eef0f4"
+    },
+    {
+      "property": "--color-glass",
+      "value": "rgb(255 255 255 / 72%)"
+    },
+    {
+      "property": "--color-overlay",
+      "value": "rgb(9 11 16 / 55%)"
+    },
+    {
+      "property": "--color-highlight",
+      "value": "rgb(255 255 255 / 70%)"
+    },
+    {
+      "property": "--color-border",
+      "value": "rgb(13 18 32 / 9%)"
+    },
+    {
+      "property": "--color-border-strong",
+      "value": "rgb(13 18 32 / 16%)"
+    },
+    {
+      "property": "--input-border",
+      "value": "#8b95a8"
     },
     {
       "property": "--chip-success",
@@ -549,76 +851,8 @@
       "value": "linear-gradient(135deg, #6fa0ff 0%, #2c5cd4 100%)"
     },
     {
-      "property": "--color-text-base",
-      "value": "#333"
-    },
-    {
-      "property": "--color-text-alt",
-      "value": "#fff"
-    },
-    {
-      "property": "--color-on-fill",
-      "value": "var(--color-text-alt)"
-    },
-    {
-      "property": "--color-bg",
-      "value": "#eee"
-    },
-    {
-      "property": "--color-bg-alt",
-      "value": "#222"
-    },
-    {
-      "property": "--color-surface",
-      "value": "#f5f5f5"
-    },
-    {
-      "property": "--color-surface-raised",
-      "value": "#fff"
-    },
-    {
-      "property": "--color-surface-muted",
-      "value": "#e7e7e7"
-    },
-    {
-      "property": "--bg-primary",
-      "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)"
-    },
-    {
-      "property": "--bg-secondary",
-      "value": "linear-gradient(0deg, #292929 0%, #747474 100%)"
-    },
-    {
-      "property": "--bg-tertiary",
-      "value": "linear-gradient(0deg, #bbb 0%, #fff 100%)"
-    },
-    {
-      "property": "--color-border",
-      "value": "var(--gray-200)"
-    },
-    {
-      "property": "--color-border-hover",
-      "value": "var(--gray-300)"
-    },
-    {
-      "property": "--input-text",
-      "value": "var(--color-text-base)"
-    },
-    {
-      "property": "--input-bg",
-      "value": "var(--color-bg)"
-    },
-    {
-      "property": "--input-border",
-      "value": "var(--gray-300)"
-    },
-    {
-      "property": "--input-placeholder",
-      "value": "var(--gray-400)"
-    },
-    {
       "property": "--select-chevron",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235c6670' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235a6478' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
     },
     {
       "property": "--select-chevron-on-primary",
@@ -630,35 +864,43 @@
     },
     {
       "property": "--bg-gradient-1",
-      "value": "linear-gradient(0deg, #2476ff 0%, #5e9aff 100%)"
+      "value": "linear-gradient(0deg, #1660e6 0%, #5c9bff 100%)"
     },
     {
       "property": "--bg-gradient-2",
-      "value": "linear-gradient(0deg, #fff 0%, #5e9aff 100%)"
+      "value": "linear-gradient(0deg, #fff 0%, #bcd6ff 100%)"
     },
     {
       "property": "--bg-gradient-3",
-      "value": "linear-gradient(0deg, #0965ff 0%, #2476ff 100%)"
+      "value": "linear-gradient(0deg, #124dbb 0%, #2476ff 100%)"
     },
     {
       "property": "--bg-gradient-4",
-      "value": "linear-gradient(\n      180deg,\n      rgb(94 154 255 / 100%) 0%,\n      rgb(36 118 255 / 100%) 50%,\n      rgb(0 90 238 / 100%) 100%\n    )"
+      "value": "linear-gradient(180deg, #5c9bff 0%, #2476ff 50%, #1660e6 100%)"
     },
     {
       "property": "--bg-gradient-5",
-      "value": "radial-gradient(\n      circle,\n      rgb(94 154 255 / 100%) 0%,\n      rgb(36 118 255 / 100%) 100%\n    )"
+      "value": "radial-gradient(circle, #5c9bff 0%, #2476ff 100%)"
     },
     {
       "property": "--bg-gradient-6",
-      "value": "radial-gradient(\n      circle,\n      rgb(238 238 238 / 100%) 0%,\n      rgb(193 216 255 / 100%) 100%\n    )"
+      "value": "radial-gradient(circle, #f6f7f9 0%, #d9e8ff 100%)"
     },
     {
       "property": "--bg-gradient-7",
-      "value": "repeating-linear-gradient(\n      45deg,\n      #2476ff,\n      #5e9aff 20px,\n      #fff 20px,\n      #ccc 32px\n    )"
+      "value": "repeating-linear-gradient(45deg, #2476ff, #5c9bff 20px, #fff 20px, #e1e5eb 32px)"
     },
     {
       "property": "--bg-gradient-8",
-      "value": "repeating-linear-gradient(\n      45deg,\n      #5e9aff,\n      #0965ff 20px,\n      #000 20px,\n      #444 32px\n    )"
+      "value": "repeating-linear-gradient(45deg, #5c9bff, #1660e6 20px, #090b10 20px, #3a4252 32px)"
+    },
+    {
+      "property": "--gradient-text",
+      "value": "linear-gradient(100deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-700) 100%)"
+    },
+    {
+      "property": "--gradient-border",
+      "value": "linear-gradient(140deg, var(--blue-300) 0%, var(--color-primary) 40%, var(--blue-700) 70%, var(--blue-300) 100%)"
     },
     {
       "property": "--border-width-s",
@@ -669,92 +911,136 @@
       "value": "2px"
     },
     {
-      "property": "--border",
-      "value": "2px solid #2476ff"
-    },
-    {
-      "property": "--border-light",
-      "value": "2px solid #5e9aff"
-    },
-    {
-      "property": "--border-dark",
-      "value": "2px solid #0965ff"
+      "property": "--shadow-xs",
+      "value": "0 1px 2px rgb(13 18 32 / 6%)"
     },
     {
       "property": "--shadow-s",
-      "value": "0 1px 2px rgb(0 0 0 / 6%),\n      0 0 0 1px rgb(0 0 0 / 2%)"
+      "value": "0 1px 2px rgb(13 18 32 / 5%), 0 2px 6px -1px rgb(13 18 32 / 6%)"
     },
     {
       "property": "--shadow-m",
-      "value": "0 8px 16px -10px rgb(0 0 0 / 18%),\n      0 3px 8px -4px rgb(0 0 0 / 12%),\n      0 0 0 1px rgb(0 0 0 / 3%)"
+      "value": "0 2px 4px -1px rgb(13 18 32 / 6%), 0 8px 20px -6px rgb(13 18 32 / 12%)"
     },
     {
       "property": "--shadow-l",
-      "value": "0 18px 40px -26px rgb(0 0 0 / 30%),\n      0 10px 18px -14px rgb(0 0 0 / 18%),\n      0 0 0 1px rgb(0 0 0 / 4%)"
+      "value": "0 4px 8px -2px rgb(13 18 32 / 6%), 0 18px 40px -12px rgb(13 18 32 / 18%)"
     },
     {
       "property": "--shadow-xl",
-      "value": "0 34px 70px -46px rgb(0 0 0 / 45%),\n      0 18px 30px -22px rgb(0 0 0 / 25%),\n      0 0 0 1px rgb(0 0 0 / 5%)"
+      "value": "0 8px 16px -4px rgb(13 18 32 / 8%), 0 32px 64px -16px rgb(13 18 32 / 24%)"
     },
     {
       "property": "--shadow-inner",
-      "value": "inset 0 1px 2px rgb(0 0 0 / 14%),\n      inset 0 0 0 1px rgb(0 0 0 / 6%)"
+      "value": "inset 0 1px 2px rgb(13 18 32 / 8%)"
     },
     {
-      "property": "--color-bg",
-      "value": "#1a1a1a"
+      "property": "--shadow-primary",
+      "value": "0 1px 2px rgb(22 96 230 / 30%), 0 6px 16px -4px rgb(36 118 255 / 45%)"
     },
     {
-      "property": "--color-bg-alt",
-      "value": "#f5f5f5"
+      "property": "--shadow-primary-hover",
+      "value": "0 2px 4px rgb(22 96 230 / 30%), 0 12px 28px -6px rgb(36 118 255 / 55%)"
     },
     {
-      "property": "--color-surface",
-      "value": "#252525"
+      "property": "--shadow-focus",
+      "value": "0 0 0 3px rgb(36 118 255 / 40%)"
     },
     {
-      "property": "--color-surface-raised",
-      "value": "#2e2e2e"
+      "property": "--color-primary-text",
+      "value": "#7aaeff"
     },
     {
-      "property": "--color-surface-muted",
-      "value": "#1d1d1d"
+      "property": "--color-primary-soft",
+      "value": "#16264a"
+    },
+    {
+      "property": "--focus-ring",
+      "value": "rgb(92 155 255 / 60%)"
+    },
+    {
+      "property": "--color-success",
+      "value": "#34d399"
+    },
+    {
+      "property": "--color-success-light",
+      "value": "#0f2a20"
+    },
+    {
+      "property": "--color-warning",
+      "value": "#fbbf24"
+    },
+    {
+      "property": "--color-warning-light",
+      "value": "#2d220c"
+    },
+    {
+      "property": "--color-error",
+      "value": "#ff7a80"
+    },
+    {
+      "property": "--color-error-light",
+      "value": "#2f1517"
     },
     {
       "property": "--color-text-base",
-      "value": "#e8eaed"
+      "value": "#eef1f6"
     },
     {
-      "property": "--input-text",
-      "value": "var(--color-text-alt)"
+      "property": "--color-text-muted",
+      "value": "#9aa3b5"
     },
     {
-      "property": "--input-bg",
-      "value": "var(--gray-800)"
+      "property": "--color-text-subtle",
+      "value": "#6b7486"
     },
     {
-      "property": "--input-border",
-      "value": "var(--gray-600)"
+      "property": "--color-bg",
+      "value": "#090b10"
     },
     {
-      "property": "--input-placeholder",
-      "value": "var(--gray-500)"
+      "property": "--color-bg-alt",
+      "value": "#f6f7f9"
     },
     {
-      "property": "--select-chevron",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+      "property": "--color-surface",
+      "value": "#10131a"
     },
     {
-      "property": "--select-chevron-on-primary",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+      "property": "--color-surface-raised",
+      "value": "#161a23"
+    },
+    {
+      "property": "--color-surface-muted",
+      "value": "#0c0e14"
+    },
+    {
+      "property": "--color-glass",
+      "value": "rgb(22 26 35 / 70%)"
+    },
+    {
+      "property": "--color-overlay",
+      "value": "rgb(0 0 0 / 65%)"
+    },
+    {
+      "property": "--color-highlight",
+      "value": "rgb(255 255 255 / 6%)"
     },
     {
       "property": "--color-border",
-      "value": "var(--gray-700)"
+      "value": "rgb(255 255 255 / 8%)"
     },
     {
-      "property": "--color-border-hover",
-      "value": "var(--gray-600)"
+      "property": "--color-border-strong",
+      "value": "rgb(255 255 255 / 14%)"
+    },
+    {
+      "property": "--input-border",
+      "value": "#5f687b"
+    },
+    {
+      "property": "--select-chevron",
+      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%239aa3b5' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
     },
     {
       "property": "--chip-success-text",
@@ -885,52 +1171,112 @@
       "value": "linear-gradient(135deg, #7aabff 0%, #4070d8 100%)"
     },
     {
-      "property": "--shadow-s",
-      "value": "0 1px 3px rgb(0 0 0 / 40%),\n      0 0 0 1px rgb(255 255 255 / 4%)"
-    },
-    {
-      "property": "--shadow-m",
-      "value": "0 4px 12px rgb(0 0 0 / 50%),\n      0 0 0 1px rgb(255 255 255 / 5%)"
-    },
-    {
-      "property": "--shadow-l",
-      "value": "0 10px 28px rgb(0 0 0 / 55%),\n      0 0 0 1px rgb(255 255 255 / 6%)"
-    },
-    {
-      "property": "--shadow-xl",
-      "value": "0 20px 50px rgb(0 0 0 / 60%),\n      0 0 0 1px rgb(255 255 255 / 7%)"
-    },
-    {
-      "property": "--shadow-inner",
-      "value": "inset 0 1px 3px rgb(0 0 0 / 45%),\n      inset 0 0 0 1px rgb(255 255 255 / 6%)"
-    },
-    {
-      "property": "--select-chevron",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23adb5bd' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
-    },
-    {
-      "property": "--select-chevron-on-primary",
-      "value": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")"
+      "property": "--shadow-xs",
+      "value": "0 1px 2px rgb(0 0 0 / 50%)"
     },
     {
       "property": "--shadow-s",
-      "value": "0 1px 3px rgb(0 0 0 / 40%),\n      0 0 0 1px rgb(255 255 255 / 4%)"
+      "value": "0 1px 2px rgb(0 0 0 / 40%), 0 2px 8px -2px rgb(0 0 0 / 50%)"
     },
     {
       "property": "--shadow-m",
-      "value": "0 4px 12px rgb(0 0 0 / 50%),\n      0 0 0 1px rgb(255 255 255 / 5%)"
+      "value": "0 2px 4px rgb(0 0 0 / 40%), 0 10px 24px -8px rgb(0 0 0 / 60%)"
     },
     {
       "property": "--shadow-l",
-      "value": "0 10px 28px rgb(0 0 0 / 55%),\n      0 0 0 1px rgb(255 255 255 / 6%)"
+      "value": "0 4px 10px rgb(0 0 0 / 45%), 0 22px 48px -14px rgb(0 0 0 / 70%)"
     },
     {
       "property": "--shadow-xl",
-      "value": "0 20px 50px rgb(0 0 0 / 60%),\n      0 0 0 1px rgb(255 255 255 / 7%)"
+      "value": "0 8px 16px rgb(0 0 0 / 50%), 0 36px 72px -18px rgb(0 0 0 / 75%)"
     },
     {
       "property": "--shadow-inner",
-      "value": "inset 0 1px 3px rgb(0 0 0 / 45%),\n      inset 0 0 0 1px rgb(255 255 255 / 6%)"
+      "value": "inset 0 1px 2px rgb(0 0 0 / 50%)"
+    },
+    {
+      "property": "--shadow-primary",
+      "value": "0 1px 2px rgb(0 0 0 / 50%), 0 8px 22px -6px rgb(36 118 255 / 55%)"
+    },
+    {
+      "property": "--shadow-primary-hover",
+      "value": "0 2px 4px rgb(0 0 0 / 50%), 0 14px 32px -8px rgb(36 118 255 / 65%)"
+    },
+    {
+      "property": "--shadow-focus",
+      "value": "0 0 0 3px rgb(92 155 255 / 55%)"
+    },
+    {
+      "property": "--gradient-text",
+      "value": "linear-gradient(100deg, var(--blue-200) 0%, var(--blue-400) 45%, var(--color-primary) 100%)"
+    },
+    {
+      "property": "--gradient-border",
+      "value": "linear-gradient(140deg, var(--blue-400) 0%, var(--color-primary) 40%, var(--blue-800) 70%, var(--blue-400) 100%)"
+    },
+    {
+      "property": "--color-text",
+      "value": "var(--color-text-base)"
+    },
+    {
+      "property": "--color-on-fill",
+      "value": "var(--color-text-alt)"
+    },
+    {
+      "property": "--color-danger",
+      "value": "var(--color-error)"
+    },
+    {
+      "property": "--color-danger-soft",
+      "value": "var(--color-error-light)"
+    },
+    {
+      "property": "--color-surface-sunken",
+      "value": "var(--color-surface-muted)"
+    },
+    {
+      "property": "--color-border-hover",
+      "value": "var(--color-border-strong)"
+    },
+    {
+      "property": "--input-text",
+      "value": "var(--color-text-base)"
+    },
+    {
+      "property": "--input-bg",
+      "value": "var(--color-surface-raised)"
+    },
+    {
+      "property": "--input-placeholder",
+      "value": "var(--color-text-subtle)"
+    },
+    {
+      "property": "--bg-primary",
+      "value": "linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)"
+    },
+    {
+      "property": "--bg-secondary",
+      "value": "linear-gradient(180deg, var(--slate-600) 0%, var(--slate-800) 100%)"
+    },
+    {
+      "property": "--bg-tertiary",
+      "value": "linear-gradient(180deg, var(--color-surface-raised) 0%, var(--color-surface-muted) 100%)"
+    },
+    {
+      "property": "--gradient-primary",
+      "value": "linear-gradient(180deg, rgb(255 255 255 / 18%) 0%, rgb(255 255 255 / 0%) 52%), linear-gradient(180deg, var(--color-primary-fill) 0%, var(--color-primary-fill-end) 100%)"
+    },
+    {
+      "property": "--border",
+      "value": "1px solid var(--color-border-strong)"
+    },
+    {
+      "property": "--border-light",
+      "value": "1px solid var(--color-border)"
+    },
+    {
+      "property": "--border-dark",
+      "value": "1px solid var(--color-primary)"
     }
   ]
 }

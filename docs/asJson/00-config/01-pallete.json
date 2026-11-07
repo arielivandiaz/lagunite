@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "01-pallete.css",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
   "totalSelectors": 1,
   "content": [
@@ -12,6 +12,21 @@
       "id": "#00-01-01",
       "category": null,
       "properties": [
+        "--slate-0",
+        "--slate-25",
+        "--slate-50",
+        "--slate-100",
+        "--slate-200",
+        "--slate-300",
+        "--slate-400",
+        "--slate-500",
+        "--slate-600",
+        "--slate-700",
+        "--slate-800",
+        "--slate-850",
+        "--slate-900",
+        "--slate-925",
+        "--slate-950",
         "--gray-50",
         "--gray-100",
         "--gray-200",
@@ -68,99 +83,159 @@
         "--red-900",
         "--red-950"
       ],
-      "cssRule": "/* == Neutral Palette (Gray) == */\n--gray-50: hsl(210deg 20% 95%)\n--gray-100: hsl(210deg 18% 89%)\n--gray-200: hsl(210deg 15% 82%)\n--gray-300: hsl(210deg 13% 70%)\n--gray-400: hsl(210deg 11% 60%)\n--gray-500: hsl(210deg 9% 50%)\n--gray-600: hsl(210deg 10% 40%)\n--gray-700: hsl(210deg 12% 30%)\n--gray-800: hsl(210deg 15% 20%)\n--gray-900: hsl(210deg 20% 10%)\n--gray-950: hsl(210deg 25% 5%)\n/* == Primary Palette (Blue) == */\n--blue-50: hsl(210deg 90% 96%)\n--blue-100: hsl(210deg 90% 90%)\n--blue-200: hsl(210deg 90% 80%)\n--blue-300: hsl(210deg 90% 70%)\n--blue-400: hsl(210deg 90% 60%)\n--blue-500: hsl(210deg 90% 50%)\n--blue-600: hsl(210deg 85% 40%)\n--blue-700: hsl(210deg 80% 30%)\n--blue-800: hsl(210deg 80% 25%)\n--blue-900: hsl(210deg 85% 20%)\n--blue-950: hsl(210deg 90% 15%)\n/* == Accent Palette: Green (Success) == */\n--green-50: hsl(140deg 65% 96%)\n--green-100: hsl(140deg 65% 90%)\n--green-200: hsl(140deg 60% 80%)\n--green-300: hsl(140deg 60% 70%)\n--green-400: hsl(140deg 60% 60%)\n--green-500: hsl(140deg 60% 45%)\n--green-600: hsl(140deg 70% 35%)\n--green-700: hsl(140deg 75% 28%)\n--green-800: hsl(140deg 75% 20%)\n--green-900: hsl(140deg 80% 15%)\n--green-950: hsl(140deg 85% 10%)\n/* == Accent Palette: Yellow (Warning) == */\n--yellow-50: hsl(45deg 95% 96%)\n--yellow-100: hsl(45deg 95% 90%)\n--yellow-200: hsl(45deg 90% 80%)\n--yellow-300: hsl(45deg 90% 70%)\n--yellow-400: hsl(45deg 90% 60%)\n--yellow-500: hsl(45deg 90% 50%)\n--yellow-600: hsl(42deg 85% 45%)\n--yellow-700: hsl(40deg 80% 38%)\n--yellow-800: hsl(38deg 75% 30%)\n--yellow-900: hsl(36deg 70% 22%)\n--yellow-950: hsl(35deg 65% 15%)\n/* == Accent Palette: Red (Danger) == */\n--red-50: hsl(0deg 85% 96%)\n--red-100: hsl(0deg 85% 90%)\n--red-200: hsl(0deg 80% 80%)\n--red-300: hsl(0deg 80% 70%)\n--red-400: hsl(0deg 80% 60%)\n--red-500: hsl(0deg 75% 50%)\n--red-600: hsl(0deg 70% 42%)\n--red-700: hsl(0deg 75% 35%)\n--red-800: hsl(0deg 75% 28%)\n--red-900: hsl(0deg 80% 20%)\n--red-950: hsl(0deg 85% 15%)",
+      "cssRule": "/* == Neutral Palette (Slate, cool bias toward the brand blue) == */\n--slate-0: #fff\n--slate-25: #fbfcfd\n--slate-50: #f6f7f9\n--slate-100: #eef0f4\n--slate-200: #e1e5eb\n--slate-300: #c3c9d4\n--slate-400: #8b95a8\n--slate-500: #6b7486\n--slate-600: #5a6478\n--slate-700: #3a4252\n--slate-800: #232936\n--slate-850: #1b202b\n--slate-900: #161a23\n--slate-925: #10131a\n--slate-950: #090b10\n/* == Gray (v2 name, now slate) == */\n--gray-50: var(--slate-50)\n--gray-100: var(--slate-100)\n--gray-200: var(--slate-200)\n--gray-300: var(--slate-300)\n--gray-400: var(--slate-400)\n--gray-500: var(--slate-500)\n--gray-600: var(--slate-600)\n--gray-700: var(--slate-700)\n--gray-800: var(--slate-800)\n--gray-900: var(--slate-900)\n--gray-950: var(--slate-950)\n/* == Primary Palette (Blue, 500 = brand) == */\n--blue-50: #eef5ff\n--blue-100: #d9e8ff\n--blue-200: #bcd6ff\n--blue-300: #8ebbff\n--blue-400: #5c9bff\n--blue-500: #2476ff\n--blue-600: #1660e6\n--blue-700: #124dbb\n--blue-800: #153f94\n--blue-900: #173775\n--blue-950: #111f45\n/* == Accent Palette: Green (Success) == */\n--green-50: hsl(140deg 65% 96%)\n--green-100: hsl(140deg 65% 90%)\n--green-200: hsl(140deg 60% 80%)\n--green-300: hsl(140deg 60% 70%)\n--green-400: hsl(140deg 60% 60%)\n--green-500: hsl(140deg 60% 45%)\n--green-600: hsl(140deg 70% 35%)\n--green-700: hsl(140deg 75% 28%)\n--green-800: hsl(140deg 75% 20%)\n--green-900: hsl(140deg 80% 15%)\n--green-950: hsl(140deg 85% 10%)\n/* == Accent Palette: Yellow (Warning) == */\n--yellow-50: hsl(45deg 95% 96%)\n--yellow-100: hsl(45deg 95% 90%)\n--yellow-200: hsl(45deg 90% 80%)\n--yellow-300: hsl(45deg 90% 70%)\n--yellow-400: hsl(45deg 90% 60%)\n--yellow-500: hsl(45deg 90% 50%)\n--yellow-600: hsl(42deg 85% 45%)\n--yellow-700: hsl(40deg 80% 38%)\n--yellow-800: hsl(38deg 75% 30%)\n--yellow-900: hsl(36deg 70% 22%)\n--yellow-950: hsl(35deg 65% 15%)\n/* == Accent Palette: Red (Danger) == */\n--red-50: hsl(0deg 85% 96%)\n--red-100: hsl(0deg 85% 90%)\n--red-200: hsl(0deg 80% 80%)\n--red-300: hsl(0deg 80% 70%)\n--red-400: hsl(0deg 80% 60%)\n--red-500: hsl(0deg 75% 50%)\n--red-600: hsl(0deg 70% 42%)\n--red-700: hsl(0deg 75% 35%)\n--red-800: hsl(0deg 75% 28%)\n--red-900: hsl(0deg 80% 20%)\n--red-950: hsl(0deg 85% 15%)",
       "responsive": false,
-      "description": "|--------------------------------------------------------------------------\r\n| Raw Color Palette @ID: #00-01-01\r\n|--------------------------------------------------------------------------\r\n|\r\n| This file contains the raw color options for the design system.\r\n| These variables represent the \"what we have\" and should rarely\r\n| be used directly in components.\r\n|"
+      "description": "|--------------------------------------------------------------------------\n| Raw Color Palette @ID: #00-01-01\n|--------------------------------------------------------------------------\n|\n| This file contains the raw color options for the design system.\n| These variables represent the \"what we have\" and should rarely\n| be used directly in components.\n|\n| v3: blue ramp built around the brand blue #2476ff (500) and a cool slate\n| neutral ramp. --gray-* are kept as aliases of --slate-* for compatibility.\n|"
     }
   ],
   "customProperties": [
     {
+      "property": "--slate-0",
+      "value": "#fff"
+    },
+    {
+      "property": "--slate-25",
+      "value": "#fbfcfd"
+    },
+    {
+      "property": "--slate-50",
+      "value": "#f6f7f9"
+    },
+    {
+      "property": "--slate-100",
+      "value": "#eef0f4"
+    },
+    {
+      "property": "--slate-200",
+      "value": "#e1e5eb"
+    },
+    {
+      "property": "--slate-300",
+      "value": "#c3c9d4"
+    },
+    {
+      "property": "--slate-400",
+      "value": "#8b95a8"
+    },
+    {
+      "property": "--slate-500",
+      "value": "#6b7486"
+    },
+    {
+      "property": "--slate-600",
+      "value": "#5a6478"
+    },
+    {
+      "property": "--slate-700",
+      "value": "#3a4252"
+    },
+    {
+      "property": "--slate-800",
+      "value": "#232936"
+    },
+    {
+      "property": "--slate-850",
+      "value": "#1b202b"
+    },
+    {
+      "property": "--slate-900",
+      "value": "#161a23"
+    },
+    {
+      "property": "--slate-925",
+      "value": "#10131a"
+    },
+    {
+      "property": "--slate-950",
+      "value": "#090b10"
+    },
+    {
       "property": "--gray-50",
-      "value": "hsl(210deg 20% 95%)"
+      "value": "var(--slate-50)"
     },
     {
       "property": "--gray-100",
-      "value": "hsl(210deg 18% 89%)"
+      "value": "var(--slate-100)"
     },
     {
       "property": "--gray-200",
-      "value": "hsl(210deg 15% 82%)"
+      "value": "var(--slate-200)"
     },
     {
       "property": "--gray-300",
-      "value": "hsl(210deg 13% 70%)"
+      "value": "var(--slate-300)"
     },
     {
       "property": "--gray-400",
-      "value": "hsl(210deg 11% 60%)"
+      "value": "var(--slate-400)"
     },
     {
       "property": "--gray-500",
-      "value": "hsl(210deg 9% 50%)"
+      "value": "var(--slate-500)"
     },
     {
       "property": "--gray-600",
-      "value": "hsl(210deg 10% 40%)"
+      "value": "var(--slate-600)"
     },
     {
       "property": "--gray-700",
-      "value": "hsl(210deg 12% 30%)"
+      "value": "var(--slate-700)"
     },
     {
       "property": "--gray-800",
-      "value": "hsl(210deg 15% 20%)"
+      "value": "var(--slate-800)"
     },
     {
       "property": "--gray-900",
-      "value": "hsl(210deg 20% 10%)"
+      "value": "var(--slate-900)"
     },
     {
       "property": "--gray-950",
-      "value": "hsl(210deg 25% 5%)"
+      "value": "var(--slate-950)"
     },
     {
       "property": "--blue-50",
-      "value": "hsl(210deg 90% 96%)"
+      "value": "#eef5ff"
     },
     {
       "property": "--blue-100",
-      "value": "hsl(210deg 90% 90%)"
+      "value": "#d9e8ff"
     },
     {
       "property": "--blue-200",
-      "value": "hsl(210deg 90% 80%)"
+      "value": "#bcd6ff"
     },
     {
       "property": "--blue-300",
-      "value": "hsl(210deg 90% 70%)"
+      "value": "#8ebbff"
     },
     {
       "property": "--blue-400",
-      "value": "hsl(210deg 90% 60%)"
+      "value": "#5c9bff"
     },
     {
       "property": "--blue-500",
-      "value": "hsl(210deg 90% 50%)"
+      "value": "#2476ff"
     },
     {
       "property": "--blue-600",
-      "value": "hsl(210deg 85% 40%)"
+      "value": "#1660e6"
     },
     {
       "property": "--blue-700",
-      "value": "hsl(210deg 80% 30%)"
+      "value": "#124dbb"
     },
     {
       "property": "--blue-800",
-      "value": "hsl(210deg 80% 25%)"
+      "value": "#153f94"
     },
     {
       "property": "--blue-900",
-      "value": "hsl(210deg 85% 20%)"
+      "value": "#173775"
     },
     {
       "property": "--blue-950",
-      "value": "hsl(210deg 90% 15%)"
+      "value": "#111f45"
     },
     {
       "property": "--green-50",

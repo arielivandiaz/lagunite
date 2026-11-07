@@ -1,7 +1,7 @@
 {
   "folder": "07-compounds",
   "file": "04-empty-state.css",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
   "totalSelectors": 23,
   "content": [
@@ -23,7 +23,7 @@
         "border-radius",
         "background"
       ],
-      "cssRule": "display: flex\nflex-direction: column\nalign-items: center\njustify-content: center\ngap: var(--space-3)\ntext-align: center\npadding: var(--space-6) var(--space-4)\nborder: var(--border-width-s) dashed var(--color-border)\nborder-radius: var(--radius-l)\nbackground: linear-gradient(180deg, rgb(0 0 0 / 1.5%) 0%, rgb(0 0 0 / 0%) 100%)",
+      "cssRule": "display: flex\nflex-direction: column\nalign-items: center\njustify-content: center\ngap: var(--space-3)\ntext-align: center\npadding: var(--space-12) var(--space-6)\nborder: var(--border-width-s) dashed var(--color-border-strong)\nborder-radius: var(--radius-xl)\nbackground: var(--color-surface)",
       "responsive": false,
       "description": "── Base container and structure ────────────────────────────────────────"
     },
@@ -43,9 +43,10 @@
         "font-size",
         "color",
         "background",
-        "border"
+        "border",
+        "box-shadow"
       ],
-      "cssRule": "width: 3.25rem\nheight: 3.25rem\nborder-radius: var(--radius-full)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nfont-size: 1.4rem\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\nborder: var(--border-width-s) solid rgba(var(--color-primary-rgb), 0.28)",
+      "cssRule": "width: 3.5rem\nheight: 3.5rem\nborder-radius: var(--radius-lg)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nfont-size: 1.4rem\ncolor: var(--color-primary-text)\nbackground: var(--color-primary-soft)\nborder: 0\nbox-shadow: inset 0 1px 0 var(--color-highlight), inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.18)",
       "responsive": false,
       "description": "── Base container and structure ────────────────────────────────────────"
     },
@@ -73,11 +74,13 @@
       "category": null,
       "properties": [
         "margin",
+        "font-family",
         "font-size",
         "font-weight",
+        "letter-spacing",
         "color"
       ],
-      "cssRule": "margin: 0\nfont-size: var(--font-size-xl)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-text-base)",
+      "cssRule": "margin: 0\nfont-family: var(--font-display)\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "── Base container and structure ────────────────────────────────────────"
     },
@@ -93,7 +96,7 @@
         "color",
         "font-size"
       ],
-      "cssRule": "margin: 0\nmax-width: 40ch\ncolor: var(--gray-600)\nfont-size: var(--font-size-base)",
+      "cssRule": "margin: 0\nmax-width: 40ch\ncolor: var(--color-text-muted)\nfont-size: var(--font-size-s)",
       "responsive": false,
       "description": "── Base container and structure ────────────────────────────────────────"
     },
@@ -125,7 +128,7 @@
         "font-size",
         "color"
       ],
-      "cssRule": "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)",
+      "cssRule": "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--color-text-muted)",
       "responsive": false,
       "description": "── Base container and structure ────────────────────────────────────────"
     },
