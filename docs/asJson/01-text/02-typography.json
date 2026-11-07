@@ -1,9 +1,9 @@
 {
   "folder": "01-text",
   "file": "02-typography.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-23",
   "hasResponsive": true,
-  "totalSelectors": 20,
+  "totalSelectors": 24,
   "content": [
     {
       "type": "selector",
@@ -264,6 +264,58 @@
       "cssRule": "text-align: justify-all",
       "responsive": true,
       "description": "Text Align"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".text-balance",
+      "id": "#01-02-07",
+      "category": null,
+      "properties": [
+        "text-wrap"
+      ],
+      "cssRule": "text-wrap: balance",
+      "responsive": false,
+      "description": "Text wrap (progressive enhancement — ignored where unsupported)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".text-pretty",
+      "id": "#01-02-07",
+      "category": null,
+      "properties": [
+        "text-wrap"
+      ],
+      "cssRule": "text-wrap: pretty",
+      "responsive": false,
+      "description": "Text wrap (progressive enhancement — ignored where unsupported)"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".text-trim",
+      "id": "#01-02-08",
+      "category": null,
+      "properties": [
+        "text-box"
+      ],
+      "cssRule": "text-box: trim-both cap alphabetic",
+      "responsive": false,
+      "description": "* Precise text-box trim (UI labels / headings — not long body copy).\r\n * Progressive: ignored where text-box unsupported."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".text-trim-start",
+      "id": "#01-02-08",
+      "category": null,
+      "properties": [
+        "text-box"
+      ],
+      "cssRule": "text-box: trim-start cap alphabetic",
+      "responsive": false,
+      "description": "* Precise text-box trim (UI labels / headings — not long body copy).\r\n * Progressive: ignored where text-box unsupported."
     }
   ]
 }

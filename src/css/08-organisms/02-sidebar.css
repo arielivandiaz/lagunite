@@ -69,8 +69,12 @@
   display: none;
 }
 
+/* Reset global `details` callout (base uses --color-bg-alt = #222 in day). */
 .sidebar-section > details {
   margin: 0;
+  padding: 0;
+  max-width: none;
+  background: transparent;
 }
 
 .sidebar-section > details > .sidebar-section-title::after {
@@ -211,4 +215,50 @@
 .night .sidebar .sidebar-link.active {
   background: var(--color-primary-dark);
   color: var(--color-primary);
+}
+
+/* @ID: #08-02-06 */
+
+/*
+ * Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.
+ * Pair with .sidebar-backdrop for light-dismiss.
+ */
+.sidebar.sidebar-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+
+.sidebar.sidebar-drawer.open {
+  transform: translateX(0);
+  box-shadow: var(--shadow-xl);
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: rgb(0 0 0 / 50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar.sidebar-drawer,
+  .sidebar-backdrop {
+    transition: none;
+  }
 }

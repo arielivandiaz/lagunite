@@ -210,7 +210,100 @@
   border-color: var(--gray-700);
 }
 
+/* @ID: #07-01-08 */
+
+/*
+ * Opt-in parent styling from child state (:has).
+ * Prefer scoped containers — do not put on body.
+ */
+.card-state {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.card-state:has(:focus-within) {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-m);
+}
+
+.card-state:has(input:checked) {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.06);
+}
+
+.night .card-state:has(input:checked) {
+  background: rgba(var(--color-primary-rgb), 0.14);
+}
+
+/* @ID: #07-01-09 */
+
+/*
+ * Content-based layout: row when media child present.
+ * Fallback class .has-image for @supports not :has().
+ */
+.card-media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+
+.card-media > .card-media-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-media:has(> img),
+.card-media:has(> .card-img),
+.card-media:has(> .card-img-top),
+.card-media.has-image {
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-media:has(> img) > img,
+.card-media:has(> .card-img) > .card-img,
+.card-media:has(> .card-img-top) > .card-img-top,
+.card-media.has-image > img,
+.card-media.has-image > .card-img,
+.card-media.has-image > .card-img-top {
+  width: 7.5rem;
+  max-width: 40%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: var(--radius-s);
+}
+
+.card-media:not(.has-image, :has(> img), :has(> .card-img), :has(> .card-img-top)) {
+  background: rgb(0 0 0 / 2%);
+}
+
+.night .card-media:not(.has-image, :has(> img), :has(> .card-img), :has(> .card-img-top)) {
+  background: rgb(255 255 255 / 4%);
+}
+
 @media (width <= 639px) {
+  .card-media:has(> img),
+  .card-media:has(> .card-img),
+  .card-media:has(> .card-img-top),
+  .card-media.has-image {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-media:has(> img) > img,
+  .card-media:has(> .card-img) > .card-img,
+  .card-media:has(> .card-img-top) > .card-img-top,
+  .card-media.has-image > img,
+  .card-media.has-image > .card-img,
+  .card-media.has-image > .card-img-top {
+    width: 100%;
+    max-width: none;
+  }
+
   .card-horizontal {
     flex-direction: column;
   }

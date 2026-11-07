@@ -27,6 +27,10 @@
 `.navbar-transparent` — transparent bg, no border.
 `.navbar-sticky` — `position: sticky; top: 0`.
 
+### Scrollspy
+
+`.scrollspy` — `scroll-target-group: auto` on a nav of fragment links. Active link via `:is(:target-current, .scrollspy-current)` (bold + underline + tint). Sync `aria-current` in script; IO fallback toggles `.scrollspy-current`. Recipe: `lab/recipes/scrollspy.html`.
+
 ### Mobile drawer
 
 On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with JS). Burger visible only ≤639px.
@@ -54,6 +58,15 @@ On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with 
 ### Mobile drawer
 
 `.sidebar` slides off-screen; add **`.sidebar.open`** to show (JS required).
+
+### Forced overlay drawer (any viewport)
+
+| Class | Role |
+| --- | --- |
+| `.sidebar.sidebar-drawer` | Always off-canvas; `.open` slides in |
+| `.sidebar-backdrop` / `.open` | Dimmed light-dismiss layer |
+
+Recipe: `lab/recipes/navigation-drawer.html`. Prefer `<details>` for searchable section groups (`search-hidden-content`).
 
 ### Night mode
 

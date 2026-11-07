@@ -1,9 +1,9 @@
 folder: 08-organisms
 file: 01-navbar.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-09-23
 hasResponsive: false
-totalSelectors: 18
-content[18]:
+totalSelectors: 27
+content[27]:
   - type: selector
     selectorType: class
     selector: .navbar
@@ -166,3 +166,84 @@ content[18]:
     cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)"
     responsive: false
     description: ── Variants ─────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .scrollspy
+    id: #08-01-07
+    category: null
+    properties[1]: scroll-target-group
+    cssRule: "scroll-target-group: auto"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: ".scrollspy a:is(:target-current"
+    id: #08-01-07
+    category: null
+    properties[5]: font-weight,color,background,text-decoration,text-underline-offset
+    cssRule: "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: .scrollspy-current)
+    id: #08-01-07
+    category: null
+    properties[5]: font-weight,color,background,text-decoration,text-underline-offset
+    cssRule: "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: ".scrollspy .navbar-link:is(:target-current"
+    id: #08-01-07
+    category: null
+    properties[5]: font-weight,color,background,text-decoration,text-underline-offset
+    cssRule: "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: .scrollspy-current)
+    id: #08-01-07
+    category: null
+    properties[5]: font-weight,color,background,text-decoration,text-underline-offset
+    cssRule: "font-weight: var(--font-weight-bold)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\ntext-decoration: underline\ntext-underline-offset: 0.2em"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: ".night .scrollspy a:is(:target-current"
+    id: #08-01-07
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary-light)"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: .scrollspy-current)
+    id: #08-01-07
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary-light)"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: ".night .scrollspy .navbar-link:is(:target-current"
+    id: #08-01-07
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary-light)"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."
+  - type: selector
+    selectorType: class
+    selector: .scrollspy-current)
+    id: #08-01-07
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary-light)"
+    responsive: false
+    description: "* Scrollspy nav: native scroll-target-group + :target-current.\n * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.\n * Prefer aria-current sync in script (visual alone is not exposed to AT)."

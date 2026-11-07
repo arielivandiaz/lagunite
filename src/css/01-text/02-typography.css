@@ -94,6 +94,31 @@
   text-align: justify-all;
 }
 
+/* @ID: #01-02-07 */
+
+/* Text wrap (progressive enhancement — ignored where unsupported) */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* @ID: #01-02-08 */
+
+/*
+ * Precise text-box trim (UI labels / headings — not long body copy).
+ * Progressive: ignored where text-box unsupported.
+ */
+.text-trim {
+  text-box: trim-both cap alphabetic;
+}
+
+.text-trim-start {
+  text-box: trim-start cap alphabetic;
+}
+
 @media (width <= 639px) {
   /* @ID: #01-02-05 */
 

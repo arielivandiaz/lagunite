@@ -24,6 +24,14 @@
 .container-wide      1440px   extra wide
 ```
 
+### Container queries
+
+| Class | Role |
+| --- | --- |
+| `.cq` | `container-type: inline-size` |
+| `.cq-row` | Column → row when container ≥400px |
+| `.cq-show-m` / `.cq-hide-m` | Toggle at container ≥400px |
+
 ## Section containers
 ```
 .section-container     100%, padding 48px 16px

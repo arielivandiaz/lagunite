@@ -32,7 +32,7 @@ Manual matrix: run `npm run dev` → `/demos/01`–`05` at 320 / 640 / 1024 / 14
 | Area | Expectation |
 | --- | --- |
 | Focus | Interactive atoms/organisms expose `:focus-visible` (btn, navbar, sidebar, topbar, modal-close, alerts, picker, selectable, tabs, …) |
-| Forms | Labels + `.form-error-msg` in the same `.form-group`; placeholders gate native valid/invalid |
+| Forms | Labels + `.form-error-msg` in the same `.form-group`; native chrome via `:user-invalid` / `:user-valid` (success still gates on placeholder + content) |
 | Motion | Framework `.animate-*` and key compounds respect `prefers-reduced-motion` |
 | ARIA | Use on alerts (`role`), listbox picker, tabs; don’t invent roles for static chrome |
 

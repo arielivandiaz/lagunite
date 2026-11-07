@@ -8,11 +8,19 @@
   */
 
   :root {
+    /* Native UI (scrollbars, form controls) follow Lagunite light by default.
+       Toggle .night → color-scheme: dark (see below). */
+    color-scheme: light;
+
     /* == Color Assignments == */
     --color-primary: #2476ff;
     --color-primary-light: #5e9aff;
     --color-primary-dark: #0965ff;
     --color-primary-rgb: 36, 118, 255;
+
+    /* Brand tint for native checkbox / radio / range / progress */
+    accent-color: var(--color-primary);
+
     --color-secondary: #747474;
     --color-secondary-light: #333;
     --color-secondary-dark: #292929;
@@ -178,6 +186,10 @@
   /* @ID: #00-03-02 */
 
   /*** Dark Theme (Night Mode) ***/
+  .night {
+    color-scheme: dark;
+  }
+
   .night,
   .night * {
     /* == Background Colors == */

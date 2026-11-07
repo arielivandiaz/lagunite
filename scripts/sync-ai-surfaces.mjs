@@ -14,30 +14,135 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repo = path.resolve(__dirname, '..');
 
 const SKILLS = [
-  ['lagunite-compose', 'compose.md', 'Compose Lagunite screens and sections: hierarchy, spacing, responsive, anti-patterns.'],
-  ['lagunite-anti-slop', 'anti-slop.md', 'Filter generic AI UI/copy; Lagunite-mapped anti-slop checks for screens and audits.'],
-  ['lagunite-tokens', 'tokens.md', 'Lagunite design tokens and CSS variables (--space-*, --color-*, radii, motion).'],
-  ['lagunite-typography', 'typography.md', 'Lagunite typography utilities: size, weight, line-height, align.'],
-  ['lagunite-colors', 'colors.md', 'Lagunite color utilities: text, backgrounds, surfaces, on-fill, borders.'],
-  ['lagunite-spacing', 'spacing.md', 'Lagunite spacing and sizing: margin, padding, position, width, height.'],
-  ['lagunite-flex', 'flex.md', 'Lagunite flex layout: row/col defaults, gap, alignment, flex-center.'],
-  ['lagunite-grid', 'grid.md', 'Lagunite grid layout: columns, gaps, placement, responsive prefixes.'],
-  ['lagunite-containers', 'containers.md', 'Lagunite containers, page width, hero and prose width helpers.'],
-  ['lagunite-decorators', 'decorators.md', 'Lagunite decorators: shadows, borders, motion, filters, surface-glass.'],
-  ['lagunite-atoms', 'atoms.md', 'Lagunite atoms: buttons notes, inputs, table, lists, badges, avatars, chips, tags.'],
-  ['lagunite-molecules', 'molecules.md', 'Lagunite molecules: form-groups, alerts, tabs, picker-wheel, selectable-option, and more.'],
-  ['lagunite-compounds', 'compounds.md', 'Lagunite compounds: cards, modals, bottom-sheet, empty-state.'],
-  ['lagunite-organisms', 'organisms.md', 'Lagunite organisms: navbar, sidebar, footer, dashboard shells, topbar.'],
-  ['lagunite-patterns', 'patterns.md', 'Lagunite page patterns: landing, dashboard, forms, auth starting points.'],
-  ['lagunite-misc', 'misc.md', 'Lagunite misc utilities: display, cursor, pseudo helpers.'],
-  ['lagunite-tailwind-migration', 'tailwind-migration.md', 'Migrate Tailwind class patterns to Lagunite utilities.'],
-  ['lagunite-validate', 'validate.md', 'Lagunite UI Validator orchestrator: route domain skills and emit structured report.'],
-  ['lagunite-validate-structure', 'validate-structure.md', 'Validate Lagunite classnames, order, and layer structure.'],
-  ['lagunite-validate-forms', 'validate-forms.md', 'Validate Lagunite forms: form-group, labels, inputs, native valid/invalid.'],
-  ['lagunite-validate-night', 'validate-night.md', 'Validate Lagunite .night surfaces, muted text, and accent fills.'],
-  ['lagunite-validate-a11y', 'validate-a11y.md', 'Validate Lagunite light a11y: labels, focus, headings, icon-only controls.'],
-  ['lagunite-contrast', 'contrast.md', 'Lagunite contrast and safe bg/text pairs (WCAG-oriented notes).'],
+  // [id, canonicalFile, description] — description = WHAT + WHEN (+ NOT when useful). Cursor matches on this.
+  [
+    'lagunite-route',
+    'route.md',
+    'Routes which Lagunite skill to open next (compose vs layer vs validate). Use when unsure which skill to load, before generating UI, or to avoid preloading sibling skills. Do not use as a class encyclopedia.',
+  ],
+  [
+    'lagunite-compose',
+    'compose.md',
+    'Composes Lagunite screens, sections, and POC HTML: layout hierarchy, spacing rhythm, tool shells (ai-s + minvh100), anti-patterns. Use when generating or rewriting multi-element UI, forms, dashboards, or pocs/*.html. Do not use for audits — use lagunite-validate / UI Validator instead.',
+  ],
+  [
+    'lagunite-anti-slop',
+    'anti-slop.md',
+    'Filters generic AI UI/copy (purple gradients, fake stats, glow, emoji icons) mapped to Lagunite. Use when the user asks for taste polish, anti-slop, or “AI look” cleanup. Not the default path for a plain generate.',
+  ],
+  [
+    'lagunite-tokens',
+    'tokens.md',
+    'Documents Lagunite CSS variables (--space-*, --color-*, radii, motion). Use when looking up or changing design tokens.',
+  ],
+  [
+    'lagunite-typography',
+    'typography.md',
+    'Lagunite type utilities: size, weight, line-height, align. Use when choosing or fixing font/type classes.',
+  ],
+  [
+    'lagunite-colors',
+    'colors.md',
+    'Lagunite color utilities: text, backgrounds, surfaces, on-fill, borders. Use when picking bg/text/border classes (not .bg-1..9 as panels).',
+  ],
+  [
+    'lagunite-spacing',
+    'spacing.md',
+    'Lagunite spacing and sizing: margin, padding, position, width, height, minvh*. Use when stuck on spacing or viewport height utilities.',
+  ],
+  [
+    'lagunite-flex',
+    'flex.md',
+    'Lagunite flex: row/col defaults (ai-fs), gap, alignment, flex-1, flex-nowrap. Use when building or fixing flex layouts; remember tools need ai-s not bare col.',
+  ],
+  [
+    'lagunite-grid',
+    'grid.md',
+    'Lagunite grid: columns, gaps, placement, x*/d* prefixes. Use when building or fixing CSS grid layouts.',
+  ],
+  [
+    'lagunite-containers',
+    'containers.md',
+    'Lagunite containers and max-widths: container, container-fluid, prose, hero, wide. Use when choosing page width constraints.',
+  ],
+  [
+    'lagunite-decorators',
+    'decorators.md',
+    'Lagunite decorators: shadows, borders, motion, filters, surface-glass. Use when adding borders, drag highlights, or motion utilities.',
+  ],
+  [
+    'lagunite-atoms',
+    'atoms.md',
+    'Lagunite atoms: buttons, inputs, table, lists, badges, avatars, chips, tags. Use when looking up atom markup or button/input class chains.',
+  ],
+  [
+    'lagunite-molecules',
+    'molecules.md',
+    'Lagunite molecules: form-group, alerts, tabs, dropdown, skeleton, and related. Use when building form fields or molecule markup.',
+  ],
+  [
+    'lagunite-compounds',
+    'compounds.md',
+    'Lagunite compounds: cards, modals, bottom-sheet, empty-state. Use when building cards, dialogs, or dropzone empty-states.',
+  ],
+  [
+    'lagunite-organisms',
+    'organisms.md',
+    'Lagunite organisms: navbar, sidebar, footer, dashboard shells, topbar. Use when building app chrome or dashboard shells.',
+  ],
+  [
+    'lagunite-patterns',
+    'patterns.md',
+    'Lagunite page starting points: landing, dashboard, forms, auth. Use when scaffolding a whole page type from a template.',
+  ],
+  [
+    'lagunite-misc',
+    'misc.md',
+    'Lagunite misc utilities: display, cursor, pseudo helpers. Use when needing d-none, cursor-*, or pseudo utilities.',
+  ],
+  [
+    'lagunite-tailwind-migration',
+    'tailwind-migration.md',
+    'Maps Tailwind class patterns to Lagunite utilities. Use when migrating Tailwind HTML/CSS to Lagunite.',
+  ],
+  [
+    'lagunite-validate',
+    'validate.md',
+    'Orchestrates Lagunite UI audit: routes domain skills and emits the Validator report. Use when the user asks to validate, audit, auditar, or review Lagunite HTML. Do not open after every generate.',
+  ],
+  [
+    'lagunite-validate-structure',
+    'validate-structure.md',
+    'Validates Lagunite classnames, class order, and layer structure. Use as a validate.md domain leaf during audits.',
+  ],
+  [
+    'lagunite-validate-forms',
+    'validate-forms.md',
+    'Validates Lagunite forms: form-group, labels, inputs, :user-invalid. Use during audits when forms are present.',
+  ],
+  [
+    'lagunite-validate-night',
+    'validate-night.md',
+    'Validates Lagunite .night surfaces and muted text. Use during audits when night mode or a theme toggle exists.',
+  ],
+  [
+    'lagunite-validate-a11y',
+    'validate-a11y.md',
+    'Validates light a11y: labels, focus, headings, icon-only controls. Use during Lagunite UI audits.',
+  ],
+  [
+    'lagunite-contrast',
+    'contrast.md',
+    'Lagunite contrast and safe bg/text pairs (WCAG-oriented). Use when checking color pairs or during audits.',
+  ],
 ];
+
+/** Orchestrator ids that get a richer Cursor-only wrapper (progressive disclosure). */
+const CURSOR_ORCHESTRATORS = new Set([
+  'lagunite-route',
+  'lagunite-compose',
+  'lagunite-validate',
+]);
 
 const APPLY_TO = '**/*.html,src/css/**/*.css,pocs/**/*.html,demos/**/*.html';
 
@@ -93,13 +198,66 @@ Use the canonical skill: [\`ai/skills/${file}\`](../../../ai/skills/${file}).
 `;
 }
 
+/** Cursor-only: richer body so discovery ≠ empty link. Still MUST Read canonical next. */
+function cursorOrchestratorWrapper(id, file, desc) {
+  const bodies = {
+    'lagunite-route': `# Lagunite route (Cursor)
+
+**First action:** Read [\`ai/skills/route.md\`](../../../ai/skills/route.md) and follow it.
+
+## Caps (do not skip)
+- Open **one** child node, then at most **one** leaf — never the whole \`ai/skills/\` folder.
+- Generate → \`compose.md\` only. Audit → \`validate.md\` only if the user asked.
+- Sibling skills collide (content \`ai-fs\` vs tool \`ai-s\`); task intent wins.
+
+Map: [\`ai/AGENTS-AND-SKILLS.md\`](../../../ai/AGENTS-AND-SKILLS.md).
+`,
+    'lagunite-compose': `# Lagunite compose (Cursor)
+
+**First action:** Read [\`ai/skills/compose.md\`](../../../ai/skills/compose.md) and follow it.
+
+## Caps (do not skip)
+- Layout first. Tools/editors: \`minvh100\` + \`col ai-s flex-nowrap\` (bare \`.col\` shrink-wraps).
+- Content/forms: start-aligned (\`ai-fs\` OK). Surfaces: \`.bg\` / \`.card\` — not \`.bg-1..9\` as panels.
+- At most **one** extra layer skill if stuck. Do **not** open \`validate.md\` or browser unless asked.
+- Mark inventados → closest utility or \`<!-- GAP: … -->\`.
+
+Canonical: [\`ai/skills/compose.md\`](../../../ai/skills/compose.md).
+`,
+    'lagunite-validate': `# Lagunite validate (Cursor)
+
+**First action:** Read [\`ai/skills/validate.md\`](../../../ai/skills/validate.md) and follow the orchestrator.
+
+## Caps (do not skip)
+- **Audit only** — do not run after a plain generate unless the user asked to validate/auditar.
+- Load domain leaves **as validate.md routes** (skip forms/night when N/A).
+- Prefer the **Lagunite UI Validator** agent for full audits.
+- End with the structured Validator report (includes Anti-Slop).
+
+Canonical: [\`ai/skills/validate.md\`](../../../ai/skills/validate.md).
+`,
+  };
+
+  const body = bodies[id];
+  if (!body) return skillWrapper(id, file, desc);
+
+  return `---
+name: ${id}
+description: >-
+  ${desc}
+---
+
+${body}`;
+}
+
 function uiValidatorSkill(label) {
   return `---
 name: lagunite-ui-validator
 description: >-
-  Orchestrates Lagunite UI validation across multiple domain skills (structure,
-  forms, night, a11y, compose, contrast, anti-slop). Use when auditing or fixing
-  Lagunite HTML, refining POCs, or after generating screens/forms/dashboards.
+  Audits and fixes Lagunite HTML via validate.md domains (structure, forms,
+  night, a11y, compose, contrast, anti-slop). Use when the user asks to
+  validate, audit, auditar, review UI, or fix POC markup quality. Do not invoke
+  automatically after every generate.
 ---
 
 # Lagunite UI Validator (${label})
@@ -134,8 +292,13 @@ function writeSkillSurfaces() {
   ];
 
   for (const [rel, label] of surfaces) {
+    const isCursor = rel === '.cursor/skills';
     for (const [id, file, desc] of SKILLS) {
-      write(path.join(repo, rel, id, 'SKILL.md'), skillWrapper(id, file, desc));
+      const body =
+        isCursor && CURSOR_ORCHESTRATORS.has(id)
+          ? cursorOrchestratorWrapper(id, file, desc)
+          : skillWrapper(id, file, desc);
+      write(path.join(repo, rel, id, 'SKILL.md'), body);
     }
     write(path.join(repo, rel, 'lagunite-ui-validator', 'SKILL.md'), uiValidatorSkill(label));
   }
@@ -146,8 +309,8 @@ function writeCanonicalAgent() {
 name: Lagunite UI Validator
 description: >-
   Multi-skill agent that validates and fixes Lagunite HTML using compose,
-  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use for
-  UI audits, POC refinement, and post-generation review.
+  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use when
+  the user asks to audit, validate, auditar, or review UI — not after every generate.
 ---
 
 ${AGENT_CANON}`;
@@ -162,8 +325,8 @@ function writeIdeAgents() {
 name: Lagunite UI Validator
 description: >-
   Multi-skill agent that validates and fixes Lagunite HTML using compose,
-  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use for
-  UI audits, POC refinement, and post-generation review.
+  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use when
+  the user asks to audit, validate, auditar, or review UI — not after every generate.
 ---
 
 # Lagunite UI Validator Agent
@@ -280,18 +443,18 @@ Same hard rules as [\`.cursor/rules/lagunite-ai.mdc\`](../../.cursor/rules/lagun
 - Order: base → \`x*\` → \`d*\`; layout before deco; \`.gap-*\` for flex/grid gap
 - Surfaces: \`.bg\` / \`.bg-surface\` / \`.card\` / grays — not \`.bg-1..9\` as panels
 - Muted: \`.card-text\` / \`.text-muted\` — never \`.color-text-alt\` as subtitle (use \`.color-on-fill\` on fills)
-- Flex defaults to start; center with \`.flex-center\` or \`jc-c ai-c\`
+- Flex defaults to start; center with \`.flex-center\` or \`jc-c ai-c\`. Tools/editors: \`ai-s\` + \`minvh100\`
 - Full-width primary CTA: \`.btn.size-l.marg-0.wp100\` (\`.btn\` has \`margin: 0\`)
 - CSS change → \`npm run docs:generate\`
 
-## On demand only
+## On demand only (one node — do not preload siblings)
+- Router: \`ai/skills/route.md\`
+- Craft / generate: \`ai/skills/compose.md\` (+ at most one layer skill)
+- Audit: \`ai/skills/validate.md\` — **only if user asked**
+- Slop filter: \`ai/skills/anti-slop.md\` — only if asked / polish
 - Map: \`ai/AGENTS-AND-SKILLS.md\`
-- Craft: \`ai/skills/compose.md\`
-- Audit: \`ai/skills/validate.md\`
-- Slop filter: \`ai/skills/anti-slop.md\`
-- Index: \`ai/SKILLS-INDEX.md\`
 
-Do **not** read every \`ai/skills/*.md\` unless the task needs that layer.
+Do **not** read every \`ai/skills/*.md\`, chain validate after every generate, or open browser/CDP unless asked.
 `
   );
 
@@ -331,13 +494,25 @@ Generated / maintained by \`node scripts/sync-ai-surfaces.mjs\`.
 
 | Path | Role |
 | --- | --- |
-| [\`../CLAUDE.md\`](../CLAUDE.md) | Lean repo identity (root) |
+| [\`../AGENTS.md\`](../AGENTS.md) | Lean repo identity (root; edit here) |
+| [\`CLAUDE.md\`](./CLAUDE.md) | Claude Code pointer → \`../AGENTS.md\` |
 | [\`skills/\`](./skills/) | Thin wrappers → \`ai/skills/*.md\` |
 | [\`agents/\`](./agents/) | UI Validator agent → \`ai/agents/\` + \`ai/skills/validate.md\` |
 | [\`FRAMEWORK-QUICKREF.md\`](./FRAMEWORK-QUICKREF.md) | Optional class encyclopedia (on demand) |
 
 **Edit content in \`ai/skills/\` and \`ai/agents/\`, then re-run the sync script.**  
-Do not put long skill prose only under \`.claude/\`.
+Do not put long skill prose only under \`.claude/\`. Lean identity: edit root \`AGENTS.md\` only.
+`
+  );
+
+  write(
+    path.join(repo, '.claude/CLAUDE.md'),
+    `# Lagunite — Claude Code entry
+
+> **Canonical lean identity lives at repo root:** [\`../AGENTS.md\`](../AGENTS.md)  
+> Do not maintain a duplicate checklist here. Edit \`AGENTS.md\`, then keep this pointer.
+
+For skills/agents under this folder, see [\`README.md\`](./README.md) and run \`npm run ai:sync\` from the repo root.
 `
   );
 }

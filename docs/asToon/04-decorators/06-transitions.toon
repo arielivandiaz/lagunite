@@ -1,9 +1,9 @@
 folder: 04-decorators
 file: 06-transitions.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-09-23
 hasResponsive: true
-totalSelectors: 27
-content[27]:
+totalSelectors: 33
+content[33]:
   - type: selector
     selectorType: class
     selector: .transition-none
@@ -247,3 +247,57 @@ content[27]:
     cssRule: "transition-delay: 500ms"
     responsive: true
     description: ** Transition Delays **
+  - type: selector
+    selectorType: class
+    selector: .enter-exit
+    id: #04-06-08
+    category: null
+    properties[5]: display,opacity,translate,transition,transition-behavior
+    cssRule: "display: block\nopacity: 1\ntranslate: 0\ntransition:\r\n    display 0.3s,\r\n    opacity 0.3s ease-out,\r\n    translate 0.3s ease-out\ntransition-behavior: allow-discrete"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."
+  - type: selector
+    selectorType: class
+    selector: .enter-exit
+    id: #04-06-08
+    category: null
+    properties[2]: opacity,translate
+    cssRule: "opacity: 0\ntranslate: 0 -0.75rem"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."
+  - type: selector
+    selectorType: class
+    selector: ".enter-exit:where(.hidden"
+    id: #04-06-08
+    category: null
+    properties[3]: display,opacity,translate
+    cssRule: "display: none\nopacity: 0\ntranslate: 0 -0.75rem"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."
+  - type: selector
+    selectorType: complex
+    selector: "[hidden])"
+    id: #04-06-08
+    category: null
+    properties[3]: display,opacity,translate
+    cssRule: "display: none\nopacity: 0\ntranslate: 0 -0.75rem"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."
+  - type: selector
+    selectorType: class
+    selector: .transition-discrete
+    id: #04-06-08
+    category: null
+    properties[1]: transition-behavior
+    cssRule: "transition-behavior: allow-discrete"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."
+  - type: selector
+    selectorType: class
+    selector: .enter-exit
+    id: #04-06-08
+    category: null
+    properties[1]: translate
+    cssRule: "translate: none"
+    responsive: false
+    description: "* Discrete entry/exit (@starting-style + allow-discrete).\r\n * Toggle with [hidden] / .hidden; do NOT put allow-discrete in the transition shorthand."

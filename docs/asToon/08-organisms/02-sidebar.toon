@@ -1,9 +1,9 @@
 folder: 08-organisms
 file: 02-sidebar.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-09-23
 hasResponsive: false
-totalSelectors: 32
-content[32]:
+totalSelectors: 36
+content[36]:
   - type: selector
     selectorType: class
     selector: .sidebar
@@ -90,10 +90,10 @@ content[32]:
     selector: .sidebar-section > details
     id: #08-02-02
     category: null
-    properties[1]: margin
-    cssRule: "margin: 0"
+    properties[4]: margin,padding,max-width,background
+    cssRule: "margin: 0\npadding: 0\nmax-width: none\nbackground: transparent"
     responsive: false
-    description: "── Header, sections, scroll area ───────────────────────────────────────"
+    description: Reset global `details` callout (base uses --color-bg-alt = #222 in day).
   - type: selector
     selectorType: class
     selector: ".sidebar-section > details > .sidebar-section-title::after"
@@ -102,7 +102,7 @@ content[32]:
     properties[5]: content,margin-left,font-size,line-height,transition
     cssRule: "content: \"▸\"\nmargin-left: auto\nfont-size: 0.625rem\nline-height: 1\ntransition: transform 0.2s"
     responsive: false
-    description: "── Header, sections, scroll area ───────────────────────────────────────"
+    description: Reset global `details` callout (base uses --color-bg-alt = #222 in day).
   - type: selector
     selectorType: class
     selector: ".sidebar-section > details[open] > .sidebar-section-title::after"
@@ -111,7 +111,7 @@ content[32]:
     properties[1]: transform
     cssRule: "transform: rotate(90deg)"
     responsive: false
-    description: "── Header, sections, scroll area ───────────────────────────────────────"
+    description: Reset global `details` callout (base uses --color-bg-alt = #222 in day).
   - type: selector
     selectorType: class
     selector: .sidebar-link
@@ -292,3 +292,39 @@ content[32]:
     cssRule: "background: var(--color-primary-dark)\ncolor: var(--color-primary)"
     responsive: false
     description: "── Footer row, compact, dark ───────────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .sidebar.sidebar-drawer
+    id: #08-02-06
+    category: null
+    properties[7]: position,top,left,height,z-index,transform,transition
+    cssRule: "position: fixed\ntop: 0\nleft: 0\nheight: 100vh\nz-index: 200\ntransform: translateX(-100%)\ntransition: transform 0.2s ease"
+    responsive: false
+    description: "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."
+  - type: selector
+    selectorType: class
+    selector: .sidebar.sidebar-drawer.open
+    id: #08-02-06
+    category: null
+    properties[2]: transform,box-shadow
+    cssRule: "transform: translateX(0)\nbox-shadow: var(--shadow-xl)"
+    responsive: false
+    description: "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."
+  - type: selector
+    selectorType: class
+    selector: .sidebar-backdrop
+    id: #08-02-06
+    category: null
+    properties[10]: position,inset,z-index,background,opacity,pointer-events,transition,border,padding,cursor
+    cssRule: "position: fixed\ninset: 0\nz-index: 150\nbackground: rgb(0 0 0 / 50%)\nopacity: 0\npointer-events: none\ntransition: opacity 0.2s ease\nborder: 0\npadding: 0\ncursor: pointer"
+    responsive: false
+    description: "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."
+  - type: selector
+    selectorType: class
+    selector: .sidebar-backdrop.open
+    id: #08-02-06
+    category: null
+    properties[2]: opacity,pointer-events
+    cssRule: "opacity: 1\npointer-events: auto"
+    responsive: false
+    description: "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."

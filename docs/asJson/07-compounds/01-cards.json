@@ -1,9 +1,9 @@
 {
   "folder": "07-compounds",
   "file": "01-cards.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-23",
   "hasResponsive": false,
-  "totalSelectors": 37,
+  "totalSelectors": 61,
   "content": [
     {
       "type": "selector",
@@ -529,6 +529,358 @@
       "cssRule": "background: var(--gray-800)\nborder-color: var(--gray-700)",
       "responsive": false,
       "description": "── Night mode & responsive ──────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-state",
+      "id": "#07-01-08",
+      "category": null,
+      "properties": [
+        "transition"
+      ],
+      "cssRule": "transition:\n    border-color 0.2s ease,\n    box-shadow 0.2s ease,\n    background-color 0.2s ease",
+      "responsive": false,
+      "description": "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-state:has(:focus-within)",
+      "id": "#07-01-08",
+      "category": null,
+      "properties": [
+        "border-color",
+        "box-shadow"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nbox-shadow: var(--shadow-m)",
+      "responsive": false,
+      "description": "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-state:has(input:checked)",
+      "id": "#07-01-08",
+      "category": null,
+      "properties": [
+        "border-color",
+        "background"
+      ],
+      "cssRule": "border-color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.06)",
+      "responsive": false,
+      "description": "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .card-state:has(input:checked)",
+      "id": "#07-01-08",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.14)",
+      "responsive": false,
+      "description": "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "gap",
+        "align-items"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\ngap: var(--space-3)\nalign-items: stretch",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media > .card-media-body",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "flex",
+        "min-width"
+      ],
+      "cssRule": "flex: 1\nmin-width: 0",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "align-items"
+      ],
+      "cssRule": "flex-direction: row\nalign-items: center",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> .card-img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "align-items"
+      ],
+      "cssRule": "flex-direction: row\nalign-items: center",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> .card-img-top)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "align-items"
+      ],
+      "cssRule": "flex-direction: row\nalign-items: center",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media.has-image",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "flex-direction",
+        "align-items"
+      ],
+      "cssRule": "flex-direction: row\nalign-items: center",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> img) > img",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> .card-img) > .card-img",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:has(> .card-img-top) > .card-img-top",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media.has-image > img",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media.has-image > .card-img",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media.has-image > .card-img-top",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "width",
+        "max-width",
+        "height",
+        "flex-shrink",
+        "object-fit",
+        "border-radius"
+      ],
+      "cssRule": "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".card-media:not(.has-image",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(0 0 0 / 2%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(0 0 0 / 2%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> .card-img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(0 0 0 / 2%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> .card-img-top))",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(0 0 0 / 2%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .card-media:not(.has-image",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 4%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 4%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> .card-img)",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 4%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":has(> .card-img-top))",
+      "id": "#07-01-09",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: rgb(255 255 255 / 4%)",
+      "responsive": false,
+      "description": "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
     }
   ]
 }

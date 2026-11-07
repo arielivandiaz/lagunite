@@ -30,6 +30,9 @@
 | `.card-elevated` | Opt-in shadow — default `.card` is flat; **≤1 elevated / view** unless floating job |
 | `.card-flat` | No border, transparent bg |
 | `.card-hover` | Lift + shadow on hover (respects `prefers-reduced-motion`) |
+| `.card-state` | Opt-in `:has(:focus-within)` / `:has(input:checked)` chrome. Recipe: `child-state-based-styling` |
+| `.card-media` | Content-based flex: row when direct `img` / `.card-img` present; `.has-image` fallback. Recipe: `content-based-styling` |
+| `.card-media-body` | Flex child for text next to media |
 
 ### Semantic variants (header tinted)
 
@@ -48,7 +51,7 @@
 
 ## Modals (`02-modals.css`)
 
-### Structure
+### Structure (legacy overlay)
 
 ```text
 .modal-overlay.open
@@ -60,11 +63,25 @@
         └── .modal-footer
 ```
 
+### Structure (preferred native)
+
+```text
+dialog.modal.modal-{s|?}  [closedby="any"?]
+  ├── .modal-header …
+  ├── .modal-body
+  └── .modal-footer
+```
+
+Open with `showModal()` (or Invoker `command="show-modal"`). See Lab recipes:
+`declarative-dialog-popover-control`, `light-dismiss-a-dialog`, `animate-to-from-top-layer`.
+
+`dialog.modal` includes progressive enter/exit (`@starting-style`, `overlay`, backdrop fade). Respects `prefers-reduced-motion`.
+
 | Class | Role |
 | --- | --- |
-| `.modal-overlay` | Full-screen dimmed flex center; hidden until `.open` |
+| `.modal-overlay` | Full-screen dimmed flex center; hidden until `.open` (legacy) |
 | `.modal-overlay.open` | Visible + interactive |
-| `.modal` | Dialog panel (default max-width 32rem) |
+| `.modal` | Dialog panel (default max-width 32rem); also on `dialog.modal` |
 | `.modal-header` | Title row + close |
 | `.modal-title` | Title text |
 | `.modal-close` | Close button |
@@ -81,10 +98,21 @@
 
 ## Behavior note
 
-Modal open state and overlay clicks are **not** defined in CSS alone — wire `.open` class with JS.
+- **Prefer** native `<dialog class="modal">` + `showModal()` / Invoker Commands / `closedby="any"`.
+- Legacy: `.modal-overlay.open` still works via app JS class toggle.
+- **Popover (until a dedicated surface ships):** `[popover]` + Lagunite chrome:
+  ```html
+  <div popover class="card padd marg-s shadow-s">…</div>
+  ```
+  - `.card` / `.padd` — surface
+  - `.marg-s` — inset from viewport edges (UA default can sit flush top/left)
+  - `.shadow-s` — subtle lift in the top layer (prefer over `.card-elevated` here)
+  - Recipe: `lab/recipes/declarative-dialog-popover-control` · web: `/lab/recipes/declarative-dialog-popover-control`
+  - `<!-- GAP: dedicated .popover surface / max-width / placement -->`
 
 ## Related skills
 
 - **molecules** — forms/alerts inside cards or modals
 - **flex** / **grid** — layout inside `.card-body` / `.modal-body`
-- **decorators** — extra borders/shadows if needed
+- **decorators** — `.shadow-s` / `.shadow` if you need more elevation on popovers or cards
+- **validate-a11y** — dialog labels, focus, light-dismiss

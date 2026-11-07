@@ -64,3 +64,66 @@
   color: var(--color-almost-black);
   background: var(--color-almost-white);
 }
+
+/* @ID: #06-04-04 */
+
+/*
+ * Progressive: Popover API + CSS Anchor Positioning.
+ * Existing [data-tooltip] remains the default CSS-only path.
+ * <!-- GAP: anchored() container queries for arrow flip — Baseline newly / limited -->
+ */
+@supports (anchor-name: --lagunite-tip) {
+  .tooltip-anchor {
+    anchor-name: --lagunite-tip;
+  }
+
+  .tooltip-popover {
+    inset: auto;
+    margin: 0;
+    position: fixed;
+    position-anchor: --lagunite-tip;
+    position-area: block-start;
+    position-try-fallbacks: flip-block, flip-inline;
+    max-width: 16rem;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-xs);
+    line-height: 1.35;
+    color: var(--color-almost-white);
+    background: var(--color-almost-black);
+    border: none;
+    border-radius: var(--radius-s);
+  }
+
+  .night .tooltip-popover {
+    color: var(--color-almost-black);
+    background: var(--color-almost-white);
+  }
+
+  /*
+   * Interest invokers (popover="hint" + interestfor) — limited availability.
+   * Chrome/visual only here. Pair each trigger/hint with unique
+   * anchor-name / position-anchor (inline or per-instance) for polyfills;
+   * native interestfor can use the implicit anchor.
+   * Do NOT set role="tooltip" / aria-describedby on the trigger — UA wires it.
+   */
+  .tooltip-hint {
+    inset: auto;
+    margin: 0;
+    position: fixed;
+    position-area: block-end;
+    position-try-fallbacks: flip-block, flip-inline;
+    max-width: 16rem;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-xs);
+    line-height: 1.35;
+    color: var(--color-almost-white);
+    background: var(--color-almost-black);
+    border: none;
+    border-radius: var(--radius-s);
+  }
+
+  .night .tooltip-hint {
+    color: var(--color-almost-black);
+    background: var(--color-almost-white);
+  }
+}

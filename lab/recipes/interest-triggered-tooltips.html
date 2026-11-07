@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · interest-triggered-tooltips — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>interest-triggered-tooltips</code></p>
+      <h1 class="font-xl bold color-text">Interest-triggered tooltips</h1>
+      <p class="font-s text-muted">
+        Progressive: <code>interestfor</code> + <code>popover="hint"</code> +
+        <code>.tooltip-hint</code>. Fallback: CSS-only <code>[data-tooltip]</code>
+        (see recipe 11). Limited to Chromium today — load a polyfill only when needed.
+      </p>
+    </header>
+
+    <div class="alert alert-warning" role="status">
+      Do <strong>not</strong> set <code>role="tooltip"</code> or <code>aria-describedby</code> on the trigger —
+      the UA associates them. WCAG 1.4.13: Esc dismisses; pointer can move onto the tip.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Interest invokers (progressive)</div>
+      <div class="card-body row gap flex-wrap ai-c">
+        <button
+          type="button"
+          class="btn"
+          interestfor="hint-save"
+          style="anchor-name: --hint-save"
+        >
+          Save
+        </button>
+        <div
+          id="hint-save"
+          class="tooltip-hint"
+          popover="hint"
+          style="position-anchor: --hint-save"
+        >
+          Writes the draft to your account. Shortcut: Ctrl+S.
+        </div>
+
+        <a
+          href="#glossary"
+          class="color-primary"
+          interestfor="hint-term"
+          style="anchor-name: --hint-term"
+        >
+          Lagunite
+        </a>
+        <div
+          id="hint-term"
+          class="tooltip-hint"
+          popover="hint"
+          style="position-anchor: --hint-term"
+        >
+          Utility-first CSS with descriptive class names.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Always-available fallback</div>
+      <div class="card-body">
+        <button type="button" class="btn alt" data-tooltip="Works everywhere">Hover me</button>
+      </div>
+    </section>
+
+    <section class="col gap-s" id="glossary">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>interestfor</code> + <code>popover="hint"</code> · <code>.tooltip-hint</code></li>
+        <li>Unique <code>anchor-name</code> / <code>position-anchor</code> per pair (polyfill-friendly)</li>
+        <li>Fallback: <code>[data-tooltip]</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>molecules</code> · Guide: <code>retrieve interest-triggered-tooltips</code>
+    </p>
+  </div>
+
+  <script type="module">
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    // Load interestfor polyfill only when missing (CDN for Lab demo).
+    if (!HTMLButtonElement.prototype.hasOwnProperty('interestForElement')) {
+      try {
+        await import('https://unpkg.com/interestfor@latest');
+      } catch {
+        /* ignore — data-tooltip fallback remains */
+      }
+    }
+  </script>
+</body>
+</html>

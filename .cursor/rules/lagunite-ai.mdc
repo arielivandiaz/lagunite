@@ -1,7 +1,7 @@
 ---
 description: >-
-  Lagunite HTML/CSS: short hard rules. Load compose/validate skills only when
-  generating or auditing screens — do not dump the full skill library.
+  Lagunite HTML/CSS: short hard rules. Prefer route.md → one skill node.
+  Generate = compose only; validate/browser only when asked.
 globs: "**/*.html,src/css/**/*.css,pocs/**/*.html,demos/**/*.html"
 alwaysApply: false
 ---
@@ -13,15 +13,15 @@ alwaysApply: false
 - Order: base → `x*` → `d*`; layout before deco; `.gap-*` for flex/grid gap
 - Surfaces: `.bg` / `.bg-surface` / `.card` / grays — not `.bg-1..9` as panels
 - Muted: `.card-text` / `.text-muted` — never `.color-text-alt` as subtitle (use `.color-on-fill` on fills)
-- Flex defaults to start; center with `.flex-center` or `jc-c ai-c`
+- Flex defaults to start; center with `.flex-center` or `jc-c ai-c`. Tools/editors: `ai-s` + `minvh100`
 - Full-width primary CTA: `.btn.size-l.marg-0.wp100` (`.btn` has `margin: 0`)
 - CSS change → `npm run docs:generate`
 
-## On demand only
+## On demand only (one node — do not preload siblings)
+- Router: `ai/skills/route.md`
+- Craft / generate: `ai/skills/compose.md` (+ at most one layer skill)
+- Audit: `ai/skills/validate.md` — **only if user asked**
+- Slop filter: `ai/skills/anti-slop.md` — only if asked / polish
 - Map: `ai/AGENTS-AND-SKILLS.md`
-- Craft: `ai/skills/compose.md`
-- Audit: `ai/skills/validate.md` (orchestrator; pulls domain skills as needed)
-- Slop filter: `ai/skills/anti-slop.md`
-- Index: `ai/SKILLS-INDEX.md`
 
-Do **not** read every `ai/skills/*.md` or cheatsheet unless the task needs that layer.
+Do **not** read every `ai/skills/*.md`, chain validate after every generate, or open browser/CDP unless asked.

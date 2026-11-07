@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · fluid-scaling — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container padd-v-l col gap">
+    <header class="col gap-s container-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1 · MWG <code>fluid-scaling</code></p>
+      <h1 class="font-xl bold color-text">Fluid scaling (container)</h1>
+      <p class="font-s text-muted">
+        Put <code>.cq</code> on the measuring ancestor. Descendants use
+        <code>.font-cq</code> / <code>.padd-cq</code> / <code>.gap-cq</code>
+        (<code>cqi</code> when supported, else <code>vw</code>). Max ≤ 2.5× min.
+      </p>
+    </header>
+
+    <div class="alert alert-info container-s" role="status">
+      Resize the browser or compare the narrow vs wide boxes — type scales with the <em>container</em>, not only the viewport.
+    </div>
+
+    <div class="grid xgrid-cols-1 dgrid-cols-2 gap">
+      <div class="cq card">
+        <div class="card-body padd-cq col gap-cq">
+          <h2 class="font-cq-l bold marg-0 color-text">Narrow slot</h2>
+          <p class="font-cq-s text-muted marg-0">Padding and gap also fluid.</p>
+        </div>
+      </div>
+      <div class="cq card">
+        <div class="card-body padd-cq col gap-cq">
+          <h2 class="font-cq-l bold marg-0 color-text">Wider slot</h2>
+          <p class="font-cq marg-0 color-text">Same classes — larger container → larger type.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="col gap-s container-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.cq</code> (ancestor)</li>
+        <li><code>.font-cq</code> · <code>.font-cq-s</code> · <code>.font-cq-l</code></li>
+        <li><code>.padd-cq</code> · <code>.gap-cq</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted container-s">
+      Skill: <code>containers</code> · Guide: <code>retrieve fluid-scaling</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

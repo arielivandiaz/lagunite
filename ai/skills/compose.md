@@ -41,7 +41,8 @@ If you start with colors or shadows, stop and restart from layout.
 
 | Intent | Classes |
 | --- | --- |
-| Content column / form / article | `col jc-fs ai-fs gap-s` (or `gap`) |
+| Content column / form / article | `col jc-fs ai-fs gap-s` (or `gap`) — shrink-to-content OK |
+| **Tool / editor / full-viewport app** | `col ai-s flex-nowrap minvh100` (+ `flex-1` panes) — **must stretch** |
 | Toolbar / header bar | `row jc-sb ai-c gap-s` |
 | Actions at end of form | `row jc-fe ai-c gap-s` **or** one `.btn.size-l.marg-0.wp100` + text link (prefer this in auth cards) |
 | Equal cards | `grid xgrid-cols-1 dgrid-cols-3 gap` |
@@ -49,6 +50,8 @@ If you start with colors or shadows, stop and restart from layout.
 | True center (hero/empty) | `.flex-center` or `jc-c ai-c` — only here |
 
 **Default mistake:** forcing `jc-c ai-c` on forms/settings so “everything floats in the middle”.
+
+**Second default mistake:** wrapping a full-width tool in bare `.col` / `ai-fs` so children shrink-wrap and leave empty viewport (use **`ai-s`**).
 
 ---
 
@@ -111,11 +114,12 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 | Every block is a `.card` | One card for the interactive unit; rest is plain stack |
 | Grid without gap | Always set `gap` / `gap-s` |
 | Form fields without `.form-group` | label + input + help inside `.form-group` |
-| Inputs without `placeholder` expecting native green/red | Add `placeholder` **or** use `.has-error` / `.has-success` — empty fields must stay neutral |
+| Native red/green on first paint (before blur/submit) | Framework uses `:user-invalid` / `:user-valid`; success green still needs `placeholder` + content — or `.has-error` / `.has-success` |
 | Sidebar built from random flex | Use `.sidebar` organism markup |
 | `.color-text-alt` as “muted” on cards | `.text-muted` / `.card-text` — on fills use `.color-on-fill` |
 | Full-viewport center with `minhp100` | Use **`minvh100`** (viewport), not `%` of parent |
 | Inline `style=""` for layout | Utilities or `<!-- GAP: … -->` |
+| Huge nested grid thrashing on input | Wrap islands in `.contain-content` / `.contain-layout`; long lists `.cv-auto` |
 
 ---
 
@@ -182,11 +186,34 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 </div>
 ```
 
+### Tool / editor shell (full viewport)
+```html
+<body class="bg">
+  <div class="col ai-s flex-nowrap minvh100 overflow-hidden">
+    <header class="row jc-sb ai-c gap-s flex-wrap padd-h-s padd-v-s border-b bg-surface wp100">
+      <h1 class="font-l bold color-text marg-0">Tool title</h1>
+      <div class="row ai-c gap-s"><!-- actions --></div>
+    </header>
+    <!-- GAP: minh0 on flex children that scroll -->
+    <main class="col ai-s flex-nowrap flex-1 overflow-hidden padd-h-s gap-s wp100" style="min-height: 0">
+      <div class="grid flex-1 gap-s overflow-auto wp100 xgrid-cols-1 dgrid-cols-2 doverflow-hidden" style="min-height: 0">
+        <section class="col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <!-- editor pane -->
+        </section>
+        <section class="col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <!-- preview pane -->
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+```
+
 ---
 
 ## 9. Pre-flight (before you output HTML)
 
-- [ ] Outer layout uses `jc-fs ai-fs` unless this is intentionally centered
+- [ ] Outer layout: **content** → `jc-fs ai-fs`; **tool/editor shell** → `ai-s` + `minvh100` (+ `flex-nowrap`)
 - [ ] No `.bg-1`…`.bg-9` as neutral surfaces
 - [ ] Buttons use real Lagunite chains (`.btn`, `.btn.alt`, `.btn.ghost`…)
 - [ ] One gap scale in the main cluster
@@ -194,12 +221,13 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 - [ ] Forms use `.form-group` + `.form-label` + `.input`
 - [ ] Cards use `.card` / `.card-header` / `.card-body` / `.card-footer` when structured
 - [ ] Muted copy uses `.text-muted` or `.card-text` (not `.color-text-alt` on light surfaces)
-- [ ] Full-bleed centered shells use `minvh100`, not `minhp100`
-- [ ] Ran mental pass of `contrast.md` for bg/text
+- [ ] Full-viewport shells use `minvh100`, not `minhp100`
+- [ ] Mental contrast pass for bg/text (open `contrast.md` only if unsure)
 - [ ] No invented / Tailwind classes
+- [ ] Did **not** open `validate.md` / browser unless the user asked
 
 ---
 
 ## 10. One-line reminder
 
-> **Layout first, align explicitly (`jc-fs ai-fs`), surfaces semantic, one rhythm, real Lagunite components — then decorate.**
+> **Layout first, pick stretch vs start on purpose (`ai-s` tools / `ai-fs` content), surfaces semantic, one rhythm, real Lagunite components — then decorate.**

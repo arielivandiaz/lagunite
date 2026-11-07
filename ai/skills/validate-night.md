@@ -12,6 +12,9 @@
 
 ### How night is activated
 - Prefer `class="night"` on `body` (or a documented ancestor). Toggle should flip that class.
+- Framework sets `color-scheme: light` on `:root` and `color-scheme: dark` on `.night` so native UI matches.
+- Optional early hint: `<meta name="color-scheme" content="light dark">` (see Lab `dark-mode` recipe).
+- Auto-matching `prefers-color-scheme` is a **product** choice — not the Lagunite default (explicit `.night` toggle).
 
 ### Surfaces
 | Role | Prefer in night | Avoid |

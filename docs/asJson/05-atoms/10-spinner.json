@@ -1,0 +1,180 @@
+{
+  "folder": "05-atoms",
+  "file": "10-spinner.css",
+  "lastUpdated": "2026-09-23",
+  "hasResponsive": false,
+  "totalSelectors": 11,
+  "content": [
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".spinner",
+      "id": "#05-10-01",
+      "category": null,
+      "properties": [
+        "display",
+        "width",
+        "height",
+        "border",
+        "border-top-color",
+        "border-radius",
+        "vertical-align",
+        "animation"
+      ],
+      "cssRule": "display: inline-block\nwidth: 2rem\nheight: 2rem\nborder: 2px solid var(--gray-200)\nborder-top-color: var(--color-primary)\nborder-radius: 50%\nvertical-align: middle\nanimation: spin 0.75s linear infinite",
+      "responsive": false,
+      "description": "==========\r\n   05-atoms / 10-spinner.css\r\n   Indeterminate loading spinner (div or progress) + reduced-motion.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".spinner-s",
+      "id": "#05-10-01",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-width"
+      ],
+      "cssRule": "width: 1rem\nheight: 1rem\nborder-width: 2px",
+      "responsive": false,
+      "description": "==========\r\n   05-atoms / 10-spinner.css\r\n   Indeterminate loading spinner (div or progress) + reduced-motion.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".spinner-l",
+      "id": "#05-10-01",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-width"
+      ],
+      "cssRule": "width: 3rem\nheight: 3rem\nborder-width: 3px",
+      "responsive": false,
+      "description": "==========\r\n   05-atoms / 10-spinner.css\r\n   Indeterminate loading spinner (div or progress) + reduced-motion.\r\n   =========="
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "progress.spinner",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "appearance",
+        "display",
+        "width",
+        "height",
+        "border",
+        "border-top-color",
+        "border-radius",
+        "background",
+        "vertical-align",
+        "animation"
+      ],
+      "cssRule": "appearance: none\ndisplay: inline-block\nwidth: 2rem\nheight: 2rem\nborder: 2px solid var(--gray-200)\nborder-top-color: var(--color-primary)\nborder-radius: 50%\nbackground: transparent\nvertical-align: middle\nanimation: spin 0.75s linear infinite",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "progress.spinner::-webkit-progress-bar",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "display",
+        "background"
+      ],
+      "cssRule": "display: none\nbackground: transparent",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "progress.spinner::-webkit-progress-value",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "display",
+        "background"
+      ],
+      "cssRule": "display: none\nbackground: transparent",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "progress.spinner::-moz-progress-bar",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "display",
+        "background"
+      ],
+      "cssRule": "display: none\nbackground: transparent",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "progress.spinner.spinner-s",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "width",
+        "height"
+      ],
+      "cssRule": "width: 1rem\nheight: 1rem",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "complex",
+      "selector": "progress.spinner.spinner-l",
+      "id": "#05-10-02",
+      "category": null,
+      "properties": [
+        "width",
+        "height",
+        "border-width"
+      ],
+      "cssRule": "width: 3rem\nheight: 3rem\nborder-width: 3px",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .spinner",
+      "id": "#05-10-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "border-top-color"
+      ],
+      "cssRule": "border-color: var(--gray-600)\nborder-top-color: var(--color-primary-light)",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night progress.spinner",
+      "id": "#05-10-03",
+      "category": null,
+      "properties": [
+        "border-color",
+        "border-top-color"
+      ],
+      "cssRule": "border-color: var(--gray-600)\nborder-top-color: var(--color-primary-light)",
+      "responsive": false,
+      "description": "* Semantic indeterminate progress as spinner.\r\n * Omit the value attribute so AT announces busy/indeterminate."
+    }
+  ]
+}

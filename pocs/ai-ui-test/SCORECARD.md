@@ -64,4 +64,4 @@ B debería verse como producto usable: `form-group`, `card` regions, `jc-fs`/`jc
 - `ai/skills/compose.md` **(nuevo)**
 - `ai/skills/validate.md`, `flex.md`, `patterns.md`, `SKILLS-INDEX.md`
 - `src/css/03-layout/FLEX-CHEATSHEET.md`
-- `.cursor/rules/lagunite-ai.mdc`, `CLAUDE.md`
+- `.cursor/rules/lagunite-ai.mdc`, `AGENTS.md`

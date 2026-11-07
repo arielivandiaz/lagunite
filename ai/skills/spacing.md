@@ -47,6 +47,8 @@ Same pattern as margin: `.padd-{direction}-{scale}`
 
 ### Types
 - `.pos-static`, `.pos-relative`, `.pos-absolute`, `.pos-fixed`, `.pos-sticky`
+- **Sticky stuck chrome (progressive):** `.sticky-section` (parent, `overflow-anchor: none`) · `.sticky-state` (sticky + named scroll-state container) · `.sticky-surface` (child styled when `stuck: top`). Recipe: `lab/recipes/state-aware-sticky-headers.html`.
+- Inset shortcuts: `.top-0`, `.bottom-0`, `.left-0`, `.right-0`, …
 - Shortcuts: `.rel` (relative), `.abs` (absolute)
 
 ### Absolute shortcuts (`pa-`)
@@ -90,6 +92,8 @@ Empty block elements for spacing:
 - `.overflow-x-*`, `.overflow-y-*` for directional control
 - `.scrollbar-thin` = thin scrollbar
 - `.scrollbar-none` = hide scrollbar
+- **Scroll affordance (progressive):** `.scroll-state` + `.scroll-hint-top` / `.scroll-hint-bottom` via scroll-state queries. Recipe: `lab/recipes/scrollability-affordance-hints.html`.
+- **Clip (no scroll):** `.overflow-clip` (falls back to `hidden`) + `.clip-margin-content` / `.clip-margin-padding` / `.clip-margin-s|m|l` for shadow bleed. Recipe: `lab/recipes/overflow-clipping-control.html`.
 
 ## Sizing (`08-size.css`)
 

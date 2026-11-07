@@ -283,3 +283,93 @@
   white-space: nowrap;
   z-index: 1;
 }
+
+/* @ID: #03-06-11 */
+
+/*
+ * Container queries — size-aware components (not viewport).
+ * Put .cq on the measuring ancestor; style descendants with .cq-* utilities.
+ */
+.cq {
+  container-type: inline-size;
+}
+
+.cq-name {
+  container-type: inline-size;
+  container-name: lagunite;
+}
+
+/* Default: stacked / compact. Enhance when the *container* is wide enough. */
+.cq-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cq-show-m {
+  display: none;
+}
+
+@container (min-width: 400px) {
+  .cq-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cq-show-m {
+    display: block;
+  }
+
+  .cq-hide-m {
+    display: none;
+  }
+}
+
+/* @ID: #03-06-12 */
+
+/*
+ * Fluid scaling vs container (cqi), with vw fallback.
+ * Ancestor needs .cq (or any container-type: inline-size).
+ * Max ≤ 2.5× min for text a11y.
+ */
+.font-cq {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+
+.font-cq-s {
+  font-size: clamp(0.875rem, 3.5vw, 1.25rem);
+}
+
+.font-cq-l {
+  font-size: clamp(1.25rem, 6vw, 2.5rem);
+}
+
+.padd-cq {
+  padding: clamp(var(--space-2), 4vw, var(--space-6));
+}
+
+.gap-cq {
+  gap: clamp(var(--space-2), 3vw, var(--space-5));
+}
+
+@supports (font-size: 1cqi) {
+  .font-cq {
+    font-size: clamp(1rem, 5cqi, 2.5rem);
+  }
+
+  .font-cq-s {
+    font-size: clamp(0.875rem, 3.5cqi, 1.25rem);
+  }
+
+  .font-cq-l {
+    font-size: clamp(1.25rem, 6cqi, 2.5rem);
+  }
+
+  .padd-cq {
+    padding: clamp(var(--space-2), 4cqi, var(--space-6));
+  }
+
+  .gap-cq {
+    gap: clamp(var(--space-2), 3cqi, var(--space-5));
+  }
+}

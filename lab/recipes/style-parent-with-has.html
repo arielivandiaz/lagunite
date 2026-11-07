@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · style-parent-with-has — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>style-parent-with-has</code></p>
+      <h1 class="font-xl bold color-text">Style parent with <code>:has()</code></h1>
+      <p class="font-s text-muted">
+        When a field becomes <code>:user-invalid</code>, ancestors can react in CSS —
+        label color via <code>.form-group:has(...)</code>, surface via <code>.form-surface:has(:user-invalid)</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Leave username empty and blur or submit — the card edge and label turn error without JS class toggles.
+    </div>
+
+    <form class="card form-surface" id="profile-form" action="#" method="post">
+      <div class="card-header">Profile settings</div>
+      <div class="card-body col gap">
+        <div class="form-group">
+          <label class="form-label" for="username">Username</label>
+          <input
+            class="input"
+            id="username"
+            name="username"
+            type="text"
+            required
+            minlength="3"
+            placeholder="at least 3 characters"
+            aria-errormessage="username-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="username-error">Username is required (min 3).</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="website">Website</label>
+          <input
+            class="input"
+            id="website"
+            name="website"
+            type="url"
+            placeholder="https://example.com"
+            aria-errormessage="website-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="website-error">Enter a valid URL.</p>
+        </div>
+
+        <div class="row jc-fe">
+          <button type="submit" class="btn">Save</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.form-group:has(:user-invalid) .form-label</code> (built-in)</li>
+        <li><code>.form-surface:has(:user-invalid)</code> — opt-in ancestor chrome</li>
+        <li>Scope <code>:has()</code> to a section/card — never <code>body:has(...)</code></li>
+        <li>App-owned: still use <code>.has-error</code> when JS owns validity</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>validate-forms.md</code> ·
+      Guide: <code>retrieve style-parent-with-has</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+    document.getElementById('profile-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (e.target.checkValidity()) e.target.reset();
+    });
+  </script>
+</body>
+</html>

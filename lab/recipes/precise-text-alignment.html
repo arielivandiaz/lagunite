@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · precise-text-alignment — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1 · MWG <code>precise-text-alignment</code></p>
+      <h1 class="font-xl bold color-text">Precise text alignment</h1>
+      <p class="font-s text-muted">
+        <code>.text-trim</code> → <code>text-box: trim-both cap alphabetic</code>.
+        Use on UI labels / headings, not long body copy.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Where <code>text-box</code> is unsupported, padding still works — trim is progressive.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Badge padding hugs glyphs</div>
+      <div class="card-body row gap flex-wrap ai-c">
+        <span class="badge padd-h-s padd-v-xs">Default metrics</span>
+        <span class="badge padd-h-s padd-v-xs text-trim">Trimmed</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Icon + label flex</div>
+      <div class="card-body row gap ai-c">
+        <span class="w1 h1 bg-surface border border-r" aria-hidden="true"></span>
+        <span class="font-m text-trim">Aligned to cap height</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Flush start with media</div>
+      <div class="card-body row gap ai-fs">
+        <div class="w2 h2 bg-surface border border-r" aria-hidden="true"></div>
+        <h2 class="font-l bold marg-0 text-trim-start">Flush with block</h2>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.text-trim</code> · <code>.text-trim-start</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>typography</code> · Guide: <code>retrieve precise-text-alignment</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

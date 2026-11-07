@@ -81,6 +81,17 @@ Mobile (`max-width: 639px`): `.xta-c` `.xta-lf` `.xta-rg` `.xta-j` `.xta-ja`
 
 Desktop (`min-width: 640px`): `.dta-c` `.dta-lf` `.dta-rg` `.dta-j` `.dta-ja`
 
+## Text wrap (progressive)
+
+| Class | Role |
+| --- | --- |
+| `.text-balance` | `text-wrap: balance` — short titles/headings only (not global) |
+| `.text-pretty` | `text-wrap: pretty` — body paragraphs; ignored where unsupported |
+| `.text-trim` | `text-box: trim-both cap alphabetic` — UI labels / badges |
+| `.text-trim-start` | `text-box: trim-start cap alphabetic` — flush tops with media |
+
+Recipes: `lab/recipes/improve-text-layout-and-legibility.html`, `precise-text-alignment.html`
+
 ## Composition
 
 Prefer semantic sizes (`.font-s`, `.font-l`) and line-height (`.lh`) on body copy; use `.font-headers` or heading tags for titles. Combine with skill **colors** for `color-*` and layout skills for spacing.

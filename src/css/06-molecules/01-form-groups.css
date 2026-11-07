@@ -33,6 +33,35 @@
   color: var(--color-error);
 }
 
+/*
+ * Optional: hide error copy until the control is :user-invalid
+ * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX.
+ */
+.form-error-msg.reveal-user-invalid {
+  display: none;
+}
+
+.form-group:has(
+  :is(.input, .input-field, .input-underline, .input-minimal, textarea, select):user-invalid
+) .form-error-msg.reveal-user-invalid {
+  display: block;
+}
+
+.form-group:has(
+  :is(.input, .input-field, .input-underline, .input-minimal, textarea, select):user-invalid
+) .form-label {
+  color: var(--color-error);
+}
+
+/*
+ * Optional surface: tint ancestor when any descendant control is :user-invalid.
+ * Prefer scoping to a card/section — do not put on body.
+ */
+.form-surface:has(:user-invalid) {
+  border-color: var(--color-error);
+  box-shadow: inset 3px 0 0 var(--color-error);
+}
+
 /* @ID: #06-01-02 */
 
 /* ── Validation states (inputs inside .form-group) ──────────────────────── */

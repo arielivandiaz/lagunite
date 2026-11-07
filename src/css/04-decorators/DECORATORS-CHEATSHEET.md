@@ -114,6 +114,7 @@
 | --- | --- |
 | `.caret-transparent` / `.caret-current` | `caret-color` |
 | `.accent-auto` / `.accent-current` | `accent-color` |
+| `.accent-primary` / `.accent-success` / `.accent-error` | Brand / semantic accents |
 
 ---
 
@@ -325,6 +326,7 @@
 | --- | --- |
 | `.animate-none` | `animation: none` |
 | `.animate-spin` / `.animate-pulse` / `.animate-bounce` | infinite loops |
+| `.scroll-progress` | Scroll-driven top bar (`animation-timeline: scroll()`, progressive) |
 | `.animate-fade-in` / `.animate-fade-out` | 0.5s opacity |
 | `.animate-slide-in` | `slide-in-up` |
 | `.animate-slide-in-down` | `slide-in-down` |

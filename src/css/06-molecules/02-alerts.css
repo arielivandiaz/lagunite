@@ -116,6 +116,77 @@
   }
 }
 
+/* @ID: #06-02-04b */
+
+/*
+ * Progressive: popover="manual" toast stack (no light-dismiss).
+ * Existing `.toast` fixed shell remains the default path.
+ */
+.toast-stack {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-2);
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.toast-stack > .toast {
+  position: static;
+  pointer-events: auto;
+}
+
+[popover].toast {
+  inset: unset;
+  margin: 0;
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--toast-offset, var(--space-4));
+  z-index: 1000;
+  min-width: 18rem;
+  max-width: min(24rem, calc(100vw - var(--space-8)));
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-l);
+}
+
+.toast-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.toast-message {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--font-size-s);
+  line-height: 1.45;
+  color: var(--color-text-base);
+}
+
+.toast .alert-close {
+  position: static;
+  transform: none;
+  flex-shrink: 0;
+}
+
+.night [popover].toast,
+.night .toast-stack > .toast {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+.night .toast-message {
+  color: var(--color-text-alt);
+}
+
 /* @ID: #06-02-05 */
 
 /* ── Snackbar ─────────────────────────────────────────────────────────── */

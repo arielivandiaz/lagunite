@@ -56,9 +56,15 @@
 
 .dropdown-item {
   display: block;
+  width: 100%;
   padding: var(--space-2) var(--space-4);
   color: var(--color-text-base);
+  text-align: start;
   text-decoration: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  cursor: pointer;
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
@@ -112,4 +118,39 @@
 
 .night .dropdown-divider {
   border-top-color: var(--color-border);
+}
+
+/* @ID: #06-03-05 */
+
+/*
+ * Progressive: Popover API + CSS Anchor Positioning.
+ * Existing `.dropdown` + `.open` remains the default path.
+ * Pattern is a button-revealing-a-button-group — do NOT add role="menu"
+ * unless you implement the full ARIA menu keyboard contract.
+ */
+@supports (anchor-name: --lagunite-dd) {
+  .dropdown-panel {
+    inset: auto;
+    margin: 0;
+    position: fixed;
+    position-anchor: --lagunite-dd;
+    position-area: block-end span-inline-end;
+    position-try-fallbacks: flip-block, flip-inline;
+    min-width: 10rem;
+    padding: var(--space-2) 0;
+    list-style: none;
+    background: var(--color-bg);
+    border: var(--border-width-s) solid var(--color-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-m);
+  }
+
+  .dropdown-trigger {
+    anchor-name: --lagunite-dd;
+  }
+
+  .night .dropdown-panel {
+    background: var(--color-bg);
+    border-color: var(--color-border);
+  }
 }

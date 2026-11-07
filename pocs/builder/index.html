@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lagunite Builder</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+  <style>
+    /* GAP: builder chrome — sin utilidades para alto fijo de viewport, min-height:0, ancho fijo de panel y miniaturas escaladas */
+    .lb-app { height: 100vh; }
+    .lb-main { min-height: 0; }
+    .lb-canvas { min-height: 0; }
+    .lb-frame { width: 100%; height: 100%; border: 0; display: block; transition: width 0.2s ease; }
+    .lb-frame.is-mobile { width: 390px; }
+    .lb-palette { min-height: 0; }
+    @media (min-width: 640px) { .lb-palette { width: 380px; flex-shrink: 0; } }
+    .lb-list { min-height: 0; }
+    .lb-thumb { position: relative; width: 100%; height: 140px; overflow: hidden; }
+    .lb-thumb-inner { width: 1200px; transform-origin: 0 0; pointer-events: none; }
+    @media (prefers-reduced-motion: reduce) { .lb-frame { transition: none; } }
+  </style>
+</head>
+<body class="bg">
+  <div class="lb-app col ai-s flex-nowrap overflow-hidden">
+    <header class="row jc-sb ai-c gap-s flex-wrap marg-0 padd-h-s padd-v-s border-b bg-surface wp100">
+      <div class="row ai-c gap-s">
+        <h1 class="font-l bold color-text marg-0">Lagunite Builder</h1>
+        <span class="badge badge-outline">MVP</span>
+      </div>
+      <div class="row ai-c gap-s flex-wrap">
+        <div class="segmented-control" role="group" aria-label="Ancho de vista">
+          <button type="button" class="segmented-option active" data-viewport="desktop" aria-pressed="true">Desktop</button>
+          <button type="button" class="segmented-option" data-viewport="mobile" aria-pressed="false">Móvil</button>
+        </div>
+        <button type="button" class="btn alt size-s" id="theme">Night</button>
+        <button type="button" class="btn ghost size-s" id="reset">Reiniciar</button>
+        <button type="button" class="btn alt size-s" id="copy">Copiar HTML</button>
+        <button type="button" class="btn size-s" id="download">Descargar HTML</button>
+      </div>
+    </header>
+
+    <main class="lb-main col-row ai-s flex-nowrap flex-1 overflow-hidden wp100">
+      <section class="lb-canvas col ai-c flex-1 overflow-hidden bg-surface padd-s" aria-label="Página en construcción">
+        <iframe id="canvas" class="lb-frame border-r shadow" title="Vista previa de la página"></iframe>
+      </section>
+
+      <aside class="lb-palette col ai-s flex-nowrap overflow-hidden bg" aria-label="Bloques disponibles">
+        <div class="col ai-s gap-s padd-s border-b wp100">
+          <div class="row jc-sb ai-c gap-s wp100">
+            <p id="mode" class="font-s text-muted marg-0" aria-live="polite"></p>
+            <button type="button" class="btn ghost size-xs d-none" id="cancel">Cancelar</button>
+          </div>
+          <div class="row gap-xs flex-wrap" id="types" role="group" aria-label="Filtrar por tipo"></div>
+        </div>
+        <div class="lb-list col ai-s flex-nowrap gap padd-s overflow-y-auto flex-1 wp100" id="list"></div>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="./builder.js"></script>
+</body>
+</html>

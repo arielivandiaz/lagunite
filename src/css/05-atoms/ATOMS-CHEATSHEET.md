@@ -169,3 +169,23 @@ Concise reference for **tables**, **lists**, **figures**, **badges**, **avatars*
 ```
 
 Wrap the document root or a section with `.night` to apply night-mode rules for supported atoms.
+
+---
+
+## `10-spinner.css` (#05-10-01 … #05-10-03)
+
+| Classes | What it does |
+|---------|--------------|
+| `.spinner` / `.spinner-s` / `.spinner-l` | Indeterminate ring; uses `spin` keyframes |
+| `progress.spinner` | Semantic busy control (omit `value`; set `aria-label`) |
+| reduced-motion | Animation disabled; static ring remains |
+
+## `11-progress-ring.css` (#05-11-01 … #05-11-03)
+
+| Classes | What it does |
+|---------|--------------|
+| `.progress-ring-wrap` | Centers ring + optional label |
+| `progress.progress-ring` | Determinate conic ring; set `--progress-ring-value` |
+| `.progress-ring-s` / `.progress-ring-l` | Size variants |
+| `.progress-ring-content` | Center label overlay |
+| `[value="100"]` | Success fill color |

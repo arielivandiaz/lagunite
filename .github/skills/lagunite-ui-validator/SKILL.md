@@ -1,9 +1,10 @@
 ---
 name: lagunite-ui-validator
 description: >-
-  Orchestrates Lagunite UI validation across multiple domain skills (structure,
-  forms, night, a11y, compose, contrast, anti-slop). Use when auditing or fixing
-  Lagunite HTML, refining POCs, or after generating screens/forms/dashboards.
+  Audits and fixes Lagunite HTML via validate.md domains (structure, forms,
+  night, a11y, compose, contrast, anti-slop). Use when the user asks to
+  validate, audit, auditar, review UI, or fix POC markup quality. Do not invoke
+  automatically after every generate.
 ---
 
 # Lagunite UI Validator (GitHub Copilot skill)

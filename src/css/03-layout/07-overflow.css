@@ -141,3 +141,95 @@
     display: none;
   }
 }
+
+/* @ID: #03-07-04 */
+
+/*
+ * Scrollability affordance hints via scroll-state container queries.
+ * Progressive (Chromium). Unsupported browsers keep hints at opacity 0.
+ */
+.scroll-state {
+  position: relative;
+  overflow-y: auto;
+  container-type: scroll-state;
+}
+
+.scroll-hint-top,
+.scroll-hint-bottom {
+  position: sticky;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: var(--space-5);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.scroll-hint-top {
+  top: 0;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.14), transparent);
+}
+
+.scroll-hint-bottom {
+  bottom: 0;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.14), transparent);
+}
+
+.night .scroll-hint-top {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.45), transparent);
+}
+
+.night .scroll-hint-bottom {
+  background: linear-gradient(to top, rgb(0 0 0 / 0.45), transparent);
+}
+
+@supports (container-type: scroll-state) {
+  @container scroll-state(scrollable: top) {
+    .scroll-hint-top {
+      opacity: 1;
+    }
+  }
+
+  @container scroll-state(scrollable: bottom) {
+    .scroll-hint-bottom {
+      opacity: 1;
+    }
+  }
+}
+
+/* @ID: #03-07-05 */
+
+/*
+ * overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).
+ * Fallback: overflow: hidden (clip-margin ignored).
+ */
+.overflow-clip {
+  overflow: hidden;
+}
+
+@supports (overflow: clip) {
+  .overflow-clip {
+    overflow: clip;
+  }
+}
+
+.clip-margin-content {
+  overflow-clip-margin: content-box;
+}
+
+.clip-margin-padding {
+  overflow-clip-margin: padding-box;
+}
+
+.clip-margin-s {
+  overflow-clip-margin: var(--space-2);
+}
+
+.clip-margin-m {
+  overflow-clip-margin: var(--space-4);
+}
+
+.clip-margin-l {
+  overflow-clip-margin: var(--space-6);
+}

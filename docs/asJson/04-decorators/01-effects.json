@@ -1,9 +1,9 @@
 {
   "folder": "04-decorators",
   "file": "01-effects.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-23",
   "hasResponsive": true,
-  "totalSelectors": 69,
+  "totalSelectors": 74,
   "content": [
     {
       "type": "selector",
@@ -903,6 +903,74 @@
       "cssRule": "accent-color: currentcolor",
       "responsive": false,
       "description": "── Caret / accent color ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".accent-primary",
+      "id": "#04-01-14",
+      "category": null,
+      "properties": [
+        "accent-color"
+      ],
+      "cssRule": "accent-color: var(--color-primary)",
+      "responsive": false,
+      "description": "── Caret / accent color ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".accent-success",
+      "id": "#04-01-14",
+      "category": null,
+      "properties": [
+        "accent-color"
+      ],
+      "cssRule": "accent-color: var(--color-success)",
+      "responsive": false,
+      "description": "── Caret / accent color ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".accent-error",
+      "id": "#04-01-14",
+      "category": null,
+      "properties": [
+        "accent-color"
+      ],
+      "cssRule": "accent-color: var(--color-error)",
+      "responsive": false,
+      "description": "── Caret / accent color ─────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-image-set",
+      "id": "#04-01-16",
+      "category": null,
+      "properties": [
+        "background-image",
+        "background-repeat",
+        "background-position",
+        "background-size"
+      ],
+      "cssRule": "background-image: var(--bg-1x)\nbackground-repeat: no-repeat\nbackground-position: center\nbackground-size: cover",
+      "responsive": false,
+      "description": "* Decorative background via image-set (1x / 2x).\r\n * Set --bg-1x (required) and --bg-2x (optional) as url(...) values."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".bg-image-set",
+      "id": "#04-01-16",
+      "category": null,
+      "properties": [
+        "background-image"
+      ],
+      "cssRule": "background-image: image-set(var(--bg-1x) 1x, var(--bg-2x, var(--bg-1x)) 2x)",
+      "responsive": false,
+      "description": "* Decorative background via image-set (1x / 2x).\r\n * Set --bg-1x (required) and --bg-2x (optional) as url(...) values."
     }
   ],
   "customProperties": [

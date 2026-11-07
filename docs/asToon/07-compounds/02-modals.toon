@@ -1,9 +1,9 @@
 folder: 07-compounds
 file: 02-modals.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-09-23
 hasResponsive: false
-totalSelectors: 16
-content[16]:
+totalSelectors: 23
+content[23]:
   - type: selector
     selectorType: class
     selector: .modal-overlay
@@ -148,3 +148,66 @@ content[16]:
     cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
     responsive: false
     description: ── Night mode ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: complex
+    selector: dialog.modal
+    id: #07-02-07
+    category: null
+    properties[9]: border,padding,margin,opacity,transform,transition-property,transition-duration,transition-timing-function,transition-behavior
+    cssRule: "border: none\npadding: 0\nmargin: auto\nopacity: 0\ntransform: scale(0.95)\ntransition-property: opacity, transform, display, overlay\ntransition-duration: 0.3s\ntransition-timing-function: ease-out\ntransition-behavior: allow-discrete"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: complex
+    selector: "dialog.modal[open]"
+    id: #07-02-07
+    category: null
+    properties[2]: opacity,transform
+    cssRule: "opacity: 1\ntransform: scale(1)"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: complex
+    selector: "dialog.modal[open]"
+    id: #07-02-07
+    category: null
+    properties[2]: opacity,transform
+    cssRule: "opacity: 0\ntransform: scale(0.95)"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: pseudo
+    selector: "dialog.modal::backdrop"
+    id: #07-02-07
+    category: null
+    properties[3]: background-color,transition,transition-behavior
+    cssRule: "background-color: rgb(0 0 0 / 0)\ntransition:\n    display 0.3s,\n    overlay 0.3s,\n    background-color 0.3s ease-out\ntransition-behavior: allow-discrete"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: pseudo
+    selector: "dialog.modal[open]::backdrop"
+    id: #07-02-07
+    category: null
+    properties[1]: background-color
+    cssRule: "background-color: rgb(0 0 0 / 50%)"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: pseudo
+    selector: "dialog.modal[open]::backdrop"
+    id: #07-02-07
+    category: null
+    properties[1]: background-color
+    cssRule: "background-color: rgb(0 0 0 / 0)"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"
+  - type: selector
+    selectorType: complex
+    selector: "dialog.modal[open]"
+    id: #07-02-07
+    category: null
+    properties[1]: transform
+    cssRule: "transform: none"
+    responsive: false
+    description: "* Native <dialog> shell — same .modal / regions / sizes.\n * Prefer showModal() + closedby / invoker commands over .modal-overlay when Baseline allows.\n * <!-- GAP: popover surface utilities — use .card inside [popover] for now -->"

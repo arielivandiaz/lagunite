@@ -1,9 +1,9 @@
 {
   "folder": "06-molecules",
   "file": "04-tooltip.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-23",
   "hasResponsive": false,
-  "totalSelectors": 7,
+  "totalSelectors": 12,
   "content": [
     {
       "type": "selector",
@@ -117,6 +117,98 @@
       "cssRule": "color: var(--color-almost-black)\nbackground: var(--color-almost-white)",
       "responsive": false,
       "description": "── Night mode (invert bubble) ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tooltip-anchor",
+      "id": "#06-04-03",
+      "category": null,
+      "properties": [
+        "anchor-name"
+      ],
+      "cssRule": "anchor-name: --lagunite-tip",
+      "responsive": false,
+      "description": "── Night mode (invert bubble) ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tooltip-popover",
+      "id": "#06-04-03",
+      "category": null,
+      "properties": [
+        "inset",
+        "margin",
+        "position",
+        "position-anchor",
+        "position-area",
+        "position-try-fallbacks",
+        "max-width",
+        "padding",
+        "font-size",
+        "line-height",
+        "color",
+        "background",
+        "border",
+        "border-radius"
+      ],
+      "cssRule": "inset: auto\nmargin: 0\nposition: fixed\nposition-anchor: --lagunite-tip\nposition-area: block-start\nposition-try-fallbacks: flip-block, flip-inline\nmax-width: 16rem\npadding: var(--space-2) var(--space-3)\nfont-size: var(--font-size-xs)\nline-height: 1.35\ncolor: var(--color-almost-white)\nbackground: var(--color-almost-black)\nborder: none\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "── Night mode (invert bubble) ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tooltip-popover",
+      "id": "#06-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-almost-black)\nbackground: var(--color-almost-white)",
+      "responsive": false,
+      "description": "── Night mode (invert bubble) ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".tooltip-hint",
+      "id": "#06-04-03",
+      "category": null,
+      "properties": [
+        "inset",
+        "margin",
+        "position",
+        "position-area",
+        "position-try-fallbacks",
+        "max-width",
+        "padding",
+        "font-size",
+        "line-height",
+        "color",
+        "background",
+        "border",
+        "border-radius"
+      ],
+      "cssRule": "inset: auto\nmargin: 0\nposition: fixed\nposition-area: block-end\nposition-try-fallbacks: flip-block, flip-inline\nmax-width: 16rem\npadding: var(--space-2) var(--space-3)\nfont-size: var(--font-size-xs)\nline-height: 1.35\ncolor: var(--color-almost-white)\nbackground: var(--color-almost-black)\nborder: none\nborder-radius: var(--radius-s)",
+      "responsive": false,
+      "description": "* Interest invokers (popover=\"hint\" + interestfor) — limited availability.\n   * Chrome/visual only here. Pair each trigger/hint with unique\n   * anchor-name / position-anchor (inline or per-instance) for polyfills;\n   * native interestfor can use the implicit anchor.\n   * Do NOT set role=\"tooltip\" / aria-describedby on the trigger — UA wires it."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .tooltip-hint",
+      "id": "#06-04-03",
+      "category": null,
+      "properties": [
+        "color",
+        "background"
+      ],
+      "cssRule": "color: var(--color-almost-black)\nbackground: var(--color-almost-white)",
+      "responsive": false,
+      "description": "* Interest invokers (popover=\"hint\" + interestfor) — limited availability.\n   * Chrome/visual only here. Pair each trigger/hint with unique\n   * anchor-name / position-anchor (inline or per-instance) for polyfills;\n   * native interestfor can use the implicit anchor.\n   * Do NOT set role=\"tooltip\" / aria-describedby on the trigger — UA wires it."
     }
   ]
 }

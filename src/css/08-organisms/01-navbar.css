@@ -169,3 +169,28 @@
   background: var(--gray-900);
   border-color: var(--gray-700);
 }
+
+/* @ID: #08-01-07 */
+
+/*
+ * Scrollspy nav: native scroll-target-group + :target-current.
+ * Fallback class .scrollspy-current set via IntersectionObserver in Lab recipe.
+ * Prefer aria-current sync in script (visual alone is not exposed to AT).
+ */
+.scrollspy {
+  scroll-target-group: auto;
+}
+
+.scrollspy a:is(:target-current, .scrollspy-current),
+.scrollspy .navbar-link:is(:target-current, .scrollspy-current) {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.12);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.night .scrollspy a:is(:target-current, .scrollspy-current),
+.night .scrollspy .navbar-link:is(:target-current, .scrollspy-current) {
+  color: var(--color-primary-light);
+}

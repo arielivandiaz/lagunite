@@ -2,7 +2,7 @@
 
 > Tables, lists, figures, badges, and avatars. Use when building data display components, lists, geometric shapes, status indicators, or user identity elements.
 
-**Source files:** `src/css/05-atoms/` (`01-buttons.css`, `02-inputs.css`, `03-table.css`, `04-lists.css`, `05-figures.css`, `06-badges.css`, `07-avatars.css`, `08-chips.css`, `09-tags.css`)
+**Source files:** `src/css/05-atoms/` (`01-buttons.css`, `02-inputs.css`, `03-table.css`, `04-lists.css`, `05-figures.css`, `06-badges.css`, `07-avatars.css`, `08-chips.css`, `09-tags.css`, `10-spinner.css`, `11-progress-ring.css`)
 
 **Cheatsheet:** `src/css/05-atoms/ATOMS-CHEATSHEET.md`
 
@@ -17,7 +17,12 @@
 5. **Avatars** default to 40px circle; add size/shape classes on the same node.
 6. **Responsive:** list utilities use `xlist-*` (mobile) and `dlist-*` (desktop).
 7. **Night mode:** add `.night` on an ancestor. Badges and avatars include `.night` overrides.
-8. **Native input validation colors** (green/red borders) only apply when the control has a **`placeholder`**. Empty fields stay neutral; filled `:valid` → green; filled `:invalid` → red. Prefer class toggles `.form-group.has-error` / `.has-success` for explicit app validation.
+8. **Native input validation colors** use `:user-invalid` / `:user-valid` (after blur or submit), not raw `:invalid`/`:valid`. Error red needs no placeholder; success green still gates on `[placeholder]` + filled. Prefer `.form-group.has-error` / `.has-success` for app-owned validation. See `validate-forms.md`.
+9. **Spinner:** `.spinner` / `.spinner-s` / `.spinner-l`, or `<progress class="spinner" aria-label="Loading">` without `value`. Recipe: `lab/recipes/spinner.html`.
+10. **Progress ring (determinate):** `<progress class="progress-ring" value="N" max="100">` inside `.progress-ring-wrap`; set `--progress-ring-value` to match. Sizes: `.progress-ring-s` / `.progress-ring-l`. Recipe: `lab/recipes/progress-ring.html`.
+11. **Autofill chrome:** `:autofill` / `:-webkit-autofill` tint on `.input` (progressive).
+12. **Fit contents:** `.input-fit` / `.field-sizing` → `field-sizing: content` (resets `width: 100%`).
+13. **Customizable select:** `.select-base` behind `@supports (appearance: base-select)`.
 
 ## Tables
 

@@ -38,6 +38,8 @@
 @import './css/05-atoms/07-avatars.css';
 @import './css/05-atoms/08-chips.css';
 @import './css/05-atoms/09-tags.css';
+@import './css/05-atoms/10-spinner.css';
+@import './css/05-atoms/11-progress-ring.css';
 @import './css/06-molecules/01-form-groups.css';
 @import './css/06-molecules/02-alerts.css';
 @import './css/06-molecules/03-dropdown.css';

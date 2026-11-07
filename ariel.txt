@@ -1,0 +1,19 @@
+Diagnóstico
+Revisamos el POC que armó otra IA (md-drop-upload.html): clases OK, layout roto (todo a la izquierda).
+Causa: .col con align-items: flex-start → shrink-wrap; skills usadas como checklist, no como craft.
+Conclusión: Copilot no “entiende mal Lagunite”, sino que carga skills de más y no elige el shell correcto.
+POC
+Reescribimos pocs/md-drop-upload.html como tool full-viewport (minvh100 + ai-s + editor|preview).
+La tarea tardó ~40 min → identificamos overhead (validator + browser + tour de skills).
+Skills / proceso agente
+AGENTS.md: árbol de skills + caps (generate ≠ audit, sin browser por defecto).
+Nuevo router: ai/skills/route.md.
+compose.md: recipe tool shell + ai-s vs ai-fs.
+Mejoras Cursor: descriptions WHAT/WHEN/NOT + wrappers ricos en route/compose/validate.
+Sync con npm run ai:sync.
+Docs de prompting
+Técnico: ai/PROMPTING.md
+Usuario amigable: README-PROMPTS.md (+ links en README / README_ES)
+
+Donde seguir: 
+Web recipes de modern web .,..
