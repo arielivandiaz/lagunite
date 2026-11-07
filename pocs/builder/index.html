@@ -16,7 +16,7 @@
     @media (min-width: 640px) { .lb-palette { width: 380px; flex-shrink: 0; } }
     .lb-list { min-height: 0; }
     .lb-thumb { position: relative; width: 100%; height: 140px; overflow: hidden; }
-    .lb-thumb-inner { width: 1200px; transform-origin: 0 0; pointer-events: none; }
+    .lb-thumb-frame { display: block; width: 1200px; border: 0; transform-origin: 0 0; pointer-events: none; }
     @media (prefers-reduced-motion: reduce) { .lb-frame { transition: none; } }
   </style>
 </head>
@@ -28,6 +28,10 @@
         <span class="badge badge-outline">MVP</span>
       </div>
       <div class="row ai-c gap-s flex-wrap">
+        <div class="segmented-control" role="group" aria-label="Piel">
+          <button type="button" class="segmented-option" data-skin="l2" aria-pressed="false">Lagunite 2</button>
+          <button type="button" class="segmented-option" data-skin="l3" aria-pressed="false">Lagunite 3</button>
+        </div>
         <div class="segmented-control" role="group" aria-label="Ancho de vista">
           <button type="button" class="segmented-option active" data-viewport="desktop" aria-pressed="true">Desktop</button>
           <button type="button" class="segmented-option" data-viewport="mobile" aria-pressed="false">Móvil</button>
