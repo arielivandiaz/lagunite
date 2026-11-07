@@ -13,10 +13,10 @@
 
 .stat-surface,
 .stat-surface[data-mode="dark"] {
-  border-radius: 1.25rem;
+  border-radius: var(--radius-2xl);
   padding: 2rem;
   color: #fff;
-  background: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%);
+  background: radial-gradient(circle at 10% 0%, #153f94 0%, #111f45 40%, #090b10 100%);
   transition: background 0.4s ease;
 
   --stat-card-bg: rgb(255 255 255 / 6%);
@@ -25,7 +25,7 @@
   --stat-text: #fff;
   --stat-label: rgb(255 255 255 / 42%);
   --stat-sub: rgb(255 255 255 / 50%);
-  --stat-sub-strong: #a78bfa;
+  --stat-sub-strong: #8ebbff;
   --stat-track-bg: rgb(255 255 255 / 12%);
   --stat-trend-up: #4ade80;
   --stat-trend-down: #f87171;
@@ -38,22 +38,22 @@
   --stat-divider: rgb(255 255 255 / 8%);
   --stat-icon-opacity: 0.12;
   --stat-progress-default: linear-gradient(90deg, #f87171, #fb923c);
-  --stat-progress-emphasis: linear-gradient(90deg, #818cf8, #a78bfa);
+  --stat-progress-emphasis: linear-gradient(90deg, #2476ff, #8ebbff);
   --stat-digit-label: rgb(255 255 255 / 28%);
 }
 
 .stat-surface-light,
 .stat-surface[data-mode="light"] {
-  color: #1a1e30;
-  background: linear-gradient(135deg, #dce8ff 0%, #eef3fc 50%, #e2eaf9 100%);
+  color: #0d1220;
+  background: radial-gradient(80% 60% at 10% 0%, #d9e8ff 0%, #f6f7f9 60%), #f6f7f9;
 
   --stat-card-bg: rgb(255 255 255 / 88%);
-  --stat-card-border: rgb(0 0 0 / 8%);
-  --stat-shadow: 0 4px 20px rgb(20 40 80 / 8%);
-  --stat-text: #1a1e30;
-  --stat-label: rgb(15 20 45 / 46%);
-  --stat-sub: rgb(15 20 45 / 50%);
-  --stat-sub-strong: #7c3aed;
+  --stat-card-border: rgb(13 18 32 / 9%);
+  --stat-shadow: 0 1px 2px rgb(13 18 32 / 5%), 0 8px 20px -6px rgb(13 18 32 / 12%);
+  --stat-text: #0d1220;
+  --stat-label: #5a6478;
+  --stat-sub: #5a6478;
+  --stat-sub-strong: #1557d6;
   --stat-track-bg: rgb(0 0 0 / 9%);
   --stat-trend-up: #16a34a;
   --stat-trend-down: #dc2626;
@@ -66,7 +66,7 @@
   --stat-divider: rgb(0 0 0 / 8%);
   --stat-icon-opacity: 0.08;
   --stat-progress-default: linear-gradient(90deg, #f87171, #fb923c);
-  --stat-progress-emphasis: linear-gradient(90deg, #818cf8, #7c3aed);
+  --stat-progress-emphasis: linear-gradient(90deg, #5c9bff, #1660e6);
   --stat-digit-label: rgb(15 20 45 / 38%);
 }
 
@@ -80,11 +80,12 @@
   gap: 0.5rem;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--stat-card-border);
-  border-radius: 1rem;
+  border-radius: var(--radius-xl);
   background: var(--stat-card-bg);
   color: var(--stat-text);
-  box-shadow: var(--stat-shadow);
-  backdrop-filter: blur(8px);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%), var(--stat-shadow);
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+  backdrop-filter: blur(var(--blur-sm));
   transition:
     background 0.4s,
     border-color 0.4s,

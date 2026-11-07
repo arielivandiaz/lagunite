@@ -19,7 +19,7 @@ content[43]:
     id: #06-10-01
     category: null
     properties[26]: border-radius,padding,color,background,transition,"--stat-card-bg","--stat-card-border","--stat-shadow","--stat-text","--stat-label","--stat-sub","--stat-sub-strong","--stat-track-bg","--stat-trend-up","--stat-trend-down","--stat-ok-color","--stat-ok-glow","--stat-warn-color","--stat-warn-glow","--stat-bad-color","--stat-bad-glow","--stat-divider","--stat-icon-opacity","--stat-progress-default","--stat-progress-emphasis","--stat-digit-label"
-    cssRule: "border-radius: 1.25rem\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #a78bfa\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #a78bfa)\n--stat-digit-label: rgb(255 255 255 / 28%)"
+    cssRule: "border-radius: var(--radius-2xl)\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 0%, #153f94 0%, #111f45 40%, #090b10 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #8ebbff\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #2476ff, #8ebbff)\n--stat-digit-label: rgb(255 255 255 / 28%)"
     responsive: false
     description: "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
   - type: selector
@@ -28,7 +28,7 @@ content[43]:
     id: #06-10-01
     category: null
     properties[26]: border-radius,padding,color,background,transition,"--stat-card-bg","--stat-card-border","--stat-shadow","--stat-text","--stat-label","--stat-sub","--stat-sub-strong","--stat-track-bg","--stat-trend-up","--stat-trend-down","--stat-ok-color","--stat-ok-glow","--stat-warn-color","--stat-warn-glow","--stat-bad-color","--stat-bad-glow","--stat-divider","--stat-icon-opacity","--stat-progress-default","--stat-progress-emphasis","--stat-digit-label"
-    cssRule: "border-radius: 1.25rem\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 10%, #1f1738 0%, #0f1224 58%, #090b18 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #a78bfa\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #a78bfa)\n--stat-digit-label: rgb(255 255 255 / 28%)"
+    cssRule: "border-radius: var(--radius-2xl)\npadding: 2rem\ncolor: #fff\nbackground: radial-gradient(circle at 10% 0%, #153f94 0%, #111f45 40%, #090b10 100%)\ntransition: background 0.4s ease\n--stat-card-bg: rgb(255 255 255 / 6%)\n--stat-card-border: rgb(255 255 255 / 10%)\n--stat-shadow: 0 12px 35px rgb(8 13 30 / 30%)\n--stat-text: #fff\n--stat-label: rgb(255 255 255 / 42%)\n--stat-sub: rgb(255 255 255 / 50%)\n--stat-sub-strong: #8ebbff\n--stat-track-bg: rgb(255 255 255 / 12%)\n--stat-trend-up: #4ade80\n--stat-trend-down: #f87171\n--stat-ok-color: #4ade80\n--stat-ok-glow: rgb(74 222 128 / 55%)\n--stat-warn-color: #fbbf24\n--stat-warn-glow: rgb(251 191 36 / 55%)\n--stat-bad-color: #f87171\n--stat-bad-glow: rgb(248 113 113 / 55%)\n--stat-divider: rgb(255 255 255 / 8%)\n--stat-icon-opacity: 0.12\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #2476ff, #8ebbff)\n--stat-digit-label: rgb(255 255 255 / 28%)"
     responsive: false
     description: "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
   - type: selector
@@ -37,7 +37,7 @@ content[43]:
     id: #06-10-01
     category: null
     properties[23]: color,background,"--stat-card-bg","--stat-card-border","--stat-shadow","--stat-text","--stat-label","--stat-sub","--stat-sub-strong","--stat-track-bg","--stat-trend-up","--stat-trend-down","--stat-ok-color","--stat-ok-glow","--stat-warn-color","--stat-warn-glow","--stat-bad-color","--stat-bad-glow","--stat-divider","--stat-icon-opacity","--stat-progress-default","--stat-progress-emphasis","--stat-digit-label"
-    cssRule: "color: #1a1e30\nbackground: linear-gradient(135deg, #dce8ff 0%, #eef3fc 50%, #e2eaf9 100%)\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(0 0 0 / 8%)\n--stat-shadow: 0 4px 20px rgb(20 40 80 / 8%)\n--stat-text: #1a1e30\n--stat-label: rgb(15 20 45 / 46%)\n--stat-sub: rgb(15 20 45 / 50%)\n--stat-sub-strong: #7c3aed\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #7c3aed)\n--stat-digit-label: rgb(15 20 45 / 38%)"
+    cssRule: "color: #0d1220\nbackground: radial-gradient(80% 60% at 10% 0%, #d9e8ff 0%, #f6f7f9 60%), #f6f7f9\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(13 18 32 / 9%)\n--stat-shadow: 0 1px 2px rgb(13 18 32 / 5%), 0 8px 20px -6px rgb(13 18 32 / 12%)\n--stat-text: #0d1220\n--stat-label: #5a6478\n--stat-sub: #5a6478\n--stat-sub-strong: #1557d6\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #5c9bff, #1660e6)\n--stat-digit-label: rgb(15 20 45 / 38%)"
     responsive: false
     description: "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
   - type: selector
@@ -46,7 +46,7 @@ content[43]:
     id: #06-10-01
     category: null
     properties[23]: color,background,"--stat-card-bg","--stat-card-border","--stat-shadow","--stat-text","--stat-label","--stat-sub","--stat-sub-strong","--stat-track-bg","--stat-trend-up","--stat-trend-down","--stat-ok-color","--stat-ok-glow","--stat-warn-color","--stat-warn-glow","--stat-bad-color","--stat-bad-glow","--stat-divider","--stat-icon-opacity","--stat-progress-default","--stat-progress-emphasis","--stat-digit-label"
-    cssRule: "color: #1a1e30\nbackground: linear-gradient(135deg, #dce8ff 0%, #eef3fc 50%, #e2eaf9 100%)\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(0 0 0 / 8%)\n--stat-shadow: 0 4px 20px rgb(20 40 80 / 8%)\n--stat-text: #1a1e30\n--stat-label: rgb(15 20 45 / 46%)\n--stat-sub: rgb(15 20 45 / 50%)\n--stat-sub-strong: #7c3aed\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #818cf8, #7c3aed)\n--stat-digit-label: rgb(15 20 45 / 38%)"
+    cssRule: "color: #0d1220\nbackground: radial-gradient(80% 60% at 10% 0%, #d9e8ff 0%, #f6f7f9 60%), #f6f7f9\n--stat-card-bg: rgb(255 255 255 / 88%)\n--stat-card-border: rgb(13 18 32 / 9%)\n--stat-shadow: 0 1px 2px rgb(13 18 32 / 5%), 0 8px 20px -6px rgb(13 18 32 / 12%)\n--stat-text: #0d1220\n--stat-label: #5a6478\n--stat-sub: #5a6478\n--stat-sub-strong: #1557d6\n--stat-track-bg: rgb(0 0 0 / 9%)\n--stat-trend-up: #16a34a\n--stat-trend-down: #dc2626\n--stat-ok-color: #16a34a\n--stat-ok-glow: rgb(22 163 74 / 18%)\n--stat-warn-color: #d97706\n--stat-warn-glow: rgb(217 119 6 / 18%)\n--stat-bad-color: #dc2626\n--stat-bad-glow: rgb(220 38 38 / 18%)\n--stat-divider: rgb(0 0 0 / 8%)\n--stat-icon-opacity: 0.08\n--stat-progress-default: linear-gradient(90deg, #f87171, #fb923c)\n--stat-progress-emphasis: linear-gradient(90deg, #5c9bff, #1660e6)\n--stat-digit-label: rgb(15 20 45 / 38%)"
     responsive: false
     description: "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
   - type: selector
@@ -54,8 +54,8 @@ content[43]:
     selector: .stat-card
     id: #06-10-02
     category: null
-    properties[13]: position,overflow,display,flex-direction,gap,padding,border,border-radius,background,color,box-shadow,backdrop-filter,transition
-    cssRule: "position: relative\noverflow: hidden\ndisplay: flex\nflex-direction: column\ngap: 0.5rem\npadding: 1.25rem 1.5rem\nborder: 1px solid var(--stat-card-border)\nborder-radius: 1rem\nbackground: var(--stat-card-bg)\ncolor: var(--stat-text)\nbox-shadow: var(--stat-shadow)\nbackdrop-filter: blur(8px)\ntransition:\r\n    background 0.4s,\r\n    border-color 0.4s,\r\n    color 0.4s,\r\n    box-shadow 0.4s"
+    properties[14]: position,overflow,display,flex-direction,gap,padding,border,border-radius,background,color,box-shadow,"-webkit-backdrop-filter",backdrop-filter,transition
+    cssRule: "position: relative\noverflow: hidden\ndisplay: flex\nflex-direction: column\ngap: 0.5rem\npadding: 1.25rem 1.5rem\nborder: 1px solid var(--stat-card-border)\nborder-radius: var(--radius-xl)\nbackground: var(--stat-card-bg)\ncolor: var(--stat-text)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 10%), var(--stat-shadow)\n-webkit-backdrop-filter: blur(var(--blur-sm))\nbackdrop-filter: blur(var(--blur-sm))\ntransition:\r\n    background 0.4s,\r\n    border-color 0.4s,\r\n    color 0.4s,\r\n    box-shadow 0.4s"
     responsive: false
     description: "==========\r\n   06-molecules / 10-stat-cards.css\r\n   Glassy stat cards for dashboard metrics, comparisons, progress, and split KPIs.\r\n   =========="
   - type: selector
@@ -398,7 +398,7 @@ customProperties[42]{property,value}:
   "--stat-text",#fff
   "--stat-label",rgb(255 255 255 / 42%)
   "--stat-sub",rgb(255 255 255 / 50%)
-  "--stat-sub-strong",#a78bfa
+  "--stat-sub-strong",#8ebbff
   "--stat-track-bg",rgb(255 255 255 / 12%)
   "--stat-trend-up",#4ade80
   "--stat-trend-down",#f87171
@@ -411,15 +411,15 @@ customProperties[42]{property,value}:
   "--stat-divider",rgb(255 255 255 / 8%)
   "--stat-icon-opacity","0.12"
   "--stat-progress-default","linear-gradient(90deg, #f87171, #fb923c)"
-  "--stat-progress-emphasis","linear-gradient(90deg, #818cf8, #a78bfa)"
+  "--stat-progress-emphasis","linear-gradient(90deg, #2476ff, #8ebbff)"
   "--stat-digit-label",rgb(255 255 255 / 28%)
   "--stat-card-bg",rgb(255 255 255 / 88%)
-  "--stat-card-border",rgb(0 0 0 / 8%)
-  "--stat-shadow",0 4px 20px rgb(20 40 80 / 8%)
-  "--stat-text",#1a1e30
-  "--stat-label",rgb(15 20 45 / 46%)
-  "--stat-sub",rgb(15 20 45 / 50%)
-  "--stat-sub-strong",#7c3aed
+  "--stat-card-border",rgb(13 18 32 / 9%)
+  "--stat-shadow","0 1px 2px rgb(13 18 32 / 5%), 0 8px 20px -6px rgb(13 18 32 / 12%)"
+  "--stat-text",#0d1220
+  "--stat-label",#5a6478
+  "--stat-sub",#5a6478
+  "--stat-sub-strong",#1557d6
   "--stat-track-bg",rgb(0 0 0 / 9%)
   "--stat-trend-up",#16a34a
   "--stat-trend-down",#dc2626
@@ -432,5 +432,5 @@ customProperties[42]{property,value}:
   "--stat-divider",rgb(0 0 0 / 8%)
   "--stat-icon-opacity","0.08"
   "--stat-progress-default","linear-gradient(90deg, #f87171, #fb923c)"
-  "--stat-progress-emphasis","linear-gradient(90deg, #818cf8, #7c3aed)"
+  "--stat-progress-emphasis","linear-gradient(90deg, #5c9bff, #1660e6)"
   "--stat-digit-label",rgb(15 20 45 / 38%)

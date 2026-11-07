@@ -1,6 +1,7 @@
 /* ==========
    06-molecules / 05-breadcrumb.css
    Breadcrumb trail with slash, arrow, and dot separators.
+   v3: muted trail, current page in text color, themed by tokens.
    ========== */
 
 /* @ID: #06-05-01 */
@@ -24,22 +25,29 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
   padding: 0 var(--space-2);
-  color: var(--gray-400);
+  color: var(--color-text-subtle);
   content: "/";
 }
 
 .breadcrumb-item a {
-  color: var(--color-primary);
+  color: var(--color-text-muted);
   text-decoration: none;
-  transition: text-decoration 0.15s ease;
+  border-radius: var(--radius-xs);
+  transition: color var(--dur) var(--ease-out);
 }
 
 .breadcrumb-item a:hover {
-  text-decoration: underline;
+  color: var(--color-text-base);
+}
+
+.breadcrumb-item a:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .breadcrumb-item.active {
-  color: var(--gray-500);
+  color: var(--color-text-base);
+  font-weight: var(--font-weight-medium);
 }
 
 /* @ID: #06-05-02 */
@@ -52,16 +60,4 @@
 
 .breadcrumb-dot .breadcrumb-item + .breadcrumb-item::before {
   content: "·";
-}
-
-/* @ID: #06-05-03 */
-
-/* ── Night mode ─────────────────────────────────────────────────────────── */
-
-.night .breadcrumb-item + .breadcrumb-item::before {
-  color: var(--gray-500);
-}
-
-.night .breadcrumb-item.active {
-  color: var(--gray-400);
 }

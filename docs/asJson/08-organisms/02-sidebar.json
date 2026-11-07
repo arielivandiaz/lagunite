@@ -3,7 +3,7 @@
   "file": "02-sidebar.css",
   "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 36,
+  "totalSelectors": 34,
   "content": [
     {
       "type": "selector",
@@ -14,6 +14,7 @@
       "properties": [
         "width",
         "min-height",
+        "color",
         "background",
         "border-right",
         "padding",
@@ -21,7 +22,7 @@
         "flex-direction",
         "flex-shrink"
       ],
-      "cssRule": "width: 16rem\nmin-height: 100vh\nbackground: var(--color-bg)\nborder-right: var(--border-width-s) solid var(--color-border)\npadding: var(--space-4) 0\ndisplay: flex\nflex-direction: column\nflex-shrink: 0",
+      "cssRule": "width: 16rem\nmin-height: 100vh\ncolor: var(--color-text-base)\nbackground: var(--color-surface)\nborder-right: var(--border-width-s) solid var(--color-border)\npadding: var(--space-4) 0\ndisplay: flex\nflex-direction: column\nflex-shrink: 0",
       "responsive": false,
       "description": "── Sidebar shell ────────────────────────────────────────────────────────"
     },
@@ -33,10 +34,9 @@
       "category": null,
       "properties": [
         "padding",
-        "border-bottom",
         "margin-bottom"
       ],
-      "cssRule": "padding: var(--space-4)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nmargin-bottom: var(--space-2)",
+      "cssRule": "padding: var(--space-2) var(--space-5) var(--space-4)\nmargin-bottom: var(--space-2)",
       "responsive": false,
       "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
@@ -51,7 +51,7 @@
         "overflow-y",
         "padding"
       ],
-      "cssRule": "flex: 1\noverflow-y: auto\npadding: 0 var(--space-2)",
+      "cssRule": "flex: 1\noverflow-y: auto\npadding: 0 var(--space-3)",
       "responsive": false,
       "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
@@ -88,13 +88,28 @@
     {
       "type": "selector",
       "selectorType": "class",
+      "selector": ".sidebar-list",
+      "id": "#08-02-02",
+      "category": null,
+      "properties": [
+        "display",
+        "flex-direction",
+        "gap"
+      ],
+      "cssRule": "display: flex\nflex-direction: column\ngap: 2px",
+      "responsive": false,
+      "description": "── Header, sections, scroll area ───────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
       "selector": ".sidebar-sublist",
       "id": "#08-02-02",
       "category": null,
       "properties": [
         "padding"
       ],
-      "cssRule": "padding: 0 var(--space-2) var(--space-1) var(--space-2)",
+      "cssRule": "padding: 0 0 var(--space-1) var(--space-6)",
       "responsive": false,
       "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
@@ -107,7 +122,7 @@
       "properties": [
         "margin-bottom"
       ],
-      "cssRule": "margin-bottom: var(--space-4)",
+      "cssRule": "margin-bottom: var(--space-5)",
       "responsive": false,
       "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
@@ -127,10 +142,11 @@
         "color",
         "padding",
         "margin-bottom",
+        "border-radius",
         "list-style",
         "cursor"
       ],
-      "cssRule": "display: flex\nalign-items: center\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-bold)\ntext-transform: uppercase\nletter-spacing: 0.05em\ncolor: var(--gray-500)\npadding: var(--space-2) var(--space-3)\nmargin-bottom: var(--space-1)\nlist-style: none\ncursor: pointer",
+      "cssRule": "display: flex\nalign-items: center\nfont-size: 0.6875rem\nfont-weight: var(--font-weight-semibold)\ntext-transform: uppercase\nletter-spacing: 0.06em\ncolor: var(--color-text-subtle)\npadding: var(--space-1) var(--space-3)\nmargin-bottom: var(--space-1)\nborder-radius: var(--radius-sm)\nlist-style: none\ncursor: pointer",
       "responsive": false,
       "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
@@ -161,7 +177,7 @@
       ],
       "cssRule": "margin: 0\npadding: 0\nmax-width: none\nbackground: transparent",
       "responsive": false,
-      "description": "Reset global `details` callout (base uses --color-bg-alt = #222 in day)."
+      "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
     {
       "type": "selector",
@@ -176,9 +192,9 @@
         "line-height",
         "transition"
       ],
-      "cssRule": "content: \"▸\"\nmargin-left: auto\nfont-size: 0.625rem\nline-height: 1\ntransition: transform 0.2s",
+      "cssRule": "content: \"▸\"\nmargin-left: auto\nfont-size: 0.625rem\nline-height: 1\ntransition: transform var(--dur) var(--ease-out)",
       "responsive": false,
-      "description": "Reset global `details` callout (base uses --color-bg-alt = #222 in day)."
+      "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
     {
       "type": "selector",
@@ -191,7 +207,7 @@
       ],
       "cssRule": "transform: rotate(90deg)",
       "responsive": false,
-      "description": "Reset global `details` callout (base uses --color-bg-alt = #222 in day)."
+      "description": "── Header, sections, scroll area ───────────────────────────────────────"
     },
     {
       "type": "selector",
@@ -203,14 +219,16 @@
         "display",
         "align-items",
         "gap",
+        "min-height",
         "padding",
         "color",
         "text-decoration",
         "border-radius",
-        "transition",
-        "font-size"
+        "font-size",
+        "font-weight",
+        "transition"
       ],
-      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-2) var(--space-3)\ncolor: var(--color-text-base)\ntext-decoration: none\nborder-radius: var(--radius-s)\ntransition:\n    background 0.2s,\n    color 0.2s,\n    transform 0.2s\nfont-size: var(--font-size-base)",
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-3)\nmin-height: 2.25rem\npadding: 0 var(--space-3)\ncolor: var(--color-text-muted)\ntext-decoration: none\nborder-radius: var(--radius-md)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\ntransition:\n    background var(--dur-fast) var(--ease-out),\n    color var(--dur-fast) var(--ease-out)",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -224,7 +242,7 @@
         "background",
         "color"
       ],
-      "cssRule": "background: rgba(var(--color-primary-rgb), 0.1)\ncolor: var(--color-primary)",
+      "cssRule": "background: var(--color-surface-muted)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -236,9 +254,9 @@
       "category": null,
       "properties": [
         "outline",
-        "outline-offset"
+        "box-shadow"
       ],
-      "cssRule": "outline: 2px solid rgba(var(--color-primary-rgb), 0.45)\noutline-offset: 1px",
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -250,9 +268,9 @@
       "category": null,
       "properties": [
         "outline",
-        "outline-offset"
+        "box-shadow"
       ],
-      "cssRule": "outline: 2px solid rgba(var(--color-primary-rgb), 0.45)\noutline-offset: 1px",
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -265,9 +283,10 @@
       "properties": [
         "background",
         "color",
-        "font-weight"
+        "font-weight",
+        "box-shadow"
       ],
-      "cssRule": "background: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-medium)",
+      "cssRule": "background: var(--color-primary-soft)\ncolor: var(--color-primary-text)\nfont-weight: var(--font-weight-semibold)\nbox-shadow: inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.16)",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -282,7 +301,7 @@
         "height",
         "flex-shrink"
       ],
-      "cssRule": "width: 1.25rem\nheight: 1.25rem\nflex-shrink: 0",
+      "cssRule": "width: 1.125rem\nheight: 1.125rem\nflex-shrink: 0",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -297,7 +316,7 @@
         "height",
         "flex-shrink"
       ],
-      "cssRule": "width: 1.25rem\nheight: 1.25rem\nflex-shrink: 0",
+      "cssRule": "width: 1.125rem\nheight: 1.125rem\nflex-shrink: 0",
       "responsive": false,
       "description": "── Links ────────────────────────────────────────────────────────────────"
     },
@@ -312,7 +331,7 @@
         "border-top",
         "margin-top"
       ],
-      "cssRule": "padding: var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\nmargin-top: auto",
+      "cssRule": "padding: var(--space-4) var(--space-5) 0\nborder-top: var(--border-width-s) solid var(--color-border)\nmargin-top: auto",
       "responsive": false,
       "description": "── Footer row, compact, dark ───────────────────────────────────────────"
     },
@@ -325,7 +344,21 @@
       "properties": [
         "width"
       ],
-      "cssRule": "width: 4rem",
+      "cssRule": "width: 4.5rem",
+      "responsive": false,
+      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sidebar-compact .sidebar-link",
+      "id": "#08-02-04",
+      "category": null,
+      "properties": [
+        "justify-content",
+        "padding"
+      ],
+      "cssRule": "justify-content: center\npadding: 0",
       "responsive": false,
       "description": "── Footer row, compact, dark ───────────────────────────────────────────"
     },
@@ -349,12 +382,13 @@
       "id": "#08-02-04",
       "category": null,
       "properties": [
+        "color",
         "background",
         "border-color"
       ],
-      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "cssRule": "color: var(--slate-100)\nbackground: var(--slate-950)\nborder-color: rgb(255 255 255 / 8%)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
@@ -365,9 +399,9 @@
       "properties": [
         "color"
       ],
-      "cssRule": "color: var(--gray-500)",
+      "cssRule": "color: var(--slate-500)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
@@ -378,9 +412,9 @@
       "properties": [
         "color"
       ],
-      "cssRule": "color: var(--gray-300)",
+      "cssRule": "color: var(--slate-400)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
@@ -392,9 +426,9 @@
         "background",
         "color"
       ],
-      "cssRule": "background: rgb(255 255 255 / 8%)\ncolor: var(--gray-100)",
+      "cssRule": "background: rgb(255 255 255 / 6%)\ncolor: var(--slate-50)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
@@ -404,79 +438,25 @@
       "category": null,
       "properties": [
         "background",
-        "color"
+        "color",
+        "box-shadow"
       ],
-      "cssRule": "background: var(--color-primary-dark)\ncolor: var(--color-primary)",
+      "cssRule": "background: rgba(var(--color-primary-rgb), 0.18)\ncolor: #a8c8ff\nbox-shadow: inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.3)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night .sidebar",
+      "selector": ".sidebar-dark .sidebar-footer",
       "id": "#08-02-04",
       "category": null,
       "properties": [
-        "background",
         "border-color"
       ],
-      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
+      "cssRule": "border-color: rgb(255 255 255 / 8%)",
       "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .sidebar .sidebar-section-title",
-      "id": "#08-02-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--gray-500)",
-      "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .sidebar .sidebar-link",
-      "id": "#08-02-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--gray-300)",
-      "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .sidebar .sidebar-link:hover",
-      "id": "#08-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": "background: rgb(255 255 255 / 8%)\ncolor: var(--gray-100)",
-      "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .sidebar .sidebar-link.active",
-      "id": "#08-02-04",
-      "category": null,
-      "properties": [
-        "background",
-        "color"
-      ],
-      "cssRule": "background: var(--color-primary-dark)\ncolor: var(--color-primary)",
-      "responsive": false,
-      "description": "── Footer row, compact, dark ───────────────────────────────────────────"
+      "description": "Always-dark sidebar, in both themes"
     },
     {
       "type": "selector",
@@ -493,7 +473,7 @@
         "transform",
         "transition"
       ],
-      "cssRule": "position: fixed\ntop: 0\nleft: 0\nheight: 100vh\nz-index: 200\ntransform: translateX(-100%)\ntransition: transform 0.2s ease",
+      "cssRule": "position: fixed\ntop: 0\nleft: 0\nheight: 100vh\nz-index: 200\ntransform: translateX(-100%)\ntransition: transform var(--dur-slow) var(--ease-out)",
       "responsive": false,
       "description": "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."
     },
@@ -522,6 +502,8 @@
         "inset",
         "z-index",
         "background",
+        "-webkit-backdrop-filter",
+        "backdrop-filter",
         "opacity",
         "pointer-events",
         "transition",
@@ -529,7 +511,7 @@
         "padding",
         "cursor"
       ],
-      "cssRule": "position: fixed\ninset: 0\nz-index: 150\nbackground: rgb(0 0 0 / 50%)\nopacity: 0\npointer-events: none\ntransition: opacity 0.2s ease\nborder: 0\npadding: 0\ncursor: pointer",
+      "cssRule": "position: fixed\ninset: 0\nz-index: 150\nbackground: var(--color-overlay)\n-webkit-backdrop-filter: blur(var(--blur-sm))\nbackdrop-filter: blur(var(--blur-sm))\nopacity: 0\npointer-events: none\ntransition: opacity var(--dur-slow) var(--ease-out)\nborder: 0\npadding: 0\ncursor: pointer",
       "responsive": false,
       "description": "* Always-on drawer (Lab / forced overlay) — same chrome as mobile sidebar.\n * Pair with .sidebar-backdrop for light-dismiss."
     },

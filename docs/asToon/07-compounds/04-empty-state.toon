@@ -2,8 +2,8 @@ folder: 07-compounds
 file: 04-empty-state.css
 lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 23
-content[23]:
+totalSelectors: 18
+content[18]:
   - type: selector
     selectorType: class
     selector: .empty-state
@@ -164,50 +164,5 @@ content[23]:
     category: null
     properties[3]: color,border-color,background
     cssRule: "color: var(--blue-500)\nborder-color: rgb(59 130 246 / 40%)\nbackground: rgb(59 130 246 / 14%)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state
-    id: #07-04-03
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: var(--gray-700)\nbackground: linear-gradient(180deg, rgb(255 255 255 / 4%) 0%, rgb(255 255 255 / 1%) 100%)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-title
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-100)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-text
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-meta
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-500)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-icon
-    id: #07-04-03
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: rgba(var(--color-primary-rgb), 0.45)\nbackground: rgba(var(--color-primary-rgb), 0.2)"
     responsive: false
     description: ── Semantic variants ────────────────────────────────────────────────────

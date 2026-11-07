@@ -3,7 +3,7 @@
   "file": "02-alerts.css",
   "lastUpdated": "2026-11-07",
   "hasResponsive": true,
-  "totalSelectors": 49,
+  "totalSelectors": 43,
   "content": [
     {
       "type": "selector",
@@ -378,47 +378,6 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night [popover].toast",
-      "id": "#06-02-04b",
-      "category": null,
-      "properties": [
-        "background",
-        "border-color"
-      ],
-      "cssRule": "background: var(--color-bg)\nborder-color: var(--color-border)",
-      "responsive": false,
-      "description": "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .toast-stack > .toast",
-      "id": "#06-02-04b",
-      "category": null,
-      "properties": [
-        "background",
-        "border-color"
-      ],
-      "cssRule": "background: var(--color-bg)\nborder-color: var(--color-border)",
-      "responsive": false,
-      "description": "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .toast-message",
-      "id": "#06-02-04b",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
       "selector": ".snackbar",
       "id": "#06-02-05",
       "category": null,
@@ -654,45 +613,6 @@
       "cssRule": "background: var(--color-primary)",
       "responsive": false,
       "description": "── Snackbar ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .alert-warning",
-      "id": "#06-02-06",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .alert-error",
-      "id": "#06-02-06",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .alert-info",
-      "id": "#06-02-06",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
     },
     {
       "type": "selector",

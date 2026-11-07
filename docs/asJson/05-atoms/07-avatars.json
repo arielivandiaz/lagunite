@@ -3,7 +3,7 @@
   "file": "07-avatars.css",
   "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 72,
+  "totalSelectors": 71,
   "content": [
     {
       "type": "selector",
@@ -45,20 +45,6 @@
         "display"
       ],
       "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover\ndisplay: block",
-      "responsive": false,
-      "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .avatar",
-      "id": "#05-07-01",
-      "category": null,
-      "properties": [
-        "background-color",
-        "color"
-      ],
-      "cssRule": "background-color: var(--gray-700)\ncolor: var(--gray-200)",
       "responsive": false,
       "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
     },

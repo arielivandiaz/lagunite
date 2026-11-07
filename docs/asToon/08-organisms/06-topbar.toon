@@ -2,15 +2,15 @@ folder: 08-organisms
 file: 06-topbar.css
 lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 38
-content[38]:
+totalSelectors: 29
+content[29]:
   - type: selector
     selectorType: class
     selector: .topbar
     id: #08-06-01
     category: null
-    properties[10]: position,display,align-items,justify-content,gap,min-height,padding,background,border-bottom,z-index
-    cssRule: "position: relative\ndisplay: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\nmin-height: 3.5rem\npadding: var(--space-2) var(--space-4)\nbackground: var(--color-bg)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nz-index: 120"
+    properties[13]: position,display,align-items,justify-content,gap,min-height,padding,color,background,"-webkit-backdrop-filter",backdrop-filter,border-bottom,z-index
+    cssRule: "position: relative\ndisplay: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-3)\nmin-height: 3.5rem\npadding: var(--space-2) var(--space-5)\ncolor: var(--color-text-base)\nbackground: var(--color-glass)\n-webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%)\nbackdrop-filter: blur(var(--blur-md)) saturate(160%)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nz-index: 120"
     responsive: false
     description: ── Topbar shell ────────────────────────────────────────────────────────
   - type: selector
@@ -28,7 +28,7 @@ content[38]:
     id: #08-06-01
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow: var(--shadow-s)"
+    cssRule: "box-shadow: var(--shadow-m)"
     responsive: false
     description: ── Topbar shell ────────────────────────────────────────────────────────
   - type: selector
@@ -99,8 +99,8 @@ content[38]:
     selector: .topbar-brand
     id: #08-06-02
     category: null
-    properties[7]: display,align-items,gap,color,text-decoration,font-weight,white-space
-    cssRule: "display: inline-flex\nalign-items: center\ngap: var(--space-2)\ncolor: var(--color-text-base)\ntext-decoration: none\nfont-weight: var(--font-weight-bold)\nwhite-space: nowrap"
+    properties[9]: display,align-items,gap,color,text-decoration,font-family,font-weight,letter-spacing,white-space
+    cssRule: "display: inline-flex\nalign-items: center\ngap: var(--space-2)\ncolor: var(--color-text-base)\ntext-decoration: none\nfont-family: var(--font-display)\nfont-weight: var(--font-weight-bold)\nletter-spacing: -0.02em\nwhite-space: nowrap"
     responsive: false
     description: ── Regions and content slots ───────────────────────────────────────────
   - type: selector
@@ -108,8 +108,8 @@ content[38]:
     selector: .topbar-title
     id: #08-06-02
     category: null
-    properties[6]: margin,font-size,color,white-space,overflow,text-overflow
-    cssRule: "margin: 0\nfont-size: var(--font-size-l)\ncolor: var(--color-text-base)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis"
+    properties[9]: margin,font-family,font-size,font-weight,letter-spacing,color,white-space,overflow,text-overflow
+    cssRule: "margin: 0\nfont-family: var(--font-display)\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis"
     responsive: false
     description: ── Regions and content slots ───────────────────────────────────────────
   - type: selector
@@ -118,7 +118,7 @@ content[38]:
     id: #08-06-02
     category: null
     properties[3]: margin,font-size,color
-    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)"
+    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--color-text-muted)"
     responsive: false
     description: ── Regions and content slots ───────────────────────────────────────────
   - type: selector
@@ -127,7 +127,7 @@ content[38]:
     id: #08-06-02
     category: null
     properties[3]: width,height,background
-    cssRule: "width: 1px\nheight: 1.5rem\nbackground: var(--color-border)"
+    cssRule: "width: 1px\nheight: 1.5rem\nbackground: var(--color-border-strong)"
     responsive: false
     description: ── Regions and content slots ───────────────────────────────────────────
   - type: selector
@@ -154,7 +154,7 @@ content[38]:
     id: #08-06-03
     category: null
     properties[13]: display,align-items,justify-content,min-width,height,padding,border,border-radius,background,color,text-decoration,cursor,transition
-    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 2.25rem\nheight: 2.25rem\npadding: 0 var(--space-2)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbackground: var(--color-bg)\ncolor: var(--color-text-base)\ntext-decoration: none\ncursor: pointer\ntransition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease"
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 2.25rem\nheight: 2.25rem\npadding: 0 var(--space-2)\nborder: 0\nborder-radius: var(--radius-md)\nbackground: transparent\ncolor: var(--color-text-muted)\ntext-decoration: none\ncursor: pointer\ntransition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out)"
     responsive: false
     description: ── Interactive elements ────────────────────────────────────────────────
   - type: selector
@@ -162,8 +162,8 @@ content[38]:
     selector: ".topbar-action:hover"
     id: #08-06-03
     category: null
-    properties[3]: border-color,color,background
-    cssRule: "border-color: var(--color-primary)\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.06)"
+    properties[2]: color,background
+    cssRule: "color: var(--color-text-base)\nbackground: var(--color-surface-muted)"
     responsive: false
     description: ── Interactive elements ────────────────────────────────────────────────
   - type: selector
@@ -171,8 +171,8 @@ content[38]:
     selector: ".topbar-action:focus-visible"
     id: #08-06-03
     category: null
-    properties[2]: outline,outline-offset
-    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 1px"
+    properties[2]: outline,box-shadow
+    cssRule: "outline: none\nbox-shadow: var(--shadow-focus)"
     responsive: false
     description: ── Interactive elements ────────────────────────────────────────────────
   - type: selector
@@ -180,8 +180,8 @@ content[38]:
     selector: .topbar-badge
     id: #08-06-03
     category: null
-    properties[12]: display,align-items,justify-content,min-width,height,border-radius,background,color,font-size,font-weight,line-height,padding
-    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 1.2rem\nheight: 1.2rem\nborder-radius: var(--radius-full)\nbackground: var(--color-error)\ncolor: var(--color-text-alt)\nfont-size: 0.68rem\nfont-weight: var(--font-weight-bold)\nline-height: 1\npadding: 0 0.25rem"
+    properties[13]: display,align-items,justify-content,min-width,height,border-radius,background,color,box-shadow,font-size,font-weight,line-height,padding
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nmin-width: 1.2rem\nheight: 1.2rem\nborder-radius: var(--radius-full)\nbackground: var(--color-danger-fill)\ncolor: var(--color-text-alt)\nbox-shadow: 0 0 0 2px var(--color-surface-raised)\nfont-size: 0.68rem\nfont-weight: var(--font-weight-bold)\nline-height: 1\npadding: 0 0.25rem"
     responsive: false
     description: ── Interactive elements ────────────────────────────────────────────────
   - type: selector
@@ -189,8 +189,8 @@ content[38]:
     selector: .topbar-avatar
     id: #08-06-03
     category: null
-    properties[12]: width,height,border-radius,object-fit,display,align-items,justify-content,border,background,font-size,font-weight,color
-    cssRule: "width: 2rem\nheight: 2rem\nborder-radius: var(--radius-full)\nobject-fit: cover\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nborder: var(--border-width-s) solid var(--color-border)\nbackground: var(--gray-100)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-bold)\ncolor: var(--gray-700)"
+    properties[13]: width,height,border-radius,object-fit,display,align-items,justify-content,border,background,box-shadow,font-size,font-weight,color
+    cssRule: "width: 2rem\nheight: 2rem\nborder-radius: var(--radius-full)\nobject-fit: cover\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nborder: 0\nbackground: linear-gradient(140deg, var(--blue-400), var(--blue-700))\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 25%)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-semibold)\ncolor: var(--color-on-primary)"
     responsive: false
     description: ── Interactive elements ────────────────────────────────────────────────
   - type: selector
@@ -198,8 +198,8 @@ content[38]:
     selector: .topbar-primary
     id: #08-06-04
     category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--color-primary)\nborder-color: rgb(255 255 255 / 22%)"
+    properties[4]: background,"-webkit-backdrop-filter",backdrop-filter,border-color
+    cssRule: "background: var(--gradient-primary)\n-webkit-backdrop-filter: none\nbackdrop-filter: none\nborder-color: rgb(255 255 255 / 22%)"
     responsive: false
     description: ── Style variants ───────────────────────────────────────────────────────
   - type: selector
@@ -240,20 +240,11 @@ content[38]:
     description: ── Style variants ───────────────────────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .topbar-primary .topbar-action
-    id: #08-06-04
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: rgb(255 255 255 / 35%)\nbackground: rgb(255 255 255 / 8%)"
-    responsive: false
-    description: ── Style variants ───────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
     selector: ".topbar-primary .topbar-action:hover"
     id: #08-06-04
     category: null
-    properties[2]: background,border-color
-    cssRule: "background: rgb(255 255 255 / 16%)\nborder-color: rgb(255 255 255 / 55%)"
+    properties[1]: background
+    cssRule: "background: rgb(255 255 255 / 16%)"
     responsive: false
     description: ── Style variants ───────────────────────────────────────────────────────
   - type: selector
@@ -274,75 +265,3 @@ content[38]:
     cssRule: "min-height: 3rem\npadding: var(--space-1) var(--space-3)"
     responsive: false
     description: ── Style variants ───────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar
-    id: #08-06-06
-    category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--gray-900)\nborder-color: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-brand
-    id: #08-06-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-100)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-title
-    id: #08-06-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-100)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-subtitle
-    id: #08-06-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-divider
-    id: #08-06-06
-    category: null
-    properties[1]: background
-    cssRule: "background: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-action
-    id: #08-06-06
-    category: null
-    properties[3]: border-color,background,color
-    cssRule: "border-color: var(--gray-700)\nbackground: var(--gray-800)\ncolor: var(--gray-200)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .topbar-action:hover"
-    id: #08-06-06
-    category: null
-    properties[3]: border-color,color,background
-    cssRule: "border-color: var(--color-primary)\ncolor: var(--color-primary-light)\nbackground: rgba(var(--color-primary-rgb), 0.18)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .topbar-avatar
-    id: #08-06-06
-    category: null
-    properties[3]: border-color,background,color
-    cssRule: "border-color: var(--gray-700)\nbackground: var(--gray-800)\ncolor: var(--gray-200)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────

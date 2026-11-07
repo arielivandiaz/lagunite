@@ -3,7 +3,7 @@
   "file": "03-dropdown.css",
   "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 20,
+  "totalSelectors": 17,
   "content": [
     {
       "type": "selector",
@@ -39,11 +39,6 @@
       "id": "#06-03-02",
       "category": null,
       "properties": [
-        "position",
-        "top",
-        "left",
-        "z-index",
-        "display",
         "min-width",
         "padding",
         "margin",
@@ -53,21 +48,44 @@
         "border-radius",
         "box-shadow"
       ],
-      "cssRule": "position: absolute\ntop: 100%\nleft: 0\nz-index: 100\ndisplay: none\nmin-width: 10rem\npadding: var(--space-2) 0\nmargin: 0\nlist-style: none\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-m)",
+      "cssRule": "min-width: 11rem\npadding: var(--space-1)\nmargin: 0\nlist-style: none\nbackground: var(--color-surface-raised)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)",
       "responsive": false,
       "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night .dropdown-menu",
+      "selector": ".dropdown-panel",
       "id": "#06-03-02",
       "category": null,
       "properties": [
+        "min-width",
+        "padding",
+        "margin",
+        "list-style",
         "background",
-        "border-color"
+        "border",
+        "border-radius",
+        "box-shadow"
       ],
-      "cssRule": "background: var(--color-bg)\nborder-color: var(--color-border)",
+      "cssRule": "min-width: 11rem\npadding: var(--space-1)\nmargin: 0\nlist-style: none\nbackground: var(--color-surface-raised)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)",
+      "responsive": false,
+      "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".dropdown-menu",
+      "id": "#06-03-02",
+      "category": null,
+      "properties": [
+        "position",
+        "top",
+        "left",
+        "z-index",
+        "display"
+      ],
+      "cssRule": "position: absolute\ntop: calc(100% + var(--space-1))\nleft: 0\nz-index: 100\ndisplay: none",
       "responsive": false,
       "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
     },
@@ -78,9 +96,10 @@
       "id": "#06-03-02",
       "category": null,
       "properties": [
-        "display"
+        "display",
+        "animation"
       ],
-      "cssRule": "display: block",
+      "cssRule": "display: block\nanimation: dropdown-in var(--dur) var(--ease-out)",
       "responsive": false,
       "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
     },
@@ -100,24 +119,57 @@
     },
     {
       "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": "#06-03-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "transform"
+      ],
+      "cssRule": "opacity: 0\ntransform: translateY(-4px) scale(0.98)",
+      "responsive": false,
+      "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": "#06-03-02",
+      "category": null,
+      "properties": [
+        "opacity",
+        "transform"
+      ],
+      "cssRule": "opacity: 1\ntransform: none",
+      "responsive": false,
+      "description": "── Dropdown menu (toggle .open on .dropdown) ───────────────────────────"
+    },
+    {
+      "type": "selector",
       "selectorType": "class",
       "selector": ".dropdown-item",
       "id": "#06-03-03",
       "category": null,
       "properties": [
         "display",
+        "align-items",
+        "gap",
         "width",
+        "min-height",
         "padding",
+        "border-radius",
         "color",
+        "font",
+        "font-size",
         "text-align",
         "text-decoration",
         "background",
         "border",
-        "font",
         "cursor",
         "transition"
       ],
-      "cssRule": "display: block\nwidth: 100%\npadding: var(--space-2) var(--space-4)\ncolor: var(--color-text-base)\ntext-align: start\ntext-decoration: none\nbackground: transparent\nborder: none\nfont: inherit\ncursor: pointer\ntransition:\n    background-color 0.2s ease,\n    color 0.2s ease",
+      "cssRule": "display: flex\nalign-items: center\ngap: var(--space-2)\nwidth: 100%\nmin-height: 2.25rem\npadding: 0 var(--space-3)\nborder-radius: var(--radius-sm)\ncolor: var(--color-text-base)\nfont: inherit\nfont-size: var(--font-size-s)\ntext-align: start\ntext-decoration: none\nbackground: transparent\nborder: none\ncursor: pointer\ntransition:\n    background-color var(--dur-fast) var(--ease-out),\n    color var(--dur-fast) var(--ease-out)",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
@@ -128,10 +180,9 @@
       "id": "#06-03-03",
       "category": null,
       "properties": [
-        "background-color",
-        "color"
+        "background-color"
       ],
-      "cssRule": "background-color: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "cssRule": "background-color: var(--color-surface-muted)",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
@@ -145,7 +196,7 @@
         "background-color",
         "color"
       ],
-      "cssRule": "background-color: var(--color-primary)\ncolor: var(--color-text-alt)",
+      "cssRule": "background-color: var(--color-primary-soft)\ncolor: var(--color-primary-text)",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
@@ -157,9 +208,9 @@
       "category": null,
       "properties": [
         "outline",
-        "outline-offset"
+        "box-shadow"
       ],
-      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: -2px",
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
@@ -173,10 +224,11 @@
         "padding",
         "font-size",
         "font-weight",
+        "letter-spacing",
         "color",
         "text-transform"
       ],
-      "cssRule": "padding: var(--space-2) var(--space-4)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-bold)\ncolor: var(--gray-500)\ntext-transform: uppercase",
+      "cssRule": "padding: var(--space-2) var(--space-3) var(--space-1)\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: 0.04em\ncolor: var(--color-text-muted)\ntext-transform: uppercase",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
@@ -191,126 +243,40 @@
         "border",
         "border-top"
       ],
-      "cssRule": "margin: var(--space-2) 0\nborder: none\nborder-top: var(--border-width-s) solid var(--color-border)",
+      "cssRule": "margin: var(--space-1) 0\nborder: none\nborder-top: var(--border-width-s) solid var(--color-border)",
       "responsive": false,
       "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night .dropdown-item",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .dropdown-item:hover",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .dropdown-item.active",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-alt)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .dropdown-header",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--gray-400)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .dropdown-divider",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "border-top-color"
-      ],
-      "cssRule": "border-top-color: var(--color-border)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
       "selector": ".dropdown-panel",
-      "id": "#06-03-04",
+      "id": "#06-03-03",
       "category": null,
       "properties": [
         "inset",
-        "margin",
         "position",
         "position-anchor",
         "position-area",
         "position-try-fallbacks",
-        "min-width",
-        "padding",
-        "list-style",
-        "background",
-        "border",
-        "border-radius",
-        "box-shadow"
+        "margin-top"
       ],
-      "cssRule": "inset: auto\nmargin: 0\nposition: fixed\nposition-anchor: --lagunite-dd\nposition-area: block-end span-inline-end\nposition-try-fallbacks: flip-block, flip-inline\nmin-width: 10rem\npadding: var(--space-2) 0\nlist-style: none\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-m)",
+      "cssRule": "inset: auto\nposition: fixed\nposition-anchor: --lagunite-dd\nposition-area: block-end span-inline-end\nposition-try-fallbacks: flip-block, flip-inline\nmargin-top: var(--space-1)",
       "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
+      "description": "── Items, header, divider ───────────────────────────────────────────────"
     },
     {
       "type": "selector",
       "selectorType": "class",
       "selector": ".dropdown-trigger",
-      "id": "#06-03-04",
+      "id": "#06-03-03",
       "category": null,
       "properties": [
         "anchor-name"
       ],
       "cssRule": "anchor-name: --lagunite-dd",
       "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .dropdown-panel",
-      "id": "#06-03-04",
-      "category": null,
-      "properties": [
-        "background",
-        "border-color"
-      ],
-      "cssRule": "background: var(--color-bg)\nborder-color: var(--color-border)",
-      "responsive": false,
-      "description": "── Night mode ───────────────────────────────────────────────────────────"
+      "description": "── Items, header, divider ───────────────────────────────────────────────"
     }
   ]
 }

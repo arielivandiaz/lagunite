@@ -2,8 +2,8 @@ folder: 06-molecules
 file: 05-breadcrumb.css
 lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 10
-content[10]:
+totalSelectors: 9
+content[9]:
   - type: selector
     selectorType: class
     selector: .breadcrumb
@@ -28,7 +28,7 @@ content[10]:
     id: #06-05-01
     category: null
     properties[3]: padding,color,content
-    cssRule: "padding: 0 var(--space-2)\ncolor: var(--gray-400)\ncontent: \"/\""
+    cssRule: "padding: 0 var(--space-2)\ncolor: var(--color-text-subtle)\ncontent: \"/\""
     responsive: false
     description: ── Breadcrumb list & items ──────────────────────────────────────────────
   - type: selector
@@ -36,8 +36,8 @@ content[10]:
     selector: .breadcrumb-item a
     id: #06-05-01
     category: null
-    properties[3]: color,text-decoration,transition
-    cssRule: "color: var(--color-primary)\ntext-decoration: none\ntransition: text-decoration 0.15s ease"
+    properties[4]: color,text-decoration,border-radius,transition
+    cssRule: "color: var(--color-text-muted)\ntext-decoration: none\nborder-radius: var(--radius-xs)\ntransition: color var(--dur) var(--ease-out)"
     responsive: false
     description: ── Breadcrumb list & items ──────────────────────────────────────────────
   - type: selector
@@ -45,8 +45,17 @@ content[10]:
     selector: ".breadcrumb-item a:hover"
     id: #06-05-01
     category: null
-    properties[1]: text-decoration
-    cssRule: "text-decoration: underline"
+    properties[1]: color
+    cssRule: "color: var(--color-text-base)"
+    responsive: false
+    description: ── Breadcrumb list & items ──────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: ".breadcrumb-item a:focus-visible"
+    id: #06-05-01
+    category: null
+    properties[2]: outline,box-shadow
+    cssRule: "outline: none\nbox-shadow: var(--shadow-focus)"
     responsive: false
     description: ── Breadcrumb list & items ──────────────────────────────────────────────
   - type: selector
@@ -54,8 +63,8 @@ content[10]:
     selector: .breadcrumb-item.active
     id: #06-05-01
     category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-500)"
+    properties[2]: color,font-weight
+    cssRule: "color: var(--color-text-base)\nfont-weight: var(--font-weight-medium)"
     responsive: false
     description: ── Breadcrumb list & items ──────────────────────────────────────────────
   - type: selector
@@ -76,21 +85,3 @@ content[10]:
     cssRule: "content: \"·\""
     responsive: false
     description: ── Separator variants ───────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .breadcrumb-item + .breadcrumb-item::before"
-    id: #06-05-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-500)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .breadcrumb-item.active
-    id: #06-05-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────

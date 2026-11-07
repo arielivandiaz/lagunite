@@ -31,11 +31,6 @@
 	display: block;
 }
 
-.night .avatar {
-	background-color: var(--gray-700);
-	color: var(--gray-200);
-}
-
 /* @ID: #05-07-02 */
 .avatar-xs {
 	width: var(--space-6);

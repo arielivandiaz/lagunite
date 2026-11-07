@@ -217,15 +217,6 @@
   flex-shrink: 0;
 }
 
-.night [popover].toast,
-.night .toast-stack > .toast {
-  background: var(--color-bg);
-  border-color: var(--color-border);
-}
-
-.night .toast-message {
-  color: var(--color-text-alt);
-}
 
 /* @ID: #06-02-05 */
 
@@ -329,12 +320,6 @@
 /* @ID: #06-02-06 */
 
 /* ── Night mode ─────────────────────────────────────────────────────────── */
-
-.night .alert-warning,
-.night .alert-error,
-.night .alert-info {
-  color: var(--color-text-alt);
-}
 
 .night .alert-close {
   color: inherit;

@@ -3,7 +3,7 @@
   "file": "13-skeleton.css",
   "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 30,
+  "totalSelectors": 29,
   "content": [
     {
       "type": "selector",
@@ -20,7 +20,7 @@
         "border-radius",
         "animation"
       ],
-      "cssRule": "--skeleton-bg: var(--gray-200)\n--skeleton-bg-alt: var(--gray-100)\n--skeleton-radius: var(--radius-s)\ndisplay: block\nbackground: linear-gradient(180deg, var(--skeleton-bg), var(--skeleton-bg-alt))\nborder-radius: var(--skeleton-radius)\nanimation: skeleton-pulse 1.55s ease-in-out infinite",
+      "cssRule": "--skeleton-bg: var(--color-surface-muted)\n--skeleton-bg-alt: var(--color-border)\n--skeleton-radius: var(--radius-sm)\ndisplay: block\nbackground: linear-gradient(180deg, var(--skeleton-bg), var(--skeleton-bg-alt))\nborder-radius: var(--skeleton-radius)\nanimation: skeleton-pulse 1.55s ease-in-out infinite",
       "responsive": false,
       "description": "── Base primitives ─────────────────────────────────────────────────────"
     },
@@ -213,7 +213,7 @@
         "border-radius",
         "background"
       ],
-      "cssRule": "display: grid\ngap: var(--space-3)\npadding: var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbackground: var(--color-bg)",
+      "cssRule": "display: grid\ngap: var(--space-3)\npadding: var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbackground: var(--color-surface-raised)",
       "responsive": false,
       "description": "── Content patterns ────────────────────────────────────────────────────"
     },
@@ -409,41 +409,26 @@
     {
       "type": "selector",
       "selectorType": "class",
-      "selector": ".night .skeleton",
-      "id": "#06-13-04",
-      "category": null,
-      "properties": [
-        "--skeleton-bg",
-        "--skeleton-bg-alt"
-      ],
-      "cssRule": "--skeleton-bg: var(--gray-700)\n--skeleton-bg-alt: var(--gray-600)",
-      "responsive": false,
-      "description": "── Layout and states ───────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .skeleton-card",
-      "id": "#06-13-04",
-      "category": null,
-      "properties": [
-        "background",
-        "border-color"
-      ],
-      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
-      "responsive": false,
-      "description": "── Layout and states ───────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
       "selector": ".night .skeleton-shimmer::after",
       "id": "#06-13-04",
       "category": null,
       "properties": [
         "background"
       ],
-      "cssRule": "background: linear-gradient(\r\n    90deg,\r\n    rgb(255 255 255 / 0%) 0%,\r\n    rgb(255 255 255 / 16%) 50%,\r\n    rgb(255 255 255 / 0%) 100%\r\n  )",
+      "cssRule": "background: linear-gradient(\r\n    90deg,\r\n    rgb(255 255 255 / 0%) 0%,\r\n    rgb(255 255 255 / 8%) 50%,\r\n    rgb(255 255 255 / 0%) 100%\r\n  )",
+      "responsive": false,
+      "description": "── Layout and states ───────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": "[data-theme=\"dark\"] .skeleton-shimmer::after",
+      "id": "#06-13-04",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: linear-gradient(\r\n    90deg,\r\n    rgb(255 255 255 / 0%) 0%,\r\n    rgb(255 255 255 / 8%) 50%,\r\n    rgb(255 255 255 / 0%) 100%\r\n  )",
       "responsive": false,
       "description": "── Layout and states ───────────────────────────────────────────────────"
     }
@@ -451,23 +436,15 @@
   "customProperties": [
     {
       "property": "--skeleton-bg",
-      "value": "var(--gray-200)"
+      "value": "var(--color-surface-muted)"
     },
     {
       "property": "--skeleton-bg-alt",
-      "value": "var(--gray-100)"
+      "value": "var(--color-border)"
     },
     {
       "property": "--skeleton-radius",
-      "value": "var(--radius-s)"
-    },
-    {
-      "property": "--skeleton-bg",
-      "value": "var(--gray-700)"
-    },
-    {
-      "property": "--skeleton-bg-alt",
-      "value": "var(--gray-600)"
+      "value": "var(--radius-sm)"
     }
   ]
 }
