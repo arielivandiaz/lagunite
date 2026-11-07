@@ -100,7 +100,7 @@ If you want to try building with an agent, this is what exists today:
 
 ## Browsers & support
 
-See [`SUPPORT.md`](./SUPPORT.md): Chromium, Firefox, Safari (macOS + iOS). **Print styles are not shipped.** CSS gzip budget ≤ 55 KB (`npm run check:size`).
+See [`SUPPORT.md`](./SUPPORT.md): Chromium, Firefox, Safari (macOS + iOS). **Print styles are not shipped.** CSS gzip budget ≤ 60 KB (`npm run check:size`).
 
 ---
 

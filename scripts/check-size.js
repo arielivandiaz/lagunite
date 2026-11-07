@@ -12,7 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const cssPath = path.join(__dirname, '../dist/lagunite.css');
 const jsPath = path.join(__dirname, '../dist/lagunite.js');
 
-const CSS_GZIP_BUDGET = 55 * 1024; // 55 KB
+const CSS_GZIP_BUDGET = 60 * 1024; // 60 KB (v3: effects layer)
 const JS_GZIP_BUDGET = 5 * 1024; // 5 KB
 
 function gzipSize(file) {

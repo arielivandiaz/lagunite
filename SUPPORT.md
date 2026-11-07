@@ -48,7 +48,7 @@ Baseline after picker + selectable + anti-slop (build 2026-09-15):
 
 | Asset | Raw | Gzip | Budget (gzip) |
 | --- | --- | --- | --- |
-| `dist/lagunite.css` | ~339 KB | **~49.4 KB** | **≤ 55 KB** |
+| `dist/lagunite.css` | ~395 KB | **~56.4 KB** | **≤ 60 KB** |
 | `dist/lagunite.js` (ESM) | ~9 KB | **~2.6 KB** | **≤ 5 KB** |
 
 Check:

@@ -100,7 +100,7 @@ Si querés probar construir con un agente, esto es lo que existe hoy:
 
 ## Navegadores y soporte
 
-Ver [`SUPPORT.md`](./SUPPORT.md): Chromium, Firefox, Safari (macOS + iOS). **Print no está soportado.** Budget CSS gzip ≤ 55 KB (`npm run check:size`).
+Ver [`SUPPORT.md`](./SUPPORT.md): Chromium, Firefox, Safari (macOS + iOS). **Print no está soportado.** Budget CSS gzip ≤ 60 KB (`npm run check:size`).
 
 ---
 
