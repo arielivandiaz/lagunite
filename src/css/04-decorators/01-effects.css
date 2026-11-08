@@ -164,6 +164,9 @@
 
 .accent-auto    { accent-color: auto; }
 .accent-current { accent-color: currentcolor; }
+.accent-primary { accent-color: var(--color-primary); }
+.accent-success { accent-color: var(--color-success); }
+.accent-error   { accent-color: var(--color-error); }
 
 /* @ID: #04-01-15 */
 
@@ -273,4 +276,23 @@
   .dsnap-start  { scroll-snap-align: start; }
   .dsnap-end    { scroll-snap-align: end; }
   .dsnap-center { scroll-snap-align: center; }
+}
+
+/* @ID: #04-01-16 */
+
+/*
+ * Decorative background via image-set (1x / 2x).
+ * Set --bg-1x (required) and --bg-2x (optional) as url(...) values.
+ */
+.bg-image-set {
+  background-image: var(--bg-1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@supports (background-image: image-set(url('x') 1x)) {
+  .bg-image-set {
+    background-image: image-set(var(--bg-1x) 1x, var(--bg-2x, var(--bg-1x)) 2x);
+  }
 }

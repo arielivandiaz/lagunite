@@ -1,5 +1,7 @@
 # Lagunite AI-First — Copy de landing (pitch a directivos)
 
+> **⚠️ Archivado (2026-11-01) — visión interna, no es pitch público.** La narrativa vigente está en [`story/README.md`](./story/README.md). No reutilizar este copy sin pasar por las reglas de `story/`.
+
 > **Uso:** texto listo para landing / one-pager / deck.  
 > **Audiencia:** dirección, sponsors, stakeholders de producto/tech.  
 > **Tono:** claro, comercial-técnico, orientado a decisión de inversión.  

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>POC · Subir Markdown → Lagunite</title>
+  <link rel="stylesheet" href="../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!--
+    POC: tool shell — subir .md (drag / file picker / pegar en el editor)
+    y previsualizar con mdToLagunite. Layout: minvh100 + col ai-s flex-nowrap
+    (evita el shrink-wrap de align-items:flex-start en .col/.row).
+  -->
+
+  <div class="col ai-s flex-nowrap minvh100 overflow-hidden">
+    <!-- 1. Chrome: toolbar compacta -->
+    <header class="row jc-sb ai-c gap-s flex-wrap padd-h-s padd-v-s border-b bg-surface wp100">
+      <div class="col gap-xs">
+        <p class="font-xs text-muted marg-0">pocs / md-drop-upload</p>
+        <h1 class="font-l bold color-text marg-0">Subir Markdown → Lagunite</h1>
+      </div>
+
+      <div class="row ai-c gap-s flex-wrap">
+        <button type="button" id="btn-sample" class="btn size-s">Cargar ejemplo</button>
+        <button type="button" id="btn-clear" class="btn alt size-s">Limpiar</button>
+        <label class="row ai-c gap-xs font-s text-muted">
+          <input id="show-html" type="checkbox" />
+          Mostrar HTML
+        </label>
+        <p id="status" class="font-xs text-muted marg-0" role="status" aria-live="polite"></p>
+        <div class="row ai-c gap-xs" role="group" aria-label="Tema claro u oscuro">
+          <input type="checkbox" class="toggle" id="theme-toggle" />
+          <label for="theme-toggle" class="toggle-btn size-s">
+            <span class="sr-only">Modo noche</span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Drop strip (compound empty-state, full width) -->
+    <section
+      id="dropzone"
+      class="empty-state empty-state-compact empty-state-horizontal cursor-pointer wp100"
+      aria-label="Zona para soltar un archivo .md. El botón Elegir archivo es el acceso por teclado."
+    >
+      <span class="empty-state-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12" />
+          <path d="M7 8l5-5 5 5" />
+          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+        </svg>
+      </span>
+      <div class="empty-state-content">
+        <p class="empty-state-title font-m">Suelta un archivo .md aquí</p>
+        <p class="empty-state-text">También podés pegar markdown en el editor, o elegir un archivo.</p>
+      </div>
+      <div class="empty-state-actions">
+        <label class="btn alt size-s cursor-pointer">
+          Elegir archivo .md
+          <input id="md-file" type="file" accept=".md,text/markdown,text/plain" class="d-none" />
+        </label>
+      </div>
+    </section>
+
+    <div id="drop-error" class="alert alert-error d-none marg-h-s" role="alert">
+      <p id="drop-error-msg" class="font-s marg-0"></p>
+    </div>
+
+    <!-- 3. Workspace: editor | preview (ocupa el resto del viewport) -->
+    <main class="col ai-s flex-nowrap flex-1 overflow-hidden padd-h-s padd-v-s gap-s wp100">
+      <!-- GAP: minh0 — flex child needs min-height:0 so overflow-auto can scroll -->
+      <div
+        class="grid flex-1 gap-s overflow-auto wp100 xgrid-cols-1 dgrid-cols-2 doverflow-hidden"
+        style="min-height: 0"
+      >
+        <section class="form-group col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <label class="form-label font-s bold color-text" for="md-editor">Markdown (pegar o editar)</label>
+          <!-- GAP: min-height floor so panels stay usable before flex stretch settles -->
+          <textarea
+            id="md-editor"
+            class="input font-s flex-1 resize-none overflow-auto"
+            style="min-height: 12rem"
+            spellcheck="false"
+            placeholder="# Pega aquí tu markdown…"
+          ></textarea>
+          <p class="form-help marg-0">Arrastrá un .md, elegí archivo, o pegá texto acá.</p>
+        </section>
+
+        <section class="col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <h2 class="font-s bold color-text marg-0">Preview</h2>
+          <!-- GAP: same min-height floor as editor -->
+          <div id="preview" class="card flex-1 overflow-auto" style="min-height: 12rem">
+            <div class="card-body col gap-s">
+              <p class="font-s text-muted marg-0">Sin contenido todavía. Soltá un .md o pegá markdown.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- GAP: max-height caps HTML dump so it doesn’t steal the whole viewport -->
+      <section id="html-panel" class="col ai-s gap-s d-none" style="max-height: 30vh">
+        <h2 class="font-s bold color-text marg-0">Fragmento HTML</h2>
+        <pre id="html-out" class="bg-surface padd-s border-r overflow-auto font-xs marg-0 flex-1"></pre>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+    import { mdToLagunite, wrapArticle } from './md-to-lagunite/md-to-lagunite.js';
+
+    const editor = document.getElementById('md-editor');
+    const preview = document.getElementById('preview');
+    const htmlOut = document.getElementById('html-out');
+    const htmlPanel = document.getElementById('html-panel');
+    const showHtml = document.getElementById('show-html');
+    const dropzone = document.getElementById('dropzone');
+    const dropError = document.getElementById('drop-error');
+    const dropErrorMsg = document.getElementById('drop-error-msg');
+    const fileInput = document.getElementById('md-file');
+    const themeToggle = document.getElementById('theme-toggle');
+    const statusEl = document.getElementById('status');
+
+    const MAX_FILE_SIZE = 2 * 1024 * 1024;
+    const DRAG_HL = ['border-color-primary', 'bg-surface-raised'];
+
+    function setStatus(msg) {
+      if (statusEl) statusEl.textContent = msg || '';
+    }
+
+    function setDropError(msg) {
+      if (!dropError || !dropErrorMsg) return;
+      dropErrorMsg.textContent = msg;
+      dropError.classList.toggle('d-none', !msg);
+    }
+
+    function escapeUi(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function render() {
+      const source = editor?.value ?? '';
+      if (!source.trim()) {
+        preview.innerHTML =
+          '<div class="card-body col gap-s"><p class="font-s text-muted marg-0">Sin contenido todavía. Soltá un .md o pegá markdown.</p></div>';
+        if (htmlOut) htmlOut.textContent = '';
+        return;
+      }
+      try {
+        const fragment = mdToLagunite(source);
+        const html = wrapArticle(fragment);
+        preview.innerHTML = `<div class="card-body col gap">${html}</div>`;
+        if (htmlOut) htmlOut.textContent = html;
+      } catch (err) {
+        const message = err instanceof Error ? err.message : String(err);
+        preview.innerHTML = `<div class="card-body"><div class="alert alert-error" role="alert"><p class="font-s marg-0">${escapeUi(message)}</p></div></div>`;
+      }
+    }
+
+    async function loadFile(file) {
+      if (!file) return;
+      if (!/\.(md|markdown|txt)$/i.test(file.name) && file.type && !file.type.startsWith('text/')) {
+        setDropError(`Archivo no soportado: ${file.name}. Usá .md, .markdown o .txt.`);
+        return;
+      }
+      if (file.size > MAX_FILE_SIZE) {
+        setDropError(`Archivo demasiado grande (máx 2 MB): ${file.name}`);
+        return;
+      }
+      setDropError('');
+      const text = await file.text();
+      if (editor) editor.value = text;
+      render();
+      setStatus(`Cargado: ${file.name}`);
+    }
+
+    async function loadSample() {
+      try {
+        const res = await fetch('./md-to-lagunite/sample.md');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const text = await res.text();
+        if (editor) editor.value = text;
+        setDropError('');
+        render();
+        setStatus('Ejemplo cargado');
+      } catch {
+        if (editor) {
+          editor.value =
+            '# Ejemplo\n\nPegá markdown o arrastrá un archivo `.md`.\n\n- Ítem uno\n- Ítem dos\n';
+        }
+        render();
+        setStatus('Ejemplo local');
+      }
+    }
+
+    function setDragHighlight(on) {
+      dropzone?.classList.toggle(DRAG_HL[0], on);
+      dropzone?.classList.toggle(DRAG_HL[1], on);
+    }
+
+    // Drag & drop (dropzone + page so large files aren’t easy to “miss”)
+    let dragDepth = 0;
+
+    function onDragEnter(e) {
+      e.preventDefault();
+      dragDepth += 1;
+      setDragHighlight(true);
+    }
+
+    function onDragOver(e) {
+      e.preventDefault();
+      if (e.dataTransfer) e.dataTransfer.dropEffect = 'copy';
+    }
+
+    function onDragLeave(e) {
+      e.preventDefault();
+      dragDepth = Math.max(0, dragDepth - 1);
+      if (dragDepth === 0) setDragHighlight(false);
+    }
+
+    function onDrop(e) {
+      e.preventDefault();
+      dragDepth = 0;
+      setDragHighlight(false);
+      const file = e.dataTransfer?.files?.[0];
+      loadFile(file);
+    }
+
+    document.addEventListener('dragenter', onDragEnter);
+    document.addEventListener('dragover', onDragOver);
+    document.addEventListener('dragleave', onDragLeave);
+    document.addEventListener('drop', onDrop);
+
+    // Pointer convenience only; keyboard uses the visible file label.
+    dropzone?.addEventListener('click', (e) => {
+      if (e.target.closest('label')) return;
+      fileInput?.click();
+    });
+
+    fileInput?.addEventListener('change', () => {
+      loadFile(fileInput.files?.[0]);
+    });
+
+    editor?.addEventListener('input', () => {
+      setStatus('');
+      render();
+    });
+
+    themeToggle?.addEventListener('change', () => {
+      document.body.classList.toggle('night', themeToggle.checked);
+    });
+
+    showHtml?.addEventListener('change', () => {
+      htmlPanel?.classList.toggle('d-none', !showHtml.checked);
+    });
+
+    document.getElementById('btn-sample')?.addEventListener('click', loadSample);
+    document.getElementById('btn-clear')?.addEventListener('click', () => {
+      if (editor) editor.value = '';
+      setDropError('');
+      setStatus('');
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>

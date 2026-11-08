@@ -32,7 +32,7 @@ Manual matrix: run `npm run dev` → `/demos/01`–`05` at 320 / 640 / 1024 / 14
 | Area | Expectation |
 | --- | --- |
 | Focus | Interactive atoms/organisms expose `:focus-visible` (btn, navbar, sidebar, topbar, modal-close, alerts, picker, selectable, tabs, …) |
-| Forms | Labels + `.form-error-msg` in the same `.form-group`; placeholders gate native valid/invalid |
+| Forms | Labels + `.form-error-msg` in the same `.form-group`; native chrome via `:user-invalid` / `:user-valid` (success still gates on placeholder + content) |
 | Motion | Framework `.animate-*` and key compounds respect `prefers-reduced-motion` |
 | ARIA | Use on alerts (`role`), listbox picker, tabs; don’t invent roles for static chrome |
 
@@ -48,7 +48,7 @@ Baseline after picker + selectable + anti-slop (build 2026-09-15):
 
 | Asset | Raw | Gzip | Budget (gzip) |
 | --- | --- | --- | --- |
-| `dist/lagunite.css` | ~339 KB | **~49.4 KB** | **≤ 55 KB** |
+| `dist/lagunite.css` | ~395 KB | **~56.4 KB** | **≤ 60 KB** |
 | `dist/lagunite.js` (ESM) | ~9 KB | **~2.6 KB** | **≤ 5 KB** |
 
 Check:

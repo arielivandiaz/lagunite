@@ -1,9 +1,9 @@
 folder: 03-layout
 file: 03-position.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: true
-totalSelectors: 128
-content[128]:
+totalSelectors: 133
+content[133]:
   - type: selector
     selectorType: class
     selector: .pos-static
@@ -1156,3 +1156,48 @@ content[128]:
     cssRule: "width: var(--space-16)"
     responsive: true
     description: ── Separators ────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .sticky-section
+    id: #03-03-10
+    category: null
+    properties[1]: overflow-anchor
+    cssRule: "overflow-anchor: none"
+    responsive: false
+    description: "* State-aware sticky: container-type scroll-state on the sticky node;\r\n * style descendants (.sticky-surface) when stuck.\r\n * Parent of sticky should use .sticky-section { overflow-anchor: none }\r\n * if stuck styles change box model."
+  - type: selector
+    selectorType: class
+    selector: .sticky-state
+    id: #03-03-10
+    category: null
+    properties[5]: position,top,z-index,container-type,container-name
+    cssRule: "position: sticky\ntop: 0\nz-index: 10\ncontainer-type: scroll-state\ncontainer-name: sticky-state"
+    responsive: false
+    description: "* State-aware sticky: container-type scroll-state on the sticky node;\r\n * style descendants (.sticky-surface) when stuck.\r\n * Parent of sticky should use .sticky-section { overflow-anchor: none }\r\n * if stuck styles change box model."
+  - type: selector
+    selectorType: class
+    selector: .sticky-surface
+    id: #03-03-10
+    category: null
+    properties[3]: background,border-bottom,transition
+    cssRule: "background: var(--color-bg)\nborder-bottom: var(--border-width-s) solid transparent\ntransition:\r\n    background-color 0.2s ease,\r\n    box-shadow 0.2s ease,\r\n    border-color 0.2s ease"
+    responsive: false
+    description: "* State-aware sticky: container-type scroll-state on the sticky node;\r\n * style descendants (.sticky-surface) when stuck.\r\n * Parent of sticky should use .sticky-section { overflow-anchor: none }\r\n * if stuck styles change box model."
+  - type: selector
+    selectorType: class
+    selector: .night .sticky-surface
+    id: #03-03-10
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-bg)"
+    responsive: false
+    description: "* State-aware sticky: container-type scroll-state on the sticky node;\r\n * style descendants (.sticky-surface) when stuck.\r\n * Parent of sticky should use .sticky-section { overflow-anchor: none }\r\n * if stuck styles change box model."
+  - type: selector
+    selectorType: class
+    selector: .sticky-surface
+    id: #03-03-10
+    category: null
+    properties[2]: border-bottom-color,box-shadow
+    cssRule: "border-bottom-color: var(--color-border)\nbox-shadow: var(--shadow-m)"
+    responsive: false
+    description: "* State-aware sticky: container-type scroll-state on the sticky node;\r\n * style descendants (.sticky-surface) when stuck.\r\n * Parent of sticky should use .sticky-section { overflow-anchor: none }\r\n * if stuck styles change box model."

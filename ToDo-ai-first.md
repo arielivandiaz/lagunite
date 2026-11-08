@@ -1,5 +1,7 @@
 # Lagunite — ToDo AI-First
 
+> **⏸️ En pausa (2026-11-01).** Gate previo: resultados de [`story/BENCHMARK.md`](./story/BENCHMARK.md). No es parte del producto.
+
 > **Fecha:** 2026-09-14 · **Versión doc:** 0.1  
 > **Norte:** Schema/JSON → HTML/CSS validado + runtime Lagunite ([`FUTURE-AI-FIRST.md`](./FUTURE-AI-FIRST.md))  
 > **Pitch:** [`LANDING-AI-FIRST-COPY.md`](./LANDING-AI-FIRST-COPY.md)  
@@ -58,7 +60,7 @@ Checklist residual (opcional, puede hacerse *después* del spike):
 - [x] Norte B + frase de producto (`FUTURE-AI-FIRST.md` v0.2)
 - [x] Defaults de la tabla de arriba
 - [x] Puntero en `ai/SKILLS-INDEX.md`
-- [ ] Una línea en `CLAUDE.md` al track AI-first (cuando toque docs)
+- [ ] Una línea en `AGENTS.md` al track AI-first (cuando toque docs)
 
 **Done cuando:** sabés que el próximo paso es escribir `spike.json` + `compile.mjs`.  
 **No hace falta “cerrar AIF-0” en una reunión formal.**
@@ -237,7 +239,7 @@ Zod, monorepo, MCP y playground **no** entran hasta que duela no tenerlos.
 
 ---
 
-## 🔗 Relación con ToDo-prod
+## 🔗 Relación con otros tracks
 
 | Situación | Qué hacer |
 | --- | --- |
@@ -245,6 +247,7 @@ Zod, monorepo, MCP y playground **no** entran hasta que duela no tenerlos.
 | Rename cosmético de utilities | **No** durante AIF — congela la API del compiler |
 | Release NPM v2.1 | Puede salir solo con CSS; AI-first se marca experimental hasta AIF-3 |
 | Demos RTP-3 | Pueden coexistir con `fixtures/ui/`; no mezclar carpetas |
+| **Recipes → skilllets** (conocimiento AI) | Track en [`ToDo-modern-platform.md`](./ToDo-modern-platform.md) § “Recipes como skilllets”. HTML lab = fixture; `ai/recipes/*.md` = instrucción. Incluir en futuro `@lagunite/ai` (AIF-8 / S6). |
 
 ---
 

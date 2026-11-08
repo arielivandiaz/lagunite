@@ -54,3 +54,27 @@ There is **no** utility prefix for 768px, 1024px, etc. — those tokens are docu
 1. Prefer a **utility class** over `style=""`.
 2. Prefer a **semantic token path** (theme + utility) over raw hex in custom CSS.
 3. If unsure whether a utility exists, check the relevant skill or `src/css` — **do not guess class names.**
+
+---
+
+## v3 tokens (Lagunite 3)
+
+Source of truth: `design/lagunite3/tokens.json` (design system) → `src/css/00-config/`. v2 names remain as aliases.
+
+| Token | Use |
+| --- | --- |
+| `--color-primary` `#2476ff` | Brand blue (accents, gradients, focus) |
+| `--color-primary-fill` / `-fill-end` | Button gradient stops; white text ≥ 4.75:1 |
+| `--color-primary-text` | Blue text/links (AA in both themes) |
+| `--color-primary-soft` | Tinted backgrounds (soft buttons, active nav, badges) |
+| `--color-text-muted` / `--color-text-subtle` | Secondary text / placeholders only |
+| `--color-surface`, `--color-surface-raised`, `--color-surface-muted` | Bands, cards, wells |
+| `--color-glass`, `--color-highlight`, `--color-overlay` | Glass fill, 1px top highlight, scrims |
+| `--color-border` / `--color-border-strong` / `--input-border` | Hairlines / control outlines / 3:1 input boundary |
+| `--slate-*` | Neutral ramp (`--gray-*` aliases it) |
+| `--radius-xs…2xl` | 6 · 8 · 10 · 14 · 20 · 28px (`--radius-s/m/l` alias sm/md/lg) |
+| `--shadow-xs…xl`, `--shadow-primary(-hover)`, `--shadow-focus` | Layered shadows, blue lift, focus ring |
+| `--blur-sm/md/lg`, `--ease-out`, `--ease-spring`, `--dur-fast/--dur/--dur-slow` | Effects and motion |
+| `--gradient-primary`, `--gradient-text`, `--gradient-border` | Button fill, headline word, featured border |
+
+Night: `.night` (any element) or `[data-theme="dark"]` redefines the tokens; `<html>` follows `body.night`.

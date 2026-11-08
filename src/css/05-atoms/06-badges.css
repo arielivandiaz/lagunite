@@ -1,33 +1,24 @@
 /* @ID: #05-06-01 */
 
-/*** Badge Base Styles ***/
+/*** Badge Base Styles (v3: pill-friendly, soft hairline ring) ***/
 
 .badge {
-    /* Layout */
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-1);
-    
-    /* Sizing */
-    padding: var(--space-1) var(--space-2);
-    min-height: 1.25rem;
-    
-    /* Typography */
+    padding: 0.1875rem 0.5625rem;
+    min-height: 1.375rem;
     font-family: var(--font-sans);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-tight);
-    letter-spacing: 0.025em;
+    line-height: 1;
     text-align: center;
     white-space: nowrap;
-    
-    /* Appearance */
-    background: var(--gray-200);
-    color: var(--gray-800);
-    border-radius: var(--radius-s);
-    
-    /* Interaction */
+    background: var(--color-surface-muted);
+    color: var(--color-text-muted);
+    border-radius: var(--radius-xs);
+    box-shadow: inset 0 0 0 1px var(--color-border);
     user-select: none;
 }
 
@@ -36,128 +27,80 @@
 /*** Badge Sizes ***/
 
 .badge-xs {
-    padding: 0.125rem var(--space-1);
+    padding: 0.125rem 0.375rem;
     min-height: 1rem;
     font-size: 0.625rem;
 }
 
 .badge-s {
-    padding: var(--space-1) var(--space-2);
+    padding: 0.125rem 0.5rem;
     min-height: 1.125rem;
     font-size: 0.6875rem;
 }
 
 .badge-l {
-    padding: var(--space-2) var(--space-3);
-    min-height: 1.5rem;
+    padding: 0.3125rem 0.75rem;
+    min-height: 1.75rem;
     font-size: var(--font-size-s);
 }
 
 /* @ID: #05-06-03 */
 
-/*** Badge Variants - Primary ***/
+/*** Badge Variants - Solid (gradient with highlight) ***/
 
-.badge-primary {
-    background: var(--color-primary);
-    color: var(--color-text-alt);
+.badge-primary,
+.badge-secondary,
+.badge-success,
+.badge-info,
+.badge-error {
+    color: var(--color-on-primary);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 22%);
 }
 
-.badge-primary.badge-outline {
-    background: transparent;
-    color: var(--color-primary);
-    border: var(--border-width-s) solid var(--color-primary);
+.badge-primary,
+.badge-info {
+    background: var(--gradient-primary);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 22%), 0 2px 6px -2px rgba(var(--color-primary-rgb), 0.5);
 }
 
 /* @ID: #05-06-04 */
 
-/*** Badge Variants - Secondary ***/
-
 .badge-secondary {
-    background: var(--color-secondary);
-    color: var(--color-text-alt);
-}
-
-.badge-secondary.badge-outline {
-    background: transparent;
-    color: var(--color-secondary);
-    border: var(--border-width-s) solid var(--color-secondary);
-}
-
-.night .badge-secondary {
-    background: var(--gray-700);
-    color: var(--color-text-alt);
-}
-
-.night .badge-secondary.badge-outline {
-    background: transparent;
-    color: var(--gray-300);
-    border-color: var(--gray-300);
+    background: linear-gradient(180deg, var(--slate-600), var(--slate-700));
 }
 
 /* @ID: #05-06-05 */
 
-/*** Badge Variants - Semantic Colors ***/
-
 .badge-success {
-    background: var(--green-500);
-    color: var(--color-text-alt);
-}
-
-.badge-success.badge-outline {
-    background: transparent;
-    color: var(--green-600);
-    border: var(--border-width-s) solid var(--green-600);
-}
-
-.badge-info {
-    background: var(--blue-500);
-    color: var(--color-text-alt);
-}
-
-.badge-info.badge-outline {
-    background: transparent;
-    color: var(--blue-600);
-    border: var(--border-width-s) solid var(--blue-600);
+    background: linear-gradient(180deg, #10a06e, #0b7a55);
 }
 
 .badge-warning {
-    background: var(--yellow-500);
-    color: var(--gray-900);
-}
-
-.badge-warning.badge-outline {
-    background: transparent;
-    color: var(--yellow-700);
-    border: var(--border-width-s) solid var(--yellow-700);
+    background: linear-gradient(180deg, #fcd34d, #f5b800);
+    color: #1a1200;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 35%);
 }
 
 .badge-error {
-    background: var(--red-500);
-    color: var(--color-text-alt);
-}
-
-.badge-error.badge-outline {
-    background: transparent;
-    color: var(--red-600);
-    border: var(--border-width-s) solid var(--red-600);
+    background: linear-gradient(180deg, #e04449, #c42a30);
 }
 
 /* @ID: #05-06-06 */
 
-/*** Badge Outlined Variant ***/
+/*** Badge Outlined Variant: single hue, border follows text ***/
 
 .badge-outline {
     background: transparent;
-
-    /* Single hue: border follows text (avoids gray-700 text + gray-400 border). */
-    color: var(--gray-600);
-    border: var(--border-width-s) solid currentcolor;
+    color: var(--color-text-base);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
 }
 
-.night .badge-outline {
-    color: var(--gray-300);
-    border-color: currentcolor;
-}
+.badge-primary.badge-outline { color: var(--color-primary-text); box-shadow: inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.5); }
+.badge-info.badge-outline { color: var(--color-primary-text); box-shadow: inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.5); }
+.badge-secondary.badge-outline { color: var(--color-secondary); box-shadow: inset 0 0 0 1px rgba(var(--color-secondary-rgb), 0.5); }
+.badge-success.badge-outline { color: var(--color-success); box-shadow: inset 0 0 0 1px rgba(var(--color-success-rgb), 0.5); }
+.badge-warning.badge-outline { color: var(--color-warning); box-shadow: inset 0 0 0 1px rgba(var(--color-warning-rgb), 0.5); }
+.badge-error.badge-outline { color: var(--color-error); box-shadow: inset 0 0 0 1px rgba(var(--color-error-rgb), 0.5); }
 
 /* @ID: #05-06-07 */
 
@@ -399,72 +342,52 @@
 .badge-group-compact {
     gap: var(--space-1);
 }
+/* @ID: #05-06-14 */
 
-/* @ID: #05-06-14 */
+/*** Badge Light Variants: soft tint, status-colored text (AA in both themes) ***/
 
-/*** Badge Light Variants ***/
-
-.badge-primary-light {
-    background: var(--blue-100);
-    color: var(--blue-800);
+.badge-primary-light,
+.badge-info-light {
+    background: var(--color-primary-soft);
+    color: var(--color-primary-text);
+    box-shadow: inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.18);
 }
 
 .badge-success-light {
-    background: var(--green-100);
-    color: var(--green-800);
-}
-
-.badge-info-light {
-    background: var(--blue-50);
-    color: var(--blue-700);
+    background: var(--color-success-light);
+    color: var(--color-success);
+    box-shadow: inset 0 0 0 1px rgba(var(--color-success-rgb), 0.18);
 }
 
 .badge-warning-light {
-    background: var(--yellow-100);
-    color: var(--yellow-900);
+    background: var(--color-warning-light);
+    color: var(--color-warning);
+    box-shadow: inset 0 0 0 1px rgba(var(--color-warning-rgb), 0.18);
 }
 
 .badge-error-light {
-    background: var(--red-100);
-    color: var(--red-800);
-}
-
-/* badge-*-light in night mode: translucent tint + light text (fintech dark pattern) */
-.night .badge-primary-light {
-    background: rgb(59 130 246 / 15%);
-    color: var(--blue-300);
-}
-
-.night .badge-success-light {
-    background: rgb(16 185 129 / 15%);
-    color: var(--green-300);
-}
-
-.night .badge-info-light {
-    background: rgb(59 130 246 / 12%);
-    color: var(--blue-300);
-}
-
-.night .badge-warning-light {
-    background: rgb(234 179 8 / 15%);
-    color: var(--yellow-300);
-}
-
-.night .badge-error-light {
-    background: rgb(239 68 68 / 15%);
-    color: var(--red-300);
+    background: var(--color-error-light);
+    color: var(--color-error);
+    box-shadow: inset 0 0 0 1px rgba(var(--color-error-rgb), 0.18);
 }
 
 /* @ID: #05-06-15 */
 
-/*** Responsive Adjustments ***/
+/*** Announcement pill: glass badge above hero titles ***/
 
-@media (width <= 639px) {
-    .badge {
-        font-size: 0.625rem;
-    }
-    
-    .badge-l {
-        font-size: var(--font-size-xs);
-    }
+.badge-announce {
+    gap: var(--space-2);
+    min-height: 2rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8125rem;
+    color: var(--color-text-base);
+    background: var(--color-glass);
+    -webkit-backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-sm));
+    box-shadow: inset 0 1px 0 var(--color-highlight), inset 0 0 0 1px var(--color-border-strong), var(--shadow-s);
+}
+
+.badge-announce > .badge {
+    border-radius: var(--radius-full);
 }

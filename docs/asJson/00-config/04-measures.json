@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "04-measures.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
   "totalSelectors": 1,
   "content": [
@@ -27,19 +27,32 @@
         "--space-20",
         "--space-24",
         "--space-32",
+        "--radius-xs",
+        "--radius-sm",
+        "--radius-md",
+        "--radius-lg",
+        "--radius-xl",
+        "--radius-2xl",
+        "--radius-full",
         "--radius-s",
         "--radius-m",
         "--radius-l",
-        "--radius-xl",
-        "--radius-full",
+        "--blur-sm",
+        "--blur-md",
+        "--blur-lg",
+        "--ease-out",
+        "--ease-spring",
+        "--dur-fast",
+        "--dur",
+        "--dur-slow",
         "--breakpoint-s",
         "--breakpoint-md",
         "--breakpoint-l",
         "--breakpoint-xl"
       ],
-      "cssRule": "/* == Sizes == */\n--space-0: 0\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n--radius-s: 0.25rem\n/* 4px  */\n--radius-m: 0.5rem\n/* 8px  */\n--radius-l: 1rem\n/* 16px */\n--radius-xl: 1.5rem\n/* 24px */\n--radius-full: 9999px\n/* == Breakpoints (Single Source of Truth) == */\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px",
+      "cssRule": "/* == Sizes == */\n--space-0: 0\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n/* == Radii (v3 scale; v2 names kept as aliases) == */\n--radius-xs: 6px\n/* badges in dense UI, checkboxes */\n--radius-sm: 8px\n/* small buttons */\n--radius-md: 10px\n/* buttons, inputs */\n--radius-lg: 14px\n/* alerts, menus, segmented */\n--radius-xl: 20px\n/* cards */\n--radius-2xl: 28px\n/* hero panels, CTA band */\n--radius-full: 9999px\n--radius-s: var(--radius-sm)\n--radius-m: var(--radius-md)\n--radius-l: var(--radius-lg)\n/* == Effects == */\n--blur-sm: 8px\n--blur-md: 16px\n--blur-lg: 32px\n/* == Motion == */\n--ease-out: cubic-bezier(0.2, 0.8, 0.2, 1)\n--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1)\n--dur-fast: 120ms\n--dur: 180ms\n--dur-slow: 320ms\n/* == Breakpoints (Single Source of Truth) == */\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px",
       "responsive": false,
-      "description": "|--------------------------------------------------------------------------\r\n| Measurement System Tokens @ID: #00-04-01\r\n|--------------------------------------------------------------------------"
+      "description": "|--------------------------------------------------------------------------\n| Measurement System Tokens @ID: #00-04-01\n|--------------------------------------------------------------------------"
     }
   ],
   "customProperties": [
@@ -104,24 +117,76 @@
       "value": "8rem"
     },
     {
-      "property": "--radius-s",
-      "value": "0.25rem"
+      "property": "--radius-xs",
+      "value": "6px"
     },
     {
-      "property": "--radius-m",
-      "value": "0.5rem"
+      "property": "--radius-sm",
+      "value": "8px"
     },
     {
-      "property": "--radius-l",
-      "value": "1rem"
+      "property": "--radius-md",
+      "value": "10px"
+    },
+    {
+      "property": "--radius-lg",
+      "value": "14px"
     },
     {
       "property": "--radius-xl",
-      "value": "1.5rem"
+      "value": "20px"
+    },
+    {
+      "property": "--radius-2xl",
+      "value": "28px"
     },
     {
       "property": "--radius-full",
       "value": "9999px"
+    },
+    {
+      "property": "--radius-s",
+      "value": "var(--radius-sm)"
+    },
+    {
+      "property": "--radius-m",
+      "value": "var(--radius-md)"
+    },
+    {
+      "property": "--radius-l",
+      "value": "var(--radius-lg)"
+    },
+    {
+      "property": "--blur-sm",
+      "value": "8px"
+    },
+    {
+      "property": "--blur-md",
+      "value": "16px"
+    },
+    {
+      "property": "--blur-lg",
+      "value": "32px"
+    },
+    {
+      "property": "--ease-out",
+      "value": "cubic-bezier(0.2, 0.8, 0.2, 1)"
+    },
+    {
+      "property": "--ease-spring",
+      "value": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    },
+    {
+      "property": "--dur-fast",
+      "value": "120ms"
+    },
+    {
+      "property": "--dur",
+      "value": "180ms"
+    },
+    {
+      "property": "--dur-slow",
+      "value": "320ms"
     },
     {
       "property": "--breakpoint-s",

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · position-aware-tooltips — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/2 · MWG <code>position-aware-tooltips</code></p>
+      <h1 class="font-xl bold color-text">Position-aware tooltips</h1>
+      <p class="font-s text-muted">
+        Default: CSS-only <code>[data-tooltip]</code>. Progressive: Popover + anchor positioning
+        (<code>.tooltip-anchor</code> / <code>.tooltip-popover</code>) when supported.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Hover the buttons. Near viewport edges, anchored popovers can flip via
+      <code>position-try-fallbacks</code>. Arrow flip via <code>@container anchored()</code> is still a GAP.
+    </div>
+
+    <section class="card">
+      <div class="card-header">CSS-only (always)</div>
+      <div class="card-body row gap flex-wrap">
+        <button type="button" class="btn" data-tooltip="Default above">Above</button>
+        <button type="button" class="btn alt tooltip-bottom" data-tooltip="Forced below">Bottom</button>
+        <button type="button" class="btn ghost tooltip-right" data-tooltip="To the right">Right</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Popover + anchor (progressive)</div>
+      <div class="card-body col gap">
+        <button
+          type="button"
+          class="btn tooltip-anchor"
+          id="anchor-btn"
+          popovertarget="live-tip"
+          aria-describedby="live-tip"
+        >
+          Show anchored tip
+        </button>
+        <div id="live-tip" class="tooltip-popover" popover role="tooltip">
+          Anchored tip — flips if there is no room above.
+        </div>
+        <p class="font-xs text-muted marg-0">
+          <!-- GAP: @container anchored(fallback) arrow chrome -->
+          Without anchor support, the popover still opens (UA default placement).
+        </p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>[data-tooltip]</code> · <code>.tooltip-bottom</code> / left / right</li>
+        <li><code>.tooltip-anchor</code> · <code>.tooltip-popover</code> (+ Popover API)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>molecules</code> · Guide: <code>retrieve position-aware-tooltips</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

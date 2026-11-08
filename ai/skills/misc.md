@@ -23,6 +23,17 @@ Stack base + responsive classes for breakpoint-specific behavior (e.g. hide on m
 
 Prefer flex/grid layout modules for structure; use these when toggling via `display: none` or needing raw display value.
 
+### Content visibility & containment
+
+| Class | Role |
+| --- | --- |
+| `.cv-auto` | `content-visibility: auto` + default intrinsic size |
+| `.cv-size-s` … `.cv-size-xl` | `contain-intrinsic-size` estimates |
+| `.contain-layout` / `.contain-paint` | Isolate layout or paint |
+| `.contain-content` / `.contain-strict` | Stronger containment |
+
+Recipes: `defer-rendering-heavy-content`, `interactions-in-complex-layouts`.
+
 ### Visibility utilities
 
 `.visible` `.invisible` `.collapse`
@@ -63,6 +74,7 @@ Mobile and desktop variants exist for a subset of cursor, pointer-events, and se
 1. **Display** — `.before-block`, `.before-inline`, `.before-inline-block`, `.before-table` (and `.after-*`) — adds empty content and correct `display`.
 2. **Fill or center** — `.before-absolute` / `.after-absolute` — stretch pseudo to containing block (parent needs `position: relative`). `.before-overlay` / `.after-overlay` — center content.
 3. **Attribute text** — `.before-content` / `.after-content` — reads `data-before` / `data-after` for `content`.
+4. **Resolution icons** — `.icon-set` with `--icon-1x` / `--icon-2x` (`url(...)`) for `image-set` on `::before`. Recipe: `resolution-optimized-pseudo-elements`.
 
 ### Clearfix
 

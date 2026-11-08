@@ -1,9 +1,9 @@
 folder: 03-layout
 file: 06-containers.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: true
-totalSelectors: 33
-content[33]:
+totalSelectors: 50
+content[50]:
   - type: selector
     selectorType: class
     selector: .container
@@ -301,3 +301,156 @@ content[33]:
     cssRule: "content: attr(class)\nposition: absolute\ntop: 0\nleft: 0\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\nfont-size: var(--font-size-xs)\npadding: var(--space-1) var(--space-2)\nfont-family: var(--font-mono)\nline-height: 1\nwhite-space: nowrap\nz-index: 1"
     responsive: false
     description: ── Debug container (development only) ───────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .cq
+    id: #03-06-11
+    category: null
+    properties[1]: container-type
+    cssRule: "container-type: inline-size"
+    responsive: false
+    description: "* Container queries — size-aware components (not viewport).\r\n * Put .cq on the measuring ancestor; style descendants with .cq-* utilities."
+  - type: selector
+    selectorType: class
+    selector: .cq-name
+    id: #03-06-11
+    category: null
+    properties[2]: container-type,container-name
+    cssRule: "container-type: inline-size\ncontainer-name: lagunite"
+    responsive: false
+    description: "* Container queries — size-aware components (not viewport).\r\n * Put .cq on the measuring ancestor; style descendants with .cq-* utilities."
+  - type: selector
+    selectorType: class
+    selector: .cq-row
+    id: #03-06-11
+    category: null
+    properties[3]: display,flex-direction,gap
+    cssRule: "display: flex\nflex-direction: column\ngap: var(--space-3)"
+    responsive: false
+    description: "Default: stacked / compact. Enhance when the *container* is wide enough."
+  - type: selector
+    selectorType: class
+    selector: .cq-show-m
+    id: #03-06-11
+    category: null
+    properties[1]: display
+    cssRule: "display: none"
+    responsive: false
+    description: "Default: stacked / compact. Enhance when the *container* is wide enough."
+  - type: selector
+    selectorType: class
+    selector: .cq-row
+    id: #03-06-11
+    category: null
+    properties[2]: flex-direction,align-items
+    cssRule: "flex-direction: row\nalign-items: center"
+    responsive: false
+    description: "Default: stacked / compact. Enhance when the *container* is wide enough."
+  - type: selector
+    selectorType: class
+    selector: .cq-show-m
+    id: #03-06-11
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "Default: stacked / compact. Enhance when the *container* is wide enough."
+  - type: selector
+    selectorType: class
+    selector: .cq-hide-m
+    id: #03-06-11
+    category: null
+    properties[1]: display
+    cssRule: "display: none"
+    responsive: false
+    description: "Default: stacked / compact. Enhance when the *container* is wide enough."
+  - type: selector
+    selectorType: class
+    selector: .font-cq
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(1rem, 5vw, 2.5rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .font-cq-s
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(0.875rem, 3.5vw, 1.25rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .font-cq-l
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(1.25rem, 6vw, 2.5rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .padd-cq
+    id: #03-06-12
+    category: null
+    properties[1]: padding
+    cssRule: "padding: clamp(var(--space-2), 4vw, var(--space-6))"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .gap-cq
+    id: #03-06-12
+    category: null
+    properties[1]: gap
+    cssRule: "gap: clamp(var(--space-2), 3vw, var(--space-5))"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .font-cq
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(1rem, 5cqi, 2.5rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .font-cq-s
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(0.875rem, 3.5cqi, 1.25rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .font-cq-l
+    id: #03-06-12
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(1.25rem, 6cqi, 2.5rem)"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .padd-cq
+    id: #03-06-12
+    category: null
+    properties[1]: padding
+    cssRule: "padding: clamp(var(--space-2), 4cqi, var(--space-6))"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."
+  - type: selector
+    selectorType: class
+    selector: .gap-cq
+    id: #03-06-12
+    category: null
+    properties[1]: gap
+    cssRule: "gap: clamp(var(--space-2), 3cqi, var(--space-5))"
+    responsive: false
+    description: "* Fluid scaling vs container (cqi), with vw fallback.\r\n * Ancestor needs .cq (or any container-type: inline-size).\r\n * Max ≤ 2.5× min for text a11y."

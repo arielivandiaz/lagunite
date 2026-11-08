@@ -1,16 +1,16 @@
 folder: 07-compounds
 file: 01-cards.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 37
-content[37]:
+totalSelectors: 59
+content[59]:
   - type: selector
     selectorType: class
     selector: .card
     id: #07-01-01
     category: null
-    properties[5]: background,border,border-radius,overflow,transition
-    cssRule: "background: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\noverflow: hidden\ntransition: box-shadow 0.2s"
+    properties[7]: position,background,border,border-radius,box-shadow,overflow,transition
+    cssRule: "position: relative\nbackground: var(--color-surface-raised)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-xl)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-s)\noverflow: hidden\ntransition:\n    box-shadow var(--dur-slow) var(--ease-out),\n    transform var(--dur-slow) var(--ease-out),\n    border-color var(--dur) var(--ease-out)"
     responsive: false
     description: ── Card base ────────────────────────────────────────────────────────────
   - type: selector
@@ -18,8 +18,8 @@ content[37]:
     selector: .card-header
     id: #07-01-02
     category: null
-    properties[3]: padding,border-bottom,font-weight
-    cssRule: "padding: var(--space-4)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nfont-weight: var(--font-weight-bold)"
+    properties[5]: padding,border-bottom,font-family,font-weight,letter-spacing
+    cssRule: "padding: var(--space-4) var(--space-6)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nfont-family: var(--font-display)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: var(--letter-spacing-title)"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -28,7 +28,7 @@ content[37]:
     id: #07-01-02
     category: null
     properties[1]: padding
-    cssRule: "padding: var(--space-4)"
+    cssRule: "padding: var(--space-6)"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -37,7 +37,7 @@ content[37]:
     id: #07-01-02
     category: null
     properties[3]: padding,border-top,background
-    cssRule: "padding: var(--space-3) var(--space-4)\nborder-top: var(--border-width-s) solid var(--color-border)\nbackground: rgb(0 0 0 / 2%)"
+    cssRule: "padding: var(--space-4) var(--space-6)\nborder-top: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-surface-muted)"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -45,8 +45,8 @@ content[37]:
     selector: .card-img-top
     id: #07-01-02
     category: null
-    properties[3]: width,display,border-radius
-    cssRule: "width: 100%\ndisplay: block\nborder-radius: var(--radius-m) var(--radius-m) 0 0"
+    properties[2]: width,display
+    cssRule: "width: 100%\ndisplay: block"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -54,8 +54,8 @@ content[37]:
     selector: .card-img-bottom
     id: #07-01-02
     category: null
-    properties[3]: width,display,border-radius
-    cssRule: "width: 100%\ndisplay: block\nborder-radius: 0 0 var(--radius-m) var(--radius-m)"
+    properties[2]: width,display
+    cssRule: "width: 100%\ndisplay: block"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -63,8 +63,8 @@ content[37]:
     selector: .card-title
     id: #07-01-02
     category: null
-    properties[3]: font-size,font-weight,margin-bottom
-    cssRule: "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-bold)\nmargin-bottom: var(--space-2)"
+    properties[6]: font-family,font-size,font-weight,letter-spacing,line-height,color
+    cssRule: "font-family: var(--font-display)\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: var(--letter-spacing-title)\nline-height: 1.35\ncolor: var(--color-text-base)"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -72,17 +72,8 @@ content[37]:
     selector: .card-text
     id: #07-01-02
     category: null
-    properties[2]: color,font-size
-    cssRule: "color: var(--gray-600)\nfont-size: var(--font-size-base)"
-    responsive: false
-    description: ── Card regions ─────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .card-text
-    id: #07-01-02
-    category: null
-    properties[1]: color
-    cssRule: "/* gray-600 is too dark on .night .card (gray-800) */\ncolor: var(--gray-400)"
+    properties[3]: color,font-size,line-height
+    cssRule: "color: var(--color-text-muted)\nfont-size: var(--font-size-s)\nline-height: 1.55"
     responsive: false
     description: ── Card regions ─────────────────────────────────────────────────────────
   - type: selector
@@ -91,43 +82,97 @@ content[37]:
     id: #07-01-03
     category: null
     properties[1]: box-shadow
-    cssRule: "box-shadow: var(--shadow-m)"
+    cssRule: "box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)"
     responsive: false
-    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
+    description: "Elevation is opt-in. Anti-slop: one featured card per group."
   - type: selector
     selectorType: class
     selector: .card-flat
     id: #07-01-03
     category: null
-    properties[2]: border,background
-    cssRule: "border: none\nbackground: transparent"
+    properties[3]: border,background,box-shadow
+    cssRule: "border: none\nbackground: transparent\nbox-shadow: none"
     responsive: false
-    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
-  - type: selector
-    selectorType: class
-    selector: .card-hover
-    id: #07-01-03
-    category: null
-    properties[1]: transition
-    cssRule: "transition: box-shadow 0.2s, transform 0.2s"
-    responsive: false
-    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
+    description: "Elevation is opt-in. Anti-slop: one featured card per group."
   - type: selector
     selectorType: class
     selector: ".card-hover:hover"
     id: #07-01-03
     category: null
-    properties[2]: box-shadow,transform
-    cssRule: "box-shadow: var(--shadow-l)\ntransform: translateY(-2px)"
+    properties[3]: transform,border-color,box-shadow
+    cssRule: "transform: translateY(-3px)\nborder-color: var(--color-border-strong)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)"
     responsive: false
-    description: "Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.\n   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like)."
+    description: "Elevation is opt-in. Anti-slop: one featured card per group."
+  - type: selector
+    selectorType: class
+    selector: .card-sunken
+    id: #07-01-03
+    category: null
+    properties[2]: background,box-shadow
+    cssRule: "background: var(--color-surface-muted)\nbox-shadow: none"
+    responsive: false
+    description: "Elevation is opt-in. Anti-slop: one featured card per group."
+  - type: selector
+    selectorType: class
+    selector: .card-glass
+    id: #07-01-03
+    category: null
+    properties[5]: background,"-webkit-backdrop-filter",backdrop-filter,border-color,box-shadow
+    cssRule: "background: var(--color-glass)\n-webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%)\nbackdrop-filter: blur(var(--blur-md)) saturate(160%)\nborder-color: var(--color-border-strong)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)"
+    responsive: false
+    description: "Elevation is opt-in. Anti-slop: one featured card per group."
+  - type: selector
+    selectorType: class
+    selector: .card-featured
+    id: #07-01-03
+    category: null
+    properties[3]: border-color,background,box-shadow
+    cssRule: "border-color: transparent\nbackground:\n    linear-gradient(var(--color-surface-raised), var(--color-surface-raised)) padding-box,\n    var(--gradient-border) border-box\nbox-shadow: var(--shadow-primary), var(--shadow-l)"
+    responsive: false
+    description: "Gradient border + colored lift: the one highlighted item of a group"
+  - type: selector
+    selectorType: class
+    selector: ".card-featured::before"
+    id: #07-01-03
+    category: null
+    properties[6]: content,position,inset,border-radius,pointer-events,background
+    cssRule: "content: \"\"\nposition: absolute\ninset: 0\nborder-radius: inherit\npointer-events: none\nbackground: radial-gradient(80% 50% at 50% 0%, rgba(var(--color-primary-rgb), 0.1), transparent 70%)"
+    responsive: false
+    description: "Gradient border + colored lift: the one highlighted item of a group"
+  - type: selector
+    selectorType: class
+    selector: .icon-tile
+    id: #07-01-03
+    category: null
+    properties[9]: display,place-items,flex,width,height,border-radius,color,background,box-shadow
+    cssRule: "display: inline-grid\nplace-items: center\nflex: none\nwidth: 2.5rem\nheight: 2.5rem\nborder-radius: var(--radius-md)\ncolor: var(--color-primary-text)\nbackground: var(--color-primary-soft)\nbox-shadow: inset 0 1px 0 var(--color-highlight), inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.18)"
+    responsive: false
+    description: "Icon in a soft square, for feature cards and empty states"
+  - type: selector
+    selectorType: class
+    selector: .icon-tile svg
+    id: #07-01-03
+    category: null
+    properties[2]: width,height
+    cssRule: "width: 1.25rem\nheight: 1.25rem"
+    responsive: false
+    description: "Icon in a soft square, for feature cards and empty states"
+  - type: selector
+    selectorType: class
+    selector: .icon-tile-solid
+    id: #07-01-03
+    category: null
+    properties[3]: color,background,box-shadow
+    cssRule: "color: var(--color-on-primary)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 25%), var(--shadow-primary)"
+    responsive: false
+    description: "Icon in a soft square, for feature cards and empty states"
   - type: selector
     selectorType: class
     selector: .card-primary
     id: #07-01-04
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-primary)"
+    cssRule: "border-color: rgba(var(--color-primary-rgb), 0.55)"
     responsive: false
     description: ── Card semantic variants (primary) ─────────────────────────────────────
   - type: selector
@@ -136,7 +181,7 @@ content[37]:
     id: #07-01-04
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-primary)\ncolor: var(--color-text-alt)"
+    cssRule: "background: var(--color-primary-soft)\ncolor: var(--color-primary-text)"
     responsive: false
     description: ── Card semantic variants (primary) ─────────────────────────────────────
   - type: selector
@@ -145,7 +190,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-success)"
+    cssRule: "border-color: rgba(var(--color-success-rgb), 0.45)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -154,7 +199,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-success)\ncolor: var(--color-text-alt)"
+    cssRule: "background: var(--color-success-light)\ncolor: var(--color-success)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -163,7 +208,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-warning)"
+    cssRule: "border-color: rgba(var(--color-warning-rgb), 0.45)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -172,7 +217,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-warning)\ncolor: var(--color-text-alt)"
+    cssRule: "background: var(--color-warning-light)\ncolor: var(--color-warning)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -181,7 +226,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-error)"
+    cssRule: "border-color: rgba(var(--color-error-rgb), 0.45)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -190,7 +235,7 @@ content[37]:
     id: #07-01-05
     category: null
     properties[2]: background,color
-    cssRule: "background: var(--color-error)\ncolor: var(--color-text-alt)"
+    cssRule: "background: var(--color-error-light)\ncolor: var(--color-error)"
     responsive: false
     description: "── Card semantic variants (success, warning, error) ───────────────────────"
   - type: selector
@@ -198,109 +243,109 @@ content[37]:
     selector: .card-accent-primary
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-secondary
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-tertiary
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-success
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-warning
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-error
     id: #07-01-06
     category: null
-    properties[4]: border-top-color,border-right-color,border-bottom-color,border-left-width
-    cssRule: "border-top-color: transparent\nborder-right-color: transparent\nborder-bottom-color: transparent\nborder-left-width: 4px"
+    properties[1]: box-shadow
+    cssRule: "box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-primary
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-primary)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-primary)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-secondary
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-secondary)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-secondary)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-tertiary
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-tertiary)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-tertiary)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-success
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-success)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-success)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-warning
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-warning)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-warning)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-accent-error
     id: #07-01-06
     category: null
-    properties[1]: border-left-color
-    cssRule: "border-left-color: var(--color-error)"
+    properties[1]: "--card-accent"
+    cssRule: "--card-accent: var(--color-error)"
     responsive: false
-    description: "@title Card accent variants\n  @desc  Highlights only the left border with a semantic or palette color.\n         Combine with .card. The other three borders become transparent.\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n    <div class=\"card card-accent-success\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | left border in primary color\n    .card-accent-secondary | left border in secondary color\n    .card-accent-tertiary  | left border in tertiary color\n    .card-accent-success   | left border in success color\n    .card-accent-warning   | left border in warning color\n    .card-accent-error     | left border in error color"
+    description: "@title Card accent variants\n  @desc  v3: a 3px colored line along the top edge (was a thick left border).\n  @example\n    <div class=\"card card-accent-primary\"><div class=\"card-body\">...</div></div>\n  @classes\n    .card-accent-primary   | top line in primary color\n    .card-accent-secondary | top line in secondary color\n    .card-accent-tertiary  | top line in tertiary color\n    .card-accent-success   | top line in success color\n    .card-accent-warning   | top line in warning color\n    .card-accent-error     | top line in error color"
   - type: selector
     selectorType: class
     selector: .card-horizontal
@@ -325,15 +370,175 @@ content[37]:
     id: #07-01-07
     category: null
     properties[3]: display,gap,grid-template-columns
-    cssRule: "display: grid\ngap: var(--space-4)\ngrid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))"
+    cssRule: "display: grid\ngap: var(--space-6)\ngrid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))"
     responsive: false
     description: ── Card horizontal layout & groups ──────────────────────────────────────
   - type: selector
     selectorType: class
-    selector: .night .card
-    id: #07-01-07
+    selector: ".card-state:has(:focus-within)"
+    id: #07-01-08
     category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
+    properties[2]: border-color,box-shadow
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus), var(--shadow-m)"
     responsive: false
-    description: ── Night mode & responsive ──────────────────────────────────────────────
+    description: "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+  - type: selector
+    selectorType: class
+    selector: ".card-state:has(input:checked)"
+    id: #07-01-08
+    category: null
+    properties[2]: border-color,background
+    cssRule: "border-color: var(--color-primary)\nbackground: var(--color-primary-soft)"
+    responsive: false
+    description: "* Opt-in parent styling from child state (:has).\n * Prefer scoped containers — do not put on body."
+  - type: selector
+    selectorType: class
+    selector: .card-media
+    id: #07-01-09
+    category: null
+    properties[4]: display,flex-direction,gap,align-items
+    cssRule: "display: flex\nflex-direction: column\ngap: var(--space-3)\nalign-items: stretch"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: .card-media > .card-media-body
+    id: #07-01-09
+    category: null
+    properties[2]: flex,min-width
+    cssRule: "flex: 1\nmin-width: 0"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> img)"
+    id: #07-01-09
+    category: null
+    properties[2]: flex-direction,align-items
+    cssRule: "flex-direction: row\nalign-items: center"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> .card-img)"
+    id: #07-01-09
+    category: null
+    properties[2]: flex-direction,align-items
+    cssRule: "flex-direction: row\nalign-items: center"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> .card-img-top)"
+    id: #07-01-09
+    category: null
+    properties[2]: flex-direction,align-items
+    cssRule: "flex-direction: row\nalign-items: center"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: .card-media.has-image
+    id: #07-01-09
+    category: null
+    properties[2]: flex-direction,align-items
+    cssRule: "flex-direction: row\nalign-items: center"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> img) > img"
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> .card-img) > .card-img"
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:has(> .card-img-top) > .card-img-top"
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: .card-media.has-image > img
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: .card-media.has-image > .card-img
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: .card-media.has-image > .card-img-top
+    id: #07-01-09
+    category: null
+    properties[6]: width,max-width,height,flex-shrink,object-fit,border-radius
+    cssRule: "width: 7.5rem\nmax-width: 40%\nheight: auto\nflex-shrink: 0\nobject-fit: cover\nborder-radius: var(--radius-md)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: class
+    selector: ".card-media:not(.has-image"
+    id: #07-01-09
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: pseudo
+    selector: ":has(> img)"
+    id: #07-01-09
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: pseudo
+    selector: ":has(> .card-img)"
+    id: #07-01-09
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+  - type: selector
+    selectorType: pseudo
+    selector: ":has(> .card-img-top))"
+    id: #07-01-09
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
+    responsive: false
+    description: "* Content-based layout: row when media child present.\n * Fallback class .has-image for @supports not :has()."
+customProperties[6]{property,value}:
+  "--card-accent",var(--color-primary)
+  "--card-accent",var(--color-secondary)
+  "--card-accent",var(--color-tertiary)
+  "--card-accent",var(--color-success)
+  "--card-accent",var(--color-warning)
+  "--card-accent",var(--color-error)

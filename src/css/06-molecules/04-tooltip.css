@@ -1,6 +1,7 @@
 /* ==========
    06-molecules / 04-tooltip.css
    CSS-only tooltips via [data-tooltip] and placement modifier classes.
+   v3: dark slate bubble with soft shadow in both themes (lifts off dark pages with a hairline).
    ========== */
 
 /* @ID: #06-04-01 */
@@ -11,27 +12,38 @@
   position: relative;
 }
 
+[data-tooltip]::after,
+.tooltip-popover,
+.tooltip-hint {
+  padding: 0.375rem 0.625rem;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.35;
+  color: var(--slate-50);
+  background: var(--slate-900);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 8%), var(--shadow-m);
+}
+
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: calc(100% + var(--space-2));
   left: 50%;
   z-index: 200;
-  padding: var(--space-1) var(--space-2);
-  font-size: var(--font-size-xs);
-  line-height: 1.35;
-  color: var(--color-almost-white);
   white-space: nowrap;
   pointer-events: none;
-  background: var(--color-almost-black);
-  border-radius: var(--radius-s);
   opacity: 0;
-  transform: translateX(-50%);
-  transition: opacity 0.2s ease;
+  transform: translate(-50%, 4px);
+  transition:
+    opacity var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out);
 }
 
-[data-tooltip]:hover::after {
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
   opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 /* @ID: #06-04-02 */
@@ -41,26 +53,64 @@
 [data-tooltip].tooltip-bottom::after {
   top: calc(100% + var(--space-2));
   bottom: auto;
-  transform: translateX(-50%);
+  transform: translate(-50%, -4px);
 }
 
-[data-tooltip].tooltip-left::after {
+[data-tooltip].tooltip-bottom:hover::after {
+  transform: translate(-50%, 0);
+}
+
+[data-tooltip].tooltip-left::after,
+[data-tooltip].tooltip-left:hover::after {
   inset: 50% calc(100% + var(--space-2)) auto auto;
   transform: translateY(-50%);
 }
 
-[data-tooltip].tooltip-right::after {
+[data-tooltip].tooltip-right::after,
+[data-tooltip].tooltip-right:hover::after {
   top: 50%;
   bottom: auto;
   left: calc(100% + var(--space-2));
   transform: translateY(-50%);
 }
 
-/* @ID: #06-04-03 */
+/* @ID: #06-04-04 */
 
-/* ── Night mode (invert bubble) ─────────────────────────────────────────── */
+/*
+ * Progressive: Popover API + CSS Anchor Positioning.
+ * Existing [data-tooltip] remains the default CSS-only path.
+ * <!-- GAP: anchored() container queries for arrow flip — Baseline newly / limited -->
+ */
+@supports (anchor-name: --lagunite-tip) {
+  .tooltip-anchor {
+    anchor-name: --lagunite-tip;
+  }
 
-.night [data-tooltip]::after {
-  color: var(--color-almost-black);
-  background: var(--color-almost-white);
+  .tooltip-popover {
+    inset: auto;
+    margin: 0;
+    position: fixed;
+    position-anchor: --lagunite-tip;
+    position-area: block-start;
+    position-try-fallbacks: flip-block, flip-inline;
+    max-width: 16rem;
+    border: none;
+  }
+
+  /*
+   * Interest invokers (popover="hint" + interestfor) — limited availability.
+   * Chrome/visual only here. Pair each trigger/hint with unique
+   * anchor-name / position-anchor (inline or per-instance) for polyfills;
+   * native interestfor can use the implicit anchor.
+   * Do NOT set role="tooltip" / aria-describedby on the trigger — UA wires it.
+   */
+  .tooltip-hint {
+    inset: auto;
+    margin: 0;
+    position: fixed;
+    position-area: block-end;
+    position-try-fallbacks: flip-block, flip-inline;
+    max-width: 16rem;
+    border: none;
+  }
 }

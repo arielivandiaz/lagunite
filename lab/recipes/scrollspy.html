@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · scrollspy — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+  <style>
+    .spy-section {
+      min-height: 70vh;
+      scroll-margin-top: 4rem;
+    }
+  </style>
+</head>
+<body class="bg scroll-smooth">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <nav class="scrollspy pos-sticky top-0 z10 bg border-b padd-h-s padd-v-s row gap flex-wrap" aria-label="On this page">
+    <a class="navbar-link" href="#intro">Intro</a>
+    <a class="navbar-link" href="#features">Features</a>
+    <a class="navbar-link" href="#pricing">Pricing</a>
+  </nav>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 2/3 · MWG <code>scrollspy</code></p>
+      <h1 class="font-xl bold color-text">Scrollspy nav</h1>
+      <p class="font-s text-muted">
+        Native path: <code>.scrollspy</code> → <code>scroll-target-group: auto</code> +
+        <code>:target-current</code>. Fallback: IntersectionObserver toggles
+        <code>.scrollspy-current</code> via <code>:is()</code>. Sync <code>aria-current</code> in script.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Scroll or use the sticky links. Active item uses bold + underline (not color alone).
+    </div>
+
+    <main class="col gap">
+      <section id="intro" class="spy-section card">
+        <div class="card-header">Intro</div>
+        <div class="card-body col gap-s font-s text-muted">
+          <p>Introduction section — tall enough that only one target dominates the viewport.</p>
+          <p>Scrollspy tracks fragment links whose targets share this document.</p>
+          <p>Filler.</p>
+          <p>Filler.</p>
+        </div>
+      </section>
+      <section id="features" class="spy-section card">
+        <div class="card-header">Features</div>
+        <div class="card-body col gap-s font-s text-muted">
+          <p>Features section.</p>
+          <p>More content for clear intersection.</p>
+          <p>Filler.</p>
+          <p>Filler.</p>
+        </div>
+      </section>
+      <section id="pricing" class="spy-section card">
+        <div class="card-header">Pricing</div>
+        <div class="card-body col gap-s font-s text-muted">
+          <p>Pricing section — last target.</p>
+          <p>Filler.</p>
+          <p>Filler.</p>
+          <p>End.</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.scrollspy</code> on the nav of fragment links</li>
+        <li><code>:is(:target-current, .scrollspy-current)</code></li>
+        <li><code>.scroll-smooth</code> optional on scroller</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>organisms</code> · Guide: <code>retrieve scrollspy</code>
+    </p>
+  </div>
+
+  <script type="module">
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const nav = document.querySelector('.scrollspy');
+    const links = [...nav.querySelectorAll('a[href^="#"]')];
+
+    const syncAria = () => {
+      let current = null;
+      try {
+        current = nav.querySelector('a:target-current');
+      } catch {
+        /* :target-current unsupported */
+      }
+      if (!current) {
+        current = nav.querySelector('a.scrollspy-current');
+      }
+      links.forEach((link) => {
+        link.setAttribute('aria-current', link === current ? 'true' : 'false');
+      });
+    };
+
+    if (CSS.supports('scroll-target-group: auto')) {
+      syncAria();
+      document.addEventListener('scrollend', syncAria);
+    } else {
+      const sections = links
+        .map((l) => document.querySelector(l.getAttribute('href')))
+        .filter(Boolean);
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = entry.target.id;
+            links.forEach((link) => {
+              const active = link.getAttribute('href') === `#${id}`;
+              link.classList.toggle('scrollspy-current', active);
+              link.setAttribute('aria-current', active ? 'true' : 'false');
+            });
+          });
+        },
+        { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+      );
+      sections.forEach((s) => observer.observe(s));
+    }
+  </script>
+</body>
+</html>

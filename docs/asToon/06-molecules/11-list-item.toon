@@ -1,16 +1,16 @@
 folder: 06-molecules
 file: 11-list-item.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 45
-content[45]:
+totalSelectors: 36
+content[36]:
   - type: selector
     selectorType: class
     selector: .list-item
     id: #06-11-01
     category: null
     properties[7]: display,align-items,gap,padding,border-bottom,background,transition
-    cssRule: "display: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg)\ntransition: background 0.15s ease, box-shadow 0.15s ease"
+    cssRule: "display: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-surface-raised)\ntransition: background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out)"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -27,8 +27,8 @@ content[45]:
     selector: .list-item-avatar
     id: #06-11-01
     category: null
-    properties[9]: flex-shrink,display,align-items,justify-content,width,height,border-radius,background,overflow
-    cssRule: "flex-shrink: 0\ndisplay: flex\nalign-items: center\njustify-content: center\nwidth: 2.5rem\nheight: 2.5rem\nborder-radius: 50%\nbackground: var(--gray-200)\noverflow: hidden"
+    properties[10]: flex-shrink,display,align-items,justify-content,width,height,border-radius,background,color,overflow
+    cssRule: "flex-shrink: 0\ndisplay: flex\nalign-items: center\njustify-content: center\nwidth: 2.5rem\nheight: 2.5rem\nborder-radius: 50%\nbackground: linear-gradient(140deg, var(--blue-400), var(--blue-700))\ncolor: var(--color-on-primary)\noverflow: hidden"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -64,7 +64,7 @@ content[45]:
     id: #06-11-01
     category: null
     properties[6]: margin,font-size,color,white-space,overflow,text-overflow
-    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis"
+    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--color-text-muted)\nwhite-space: nowrap\noverflow: hidden\ntext-overflow: ellipsis"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -82,7 +82,7 @@ content[45]:
     id: #06-11-01
     category: null
     properties[13]: display,align-items,justify-content,width,height,padding,background,border,border-radius,color,cursor,font-size,transition
-    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 2rem\nheight: 2rem\npadding: 0\nbackground: transparent\nborder: none\nborder-radius: var(--radius-m)\ncolor: var(--gray-500)\ncursor: pointer\nfont-size: 1rem\ntransition: background 0.2s ease, color 0.2s ease"
+    cssRule: "display: inline-flex\nalign-items: center\njustify-content: center\nwidth: 2rem\nheight: 2rem\npadding: 0\nbackground: transparent\nborder: none\nborder-radius: var(--radius-m)\ncolor: var(--color-text-muted)\ncursor: pointer\nfont-size: 1rem\ntransition: background 0.2s ease, color 0.2s ease"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -91,7 +91,7 @@ content[45]:
     id: #06-11-01
     category: null
     properties[2]: background,color
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary)"
+    cssRule: "background: rgba(var(--color-primary-rgb), 0.08)\ncolor: var(--color-primary-text)"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -99,8 +99,8 @@ content[45]:
     selector: ".list-item-action:focus-visible"
     id: #06-11-01
     category: null
-    properties[2]: outline,outline-offset
-    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px"
+    properties[2]: outline,box-shadow
+    cssRule: "outline: none\nbox-shadow: var(--shadow-focus)"
     responsive: false
     description: ── Base list item structure ────────────────────────────────────────────
   - type: selector
@@ -136,7 +136,7 @@ content[45]:
     id: #06-11-02
     category: null
     properties[9]: text-decoration,color,display,align-items,gap,padding,border-bottom,background,transition
-    cssRule: "text-decoration: none\ncolor: inherit\ndisplay: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-bg)\ntransition: background 0.15s ease"
+    cssRule: "text-decoration: none\ncolor: inherit\ndisplay: flex\nalign-items: center\ngap: var(--space-3)\npadding: var(--space-3)\nborder-bottom: var(--border-width-s) solid var(--color-border)\nbackground: var(--color-surface-raised)\ntransition: background var(--dur-fast) var(--ease-out)"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -154,7 +154,7 @@ content[45]:
     id: #06-11-02
     category: null
     properties[2]: outline,outline-offset
-    cssRule: "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: -2px"
+    cssRule: "outline: 2px solid var(--color-primary)\noutline-offset: -2px"
     responsive: false
     description: ── Variants ────────────────────────────────────────────────────────────
   - type: selector
@@ -217,7 +217,7 @@ content[45]:
     id: #06-11-03
     category: null
     properties[10]: flex-shrink,display,align-items,padding,background,color,border-radius,font-size,font-weight,white-space
-    cssRule: "flex-shrink: 0\ndisplay: inline-flex\nalign-items: center\npadding: 0.25rem 0.5rem\nbackground: var(--color-primary)\ncolor: var(--color-text-alt)\nborder-radius: var(--radius-full)\nfont-size: 0.75rem\nfont-weight: var(--font-weight-bold)\nwhite-space: nowrap"
+    cssRule: "flex-shrink: 0\ndisplay: inline-flex\nalign-items: center\npadding: 0.25rem 0.5rem\nbackground: var(--gradient-primary)\ncolor: var(--color-on-primary)\nborder-radius: var(--radius-full)\nfont-size: 0.75rem\nfont-weight: var(--font-weight-bold)\nwhite-space: nowrap"
     responsive: false
     description: ── Badge and status indicators ──────────────────────────────────────────
   - type: selector
@@ -289,7 +289,7 @@ content[45]:
     id: #06-11-03
     category: null
     properties[1]: background
-    cssRule: "background: var(--gray-400)"
+    cssRule: "background: var(--color-border-strong)"
     responsive: false
     description: ── Badge and status indicators ──────────────────────────────────────────
   - type: selector
@@ -297,8 +297,8 @@ content[45]:
     selector: .list-container
     id: #06-11-04
     category: null
-    properties[4]: background,border,border-radius,overflow
-    cssRule: "background: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\noverflow: hidden"
+    properties[5]: background,border,border-radius,box-shadow,overflow
+    cssRule: "background: var(--color-surface-raised)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-xl)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-s)\noverflow: hidden"
     responsive: false
     description: ── Spacing and container ───────────────────────────────────────────────
   - type: selector
@@ -325,87 +325,6 @@ content[45]:
     id: #06-11-04
     category: null
     properties[1]: border-bottom
-    cssRule: "border-bottom: var(--border-width-md) solid var(--color-border)"
+    cssRule: "border-bottom: var(--border-width-s) solid var(--color-border)"
     responsive: false
     description: ── Spacing and container ───────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-item
-    id: #06-11-06
-    category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-item-avatar
-    id: #06-11-06
-    category: null
-    properties[1]: background
-    cssRule: "background: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .list-item-interactive:hover"
-    id: #06-11-06
-    category: null
-    properties[1]: background
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.15)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .list-item-link:hover"
-    id: #06-11-06
-    category: null
-    properties[1]: background
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.15)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-item-meta
-    id: #06-11-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-item-selected
-    id: #06-11-06
-    category: null
-    properties[1]: background
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.18)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-item-action
-    id: #06-11-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: ".night .list-item-action:hover"
-    id: #06-11-06
-    category: null
-    properties[1]: background
-    cssRule: "background: rgba(var(--color-primary-rgb), 0.15)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .list-container
-    id: #06-11-06
-    category: null
-    properties[2]: background,border-color
-    cssRule: "background: var(--gray-800)\nborder-color: var(--gray-700)"
-    responsive: false
-    description: ── Night mode ──────────────────────────────────────────────────────────

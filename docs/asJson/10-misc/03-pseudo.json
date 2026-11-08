@@ -1,9 +1,9 @@
 {
   "folder": "10-misc",
   "file": "03-pseudo.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": true,
-  "totalSelectors": 19,
+  "totalSelectors": 22,
   "content": [
     {
       "type": "selector",
@@ -283,6 +283,55 @@
       "cssRule": "content: ''\ndisplay: inline-block",
       "responsive": false,
       "description": "── Empty state helpers ──────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".icon-set",
+      "id": "#10-03-07",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "display: inline-flex\nalign-items: center\ngap: var(--space-2)",
+      "responsive": false,
+      "description": "* Resolution-aware decorative icon via ::before + image-set.\r\n * Set --icon-1x (required) and --icon-2x (optional) as url(...) values."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".icon-set::before",
+      "id": "#10-03-07",
+      "category": null,
+      "properties": [
+        "content",
+        "display",
+        "flex-shrink",
+        "width",
+        "height",
+        "background-repeat",
+        "background-position",
+        "background-size",
+        "background-image"
+      ],
+      "cssRule": "content: ''\ndisplay: inline-block\nflex-shrink: 0\nwidth: 1.5rem\nheight: 1.5rem\nbackground-repeat: no-repeat\nbackground-position: center\nbackground-size: contain\nbackground-image: var(--icon-1x)",
+      "responsive": false,
+      "description": "* Resolution-aware decorative icon via ::before + image-set.\r\n * Set --icon-1x (required) and --icon-2x (optional) as url(...) values."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".icon-set::before",
+      "id": "#10-03-07",
+      "category": null,
+      "properties": [
+        "background-image"
+      ],
+      "cssRule": "background-image: image-set(var(--icon-1x) 1x, var(--icon-2x, var(--icon-1x)) 2x)",
+      "responsive": false,
+      "description": "* Resolution-aware decorative icon via ::before + image-set.\r\n * Set --icon-1x (required) and --icon-2x (optional) as url(...) values."
     }
   ]
 }

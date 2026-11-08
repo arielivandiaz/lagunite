@@ -1,16 +1,16 @@
 folder: 05-atoms
 file: 02-inputs.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 218
-content[218]:
+totalSelectors: 255
+content[255]:
   - type: selector
     selectorType: pseudo
     selector: ":is(\r\n  input[type=\"text\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -18,8 +18,8 @@ content[218]:
     selector: "input[type=\"number\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -27,8 +27,8 @@ content[218]:
     selector: "input[type=\"email\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -36,8 +36,8 @@ content[218]:
     selector: "input[type=\"password\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -45,8 +45,8 @@ content[218]:
     selector: "input[type=\"search\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -54,8 +54,8 @@ content[218]:
     selector: "input[type=\"tel\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -63,8 +63,8 @@ content[218]:
     selector: "input[type=\"url\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -72,8 +72,8 @@ content[218]:
     selector: "input[type=\"date\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -81,8 +81,8 @@ content[218]:
     selector: "input[type=\"datetime-local\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -90,8 +90,8 @@ content[218]:
     selector: "input[type=\"month\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -99,8 +99,8 @@ content[218]:
     selector: "input[type=\"week\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -108,8 +108,8 @@ content[218]:
     selector: "input[type=\"time\"]"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -117,8 +117,8 @@ content[218]:
     selector: textarea
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -126,8 +126,8 @@ content[218]:
     selector: ".input\r\n)"
     id: #05-02-01
     category: null
-    properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    properties[16]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -136,7 +136,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: color,font-size,opacity
-    cssRule: "color: var(--input-placeholder)\nfont-size: var(--font-size-base)\nopacity: 1"
+    cssRule: "color: var(--input-placeholder)\nfont-size: inherit\nopacity: 1"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -145,7 +145,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -154,7 +154,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -163,7 +163,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -172,7 +172,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -181,7 +181,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -190,7 +190,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -199,7 +199,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -208,7 +208,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -217,7 +217,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -226,7 +226,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -235,7 +235,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -244,7 +244,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -253,7 +253,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -262,7 +262,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -271,7 +271,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -280,7 +280,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -289,7 +289,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -298,7 +298,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -307,7 +307,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -316,7 +316,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -325,7 +325,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -334,7 +334,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -343,7 +343,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -352,7 +352,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -361,7 +361,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -370,7 +370,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -379,7 +379,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -388,7 +388,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -397,7 +397,7 @@ content[218]:
     id: #05-02-01
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -405,8 +405,8 @@ content[218]:
     selector: ":is(\r\n  input[type=\"text\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -414,8 +414,8 @@ content[218]:
     selector: "input[type=\"number\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -423,8 +423,8 @@ content[218]:
     selector: "input[type=\"email\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -432,8 +432,8 @@ content[218]:
     selector: "input[type=\"password\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -441,8 +441,8 @@ content[218]:
     selector: "input[type=\"search\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -450,8 +450,8 @@ content[218]:
     selector: "input[type=\"tel\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -459,8 +459,8 @@ content[218]:
     selector: "input[type=\"url\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -468,8 +468,8 @@ content[218]:
     selector: "input[type=\"date\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -477,8 +477,8 @@ content[218]:
     selector: "input[type=\"datetime-local\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -486,8 +486,8 @@ content[218]:
     selector: "input[type=\"month\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -495,8 +495,8 @@ content[218]:
     selector: "input[type=\"week\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -504,8 +504,8 @@ content[218]:
     selector: "input[type=\"time\"]"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -513,8 +513,8 @@ content[218]:
     selector: textarea
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -522,8 +522,8 @@ content[218]:
     selector: ".input\r\n):disabled"
     id: #05-02-01
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Text inputs & textarea (boxed / default) ─────────────────────────────
   - type: selector
@@ -531,8 +531,8 @@ content[218]:
     selector: select
     id: #05-02-06
     category: null
-    properties[22]: display,width,max-width,min-height,padding,font-family,font-size,line-height,color,background-color,background-image,background-repeat,background-position,background-size,border,border-radius,transition,appearance,outline,cursor,box-sizing,accent-color
-    cssRule: "display: block\nwidth: 100%\nmax-width: 100%\nmin-height: 2.75rem\npadding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nbackground-image: var(--select-chevron)\nbackground-repeat: no-repeat\nbackground-position: right var(--space-3) center\nbackground-size: 1.125rem\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: pointer\nbox-sizing: border-box\naccent-color: var(--color-primary)"
+    properties[23]: display,width,max-width,min-height,padding,font-family,font-size,line-height,color,background-color,background-image,background-repeat,background-position,background-size,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing,accent-color
+    cssRule: "display: block\nwidth: 100%\nmax-width: 100%\nmin-height: 2.625rem\npadding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nbackground-image: var(--select-chevron)\nbackground-repeat: no-repeat\nbackground-position: right var(--space-3) center\nbackground-size: 1.125rem\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: pointer\nbox-sizing: border-box\naccent-color: var(--color-primary)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -540,8 +540,8 @@ content[218]:
     selector: .select
     id: #05-02-06
     category: null
-    properties[22]: display,width,max-width,min-height,padding,font-family,font-size,line-height,color,background-color,background-image,background-repeat,background-position,background-size,border,border-radius,transition,appearance,outline,cursor,box-sizing,accent-color
-    cssRule: "display: block\nwidth: 100%\nmax-width: 100%\nmin-height: 2.75rem\npadding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nbackground-image: var(--select-chevron)\nbackground-repeat: no-repeat\nbackground-position: right var(--space-3) center\nbackground-size: 1.125rem\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ntransition: border-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: pointer\nbox-sizing: border-box\naccent-color: var(--color-primary)"
+    properties[23]: display,width,max-width,min-height,padding,font-family,font-size,line-height,color,background-color,background-image,background-repeat,background-position,background-size,border,border-radius,box-shadow,transition,appearance,outline,cursor,box-sizing,accent-color
+    cssRule: "display: block\nwidth: 100%\nmax-width: 100%\nmin-height: 2.625rem\npadding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nbackground-image: var(--select-chevron)\nbackground-repeat: no-repeat\nbackground-position: right var(--space-3) center\nbackground-size: 1.125rem\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-md)\nbox-shadow: var(--shadow-xs)\ntransition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out)\nappearance: none\noutline: none\ncursor: pointer\nbox-sizing: border-box\naccent-color: var(--color-primary)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -550,7 +550,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -559,7 +559,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -568,7 +568,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -577,7 +577,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[1]: border-color
-    cssRule: "border-color: var(--color-border-hover)"
+    cssRule: "border-color: var(--color-text-muted)"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -586,7 +586,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -595,7 +595,7 @@ content[218]:
     id: #05-02-06
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -603,8 +603,8 @@ content[218]:
     selector: "select:disabled"
     id: #05-02-06
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -612,8 +612,8 @@ content[218]:
     selector: ".select:disabled"
     id: #05-02-06
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Select ───────────────────────────────────────────────────────────────
   - type: selector
@@ -856,7 +856,7 @@ content[218]:
     id: #05-02-02
     category: null
     properties[3]: border-color,box-shadow,outline
-    cssRule: "border-color: var(--color-primary)\nbox-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2)\noutline: none"
+    cssRule: "border-color: var(--color-primary)\nbox-shadow: var(--shadow-focus)\noutline: none"
     responsive: false
     description: ── Floating label ───────────────────────────────────────────────────────
   - type: selector
@@ -864,8 +864,8 @@ content[218]:
     selector: ".input-field:disabled"
     id: #05-02-02
     category: null
-    properties[4]: background-color,cursor,opacity,border-color
-    cssRule: "background-color: var(--gray-100)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--gray-200)"
+    properties[5]: background-color,cursor,opacity,border-color,box-shadow
+    cssRule: "background-color: var(--color-surface-muted)\ncursor: not-allowed\nopacity: 0.6\nborder-color: var(--color-border-strong)\nbox-shadow: none"
     responsive: false
     description: ── Floating label ───────────────────────────────────────────────────────
   - type: selector
@@ -973,7 +973,7 @@ content[218]:
     id: #05-02-04
     category: null
     properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: "── Input minimal (borderless, subtle bg) ────────────────────────────────"
   - type: selector
@@ -982,7 +982,7 @@ content[218]:
     id: #05-02-04
     category: null
     properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: "── Input minimal (borderless, subtle bg) ────────────────────────────────"
   - type: selector
@@ -991,7 +991,7 @@ content[218]:
     id: #05-02-04
     category: null
     properties[15]: display,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,transition,appearance,outline,cursor,box-sizing
-    cssRule: "display: block\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
+    cssRule: "display: block\nwidth: 100%\npadding: 0.625rem 0.875rem\nfont-family: var(--font-sans)\nfont-size: 0.9375rem\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--gray-50)\nborder: none\nborder-radius: var(--radius-m)\ntransition: background-color 0.2s ease, box-shadow 0.2s ease\nappearance: none\noutline: none\ncursor: text\nbox-sizing: border-box"
     responsive: false
     description: "── Input minimal (borderless, subtle bg) ────────────────────────────────"
   - type: selector
@@ -1047,7 +1047,7 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-error)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-field
@@ -1056,7 +1056,7 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-error)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-underline
@@ -1065,25 +1065,25 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-error)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-minimal)[placeholder]:invalid:not(:placeholder-shown)"
+    selector: ".input-minimal):user-invalid"
     id: #05-02-05
     category: null
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-error)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-underline[placeholder]:invalid:not(:placeholder-shown)"
+    selector: ".input-underline:user-invalid"
     id: #05-02-05
     category: null
     properties[1]: border-bottom-color
     cssRule: "border-bottom-color: var(--color-error)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: pseudo
     selector: ":is(.input"
@@ -1092,7 +1092,7 @@ content[218]:
     properties[1]: box-shadow
     cssRule: "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-field
@@ -1101,7 +1101,7 @@ content[218]:
     properties[1]: box-shadow
     cssRule: "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-underline
@@ -1110,25 +1110,25 @@ content[218]:
     properties[1]: box-shadow
     cssRule: "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-minimal)[placeholder]:invalid:not(:placeholder-shown):focus"
+    selector: ".input-minimal):user-invalid:focus"
     id: #05-02-05
     category: null
     properties[1]: box-shadow
     cssRule: "box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-field[placeholder]:invalid:not(:placeholder-shown) ~ .input-label"
+    selector: ".input-field:user-invalid ~ .input-label"
     id: #05-02-05
     category: null
     properties[1]: color
     cssRule: "color: var(--color-error)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: pseudo
     selector: ":is(.input"
@@ -1137,7 +1137,7 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-success)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-field
@@ -1146,7 +1146,7 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-success)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
     selector: .input-underline
@@ -1155,34 +1155,367 @@ content[218]:
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-success)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-minimal)[placeholder]:valid:not(:placeholder-shown)"
+    selector: ".input-minimal)[placeholder]:user-valid:not(:placeholder-shown)"
     id: #05-02-05
     category: null
     properties[2]: border-color,box-shadow
     cssRule: "border-color: var(--color-success)\nbox-shadow: none"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-underline[placeholder]:valid:not(:placeholder-shown)"
+    selector: ".input-underline[placeholder]:user-valid:not(:placeholder-shown)"
     id: #05-02-05
     category: null
     properties[1]: border-bottom-color
     cssRule: "border-bottom-color: var(--color-success)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
   - type: selector
     selectorType: class
-    selector: ".input-field[placeholder]:valid:not(:placeholder-shown) ~ .input-label"
+    selector: ".input-field[placeholder]:user-valid:not(:placeholder-shown) ~ .input-label"
     id: #05-02-05
     category: null
     properties[1]: color
     cssRule: "color: var(--color-success)"
     responsive: false
-    description: "* Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is\r\n * always true, so empty optional fields matched :valid and turned green.\r\n * With placeholder: empty → placeholder shown → neutral; filled valid → green;\r\n * filled invalid → red."
+    description: "* Post-interaction only (blur or submit attempt) — Baseline widely available.\r\n * Error: no placeholder gate (empty required can go red after interact).\r\n * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty\r\n * optional fields never look “success” after a casual focus/blur.\r\n * App-owned validation: prefer .form-group.has-error / .has-success."
+  - type: selector
+    selectorType: pseudo
+    selector: ":is(\r\n  input[type=\"text\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"number\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"email\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"password\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"search\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"tel\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: complex
+    selector: "input[type=\"url\"]"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: element
+    selector: textarea
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-field
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-underline
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: ".input-minimal\r\n):is(:-webkit-autofill"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: pseudo
+    selector: ":autofill)"
+    id: #05-02-06b
+    category: null
+    properties[5]: border-color,box-shadow,"-webkit-text-fill-color",caret-color,transition
+    cssRule: "border-color: var(--color-primary-light)\nbox-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)\ntransition: background-color 99999s ease-out"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: ".night :is(.input"
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-field
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-underline
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-minimal
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: element
+    selector: textarea
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: pseudo
+    selector: "input):is(:-webkit-autofill"
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: pseudo
+    selector: ":autofill)"
+    id: #05-02-06b
+    category: null
+    properties[3]: box-shadow,"-webkit-text-fill-color",caret-color
+    cssRule: "box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset\n-webkit-text-fill-color: var(--input-text)\ncaret-color: var(--input-text)"
+    responsive: false
+    description: "Autofill highlight (progressive — ignored where :autofill unsupported)"
+  - type: selector
+    selectorType: class
+    selector: .input-fit
+    id: #05-02-06c
+    category: null
+    properties[6]: field-sizing,width,max-width,min-inline-size,max-inline-size,align-self
+    cssRule: "field-sizing: content\nwidth: auto\nmax-width: 100%\nmin-inline-size: 12ch\nmax-inline-size: 40ch\nalign-self: start"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: .field-sizing
+    id: #05-02-06c
+    category: null
+    properties[6]: field-sizing,width,max-width,min-inline-size,max-inline-size,align-self
+    cssRule: "field-sizing: content\nwidth: auto\nmax-width: 100%\nmin-inline-size: 12ch\nmax-inline-size: 40ch\nalign-self: start"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: complex
+    selector: textarea.input-fit
+    id: #05-02-06c
+    category: null
+    properties[5]: width,height,min-block-size,max-block-size,max-inline-size
+    cssRule: "width: 100%\nheight: auto\nmin-block-size: 3lh\nmax-block-size: 10lh\nmax-inline-size: none"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: complex
+    selector: textarea.field-sizing
+    id: #05-02-06c
+    category: null
+    properties[5]: width,height,min-block-size,max-block-size,max-inline-size
+    cssRule: "width: 100%\nheight: auto\nmin-block-size: 3lh\nmax-block-size: 10lh\nmax-inline-size: none"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: complex
+    selector: select.input-fit
+    id: #05-02-06c
+    category: null
+    properties[2]: width,max-inline-size
+    cssRule: "width: auto\nmax-inline-size: 40ch"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: complex
+    selector: select.field-sizing
+    id: #05-02-06c
+    category: null
+    properties[2]: width,max-inline-size
+    cssRule: "width: auto\nmax-inline-size: 40ch"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: .select-base
+    id: #05-02-06c
+    category: null
+    properties[1]: appearance
+    cssRule: "appearance: base-select"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base::picker(select)"
+    id: #05-02-06c
+    category: null
+    properties[1]: appearance
+    cssRule: "appearance: base-select"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: .select-base
+    id: #05-02-06c
+    category: null
+    properties[14]: display,align-items,justify-content,gap,width,padding,font-family,font-size,line-height,color,background-color,border,border-radius,cursor
+    cssRule: "display: flex\nalign-items: center\njustify-content: space-between\ngap: var(--space-2)\nwidth: 100%\npadding: var(--space-3) var(--space-4)\nfont-family: var(--font-sans)\nfont-size: var(--font-size-base)\nline-height: 1.5\ncolor: var(--input-text)\nbackground-color: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\ncursor: pointer"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base::picker(select)"
+    id: #05-02-06c
+    category: null
+    properties[5]: padding,background,border,border-radius,box-shadow
+    cssRule: "padding: var(--space-2)\nbackground: var(--input-bg)\nborder: var(--border-width-s) solid var(--input-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-l)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base::picker-icon"
+    id: #05-02-06c
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: .select-base option
+    id: #05-02-06c
+    category: null
+    properties[3]: padding,border-radius,color
+    cssRule: "padding: var(--space-2) var(--space-3)\nborder-radius: var(--radius-s)\ncolor: var(--input-text)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base option:hover"
+    id: #05-02-06c
+    category: null
+    properties[1]: background
+    cssRule: "background: color-mix(in srgb, var(--color-primary) 12%, var(--input-bg))"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base option:focus-visible"
+    id: #05-02-06c
+    category: null
+    properties[1]: background
+    cssRule: "background: color-mix(in srgb, var(--color-primary) 12%, var(--input-bg))"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".select-base option::checkmark"
+    id: #05-02-06c
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: .night .select-base
+    id: #05-02-06c
+    category: null
+    properties[3]: background,border-color,color
+    cssRule: "background: var(--input-bg)\nborder-color: var(--input-border)\ncolor: var(--input-text)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
+  - type: selector
+    selectorType: class
+    selector: ".night .select-base::picker(select)"
+    id: #05-02-06c
+    category: null
+    properties[3]: background,border-color,color
+    cssRule: "background: var(--input-bg)\nborder-color: var(--input-border)\ncolor: var(--input-text)"
+    responsive: false
+    description: "* field-sizing: content — opt-in (global .input is width: 100%).\r\n * Progressive enhancement; unsupported browsers keep fixed sizing."
   - type: selector
     selectorType: class
     selector: .checkboxContainer

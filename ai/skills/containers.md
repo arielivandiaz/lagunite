@@ -13,6 +13,8 @@
 3. Responsive prefix `x` = mobile (max-width: 639px), `d` = desktop (min-width: 640px).
 4. Gap and alignment come from flex/grid skills. Containers only handle width, centering, and padding.
 5. `.container-debug` shows a visual outline during development.
+6. **Container queries:** put `.cq` on a measuring ancestor; use `.cq-row` / `.cq-show-m` / `.cq-hide-m` for size-aware layouts (not viewport `x*`/`d*`). Recipe: `lab/recipes/size-aware-styling.html`.
+7. **Fluid vs container:** `.font-cq` / `.font-cq-s` / `.font-cq-l`, `.padd-cq`, `.gap-cq` — `cqi` when supported (else `vw`); keep max ≤ 2.5× min for text. Recipe: `lab/recipes/fluid-scaling.html`.
 
 ## Base containers
 

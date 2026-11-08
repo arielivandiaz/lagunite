@@ -1,9 +1,9 @@
 folder: 06-molecules
 file: 01-form-groups.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: true
-totalSelectors: 104
-content[104]:
+totalSelectors: 116
+content[116]:
   - type: selector
     selectorType: class
     selector: .form-group
@@ -19,7 +19,7 @@ content[104]:
     id: #06-01-01
     category: null
     properties[3]: font-weight,font-size,color
-    cssRule: "font-weight: var(--font-weight-medium)\nfont-size: var(--font-size-s)\ncolor: var(--color-text-base)"
+    cssRule: "font-weight: var(--font-weight-semibold)\nfont-size: var(--font-size-s)\ncolor: var(--color-text-base)"
     responsive: false
     description: "── Form group, label, help, error ───────────────────────────────────────"
   - type: selector
@@ -28,7 +28,7 @@ content[104]:
     id: #06-01-01
     category: null
     properties[3]: margin-top,font-size,color
-    cssRule: "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--gray-500)"
+    cssRule: "margin-top: var(--space-1)\nfont-size: 0.8125rem\ncolor: var(--color-text-muted)"
     responsive: false
     description: "── Form group, label, help, error ───────────────────────────────────────"
   - type: selector
@@ -36,10 +36,136 @@ content[104]:
     selector: .form-error-msg
     id: #06-01-01
     category: null
-    properties[3]: margin-top,font-size,color
-    cssRule: "margin-top: var(--space-1)\nfont-size: var(--font-size-xs)\ncolor: var(--color-error)"
+    properties[4]: margin-top,font-size,font-weight,color
+    cssRule: "margin-top: var(--space-1)\nfont-size: 0.8125rem\nfont-weight: var(--font-weight-medium)\ncolor: var(--color-error)"
     responsive: false
     description: "── Form group, label, help, error ───────────────────────────────────────"
+  - type: selector
+    selectorType: class
+    selector: .form-error-msg.reveal-user-invalid
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: none"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: ".form-group:has(\n  :is(.input"
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-field
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-underline
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-minimal
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: element
+    selector: textarea
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: pseudo
+    selector: "select):user-invalid\n) .form-error-msg.reveal-user-invalid"
+    id: #06-01-01
+    category: null
+    properties[1]: display
+    cssRule: "display: block"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: ".form-group:has(\n  :is(.input"
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-field
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-underline
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: .input-minimal
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: element
+    selector: textarea
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: pseudo
+    selector: "select):user-invalid\n) .form-label"
+    id: #06-01-01
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
+    responsive: false
+    description: "* Optional: hide error copy until the control is :user-invalid\n * (blur / submit). Use with native HTML constraints; keep .has-error for app-owned UX."
+  - type: selector
+    selectorType: class
+    selector: ".form-surface:has(:user-invalid)"
+    id: #06-01-01
+    category: null
+    properties[2]: border-color,box-shadow
+    cssRule: "border-color: var(--color-error)\nbox-shadow: inset 3px 0 0 var(--color-error)"
+    responsive: false
+    description: "* Optional surface: tint ancestor when any descendant control is :user-invalid.\n * Prefer scoping to a card/section — do not put on body."
   - type: selector
     selectorType: class
     selector: ".form-group.has-error\n  :is(\n    .input"
@@ -904,24 +1030,6 @@ content[104]:
     cssRule: "display: flex\nflex-wrap: wrap\ngap: var(--space-4)"
     responsive: true
     description: ── Horizontal form row ───────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .form-label
-    id: #06-01-05
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--color-text-alt)"
-    responsive: false
-    description: "── Night mode: labels & help ───────────────────────────────────────────"
-  - type: selector
-    selectorType: class
-    selector: .night .form-help
-    id: #06-01-05
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: "── Night mode: labels & help ───────────────────────────────────────────"
   - type: selector
     selectorType: class
     selector: .night .input-group .input-group-prepend

@@ -1,6 +1,6 @@
 folder: 00-config
 file: 04-measures.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
 totalSelectors: 1
 content[1]:
@@ -9,11 +9,11 @@ content[1]:
     selector: ":root"
     id: #00-04-01
     category: null
-    properties[24]: "--space-0","--space-px","--space-1","--space-2","--space-3","--space-4","--space-5","--space-6","--space-8","--space-10","--space-12","--space-16","--space-20","--space-24","--space-32","--radius-s","--radius-m","--radius-l","--radius-xl","--radius-full","--breakpoint-s","--breakpoint-md","--breakpoint-l","--breakpoint-xl"
-    cssRule: "/* == Sizes == */\n--space-0: 0\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n--radius-s: 0.25rem\n/* 4px  */\n--radius-m: 0.5rem\n/* 8px  */\n--radius-l: 1rem\n/* 16px */\n--radius-xl: 1.5rem\n/* 24px */\n--radius-full: 9999px\n/* == Breakpoints (Single Source of Truth) == */\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px"
+    properties[37]: "--space-0","--space-px","--space-1","--space-2","--space-3","--space-4","--space-5","--space-6","--space-8","--space-10","--space-12","--space-16","--space-20","--space-24","--space-32","--radius-xs","--radius-sm","--radius-md","--radius-lg","--radius-xl","--radius-2xl","--radius-full","--radius-s","--radius-m","--radius-l","--blur-sm","--blur-md","--blur-lg","--ease-out","--ease-spring","--dur-fast","--dur","--dur-slow","--breakpoint-s","--breakpoint-md","--breakpoint-l","--breakpoint-xl"
+    cssRule: "/* == Sizes == */\n--space-0: 0\n--space-px: 1px\n--space-1: 0.25rem\n/* 4px */\n--space-2: 0.5rem\n/* 8px */\n--space-3: 0.75rem\n/* 12px */\n--space-4: 1rem\n/* 16px */\n--space-5: 1.25rem\n/* 20px */\n--space-6: 1.5rem\n/* 24px */\n--space-8: 2rem\n/* 32px */\n--space-10: 2.5rem\n/* 40px */\n--space-12: 3rem\n/* 48px */\n--space-16: 4rem\n/* 64px */\n--space-20: 5rem\n/* 80px */\n--space-24: 6rem\n/* 96px */\n--space-32: 8rem\n/* 128px */\n/* == Radii (v3 scale; v2 names kept as aliases) == */\n--radius-xs: 6px\n/* badges in dense UI, checkboxes */\n--radius-sm: 8px\n/* small buttons */\n--radius-md: 10px\n/* buttons, inputs */\n--radius-lg: 14px\n/* alerts, menus, segmented */\n--radius-xl: 20px\n/* cards */\n--radius-2xl: 28px\n/* hero panels, CTA band */\n--radius-full: 9999px\n--radius-s: var(--radius-sm)\n--radius-m: var(--radius-md)\n--radius-l: var(--radius-lg)\n/* == Effects == */\n--blur-sm: 8px\n--blur-md: 16px\n--blur-lg: 32px\n/* == Motion == */\n--ease-out: cubic-bezier(0.2, 0.8, 0.2, 1)\n--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1)\n--dur-fast: 120ms\n--dur: 180ms\n--dur-slow: 320ms\n/* == Breakpoints (Single Source of Truth) == */\n/* Note: CSS Custom Properties cannot be used directly in media query definitions. */\n/* These are for documentation and potential use in JS or preprocessors. */\n--breakpoint-s: 640px\n--breakpoint-md: 768px\n--breakpoint-l: 1024px\n--breakpoint-xl: 1440px"
     responsive: false
-    description: "|--------------------------------------------------------------------------\r\n| Measurement System Tokens @ID: #00-04-01\r\n|--------------------------------------------------------------------------"
-customProperties[24]{property,value}:
+    description: "|--------------------------------------------------------------------------\n| Measurement System Tokens @ID: #00-04-01\n|--------------------------------------------------------------------------"
+customProperties[37]{property,value}:
   "--space-0","0"
   "--space-px",1px
   "--space-1",0.25rem
@@ -29,11 +29,24 @@ customProperties[24]{property,value}:
   "--space-20",5rem
   "--space-24",6rem
   "--space-32",8rem
-  "--radius-s",0.25rem
-  "--radius-m",0.5rem
-  "--radius-l",1rem
-  "--radius-xl",1.5rem
+  "--radius-xs",6px
+  "--radius-sm",8px
+  "--radius-md",10px
+  "--radius-lg",14px
+  "--radius-xl",20px
+  "--radius-2xl",28px
   "--radius-full",9999px
+  "--radius-s",var(--radius-sm)
+  "--radius-m",var(--radius-md)
+  "--radius-l",var(--radius-lg)
+  "--blur-sm",8px
+  "--blur-md",16px
+  "--blur-lg",32px
+  "--ease-out","cubic-bezier(0.2, 0.8, 0.2, 1)"
+  "--ease-spring","cubic-bezier(0.34, 1.56, 0.64, 1)"
+  "--dur-fast",120ms
+  "--dur",180ms
+  "--dur-slow",320ms
   "--breakpoint-s",640px
   "--breakpoint-md",768px
   "--breakpoint-l",1024px

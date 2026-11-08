@@ -27,6 +27,10 @@
 `.navbar-transparent` — transparent bg, no border.
 `.navbar-sticky` — `position: sticky; top: 0`.
 
+### Scrollspy
+
+`.scrollspy` — `scroll-target-group: auto` on a nav of fragment links. Active link via `:is(:target-current, .scrollspy-current)` (bold + underline + tint). Sync `aria-current` in script; IO fallback toggles `.scrollspy-current`. Recipe: `lab/recipes/scrollspy.html`.
+
 ### Mobile drawer
 
 On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with JS). Burger visible only ≤639px.
@@ -54,6 +58,15 @@ On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with 
 ### Mobile drawer
 
 `.sidebar` slides off-screen; add **`.sidebar.open`** to show (JS required).
+
+### Forced overlay drawer (any viewport)
+
+| Class | Role |
+| --- | --- |
+| `.sidebar.sidebar-drawer` | Always off-canvas; `.open` slides in |
+| `.sidebar-backdrop` / `.open` | Dimmed light-dismiss layer |
+
+Recipe: `lab/recipes/navigation-drawer.html`. Prefer `<details>` for searchable section groups (`search-hidden-content`).
 
 ### Night mode
 
@@ -87,3 +100,17 @@ Organisms do not replace layout utilities:
 
 - **molecules** — dropdowns in navbars
 - **compounds** — cards in main areas
+
+---
+
+## v3 additions
+
+| Class | Use |
+| --- | --- |
+| `.navbar` | Glass bar with blur; links are pills (`.navbar-link.active` = soft fill) |
+| `.navbar-floating` | Centered sticky capsule for landings (pair with `.navbar`) |
+| `.brand-mark` | Placeholder logo square with the primary gradient |
+| `.navbar-burger` | Fixed in v3 (visible bars, animates to ✕ with `.navbar.open`) |
+| `.topbar` | Glass bar; `.topbar-action` transparent until hover |
+| `.sidebar-link.active` | Soft blue fill (no solid primary); `.sidebar-dark` is dark in both themes |
+| `.footer` | `--color-surface` band; `.footer-dark` stays dark in both themes |

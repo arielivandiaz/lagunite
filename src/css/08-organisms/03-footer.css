@@ -2,7 +2,7 @@
    08-organisms / 03-footer.css
    Multi-column footer, bottom bar, dark & minimal variants.
    Breakpoints: max-width 639px (single column), min-width 640px.
-   Night: .night .footer
+   v3: surface band with hairline top border; themed by tokens (no .night rules).
    ========== */
 
 /* @ID: #08-03-01 */
@@ -10,15 +10,15 @@
 /* ── Footer shell & grid ───────────────────────────────────────────────── */
 
 .footer {
-  padding: var(--space-8) var(--space-4);
-  background: var(--gray-100);
+  padding: var(--space-12) var(--space-6) var(--space-8);
+  background: var(--color-surface);
   border-top: var(--border-width-s) solid var(--color-border);
   color: var(--color-text-base);
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: var(--space-8);
   max-width: 72rem;
   margin: 0 auto;
@@ -31,8 +31,8 @@
 /* ── Columns: titles & links ───────────────────────────────────────────── */
 
 .footer-title {
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-3);
   color: var(--color-text-base);
 }
@@ -43,24 +43,24 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: 0.625rem;
 }
 
 .footer-link {
-  color: var(--gray-600);
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: var(--font-size-s);
-  transition: color 0.2s;
+  transition: color var(--dur) var(--ease-out);
 }
 
 .footer-link:hover {
-  color: var(--color-primary);
+  color: var(--color-text-base);
 }
 
 .footer-link:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-  border-radius: var(--radius-s);
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-xs);
 }
 
 /* @ID: #08-03-03 */
@@ -68,62 +68,52 @@
 /* ── Bottom bar & variants ─────────────────────────────────────────────── */
 
 .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-3);
+  max-width: 72rem;
+  margin: var(--space-10) auto 0;
+  padding-top: var(--space-6);
   border-top: var(--border-width-s) solid var(--color-border);
-  margin-top: var(--space-8);
-  padding-top: var(--space-4);
-  text-align: center;
-  font-size: var(--font-size-xs);
-  color: var(--gray-500);
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
 }
 
 .footer-dark {
-  background: var(--gray-900);
-  color: var(--gray-300);
+  background: var(--slate-950);
+  border-color: rgb(255 255 255 / 8%);
+  color: var(--slate-300);
 }
 
 .footer-dark .footer-title {
-  color: var(--gray-100);
+  color: var(--slate-100);
 }
 
-.footer-dark .footer-link {
-  color: var(--gray-400);
+.footer-dark .footer-link,
+.footer-dark .footer-bottom {
+  color: var(--slate-400);
+}
+
+.footer-dark .footer-link:hover {
+  color: var(--slate-0);
+}
+
+.footer-dark .footer-bottom {
+  border-color: rgb(255 255 255 / 8%);
 }
 
 .footer-minimal {
-  padding: var(--space-4);
-  text-align: center;
+  padding: var(--space-6);
   font-size: var(--font-size-s);
 }
 
 /* @ID: #08-03-04 */
 
-/* ── Responsive & night ────────────────────────────────────────────────── */
+/* ── Responsive ────────────────────────────────────────────────────────── */
 
 @media (width <= 639px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-.night .footer {
-  background: var(--gray-900);
-  border-color: var(--gray-700);
-  color: var(--gray-300);
-}
-
-.night .footer-title {
-  color: var(--gray-100);
-}
-
-.night .footer-link {
-  color: var(--gray-400);
-}
-
-.night .footer-link:hover {
-  color: var(--color-primary);
-}
-
-.night .footer-bottom {
-  border-color: var(--gray-700);
-  color: var(--gray-500);
 }

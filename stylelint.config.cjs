@@ -13,6 +13,25 @@ module.exports = {
     'color-function-notation': null,
     'media-feature-range-notation': null,
     'declaration-block-no-redundant-longhand-properties': null,
-    'property-no-vendor-prefix': [true, { ignoreProperties: ['backdrop-filter'] }]
+    'property-no-vendor-prefix': [
+      true,
+      { ignoreProperties: ['backdrop-filter', 'mask-image', 'background-clip'] }
+    ],
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: [
+          'user-invalid',
+          'user-valid',
+          'autofill',
+          'popover-open',
+          'target-current'
+        ]
+      }
+    ],
+    'function-no-unknown': [
+      true,
+      { ignoreFunctions: ['sibling-index', 'sibling-count'] }
+    ]
   }
 };

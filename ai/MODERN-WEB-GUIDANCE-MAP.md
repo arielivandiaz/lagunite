@@ -204,7 +204,7 @@ When the task needs a **browser-native** pattern, search MWG then map to Lagunit
 
 | Tema | Pregunta | Default propuesto |
 | --- | --- | --- |
-| `:valid`/`:invalid` vs `:user-invalid` | Lagunite hoy gatea con `[placeholder]`. ¿Migrar selectores CSS a `:user-*`? | Investigar en RTP futuro; en skills ya enseñar feedback post-interact vía `.has-error` |
+| `:valid`/`:invalid` vs `:user-invalid` | Lagunite hoy gatea con `[placeholder]`. ¿Migrar selectores CSS a `:user-*`? | ✅ Hecho (2026-09-17): `:user-invalid` / `:user-valid`; success sigue con placeholder + content |
 | `.night` vs `prefers-color-scheme` | ¿Auto night? | Skills: documentar ambos; CSS auto = decisión de producto, no default del framework |
 | Modal Lagunite vs `<dialog>` | ¿Refactor markup demos? | Preferir `<dialog>` en Lab/nuevos; no romper class API v2.1 |
 | Baseline | `SUPPORT.md` = últimos 2 Chromium/FF/Safari | Bridge solo recomienda APIs que entren en esa matriz; si no, progressive enhancement |

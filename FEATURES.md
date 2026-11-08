@@ -48,7 +48,41 @@ Cambios de incentivo para que el camino fácil no produzca UI genérica/rota.
 | **On-fill text** | `.color-on-fill` (+ token `--color-on-fill`) = texto sobre fill primario; deja de confundirse con “muted” | `02-colors/02-text.css`, `00-config/03-theme.css` |
 | **Muted semántico** | `.text-muted` (light + `.night`) | `02-colors/02-text.css` |
 | **Surface aliases** | `.bg-surface` / `.bg-surface-raised` → fondos de panel (no `.bg-1`…`.bg-9`) | `02-colors/01-background.css` |
-| **Inputs neutrales vacíos** | `:valid`/`:invalid` gated on `[placeholder]` | `05-atoms/02-inputs.css` |
+| **Inputs post-interact** | `:user-invalid` / `:user-valid` (success still gated on `[placeholder]` + filled) | `05-atoms/02-inputs.css` |
+| **Error copy reveal** | `.form-error-msg.reveal-user-invalid` until `:user-invalid` | `06-molecules/01-form-groups.css` |
+| **Native dialog shell** | `dialog.modal` + `::backdrop` (Invoker / `closedby` in Lab recipes) | `07-compounds/02-modals.css` |
+| **color-scheme** | `:root` light · `.night` dark | `00-config/03-theme.css` |
+| **accent-color** | root primary + `.accent-primary` / success / error | theme + `04-decorators/01-effects.css` |
+| **form-surface :has** | Ancestor tint when `:user-invalid` | `06-molecules/01-form-groups.css` |
+| **text-wrap utils** | `.text-balance` · `.text-pretty` | `01-text/02-typography.css` |
+| **Spinner** | `.spinner` / `progress.spinner` + reduced-motion | `05-atoms/10-spinner.css` |
+| **Container queries** | `.cq` · `.cq-row` · `.cq-show-m` / `.cq-hide-m` | `03-layout/06-containers.css` |
+| **Sidebar drawer** | `.sidebar-drawer` · `.sidebar-backdrop` | `08-organisms/02-sidebar.css` |
+| **Anchored tooltip** | `.tooltip-anchor` / `.tooltip-popover` (@supports) | `06-molecules/04-tooltip.css` |
+| **Interest tooltip** | `interestfor` + `popover=hint` · `.tooltip-hint` | `06-molecules/04-tooltip.css` |
+| **Dropdown panel** | `.dropdown-trigger` / `.dropdown-panel` (popover + anchor) | `06-molecules/03-dropdown.css` |
+| **Manual toast** | `[popover].toast` · `.toast-stack` · `--toast-offset` | `06-molecules/02-alerts.css` |
+| **Progress ring** | `progress.progress-ring` + wrap/content | `05-atoms/11-progress-ring.css` |
+| **Scroll progress** | `.scroll-progress` (`animation-timeline: scroll()`) | `04-decorators/07-animations.css` |
+| **Scroll hints** | `.scroll-state` · `.scroll-hint-top` / `-bottom` | `03-layout/07-overflow.css` |
+| **Sticky stuck** | `.sticky-state` · `.sticky-surface` · `.sticky-section` | `03-layout/03-position.css` |
+| **Scrollspy** | `.scrollspy` + `:target-current` | `08-organisms/01-navbar.css` |
+| **Enter/exit** | `.enter-exit` · `.transition-discrete` | `04-decorators/06-transitions.css` |
+| **Dialog motion** | `dialog.modal` `@starting-style` + overlay | `07-compounds/02-modals.css` |
+| **Edge fade** | `.fade-edge-b` / `-t` / `-y` | `04-decorators/08-filters.css` |
+| **Text trim** | `.text-trim` · `.text-trim-start` | `01-text/02-typography.css` |
+| **Card :has state** | `.card-state` | `07-compounds/01-cards.css` |
+| **Card media :has** | `.card-media` layout from child img | `07-compounds/01-cards.css` |
+| **Fluid CQ type** | `.font-cq*` · `.padd-cq` · `.gap-cq` | `03-layout/06-containers.css` |
+| **Overflow clip** | `.overflow-clip` · `.clip-margin-*` | `03-layout/07-overflow.css` |
+| **Sibling index** | `.sibling-vars` · `.sibling-hue` · `.stagger` | `04-decorators/07-animations.css` |
+| **Content-visibility** | `.cv-auto` · `.cv-size-*` | `10-misc/01-display.css` |
+| **Contain** | `.contain-layout` / paint / content / strict | `10-misc/01-display.css` |
+| **image-set bg** | `.bg-image-set` (`--bg-1x` / `--bg-2x`) | `04-decorators/01-effects.css` |
+| **image-set icon** | `.icon-set` (`--icon-1x` / `--icon-2x`) | `10-misc/03-pseudo.css` |
+| **Autofill tint** | `:autofill` / `:-webkit-autofill` on inputs | `05-atoms/02-inputs.css` |
+| **Field sizing** | `.input-fit` / `.field-sizing` | `05-atoms/02-inputs.css` |
+| **Select base** | `.select-base` (`appearance: base-select`) | `05-atoms/02-inputs.css` |
 | **Night card text** | `.night .card-text` → gray-400 legible | `07-compounds/01-cards.css` |
 | **`.surface-glass`** | Frosted panel opt-in (blur + translucent bg) | `04-decorators/01-effects.css` |
 | **Card elevate opt-in** | Default `.card` flat; `.card-elevated` ≤1 / vista | `07-compounds/01-cards.css` + skills |

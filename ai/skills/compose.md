@@ -20,6 +20,8 @@
 4. **One spacing rhythm per section.** Prefer a single gap scale (`gap-s` or `gap`) + matching padd (`padd` / `padd-m`). Do not mix `gap-xs` + `gap-xl` + random `marg-*` in the same block.
 5. **Prefer molecules/compounds over utility soup** when they exist: `.form-group`, `.card` + regions, `.alert`, `.stat-card`, `.sidebar`.
 6. **Muted copy:** `.text-muted` or `.card-text` — never `.color-text-alt` as subtitle. On fills: `.color-on-fill`.
+7. **v3 skin does the depth.** `.btn`, `.card`, inputs and `.navbar` already carry highlight, shadow and blur. Don’t add `.shadow-*`, borders or gradients on top; pick the variant (`.card-elevated`, `.card-featured`, `.btn.soft`) instead.
+8. **Night is tokens.** `.night` (or `[data-theme="dark"]`) swaps every token. Never hand-paint night with `.bg-gray-*` / `.color-gray-*`.
 
 ---
 
@@ -41,7 +43,8 @@ If you start with colors or shadows, stop and restart from layout.
 
 | Intent | Classes |
 | --- | --- |
-| Content column / form / article | `col jc-fs ai-fs gap-s` (or `gap`) |
+| Content column / form / article | `col jc-fs ai-fs gap-s` (or `gap`) — shrink-to-content OK |
+| **Tool / editor / full-viewport app** | `col ai-s flex-nowrap minvh100` (+ `flex-1` panes) — **must stretch** |
 | Toolbar / header bar | `row jc-sb ai-c gap-s` |
 | Actions at end of form | `row jc-fe ai-c gap-s` **or** one `.btn.size-l.marg-0.wp100` + text link (prefer this in auth cards) |
 | Equal cards | `grid xgrid-cols-1 dgrid-cols-3 gap` |
@@ -50,6 +53,8 @@ If you start with colors or shadows, stop and restart from layout.
 
 **Default mistake:** forcing `jc-c ai-c` on forms/settings so “everything floats in the middle”.
 
+**Second default mistake:** wrapping a full-width tool in bare `.col` / `ai-fs` so children shrink-wrap and leave empty viewport (use **`ai-s`**).
+
 ---
 
 ## 3. Surface & color recipe
@@ -57,13 +62,18 @@ If you start with colors or shadows, stop and restart from layout.
 | Role | Prefer | Avoid |
 | --- | --- | --- |
 | Page background | `.bg` | `.bg-1`, full-page `bgg-*` |
-| Panel / card | `.card` (flat by default) / `.bg-surface` | Nested `.card` inside `.card` without reason · default `.card-elevated` everywhere |
-| Primary CTA fill | `.btn` | inventing `btn-primary` |
-| Secondary CTA | `.btn.alt` or text link | twin full-width `.btn` + `.btn.alt` in auth |
+| Section band | `.bg-surface` (alternate with `.bg`) | stacking several effect backgrounds |
+| Panel / card | `.card` (raised, subtle shadow) / `.card-sunken` for secondary groups | Nested `.card` inside `.card` without reason · `.card-elevated` everywhere |
+| Highlighted item | `.card-featured` — **one per group** (the recommended plan) | two featured cards side by side |
+| Hero / CTA background | `.bg-mesh`, `.bg-mesh.bg-grid`, `.bg-spotlight`, `.bg-dots` — **one per section** | `bgg-*`, purple/indigo gradients |
+| Glass | `.glass`, `.card-glass`, `.btn.glass` **only over** mesh/grid/image | glass on a plain `.bg` (looks like nothing) |
+| Primary CTA fill | `.btn` (add `.pill` + `.size-l` in heroes) | inventing `btn-primary` |
+| Secondary CTA | `.btn.alt`, `.btn.soft` or `.btn.ghost` | twin full-width `.btn` + `.btn.alt` in auth |
 | Body text | `.color-text` (or inherit from `.bg`) | `.color-text-alt` on light panels |
-| Muted / help | `.text-muted` or `.card-text` | `.color-text-alt` (`#fff`) · bare `.color-gray-600` in night |
+| Muted / help | `.text-muted` or `.card-text` | `.color-text-alt` (`#fff`) · `.color-gray-*` |
+| Blue text / eyebrow | `.color-primary` (AA text blue) or `.overline-label` | raw `var(--color-primary)` as text on light bg |
 | On-fill text | `.color-on-fill` | using `.color-text-alt` as the “muted” name |
-| Night panels | `.bg-gray-800` / `.bg-gray-900` inside `.night` | `.bg-1`…`.bg-9` as “dark mode” |
+| Night | tokens via `.night` on `body` | `.bg-gray-800` / `.bg-1`…`.bg-9` as “dark mode” |
 
 Read `contrast.md` before any custom `bg-*` + `color-*` pair.
 
@@ -73,17 +83,20 @@ Read `contrast.md` before any custom `bg-*` + `color-*` pair.
 
 Per view, aim for **three levels max**:
 
-1. Page/section title — `font-xl` or `font-l` + `bold`
-2. Body — default / `font-s` + `lh`
+1. Title — landing: `h1` / `h2` (display face, tight tracking, auto-sized) or `.font-display-2xl|xl|l`; app UI: `h3`/`h4` or `.card-title`
+2. Body — default / `.font-l` for leads / `.font-s` in cards
 3. Meta/help — `font-s` + `.text-muted` or `.card-text` (never `.color-text-alt` on light UI)
 
-Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
+Optional eyebrow above a section title: `.overline-label`. `.text-gradient` on **one word** of a hero headline, never a sentence.
+
+Do not size hero titles with `font-xxl` (24px) — use `h1` or `.font-display-*`. Do not stack `font-xxl` + `font-xl` + `font-l` in one card.
 
 ---
 
 ## 5. Spacing rhythm
 
-- Section vertical: `padd-v-l` or `padd-v-m` on the section/container — not margin on every child.
+- Landing sections: `.section` (64px mobile / 96px desktop) on the section, `.container` inside.
+- App sections: `padd-v-l` or `padd-v-m` on the section/container — not margin on every child.
 - Inside a card: `card-body` already pads; extra `padd` only if needed once.
 - Sibling groups: one `gap-s` or `gap` on the parent flex/grid.
 - Separate blocks: `marg-b` / `marg-b-m` sparingly — prefer parent `gap`.
@@ -111,11 +124,12 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 | Every block is a `.card` | One card for the interactive unit; rest is plain stack |
 | Grid without gap | Always set `gap` / `gap-s` |
 | Form fields without `.form-group` | label + input + help inside `.form-group` |
-| Inputs without `placeholder` expecting native green/red | Add `placeholder` **or** use `.has-error` / `.has-success` — empty fields must stay neutral |
+| Native red/green on first paint (before blur/submit) | Framework uses `:user-invalid` / `:user-valid`; success green still needs `placeholder` + content — or `.has-error` / `.has-success` |
 | Sidebar built from random flex | Use `.sidebar` organism markup |
 | `.color-text-alt` as “muted” on cards | `.text-muted` / `.card-text` — on fills use `.color-on-fill` |
 | Full-viewport center with `minhp100` | Use **`minvh100`** (viewport), not `%` of parent |
 | Inline `style=""` for layout | Utilities or `<!-- GAP: … -->` |
+| Huge nested grid thrashing on input | Wrap islands in `.contain-content` / `.contain-layout`; long lists `.cv-auto` |
 
 ---
 
@@ -147,6 +161,32 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
     </div>
   </div>
 </div>
+```
+
+### Landing hero + pricing (v3)
+```html
+<section class="bg-mesh bg-grid section">
+  <div class="container col ai-c gap-l ta-c">
+    <span class="badge badge-announce"><span class="badge badge-primary">Nuevo</span> Plantillas compartidas</span>
+    <h1>El lugar <span class="text-gradient">tranquilo</span> donde tu equipo trabaja</h1>
+    <p class="font-l text-muted">Tareas, notas y entregas en un solo lugar.</p>
+    <div class="row jc-c gap-s">
+      <a class="btn size-l pill" href="#">Empezar gratis</a>
+      <a class="btn glass size-l pill" href="#">Ver demo</a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-spotlight section">
+  <div class="container col gap-l">
+    <div class="col ai-c gap-s ta-c"><p class="overline-label">Precios</p><h2>Precios simples</h2></div>
+    <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+      <article class="card padd col gap">…<a class="btn alt wp100" href="#">Empezar gratis</a></article>
+      <article class="card card-featured padd col gap">…<a class="btn wp100" href="#">Probar 14 días</a></article>
+      <article class="card padd col gap">…<a class="btn alt wp100" href="#">Hablar con ventas</a></article>
+    </div>
+  </div>
+</section>
 ```
 
 ### Settings stack
@@ -182,11 +222,34 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 </div>
 ```
 
+### Tool / editor shell (full viewport)
+```html
+<body class="bg">
+  <div class="col ai-s flex-nowrap minvh100 overflow-hidden">
+    <header class="row jc-sb ai-c gap-s flex-wrap padd-h-s padd-v-s border-b bg-surface wp100">
+      <h1 class="font-l bold color-text marg-0">Tool title</h1>
+      <div class="row ai-c gap-s"><!-- actions --></div>
+    </header>
+    <!-- GAP: minh0 on flex children that scroll -->
+    <main class="col ai-s flex-nowrap flex-1 overflow-hidden padd-h-s gap-s wp100" style="min-height: 0">
+      <div class="grid flex-1 gap-s overflow-auto wp100 xgrid-cols-1 dgrid-cols-2 doverflow-hidden" style="min-height: 0">
+        <section class="col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <!-- editor pane -->
+        </section>
+        <section class="col ai-s flex-nowrap gap-s overflow-hidden" style="min-height: 0">
+          <!-- preview pane -->
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+```
+
 ---
 
 ## 9. Pre-flight (before you output HTML)
 
-- [ ] Outer layout uses `jc-fs ai-fs` unless this is intentionally centered
+- [ ] Outer layout: **content** → `jc-fs ai-fs`; **tool/editor shell** → `ai-s` + `minvh100` (+ `flex-nowrap`)
 - [ ] No `.bg-1`…`.bg-9` as neutral surfaces
 - [ ] Buttons use real Lagunite chains (`.btn`, `.btn.alt`, `.btn.ghost`…)
 - [ ] One gap scale in the main cluster
@@ -194,12 +257,13 @@ Do not stack `font-xxl` + `font-xl` + `font-l` + `font-m` in one card.
 - [ ] Forms use `.form-group` + `.form-label` + `.input`
 - [ ] Cards use `.card` / `.card-header` / `.card-body` / `.card-footer` when structured
 - [ ] Muted copy uses `.text-muted` or `.card-text` (not `.color-text-alt` on light surfaces)
-- [ ] Full-bleed centered shells use `minvh100`, not `minhp100`
-- [ ] Ran mental pass of `contrast.md` for bg/text
+- [ ] Full-viewport shells use `minvh100`, not `minhp100`
+- [ ] Mental contrast pass for bg/text (open `contrast.md` only if unsure)
 - [ ] No invented / Tailwind classes
+- [ ] Did **not** open `validate.md` / browser unless the user asked
 
 ---
 
 ## 10. One-line reminder
 
-> **Layout first, align explicitly (`jc-fs ai-fs`), surfaces semantic, one rhythm, real Lagunite components — then decorate.**
+> **Layout first, pick stretch vs start on purpose (`ai-s` tools / `ai-fs` content), surfaces semantic, one rhythm, real Lagunite components — then decorate.**

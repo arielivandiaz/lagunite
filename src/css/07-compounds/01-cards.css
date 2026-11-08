@@ -2,6 +2,7 @@
    07-compounds / 01-cards.css
    Card compound components: structure, media, variants, and layout groups.
    Responsive: mobile (max-width: 639px), desktop (min-width: 640px).
+   v3: raised surface with a 1px top highlight, hairline border and layered shadow.
    ========== */
 
 /* @ID: #07-01-01 */
@@ -9,11 +10,16 @@
 /* ── Card base ──────────────────────────────────────────────────────────── */
 
 .card {
-  background: var(--color-bg);
+  position: relative;
+  background: var(--color-surface-raised);
   border: var(--border-width-s) solid var(--color-border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-xl);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-s);
   overflow: hidden;
-  transition: box-shadow 0.2s;
+  transition:
+    box-shadow var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out),
+    border-color var(--dur) var(--ease-out);
 }
 
 /* @ID: #07-01-02 */
@@ -21,71 +27,122 @@
 /* ── Card regions ───────────────────────────────────────────────────────── */
 
 .card-header {
-  padding: var(--space-4);
+  padding: var(--space-4) var(--space-6);
   border-bottom: var(--border-width-s) solid var(--color-border);
-  font-weight: var(--font-weight-bold);
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-title);
 }
 
 .card-body {
-  padding: var(--space-4);
+  padding: var(--space-6);
 }
 
 .card-footer {
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-4) var(--space-6);
   border-top: var(--border-width-s) solid var(--color-border);
-  background: rgb(0 0 0 / 2%);
+  background: var(--color-surface-muted);
 }
 
 .card-img-top {
   width: 100%;
   display: block;
-  border-radius: var(--radius-m) var(--radius-m) 0 0;
 }
 
 .card-img-bottom {
   width: 100%;
   display: block;
-  border-radius: 0 0 var(--radius-m) var(--radius-m);
 }
 
 .card-title {
+  font-family: var(--font-display);
   font-size: var(--font-size-l);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-title);
+  line-height: 1.35;
+  color: var(--color-text-base);
 }
 
 .card-text {
-  color: var(--gray-600);
-  font-size: var(--font-size-base);
-}
-
-.night .card-text {
-  /* gray-600 is too dark on .night .card (gray-800) */
-  color: var(--gray-400);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-s);
+  line-height: 1.55;
 }
 
 /* @ID: #07-01-03 */
 
 /* ── Card surface variants ──────────────────────────────────────────────── */
-/* Default `.card` is flat (border only). Elevation is opt-in via `.card-elevated`.
-   Anti-slop: ≤1 elevated card per view unless a clear floating job (modal-like). */
+/* Elevation is opt-in. Anti-slop: one featured card per group. */
 
 .card-elevated {
-  box-shadow: var(--shadow-m);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l);
 }
 
 .card-flat {
   border: none;
   background: transparent;
-}
-
-.card-hover {
-  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: none;
 }
 
 .card-hover:hover {
-  box-shadow: var(--shadow-l);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  border-color: var(--color-border-strong);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l);
+}
+
+.card-sunken {
+  background: var(--color-surface-muted);
+  box-shadow: none;
+}
+
+.card-glass {
+  background: var(--color-glass);
+  -webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  border-color: var(--color-border-strong);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l);
+}
+
+/* Gradient border + colored lift: the one highlighted item of a group */
+.card-featured {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--color-surface-raised), var(--color-surface-raised)) padding-box,
+    var(--gradient-border) border-box;
+  box-shadow: var(--shadow-primary), var(--shadow-l);
+}
+
+.card-featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(80% 50% at 50% 0%, rgba(var(--color-primary-rgb), 0.1), transparent 70%);
+}
+
+/* Icon in a soft square, for feature cards and empty states */
+.icon-tile {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-md);
+  color: var(--color-primary-text);
+  background: var(--color-primary-soft);
+  box-shadow: inset 0 1px 0 var(--color-highlight), inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.18);
+}
+
+.icon-tile svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-tile-solid {
+  color: var(--color-on-primary);
+  background: var(--gradient-primary);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 25%), var(--shadow-primary);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -104,12 +161,12 @@
 /* ── Card semantic variants (primary) ───────────────────────────────────── */
 
 .card-primary {
-  border-color: var(--color-primary);
+  border-color: rgba(var(--color-primary-rgb), 0.55);
 }
 
 .card-primary .card-header {
-  background: var(--color-primary);
-  color: var(--color-text-alt);
+  background: var(--color-primary-soft);
+  color: var(--color-primary-text);
 }
 
 /* @ID: #07-01-05 */
@@ -117,49 +174,47 @@
 /* ── Card semantic variants (success, warning, error) ─────────────────────── */
 
 .card-success {
-  border-color: var(--color-success);
+  border-color: rgba(var(--color-success-rgb), 0.45);
 }
 
 .card-success .card-header {
-  background: var(--color-success);
-  color: var(--color-text-alt);
+  background: var(--color-success-light);
+  color: var(--color-success);
 }
 
 .card-warning {
-  border-color: var(--color-warning);
+  border-color: rgba(var(--color-warning-rgb), 0.45);
 }
 
 .card-warning .card-header {
-  background: var(--color-warning);
-  color: var(--color-text-alt);
+  background: var(--color-warning-light);
+  color: var(--color-warning);
 }
 
 .card-error {
-  border-color: var(--color-error);
+  border-color: rgba(var(--color-error-rgb), 0.45);
 }
 
 .card-error .card-header {
-  background: var(--color-error);
-  color: var(--color-text-alt);
+  background: var(--color-error-light);
+  color: var(--color-error);
 }
 
 /* @ID: #07-01-06 */
 
-/* ── Card accent — colored left border only ─────────────────────────────── */
+/* ── Card accent — colored top line ─────────────────────────────────────── */
 /*
   @title Card accent variants
-  @desc  Highlights only the left border with a semantic or palette color.
-         Combine with .card. The other three borders become transparent.
+  @desc  v3: a 3px colored line along the top edge (was a thick left border).
   @example
     <div class="card card-accent-primary"><div class="card-body">...</div></div>
-    <div class="card card-accent-success"><div class="card-body">...</div></div>
   @classes
-    .card-accent-primary   | left border in primary color
-    .card-accent-secondary | left border in secondary color
-    .card-accent-tertiary  | left border in tertiary color
-    .card-accent-success   | left border in success color
-    .card-accent-warning   | left border in warning color
-    .card-accent-error     | left border in error color
+    .card-accent-primary   | top line in primary color
+    .card-accent-secondary | top line in secondary color
+    .card-accent-tertiary  | top line in tertiary color
+    .card-accent-success   | top line in success color
+    .card-accent-warning   | top line in warning color
+    .card-accent-error     | top line in error color
 */
 
 .card-accent-primary,
@@ -168,18 +223,15 @@
 .card-accent-success,
 .card-accent-warning,
 .card-accent-error {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-width: 4px;
+  box-shadow: inset 0 3px 0 var(--card-accent), var(--shadow-s);
 }
 
-.card-accent-primary   { border-left-color: var(--color-primary); }
-.card-accent-secondary { border-left-color: var(--color-secondary); }
-.card-accent-tertiary  { border-left-color: var(--color-tertiary); }
-.card-accent-success   { border-left-color: var(--color-success); }
-.card-accent-warning   { border-left-color: var(--color-warning); }
-.card-accent-error     { border-left-color: var(--color-error); }
+.card-accent-primary   { --card-accent: var(--color-primary); }
+.card-accent-secondary { --card-accent: var(--color-secondary); }
+.card-accent-tertiary  { --card-accent: var(--color-tertiary); }
+.card-accent-success   { --card-accent: var(--color-success); }
+.card-accent-warning   { --card-accent: var(--color-warning); }
+.card-accent-error     { --card-accent: var(--color-error); }
 
 /* @ID: #07-01-07 */
 
@@ -197,20 +249,89 @@
 
 .card-group {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-6);
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 }
 
-/* @ID: #07-01-07 */
+/* @ID: #07-01-08 */
 
-/* ── Night mode & responsive ────────────────────────────────────────────── */
+/*
+ * Opt-in parent styling from child state (:has).
+ * Prefer scoped containers — do not put on body.
+ */
+.card-state:has(:focus-within) {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-focus), var(--shadow-m);
+}
 
-.night .card {
-  background: var(--gray-800);
-  border-color: var(--gray-700);
+.card-state:has(input:checked) {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+/* @ID: #07-01-09 */
+
+/*
+ * Content-based layout: row when media child present.
+ * Fallback class .has-image for @supports not :has().
+ */
+.card-media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+
+.card-media > .card-media-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-media:has(> img),
+.card-media:has(> .card-img),
+.card-media:has(> .card-img-top),
+.card-media.has-image {
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-media:has(> img) > img,
+.card-media:has(> .card-img) > .card-img,
+.card-media:has(> .card-img-top) > .card-img-top,
+.card-media.has-image > img,
+.card-media.has-image > .card-img,
+.card-media.has-image > .card-img-top {
+  width: 7.5rem;
+  max-width: 40%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.card-media:not(.has-image, :has(> img), :has(> .card-img), :has(> .card-img-top)) {
+  background: var(--color-surface-muted);
 }
 
 @media (width <= 639px) {
+  .card-media:has(> img),
+  .card-media:has(> .card-img),
+  .card-media:has(> .card-img-top),
+  .card-media.has-image {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-media:has(> img) > img,
+  .card-media:has(> .card-img) > .card-img,
+  .card-media:has(> .card-img-top) > .card-img-top,
+  .card-media.has-image > img,
+  .card-media.has-image > .card-img,
+  .card-media.has-image > .card-img-top {
+    width: 100%;
+    max-width: none;
+  }
+
   .card-horizontal {
     flex-direction: column;
   }

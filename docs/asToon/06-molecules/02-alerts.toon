@@ -1,16 +1,34 @@
 folder: 06-molecules
 file: 02-alerts.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: true
-totalSelectors: 34
-content[34]:
+totalSelectors: 43
+content[43]:
   - type: selector
     selectorType: class
     selector: .alert
     id: #06-02-01
     category: null
-    properties[5]: padding,border,border-radius,font-size,line-height
-    cssRule: "padding: var(--space-3) var(--space-4)\nborder: var(--border-width-s) solid transparent\nborder-radius: var(--radius-m)\nfont-size: var(--font-size-base)\nline-height: 1.5"
+    properties[11]: display,align-items,gap,padding,border,border-radius,background,box-shadow,color,font-size,line-height
+    cssRule: "display: flex\nalign-items: flex-start\ngap: var(--space-3)\npadding: 0.875rem var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-raised)\nbox-shadow: var(--shadow-xs)\ncolor: var(--color-text-base)\nfont-size: var(--font-size-s)\nline-height: 1.5"
+    responsive: false
+    description: ── Alert base ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert > svg
+    id: #06-02-01
+    category: null
+    properties[4]: flex,width,height,margin-top
+    cssRule: "flex: none\nwidth: 1.125rem\nheight: 1.125rem\nmargin-top: 0.0625rem"
+    responsive: false
+    description: ── Alert base ───────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert strong
+    id: #06-02-01
+    category: null
+    properties[2]: display,font-weight
+    cssRule: "display: block\nfont-weight: var(--font-weight-semibold)"
     responsive: false
     description: ── Alert base ───────────────────────────────────────────────────────────
   - type: selector
@@ -18,8 +36,17 @@ content[34]:
     selector: .alert-success
     id: #06-02-02
     category: null
-    properties[3]: background-color,border-color,color
-    cssRule: "background-color: rgba(var(--color-success-rgb), 0.1)\nborder-color: var(--color-success)\ncolor: var(--color-success)"
+    properties[3]: background-color,border-color,box-shadow
+    cssRule: "background-color: var(--color-success-light)\nborder-color: rgba(var(--color-success-rgb), 0.22)\nbox-shadow: none"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-success > svg
+    id: #06-02-02
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-success)"
     responsive: false
     description: ── Alert variants ───────────────────────────────────────────────────────
   - type: selector
@@ -27,8 +54,17 @@ content[34]:
     selector: .alert-warning
     id: #06-02-02
     category: null
-    properties[3]: background-color,border-color,color
-    cssRule: "background-color: rgba(var(--color-warning-rgb), 0.1)\nborder-color: var(--color-warning)\ncolor: var(--color-text-base)"
+    properties[3]: background-color,border-color,box-shadow
+    cssRule: "background-color: var(--color-warning-light)\nborder-color: rgba(var(--color-warning-rgb), 0.22)\nbox-shadow: none"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-warning > svg
+    id: #06-02-02
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-warning)"
     responsive: false
     description: ── Alert variants ───────────────────────────────────────────────────────
   - type: selector
@@ -36,8 +72,17 @@ content[34]:
     selector: .alert-error
     id: #06-02-02
     category: null
-    properties[3]: background-color,border-color,color
-    cssRule: "background-color: rgba(var(--color-error-rgb), 0.1)\nborder-color: var(--color-error)\ncolor: var(--color-text-base)"
+    properties[3]: background-color,border-color,box-shadow
+    cssRule: "background-color: var(--color-error-light)\nborder-color: rgba(var(--color-error-rgb), 0.22)\nbox-shadow: none"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-error > svg
+    id: #06-02-02
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-error)"
     responsive: false
     description: ── Alert variants ───────────────────────────────────────────────────────
   - type: selector
@@ -45,8 +90,17 @@ content[34]:
     selector: .alert-info
     id: #06-02-02
     category: null
-    properties[3]: background-color,border-color,color
-    cssRule: "background-color: rgba(var(--color-primary-rgb), 0.1)\nborder-color: var(--color-primary)\ncolor: var(--color-text-base)"
+    properties[3]: background-color,border-color,box-shadow
+    cssRule: "background-color: var(--color-primary-soft)\nborder-color: rgba(var(--color-primary-rgb), 0.22)\nbox-shadow: none"
+    responsive: false
+    description: ── Alert variants ───────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .alert-info > svg
+    id: #06-02-02
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-primary-text)"
     responsive: false
     description: ── Alert variants ───────────────────────────────────────────────────────
   - type: selector
@@ -90,10 +144,64 @@ content[34]:
     selector: .toast
     id: #06-02-04
     category: null
-    properties[11]: position,right,bottom,z-index,min-width,max-width,padding,background,border,border-radius,box-shadow
-    cssRule: "position: fixed\nright: var(--space-4)\nbottom: var(--space-4)\nz-index: 1000\nmin-width: 18rem\nmax-width: min(24rem, calc(100vw - var(--space-8)))\npadding: var(--space-3) var(--space-4)\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-l)"
+    properties[14]: position,right,bottom,z-index,min-width,max-width,padding,color,background,"-webkit-backdrop-filter",backdrop-filter,border,border-radius,box-shadow
+    cssRule: "position: fixed\nright: var(--space-4)\nbottom: var(--space-4)\nz-index: 1000\nmin-width: 18rem\nmax-width: min(24rem, calc(100vw - var(--space-8)))\npadding: var(--space-3) var(--space-4)\ncolor: var(--color-text-base)\nbackground: var(--color-glass)\n-webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%)\nbackdrop-filter: blur(var(--blur-md)) saturate(160%)\nborder: var(--border-width-s) solid var(--color-border-strong)\nborder-radius: var(--radius-lg)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)"
     responsive: true
     description: ── Toast ───────────────────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .toast-stack
+    id: #06-02-04b
+    category: null
+    properties[9]: position,right,bottom,z-index,display,flex-direction,gap,align-items,pointer-events
+    cssRule: "position: fixed\nright: var(--space-4)\nbottom: var(--space-4)\nz-index: 1000\ndisplay: flex\nflex-direction: column-reverse\ngap: var(--space-2)\nalign-items: flex-end\npointer-events: none"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
+  - type: selector
+    selectorType: class
+    selector: .toast-stack > .toast
+    id: #06-02-04b
+    category: null
+    properties[2]: position,pointer-events
+    cssRule: "position: static\npointer-events: auto"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
+  - type: selector
+    selectorType: complex
+    selector: "[popover].toast"
+    id: #06-02-04b
+    category: null
+    properties[16]: inset,margin,position,right,bottom,z-index,min-width,max-width,padding,color,background,"-webkit-backdrop-filter",backdrop-filter,border,border-radius,box-shadow
+    cssRule: "inset: unset\nmargin: 0\nposition: fixed\nright: var(--space-4)\nbottom: var(--toast-offset, var(--space-4))\nz-index: 1000\nmin-width: 18rem\nmax-width: min(24rem, calc(100vw - var(--space-8)))\npadding: var(--space-3) var(--space-4)\ncolor: var(--color-text-base)\nbackground: var(--color-glass)\n-webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%)\nbackdrop-filter: blur(var(--blur-md)) saturate(160%)\nborder: var(--border-width-s) solid var(--color-border-strong)\nborder-radius: var(--radius-lg)\nbox-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l)"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
+  - type: selector
+    selectorType: class
+    selector: .toast-body
+    id: #06-02-04b
+    category: null
+    properties[4]: display,align-items,justify-content,gap
+    cssRule: "display: flex\nalign-items: flex-start\njustify-content: space-between\ngap: var(--space-3)"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
+  - type: selector
+    selectorType: class
+    selector: .toast-message
+    id: #06-02-04b
+    category: null
+    properties[6]: flex,min-width,margin,font-size,line-height,color
+    cssRule: "flex: 1\nmin-width: 0\nmargin: 0\nfont-size: var(--font-size-s)\nline-height: 1.45\ncolor: var(--color-text-base)"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
+  - type: selector
+    selectorType: class
+    selector: .toast .alert-close
+    id: #06-02-04b
+    category: null
+    properties[3]: position,transform,flex-shrink
+    cssRule: "position: static\ntransform: none\nflex-shrink: 0"
+    responsive: false
+    description: "* Progressive: popover=\"manual\" toast stack (no light-dismiss).\n * Existing `.toast` fixed shell remains the default path."
   - type: selector
     selectorType: class
     selector: .snackbar
@@ -229,33 +337,6 @@ content[34]:
     cssRule: "background: var(--color-primary)"
     responsive: false
     description: ── Snackbar ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .alert-warning
-    id: #06-02-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--color-text-alt)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .alert-error
-    id: #06-02-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--color-text-alt)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .alert-info
-    id: #06-02-06
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--color-text-alt)"
-    responsive: false
-    description: ── Night mode ───────────────────────────────────────────────────────────
   - type: selector
     selectorType: class
     selector: .night .alert-close

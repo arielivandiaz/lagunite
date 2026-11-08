@@ -4,7 +4,8 @@
 > Trabajo de agente (RTP) = borrador técnico. Este doc = **tu** checklist de aceptación.  
 > Fecha apertura: 2026-09-15 · Versión candidata: `2.1.0`  
 > Relacionados: [`ToDo-prod.md`](./ToDo-prod.md) · [`FEATURES.md`](./FEATURES.md) · [`SUPPORT.md`](./SUPPORT.md) · [`CHANGELOG.md`](./CHANGELOG.md)  
-> **Pasada agente (atajo):** [`REVISION-v2.1-ariel.md`](./REVISION-v2.1-ariel.md) — hallazgos + prioridades; no reemplaza tu §8.
+> **Pasada agente (atajo):** [`REVISION-v2.1-ariel.md`](./REVISION-v2.1-ariel.md) — hallazgos + prioridades; no reemplaza tu §8.  
+> **Siguiente ciclo (Lab MWG):** [`REVISION-v2.2.md`](./REVISION-v2.2.md) — resume v2.1 + checklist `lab/recipes/`.
 
 ### Cómo usar
 1. Marca `[x]` solo cuando **vos** lo revisaste (ojo / teclado / navegador).

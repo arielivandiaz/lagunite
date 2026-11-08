@@ -1,0 +1,114 @@
+/* ==========
+   05-atoms / 11-progress-ring.css
+   Determinate circular progress via <progress class="progress-ring">.
+   ========== */
+
+/* @ID: #05-11-01 */
+
+@property --progress-ring-value {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.progress-ring-wrap {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+}
+
+progress.progress-ring {
+  --progress-ring-size: 6rem;
+  --progress-ring-thickness: 0.75rem;
+  --progress-ring-track: var(--gray-200);
+  --progress-ring-fill: var(--color-primary);
+  --progress-ring-value: 0;
+
+  appearance: none;
+  display: block;
+  width: var(--progress-ring-size);
+  height: var(--progress-ring-size);
+  border-radius: 50%;
+  border: var(--progress-ring-thickness) solid transparent;
+  background:
+    conic-gradient(
+      var(--progress-ring-fill) calc(var(--progress-ring-value) * 1%),
+      var(--progress-ring-track) 0
+    );
+  background-origin: border-box;
+  background-clip: border-box;
+  /* Hollow center — mask works wider than background-clip: border-area */
+  mask-image: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--progress-ring-thickness) - 0.5px),
+    #000 calc(100% - var(--progress-ring-thickness))
+  );
+  vertical-align: middle;
+  transition: --progress-ring-value 0s ease-in-out;
+}
+
+progress.progress-ring::-webkit-progress-bar,
+progress.progress-ring::-webkit-progress-value,
+progress.progress-ring::-moz-progress-bar {
+  display: none;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  progress.progress-ring {
+    transition-duration: 0.4s;
+  }
+}
+
+/* @ID: #05-11-02 */
+
+.progress-ring-s {
+  --progress-ring-size: 3rem;
+  --progress-ring-thickness: 0.4rem;
+}
+
+.progress-ring-l {
+  --progress-ring-size: 9rem;
+  --progress-ring-thickness: 1rem;
+}
+
+.progress-ring-content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-base);
+  pointer-events: none;
+}
+
+.progress-ring-s + .progress-ring-content,
+.progress-ring-wrap:has(.progress-ring-s) .progress-ring-content {
+  font-size: var(--font-size-xs);
+}
+
+.progress-ring-l + .progress-ring-content,
+.progress-ring-wrap:has(.progress-ring-l) .progress-ring-content {
+  font-size: var(--font-size-l);
+}
+
+/* Complete */
+progress.progress-ring[value='100'] {
+  --progress-ring-fill: var(--color-success);
+}
+
+/* @ID: #05-11-03 */
+
+.night progress.progress-ring {
+  --progress-ring-track: var(--gray-700);
+  --progress-ring-fill: var(--color-primary-light);
+}
+
+.night progress.progress-ring[value='100'] {
+  --progress-ring-fill: var(--color-success);
+}
+
+.night .progress-ring-content {
+  color: var(--color-text-alt);
+}

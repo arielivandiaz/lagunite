@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>POC · MD → Lagunite</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <!--
+    POC: markdown → Lagunite.
+    Live preview: app.js + sample.md (npm run dev → /pocs/md-to-lagunite/)
+    CLI blog entry:
+      node convert-to-html.mjs posts/hello.md
+      ./convert-to-html.sh posts/hello.md -o out/hello.html
+    Template: blog-template.html (shell fijo; {{CONTENT}} = cuerpo del post)
+  -->
+
+  <div class="container padd-v-l col gap">
+    <header class="col gap-s">
+      <div class="row jc-sb ai-c gap-s flex-wrap">
+        <p class="font-xs text-muted marg-0">pocs / md-to-lagunite</p>
+        <div class="row ai-c gap-xs" role="group" aria-label="Tema claro u oscuro">
+          <span class="color-text" aria-hidden="true" title="Claro">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+          </span>
+          <input type="checkbox" class="toggle" id="theme-toggle" />
+          <label for="theme-toggle" class="toggle-btn size-s">
+            <span class="sr-only">Activar modo noche</span>
+          </label>
+          <span class="color-text" aria-hidden="true" title="Noche">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <h1 class="font-xl bold color-text">Markdown → Lagunite HTML</h1>
+      <p class="font-s text-muted lh">
+        Traduce un <code>.md</code> a markup con clases Lagunite usando solo JS en el browser.
+        Directivas: <code>:::card</code>, <code>:::alert info</code>; fence
+        <code>```lagunite</code> inserta HTML de confianza (solo POC).
+      </p>
+    </header>
+
+    <div class="row ai-c gap-s flex-wrap">
+      <button type="button" id="btn-sample" class="btn size-s">Load sample.md</button>
+      <button type="button" id="btn-clear" class="btn alt size-s">Clear</button>
+      <label class="btn alt size-s cursor-pointer">
+        Choose .md file
+        <input id="md-file" type="file" accept=".md,text/markdown,text/plain" class="d-none" />
+      </label>
+      <label class="row ai-c gap-xs font-s text-muted">
+        <input id="show-html" type="checkbox" />
+        Show HTML output
+      </label>
+      <p id="status" class="font-xs text-muted marg-0" role="status"></p>
+    </div>
+
+    <div class="grid xgrid-cols-1 dgrid-cols-2 gap">
+      <section class="col gap-s">
+        <h2 class="font-m bold color-text">Markdown</h2>
+        <label class="sr-only" for="md-editor">Markdown source</label>
+        <textarea
+          id="md-editor"
+          class="input font-s"
+          rows="22"
+          spellcheck="false"
+          placeholder="# Heading…"
+        ></textarea>
+      </section>
+
+      <section class="col gap-s">
+        <h2 class="font-m bold color-text">Preview</h2>
+        <div id="preview" class="card">
+          <div class="card-body col gap">
+            <p class="font-s text-muted marg-0">Loading…</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="html-panel" class="col gap-s d-none">
+      <h2 class="font-m bold color-text">HTML fragment</h2>
+      <pre id="html-out" class="bg-surface padd-s border-r overflow-auto font-xs"></pre>
+    </section>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

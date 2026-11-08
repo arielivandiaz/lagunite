@@ -1,5 +1,6 @@
 {
 	"workbench.editorAssociations": {
 		"*.md": "default"
-	}
+	},
+	"liveServer.settings.port": 5501
 }

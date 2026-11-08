@@ -38,6 +38,7 @@ xl  = --space-16 (64px)
 ```
 Types:  .pos-static  .pos-relative  .pos-absolute  .pos-fixed  .pos-sticky
 Short:  .rel (relative)  .abs (absolute)
+Sticky stuck:  .sticky-section  .sticky-state  .sticky-surface
 ```
 
 ### Absolute shortcuts (pa-)
@@ -92,6 +93,7 @@ Horizontal: .separator-h-xs  .separator-h-s  .separator-h  .separator-h-l  .sepa
 .overflow-auto  .overflow-hidden  .overflow-visible  .overflow-scroll
 .overflow-x-*   .overflow-y-*
 .scrollbar-thin  .scrollbar-none
+.scroll-state  .scroll-hint-top  .scroll-hint-bottom
 ```
 
 ## Size (08-size.css)

@@ -13,17 +13,12 @@
 
 .text-muted,
 .color-muted {
-  color: var(--gray-600);
-}
-
-.night .text-muted,
-.night .color-muted {
-  color: var(--gray-400);
+  color: var(--color-text-muted);
 }
 
 /* @ID: #02-02-02 */
 .color-primary {
-  color: var(--color-primary);
+  color: var(--color-primary-text);
 }
 
 .color-primary-light {

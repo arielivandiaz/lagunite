@@ -1,6 +1,6 @@
 # Lagunite Framework — Quick Reference
 
-> Condensed class tables for all layers. For full detail, read the skill files listed in CLAUDE.md.
+> Condensed class tables for all layers. For full detail, read the skill files listed in [`AGENTS.md`](../AGENTS.md).
 
 ## Breakpoints
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · light-dismiss-a-dialog — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>light-dismiss-a-dialog</code></p>
+      <h1 class="font-xl bold color-text">Light-dismiss a dialog</h1>
+      <p class="font-s text-muted">
+        <code>closedby="any"</code> closes the modal on backdrop click (and Esc).
+        Always open with <code>showModal()</code>. Safari needs a small click fallback today.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Open the dialog, then click the dimmed backdrop or press Esc.
+    </div>
+
+    <section class="card">
+      <div class="card-body col gap">
+        <p class="font-s text-muted marg-0">Native dialog + Lagunite <code>.modal</code> regions.</p>
+        <button type="button" class="btn" id="open-feedback">Open feedback</button>
+      </div>
+    </section>
+
+    <dialog id="feedback-dialog" class="modal" closedby="any" aria-labelledby="feedback-title">
+      <form method="dialog">
+        <div class="modal-header">
+          <h2 class="modal-title" id="feedback-title">Feedback</h2>
+          <button type="submit" class="modal-close" aria-label="Close">×</button>
+        </div>
+        <div class="modal-body col gap-s">
+          <p class="font-s text-muted marg-0">Click outside this box or press Esc to dismiss.</p>
+          <div class="form-group marg-0">
+            <label class="form-label" for="msg">Message</label>
+            <textarea class="input" id="msg" name="msg" rows="3" placeholder="What should we improve?"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn ghost" value="cancel">Cancel</button>
+          <button type="submit" class="btn" value="send">Send</button>
+        </div>
+      </form>
+    </dialog>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes / attrs</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>dialog.modal</code> + <code>closedby="any"</code></li>
+        <li><code>showModal()</code> (not non-modal <code>show()</code>)</li>
+        <li><code>form method="dialog"</code> for close buttons</li>
+        <li>Legacy: overlay click on <code>.modal-overlay</code> is app JS — prefer native when possible</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>ai/skills/compounds.md</code> ·
+      Guide: <code>npx modern-web-guidance@latest retrieve light-dismiss-a-dialog</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const dialog = document.getElementById('feedback-dialog');
+    document.getElementById('open-feedback')?.addEventListener('click', () => {
+      dialog?.showModal();
+    });
+
+    /* Safari / older: closedby not supported */
+    if (dialog && !('closedBy' in HTMLDialogElement.prototype)) {
+      dialog.addEventListener('click', (event) => {
+        if (event.target !== dialog) return;
+        const rect = dialog.getBoundingClientRect();
+        const inside =
+          rect.top <= event.clientY &&
+          event.clientY <= rect.top + rect.height &&
+          rect.left <= event.clientX &&
+          event.clientX <= rect.left + rect.width;
+        if (!inside) dialog.close();
+      });
+    }
+  </script>
+</body>
+</html>

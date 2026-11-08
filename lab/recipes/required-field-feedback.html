@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · required-field-feedback — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>required-field-feedback</code></p>
+      <h1 class="font-xl bold color-text">Required field feedback</h1>
+      <p class="font-s text-muted">
+        Empty <code>required</code> fields stay neutral on load. They only go red after blur or submit
+        (<code>:user-invalid</code>).
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Open the page: no red borders. Focus a field, leave it empty, or hit Submit.
+    </div>
+
+    <form class="card" id="required-form" action="#" method="post" novalidate>
+      <div class="card-header">Checkout contact</div>
+      <div class="card-body col gap">
+        <div class="form-group">
+          <label class="form-label" for="full-name">Full name</label>
+          <input
+            class="input"
+            id="full-name"
+            name="full-name"
+            type="text"
+            required
+            autocomplete="name"
+            placeholder="Ada Lovelace"
+            aria-errormessage="name-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="name-error">This field is required.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone</label>
+          <input
+            class="input"
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            autocomplete="tel"
+            placeholder="+1 555 0100"
+            aria-errormessage="phone-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="phone-error">Phone is required.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="notes">Notes (optional)</label>
+          <textarea class="input" id="notes" name="notes" rows="2" placeholder="Delivery notes"></textarea>
+        </div>
+
+        <div class="row jc-fe ai-c gap-s">
+          <button type="submit" class="btn">Continue</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>required</code> on controls + <code>.input</code></li>
+        <li><code>.form-error-msg.reveal-user-invalid</code></li>
+        <li>Do not put <code>.has-error</code> on load for empty required fields</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>ai/skills/validate-forms.md</code> ·
+      Guide: <code>npx modern-web-guidance@latest retrieve required-field-feedback</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const form = document.getElementById('required-form');
+    const syncAria = (input) => {
+      if (!input?.matches?.('input, textarea, select')) return;
+      if (input.matches(':user-invalid')) input.setAttribute('aria-invalid', 'true');
+      else input.removeAttribute('aria-invalid');
+    };
+
+    form?.addEventListener('blur', (e) => {
+      if (e.target.matches('[required]')) syncAria(e.target);
+    }, true);
+
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.querySelectorAll('[required]').forEach(syncAria);
+      if (form.checkValidity()) form.reset();
+    });
+
+    form?.addEventListener('input', (e) => {
+      if (e.target.matches('[required]') && e.target.checkValidity()) {
+        e.target.removeAttribute('aria-invalid');
+      }
+    });
+  </script>
+</body>
+</html>

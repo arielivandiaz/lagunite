@@ -30,6 +30,14 @@
 ### Forms a11y
 - Error text tied to the field (`.form-error-msg` in the same `.form-group`)
 - Don’t use color alone for errors (keep the message)
+- Prefer showing native errors only after interaction (`:user-invalid` / `.reveal-user-invalid`)
+- Sync `aria-invalid` to match `:user-invalid` on blur/focus/input — **never** `aria-invalid="true"` on load for empty required fields (recipe `accessible-error-announcement`)
+- Prefer `aria-errormessage` (+ `aria-describedby` for broader AT) pointing at the error node
+
+### Dialogs
+- Prefer native `<dialog class="modal">` with accessible name (`aria-labelledby` / `aria-label`)
+- Light-dismiss: `closedby="any"` + `showModal()` (fallback click on dialog target if unsupported)
+- Invoker Commands: `command` / `commandfor` when available; provide showModal/close fallback
 
 ---
 

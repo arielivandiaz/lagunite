@@ -160,3 +160,36 @@
   .dbackdrop-blur      { backdrop-filter: blur(8px); }
   .dbackdrop-blur-l    { backdrop-filter: blur(16px); }
 }
+
+/* @ID: #04-08-09 */
+
+/*
+ * Soft-edge content fade via mask (content itself fades; no overlay).
+ * Pair with overflow-y-auto when used as a scroll teaser.
+ */
+.fade-edge-b {
+  -webkit-mask-image: linear-gradient(to bottom, #000 75%, transparent);
+  mask-image: linear-gradient(to bottom, #000 75%, transparent);
+}
+
+.fade-edge-t {
+  -webkit-mask-image: linear-gradient(to top, #000 75%, transparent);
+  mask-image: linear-gradient(to top, #000 75%, transparent);
+}
+
+.fade-edge-y {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}

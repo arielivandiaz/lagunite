@@ -2,7 +2,7 @@
 
 > Tables, lists, figures, badges, and avatars. Use when building data display components, lists, geometric shapes, status indicators, or user identity elements.
 
-**Source files:** `src/css/05-atoms/` (`01-buttons.css`, `02-inputs.css`, `03-table.css`, `04-lists.css`, `05-figures.css`, `06-badges.css`, `07-avatars.css`, `08-chips.css`, `09-tags.css`)
+**Source files:** `src/css/05-atoms/` (`01-buttons.css`, `02-inputs.css`, `03-table.css`, `04-lists.css`, `05-figures.css`, `06-badges.css`, `07-avatars.css`, `08-chips.css`, `09-tags.css`, `10-spinner.css`, `11-progress-ring.css`)
 
 **Cheatsheet:** `src/css/05-atoms/ATOMS-CHEATSHEET.md`
 
@@ -17,7 +17,12 @@
 5. **Avatars** default to 40px circle; add size/shape classes on the same node.
 6. **Responsive:** list utilities use `xlist-*` (mobile) and `dlist-*` (desktop).
 7. **Night mode:** add `.night` on an ancestor. Badges and avatars include `.night` overrides.
-8. **Native input validation colors** (green/red borders) only apply when the control has a **`placeholder`**. Empty fields stay neutral; filled `:valid` → green; filled `:invalid` → red. Prefer class toggles `.form-group.has-error` / `.has-success` for explicit app validation.
+8. **Native input validation colors** use `:user-invalid` / `:user-valid` (after blur or submit), not raw `:invalid`/`:valid`. Error red needs no placeholder; success green still gates on `[placeholder]` + filled. Prefer `.form-group.has-error` / `.has-success` for app-owned validation. See `validate-forms.md`.
+9. **Spinner:** `.spinner` / `.spinner-s` / `.spinner-l`, or `<progress class="spinner" aria-label="Loading">` without `value`. Recipe: `lab/recipes/spinner.html`.
+10. **Progress ring (determinate):** `<progress class="progress-ring" value="N" max="100">` inside `.progress-ring-wrap`; set `--progress-ring-value` to match. Sizes: `.progress-ring-s` / `.progress-ring-l`. Recipe: `lab/recipes/progress-ring.html`.
+11. **Autofill chrome:** `:autofill` / `:-webkit-autofill` tint on `.input` (progressive).
+12. **Fit contents:** `.input-fit` / `.field-sizing` → `field-sizing: content` (resets `width: 100%`).
+13. **Customizable select:** `.select-base` behind `@supports (appearance: base-select)`.
 
 ## Tables
 
@@ -130,3 +135,21 @@
 - Do NOT put block content inside `.badge` — `white-space: nowrap` is intentional.
 - Do NOT mix `avatar-group` and `avatar-stack` on the same element — wrappers differ.
 - Do NOT assume `.triangle` or `.point` behave like flex boxes.
+
+---
+
+## v3 additions (Lagunite 3 skin)
+
+| Class | Use |
+| --- | --- |
+| `.btn` | Gradient with top highlight + colored lift; hover rises 1px, press scales 0.98 |
+| `.btn.soft` | Tinted primary (`--color-primary-soft`) for supporting actions |
+| `.btn.glass` | Glass button — only over `.bg-mesh` / `.bg-grid` / images |
+| `.btn.pill` | Full radius (hero CTAs) |
+| `.btn .btn-arrow` | SVG that nudges right on hover |
+| `.btn.error` | Solid destructive (`--color-danger-fill`); `.success` / `.warning` stay soft |
+| `.kbd` | Keyboard hint inside buttons and menus |
+| `.badge-*` (solid) | Gradient fills; `.badge-*-light` = soft tint, AA text in both themes |
+| `.badge-announce` | Glass pill above hero titles; can contain a `.badge` |
+
+Chips (`.chip-*`) keep their own vivid palette and are **legacy** in v3: prefer `.badge-*-light` for status.

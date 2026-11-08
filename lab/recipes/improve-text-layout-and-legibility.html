@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · improve-text-layout-and-legibility — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/3 · MWG <code>improve-text-layout-and-legibility</code></p>
+      <h1 class="font-xl bold color-text">Text layout &amp; legibility</h1>
+      <p class="font-s text-muted">
+        <code>.text-balance</code> for short titles · <code>.text-pretty</code> for body copy —
+        progressive enhancement (<code>text-wrap</code>).
+      </p>
+    </header>
+
+    <div class="alert alert-warning" role="status">
+      Do not apply balance globally — expensive. Limit to headings / short blocks (≈6–10 lines).
+      <code>pretty</code> is limited in Firefox (ignored → default wrap).
+    </div>
+
+    <section class="card">
+      <div class="card-body col gap">
+        <h2 class="font-xl bold text-balance marg-0">
+          Balanced headings distribute line lengths instead of a lonely last word
+        </h2>
+        <p class="font-s text-muted marg-0">← <code>.text-balance</code> on the heading</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-body col gap">
+        <h2 class="font-l bold marg-0">Body with pretty wrap</h2>
+        <p class="font-s text-pretty text-muted marg-0">
+          Lagunite keeps typography utilities lean. Pretty wrapping reduces awkward orphans at the
+          end of paragraphs so marketing copy and long help text feel more intentional without
+          shipping a layout library. Resize the viewport to compare how lines break against a
+          default paragraph without the class.
+        </p>
+        <p class="font-s text-muted marg-0">← <code>.text-pretty</code> on the paragraph</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-body col gap">
+        <h2 class="font-l bold marg-0">Default wrap (control)</h2>
+        <p class="font-s text-muted marg-0">
+          Lagunite keeps typography utilities lean. Pretty wrapping reduces awkward orphans at the
+          end of paragraphs so marketing copy and long help text feel more intentional without
+          shipping a layout library. Resize the viewport to compare how lines break against a
+          default paragraph without the class.
+        </p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.text-balance</code> → <code>text-wrap: balance</code></li>
+        <li><code>.text-pretty</code> → <code>text-wrap: pretty</code></li>
+        <li>Pair with <code>.container-s</code> / prose width — wrap does not shrink the box</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>ai/skills/typography.md</code> ·
+      Guide: <code>retrieve improve-text-layout-and-legibility</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

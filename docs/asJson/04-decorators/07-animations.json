@@ -1,9 +1,9 @@
 {
   "folder": "04-decorators",
   "file": "07-animations.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": true,
-  "totalSelectors": 61,
+  "totalSelectors": 70,
   "content": [
     {
       "type": "selector",
@@ -808,6 +808,184 @@
       "cssRule": "animation-direction: alternate",
       "responsive": false,
       "description": "** Animation Direction Helpers **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "from",
+      "id": "#04-07-07",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: scaleX(0)",
+      "responsive": false,
+      "description": "** Animation Direction Helpers **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "to",
+      "id": "#04-07-07",
+      "category": null,
+      "properties": [
+        "transform"
+      ],
+      "cssRule": "transform: scaleX(1)",
+      "responsive": false,
+      "description": "** Animation Direction Helpers **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".scroll-progress",
+      "id": "#04-07-07",
+      "category": null,
+      "properties": [
+        "position",
+        "top",
+        "left",
+        "z-index",
+        "width",
+        "height",
+        "pointer-events",
+        "background",
+        "transform-origin",
+        "animation",
+        "animation-timeline"
+      ],
+      "cssRule": "position: fixed\ntop: 0\nleft: 0\nz-index: 200\nwidth: 100%\nheight: 3px\npointer-events: none\nbackground: var(--color-primary)\ntransform-origin: 0 50%\nanimation: scroll-progress-grow auto linear\nanimation-timeline: scroll()",
+      "responsive": false,
+      "description": "** Animation Direction Helpers **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".night .scroll-progress",
+      "id": "#04-07-07",
+      "category": null,
+      "properties": [
+        "background"
+      ],
+      "cssRule": "background: var(--color-primary-light)",
+      "responsive": false,
+      "description": "** Animation Direction Helpers **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".stagger > *",
+      "id": "#04-07-12",
+      "category": null,
+      "properties": [
+        "--stagger-time",
+        "--sibling-index",
+        "animation",
+        "animation-delay",
+        "animation-delay"
+      ],
+      "cssRule": "--stagger-time: 0.08s\n--sibling-index: 1\nanimation: fade-in 0.4s ease-out both\nanimation-delay: calc(var(--sibling-index) * var(--stagger-time))\nanimation-delay: calc(sibling-index() * var(--stagger-time))",
+      "responsive": false,
+      "description": "* Stagger children via sibling-index() (progressive).\r\n * JS fallback sets --sibling-index (1-based) when unsupported."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sibling-vars",
+      "id": "#04-07-13",
+      "category": null,
+      "properties": [
+        "--sibling-index",
+        "--sibling-count"
+      ],
+      "cssRule": "--sibling-index: 1\n--sibling-count: 1",
+      "responsive": false,
+      "description": "* Sibling index/count vars for dynamic styling.\r\n * Optional JS injects --sibling-index / --sibling-count when unsupported."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sibling-vars",
+      "id": "#04-07-13",
+      "category": null,
+      "properties": [
+        "--sibling-index",
+        "--sibling-count"
+      ],
+      "cssRule": "--sibling-index: sibling-index()\n--sibling-count: sibling-count()",
+      "responsive": false,
+      "description": "* Sibling index/count vars for dynamic styling.\r\n * Optional JS injects --sibling-index / --sibling-count when unsupported."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sibling-hue",
+      "id": "#04-07-13",
+      "category": null,
+      "properties": [
+        "--sibling-index",
+        "--sibling-count",
+        "background-color"
+      ],
+      "cssRule": "--sibling-index: 1\n--sibling-count: 1\nbackground-color: hsl(\r\n    calc(360deg / var(--sibling-count) * var(--sibling-index)),\r\n    65%,\r\n    48%\r\n  )",
+      "responsive": false,
+      "description": "* Sibling index/count vars for dynamic styling.\r\n * Optional JS injects --sibling-index / --sibling-count when unsupported."
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".sibling-hue",
+      "id": "#04-07-13",
+      "category": null,
+      "properties": [
+        "--sibling-index",
+        "--sibling-count"
+      ],
+      "cssRule": "--sibling-index: sibling-index()\n--sibling-count: sibling-count()",
+      "responsive": false,
+      "description": "* Sibling index/count vars for dynamic styling.\r\n * Optional JS injects --sibling-index / --sibling-count when unsupported."
+    }
+  ],
+  "customProperties": [
+    {
+      "property": "--stagger-time",
+      "value": "0.08s"
+    },
+    {
+      "property": "--sibling-index",
+      "value": "1"
+    },
+    {
+      "property": "--sibling-index",
+      "value": "1"
+    },
+    {
+      "property": "--sibling-count",
+      "value": "1"
+    },
+    {
+      "property": "--sibling-index",
+      "value": "sibling-index()"
+    },
+    {
+      "property": "--sibling-count",
+      "value": "sibling-count()"
+    },
+    {
+      "property": "--sibling-index",
+      "value": "1"
+    },
+    {
+      "property": "--sibling-count",
+      "value": "1"
+    },
+    {
+      "property": "--sibling-index",
+      "value": "sibling-index()"
+    },
+    {
+      "property": "--sibling-count",
+      "value": "sibling-count()"
     }
   ]
 }

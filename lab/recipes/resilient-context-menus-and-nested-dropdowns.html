@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · resilient-context-menus-and-nested-dropdowns — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 2/3 · MWG <code>resilient-context-menus-and-nested-dropdowns</code></p>
+      <h1 class="font-xl bold color-text">Resilient action panel</h1>
+      <p class="font-s text-muted">
+        Default: <code>.dropdown</code> + <code>.open</code>. Progressive: Popover +
+        <code>.dropdown-trigger</code> / <code>.dropdown-panel</code> with
+        <code>position-try-fallbacks</code> (flip near edges).
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      This is a <strong>button group in a popover</strong>, not a full ARIA menu.
+      Do not add <code>role="menu"</code> / <code>aria-haspopup</code> unless you implement arrow-key navigation.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Classic (.open)</div>
+      <div class="card-body">
+        <div class="dropdown" id="classic-dd">
+          <button type="button" class="btn dropdown-toggle" id="classic-toggle">
+            Actions
+          </button>
+          <ul class="dropdown-menu">
+            <li><button type="button" class="dropdown-item">Edit</button></li>
+            <li><button type="button" class="dropdown-item">Duplicate</button></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><button type="button" class="dropdown-item">Delete</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Popover + anchor (progressive)</div>
+      <div class="card-body col gap">
+        <button
+          type="button"
+          class="btn dropdown-trigger"
+          popovertarget="action-panel"
+        >
+          Open actions
+        </button>
+        <div id="action-panel" class="dropdown-panel" popover="auto">
+          <button type="button" class="dropdown-item">Edit</button>
+          <button type="button" class="dropdown-item">Share</button>
+          <hr class="dropdown-divider" />
+          <button type="button" class="dropdown-item">Archive</button>
+        </div>
+        <p class="font-xs text-muted marg-0">
+          Place the trigger near a viewport corner to see flip. Without anchor support,
+          the popover still opens (UA default placement).
+        </p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.dropdown</code> · <code>.open</code> · <code>.dropdown-menu</code> · <code>.dropdown-item</code></li>
+        <li><code>.dropdown-trigger</code> · <code>.dropdown-panel</code> (+ Popover API)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>molecules</code> · Guide: <code>retrieve resilient-context-menus-and-nested-dropdowns</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+    document.getElementById('classic-toggle')?.addEventListener('click', () => {
+      document.getElementById('classic-dd')?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

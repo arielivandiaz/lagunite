@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · autofill-sign-in-form — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>autofill-sign-in-form</code></p>
+      <h1 class="font-xl bold color-text">Autofill sign-in form</h1>
+      <p class="font-s text-muted">
+        Real <code>&lt;form&gt;</code>, correct <code>type</code> / <code>autocomplete</code> /
+        <code>enterkeyhint</code>, and Lagunite form molecules — so password managers can help.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Labels say “Sign in”. Use <code>autocomplete="username"</code> + <code>current-password</code>
+      (not <code>new-password</code>).
+    </div>
+
+    <form class="card" id="signin" action="#" method="post">
+      <div class="card-header">Sign in</div>
+      <div class="card-body col gap">
+        <div class="form-group">
+          <label class="form-label" for="username">Email</label>
+          <input
+            class="input"
+            id="username"
+            name="username"
+            type="email"
+            required
+            autocomplete="username"
+            inputmode="email"
+            enterkeyhint="next"
+            placeholder="you@company.com"
+            aria-errormessage="username-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="username-error">Enter a valid email.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input
+            class="input"
+            id="password"
+            name="password"
+            type="password"
+            required
+            autocomplete="current-password"
+            enterkeyhint="done"
+            minlength="8"
+            placeholder="Your password"
+            aria-errormessage="password-error"
+          />
+          <p class="form-error-msg reveal-user-invalid" id="password-error">Password is required.</p>
+        </div>
+
+        <label class="row ai-c gap-s font-s">
+          <input type="checkbox" name="remember" id="remember" class="accent-primary" />
+          Remember me on this device
+        </label>
+
+        <button type="submit" class="btn size-l marg-0 wp100">Sign in</button>
+        <p class="font-s ta-c marg-0">
+          <a class="color-primary" href="#">Forgot password?</a>
+        </p>
+      </div>
+    </form>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Checklist</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li>One <code>&lt;form&gt;</code> · submit is a real <code>&lt;button&gt;</code></li>
+        <li><code>autocomplete="username"</code> + <code>current-password</code></li>
+        <li><code>type="email"</code> · <code>enterkeyhint</code> on mobile</li>
+        <li>Button copy: “Sign in”, not “Submit”</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skills: <code>validate-forms</code> · <code>patterns</code> ·
+      Guide: <code>retrieve autofill-sign-in-form</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+    document.getElementById('signin')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (e.target.checkValidity()) e.target.reset();
+    });
+  </script>
+</body>
+</html>

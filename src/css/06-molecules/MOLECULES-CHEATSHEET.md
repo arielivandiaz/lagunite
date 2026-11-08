@@ -12,6 +12,8 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 |---------|--------------|
 | `.form-group` | Vertical stack for label, control, help, and validation text. |
 | `.form-label` / `.form-help` / `.form-error-msg` | Label and helper/error text styling. |
+| `.form-error-msg.reveal-user-invalid` | Hide error until control is `:user-invalid` (blur/submit). |
+| `.form-surface` | Opt-in ancestor; `:has(:user-invalid)` tints border. |
 | `.form-group.has-error` / `.has-success` | Validation state styling on the group root. |
 | `.input-group`, `.input-group-prepend`, `.input-group-append` | Inline control with leading/trailing addons. |
 | `.form-row` | Flexible row wrapper for multiple form groups. |
@@ -23,7 +25,8 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 | `.alert` | Base alert container. |
 | `.alert-success` / `.alert-warning` / `.alert-error` / `.alert-info` | Semantic alert variants. |
 | `.alert-dismissible` / `.alert-close` | Extra padding and positioned dismiss control. |
-| `.toast` | Fixed-position toast shell. |
+| `.toast` / `.toast-stack` / `.toast-body` / `.toast-message` | Toast shell, non-popover stack, inner layout. |
+| `[popover].toast` | Manual popover toast; stack with `--toast-offset`. |
 | `.snackbar` / `.open` | Bottom-centered transient feedback shell and visible state. |
 | `.snackbar-message` | Main text block inside the snackbar. |
 | `.snackbar-action` / `.snackbar-close` | Inline action and dismiss controls. |
@@ -38,6 +41,7 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 | `.dropdown-menu` / `.dropdown-menu-right` | Floating panel, optionally right-aligned. |
 | `.dropdown-item` / `.active` | Clickable menu rows. |
 | `.dropdown-header` / `.dropdown-divider` | Section labels and separators. |
+| `.dropdown-trigger` / `.dropdown-panel` | Progressive Popover + CSS Anchor Positioning. |
 
 ## `04-tooltip.css`
 
@@ -45,6 +49,8 @@ Responsive note: unless a class says otherwise, molecule classes are breakpoint-
 |-----------------|--------------|
 | `data-tooltip="..."` | Required text source for tooltip content. |
 | `.tooltip-bottom` / `.tooltip-left` / `.tooltip-right` | Optional placement overrides. Default is above. |
+| `.tooltip-anchor` / `.tooltip-popover` | Progressive Popover + CSS Anchor Positioning (`@supports`). |
+| `.tooltip-hint` | Interest invoker chrome (`popover="hint"` + `interestfor`). |
 
 ## `05-breadcrumb.css`
 

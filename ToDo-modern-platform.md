@@ -88,7 +88,7 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 
 | MWG id | Bucket | Skill / capa | Muestra | Nota |
 | --- | --- | --- | --- | --- |
-| accessible-error-announcement | **3** | validate-a11y · validate-forms | todo | Sync `aria-invalid` con feedback post-interact (`.form-error-msg` / `:user-invalid`) |
+| accessible-error-announcement | **3** | validate-a11y · validate-forms | **done** | recipe `lab/recipes/accessible-error-announcement.html` |
 
 ### built-in-ai (4) — fuera del core
 
@@ -105,16 +105,16 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | --- | --- | --- | --- | --- |
 | animate-to-intrinsic-sizes | **1** / 3 | decorators | todo | Auditar si hay utility; si no → GAP o token motion + recipe |
 | calculate-with-intrinsic-sizes | **1** | spacing · containers | todo | Candidato `calc-size` / docs; Baseline check |
-| child-state-based-styling | **3** | compose · colors | todo | `:has()` ya en matriz; recipe + skill |
-| content-based-styling | **3** | compose · flex | todo | `:has()` layouts |
+| child-state-based-styling | **1** / 2 | compounds | done | `.card-state:has(...)` |
+| content-based-styling | **3** | compounds | done | `.card-media:has(...)` |
 | design-token-reactivity | **3** | tokens | todo | Ya tokens CSS; skill “density/theme via vars” |
-| dynamic-sibling-styling | **1** | misc · decorators | todo | `sibling-index()` — Baseline; utility o GAP |
-| fluid-scaling | **1** | typography · spacing | todo | Container-based fluid; hoy `x*`/`d*` |
+| dynamic-sibling-styling | **1** | decorators | done | `.sibling-hue` / `.sibling-vars` |
+| fluid-scaling | **1** | containers | done | `.font-cq` / `.padd-cq` + `.cq` |
 | individual-transform-properties | **3** | decorators | todo | Si existen utils translate/rotate/scale → skill; else GAP |
-| overflow-clipping-control | **1** | spacing · misc | todo | `overflow: clip` / clip-margin |
+| overflow-clipping-control | **1** | spacing | done | `.overflow-clip` / `.clip-margin-*` |
 | reduce-style-repetition | 6 | — | n/a | `@function` CSS — no skill Lagunite aún |
-| size-aware-styling | **1** | containers · grid | todo | Container queries — gran candidato v2.2 |
-| style-parent-with-has | **3** | validate-forms | todo | `.form-group:has(:user-invalid)` recipe |
+| size-aware-styling | **1** | containers · grid | **done** | `.cq` + `.cq-row` / show-m · recipe |
+| style-parent-with-has | **3** | validate-forms | **done** | `.form-surface` + label `:has` · recipe |
 | usage-aware-component-variations | **1** | tokens · compose | todo | Style queries — experimental; GAP o Lab |
 
 ### forms (15) — oleada O1
@@ -122,20 +122,20 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | MWG id | Bucket | Skill / capa | Muestra | Nota |
 | --- | --- | --- | --- | --- |
 | animated-select-picker | **2** / 3 | molecules · atoms | todo | Customizable select vs picker-wheel |
-| autofill-address-form | **3** | validate-forms · patterns | todo | `autocomplete` + `.form-group` |
-| autofill-highlight-inputs | **1** / 3 | atoms · colors | todo | Estilo `:autofill` si falta en CSS |
+| autofill-address-form | **3** | validate-forms · patterns | **done** | recipe |
+| autofill-highlight-inputs | **1** / 3 | atoms · colors | **done** | `:autofill` tint · recipe |
 | autofill-payment-form | **3** | validate-forms · patterns | todo | Recipe auth/pay |
-| autofill-sign-in-form | **3** | validate-forms · patterns | partial | Hay POC mobile login |
-| autofill-sign-up-form | **3** | validate-forms · patterns | todo | |
-| brand-consistent-forms | **1** / 3 | atoms · tokens | todo | `accent-color` token si falta |
-| branded-select-styling | **1** / 2 | atoms · molecules | todo | Select appearance vs custom |
+| autofill-sign-in-form | **3** | validate-forms · patterns | **done** | recipe `lab/recipes/autofill-sign-in-form.html` |
+| autofill-sign-up-form | **3** | validate-forms · patterns | **done** | recipe |
+| brand-consistent-forms | **1** / 3 | atoms · tokens | **done** | root `accent-color` + `.accent-*` · recipe |
+| branded-select-styling | **1** / 2 | atoms · molecules | **done** | `.select-base` · recipe |
 | custom-select-picker-layouts | **2** | molecules | todo | Cercano selectable / picker |
-| form-fields-automatically-fit-contents | **1** | atoms | todo | `field-sizing` — Baseline |
+| form-fields-automatically-fit-contents | **1** | atoms | **done** | `.input-fit` · recipe |
 | ime-safe-enter-submit | **3** | validate-forms | todo | Skill JS note (no CSS) |
-| required-field-feedback | **3** (+1?) | validate-forms | todo | Prefer `:user-invalid`; evaluar CSS gate placeholder |
-| rich-media-picker | **2** / 3 | molecules · selectable | partial | selectable-option / chips |
+| required-field-feedback | **3** | validate-forms | **done** | recipe `lab/recipes/required-field-feedback.html` |
+| rich-media-picker | **2** / 3 | molecules · selectable | **done** | selectable-option + select-base recipe |
 | select-menu-interaction | **3** | validate-forms | todo | |
-| validate-input-after-interaction | **1** / 3 | validate-forms · atoms | todo | **P0** — migrar mental model `:valid`→`:user-invalid` |
+| validate-input-after-interaction | **1** / 3 | validate-forms · atoms | **done** | CSS `:user-*` + `.reveal-user-invalid` · recipe `lab/recipes/…` |
 
 ### js (8) — fuera / Lab app
 
@@ -158,9 +158,9 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | break-up-long-tasks | 5 | — | n/a | |
 | calculate-total-foreground-time | 5 | — | n/a | |
 | conditional-async-dependencies | 5 | — | n/a | |
-| defer-rendering-heavy-content | **3** / 4 | compose · misc | todo | `content-visibility` recipe si cabe |
+| defer-rendering-heavy-content | **3** / 4 | misc | done | `.cv-auto` + `.cv-size-*` |
 | defer-work-until-scroll-ends | 5 | — | n/a | |
-| deliver-optimized-decorative-images | **3** | compose · patterns | todo | `image-set` / HTML picture — skill |
+| deliver-optimized-decorative-images | **3** | patterns · decorators | done | picture + `.bg-image-set` |
 | deprioritize-background-fetches | 5 | — | n/a | |
 | detect-initial-visibility-state | 5 | — | n/a | |
 | efficient-background-processing | 5 | — | n/a | |
@@ -170,11 +170,11 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | identify-heavy-scripts | 5 | — | n/a | |
 | identify-inp-causes | 5 | — | n/a | |
 | improve-next-page-load-performance | 4 | — | todo | Speculation — Lab note |
-| interactions-in-complex-layouts | **3** | compose · grid | todo | Evitar layout thrash — skill compose |
-| optimize-image-priority | **3** | patterns | todo | `fetchpriority` en demos |
+| interactions-in-complex-layouts | **3** | compose · misc | done | `.contain-*` |
+| optimize-image-priority | **3** | patterns | done | recipe `fetchpriority` / `loading` |
 | optimize-preload-priority | 4 | — | todo | |
 | optimize-script-priority | 4 | — | todo | |
-| resolution-optimized-pseudo-elements | **3** | decorators | todo | |
+| resolution-optimized-pseudo-elements | **3** | misc | done | `.icon-set` + image-set |
 | schedule-tasks-by-priority | 5 | — | n/a | |
 | sequence-distributed-events | 5 | — | n/a | |
 
@@ -201,35 +201,35 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | --- | --- | --- | --- | --- |
 | carousel-slide-effects | **2** / 3 | molecules · decorators | todo | Scroll-driven; Baseline |
 | component-specific-light-dark-theme | **3** | validate-night · colors | todo | `color-scheme` en isla (code block) |
-| position-aware-tooltips | **1** / 2 | molecules (tooltip) | todo | Anchor positioning |
+| position-aware-tooltips | **1** / 2 | molecules (tooltip) | **done** | data-tooltip + `.tooltip-popover` · recipe |
 | pull-to-reveal | 4 / 6 | — | todo | Móvil; Lab o won’t |
-| resilient-context-menus-and-nested-dropdowns | **2** / 3 | molecules (dropdown) | todo | Popover + anchor |
+| resilient-context-menus-and-nested-dropdowns | **2** / 3 | molecules (dropdown) | done | `.dropdown-panel` + recipe |
 | scroll-position-aware-elements | **3** | organisms · misc | todo | Recipe FAB back-to-top |
-| scroll-progress-indicator | **1** / 3 | decorators · misc | todo | Utility o recipe CSS |
-| scrollability-affordance-hints | **1** / 3 | decorators | todo | Scroll shadows |
+| scroll-progress-indicator | **1** / 3 | decorators · animations | done | `.scroll-progress` |
+| scrollability-affordance-hints | **1** / 3 | overflow | done | `.scroll-state` + hints |
 | shrinking-header-on-scroll | **3** / 2 | organisms (navbar) | todo | Animation scroll-driven |
-| state-aware-sticky-headers | **1** / 3 | organisms · misc | todo | `scroll-state` queries |
+| state-aware-sticky-headers | **1** / 3 | position | done | `.sticky-state` / `.sticky-surface` |
 
 ### ui-behaviors (29)
 
 | MWG id | Bucket | Skill / capa | Muestra | Nota |
 | --- | --- | --- | --- | --- |
 | anchor-positioning-tab-underline | **1** / 3 | molecules (tabs) | todo | Underline morph |
-| animate-element-entry-exit | **3** | decorators | todo | `@starting-style` / display transition |
-| animate-to-from-top-layer | **3** | compounds | todo | Modal enter/exit |
+| animate-element-entry-exit | **3** | decorators | done | `.enter-exit` |
+| animate-to-from-top-layer | **1** / 3 | compounds | done | `dialog.modal` motion |
 | carousel-snap-highlights | **3** | misc · decorators | todo | Scroll snap |
 | consistent-cross-document-transitions | 4 | — | todo | MPA Lab |
 | cross-document-transitions | 4 | — | todo | |
 | custom-button-actions | **3** | atoms · compounds | todo | Invoker commands |
-| declarative-dialog-popover-control | **3** | compounds | todo | **P0** `<dialog>` + button command |
+| declarative-dialog-popover-control | **3** | compounds | **done** | recipe + `dialog.modal` CSS · invoker fallback |
 | directional-navigation-transitions | 4 | decorators | todo | Lab |
-| dynamic-sibling-animations | **3** | decorators | todo | Stagger via sibling-index |
+| dynamic-sibling-animations | **3** | decorators | done | `.stagger` |
 | group-element-transitions | 4 | decorators | todo | View transitions list |
 | highlight-text-ranges | 4 / 6 | — | todo | CSS Highlight API — Lab |
 | interactive-content-reveal | 4 | decorators | todo | |
 | interest-triggered-action-previews | **3** | molecules | todo | Interest invokers — Baseline |
-| interest-triggered-tooltips | **3** | molecules (tooltip) | todo | |
-| light-dismiss-a-dialog | **3** | compounds | todo | **P0** `closedby` |
+| interest-triggered-tooltips | **3** | molecules (tooltip) | done | `.tooltip-hint` + recipe |
+| light-dismiss-a-dialog | **3** | compounds | **done** | recipe · `closedby="any"` + Safari fallback |
 | move-dom-element-without-losing-state | 5 | — | n/a | `moveBefore` — app |
 | parallax-scroll-effects | 4 / 6 | decorators | todo | Anti-slop: usar con cuidado |
 | persistent-top-layer-ui | **3** | compounds | todo | |
@@ -241,19 +241,19 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | scroll-snap-state-sync | **3** | misc · molecules | todo | |
 | scroll-target-on-load | **3** | misc | todo | `scroll-initial-target` |
 | scrollytelling | 4 | — | todo | Marketing Lab |
-| search-hidden-content | **3** | molecules · compounds | todo | `hidden=until-found` + accordion |
+| search-hidden-content | **3** | molecules · compounds | **done** | details + until-found · recipe |
 | swipe-to-remove | **2** / 4 | molecules | todo | Touch Lab |
 
 ### ui-components (7)
 
 | MWG id | Bucket | Skill / capa | Muestra | Nota |
 | --- | --- | --- | --- | --- |
-| navigation-drawer | **3** | organisms (sidebar) | partial | Mapear a sidebar overlay |
+| navigation-drawer | **3** | organisms (sidebar) | **done** | `.sidebar-drawer` + backdrop · recipe |
 | persistent-app-tours | 4 | compounds | todo | Popover tour Lab |
-| persistent-toast-notifications | **1** / 2 | molecules · alerts | todo | ¿Toast stack? GAP vs alert |
-| progress-ring | **1** | atoms | todo | Candidato atom nuevo |
-| scrollspy | **2** / 3 | organisms · misc | todo | Nav highlight |
-| spinner | **1** / 3 | atoms · decorators | todo | Loading + reduced-motion |
+| persistent-toast-notifications | **1** / 2 | molecules · alerts | done | `popover=manual` + `.toast-stack` / `--toast-offset` |
+| progress-ring | **1** | atoms | done | `11-progress-ring.css` |
+| scrollspy | **2** / 3 | organisms · navbar | done | `.scrollspy` + IO fallback |
+| spinner | **1** / 3 | atoms · decorators | **done** | `10-spinner.css` · recipe |
 | stack-drill-down | 4 | patterns | todo | Mobile nav Lab |
 
 ### visual-design (16)
@@ -264,15 +264,15 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | apply-webgl-shaders | 6 | — | n/a | Fuera identidad |
 | complex-shapes | 4 / 6 | decorators | todo | `clip-path` Lab |
 | customize-scrollbar-color-and-thickness | **1** / 3 | decorators · tokens | todo | scrollbar-color utilities? |
-| dark-mode | **3** (+1?) | validate-night · colors | partial | demos/05; sumar `color-scheme` |
+| dark-mode | **3** (+1) | validate-night · colors | **done** | `color-scheme` on `:root`/`.night` · recipe |
 | export-html-media-from-canvas | 5 | — | n/a | |
 | expose-canvas-content-to-browser-features | 5 | — | n/a | |
-| improve-text-layout-and-legibility | **1** / 3 | typography | todo | `text-wrap: balance/pretty` |
+| improve-text-layout-and-legibility | **1** / 3 | typography | **done** | `.text-balance` / `.text-pretty` · recipe |
 | interactive-content-in-3d-scenes | 6 | — | n/a | |
-| precise-text-alignment | **1** / 3 | typography | todo | `text-box` / trim |
+| precise-text-alignment | **1** / 3 | typography | done | `.text-trim` |
 | prevent-text-wrapping | **3** | typography · misc | todo | Si hay `nowrap` utils |
 | shaped-cutouts | 4 | decorators | todo | |
-| soft-edge-content-fade | **1** / 3 | decorators | todo | Mask fade scroll hint |
+| soft-edge-content-fade | **1** / 3 | decorators | done | `.fade-edge-*` |
 | visually-stable-font-fallbacks | **3** | typography · tokens | todo | `font-size-adjust` |
 | visually-stable-mixed-fonts | **3** | typography | todo | |
 | visually-texture-content | 4 / 6 | decorators | todo | Filtros; anti-slop |
@@ -305,21 +305,98 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 
 | # | MWG id | Bucket | Acción Lagunite |
 | --- | --- | --- | --- |
-| 1 | validate-input-after-interaction | 1/3 | Skills + evaluar CSS `:user-invalid` |
-| 2 | required-field-feedback | 3 | validate-forms + recipe |
-| 3 | accessible-error-announcement | 3 | validate-a11y |
-| 4 | declarative-dialog-popover-control | 3 | compounds + `<dialog>` recipe |
-| 5 | light-dismiss-a-dialog | 3 | compounds |
-| 6 | dark-mode | 3/1 | validate-night + `color-scheme` |
-| 7 | autofill-sign-in-form | 3 | patterns + recipe (reusar POC) |
-| 8 | brand-consistent-forms | 1/3 | `accent-color` token/util |
-| 9 | style-parent-with-has | 3 | form-group:has recipe |
-| 10 | improve-text-layout-and-legibility | 1/3 | typography utilities |
-| 11 | position-aware-tooltips | 1/2 | tooltip + anchor |
-| 12 | navigation-drawer | 3 | sidebar overlay recipe |
-| 13 | spinner | 1/3 | atom loading |
-| 14 | size-aware-styling | 1 | container queries (spike v2.2) |
-| 15 | search-hidden-content | 3 | accordion / tabs + `hidden=until-found` |
+| 1 | validate-input-after-interaction | 1/3 | ✅ CSS `:user-*` + skill + recipe |
+| 2 | required-field-feedback | 3 | ✅ recipe + validate-forms |
+| 3 | accessible-error-announcement | 3 | ✅ recipe + validate-a11y |
+| 4 | declarative-dialog-popover-control | 3 | ✅ recipe + `dialog.modal` + compounds |
+| 5 | light-dismiss-a-dialog | 3 | ✅ recipe + `closedby` fallback |
+| 6 | dark-mode | 3/1 | ✅ `color-scheme` + recipe |
+| 7 | autofill-sign-in-form | 3 | ✅ recipe |
+| 8 | brand-consistent-forms | 1/3 | ✅ accent + recipe |
+| 9 | style-parent-with-has | 3 | ✅ `.form-surface` + recipe |
+| 10 | improve-text-layout-and-legibility | 1/3 | ✅ `.text-balance`/`.text-pretty` |
+| 11 | position-aware-tooltips | 1/2 | ✅ recipe + anchor popover CSS |
+| 12 | navigation-drawer | 3 | ✅ `.sidebar-drawer` + recipe |
+| 13 | spinner | 1/3 | ✅ atom + recipe |
+| 14 | size-aware-styling | 1 | ✅ `.cq` + recipe |
+| 15 | search-hidden-content | 3 | ✅ details / until-found recipe |
+
+---
+
+## Top 15 · Oleada 2 (propuesta)
+
+Tras Oleada 1 (forms · dialogs · night · type · drawer · CQ), el backlog 1–3 restante se resume en **6 temas**. Este Top 15 prioriza impacto Lagunite (CSS/skill/recipe), no Lab marketing puro ni bucket 5.
+
+### Temas principales (mapa)
+
+| Tema | Qué empuja | Ejemplos MWG pendientes |
+| --- | --- | --- |
+| **A · Forms / select / autofill** | Completar la familia forms | autofill-sign-up, address, payment, `:autofill` highlight, field-sizing, select branded / picker |
+| **B · Overlay / menus / toast** | Capas top-layer y feedback | dropdown+anchor, toast stack, interest tooltips, progress-ring |
+| **C · Scroll / sticky / snap** | App chrome y listas | scroll progress, scroll shadows, sticky state, FAB, scrollspy, carousel snap |
+| **D · Motion / entry-exit** | Decorators modernos | starting-style, modal enter/exit, intrinsic size animate, stagger siblings |
+| **E · CSS layout moderno** | Utilities / tokens | fluid scaling, overflow clip, sibling-index, `:has` layouts, text-box trim |
+| **F · Media / perf light** | Skills + HTML nativo | fetchpriority, picture/image-set, content-visibility |
+
+Fuera de Oleada 2 (dejar en 4/5/6): passkeys, Temporal, INP tooling, WebMCP, WebGL, scrollytelling pesado, view transitions SPA/MPA (salvo un Lab hero después).
+
+### Top 15 accionables (Oleada 2)
+
+| # | MWG id | Bucket | Tema | Acción Lagunite |
+| --- | --- | --- | --- | --- |
+| 16 | autofill-sign-up-form | 3 | A | ✅ recipe |
+| 17 | autofill-address-form | 3 | A | ✅ recipe |
+| 18 | autofill-highlight-inputs | 1/3 | A | ✅ `:autofill` CSS + recipe |
+| 19 | form-fields-automatically-fit-contents | 1 | A | ✅ `.input-fit` + recipe |
+| 20 | branded-select-styling | 1/2 | A | ✅ `.select-base` + recipe |
+| 21 | rich-media-picker | 2/3 | A | ✅ selectable-option + select-base recipe |
+| 22 | resilient-context-menus-and-nested-dropdowns | 2/3 | B | ✅ `.dropdown-panel` + recipe |
+| 23 | persistent-toast-notifications | 1/2 | B | ✅ `popover=manual` toast + recipe |
+| 24 | progress-ring | 1 | B | ✅ `progress.progress-ring` atom + recipe |
+| 25 | interest-triggered-tooltips | 3 | B | ✅ `.tooltip-hint` + recipe |
+| 26 | scroll-progress-indicator | 1/3 | C | ✅ `.scroll-progress` + recipe |
+| 27 | scrollability-affordance-hints | 1/3 | C | ✅ `.scroll-state` + hints + recipe |
+| 28 | state-aware-sticky-headers | 1/3 | C | ✅ `.sticky-state` + recipe |
+| 29 | scrollspy | 2/3 | C | ✅ `.scrollspy` + IO fallback recipe |
+| 30 | animate-element-entry-exit | 3 | D | ✅ `.enter-exit` + recipe |
+| 31 | animate-to-from-top-layer | 1/3 | D | ✅ `dialog.modal` motion + recipe |
+| 32 | soft-edge-content-fade | 1 | D/E | ✅ `.fade-edge-*` + recipe |
+| 33 | precise-text-alignment | 1 | D/E | ✅ `.text-trim` + recipe |
+| 34 | child-state-based-styling | 1/2 | D/E | ✅ `.card-state` + recipe |
+| 35 | optimize-image-priority | 3 | D/F | ✅ recipe (attrs) |
+
+**Cola corta (31–35):** ✅ done with Bloque D.
+
+### Cómo atacar Oleada 2
+
+1. Bloque **A** (16–21) — ✅ done.  
+2. Bloque **B** (22–25) — ✅ done.  
+3. Bloque **C** (26–29) — ✅ done.  
+4. Bloque **D** (#30 + cola 31–35) — ✅ done.
+
+### Oleada 3 · Bloque E (CSS layout moderno)
+
+| # | MWG id | Bucket | Tema | Acción Lagunite |
+| --- | --- | --- | --- | --- |
+| 36 | fluid-scaling | 1 | E | ✅ `.font-cq` / `.padd-cq` + `.cq` |
+| 37 | overflow-clipping-control | 1 | E | ✅ `.overflow-clip` + `.clip-margin-*` |
+| 38 | dynamic-sibling-styling | 1 | E | ✅ `.sibling-hue` / `.sibling-vars` |
+| 39 | content-based-styling | 3 | E | ✅ `.card-media` + recipe |
+| 40 | dynamic-sibling-animations | 3 | E | ✅ `.stagger` + recipe |
+
+Ya cubierto en D (tema E solapado): `#33` text-trim · `#34` card-state.
+
+### Oleada 3 · Bloque F (media / perf light)
+
+| # | MWG id | Bucket | Tema | Acción Lagunite |
+| --- | --- | --- | --- | --- |
+| 35 | optimize-image-priority | 3 | F | ✅ (hecho en D) recipe attrs |
+| 41 | defer-rendering-heavy-content | 3 | F | ✅ `.cv-auto` / `.cv-size-*` |
+| 42 | deliver-optimized-decorative-images | 3 | F | ✅ `<picture>` + `.bg-image-set` |
+| 43 | resolution-optimized-pseudo-elements | 3 | F | ✅ `.icon-set` |
+| 44 | interactions-in-complex-layouts | 3 | F | ✅ `.contain-*` + recipe |
+
+Mismo DoD que Oleada 1: recipe en `lab/recipes/` · skill/CSS si Bucket 1–2 · marcar **done** aquí · polish visual después.
 
 ---
 
@@ -351,12 +428,62 @@ Cada recipe:
 
 ## Checklist inmediato
 
-- [ ] Aprobar tesis: **~70–90 recipes** (1–3) + stubs 5/6 en hub ≠ 135 productos
-- [ ] Crear `lab/` hub + `_recipe-template.html`
+- [x] Aprobar tesis: **~70–90 recipes** (1–3) + stubs 5/6 en hub ≠ 135 productos
+- [x] Crear `lab/` hub + primera recipe (`validate-input-after-interaction`)
 - [ ] Skill bridge `ai/skills/modern-platform.md` (hot map Top 15)
-- [ ] Oleada O1: 5 recipes forms/a11y + parches skills
+- [x] Oleada O1 arranque: Top 5 recipes (forms/a11y/dialogs) + skills / CSS `:user-*` + `dialog.modal`
 - [ ] Ir marcando **Muestra** en este archivo (`todo` → `done`)
-- [ ] Tras CSS: `docs:generate` solo si Bucket 1 tocó `src/css`
+- [x] Tras CSS: `docs:generate` solo si Bucket 1 tocó `src/css`
+- [ ] **Importante (post Lab estable):** Recipes como skilllets — ver § siguiente
+
+---
+
+## Recipes como skilllets (importante · post HTML estable)
+
+> **Prioridad alta** para la base de conocimiento AI (consumo en este repo y en proyectos hermanos).  
+> **No empezar** a mitad de la pasada Lab / REVISION-v2.2: primero fijar el set de recipes HTML; después convertir.  
+> Relacionado: [`ai/AGENTS-AND-SKILLS.md`](./ai/AGENTS-AND-SKILLS.md) backlog · [`ToDo-ai-first.md`](./ToDo-ai-first.md) (pack `@lagunite/ai`).
+
+### Tesis
+
+Los HTML de `lab/recipes/` son **fixtures de browser** (night, progressive, revisión humana). Para la IA son ruido (chrome del lab, cards de demo, tokens altos) y no un contrato de “qué emitir”.  
+**Canónico para agentes:** markdown corto tipo skilllet, mismo espíritu que `ai/skills/`.
+
+### Qué SÍ / qué NO
+
+| Artefacto | Rol | ¿Skilllet? |
+| --- | --- | --- |
+| `lab/recipes/*.html` | Probar en browser | No — quedan como fixture / vista |
+| `demos/` | Barra visual QA / release | No — pantallas enteras |
+| `pocs/` | Exploración / regresión | No — fixtures |
+| **`ai/recipes/<id>.md`** (propuesto) | Instrucción on-demand para agentes | **Sí** — fuente canónica del patrón |
+
+### Formato skilllet (plantilla)
+
+```text
+# <mwg-id o nombre>
+When: …
+Do: …
+Markup: (3–8 líneas canónicas Lagunite)
+Don’t: …
+A11y: …
+Classes: …
+See also: <layer skill> · fixture `lab/recipes/<id>.html` (opcional)
+```
+
+### Checklist de ejecución
+
+- [ ] Decidir path canónico: `ai/recipes/<id>.md` (preferido) vs sección larga dentro de layer skills
+- [ ] Plantilla + ejemplo piloto (p. ej. `spinner`, `validate-input-after-interaction`)
+- [ ] Migrar recipes Bucket 1–3 hechas: un `.md` por id (no volcar demos/pocs)
+- [ ] Layer skills (`atoms`, `validate-forms`, …): dejar de apuntar solo al HTML; link al skilllet
+- [ ] Índice on-demand (`ai/SKILLS-INDEX.md` o `ai/recipes/README.md`) — **no** precargar todas
+- [ ] HTML lab: mantener (o adelgazar a vista del snippet); no matar el browser QA
+- [ ] `npm run ai:sync` si hace falta discovery wrapper (opcional: skill `lagunite-recipes` router)
+- [ ] Documentar en `CONTEXT-HYGIENE` / `AGENTS-AND-SKILLS`: recipe skilllets = load on demand
+- [ ] (Luego) incluir `ai/recipes/` en el futuro pack `@lagunite/ai` para proyectos consumidores
+
+**Done cuando:** un agente en otro workspace puede componer un patrón MWG abriendo el skilllet (sin parsear el HTML del lab), y el Lab sigue sirviendo para ojo humano / night / browsers.
 
 ---
 
@@ -368,3 +495,4 @@ Cada recipe:
 | Este archivo | **Backlog ejecutable** |
 | [`LAB-ROADMAP.md`](./LAB-ROADMAP.md) | Lab persuasión (3 heroes); recipes MWG = pista paralela del catálogo |
 | [`ToDo-prod.md`](./ToDo-prod.md) | Release CSS v2.1 — no mezclar; modern-platform = post-gate o paralelo Lab |
+| [`ToDo-ai-first.md`](./ToDo-ai-first.md) | Compiler / `@lagunite/ai`; skilllets alimentan el pack de conocimiento |

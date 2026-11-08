@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · optimize-image-priority — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>optimize-image-priority</code></p>
+      <h1 class="font-xl bold color-text">Image priority</h1>
+      <p class="font-s text-muted">
+        HTML attrs only — no Lagunite class. LCP: <code>fetchpriority="high"</code>
+        (never with <code>loading="lazy"</code>). Below-fold: <code>loading="lazy"</code> alone.
+        Hidden above-fold: <code>fetchpriority="low"</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-warning" role="status">
+      At most 1–2 <code>high</code> images. Omit <code>fetchpriority</code> for default priority (do not set <code>auto</code>).
+    </div>
+
+    <section class="card">
+      <div class="card-header">LCP candidate</div>
+      <div class="card-body col gap-s">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='320'%3E%3Crect fill='%234a7cff' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' fill='white' font-size='28' text-anchor='middle' dy='.3em'%3ELCP / high%3C/text%3E%3C/svg%3E"
+          alt="Hero placeholder marked as high priority"
+          width="800"
+          height="320"
+          class="wp100 border-r"
+          fetchpriority="high"
+        />
+        <p class="font-xs text-muted marg-0"><code>fetchpriority="high"</code> · no lazy</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Hidden carousel slide (above-fold)</div>
+      <div class="card-body col gap-s">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%23888' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' fill='white' font-size='18' text-anchor='middle' dy='.3em'%3Elow + lazy%3C/text%3E%3C/svg%3E"
+          alt="Secondary slide not initially visible"
+          width="400"
+          height="200"
+          class="border-r"
+          fetchpriority="low"
+          loading="lazy"
+        />
+        <p class="font-xs text-muted marg-0"><code>fetchpriority="low"</code> + <code>loading="lazy"</code></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Below the fold</div>
+      <div class="card-body col gap-s">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='160'%3E%3Crect fill='%23666' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' fill='white' font-size='18' text-anchor='middle' dy='.3em'%3Elazy only%3C/text%3E%3C/svg%3E"
+          alt="Footer-style image"
+          width="400"
+          height="160"
+          class="border-r"
+          loading="lazy"
+        />
+        <p class="font-xs text-muted marg-0"><code>loading="lazy"</code> only — no low priority</p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero attrs</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>fetchpriority="high|low"</code> · omit for default</li>
+        <li><code>loading="lazy"</code> for below-fold (not on LCP)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>patterns</code> / figures · Guide: <code>retrieve optimize-image-priority</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

@@ -19,10 +19,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-1);
+  gap: var(--space-1);
+  padding: 0;
   margin: 0;
-  border-bottom: var(--border-width-s) solid var(--color-border);
+  border-bottom: var(--border-width-s) solid var(--color-border-strong);
 }
 
 .tab-list-equal .tab-button {
@@ -38,39 +38,40 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
+  min-height: 2.5rem;
+  padding: 0 var(--space-3);
   margin: 0;
   font-family: var(--font-sans);
   font-size: var(--font-size-s);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   line-height: 1.4;
-  color: var(--gray-600);
+  color: var(--color-text-muted);
   text-decoration: none;
   white-space: nowrap;
   background: transparent;
   border: none;
-  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   cursor: pointer;
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    box-shadow 0.2s ease;
+    background-color var(--dur) var(--ease-out),
+    color var(--dur) var(--ease-out),
+    box-shadow var(--dur-slow) var(--ease-out);
 }
 
 .tab-button:hover {
-  color: var(--color-primary);
-  background: rgba(var(--color-primary-rgb), 0.06);
+  color: var(--color-text-base);
+  background: var(--color-surface-muted);
 }
 
 .tab-button:focus-visible {
-  outline: var(--border-width-md) solid var(--color-primary);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .tab-button.active,
 .tab-button[aria-selected="true"] {
-  color: var(--color-primary);
-  background: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-text-base);
+  background: transparent;
   box-shadow: inset 0 -2px 0 var(--color-primary);
 }
 
@@ -87,11 +88,11 @@
 
 .tab-panel {
   display: none;
-  padding: var(--space-4);
-  background: var(--color-bg);
-  border: var(--border-width-s) solid var(--color-border);
-  border-radius: var(--radius-m);
-  box-shadow: var(--shadow-s);
+  padding: var(--space-4) 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .tab-panel.active {
@@ -117,9 +118,9 @@
 
 .tab-list-pills .tab-button.active,
 .tab-list-pills .tab-button[aria-selected="true"] {
-  color: var(--color-text-alt);
-  background: var(--color-primary);
-  box-shadow: none;
+  color: var(--color-on-primary);
+  background: var(--gradient-primary);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 22%), var(--shadow-primary);
 }
 
 .tabs-vertical {
@@ -133,12 +134,12 @@
   min-width: 13rem;
   padding: 0 var(--space-3) 0 0;
   border-bottom: none;
-  border-right: var(--border-width-s) solid var(--color-border);
+  border-right: var(--border-width-s) solid var(--color-border-strong);
 }
 
 .tabs-vertical .tab-button {
   justify-content: flex-start;
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-md);
 }
 
 .tabs-vertical .tab-button.active,
@@ -170,29 +171,4 @@
   .tabs-vertical .tab-button[aria-selected="true"] {
     box-shadow: inset 0 -2px 0 var(--color-primary);
   }
-}
-
-.night .tab-button {
-  color: var(--gray-300);
-}
-
-.night .tab-button:hover {
-  color: var(--color-text-alt);
-  background: rgb(255 255 255 / 8%);
-}
-
-.night .tab-button.active,
-.night .tab-button[aria-selected="true"] {
-  color: var(--color-text-alt);
-  background: rgba(var(--color-primary-rgb), 0.18);
-}
-
-.night .tab-list-pills .tab-button.active,
-.night .tab-list-pills .tab-button[aria-selected="true"] {
-  background: var(--color-primary);
-}
-
-.night .tab-panel {
-  background: var(--gray-900);
-  border-color: var(--gray-700);
 }

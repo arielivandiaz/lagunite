@@ -1,16 +1,16 @@
 folder: 05-atoms
 file: 03-table.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 129
-content[129]:
+totalSelectors: 132
+content[132]:
   - type: selector
     selectorType: element
     selector: table
     id: #05-03-01
     category: null
-    properties[7]: border-collapse,margin,width,font-family,font-size,color,background
-    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
+    properties[8]: border-collapse,margin,width,font-family,font-size,font-variant-numeric,color,background
+    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-s)\nfont-variant-numeric: tabular-nums\ncolor: var(--color-text-base)\nbackground: transparent"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -18,8 +18,8 @@ content[129]:
     selector: .table
     id: #05-03-01
     category: null
-    properties[7]: border-collapse,margin,width,font-family,font-size,color,background
-    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-base)\ncolor: var(--color-text-base)\nbackground: transparent"
+    properties[8]: border-collapse,margin,width,font-family,font-size,font-variant-numeric,color,background
+    cssRule: "border-collapse: collapse\nmargin: var(--space-3) 0\nwidth: 100%\nfont-family: var(--font-text)\nfont-size: var(--font-size-s)\nfont-variant-numeric: tabular-nums\ncolor: var(--color-text-base)\nbackground: transparent"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -27,8 +27,17 @@ content[129]:
     selector: .table th
     id: #05-03-01
     category: null
-    properties[4]: font-family,font-weight,font-size,padding
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nfont-size: 0.9em\npadding: var(--space-3) var(--space-4)"
+    properties[7]: font-family,font-weight,font-size,letter-spacing,text-transform,color,padding
+    cssRule: "font-family: var(--font-sans)\nfont-weight: var(--font-weight-semibold)\nfont-size: var(--font-size-xs)\nletter-spacing: 0.04em\ntext-transform: uppercase\ncolor: var(--color-text-muted)\npadding: 0.625rem var(--space-4)"
+    responsive: false
+    description: Table Base Styles
+  - type: selector
+    selectorType: class
+    selector: .table thead th
+    id: #05-03-01
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -36,8 +45,26 @@ content[129]:
     selector: .table td
     id: #05-03-01
     category: null
-    properties[1]: padding
-    cssRule: "padding: var(--space-3) var(--space-4)"
+    properties[2]: padding,border-bottom
+    cssRule: "padding: 0.875rem var(--space-4)\nborder-bottom: 1px solid var(--color-border)"
+    responsive: false
+    description: Table Base Styles
+  - type: selector
+    selectorType: class
+    selector: .table tbody tr
+    id: #05-03-01
+    category: null
+    properties[1]: transition
+    cssRule: "transition: background var(--dur-fast) var(--ease-out)"
+    responsive: false
+    description: Table Base Styles
+  - type: selector
+    selectorType: class
+    selector: ".table tbody tr:hover"
+    id: #05-03-01
+    category: null
+    properties[1]: background
+    cssRule: "background: var(--color-surface-muted)"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -46,7 +73,7 @@ content[129]:
     id: #05-03-01
     category: null
     properties[1]: border-bottom
-    cssRule: "border-bottom: 2px solid var(--color-border)"
+    cssRule: "border-bottom: 1px solid var(--color-border)"
     responsive: false
     description: Table Base Styles
   - type: selector
@@ -55,7 +82,7 @@ content[129]:
     id: #05-03-01
     category: null
     properties[2]: border-top,font-weight
-    cssRule: "border-top: 2px solid var(--color-border)\nfont-weight: var(--font-weight-medium)"
+    cssRule: "border-top: 1px solid var(--color-border-strong)\nfont-weight: var(--font-weight-medium)"
     responsive: false
     description: Table Base Styles
   - type: selector

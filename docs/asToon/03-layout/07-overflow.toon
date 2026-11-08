@@ -1,9 +1,9 @@
 folder: 03-layout
 file: 07-overflow.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: true
-totalSelectors: 17
-content[17]:
+totalSelectors: 33
+content[33]:
   - type: selector
     selectorType: class
     selector: .overflow-auto
@@ -157,3 +157,147 @@ content[17]:
     cssRule: "display: none"
     responsive: true
     description: ── Scrollbar utilities ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .scroll-state
+    id: #03-07-04
+    category: null
+    properties[3]: position,overflow-y,container-type
+    cssRule: "position: relative\noverflow-y: auto\ncontainer-type: scroll-state"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-top
+    id: #03-07-04
+    category: null
+    properties[8]: position,left,right,z-index,height,pointer-events,opacity,transition
+    cssRule: "position: sticky\nleft: 0\nright: 0\nz-index: 1\nheight: var(--space-5)\npointer-events: none\nopacity: 0\ntransition: opacity 0.2s ease"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-bottom
+    id: #03-07-04
+    category: null
+    properties[8]: position,left,right,z-index,height,pointer-events,opacity,transition
+    cssRule: "position: sticky\nleft: 0\nright: 0\nz-index: 1\nheight: var(--space-5)\npointer-events: none\nopacity: 0\ntransition: opacity 0.2s ease"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-top
+    id: #03-07-04
+    category: null
+    properties[2]: top,background
+    cssRule: "top: 0\nbackground: linear-gradient(to bottom, rgb(0 0 0 / 0.14), transparent)"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-bottom
+    id: #03-07-04
+    category: null
+    properties[2]: bottom,background
+    cssRule: "bottom: 0\nbackground: linear-gradient(to top, rgb(0 0 0 / 0.14), transparent)"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .night .scroll-hint-top
+    id: #03-07-04
+    category: null
+    properties[1]: background
+    cssRule: "background: linear-gradient(to bottom, rgb(0 0 0 / 0.45), transparent)"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .night .scroll-hint-bottom
+    id: #03-07-04
+    category: null
+    properties[1]: background
+    cssRule: "background: linear-gradient(to top, rgb(0 0 0 / 0.45), transparent)"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-top
+    id: #03-07-04
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 1"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .scroll-hint-bottom
+    id: #03-07-04
+    category: null
+    properties[1]: opacity
+    cssRule: "opacity: 1"
+    responsive: false
+    description: "* Scrollability affordance hints via scroll-state container queries.\r\n * Progressive (Chromium). Unsupported browsers keep hints at opacity 0."
+  - type: selector
+    selectorType: class
+    selector: .overflow-clip
+    id: #03-07-05
+    category: null
+    properties[1]: overflow
+    cssRule: "overflow: hidden"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .overflow-clip
+    id: #03-07-05
+    category: null
+    properties[1]: overflow
+    cssRule: "overflow: clip"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .clip-margin-content
+    id: #03-07-05
+    category: null
+    properties[1]: overflow-clip-margin
+    cssRule: "overflow-clip-margin: content-box"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .clip-margin-padding
+    id: #03-07-05
+    category: null
+    properties[1]: overflow-clip-margin
+    cssRule: "overflow-clip-margin: padding-box"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .clip-margin-s
+    id: #03-07-05
+    category: null
+    properties[1]: overflow-clip-margin
+    cssRule: "overflow-clip-margin: var(--space-2)"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .clip-margin-m
+    id: #03-07-05
+    category: null
+    properties[1]: overflow-clip-margin
+    cssRule: "overflow-clip-margin: var(--space-4)"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."
+  - type: selector
+    selectorType: class
+    selector: .clip-margin-l
+    id: #03-07-05
+    category: null
+    properties[1]: overflow-clip-margin
+    cssRule: "overflow-clip-margin: var(--space-6)"
+    responsive: false
+    description: "* overflow: clip + overflow-clip-margin (no scroll; margin for shadow bleed).\r\n * Fallback: overflow: hidden (clip-margin ignored)."

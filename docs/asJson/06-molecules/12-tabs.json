@@ -1,9 +1,9 @@
 {
   "folder": "06-molecules",
   "file": "12-tabs.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 30,
+  "totalSelectors": 23,
   "content": [
     {
       "type": "selector",
@@ -36,7 +36,7 @@
         "margin",
         "border-bottom"
       ],
-      "cssRule": "display: flex\nflex-wrap: wrap\nalign-items: center\ngap: var(--space-2)\npadding: var(--space-1)\nmargin: 0\nborder-bottom: var(--border-width-s) solid var(--color-border)",
+      "cssRule": "display: flex\nflex-wrap: wrap\nalign-items: center\ngap: var(--space-1)\npadding: 0\nmargin: 0\nborder-bottom: var(--border-width-s) solid var(--color-border-strong)",
       "responsive": false,
       "description": "── Tabs shell ──────────────────────────────────────────────────────────"
     },
@@ -64,6 +64,7 @@
         "align-items",
         "justify-content",
         "gap",
+        "min-height",
         "padding",
         "margin",
         "font-family",
@@ -79,7 +80,7 @@
         "cursor",
         "transition"
       ],
-      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\ngap: var(--space-2)\npadding: var(--space-2) var(--space-4)\nmargin: 0\nfont-family: var(--font-sans)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-medium)\nline-height: 1.4\ncolor: var(--gray-600)\ntext-decoration: none\nwhite-space: nowrap\nbackground: transparent\nborder: none\nborder-radius: var(--radius-m) var(--radius-m) 0 0\ncursor: pointer\ntransition:\r\n    background-color 0.2s ease,\r\n    color 0.2s ease,\r\n    box-shadow 0.2s ease",
+      "cssRule": "display: inline-flex\nalign-items: center\njustify-content: center\ngap: var(--space-2)\nmin-height: 2.5rem\npadding: 0 var(--space-3)\nmargin: 0\nfont-family: var(--font-sans)\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-semibold)\nline-height: 1.4\ncolor: var(--color-text-muted)\ntext-decoration: none\nwhite-space: nowrap\nbackground: transparent\nborder: none\nborder-radius: var(--radius-sm) var(--radius-sm) 0 0\ncursor: pointer\ntransition:\r\n    background-color var(--dur) var(--ease-out),\r\n    color var(--dur) var(--ease-out),\r\n    box-shadow var(--dur-slow) var(--ease-out)",
       "responsive": false,
       "description": "── Tab triggers ────────────────────────────────────────────────────────"
     },
@@ -93,7 +94,7 @@
         "color",
         "background"
       ],
-      "cssRule": "color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.06)",
+      "cssRule": "color: var(--color-text-base)\nbackground: var(--color-surface-muted)",
       "responsive": false,
       "description": "── Tab triggers ────────────────────────────────────────────────────────"
     },
@@ -105,9 +106,9 @@
       "category": null,
       "properties": [
         "outline",
-        "outline-offset"
+        "box-shadow"
       ],
-      "cssRule": "outline: var(--border-width-md) solid var(--color-primary)\noutline-offset: 2px",
+      "cssRule": "outline: none\nbox-shadow: var(--shadow-focus)",
       "responsive": false,
       "description": "── Tab triggers ────────────────────────────────────────────────────────"
     },
@@ -122,7 +123,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.08)\nbox-shadow: inset 0 -2px 0 var(--color-primary)",
+      "cssRule": "color: var(--color-text-base)\nbackground: transparent\nbox-shadow: inset 0 -2px 0 var(--color-primary)",
       "responsive": false,
       "description": "── Tab triggers ────────────────────────────────────────────────────────"
     },
@@ -137,7 +138,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "color: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.08)\nbox-shadow: inset 0 -2px 0 var(--color-primary)",
+      "cssRule": "color: var(--color-text-base)\nbackground: transparent\nbox-shadow: inset 0 -2px 0 var(--color-primary)",
       "responsive": false,
       "description": "── Tab triggers ────────────────────────────────────────────────────────"
     },
@@ -185,7 +186,7 @@
         "border-radius",
         "box-shadow"
       ],
-      "cssRule": "display: none\npadding: var(--space-4)\nbackground: var(--color-bg)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-m)\nbox-shadow: var(--shadow-s)",
+      "cssRule": "display: none\npadding: var(--space-4) 0\nbackground: transparent\nborder: 0\nborder-radius: 0\nbox-shadow: none",
       "responsive": false,
       "description": "── Tab panel ───────────────────────────────────────────────────────────"
     },
@@ -253,7 +254,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: var(--color-primary)\nbox-shadow: none",
+      "cssRule": "color: var(--color-on-primary)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 22%), var(--shadow-primary)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     },
@@ -268,7 +269,7 @@
         "background",
         "box-shadow"
       ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: var(--color-primary)\nbox-shadow: none",
+      "cssRule": "color: var(--color-on-primary)\nbackground: var(--gradient-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 22%), var(--shadow-primary)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     },
@@ -300,7 +301,7 @@
         "border-bottom",
         "border-right"
       ],
-      "cssRule": "flex-direction: column\nalign-items: stretch\nmin-width: 13rem\npadding: 0 var(--space-3) 0 0\nborder-bottom: none\nborder-right: var(--border-width-s) solid var(--color-border)",
+      "cssRule": "flex-direction: column\nalign-items: stretch\nmin-width: 13rem\npadding: 0 var(--space-3) 0 0\nborder-bottom: none\nborder-right: var(--border-width-s) solid var(--color-border-strong)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     },
@@ -314,7 +315,7 @@
         "justify-content",
         "border-radius"
       ],
-      "cssRule": "justify-content: flex-start\nborder-radius: var(--radius-m)",
+      "cssRule": "justify-content: flex-start\nborder-radius: var(--radius-md)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     },
@@ -354,101 +355,6 @@
         "flex"
       ],
       "cssRule": "flex: 1",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-button",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--gray-300)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-button:hover",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "color",
-        "background"
-      ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: rgb(255 255 255 / 8%)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-button.active",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "color",
-        "background"
-      ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: rgba(var(--color-primary-rgb), 0.18)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-button[aria-selected=\"true\"]",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "color",
-        "background"
-      ],
-      "cssRule": "color: var(--color-text-alt)\nbackground: rgba(var(--color-primary-rgb), 0.18)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-list-pills .tab-button.active",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "background"
-      ],
-      "cssRule": "background: var(--color-primary)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-list-pills .tab-button[aria-selected=\"true\"]",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "background"
-      ],
-      "cssRule": "background: var(--color-primary)",
-      "responsive": false,
-      "description": "── Variants ────────────────────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .tab-panel",
-      "id": "#06-12-04",
-      "category": null,
-      "properties": [
-        "background",
-        "border-color"
-      ],
-      "cssRule": "background: var(--gray-900)\nborder-color: var(--gray-700)",
       "responsive": false,
       "description": "── Variants ────────────────────────────────────────────────────────────"
     }

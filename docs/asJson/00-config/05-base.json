@@ -1,9 +1,9 @@
 {
   "folder": "00-config",
   "file": "05-base.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 48,
+  "totalSelectors": 31,
   "content": [
     {
       "type": "selector",
@@ -14,11 +14,10 @@
       "properties": [
         "margin",
         "padding",
-        "outline",
         "box-sizing",
         "-webkit-tap-highlight-color"
       ],
-      "cssRule": "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
+      "cssRule": "margin: 0\npadding: 0\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
       "responsive": false,
       "description": "** RESET  **"
     },
@@ -31,11 +30,10 @@
       "properties": [
         "margin",
         "padding",
-        "outline",
         "box-sizing",
         "-webkit-tap-highlight-color"
       ],
-      "cssRule": "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
+      "cssRule": "margin: 0\npadding: 0\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
       "responsive": false,
       "description": "** RESET  **"
     },
@@ -48,11 +46,37 @@
       "properties": [
         "margin",
         "padding",
-        "outline",
         "box-sizing",
         "-webkit-tap-highlight-color"
       ],
-      "cssRule": "margin: 0\npadding: 0\noutline: none\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
+      "cssRule": "margin: 0\npadding: 0\nbox-sizing: border-box\n-webkit-tap-highlight-color: rgb(0 0 0 / 0%)",
+      "responsive": false,
+      "description": "** RESET  **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":focus",
+      "id": "#00-05-01",
+      "category": null,
+      "properties": [
+        "outline"
+      ],
+      "cssRule": "outline: none",
+      "responsive": false,
+      "description": "** RESET  **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "pseudo",
+      "selector": ":focus-visible",
+      "id": "#00-05-01",
+      "category": null,
+      "properties": [
+        "outline",
+        "outline-offset"
+      ],
+      "cssRule": "outline: 2px solid var(--color-primary)\noutline-offset: 2px",
       "responsive": false,
       "description": "** RESET  **"
     },
@@ -103,9 +127,11 @@
       "properties": [
         "border",
         "background",
-        "cursor"
+        "cursor",
+        "font",
+        "color"
       ],
-      "cssRule": "border: none\nbackground: none\ncursor: pointer",
+      "cssRule": "border: none\nbackground: none\ncursor: pointer\nfont: inherit\ncolor: inherit",
       "responsive": false,
       "description": "** Static **"
     },
@@ -116,61 +142,11 @@
       "id": "#00-05-02",
       "category": null,
       "properties": [
-        "cursor"
-      ],
-      "cssRule": "cursor: pointer",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "element",
-      "selector": "a",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
+        "cursor",
+        "color",
         "text-decoration"
       ],
-      "cssRule": "text-decoration: none",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "pseudo",
-      "selector": "a:visited",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
-        "text-decoration"
-      ],
-      "cssRule": "text-decoration: none",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "pseudo",
-      "selector": "a:active",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
-        "text-decoration"
-      ],
-      "cssRule": "text-decoration: none",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "pseudo",
-      "selector": "a:enabled",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
-        "text-decoration"
-      ],
-      "cssRule": "text-decoration: none",
+      "cssRule": "cursor: pointer\ncolor: var(--color-primary-text)\ntext-decoration: none",
       "responsive": false,
       "description": "** Static **"
     },
@@ -181,23 +157,9 @@
       "id": "#00-05-02",
       "category": null,
       "properties": [
-        "list-style",
-        "text-align"
+        "list-style"
       ],
-      "cssRule": "list-style: none\ntext-align: left",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "element",
-      "selector": "ol",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
-        "text-align"
-      ],
-      "cssRule": "text-align: left",
+      "cssRule": "list-style: none",
       "responsive": false,
       "description": "** Static **"
     },
@@ -216,40 +178,27 @@
     },
     {
       "type": "selector",
-      "selectorType": "pseudo",
-      "selector": "header:not(.navbar",
+      "selectorType": "element",
+      "selector": "svg",
       "id": "#00-05-02",
       "category": null,
       "properties": [
-        "margin"
+        "max-width"
       ],
-      "cssRule": "margin: 5vh 0 3vh",
+      "cssRule": "max-width: 100%",
       "responsive": false,
       "description": "** Static **"
     },
     {
       "type": "selector",
-      "selectorType": "class",
-      "selector": ".doc-navbar-overlay",
+      "selectorType": "element",
+      "selector": "video",
       "id": "#00-05-02",
       "category": null,
       "properties": [
-        "margin"
+        "max-width"
       ],
-      "cssRule": "margin: 5vh 0 3vh",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".topbar)",
-      "id": "#00-05-02",
-      "category": null,
-      "properties": [
-        "margin"
-      ],
-      "cssRule": "margin: 5vh 0 3vh",
+      "cssRule": "max-width: 100%",
       "responsive": false,
       "description": "** Static **"
     },
@@ -261,40 +210,27 @@
       "category": "Tags",
       "properties": [
         "width",
-        "height",
-        "text-align",
+        "line-height",
         "background",
         "color",
+        "-webkit-font-smoothing",
         "transition"
       ],
-      "cssRule": "width: 100%\nheight: 100%\ntext-align: center\nbackground: var(--color-bg)\ncolor: var(--color-text-base)\ntransition:\r\n    background-color 0.3s ease,\r\n    color 0.3s ease",
+      "cssRule": "width: 100%\nline-height: var(--line-height-normal)\nbackground: var(--color-bg)\ncolor: var(--color-text-base)\n-webkit-font-smoothing: antialiased\ntransition:\n    background-color var(--dur-slow) var(--ease-out),\n    color var(--dur-slow) var(--ease-out)",
       "responsive": false,
       "description": "** Static **"
     },
     {
       "type": "selector",
-      "selectorType": "complex",
-      "selector": "body.night",
+      "selectorType": "pseudo",
+      "selector": "::selection",
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
         "background",
         "color"
       ],
-      "cssRule": "background: var(--color-bg)\ncolor: var(--color-text-base)",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "pseudo-hover",
-      "selector": "a:hover",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary) !important",
+      "cssRule": "background: var(--color-primary-soft)\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -305,14 +241,10 @@
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "margin",
-        "text-align",
         "overflow-wrap",
-        "word-wrap",
-        "white-space",
-        "padding"
+        "text-wrap"
       ],
-      "cssRule": "margin: 10px 0\ntext-align: left\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal\npadding: 0 15px",
+      "cssRule": "overflow-wrap: break-word\ntext-wrap: pretty",
       "responsive": false,
       "description": "** Static **"
     },
@@ -326,10 +258,9 @@
         "display",
         "height",
         "border",
-        "border-top",
-        "padding"
+        "background"
       ],
-      "cssRule": "display: block\nheight: 1px\nborder: 0\nborder-top: 1px solid var(--color-primary)\npadding: 0",
+      "cssRule": "display: block\nheight: 1px\nborder: 0\nbackground: var(--color-border-strong)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -370,13 +301,11 @@
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "border-left",
-        "font-style",
-        "text-align",
-        "margin",
-        "padding"
+        "font-size",
+        "line-height",
+        "color"
       ],
-      "cssRule": "border-left: solid 4px var(--color-primary)\nfont-style: italic\ntext-align: left\nmargin: 0 0 2rem\npadding: 0.8rem 0.5rem 0.8rem 1.5rem",
+      "cssRule": "font-size: var(--font-size-l)\nline-height: 1.6\ncolor: var(--color-text-base)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -389,12 +318,13 @@
       "properties": [
         "border-radius",
         "background",
+        "box-shadow",
+        "color",
         "font-family",
         "font-size",
-        "margin",
         "padding"
       ],
-      "cssRule": "border-radius: 4px\nbackground: #ddd\nfont-family: monospace\nfont-size: 80%\nmargin: 0 0.3rem\npadding: 0.2rem 0.6rem",
+      "cssRule": "border-radius: var(--radius-xs)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)\ncolor: var(--color-text-base)\nfont-family: var(--font-mono)\nfont-size: 0.85em\npadding: 0.15em 0.4em",
       "responsive": false,
       "description": "** Static **"
     },
@@ -406,11 +336,16 @@
       "category": "Tags",
       "properties": [
         "-webkit-overflow-scrolling",
+        "overflow-x",
         "font-family",
         "font-size",
-        "margin"
+        "line-height",
+        "padding",
+        "border-radius",
+        "background",
+        "box-shadow"
       ],
-      "cssRule": "-webkit-overflow-scrolling: touch\nfont-family: monospace\nfont-size: 0.9em\nmargin: 0 0 2rem",
+      "cssRule": "-webkit-overflow-scrolling: touch\noverflow-x: auto\nfont-family: var(--font-mono)\nfont-size: 0.875rem\nline-height: 1.7\npadding: var(--space-4) var(--space-5)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)",
       "responsive": false,
       "description": "** Static **"
     },
@@ -421,161 +356,27 @@
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "text-align",
         "display",
-        "line-height",
         "padding",
-        "margin"
-      ],
-      "cssRule": "text-align: left\ndisplay: block\nline-height: 1.75\npadding: 0.3rem 0.5rem 0.3rem 1rem\nmargin: 0 25px",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night code",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
         "background",
-        "color"
+        "box-shadow",
+        "font-size"
       ],
-      "cssRule": "background: #000\ncolor: var(--color-text-alt)",
+      "cssRule": "display: block\npadding: 0\nbackground: none\nbox-shadow: none\nfont-size: inherit",
       "responsive": false,
       "description": "** Static **"
     },
     {
       "type": "selector",
       "selectorType": "element",
-      "selector": "hgroup",
+      "selector": "table",
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "display"
+        "border-collapse",
+        "font-variant-numeric"
       ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "hgroup h1",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "display"
-      ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "hgroup h2",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "display"
-      ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "hgroup h3",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "display"
-      ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "hgroup h4",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "display"
-      ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "hgroup h5",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "display"
-      ],
-      "cssRule": "display: inline-block",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "ul li",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "padding"
-      ],
-      "cssRule": "padding: 2px 1.5vw 2px 0.5vw",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "ol li",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "padding"
-      ],
-      "cssRule": "padding: 2px 1.5vw 2px 0.5vw",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "tr *",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "left",
-        "right",
-        "margin"
-      ],
-      "cssRule": "left: 0\nright: 0\nmargin: auto",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "complex",
-      "selector": "td *",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "left",
-        "right",
-        "margin"
-      ],
-      "cssRule": "left: 0\nright: 0\nmargin: auto",
+      "cssRule": "border-collapse: collapse\nfont-variant-numeric: tabular-nums",
       "responsive": false,
       "description": "** Static **"
     },
@@ -587,10 +388,9 @@
       "category": "Tags",
       "properties": [
         "overflow-wrap",
-        "word-wrap",
-        "white-space"
+        "text-align"
       ],
-      "cssRule": "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
+      "cssRule": "overflow-wrap: break-word\ntext-align: left",
       "responsive": false,
       "description": "** Static **"
     },
@@ -602,36 +402,9 @@
       "category": "Tags",
       "properties": [
         "overflow-wrap",
-        "word-wrap",
-        "white-space"
+        "text-align"
       ],
-      "cssRule": "overflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "element",
-      "selector": "th",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "padding"
-      ],
-      "cssRule": "padding: 4px 0",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
-      "selectorType": "element",
-      "selector": "caption",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "margin"
-      ],
-      "cssRule": "margin: 15px 0",
+      "cssRule": "overflow-wrap: break-word\ntext-align: left",
       "responsive": false,
       "description": "** Static **"
     },
@@ -642,12 +415,9 @@
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "padding",
-        "max-width",
-        "background-color",
-        "transition"
+        "max-width"
       ],
-      "cssRule": "padding: 12px\nmax-width: 100%\nbackground-color: var(--color-bg-alt)\ntransition:\r\n    background-color 0.3s ease,\r\n    border-color 0.3s ease",
+      "cssRule": "max-width: 100%",
       "responsive": false,
       "description": "** Static **"
     },
@@ -665,7 +435,7 @@
         "justify-content",
         "list-style"
       ],
-      "cssRule": "font-weight: 600\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none",
+      "cssRule": "font-weight: var(--font-weight-semibold)\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none",
       "responsive": false,
       "description": "** Static **"
     },
@@ -684,19 +454,6 @@
     },
     {
       "type": "selector",
-      "selectorType": "pseudo",
-      "selector": "a:visited",
-      "id": "#00-05-03",
-      "category": "Tags",
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-base)",
-      "responsive": false,
-      "description": "** Static **"
-    },
-    {
-      "type": "selector",
       "selectorType": "class",
       "selector": ".link",
       "id": "#00-05-03",
@@ -706,7 +463,21 @@
         "text-decoration",
         "font-weight"
       ],
-      "cssRule": "color: var(--color-primary)\ntext-decoration: none\nfont-weight: 700",
+      "cssRule": "color: var(--color-primary-text)\ntext-decoration: none\nfont-weight: var(--font-weight-semibold)",
+      "responsive": false,
+      "description": "** Static **"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".link:hover",
+      "id": "#00-05-03",
+      "category": "Tags",
+      "properties": [
+        "text-decoration",
+        "text-underline-offset"
+      ],
+      "cssRule": "text-decoration: underline\ntext-underline-offset: 3px",
       "responsive": false,
       "description": "** Static **"
     }

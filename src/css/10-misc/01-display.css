@@ -62,3 +62,52 @@
   .dinvisible { visibility: hidden; }
   .dcollapse  { visibility: collapse; }
 }
+
+/* @ID: #10-01-05 */
+
+/*
+ * Defer off-screen rendering (content-visibility).
+ * Pair with contain-intrinsic-size so scrollbars don't jump.
+ */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 20rem;
+}
+
+.cv-size-s {
+  contain-intrinsic-size: auto 8rem;
+}
+
+.cv-size-m {
+  contain-intrinsic-size: auto 16rem;
+}
+
+.cv-size-l {
+  contain-intrinsic-size: auto 32rem;
+}
+
+.cv-size-xl {
+  contain-intrinsic-size: auto 48rem;
+}
+
+/* @ID: #10-01-06 */
+
+/*
+ * Layout containment — isolate expensive subtrees (complex grids/lists).
+ * Progressive; ignored where unsupported.
+ */
+.contain-layout {
+  contain: layout;
+}
+
+.contain-paint {
+  contain: paint;
+}
+
+.contain-content {
+  contain: content;
+}
+
+.contain-strict {
+  contain: strict;
+}

@@ -7,34 +7,54 @@
 | These variables represent the "what we have" and should rarely
 | be used directly in components.
 |
+| v3: blue ramp built around the brand blue #2476ff (500) and a cool slate
+| neutral ramp. --gray-* are kept as aliases of --slate-* for compatibility.
+|
 */
 
 :root {
-  /* == Neutral Palette (Gray) == */
-  --gray-50: hsl(210deg 20% 95%);
-  --gray-100: hsl(210deg 18% 89%);
-  --gray-200: hsl(210deg 15% 82%);
-  --gray-300: hsl(210deg 13% 70%);
-  --gray-400: hsl(210deg 11% 60%);
-  --gray-500: hsl(210deg 9% 50%);
-  --gray-600: hsl(210deg 10% 40%);
-  --gray-700: hsl(210deg 12% 30%);
-  --gray-800: hsl(210deg 15% 20%);
-  --gray-900: hsl(210deg 20% 10%);
-  --gray-950: hsl(210deg 25% 5%);
+  /* == Neutral Palette (Slate, cool bias toward the brand blue) == */
+  --slate-0: #fff;
+  --slate-25: #fbfcfd;
+  --slate-50: #f6f7f9;
+  --slate-100: #eef0f4;
+  --slate-200: #e1e5eb;
+  --slate-300: #c3c9d4;
+  --slate-400: #8b95a8;
+  --slate-500: #6b7486;
+  --slate-600: #5a6478;
+  --slate-700: #3a4252;
+  --slate-800: #232936;
+  --slate-850: #1b202b;
+  --slate-900: #161a23;
+  --slate-925: #10131a;
+  --slate-950: #090b10;
 
-  /* == Primary Palette (Blue) == */
-  --blue-50: hsl(210deg 90% 96%);
-  --blue-100: hsl(210deg 90% 90%);
-  --blue-200: hsl(210deg 90% 80%);
-  --blue-300: hsl(210deg 90% 70%);
-  --blue-400: hsl(210deg 90% 60%);
-  --blue-500: hsl(210deg 90% 50%);
-  --blue-600: hsl(210deg 85% 40%);
-  --blue-700: hsl(210deg 80% 30%);
-  --blue-800: hsl(210deg 80% 25%);
-  --blue-900: hsl(210deg 85% 20%);
-  --blue-950: hsl(210deg 90% 15%);
+  /* == Gray (v2 name, now slate) == */
+  --gray-50: var(--slate-50);
+  --gray-100: var(--slate-100);
+  --gray-200: var(--slate-200);
+  --gray-300: var(--slate-300);
+  --gray-400: var(--slate-400);
+  --gray-500: var(--slate-500);
+  --gray-600: var(--slate-600);
+  --gray-700: var(--slate-700);
+  --gray-800: var(--slate-800);
+  --gray-900: var(--slate-900);
+  --gray-950: var(--slate-950);
+
+  /* == Primary Palette (Blue, 500 = brand) == */
+  --blue-50: #eef5ff;
+  --blue-100: #d9e8ff;
+  --blue-200: #bcd6ff;
+  --blue-300: #8ebbff;
+  --blue-400: #5c9bff;
+  --blue-500: #2476ff;
+  --blue-600: #1660e6;
+  --blue-700: #124dbb;
+  --blue-800: #153f94;
+  --blue-900: #173775;
+  --blue-950: #111f45;
 
   /* == Accent Palette: Green (Success) == */
   --green-50: hsl(140deg 65% 96%);

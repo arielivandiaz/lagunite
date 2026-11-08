@@ -1,16 +1,16 @@
 folder: 07-compounds
 file: 04-empty-state.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 23
-content[23]:
+totalSelectors: 18
+content[18]:
   - type: selector
     selectorType: class
     selector: .empty-state
     id: #07-04-01
     category: null
     properties[10]: display,flex-direction,align-items,justify-content,gap,text-align,padding,border,border-radius,background
-    cssRule: "display: flex\nflex-direction: column\nalign-items: center\njustify-content: center\ngap: var(--space-3)\ntext-align: center\npadding: var(--space-6) var(--space-4)\nborder: var(--border-width-s) dashed var(--color-border)\nborder-radius: var(--radius-l)\nbackground: linear-gradient(180deg, rgb(0 0 0 / 1.5%) 0%, rgb(0 0 0 / 0%) 100%)"
+    cssRule: "display: flex\nflex-direction: column\nalign-items: center\njustify-content: center\ngap: var(--space-3)\ntext-align: center\npadding: var(--space-12) var(--space-6)\nborder: var(--border-width-s) dashed var(--color-border-strong)\nborder-radius: var(--radius-xl)\nbackground: var(--color-surface)"
     responsive: false
     description: ── Base container and structure ────────────────────────────────────────
   - type: selector
@@ -18,8 +18,8 @@ content[23]:
     selector: .empty-state-icon
     id: #07-04-01
     category: null
-    properties[10]: width,height,border-radius,display,align-items,justify-content,font-size,color,background,border
-    cssRule: "width: 3.25rem\nheight: 3.25rem\nborder-radius: var(--radius-full)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nfont-size: 1.4rem\ncolor: var(--color-primary)\nbackground: rgba(var(--color-primary-rgb), 0.12)\nborder: var(--border-width-s) solid rgba(var(--color-primary-rgb), 0.28)"
+    properties[11]: width,height,border-radius,display,align-items,justify-content,font-size,color,background,border,box-shadow
+    cssRule: "width: 3.5rem\nheight: 3.5rem\nborder-radius: var(--radius-lg)\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nfont-size: 1.4rem\ncolor: var(--color-primary-text)\nbackground: var(--color-primary-soft)\nborder: 0\nbox-shadow: inset 0 1px 0 var(--color-highlight), inset 0 0 0 1px rgba(var(--color-primary-rgb), 0.18)"
     responsive: false
     description: ── Base container and structure ────────────────────────────────────────
   - type: selector
@@ -36,8 +36,8 @@ content[23]:
     selector: .empty-state-title
     id: #07-04-01
     category: null
-    properties[4]: margin,font-size,font-weight,color
-    cssRule: "margin: 0\nfont-size: var(--font-size-xl)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-text-base)"
+    properties[6]: margin,font-family,font-size,font-weight,letter-spacing,color
+    cssRule: "margin: 0\nfont-family: var(--font-display)\nfont-size: var(--font-size-l)\nfont-weight: var(--font-weight-semibold)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)"
     responsive: false
     description: ── Base container and structure ────────────────────────────────────────
   - type: selector
@@ -46,7 +46,7 @@ content[23]:
     id: #07-04-01
     category: null
     properties[4]: margin,max-width,color,font-size
-    cssRule: "margin: 0\nmax-width: 40ch\ncolor: var(--gray-600)\nfont-size: var(--font-size-base)"
+    cssRule: "margin: 0\nmax-width: 40ch\ncolor: var(--color-text-muted)\nfont-size: var(--font-size-s)"
     responsive: false
     description: ── Base container and structure ────────────────────────────────────────
   - type: selector
@@ -64,7 +64,7 @@ content[23]:
     id: #07-04-01
     category: null
     properties[3]: margin,font-size,color
-    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--gray-500)"
+    cssRule: "margin: 0\nfont-size: var(--font-size-s)\ncolor: var(--color-text-muted)"
     responsive: false
     description: ── Base container and structure ────────────────────────────────────────
   - type: selector
@@ -164,50 +164,5 @@ content[23]:
     category: null
     properties[3]: color,border-color,background
     cssRule: "color: var(--blue-500)\nborder-color: rgb(59 130 246 / 40%)\nbackground: rgb(59 130 246 / 14%)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state
-    id: #07-04-03
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: var(--gray-700)\nbackground: linear-gradient(180deg, rgb(255 255 255 / 4%) 0%, rgb(255 255 255 / 1%) 100%)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-title
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-100)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-text
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-400)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-meta
-    id: #07-04-03
-    category: null
-    properties[1]: color
-    cssRule: "color: var(--gray-500)"
-    responsive: false
-    description: ── Semantic variants ────────────────────────────────────────────────────
-  - type: selector
-    selectorType: class
-    selector: .night .empty-state-icon
-    id: #07-04-03
-    category: null
-    properties[2]: border-color,background
-    cssRule: "border-color: rgba(var(--color-primary-rgb), 0.45)\nbackground: rgba(var(--color-primary-rgb), 0.2)"
     responsive: false
     description: ── Semantic variants ────────────────────────────────────────────────────

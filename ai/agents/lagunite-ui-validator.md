@@ -2,8 +2,8 @@
 name: Lagunite UI Validator
 description: >-
   Multi-skill agent that validates and fixes Lagunite HTML using compose,
-  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use for
-  UI audits, POC refinement, and post-generation review.
+  structure, forms, night, a11y, contrast, and anti-slop domain skills. Use when
+  the user asks to audit, validate, auditar, or review UI — not after every generate.
 ---
 
 # Lagunite UI Validator Agent

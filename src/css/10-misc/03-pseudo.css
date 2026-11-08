@@ -204,3 +204,33 @@
   .dbefore-content::before { content: attr(data-before); }
   .dafter-content::after   { content: attr(data-after); }
 }
+
+/* @ID: #10-03-07 */
+
+/*
+ * Resolution-aware decorative icon via ::before + image-set.
+ * Set --icon-1x (required) and --icon-2x (optional) as url(...) values.
+ */
+.icon-set {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.icon-set::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: var(--icon-1x);
+}
+
+@supports (background-image: image-set(url('x') 1x)) {
+  .icon-set::before {
+    background-image: image-set(var(--icon-1x) 1x, var(--icon-2x, var(--icon-1x)) 2x);
+  }
+}

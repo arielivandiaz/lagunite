@@ -1,9 +1,9 @@
 folder: 06-molecules
 file: 04-tooltip.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 7
-content[7]:
+totalSelectors: 16
+content[16]:
   - type: selector
     selectorType: complex
     selector: "[data-tooltip]"
@@ -18,8 +18,35 @@ content[7]:
     selector: "[data-tooltip]::after"
     id: #06-04-01
     category: null
-    properties[16]: content,position,bottom,left,z-index,padding,font-size,line-height,color,white-space,pointer-events,background,border-radius,opacity,transform,transition
-    cssRule: "content: attr(data-tooltip)\nposition: absolute\nbottom: calc(100% + var(--space-2))\nleft: 50%\nz-index: 200\npadding: var(--space-1) var(--space-2)\nfont-size: var(--font-size-xs)\nline-height: 1.35\ncolor: var(--color-almost-white)\nwhite-space: nowrap\npointer-events: none\nbackground: var(--color-almost-black)\nborder-radius: var(--radius-s)\nopacity: 0\ntransform: translateX(-50%)\ntransition: opacity 0.2s ease"
+    properties[8]: padding,font-size,font-weight,line-height,color,background,border-radius,box-shadow
+    cssRule: "padding: 0.375rem 0.625rem\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-medium)\nline-height: 1.35\ncolor: var(--slate-50)\nbackground: var(--slate-900)\nborder-radius: var(--radius-sm)\nbox-shadow: 0 0 0 1px rgb(255 255 255 / 8%), var(--shadow-m)"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .tooltip-popover
+    id: #06-04-01
+    category: null
+    properties[8]: padding,font-size,font-weight,line-height,color,background,border-radius,box-shadow
+    cssRule: "padding: 0.375rem 0.625rem\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-medium)\nline-height: 1.35\ncolor: var(--slate-50)\nbackground: var(--slate-900)\nborder-radius: var(--radius-sm)\nbox-shadow: 0 0 0 1px rgb(255 255 255 / 8%), var(--shadow-m)"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .tooltip-hint
+    id: #06-04-01
+    category: null
+    properties[8]: padding,font-size,font-weight,line-height,color,background,border-radius,box-shadow
+    cssRule: "padding: 0.375rem 0.625rem\nfont-size: var(--font-size-xs)\nfont-weight: var(--font-weight-medium)\nline-height: 1.35\ncolor: var(--slate-50)\nbackground: var(--slate-900)\nborder-radius: var(--radius-sm)\nbox-shadow: 0 0 0 1px rgb(255 255 255 / 8%), var(--shadow-m)"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip]::after"
+    id: #06-04-01
+    category: null
+    properties[10]: content,position,bottom,left,z-index,white-space,pointer-events,opacity,transform,transition
+    cssRule: "content: attr(data-tooltip)\nposition: absolute\nbottom: calc(100% + var(--space-2))\nleft: 50%\nz-index: 200\nwhite-space: nowrap\npointer-events: none\nopacity: 0\ntransform: translate(-50%, 4px)\ntransition:\n    opacity var(--dur) var(--ease-out),\n    transform var(--dur) var(--ease-out)"
     responsive: false
     description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
   - type: selector
@@ -27,8 +54,17 @@ content[7]:
     selector: "[data-tooltip]:hover::after"
     id: #06-04-01
     category: null
-    properties[1]: opacity
-    cssRule: "opacity: 1"
+    properties[2]: opacity,transform
+    cssRule: "opacity: 1\ntransform: translate(-50%, 0)"
+    responsive: false
+    description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo
+    selector: "[data-tooltip]:focus-visible::after"
+    id: #06-04-01
+    category: null
+    properties[2]: opacity,transform
+    cssRule: "opacity: 1\ntransform: translate(-50%, 0)"
     responsive: false
     description: ── Tooltip anchor + bubble ───────────────────────────────────────────────
   - type: selector
@@ -37,12 +73,30 @@ content[7]:
     id: #06-04-02
     category: null
     properties[3]: top,bottom,transform
-    cssRule: "top: calc(100% + var(--space-2))\nbottom: auto\ntransform: translateX(-50%)"
+    cssRule: "top: calc(100% + var(--space-2))\nbottom: auto\ntransform: translate(-50%, -4px)"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo-hover
+    selector: "[data-tooltip].tooltip-bottom:hover::after"
+    id: #06-04-02
+    category: null
+    properties[1]: transform
+    cssRule: "transform: translate(-50%, 0)"
     responsive: false
     description: ── Placement variants ───────────────────────────────────────────────────
   - type: selector
     selectorType: pseudo
     selector: "[data-tooltip].tooltip-left::after"
+    id: #06-04-02
+    category: null
+    properties[2]: inset,transform
+    cssRule: "inset: 50% calc(100% + var(--space-2)) auto auto\ntransform: translateY(-50%)"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: pseudo-hover
+    selector: "[data-tooltip].tooltip-left:hover::after"
     id: #06-04-02
     category: null
     properties[2]: inset,transform
@@ -59,11 +113,38 @@ content[7]:
     responsive: false
     description: ── Placement variants ───────────────────────────────────────────────────
   - type: selector
-    selectorType: class
-    selector: ".night [data-tooltip]::after"
-    id: #06-04-03
+    selectorType: pseudo-hover
+    selector: "[data-tooltip].tooltip-right:hover::after"
+    id: #06-04-02
     category: null
-    properties[2]: color,background
-    cssRule: "color: var(--color-almost-black)\nbackground: var(--color-almost-white)"
+    properties[4]: top,bottom,left,transform
+    cssRule: "top: 50%\nbottom: auto\nleft: calc(100% + var(--space-2))\ntransform: translateY(-50%)"
     responsive: false
-    description: ── Night mode (invert bubble) ───────────────────────────────────────────
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .tooltip-anchor
+    id: #06-04-02
+    category: null
+    properties[1]: anchor-name
+    cssRule: "anchor-name: --lagunite-tip"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .tooltip-popover
+    id: #06-04-02
+    category: null
+    properties[8]: inset,margin,position,position-anchor,position-area,position-try-fallbacks,max-width,border
+    cssRule: "inset: auto\nmargin: 0\nposition: fixed\nposition-anchor: --lagunite-tip\nposition-area: block-start\nposition-try-fallbacks: flip-block, flip-inline\nmax-width: 16rem\nborder: none"
+    responsive: false
+    description: ── Placement variants ───────────────────────────────────────────────────
+  - type: selector
+    selectorType: class
+    selector: .tooltip-hint
+    id: #06-04-02
+    category: null
+    properties[7]: inset,margin,position,position-area,position-try-fallbacks,max-width,border
+    cssRule: "inset: auto\nmargin: 0\nposition: fixed\nposition-area: block-end\nposition-try-fallbacks: flip-block, flip-inline\nmax-width: 16rem\nborder: none"
+    responsive: false
+    description: "* Interest invokers (popover=\"hint\" + interestfor) — limited availability.\n   * Chrome/visual only here. Pair each trigger/hint with unique\n   * anchor-name / position-anchor (inline or per-instance) for polyfills;\n   * native interestfor can use the implicit anchor.\n   * Do NOT set role=\"tooltip\" / aria-describedby on the trigger — UA wires it."

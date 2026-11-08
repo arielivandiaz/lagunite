@@ -1,5 +1,7 @@
 # Lagunite — Redefinición AI-first
 
+> **⚠️ Archivado (2026-11-01) — norte técnico interno, no es narrativa pública.** Ver [`story/README.md`](./story/README.md) para cómo contamos Lagunite hoy.
+
 > **Estado:** documento de trabajo (v0.2)  
 > **Fecha:** 2026-09-14  
 > **Propósito:** norte de producto + plan para convertirlo en realidad en este repo.  

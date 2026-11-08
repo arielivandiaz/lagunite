@@ -27,15 +27,16 @@
 ) {
   display: block;
   width: 100%;
-  padding: var(--space-3) var(--space-4);
+  padding: 0.625rem 0.875rem;
   font-family: var(--font-sans);
-  font-size: var(--font-size-base);
+  font-size: 0.9375rem;
   line-height: 1.5;
   color: var(--input-text);
   background-color: var(--input-bg);
   border: var(--border-width-s) solid var(--input-border);
-  border-radius: var(--radius-m);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
   appearance: none;
   outline: none;
   cursor: text;
@@ -44,7 +45,7 @@
 
 ::placeholder {
   color: var(--input-placeholder);
-  font-size: var(--font-size-base);
+  font-size: inherit;
   opacity: 1;
 }
 
@@ -65,7 +66,7 @@
   .input
 ):focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  box-shadow: var(--shadow-focus);
   outline: none;
 }
 
@@ -85,7 +86,7 @@
   textarea,
   .input
 ):hover:not(:focus, :disabled) {
-  border-color: var(--color-border-hover);
+  border-color: var(--color-text-muted);
 }
 
 :is(
@@ -104,10 +105,11 @@
   textarea,
   .input
 ):disabled {
-  background-color: var(--gray-100);
+  background-color: var(--color-surface-muted);
   cursor: not-allowed;
   opacity: 0.6;
-  border-color: var(--gray-200);
+  border-color: var(--color-border-strong);
+  box-shadow: none;
 }
 
 /* @ID: #05-02-06 */
@@ -119,7 +121,7 @@ select,
   display: block;
   width: 100%;
   max-width: 100%;
-  min-height: 2.75rem;
+  min-height: 2.625rem;
   padding: var(--space-2) calc(var(--space-4) + 1.25rem) var(--space-2) var(--space-4);
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
@@ -131,8 +133,9 @@ select,
   background-position: right var(--space-3) center;
   background-size: 1.125rem;
   border: var(--border-width-s) solid var(--input-border);
-  border-radius: var(--radius-m);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
   appearance: none;
   outline: none;
   cursor: pointer;
@@ -142,22 +145,23 @@ select,
 
 select:hover:not(:focus, :disabled),
 .select:hover:not(:focus, :disabled) {
-  border-color: var(--color-border-hover);
+  border-color: var(--color-text-muted);
 }
 
 select:focus,
 .select:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  box-shadow: var(--shadow-focus);
   outline: none;
 }
 
 select:disabled,
 .select:disabled {
-  background-color: var(--gray-100);
+  background-color: var(--color-surface-muted);
   cursor: not-allowed;
   opacity: 0.6;
-  border-color: var(--gray-200);
+  border-color: var(--color-border-strong);
+  box-shadow: none;
 }
 
 select option,
@@ -279,15 +283,16 @@ select[multiple] option {
 
 .input-field:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+  box-shadow: var(--shadow-focus);
   outline: none;
 }
 
 .input-field:disabled {
-  background-color: var(--gray-100);
+  background-color: var(--color-surface-muted);
   cursor: not-allowed;
   opacity: 0.6;
-  border-color: var(--gray-200);
+  border-color: var(--color-border-strong);
+  box-shadow: none;
 }
 
 .input-label {
@@ -362,9 +367,9 @@ input.input-minimal,
 textarea.input-minimal {
   display: block;
   width: 100%;
-  padding: var(--space-3) var(--space-4);
+  padding: 0.625rem 0.875rem;
   font-family: var(--font-sans);
-  font-size: var(--font-size-base);
+  font-size: 0.9375rem;
   line-height: 1.5;
   color: var(--input-text);
   background-color: var(--gray-50);
@@ -397,42 +402,168 @@ textarea.input-minimal {
 
 /* @ID: #05-02-05 */
 
-/* ── Validation states (:invalid / :valid) ──────────────────────────────── */
+/* ── Validation states (:user-invalid / :user-valid) ────────────────────── */
 /*
- * Gate on [placeholder]: without a placeholder, :not(:placeholder-shown) is
- * always true, so empty optional fields matched :valid and turned green.
- * With placeholder: empty → placeholder shown → neutral; filled valid → green;
- * filled invalid → red.
+ * Post-interaction only (blur or submit attempt) — Baseline widely available.
+ * Error: no placeholder gate (empty required can go red after interact).
+ * Success: still gate on [placeholder] + :not(:placeholder-shown) so empty
+ * optional fields never look “success” after a casual focus/blur.
+ * App-owned validation: prefer .form-group.has-error / .has-success.
  */
 
-:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:invalid:not(:placeholder-shown) {
+:is(.input, .input-field, .input-underline, .input-minimal):user-invalid {
   border-color: var(--color-error);
   box-shadow: none;
 }
 
-.input-underline[placeholder]:invalid:not(:placeholder-shown) {
+.input-underline:user-invalid {
   border-bottom-color: var(--color-error);
 }
 
-:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:invalid:not(:placeholder-shown):focus {
+:is(.input, .input-field, .input-underline, .input-minimal):user-invalid:focus {
   box-shadow: 0 0 0 3px rgba(var(--color-error-rgb), 0.25);
 }
 
-.input-field[placeholder]:invalid:not(:placeholder-shown) ~ .input-label {
+.input-field:user-invalid ~ .input-label {
   color: var(--color-error);
 }
 
-:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:valid:not(:placeholder-shown) {
+:is(.input, .input-field, .input-underline, .input-minimal)[placeholder]:user-valid:not(:placeholder-shown) {
   border-color: var(--color-success);
   box-shadow: none;
 }
 
-.input-underline[placeholder]:valid:not(:placeholder-shown) {
+.input-underline[placeholder]:user-valid:not(:placeholder-shown) {
   border-bottom-color: var(--color-success);
 }
 
-.input-field[placeholder]:valid:not(:placeholder-shown) ~ .input-label {
+.input-field[placeholder]:user-valid:not(:placeholder-shown) ~ .input-label {
   color: var(--color-success);
+}
+
+/* @ID: #05-02-06b */
+
+/* Autofill highlight (progressive — ignored where :autofill unsupported) */
+:is(
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea,
+  .input,
+  .input-field,
+  .input-underline,
+  .input-minimal
+):is(:-webkit-autofill, :autofill) {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 12%, var(--input-bg)) inset;
+  -webkit-text-fill-color: var(--input-text);
+  caret-color: var(--input-text);
+  transition: background-color 99999s ease-out;
+}
+
+.night :is(.input, .input-field, .input-underline, .input-minimal, textarea, input):is(:-webkit-autofill, :autofill) {
+  box-shadow: 0 0 0 1000px color-mix(in srgb, var(--color-primary) 22%, var(--input-bg)) inset;
+  -webkit-text-fill-color: var(--input-text);
+  caret-color: var(--input-text);
+}
+
+/* @ID: #05-02-06c */
+
+/*
+ * field-sizing: content — opt-in (global .input is width: 100%).
+ * Progressive enhancement; unsupported browsers keep fixed sizing.
+ */
+.input-fit,
+.field-sizing {
+  field-sizing: content;
+  width: auto;
+  max-width: 100%;
+  min-inline-size: 12ch;
+  max-inline-size: 40ch;
+  align-self: start;
+}
+
+textarea.input-fit,
+textarea.field-sizing {
+  width: 100%;
+  height: auto;
+  min-block-size: 3lh;
+  max-block-size: 10lh;
+  max-inline-size: none;
+}
+
+select.input-fit,
+select.field-sizing {
+  width: auto;
+  max-inline-size: 40ch;
+}
+
+/* @ID: #05-02-06d */
+
+/*
+ * Customizable select (appearance: base-select) — progressive.
+ * Pair with Lagunite tokens; fall back to .input / .select chrome.
+ */
+@supports (appearance: base-select) {
+  .select-base,
+  .select-base::picker(select) {
+    appearance: base-select;
+  }
+
+  .select-base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+    color: var(--input-text);
+    background-color: var(--input-bg);
+    border: var(--border-width-s) solid var(--input-border);
+    border-radius: var(--radius-m);
+    cursor: pointer;
+  }
+
+  .select-base::picker(select) {
+    padding: var(--space-2);
+    background: var(--input-bg);
+    border: var(--border-width-s) solid var(--input-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-l);
+  }
+
+  .select-base::picker-icon {
+    color: var(--color-primary);
+  }
+
+  .select-base option {
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-s);
+    color: var(--input-text);
+  }
+
+  .select-base option:hover,
+  .select-base option:focus-visible {
+    background: color-mix(in srgb, var(--color-primary) 12%, var(--input-bg));
+  }
+
+  .select-base option::checkmark {
+    color: var(--color-primary);
+  }
+
+  .night .select-base,
+  .night .select-base::picker(select) {
+    background: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--input-text);
+  }
 }
 
 /* @ID: #05-02-07 */

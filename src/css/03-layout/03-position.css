@@ -493,3 +493,45 @@
   .dseparator-h-l { width: var(--space-12); }
   .dseparator-h-xl { width: var(--space-16); }
 }
+
+/* @ID: #03-03-10 */
+
+/*
+ * State-aware sticky: container-type scroll-state on the sticky node;
+ * style descendants (.sticky-surface) when stuck.
+ * Parent of sticky should use .sticky-section { overflow-anchor: none }
+ * if stuck styles change box model.
+ */
+.sticky-section {
+  overflow-anchor: none;
+}
+
+.sticky-state {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  container-type: scroll-state;
+  container-name: sticky-state;
+}
+
+.sticky-surface {
+  background: var(--color-bg);
+  border-bottom: var(--border-width-s) solid transparent;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.night .sticky-surface {
+  background: var(--color-bg);
+}
+
+@supports (container-type: scroll-state) {
+  @container sticky-state scroll-state(stuck: top) {
+    .sticky-surface {
+      border-bottom-color: var(--color-border);
+      box-shadow: var(--shadow-m);
+    }
+  }
+}

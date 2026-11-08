@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · overflow-clipping-control — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1 · MWG <code>overflow-clipping-control</code></p>
+      <h1 class="font-xl bold color-text">Overflow clip</h1>
+      <p class="font-s text-muted">
+        <code>.overflow-clip</code> (falls back to <code>hidden</code>) +
+        <code>.clip-margin-*</code> so child shadows can bleed without scrolling.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      <code>overflow: clip</code> does not create a scroll container. Use only when you need clip + margin, not scroll.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Shadow bleed</div>
+      <div class="card-body">
+        <div class="overflow-clip clip-margin-m padd border border-r bg-surface">
+          <p class="font-s text-muted marg-b-s">Parent clips content but margin keeps the button shadow visible.</p>
+          <button type="button" class="btn shadow-l">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">content-box margin</div>
+      <div class="card-body">
+        <div class="overflow-clip clip-margin-content padd border border-r bg-surface">
+          <p class="font-s text-muted">
+            <code>clip-margin-content</code> aligns clip to the content box (useful with padding + radius nesting).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-m bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.overflow-clip</code></li>
+        <li><code>.clip-margin-content</code> · <code>.clip-margin-padding</code></li>
+        <li><code>.clip-margin-s</code> · <code>.clip-margin-m</code> · <code>.clip-margin-l</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>spacing</code> · Guide: <code>retrieve overflow-clipping-control</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

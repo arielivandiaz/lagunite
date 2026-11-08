@@ -216,3 +216,99 @@
   .danimate-once     { animation-iteration-count: 1; }
   .danimate-infinite { animation-iteration-count: infinite; }
 }
+
+/* @ID: #04-07-11 */
+
+/*
+ * Scroll-driven progress bar (decorative).
+ * Prefer aria-hidden="true" on the element.
+ * No JS polyfill — progressive only.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    @keyframes scroll-progress-grow {
+      from {
+        transform: scaleX(0);
+      }
+
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 200;
+      width: 100%;
+      height: 3px;
+      pointer-events: none;
+      background: var(--color-primary);
+      transform-origin: 0 50%;
+      animation: scroll-progress-grow auto linear;
+      animation-timeline: scroll();
+    }
+
+    .night .scroll-progress {
+      background: var(--color-primary-light);
+    }
+  }
+}
+
+/* @ID: #04-07-12 */
+
+/*
+ * Stagger children via sibling-index() (progressive).
+ * JS fallback sets --sibling-index (1-based) when unsupported.
+ */
+.stagger > * {
+  --stagger-time: 0.08s;
+  --sibling-index: 1;
+
+  animation: fade-in 0.4s ease-out both;
+  animation-delay: calc(var(--sibling-index) * var(--stagger-time));
+  animation-delay: calc(sibling-index() * var(--stagger-time));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger > * {
+    animation: none;
+  }
+}
+
+/* @ID: #04-07-13 */
+
+/*
+ * Sibling index/count vars for dynamic styling.
+ * Optional JS injects --sibling-index / --sibling-count when unsupported.
+ */
+.sibling-vars {
+  --sibling-index: 1;
+  --sibling-count: 1;
+}
+
+@supports (top: calc(sibling-index() * 1px)) {
+  .sibling-vars {
+    --sibling-index: sibling-index();
+    --sibling-count: sibling-count();
+  }
+}
+
+.sibling-hue {
+  --sibling-index: 1;
+  --sibling-count: 1;
+
+  background-color: hsl(
+    calc(360deg / var(--sibling-count) * var(--sibling-index)),
+    65%,
+    48%
+  );
+}
+
+@supports (top: calc(sibling-index() * 1px)) {
+  .sibling-hue {
+    --sibling-index: sibling-index();
+    --sibling-count: sibling-count();
+  }
+}

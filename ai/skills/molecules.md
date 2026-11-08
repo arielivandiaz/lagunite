@@ -42,6 +42,9 @@ Molecules combine **atoms** (`.input`, `.btn`) with structure and state. They si
 | `.alert-dismissible` | Extra right padding for close control |
 | `.alert-close` | Absolutely positioned close button |
 | `.toast` | Fixed toast shell (bottom-right) |
+| `.toast-stack` | Flex stack for non-popover toasts |
+| `.toast-body` / `.toast-message` | Layout inside a toast |
+| `[popover].toast` | `popover="manual"` shell; stack with `--toast-offset` |
 | `.xtoast` | Toast tweaks on small screens |
 | `.dtoast` | Toast layout from 640px up |
 
@@ -53,15 +56,19 @@ Molecules combine **atoms** (`.input`, `.btn`) with structure and state. They si
 | `.dropdown-toggle` | Click target |
 | `.dropdown-menu` | Absolutely positioned panel (hidden until `.dropdown.open`) |
 | `.dropdown-menu-right` | Align menu to the right |
-| `.dropdown-item` | Menu row (supports `.active`) |
+| `.dropdown-item` | Menu row (supports `.active`; works on `button`) |
 | `.dropdown-header` | Non-clickable section title |
 | `.dropdown-divider` | Horizontal rule between items |
+| `.dropdown-trigger` / `.dropdown-panel` | Progressive Popover + anchor (`@supports`) |
 
 ## Tooltip (`04-tooltip.css`)
 
 - Set **`data-tooltip="text"`** on the element (required).
 - Optional placement on the **same element**: `.tooltip-bottom`, `.tooltip-left`, `.tooltip-right` (default: above).
 - No separate `.tooltip` wrapper class needed.
+- Progressive (when Anchor Positioning is supported): `.tooltip-anchor` + `.tooltip-popover` with Popover API.
+- Progressive interest: `interestfor` + `popover="hint"` + `.tooltip-hint` (unique `anchor-name` / `position-anchor` per pair). Do not add `role="tooltip"` / `aria-describedby` on the trigger.
+- Recipes: `lab/recipes/position-aware-tooltips.html`, `interest-triggered-tooltips.html`, `resilient-context-menus-and-nested-dropdowns.html`, `persistent-toast-notifications.html`
 
 ## Breadcrumb (`05-breadcrumb.css`)
 

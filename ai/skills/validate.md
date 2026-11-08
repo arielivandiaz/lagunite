@@ -3,6 +3,9 @@
 > **This is the agent entrypoint** for validating or refining Lagunite UI.  
 > It does **not** replace domain skills — it **routes** to them and merges a single report.
 >
+> **Do not open this file when generating a new screen/POC** unless the user asked to audit,
+> validate, or fix after a review. Generation path: `route.md` → `compose.md` only.
+>
 > Domain skills live beside this file:
 > `validate-structure` · `validate-forms` · `validate-night` · `validate-a11y`  
 > Plus craft/color/filter: `compose.md` · `contrast.md` · **`anti-slop.md`**

@@ -1,7 +1,7 @@
 {
   "folder": "00-config",
   "file": "02-typography.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
   "totalSelectors": 1,
   "content": [
@@ -13,8 +13,8 @@
       "category": null,
       "properties": [
         "--font-sans",
-        "--font-mono",
         "--font-display",
+        "--font-mono",
         "--font-text",
         "--font-headers",
         "--font-size-xs",
@@ -24,15 +24,21 @@
         "--font-size-xl",
         "--font-size-xxl",
         "--font-size-3xl",
+        "--font-size-display-l",
+        "--font-size-display-xl",
+        "--font-size-display-2xl",
         "--font-weight-light",
         "--font-weight-normal",
         "--font-weight-medium",
+        "--font-weight-semibold",
         "--font-weight-bold",
         "--line-height-tight",
         "--line-height-normal",
-        "--line-height-loose"
+        "--line-height-loose",
+        "--letter-spacing-display",
+        "--letter-spacing-title"
       ],
-      "cssRule": "--font-sans:\r\n    \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif\n--font-mono: \"JetBrains Mono\", \"Fira Code\", monospace\n--font-display: \"Manrope\", \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif\n--font-text: \"Zen Kaku Gothic Antique\", sans-serif\n--font-headers: \"PT Sans\", sans-serif\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-bold: 700\n--line-height-tight: 1.2\n--line-height-normal: 1.5\n--line-height-loose: 1.8",
+      "cssRule": "--font-sans: \"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif\n--font-display: \"Bricolage Grotesque\", \"Instrument Sans\", system-ui, sans-serif\n--font-mono: \"JetBrains Mono\", ui-monospace, \"SF Mono\", monospace\n--font-text: var(--font-sans)\n--font-headers: var(--font-display)\n--font-size-xs: 0.75rem\n/* 12px */\n--font-size-s: 0.875rem\n/* 14px */\n--font-size-base: 1rem\n/* 16px */\n--font-size-l: 1.125rem\n/* 18px */\n--font-size-xl: 1.25rem\n/* 20px */\n--font-size-xxl: 1.5rem\n/* 24px */\n--font-size-3xl: 2rem\n/* 32px */\n--font-size-display-l: 2.75rem\n/* 44px */\n--font-size-display-xl: 3.5rem\n/* 56px */\n--font-size-display-2xl: 4.5rem\n/* 72px */\n--font-weight-light: 300\n--font-weight-normal: 400\n--font-weight-medium: 500\n--font-weight-semibold: 600\n--font-weight-bold: 700\n--line-height-tight: 1.15\n--line-height-normal: 1.5\n--line-height-loose: 1.8\n--letter-spacing-display: -0.03em\n--letter-spacing-title: -0.015em",
       "responsive": false,
       "description": ""
     }
@@ -40,23 +46,23 @@
   "customProperties": [
     {
       "property": "--font-sans",
-      "value": "\"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif"
-    },
-    {
-      "property": "--font-mono",
-      "value": "\"JetBrains Mono\", \"Fira Code\", monospace"
+      "value": "\"Instrument Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
     },
     {
       "property": "--font-display",
-      "value": "\"Manrope\", \"Inter\", -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, sans-serif"
+      "value": "\"Bricolage Grotesque\", \"Instrument Sans\", system-ui, sans-serif"
+    },
+    {
+      "property": "--font-mono",
+      "value": "\"JetBrains Mono\", ui-monospace, \"SF Mono\", monospace"
     },
     {
       "property": "--font-text",
-      "value": "\"Zen Kaku Gothic Antique\", sans-serif"
+      "value": "var(--font-sans)"
     },
     {
       "property": "--font-headers",
-      "value": "\"PT Sans\", sans-serif"
+      "value": "var(--font-display)"
     },
     {
       "property": "--font-size-xs",
@@ -87,6 +93,18 @@
       "value": "2rem"
     },
     {
+      "property": "--font-size-display-l",
+      "value": "2.75rem"
+    },
+    {
+      "property": "--font-size-display-xl",
+      "value": "3.5rem"
+    },
+    {
+      "property": "--font-size-display-2xl",
+      "value": "4.5rem"
+    },
+    {
       "property": "--font-weight-light",
       "value": "300"
     },
@@ -99,12 +117,16 @@
       "value": "500"
     },
     {
+      "property": "--font-weight-semibold",
+      "value": "600"
+    },
+    {
       "property": "--font-weight-bold",
       "value": "700"
     },
     {
       "property": "--line-height-tight",
-      "value": "1.2"
+      "value": "1.15"
     },
     {
       "property": "--line-height-normal",
@@ -113,6 +135,14 @@
     {
       "property": "--line-height-loose",
       "value": "1.8"
+    },
+    {
+      "property": "--letter-spacing-display",
+      "value": "-0.03em"
+    },
+    {
+      "property": "--letter-spacing-title",
+      "value": "-0.015em"
     }
   ]
 }

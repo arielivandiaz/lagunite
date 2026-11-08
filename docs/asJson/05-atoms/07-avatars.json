@@ -1,9 +1,9 @@
 {
   "folder": "05-atoms",
   "file": "07-avatars.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 72,
+  "totalSelectors": 71,
   "content": [
     {
       "type": "selector",
@@ -28,7 +28,7 @@
         "flex-shrink",
         "user-select"
       ],
-      "cssRule": "position: relative\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nborder-radius: 50%\noverflow: hidden\nbackground-color: var(--gray-200)\ncolor: var(--gray-700)\nfont-weight: var(--font-weight-medium)\nfont-size: var(--font-size-base)\nline-height: 1\nflex-shrink: 0\nuser-select: none",
+      "cssRule": "position: relative\ndisplay: inline-flex\nalign-items: center\njustify-content: center\nwidth: var(--space-10)\nheight: var(--space-10)\nborder-radius: 50%\noverflow: hidden\nbackground-color: var(--color-surface-muted)\ncolor: var(--color-text-muted)\nfont-weight: var(--font-weight-semibold)\nfont-size: var(--font-size-s)\nline-height: 1\nflex-shrink: 0\nuser-select: none",
       "responsive": false,
       "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
     },
@@ -45,20 +45,6 @@
         "display"
       ],
       "cssRule": "width: 100%\nheight: 100%\nobject-fit: cover\ndisplay: block",
-      "responsive": false,
-      "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .avatar",
-      "id": "#05-07-01",
-      "category": null,
-      "properties": [
-        "background-color",
-        "color"
-      ],
-      "cssRule": "background-color: var(--gray-700)\ncolor: var(--gray-200)",
       "responsive": false,
       "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
     },
@@ -327,10 +313,11 @@
       "properties": [
         "background",
         "color",
+        "box-shadow",
         "font-weight",
         "text-transform"
       ],
-      "cssRule": "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--color-primary) 0%,\n\t\tvar(--color-primary-dark) 100%\n\t)\ncolor: var(--color-text-alt)\nfont-weight: var(--font-weight-medium)\ntext-transform: uppercase",
+      "cssRule": "background: linear-gradient(\n\t\t135deg,\n\t\tvar(--blue-400) 0%,\n\t\tvar(--blue-700) 100%\n\t)\ncolor: var(--color-on-primary)\nbox-shadow: inset 0 1px 0 rgb(255 255 255 / 25%)\nfont-weight: var(--font-weight-semibold)\ntext-transform: uppercase",
       "responsive": false,
       "description": "==========================================================================\n   05-atoms / 07-avatars.css\n   Avatar atoms: sizes, shapes, status indicators, initials, groups, stacks,\n   rings. Tokens: --space-*, --gray-*, --color-*, --color-bg, --shadow-s.\n   Responsive: x = mobile (max-width: 639px).\n   =========================================================================="
     },

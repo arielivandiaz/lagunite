@@ -15,8 +15,11 @@
   justify-content: space-between;
   gap: var(--space-3);
   min-height: 3.5rem;
-  padding: var(--space-2) var(--space-4);
-  background: var(--color-bg);
+  padding: var(--space-2) var(--space-5);
+  color: var(--color-text-base);
+  background: var(--color-glass);
+  -webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  backdrop-filter: blur(var(--blur-md)) saturate(160%);
   border-bottom: var(--border-width-s) solid var(--color-border);
   z-index: 120;
 }
@@ -27,7 +30,7 @@
 }
 
 .topbar-elevated {
-  box-shadow: var(--shadow-s);
+  box-shadow: var(--shadow-m);
 }
 
 /* @ID: #08-06-02 */
@@ -63,13 +66,18 @@
   gap: var(--space-2);
   color: var(--color-text-base);
   text-decoration: none;
+  font-family: var(--font-display);
   font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
   white-space: nowrap;
 }
 
 .topbar-title {
   margin: 0;
+  font-family: var(--font-display);
   font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-title);
   color: var(--color-text-base);
   white-space: nowrap;
   overflow: hidden;
@@ -79,13 +87,13 @@
 .topbar-subtitle {
   margin: 0;
   font-size: var(--font-size-s);
-  color: var(--gray-500);
+  color: var(--color-text-muted);
 }
 
 .topbar-divider {
   width: 1px;
   height: 1.5rem;
-  background: var(--color-border);
+  background: var(--color-border-strong);
 }
 
 /* @ID: #08-06-03 */
@@ -108,24 +116,23 @@
   min-width: 2.25rem;
   height: 2.25rem;
   padding: 0 var(--space-2);
-  border: var(--border-width-s) solid var(--color-border);
-  border-radius: var(--radius-m);
-  background: var(--color-bg);
-  color: var(--color-text-base);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-muted);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out);
 }
 
 .topbar-action:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  background: rgba(var(--color-primary-rgb), 0.06);
+  color: var(--color-text-base);
+  background: var(--color-surface-muted);
 }
 
 .topbar-action:focus-visible {
-  outline: var(--border-width-md) solid var(--color-primary);
-  outline-offset: 1px;
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .topbar-badge {
@@ -135,8 +142,9 @@
   min-width: 1.2rem;
   height: 1.2rem;
   border-radius: var(--radius-full);
-  background: var(--color-error);
+  background: var(--color-danger-fill);
   color: var(--color-text-alt);
+  box-shadow: 0 0 0 2px var(--color-surface-raised);
   font-size: 0.68rem;
   font-weight: var(--font-weight-bold);
   line-height: 1;
@@ -151,11 +159,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: var(--border-width-s) solid var(--color-border);
-  background: var(--gray-100);
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-bold);
-  color: var(--gray-700);
+  border: 0;
+  background: linear-gradient(140deg, var(--blue-400), var(--blue-700));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-on-primary);
 }
 
 /* @ID: #08-06-04 */
@@ -163,7 +172,9 @@
 /* ── Style variants ─────────────────────────────────────────────────────── */
 
 .topbar-primary {
-  background: var(--color-primary);
+  background: var(--gradient-primary);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   border-color: rgb(255 255 255 / 22%);
 }
 
@@ -174,14 +185,8 @@
   color: var(--color-text-alt);
 }
 
-.topbar-primary .topbar-action {
-  border-color: rgb(255 255 255 / 35%);
-  background: rgb(255 255 255 / 8%);
-}
-
 .topbar-primary .topbar-action:hover {
   background: rgb(255 255 255 / 16%);
-  border-color: rgb(255 255 255 / 55%);
 }
 
 .topbar-primary .topbar-divider {
@@ -220,42 +225,3 @@
   }
 }
 
-/* @ID: #08-06-06 */
-
-/* ── Night mode ─────────────────────────────────────────────────────────── */
-
-.night .topbar {
-  background: var(--gray-900);
-  border-color: var(--gray-700);
-}
-
-.night .topbar-brand,
-.night .topbar-title {
-  color: var(--gray-100);
-}
-
-.night .topbar-subtitle {
-  color: var(--gray-400);
-}
-
-.night .topbar-divider {
-  background: var(--gray-700);
-}
-
-.night .topbar-action {
-  border-color: var(--gray-700);
-  background: var(--gray-800);
-  color: var(--gray-200);
-}
-
-.night .topbar-action:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary-light);
-  background: rgba(var(--color-primary-rgb), 0.18);
-}
-
-.night .topbar-avatar {
-  border-color: var(--gray-700);
-  background: var(--gray-800);
-  color: var(--gray-200);
-}

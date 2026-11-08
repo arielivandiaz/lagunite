@@ -16,6 +16,7 @@ Organisms usually define shell structure, while spacing, grid, and flex alignmen
 | `.navbar-link` / `.navbar-link.active` | Nav link and current-page state. |
 | `.navbar-burger` | Mobile toggle button. |
 | `.navbar-primary` / `.navbar-transparent` / `.navbar-sticky` | Common navbar variants. |
+| `.scrollspy` | Fragment-link nav; `:target-current` / IO fallback class. |
 
 ## `02-sidebar.css`
 
@@ -23,6 +24,8 @@ Organisms usually define shell structure, while spacing, grid, and flex alignmen
 |---------|--------------|
 | `.sidebar` | Standard 16rem vertical app sidebar. On mobile it becomes an off-canvas drawer. |
 | `.sidebar.open` | Reveals the mobile drawer. |
+| `.sidebar.sidebar-drawer` | Always-on off-canvas drawer (any viewport). |
+| `.sidebar-backdrop` / `.open` | Dimmed light-dismiss layer for drawer. |
 | `.sidebar-header` / `.sidebar-nav` / `.sidebar-footer` | Main regions. |
 | `.sidebar-section` / `.sidebar-section-title` | Grouping blocks. Titles also support native `details` disclosure. |
 | `.sidebar-list` / `.sidebar-sublist` | Nested nav list resets. |

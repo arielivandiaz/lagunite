@@ -1,16 +1,16 @@
 folder: 01-text
 file: 01-fonts.css
-lastUpdated: 2026-09-15
+lastUpdated: 2026-11-07
 hasResponsive: false
-totalSelectors: 37
-content[37]:
+totalSelectors: 44
+content[44]:
   - type: selector
     selectorType: element
     selector: h1
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -18,8 +18,8 @@ content[37]:
     selector: h2
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -27,8 +27,8 @@ content[37]:
     selector: h3
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -36,8 +36,8 @@ content[37]:
     selector: h4
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -45,8 +45,8 @@ content[37]:
     selector: h5
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -54,8 +54,8 @@ content[37]:
     selector: h6
     id: #01-01-01
     category: null
-    properties[6]: font-family,font-weight,line-height,overflow-wrap,word-wrap,white-space
-    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\noverflow-wrap: break-word\nword-wrap: break-word\nwhite-space: normal"
+    properties[7]: font-family,font-weight,line-height,letter-spacing,color,overflow-wrap,text-wrap
+    cssRule: "font-family: var(--font-headers)\nfont-weight: var(--font-weight-bold)\nline-height: var(--line-height-tight)\nletter-spacing: var(--letter-spacing-title)\ncolor: var(--color-text-base)\noverflow-wrap: break-word\ntext-wrap: balance"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -63,8 +63,8 @@ content[37]:
     selector: h1
     id: #01-01-01
     category: null
-    properties[1]: font-size
-    cssRule: "font-size: clamp(2.5rem, 5vw, 5rem)"
+    properties[2]: font-size,letter-spacing
+    cssRule: "font-size: clamp(2.5rem, 7vw, var(--font-size-display-2xl))\nletter-spacing: var(--letter-spacing-display)"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -72,8 +72,8 @@ content[37]:
     selector: h2
     id: #01-01-01
     category: null
-    properties[1]: font-size
-    cssRule: "font-size: clamp(2rem, 4vw, 3rem)"
+    properties[2]: font-size,letter-spacing
+    cssRule: "font-size: clamp(2rem, 5vw, var(--font-size-display-l))\nletter-spacing: var(--letter-spacing-display)"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -82,7 +82,7 @@ content[37]:
     id: #01-01-01
     category: null
     properties[1]: font-size
-    cssRule: "font-size: clamp(1.5rem, 3vw, 2rem)"
+    cssRule: "font-size: clamp(1.5rem, 3.5vw, var(--font-size-3xl))"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -90,8 +90,8 @@ content[37]:
     selector: h4
     id: #01-01-01
     category: null
-    properties[1]: font-size
-    cssRule: "font-size: clamp(1.2rem, 2.5vw, 1.5rem)"
+    properties[2]: font-size,font-weight
+    cssRule: "font-size: var(--font-size-xxl)\nfont-weight: var(--font-weight-semibold)"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -99,8 +99,8 @@ content[37]:
     selector: h5
     id: #01-01-01
     category: null
-    properties[1]: font-size
-    cssRule: "font-size: clamp(1rem, 2vw, 1.2rem)"
+    properties[2]: font-size,font-weight
+    cssRule: "font-size: var(--font-size-l)\nfont-weight: var(--font-weight-semibold)"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -108,8 +108,8 @@ content[37]:
     selector: h6
     id: #01-01-01
     category: null
-    properties[1]: font-size
-    cssRule: "font-size: var(--font-size-base)"
+    properties[2]: font-size,font-weight
+    cssRule: "font-size: var(--font-size-base)\nfont-weight: var(--font-weight-semibold)"
     responsive: false
     description: ** Heading **
   - type: selector
@@ -172,7 +172,7 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-xs) !important"
+    cssRule: "font-size: var(--font-size-xs)"
     responsive: false
     description: Font Size
   - type: selector
@@ -181,7 +181,7 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-s) !important"
+    cssRule: "font-size: var(--font-size-s)"
     responsive: false
     description: Font Size
   - type: selector
@@ -190,7 +190,7 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-l) !important"
+    cssRule: "font-size: var(--font-size-l)"
     responsive: false
     description: Font Size
   - type: selector
@@ -199,7 +199,7 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-xl) !important"
+    cssRule: "font-size: var(--font-size-xl)"
     responsive: false
     description: Font Size
   - type: selector
@@ -208,7 +208,7 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-xxl) !important"
+    cssRule: "font-size: var(--font-size-xxl)"
     responsive: false
     description: Font Size
   - type: selector
@@ -217,45 +217,108 @@ content[37]:
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: var(--font-size-3xl) !important"
+    cssRule: "font-size: var(--font-size-3xl)"
     responsive: false
     description: Font Size
+  - type: selector
+    selectorType: class
+    selector: .font-display-l
+    id: #01-01-04
+    category: null
+    properties[4]: font-family,font-weight,line-height,letter-spacing
+    cssRule: "font-family: var(--font-display)\nfont-weight: var(--font-weight-bold)\nline-height: 1.05\nletter-spacing: var(--letter-spacing-display)"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display-xl
+    id: #01-01-04
+    category: null
+    properties[4]: font-family,font-weight,line-height,letter-spacing
+    cssRule: "font-family: var(--font-display)\nfont-weight: var(--font-weight-bold)\nline-height: 1.05\nletter-spacing: var(--letter-spacing-display)"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display-2xl
+    id: #01-01-04
+    category: null
+    properties[4]: font-family,font-weight,line-height,letter-spacing
+    cssRule: "font-family: var(--font-display)\nfont-weight: var(--font-weight-bold)\nline-height: 1.05\nletter-spacing: var(--letter-spacing-display)"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display-l
+    id: #01-01-04
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(2rem, 5vw, var(--font-size-display-l))"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display-xl
+    id: #01-01-04
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(2.25rem, 6vw, var(--font-size-display-xl))"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display-2xl
+    id: #01-01-04
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: clamp(2.75rem, 8vw, var(--font-size-display-2xl))"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
+  - type: selector
+    selectorType: class
+    selector: .font-display
+    id: #01-01-04
+    category: null
+    properties[1]: font-family
+    cssRule: "font-family: var(--font-display)"
+    responsive: false
+    description: "Display sizes: titles with the display face and tight tracking"
   - type: selector
     selectorType: class
     selector: .font-250
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: 250% !important"
+    cssRule: "font-size: 250%"
     responsive: false
-    description: Font Size
+    description: "Display sizes: titles with the display face and tight tracking"
   - type: selector
     selectorType: class
     selector: .font-300
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: 300% !important"
+    cssRule: "font-size: 300%"
     responsive: false
-    description: Font Size
+    description: "Display sizes: titles with the display face and tight tracking"
   - type: selector
     selectorType: class
     selector: .font-400
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: 400% !important"
+    cssRule: "font-size: 400%"
     responsive: false
-    description: Font Size
+    description: "Display sizes: titles with the display face and tight tracking"
   - type: selector
     selectorType: class
     selector: .font-500
     id: #01-01-04
     category: null
     properties[1]: font-size
-    cssRule: "font-size: 500% !important"
+    cssRule: "font-size: 500%"
     responsive: false
-    description: Font Size
+    description: "Display sizes: titles with the display face and tight tracking"
   - type: selector
     selectorType: class
     selector: .font-fluid-xs
@@ -307,7 +370,7 @@ content[37]:
     id: #01-01-06
     category: null
     properties[1]: font-weight
-    cssRule: "font-weight: var(--font-weight-light) !important"
+    cssRule: "font-weight: var(--font-weight-light)"
     responsive: false
     description: Font Weight
   - type: selector
@@ -316,7 +379,7 @@ content[37]:
     id: #01-01-06
     category: null
     properties[1]: font-weight
-    cssRule: "font-weight: var(--font-weight-normal) !important"
+    cssRule: "font-weight: var(--font-weight-normal)"
     responsive: false
     description: Font Weight
   - type: selector
@@ -325,7 +388,7 @@ content[37]:
     id: #01-01-06
     category: null
     properties[1]: font-weight
-    cssRule: "font-weight: var(--font-weight-medium) !important"
+    cssRule: "font-weight: var(--font-weight-medium)"
     responsive: false
     description: Font Weight
   - type: selector
@@ -334,6 +397,6 @@ content[37]:
     id: #01-01-06
     category: null
     properties[1]: font-weight
-    cssRule: "font-weight: var(--font-weight-bold) !important"
+    cssRule: "font-weight: var(--font-weight-bold)"
     responsive: false
     description: Font Weight

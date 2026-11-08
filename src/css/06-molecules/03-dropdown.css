@@ -1,6 +1,7 @@
 /* ==========
    06-molecules / 03-dropdown.css
    Dropdown container, toggle, menu, items, and alignment.
+   v3: floating raised panel, inset rounded items, themed by tokens.
    ========== */
 
 /* @ID: #06-03-01 */
@@ -20,29 +21,29 @@
 
 /* ── Dropdown menu (toggle .open on .dropdown) ─────────────────────────── */
 
+.dropdown-menu,
+.dropdown-panel {
+  min-width: 11rem;
+  padding: var(--space-1);
+  margin: 0;
+  list-style: none;
+  background: var(--color-surface-raised);
+  border: var(--border-width-s) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: inset 0 1px 0 var(--color-highlight), var(--shadow-l);
+}
+
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + var(--space-1));
   left: 0;
   z-index: 100;
   display: none;
-  min-width: 10rem;
-  padding: var(--space-2) 0;
-  margin: 0;
-  list-style: none;
-  background: var(--color-bg);
-  border: var(--border-width-s) solid var(--color-border);
-  border-radius: var(--radius-m);
-  box-shadow: var(--shadow-m);
-}
-
-.night .dropdown-menu {
-  background: var(--color-bg);
-  border-color: var(--color-border);
 }
 
 .dropdown.open .dropdown-menu {
   display: block;
+  animation: dropdown-in var(--dur) var(--ease-out);
 }
 
 .dropdown-menu-right {
@@ -50,66 +51,91 @@
   left: auto;
 }
 
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* @ID: #06-03-03 */
 
 /* ── Items, header, divider ─────────────────────────────────────────────── */
 
 .dropdown-item {
-  display: block;
-  padding: var(--space-2) var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: 2.25rem;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-sm);
   color: var(--color-text-base);
+  font: inherit;
+  font-size: var(--font-size-s);
+  text-align: start;
   text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
 }
 
 .dropdown-item:hover {
-  background-color: var(--color-primary);
-  color: var(--color-text-alt);
+  background-color: var(--color-surface-muted);
 }
 
 .dropdown-item.active {
-  background-color: var(--color-primary);
-  color: var(--color-text-alt);
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary-text);
 }
 
 .dropdown-item:focus-visible {
-  outline: var(--border-width-md) solid var(--color-primary);
-  outline-offset: -2px;
+  outline: none;
+  box-shadow: var(--shadow-focus);
 }
 
 .dropdown-header {
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-3) var(--space-1);
   font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-  color: var(--gray-500);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
   text-transform: uppercase;
 }
 
 .dropdown-divider {
-  margin: var(--space-2) 0;
+  margin: var(--space-1) 0;
   border: none;
   border-top: var(--border-width-s) solid var(--color-border);
 }
 
-/* @ID: #06-03-04 */
+/* @ID: #06-03-05 */
 
-/* ── Night mode ─────────────────────────────────────────────────────────── */
+/*
+ * Progressive: Popover API + CSS Anchor Positioning.
+ * Existing `.dropdown` + `.open` remains the default path.
+ * Pattern is a button-revealing-a-button-group — do NOT add role="menu"
+ * unless you implement the full ARIA menu keyboard contract.
+ */
+@supports (anchor-name: --lagunite-dd) {
+  .dropdown-panel {
+    inset: auto;
+    position: fixed;
+    position-anchor: --lagunite-dd;
+    position-area: block-end span-inline-end;
+    position-try-fallbacks: flip-block, flip-inline;
+    margin-top: var(--space-1);
+  }
 
-.night .dropdown-item {
-  color: var(--color-text-alt);
-}
-
-.night .dropdown-item:hover,
-.night .dropdown-item.active {
-  color: var(--color-text-alt);
-}
-
-.night .dropdown-header {
-  color: var(--gray-400);
-}
-
-.night .dropdown-divider {
-  border-top-color: var(--color-border);
+  .dropdown-trigger {
+    anchor-name: --lagunite-dd;
+  }
 }

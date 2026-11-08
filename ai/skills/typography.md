@@ -81,6 +81,26 @@ Mobile (`max-width: 639px`): `.xta-c` `.xta-lf` `.xta-rg` `.xta-j` `.xta-ja`
 
 Desktop (`min-width: 640px`): `.dta-c` `.dta-lf` `.dta-rg` `.dta-j` `.dta-ja`
 
+## Text wrap (progressive)
+
+| Class | Role |
+| --- | --- |
+| `.text-balance` | `text-wrap: balance` — short titles/headings only (not global) |
+| `.text-pretty` | `text-wrap: pretty` — body paragraphs; ignored where unsupported |
+| `.text-trim` | `text-box: trim-both cap alphabetic` — UI labels / badges |
+| `.text-trim-start` | `text-box: trim-start cap alphabetic` — flush tops with media |
+
+Recipes: `lab/recipes/improve-text-layout-and-legibility.html`, `precise-text-alignment.html`
+
 ## Composition
 
 Prefer semantic sizes (`.font-s`, `.font-l`) and line-height (`.lh`) on body copy; use `.font-headers` or heading tags for titles. Combine with skill **colors** for `color-*` and layout skills for spacing.
+
+---
+
+## v3 type
+
+- Faces: `--font-display` (Bricolage Grotesque) for `h1`–`h6`, titles and prices; `--font-sans` (Instrument Sans) for text; `--font-mono` (JetBrains Mono).
+- `h1` → up to 72px, `h2` → up to 44px, tight negative tracking, `text-wrap: balance`.
+- `.font-display-2xl` (72) · `.font-display-xl` (56) · `.font-display-l` (44): display face at any element. Use these (or `h1`/`h2`) for hero and section titles — not `.font-xxl` (24px).
+- `.font-*` size and `.font-weight-*` utilities no longer use `!important`.

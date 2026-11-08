@@ -1,0 +1,164 @@
+folder: 05-atoms
+file: 11-progress-ring.css
+lastUpdated: 2026-11-07
+hasResponsive: false
+totalSelectors: 16
+content[16]:
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-wrap
+    id: null
+    category: null
+    properties[3]: position,display,place-items
+    cssRule: "position: relative\ndisplay: inline-grid\nplace-items: center"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: progress.progress-ring
+    id: null
+    category: null
+    properties[17]: "--progress-ring-size","--progress-ring-thickness","--progress-ring-track","--progress-ring-fill","--progress-ring-value",appearance,display,width,height,border-radius,border,background,background-origin,background-clip,mask-image,vertical-align,transition
+    cssRule: "--progress-ring-size: 6rem\n--progress-ring-thickness: 0.75rem\n--progress-ring-track: var(--gray-200)\n--progress-ring-fill: var(--color-primary)\n--progress-ring-value: 0\nappearance: none\ndisplay: block\nwidth: var(--progress-ring-size)\nheight: var(--progress-ring-size)\nborder-radius: 50%\nborder: var(--progress-ring-thickness) solid transparent\nbackground:\r\n    conic-gradient(\r\n      var(--progress-ring-fill) calc(var(--progress-ring-value) * 1%),\r\n      var(--progress-ring-track) 0\r\n    )\nbackground-origin: border-box\nbackground-clip: border-box\n/* Hollow center — mask works wider than background-clip: border-area */\nmask-image: radial-gradient(\r\n    farthest-side,\r\n    transparent calc(100% - var(--progress-ring-thickness) - 0.5px),\r\n    #000 calc(100% - var(--progress-ring-thickness))\r\n  )\nvertical-align: middle\ntransition: --progress-ring-value 0s ease-in-out"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "progress.progress-ring::-webkit-progress-bar"
+    id: null
+    category: null
+    properties[2]: display,background
+    cssRule: "display: none\nbackground: transparent"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "progress.progress-ring::-webkit-progress-value"
+    id: null
+    category: null
+    properties[2]: display,background
+    cssRule: "display: none\nbackground: transparent"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: pseudo
+    selector: "progress.progress-ring::-moz-progress-bar"
+    id: null
+    category: null
+    properties[2]: display,background
+    cssRule: "display: none\nbackground: transparent"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-s
+    id: #05-11-02
+    category: null
+    properties[2]: "--progress-ring-size","--progress-ring-thickness"
+    cssRule: "--progress-ring-size: 3rem\n--progress-ring-thickness: 0.4rem"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-l
+    id: #05-11-02
+    category: null
+    properties[2]: "--progress-ring-size","--progress-ring-thickness"
+    cssRule: "--progress-ring-size: 9rem\n--progress-ring-thickness: 1rem"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-content
+    id: #05-11-02
+    category: null
+    properties[8]: position,inset,display,place-items,font-size,font-weight,color,pointer-events
+    cssRule: "position: absolute\ninset: 0\ndisplay: grid\nplace-items: center\nfont-size: var(--font-size-s)\nfont-weight: var(--font-weight-bold)\ncolor: var(--color-text-base)\npointer-events: none"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-s + .progress-ring-content
+    id: #05-11-02
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: var(--font-size-xs)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".progress-ring-wrap:has(.progress-ring-s) .progress-ring-content"
+    id: #05-11-02
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: var(--font-size-xs)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: .progress-ring-l + .progress-ring-content
+    id: #05-11-02
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: var(--font-size-l)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: class
+    selector: ".progress-ring-wrap:has(.progress-ring-l) .progress-ring-content"
+    id: #05-11-02
+    category: null
+    properties[1]: font-size
+    cssRule: "font-size: var(--font-size-l)"
+    responsive: false
+    description: ""
+  - type: selector
+    selectorType: complex
+    selector: "progress.progress-ring[value='100']"
+    id: #05-11-02
+    category: null
+    properties[1]: "--progress-ring-fill"
+    cssRule: "--progress-ring-fill: var(--color-success)"
+    responsive: false
+    description: Complete
+  - type: selector
+    selectorType: class
+    selector: .night progress.progress-ring
+    id: #05-11-03
+    category: null
+    properties[2]: "--progress-ring-track","--progress-ring-fill"
+    cssRule: "--progress-ring-track: var(--gray-700)\n--progress-ring-fill: var(--color-primary-light)"
+    responsive: false
+    description: Complete
+  - type: selector
+    selectorType: class
+    selector: ".night progress.progress-ring[value='100']"
+    id: #05-11-03
+    category: null
+    properties[1]: "--progress-ring-fill"
+    cssRule: "--progress-ring-fill: var(--color-success)"
+    responsive: false
+    description: Complete
+  - type: selector
+    selectorType: class
+    selector: .night .progress-ring-content
+    id: #05-11-03
+    category: null
+    properties[1]: color
+    cssRule: "color: var(--color-text-alt)"
+    responsive: false
+    description: Complete
+customProperties[13]{property,value}:
+  "--progress-ring-size",6rem
+  "--progress-ring-thickness",0.75rem
+  "--progress-ring-track",var(--gray-200)
+  "--progress-ring-fill",var(--color-primary)
+  "--progress-ring-value","0"
+  "--progress-ring-size",3rem
+  "--progress-ring-thickness",0.4rem
+  "--progress-ring-size",9rem
+  "--progress-ring-thickness",1rem
+  "--progress-ring-fill",var(--color-success)
+  "--progress-ring-track",var(--gray-700)
+  "--progress-ring-fill",var(--color-primary-light)
+  "--progress-ring-fill",var(--color-success)

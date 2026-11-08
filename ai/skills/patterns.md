@@ -211,3 +211,22 @@ Optional accent strip (purpose-gate, not page identity): `<div class="bgg-2 padd
   </div>
 </div>
 ```
+
+---
+
+## Image priority (LCP)
+
+No Lagunite classes — HTML attrs. Recipe: `lab/recipes/optimize-image-priority.html`.
+
+- LCP hero: `fetchpriority="high"` (never with `loading="lazy"`); at most 1–2 highs.
+- Below-fold: `loading="lazy"` alone (omit `fetchpriority`).
+- Hidden above-fold (carousel / menu): `fetchpriority="low"` (+ lazy OK).
+- Default priority: omit `fetchpriority` (do not set `auto`).
+
+## Decorative images (picture / image-set)
+
+Recipe: `lab/recipes/deliver-optimized-decorative-images.html`.
+
+- Content: `<picture>` with typed `<source>` (AVIF/WebP) before `<img>` fallback; size with `width`/`height`.
+- CSS backgrounds: `.bg-image-set` + `--bg-1x` / `--bg-2x`.
+- Pseudo icons: `.icon-set` + `--icon-1x` / `--icon-2x` (see `misc` skill).

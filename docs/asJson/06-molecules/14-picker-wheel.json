@@ -1,9 +1,9 @@
 {
   "folder": "06-molecules",
   "file": "14-picker-wheel.css",
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-11-07",
   "hasResponsive": false,
-  "totalSelectors": 25,
+  "totalSelectors": 21,
   "content": [
     {
       "type": "selector",
@@ -122,7 +122,7 @@
         "opacity",
         "transform"
       ],
-      "cssRule": "font-size: 3rem\ncolor: var(--color-primary)\nopacity: 1\ntransform: scale(1.05)",
+      "cssRule": "font-size: 3rem\ncolor: var(--color-primary-text)\nopacity: 1\ntransform: scale(1.05)",
       "responsive": false,
       "description": "── Items ──────────────────────────────────────────────────────────────"
     },
@@ -165,7 +165,7 @@
         "padding",
         "margin"
       ],
-      "cssRule": "border-top: 2px solid var(--color-primary)\nborder-bottom: 2px solid var(--color-primary)\npadding: var(--space-3) 0 calc(var(--space-3) + 2px)\nmargin: var(--space-5) 0",
+      "cssRule": "border-top: 1px solid rgba(var(--color-primary-rgb), 0.45)\nborder-bottom: 1px solid rgba(var(--color-primary-rgb), 0.45)\npadding: var(--space-3) 0 calc(var(--space-3) + 1px)\nmargin: var(--space-5) 0",
       "responsive": false,
       "description": "Vertical: el seleccionado lleva linea arriba y abajo + aire"
     },
@@ -258,7 +258,7 @@
         "justify-content",
         "transition"
       ],
-      "cssRule": "width: 2.25rem\nheight: 2.25rem\nborder-radius: var(--radius-full)\nborder: var(--border)\nbackground: transparent\ncolor: var(--color-primary)\ncursor: pointer\nfont-size: 1.1rem\nline-height: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ntransition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease",
+      "cssRule": "width: 2.25rem\nheight: 2.25rem\nborder-radius: var(--radius-full)\nborder: var(--border)\nbackground: transparent\ncolor: var(--color-primary-text)\ncursor: pointer\nfont-size: 1.1rem\nline-height: 1\ndisplay: inline-flex\nalign-items: center\njustify-content: center\ntransition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease",
       "responsive": false,
       "description": "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
     },
@@ -273,7 +273,7 @@
         "color",
         "border-color"
       ],
-      "cssRule": "background: var(--color-primary)\ncolor: var(--color-on-fill, var(--color-text-alt))\nborder-color: var(--color-primary)",
+      "cssRule": "background: var(--gradient-primary)\ncolor: var(--color-on-primary)\nborder-color: var(--color-primary-fill-end)",
       "responsive": false,
       "description": "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
     },
@@ -317,58 +317,6 @@
       "cssRule": "display: block",
       "responsive": false,
       "description": "Fila horizontal con flechas: evitar el wrap de .row y dejar que el track flexione"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .picker-wheel-item",
-      "id": "#06-14-05",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-text-base)",
-      "responsive": false,
-      "description": "── Night + reduced motion ─────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .picker-wheel-item.active",
-      "id": "#06-14-05",
-      "category": null,
-      "properties": [
-        "color"
-      ],
-      "cssRule": "color: var(--color-primary)",
-      "responsive": false,
-      "description": "── Night + reduced motion ─────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .picker-wheel-btn",
-      "id": "#06-14-05",
-      "category": null,
-      "properties": [
-        "border-color"
-      ],
-      "cssRule": "border-color: var(--color-border)",
-      "responsive": false,
-      "description": "── Night + reduced motion ─────────────────────────────────────────────"
-    },
-    {
-      "type": "selector",
-      "selectorType": "class",
-      "selector": ".night .picker-wheel-btn:hover",
-      "id": "#06-14-05",
-      "category": null,
-      "properties": [
-        "border-color"
-      ],
-      "cssRule": "border-color: var(--color-primary)",
-      "responsive": false,
-      "description": "── Night + reduced motion ─────────────────────────────────────────────"
     }
   ]
 }
