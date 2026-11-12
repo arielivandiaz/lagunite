@@ -68,7 +68,7 @@ Molecules combine **atoms** (`.input`, `.btn`) with structure and state. They si
 - No separate `.tooltip` wrapper class needed.
 - Progressive (when Anchor Positioning is supported): `.tooltip-anchor` + `.tooltip-popover` with Popover API.
 - Progressive interest: `interestfor` + `popover="hint"` + `.tooltip-hint` (unique `anchor-name` / `position-anchor` per pair). Do not add `role="tooltip"` / `aria-describedby` on the trigger.
-- Recipes: `lab/recipes/position-aware-tooltips.html`, `interest-triggered-tooltips.html`, `resilient-context-menus-and-nested-dropdowns.html`, `persistent-toast-notifications.html`
+- Recipes: `v3/lab/recipes/position-aware-tooltips.html`, `interest-triggered-tooltips.html`, `resilient-context-menus-and-nested-dropdowns.html`, `persistent-toast-notifications.html`
 
 ## Breadcrumb (`05-breadcrumb.css`)
 

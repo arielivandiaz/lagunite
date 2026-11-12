@@ -1,9 +1,9 @@
 {
   "folder": "06-molecules",
   "file": "02-alerts.css",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-12",
   "hasResponsive": true,
-  "totalSelectors": 43,
+  "totalSelectors": 44,
   "content": [
     {
       "type": "selector",
@@ -12,9 +12,6 @@
       "id": "#06-02-01",
       "category": null,
       "properties": [
-        "display",
-        "align-items",
-        "gap",
         "padding",
         "border",
         "border-radius",
@@ -24,9 +21,24 @@
         "font-size",
         "line-height"
       ],
-      "cssRule": "display: flex\nalign-items: flex-start\ngap: var(--space-3)\npadding: 0.875rem var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-raised)\nbox-shadow: var(--shadow-xs)\ncolor: var(--color-text-base)\nfont-size: var(--font-size-s)\nline-height: 1.5",
+      "cssRule": "padding: 0.875rem var(--space-4)\nborder: var(--border-width-s) solid var(--color-border)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-raised)\nbox-shadow: var(--shadow-xs)\ncolor: var(--color-text-base)\nfont-size: var(--font-size-s)\nline-height: 1.5",
       "responsive": false,
       "description": "── Alert base ───────────────────────────────────────────────────────────"
+    },
+    {
+      "type": "selector",
+      "selectorType": "class",
+      "selector": ".alert:has(> svg:first-child)",
+      "id": "#06-02-01",
+      "category": null,
+      "properties": [
+        "display",
+        "align-items",
+        "gap"
+      ],
+      "cssRule": "display: flex\nalign-items: flex-start\ngap: var(--space-3)",
+      "responsive": false,
+      "description": "Icon layout only when the alert starts with an icon: plain text + <code> must stay inline"
     },
     {
       "type": "selector",
@@ -42,7 +54,7 @@
       ],
       "cssRule": "flex: none\nwidth: 1.125rem\nheight: 1.125rem\nmargin-top: 0.0625rem",
       "responsive": false,
-      "description": "── Alert base ───────────────────────────────────────────────────────────"
+      "description": "Icon layout only when the alert starts with an icon: plain text + <code> must stay inline"
     },
     {
       "type": "selector",
@@ -56,7 +68,7 @@
       ],
       "cssRule": "display: block\nfont-weight: var(--font-weight-semibold)",
       "responsive": false,
-      "description": "── Alert base ───────────────────────────────────────────────────────────"
+      "description": "Icon layout only when the alert starts with an icon: plain text + <code> must stay inline"
     },
     {
       "type": "selector",

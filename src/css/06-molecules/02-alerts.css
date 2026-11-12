@@ -8,9 +8,6 @@
 /* ── Alert base ─────────────────────────────────────────────────────────── */
 
 .alert {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-3);
   padding: 0.875rem var(--space-4);
   border: var(--border-width-s) solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -19,6 +16,13 @@
   color: var(--color-text-base);
   font-size: var(--font-size-s);
   line-height: 1.5;
+}
+
+/* Icon layout only when the alert starts with an icon: plain text + <code> must stay inline */
+.alert:has(> svg:first-child) {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
 }
 
 .alert > svg {

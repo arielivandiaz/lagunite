@@ -56,7 +56,7 @@ Seguimos trabajando: construimos ejemplos reales en el Lab, fortalecemos el fram
 | **Probado** | Lo usamos para construir muchos sitios reales | Lista de sitios / casos (pendiente: ver § Pendientes) |
 | **Legible** | Clases descriptivas que se entienden en un PR | Ejemplos lado a lado en el Lab |
 | **Criterio** | Defaults anti-slop: superficies vs acentos, muted legible, focus visible, night real | `ai/skills/anti-slop.md`, demos |
-| **Plataforma moderna** | Recipes de Modern Web Guidance construidas con Lagunite | `lab/recipes/` |
+| **Plataforma moderna** | Recipes de Modern Web Guidance construidas con Lagunite | `v3/lab/recipes/` |
 | **Honesto con IA** | Medimos tokens vs resultado contra Tailwind y CSS | [`BENCHMARK.md`](./BENCHMARK.md) |
 
 ---

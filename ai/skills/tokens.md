@@ -59,7 +59,7 @@ There is **no** utility prefix for 768px, 1024px, etc. — those tokens are docu
 
 ## v3 tokens (Lagunite 3)
 
-Source of truth: `design/lagunite3/tokens.json` (design system) → `src/css/00-config/`. v2 names remain as aliases.
+Source of truth: `v3/design-system/tokens.json` (design system) → `src/css/00-config/`. v2 names remain as aliases.
 
 | Token | Use |
 | --- | --- |

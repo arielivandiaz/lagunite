@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lagunite 3 · Componentes</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<!-- QA de v3: cada componente con sus clases de siempre. Toggle Night arriba a la derecha. -->
+<body class="bg">
+  <header class="navbar navbar-floating" id="nav">
+    <a class="navbar-brand" href="#"><span class="brand-mark" aria-hidden="true"></span>Lagunite 3</a>
+    <button class="navbar-burger" type="button" aria-label="Abrir menú" id="burger"><span></span><span></span><span></span></button>
+    <ul class="navbar-nav">
+      <li><a class="navbar-link active" href="#buttons">Botones</a></li>
+      <li><a class="navbar-link" href="#cards">Cards</a></li>
+      <li><a class="navbar-link" href="#forms">Formularios</a></li>
+      <li><a class="navbar-link" href="#data">Datos</a></li>
+    </ul>
+    <button type="button" class="btn alt size-s pill" id="theme">Night</button>
+  </header>
+
+  <main>
+    <section class="bg-mesh bg-grid padd-v-xl">
+      <div class="container col ai-c gap ta-c padd-v-l">
+        <span class="badge badge-announce"><span class="badge badge-primary">v3</span> Nueva piel, mismas clases</span>
+        <h1>Componentes con <span class="text-gradient">profundidad</span></h1>
+        <p class="font-l text-muted">Página de QA: cada bloque usa las clases de Lagunite 2 con la piel de Lagunite 3.</p>
+        <div class="row gap-s jc-c">
+          <a class="btn size-l pill" href="#buttons">Ver botones</a>
+          <a class="btn glass size-l pill" href="#cards">Ver cards</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buttons" class="container section col gap-l">
+      <div class="col gap-s"><p class="overline-label">Atoms</p><h2>Botones</h2></div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn">Primario</button>
+        <button type="button" class="btn alt">Alt</button>
+        <button type="button" class="btn soft">Soft</button>
+        <button type="button" class="btn ghost">Ghost</button>
+        <button type="button" class="btn secondary">Secondary</button>
+        <button type="button" class="btn tertiary">Tertiary</button>
+        <button type="button" class="btn error">Error</button>
+        <button type="button" class="btn success">Success</button>
+        <button type="button" class="btn warning">Warning</button>
+        <button type="button" class="btn" disabled>Disabled</button>
+      </div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn secondary alt">Secondary alt</button>
+        <button type="button" class="btn success alt">Success alt</button>
+        <button type="button" class="btn error alt">Error alt</button>
+        <button type="button" class="btn error ghost">Error ghost</button>
+        <button type="button" class="btn alt ghost">Alt ghost</button>
+      </div>
+      <div class="row gap-s ai-c">
+        <button type="button" class="btn size-xs">XS</button>
+        <button type="button" class="btn size-s">Small</button>
+        <button type="button" class="btn">Default</button>
+        <button type="button" class="btn size-l">Large</button>
+        <button type="button" class="btn size-xl pill">XL pill</button>
+        <button type="button" class="btn alt icon" aria-label="Agregar">+</button>
+        <div class="btn-group"><button type="button" class="btn">Uno</button><button type="button" class="btn">Dos</button><button type="button" class="btn">Tres</button></div>
+      </div>
+      <div class="row gap-s ai-c">
+        <span class="badge">Neutral</span>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-error">Error</span>
+        <span class="badge badge-primary-light">Primary light</span>
+        <span class="badge badge-success-light">Success light</span>
+        <span class="badge badge-warning-light">Warning light</span>
+        <span class="badge badge-error-light">Error light</span>
+        <span class="badge badge-outline">Outline</span>
+        <span class="badge badge-primary badge-pill">Pill</span>
+        <span class="avatar avatar-initials">LM</span>
+        <span class="avatar">JR</span>
+      </div>
+    </section>
+
+    <section id="cards" class="bg-surface section">
+      <div class="container col gap-l">
+        <div class="col gap-s"><p class="overline-label">Compounds</p><h2>Cards</h2></div>
+        <div class="grid xgrid-cols-1 dgrid-cols-3 gap">
+          <article class="card padd col gap-s"><h3 class="card-title">.card</h3><p class="card-text">Superficie elevada con brillo superior y sombra suave.</p></article>
+          <article class="card card-hover padd col gap-s"><h3 class="card-title">.card-hover</h3><p class="card-text">Sube y gana sombra al pasar el mouse.</p></article>
+          <article class="card card-featured padd col gap-s"><h3 class="card-title">.card-featured</h3><p class="card-text">Borde en gradiente azul. Una por grupo.</p></article>
+          <article class="card card-accent-primary padd col gap-s"><h3 class="card-title">.card-accent-primary</h3><p class="card-text">Línea superior de color.</p></article>
+          <article class="card card-primary"><div class="card-header">.card-primary</div><div class="card-body"><p class="card-text">Con header, body y footer.</p></div><div class="card-footer row jc-fe gap-s"><button type="button" class="btn ghost size-s">Cancelar</button><button type="button" class="btn size-s">Guardar</button></div></article>
+          <div class="empty-state"><span class="empty-state-icon">∅</span><h3 class="empty-state-title">Sin tareas</h3><p class="empty-state-text">Creá la primera para empezar.</p><div class="empty-state-actions"><button type="button" class="btn size-s">Crear tarea</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forms" class="container section grid xgrid-cols-1 dgrid-cols-2 gap-xl">
+      <form class="col ai-s gap">
+        <p class="overline-label">Molecules</p>
+        <h2>Formularios</h2>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="vos@empresa.com" />
+          <p class="form-help">Te mandamos un link de acceso.</p>
+        </div>
+        <div class="form-group has-error">
+          <label class="form-label" for="team">Equipo</label>
+          <input id="team" type="text" placeholder="Ej: Diseño" />
+          <p class="form-error-msg">Escribí un nombre para continuar.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="plan">Plan</label>
+          <select id="plan"><option>Inicial</option><option>Equipo</option></select>
+        </div>
+      </form>
+      <div class="col ai-s gap">
+        <div class="alert alert-info" role="status">Tu prueba termina en 5 días.</div>
+        <div class="alert alert-success" role="status">Guardamos los cambios.</div>
+        <div class="alert alert-warning" role="status">Te quedan 2 lugares.</div>
+        <div class="alert alert-error" role="alert">No pudimos procesar el pago.</div>
+        <div class="segmented-control" role="group" aria-label="Facturación">
+          <button type="button" class="segmented-option active" aria-pressed="true">Mensual</button>
+          <button type="button" class="segmented-option" aria-pressed="false">Anual</button>
+        </div>
+        <div class="tabs">
+          <div class="tab-list" role="tablist"><button type="button" class="tab-button active" role="tab" aria-selected="true">Resumen</button><button type="button" class="tab-button" role="tab" aria-selected="false">Tareas</button><button type="button" class="tab-button" role="tab" aria-selected="false">Entregas</button></div>
+          <div class="tab-panel active" role="tabpanel"><p class="text-muted">Tres tareas vencen esta semana.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="data" class="container section col gap-l">
+      <div class="col gap-s"><p class="overline-label">Atoms</p><h2>Tabla</h2></div>
+      <div class="table-responsive card">
+        <table class="table marg-0">
+          <thead><tr><th scope="col">Tarea</th><th scope="col">Responsable</th><th scope="col">Estado</th></tr></thead>
+          <tbody>
+            <tr><td>Diseño de onboarding</td><td>Lucía</td><td><span class="badge badge-success-light">Listo</span></td></tr>
+            <tr><td>Revisión de precios</td><td>Juan</td><td><span class="badge badge-warning-light">En curso</span></td></tr>
+            <tr><td>Lanzamiento beta</td><td>Sofía</td><td><span class="badge">Pendiente</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="overlays" class="bg-surface section">
+      <div class="container col gap-l">
+        <div class="col gap-s"><p class="overline-label">Molecules · Compounds</p><h2>Menús y overlays</h2></div>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="#">Proyectos</a></li>
+          <li class="breadcrumb-item active">Brisa</li>
+        </ol>
+        <div class="grid xgrid-cols-1 dgrid-cols-3 gap-l">
+          <div class="col gap" style="min-height: 15rem"><!-- GAP: reserva alto para el menú abierto -->
+            <div class="dropdown open">
+              <button type="button" class="btn alt dropdown-toggle">Opciones ▾</button>
+              <div class="dropdown-menu">
+                <p class="dropdown-header">Proyecto</p>
+                <a class="dropdown-item" href="#">Editar</a>
+                <a class="dropdown-item active" href="#">Duplicar</a>
+                <hr class="dropdown-divider" />
+                <a class="dropdown-item" href="#">Archivar</a>
+              </div>
+            </div>
+            <button type="button" class="btn ghost" data-tooltip="Copiado al portapapeles" style="margin-top: 11rem">Hover: tooltip</button>
+          </div>
+          <div class="modal" style="transform: none; width: 100%"><!-- GAP: modal mostrado en línea para QA -->
+            <div class="modal-header"><h3 class="modal-title">Eliminar proyecto</h3><button type="button" class="modal-close" aria-label="Cerrar">×</button></div>
+            <div class="modal-body">Se borran las tareas y notas. No se puede deshacer.</div>
+            <div class="modal-footer"><button type="button" class="btn ghost">Cancelar</button><button type="button" class="btn error">Eliminar</button></div>
+          </div>
+          <div class="bottom-sheet" style="transform: none"><!-- GAP: sheet mostrado en línea para QA -->
+            <div class="bottom-sheet-handle"></div>
+            <div class="bottom-sheet-header"><h3 class="bottom-sheet-title">Compartir</h3><button type="button" class="bottom-sheet-close" aria-label="Cerrar">×</button></div>
+            <div class="bottom-sheet-body"><p class="text-muted">Cualquiera con el link puede ver el avance.</p></div>
+            <div class="bottom-sheet-footer"><button type="button" class="btn">Copiar link</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="app" class="container section col gap-l">
+      <div class="col gap-s"><p class="overline-label">Organisms</p><h2>Shell de app</h2></div>
+      <div class="card">
+        <div class="topbar">
+          <div class="topbar-left"><a class="topbar-brand" href="#"><span class="brand-mark" aria-hidden="true"></span>Brisa</a><span class="topbar-divider"></span><p class="topbar-title">Tablero</p></div>
+          <div class="topbar-right"><a class="topbar-action" href="#" aria-label="Buscar">⌕</a><span class="topbar-badge">3</span><span class="topbar-avatar">LM</span></div>
+        </div>
+        <div class="row ai-s flex-nowrap">
+          <aside class="sidebar" style="min-height: auto; position: static; transform: none"><!-- GAP: sidebar estático para QA -->
+            <nav class="sidebar-nav">
+              <div class="sidebar-section">
+                <p class="sidebar-section-title">General</p>
+                <ul class="sidebar-list">
+                  <li><a class="sidebar-link active" href="#"><span>Tablero</span></a></li>
+                  <li><a class="sidebar-link" href="#"><span>Tareas</span></a></li>
+                  <li><a class="sidebar-link" href="#"><span>Entregas</span></a></li>
+                </ul>
+              </div>
+            </nav>
+          </aside>
+          <div class="col ai-s gap-l padd flex-1">
+            <div class="stat-surface stat-surface-light wp100" style="padding: 1.25rem">
+              <div class="stat-grid">
+                <div class="stat-card"><span class="stat-label">Tareas abiertas</span><p class="stat-value">24</p><span class="stat-sub">Ejemplo</span></div>
+                <div class="stat-card"><span class="stat-label">Entregas</span><p class="stat-value">8</p><span class="stat-sub"><strong>3</strong> esta semana</span></div>
+                <div class="stat-card"><span class="stat-label">Personas</span><p class="stat-value">6</p><span class="stat-sub">Ejemplo</span></div>
+                <div class="stat-card"><span class="stat-label">Vencidas</span><p class="stat-value stat-tone-danger">2</p><span class="stat-sub">Ejemplo</span></div>
+              </div>
+            </div>
+            <ul class="list-container list-container-divider wp100">
+              <li class="list-item list-item-interactive"><span class="list-item-avatar">LM</span><div class="list-item-content"><span class="list-item-text">Lucía M.</span><span class="list-item-meta">Diseño de onboarding</span></div></li>
+              <li class="list-item list-item-interactive list-item-selected"><span class="list-item-avatar">JR</span><div class="list-item-content"><span class="list-item-text">Juan R.</span><span class="list-item-meta">Revisión de precios</span></div></li>
+            </ul>
+            <div class="skeleton-text-group wp100">
+              <div class="skeleton skeleton-line skeleton-shimmer"></div>
+              <div class="skeleton skeleton-line skeleton-shimmer"></div>
+              <div class="skeleton skeleton-line skeleton-shimmer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><p class="footer-title">Producto</p><ul class="footer-links"><li><a class="footer-link" href="#">Funciones</a></li><li><a class="footer-link" href="#">Precios</a></li></ul></div>
+      <div><p class="footer-title">Empresa</p><ul class="footer-links"><li><a class="footer-link" href="#">Nosotros</a></li><li><a class="footer-link" href="#">Contacto</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Lagunite</span><span>v3</span></div>
+  </footer>
+
+  <script>
+    const theme = document.getElementById('theme');
+    theme.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+      theme.textContent = document.body.classList.contains('night') ? 'Day' : 'Night';
+    });
+    document.getElementById('burger').addEventListener('click', () => document.getElementById('nav').classList.toggle('open'));
+  </script>
+</body>
+</html>

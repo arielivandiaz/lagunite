@@ -1,6 +1,6 @@
 folder: 10-misc
 file: 01-display.css
-lastUpdated: 2026-11-07
+lastUpdated: 2026-11-12
 hasResponsive: true
 totalSelectors: 20
 content[20]:
@@ -108,46 +108,46 @@ content[20]:
     selector: .cv-auto
     id: #10-01-05
     category: null
-    properties[2]: content-visibility,contain-intrinsic-size
-    cssRule: "content-visibility: auto\ncontain-intrinsic-size: auto 20rem"
+    properties[2]: content-visibility,contain-intrinsic-block-size
+    cssRule: "content-visibility: auto\ncontain-intrinsic-block-size: auto 20rem"
     responsive: false
-    description: "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+    description: "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
   - type: selector
     selectorType: class
     selector: .cv-size-s
     id: #10-01-05
     category: null
-    properties[1]: contain-intrinsic-size
-    cssRule: "contain-intrinsic-size: auto 8rem"
+    properties[1]: contain-intrinsic-block-size
+    cssRule: "contain-intrinsic-block-size: auto 8rem"
     responsive: false
-    description: "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+    description: "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
   - type: selector
     selectorType: class
     selector: .cv-size-m
     id: #10-01-05
     category: null
-    properties[1]: contain-intrinsic-size
-    cssRule: "contain-intrinsic-size: auto 16rem"
+    properties[1]: contain-intrinsic-block-size
+    cssRule: "contain-intrinsic-block-size: auto 16rem"
     responsive: false
-    description: "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+    description: "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
   - type: selector
     selectorType: class
     selector: .cv-size-l
     id: #10-01-05
     category: null
-    properties[1]: contain-intrinsic-size
-    cssRule: "contain-intrinsic-size: auto 32rem"
+    properties[1]: contain-intrinsic-block-size
+    cssRule: "contain-intrinsic-block-size: auto 32rem"
     responsive: false
-    description: "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+    description: "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
   - type: selector
     selectorType: class
     selector: .cv-size-xl
     id: #10-01-05
     category: null
-    properties[1]: contain-intrinsic-size
-    cssRule: "contain-intrinsic-size: auto 48rem"
+    properties[1]: contain-intrinsic-block-size
+    cssRule: "contain-intrinsic-block-size: auto 48rem"
     responsive: false
-    description: "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+    description: "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
   - type: selector
     selectorType: class
     selector: .contain-layout
@@ -156,7 +156,7 @@ content[20]:
     properties[1]: contain
     cssRule: "contain: layout"
     responsive: false
-    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
   - type: selector
     selectorType: class
     selector: .contain-paint
@@ -165,7 +165,7 @@ content[20]:
     properties[1]: contain
     cssRule: "contain: paint"
     responsive: false
-    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
   - type: selector
     selectorType: class
     selector: .contain-content
@@ -174,7 +174,7 @@ content[20]:
     properties[1]: contain
     cssRule: "contain: content"
     responsive: false
-    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
   - type: selector
     selectorType: class
     selector: .contain-strict
@@ -183,4 +183,4 @@ content[20]:
     properties[1]: contain
     cssRule: "contain: strict"
     responsive: false
-    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+    description: "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."

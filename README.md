@@ -54,7 +54,7 @@ Responsive prefixes: **base → `x*` (≤639px) → `d*` (≥640px)**. Flex gap:
 
 ## What’s new in v3
 
-Same class names as v2, new skin: buttons and cards with depth (top highlight, layered shadows, colored lift), glass navbar, display typography, blue mesh/grid backgrounds, and a token set that passes WCAG AA in Day and Night. The brand blue `#2476ff` is unchanged. Upgrading is a stylesheet swap; check pages that relied on the v2 base (centered `body`, `header`/`p` margins). Details: [`CHANGELOG.md`](./CHANGELOG.md) · QA page: [`pocs/v3-components.html`](./pocs/v3-components.html) · design source: [`design/lagunite3/`](./design/lagunite3/).
+Same class names as v2, new skin: buttons and cards with depth (top highlight, layered shadows, colored lift), glass navbar, display typography, blue mesh/grid backgrounds, and a token set that passes WCAG AA in Day and Night. The brand blue `#2476ff` is unchanged. Upgrading is a stylesheet swap; check pages that relied on the v2 base (centered `body`, `header`/`p` margins). Details: [`CHANGELOG.md`](./CHANGELOG.md) · QA page: [`v3/qa/components.html`](./v3/qa/components.html) · design source: [`v3/design-system/`](./v3/design-system/).
 
 ## What’s in the box
 
@@ -74,7 +74,7 @@ Full catalog: [`FEATURES.md`](./FEATURES.md) · cheatsheets under `src/css/*/`.
 
 | Surface | What |
 | --- | --- |
-| [`lab/`](./lab/) | HTML recipes (Modern Web Guidance → Lagunite). Index: `lab/index.html` |
+| [`v3/lab/`](./v3/lab/) | HTML recipes (Modern Web Guidance → Lagunite). Index: `v3/lab/index.html` |
 | [`web/`](./web/) | Astro site: docs + Lab mirror (`/lab`, `/docs/…`) |
 | `old/demos/` | Legacy demo pages (archived) |
 

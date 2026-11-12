@@ -57,12 +57,12 @@ Buckets **4–6** (Lab-only sin skill, App/fuera, Won’t) siguen listados para 
 3. Implementar:
    - (1) CSS + docs:generate + demo
    - (2) CSS+JS + POC
-   - (3) bullet en skill + recipe HTML en lab/recipes/<id>.html
+   - (3) bullet en skill + recipe HTML en v3/lab/recipes/<id>.html
 4. Marcar Muestra=done · link en Lab hub
 5. UI Validator en la recipe
 ```
 
-**Meta muestra:** `lab/recipes/` con **un HTML por use-case** de buckets 1–3 (y opcionalmente 4).  
+**Meta muestra:** `v3/lab/recipes/` con **un HTML por use-case** de buckets 1–3 (y opcionalmente 4).  
 Hub: `lab/index.html` filtra por bucket / categoría MWG.
 
 ---
@@ -88,7 +88,7 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 
 | MWG id | Bucket | Skill / capa | Muestra | Nota |
 | --- | --- | --- | --- | --- |
-| accessible-error-announcement | **3** | validate-a11y · validate-forms | **done** | recipe `lab/recipes/accessible-error-announcement.html` |
+| accessible-error-announcement | **3** | validate-a11y · validate-forms | **done** | recipe `v3/lab/recipes/accessible-error-announcement.html` |
 
 ### built-in-ai (4) — fuera del core
 
@@ -125,17 +125,17 @@ Hub: `lab/index.html` filtra por bucket / categoría MWG.
 | autofill-address-form | **3** | validate-forms · patterns | **done** | recipe |
 | autofill-highlight-inputs | **1** / 3 | atoms · colors | **done** | `:autofill` tint · recipe |
 | autofill-payment-form | **3** | validate-forms · patterns | todo | Recipe auth/pay |
-| autofill-sign-in-form | **3** | validate-forms · patterns | **done** | recipe `lab/recipes/autofill-sign-in-form.html` |
+| autofill-sign-in-form | **3** | validate-forms · patterns | **done** | recipe `v3/lab/recipes/autofill-sign-in-form.html` |
 | autofill-sign-up-form | **3** | validate-forms · patterns | **done** | recipe |
 | brand-consistent-forms | **1** / 3 | atoms · tokens | **done** | root `accent-color` + `.accent-*` · recipe |
 | branded-select-styling | **1** / 2 | atoms · molecules | **done** | `.select-base` · recipe |
 | custom-select-picker-layouts | **2** | molecules | todo | Cercano selectable / picker |
 | form-fields-automatically-fit-contents | **1** | atoms | **done** | `.input-fit` · recipe |
 | ime-safe-enter-submit | **3** | validate-forms | todo | Skill JS note (no CSS) |
-| required-field-feedback | **3** | validate-forms | **done** | recipe `lab/recipes/required-field-feedback.html` |
+| required-field-feedback | **3** | validate-forms | **done** | recipe `v3/lab/recipes/required-field-feedback.html` |
 | rich-media-picker | **2** / 3 | molecules · selectable | **done** | selectable-option + select-base recipe |
 | select-menu-interaction | **3** | validate-forms | todo | |
-| validate-input-after-interaction | **1** / 3 | validate-forms · atoms | **done** | CSS `:user-*` + `.reveal-user-invalid` · recipe `lab/recipes/…` |
+| validate-input-after-interaction | **1** / 3 | validate-forms · atoms | **done** | CSS `:user-*` + `.reveal-user-invalid` · recipe `v3/lab/recipes/…` |
 
 ### js (8) — fuera / Lab app
 
@@ -396,7 +396,7 @@ Ya cubierto en D (tema E solapado): `#33` text-trim · `#34` card-state.
 | 43 | resolution-optimized-pseudo-elements | 3 | F | ✅ `.icon-set` |
 | 44 | interactions-in-complex-layouts | 3 | F | ✅ `.contain-*` + recipe |
 
-Mismo DoD que Oleada 1: recipe en `lab/recipes/` · skill/CSS si Bucket 1–2 · marcar **done** aquí · polish visual después.
+Mismo DoD que Oleada 1: recipe en `v3/lab/recipes/` · skill/CSS si Bucket 1–2 · marcar **done** aquí · polish visual después.
 
 ---
 
@@ -446,14 +446,14 @@ Cada recipe:
 
 ### Tesis
 
-Los HTML de `lab/recipes/` son **fixtures de browser** (night, progressive, revisión humana). Para la IA son ruido (chrome del lab, cards de demo, tokens altos) y no un contrato de “qué emitir”.  
+Los HTML de `v3/lab/recipes/` son **fixtures de browser** (night, progressive, revisión humana). Para la IA son ruido (chrome del lab, cards de demo, tokens altos) y no un contrato de “qué emitir”.  
 **Canónico para agentes:** markdown corto tipo skilllet, mismo espíritu que `ai/skills/`.
 
 ### Qué SÍ / qué NO
 
 | Artefacto | Rol | ¿Skilllet? |
 | --- | --- | --- |
-| `lab/recipes/*.html` | Probar en browser | No — quedan como fixture / vista |
+| `v3/lab/recipes/*.html` | Probar en browser | No — quedan como fixture / vista |
 | `demos/` | Barra visual QA / release | No — pantallas enteras |
 | `pocs/` | Exploración / regresión | No — fixtures |
 | **`ai/recipes/<id>.md`** (propuesto) | Instrucción on-demand para agentes | **Sí** — fuente canónica del patrón |
@@ -468,7 +468,7 @@ Markup: (3–8 líneas canónicas Lagunite)
 Don’t: …
 A11y: …
 Classes: …
-See also: <layer skill> · fixture `lab/recipes/<id>.html` (opcional)
+See also: <layer skill> · fixture `v3/lab/recipes/<id>.html` (opcional)
 ```
 
 ### Checklist de ejecución

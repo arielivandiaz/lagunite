@@ -111,7 +111,7 @@ Open with `showModal()` (or Invoker `command="show-modal"`). See Lab recipes:
   - `.card` / `.padd` — surface
   - `.marg-s` — inset from viewport edges (UA default can sit flush top/left)
   - `.shadow-s` — subtle lift in the top layer (prefer over `.card-elevated` here)
-  - Recipe: `lab/recipes/declarative-dialog-popover-control` · web: `/lab/recipes/declarative-dialog-popover-control`
+  - Recipe: `v3/lab/recipes/declarative-dialog-popover-control` · web: `/lab/recipes/declarative-dialog-popover-control`
   - `<!-- GAP: dedicated .popover surface / max-width / placement -->`
 
 ## Related skills

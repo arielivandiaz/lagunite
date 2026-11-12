@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · autofill-sign-up-form — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>autofill-sign-up-form</code></p>
+      <h1 class="font-xl bold color-text">Autofill sign-up form</h1>
+      <p class="font-s text-muted">
+        One name field, <code>new-password</code>, no double email/password.
+        Button says “Create account”.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Use <code>autocomplete="name"</code>, <code>email</code>, <code>new-password</code> —
+      not <code>current-password</code> (that’s for sign-in).
+    </div>
+
+    <form class="card" id="signup" action="#" method="post">
+      <div class="card-header">Create account</div>
+      <div class="card-body col gap">
+        <div class="form-group">
+          <label class="form-label" for="name">Full name</label>
+          <input class="input" id="name" name="name" type="text" required autocomplete="name" enterkeyhint="next" placeholder="Ada Lovelace" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" required autocomplete="email" inputmode="email" enterkeyhint="next" placeholder="you@example.com" aria-errormessage="email-error" />
+          <p class="form-error-msg reveal-user-invalid" id="email-error">Enter a valid email.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <p class="form-help" id="pwd-help">At least 8 characters.</p>
+          <input class="input" id="password" name="password" type="password" required autocomplete="new-password" minlength="8" enterkeyhint="done" placeholder="Create a password" aria-describedby="pwd-help" aria-errormessage="pwd-error" />
+          <p class="form-error-msg reveal-user-invalid" id="pwd-error">Password must be at least 8 characters.</p>
+        </div>
+        <button type="submit" class="btn size-l marg-0 wp100">Create account</button>
+        <p class="font-s ta-c marg-0 text-muted">Already have an account? <a class="color-primary" href="./autofill-sign-in-form.html">Sign in</a></p>
+      </div>
+    </form>
+
+    <p class="font-xs text-muted">Skill: <code>validate-forms</code> · Guide: <code>retrieve autofill-sign-up-form</code></p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => document.body.classList.toggle('night'));
+    document.getElementById('signup')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (e.target.checkValidity()) e.target.reset();
+    });
+  </script>
+</body>
+</html>

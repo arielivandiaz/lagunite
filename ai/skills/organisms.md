@@ -29,7 +29,7 @@
 
 ### Scrollspy
 
-`.scrollspy` — `scroll-target-group: auto` on a nav of fragment links. Active link via `:is(:target-current, .scrollspy-current)` (bold + underline + tint). Sync `aria-current` in script; IO fallback toggles `.scrollspy-current`. Recipe: `lab/recipes/scrollspy.html`.
+`.scrollspy` — `scroll-target-group: auto` on a nav of fragment links. Active link via `:is(:target-current, .scrollspy-current)` (bold + underline + tint). Sync `aria-current` in script; IO fallback toggles `.scrollspy-current`. Recipe: `v3/lab/recipes/scrollspy.html`.
 
 ### Mobile drawer
 
@@ -66,7 +66,7 @@ On small screens, `.navbar-nav` is hidden until **`.navbar.open`** (toggle with 
 | `.sidebar.sidebar-drawer` | Always off-canvas; `.open` slides in |
 | `.sidebar-backdrop` / `.open` | Dimmed light-dismiss layer |
 
-Recipe: `lab/recipes/navigation-drawer.html`. Prefer `<details>` for searchable section groups (`search-hidden-content`).
+Recipe: `v3/lab/recipes/navigation-drawer.html`. Prefer `<details>` for searchable section groups (`search-hidden-content`).
 
 ### Night mode
 

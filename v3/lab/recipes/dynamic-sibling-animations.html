@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · dynamic-sibling-animations — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>dynamic-sibling-animations</code></p>
+      <h1 class="font-xl bold color-text">Stagger animation</h1>
+      <p class="font-s text-muted">
+        <code>.stagger &gt; *</code> delays <code>fade-in</code> by
+        <code>sibling-index() * --stagger-time</code>. Reduced-motion disables it.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Click Replay to re-run. Without <code>sibling-index()</code>, script sets <code>--sibling-index</code>.
+    </div>
+
+    <section class="card">
+      <div class="card-header row jc-sb ai-c">
+        <span>List</span>
+        <button type="button" class="btn size-s alt" id="replay">Replay</button>
+      </div>
+      <div class="card-body">
+        <ul class="stagger col gap-s list-none marg-0 padd-0" id="stagger-list">
+          <li class="padd-s bg-surface border border-r font-s">Alpha</li>
+          <li class="padd-s bg-surface border border-r font-s">Beta</li>
+          <li class="padd-s bg-surface border border-r font-s">Gamma</li>
+          <li class="padd-s bg-surface border border-r font-s">Delta</li>
+          <li class="padd-s bg-surface border border-r font-s">Epsilon</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.stagger</code> on the parent of animated children</li>
+        <li>Delay step: <code>--stagger-time</code> (default <code>0.08s</code>)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>decorators</code> · Guide: <code>retrieve dynamic-sibling-animations</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const list = document.getElementById('stagger-list');
+
+    function syncIndexes() {
+      if (CSS.supports('animation-delay: calc(sibling-index() * 0.1s)')) return;
+      [...list.children].forEach((el, i) => {
+        el.style.setProperty('--sibling-index', String(i + 1));
+      });
+    }
+
+    function replay() {
+      syncIndexes();
+      [...list.children].forEach((el) => {
+        el.style.animation = 'none';
+        void el.offsetWidth;
+        el.style.animation = '';
+      });
+    }
+
+    syncIndexes();
+    document.getElementById('replay')?.addEventListener('click', replay);
+  </script>
+</body>
+</html>

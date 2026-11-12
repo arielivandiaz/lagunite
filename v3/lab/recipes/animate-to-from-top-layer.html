@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · animate-to-from-top-layer — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/3 · MWG <code>animate-to-from-top-layer</code></p>
+      <h1 class="font-xl bold color-text">Top-layer enter / exit</h1>
+      <p class="font-s text-muted">
+        <code>dialog.modal</code> animates opacity/scale with <code>overlay</code> +
+        <code>allow-discrete</code>, including <code>::backdrop</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Open the dialog — entry scales up; close fades the backdrop. Reduced-motion shortens to a fade.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Demo</div>
+      <div class="card-body">
+        <button type="button" class="btn" commandfor="top-layer-dlg" command="show-modal">
+          Open dialog
+        </button>
+        <button type="button" class="btn alt marg-lf-s" id="open-fallback">Open (JS fallback)</button>
+      </div>
+    </section>
+
+    <dialog id="top-layer-dlg" class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title marg-0">Animated dialog</h2>
+        <button type="button" class="modal-close" commandfor="top-layer-dlg" command="close" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body font-s text-muted">
+        Top-layer stay via <code>overlay</code> during exit so the panel is not clipped early.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" commandfor="top-layer-dlg" command="close">Done</button>
+      </div>
+    </dialog>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>dialog.modal</code> (+ built-in starting-style / backdrop)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>compounds</code> · Guide: <code>retrieve animate-to-from-top-layer</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+    const dlg = document.getElementById('top-layer-dlg');
+    document.getElementById('open-fallback')?.addEventListener('click', () => {
+      dlg?.showModal?.();
+    });
+    dlg?.querySelectorAll('[command="close"]').forEach((btn) => {
+      btn.addEventListener('click', () => dlg.close());
+    });
+  </script>
+</body>
+</html>

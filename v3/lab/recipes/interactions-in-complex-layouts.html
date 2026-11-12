@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · interactions-in-complex-layouts — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>interactions-in-complex-layouts</code></p>
+      <h1 class="font-xl bold color-text">Contain complex subtrees</h1>
+      <p class="font-s text-muted">
+        Isolate expensive panels with <code>.contain-layout</code> / <code>.contain-content</code>
+        so interactions elsewhere reflow less. Combine with <code>.cv-auto</code> for long lists.
+      </p>
+    </header>
+
+    <div class="alert alert-warning" role="status">
+      Containment is not a substitute for fewer DOM nodes. Prefer fewer nested grids; contain the remaining heavy islands.
+    </div>
+
+    <div class="grid xgrid-cols-1 dgrid-cols-2 gap">
+      <section class="card contain-content">
+        <div class="card-header">Contained island</div>
+        <div class="card-body col gap-s">
+          <p class="font-s text-muted marg-0">Hover / focus stay local when the engine can skip outer layout.</p>
+          <input class="input" type="text" placeholder="Type here" aria-label="Demo input" />
+          <button type="button" class="btn size-s">Ping</button>
+        </div>
+      </section>
+      <section class="card contain-layout">
+        <div class="card-header">Layout contain</div>
+        <div class="card-body">
+          <div class="grid grid-cols-2 gap-s">
+            <div class="padd-s bg-surface border border-r font-xs">A</div>
+            <div class="padd-s bg-surface border border-r font-xs">B</div>
+            <div class="padd-s bg-surface border border-r font-xs">C</div>
+            <div class="padd-s bg-surface border border-r font-xs">D</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.contain-layout</code> · <code>.contain-paint</code></li>
+        <li><code>.contain-content</code> · <code>.contain-strict</code></li>
+        <li>Related: <code>.cv-auto</code> (recipe 41)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>compose</code> / <code>misc</code> · Guide: <code>retrieve interactions-in-complex-layouts</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

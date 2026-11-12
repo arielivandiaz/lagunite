@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · state-aware-sticky-headers — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/3 · MWG <code>state-aware-sticky-headers</code></p>
+      <h1 class="font-xl bold color-text">State-aware sticky</h1>
+      <p class="font-s text-muted">
+        <code>.sticky-state</code> sticks and declares a named scroll-state container.
+        Descendants use <code>.sticky-surface</code>; when stuck, shadow/border apply.
+        Parent <code>.sticky-section</code> sets <code>overflow-anchor: none</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Scroll until a section header pins. Chromium shows the stuck chrome; other browsers still stick without the style change.
+    </div>
+
+    <div class="sticky-section col gap">
+      <div class="sticky-state">
+        <div class="sticky-surface padd-h-s padd-v-s row ai-c jc-sb">
+          <h2 class="font-l bold marg-0">Alpha</h2>
+          <span class="font-xs text-muted">Section A</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s font-s text-muted">
+          <p>Alpha content block — enough height to scroll past the sticky header.</p>
+          <p>More alpha copy so the header can enter the stuck state.</p>
+          <p>Keep scrolling toward Beta.</p>
+          <p>Filler line.</p>
+          <p>Filler line.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky-section col gap">
+      <div class="sticky-state">
+        <div class="sticky-surface padd-h-s padd-v-s row ai-c jc-sb">
+          <h2 class="font-l bold marg-0">Beta</h2>
+          <span class="font-xs text-muted">Section B</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s font-s text-muted">
+          <p>Beta content — note nested sticky-state containers share the name <code>sticky-state</code>; avoid deep nesting without unique <code>container-name</code>.</p>
+          <p>More beta copy.</p>
+          <p>Filler.</p>
+          <p>Filler.</p>
+          <p>End of demo.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.sticky-section</code> · <code>.sticky-state</code> · <code>.sticky-surface</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>spacing</code> (position) · Guide: <code>retrieve state-aware-sticky-headers</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "folder": "10-misc",
   "file": "01-display.css",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-12",
   "hasResponsive": true,
   "totalSelectors": 20,
   "content": [
@@ -156,11 +156,11 @@
       "category": null,
       "properties": [
         "content-visibility",
-        "contain-intrinsic-size"
+        "contain-intrinsic-block-size"
       ],
-      "cssRule": "content-visibility: auto\ncontain-intrinsic-size: auto 20rem",
+      "cssRule": "content-visibility: auto\ncontain-intrinsic-block-size: auto 20rem",
       "responsive": false,
-      "description": "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+      "description": "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
     },
     {
       "type": "selector",
@@ -169,11 +169,11 @@
       "id": "#10-01-05",
       "category": null,
       "properties": [
-        "contain-intrinsic-size"
+        "contain-intrinsic-block-size"
       ],
-      "cssRule": "contain-intrinsic-size: auto 8rem",
+      "cssRule": "contain-intrinsic-block-size: auto 8rem",
       "responsive": false,
-      "description": "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+      "description": "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
     },
     {
       "type": "selector",
@@ -182,11 +182,11 @@
       "id": "#10-01-05",
       "category": null,
       "properties": [
-        "contain-intrinsic-size"
+        "contain-intrinsic-block-size"
       ],
-      "cssRule": "contain-intrinsic-size: auto 16rem",
+      "cssRule": "contain-intrinsic-block-size: auto 16rem",
       "responsive": false,
-      "description": "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+      "description": "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
     },
     {
       "type": "selector",
@@ -195,11 +195,11 @@
       "id": "#10-01-05",
       "category": null,
       "properties": [
-        "contain-intrinsic-size"
+        "contain-intrinsic-block-size"
       ],
-      "cssRule": "contain-intrinsic-size: auto 32rem",
+      "cssRule": "contain-intrinsic-block-size: auto 32rem",
       "responsive": false,
-      "description": "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+      "description": "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
     },
     {
       "type": "selector",
@@ -208,11 +208,11 @@
       "id": "#10-01-05",
       "category": null,
       "properties": [
-        "contain-intrinsic-size"
+        "contain-intrinsic-block-size"
       ],
-      "cssRule": "contain-intrinsic-size: auto 48rem",
+      "cssRule": "contain-intrinsic-block-size: auto 48rem",
       "responsive": false,
-      "description": "* Defer off-screen rendering (content-visibility).\r\n * Pair with contain-intrinsic-size so scrollbars don't jump."
+      "description": "* Defer off-screen rendering (content-visibility).\n * Pair with contain-intrinsic-size so scrollbars don't jump."
     },
     {
       "type": "selector",
@@ -225,7 +225,7 @@
       ],
       "cssRule": "contain: layout",
       "responsive": false,
-      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
     },
     {
       "type": "selector",
@@ -238,7 +238,7 @@
       ],
       "cssRule": "contain: paint",
       "responsive": false,
-      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
     },
     {
       "type": "selector",
@@ -251,7 +251,7 @@
       ],
       "cssRule": "contain: content",
       "responsive": false,
-      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
     },
     {
       "type": "selector",
@@ -264,7 +264,7 @@
       ],
       "cssRule": "contain: strict",
       "responsive": false,
-      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\r\n * Progressive; ignored where unsupported."
+      "description": "* Layout containment — isolate expensive subtrees (complex grids/lists).\n * Progressive; ignored where unsupported."
     }
   ]
 }

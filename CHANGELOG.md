@@ -7,10 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- `.alert` with inline text + `<code>` broke into a non-wrapping flex row (overflowed on mobile). Icon layout now applies only when the alert starts with an `<svg>`.
+- Long tokens (`<code>`, ids) could widen flex/grid items past the viewport on mobile: `p`, `li`, `dd`, `figcaption` and `code` now use `overflow-wrap: anywhere`.
+- `.cv-auto` / `.cv-size-*` reserved width as well as height (`contain-intrinsic-size` single value); now `contain-intrinsic-block-size`.
+
+### Changed (tooling)
+- Reviewed tools moved to `v3/`: `v3/builder/` (now built on the core CSS only, single block catalog), `v3/lab/` (44 MWG recipes, invented classes fixed), `v3/qa/components.html`, `v3/design-system/`.
+
 ## [3.0.0] — 2026-11-07
 
 Lagunite 3 skin: same class API, new look. Brand blue `#2476ff` unchanged.
-Design source: `design/lagunite3/` (tokens, components, brand book).
+Design source: `v3/design-system/` (tokens, components, brand book).
 
 ### Changed (visual — may affect existing pages)
 - **Tokens:** cool slate neutrals (`--gray-*` now aliases `--slate-*`), new blue ramp around `#2476ff`, separated surfaces, layered cool shadows, radius scale 6–28px (`--radius-s/m/l` alias sm/md/lg). All documented text pairs pass WCAG AA in Day and Night.
@@ -31,7 +39,7 @@ Design source: `design/lagunite3/` (tokens, components, brand book).
 - `04-decorators/09-backgrounds.css`: `.bg-mesh`, `.bg-grid`, `.bg-dots`, `.bg-spotlight`, `.glass`, `.text-gradient`, `.overline-label`, `.section`
 - `.font-display-l/xl/2xl`, `.font-display`
 - Tokens: `--color-primary-fill/-fill-end/-text/-soft`, `--color-text-muted/-subtle`, `--color-glass`, `--color-highlight`, `--color-overlay`, `--color-border-strong`, `--shadow-xs`, `--shadow-primary(-hover)`, `--shadow-focus`, `--blur-*`, `--ease-*`, `--dur-*`, `--gradient-primary/-text/-border`
-- `pocs/v3-components.html`: QA page for every restyled component
+- `v3/qa/components.html`: QA page for every restyled component
 
 ### Fixed
 - `.navbar-burger` bars rendered at 0px height (menu invisible on mobile).

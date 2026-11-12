@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · child-state-based-styling — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/2 · MWG <code>child-state-based-styling</code></p>
+      <h1 class="font-xl bold color-text">Child-state styling</h1>
+      <p class="font-s text-muted">
+        Opt-in <code>.card-state</code> reacts to descendants via <code>:has()</code>
+        (<code>:focus-within</code>, <code>input:checked</code>). Related: <code>.form-surface:has(:user-invalid)</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Scope <code>:has()</code> to a component — avoid <code>body:has(...)</code> for local chrome.
+    </div>
+
+    <section class="card card-state">
+      <div class="card-header">Focus within</div>
+      <div class="card-body col gap">
+        <p class="font-s text-muted marg-0">Focus the input — card border elevates.</p>
+        <label class="form-group">
+          <span class="form-label">Name</span>
+          <input class="input" type="text" name="demo-name" autocomplete="off" />
+        </label>
+      </div>
+    </section>
+
+    <section class="card card-state">
+      <div class="card-header">Checked child</div>
+      <div class="card-body">
+        <label class="row ai-c gap-s font-s">
+          <input type="checkbox" class="accent-primary" />
+          Enable highlight on this card
+        </label>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.card-state</code> · <code>:has(:focus-within)</code> · <code>:has(input:checked)</code></li>
+        <li><code>.form-surface</code> (forms skill) for invalid tint</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>compounds</code> · Guide: <code>retrieve child-state-based-styling</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

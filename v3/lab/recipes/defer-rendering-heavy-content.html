@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · defer-rendering-heavy-content — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>defer-rendering-heavy-content</code></p>
+      <h1 class="font-xl bold color-text">Defer heavy content</h1>
+      <p class="font-s text-muted">
+        <code>.cv-auto</code> → <code>content-visibility: auto</code> with
+        <code>contain-intrinsic-size</code> (`.cv-size-*`) so off-screen blocks skip layout/paint until near the viewport.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Scroll past the spacer — below-fold cards use <code>.cv-auto</code>. Prefer an intrinsic size close to real height to avoid scrollbar jumps.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Above the fold</div>
+      <div class="card-body font-s text-muted">
+        Visible immediately — no content-visibility here.
+      </div>
+    </section>
+
+    <div class="separator-v-xl" aria-hidden="true"></div>
+    <p class="font-xs text-muted ta-c">↓ scroll ↓</p>
+    <div class="separator-v-xl" aria-hidden="true"></div>
+
+    <section class="cv-auto cv-size-m card">
+      <div class="card-header">Deferred block A</div>
+      <div class="card-body col gap-s font-s text-muted">
+        <p>Heavy-ish content placeholder — browser may skip rendering until near.</p>
+        <p>Pair with long lists, comment threads, or below-fold grids.</p>
+      </div>
+    </section>
+
+    <section class="cv-auto cv-size-m card">
+      <div class="card-header">Deferred block B</div>
+      <div class="card-body font-s text-muted">
+        Another auto-visibility section.
+      </div>
+    </section>
+
+    <section class="cv-auto cv-size-l card">
+      <div class="card-header">Deferred block C (taller estimate)</div>
+      <div class="card-body col gap-s font-s text-muted">
+        <p><code>.cv-size-l</code> reserves more scroll space.</p>
+        <p>Filler line.</p>
+        <p>Filler line.</p>
+        <p>End.</p>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.cv-auto</code></li>
+        <li><code>.cv-size-s</code> · <code>.cv-size-m</code> · <code>.cv-size-l</code> · <code>.cv-size-xl</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>misc</code> · Guide: <code>retrieve defer-rendering-heavy-content</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

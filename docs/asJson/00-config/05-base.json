@@ -1,9 +1,9 @@
 {
   "folder": "00-config",
   "file": "05-base.css",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-12",
   "hasResponsive": false,
-  "totalSelectors": 31,
+  "totalSelectors": 35,
   "content": [
     {
       "type": "selector",
@@ -241,12 +241,63 @@
       "id": "#00-05-03",
       "category": "Tags",
       "properties": [
-        "overflow-wrap",
+        "overflow-wrap"
+      ],
+      "cssRule": "overflow-wrap: anywhere",
+      "responsive": false,
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "li",
+      "id": "#00-05-03",
+      "category": "Tags",
+      "properties": [
+        "overflow-wrap"
+      ],
+      "cssRule": "overflow-wrap: anywhere",
+      "responsive": false,
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "dd",
+      "id": "#00-05-03",
+      "category": "Tags",
+      "properties": [
+        "overflow-wrap"
+      ],
+      "cssRule": "overflow-wrap: anywhere",
+      "responsive": false,
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "figcaption",
+      "id": "#00-05-03",
+      "category": "Tags",
+      "properties": [
+        "overflow-wrap"
+      ],
+      "cssRule": "overflow-wrap: anywhere",
+      "responsive": false,
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+    },
+    {
+      "type": "selector",
+      "selectorType": "element",
+      "selector": "p",
+      "id": "#00-05-03",
+      "category": "Tags",
+      "properties": [
         "text-wrap"
       ],
-      "cssRule": "overflow-wrap: break-word\ntext-wrap: pretty",
+      "cssRule": "text-wrap: pretty",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -262,7 +313,7 @@
       ],
       "cssRule": "display: block\nheight: 1px\nborder: 0\nbackground: var(--color-border-strong)",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -277,7 +328,7 @@
       ],
       "cssRule": "font-size: 80%\nposition: relative\ntop: 0.1rem",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -292,7 +343,7 @@
       ],
       "cssRule": "font-size: 80%\nposition: relative\ntop: -0.1rem",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -307,7 +358,7 @@
       ],
       "cssRule": "font-size: var(--font-size-l)\nline-height: 1.6\ncolor: var(--color-text-base)",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -322,11 +373,12 @@
         "color",
         "font-family",
         "font-size",
-        "padding"
+        "padding",
+        "overflow-wrap"
       ],
-      "cssRule": "border-radius: var(--radius-xs)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)\ncolor: var(--color-text-base)\nfont-family: var(--font-mono)\nfont-size: 0.85em\npadding: 0.15em 0.4em",
+      "cssRule": "border-radius: var(--radius-xs)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)\ncolor: var(--color-text-base)\nfont-family: var(--font-mono)\nfont-size: 0.85em\npadding: 0.15em 0.4em\noverflow-wrap: anywhere",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -347,7 +399,7 @@
       ],
       "cssRule": "-webkit-overflow-scrolling: touch\noverflow-x: auto\nfont-family: var(--font-mono)\nfont-size: 0.875rem\nline-height: 1.7\npadding: var(--space-4) var(--space-5)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -364,7 +416,7 @@
       ],
       "cssRule": "display: block\npadding: 0\nbackground: none\nbox-shadow: none\nfont-size: inherit",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -378,7 +430,7 @@
       ],
       "cssRule": "border-collapse: collapse\nfont-variant-numeric: tabular-nums",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -392,7 +444,7 @@
       ],
       "cssRule": "overflow-wrap: break-word\ntext-align: left",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -406,7 +458,7 @@
       ],
       "cssRule": "overflow-wrap: break-word\ntext-align: left",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -419,7 +471,7 @@
       ],
       "cssRule": "max-width: 100%",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -437,7 +489,7 @@
       ],
       "cssRule": "font-weight: var(--font-weight-semibold)\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -450,7 +502,7 @@
       ],
       "cssRule": "display: none",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -465,7 +517,7 @@
       ],
       "cssRule": "color: var(--color-primary-text)\ntext-decoration: none\nfont-weight: var(--font-weight-semibold)",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     },
     {
       "type": "selector",
@@ -479,7 +531,7 @@
       ],
       "cssRule": "text-decoration: underline\ntext-underline-offset: 3px",
       "responsive": false,
-      "description": "** Static **"
+      "description": "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
     }
   ]
 }

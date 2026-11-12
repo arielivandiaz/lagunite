@@ -71,23 +71,23 @@
  */
 .cv-auto {
   content-visibility: auto;
-  contain-intrinsic-size: auto 20rem;
+  contain-intrinsic-block-size: auto 20rem;
 }
 
 .cv-size-s {
-  contain-intrinsic-size: auto 8rem;
+  contain-intrinsic-block-size: auto 8rem;
 }
 
 .cv-size-m {
-  contain-intrinsic-size: auto 16rem;
+  contain-intrinsic-block-size: auto 16rem;
 }
 
 .cv-size-l {
-  contain-intrinsic-size: auto 32rem;
+  contain-intrinsic-block-size: auto 32rem;
 }
 
 .cv-size-xl {
-  contain-intrinsic-size: auto 48rem;
+  contain-intrinsic-block-size: auto 48rem;
 }
 
 /* @ID: #10-01-06 */

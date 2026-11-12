@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · brand-consistent-forms — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1/3 · MWG <code>brand-consistent-forms</code></p>
+      <h1 class="font-xl bold color-text">Brand-consistent form controls</h1>
+      <p class="font-s text-muted">
+        Prefer native controls tinted with <code>accent-color</code> (token
+        <code>--color-primary</code>) instead of reinventing checkbox/radio/range.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      <code>:root</code> sets <code>accent-color: var(--color-primary)</code>.
+      Override with <code>.accent-primary</code> / <code>.accent-success</code> / <code>.accent-error</code>.
+      Custom <code>.checkbox</code> / <code>.radio-group</code> stay for branded chrome when native is not enough.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Native + accent</div>
+      <div class="card-body col gap">
+        <label class="row ai-c gap-s font-s">
+          <input type="checkbox" class="accent-primary" checked />
+          Primary accent checkbox
+        </label>
+        <label class="row ai-c gap-s font-s">
+          <input type="checkbox" class="accent-success" checked />
+          Success accent
+        </label>
+        <fieldset class="col gap-s padd-s">
+          <legend class="form-label">Plan</legend>
+          <label class="row ai-c gap-s font-s">
+            <input type="radio" name="plan" class="accent-primary" checked />
+            Free
+          </label>
+          <label class="row ai-c gap-s font-s">
+            <input type="radio" name="plan" class="accent-primary" />
+            Pro
+          </label>
+        </fieldset>
+        <div class="form-group marg-0">
+          <label class="form-label" for="volume">Volume</label>
+          <input class="range accent-primary wp100" id="volume" type="range" min="0" max="100" value="40" />
+        </div>
+        <div class="form-group marg-0">
+          <label class="form-label" for="load">Progress</label>
+          <progress id="load" class="accent-primary wp100" max="100" value="65"></progress>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Lagunite custom (when needed)</div>
+      <div class="card-body col gap">
+        <label class="checkbox">
+          <input type="checkbox" checked />
+          <span class="checkmark"></span>
+          Custom checkbox
+        </label>
+        <div class="row ai-c gap-s">
+          <input type="checkbox" class="toggle" id="notif" checked />
+          <label for="notif" class="toggle-btn"></label>
+          <label class="font-s" for="notif">Toggle switch</label>
+        </div>
+        <div class="col gap-xs">
+          <p class="form-label marg-0">Radio group (pill bar)</p>
+          <div class="radio-group">
+            <input type="radio" name="rg" id="rg1" checked />
+            <label for="rg1">Option A</label>
+            <input type="radio" name="rg" id="rg2" />
+            <label for="rg2">Option B</label>
+          </div>
+        </div>
+        <div class="col gap-xs">
+          <p class="form-label marg-0">Radio buttons (separate pills)</p>
+          <div class="radio-btns">
+            <input type="radio" name="rb" id="rb1" checked />
+            <label for="rb1">Free</label>
+            <input type="radio" name="rb" id="rb2" />
+            <label for="rb2">Pro</label>
+            <input type="radio" name="rb" id="rb3" />
+            <label for="rb3">Team</label>
+          </div>
+        </div>
+        <div class="col gap-xs">
+          <p class="form-label marg-0">Selectable option</p>
+          <label class="selectable-option">
+            <input type="checkbox" checked />
+            <span class="selectable-option-label">Branded row control</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.accent-primary</code> · <code>.accent-success</code> · <code>.accent-error</code></li>
+        <li>Root <code>accent-color</code> + <code>color-scheme</code> (see dark-mode recipe)</li>
+        <li>Custom when needed: <code>.checkbox</code> · <code>.toggle</code> · <code>.radio-group</code> · <code>.radio-btns</code> · <code>.selectable-option</code></li>
+        <li>Do not fake a checkbox with a <code>div</code> unless custom chrome is required</li>
+        <li><code>fieldset</code> has no Lagunite base styles — add <code>padd-s</code> (or reset border) yourself</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skills: <code>atoms</code> · <code>decorators</code> ·
+      Guide: <code>retrieve brand-consistent-forms</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  </script>
+</body>
+</html>

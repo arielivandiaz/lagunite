@@ -5,7 +5,7 @@
 
 **When:** page/section contains forms, inputs, labels, or CTAs tied to fields.  
 **Peers:** `validate-structure`, `validate-a11y`, `compose`.  
-**Platform guide:** MWG `validate-input-after-interaction` · recipe `lab/recipes/validate-input-after-interaction.html`
+**Platform guide:** MWG `validate-input-after-interaction` · recipe `v3/lab/recipes/validate-input-after-interaction.html`
 
 ---
 
@@ -52,17 +52,17 @@ Lagunite uses **`:user-invalid` / `:user-valid`** (after blur or submit attempt)
 
 | MWG id | Recipe |
 | --- | --- |
-| validate-input-after-interaction | `lab/recipes/validate-input-after-interaction.html` |
-| required-field-feedback | `lab/recipes/required-field-feedback.html` |
-| accessible-error-announcement | `lab/recipes/accessible-error-announcement.html` (also validate-a11y) |
-| autofill-sign-in-form | `lab/recipes/autofill-sign-in-form.html` |
-| autofill-sign-up-form | `lab/recipes/autofill-sign-up-form.html` |
-| autofill-address-form | `lab/recipes/autofill-address-form.html` |
-| autofill-highlight-inputs | `lab/recipes/autofill-highlight-inputs.html` |
-| form-fields-automatically-fit-contents | `lab/recipes/form-fields-automatically-fit-contents.html` |
-| branded-select-styling | `lab/recipes/branded-select-styling.html` |
-| rich-media-picker | `lab/recipes/rich-media-picker.html` |
-| style-parent-with-has | `lab/recipes/style-parent-with-has.html` |
+| validate-input-after-interaction | `v3/lab/recipes/validate-input-after-interaction.html` |
+| required-field-feedback | `v3/lab/recipes/required-field-feedback.html` |
+| accessible-error-announcement | `v3/lab/recipes/accessible-error-announcement.html` (also validate-a11y) |
+| autofill-sign-in-form | `v3/lab/recipes/autofill-sign-in-form.html` |
+| autofill-sign-up-form | `v3/lab/recipes/autofill-sign-up-form.html` |
+| autofill-address-form | `v3/lab/recipes/autofill-address-form.html` |
+| autofill-highlight-inputs | `v3/lab/recipes/autofill-highlight-inputs.html` |
+| form-fields-automatically-fit-contents | `v3/lab/recipes/form-fields-automatically-fit-contents.html` |
+| branded-select-styling | `v3/lab/recipes/branded-select-styling.html` |
+| rich-media-picker | `v3/lab/recipes/rich-media-picker.html` |
+| style-parent-with-has | `v3/lab/recipes/style-parent-with-has.html` |
 
 ### Alignment inside forms
 - Form stacks: `col jc-fs ai-s gap-s` (or `gap`)

@@ -71,14 +71,14 @@
 
 Stack `.transition-colors` + `.duration-200` + `.ease-out` for typical UI hovers.
 
-- **Discrete entry/exit:** `.enter-exit` — `@starting-style` + `allow-discrete` for `[hidden]` toggles. `.transition-discrete` sets only `transition-behavior: allow-discrete`. Recipe: `lab/recipes/animate-element-entry-exit.html`.
+- **Discrete entry/exit:** `.enter-exit` — `@starting-style` + `allow-discrete` for `[hidden]` toggles. `.transition-discrete` sets only `transition-behavior: allow-discrete`. Recipe: `v3/lab/recipes/animate-element-entry-exit.html`.
 
 ## Animations (`07-animations.css`)
 
 - **Continuous:** `.animate-spin`, `.animate-pulse`, `.animate-bounce`
-- **Scroll progress (decorative):** `.scroll-progress` — `animation-timeline: scroll()` behind `@supports` + `prefers-reduced-motion: no-preference`. Use `aria-hidden="true"`. Recipe: `lab/recipes/scroll-progress-indicator.html`.
-- **Sibling stagger:** `.stagger > *` — `animation-delay` from `sibling-index()` (JS sets `--sibling-index` if needed). Recipe: `lab/recipes/dynamic-sibling-animations.html`.
-- **Sibling vars / hue:** `.sibling-vars` · `.sibling-hue`. Recipe: `lab/recipes/dynamic-sibling-styling.html`.
+- **Scroll progress (decorative):** `.scroll-progress` — `animation-timeline: scroll()` behind `@supports` + `prefers-reduced-motion: no-preference`. Use `aria-hidden="true"`. Recipe: `v3/lab/recipes/scroll-progress-indicator.html`.
+- **Sibling stagger:** `.stagger > *` — `animation-delay` from `sibling-index()` (JS sets `--sibling-index` if needed). Recipe: `v3/lab/recipes/dynamic-sibling-animations.html`.
+- **Sibling vars / hue:** `.sibling-vars` · `.sibling-hue`. Recipe: `v3/lab/recipes/dynamic-sibling-styling.html`.
 - **One-shot:** `.animate-fade-in`, `.animate-fade-out`, `.animate-slide-in`, `.animate-slide-in-down`, `.animate-slide-out`, `.animate-slide-out-up`, `.animate-shake`
 - **Disable:** `.animate-none`
 - **Tuning:** `.animate-duration-*`, `.animate-delay-*`, `.animate-once`, `.animate-infinite`, `.animate-fill-*`, `.animate-normal|reverse|alternate`
@@ -90,7 +90,7 @@ Stack `.transition-colors` + `.duration-200` + `.ease-out` for typical UI hovers
 - **Blur (element):** `.blur-none`, `.blur-s`, `.blur`, `.blur-l`, `.blur-xl`
 - **Color filters:** `.brightness-*`, `.contrast-*`, `.grayscale`/`.grayscale-0`, `.saturate-*`, `.invert`/`.invert-0`, `.sepia`/`.sepia-0`, `.hue-rotate-*`
 - **Backdrop blur:** same `.backdrop-blur-*` names as `01-effects.css`
-- **Soft edge fade (mask):** `.fade-edge-b` · `.fade-edge-t` · `.fade-edge-y` — fades content pixels (not an overlay). Recipe: `lab/recipes/soft-edge-content-fade.html`.
+- **Soft edge fade (mask):** `.fade-edge-b` · `.fade-edge-t` · `.fade-edge-y` — fades content pixels (not an overlay). Recipe: `v3/lab/recipes/soft-edge-content-fade.html`.
 
 > **Gotcha:** Multiple classes each setting `filter: ...` override each other — only one wins. Backdrop blur uses `backdrop-filter`, separate from `filter`.
 

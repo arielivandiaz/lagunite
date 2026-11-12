@@ -6,7 +6,7 @@
   | These variables give meaning to the raw palette values. This is what
   | should be used throughout the library and overridden for theming.
   |
-  | v3 (Lagunite 3): source of truth is design/lagunite3/tokens.json.
+  | v3 (Lagunite 3): source of truth is v3/design-system/tokens.json.
   | Night applies with .night (on body or any element) or [data-theme="dark"],
   | and reaches <html> through :root:has(> body.night).
   */

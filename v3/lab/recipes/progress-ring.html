@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · progress-ring — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1 · MWG <code>progress-ring</code></p>
+      <h1 class="font-xl bold color-text">Progress ring</h1>
+      <p class="font-s text-muted">
+        Determinate circular progress with semantic <code>&lt;progress class="progress-ring"&gt;</code>.
+        Sync <code>--progress-ring-value</code> to the <code>value</code> attribute (attr() typed CSS is not Baseline yet).
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Indeterminate busy → use <code>.spinner</code> / <code>progress.spinner</code> instead.
+      At <code>value="100"</code> the ring uses success green.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Sizes</div>
+      <div class="card-body row ai-c gap flex-wrap">
+        <div class="progress-ring-wrap">
+          <progress class="progress-ring progress-ring-s" value="40" max="100" aria-label="Small progress" style="--progress-ring-value: 40"></progress>
+          <span class="progress-ring-content">40%</span>
+        </div>
+        <div class="progress-ring-wrap">
+          <progress class="progress-ring" value="65" max="100" aria-label="Task progress" style="--progress-ring-value: 65"></progress>
+          <span class="progress-ring-content" id="ring-label">65%</span>
+        </div>
+        <div class="progress-ring-wrap">
+          <progress class="progress-ring progress-ring-l" value="100" max="100" aria-label="Complete" style="--progress-ring-value: 100"></progress>
+          <span class="progress-ring-content">Done</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Live update</div>
+      <div class="card-body col gap">
+        <div class="progress-ring-wrap">
+          <progress id="live-ring" class="progress-ring" value="0" max="100" aria-label="Upload progress" style="--progress-ring-value: 0"></progress>
+          <span class="progress-ring-content" id="live-label">0%</span>
+        </div>
+        <div class="row gap flex-wrap">
+          <button type="button" class="btn" id="bump">+10%</button>
+          <button type="button" class="btn alt" id="reset">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.progress-ring-wrap</code> · <code>progress.progress-ring</code></li>
+        <li><code>.progress-ring-s</code> · <code>.progress-ring-l</code> · <code>.progress-ring-content</code></li>
+        <li>Set <code>style="--progress-ring-value: N"</code> to match <code>value</code></li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>atoms</code> · Guide: <code>retrieve progress-ring</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const ring = document.getElementById('live-ring');
+    const label = document.getElementById('live-label');
+
+    function setValue(v) {
+      const n = Math.max(0, Math.min(100, v));
+      ring.value = n;
+      ring.style.setProperty('--progress-ring-value', String(n));
+      label.textContent = `${n}%`;
+    }
+
+    document.getElementById('bump')?.addEventListener('click', () => {
+      setValue(Number(ring.value) + 10);
+    });
+    document.getElementById('reset')?.addEventListener('click', () => setValue(0));
+  </script>
+</body>
+</html>

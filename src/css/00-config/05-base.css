@@ -90,8 +90,15 @@ body {
   color: var(--color-text-base);
 }
 
+/* `anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile */
+p,
+li,
+dd,
+figcaption {
+  overflow-wrap: anywhere;
+}
+
 p {
-  overflow-wrap: break-word;
   text-wrap: pretty;
 }
 
@@ -128,6 +135,7 @@ code {
   font-family: var(--font-mono);
   font-size: 0.85em;
   padding: 0.15em 0.4em;
+  overflow-wrap: anywhere;
 }
 
 pre {

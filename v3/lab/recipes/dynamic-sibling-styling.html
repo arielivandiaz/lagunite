@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · dynamic-sibling-styling — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 1 · MWG <code>dynamic-sibling-styling</code></p>
+      <h1 class="font-xl bold color-text">Sibling index styling</h1>
+      <p class="font-s text-muted">
+        <code>.sibling-hue</code> / <code>.sibling-vars</code> expose
+        <code>--sibling-index</code> and <code>--sibling-count</code>
+        (native <code>sibling-index()</code> when supported).
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Add/remove swatches — hues redistribute. Without support, a tiny script injects 1-based vars.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Hue spectrum</div>
+      <div class="card-body col gap">
+        <div class="row gap flex-wrap" id="swatches">
+          <span class="sibling-hue w2 h2 border-r" title="1"></span>
+          <span class="sibling-hue w2 h2 border-r" title="2"></span>
+          <span class="sibling-hue w2 h2 border-r" title="3"></span>
+          <span class="sibling-hue w2 h2 border-r" title="4"></span>
+          <span class="sibling-hue w2 h2 border-r" title="5"></span>
+        </div>
+        <div class="row gap">
+          <button type="button" class="btn size-s" id="add-swatch">Add</button>
+          <button type="button" class="btn alt size-s" id="remove-swatch">Remove</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.sibling-vars</code> — vars only</li>
+        <li><code>.sibling-hue</code> — HSL spectrum demo</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>decorators</code> · Guide: <code>retrieve dynamic-sibling-styling</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const root = document.getElementById('swatches');
+
+    function syncSiblingVars(parent) {
+      if (CSS.supports('top: calc(sibling-index() * 1px)')) return;
+      const items = [...parent.children];
+      items.forEach((el, i) => {
+        el.style.setProperty('--sibling-index', String(i + 1));
+        el.style.setProperty('--sibling-count', String(items.length));
+      });
+    }
+
+    syncSiblingVars(root);
+
+    document.getElementById('add-swatch')?.addEventListener('click', () => {
+      const el = document.createElement('span');
+      el.className = 'sibling-hue w2 h2 border-r';
+      root.appendChild(el);
+      syncSiblingVars(root);
+    });
+    document.getElementById('remove-swatch')?.addEventListener('click', () => {
+      if (root.children.length > 1) root.lastElementChild.remove();
+      syncSiblingVars(root);
+    });
+  </script>
+</body>
+</html>

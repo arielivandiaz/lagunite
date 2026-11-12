@@ -54,7 +54,7 @@ Prefijos responsive: **base → `x*` (≤639px) → `d*` (≥640px)**. Gap flex:
 
 ## Qué hay de nuevo en v3
 
-Mismas clases que v2, piel nueva: botones y cards con profundidad (brillo superior, sombras en capas, sombra de color), navbar de vidrio, tipografía display, fondos de malla y grilla en azul, y tokens que pasan WCAG AA en Day y Night. El azul de marca `#2476ff` no cambia. Actualizar es reemplazar el stylesheet; revisá las páginas que dependían de la base de v2 (`body` centrado, márgenes en `header`/`p`). Detalle: [`CHANGELOG.md`](./CHANGELOG.md) · página de QA: [`pocs/v3-components.html`](./pocs/v3-components.html) · fuente de diseño: [`design/lagunite3/`](./design/lagunite3/).
+Mismas clases que v2, piel nueva: botones y cards con profundidad (brillo superior, sombras en capas, sombra de color), navbar de vidrio, tipografía display, fondos de malla y grilla en azul, y tokens que pasan WCAG AA en Day y Night. El azul de marca `#2476ff` no cambia. Actualizar es reemplazar el stylesheet; revisá las páginas que dependían de la base de v2 (`body` centrado, márgenes en `header`/`p`). Detalle: [`CHANGELOG.md`](./CHANGELOG.md) · página de QA: [`v3/qa/components.html`](./v3/qa/components.html) · fuente de diseño: [`v3/design-system/`](./v3/design-system/).
 
 ## Qué incluye
 
@@ -74,7 +74,7 @@ Catálogo: [`FEATURES.md`](./FEATURES.md) · cheatsheets en `src/css/*/`.
 
 | Superficie | Qué es |
 | --- | --- |
-| [`lab/`](./lab/) | Recipes HTML (Modern Web Guidance → Lagunite). Índice: `lab/index.html` |
+| [`v3/lab/`](./v3/lab/) | Recipes HTML (Modern Web Guidance → Lagunite). Índice: `v3/lab/index.html` |
 | [`web/`](./web/) | Sitio Astro: docs + espejo del Lab (`/lab`, `/docs/…`) |
 | `old/demos/` | Demos antiguas (archivo) |
 

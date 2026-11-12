@@ -1,9 +1,9 @@
 folder: 00-config
 file: 05-base.css
-lastUpdated: 2026-11-07
+lastUpdated: 2026-11-12
 hasResponsive: false
-totalSelectors: 31
-content[31]:
+totalSelectors: 35
+content[35]:
   - type: selector
     selectorType: complex
     selector: *
@@ -144,10 +144,46 @@ content[31]:
     selector: p
     id: #00-05-03
     category: Tags
-    properties[2]: overflow-wrap,text-wrap
-    cssRule: "overflow-wrap: break-word\ntext-wrap: pretty"
+    properties[1]: overflow-wrap
+    cssRule: "overflow-wrap: anywhere"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+  - type: selector
+    selectorType: element
+    selector: li
+    id: #00-05-03
+    category: Tags
+    properties[1]: overflow-wrap
+    cssRule: "overflow-wrap: anywhere"
+    responsive: false
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+  - type: selector
+    selectorType: element
+    selector: dd
+    id: #00-05-03
+    category: Tags
+    properties[1]: overflow-wrap
+    cssRule: "overflow-wrap: anywhere"
+    responsive: false
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+  - type: selector
+    selectorType: element
+    selector: figcaption
+    id: #00-05-03
+    category: Tags
+    properties[1]: overflow-wrap
+    cssRule: "overflow-wrap: anywhere"
+    responsive: false
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
+  - type: selector
+    selectorType: element
+    selector: p
+    id: #00-05-03
+    category: Tags
+    properties[1]: text-wrap
+    cssRule: "text-wrap: pretty"
+    responsive: false
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: hr
@@ -156,7 +192,7 @@ content[31]:
     properties[4]: display,height,border,background
     cssRule: "display: block\nheight: 1px\nborder: 0\nbackground: var(--color-border-strong)"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: sub
@@ -165,7 +201,7 @@ content[31]:
     properties[3]: font-size,position,top
     cssRule: "font-size: 80%\nposition: relative\ntop: 0.1rem"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: sup
@@ -174,7 +210,7 @@ content[31]:
     properties[3]: font-size,position,top
     cssRule: "font-size: 80%\nposition: relative\ntop: -0.1rem"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: blockquote
@@ -183,16 +219,16 @@ content[31]:
     properties[3]: font-size,line-height,color
     cssRule: "font-size: var(--font-size-l)\nline-height: 1.6\ncolor: var(--color-text-base)"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: code
     id: #00-05-03
     category: Tags
-    properties[7]: border-radius,background,box-shadow,color,font-family,font-size,padding
-    cssRule: "border-radius: var(--radius-xs)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)\ncolor: var(--color-text-base)\nfont-family: var(--font-mono)\nfont-size: 0.85em\npadding: 0.15em 0.4em"
+    properties[8]: border-radius,background,box-shadow,color,font-family,font-size,padding,overflow-wrap
+    cssRule: "border-radius: var(--radius-xs)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)\ncolor: var(--color-text-base)\nfont-family: var(--font-mono)\nfont-size: 0.85em\npadding: 0.15em 0.4em\noverflow-wrap: anywhere"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: pre
@@ -201,7 +237,7 @@ content[31]:
     properties[9]: "-webkit-overflow-scrolling",overflow-x,font-family,font-size,line-height,padding,border-radius,background,box-shadow
     cssRule: "-webkit-overflow-scrolling: touch\noverflow-x: auto\nfont-family: var(--font-mono)\nfont-size: 0.875rem\nline-height: 1.7\npadding: var(--space-4) var(--space-5)\nborder-radius: var(--radius-lg)\nbackground: var(--color-surface-muted)\nbox-shadow: inset 0 0 0 1px var(--color-border)"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: complex
     selector: pre code
@@ -210,7 +246,7 @@ content[31]:
     properties[5]: display,padding,background,box-shadow,font-size
     cssRule: "display: block\npadding: 0\nbackground: none\nbox-shadow: none\nfont-size: inherit"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: table
@@ -219,7 +255,7 @@ content[31]:
     properties[2]: border-collapse,font-variant-numeric
     cssRule: "border-collapse: collapse\nfont-variant-numeric: tabular-nums"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: th
@@ -228,7 +264,7 @@ content[31]:
     properties[2]: overflow-wrap,text-align
     cssRule: "overflow-wrap: break-word\ntext-align: left"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: td
@@ -237,7 +273,7 @@ content[31]:
     properties[2]: overflow-wrap,text-align
     cssRule: "overflow-wrap: break-word\ntext-align: left"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: details
@@ -246,7 +282,7 @@ content[31]:
     properties[1]: max-width
     cssRule: "max-width: 100%"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: element
     selector: summary
@@ -255,7 +291,7 @@ content[31]:
     properties[6]: font-weight,cursor,display,align-items,justify-content,list-style
     cssRule: "font-weight: var(--font-weight-semibold)\ncursor: pointer\ndisplay: flex\nalign-items: center\njustify-content: space-between\nlist-style: none"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: pseudo
     selector: "summary::-webkit-details-marker"
@@ -264,7 +300,7 @@ content[31]:
     properties[1]: display
     cssRule: "display: none"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: class
     selector: .link
@@ -273,7 +309,7 @@ content[31]:
     properties[3]: color,text-decoration,font-weight
     cssRule: "color: var(--color-primary-text)\ntext-decoration: none\nfont-weight: var(--font-weight-semibold)"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"
   - type: selector
     selectorType: class
     selector: ".link:hover"
@@ -282,4 +318,4 @@ content[31]:
     properties[2]: text-decoration,text-underline-offset
     cssRule: "text-decoration: underline\ntext-underline-offset: 3px"
     responsive: false
-    description: ** Static **
+    description: "`anywhere` (not `break-word`) also shrinks min-content, so long tokens can't widen flex/grid items on mobile"

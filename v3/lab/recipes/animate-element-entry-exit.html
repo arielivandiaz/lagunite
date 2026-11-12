@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · animate-element-entry-exit — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>animate-element-entry-exit</code></p>
+      <h1 class="font-xl bold color-text">Entry / exit motion</h1>
+      <p class="font-s text-muted">
+        <code>.enter-exit</code> uses <code>@starting-style</code> +
+        <code>transition-behavior: allow-discrete</code> so <code>[hidden]</code>
+        can fade/slide instead of popping. Utility: <code>.transition-discrete</code>.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Toggle the panel. Without support, show/hide is instant — progressive only.
+      For DOM <code>remove()</code>, wait for <code>getAnimations()</code> after setting <code>hidden</code>.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Demo</div>
+      <div class="card-body col gap">
+        <div class="row gap flex-wrap">
+          <button type="button" class="btn" id="show-panel">Show</button>
+          <button type="button" class="btn alt" id="hide-panel">Hide</button>
+        </div>
+        <div id="panel" class="enter-exit card" hidden>
+          <div class="card-body font-s">
+            This panel enters from above and exits with the same discrete transition.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>.enter-exit</code> · toggle <code>hidden</code></li>
+        <li><code>.transition-discrete</code> → <code>allow-discrete</code> alone</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>decorators</code> · Guide: <code>retrieve animate-element-entry-exit</code>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+    const panel = document.getElementById('panel');
+    document.getElementById('show-panel')?.addEventListener('click', () => {
+      panel.hidden = false;
+    });
+    document.getElementById('hide-panel')?.addEventListener('click', async () => {
+      panel.hidden = true;
+      const animations = panel.getAnimations?.() ?? [];
+      if (animations.length) {
+        await Promise.race([
+          Promise.allSettled(animations.map((a) => a.finished)),
+          new Promise((r) => setTimeout(r, 2000))
+        ]);
+      }
+    });
+  </script>
+</body>
+</html>

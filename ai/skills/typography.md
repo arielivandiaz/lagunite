@@ -90,7 +90,7 @@ Desktop (`min-width: 640px`): `.dta-c` `.dta-lf` `.dta-rg` `.dta-j` `.dta-ja`
 | `.text-trim` | `text-box: trim-both cap alphabetic` — UI labels / badges |
 | `.text-trim-start` | `text-box: trim-start cap alphabetic` — flush tops with media |
 
-Recipes: `lab/recipes/improve-text-layout-and-legibility.html`, `precise-text-alignment.html`
+Recipes: `v3/lab/recipes/improve-text-layout-and-legibility.html`, `precise-text-alignment.html`
 
 ## Composition
 

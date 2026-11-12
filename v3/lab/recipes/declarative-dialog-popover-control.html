@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · declarative-dialog-popover-control — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 3 · MWG <code>declarative-dialog-popover-control</code></p>
+      <h1 class="font-xl bold color-text">Declarative dialog &amp; popover</h1>
+      <p class="font-s text-muted">
+        Prefer <code>command</code> / <code>commandfor</code> (Invoker Commands) on buttons —
+        open/close without hand-rolled listeners when the browser supports it.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Invoker Commands are Baseline newly available. This recipe includes a tiny fallback if
+      <code>commandForElement</code> is missing.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Modal via invoker</div>
+      <div class="card-body col gap">
+        <p class="font-s text-muted marg-0">Opens a native <code>&lt;dialog class="modal"&gt;</code> with Lagunite regions.</p>
+        <div class="row gap-s">
+          <button type="button" class="btn" commandfor="confirm-dialog" command="show-modal" data-fallback-show="confirm-dialog">
+            Open confirmation
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="confirm-dialog" class="modal modal-s" aria-labelledby="confirm-title">
+      <div class="modal-header">
+        <h2 class="modal-title" id="confirm-title">Confirm</h2>
+        <button type="button" class="modal-close" commandfor="confirm-dialog" command="close" data-fallback-close="confirm-dialog" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="font-s text-muted marg-0">Delete this project? This cannot be undone.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn ghost" commandfor="confirm-dialog" command="close" data-fallback-close="confirm-dialog">Cancel</button>
+        <button type="button" class="btn" commandfor="confirm-dialog" command="close" data-fallback-close="confirm-dialog">Delete</button>
+      </div>
+    </dialog>
+
+    <section class="card">
+      <div class="card-header">Popover via invoker</div>
+      <div class="card-body col gap">
+        <p class="font-s text-muted marg-0">
+          <!-- GAP: dedicated .popover surface — use .card inside [popover] for now -->
+          Native <code>popover</code> + Lagunite <code>.card</code> chrome.
+        </p>
+        <button type="button" class="btn alt" commandfor="help-popover" command="toggle-popover" data-fallback-popover="help-popover">
+          Toggle help
+        </button>
+      </div>
+    </section>
+
+    <div id="help-popover" popover class="card padd marg-s col gap-xs">
+      <!-- GAP: dedicated .popover surface — until then: .card + .padd + .marg-s + .shadow-s -->
+      <p class="font-s bold marg-0">Quick tip</p>
+      <p class="font-s text-muted">Popovers light-dismiss on outside click by default (<code>popover</code> auto).</p>
+    </div>
+
+    <section class="col gap-s">
+      <h2 class="font-l bold">Hero classes</h2>
+      <ul class="font-s text-muted col gap-xs">
+        <li><code>dialog.modal</code> · <code>.modal-header</code> · <code>.modal-body</code> · <code>.modal-footer</code></li>
+        <li><code>commandfor</code> + <code>command="show-modal"</code> / <code>close</code> / <code>toggle-popover</code></li>
+        <li>Legacy path still exists: <code>.modal-overlay.open</code> (JS class toggle)</li>
+      </ul>
+    </section>
+
+    <p class="font-xs text-muted">
+      Skill: <code>ai/skills/compounds.md</code> ·
+      Guide: <code>npx modern-web-guidance@latest retrieve declarative-dialog-popover-control</code>
+    </p>
+  </div>
+
+  <script type="module">
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+
+    const hasInvokers = 'commandForElement' in HTMLButtonElement.prototype;
+    if (!hasInvokers) {
+      document.querySelectorAll('[data-fallback-show]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.getElementById(btn.getAttribute('data-fallback-show'))?.showModal();
+        });
+      });
+      document.querySelectorAll('[data-fallback-close]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.getElementById(btn.getAttribute('data-fallback-close'))?.close();
+        });
+      });
+      document.querySelectorAll('[data-fallback-popover]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.getElementById(btn.getAttribute('data-fallback-popover'))?.togglePopover?.();
+        });
+      });
+    }
+  </script>
+</body>
+</html>

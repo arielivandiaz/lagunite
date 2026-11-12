@@ -1,7 +1,7 @@
 # Lagunite — agent context (keep lean)
 
 ## Identity
-- **Lagunite v3** — utility-first CSS, descriptive class names → `dist/lagunite.css` (Vite + PostCSS). v3 = same class API as v2 with the Lagunite 3 skin (depth, glass, display type). Tokens source: `design/lagunite3/tokens.json`.
+- **Lagunite v3** — utility-first CSS, descriptive class names → `dist/lagunite.css` (Vite + PostCSS). v3 = same class API as v2 with the Lagunite 3 skin (depth, glass, display type). Tokens source: `v3/design-system/tokens.json`.
 - **Commands:** `npm run dev` · `npm run build` · `npm run docs:generate` (after CSS changes) · `npm run lint:css`
 - **Adjacent (separate repo):** `lagunite-web/` — do not treat as part of this project
 
@@ -31,6 +31,11 @@ Skills are a **tree**, not a pile. Open **one node**, then at most **one child**
 1. **Generate ≠ audit.** Do not open `validate.md`, spawn UI Validator, or use browser/CDP unless the user asked to audit/verify visually or layout is still wrong after compose.
 2. **Target:** simple POC/screen in one pass (compose → write → done). No post-hoc skill tour.
 3. **Docs on demand only:** `ToDo-prod.md` · `REVISION-v2.2.md` · `SUPPORT.md` · `FEATURES.md` · `ToDo-ai-first.md` — open only when that work is the task.
+
+## Repo map (v3)
+- **Core:** `src/` (CSS + JS). Everything else is tooling.
+- **`v3/`** = tools already reviewed and working on v3: `v3/builder/` (Lagunite Builder), `v3/lab/` (MWG recipes), `v3/qa/components.html` (component QA), `v3/design-system/` (Lagunite 3 tokens + brand book). Build new tools here.
+- Anything outside `v3/` (`pocs/`, `old/`, …) is **not migrated yet** — don't use it as a reference for v3 markup.
 
 ## POC / demo
 - `pocs/` or `poc-*.html` → link `src/lagunite.css`; mark `style=""` with `<!-- GAP -->`.

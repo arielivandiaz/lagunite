@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe · rich-media-picker — Lagunite Lab</title>
+  <link rel="stylesheet" href="../../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <button type="button" id="theme-toggle" class="btn alt size-s pos-fixed top-0 right-0 marg-s z5" aria-label="Toggle night mode">Night</button>
+
+  <div class="container-s padd-v-l col gap">
+    <header class="col gap-s">
+      <p class="font-s"><a class="color-primary" href="../index.html">← Lab</a></p>
+      <p class="font-xs text-muted">Bucket 2/3 · MWG <code>rich-media-picker</code></p>
+      <h1 class="font-xl bold color-text">Rich media picker</h1>
+      <p class="font-s text-muted">
+        Lagunite path today: <code>.selectable-option</code> (CSS-only radio/checkbox rows).
+        Progressive path: <code>.select-base</code> when customizable select is available.
+      </p>
+    </header>
+
+    <div class="alert alert-info" role="status">
+      Prefer selectable-option for rich rows with Baseline-wide support. Native rich
+      <code>&lt;option&gt;</code> HTML is still uneven — keep a text fallback.
+    </div>
+
+    <section class="card">
+      <div class="card-header">Lagunite · selectable-option</div>
+      <div class="card-body col gap-s">
+        <fieldset class="col gap-s">
+          <legend class="form-label">Goal</legend>
+          <label class="selectable-option">
+            <input type="radio" name="goal" value="fit" checked />
+            <span class="selectable-option-label">Get fitter</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+          <label class="selectable-option">
+            <input type="radio" name="goal" value="focus" />
+            <span class="selectable-option-label">Stay focused</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+          <label class="selectable-option">
+            <input type="radio" name="goal" value="calm" />
+            <span class="selectable-option-label">Feel calmer</span>
+            <span class="selectable-option-indicator"></span>
+          </label>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">Progressive · select-base</div>
+      <div class="card-body col gap">
+        <div class="form-group marg-0">
+          <label class="form-label" for="role">Role</label>
+          <select class="select-base" id="role" name="role">
+            <option value="fe" aria-label="Frontend">Frontend — React, CSS</option>
+            <option value="be" aria-label="Backend">Backend — APIs, data</option>
+            <option value="design" aria-label="Design">Design — systems, craft</option>
+          </select>
+        </div>
+        <p class="font-xs text-muted marg-0">
+          <!-- GAP: rich HTML inside option (svg + dual lines) needs broader base-select support -->
+          Text options keep a11y + autofill-friendly forms until rich option markup is Baseline.
+        </p>
+      </div>
+    </section>
+
+    <p class="font-xs text-muted">Skill: <code>molecules</code> · Guide: <code>retrieve rich-media-picker</code></p>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle')?.addEventListener('click', () => document.body.classList.toggle('night'));
+  </script>
+</body>
+</html>

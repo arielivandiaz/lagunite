@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lagunite Lab</title>
+  <link rel="stylesheet" href="../../src/lagunite.css" />
+</head>
+<body class="bg">
+  <div class="container padd-v-l col gap">
+    <header class="col gap-s">
+      <h1 class="font-display-l bold color-text">Lagunite Lab</h1>
+      <p class="font-s text-muted">
+        Recipes mapped from Modern Web Guidance — patterns first; visual polish later.
+        Backlog: <a class="color-primary" href="../../ToDo-modern-platform.md">ToDo-modern-platform.md</a>
+      </p>
+    </header>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Top 1–5 · Forms &amp; dialogs</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/validate-input-after-interaction.html">1 · validate-input-after-interaction</a>
+          <p class="font-s text-muted marg-0"><code>:user-invalid</code> / <code>:user-valid</code> after blur or submit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/required-field-feedback.html">2 · required-field-feedback</a>
+          <p class="font-s text-muted marg-0">Empty required fields stay neutral until interact.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/accessible-error-announcement.html">3 · accessible-error-announcement</a>
+          <p class="font-s text-muted marg-0">Sync <code>aria-invalid</code> with <code>:user-invalid</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/declarative-dialog-popover-control.html">4 · declarative-dialog-popover-control</a>
+          <p class="font-s text-muted marg-0">Invoker Commands + <code>dialog.modal</code> / <code>popover</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/light-dismiss-a-dialog.html">5 · light-dismiss-a-dialog</a>
+          <p class="font-s text-muted marg-0"><code>closedby="any"</code> + backdrop fallback.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Top 6–10 · Theme, autofill, accent, :has, type</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/dark-mode.html">6 · dark-mode</a>
+          <p class="font-s text-muted marg-0"><code>.night</code> + <code>color-scheme</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/autofill-sign-in-form.html">7 · autofill-sign-in-form</a>
+          <p class="font-s text-muted marg-0">Sign-in autocomplete + enterkeyhint.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/brand-consistent-forms.html">8 · brand-consistent-forms</a>
+          <p class="font-s text-muted marg-0"><code>accent-color</code> / <code>.accent-primary</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/style-parent-with-has.html">9 · style-parent-with-has</a>
+          <p class="font-s text-muted marg-0"><code>.form-surface:has(:user-invalid)</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/improve-text-layout-and-legibility.html">10 · improve-text-layout-and-legibility</a>
+          <p class="font-s text-muted marg-0"><code>.text-balance</code> · <code>.text-pretty</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Top 11–15 · Tooltip, drawer, spinner, CQ, search</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/position-aware-tooltips.html">11 · position-aware-tooltips</a>
+          <p class="font-s text-muted marg-0"><code>[data-tooltip]</code> + anchored popover.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/navigation-drawer.html">12 · navigation-drawer</a>
+          <p class="font-s text-muted marg-0"><code>.sidebar-drawer</code> + backdrop.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/spinner.html">13 · spinner</a>
+          <p class="font-s text-muted marg-0"><code>.spinner</code> / <code>progress.spinner</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/size-aware-styling.html">14 · size-aware-styling</a>
+          <p class="font-s text-muted marg-0"><code>.cq</code> container queries.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/search-hidden-content.html">15 · search-hidden-content</a>
+          <p class="font-s text-muted marg-0"><code>details</code> + <code>hidden=&quot;until-found&quot;</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 2 · Bloque A (forms)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/autofill-sign-up-form.html">16 · autofill-sign-up-form</a>
+          <p class="font-s text-muted marg-0"><code>new-password</code> · Create account.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/autofill-address-form.html">17 · autofill-address-form</a>
+          <p class="font-s text-muted marg-0">Shipping address autocomplete.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/autofill-highlight-inputs.html">18 · autofill-highlight-inputs</a>
+          <p class="font-s text-muted marg-0"><code>:autofill</code> primary tint.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/form-fields-automatically-fit-contents.html">19 · form-fields-automatically-fit-contents</a>
+          <p class="font-s text-muted marg-0"><code>.input-fit</code> / field-sizing.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/branded-select-styling.html">20 · branded-select-styling</a>
+          <p class="font-s text-muted marg-0"><code>.select-base</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/rich-media-picker.html">21 · rich-media-picker</a>
+          <p class="font-s text-muted marg-0"><code>.selectable-option</code> + select-base.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 2 · Bloque B (overlays)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/resilient-context-menus-and-nested-dropdowns.html">22 · resilient-context-menus-and-nested-dropdowns</a>
+          <p class="font-s text-muted marg-0"><code>.dropdown-panel</code> + popover/anchor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/persistent-toast-notifications.html">23 · persistent-toast-notifications</a>
+          <p class="font-s text-muted marg-0"><code>popover="manual"</code> · <code>.toast</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/progress-ring.html">24 · progress-ring</a>
+          <p class="font-s text-muted marg-0"><code>progress.progress-ring</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/interest-triggered-tooltips.html">25 · interest-triggered-tooltips</a>
+          <p class="font-s text-muted marg-0"><code>interestfor</code> · <code>.tooltip-hint</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 2 · Bloque C (scroll)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/scroll-progress-indicator.html">26 · scroll-progress-indicator</a>
+          <p class="font-s text-muted marg-0"><code>.scroll-progress</code> · scroll timeline.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/scrollability-affordance-hints.html">27 · scrollability-affordance-hints</a>
+          <p class="font-s text-muted marg-0"><code>.scroll-state</code> · hint fades.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/state-aware-sticky-headers.html">28 · state-aware-sticky-headers</a>
+          <p class="font-s text-muted marg-0"><code>.sticky-state</code> · stuck chrome.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/scrollspy.html">29 · scrollspy</a>
+          <p class="font-s text-muted marg-0"><code>.scrollspy</code> · <code>:target-current</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 2 · Bloque D (motion + cola)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/animate-element-entry-exit.html">30 · animate-element-entry-exit</a>
+          <p class="font-s text-muted marg-0"><code>.enter-exit</code> · <code>@starting-style</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/animate-to-from-top-layer.html">31 · animate-to-from-top-layer</a>
+          <p class="font-s text-muted marg-0"><code>dialog.modal</code> overlay motion.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/soft-edge-content-fade.html">32 · soft-edge-content-fade</a>
+          <p class="font-s text-muted marg-0"><code>.fade-edge-b</code> / <code>.fade-edge-y</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/precise-text-alignment.html">33 · precise-text-alignment</a>
+          <p class="font-s text-muted marg-0"><code>.text-trim</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/child-state-based-styling.html">34 · child-state-based-styling</a>
+          <p class="font-s text-muted marg-0"><code>.card-state:has(...)</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/optimize-image-priority.html">35 · optimize-image-priority</a>
+          <p class="font-s text-muted marg-0"><code>fetchpriority</code> · <code>loading</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 3 · Bloque E (layout CSS)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/fluid-scaling.html">36 · fluid-scaling</a>
+          <p class="font-s text-muted marg-0"><code>.cq</code> · <code>.font-cq</code> / <code>.padd-cq</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/overflow-clipping-control.html">37 · overflow-clipping-control</a>
+          <p class="font-s text-muted marg-0"><code>.overflow-clip</code> · <code>.clip-margin-*</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/dynamic-sibling-styling.html">38 · dynamic-sibling-styling</a>
+          <p class="font-s text-muted marg-0"><code>.sibling-hue</code> · sibling-index.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/content-based-styling.html">39 · content-based-styling</a>
+          <p class="font-s text-muted marg-0"><code>.card-media:has(img)</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/dynamic-sibling-animations.html">40 · dynamic-sibling-animations</a>
+          <p class="font-s text-muted marg-0"><code>.stagger</code> delays.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col gap">
+      <h2 class="font-l bold">Oleada 3 · Bloque F (media / perf)</h2>
+
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/optimize-image-priority.html">35 · optimize-image-priority</a>
+          <p class="font-s text-muted marg-0">(ya en D) <code>fetchpriority</code> · <code>loading</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/defer-rendering-heavy-content.html">41 · defer-rendering-heavy-content</a>
+          <p class="font-s text-muted marg-0"><code>.cv-auto</code> · <code>.cv-size-*</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/deliver-optimized-decorative-images.html">42 · deliver-optimized-decorative-images</a>
+          <p class="font-s text-muted marg-0"><code>&lt;picture&gt;</code> · <code>.bg-image-set</code>.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/resolution-optimized-pseudo-elements.html">43 · resolution-optimized-pseudo-elements</a>
+          <p class="font-s text-muted marg-0"><code>.icon-set</code> · image-set.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body col gap-s">
+          <a class="color-primary bold" href="./recipes/interactions-in-complex-layouts.html">44 · interactions-in-complex-layouts</a>
+          <p class="font-s text-muted marg-0"><code>.contain-*</code>.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

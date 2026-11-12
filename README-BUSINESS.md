@@ -61,7 +61,7 @@ No son el enemigo: son la **referencia** contra la que nos medimos. Hoy un agent
 3. **Anti-slop por defecto** — flex start, btn sin margen mágico, surfaces semánticas, muted correcto.
 4. **Night mode real** — `.night` + tokens; no “pintar todo de gris”.
 5. **Forms modernos** — `:user-invalid` / `:user-valid`, errores después de interactuar.
-6. **Lab** — recipes Modern Web Guidance → clases Lagunite (`lab/`, `/lab` en Astro).
+6. **Lab** — recipes Modern Web Guidance → clases Lagunite (`v3/lab/`, `/lab` en Astro).
 7. **Capas de producto** — de botón a dashboard shell, documentadas.
 
 ### En progreso (decirlo así)
@@ -135,7 +135,7 @@ Detalle visual: user rules de frontend + `ai/skills/anti-slop.md` + `ai/skills/c
 | Activo | Dónde |
 | --- | --- |
 | CSS v2.1 | `dist/lagunite.css` · [`FEATURES.md`](./FEATURES.md) |
-| Lab recipes | [`lab/`](./lab/) · Astro [`web/`](./web/) → `/lab` |
+| Lab recipes | [`v3/lab/`](./v3/lab/) · Astro [`web/`](./web/) → `/lab` |
 | Narrativa | [`story/`](./story/) |
 | Benchmark IA | [`story/BENCHMARK.md`](./story/BENCHMARK.md) |
 | Agent skills (en progreso) | [`ai/`](./ai/) · [`AGENTS.md`](./AGENTS.md) |
@@ -171,7 +171,7 @@ No. Ver `SUPPORT.md`.
 
 | Intent | Destino sugerido |
 | --- | --- |
-| Probar patrones | `/lab` (Astro) o `lab/index.html` |
+| Probar patrones | `/lab` (Astro) o `v3/lab/index.html` |
 | Docs de capas | `/docs/…` |
 | Instalar | npm · snippet en README |
 | Lagunite + IA | Página con resultados de `story/BENCHMARK.md` |
