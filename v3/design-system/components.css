@@ -31,6 +31,7 @@ body { font-family: var(--font-sans); font-size: 16px; line-height: 24px; text-a
 h1, h2, h3, h4, p, ul, ol, figure, blockquote { margin: 0; }
 h1, h2, h3, h4 { font-family: var(--font-display); color: var(--color-text); text-wrap: balance; }
 p { text-wrap: pretty; }
+p, li, dd, figcaption, code { overflow-wrap: anywhere; }
 a { color: var(--color-primary-text); text-decoration: none; }
 img, svg { display: block; max-width: 100%; }
 ::selection { background: var(--color-primary-soft); color: var(--color-text); }
@@ -241,10 +242,11 @@ input:focus-visible, textarea:focus-visible, select:focus-visible { border-color
 
 /* ── Alert & toast ──────────────────────────────────── */
 .alert {
-  display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 14px 16px;
+  width: 100%; padding: 14px 16px;
   border-radius: var(--radius-lg); font: 400 14px/20px var(--font-sans); color: var(--color-text);
   background: var(--color-surface-raised); box-shadow: inset 0 0 0 1px var(--color-border), var(--shadow-xs);
 }
+.alert:has(> svg:first-child) { display: flex; align-items: flex-start; gap: 12px; }
 .alert > svg { flex: none; width: 18px; height: 18px; margin-top: 1px; }
 .alert strong { display: block; font-weight: 600; }
 .alert-info { background: var(--color-primary-soft); box-shadow: inset 0 0 0 1px rgb(36 118 255 / 20%); }
